@@ -1,0 +1,5 @@
+	Type = Doodads
+	DoodadTypes
+	[
+		{ Type=Itchys.ftl_beacon_ekrasys; Faction=Itchys.ekrasys; }
+	]

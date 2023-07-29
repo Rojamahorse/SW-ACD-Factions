@@ -1,0 +1,16 @@
+Faction = SW.Republic
+IDPrefix = "SW.Republic"
+Tags = [defense]
+
+Ships
+[
+	// Platforms
+	:~{ File="1Small Cannon Platform.ship.png";        Tier=2; Difficulty=2; }
+	:~{ File="1Small HE Missile Platform.ship.png";    Tier=2; Difficulty=2; }
+	:~{ File="1Small Point Defense Platform.ship.png"; Tier=2; Difficulty=2; }
+	:~{ File="1Small Laser Platform.ship.png";         Tier=2; Difficulty=2; }
+	:~{ File="1Small Disruptor Platform.ship.png";     Tier=2; Difficulty=2; }
+	:~{ File="1Small Ion Platform.ship.png";           Tier=2; Difficulty=2; }
+	:~{ File="1Small EMP Platform.ship.png";           Tier=2; Difficulty=2; }
+	:~{ File="1Small Nuke Platform.ship.png";          Tier=2; Difficulty=2; }
+]

@@ -1,0 +1,8 @@
+Tags = [starter]
+
+Ships
+[
+	:~{ File="Model-L1.ship.png"; }
+	:~{ File="Model-C1.ship.png"; }
+	:~{ File="Model-S1.ship.png"; }
+]

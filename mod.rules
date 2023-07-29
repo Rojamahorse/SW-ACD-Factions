@@ -1,0 +1,246 @@
+ID = SW.StarWarsFactions
+Name = "Star Wars Factions"
+Version = 1.0.0
+CompatibleGameVersions = ["0.23.1"]
+ModifiesMultiplayer = true
+Author = "Rojamahorse"
+Logo = "logo.png"
+StringsFolder = "strings"
+
+Description = "Adds Galactic Empire, Galactic Republic, Mandalorians, Hutts, Rebel Alliance and Confederacy of Independent Systems to the Game"
+
+Actions
+[
+	// FACTIONS
+	// Add Galactic Empire and Republic Faction
+	
+	{
+		Action = AddMany
+		AddTo = "<factions/factions.rules>/Factions"
+        ManyToAdd = &<factions/factions.rules>/Factions
+	}
+
+	//Generate the Galactic Empire Faction and Republic in career mode
+	{
+		Action = AddMany
+		AddTo = "<galaxy_map/map_generators/base_galaxy.rules>/Factions/Factions"
+        ManyToAdd = &<galaxy_map/map_generators/base_galaxy.rules>/Factions/Factions
+	}
+
+	//Generate the Galactic Empire and Republic Faction in career mode
+	{
+		Action = AddMany
+		AddTo = "<galaxy_map/map_generators/base_galaxy.rules>/FactionTiers/Factions"
+        ManyToAdd = &<galaxy_map/map_generators/base_galaxy.rules>/FactionTiers/Factions
+	}
+	
+	// Add Galactic Empire and Republic codex lore
+	{
+		Action = AddMany
+		AddTo = "<codex/lore/lore.rules>/CodexPages"
+        ManyToAdd = &<codex/lore.rules>/CodexPages
+	}
+	//Generate Mission related to Galactic Empire and Republic
+	{
+		Action = AddMany
+		AddTo = "<modes/career/sysgen_sim_global_missions.rules>/SubSpawners"
+        ManyToAdd = &<career/sysgen_sim_global_missions.rules>/SubSpawners
+	}
+	
+	//Galactic Empire and Republic Faction Ship
+	{
+		Action = AddMany
+		AddTo = "<builtin_ships/builtins.rules>/Ships"
+        ManyToAdd = &<builtin_ships/builtins.rules>/Ships
+	}
+	
+	//Create FTL Doodads
+	{
+		Action = AddMany
+		AddTo = "<doodads/doodads.rules>/Doodads"
+        ManyToAdd = &<doodads/doodads.rules>/Doodads
+	}
+
+	//Galactic Empire and Republic Faction Trade Ship
+	{
+		Action = AddBase
+		AddBaseTo = "<modes/career/career.rules>/TradeRoutes/TradeShips"
+		BaseToAdd = 	{
+					 	Galactic_Empire_1  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Tiny Empire";     Faction=SW.Galactic_Empire;   TierRange=[1, 3];   StasisSpeed=40; StasisTradeTime=35;}
+					 	Galactic_Empire_2  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Small Empire";     Faction=SW.Galactic_Empire;   TierRange=[1, 5];   StasisSpeed=55; StasisTradeTime=48;}
+						Galactic_Empire_3  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Medium Empire";     Faction=SW.Galactic_Empire;   TierRange=[1, 7];   StasisSpeed=60; StasisTradeTime=55;}
+						Galactic_Empire_4  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Large Empire";     Faction=SW.Galactic_Empire;   TierRange=[1, 10];   StasisSpeed=65; StasisTradeTime=60;}
+						Galactic_Empire_5  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Huge Empire";     Faction=SW.Galactic_Empire;   TierRange=[1, 18];   StasisSpeed=70; StasisTradeTime=65;}
+						Galactic_Empire_6  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Extra Huge Emp";     Faction=SW.Galactic_Empire;   TierRange=[10, 18];   StasisSpeed=75; StasisTradeTime=70;}
+						Republic_1  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Tiny Republic";     Faction=SW.Republic;   TierRange=[1, 3];   StasisSpeed=40; StasisTradeTime=35;}
+					 	Republic_2  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Small Republic";     Faction=SW.Republic;    TierRange=[1, 5];   StasisSpeed=55; StasisTradeTime=48;}
+						Republic_3  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Medium Republi";     Faction=SW.Republic;   TierRange=[1, 7];   StasisSpeed=60; StasisTradeTime=55;}
+						Republic_4  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Large Republic";     Faction=SW.Republic;   TierRange=[1, 10];   StasisSpeed=65; StasisTradeTime=60;}
+						Republic_5  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Huge Republic";     Faction=SW.Republic;   TierRange=[1, 18];   StasisSpeed=70; StasisTradeTime=65;}
+						Republic_6  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Extra Huge Rep";     Faction=SW.Republic;   TierRange=[10, 18];   StasisSpeed=75; StasisTradeTime=70;}
+					}
+	}
+	
+	//Add custom roof decals related to Galactic Empire Faction in symbols category
+	{
+		Action = Add
+		AddTo = "<roof_decals/roof_decals.rules>/Groups/1/Folders"
+		ToAdd = "roof_decals"
+	}
+
+	//StarWarsConversion main screen ship
+	{
+		Action = Replace
+		Replace = "<gui/menus.rules>/LogoShip"
+		With = "logo.ship.png"
+	}
+	
+	//Add Starter Ships.. Why not Working??!
+	{
+		
+		Action = AddMany
+		AddTo = "<builtin_ships/Starter/builtins_starter.rules>/Ships"
+        ManyToAdd = &<builtin_ships/SW.Starter/builtins_SW.Starter.rules>/Ships
+		
+	}
+	
+	//Modify world generation XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+	
+	{
+		Action = Replace
+		Replace = "<galaxy_map/map_generators/base_galaxy.rules>/StartingNodePicker/CandidatesClosestToFactions"
+        With = [1, [monolith, cabal, SW.Galactic_Empire]]
+	}
+
+	
+	{
+		Action = Replace
+		Replace = "<./Data/factions/factions.rules>/Factions"
+		With =
+		[
+			// Galactic_Empire
+			{
+				ID = SW.Galactic_Empire
+				NameKey = "Factions/Galactic_Empire"
+				Icon
+				{
+					Texture
+					{
+						File = "Galactic_Empire.png"
+						SampleMode = Linear
+						MipLevels = max
+					}
+				}
+				BorderColor = [255, 255, 255]
+				MilitaryPlayerIndex = 500
+				CivilianPlayerIndex = 501
+			}
+			// Republic
+			{
+				ID = SW.Republic
+				NameKey = "Factions/Republic"
+				Icon
+				{
+					Texture
+					{
+						File = "Republic.png"
+						SampleMode = Linear
+						MipLevels = max
+					}
+				}
+				BorderColor = [0, 31, 255]
+				MilitaryPlayerIndex = 600
+				CivilianPlayerIndex = 601
+			}
+			// Monolith Cooperative
+			{
+				ID = monolith
+				NameKey = "Factions/Monolith"
+				Icon
+				{
+					Texture
+					{
+						File = "monolith.png"
+						SampleMode = Linear
+						MipLevels = max
+					}
+				}
+				BorderColor = [0, 196, 255]
+				MilitaryPlayerIndex = 100
+				CivilianPlayerIndex = 101
+			}
+
+			// Cabal of Sol
+			{
+				ID = cabal
+				NameKey = "Factions/Cabal"
+				Icon
+				{
+					Texture
+					{
+						File = "cabal.png"
+						SampleMode = Linear
+						MipLevels = max
+					}
+				}
+				BorderColor = [255, 237, 102]
+				MilitaryPlayerIndex = 200
+				CivilianPlayerIndex = 201
+			}
+
+			// Centauri Imperium
+			{
+				ID = imperium
+				NameKey = "Factions/Imperium"
+				Icon
+				{
+					Texture
+					{
+						File = "imperium.png"
+						SampleMode = Linear
+						MipLevels = max
+					}
+				}
+				BorderColor = [255, 0, 49]
+				MilitaryPlayerIndex = 300
+				CivilianPlayerIndex = 301
+			}
+			// Fringe Systems Resistance
+			{
+				ID = fringe
+				NameKey = "Factions/Fringe"
+				Icon
+				{
+					Texture
+					{
+						File = "fringe.png"
+						SampleMode = Linear
+						MipLevels = max
+					}
+				}
+				BorderColor = [127, 127, 127, 127]
+				MilitaryPlayerIndex = 400
+				CivilianPlayerIndex = 401
+			}
+		]
+	}
+
+	//galaxy size to 100
+	{
+		Action = Replace
+		Replace = "<./Data/galaxy_map/map_generators/galaxy_standard.rules>/Spawners"
+        With = 
+			[
+			: <./Data/galaxy_map/map_generators/base_galaxy.rules>/MapNodes
+			{
+				Count = 100
+			}
+
+				&<./Data/galaxy_map/map_generators/base_galaxy.rules>/Factions
+				&<./Data/galaxy_map/map_generators/base_galaxy.rules>/FactionTiers
+				&<./Data/galaxy_map/map_generators/base_galaxy.rules>/StartingNodePicker
+				&<./Data/galaxy_map/map_generators/base_galaxy.rules>/ProgressionTiers
+			]
+	}	
+
+]

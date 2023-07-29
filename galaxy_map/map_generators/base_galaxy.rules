@@ -1,0 +1,44 @@
+Factions
+{
+	Factions
+	[
+		{
+			FactionID = SW.Galactic_Empire
+			TerritoryRatio = 100%
+			AvoidOtherFactionsStrength = .3
+			AvoidEdgeStrength = .2
+			FactionStrengthExponent = 4
+			MinFactionStrength = 5%
+		}
+		{
+			FactionID = SW.Republic
+			TerritoryRatio = 100%
+			AvoidOtherFactionsStrength = .3
+			AvoidEdgeStrength = .2
+			FactionStrengthExponent = 4
+			MinFactionStrength = 5%
+		}
+	]
+}
+
+
+
+MaxTier = 10
+TierSpread = 2
+
+FactionTiers
+{
+	Factions
+	[
+		{
+			FactionID = SW.Galactic_Empire
+			TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
+			TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
+		}
+		{
+			FactionID = SW.Republic
+			TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
+			TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
+		}
+	]
+}

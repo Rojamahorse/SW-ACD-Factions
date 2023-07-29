@@ -1,0 +1,151 @@
+TierValueMaximums
+[
+	60000, // 1
+	75000, // 2
+	90000, // 3
+	110000, // 4
+	140000, // 5
+	180000, // 6
+	230000, // 7
+	300000, // 8
+	400000, // 9
+	500000, // 10
+	650000, // 11
+	800000, // 12
+	1000000, // 13
+	1300000, // 14
+	1600000, // 15
+	2000000, // 16
+	2500000, // 17
+	3000000, // 18
+	4000000, // 19
+	5000000, // 20
+]
+TierValueCombineOverhead = 30000
+
+ValueMoneyMultiplier = 0.05
+StandardMoneyPerTier
+[
+	{ Tier=1;  Money=["round((&~/TierValueMaximums/0)  * 2/3 * (&~/ValueMoneyMultiplier), 0)", "round((&~/TierValueMaximums/0) * (&~/ValueMoneyMultiplier), 0)"]; }
+	{ Tier=2;  Money=["round((&~/TierValueMaximums/0)  * (&~/ValueMoneyMultiplier), 0)", "round((&~/TierValueMaximums/1)  * (&~/ValueMoneyMultiplier), 0)"]; }
+	{ Tier=3;  Money=["round((&~/TierValueMaximums/1)  * (&~/ValueMoneyMultiplier), 0)", "round((&~/TierValueMaximums/2)  * (&~/ValueMoneyMultiplier), 0)"]; }
+	{ Tier=4;  Money=["round((&~/TierValueMaximums/2)  * (&~/ValueMoneyMultiplier), 0)", "round((&~/TierValueMaximums/3)  * (&~/ValueMoneyMultiplier), 0)"]; }
+	{ Tier=5;  Money=["round((&~/TierValueMaximums/3)  * (&~/ValueMoneyMultiplier), 0)", "round((&~/TierValueMaximums/4)  * (&~/ValueMoneyMultiplier), 0)"]; }
+	{ Tier=6;  Money=["round((&~/TierValueMaximums/4)  * (&~/ValueMoneyMultiplier), 0)", "round((&~/TierValueMaximums/5)  * (&~/ValueMoneyMultiplier), 0)"]; }
+	{ Tier=7;  Money=["round((&~/TierValueMaximums/5)  * (&~/ValueMoneyMultiplier), 0)", "round((&~/TierValueMaximums/6)  * (&~/ValueMoneyMultiplier), 0)"]; }
+	{ Tier=8;  Money=["round((&~/TierValueMaximums/6)  * (&~/ValueMoneyMultiplier), 0)", "round((&~/TierValueMaximums/7)  * (&~/ValueMoneyMultiplier), 0)"]; }
+	{ Tier=9;  Money=["round((&~/TierValueMaximums/7)  * (&~/ValueMoneyMultiplier), 0)", "round((&~/TierValueMaximums/8)  * (&~/ValueMoneyMultiplier), 0)"]; }
+	{ Tier=10; Money=["round((&~/TierValueMaximums/8)  * (&~/ValueMoneyMultiplier), 0)", "round((&~/TierValueMaximums/9)  * (&~/ValueMoneyMultiplier), 0)"]; }
+	{ Tier=11; Money=["round((&~/TierValueMaximums/9)  * (&~/ValueMoneyMultiplier), 0)", "round((&~/TierValueMaximums/10) * (&~/ValueMoneyMultiplier), 0)"]; }
+	{ Tier=12; Money=["round((&~/TierValueMaximums/10) * (&~/ValueMoneyMultiplier), 0)", "round((&~/TierValueMaximums/11) * (&~/ValueMoneyMultiplier), 0)"]; }
+	{ Tier=13; Money=["round((&~/TierValueMaximums/11) * (&~/ValueMoneyMultiplier), 0)", "round((&~/TierValueMaximums/12) * (&~/ValueMoneyMultiplier), 0)"]; }
+	{ Tier=14; Money=["round((&~/TierValueMaximums/12) * (&~/ValueMoneyMultiplier), 0)", "round((&~/TierValueMaximums/13) * (&~/ValueMoneyMultiplier), 0)"]; }
+	{ Tier=15; Money=["round((&~/TierValueMaximums/13) * (&~/ValueMoneyMultiplier), 0)", "round((&~/TierValueMaximums/14) * (&~/ValueMoneyMultiplier), 0)"]; }
+	{ Tier=16; Money=["round((&~/TierValueMaximums/14) * (&~/ValueMoneyMultiplier), 0)", "round((&~/TierValueMaximums/15) * (&~/ValueMoneyMultiplier), 0)"]; }
+	{ Tier=17; Money=["round((&~/TierValueMaximums/15) * (&~/ValueMoneyMultiplier), 0)", "round((&~/TierValueMaximums/16) * (&~/ValueMoneyMultiplier), 0)"]; }
+	{ Tier=18; Money=["round((&~/TierValueMaximums/16) * (&~/ValueMoneyMultiplier), 0)", "round((&~/TierValueMaximums/17) * (&~/ValueMoneyMultiplier), 0)"]; }
+	{ Tier=19; Money=["round((&~/TierValueMaximums/17) * (&~/ValueMoneyMultiplier), 0)", "round((&~/TierValueMaximums/18) * (&~/ValueMoneyMultiplier), 0)"]; }
+	{ Tier=20; Money=["round((&~/TierValueMaximums/18) * (&~/ValueMoneyMultiplier), 0)", "round((&~/TierValueMaximums/19) * (&~/ValueMoneyMultiplier), 0)"]; }
+]
+
+ValueFameMultiplier = (&StandardMaxFamePerTier/0/MaxFame) / (&~/TierValueMaximums/0) * (1/8)
+StandardFamePerTier
+[
+	{ Tier=1;  Fame="round((&~/TierValueMaximums/0)  * (&~/ValueFameMultiplier), 0)"; }
+	{ Tier=2;  Fame="round((&~/TierValueMaximums/1)  * (&~/ValueFameMultiplier), 0)"; }
+	{ Tier=3;  Fame="round((&~/TierValueMaximums/2)  * (&~/ValueFameMultiplier), 0)"; }
+	{ Tier=4;  Fame="round((&~/TierValueMaximums/3)  * (&~/ValueFameMultiplier), 0)"; }
+	{ Tier=5;  Fame="round((&~/TierValueMaximums/4)  * (&~/ValueFameMultiplier), 0)"; }
+	{ Tier=6;  Fame="round((&~/TierValueMaximums/5)  * (&~/ValueFameMultiplier), 0)"; }
+	{ Tier=7;  Fame="round((&~/TierValueMaximums/6)  * (&~/ValueFameMultiplier), 0)"; }
+	{ Tier=8;  Fame="round((&~/TierValueMaximums/7)  * (&~/ValueFameMultiplier), 0)"; }
+	{ Tier=9;  Fame="round((&~/TierValueMaximums/8)  * (&~/ValueFameMultiplier), 0)"; }
+	{ Tier=10; Fame="round((&~/TierValueMaximums/9)  * (&~/ValueFameMultiplier), 0)"; }
+	{ Tier=11; Fame="round((&~/TierValueMaximums/10) * (&~/ValueFameMultiplier), 0)"; }
+	{ Tier=12; Fame="round((&~/TierValueMaximums/11) * (&~/ValueFameMultiplier), 0)"; }
+	{ Tier=13; Fame="round((&~/TierValueMaximums/12) * (&~/ValueFameMultiplier), 0)"; }
+	{ Tier=14; Fame="round((&~/TierValueMaximums/13) * (&~/ValueFameMultiplier), 0)"; }
+	{ Tier=15; Fame="round((&~/TierValueMaximums/14) * (&~/ValueFameMultiplier), 0)"; }
+	{ Tier=16; Fame="round((&~/TierValueMaximums/15) * (&~/ValueFameMultiplier), 0)"; }
+	{ Tier=17; Fame="round((&~/TierValueMaximums/16) * (&~/ValueFameMultiplier), 0)"; }
+	{ Tier=18; Fame="round((&~/TierValueMaximums/17) * (&~/ValueFameMultiplier), 0)"; }
+	{ Tier=19; Fame="round((&~/TierValueMaximums/18) * (&~/ValueFameMultiplier), 0)"; }
+	{ Tier=20; Fame="round((&~/TierValueMaximums/19) * (&~/ValueFameMultiplier), 0)"; }
+]
+
+MaxFame = 10000
+MaxFameOffset = -160  / (&MaxFameMultiple)
+ValueMaxFameMultiplier = (&MaxFame) / (&~/TierValueMaximums/17) / (&MaxFameMultiple)
+MaxFameMultiple = 10
+StandardMaxFamePerTier
+[
+	{ Tier=1;  MaxFame="round((&~/TierValueMaximums/0)  * (&~/ValueMaxFameMultiplier) + (&~/MaxFameOffset), 0) * (&~/MaxFameMultiple)"; }
+	{ Tier=2;  MaxFame="round((&~/TierValueMaximums/1)  * (&~/ValueMaxFameMultiplier) + (&~/MaxFameOffset), 0) * (&~/MaxFameMultiple)"; }
+	{ Tier=3;  MaxFame="round((&~/TierValueMaximums/2)  * (&~/ValueMaxFameMultiplier) + (&~/MaxFameOffset), 0) * (&~/MaxFameMultiple)"; }
+	{ Tier=4;  MaxFame="round((&~/TierValueMaximums/3)  * (&~/ValueMaxFameMultiplier) + (&~/MaxFameOffset), 0) * (&~/MaxFameMultiple)"; }
+	{ Tier=5;  MaxFame="round((&~/TierValueMaximums/4)  * (&~/ValueMaxFameMultiplier) + (&~/MaxFameOffset), 0) * (&~/MaxFameMultiple)"; }
+	{ Tier=6;  MaxFame="round((&~/TierValueMaximums/5)  * (&~/ValueMaxFameMultiplier) + (&~/MaxFameOffset), 0) * (&~/MaxFameMultiple)"; }
+	{ Tier=7;  MaxFame="round((&~/TierValueMaximums/6)  * (&~/ValueMaxFameMultiplier) + (&~/MaxFameOffset), 0) * (&~/MaxFameMultiple)"; }
+	{ Tier=8;  MaxFame="round((&~/TierValueMaximums/7)  * (&~/ValueMaxFameMultiplier) + (&~/MaxFameOffset), 0) * (&~/MaxFameMultiple)"; }
+	{ Tier=9;  MaxFame="round((&~/TierValueMaximums/8)  * (&~/ValueMaxFameMultiplier) + (&~/MaxFameOffset), 0) * (&~/MaxFameMultiple)"; }
+	{ Tier=10; MaxFame="round((&~/TierValueMaximums/9)  * (&~/ValueMaxFameMultiplier) + (&~/MaxFameOffset), 0) * (&~/MaxFameMultiple)"; }
+	{ Tier=11; MaxFame="round((&~/TierValueMaximums/10) * (&~/ValueMaxFameMultiplier) + (&~/MaxFameOffset), 0) * (&~/MaxFameMultiple)"; }
+	{ Tier=12; MaxFame="round((&~/TierValueMaximums/11) * (&~/ValueMaxFameMultiplier) + (&~/MaxFameOffset), 0) * (&~/MaxFameMultiple)"; }
+	{ Tier=13; MaxFame="round((&~/TierValueMaximums/12) * (&~/ValueMaxFameMultiplier) + (&~/MaxFameOffset), 0) * (&~/MaxFameMultiple)"; }
+	{ Tier=14; MaxFame="round((&~/TierValueMaximums/13) * (&~/ValueMaxFameMultiplier) + (&~/MaxFameOffset), 0) * (&~/MaxFameMultiple)"; }
+	{ Tier=15; MaxFame="round((&~/TierValueMaximums/14) * (&~/ValueMaxFameMultiplier) + (&~/MaxFameOffset), 0) * (&~/MaxFameMultiple)"; }
+	{ Tier=16; MaxFame="round((&~/TierValueMaximums/15) * (&~/ValueMaxFameMultiplier) + (&~/MaxFameOffset), 0) * (&~/MaxFameMultiple)"; }
+	{ Tier=17; MaxFame="round((&~/TierValueMaximums/16) * (&~/ValueMaxFameMultiplier) + (&~/MaxFameOffset), 0) * (&~/MaxFameMultiple)"; }
+	{ Tier=18; MaxFame="round((&~/TierValueMaximums/17) * (&~/ValueMaxFameMultiplier), 0) * (&~/MaxFameMultiple)"; } // Not adding the offset to these last tiers because I want it to max out at an even 10000.
+	{ Tier=19; MaxFame="round((&~/TierValueMaximums/18) * (&~/ValueMaxFameMultiplier), 0) * (&~/MaxFameMultiple)"; }
+	{ Tier=20; MaxFame="round((&~/TierValueMaximums/19) * (&~/ValueMaxFameMultiplier), 0) * (&~/MaxFameMultiple)"; }
+]
+
+StandardFamePrereqPerTier
+[
+	{ Tier=1;  Fame=0; }
+	{ Tier=2;  Fame=&~/StandardMaxFamePerTier/0/MaxFame; }
+	{ Tier=3;  Fame=&~/StandardMaxFamePerTier/1/MaxFame; }
+	{ Tier=4;  Fame=&~/StandardMaxFamePerTier/2/MaxFame; }
+	{ Tier=5;  Fame=&~/StandardMaxFamePerTier/3/MaxFame; }
+	{ Tier=6;  Fame=&~/StandardMaxFamePerTier/4/MaxFame; }
+	{ Tier=7;  Fame=&~/StandardMaxFamePerTier/5/MaxFame; }
+	{ Tier=8;  Fame=&~/StandardMaxFamePerTier/6/MaxFame; }
+	{ Tier=9;  Fame=&~/StandardMaxFamePerTier/7/MaxFame; }
+	{ Tier=10; Fame=&~/StandardMaxFamePerTier/8/MaxFame; }
+	{ Tier=11; Fame=&~/StandardMaxFamePerTier/9/MaxFame; }
+	{ Tier=12; Fame=&~/StandardMaxFamePerTier/10/MaxFame; }
+	{ Tier=13; Fame=&~/StandardMaxFamePerTier/11/MaxFame; }
+	{ Tier=14; Fame=&~/StandardMaxFamePerTier/12/MaxFame; }
+	{ Tier=15; Fame=&~/StandardMaxFamePerTier/13/MaxFame; }
+	{ Tier=16; Fame=&~/StandardMaxFamePerTier/14/MaxFame; }
+	{ Tier=17; Fame=&~/StandardMaxFamePerTier/15/MaxFame; }
+	{ Tier=18; Fame=&~/StandardMaxFamePerTier/16/MaxFame; }
+	{ Tier=19; Fame=&~/StandardMaxFamePerTier/17/MaxFame; }
+	{ Tier=20; Fame=&~/StandardMaxFamePerTier/18/MaxFame; }
+]
+
+FameToRepFactor = 1
+StandardReputationPerTier
+[
+	{ Tier=1;  Reputation="round((&~/TierValueMaximums/0)  * (&~/ValueFameMultiplier) * (&~/FameToRepFactor), 0)"; }
+	{ Tier=2;  Reputation="round((&~/TierValueMaximums/1)  * (&~/ValueFameMultiplier) * (&~/FameToRepFactor), 0)"; }
+	{ Tier=3;  Reputation="round((&~/TierValueMaximums/2)  * (&~/ValueFameMultiplier) * (&~/FameToRepFactor), 0)"; }
+	{ Tier=4;  Reputation="round((&~/TierValueMaximums/3)  * (&~/ValueFameMultiplier) * (&~/FameToRepFactor), 0)"; }
+	{ Tier=5;  Reputation="round((&~/TierValueMaximums/4)  * (&~/ValueFameMultiplier) * (&~/FameToRepFactor), 0)"; }
+	{ Tier=6;  Reputation="round((&~/TierValueMaximums/5)  * (&~/ValueFameMultiplier) * (&~/FameToRepFactor), 0)"; }
+	{ Tier=7;  Reputation="round((&~/TierValueMaximums/6)  * (&~/ValueFameMultiplier) * (&~/FameToRepFactor), 0)"; }
+	{ Tier=8;  Reputation="round((&~/TierValueMaximums/7)  * (&~/ValueFameMultiplier) * (&~/FameToRepFactor), 0)"; }
+	{ Tier=9;  Reputation="round((&~/TierValueMaximums/8)  * (&~/ValueFameMultiplier) * (&~/FameToRepFactor), 0)"; }
+	{ Tier=10; Reputation="round((&~/TierValueMaximums/9)  * (&~/ValueFameMultiplier) * (&~/FameToRepFactor), 0)"; }
+	{ Tier=11; Reputation="round((&~/TierValueMaximums/10) * (&~/ValueFameMultiplier) * (&~/FameToRepFactor), 0)"; }
+	{ Tier=12; Reputation="round((&~/TierValueMaximums/11) * (&~/ValueFameMultiplier) * (&~/FameToRepFactor), 0)"; }
+	{ Tier=13; Reputation="round((&~/TierValueMaximums/12) * (&~/ValueFameMultiplier) * (&~/FameToRepFactor), 0)"; }
+	{ Tier=14; Reputation="round((&~/TierValueMaximums/13) * (&~/ValueFameMultiplier) * (&~/FameToRepFactor), 0)"; }
+	{ Tier=15; Reputation="round((&~/TierValueMaximums/14) * (&~/ValueFameMultiplier) * (&~/FameToRepFactor), 0)"; }
+	{ Tier=16; Reputation="round((&~/TierValueMaximums/15) * (&~/ValueFameMultiplier) * (&~/FameToRepFactor), 0)"; }
+	{ Tier=17; Reputation="round((&~/TierValueMaximums/16) * (&~/ValueFameMultiplier) * (&~/FameToRepFactor), 0)"; }
+	{ Tier=18; Reputation="round((&~/TierValueMaximums/17) * (&~/ValueFameMultiplier) * (&~/FameToRepFactor), 0)"; }
+	{ Tier=19; Reputation="round((&~/TierValueMaximums/18) * (&~/ValueFameMultiplier) * (&~/FameToRepFactor), 0)"; }
+	{ Tier=20; Reputation="round((&~/TierValueMaximums/19) * (&~/ValueFameMultiplier) * (&~/FameToRepFactor), 0)"; }
+]

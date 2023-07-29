@@ -1,0 +1,58 @@
+Parts
+{
+}
+
+Stats
+{
+}
+
+Factions
+{
+	Galactic_Empire = "Galactic Empire"
+	Republic = "Galactic Republic"
+	monolith = "Confederacy of Independent Systems"
+	fringe = "Rebel Alliance"
+	imperium = "Hutt Clan"
+	cabal = "Mandalorians"
+}
+
+Doodads
+{
+}
+
+Resource
+{
+}
+
+Lore
+{
+	Galactic_Empire
+	{
+		Title = "Galactic Empire"
+		
+		Lore1 = "Order."
+		
+		Lore2 = "Willpower."
+
+		Lore3 = "Law."
+
+		Lore4 = "Justice."
+
+		Lore5 = "Empire."
+	}
+	Republic
+	{
+		Title = "Republic"
+		
+		Lore1 = "tbd"
+		
+		Lore2 = "tbd"
+
+		Lore3 = "tbd"
+
+		Lore4 = "tbd"
+
+		Lore5 = "tbd"
+
+	}
+}

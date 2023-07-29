@@ -1,0 +1,17 @@
+Faction = SW.Galactic_Empire
+Tags = [station]
+
+Ships
+[
+	// Civilian stations
+	:~{ File="Small SW.Galactic_Empire Trade Station.ship.png"; Tier=4;  Tags : ~/Tags [trade_station]; StasisIcon="Small SW.Galactic_Empire Trade Station.png" }
+	:~{ File="Med SW.Galactic_Empire Trade Station.ship.png";   Tier=8; Tags : ~/Tags [trade_station]; StasisIcon="Med SW.Galactic_Empire Trade Station.png" }
+	:~{ File="Large SW.Galactic_Empire Trade Station.ship.png"; Tier=14; Tags : ~/Tags [trade_station]; StasisIcon="Large SW.Galactic_Empire Trade Station.png" }
+	:~{ File="Huge SW.Galactic_Empire Trade Station.ship.png"; Tier=16; Tags : ~/Tags [trade_station]; StasisIcon="Huge SW.Galactic_Empire Trade Station.png" }
+
+	// Military stations
+	:~{ File="Small SW.Galactic_Empire Arms Depot.ship.png";     Tier=6;  SpawnTier=3;  Tags : ~/Tags [military_station]; StasisIcon="Small SW.Galactic_Empire Arms Depot.png";  FlightDirection=UpRight }
+	:~{ File="Med SW.Galactic_Empire Arms Depot.ship.png";    Tier=9;  SpawnTier=7;  Tags : ~/Tags [military_station]; StasisIcon="Med SW.Galactic_Empire Arms Depot.png"; FlightDirection=UpRight }
+	:~{ File="Large SW.Galactic_Empire Arms Depot.ship.png";      Tier=12; SpawnTier=11; Tags : ~/Tags [military_station]; StasisIcon="Large SW.Galactic_Empire Arms Depot.png";   FlightDirection=UpRight }
+	:~{ File="Huge SW.Galactic_Empire Arms Depot.ship.png";    Tier=16; SpawnTier=15; Tags : ~/Tags [military_station]; StasisIcon="Huge SW.Galactic_Empire Arms Depot.png"; FlightDirection=UpRight }
+]

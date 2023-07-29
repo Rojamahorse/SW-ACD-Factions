@@ -1,0 +1,8 @@
+Ships :
+	<Combat/builtins_SW.Republic_combat.rules>/Ships
+	<Defense/builtins_SW.Republic_defense.rules>/Ships
+	<Civilian/builtins_SW.Republic_civilian.rules>/Ships
+	<Stations/builtins_SW.Republic_stations.rules>/Ships
+[
+
+]

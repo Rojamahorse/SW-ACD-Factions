@@ -1,0 +1,30 @@
+ID = Galactic_Empire
+TitleKey = "Lore/Galactic_Empire/Title"
+TabNameKey = "Codex/Lore"
+Entries
+[
+	{
+		TextKey = "Lore/Galactic_Empire/Lore1"
+		Image
+		{
+			Texture
+			{
+				File = "Galactic_Empire.png"
+				SampleMode = Linear
+				MipLevels = max
+			}
+		}
+	}
+	{
+		TextKey = "Lore/Galactic_Empire/Lore2"
+	}
+	{
+		TextKey = "Lore/Galactic_Empire/Lore3"
+	}
+	{
+		TextKey = "Lore/Galactic_Empire/Lore4"
+	}
+	{
+		TextKey = "Lore/Galactic_Empire/Lore5"
+	}
+]

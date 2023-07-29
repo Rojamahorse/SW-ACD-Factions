@@ -1,0 +1,38 @@
+Factions
+[
+	// Galactic_Empire
+	{
+		ID = SW.Galactic_Empire
+		NameKey = "Factions/Galactic_Empire"
+		Icon
+		{
+			Texture
+			{
+				File = "Galactic_Empire.png"
+				SampleMode = Linear
+				MipLevels = max
+			}
+		}
+		BorderColor = [255, 255, 255]
+		MilitaryPlayerIndex = 500
+		CivilianPlayerIndex = 501
+	}
+	// Republic
+	{
+		ID = SW.Republic
+		NameKey = "Factions/Republic"
+		Icon
+		{
+			Texture
+			{
+				File = "Republic.png"
+				SampleMode = Linear
+				MipLevels = max
+			}
+		}
+		BorderColor = [0, 31, 255]
+		MilitaryPlayerIndex = 600
+		CivilianPlayerIndex = 601
+	}
+	
+]

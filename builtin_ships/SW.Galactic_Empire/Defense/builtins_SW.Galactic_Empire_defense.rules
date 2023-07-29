@@ -1,0 +1,12 @@
+Faction = SW.Galactic_Empire
+IDPrefix = "SW.Galactic_Empire"
+Tags = [defense]
+
+Ships
+[
+	// Platforms
+	:~{ File="Small Laser Platform1.ship.png";     Tier=2; Difficulty=2; }
+	:~{ File="Small Disruptor Platform1.ship.png"; Tier=2; Difficulty=2; }
+	:~{ File="Small EMP Platform1.ship.png";       Tier=2; Difficulty=2; }
+	:~{ File="Small Ion Platform1.ship.png";       Tier=2; Difficulty=2; }
+]

@@ -1,0 +1,8 @@
+Ships :
+	<Combat/builtins_SW.Galactic_Empire_combat.rules>/Ships
+	<Defense/builtins_SW.Galactic_Empire_defense.rules>/Ships
+	<Civilian/builtins_SW.Galactic_Empire_civilian.rules>/Ships
+	<Stations/builtins_SW.Galactic_Empire_stations.rules>/Ships
+[
+
+]

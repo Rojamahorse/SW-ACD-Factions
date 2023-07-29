@@ -1,0 +1,30 @@
+ID = Republic
+TitleKey = "Lore/Republic/Title"
+TabNameKey = "Codex/Lore"
+Entries
+[
+	{
+		TextKey = "Lore/Republic/Lore1"
+		Image
+		{
+			Texture
+			{
+				File = "Republic.png"
+				SampleMode = Linear
+				MipLevels = max
+			}
+		}
+	}
+	{
+		TextKey = "Lore/Republic/Lore2"
+	}
+	{
+		TextKey = "Lore/Republic/Lore3"
+	}
+	{
+		TextKey = "Lore/Republic/Lore4"
+	}
+	{
+		TextKey = "Lore/Republic/Lore5"
+	}
+]

@@ -1,0 +1,106 @@
+SubSpawners
+[
+	// Faction SW.Galacitc_Empire missions.
+	{
+		Type = Mission
+		Metatype = FactionHunt
+		SpawnAt = Tag
+		SpawnAtTag = { Mode=Random; Tag=trade_station; OnlyOpposingFactions=true; }
+		OkayIfSpawnAtTagNotFound = true
+		Faction = OwnerOfTag
+		FactionTag = &SpawnAtTag
+		OkayIfFactionTagNotFound = true
+		Objectives
+		[
+			{
+				Type = Sequential
+				SubObjectives
+				[
+					{
+						Type = DestroyShips
+						TargetsTag = { Tag=faction_wanderer; OnlyFactions=[SW.Galacitc_Empire]; }
+						TargetCountFraction = 50%
+						MissionInvalidIfZeroTargets = true
+						AllowNpcKills = false
+						OverrideDisplayFormatKey = "Objectives/DestroyFactionShips"
+					}
+					{
+						Type = ReceiveRewards
+					}
+				]
+			}
+		]
+		Rewards
+		[
+			{
+				Type = Money
+				MoneyPerHighTier = &<tier_tables.rules>/StandardMoneyPerTier
+				MoneyPerTierMultiplier = 2
+				RoundToMultiple = 500
+			}
+			{
+				Type = Fame
+				FamePerHighTier = &<tier_tables.rules>/StandardFamePerTier
+				FamePerTierMultiplier = 2
+				MaxFamePerHighTier = &<tier_tables.rules>/StandardMaxFamePerTier
+			}
+            {
+                Type = Reputation
+                ReputationPerHighTier = &<tier_tables.rules>/StandardReputationPerTier
+                ReputationPerTierMultiplier = 2
+            }
+		]
+	}
+
+	// Faction SW.Republic missions.
+	{
+		Type = Mission
+		Metatype = FactionHunt
+		SpawnAt = Tag
+		SpawnAtTag = { Mode=Random; Tag=trade_station; OnlyOpposingFactions=true; }
+		OkayIfSpawnAtTagNotFound = true
+		Faction = OwnerOfTag
+		FactionTag = &SpawnAtTag
+		OkayIfFactionTagNotFound = true
+		Objectives
+		[
+			{
+				Type = Sequential
+				SubObjectives
+				[
+					{
+						Type = DestroyShips
+						TargetsTag = { Tag=faction_wanderer; OnlyFactions=[SW.Republic]; }
+						TargetCountFraction = 50%
+						MissionInvalidIfZeroTargets = true
+						AllowNpcKills = false
+						OverrideDisplayFormatKey = "Objectives/DestroyFactionShips"
+					}
+					{
+						Type = ReceiveRewards
+					}
+				]
+			}
+		]
+		Rewards
+		[
+			{
+				Type = Money
+				MoneyPerHighTier = &<tier_tables.rules>/StandardMoneyPerTier
+				MoneyPerTierMultiplier = 2
+				RoundToMultiple = 500
+			}
+			{
+				Type = Fame
+				FamePerHighTier = &<tier_tables.rules>/StandardFamePerTier
+				FamePerTierMultiplier = 2
+				MaxFamePerHighTier = &<tier_tables.rules>/StandardMaxFamePerTier
+			}
+            {
+                Type = Reputation
+                ReputationPerHighTier = &<tier_tables.rules>/StandardReputationPerTier
+                ReputationPerTierMultiplier = 2
+            }
+		]
+	}
+]

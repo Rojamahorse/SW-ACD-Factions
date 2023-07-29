@@ -1,0 +1,17 @@
+ID = SW.ftl_beacon_SW.Galactic_Empire
+Type = Landmark
+DescriptionKey = "Doodads/FTLBeacon"
+CategoryKey = "Doodads/Ftl"
+Icon
+{
+	Texture
+	{
+		File = "Galactic_Empire FTL Beacon.ship.png"
+		Resize = [128, 128]
+		MipLevels = max
+		SampleMode = Linear
+	}
+}
+Allegiance = -1 // Neutral
+Ship = "Galactic_Empire FTL Beacon.ship.png"
+IsFtlPoint = true
