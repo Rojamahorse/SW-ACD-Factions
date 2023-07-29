@@ -1,0 +1,17 @@
+ID = SW.ftl_beacon_SW.CIS
+Type = Landmark
+DescriptionKey = "Doodads/FTLBeacon"
+CategoryKey = "Doodads/Ftl"
+Icon
+{
+	Texture
+	{
+		File = "CIS FTL Beacon.ship.png"
+		Resize = [128, 128]
+		MipLevels = max
+		SampleMode = Linear
+	}
+}
+Allegiance = -1 // Neutral
+Ship = "CIS FTL Beacon.ship.png"
+IsFtlPoint = true

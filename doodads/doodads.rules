@@ -1,6 +1,7 @@
 Doodads
 [
 	//FTL
+	&<ftl/doodad_ftl_beacon_SW.CIS.rules>
 	&<ftl/doodad_ftl_beacon_SW.Galactic_Empire.rules>
 	&<ftl/doodad_ftl_beacon_SW.Republic.rules>
 

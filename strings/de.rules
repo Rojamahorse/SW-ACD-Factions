@@ -8,9 +8,9 @@ Stats
 
 Factions
 {
+	CIS = "Konföderation unabhängiger Systeme"
 	Galactic_Empire = "Galaktisches Imperium"
 	Republic = "Galaktische Republik"
-	monolith = "Konföderation unabhängiger Systeme"
 	fringe = "Rebellenallianz"
 	imperium = "Hutten-Clan"
 	cabal = "Mandalorianer"
@@ -26,6 +26,20 @@ Resource
 
 Lore
 {
+	CIS
+	{
+		Title = "Confederacy of Independent Systems"
+		
+		Lore1 = "Freedom."
+		
+		Lore2 = "Capitalism."
+
+		Lore3 = "Guns."
+
+		Lore4 = "Capital Punishment."
+
+		Lore5 = "Murica."
+	}
 	Galactic_Empire
 	{
 		Title = "Galactic Empire"

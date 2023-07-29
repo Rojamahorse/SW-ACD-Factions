@@ -1,0 +1,30 @@
+ID = CIS
+TitleKey = "Lore/CIS/Title"
+TabNameKey = "Codex/Lore"
+Entries
+[
+	{
+		TextKey = "Lore/CIS/Lore1"
+		Image
+		{
+			Texture
+			{
+				File = "CIS.png"
+				SampleMode = Linear
+				MipLevels = max
+			}
+		}
+	}
+	{
+		TextKey = "Lore/CIS/Lore2"
+	}
+	{
+		TextKey = "Lore/CIS/Lore3"
+	}
+	{
+		TextKey = "Lore/CIS/Lore4"
+	}
+	{
+		TextKey = "Lore/CIS/Lore5"
+	}
+]

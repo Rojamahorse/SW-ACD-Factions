@@ -1,5 +1,22 @@
 Factions
 [
+	// Confederacy of Independent Systems
+	{
+		ID = SW.CIS
+		NameKey = "Factions/CIS"
+		Icon
+		{
+			Texture
+			{
+				File = "CIS.png"
+				SampleMode = Linear
+				MipLevels = max
+			}
+		}
+		BorderColor = [255, 255, 255]
+		MilitaryPlayerIndex = 700
+		CivilianPlayerIndex = 701
+	}	
 	// Galactic_Empire
 	{
 		ID = SW.Galactic_Empire

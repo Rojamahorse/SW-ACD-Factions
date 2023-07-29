@@ -3,6 +3,14 @@ Factions
 	Factions
 	[
 		{
+			FactionID = SW.CIS
+			TerritoryRatio = 100%
+			AvoidOtherFactionsStrength = .3
+			AvoidEdgeStrength = .2
+			FactionStrengthExponent = 4
+			MinFactionStrength = 5%
+		}
+		{
 			FactionID = SW.Galactic_Empire
 			TerritoryRatio = 100%
 			AvoidOtherFactionsStrength = .3
@@ -30,6 +38,11 @@ FactionTiers
 {
 	Factions
 	[
+		{
+			FactionID = SW.CIS
+			TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
+			TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
+		}
 		{
 			FactionID = SW.Galactic_Empire
 			TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]

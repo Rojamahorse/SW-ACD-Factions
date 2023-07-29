@@ -20,34 +20,34 @@ Actions
         ManyToAdd = &<factions/factions.rules>/Factions
 	}
 
-	//Generate the Galactic Empire Faction and Republic in career mode
+	//Generate the CIS, Galactic Empire Faction, and Republic in career mode
 	{
 		Action = AddMany
 		AddTo = "<galaxy_map/map_generators/base_galaxy.rules>/Factions/Factions"
         ManyToAdd = &<galaxy_map/map_generators/base_galaxy.rules>/Factions/Factions
 	}
 
-	//Generate the Galactic Empire and Republic Faction in career mode
+	//Generate the CIS, Galactic Empire and Republic Faction in career mode
 	{
 		Action = AddMany
 		AddTo = "<galaxy_map/map_generators/base_galaxy.rules>/FactionTiers/Factions"
         ManyToAdd = &<galaxy_map/map_generators/base_galaxy.rules>/FactionTiers/Factions
 	}
 	
-	// Add Galactic Empire and Republic codex lore
+	// Add CIS, Galactic Empire and Republic codex lore
 	{
 		Action = AddMany
 		AddTo = "<codex/lore/lore.rules>/CodexPages"
         ManyToAdd = &<codex/lore.rules>/CodexPages
 	}
-	//Generate Mission related to Galactic Empire and Republic
+	//Generate Mission related to CIS, Galactic Empire and Republic
 	{
 		Action = AddMany
 		AddTo = "<modes/career/sysgen_sim_global_missions.rules>/SubSpawners"
         ManyToAdd = &<career/sysgen_sim_global_missions.rules>/SubSpawners
 	}
 	
-	//Galactic Empire and Republic Faction Ship
+	//CIS, Galactic Empire and Republic Faction Ship
 	{
 		Action = AddMany
 		AddTo = "<builtin_ships/builtins.rules>/Ships"
@@ -61,11 +61,17 @@ Actions
         ManyToAdd = &<doodads/doodads.rules>/Doodads
 	}
 
-	//Galactic Empire and Republic Faction Trade Ship
+	//CIS, Galactic Empire and Republic Faction Trade Ship
 	{
 		Action = AddBase
 		AddBaseTo = "<modes/career/career.rules>/TradeRoutes/TradeShips"
 		BaseToAdd = 	{
+					 	CIS_1  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Tiny Empire";     Faction=SW.CIS;   TierRange=[1, 3];   StasisSpeed=40; StasisTradeTime=35;}
+					 	CIS_2  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Small Empire";     Faction=SW.CIS;   TierRange=[1, 5];   StasisSpeed=55; StasisTradeTime=48;}
+						CIS_3  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Medium Empire";     Faction=SW.CIS;   TierRange=[1, 7];   StasisSpeed=60; StasisTradeTime=55;}
+						CIS_4  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Large Empire";     Faction=SW.CIS;   TierRange=[1, 10];   StasisSpeed=65; StasisTradeTime=60;}
+						CIS_5  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Huge Empire";     Faction=SW.CIS;   TierRange=[1, 18];   StasisSpeed=70; StasisTradeTime=65;}
+						CIS_6  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Extra Huge Emp";     Faction=SW.CIS;   TierRange=[10, 18];   StasisSpeed=75; StasisTradeTime=70;}
 					 	Galactic_Empire_1  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Tiny Empire";     Faction=SW.Galactic_Empire;   TierRange=[1, 3];   StasisSpeed=40; StasisTradeTime=35;}
 					 	Galactic_Empire_2  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Small Empire";     Faction=SW.Galactic_Empire;   TierRange=[1, 5];   StasisSpeed=55; StasisTradeTime=48;}
 						Galactic_Empire_3  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Medium Empire";     Faction=SW.Galactic_Empire;   TierRange=[1, 7];   StasisSpeed=60; StasisTradeTime=55;}
@@ -89,12 +95,14 @@ Actions
 	}
 
 	//StarWarsConversion main screen ship
+	/*
 	{
 		Action = Replace
 		Replace = "<gui/menus.rules>/LogoShip"
 		With = "logo.ship.png"
 	}
-	
+	*/
+
 	//Add Starter Ships.. Why not Working??!
 	{
 		
@@ -109,7 +117,7 @@ Actions
 	{
 		Action = Replace
 		Replace = "<galaxy_map/map_generators/base_galaxy.rules>/StartingNodePicker/CandidatesClosestToFactions"
-        With = [1, [monolith, cabal, SW.Galactic_Empire]]
+        With = [1, [monolith, cabal, SW.CIS, SW.Galactic_Empire]]
 	}
 
 	
@@ -118,6 +126,23 @@ Actions
 		Replace = "<./Data/factions/factions.rules>/Factions"
 		With =
 		[
+			// CIS
+			{
+				ID = SW.CIS
+				NameKey = "Factions/CIS"
+				Icon
+				{
+					Texture
+					{
+						File = "CIS.png"
+						SampleMode = Linear
+						MipLevels = max
+					}
+				}
+				BorderColor = [255, 255, 255]
+				MilitaryPlayerIndex = 700
+				CivilianPlayerIndex = 701
+			}
 			// Galactic_Empire
 			{
 				ID = SW.Galactic_Empire
