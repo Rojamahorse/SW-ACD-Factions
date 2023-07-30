@@ -13,7 +13,7 @@ Factions
 				MipLevels = max
 			}
 		}
-		BorderColor = [255, 255, 255]
+		BorderColor = [0, 0, 255]
 		MilitaryPlayerIndex = 700
 		CivilianPlayerIndex = 701
 	}	
@@ -34,6 +34,25 @@ Factions
 		MilitaryPlayerIndex = 500
 		CivilianPlayerIndex = 501
 	}
+/*
+	// Rebel_Alliance
+	{
+		ID = SW.Rebel_Alliance
+		NameKey = "Factions/Rebel_Alliance"
+		Icon
+		{
+			Texture
+			{
+				File = "Rebel_Alliance.png"
+				SampleMode = Linear
+				MipLevels = max
+			}
+		}
+		BorderColor = [255, 165, 0]
+		MilitaryPlayerIndex = 500
+		CivilianPlayerIndex = 501
+	}
+*/
 	// Republic
 	{
 		ID = SW.Republic
@@ -47,7 +66,7 @@ Factions
 				MipLevels = max
 			}
 		}
-		BorderColor = [0, 31, 255]
+		BorderColor = [255, 0, 0]
 		MilitaryPlayerIndex = 600
 		CivilianPlayerIndex = 601
 	}

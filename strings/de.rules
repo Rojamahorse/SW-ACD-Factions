@@ -11,6 +11,7 @@ Factions
 	CIS = "Konföderation unabhängiger Systeme"
 	Galactic_Empire = "Galaktisches Imperium"
 	Republic = "Galaktische Republik"
+	monolith = "Black Sun"
 	fringe = "Rebellenallianz"
 	imperium = "Hutten-Clan"
 	cabal = "Mandalorianer"

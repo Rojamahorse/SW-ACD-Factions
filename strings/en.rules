@@ -10,8 +10,9 @@ Factions
 {
 	CIS = "Confederacy of Independent Systems"
 	Galactic_Empire = "Galactic Empire"
+//	Rebel_Alliance = "Rebel Alliance"
 	Republic = "Galactic Republic"
-//	monolith = "Confederacy of Independent Systems"
+	monolith = "Black Sun"
 	fringe = "Rebel Alliance"
 	imperium = "Hutt Clan"
 	cabal = "Mandalorians"
@@ -31,15 +32,15 @@ Lore
 	{
 		Title = "Confederacy of Independent Systems"
 		
-		Lore1 = "Freedom."
+		Lore1 = "The Confederacy of Independent Systems, commonly known as the CIS, was a separatist movement and political entity that played a central role during the Clone Wars, a galaxy-wide conflict in the Star Wars saga."
 		
-		Lore2 = "Capitalism."
+		Lore2 = "Composed of various star systems and corporations, the CIS sought independence from the Galactic Republic, believing that the Republic's central authority was corrupt and oppressive. The movement was led by influential figures, most notably Count Dooku, a former Jedi Master who became the Sith Lord Darth Tyranus, and the enigmatic artificial intelligence known as General Grievous."
 
-		Lore3 = "Guns."
+		Lore3 = "Formation and Philosophy... The origins of the CIS can be traced back to disillusionment with the Galactic Republic's bureaucracy and perceived favoritism towards the Core Worlds. Disgruntled by the Republic's inability to address their grievances, numerous star systems and corporations declared their independence, forming the Confederacy of Independent Systems. Their central philosophy revolved around the belief in decentralized governance, where individual systems could govern themselves and collaborate through mutual agreements for trade, defense, and other matters."
 
-		Lore4 = "Capital Punishment."
+		Lore4 = "Leadership and Influence... Count Dooku, a charismatic and manipulative figure, became the public face of the CIS. Under his guidance, the movement gained momentum, attracting disenchanted members of the Republic, disgruntled factions, and corporate interests. Behind the scenes, however, the dark hand of Darth Sidious, the Sith Lord ruling the galaxy as Emperor Palpatine, orchestrated events to escalate tensions between the Republic and the CIS, ultimately engineering the Clone Wars as part of his grand plan for Sith domination."
 
-		Lore5 = "Murica."
+		Lore5 = "The Confederacy of Independent Systems was a complex and influential faction in the Star Wars universe, driven by a desire for independence from the Galactic Republic. While the CIS sought to break free from the Republic's perceived corruption, it unwittingly became a pawn in the Sith Lord's grand scheme to establish the tyrannical rule of the Galactic Empire. The Clone Wars and the rise of the Empire forever changed the galaxy, leaving a lasting impact on the lives of countless beings and civilizations."
 	}
 	Galactic_Empire
 	{

@@ -1,0 +1,30 @@
+ID = Rebel_Alliance
+TitleKey = "Lore/Rebel_Alliance/Title"
+TabNameKey = "Codex/Lore"
+Entries
+[
+	{
+		TextKey = "Lore/Rebel_Alliance/Lore1"
+		Image
+		{
+			Texture
+			{
+				File = "Rebel_Alliance.png"
+				SampleMode = Linear
+				MipLevels = max
+			}
+		}
+	}
+	{
+		TextKey = "Lore/Rebel_Alliance/Lore2"
+	}
+	{
+		TextKey = "Lore/Rebel_Alliance/Lore3"
+	}
+	{
+		TextKey = "Lore/Rebel_Alliance/Lore4"
+	}
+	{
+		TextKey = "Lore/Rebel_Alliance/Lore5"
+	}
+]

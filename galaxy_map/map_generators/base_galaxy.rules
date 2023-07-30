@@ -48,6 +48,13 @@ FactionTiers
 			TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
 			TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
 		}
+/*
+		{
+			FactionID = SW.Rebel_Alliance
+			TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
+			TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
+		}
+*/
 		{
 			FactionID = SW.Republic
 			TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]

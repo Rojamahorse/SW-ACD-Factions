@@ -2,5 +2,6 @@ CodexPages
 [
 	&<lore_CIS/lore_CIS.rules>
 	&<lore_Galactic_Empire/lore_Galactic_Empire.rules>
+//	&<lore_Rebel_Alliance/lore_Rebel_Alliance.rules>
 	&<lore_Republic/lore_Republic.rules>
 ]

@@ -1,0 +1,17 @@
+Faction = SW.Rebel_Alliance
+Tags = [station]
+
+Ships
+[
+	// Civilian stations
+	:~{ File="Small SW.Rebel_Alliance Trade Station.ship.png"; Tier=4;  Tags : ~/Tags [trade_station]; StasisIcon="Small SW.Rebel_Alliance Trade Station.png" }
+	:~{ File="Med SW.Rebel_Alliance Trade Station.ship.png";   Tier=8; Tags : ~/Tags [trade_station]; StasisIcon="Med SW.Rebel_Alliance Trade Station.png" }
+	:~{ File="Large SW.Rebel_Alliance Trade Station.ship.png"; Tier=14; Tags : ~/Tags [trade_station]; StasisIcon="Large SW.Rebel_Alliance Trade Station.png" }
+	:~{ File="Huge SW.Rebel_Alliance Trade Station.ship.png"; Tier=16; Tags : ~/Tags [trade_station]; StasisIcon="Huge SW.Rebel_Alliance Trade Station.png" }
+
+	// Military stations
+	:~{ File="Small SW.Rebel_Alliance Arms Depot.ship.png";     Tier=6;  SpawnTier=3;  Tags : ~/Tags [military_station]; StasisIcon="Small SW.Rebel_Alliance Arms Depot.png";  FlightDirection=UpRight }
+	:~{ File="Med SW.Rebel_Alliance Arms Depot.ship.png";    Tier=9;  SpawnTier=7;  Tags : ~/Tags [military_station]; StasisIcon="Med SW.Rebel_Alliance Arms Depot.png"; FlightDirection=UpRight }
+	:~{ File="Large SW.Rebel_Alliance Arms Depot.ship.png";      Tier=12; SpawnTier=11; Tags : ~/Tags [military_station]; StasisIcon="Large SW.Rebel_Alliance Arms Depot.png";   FlightDirection=UpRight }
+	:~{ File="Huge SW.Rebel_Alliance Arms Depot.ship.png";    Tier=16; SpawnTier=15; Tags : ~/Tags [military_station]; StasisIcon="Huge SW.Rebel_Alliance Arms Depot.png"; FlightDirection=UpRight }
+]

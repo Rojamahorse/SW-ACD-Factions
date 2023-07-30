@@ -7,12 +7,12 @@ Author = "Rojamahorse"
 Logo = "logo.png"
 StringsFolder = "strings"
 
-Description = "Adds Galactic Empire, Galactic Republic, Mandalorians, Hutts, Rebel Alliance and Confederacy of Independent Systems to the Game"
+Description = "Adds Galactic Empire, Rebel Alliance, Galactic Republic, Mandalorians, Hutts, Rebel Alliance and Confederacy of Independent Systems to the Game"
 
 Actions
 [
 	// FACTIONS
-	// Add Galactic Empire and Republic Faction
+	// Add CIS, Galactic Empire, Rebel Alliance, and Republic Factions
 	
 	{
 		Action = AddMany
@@ -20,34 +20,34 @@ Actions
         ManyToAdd = &<factions/factions.rules>/Factions
 	}
 
-	//Generate the CIS, Galactic Empire Faction, and Republic in career mode
+	//Generate the CIS, Galactic Empire, Rebel Alliance, and Republic Factions in career mode
 	{
 		Action = AddMany
 		AddTo = "<galaxy_map/map_generators/base_galaxy.rules>/Factions/Factions"
         ManyToAdd = &<galaxy_map/map_generators/base_galaxy.rules>/Factions/Factions
 	}
 
-	//Generate the CIS, Galactic Empire and Republic Faction in career mode
+	//Generate the CIS, Galactic Empire, Rebel Alliance, and Republic Faction in career mode
 	{
 		Action = AddMany
 		AddTo = "<galaxy_map/map_generators/base_galaxy.rules>/FactionTiers/Factions"
         ManyToAdd = &<galaxy_map/map_generators/base_galaxy.rules>/FactionTiers/Factions
 	}
 	
-	// Add CIS, Galactic Empire and Republic codex lore
+	// Add CIS, Galactic Empire, Rebel Alliance, and Republic codex lore
 	{
 		Action = AddMany
 		AddTo = "<codex/lore/lore.rules>/CodexPages"
         ManyToAdd = &<codex/lore.rules>/CodexPages
 	}
-	//Generate Mission related to CIS, Galactic Empire and Republic
+	//Generate Mission related to CIS, Galactic Empire, Rebel Alliance, and Republic
 	{
 		Action = AddMany
 		AddTo = "<modes/career/sysgen_sim_global_missions.rules>/SubSpawners"
         ManyToAdd = &<career/sysgen_sim_global_missions.rules>/SubSpawners
 	}
 	
-	//CIS, Galactic Empire and Republic Faction Ship
+	//CIS, Galactic Empire, Rebel Alliance, and Republic Faction Ships
 	{
 		Action = AddMany
 		AddTo = "<builtin_ships/builtins.rules>/Ships"
@@ -61,7 +61,7 @@ Actions
         ManyToAdd = &<doodads/doodads.rules>/Doodads
 	}
 
-	//CIS, Galactic Empire and Republic Faction Trade Ship
+	//CIS, Galactic Empire, Rebel Alliance, and Republic Faction Trade Ship
 	{
 		Action = AddBase
 		AddBaseTo = "<modes/career/career.rules>/TradeRoutes/TradeShips"
@@ -87,14 +87,14 @@ Actions
 					}
 	}
 	
-	//Add custom roof decals related to Galactic Empire Faction in symbols category
+	//Add custom roof decals related to CIS, Galactic Empire, Rebel Alliance, and Republic Factions in symbols category
 	{
 		Action = Add
 		AddTo = "<roof_decals/roof_decals.rules>/Groups/1/Folders"
 		ToAdd = "roof_decals"
 	}
 
-	//StarWarsConversion main screen ship
+	//StarWars A Cosmos Divided main screen ship
 	/*
 	{
 		Action = Replace
@@ -103,7 +103,7 @@ Actions
 	}
 	*/
 
-	//Add Starter Ships.. Why not Working??!
+	//Add Starter Ships.. Currently Not Operational
 	{
 		
 		Action = AddMany
@@ -139,10 +139,29 @@ Actions
 						MipLevels = max
 					}
 				}
-				BorderColor = [255, 255, 255]
+				BorderColor = [0, 0, 255]
 				MilitaryPlayerIndex = 700
 				CivilianPlayerIndex = 701
 			}
+/*
+			// Rebel_Alliance
+			{
+				ID = SW.Rebel_Alliance
+				NameKey = "Factions/Rebel_Alliance"
+				Icon
+				{
+					Texture
+					{
+						File = "Rebel_Alliance.png"
+						SampleMode = Linear
+						MipLevels = max
+					}
+				}
+				BorderColor = [255, 165, 0]
+				MilitaryPlayerIndex = 500
+				CivilianPlayerIndex = 501
+			}
+*/
 			// Galactic_Empire
 			{
 				ID = SW.Galactic_Empire
@@ -173,7 +192,7 @@ Actions
 						MipLevels = max
 					}
 				}
-				BorderColor = [0, 31, 255]
+				BorderColor = [255, 0, 0]
 				MilitaryPlayerIndex = 600
 				CivilianPlayerIndex = 601
 			}

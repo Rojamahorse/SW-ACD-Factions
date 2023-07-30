@@ -1,0 +1,8 @@
+Ships :
+	<Combat/builtins_SW.Rebel_Alliance_combat.rules>/Ships
+	<Defense/builtins_SW.Rebel_Alliance_defense.rules>/Ships
+	<Civilian/builtins_SW.Rebel_Alliance_civilian.rules>/Ships
+	<Stations/builtins_SW.Rebel_Alliance_stations.rules>/Ships
+[
+
+]

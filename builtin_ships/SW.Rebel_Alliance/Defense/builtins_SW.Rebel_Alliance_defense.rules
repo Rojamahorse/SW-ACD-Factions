@@ -1,0 +1,12 @@
+Faction = SW.Rebel_Alliance
+IDPrefix = "SW.Rebel_Alliance"
+Tags = [defense]
+
+Ships
+[
+	// Platforms
+	:~{ File="Small Laser Platform5.ship.png";     Tier=2; Difficulty=2; }
+	:~{ File="Small Disruptor Platform5.ship.png"; Tier=2; Difficulty=2; }
+	:~{ File="Small EMP Platform5.ship.png";       Tier=2; Difficulty=2; }
+	:~{ File="Small Ion Platform5.ship.png";       Tier=2; Difficulty=2; }
+]
