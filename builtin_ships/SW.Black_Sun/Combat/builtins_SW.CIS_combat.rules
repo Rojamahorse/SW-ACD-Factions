@@ -1,0 +1,30 @@
+Faction = SW.CIS
+Tags = [combat]
+
+Ships
+[
+
+	:~{ File="P-38 Rogue-Class (Magnaguard) Starfighter.ship.png";                     Tier=1;  Difficulty=1; }
+	:~{ File="P-38 Magnaguard Starfighter R.ship.png";                   Tier=1;  Difficulty=1; }
+	:~{ File="P-38 Magnaguard Starfighter Y.ship.png";                   Tier=2;  Difficulty=2; }
+	:~{ File="Droid Tri-Fighter.ship.png";                Tier=3;  Difficulty=1; }
+	:~{ File="Vulture-Class Droid Starfighter.ship.png";                 Tier=1;  Difficulty=1; }
+	:~{ File="Recusant-Class Light Destroyer Style 2.ship.png";                Tier=3;  Difficulty=1; }
+	:~{ File="Hardcell-Class Interstellar Transport (Armed).ship.png";                Tier=3;  Difficulty=1; }
+	:~{ File="Gozanti-Class Cruiser (CIS).ship.png";          Tier=5;  Difficulty=1; }
+	:~{ File="Hyena-Class Droid Bomber.ship.png";              Tier=2;  Difficulty=2; }
+	:~{ File="Hardcell-Class Interstellar Transport (Combat Refit).ship.png";                Tier=4;  Difficulty=2; }
+	:~{ File="Recusant-Class Light Destroyer.ship.png";                  Tier=4;  Difficulty=1;}
+	:~{ File="Recusant-Class Light Destroyer 2.ship.png";       Tier=5;  Difficulty=2; }
+	:~{ File="Subjugator-Class Heavy Cruiser.ship.png";                Tier=9;  Difficulty=2; }
+	:~{ File="HMP Droid Gunship.ship.png";                Tier=11;  Difficulty=2; }
+	:~{ File="Providence-Class Dreadnought.ship.png";                    Tier=6;  Difficulty=2; }
+	:~{ File="Invisible Hand.ship.png";               Tier=7;  Difficulty=1; }
+	:~{ File="Providence-Class Destroyer.ship.png";               Tier=8;  Difficulty=1; }
+	:~{ File="Umbaran Support Ship.ship.png";           Tier=9;  Difficulty=1; }
+	:~{ File="Banking Clan Munificent-Class Star Frigate.ship.png";              Tier=10;  Difficulty=2; }
+	:~{ File="Diamond-Class Cruiser.ship.png";                Tier=11;  Difficulty=2; }
+	:~{ File="Lukrehulk-Class Battlecruiser.ship.png";                  Tier=12;  Difficulty=1; }
+	:~{ File="Lucrehulk-Class Battlecruiser.ship.png";               Tier=13;  Difficulty=2; }
+	:~{ File="LukrehulkWP24.ship.png";                 Tier=14;  Difficulty=2; }
+]

@@ -117,7 +117,7 @@ Actions
 	{
 		Action = Replace
 		Replace = "<galaxy_map/map_generators/base_galaxy.rules>/StartingNodePicker/CandidatesClosestToFactions"
-        With = [1, [monolith, cabal, SW.CIS, SW.Galactic_Empire]]
+        With = [1, [monolith, SW.Republic, SW.CIS, SW.Galactic_Empire]]
 	}
 
 	

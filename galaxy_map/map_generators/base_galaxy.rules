@@ -8,7 +8,7 @@ Factions
 			AvoidOtherFactionsStrength = .3
 			AvoidEdgeStrength = .2
 			FactionStrengthExponent = 4
-			MinFactionStrength = 5%
+			MinFactionStrength = 20%
 		}
 		{
 			FactionID = SW.Galactic_Empire
@@ -16,22 +16,32 @@ Factions
 			AvoidOtherFactionsStrength = .3
 			AvoidEdgeStrength = .2
 			FactionStrengthExponent = 4
-			MinFactionStrength = 5%
+			MinFactionStrength = 30%
 		}
+/*
 		{
-			FactionID = SW.Republic
+			FactionID = SW.Rebel_Alliance
 			TerritoryRatio = 100%
 			AvoidOtherFactionsStrength = .3
 			AvoidEdgeStrength = .2
 			FactionStrengthExponent = 4
 			MinFactionStrength = 5%
 		}
+*/
+		{
+			FactionID = SW.Republic
+			TerritoryRatio = 100%
+			AvoidOtherFactionsStrength = .3
+			AvoidEdgeStrength = .2
+			FactionStrengthExponent = 4
+			MinFactionStrength = 25%
+		}
 	]
 }
 
 
 
-MaxTier = 10
+MaxTier = 18
 TierSpread = 2
 
 FactionTiers
