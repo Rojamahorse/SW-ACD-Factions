@@ -1,0 +1,30 @@
+ID = Mandalorian
+TitleKey = "Lore/Mandalorian/Title"
+TabNameKey = "Codex/Lore"
+Entries
+[
+	{
+		TextKey = "Lore/Mandalorian/Lore1"
+		Image
+		{
+			Texture
+			{
+				File = "Mandalorian.png"
+				SampleMode = Linear
+				MipLevels = max
+			}
+		}
+	}
+	{
+		TextKey = "Lore/Mandalorian/Lore2"
+	}
+	{
+		TextKey = "Lore/Mandalorian/Lore3"
+	}
+	{
+		TextKey = "Lore/Mandalorian/Lore4"
+	}
+	{
+		TextKey = "Lore/Mandalorian/Lore5"
+	}
+]

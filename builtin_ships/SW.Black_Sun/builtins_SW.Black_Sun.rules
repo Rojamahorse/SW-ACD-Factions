@@ -1,8 +1,8 @@
 Ships :
-	<Combat/builtins_SW.CIS_combat.rules>/Ships
-	<Defense/builtins_SW.CIS_defense.rules>/Ships
-	<Civilian/builtins_SW.CIS_civilian.rules>/Ships
-	<Stations/builtins_SW.CIS_stations.rules>/Ships
+	<Combat/builtins_SW.Black_Sun_combat.rules>/Ships
+	<Defense/builtins_SW.Black_Sun_defense.rules>/Ships
+	<Civilian/builtins_SW.Black_Sun_civilian.rules>/Ships
+	<Stations/builtins_SW.Black_Sun_stations.rules>/Ships
 [
 
 ]

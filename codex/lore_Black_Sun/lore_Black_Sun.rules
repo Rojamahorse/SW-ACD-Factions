@@ -1,0 +1,30 @@
+ID = Black_Sun
+TitleKey = "Lore/Black_Sun/Title"
+TabNameKey = "Codex/Lore"
+Entries
+[
+	{
+		TextKey = "Lore/Black_Sun/Lore1"
+		Image
+		{
+			Texture
+			{
+				File = "Black_Sun.png"
+				SampleMode = Linear
+				MipLevels = max
+			}
+		}
+	}
+	{
+		TextKey = "Lore/Black_Sun/Lore2"
+	}
+	{
+		TextKey = "Lore/Black_Sun/Lore3"
+	}
+	{
+		TextKey = "Lore/Black_Sun/Lore4"
+	}
+	{
+		TextKey = "Lore/Black_Sun/Lore5"
+	}
+]

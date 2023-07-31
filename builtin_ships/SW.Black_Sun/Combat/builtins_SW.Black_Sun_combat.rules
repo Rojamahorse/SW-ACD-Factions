@@ -1,4 +1,4 @@
-Faction = SW.Rebel_Alliance
+Faction = SW.Black_Sun
 Tags = [combat]
 
 Ships
@@ -100,4 +100,3 @@ Ships
 	// Flagships
 //	:~{ File="TBD.ship.png";    Tier=18;  Difficulty=2; }
 ]
-

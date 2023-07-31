@@ -8,6 +8,7 @@ Stats
 
 Factions
 {
+//	Black_Sun = "Black Sun Collective"
 	CIS = "Confederacy of Independent Systems"
 	Galactic_Empire = "Galactic Empire"
 //	Rebel_Alliance = "Rebel Alliance"
@@ -28,47 +29,80 @@ Resource
 
 Lore
 {
+
+/*
+	Black_Sun
+	{
+	Title = "Black Sun Collective"
+
+	Lore1 = "The Black Sun Collective is a notorious and clandestine criminal organization that operates in the shadows, engaging in various illicit activities and exerting significant influence over the criminal underworld."
+
+	Lore2 = "Originating as a small spice smuggling ring, the Black Sun grew into a sprawling criminal empire under the leadership of influential crime lords such as Prince Xizor. Its rise to power was marked by ruthless ambition and a willingness to eliminate rivals and competitors through intimidation, coercion, and assassination."
+
+	Lore3 = "The Black Sun Collective operates in multiple sectors of the galaxy, including the infamous Corellian Sector and the lawless Outer Rim Territories. With a vast network of operatives and informants, Black Sun maintains control over a wide range of criminal activities, including spice smuggling, illegal arms trade, piracy, and even the infiltration of legitimate businesses for money laundering and extortion."
+
+	Lore4 = "One of the Black Sun's most dangerous assets is its network of skilled and deadly mercenaries, assassins, and enforcers. The organization recruits individuals from various species and backgrounds, ensuring a diverse and highly capable workforce to carry out its criminal enterprises."
+
+	Lore5 = "Despite its notoriety, the Black Sun operates with a high degree of secrecy and discretion, making it challenging for law enforcement and other factions to dismantle its operations completely. This elusive nature has enabled the Black Sun Collective to survive and thrive for generations, evading justice and becoming a powerful force in the galaxy's criminal underworld."
+	}
+*/
 	CIS
 	{
 		Title = "Confederacy of Independent Systems"
+
+		Lore1 = "The Confederacy of Independent Systems, also known as the Separatists, was a galactic faction formed during the tumultuous era of the Clone Wars, advocating for the autonomy of star systems and seeking to break away from the Galactic Republic's central authority."
 		
-		Lore1 = "The Confederacy of Independent Systems, commonly known as the CIS, was a separatist movement and political entity that played a central role during the Clone Wars, a galaxy-wide conflict in the Star Wars saga."
+		Lore2 = "Originally conceived as a political movement to address grievances against the perceived corruption and bureaucracy of the Republic, the Confederacy grew into a formidable faction under the leadership of Count Dooku, a former Jedi Master who became the Sith Lord Darth Tyranus. Secretly manipulated by Darth Sidious, the Sith Lord who would later become Emperor Palpatine, the Separatists served as a tool in the Sith's plan to destabilize the Republic and ultimately pave the way for the rise of the Galactic Empire."
 		
-		Lore2 = "Composed of various star systems and corporations, the CIS sought independence from the Galactic Republic, believing that the Republic's central authority was corrupt and oppressive. The movement was led by influential figures, most notably Count Dooku, a former Jedi Master who became the Sith Lord Darth Tyranus, and the enigmatic artificial intelligence known as General Grievous."
-
-		Lore3 = "Formation and Philosophy... The origins of the CIS can be traced back to disillusionment with the Galactic Republic's bureaucracy and perceived favoritism towards the Core Worlds. Disgruntled by the Republic's inability to address their grievances, numerous star systems and corporations declared their independence, forming the Confederacy of Independent Systems. Their central philosophy revolved around the belief in decentralized governance, where individual systems could govern themselves and collaborate through mutual agreements for trade, defense, and other matters."
-
-		Lore4 = "Leadership and Influence... Count Dooku, a charismatic and manipulative figure, became the public face of the CIS. Under his guidance, the movement gained momentum, attracting disenchanted members of the Republic, disgruntled factions, and corporate interests. Behind the scenes, however, the dark hand of Darth Sidious, the Sith Lord ruling the galaxy as Emperor Palpatine, orchestrated events to escalate tensions between the Republic and the CIS, ultimately engineering the Clone Wars as part of his grand plan for Sith domination."
-
-		Lore5 = "The Confederacy of Independent Systems was a complex and influential faction in the Star Wars universe, driven by a desire for independence from the Galactic Republic. While the CIS sought to break free from the Republic's perceived corruption, it unwittingly became a pawn in the Sith Lord's grand scheme to establish the tyrannical rule of the Galactic Empire. The Clone Wars and the rise of the Empire forever changed the galaxy, leaving a lasting impact on the lives of countless beings and civilizations."
+		Lore3 = "The Confederacy garnered support from various star systems and corporate entities disillusioned with the Republic's perceived inefficiency and favoritism towards the Core Worlds. Key members of the Separatist cause included powerful corporations such as the Trade Federation, the Techno Union, and the Banking Clan, which provided vast resources and battle droids for the Separatist military."
+		
+		Lore4 = "The backbone of the Separatist military force was its vast army of battle droids, including B1 battle droids (commonly known as battle droids) and B2 super battle droids. These droids allowed the Confederacy to field massive armies at a relatively low cost, challenging the Republic's clone army on various fronts."
+		
+		Lore5 = "Though the Confederacy claimed to champion the cause of autonomy and independence, their methods often involved ruthless tactics and military aggression. Countless worlds were embroiled in the conflict, leading to devastating battles and loss of life. The most iconic symbol of the Confederacy's military might was the formidable droid control ship, a massive vessel that coordinated the actions of its vast droid armies during large-scale engagements."
 	}
 	Galactic_Empire
 	{
 		Title = "Galactic Empire"
-		
-		Lore1 = "Order."
-		
-		Lore2 = "Willpower."
 
-		Lore3 = "Law."
+		Lore1 = "The Galactic Empire is an authoritarian regime that emerged from the ashes of the Clone Wars, consolidating power under the leadership of Emperor Palpatine with the promise of bringing stability and order to the galaxy."
 
-		Lore4 = "Justice."
+		Lore2 = "Formed on the foundation of the former Galactic Republic, the Empire was the brainchild of Emperor Palpatine, also known as Darth Sidious, who manipulated political events to orchestrate the Republic's transformation into a centralized and autocratic government. Palpatine exploited the fear and chaos of the Clone Wars to instill public support for his emergency powers, ultimately declaring himself Emperor and dissolving the Republic's democratic institutions."
 
-		Lore5 = "Empire."
+		Lore3 = "With its capital on the ecumenopolis of Coruscant, the Empire extended its reach across the galaxy, enforcing its rule through a vast military force known as the Imperial Army and Navy. Stormtroopers, the faceless soldiers clad in white armor, symbolized the might and uniformity of the Imperial military. The Empire's dark enforcers, the Sith Lords, including Darth Vader, were feared and wielded the power of the dark side of the Force."
+
+		Lore4 = "The Imperial fleet comprised an array of technologically advanced warships, including the colossal Imperial-class Star Destroyers and the moon-sized Death Star battle stations. These intimidating vessels were used to project Imperial power and maintain control over star systems through displays of overwhelming force."
+
+		Lore5 = "While the Empire presented itself as a force for order and progress, its rule was marked by oppression, fear, and the suppression of individual freedoms. Planets that dared to challenge Imperial authority faced brutal consequences, often leading to the use of superweapons or massed military forces to crush dissent. The infamous destruction of Alderaan, a peaceful world, served as a chilling example of the Empire's willingness to exert its dominance."
 	}
 	Republic
 	{
-		Title = "Republic"
+		Title = "Galactic Republic"
 		
-		Lore1 = "tbd"
+		Lore1 = "The Galactic Republic was a sprawling democratic institution that served as the governing body of the galaxy for over a thousand generations, promoting cooperation, diplomacy, and the rule of law among its member worlds."
 		
-		Lore2 = "tbd"
-
-		Lore3 = "tbd"
-
-		Lore4 = "tbd"
-
-		Lore5 = "tbd"
-
+		Lore2 = "Founded on the principles of freedom and representation, the Republic emerged from the aftermath of the conflicts between the Rakatan Infinite Empire and the ancient Je'daii Order. Over time, it grew to encompass thousands of star systems, each represented in the Galactic Senate on the capital world of Coruscant."
+		
+		Lore3 = "The Jedi Order played a crucial role in the Republic's governance, serving as peacekeepers and diplomats across the galaxy. As guardians of peace and justice, the Jedi Knights adhered to a strict code, striving to maintain balance and harmony in the Force. Throughout its history, the Republic faced various threats, from the Sith to external invasions, but its strength lay in its ability to unite diverse species and cultures under a common banner."
+		
+		Lore4 = "The Republic maintained a standing military known as the Grand Army of the Republic, composed of clone troopers created from the genetic template of the bounty hunter Jango Fett. These clones were bred and trained to be loyal soldiers, fiercely defending the Republic during the Clone Wars against the Separatist forces."
+		
+		Lore5 = "Despite its many strengths, the Galactic Republic was not without flaws. Bureaucracy and political maneuvering often hindered swift action, allowing discontent and disenchantment to fester in some regions. The outbreak of the Clone Wars, orchestrated by the Sith, put the Republic to the ultimate test, challenging its core values and exposing vulnerabilities that would eventually lead to the Republic's transformation into the Galactic Empire."
 	}
+/*
+	Rebel Alliance
+	{
+		Title = "Rebel Alliance"
+
+		Lore1 = "The Rebel Alliance is a courageous and determined faction that rose in resistance against the tyrannical rule of the Galactic Empire, striving for freedom and justice across the galaxy."
+		
+		Lore2 = "Formed secretly in the early years of the Galactic Empire's dominance, the Rebel Alliance was a collective effort of various rebel cells, planetary resistance groups, and disillusioned individuals from diverse backgrounds. The Alliance's initial roots can be traced back to the Clone Wars era, where opposition to the Republic's transformation into the Empire began to take shape. Their primary goal was to restore the democratic ideals of the Old Republic and overthrow the oppressive regime of Emperor Palpatine and his Sith followers."
+		
+		Lore3 = "Throughout its existence, the Rebel Alliance established hidden bases on remote planets, using them as hubs for recruitment, training, and planning strategic strikes against the Imperial forces. Their most notable base was located on the ice planet Hoth, which served as a temporary headquarters and a refuge for the Alliance High Command. The Alliance's leadership comprised charismatic figures such as Mon Mothma, Bail Organa, and Princess Leia Organa, who inspired hope and unity among their followers."
+		
+		Lore4 = "The Rebel Alliance's military forces, known as the Alliance Fleet, consisted of a diverse array of starfighters and capital ships. Their flagship, the Mon Calamari Star Cruiser named 'Home One,' symbolized the collaborative efforts of different species in the fight for freedom. The Alliance was renowned for its skilled pilots, including the legendary Luke Skywalker, who played a crucial role in the downfall of the Empire."
+		
+		Lore5 = "As a grassroots movement, the Rebel Alliance did not seek control over the galaxy; instead, they fought to dismantle the oppressive regime and restore freedom to the citizens of the galaxy. Their struggle was not without sacrifice, and many brave individuals gave their lives for the cause. Despite facing overwhelming odds, the Rebel Alliance's resilience and determination inspired countless others to join their ranks, proving that even in the darkest times, hope can ignite the flames of rebellion."
+	}
+*/
+	
 }

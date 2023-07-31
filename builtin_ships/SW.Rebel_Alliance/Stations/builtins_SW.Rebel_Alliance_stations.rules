@@ -11,5 +11,5 @@ Ships
 	// Military stations
 	:~{ File="Promise of the Rebel Alliance.ship.png";      Tier=6;  SpawnTier=3;  Tags : ~/Tags [military_station]; StasisIcon="Promise of the Rebel Alliance.png" }
 	:~{ File="Inconspicuous Rebel Wreckage.ship.png";     Tier=9;  SpawnTier=8;  Tags : ~/Tags [military_station]; StasisIcon="Inconspicuous Rebel Wreckage.png" }
-	:~{ File="Ghost Rebel hardware.ship.png";             Tier=12; SpawnTier=12; Tags : ~/Tags [military_station]; StasisIcon="Ghost Rebel hardware.png" }
+	:~{ File="Ghost Rebel Hardware.ship.png";             Tier=12; SpawnTier=12; Tags : ~/Tags [military_station]; StasisIcon="Ghost Rebel Hardware.png" }
 ]

@@ -4,16 +4,16 @@ Tags = [civilian]
 Ships
 [
 	// Trade ships
-	:~{ File="Cargo Transporter Tiny CIS.ship.png";  Tier=3;  Tags : ~/Tags [trade] }
-	:~{ File="Cargo Transporter Small CIS.ship.png";        Tier=5;  Tags : ~/Tags [trade] }
-	:~{ File="Cargo Transporter Medium CIS.ship.png";    Tier=7;  Tags : ~/Tags [trade] }
-	:~{ File="C-9979 Landing Craft (CIS).ship.png";    Tier=7;  Tags : ~/Tags [trade] }
-	:~{ File="C-9979 Landing Craft Normal.ship.png"; Tier=9;  Tags : ~/Tags [trade] }
-	:~{ File="Hardcell-Class Interstellar Transport.ship.png";    Tier=11;  Tags : ~/Tags [trade] }
-	:~{ File="Pelta-Class Frigate (CIS).ship.png";    Tier=7;  Tags : ~/Tags [trade] }
-	:~{ File="Eta-Class Supply Barge CIS.ship.png";    Tier=7;  Tags : ~/Tags [trade] }
-	:~{ File="Munificent-Class Star Frigate (InterGalactic Banking Clan).ship.png";    Tier=7;  Tags : ~/Tags [trade] }
-	:~{ File="Munificent-Class Star Frigate.ship.png";    Tier=7;  Tags : ~/Tags [trade] }
-	:~{ File="Munificent-Class Star Frigate 2.ship.png";    Tier=7;  Tags : ~/Tags [trade] }
-	:~{ File="Lukrehulk-Class Droid Control Ship.ship.png";     Tier=13;  Tags : ~/Tags [trade] }
+	:~{ File="Cargo Transporter Tiny CIS.ship.png";  									Tier=3;  Tags : ~/Tags [trade] }
+	:~{ File="Cargo Transporter Small CIS.ship.png";        							Tier=5;  Tags : ~/Tags [trade] }
+	:~{ File="Cargo Transporter Medium CIS.ship.png";    								Tier=7;  Tags : ~/Tags [trade] }
+	:~{ File="C-9979 Landing Craft (CIS).ship.png";   		 							Tier=7;  Tags : ~/Tags [trade] }
+	:~{ File="C-9979 Landing Craft Normal.ship.png"; 									Tier=9;  Tags : ~/Tags [trade] }
+	:~{ File="Hardcell-Class Interstellar Transport.ship.png";							Tier=11;  Tags : ~/Tags [trade] }
+	:~{ File="Pelta-Class Frigate (CIS).ship.png";    									Tier=7;  Tags : ~/Tags [trade] }
+	:~{ File="Eta-Class Supply Barge CIS.ship.png";    									Tier=7;  Tags : ~/Tags [trade] }
+	:~{ File="Munificent-Class Star Frigate (InterGalactic Banking Clan).ship.png";    	Tier=7;  Tags : ~/Tags [trade] }
+	:~{ File="Munificent-Class Star Frigate.ship.png";    								Tier=7;  Tags : ~/Tags [trade] }
+	:~{ File="Munificent-Class Star Frigate 2.ship.png";    							Tier=7;  Tags : ~/Tags [trade] }
+	:~{ File="Lukrehulk-Class Droid Control Ship.ship.png";     						Tier=13;  Tags : ~/Tags [trade] }
 ]

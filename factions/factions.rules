@@ -1,5 +1,24 @@
 Factions
 [
+/*
+	// Black_Sun
+	{
+		ID = SW.Black_Sun
+		NameKey = "Factions/Black_Sun"
+		Icon
+		{
+			Texture
+			{
+				File = "Black_Sun.png"
+				SampleMode = Linear
+				MipLevels = max
+			}
+		}
+		BorderColor = [255, 165, 0]
+		MilitaryPlayerIndex = 500
+		CivilianPlayerIndex = 501
+	}
+*/
 	// Confederacy of Independent Systems
 	{
 		ID = SW.CIS

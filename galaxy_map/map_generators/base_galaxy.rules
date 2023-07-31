@@ -2,12 +2,23 @@ Factions
 {
 	Factions
 	[
+
+/*
+		{
+			FactionID = SW.Black_Sun
+			TerritoryRatio = 100%
+			AvoidOtherFactionsStrength = .3
+			AvoidEdgeStrength = .2
+			FactionStrengthExponent = 2
+			MinFactionStrength = 20%
+		}
+*/
 		{
 			FactionID = SW.CIS
 			TerritoryRatio = 100%
 			AvoidOtherFactionsStrength = .3
 			AvoidEdgeStrength = .2
-			FactionStrengthExponent = 4
+			FactionStrengthExponent = 3
 			MinFactionStrength = 20%
 		}
 		{
@@ -16,7 +27,7 @@ Factions
 			AvoidOtherFactionsStrength = .3
 			AvoidEdgeStrength = .2
 			FactionStrengthExponent = 4
-			MinFactionStrength = 30%
+			MinFactionStrength = 25%
 		}
 /*
 		{
@@ -24,7 +35,7 @@ Factions
 			TerritoryRatio = 100%
 			AvoidOtherFactionsStrength = .3
 			AvoidEdgeStrength = .2
-			FactionStrengthExponent = 4
+			FactionStrengthExponent = 2
 			MinFactionStrength = 5%
 		}
 */
@@ -48,6 +59,13 @@ FactionTiers
 {
 	Factions
 	[
+/*
+		{
+			FactionID = SW.Black_Sun
+			TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
+			TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
+		}
+*/
 		{
 			FactionID = SW.CIS
 			TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
