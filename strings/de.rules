@@ -8,10 +8,11 @@ Stats
 
 Factions
 {
+	Black_Sun = "Black Sun Collective"
 	CIS = "Konföderation unabhängiger Systeme"
 	Galactic_Empire = "Galaktisches Imperium"
 	Republic = "Galaktische Republik"
-	monolith = "Black Sun"
+	monolith = "Black Sun Agent"
 	fringe = "Rebellenallianz"
 	imperium = "Hutten-Clan"
 	cabal = "Mandalorianer"
@@ -27,6 +28,20 @@ Resource
 
 Lore
 {
+	Black_Sun
+	{
+	Title = "Black Sun Collective"
+
+	Lore1 = "The Black Sun Collective is a notorious and clandestine criminal organization that operates in the shadows, engaging in various illicit activities and exerting significant influence over the criminal underworld."
+
+	Lore2 = "Originating as a small spice smuggling ring, the Black Sun grew into a sprawling criminal empire under the leadership of influential crime lords such as Prince Xizor. Its rise to power was marked by ruthless ambition and a willingness to eliminate rivals and competitors through intimidation, coercion, and assassination."
+
+	Lore3 = "The Black Sun Collective operates in multiple sectors of the galaxy, including the infamous Corellian Sector and the lawless Outer Rim Territories. With a vast network of operatives and informants, Black Sun maintains control over a wide range of criminal activities, including spice smuggling, illegal arms trade, piracy, and even the infiltration of legitimate businesses for money laundering and extortion."
+
+	Lore4 = "One of the Black Sun's most dangerous assets is its network of skilled and deadly mercenaries, assassins, and enforcers. The organization recruits individuals from various species and backgrounds, ensuring a diverse and highly capable workforce to carry out its criminal enterprises."
+
+	Lore5 = "Despite its notoriety, the Black Sun operates with a high degree of secrecy and discretion, making it challenging for law enforcement and other factions to dismantle its operations completely. This elusive nature has enabled the Black Sun Collective to survive and thrive for generations, evading justice and becoming a powerful force in the galaxy's criminal underworld."
+	}
 	CIS
 	{
 		Title = "Confederacy of Independent Systems"

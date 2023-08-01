@@ -8,12 +8,12 @@ Stats
 
 Factions
 {
-//	Black_Sun = "Black Sun Collective"
+	Black_Sun = "Black Sun Collective"
 	CIS = "Confederacy of Independent Systems"
 	Galactic_Empire = "Galactic Empire"
 //	Rebel_Alliance = "Rebel Alliance"
 	Republic = "Galactic Republic"
-	monolith = "Black Sun"
+	monolith = "Black Sun Agent"
 	fringe = "Rebel Alliance"
 	imperium = "Hutt Clan"
 	cabal = "Mandalorians"
@@ -29,8 +29,6 @@ Resource
 
 Lore
 {
-
-/*
 	Black_Sun
 	{
 	Title = "Black Sun Collective"
@@ -45,7 +43,6 @@ Lore
 
 	Lore5 = "Despite its notoriety, the Black Sun operates with a high degree of secrecy and discretion, making it challenging for law enforcement and other factions to dismantle its operations completely. This elusive nature has enabled the Black Sun Collective to survive and thrive for generations, evading justice and becoming a powerful force in the galaxy's criminal underworld."
 	}
-*/
 	CIS
 	{
 		Title = "Confederacy of Independent Systems"

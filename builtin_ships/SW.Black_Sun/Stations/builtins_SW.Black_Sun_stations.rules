@@ -4,14 +4,15 @@ Tags = [station]
 Ships
 [
 	// Civilian stations
-//	:~{ File="Small SW.CIS Trade Station.ship.png"; Tier=4;  Tags : ~/Tags [trade_station]; StasisIcon="Small SW.CIS Trade Station.png" }
-//	:~{ File="Med SW.CIS Trade Station.ship.png";   Tier=8; Tags : ~/Tags [trade_station]; StasisIcon="Med SW.CIS Trade Station.png" }
-//	:~{ File="Large SW.CIS Trade Station.ship.png"; Tier=14; Tags : ~/Tags [trade_station]; StasisIcon="Large SW.CIS Trade Station.png" }
-//	:~{ File="Huge SW.CIS Trade Station.ship.png"; Tier=16; Tags : ~/Tags [trade_station]; StasisIcon="Huge SW.CIS Trade Station.png" }
+	:~{ File="Small Black Sun Trade Station.ship.png"; Tier=4;  Tags : ~/Tags [trade_station];    StasisIcon="Small Black Sun Trade Station.png" }
+	:~{ File="Small Black Sun Trade Station II.ship.png"; Tier=4;  Tags : ~/Tags [trade_station];    StasisIcon="Small Black Sun Trade Station II.png" }
+	:~{ File="Med Black Sun Trade Station.ship.png";   Tier=10; Tags : ~/Tags [trade_station];    StasisIcon="Med Black Sun Trade Station.png" }
+	:~{ File="Large Black Sun Trade Station.ship.png"; Tier=16; Tags : ~/Tags [trade_station];    StasisIcon="Large Black Sun Trade Station.png" }
 
 	// Military stations
-//	:~{ File="Small SW.CIS Arms Depot.ship.png";     Tier=6;  SpawnTier=3;  Tags : ~/Tags [military_station]; StasisIcon="Small SW.CIS Arms Depot.png";  FlightDirection=UpRight }
-//	:~{ File="Med SW.CIS Arms Depot.ship.png";    Tier=9;  SpawnTier=7;  Tags : ~/Tags [military_station]; StasisIcon="Med SW.CIS Arms Depot.png"; FlightDirection=UpRight }
-//	:~{ File="Large SW.CIS Arms Depot.ship.png";      Tier=12; SpawnTier=11; Tags : ~/Tags [military_station]; StasisIcon="Large SW.CIS Arms Depot.png";   FlightDirection=UpRight }
-//	:~{ File="Huge SW.CIS Arms Depot.ship.png";    Tier=16; SpawnTier=15; Tags : ~/Tags [military_station]; StasisIcon="Huge SW.CIS Arms Depot.png"; FlightDirection=UpRight }
+	:~{ File="Minor Black Sun Arms Depot.ship.png";    Tier=6;  SpawnTier=3;  Tags : ~/Tags [military_station]; StasisIcon="Minor Black Sun Arms Depot.png" }
+	:~{ File="Minor Black Sun Arms Depot II.ship.png";    Tier=6;  SpawnTier=3;  Tags : ~/Tags [military_station]; StasisIcon="Minor Black Sun Arms Depot II.png" }
+	:~{ File="Small Black Sun Arms Depot.ship.png";    Tier=9;  SpawnTier=8;  Tags : ~/Tags [military_station]; StasisIcon="Small Black Sun Arms Depot.png" }
+	:~{ File="Med Black Sun Arms Depot.ship.png";      Tier=12; SpawnTier=12; Tags : ~/Tags [military_station]; StasisIcon="Med Black Sun Arms Depot.png" }
+	:~{ File="Large Black Sun Arms Depot.ship.png";    Tier=16; SpawnTier=16; Tags : ~/Tags [military_station]; StasisIcon="Large Black Sun Arms Depot.png" }
 ]

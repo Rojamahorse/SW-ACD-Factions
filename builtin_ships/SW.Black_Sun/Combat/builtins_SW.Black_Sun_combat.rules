@@ -4,7 +4,7 @@ Tags = [combat]
 Ships
 [
 	// Scouts
-//	:~{ File="Bottomfeeder.ship.png";     Tier=1;  Difficulty=1; }
+	:~{ File="Black Sun Fighter (Combat).ship.png";     Tier=1;  Difficulty=1; }
 //	:~{ File="Marigold.ship.png";         Tier=1;  Difficulty=1; }
 //	:~{ File="Haywire.ship.png";          Tier=1;  Difficulty=1; }
 //	:~{ File="Peccadillo.ship.png";       Tier=1;  Difficulty=1; }

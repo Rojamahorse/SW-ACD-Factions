@@ -1,6 +1,5 @@
 Factions
 [
-/*
 	// Black_Sun
 	{
 		ID = SW.Black_Sun
@@ -14,11 +13,10 @@ Factions
 				MipLevels = max
 			}
 		}
-		BorderColor = [255, 165, 0]
-		MilitaryPlayerIndex = 500
-		CivilianPlayerIndex = 501
+		BorderColor = [204, 0, 255]
+		MilitaryPlayerIndex = 100
+		CivilianPlayerIndex = 101
 	}
-*/
 	// Confederacy of Independent Systems
 	{
 		ID = SW.CIS

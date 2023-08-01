@@ -1,6 +1,5 @@
 SubSpawners
 [
-/*
 	// Faction SW.Black_Sun missions.
 	{
 		Type = Mission
@@ -52,7 +51,6 @@ SubSpawners
             }
 		]
 	}
-*/
 	// Faction SW.CIS missions.
 	{
 		Type = Mission

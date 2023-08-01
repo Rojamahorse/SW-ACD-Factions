@@ -66,12 +66,12 @@ Actions
 		Action = AddBase
 		AddBaseTo = "<modes/career/career.rules>/TradeRoutes/TradeShips"
 		BaseToAdd = 	{
-//					 	Black_Sun_1  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Tiny Empire";     Faction=SW.Black_Sun;   TierRange=[1, 3];   StasisSpeed=40; StasisTradeTime=35;}
-//					 	Black_Sun_2  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Small Empire";     Faction=SW.Black_Sun;   TierRange=[1, 5];   StasisSpeed=55; StasisTradeTime=48;}
-//						Black_Sun_3  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Medium Empire";     Faction=SW.Black_Sun;   TierRange=[1, 7];   StasisSpeed=60; StasisTradeTime=55;}
-//						Black_Sun_4  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Large Empire";     Faction=SW.Black_Sun;   TierRange=[1, 10];   StasisSpeed=65; StasisTradeTime=60;}
-//						Black_Sun_5  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Huge Empire";     Faction=SW.Black_Sun;   TierRange=[1, 18];   StasisSpeed=70; StasisTradeTime=65;}
-//						Black_Sun_6  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Extra Huge Emp";     Faction=SW.Black_Sun;   TierRange=[10, 18];   StasisSpeed=75; StasisTradeTime=70;}
+					 	Black_Sun_1  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Tiny Black_Sun";     Faction=SW.Black_Sun;   TierRange=[1, 3];   StasisSpeed=40; StasisTradeTime=35;}
+					 	Black_Sun_2  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Small Black_Sun";     Faction=SW.Black_Sun;   TierRange=[1, 5];   StasisSpeed=55; StasisTradeTime=48;}
+						Black_Sun_3  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Medium Black_Sun";     Faction=SW.Black_Sun;   TierRange=[1, 7];   StasisSpeed=60; StasisTradeTime=55;}
+						Black_Sun_4  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="AA-9 Coruscant Black_Sun";     Faction=SW.Black_Sun;   TierRange=[1, 10];   StasisSpeed=65; StasisTradeTime=60;}
+						Black_Sun_5  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Pelta-Class Frigate (Black Sun)";     Faction=SW.Black_Sun;   TierRange=[1, 18];   StasisSpeed=70; StasisTradeTime=65;}
+						Black_Sun_6  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Eta-Class Supply Barge Black_Sun";     Faction=SW.Black_Sun;   TierRange=[10, 18];   StasisSpeed=75; StasisTradeTime=70;}
 					 	CIS_1  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Tiny Empire";     Faction=SW.CIS;   TierRange=[1, 3];   StasisSpeed=40; StasisTradeTime=35;}
 					 	CIS_2  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Small Empire";     Faction=SW.CIS;   TierRange=[1, 5];   StasisSpeed=55; StasisTradeTime=48;}
 						CIS_3  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Medium Empire";     Faction=SW.CIS;   TierRange=[1, 7];   StasisSpeed=60; StasisTradeTime=55;}
@@ -135,7 +135,7 @@ Actions
 	{
 		Action = Replace
 		Replace = "<galaxy_map/map_generators/base_galaxy.rules>/StartingNodePicker/CandidatesClosestToFactions"
-        With = [1, [monolith, SW.Republic, SW.CIS, SW.Galactic_Empire]]
+        With = [1, [SW.Republic, SW.CIS, SW.Galactic_Empire]]
 	}
 
 	
@@ -144,11 +144,10 @@ Actions
 		Replace = "<./Data/factions/factions.rules>/Factions"
 		With =
 		[
-/*
 			// Black_Sun
 			{
 				ID = SW.Black_Sun
-				NameKey = "Factions/CIS"
+				NameKey = "Factions/Black_Sun"
 				Icon
 				{
 					Texture
@@ -158,11 +157,10 @@ Actions
 						MipLevels = max
 					}
 				}
-				BorderColor = [0, 0, 255]
+				BorderColor = [204, 0, 255]
 				MilitaryPlayerIndex = 100
 				CivilianPlayerIndex = 101
 			}
-*/
 			// CIS
 			{
 				ID = SW.CIS
@@ -247,10 +245,9 @@ Actions
 					}
 				}
 				BorderColor = [0, 196, 255]
-				MilitaryPlayerIndex = 100
-				CivilianPlayerIndex = 101
+				MilitaryPlayerIndex = 500
+				CivilianPlayerIndex = 501
 			}
-
 			// Cabal of Sol
 			{
 				ID = cabal
@@ -268,7 +265,6 @@ Actions
 				MilitaryPlayerIndex = 200
 				CivilianPlayerIndex = 201
 			}
-
 			// Centauri Imperium
 			{
 				ID = imperium
