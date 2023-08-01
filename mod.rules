@@ -66,6 +66,12 @@ Actions
 		Action = AddBase
 		AddBaseTo = "<modes/career/career.rules>/TradeRoutes/TradeShips"
 		BaseToAdd = 	{
+//					 	Black_Sun_1  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Tiny Empire";     Faction=SW.Black_Sun;   TierRange=[1, 3];   StasisSpeed=40; StasisTradeTime=35;}
+//					 	Black_Sun_2  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Small Empire";     Faction=SW.Black_Sun;   TierRange=[1, 5];   StasisSpeed=55; StasisTradeTime=48;}
+//						Black_Sun_3  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Medium Empire";     Faction=SW.Black_Sun;   TierRange=[1, 7];   StasisSpeed=60; StasisTradeTime=55;}
+//						Black_Sun_4  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Large Empire";     Faction=SW.Black_Sun;   TierRange=[1, 10];   StasisSpeed=65; StasisTradeTime=60;}
+//						Black_Sun_5  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Huge Empire";     Faction=SW.Black_Sun;   TierRange=[1, 18];   StasisSpeed=70; StasisTradeTime=65;}
+//						Black_Sun_6  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Extra Huge Emp";     Faction=SW.Black_Sun;   TierRange=[10, 18];   StasisSpeed=75; StasisTradeTime=70;}
 					 	CIS_1  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Tiny Empire";     Faction=SW.CIS;   TierRange=[1, 3];   StasisSpeed=40; StasisTradeTime=35;}
 					 	CIS_2  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Small Empire";     Faction=SW.CIS;   TierRange=[1, 5];   StasisSpeed=55; StasisTradeTime=48;}
 						CIS_3  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Medium Empire";     Faction=SW.CIS;   TierRange=[1, 7];   StasisSpeed=60; StasisTradeTime=55;}
@@ -78,6 +84,18 @@ Actions
 						Galactic_Empire_4  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Large Empire";     Faction=SW.Galactic_Empire;   TierRange=[1, 10];   StasisSpeed=65; StasisTradeTime=60;}
 						Galactic_Empire_5  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Huge Empire";     Faction=SW.Galactic_Empire;   TierRange=[1, 18];   StasisSpeed=70; StasisTradeTime=65;}
 						Galactic_Empire_6  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Extra Huge Emp";     Faction=SW.Galactic_Empire;   TierRange=[10, 18];   StasisSpeed=75; StasisTradeTime=70;}
+//					 	Mandalorian_1  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Tiny Empire";     Faction=SW.Mandalorian;   TierRange=[1, 3];   StasisSpeed=40; StasisTradeTime=35;}
+//					 	Mandalorian_2  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Small Empire";     Faction=SW.Mandalorian;   TierRange=[1, 5];   StasisSpeed=55; StasisTradeTime=48;}
+//						Mandalorian_3  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Medium Empire";     Faction=SW.Mandalorian;   TierRange=[1, 7];   StasisSpeed=60; StasisTradeTime=55;}
+//						Mandalorian_4  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Large Empire";     Faction=SW.Mandalorian;   TierRange=[1, 10];   StasisSpeed=65; StasisTradeTime=60;}
+//						Mandalorian_5  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Huge Empire";     Faction=SW.Mandalorian;   TierRange=[1, 18];   StasisSpeed=70; StasisTradeTime=65;}
+//						Mandalorian_6  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Extra Huge Emp";     Faction=SW.Mandalorian;   TierRange=[10, 18];   StasisSpeed=75; StasisTradeTime=70;}
+//					 	Rebel_Alliance_1  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Tiny Empire";     Faction=SW.Rebel_Alliance;   TierRange=[1, 3];   StasisSpeed=40; StasisTradeTime=35;}
+//					 	Rebel_Alliance_2  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Small Empire";     Faction=SW.Rebel_Alliance;   TierRange=[1, 5];   StasisSpeed=55; StasisTradeTime=48;}
+//						Rebel_Alliance_3  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Medium Empire";     Faction=SW.Rebel_Alliance;   TierRange=[1, 7];   StasisSpeed=60; StasisTradeTime=55;}
+//						Rebel_Alliance_4  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Large Empire";     Faction=SW.Rebel_Alliance;   TierRange=[1, 10];   StasisSpeed=65; StasisTradeTime=60;}
+//						Rebel_Alliance_5  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Huge Empire";     Faction=SW.Rebel_Alliance;   TierRange=[1, 18];   StasisSpeed=70; StasisTradeTime=65;}
+//						Rebel_Alliance_6  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Extra Huge Emp";     Faction=SW.Rebel_Alliance;   TierRange=[10, 18];   StasisSpeed=75; StasisTradeTime=70;}
 						Republic_1  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Tiny Republic";     Faction=SW.Republic;   TierRange=[1, 3];   StasisSpeed=40; StasisTradeTime=35;}
 					 	Republic_2  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Small Republic";     Faction=SW.Republic;    TierRange=[1, 5];   StasisSpeed=55; StasisTradeTime=48;}
 						Republic_3  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Medium Republi";     Faction=SW.Republic;   TierRange=[1, 7];   StasisSpeed=60; StasisTradeTime=55;}
@@ -126,6 +144,25 @@ Actions
 		Replace = "<./Data/factions/factions.rules>/Factions"
 		With =
 		[
+/*
+			// Black_Sun
+			{
+				ID = SW.Black_Sun
+				NameKey = "Factions/CIS"
+				Icon
+				{
+					Texture
+					{
+						File = "Black_Sun.png"
+						SampleMode = Linear
+						MipLevels = max
+					}
+				}
+				BorderColor = [0, 0, 255]
+				MilitaryPlayerIndex = 100
+				CivilianPlayerIndex = 101
+			}
+*/
 			// CIS
 			{
 				ID = SW.CIS
@@ -158,8 +195,8 @@ Actions
 					}
 				}
 				BorderColor = [255, 165, 0]
-				MilitaryPlayerIndex = 500
-				CivilianPlayerIndex = 501
+				MilitaryPlayerIndex = 400
+				CivilianPlayerIndex = 401
 			}
 */
 			// Galactic_Empire
