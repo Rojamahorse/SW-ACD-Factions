@@ -90,12 +90,12 @@ Actions
 //						Mandalorian_4  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Large Empire";     Faction=SW.Mandalorian;   TierRange=[1, 10];   StasisSpeed=65; StasisTradeTime=60;}
 //						Mandalorian_5  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Huge Empire";     Faction=SW.Mandalorian;   TierRange=[1, 18];   StasisSpeed=70; StasisTradeTime=65;}
 //						Mandalorian_6  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Extra Huge Emp";     Faction=SW.Mandalorian;   TierRange=[10, 18];   StasisSpeed=75; StasisTradeTime=70;}
-//					 	Rebel_Alliance_1  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Tiny Empire";     Faction=SW.Rebel_Alliance;   TierRange=[1, 3];   StasisSpeed=40; StasisTradeTime=35;}
-//					 	Rebel_Alliance_2  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Small Empire";     Faction=SW.Rebel_Alliance;   TierRange=[1, 5];   StasisSpeed=55; StasisTradeTime=48;}
-//						Rebel_Alliance_3  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Medium Empire";     Faction=SW.Rebel_Alliance;   TierRange=[1, 7];   StasisSpeed=60; StasisTradeTime=55;}
-//						Rebel_Alliance_4  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Large Empire";     Faction=SW.Rebel_Alliance;   TierRange=[1, 10];   StasisSpeed=65; StasisTradeTime=60;}
-//						Rebel_Alliance_5  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Huge Empire";     Faction=SW.Rebel_Alliance;   TierRange=[1, 18];   StasisSpeed=70; StasisTradeTime=65;}
-//						Rebel_Alliance_6  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Extra Huge Emp";     Faction=SW.Rebel_Alliance;   TierRange=[10, 18];   StasisSpeed=75; StasisTradeTime=70;}
+					 	Rebel_Alliance_1  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Tiny Rebel_Alliance";     Faction=SW.Rebel_Alliance;   TierRange=[1, 3];   StasisSpeed=40; StasisTradeTime=35;}
+					 	Rebel_Alliance_2  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Small Rebel_Alliance";     Faction=SW.Rebel_Alliance;   TierRange=[1, 5];   StasisSpeed=55; StasisTradeTime=48;}
+						Rebel_Alliance_3  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Medium Rebel_Alliance";     Faction=SW.Rebel_Alliance;   TierRange=[1, 7];   StasisSpeed=60; StasisTradeTime=55;}
+						Rebel_Alliance_4  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Rebel_Blockade Runner";     Faction=SW.Rebel_Alliance;   TierRange=[1, 10];   StasisSpeed=65; StasisTradeTime=60;}
+						Rebel_Alliance_5  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Rebel_Ol' Reliable";     Faction=SW.Rebel_Alliance;   TierRange=[1, 18];   StasisSpeed=70; StasisTradeTime=65;}
+						Rebel_Alliance_6  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Rebel_BuuLka FrEIghTa";     Faction=SW.Rebel_Alliance;   TierRange=[10, 18];   StasisSpeed=75; StasisTradeTime=70;}
 						Republic_1  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Tiny Republic";     Faction=SW.Republic;   TierRange=[1, 3];   StasisSpeed=40; StasisTradeTime=35;}
 					 	Republic_2  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Small Republic";     Faction=SW.Republic;    TierRange=[1, 5];   StasisSpeed=55; StasisTradeTime=48;}
 						Republic_3  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Medium Republi";     Faction=SW.Republic;   TierRange=[1, 7];   StasisSpeed=60; StasisTradeTime=55;}
@@ -135,7 +135,7 @@ Actions
 	{
 		Action = Replace
 		Replace = "<galaxy_map/map_generators/base_galaxy.rules>/StartingNodePicker/CandidatesClosestToFactions"
-        With = [1, [SW.Republic, SW.CIS, SW.Galactic_Empire]]
+        With = [1, [cabal, monolith, SW.Rebel_Alliance, SW.Galactic_Empire]]
 	}
 
 	
@@ -158,10 +158,10 @@ Actions
 					}
 				}
 				BorderColor = [204, 0, 255]
-				MilitaryPlayerIndex = 100
-				CivilianPlayerIndex = 101
+				MilitaryPlayerIndex = 400
+				CivilianPlayerIndex = 401
 			}
-			// CIS
+			// Confederacy of Independent Systems
 			{
 				ID = SW.CIS
 				NameKey = "Factions/CIS"
@@ -174,29 +174,10 @@ Actions
 						MipLevels = max
 					}
 				}
-				BorderColor = [0, 0, 255]
+				BorderColor = [6, 78, 123]
 				MilitaryPlayerIndex = 700
 				CivilianPlayerIndex = 701
 			}
-/*
-			// Rebel_Alliance
-			{
-				ID = SW.Rebel_Alliance
-				NameKey = "Factions/Rebel_Alliance"
-				Icon
-				{
-					Texture
-					{
-						File = "Rebel_Alliance.png"
-						SampleMode = Linear
-						MipLevels = max
-					}
-				}
-				BorderColor = [255, 165, 0]
-				MilitaryPlayerIndex = 400
-				CivilianPlayerIndex = 401
-			}
-*/
 			// Galactic_Empire
 			{
 				ID = SW.Galactic_Empire
@@ -214,6 +195,23 @@ Actions
 				MilitaryPlayerIndex = 500
 				CivilianPlayerIndex = 501
 			}
+			// Rebel_Alliance
+			{
+				ID = SW.Rebel_Alliance
+				NameKey = "Factions/Rebel_Alliance"
+				Icon
+				{
+					Texture
+					{
+						File = "Rebel_Alliance.png"
+						SampleMode = Linear
+						MipLevels = max
+					}
+				}
+				BorderColor = [255, 165, 0]
+				MilitaryPlayerIndex = 100
+				CivilianPlayerIndex = 101
+			}
 			// Republic
 			{
 				ID = SW.Republic
@@ -227,11 +225,11 @@ Actions
 						MipLevels = max
 					}
 				}
-				BorderColor = [255, 0, 0]
+				BorderColor = [56, 16, 16]
 				MilitaryPlayerIndex = 600
 				CivilianPlayerIndex = 601
 			}
-			// Monolith Cooperative
+			// Monolith Cooperative (Sith Empire)
 			{
 				ID = monolith
 				NameKey = "Factions/Monolith"
@@ -248,7 +246,7 @@ Actions
 				MilitaryPlayerIndex = 500
 				CivilianPlayerIndex = 501
 			}
-			// Cabal of Sol
+			// Cabal of Sol (Mandalorians)
 			{
 				ID = cabal
 				NameKey = "Factions/Cabal"
@@ -265,7 +263,7 @@ Actions
 				MilitaryPlayerIndex = 200
 				CivilianPlayerIndex = 201
 			}
-			// Centauri Imperium
+			// Centauri Imperium (First Order)
 			{
 				ID = imperium
 				NameKey = "Factions/Imperium"
@@ -282,7 +280,7 @@ Actions
 				MilitaryPlayerIndex = 300
 				CivilianPlayerIndex = 301
 			}
-			// Fringe Systems Resistance
+			// Fringe Systems Resistance (Jedi Order)
 			{
 				ID = fringe
 				NameKey = "Factions/Fringe"
@@ -296,8 +294,8 @@ Actions
 					}
 				}
 				BorderColor = [127, 127, 127, 127]
-				MilitaryPlayerIndex = 400
-				CivilianPlayerIndex = 401
+				MilitaryPlayerIndex = 800
+				CivilianPlayerIndex = 801
 			}
 		]
 	}

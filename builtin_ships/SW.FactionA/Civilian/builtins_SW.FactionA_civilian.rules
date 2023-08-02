@@ -1,0 +1,19 @@
+Faction = SW.FactionA
+Tags = [civilian]
+
+Ships
+[
+	// Trade ships
+//	:~{ File="FactionA Fighter (Civilian).ship.png";        				Tier=5;  Tags : ~/Tags [trade] }
+//	:~{ File="Cargo Transporter Tiny FactionA.ship.png";    				Tier=3;  Tags : ~/Tags [trade] }
+//	:~{ File="Cargo Transporter Small FactionA.ship.png";    				Tier=5;  Tags : ~/Tags [trade] }
+//	:~{ File="Cargo Transporter Medium FactionA.ship.png"; 				Tier=7;  Tags : ~/Tags [trade] }
+//	:~{ File="AA-9 Coruscant FactionA.ship.png";  							Tier=8;  Tags : ~/Tags [trade] }
+//	:~{ File="Pelta-Class Frigate (Black Sun).ship.png";    				Tier=7;  Tags : ~/Tags [trade] }
+//	:~{ File="Eta-Class Supply Barge FactionA.ship.png";    				Tier=7;  Tags : ~/Tags [trade] }
+//	:~{ File="C-9979 Landing Craft (Black Sun).ship.png";    				Tier=7;  Tags : ~/Tags [trade] }
+//	:~{ File="C-9979 Landing Craft FactionA.ship.png";    					Tier=6;  Tags : ~/Tags [trade] }
+//	:~{ File="Hardcell-Class Interstellar Transport FactionA.ship.png";    Tier=11;  Tags : ~/Tags [trade] }
+//	:~{ File="Munificent-Class Star Frigate 2.ship.png";    Tier=7;  Tags : ~/Tags [trade] }
+//	:~{ File="Lukrehulk-Class Droid Control Ship.ship.png";     Tier=13;  Tags : ~/Tags [trade] }
+]

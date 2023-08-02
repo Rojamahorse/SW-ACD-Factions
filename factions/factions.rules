@@ -30,7 +30,7 @@ Factions
 				MipLevels = max
 			}
 		}
-		BorderColor = [0, 0, 255]
+		BorderColor = [6, 78, 123]
 		MilitaryPlayerIndex = 700
 		CivilianPlayerIndex = 701
 	}	
@@ -51,7 +51,6 @@ Factions
 		MilitaryPlayerIndex = 500
 		CivilianPlayerIndex = 501
 	}
-/*
 	// Rebel_Alliance
 	{
 		ID = SW.Rebel_Alliance
@@ -66,10 +65,9 @@ Factions
 			}
 		}
 		BorderColor = [255, 165, 0]
-		MilitaryPlayerIndex = 500
-		CivilianPlayerIndex = 501
+		MilitaryPlayerIndex = 400
+		CivilianPlayerIndex = 401
 	}
-*/
 	// Republic
 	{
 		ID = SW.Republic
@@ -83,7 +81,7 @@ Factions
 				MipLevels = max
 			}
 		}
-		BorderColor = [255, 0, 0]
+		BorderColor = [56, 16, 16]
 		MilitaryPlayerIndex = 600
 		CivilianPlayerIndex = 601
 	}

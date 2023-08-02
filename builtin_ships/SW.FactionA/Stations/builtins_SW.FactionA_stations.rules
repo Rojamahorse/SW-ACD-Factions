@@ -1,0 +1,18 @@
+Faction = SW.FactionA
+Tags = [station]
+
+Ships
+[
+	// Civilian stations
+	:~{ File="Small FactionA Trade Station.ship.png"; Tier=4;  Tags : ~/Tags [trade_station];    StasisIcon="Small FactionA Trade Station.png" }
+	:~{ File="Small FactionA Trade Station II.ship.png"; Tier=4;  Tags : ~/Tags [trade_station];    StasisIcon="Small FactionA Trade Station II.png" }
+	:~{ File="Med FactionA Trade Station.ship.png";   Tier=10; Tags : ~/Tags [trade_station];    StasisIcon="Med FactionA Trade Station.png" }
+	:~{ File="Large FactionA Trade Station.ship.png"; Tier=16; Tags : ~/Tags [trade_station];    StasisIcon="Large FactionA Trade Station.png" }
+
+	// Military stations
+	:~{ File="Minor FactionA Arms Depot.ship.png";    Tier=6;  SpawnTier=3;  Tags : ~/Tags [military_station]; StasisIcon="Minor FactionA Arms Depot.png" }
+	:~{ File="Minor FactionA Arms Depot II.ship.png";    Tier=6;  SpawnTier=3;  Tags : ~/Tags [military_station]; StasisIcon="Minor FactionA Arms Depot II.png" }
+	:~{ File="Small FactionA Arms Depot.ship.png";    Tier=9;  SpawnTier=8;  Tags : ~/Tags [military_station]; StasisIcon="Small FactionA Arms Depot.png" }
+	:~{ File="Med FactionA Arms Depot.ship.png";      Tier=12; SpawnTier=12; Tags : ~/Tags [military_station]; StasisIcon="Med FactionA Arms Depot.png" }
+	:~{ File="Large FactionA Arms Depot.ship.png";    Tier=16; SpawnTier=16; Tags : ~/Tags [military_station]; StasisIcon="Large FactionA Arms Depot.png" }
+]

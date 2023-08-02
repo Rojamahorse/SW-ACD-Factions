@@ -27,7 +27,6 @@ Factions
 			FactionStrengthExponent = 4
 			MinFactionStrength = 25%
 		}
-/*
 		{
 			FactionID = SW.Rebel_Alliance
 			TerritoryRatio = 100%
@@ -36,7 +35,6 @@ Factions
 			FactionStrengthExponent = 2
 			MinFactionStrength = 5%
 		}
-*/
 		{
 			FactionID = SW.Republic
 			TerritoryRatio = 100%
@@ -72,13 +70,11 @@ FactionTiers
 			TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
 			TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
 		}
-/*
 		{
 			FactionID = SW.Rebel_Alliance
 			TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
 			TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
 		}
-*/
 		{
 			FactionID = SW.Republic
 			TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]

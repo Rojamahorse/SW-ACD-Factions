@@ -3,46 +3,45 @@ Tags = [combat]
 
 Ships
 [
-
-	:~{ File="Tie Fighter.ship.png";                 Tier=1;  Difficulty=1; }
-	:~{ File="TIE (LN) Fighter (Sienar Blue).ship.png";                 Tier=2;  Difficulty=1; }
-	:~{ File="Tie Advanced.ship.png";                   Tier=1;  Difficulty=1; }
-	:~{ File="TIE Advanced X1 (Sienar Blue).ship.png";                   Tier=2;  Difficulty=2; }
-	:~{ File="Tie Bomber.ship.png";                     Tier=1;  Difficulty=1; }
-	:~{ File="Vulture Droid.ship.png";              Tier=2;  Difficulty=1; }
-	:~{ File="TIE Interceptor (Sienar Blue).ship.png";              Tier=2;  Difficulty=2; }
-	:~{ File="Hyena-Class Bomber.ship.png";           Tier=2;  Difficulty=1; }
-	:~{ File="Gozanti Cruiser.ship.png";                Tier=3;  Difficulty=1; }
-	:~{ File="Gozanti-Class Cruiser.ship.png";                Tier=3;  Difficulty=1; }
-	:~{ File="Raider-Class Corvette.ship.png";                Tier=3;  Difficulty=1; }
-	:~{ File="TIE Reaper.ship.png";                Tier=3;  Difficulty=1; }
-	:~{ File="Class 546 Light Cruiser.ship.png";                Tier=4;  Difficulty=2; }
-	:~{ File="Munificent-class Star Frigate.ship.png";                  Tier=4;  Difficulty=1;}
-	:~{ File="C-9979.ship.png";          Tier=5;  Difficulty=1; }
-	:~{ File="Imperial Heavy Cargo Shuttle.ship.png";       Tier=5;  Difficulty=2; }
-	:~{ File="Dreadnought-Class Heavy Cruiser.ship.png";                Tier=9;  Difficulty=2; }
-	:~{ File="Dreadnought-Class Star Cruiser.ship.png";                Tier=11;  Difficulty=2; }
-	:~{ File="Railgun Cruiser.ship.png";                    Tier=6;  Difficulty=2; }
-	:~{ File="Corvus Raider Corvette.ship.png";               Tier=7;  Difficulty=1; }
-	:~{ File="Harrower-class Dreadnought.ship.png";               Tier=8;  Difficulty=1; }
-	:~{ File="Imperial-1 C Star Destroyer III.ship.png";           Tier=9;  Difficulty=1; }
-	:~{ File="Lucrehulk Droid Control Ship.ship.png";              Tier=10;  Difficulty=2; }
-	:~{ File="Victory I.ship.png";                Tier=11;  Difficulty=2; }
-	:~{ File="Chimaera.ship.png";                  Tier=12;  Difficulty=1; }
-	:~{ File="StarDestroyer ISD II.ship.png";               Tier=13;  Difficulty=2; }
-	:~{ File="Deathstar.ship.png";                 Tier=14;  Difficulty=2; }
-	:~{ File="Bayonet-Class Patrol Cruiser.ship.png";                 Tier=8;  Difficulty=2; }
-	:~{ File="Cantwell-Class Arrestor Cruiser.ship.png";                 Tier=6;  Difficulty=2; }
-	:~{ File="Carrack-class Light Cruiser.ship.png";                 Tier=6;  Difficulty=2; }
-	:~{ File="Crusader-Class Cruiser.ship.png";                 Tier=5;  Difficulty=2; }
-	:~{ File="Acclamator-class assault-ship.ship.png";                 Tier=7;  Difficulty=2; }
-	:~{ File="Arquitens-Class Command Cruiser.ship.png";                 Tier=7;  Difficulty=2; }
-	:~{ File="Acclamator II-Class Cruiser.ship.png";                 Tier=11;  Difficulty=2; }
-	:~{ File="Immobilizer 418 Cruiser.ship.png";                 Tier=11;  Difficulty=2; }
-	:~{ File="Immobilizer Imperial Cruiser.ship.png";                 Tier=12;  Difficulty=2; }
-	:~{ File="Imperial Light Cruiser.ship.png";                 Tier=7;  Difficulty=2; }
-	:~{ File="DeathstarI.ship.png";                 Tier=15;  Difficulty=2; }
-	:~{ File="DeathstarII.ship.png";                 Tier=16;  Difficulty=2; }
-	:~{ File="DeathstarIII.ship.png";                 Tier=17;  Difficulty=2; }
-	:~{ File="DeathstarIV.ship.png";                 Tier=18;  Difficulty=2; }
+//	:~{ File="Tie Fighter.ship.png";                 Tier=1;  Difficulty=1; }
+//	:~{ File="TIE (LN) Fighter (Sienar Blue).ship.png";                 Tier=2;  Difficulty=1; }
+//	:~{ File="Tie Advanced.ship.png";                   Tier=1;  Difficulty=1; }
+//	:~{ File="TIE Advanced X1 (Sienar Blue).ship.png";                   Tier=2;  Difficulty=2; }
+//	:~{ File="Tie Bomber.ship.png";                     Tier=1;  Difficulty=1; }
+//	:~{ File="Vulture Droid.ship.png";              Tier=2;  Difficulty=1; }
+//	:~{ File="TIE Interceptor (Sienar Blue).ship.png";              Tier=2;  Difficulty=2; }
+//	:~{ File="Hyena-Class Bomber.ship.png";           Tier=2;  Difficulty=1; }
+//	:~{ File="Gozanti Cruiser.ship.png";                Tier=3;  Difficulty=1; }
+//	:~{ File="Gozanti-Class Cruiser.ship.png";                Tier=3;  Difficulty=1; }
+//	:~{ File="Raider-Class Corvette.ship.png";                Tier=3;  Difficulty=1; }
+//	:~{ File="TIE Reaper.ship.png";                Tier=3;  Difficulty=1; }
+//	:~{ File="Class 546 Light Cruiser.ship.png";                Tier=4;  Difficulty=2; }
+//	:~{ File="Munificent-class Star Frigate.ship.png";                  Tier=4;  Difficulty=1;}
+//	:~{ File="C-9979.ship.png";          Tier=5;  Difficulty=1; }
+//	:~{ File="Imperial Heavy Cargo Shuttle.ship.png";       Tier=5;  Difficulty=2; }
+//	:~{ File="Dreadnought-Class Heavy Cruiser.ship.png";                Tier=9;  Difficulty=2; }
+//	:~{ File="Dreadnought-Class Star Cruiser.ship.png";                Tier=11;  Difficulty=2; }
+//	:~{ File="Railgun Cruiser.ship.png";                    Tier=6;  Difficulty=2; }
+//	:~{ File="Corvus Raider Corvette.ship.png";               Tier=7;  Difficulty=1; }
+//	:~{ File="Harrower-class Dreadnought.ship.png";               Tier=8;  Difficulty=1; }
+//	:~{ File="Imperial-1 C Star Destroyer III.ship.png";           Tier=9;  Difficulty=1; }
+//	:~{ File="Lucrehulk Droid Control Ship.ship.png";              Tier=10;  Difficulty=2; }
+//	:~{ File="Victory I.ship.png";                Tier=11;  Difficulty=2; }
+//	:~{ File="Chimaera.ship.png";                  Tier=12;  Difficulty=1; }
+//	:~{ File="StarDestroyer ISD II.ship.png";               Tier=13;  Difficulty=2; }
+//	:~{ File="Deathstar.ship.png";                 Tier=14;  Difficulty=2; }
+//	:~{ File="Bayonet-Class Patrol Cruiser.ship.png";                 Tier=8;  Difficulty=2; }
+//	:~{ File="Cantwell-Class Arrestor Cruiser.ship.png";                 Tier=6;  Difficulty=2; }
+//	:~{ File="Carrack-class Light Cruiser.ship.png";                 Tier=6;  Difficulty=2; }
+//	:~{ File="Crusader-Class Cruiser.ship.png";                 Tier=5;  Difficulty=2; }
+//	:~{ File="Acclamator-class assault-ship.ship.png";                 Tier=7;  Difficulty=2; }
+//	:~{ File="Arquitens-Class Command Cruiser.ship.png";                 Tier=7;  Difficulty=2; }
+//	:~{ File="Acclamator II-Class Cruiser.ship.png";                 Tier=11;  Difficulty=2; }
+//	:~{ File="Immobilizer 418 Cruiser.ship.png";                 Tier=11;  Difficulty=2; }
+//	:~{ File="Immobilizer Imperial Cruiser.ship.png";                 Tier=12;  Difficulty=2; }
+//	:~{ File="Imperial Light Cruiser.ship.png";                 Tier=7;  Difficulty=2; }
+//	:~{ File="DeathstarI.ship.png";                 Tier=15;  Difficulty=2; }
+//	:~{ File="DeathstarII.ship.png";                 Tier=16;  Difficulty=2; }
+//	:~{ File="DeathstarIII.ship.png";                 Tier=17;  Difficulty=2; }
+//	:~{ File="DeathstarIV.ship.png";                 Tier=18;  Difficulty=2; }
 ]

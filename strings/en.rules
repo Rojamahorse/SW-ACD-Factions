@@ -11,11 +11,11 @@ Factions
 	Black_Sun = "Black Sun Collective"
 	CIS = "Confederacy of Independent Systems"
 	Galactic_Empire = "Galactic Empire"
-//	Rebel_Alliance = "Rebel Alliance"
-	Republic = "Galactic Republic"
-	monolith = "Black Sun Agent"
-	fringe = "Rebel Alliance"
-	imperium = "Hutt Clan"
+	Rebel_Alliance = "Rebel Alliance"
+	Republic = "Republic"
+	monolith = "Sith Empire"
+	fringe = "Jedi Order"
+	imperium = "First Order"
 	cabal = "Mandalorians"
 }
 
@@ -31,7 +31,7 @@ Lore
 {
 	Black_Sun
 	{
-	Title = "Black Sun Collective"
+	Title = "The Black Sun Collective"
 
 	Lore1 = "The Black Sun Collective is a notorious and clandestine criminal organization that operates in the shadows, engaging in various illicit activities and exerting significant influence over the criminal underworld."
 
@@ -45,7 +45,7 @@ Lore
 	}
 	CIS
 	{
-		Title = "Confederacy of Independent Systems"
+		Title = "The Confederacy of Independent Systems"
 
 		Lore1 = "The Confederacy of Independent Systems, also known as the Separatists, was a galactic faction formed during the tumultuous era of the Clone Wars, advocating for the autonomy of star systems and seeking to break away from the Galactic Republic's central authority."
 		
@@ -59,7 +59,7 @@ Lore
 	}
 	Galactic_Empire
 	{
-		Title = "Galactic Empire"
+		Title = "The Galactic Empire"
 
 		Lore1 = "The Galactic Empire is an authoritarian regime that emerged from the ashes of the Clone Wars, consolidating power under the leadership of Emperor Palpatine with the promise of bringing stability and order to the galaxy."
 
@@ -73,9 +73,9 @@ Lore
 	}
 	Republic
 	{
-		Title = "Galactic Republic"
+		Title = "The Republic"
 		
-		Lore1 = "The Galactic Republic was a sprawling democratic institution that served as the governing body of the galaxy for over a thousand generations, promoting cooperation, diplomacy, and the rule of law among its member worlds."
+		Lore1 = "The Republic was a sprawling democratic institution that served as the governing body of the galaxy for over a thousand generations, promoting cooperation, diplomacy, and the rule of law among its member worlds."
 		
 		Lore2 = "Founded on the principles of freedom and representation, the Republic emerged from the aftermath of the conflicts between the Rakatan Infinite Empire and the ancient Je'daii Order. Over time, it grew to encompass thousands of star systems, each represented in the Galactic Senate on the capital world of Coruscant."
 		
@@ -83,12 +83,11 @@ Lore
 		
 		Lore4 = "The Republic maintained a standing military known as the Grand Army of the Republic, composed of clone troopers created from the genetic template of the bounty hunter Jango Fett. These clones were bred and trained to be loyal soldiers, fiercely defending the Republic during the Clone Wars against the Separatist forces."
 		
-		Lore5 = "Despite its many strengths, the Galactic Republic was not without flaws. Bureaucracy and political maneuvering often hindered swift action, allowing discontent and disenchantment to fester in some regions. The outbreak of the Clone Wars, orchestrated by the Sith, put the Republic to the ultimate test, challenging its core values and exposing vulnerabilities that would eventually lead to the Republic's transformation into the Galactic Empire."
+		Lore5 = "Despite its many strengths, the Republic was not without flaws. Bureaucracy and political maneuvering often hindered swift action, allowing discontent and disenchantment to fester in some regions. The outbreak of the Clone Wars, orchestrated by the Sith, put the Republic to the ultimate test, challenging its core values and exposing vulnerabilities that would eventually lead to the Republic's transformation into the Galactic Empire."
 	}
-/*
-	Rebel Alliance
+	Rebel_Alliance
 	{
-		Title = "Rebel Alliance"
+		Title = "The Rebel Alliance"
 
 		Lore1 = "The Rebel Alliance is a courageous and determined faction that rose in resistance against the tyrannical rule of the Galactic Empire, striving for freedom and justice across the galaxy."
 		
@@ -100,6 +99,5 @@ Lore
 		
 		Lore5 = "As a grassroots movement, the Rebel Alliance did not seek control over the galaxy; instead, they fought to dismantle the oppressive regime and restore freedom to the citizens of the galaxy. Their struggle was not without sacrifice, and many brave individuals gave their lives for the cause. Despite facing overwhelming odds, the Rebel Alliance's resilience and determination inspired countless others to join their ranks, proving that even in the darkest times, hope can ignite the flames of rebellion."
 	}
-*/
 	
 }
