@@ -8,7 +8,7 @@ Factions
 			TerritoryRatio = 100%
 			AvoidOtherFactionsStrength = .3
 			AvoidEdgeStrength = .2
-			FactionStrengthExponent = 2
+			FactionStrengthExponent = 4
 			MinFactionStrength = 15%
 		}
 		{
@@ -17,22 +17,22 @@ Factions
 			AvoidOtherFactionsStrength = .3
 			AvoidEdgeStrength = .2
 			FactionStrengthExponent = 3
-			MinFactionStrength = 20%
+			MinFactionStrength = 15%
 		}
 		{
 			FactionID = SW.Galactic_Empire
 			TerritoryRatio = 100%
-			AvoidOtherFactionsStrength = .3
+			AvoidOtherFactionsStrength = .5
 			AvoidEdgeStrength = .2
-			FactionStrengthExponent = 4
-			MinFactionStrength = 25%
+			FactionStrengthExponent = 5
+			MinFactionStrength = 45%
 		}
 		{
 			FactionID = SW.Rebel_Alliance
 			TerritoryRatio = 100%
 			AvoidOtherFactionsStrength = .3
 			AvoidEdgeStrength = .2
-			FactionStrengthExponent = 2
+			FactionStrengthExponent = 1
 			MinFactionStrength = 5%
 		}
 		{
@@ -40,8 +40,8 @@ Factions
 			TerritoryRatio = 100%
 			AvoidOtherFactionsStrength = .3
 			AvoidEdgeStrength = .2
-			FactionStrengthExponent = 4
-			MinFactionStrength = 25%
+			FactionStrengthExponent = 2
+			MinFactionStrength = 20%
 		}
 	]
 }
@@ -71,14 +71,24 @@ FactionTiers
 			TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
 		}
 		{
-			FactionID = SW.Rebel_Alliance
-			TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
-			TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
-		}
-		{
 			FactionID = SW.Republic
 			TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
 			TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
 		}
+		{
+			FactionID = SW.Rebel_Alliance
+			TierRangeLow = 1 //[1, (&~/MaxTier) - (&~/TierSpread)]
+			TierRangeHigh = 1 //[1 + (&~/TierSpread), (&~/MaxTier)]
+		}
 	]
+}
+
+StartingNodePicker
+{
+	Type = StartingNodePicker
+	AllowedFactions = [SW.Rebel_Alliance]
+	MinConnections = 2
+	CandidatesFarthestFromFactions = [5, [SW.Black_Sun]]
+	CandidatesClosestToFactions = [1, [SW.CIS, SW.Republic]]
+	SetTierRangeTo = [1, 1 + (&~/TierSpread)]
 }

@@ -19,6 +19,13 @@ Factions
 	cabal = "Mandalorians"
 }
 
+StarterShips
+{
+	A_Wing = "The A-Wing, Like a caffeinated space weasel on roller skates, it's quick, agile, and totally unpredictable in a dogfight."
+	Y_Wing = "The Y-Wing, The 'Y' stands for 'Why carry one bomb when you can have a buffet?' Perfect for making enemies see stars and stripes."
+	TIE_Fighter = "The Tie Fighter, Experience the thrill of imminent doom every time you get into the cockpit. No safety belts, just adrenaline-fueled panic!"
+}
+
 Doodads
 {
 }

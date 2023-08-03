@@ -4,16 +4,10 @@ Tags = [civilian]
 Ships
 [
 	// Trade ships
-	:~{ File="Rebel_Courier.ship.png";                					Tier=3;  Tags : ~/Tags [trade] }
-	:~{ File="Rebel_The Last Lightyear.ship.png";     					Tier=3;  Tags : ~/Tags [trade] }
-	:~{ File="Rebel_Crate Bus.ship.png";              					Tier=5;  Tags : ~/Tags [trade] }
-	:~{ File="Rebel_Loadspine.ship.png";              					Tier=5;  Tags : ~/Tags [trade] }
-	:~{ File="Rebel_BuuLka FrEIghTa.ship.png";        					Tier=7;  Tags : ~/Tags [trade] }
-	:~{ File="Rebel_Beautiful In Name Only.ship.png"; 					Tier=7;  Tags : ~/Tags [trade] }
-	:~{ File="Rebel_Impending Lawsuit.ship.png";      					Tier=7;  Tags : ~/Tags [trade] }
-	:~{ File="Rebel_Ol' Reliable.ship.png";           					Tier=10; Tags : ~/Tags [trade] }
-	:~{ File="Rebel_Blockade Runner.ship.png";        					Tier=10; Tags : ~/Tags [trade] }
-	:~{ File="Cargo Transporter Tiny Rebel_Alliance.ship.png";  		Tier=3;  Tags : ~/Tags [trade] }
-	:~{ File="Cargo Transporter Small Rebel_Alliance.ship.png";        	Tier=5;  Tags : ~/Tags [trade] }
-	:~{ File="Cargo Transporter Medium Rebel_Alliance.ship.png";    	Tier=7;  Tags : ~/Tags [trade] }
+	:~{ File="Cargo Transporter Tiny Rebel.ship.png";  					Tier=3;  Tags : ~/Tags [trade] }
+	:~{ File="Cargo Transporter Small Rebel.ship.png";    				Tier=5;  Tags : ~/Tags [trade] }
+	:~{ File="Cargo Transporter Medium Rebel.ship.png";    				Tier=7;  Tags : ~/Tags [trade] }
+	:~{ File="Cargo Transporter Large Rebel.ship.png";   				Tier=10; Tags : ~/Tags [trade] }
+	:~{ File="Cargo Transporter Huge Rebel.ship.png";     				Tier=13; Tags : ~/Tags [trade] }
+	:~{ File="Millenium Falcon Rebel.ship.png";     					Tier=1; Tags : ~/Tags [trade] }
 ]

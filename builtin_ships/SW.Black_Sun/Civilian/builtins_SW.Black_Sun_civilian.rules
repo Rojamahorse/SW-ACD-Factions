@@ -4,16 +4,13 @@ Tags = [civilian]
 Ships
 [
 	// Trade ships
-	:~{ File="Black Sun Fighter (Civilian).ship.png";        				Tier=5;  Tags : ~/Tags [trade] }
-	:~{ File="Cargo Transporter Tiny Black_Sun.ship.png";    				Tier=3;  Tags : ~/Tags [trade] }
+	:~{ File="Cargo Transporter Tiny Black_Sun.ship.png";  					Tier=3;  Tags : ~/Tags [trade] }
 	:~{ File="Cargo Transporter Small Black_Sun.ship.png";    				Tier=5;  Tags : ~/Tags [trade] }
-	:~{ File="Cargo Transporter Medium Black_Sun.ship.png"; 				Tier=7;  Tags : ~/Tags [trade] }
-	:~{ File="AA-9 Coruscant Black_Sun.ship.png";  							Tier=8;  Tags : ~/Tags [trade] }
-	:~{ File="Pelta-Class Frigate (Black Sun).ship.png";    				Tier=7;  Tags : ~/Tags [trade] }
-	:~{ File="Eta-Class Supply Barge Black_Sun.ship.png";    				Tier=7;  Tags : ~/Tags [trade] }
-	:~{ File="C-9979 Landing Craft (Black Sun).ship.png";    				Tier=7;  Tags : ~/Tags [trade] }
-	:~{ File="C-9979 Landing Craft Black_Sun.ship.png";    					Tier=6;  Tags : ~/Tags [trade] }
-	:~{ File="Hardcell-Class Interstellar Transport Black_Sun.ship.png";    Tier=11;  Tags : ~/Tags [trade] }
-//	:~{ File="Munificent-Class Star Frigate 2.ship.png";    Tier=7;  Tags : ~/Tags [trade] }
-//	:~{ File="Lukrehulk-Class Droid Control Ship.ship.png";     Tier=13;  Tags : ~/Tags [trade] }
+	:~{ File="Cargo Transporter Medium Black_Sun.ship.png";    				Tier=7;  Tags : ~/Tags [trade] }
+	:~{ File="Cargo Transporter Large Black_Sun.ship.png";   				Tier=10; Tags : ~/Tags [trade] }
+	:~{ File="Cargo Transporter Huge Black_Sun.ship.png";     				Tier=10; Tags : ~/Tags [trade] }
+	:~{ File="Eta-Class Supply Barge Black Sun.ship.png";     				Tier=13; Tags : ~/Tags [trade] }
+//	:~{ File="Da'i.ship.png";        										Tier=3;  Tags : ~/Tags [trade] }
+//	:~{ File="Acolyte.ship.png";     										Tier=7;  Tags : ~/Tags [trade] }
+//	:~{ File="Deliverance.ship.png"; 										Tier=5;  Tags : ~/Tags [trade] }
 ]

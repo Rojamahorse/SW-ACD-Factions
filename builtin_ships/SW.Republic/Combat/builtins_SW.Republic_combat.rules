@@ -4,35 +4,41 @@ Tags = [combat]
 Ships
 [
 	
-	:~{ File="Jedi-Fighter I.ship.png";      Tier=1;  Difficulty=2; }
-	:~{ File="Jedi-Fighter II.ship.png";        Tier=1;  Difficulty=2; }
-	:~{ File="ARC-170.ship.png";       Tier=1;  Difficulty=2; }
-	:~{ File="V-19 Torrent.ship.png";     Tier=2;  Difficulty=2; }
-	:~{ File="Naboo-Star-Fighter.ship.png";       Tier=2;  Difficulty=3; }
-	:~{ File="Old Republic-Cargo Freighter.ship.png"; Tier=3;  Difficulty=2; }
-	:~{ File="LAAT.ship.png";       Tier=3;  Difficulty=2; }
-	:~{ File="Millenium Falcon.ship.png";        Tier=3;  Difficulty=3; }
-	:~{ File="Y-Wing.ship.png";     Tier=2;  Difficulty=2; }
-	:~{ File="Ghost.ship.png";          Tier=4;  Difficulty=2; }
-	:~{ File="Red Star Frigate.ship.png";        Tier=4;  Difficulty=3; }
-	:~{ File="Consular-Class Cruiser.ship.png";          Tier=5;  Difficulty=2; }
-	:~{ File="Consular-class cruiser II.ship.png";      Tier=5;  Difficulty=3; }
-	:~{ File="Consular-class cruiser III.ship.png";        Tier=6;  Difficulty=3; }
-	:~{ File="Red Star Cruiser.ship.png";       Tier=7;  Difficulty=2; }
-	:~{ File="CR-90 Corvette.ship.png";    Tier=7;  Difficulty=2; }
-	:~{ File="Arquitens-class Republic cruiser.ship.png";       Tier=8;  Difficulty=3; }
-	:~{ File="Red Star Star Destroyer.ship.png";        Tier=8;  Difficulty=2; }
-	:~{ File="Red Star Assault Ship.ship.png";        Tier=9;  Difficulty=2; }
-	:~{ File="Pelta-class Assault Ship.ship.png";      Tier=8;  Difficulty=2; }
-	:~{ File="Acclamator-Class.ship.png";        Tier=10;  Difficulty=3; }
-	:~{ File="Venator.ship.png";          Tier=11;  Difficulty=2; }
-	:~{ File="Venator II.ship.png";      Tier=12;  Difficulty=2; }
-	
-	:~{ File="Venator III.ship.png";      Tier=13;  Difficulty=2; }
-	:~{ File="Venator IV.ship.png";      Tier=14;  Difficulty=2; }
-	:~{ File="Venator V.ship.png";      Tier=15;  Difficulty=2; }
-	:~{ File="Venator VI.ship.png";      Tier=16;  Difficulty=2; }
-	:~{ File="Venator VII.ship.png";      Tier=17;  Difficulty=2; }
-	:~{ File="Venator VIII.ship.png";      Tier=18;  Difficulty=2; }
+	:~{ File="Republic Eta-2 Actis-Class Inter.ship.png";      Tier=1;  Difficulty=1; }
+	:~{ File="Republic Z-95 Headhunter.ship.png";      Tier=1;  Difficulty=1; }
+	:~{ File="Republic BTL-L Y-Wing Bomber.ship.png";        Tier=1;  Difficulty=1; }
+	:~{ File="Republic BTL-B Y-Wing Bomber.ship.png";       Tier=1;  Difficulty=2; }
+	:~{ File="Republic Delta 7 Jedi Starfight.ship.png";      Tier=1;  Difficulty=1; }
+	:~{ File="Republic Delta 7B Jedi Starfight.ship.png";        Tier=1;  Difficulty=2; }
+	:~{ File="Republic Delta 7L Starfighter.ship.png";       Tier=1;  Difficulty=2; }
+	:~{ File="Remove_Jedi-Fighter I.ship.png";      Tier=1;  Difficulty=2; }
+	:~{ File="Remove_Jedi-Fighter II.ship.png";        Tier=1;  Difficulty=2; }
+	:~{ File="Remove_ARC-170.ship.png";       Tier=1;  Difficulty=2; }
+	:~{ File="Remove_V-19 Torrent.ship.png";     Tier=2;  Difficulty=2; }
+	:~{ File="Remove_Naboo-Star-Fighter.ship.png";       Tier=2;  Difficulty=3; }
+	:~{ File="Remove_Old Republic-Cargo Freighter.ship.png"; Tier=3;  Difficulty=2; }
+	:~{ File="Remove_LAAT.ship.png";       Tier=3;  Difficulty=2; }
+	:~{ File="Remove_Millenium Falcon.ship.png";        Tier=3;  Difficulty=3; }
+	:~{ File="Remove_Y-Wing.ship.png";     Tier=2;  Difficulty=2; }
+	:~{ File="Remove_Ghost.ship.png";          Tier=4;  Difficulty=2; }
+	:~{ File="Remove_Red Star Frigate.ship.png";        Tier=4;  Difficulty=3; }
+	:~{ File="Remove_Consular-Class Cruiser.ship.png";          Tier=5;  Difficulty=2; }
+	:~{ File="Remove_Consular-class cruiser II.ship.png";      Tier=5;  Difficulty=3; }
+	:~{ File="Remove_Consular-class cruiser III.ship.png";        Tier=6;  Difficulty=3; }
+	:~{ File="Remove_Red Star Cruiser.ship.png";       Tier=7;  Difficulty=2; }
+	:~{ File="Remove_CR-90 Corvette.ship.png";    Tier=7;  Difficulty=2; }
+	:~{ File="Remove_Arquitens-class Republic cruiser.ship.png";       Tier=8;  Difficulty=3; }
+	:~{ File="Remove_Red Star Star Destroyer.ship.png";        Tier=8;  Difficulty=2; }
+	:~{ File="Remove_Red Star Assault Ship.ship.png";        Tier=9;  Difficulty=2; }
+	:~{ File="Remove_Pelta-class Assault Ship.ship.png";      Tier=8;  Difficulty=2; }
+	:~{ File="Remove_Acclamator-Class.ship.png";        Tier=10;  Difficulty=3; }
+	:~{ File="Remove_Venator.ship.png";          Tier=11;  Difficulty=2; }
+	:~{ File="Remove_Venator II.ship.png";      Tier=12;  Difficulty=2; }
+	:~{ File="Remove_Venator III.ship.png";      Tier=13;  Difficulty=2; }
+	:~{ File="Remove_Venator IV.ship.png";      Tier=14;  Difficulty=2; }
+	:~{ File="Remove_Venator V.ship.png";      Tier=15;  Difficulty=2; }
+	:~{ File="Remove_Venator VI.ship.png";      Tier=16;  Difficulty=2; }
+	:~{ File="Remove_Venator VII.ship.png";      Tier=17;  Difficulty=2; }
+	:~{ File="Remove_Venator VIII.ship.png";      Tier=18;  Difficulty=2; }
 	
 ]

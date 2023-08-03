@@ -1,4 +1,4 @@
-Factions
+ Factions
 [
 	// Black_Sun
 	{
@@ -31,8 +31,8 @@ Factions
 			}
 		}
 		BorderColor = [6, 78, 123]
-		MilitaryPlayerIndex = 700
-		CivilianPlayerIndex = 701
+		MilitaryPlayerIndex = 200
+		CivilianPlayerIndex = 201
 	}	
 	// Galactic_Empire
 	{
@@ -48,8 +48,8 @@ Factions
 			}
 		}
 		BorderColor = [255, 255, 255]
-		MilitaryPlayerIndex = 500
-		CivilianPlayerIndex = 501
+		MilitaryPlayerIndex = 300
+		CivilianPlayerIndex = 301
 	}
 	// Rebel_Alliance
 	{
@@ -82,8 +82,8 @@ Factions
 			}
 		}
 		BorderColor = [56, 16, 16]
-		MilitaryPlayerIndex = 600
-		CivilianPlayerIndex = 601
+		MilitaryPlayerIndex = 500
+		CivilianPlayerIndex = 501
 	}
 	
 ]

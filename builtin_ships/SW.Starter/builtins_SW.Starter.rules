@@ -2,7 +2,7 @@ Tags = [starter]
 
 Ships
 [
-	:~{ File="Model-L1.ship.png"; }
+	:~{ File="Y-Wing Bomber.ship.png"; }
 	:~{ File="Model-C1.ship.png"; }
-	:~{ File="Model-S1.ship.png"; }
+	:~{ File="A-Wing Interceptor (Laser).ship.png"; }
 ]

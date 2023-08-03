@@ -1,0 +1,12 @@
+Type = Multi
+SubGenerators
+[
+	{
+		Type = NameList
+		Names = ['Tatoo', 'Corus', 'Hoth', 'Endor', 'Kashyyk', 'Dagob', 'Mustaf', 'Aldera', 'Yavin', 'Bespin']
+	}
+	{
+		Type = NameList
+		Names = ['Base', 'Station', 'Outpost', 'Fort', 'Hold', 'Haven', 'Sanctuary']
+	}
+]

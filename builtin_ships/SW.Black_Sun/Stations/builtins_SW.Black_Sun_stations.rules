@@ -4,8 +4,8 @@ Tags = [station]
 Ships
 [
 	// Civilian stations
-	:~{ File="Small Black Sun Trade Station.ship.png"; Tier=4;  Tags : ~/Tags [trade_station];    StasisIcon="Small Black Sun Trade Station.png" }
-	:~{ File="Small Black Sun Trade Station II.ship.png"; Tier=4;  Tags : ~/Tags [trade_station];    StasisIcon="Small Black Sun Trade Station II.png" }
+	:~{ File="Small Black Sun Trade Station.ship.png"; Tier=1;  Tags : ~/Tags [trade_station];    StasisIcon="Small Black Sun Trade Station.png" }
+	:~{ File="Small Black Sun Trade Station II.ship.png"; Tier=3;  Tags : ~/Tags [trade_station];    StasisIcon="Small Black Sun Trade Station II.png" }
 	:~{ File="Med Black Sun Trade Station.ship.png";   Tier=10; Tags : ~/Tags [trade_station];    StasisIcon="Med Black Sun Trade Station.png" }
 	:~{ File="Large Black Sun Trade Station.ship.png"; Tier=16; Tags : ~/Tags [trade_station];    StasisIcon="Large Black Sun Trade Station.png" }
 

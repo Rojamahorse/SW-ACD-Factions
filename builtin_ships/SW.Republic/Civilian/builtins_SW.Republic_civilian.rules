@@ -4,10 +4,10 @@ Tags = [civilian]
 Ships
 [
 	// Trade ships
-	:~{ File="Cargo Transporter Tiny Republic.ship.png";     Tier=3;  Tags : ~/Tags [trade] }
-	:~{ File="Cargo Transporter Small Republic.ship.png";    Tier=5;  Tags : ~/Tags [trade] }
-	:~{ File="Cargo Transporter Medium Republi.ship.png";  Tier=7;  Tags : ~/Tags [trade] }
-	:~{ File="Cargo Transporter Large Republic.ship.png";     Tier=9;  Tags : ~/Tags [trade] }
-	:~{ File="Cargo Transporter Huge Republic.ship.png";    Tier=11;  Tags : ~/Tags [trade] }
-	:~{ File="Cargo Transporter Extra Huge Rep.ship.png";     Tier=13;  Tags : ~/Tags [trade] }
+	:~{ File="Cargo Transporter Tiny Republic.ship.png";     Tier=1;  Tags : ~/Tags [trade] }
+	:~{ File="Cargo Transporter Small Republic.ship.png";    Tier=3;  Tags : ~/Tags [trade] }
+	:~{ File="Cargo Transporter Medium Republic.ship.png";  Tier=5;  Tags : ~/Tags [trade] }
+	:~{ File="Cargo Transporter Large Republic.ship.png";     Tier=7;  Tags : ~/Tags [trade] }
+	:~{ File="Cargo Transporter Huge Republic.ship.png";    Tier=9;  Tags : ~/Tags [trade] }
+	:~{ File="Eta-Class Supply Barge Republic.ship.png";     Tier=11;  Tags : ~/Tags [trade] }
 ]
