@@ -41,6 +41,9 @@ Actions
         With = &<galaxy_map/map_generators/base_galaxy.rules>/StartingNodePicker
 	}
 
+	//WIP Replace Name Generator Technique
+
+
 	// Add CIS, Galactic Empire, Rebel Alliance, and Republic codex lore
 	{
 		Action = AddMany

@@ -10,4 +10,7 @@ Ships
 	:~{ File="Cargo Transporter Large Republic.ship.png";     Tier=7;  Tags : ~/Tags [trade] }
 	:~{ File="Cargo Transporter Huge Republic.ship.png";    Tier=9;  Tags : ~/Tags [trade] }
 	:~{ File="Eta-Class Supply Barge Republic.ship.png";     Tier=11;  Tags : ~/Tags [trade] }
+	:~{ File="Republic Consular-Class CruiserB.ship.png";     Tier=2;  Tags : ~/Tags [trade] }
+	:~{ File="Republic CR70 Corvette (Civ).ship.png";     Tier=4;  Tags : ~/Tags [trade] }
+	:~{ File="Republic CR70 Corvette (Cargo).ship.png";     Tier=6;  Tags : ~/Tags [trade] }
 ]
