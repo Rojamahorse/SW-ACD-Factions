@@ -4,10 +4,13 @@ Tags = [civilian]
 Ships
 [
 	// Trade ships
+	:~{ File="Rebel Firespray-31-Class Patr.ship.png";     				Tier=1; Tags : ~/Tags [trade] }
 	:~{ File="Millenium Falcon Rebel.ship.png";     					Tier=1; Tags : ~/Tags [trade] }
 	:~{ File="Rebel Millenium Falcon Supply.ship.png";     				Tier=2; Tags : ~/Tags [trade] }
+	:~{ File="Rebel Corellian G9 Rig Freighter.ship.png";     			Tier=3; Tags : ~/Tags [trade] }
 	:~{ File="Rebel GR-75 Civ Medium Transport.ship.png";     			Tier=4; Tags : ~/Tags [trade] }
 	:~{ File="Rebel DP20 Frigate (Cargo).ship.png";     				Tier=5; Tags : ~/Tags [trade] }
+	:~{ File="Rebel CSS-1 Corellian Star Shutt.ship.png";     			Tier=5; Tags : ~/Tags [trade] }
 	:~{ File="Rebel Hammerhead (Civilian).ship.png";     				Tier=6; Tags : ~/Tags [trade] }
 	:~{ File="Rebel Pheonix Cargo.ship.png";     						Tier=9; Tags : ~/Tags [trade] }
 	:~{ File="Rebel EF76 Nebulon-Cargo Frigate.ship.png";     			Tier=11; Tags : ~/Tags [trade] }

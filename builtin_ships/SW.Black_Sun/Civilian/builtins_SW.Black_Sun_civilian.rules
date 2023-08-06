@@ -10,7 +10,10 @@ Ships
 	:~{ File="Cargo Transporter Large Black_Sun.ship.png";   				Tier=10; Tags : ~/Tags [trade] }
 	:~{ File="Cargo Transporter Huge Black_Sun.ship.png";     				Tier=10; Tags : ~/Tags [trade] }
 	:~{ File="Eta-Class Supply Barge Black Sun.ship.png";     				Tier=13; Tags : ~/Tags [trade] }
-//	:~{ File="Da'i.ship.png";        										Tier=3;  Tags : ~/Tags [trade] }
-//	:~{ File="Acolyte.ship.png";     										Tier=7;  Tags : ~/Tags [trade] }
-//	:~{ File="Deliverance.ship.png"; 										Tier=5;  Tags : ~/Tags [trade] }
+	:~{ File="Firespray-31-BS Patrol.ship.png";        						Tier=1;  Tags : ~/Tags [trade] }
+	:~{ File="CSS-1 Corellian-BS Star Shuttle.ship.png";     				Tier=9;  Tags : ~/Tags [trade] }
+	:~{ File="Corellian G9-BS Rigger Freighter.ship.png"; 					Tier=4;  Tags : ~/Tags [trade] }
+	:~{ File="Black Sun Fighter-BS (Civilian).ship.png"; 					Tier=2;  Tags : ~/Tags [trade] }
+	:~{ File="AA-9 Coruscant-BS Civ Freight.ship.png"; 						Tier=8;  Tags : ~/Tags [trade] }
+	:~{ File="AA-9 Coruscant-BS.ship.png"; 									Tier=11;  Tags : ~/Tags [trade] }
 ]
