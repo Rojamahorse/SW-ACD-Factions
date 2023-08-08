@@ -1,31 +1,40 @@
-TierValueMaximums
+/* These are the maximum values for each tier in the game. The player's tier 
+is determined by their current wealth and fame.*/ 
+TierValueMaximums // Maximum values for each tier
 [
-	60000, // 1
-	75000, // 2
-	90000, // 3
-	110000, // 4
-	140000, // 5
-	180000, // 6
-	230000, // 7
-	300000, // 8
-	400000, // 9
-	500000, // 10
-	650000, // 11
-	800000, // 12
-	1000000, // 13
-	1300000, // 14
-	1600000, // 15
-	2000000, // 16
-	2500000, // 17
-	3000000, // 18
-	4000000, // 19
-	5000000, // 20
+	60000, // Tier 1
+	75000, // Tier 2
+	90000, // Tier 3
+	110000, // Tier 4
+	140000, // Tier 5
+	180000, // Tier 6
+	230000, // Tier 7
+	300000, // Tier 8
+	400000, // Tier 9
+	500000, // Tier 10
+	650000, // Tier 11
+	800000, // Tier 12
+	1000000, // Tier 13
+	1300000, // Tier 14
+	1600000, // Tier 15
+	2000000, // Tier 16
+	2500000, // Tier 17
+	3000000, // Tier 18
+	4000000, // Tier 19
+	5000000, // Tier 20
 ]
-TierValueCombineOverhead = 30000
 
-ValueMoneyMultiplier = 0.05
-StandardMoneyPerTier
+TierValueCombineOverhead = 30000 //Overhead value to combine tiers
+
+ValueMoneyMultiplier = 0.05 // Multiplier for calculating money values
+
+/* StandardMoneyPerTier: This section calculates the amount of money a player should have in each tier, 
+both as a minimum and maximum value. The calculation is based on the TierValueMaximums and ValueMoneyMultiplier.*/
+StandardMoneyPerTier // Calculate the amount of money for each tier
 [
+	// For each tier, we calculate a range of money values.
+	// The range is determined by the maximum value of the current and previous tier,
+	// multiplied by the ValueMoneyMultiplier.
 	{ Tier=1;  Money=["round((&~/TierValueMaximums/0)  * 2/3 * (&~/ValueMoneyMultiplier), 0)", "round((&~/TierValueMaximums/0) * (&~/ValueMoneyMultiplier), 0)"]; }
 	{ Tier=2;  Money=["round((&~/TierValueMaximums/0)  * (&~/ValueMoneyMultiplier), 0)", "round((&~/TierValueMaximums/1)  * (&~/ValueMoneyMultiplier), 0)"]; }
 	{ Tier=3;  Money=["round((&~/TierValueMaximums/1)  * (&~/ValueMoneyMultiplier), 0)", "round((&~/TierValueMaximums/2)  * (&~/ValueMoneyMultiplier), 0)"]; }
@@ -48,9 +57,15 @@ StandardMoneyPerTier
 	{ Tier=20; Money=["round((&~/TierValueMaximums/18) * (&~/ValueMoneyMultiplier), 0)", "round((&~/TierValueMaximums/19) * (&~/ValueMoneyMultiplier), 0)"]; }
 ]
 
-ValueFameMultiplier = (&StandardMaxFamePerTier/0/MaxFame) / (&~/TierValueMaximums/0) * (1/8)
-StandardFamePerTier
+/* ValueFameMultiplier and StandardFamePerTier: This section calculates the amount of fame a player should have at each 
+tier. The calculation is based on the TierValueMaximums and ValueFameMultiplier.*/
+ValueFameMultiplier = (&StandardMaxFamePerTier/0/MaxFame) / (&~/TierValueMaximums/0) * (1/8) // Calculate the Fame multiplier
+
+StandardFamePerTier  // Calculate the amount of fame for each tier
 [
+	// For each tier, we calculate the fame value.
+	// The fame is determined by the maximum value of the current tier,
+	// multiplied by the ValueFameMultiplier.
 	{ Tier=1;  Fame="round((&~/TierValueMaximums/0)  * (&~/ValueFameMultiplier), 0)"; }
 	{ Tier=2;  Fame="round((&~/TierValueMaximums/1)  * (&~/ValueFameMultiplier), 0)"; }
 	{ Tier=3;  Fame="round((&~/TierValueMaximums/2)  * (&~/ValueFameMultiplier), 0)"; }
@@ -73,12 +88,18 @@ StandardFamePerTier
 	{ Tier=20; Fame="round((&~/TierValueMaximums/19) * (&~/ValueFameMultiplier), 0)"; }
 ]
 
-MaxFame = 10000
-MaxFameOffset = -160  / (&MaxFameMultiple)
-ValueMaxFameMultiplier = (&MaxFame) / (&~/TierValueMaximums/17) / (&MaxFameMultiple)
-MaxFameMultiple = 10
-StandardMaxFamePerTier
+MaxFame = 10000 // Maximum fame value
+MaxFameOffset = -160  / (&MaxFameMultiple) // Offset for calculating the maximum fame
+ValueMaxFameMultiplier = (&MaxFame) / (&~/TierValueMaximums/17) / (&MaxFameMultiple) // Multiplier for calculating the maximum fame
+MaxFameMultiple = 10 // Multiple for the maximum fame
+
+/*StandardMaxFamePerTier: This section calculates the maximum amount of fame a player can have at each tier. 
+The calculation is based on the TierValueMaximums, ValueMaxFameMultiplier, MaxFameOffset, and MaxFameMultiple.*/
+StandardMaxFamePerTier // Calculate the maximum fame for each tier
 [
+	// For each tier, we calculate the maximum fame value.
+	// The maximum fame is determined by the maximum value of the current tier,
+	// multiplied by the ValueMaxFameMultiplier, and added to the MaxFameOffset.
 	{ Tier=1;  MaxFame="round((&~/TierValueMaximums/0)  * (&~/ValueMaxFameMultiplier) + (&~/MaxFameOffset), 0) * (&~/MaxFameMultiple)"; }
 	{ Tier=2;  MaxFame="round((&~/TierValueMaximums/1)  * (&~/ValueMaxFameMultiplier) + (&~/MaxFameOffset), 0) * (&~/MaxFameMultiple)"; }
 	{ Tier=3;  MaxFame="round((&~/TierValueMaximums/2)  * (&~/ValueMaxFameMultiplier) + (&~/MaxFameOffset), 0) * (&~/MaxFameMultiple)"; }
@@ -101,8 +122,12 @@ StandardMaxFamePerTier
 	{ Tier=20; MaxFame="round((&~/TierValueMaximums/19) * (&~/ValueMaxFameMultiplier), 0) * (&~/MaxFameMultiple)"; }
 ]
 
-StandardFamePrereqPerTier
+/* StandardFamePrereqPerTier: This section sets the fame requirement for each tier, 
+which is based on the StandardMaxFamePerTier from the previous tier.*/
+StandardFamePrereqPerTier // Set the fame prerequisite for each tier
 [
+	// For each tier, we set the fame prerequisite.
+	// The fame prerequisite is the maximum fame of the previous tier.
 	{ Tier=1;  Fame=0; }
 	{ Tier=2;  Fame=&~/StandardMaxFamePerTier/0/MaxFame; }
 	{ Tier=3;  Fame=&~/StandardMaxFamePerTier/1/MaxFame; }
@@ -125,9 +150,15 @@ StandardFamePrereqPerTier
 	{ Tier=20; Fame=&~/StandardMaxFamePerTier/18/MaxFame; }
 ]
 
-FameToRepFactor = 1
-StandardReputationPerTier
+/* StandardReputationPerTier: This section calculates the reputation a player should have at each tier. 
+The calculation is based on the TierValueMaximums, ValueFameMultiplier, 
+and FameToRepFactor.*/
+FameToRepFactor = 1 // Factor for converting fame to reputation
+StandardReputationPerTier // Calculate the reputation for each tier
 [
+	// For each tier, we calculate the reputation value.
+	// The reputation is determined by the maximum value of the current tier,
+	// multiplied by the ValueFameMultiplier, and then by the FameToRepFactor.
 	{ Tier=1;  Reputation="round((&~/TierValueMaximums/0)  * (&~/ValueFameMultiplier) * (&~/FameToRepFactor), 0)"; }
 	{ Tier=2;  Reputation="round((&~/TierValueMaximums/1)  * (&~/ValueFameMultiplier) * (&~/FameToRepFactor), 0)"; }
 	{ Tier=3;  Reputation="round((&~/TierValueMaximums/2)  * (&~/ValueFameMultiplier) * (&~/FameToRepFactor), 0)"; }
