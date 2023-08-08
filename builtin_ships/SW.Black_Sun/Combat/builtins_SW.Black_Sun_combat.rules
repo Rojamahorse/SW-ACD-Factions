@@ -7,11 +7,11 @@ Ships
 	:~{ File="Black Sun Fighter (Combat).ship.png";     						Tier=1;  Difficulty=1; }
 	:~{ File="Black Sun Fighter-BS H (Combat).ship.png";         				Tier=4;  Difficulty=2; }
 	:~{ File="Black Sun Fighter-BS (Combat).ship.png";          				Tier=3;  Difficulty=2; }
-//	:~{ File="Peccadillo.ship.png";       										Tier=1;  Difficulty=1; }
-//	:~{ File="Fanged Fighter.ship.png";   										Tier=1;  Difficulty=1; }
-//	:~{ File="Voltage.ship.png";          										Tier=1;  Difficulty=1; }
-//	:~{ File="Pinion.ship.png";           										Tier=1;  Difficulty=1; }
-//	:~{ File="Horsefly.ship.png";         										Tier=2;  Difficulty=1; }
+	:~{ File="Black Sun ARC-170-BS.ship.png";       							Tier=3;  Difficulty=2; }
+	:~{ File="Mandalorian ARC-170.ship.png";   									Tier=3;  Difficulty=2; }
+	:~{ File="Storm IV Twin-Pod BS Combat.ship.png";          					Tier=3;  Difficulty=2; }
+	:~{ File="Small-BS Fighter.ship.png";           							Tier=2;  Difficulty=2; }
+	:~{ File="Hutt-BS Fighter.ship.png";         								Tier=2;  Difficulty=2; }
 //	:~{ File="Effigy.ship.png";           										Tier=2;  Difficulty=1; }
 //	:~{ File="Backburner.ship.png";       										Tier=2;  Difficulty=2; }
 //	:~{ File="Junk Carver.ship.png";      										Tier=2;  Difficulty=2; }
