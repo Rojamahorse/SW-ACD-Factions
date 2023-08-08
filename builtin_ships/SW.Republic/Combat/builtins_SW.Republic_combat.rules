@@ -5,6 +5,7 @@ Ships
 [
 	
 	:~{ File="Republic Eta-2 Actis-Class Inter.ship.png";      								Tier=1;  Difficulty=1; }
+	:~{ File="Republic Naboo N-1 Starfighter.ship.png";      								Tier=1;  Difficulty=1; }
 	:~{ File="Republic Z-95 Headhunter.ship.png";      										Tier=1;  Difficulty=1; }
 	:~{ File="Republic BTL-L Y-Wing Bomber.ship.png";        								Tier=1;  Difficulty=1; }
 	:~{ File="Republic BTL-B Y-Wing Bomber.ship.png";       								Tier=1;  Difficulty=2; }
@@ -13,10 +14,11 @@ Ships
 	:~{ File="Republic Delta 7L Starfighter.ship.png";       								Tier=1;  Difficulty=2; }
 	:~{ File="Republic Aggressive ReConnaissance-170 Starfighter.ship.png";      			Tier=1;  Difficulty=2; }
 	:~{ File="Republic A3 Nimbus-Class V-Wing Starfighter.ship.png";        				Tier=1;  Difficulty=2; }
-	:~{ File="Republic V-19 Torrent Starfighte.ship.png";       							Tier=1;  Difficulty=2; }
+	:~{ File="Republic V-19 Torrent Starfighte.ship.png";       							Tier=2;  Difficulty=2; }
 	:~{ File="Republic Havoc Marauder.ship.png";     										Tier=2;  Difficulty=2; }
 	:~{ File="Remove_Naboo-Star-Fighter.ship.png";       									Tier=2;  Difficulty=3; }
 	:~{ File="Republic Gunship.ship.png"; 													Tier=3;  Difficulty=2; }
+	:~{ File="Republic Storm IV Twin-Pod Comba.ship.png";       							Tier=3;  Difficulty=2; }
 	:~{ File="Remove_LAAT.ship.png";       													Tier=3;  Difficulty=2; }
 	:~{ File="Republic Gunship (LAAT).ship.png";        									Tier=3;  Difficulty=3; }
 	:~{ File="Republic Nu-Class Attack Shuttle.ship.png";     								Tier=2;  Difficulty=2; }
