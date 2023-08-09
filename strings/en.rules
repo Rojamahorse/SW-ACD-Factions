@@ -21,14 +21,14 @@ Factions
 
 StarterShips
 {
-	A_Wing = "The A-Wing, Like a caffeinated space weasel on roller skates, it's quick, agile, and totally unpredictable in a dogfight."
-	Black_Sun_Fighter =  "The Black Sun Fighter, combines the sleek elegance of a vintage starship with the finesse of a disco ball in zero gravity. With a stealth mode that's just as effective as trying to sneak around in tap shoes, this ship offers a unique blend of flair and futility. Remember, the key to victory is blinding your opponents with envy, or maybe just a few well-placed laser bolts."
-	Durasteel_Prospector = "The Durasteel Prospector, is your trusty companion for when you're in the mood to haul cargo or dig up space rocks. With a hull that looks like it survived one too many collisions with asteroids, this ship proves that style isn't everything—especially when it's buried under layers of durasteel plating. So grab your shovel and your space hard hat, because it's time to get your hands dirty in the name of profit!"
-	Hyena_Class_Droid_Bomber = "The Hyena-Class Droid Bomber, is the answer to the question no one asked: 'What if we turned a droid into a kamikaze confetti dispenser?' With all the subtlety of a parade float on fire, this ship brings chaos and colorful explosions wherever it goes. It's like a piñata crossed with a missile—you never know what you'll get, but it's sure to be a blast!"
-	N_1_Starfighter = "The N-1 Starfighter, lovingly dubbed the 'Nerf Herder's Dream', is for pilots who believe that precision is overrated and that curves are the true path to victory. With a design that looks like it was borrowed from a royal parade and controls that occasionally respond to pleading, this ship is a true work of art... as long as your definition of art includes unintentional barrel rolls. So, grab your cape and get ready to soar into battle with all the grace of a drunken duck!"
-	TIE_Fighter = "The Tie Fighter, Experience the thrill of imminent doom every time you get into the cockpit. No safety belts, just adrenaline-fueled panic!"
-	Y_Wing = "The Y-Wing, The 'Y' stands for 'Why carry one bomb when you can have a buffet?' Perfect for making enemies see stars and stripes."
-	X_Wing_Z95 = "The X-Wing Z-95 Headhunter, is all about style and survivability. Equipped with state-of-the-art cup holders for those mid-battle coffee cravings and a navigation system that occasionally listens to your backseat piloting, the Zippy Z95 is your go-to ship for chaotic space adventures. Remember, it's not about the size of the lasers, but how you use them!"
+	A_Wing = "Like a caffeinated space weasel on roller skates, it's quick, agile, and unpredictable in a dogfight. Designed for efficiency, they made R2 take the next shuttle. No backseat drivers here, strap in and bring your A-game!"
+	Black_Sun_Fighter =  "Combines sleek elegance and the finesse of a disco ball in zero gravity. With a stealth mode that's just as effective as sneaking in tap shoes, this ship offers a unique blend of flair and futility."
+	Durasteel_Prospector = "This rusty-but-trusty hauler proves that style isn't everything. Grab your shovel and your space hard hat, because it's time to get your hands dirty in the name of profit!"
+	Hyena_Class_Droid_Bomber = "The answer to the question no one asked: 'What if we turned a droid into a kamikaze confetti dispenser?' With all the subtlety of a parade float on fire, this ship brings chaos and colorful explosions wherever it goes."
+	N_1_Starfighter = "The 'Nerf Herder's Dream', This ship is for pilots who believe that precision is overrated and that curves are the true path to victory. This ship is a true work of art... as long as your definition of art includes unintentional barrel rolls."
+	TIE_Fighter = "The Tie Fighter, Experience the thrill of imminent doom every time you get into the cockpit. No safety belts, just adrenaline-fueled panic. Remember, it's not about the size of the lasers, but how you use them!"
+	Y_Wing = "The 'Y' stands for 'Why carry one or two bombs when you could treat the whole galaxy to a dazzling fireworks display? Perfect for adding a touch of sparkle to space battles and occasionally giving enemies a starry surprise."
+	X_Wing_Z95 = "This vintage vessel boasts cup holders and a navigation system that doubles as your personal, snarky co-pilot. Proficient in both piloting and sarcastic commentary, if you can't defeat them, at least roast them!"
 }
 
 Doodads
