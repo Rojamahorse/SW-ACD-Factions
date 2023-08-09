@@ -141,19 +141,40 @@ Actions
 
 		ManyToAdd
 		[
-			{
-				Ship = "Starter-A-Wing Interceptor.ship.png"
-				DescriptionKey = "StarterShips/A_Wing"
-			}
-			{
-				Ship = "Starter-TIE Fighter.ship.png"
-				DescriptionKey = "StarterShips/TIE_Fighter"
-			}
-			{
-				Ship = "Starter-Y-Wing Bomber.ship.png"
-				DescriptionKey = "StarterShips/Y_Wing"
-			}
+    		{
+    		    Ship = "Starter A-Wing Interceptor.ship.png"
+    		    DescriptionKey = "StarterShips/A_Wing"
+    		}
+    		{
+    		    Ship = "Starter TIE Fighter.ship.png"
+    		    DescriptionKey = "StarterShips/TIE_Fighter"
+    		}
+    		{
+    		    Ship = "Starter Y-Wing Bomber.ship.png"
+    		    DescriptionKey = "StarterShips/Y_Wing"
+    		}
+    		{
+    		    Ship = "Starter Z-95 Headhunter.ship.png"
+    		    DescriptionKey = "StarterShips/X_Wing_Z95"
+    		}
+    		{
+    		    Ship = "Starter N-1 Starfighter.ship.png"
+    		    DescriptionKey = "StarterShips/N_1_Starfighter"
+    		}
+    		{
+    		    Ship = "Starter Black Sun Fighter.ship.png"
+    		    DescriptionKey = "StarterShips/Black_Sun_Fighter"
+    		}
+    		{
+    		    Ship = "Starter Durasteel Prospector.ship.png"
+    		    DescriptionKey = "StarterShips/Durasteel_Prospector"
+    		}
+    		{
+    		    Ship = "Starter Hyena-Class Droid Bomber.ship.png"
+    		    DescriptionKey = "StarterShips/Hyena_Class_Droid_Bomber"
+    		}
 		]		
+
 	}
 	
 	//Modify world generation XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX

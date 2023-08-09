@@ -1,0 +1,39 @@
+UpdateInterval = 1
+
+StrategyModules
+[
+	{
+		Type = HoldPosition
+		HoldRotation = false
+	}
+	{
+		Type = AggroEnemies
+		TargetSwitchThresholdFactor = 2
+		TargetDistanceFactorExponent = 0.5
+		TargetFirepowerCacheTime = 10
+		AcquireAggroWithinRadar = false
+		ReleaseAggroWithinRadar = false
+		RotateOnly = true
+	}
+]
+
+TacticsModules
+[
+	{
+		Type = DefaultAttackRadiusAndRotation
+		AttackRotationSwitchThresholdFactor = 1.25
+		AttackRotationsToCheck = 8
+		RotateOnly = true
+		UseSavedAboveHealth = 50%
+	}
+]
+
+TargetingModules
+[
+	{
+		Type = ValueTargeter
+		TargetChecksPerUpdate = 10
+		TargetSwitchThresholdFactor = 2
+		TargetValueFactorPerPenetrationDist = .75
+	}
+]

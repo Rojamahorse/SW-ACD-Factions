@@ -1,0 +1,9 @@
+Easy = &<ai_easy.rules>
+Normal = &<ai_normal.rules>
+StationGuard = &<ai_station_guard.rules>
+Wanderer = &<ai_wanderer.rules>
+Police = &<ai_police.rules>
+DefensePlatform = &<ai_defense_platform.rules>
+TradeShip = &<ai_trade_ship.rules>
+SpaceStation = &<ai_space_station.rules>
+MilitaryStation = &<ai_military_station.rules>

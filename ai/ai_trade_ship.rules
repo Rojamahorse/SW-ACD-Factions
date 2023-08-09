@@ -1,0 +1,41 @@
+UpdateInterval = [.75, 1.25] // A random range.
+
+StrategyModules
+[
+	{
+		Type = TradeShip
+	}
+	{
+		Type = HaltForComms
+		HaltForTrade = true
+	}
+	{
+		Type = SelfRepair
+		RepairChecksPerTick = 1
+		RepairDamaged = true
+		RebuildDestroyed = true
+		AllowPartialRepair = true
+		AllowPartialRebuild = false
+	}
+	{
+		Type = FleeFromEnemies
+		FleeDistance = 1000
+		RecallCrew = true
+		FtlAfter = [10, 20]
+	}
+]
+
+CommsModules
+[
+	{
+		Type = Trade
+		AllowHumanTrade = true
+		AllowNpcTrade = true
+	}
+	{
+		Type = CrewProvider
+		CrewForHireFraction = 20%
+		CrewHireCostPerCrewRatio = &<./Data/modes/career/career.rules>/CrewHireCostPerCrewRatioTradeShips
+		CrewHireCostRoundToMultiple = &<./Data/modes/career/career.rules>/CrewHireCostRoundToMultiple
+	}
+]

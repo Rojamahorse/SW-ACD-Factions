@@ -1,0 +1,45 @@
+UpdateInterval = [.25, .75] // A random range.
+
+StrategyModules
+[
+	{
+		Type = AreaPatrol
+		DefaultPatrolRadius = 500
+		AvoidableDoodadTags = [sun]
+		AvoidableDoodadBuffer = 100
+	}
+	{
+		Type = AggroEnemies
+		TargetSwitchThresholdFactor = 2
+		TargetDistanceFactorExponent = 0.5
+		TargetFirepowerCacheTime = 10
+		AcquireAggroWithinRadar = false
+		ReleaseAggroWithinRadar = true
+	}
+]
+
+TacticsModules
+[
+	{
+		Type = DefaultAttackRadiusAndRotation
+		AttackRotationSwitchThresholdFactor = 1.25
+		AttackRotationsToCheck = 8
+		UseSavedAboveHealth = 50%
+	}
+	{
+		Type = RandomAttackAngle
+		AttackAngleChangeInterval = [5, 10]
+		AttackAngleChangeDelta = [-30d, 30d]
+		CoordinateFlanking = true
+	}
+]
+
+TargetingModules
+[
+	{
+		Type = ValueTargeter
+		TargetChecksPerUpdate = 10
+		TargetSwitchThresholdFactor = 2
+		TargetValueFactorPerPenetrationDist = .75
+	}
+]

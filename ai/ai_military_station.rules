@@ -1,0 +1,50 @@
+UpdateInterval = 10
+
+StrategyModules
+[
+	{
+		Type = HoldPosition
+		HoldRotation = false
+	}
+	{
+		Type = SelfRepair
+		RepairChecksPerTick = 10
+		RepairDamaged = true
+		RebuildDestroyed = true
+		AllowPartialRepair = true
+		AllowPartialRebuild = false
+	}
+	{
+		Type = AggroEnemies
+		TargetSwitchThresholdFactor = 2
+		TargetDistanceFactorExponent = 0.5
+		TargetFirepowerCacheTime = 10
+		AcquireAggroWithinRadar = false
+		ReleaseAggroWithinRadar = false
+		RotateOnly = true
+	}
+]
+
+TargetingModules
+[
+	{
+		Type = ValueTargeter
+		TargetChecksPerUpdate = 10
+		TargetSwitchThresholdFactor = 2
+		TargetValueFactorPerPenetrationDist = .75
+	}
+]
+
+CommsModules
+[
+	{
+		Type = Trade
+		AllowHumanTrade = true
+		AllowNpcTrade = true
+		HelpWithConstruction = true
+		AllowO2Refill = true
+	}
+	{
+		Type = TechProvider
+	}
+]

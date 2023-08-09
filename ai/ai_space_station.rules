@@ -1,0 +1,56 @@
+UpdateInterval = 10
+
+StrategyModules
+[
+	{
+		Type = HoldPosition
+		HoldRotation = false
+	}
+	{
+		Type = SelfRepair
+		RepairChecksPerTick = 10
+		RepairDamaged = true
+		RebuildDestroyed = true
+		AllowPartialRepair = true
+		AllowPartialRebuild = false
+	}
+	{
+		Type = AggroEnemies
+		TargetSwitchThresholdFactor = 2
+		TargetDistanceFactorExponent = 0.5
+		TargetFirepowerCacheTime = 10
+		AcquireAggroWithinRadar = false
+		ReleaseAggroWithinRadar = false
+		RotateOnly = true
+	}
+]
+
+CommsModules
+[
+	{
+		Type = Trade
+		AllowHumanTrade = true
+		AllowNpcTrade = true
+		HelpWithConstruction = true
+		AllowO2Refill = true
+	}
+	{
+		Type = CrewProvider
+		CrewForHireFraction = 20%
+		CrewHireCostPerCrewRatio = &<./Data/modes/career/career.rules>/CrewHireCostPerCrewRatioStations
+		CrewHireCostRoundToMultiple = &<./Data/modes/career/career.rules>/CrewHireCostRoundToMultiple
+	}
+	{
+		Type = MissionProvider
+	}
+	{
+		Type = TechProvider
+	}
+]
+
+StasisModules
+[
+	{
+		Type = MissionProvider
+	}
+]
