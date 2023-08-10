@@ -1,5 +1,9 @@
 Parts
 {
+	// Modular Storage Floor
+	SW_Modular_Storage_Floor = "1x1 Modular Storage"
+	SW_Modular_Storage_FloorIcon = "1x1 Modular Storage"
+	SW_Modular_Storage_FloorDesc = "A 1x1 storage floor that accommodates 1 stack of any resource."
 }
 
 Stats
