@@ -16,4 +16,5 @@ Ships
 	:~{ File="Republic Consular-Class CruiserB.ship.png";     Tier=2;  Tags : ~/Tags [trade] }
 	:~{ File="Republic CR70 Corvette (Civ).ship.png";     Tier=4;  Tags : ~/Tags [trade] }
 	:~{ File="Republic CR70 Corvette (Cargo).ship.png";     Tier=6;  Tags : ~/Tags [trade] }
+	:~{ File="Rep SoroSuub Lux 3000 Space Yach.ship.png";     Tier=5;  Tags : ~/Tags [trade] }
 ]

@@ -28,7 +28,7 @@ Ships
 	// Patrol ships
 	:~{ File="Hyena-BS Droid Bomber.ship.png";          							Tier=4;  Difficulty=1; }
 	:~{ File="Gozanti-Class Cruiser-BS.ship.png";         							Tier=6;  Difficulty=2; }
-//	:~{ File="Marauder.ship.png";         										Tier=4;  Difficulty=1; }
+	:~{ File="Med-BS Starfighter.ship.png";         								Tier=4;  Difficulty=2; }
 //	:~{ File="Phalanx II Medium Escort.ship.png"; 								Tier=4; Difficulty=1; }
 //	:~{ File="Bigfoot.ship.png";          										Tier=4;  Difficulty=1; }
 //	:~{ File="Sprocket.ship.png";         										Tier=4;  Difficulty=1; }
