@@ -1,0 +1,120 @@
+Parts
+{
+}
+
+Stats
+{
+}
+
+Factions
+{
+	Black_Sun = "Colectivo Sol Negro"
+	CIS = "Confederación de Sistemas Independientes"
+	Galactic_Empire = "Imperio Galáctico"
+	Rebel_Alliance = "Alianza Rebelde"
+	Republic = "República"
+	monolith = "Imperio Sith"
+	fringe = "Orden Jedi"
+	imperium = "Primer Orden"
+	cabal = "Mandalorianos"
+}
+
+StarterShips
+{
+	A_Wing = "Como una comadreja espacial cafeinada en patines, es rápida, ágil e impredecible en un combate aéreo. Diseñado para la eficiencia, hicieron que R2 tomara el siguiente transbordador. ¡Sin conductores de asiento trasero aquí, abróchate el cinturón y trae tu mejor juego!"
+	Black_Sun_Fighter =  "Combina elegancia y la fineza de una bola de discoteca en gravedad cero. Con un modo sigiloso tan efectivo como colarse en zapatos de tap, esta nave ofrece una combinación única de estilo y futilidad."
+	Durasteel_Prospector = "Este transportista oxidado pero confiable demuestra que el estilo no lo es todo. ¡Toma tu pala y tu casco espacial, porque es hora de ensuciarte las manos en nombre de la ganancia!"
+	Hyena_Class_Droid_Bomber = "La respuesta a la pregunta que nadie hizo: '¿Qué pasaría si convirtiéramos un droide en un dispensador de confeti kamikaze?' Con toda la sutileza de una carroza en llamas, esta nave trae caos y explosiones coloridas dondequiera que vaya."
+	N_1_Starfighter = "El 'Sueño del Pastor de Nerfs', Esta nave es para pilotos que creen que la precisión está sobrevalorada y que las curvas son el verdadero camino hacia la victoria. Esta nave es una verdadera obra de arte... siempre y cuando tu definición de arte incluya giros de barril involuntarios."
+	TIE_Fighter = "El Tie Fighter, Experimenta la emoción del inminente destino cada vez que te metes en la cabina. Sin cinturones de seguridad, solo pánico impulsado por adrenalina. ¡Recuerda, no se trata del tamaño de los láseres, sino de cómo los usas!"
+	Y_Wing = "La 'Y' significa '¿Por qué llevar una o dos bombas cuando podrías ofrecer al universo entero un deslumbrante espectáculo de fuegos artificiales? Perfecto para añadir un toque de brillo a las batallas espaciales y ocasionalmente darles a los enemigos una sorpresa estelar."
+	X_Wing_Z95 = "Este barco vintage cuenta con portavasos y un sistema de navegación que funciona como tu copiloto personal y sarcástico. Proficiente tanto en pilotaje como en comentarios sarcásticos, si no puedes derrotarlos, ¡al menos tómalos el pelo!"
+}
+
+Doodads
+{
+}
+
+Resource
+{
+}
+
+Lore
+{
+
+	Black_Sun
+	{
+		Title = "El Colectivo Sol Negro"
+
+		Lore1 = "El Colectivo Sol Negro es una organización criminal notoria y clandestina que opera en las sombras, participando en diversas actividades ilícitas y ejerciendo una influencia significativa sobre el submundo criminal."
+
+		Lore2 = "Originado como una pequeña red de contrabando de especias, el Sol Negro creció en un vasto imperio criminal bajo el liderazgo de influyentes señores del crimen como el Príncipe Xizor. Su ascenso al poder estuvo marcado por una ambición despiadada y una disposición para eliminar a rivales y competidores mediante intimidación, coerción y asesinato."
+
+		Lore3 = "El Colectivo Sol Negro opera en varios sectores de la galaxia, incluido el infame Sector Corelliano y los Territorios del Borde Exterior sin ley. Con una vasta red de operativos e informantes, el Sol Negro mantiene control sobre una amplia gama de actividades criminales, incluyendo contrabando de especias, comercio ilegal de armas, piratería e incluso infiltración en negocios legítimos para lavado de dinero y extorsión."
+
+		Lore4 = "Uno de los activos más peligrosos del Sol Negro es su red de mercenarios, asesinos y ejecutores hábiles y mortales. La organización recluta individuos de diversas especies y orígenes, garantizando una fuerza laboral diversa y altamente capaz para llevar a cabo sus empresas criminales."
+
+		Lore5 = "A pesar de su notoriedad, el Sol Negro opera con un alto grado de secreto y discreción, lo que dificulta que las fuerzas del orden y otras facciones desmantelen completamente sus operaciones. Esta naturaleza elusiva ha permitido que el Colectivo Sol Negro sobreviva y prospere durante generaciones, evitando la justicia y convirtiéndose en una fuerza poderosa en el submundo criminal de la galaxia."
+	}
+
+	CIS
+	{
+		Title = "La Confederación de Sistemas Independientes"
+
+		Lore1 = "La Confederación de Sistemas Independientes, también conocida como Separatistas, fue una facción galáctica formada durante la tumultuosa era de las Guerras Clon, abogando por la autonomía de los sistemas estelares y buscando romper con la autoridad central de la República Galáctica."
+
+		Lore2 = "Originalmente concebida como un movimiento político para abordar las quejas contra la percepción de corrupción y burocracia de la República, la Confederación creció en una facción formidable bajo el liderazgo de Conde Dooku, un antiguo Maestro Jedi que se convirtió en el Señor Sith Darth Tyranus. Manipulados secretamente por Darth Sidious, el Señor Sith que más tarde se convertiría en el Emperador Palpatine, los Separatistas sirvieron como herramienta en el plan de los Sith para desestabilizar la República y finalmente allanar el camino para el surgimiento del Imperio Galáctico."
+
+		Lore3 = "La Confederación obtuvo el apoyo de varios sistemas estelares y entidades corporativas desilusionadas con la ineficiencia percibida de la República y el favoritismo hacia los Mundos del Núcleo. Miembros prominentes incluyeron la Federación de Comercio, la Alianza Tecno y la Liga de Comercio Intergaláctica, todos los cuales proporcionaron recursos significativos y apoyo militar a la causa Separatista."
+
+		Lore4 = "Los droides de combate se convirtieron en el sello distintivo de las fuerzas armadas de la Confederación. Estas máquinas, aunque a menudo despreciadas por su falta de intuición y habilidades de combate en comparación con los soldados orgánicos, permitieron a los Separatistas desplegar ejércitos vastos y rápidamente reemplazables."
+
+		Lore5 = "A pesar de la nobleza que algunos líderes y sistemas asociados pudieron haber visto en su causa, la Confederación estuvo plagada de traiciones internas, agendas ocultas y la corrupción rampante que afirmaban oponerse en la República. Finalmente, con el fin de las Guerras Clon y la ejecución de la Orden 66, la Confederación fue disuelta, con muchos de sus líderes asesinados por Darth Vader en la beca del Señor Sith Darth Sidious."
+	}
+
+	Galactic_Empire
+	{
+		Title = "El Imperio Galáctico"
+
+		Lore1 = "El Imperio Galáctico es un régimen autoritario que emergió de las cenizas de las Guerras Clon, consolidando el poder bajo el liderazgo del Emperador Palpatine con la promesa de traer estabilidad y orden a la galaxia."
+
+		Lore2 = "Formado sobre los cimientos de la anterior República Galáctica, el Imperio fue la creación del Emperador Palpatine, también conocido como Darth Sidious, quien manipuló eventos políticos para orquestar la transformación de la República en un gobierno centralizado y autocrático. Palpatine explotó el miedo y el caos de las Guerras Clon para instalar el apoyo público a sus poderes de emergencia, declarándose finalmente Emperador y disolviendo las instituciones democráticas de la República."
+
+		Lore3 = "Con su capital en la ecumenópolis de Coruscant, el Imperio extendió su alcance por toda la galaxia, haciendo cumplir su gobierno a través de una vasta fuerza militar conocida como el Ejército y la Marina Imperial. Los Stormtroopers, los soldados sin rostro vestidos con armadura blanca, simbolizaban la fuerza y uniformidad del ejército Imperial. Los oscuros ejecutores del Imperio, los Señores Sith, incluido Darth Vader, eran temidos y ejercían el poder del lado oscuro de la Fuerza."
+
+		Lore4 = "La flota Imperial constaba de una serie de naves de guerra tecnológicamente avanzadas, incluyendo los colosales Destructores Estelares de clase Imperial y las estaciones de batalla del tamaño de una luna conocidas como la Estrella de la Muerte. Estos intimidantes buques se utilizaban para proyectar el poder Imperial y mantener el control sobre sistemas estelares a través de demostraciones de fuerza abrumadora."
+
+		Lore5 = "Aunque el Imperio se presentaba como una fuerza para el orden y el progreso, su gobierno estuvo marcado por la opresión, el miedo y la supresión de las libertades individuales. Los planetas que se atrevían a desafiar la autoridad Imperial enfrentaban brutales consecuencias, a menudo llevando al uso de superarmas o fuerzas militares masivas para aplastar el disentimiento. La infame destrucción de Alderaan, un mundo pacífico, sirvió como un escalofriante ejemplo de la disposición del Imperio para ejercer su dominio."
+	}
+
+	Republic
+	{
+		Title = "La República"
+
+		Lore1 = "La República era una institución democrática y expansiva que sirvió como cuerpo de gobierno de la galaxia durante más de mil generaciones, promoviendo la cooperación, la diplomacia y el imperio de la ley entre sus mundos miembros."
+
+		Lore2 = "Fundada en los principios de la libertad y la representación, la República surgieron en medio de los conflictos entre el Infinito Imperio Rakatan y la antigua Orden Je'daii. Con el tiempo, creció para abarcar miles de sistemas estelares, cada uno representado en el Senado Galáctico en el mundo capital de Coruscant."
+
+		Lore3 = "La Orden Jedi desempeñó un papel crucial en la gobernabilidad de la República, sirviendo como pacificadores y diplomáticos en toda la galaxia. Como guardianes de la paz y la justicia, los Caballeros Jedi se adhirieron a un código estricto, esforzándose por mantener el equilibrio y la armonía en la Fuerza. A lo largo de su historia, la República enfrentó diversas amenazas, desde los Sith hasta invasiones externas, pero su fuerza radicaba en su capacidad para unir diversas especies y culturas bajo una sola bandera."
+
+		Lore4 = "La República mantenía un ejército permanente conocido como el Gran Ejército de la República, compuesto por soldados clones creados a partir de la plantilla genética del cazarrecompensas Jango Fett. Estos clones fueron criados y entrenados para ser soldados leales, defendiendo ferozmente a la República durante las Guerras Clon contra las fuerzas separatistas."
+
+		Lore5 = "A pesar de sus numerosas fortalezas, la República no estaba exenta de defectos. La burocracia y las maniobras políticas a menudo obstaculizaban la acción rápida, permitiendo que el descontento y la desilusión se propagaran en algunas regiones. El estallido de las Guerras Clon, orquestadas por los Sith, puso a prueba a la República hasta el límite, desafiando sus valores fundamentales y exponiendo vulnerabilidades que eventualmente llevarían a la transformación de la República en el Imperio Galáctico."
+	}
+
+	Rebel_Alliance
+	{
+		Title = "La Alianza Rebelde"
+
+		Lore1 = "La Alianza Rebelde es una facción valiente y determinada que surgió en resistencia contra el régimen tiránico del Imperio Galáctico, luchando por la libertad y la justicia en toda la galaxia."
+
+		Lore2 = "Formada en secreto en los primeros años del dominio del Imperio Galáctico, la Alianza Rebelde fue un esfuerzo colectivo de varias células rebeldes, grupos de resistencia planetaria e individuos desilusionados de diversos orígenes. Las raíces iniciales de la Alianza se remontan a la era de las Guerras Clon, donde comenzó a tomar forma la oposición a la transformación de la República en el Imperio. Su objetivo principal era restaurar los ideales democráticos de la Antigua República y derrocar el régimen opresivo del Emperador Palpatine y sus seguidores Sith."
+
+		Lore3 = "A lo largo de su existencia, la Alianza Rebelde estableció bases secretas en planetas remotos, utilizándolas como centros de reclutamiento, entrenamiento y planificación de ataques estratégicos contra las fuerzas imperiales. Su base más notable se encontraba en el planeta de hielo Hoth, que sirvió como sede temporal y refugio para el Alto Mando de la Alianza. El liderazgo de la Alianza estaba compuesto por figuras carismáticas como Mon Mothma, Bail Organa y la Princesa Leia Organa, quienes inspiraban esperanza y unidad entre sus seguidores."
+
+		Lore4 = "Las fuerzas militares de la Alianza Rebelde, conocidas como la Flota de la Alianza, consistían en una amplia variedad de cazas estelares y naves capitales. Su buque insignia, el Crucero Estelar Mon Calamari llamado 'Home One', simbolizaba los esfuerzos colaborativos de diferentes especies en la lucha por la libertad. La Alianza era conocida por sus hábiles pilotos, incluido el legendario Luke Skywalker, quien desempeñó un papel crucial en la caída del Imperio."
+
+		Lore5 = "Como un movimiento de base, la Alianza Rebelde no buscaba el control sobre la galaxia; en cambio, luchaban por desmantelar el régimen opresivo y restaurar la libertad a los ciudadanos de la galaxia. Su lucha no estuvo exenta de sacrificio, y muchos valientes dieron sus vidas por la causa. A pesar de enfrentar probabilidades abrumadoras, la resistencia y determinación de la Alianza Rebelde inspiraron a innumerables personas a unirse a sus filas, demostrando que incluso en los tiempos más oscuros, la esperanza puede encender las llamas de la rebelión."
+	}
+	
+}

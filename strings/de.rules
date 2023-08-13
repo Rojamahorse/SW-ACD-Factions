@@ -8,14 +8,27 @@ Stats
 
 Factions
 {
-	Black_Sun = "Black Sun Collective"
+	Black_Sun = "Schwarze Sonne"
 	CIS = "Konföderation unabhängiger Systeme"
 	Galactic_Empire = "Galaktisches Imperium"
-	Republic = "Galaktische Republik"
-	monolith = "Black Sun Agent"
-	fringe = "Rebellenallianz"
-	imperium = "Hutten-Clan"
-	cabal = "Mandalorianer"
+	Rebel_Alliance = "Rebellionsallianz"
+	Republic = "Republik"
+	monolith = "Sith-Imperium"
+	fringe = "Jedi-Orden"
+	imperium = "Erste Ordnung"
+	cabal = "Mandalorianer"	
+}
+
+StarterShips
+{
+	A_Wing = "Wie ein koffeinhaltiges Raumwiesel auf Rollschuhen, ist es schnell, wendig und unberechenbar im Hundekampf. Entworfen für Effizienz, haben sie R2 zum nächsten Shuttle geschickt. Keine Beifahrer hier, schnall dich an und bring dein A-Spiel mit!"
+	Black_Sun_Fighter =  "Vereint elegante Eleganz und die Finesse einer Diskokugel in der Schwerelosigkeit. Mit einem Tarnmodus, der genauso effektiv ist wie das Schleichen auf Steppschuhen, bietet dieses Schiff eine einzigartige Mischung aus Flair und Nutzlosigkeit."
+	Durasteel_Prospector = "Dieser rostige, aber zuverlässige Hauler beweist, dass Stil nicht alles ist. Schnapp dir deine Schaufel und deine Weltraum-Bauhelm, denn es ist Zeit, mit schmutzigen Händen im Namen des Profits zu arbeiten!"
+	Hyena_Class_Droid_Bomber = "Die Antwort auf die Frage, die niemand gestellt hat: 'Was wäre, wenn wir einen Droide zum Kamikaze-Konfettispender machen würden?' Mit aller Subtilität eines brennenden Festwagens bringt dieses Schiff Chaos und bunte Explosionen mit, wo immer es hingeht."
+	N_1_Starfighter = "Der 'Traum des Nerf Herders'. Dieses Schiff ist für Piloten gedacht, die glauben, dass Präzision überbewertet ist und dass Kurven der wahre Weg zum Sieg sind. Dieses Schiff ist ein wahres Kunstwerk... solange deine Definition von Kunst unbeabsichtigte Rollen beinhaltet."
+	TIE_Fighter = "Der Tie Fighter. Erlebe den Nervenkitzel des unmittelbaren Untergangs jedes Mal, wenn du ins Cockpit steigst. Keine Sicherheitsgurte, nur adrenalingesteuerte Panik. Denk daran, es geht nicht um die Größe der Laser, sondern wie du sie einsetzt!"
+	Y_Wing = "Das 'Y' steht für 'Warum nur eine oder zwei Bomben mitnehmen, wenn du der ganzen Galaxie ein atemberaubendes Feuerwerk bieten kannst? Perfekt, um Weltraumschlachten etwas Glanz zu verleihen und gelegentlich Feinden eine sternenklare Überraschung zu bereiten."
+	X_Wing_Z95 = "Dieses Vintage-Gefährt verfügt über Getränkehalter und ein Navigationssystem, das gleichzeitig dein persönlicher, schnippischer Copilot ist. Versiert im Fliegen und sarkastischen Kommentaren, wenn du sie nicht besiegen kannst, dann roast sie zumindest!"
 }
 
 Doodads
@@ -30,59 +43,78 @@ Lore
 {
 	Black_Sun
 	{
-	Title = "Black Sun Collective"
+		Title = "Die Black Sun Collective"
 
-	Lore1 = "The Black Sun Collective is a notorious and clandestine criminal organization that operates in the shadows, engaging in various illicit activities and exerting significant influence over the criminal underworld."
+		Lore1 = "Das Black Sun Collective ist eine berüchtigte und geheime kriminelle Organisation, die im Verborgenen agiert und verschiedene illegale Aktivitäten durchführt sowie erheblichen Einfluss auf die kriminelle Unterwelt ausübt."
 
-	Lore2 = "Originating as a small spice smuggling ring, the Black Sun grew into a sprawling criminal empire under the leadership of influential crime lords such as Prince Xizor. Its rise to power was marked by ruthless ambition and a willingness to eliminate rivals and competitors through intimidation, coercion, and assassination."
+		Lore2 = "Ursprünglich als kleiner Gewürzschmugglerring gegründet, entwickelte sich die Black Sun unter der Führung einflussreicher Verbrecherbosse wie Prinz Xizor zu einem ausgedehnten kriminellen Imperium. Ihr Aufstieg zur Macht war geprägt von rücksichtslosem Ehrgeiz und der Bereitschaft, Rivalen und Konkurrenten mit Einschüchterung, Zwang und Mord auszuschalten."
 
-	Lore3 = "The Black Sun Collective operates in multiple sectors of the galaxy, including the infamous Corellian Sector and the lawless Outer Rim Territories. With a vast network of operatives and informants, Black Sun maintains control over a wide range of criminal activities, including spice smuggling, illegal arms trade, piracy, and even the infiltration of legitimate businesses for money laundering and extortion."
+		Lore3 = "Das Black Sun Collective operiert in mehreren Sektoren der Galaxie, einschließlich des berüchtigten Corellian-Sektors und der gesetzlosen Outer Rim Territories. Mit einem weit verzweigten Netzwerk von Agenten und Informanten kontrolliert die Black Sun eine Vielzahl von kriminellen Aktivitäten, darunter Gewürzschmuggel, illegaler Waffenhandel, Piraterie und sogar die Infiltration legitimer Unternehmen zur Geldwäsche und Erpressung."
 
-	Lore4 = "One of the Black Sun's most dangerous assets is its network of skilled and deadly mercenaries, assassins, and enforcers. The organization recruits individuals from various species and backgrounds, ensuring a diverse and highly capable workforce to carry out its criminal enterprises."
+		Lore4 = "Eine der gefährlichsten Ressourcen der Black Sun ist ihr Netzwerk aus erfahrenen und tödlichen Söldnern, Attentätern und Vollstreckern. Die Organisation rekrutiert Individuen verschiedener Spezies und Hintergründe, um eine vielfältige und hoch qualifizierte Belegschaft zu gewährleisten, die ihre kriminellen Unternehmen durchführt."
 
-	Lore5 = "Despite its notoriety, the Black Sun operates with a high degree of secrecy and discretion, making it challenging for law enforcement and other factions to dismantle its operations completely. This elusive nature has enabled the Black Sun Collective to survive and thrive for generations, evading justice and becoming a powerful force in the galaxy's criminal underworld."
+		Lore5 = "Trotz ihrer Berüchtigung arbeitet die Black Sun mit einem hohen Maß an Geheimhaltung und Diskretion, was es für Strafverfolgungsbehörden und andere Fraktionen schwer macht, ihre Operationen vollständig zu zerschlagen. Diese schwer fassbare Natur hat es dem Black Sun Collective ermöglicht, über Generationen hinweg zu überleben und zu gedeihen, der Justiz zu entkommen und zu einer mächtigen Kraft in der kriminellen Unterwelt der Galaxie zu werden."
 	}
+
 	CIS
 	{
-		Title = "Confederacy of Independent Systems"
-		
-		Lore1 = "Freedom."
-		
-		Lore2 = "Capitalism."
+		Title = "Die Konföderation unabhängiger Systeme"
 
-		Lore3 = "Guns."
+		Lore1 = "Die Konföderation unabhängiger Systeme, auch bekannt als die Separatisten, war eine galaktische Fraktion, die während der turbulenten Ära der Klonkriege gegründet wurde. Sie setzte sich für die Autonomie von Sternensystemen ein und strebte danach, sich von der zentralen Autorität der Galaktischen Republik abzuspalten."
 
-		Lore4 = "Capital Punishment."
+		Lore2 = "Ursprünglich als politische Bewegung konzipiert, um Missstände gegen die wahrgenommene Korruption und Bürokratie der Republik anzugehen, wuchs die Konföderation unter der Führung von Graf Dooku zu einer gewaltigen Fraktion heran. Graf Dooku war ein ehemaliger Jedi-Meister, der zum Sith-Lord Darth Tyranus wurde. Im Geheimen von Darth Sidious, dem Sith-Lord, der später Kaiser Palpatine wurde, manipuliert, dienten die Separatisten als Werkzeug in den Plänen der Sith, die Republik zu destabilisieren und letztendlich den Aufstieg des Galaktischen Imperiums zu ermöglichen."
 
-		Lore5 = "Murica."
+		Lore3 = "Die Konföderation erhielt Unterstützung von verschiedenen Sternensystemen und Unternehmensverbänden, die von der vermeintlichen Ineffizienz der Republik und ihrer Bevorzugung der Kernwelten enttäuscht waren. Zu den Schlüsselfiguren der separatistischen Bewegung gehörten mächtige Unternehmen wie die Handelsföderation, die Techno-Union und der Bankenclan, die umfangreiche Ressourcen und Kampfdroiden für das separatistische Militär bereitstellten."
+
+		Lore4 = "Die Basis der separatistischen Militärstreitkräfte war ihre riesige Armee von Kampfdroiden, darunter die B1-Kampfdroiden (allgemein als Kampfdroiden bekannt) und die B2-Superkampfdroiden. Diese Droiden ermöglichten es der Konföderation, große Armeen zu vergleichsweise geringen Kosten einzusetzen und die Kamino-Klonarmee der Republik an verschiedenen Fronten zu herauszufordern."
+
+		Lore5 = "Obwohl die Konföderation behauptete, für die Autonomie und Unabhängigkeit einzustehen, griffen sie oft zu rücksichtslosen Taktiken und militärischer Aggression. Zahlreiche Welten waren in den Konflikt verwickelt, was zu verheerenden Schlachten und vielen Verlusten führte. Das bekannteste Symbol der militärischen Macht der Konföderation war das beeindruckende Drohnenkontrollschiff, ein riesiges Schiff, das die Aktionen ihrer umfangreichen Droidenarmeen bei Großkämpfen koordinierte."
 	}
+
 	Galactic_Empire
 	{
-		Title = "Galactic Empire"
-		
-		Lore1 = "Order."
-		
-		Lore2 = "Willpower."
+		Title = "Das Galaktische Imperium"
 
-		Lore3 = "Law."
+		Lore1 = "Das Galaktische Imperium ist ein autoritäres Regime, das aus den Trümmern der Klonkriege entstanden ist und unter der Führung von Imperator Palpatine die Macht konsolidiert hat. Es versprach, Stabilität und Ordnung in die Galaxie zu bringen."
 
-		Lore4 = "Justice."
+		Lore2 = "Das Imperium wurde auf den Grundlagen der ehemaligen Galaktischen Republik gegründet und war die Idee von Imperator Palpatine, auch bekannt als Darth Sidious. Er manipulierte politische Ereignisse, um die Transformation der Republik in eine zentralisierte und autokratische Regierung herbeizuführen. Palpatine nutzte die Angst und das Chaos der Klonkriege aus, um öffentliche Unterstützung für seine Notfallbefugnisse zu gewinnen. Schließlich erklärte er sich zum Imperator und löste die demokratischen Institutionen der Republik auf."
 
-		Lore5 = "Empire."
+		Lore3 = "Mit seiner Hauptstadt auf dem Ökumenopolis Coruscant erstreckte sich das Imperium über die ganze Galaxie und setzte seine Herrschaft mit Hilfe einer gigantischen Militärstreitmacht, bekannt als die Imperial Army und Navy, durch. Sturmtruppen, die gesichtslosen Soldaten in weißer Rüstung, symbolisierten die Macht und Einheitlichkeit des imperialen Militärs. Die dunklen Vollstrecker des Imperiums, die Sith-Lords, einschließlich Darth Vader, wurden gefürchtet und beherrschten die Macht der dunklen Seite der Macht."
+
+		Lore4 = "Die imperiale Flotte umfasste eine Vielzahl technologisch fortschrittlicher Kriegsschiffe, darunter die kolossalen Imperator-Klasse Sternenzerstörer und die mondgroßen Todesstern-Kampfstationen. Diese beeindruckenden Schiffe wurden eingesetzt, um die imperialistische Macht zu projizieren und die Kontrolle über Sternensysteme durch überwältigende Gewalt aufrechtzuerhalten."
+
+		Lore5 = "Obwohl das Imperium sich als Kraft für Ordnung und Fortschritt präsentierte, war seine Herrschaft von Unterdrückung, Angst und der Unterdrückung individueller Freiheiten geprägt. Planeten, die es wagten, die imperialistische Autorität herauszufordern, wurden brutal bestraft, oft durch den Einsatz von Superwaffen oder massiven Militärstreitkräften zur Niederschlagung von Dissens. Die berüchtigte Zerstörung von Alderaan, einer friedlichen Welt, diente als erschreckendes Beispiel für den Willen des Imperiums, seine Dominanz durchzusetzen."
 	}
+
 	Republic
 	{
-		Title = "Republic"
-		
-		Lore1 = "tbd"
-		
-		Lore2 = "tbd"
+		Title = "Die Republik"
 
-		Lore3 = "tbd"
+		Lore1 = "Die Republik war eine weitläufige demokratische Institution, die über tausend Generationen hinweg als Regierungsorgan der Galaxie fungierte und Zusammenarbeit, Diplomatie und Rechtsstaatlichkeit unter ihren Mitgliedswelten förderte."
 
-		Lore4 = "tbd"
+		Lore2 = "Gegründet auf den Prinzipien von Freiheit und Repräsentation entstand die Republik aus den Nachwirkungen der Konflikte zwischen dem Rakatanischen Unendlichen Imperium und dem alten Je'daii-Orden. Im Laufe der Zeit wuchs sie zu Tausenden von Sternsystemen heran, von denen jedes im Galaktischen Senat auf der Hauptwelt Coruscant vertreten war."
 
-		Lore5 = "tbd"
+		Lore3 = "Der Jedi-Orden spielte eine entscheidende Rolle in der Regierung der Republik und diente als Friedensstifter und Diplomaten in der gesamten Galaxie. Als Hüter von Frieden und Gerechtigkeit hielt sich der Jedi-Orden an einen strengen Verhaltenskodex und strebte danach, das Gleichgewicht und die Harmonie in der Macht aufrechtzuerhalten. Im Laufe ihrer Geschichte stand die Republik verschiedenen Bedrohungen gegenüber, von den Sith bis hin zu externen Invasionen, doch ihre Stärke lag in ihrer Fähigkeit, diverse Spezies und Kulturen unter einem gemeinsamen Banner zu vereinen."
+
+		Lore4 = "Die Republik unterhielt eine stehende Armee bekannt als die Große Armee der Republik, bestehend aus Klonkriegern, die aus dem genetischen Material des Kopfgeldjägers Jango Fett erschaffen wurden. Diese Klone wurden gezüchtet und ausgebildet, um loyale Soldaten zu sein und die Republik während der Klonkriege gegen die separatistischen Kräfte erbittert zu verteidigen."
+
+		Lore5 = "Trotz ihrer vielen Stärken blieb die Republik nicht ohne Fehler. Bürokratie und politisches Taktieren behinderten oft schnelles Handeln und ermöglichten Unzufriedenheit und Enttäuschung in einigen Regionen. Der Ausbruch der Klonkriege, inszeniert von den Sith, stellte die Republik auf die ultimative Probe, indem sie ihre grundlegenden Werte herausforderte und Schwachstellen aufdeckte, die letztendlich zur Transformation der Republik in das Galaktische Imperium führten."
 
 	}
+
+	Rebel_Alliance
+	{
+		Title = "Die Rebellenallianz"
+
+		Lore1 = "Die Rebellenallianz ist eine mutige und entschlossene Fraktion, die sich gegen die tyrannische Herrschaft des Galaktischen Imperiums erhoben hat und nach Freiheit und Gerechtigkeit in der Galaxie strebt."
+
+		Lore2 = "Die Rebellenallianz wurde heimlich in den frühen Jahren der Vorherrschaft des Galaktischen Imperiums gegründet und war eine gemeinsame Anstrengung verschiedener rebellischer Zellen, planetarer Widerstandsgruppen und desillusionierter Individuen aus unterschiedlichen Hintergründen. Die Anfänge der Allianz lassen sich auf die Zeit der Klonkriege zurückverfolgen, als der Widerstand gegen die Umwandlung der Republik in das Imperium Form annahm. Ihr Hauptziel war es, die demokratischen Ideale der alten Republik wiederherzustellen und das oppressive Regime von Imperator Palpatine und seinen Sith-Anhängern zu stürzen."
+
+		Lore3 = "Im Laufe ihrer Existenz errichtete die Rebellenallianz versteckte Stützpunkte auf abgelegenen Planeten und nutzte sie als Zentren für Rekrutierung, Training und die Planung strategischer Angriffe gegen die imperialen Streitkräfte. Ihr bekanntester Stützpunkt befand sich auf dem Eisplaneten Hoth, der als vorübergehendes Hauptquartier und Zufluchtsort für das Oberkommando der Allianz diente. Die Führung der Allianz bestand aus charismatischen Persönlichkeiten wie Mon Mothma, Bail Organa und Prinzessin Leia Organa, die Hoffnung und Einheit unter ihren Anhängern inspirierten."
+
+		Lore4 = "Die militärischen Streitkräfte der Rebellenallianz, bekannt als die Allianzflotte, bestanden aus einer vielfältigen Auswahl an Sternenjägern und Großkampfschiffen. Ihr Flaggschiff, der Mon Calamari Sternenkreuzer namens 'Home One', symbolisierte die gemeinsamen Anstrengungen verschiedener Spezies im Kampf für die Freiheit. Die Allianz war bekannt für ihre talentierten Piloten, einschließlich des legendären Luke Skywalker, der eine entscheidende Rolle im Untergang des Imperiums spielte."
+
+		Lore5 = "Als Graswurzelbewegung strebte die Rebellenallianz nicht nach der Kontrolle über die Galaxie; stattdessen kämpften sie dafür, das oppressive Regime abzubauen und den Bürgern der Galaxie die Freiheit zurückzugeben. Ihr Kampf war nicht ohne Opfer, und viele tapfere Individuen opferten ihr Leben für die Sache. Trotz überwältigender Widrigkeiten inspirierten die Ausdauer und Entschlossenheit der Rebellenallianz unzählige andere, sich ihnen anzuschließen. Dies bewies, dass selbst in den dunkelsten Zeiten Hoffnung die Flammen des Widerstands entzünden kann."
+	}
+	
 }

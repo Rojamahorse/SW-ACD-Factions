@@ -100,7 +100,7 @@ Lore
 		
 		Lore5 = "Despite its many strengths, the Republic was not without flaws. Bureaucracy and political maneuvering often hindered swift action, allowing discontent and disenchantment to fester in some regions. The outbreak of the Clone Wars, orchestrated by the Sith, put the Republic to the ultimate test, challenging its core values and exposing vulnerabilities that would eventually lead to the Republic's transformation into the Galactic Empire."
 	}
-
+	
 	Rebel_Alliance
 	{
 		Title = "The Rebel Alliance"
