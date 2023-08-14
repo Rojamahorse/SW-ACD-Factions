@@ -13,5 +13,5 @@ Ships
 	:~{ File="Eta-Class Supply Barge Emp.ship.png";    Tier=7;  Tags : ~/Tags [trade] }
 	:~{ File="Cargo Transporter Large Empire.ship.png"; Tier=9;  Tags : ~/Tags [trade] }
 	:~{ File="Cargo Transporter Huge Empire.ship.png";    Tier=11;  Tags : ~/Tags [trade] }
-	:~{ File="Cargo Transporter Extra Huge Emp.ship.png";     Tier=13;  Tags : ~/Tags [trade] }
+//	:~{ File="Cargo Transporter Extra Huge Emp.ship.png";     Tier=13;  Tags : ~/Tags [trade] }
 ]
