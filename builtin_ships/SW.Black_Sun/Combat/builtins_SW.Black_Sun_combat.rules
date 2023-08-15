@@ -84,7 +84,7 @@ Ships
 
 	// Cruisers
 	:~{ File="AA-9 Coruscant-BS Botajef Freigh.ship.png"; 					Tier=15;  Difficulty=1; }
-	:~{ File="AA-9 Coruscant-BS (Combat).ship.png";        					Tier=15;  Difficulty=2; }
+//	:~{ File="AA-9 Coruscant-BS (Combat).ship.png";        					Tier=15;  Difficulty=2; }
 //	:~{ File="Monarch.ship.png";        									Tier=15;  Difficulty=2; }
 //	:~{ File="Clockwork.ship.png";      									Tier=15;  Difficulty=2; }
 //	:~{ File="Streamliner.ship.png";    									Tier=15;  Difficulty=2; }
