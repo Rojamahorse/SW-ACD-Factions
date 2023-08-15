@@ -1,0 +1,14 @@
+Group
+{
+	Folders = ["sw_decals"]
+	NameKey = "DecalGroups/sw_decals"
+	Icon
+	{
+		Texture
+		{
+			File = "sw_decal_group.png"
+			MipLevels = 2
+			SampleMode = Linear
+		}
+	}
+}
