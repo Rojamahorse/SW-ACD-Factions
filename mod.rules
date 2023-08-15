@@ -12,8 +12,9 @@ Description = "Adds Galactic Empire, Rebel Alliance, Galactic Republic, Mandalor
 Actions
 [
 /*
-	// PARTS
+	/* *********** PARTS ************* */
 
+/*
 // 	{ 
 //		Action = AddMany
 // 		AddTo = "<ships/terran/terran.rules>/terran/parts"
@@ -21,9 +22,23 @@ Actions
 // 	}
 */
 	
+	/* *********** DECALS ************* */
+	{
+		Action = Add
+		AddTo = "<ships/terran/terran.rules>/Terran/Roofs/RoofDecalGroups"
+		ToAdd = &<roof_decals/sw_decalgroup.rules>/Group
+	}
 
+	/*
+	//Add custom roof decals related to CIS, Galactic Empire, Rebel Alliance, and Republic Factions in symbols category
+	{
+		Action = Add
+		AddTo = "<roof_decals/roof_decals.rules>/Groups/1/Folders"
+		ToAdd = "roof_decals"
+	}
+	*/
 
-	// FACTIONS
+	/* *********** FACTIONS ************* */
 	// Add CIS, Galactic Empire, Rebel Alliance, and Republic Factions
 	
 	{
@@ -127,14 +142,9 @@ Actions
 					}
 	}
 	
-	//Add custom roof decals related to CIS, Galactic Empire, Rebel Alliance, and Republic Factions in symbols category
-	{
-		Action = Add
-		AddTo = "<roof_decals/roof_decals.rules>/Groups/1/Folders"
-		ToAdd = "roof_decals"
-	}
 
-	//StarWars A Cosmos Divided main screen ship
+
+	/* *********** MAIN MENU ************* */
 	/*
 	{
 		Action = Replace
@@ -143,7 +153,7 @@ Actions
 	}
 	*/
 
-	//Add Starter Ships
+	/* *********** STARTER SHIPS ************* */
 	{
 		
 		Action = AddMany
@@ -189,7 +199,7 @@ Actions
 
 	}
 	
-	//Modify world generation XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+	/* *********** GALAXY MAP GENERATION ************* */
 /*
 	{
 		Action = Replace

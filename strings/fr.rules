@@ -6,6 +6,11 @@ Stats
 {
 }
 
+DecalGroups
+{
+	sw_decals = "Star Wars Decals"
+}
+
 Factions
 {
 	Black_Sun = "Collectif de l'Étoile Noire"
