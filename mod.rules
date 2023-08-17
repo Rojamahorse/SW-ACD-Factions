@@ -1,13 +1,13 @@
 ID = SW.StarWarsFactions
 Name = "Star Wars Factions"
 Version = 1.0.0
-CompatibleGameVersions = ["0.23.1"]
+CompatibleGameVersions = ["0.23.2"]
 ModifiesMultiplayer = true
 Author = "Rojamahorse"
 Logo = "logo.png"
+Description = "Adds Galactic Empire, Rebel Alliance, Galactic Republic, Mandalorians, Hutts, Rebel Alliance and Confederacy of Independent Systems to the Game"
 StringsFolder = "strings"
 
-Description = "Adds Galactic Empire, Rebel Alliance, Galactic Republic, Mandalorians, Hutts, Rebel Alliance and Confederacy of Independent Systems to the Game"
 
 Actions
 [
@@ -154,8 +154,47 @@ Actions
 	*/
 
 	/* *********** STARTER SHIPS ************* */
-	{
+
+		//Replacement StarterShips
+		{
+			Action = Replace
+			Replace = "<modes/career/career.rules>/StarterShips/0/Ship"
+			IgnoreIfNotExisting = false
+			With = "builtin_ships/SW.Starter/Starter A-Wing Interceptor.ship.png"
+		}
+		{
+			Action = Replace
+			Replace = "<modes/career/career.rules>/StarterShips/1/Ship"
+			IgnoreIfNotExisting = false
+			With = "builtin_ships/SW.Starter/Starter TIE Fighter.ship.png"
+		}
+		{
+			Action = Replace
+			Replace = "<modes/career/career.rules>/StarterShips/2/Ship"
+			IgnoreIfNotExisting = false
+			With = "builtin_ships/SW.Starter/Starter Durasteel Prospector.ship.png"
+		}
+		{
+			Action = Replace
+			Replace = "<modes/career/career.rules>/StarterShips/0/DescriptionKey"
+			IgnoreIfNotExisting = false
+			With = "StarterShips/A_Wing"
+		}
+		{
+			Action = Replace
+			Replace = "<modes/career/career.rules>/StarterShips/1/DescriptionKey"
+			IgnoreIfNotExisting = false
+			With = "StarterShips/TIE_Fighter"
+		}
+		{
+			Action = Replace
+			Replace = "<modes/career/career.rules>/StarterShips/2/DescriptionKey"
+			IgnoreIfNotExisting = false
+			With = "StarterShips/Durasteel_Prospector"
+		}
 		
+		//Additional StarterShips
+		{
 		Action = AddMany
 		AddTo = "<modes/career/career.rules>/StarterShips"
  
@@ -164,41 +203,30 @@ Actions
 		ManyToAdd
 		[
     		{
-    		    Ship = "Starter A-Wing Interceptor.ship.png"
-    		    DescriptionKey = "StarterShips/A_Wing"
-    		}
-    		{
-    		    Ship = "Starter TIE Fighter.ship.png"
-    		    DescriptionKey = "StarterShips/TIE_Fighter"
-    		}
-    		{
-    		    Ship = "Starter Y-Wing Bomber.ship.png"
+    		    Ship = "builtin_ships/SW.Starter/Starter Y-Wing Bomber.ship.png"
     		    DescriptionKey = "StarterShips/Y_Wing"
     		}
     		{
-    		    Ship = "Starter Z-95 Headhunter.ship.png"
+    		    Ship = "builtin_ships/SW.Starter/Starter Z-95 Headhunter.ship.png"
     		    DescriptionKey = "StarterShips/X_Wing_Z95"
     		}
     		{
-    		    Ship = "Starter N-1 Starfighter.ship.png"
+    		    Ship = "builtin_ships/SW.Starter/Starter N-1 Starfighter.ship.png"
     		    DescriptionKey = "StarterShips/N_1_Starfighter"
     		}
     		{
-    		    Ship = "Starter Black Sun Fighter.ship.png"
+    		    Ship = "builtin_ships/SW.Starter/Starter Black Sun Fighter.ship.png"
     		    DescriptionKey = "StarterShips/Black_Sun_Fighter"
     		}
     		{
-    		    Ship = "Starter Durasteel Prospector.ship.png"
-    		    DescriptionKey = "StarterShips/Durasteel_Prospector"
-    		}
-    		{
-    		    Ship = "Starter Hyena-Class Droid Bomber.ship.png"
+    		    Ship = "builtin_ships/SW.Starter/Starter Hyena-Class Droid Bomber.ship.png"
     		    DescriptionKey = "StarterShips/Hyena_Class_Droid_Bomber"
     		}
 		]		
 
-	}
-	
+		}
+
+
 	/* *********** GALAXY MAP GENERATION ************* */
 /*
 	{
