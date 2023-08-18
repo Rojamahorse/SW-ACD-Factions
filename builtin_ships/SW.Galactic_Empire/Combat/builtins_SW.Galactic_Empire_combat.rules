@@ -2,102 +2,116 @@ Faction = SW.Galactic_Empire
 Tags = [combat]
 
 
-Ships
-[
-	// Scouts
-	:~{ File="Emp TIE Fighter (Siena Blue).ship.png";               Tier=1;  Difficulty=1; }
-	:~{ File="Emp TIE (LN) Fighter (Sienar Blu.ship.png";           Tier=1;  Difficulty=2; }
-	:~{ File="Emp TIE Fighter.ship.png";                            Tier=1;  Difficulty=1; }
-	:~{ File="Emp TIE Heavy.ship.png";                              Tier=2;  Difficulty=1; }
-	:~{ File="Emp TIE Interceptor (Sienar Blue.ship.png";           Tier=2;  Difficulty=2; }
-	:~{ File="Emp TIE Interceptor-B MkII.ship.png";                 Tier=2;  Difficulty=2; }
-	:~{ File="Emp TIE Interceptor MkII.ship.png";                   Tier=3;  Difficulty=1; }
-	:~{ File="Emp TIE Interceptor.ship.png";                        Tier=2;  Difficulty=2; }
-	:~{ File="Emp TIE SA Bomber (Sienar Blue).ship.png";            Tier=3;  Difficulty=1; }
-	:~{ File="Emp TIE SA Bomber.ship.png";                          Tier=3;  Difficulty=1; }
-	:~{ File="Emp TIE SA Bomber MkII.ship.png";                     Tier=3;  Difficulty=2; }
-	:~{ File="Emp TIE SA-B Bomber MkII.ship.png";                   Tier=4;  Difficulty=1; }
-	:~{ File="Emp Rogue Shadow.ship.png";                           Tier=4;  Difficulty=1; }
-	:~{ File="Emp Rogue Shadow Alt.ship.png";                       Tier=3;  Difficulty=1; }
-	:~{ File="Emp Lamda-Class T-4a Shuttle.ship.png";               Tier=3;  Difficulty=1; }
-//	:~{ File="Thrasher.ship.png";         Tier=3;  Difficulty=1; }
-//	:~{ File="Cutthroat.ship.png";        Tier=3;  Difficulty=1; }
-//	:~{ File="Recusant.ship.png";         Tier=3;  Difficulty=1; OtherIDs=["Renegade"]; }
-//	:~{ File="Chimney Slug.ship.png";     Tier=3;  Difficulty=1; }
-//	:~{ File="Axlerod.ship.png";          Tier=3;  Difficulty=1; }
+Ships	
+[	
+	// Scouts	
+	:~{ File="Emp TIE Fighter (Siena Blue).ship.png";               		Tier=1;  	Difficulty=1; }
+	:~{ File="Emp TIE (LN) Fighter (Sienar Blu.ship.png";           		Tier=1;  	Difficulty=2; }
+	:~{ File="Emp TIE Fighter.ship.png";                            		Tier=1;  	Difficulty=1; }
+	:~{ File="Emp TIE Heavy.ship.png";                              		Tier=2;  	Difficulty=1; }
+	:~{ File="Emp TIE Interceptor (Sienar Blue.ship.png";           		Tier=2;  	Difficulty=2; }
+	:~{ File="Emp TIE Interceptor-B MkII.ship.png";                 		Tier=2;  	Difficulty=2; }
+	:~{ File="Emp TIE Interceptor MkII.ship.png";                   		Tier=3;  	Difficulty=1; }
+	:~{ File="Emp TIE Interceptor.ship.png";                        		Tier=2;  	Difficulty=2; }
+	:~{ File="Emp TIE SA Bomber (Sienar Blue).ship.png";            		Tier=3;  	Difficulty=1; }
+	:~{ File="Emp TIE SA Bomber.ship.png";                          		Tier=3;  	Difficulty=1; }
+	:~{ File="Emp TIE SA Bomber MkII.ship.png";                     		Tier=3;  	Difficulty=2; }
+	:~{ File="Emp TIE SA-B Bomber MkII.ship.png";                   		Tier=4;  	Difficulty=1; }
+	:~{ File="Emp Rogue Shadow.ship.png";                           		Tier=4;  	Difficulty=1; }
+	:~{ File="Emp Rogue Shadow Alt.ship.png";                       		Tier=3;  	Difficulty=1; }
+	:~{ File="Emp Lamda-Class T-4a Shuttle.ship.png";               		Tier=3;  	Difficulty=1; }
+//	:~{ File="Emp_tie_fighter.ship.png";									Tier=1;	 	Difficulty=1; }
+//	:~{ File="Emp_tie_interceptor.ship.png";								Tier=4;	 	Difficulty=1; }
+//	:~{ File="Emp_tie_bomber.ship.png";										Tier=5;	 	Difficulty=1; }
+//	:~{ File="Emp_tie_reaper.ship.png";										Tier=2;	 	Difficulty=1; }
+//	:~{ File="Emp_tie_striker.ship.png";									Tier=2;	 	Difficulty=1; }
+//	:~{ File="Emp_tie_advanced_x1.ship.png";								Tier=3;	 	Difficulty=1; }
+//	:~{ File="Emp_tie_advanced_v1.ship.png";								Tier=3;	 	Difficulty=1; }
+//	:~{ File="Emp_tie_aggressor.ship.png";									Tier=3;	 	Difficulty=1; }
+//	:~{ File="Emp_tie_defender.ship.png";									Tier=3;	 	Difficulty=1; }
+//	:~{ File="Emp_tie_phantom.ship.png";									Tier=3;	 	Difficulty=2; }
+//	:~{ File="Emp_tie_hunter.ship.png";										Tier=3;	 	Difficulty=1; }
+//	:~{ File="Emp_tie_interdictor.ship.png";								Tier=3;	 	Difficulty=1; }
+//	:~{ File="Emp_tie_raptor.ship.png";										Tier=3;	 	Difficulty=1; }
+//	:~{ File="Emp_tie_oppressor.ship.png";									Tier=3;	 	Difficulty=2; }
+//	:~{ File="Emp_tie_avenger.ship.png";									Tier=3;	 	Difficulty=1; }
+//	:~{ File="Emp_tie_experimental_m1.ship.png";							Tier=3;	 	Difficulty=1; }
+//	:~{ File="Emp_tie_experimental_m2.ship.png";							Tier=4;	 	Difficulty=1; }
+//	:~{ File="Emp_tie_experimental_m3.ship.png";							Tier=4;	 	Difficulty=1; }
+//	:~{ File="Emp_tie_experimental_m4.ship.png";							Tier=4;	 	Difficulty=1; }
+//	:~{ File="Emp_tie_experimental_m5.ship.png";							Tier=4;	 	Difficulty=1; }
+//	:~{ File="Emp_tie_sa_bomber.ship.png";									Tier=4;	 	Difficulty=1; }
+//	:~{ File="Emp_tie_sr_starfighter.ship.png";								Tier=4;	 	Difficulty=1; }
+//	:~{ File="Emp_tie_vanguard.ship.png";									Tier=4;	 	Difficulty=1; }
+//	:~{ File="Emp_tie_landers.ship.png";									Tier=4;	 	Difficulty=1; }
+//	:~{ File="Emp_tie_scouts.ship.png";										Tier=5;	 	Difficulty=1; }
+//	:~{ File="Emp_tie_tb_torpedo_boat.ship.png";							Tier=5;	 	Difficulty=1; }
+//	:~{ File="Emp_tie_ew_electronic_warfare.ship.png";						Tier=5;	 	Difficulty=1; }
+//	:~{ File="Emp_tie_in_interceptor.ship.png";								Tier=5;	 	Difficulty=1; }
+//	:~{ File="Emp_tie_d_defender_elite.ship.png";							Tier=5;	 	Difficulty=1; }
+//	:~{ File="Emp_tie_vn_space_superiority_fighter.ship.png";				Tier=5;	 	Difficulty=1; }
+//	:~{ File="Emp_alpha_class_xg_1_star_wing_assault_gunboat.ship.png";		Tier=5;	 	Difficulty=1; }
+//	:~{ File="Emp_lambda_class_t_4a_shuttle.ship.png";						Tier=5;		Difficulty=1; }
 
 	// Patrol ships
-//	:~{ File="Hardhat.ship.png";          Tier=4;  Difficulty=1; }
-//	:~{ File="Wrangler.ship.png";         Tier=4;  Difficulty=1; }
-//	:~{ File="Marauder.ship.png";         Tier=4;  Difficulty=1; }
-//	:~{ File="Phalanx II Medium Escort.ship.png"; Tier=4; Difficulty=1; }
-//	:~{ File="Bigfoot.ship.png";          Tier=4;  Difficulty=1; }
-//	:~{ File="Sprocket.ship.png";         Tier=4;  Difficulty=1; }
-//	:~{ File="Backup.ship.png";           Tier=4;  Difficulty=1; }
-//	:~{ File="Tri-Raptor.ship.png";       Tier=4;  Difficulty=1; }
-//	:~{ File="Moth.ship.png";             Tier=5;  Difficulty=1; }
-//	:~{ File="Nusketir.ship.png";         Tier=5;  Difficulty=1; }
-//	:~{ File="Scarab.ship.png";           Tier=5;  Difficulty=1; }
-//	:~{ File="Stomper.ship.png";          Tier=5;  Difficulty=1; }
-//	:~{ File="Tax Evader.ship.png";       Tier=5;  Difficulty=1; }
-//	:~{ File="Scrapknight.ship.png";      Tier=6;  Difficulty=1; }
-//	:~{ File="Hunchback.ship.png";        Tier=6;  Difficulty=1; }
-//	:~{ File="Reckless Warrior.ship.png"; Tier=6;  Difficulty=1; }
-//	:~{ File="Retrograde.ship.png";       Tier=6;  Difficulty=1; }
+//	:~{ File="Emp_imperial_assault_carrier.ship.png";						Tier=5;		Difficulty=1; }
+//	:~{ File="Emp_tie_boarding_craft.ship.png";								Tier=5;		Difficulty=1; }
+//	:~{ File="Emp_tie_rp_reaper_attack_lander.ship.png";					Tier=5;		Difficulty=1; }
+//	:~{ File="Emp_gozanti_class_imperial_freighter.ship.png";				Tier=5;		Difficulty=1; }
+//	:~{ File="Emp_imperial_patrol_transport.ship.png";						Tier=5;		Difficulty=1; }
+//	:~{ File="Emp_imperial_freighter.ship.png";								Tier=5;		Difficulty=1; }
+//	:~{ File="Emp_tartan_class_patrol_cruiser.ship.png";					Tier=6;		Difficulty=1; }
+//	:~{ File="Emp_bayonet_class_light_cruiser.ship.png";					Tier=6;		Difficulty=1; }
+//	:~{ File="Emp_imperial_patrol_frigate_mark_ii.ship.png";				Tier=6;		Difficulty=1; }
 
 	// Corvettes
-//	:~{ File="Dread.ship.png";            Tier=7;  Difficulty=1; }
-//	:~{ File="Rising Star.ship.png";      Tier=7;  Difficulty=1; }
-//	:~{ File="Crucible.ship.png";         Tier=7;  Difficulty=2; }
-//	:~{ File="Avalanche.ship.png";        Tier=8;  Difficulty=1; }
-//	:~{ File="Buscador.ship.png";         Tier=8;  Difficulty=1; }
-//	:~{ File="Incursor.ship.png";         Tier=8;  Difficulty=1; }
-//	:~{ File="Sarro.ship.png";            Tier=8;  Difficulty=1; }
-//	:~{ File="Phalanx III Heavy Escort.ship.png"; Tier=8; Difficulty=2; }
-//	:~{ File="Blacksmith.ship.png";       Tier=9;  Difficulty=1; }
-//	:~{ File="Sepa.ship.png";             Tier=9;  Difficulty=1; }
-//	:~{ File="Metalhopper.ship.png";      Tier=9;  Difficulty=1; }
-//	:~{ File="Wayward.ship.png";          Tier=9;  Difficulty=1; }
-//	:~{ File="Quicksilver Interceptor.ship.png"; Tier=9; Difficulty=1; }
-//	:~{ File="Splinetooth.ship.png";      Tier=9; Difficulty=1; }
+//	:~{ File="Emp_vigil_class_corvette.ship.png";							Tier=5;		Difficulty=1; }
+//	:~{ File="Emp_imperial_customs_corvette.ship.png";						Tier=6;		Difficulty=1; }
+//	:~{ File="Emp_imperial_maintenance_corvette.ship.png";					Tier=6;		Difficulty=1; }
+//	:~{ File="Emp_raider_class_corvette.ship.png";							Tier=7;		Difficulty=1; }
+//	:~{ File="Emp_raider_i_class_corvette.ship.png";						Tier=8;		Difficulty=1; }
 
 	// Frigates
-//	:~{ File="Loomer.ship.png";           Tier=10;  Difficulty=1; }
-//	:~{ File="Omen.ship.png";             Tier=10;  Difficulty=1; }
-//	:~{ File="Baelor Reaper.ship.png";    Tier=10;  Difficulty=1; }
-//	:~{ File="Raptor.ship.png";           Tier=10;  Difficulty=2; }
-//	:~{ File="Crankshaft.ship.png";       Tier=10;  Difficulty=2; }
-//	:~{ File="Cantiloupe.ship.png";       Tier=11;  Difficulty=1; }
-//	:~{ File="Roko's Vengeance.ship.png"; Tier=11;  Difficulty=2; }
-//	:~{ File="Hydra.ship.png";            Tier=11;  Difficulty=2; }
-//	:~{ File="Deathrito.ship.png";        Tier=12;  Difficulty=1; }
-//	:~{ File="Staccato.ship.png";         Tier=12;  Difficulty=1; }
-//	:~{ File="Hereafter.ship.png";        Tier=12;  Difficulty=2; }
-//	:~{ File="Nutcracker.ship.png";       Tier=12;  Difficulty=2; }
+//	:~{ File="Emp_arquitens_class_light_cruiser.ship.png";					Tier=9;	 	Difficulty=1; }
+//	:~{ File="Emp_arquitens_class_command_cruiser.ship.png";				Tier=9;	 	Difficulty=1; }
+//	:~{ File="Emp_dreadnought_class_heavy_cruiser.ship.png";				Tier=9;	 	Difficulty=1; }
+//	:~{ File="Emp_imperial_light_frigate.ship.png";							Tier=10; 	Difficulty=1; }
+//	:~{ File="Emp_imperial_customs_frigate.ship.png";						Tier=10; 	Difficulty=1; }
+//	:~{ File="Emp_imperial_nebulon_b_frigate.ship.png";						Tier=10; 	Difficulty=1; }
+//	:~{ File="Emp_lancer_class_frigate.ship.png";							Tier=10; 	Difficulty=1; }
+//	:~{ File="Emp_imperial_dreadnought_assault_frigate.ship.png";			Tier=11; 	Difficulty=1; }
+//	:~{ File="Emp_imperial_ii_class_frigate.ship.png";						Tier=11; 	Difficulty=1; }
 
-	// Destroyers
-//	:~{ File="Two For Flinching.ship.png"; Tier=13;  Difficulty=1; }
-//	:~{ File="Eviscerator.ship.png";       Tier=13;  Difficulty=1; }
-//	:~{ File="Umbrage.ship.png";           Tier=14;  Difficulty=1; }
-//	:~{ File="Eviscerator Reborn.ship.png";Tier=13;  Difficulty=2; }
-//	:~{ File="Banshee.ship.png";           Tier=14;  Difficulty=2; }
-//	:~{ File="Hellfire.ship.png";          Tier=14;  Difficulty=2; }
+	// Destroyers	
+//	:~{ File="Emp_imperial_i_class_star_destroyer.ship.png";				Tier=12;	Difficulty=1; }
+//	:~{ File="Emp_imperial_ii_class_star_destroyer.ship.png";				Tier=12;	Difficulty=1; }
+//	:~{ File="Emp_venator_class_star_destroyer.ship.png";					Tier=12;	Difficulty=1; }
+//	:~{ File="Emp_secutor_class_star_destroyer.ship.png";					Tier=12;	Difficulty=1; }
+//	:~{ File="Emp_victory_class_star_destroyer.ship.png";					Tier=13;	Difficulty=1; }
+//	:~{ File="Emp_interdictor_class_star_destroyer.ship.png";				Tier=13;	Difficulty=1; }
+//	:~{ File="Emp_onager_class_star_destroyer.ship.png";					Tier=13;	Difficulty=1; }
+//	:~{ File="Emp_mandator_iii_class_dreadnought.ship.png";					Tier=14;	Difficulty=1; }
+//	:~{ File="Emp_gladiator_class_star_destroyer.ship.png";					Tier=14;	Difficulty=1; }
+//	:~{ File="Emp_imperial_star_destroyer_mark_ii.ship.png";				Tier=14;	Difficulty=2; }
 
-	// Cruisers
-//	:~{ File="Roko's Revenge.ship.png"; Tier=15;  Difficulty=1; }
-//	:~{ File="Ionclad.ship.png";        Tier=15;  Difficulty=2; }
-//	:~{ File="Monarch.ship.png";        Tier=15;  Difficulty=2; }
-//	:~{ File="Clockwork.ship.png";      Tier=15;  Difficulty=2; }
-//	:~{ File="Streamliner.ship.png";    Tier=15;  Difficulty=2; }
-
-	// Battleships
-//	:~{ File="Ba'al.ship.png";          Tier=16;  Difficulty=2; }
-//	:~{ File="Valira's Pride.ship.png"; Tier=16;  Difficulty=2; }
-
-	// Battlecruisers
-//	:~{ File="Nemesis.ship.png";        Tier=17;  Difficulty=2; }
-//	:~{ File="Beluga.ship.png";         Tier=17;  Difficulty=2; }
+	// Cruisers	
+//	:~{ File="Emp_imperial_interdictor.ship.png";							Tier=15;	Difficulty=2; }
+//	:~{ File="Emp_imperial_dreadnought_heavy_cruiser.ship.png";				Tier=15;	Difficulty=2; }
+//	:~{ File="Emp_carrack_class_light_cruiser.ship.png";					Tier=15;	Difficulty=1; }
+//	:~{ File="Emp_imperial_escort_destroyer.ship.png";						Tier=15;	Difficulty=1; }
+//	:~{ File="Emp_imperial_gozanti_class_cruiser.ship.png";					Tier=16;	Difficulty=1; }
+//	:~{ File="Emp_imperial_light_cruiser_mark_i.ship.png";					Tier=12;	Difficulty=1; }
+//	:~{ File="Emp_imperial_light_cruiser_mark_ii.ship.png";					Tier=14;	Difficulty=1; }
+//	:~{ File="Emp_imperial_detainer_cc_2200_interdictor_cruiser.ship.png";	Tier=18;	Difficulty=1; }
 
 	// Flagships
-//	:~{ File="TBD.ship.png";    Tier=18;  Difficulty=2; }
+//	:~{ File="Emp_executor_class_star_dreadnought.ship.png";				Tier=17;	Difficulty=2; }
+//	:~{ File="Emp_allegiance_class_battlecruiser.ship.png";					Tier=17;	Difficulty=2; }
+//	:~{ File="Emp_imperial_torpedo_sphere.ship.png";						Tier=17;	Difficulty=2; }
+//	:~{ File="Emp_imperial_star_galleon_class_frigate.ship.png";			Tier=17;	Difficulty=1; }
+//	:~{ File="Emp_imperial_strike_cruiser.ship.png";						Tier=18;	Difficulty=1; }
+//	:~{ File="Emp_vt_49_decimator.ship.png";								Tier=18;	Difficulty=2; }
+
+
+
 ]
