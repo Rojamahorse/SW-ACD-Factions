@@ -3,7 +3,7 @@ Tags = [combat]
 
 Ships
 [
-	
+	// Scouts
 	:~{ File="Republic Eta-2 Actis-Class Inter.ship.png";      								Tier=1;  Difficulty=1; }
 	:~{ File="Republic Naboo N-1 Starfighter.ship.png";      								Tier=1;  Difficulty=1; }
 	:~{ File="Republic Z-95 Headhunter.ship.png";      										Tier=1;  Difficulty=1; }
@@ -16,6 +16,71 @@ Ships
 	:~{ File="Republic A3 Nimbus-Class V-Wing Starfighter.ship.png";        				Tier=1;  Difficulty=2; }
 	:~{ File="Republic V-19 Torrent Starfighte.ship.png";       							Tier=2;  Difficulty=2; }
 	:~{ File="Republic Havoc Marauder.ship.png";     										Tier=2;  Difficulty=2; }
+//	:~{ File="Delta_7_Aethersprite_class_Light_Interceptor.ship.png";           Tier=1;  Difficulty=2; }
+//	:~{ File="Eta_2_Actis_class_Light_Interceptor.ship.png";           			Tier=2;  Difficulty=1; }
+//	:~{ File="BTL_B_Y_wing_Starfighter_Bomber.ship.png";           				Tier=3;  Difficulty=1; }
+//	:~{ File="V_19_Torrent_Starfighter.ship.png";           					Tier=4;  Difficulty=1; }
+//	:~{ File="Z_95_Headhunter.ship.png";           								Tier=3;  Difficulty=1; }
+//	:~{ File="ARC_170_Starfighter.ship.png";           							Tier=4;  Difficulty=1; }
+//	:~{ File="ARC_170_Elite_Starfighter.ship.png";           					Tier=5;  Difficulty=2; }
+//	:~{ File="Eta_3_Aethersprite_class_Starfighter.ship.png";           		Tier=4;  Difficulty=1; }
+//	:~{ File="ARC_180_Starfighter.ship.png";           							Tier=5;  Difficulty=1; }
+//	:~{ File="T_70_X_wing_Starfighter.ship.png";           						Tier=4;  Difficulty=1; }
+	
+	// Patrol ships
+//	:~{ File="Jedi_T_6_Shuttle.ship.png";           							Tier=1;  Difficulty=2; }
+//	:~{ File="GX1_Short_Hauler.ship.png";           							Tier=2;  Difficulty=1; }
+//	:~{ File="Lancer_class_Pursuit_Craft.ship.png";           					Tier=11;  Difficulty=2; }
+//	:~{ File="Stealth_Ship.ship.png";           								Tier=12;  Difficulty=1; }
+//	:~{ File="Eta_class_Shuttle.ship.png";           							Tier=13;  Difficulty=1; }
+//	:~{ File="Theta_class_T_2c_Shuttle.ship.png";           					Tier=14;  Difficulty=1; }
+//	:~{ File="Nu_class_Attack_Shuttle.ship.png";           						Tier=15;  Difficulty=1; }
+//	:~{ File="Cr25_Troop_Carrier.ship.png";           							Tier=16;  Difficulty=1; }
+//	:~{ File="Jedi_Starfreighter.ship.png";           							Tier=17;  Difficulty=1; }
+//	:~{ File="Freefall_class_Bomber.ship.png";           						Tier=18;  Difficulty=1; }	
+
+	// Corvettes
+//	:~{ File="CR70_Corvette.ship.png";           								Tier=3;  Difficulty=2; }
+//	:~{ File="Defender_class_Light_Corvette.ship.png";           				Tier=4;  Difficulty=1; }
+//	:~{ File="Consular_class_Space_Cruiser.ship.png";           				Tier=5;  Difficulty=1; }
+//	:~{ File="Charger_c70_Combat_Retrofit.ship.png";           					Tier=6;  Difficulty=1; }
+
+	// Frigates
+//	:~{ File="Pelta_class_Frigate.ship.png";           							Tier=7;  Difficulty=2; }
+//	:~{ File="DP20_Frigate.ship.png";           								Tier=8;  Difficulty=1; }
+//	:~{ File="DP23_Frigate.ship.png";           								Tier=9;  Difficulty=1; }
+//	:~{ File="Victory_II_class_Frigate.ship.png";           					Tier=10;  Difficulty=1; }
+//	:~{ File="Nebulon_C_Frigate.ship.png";           							Tier=11;  Difficulty=1; }
+
+	// Destroyers
+//	:~{ File="Victory_class_Star_Destroyer.ship.png";           				Tier=12;  Difficulty=2; }
+//	:~{ File="Venator_Mk_I_class_Star_Destroyer.ship.png";           			Tier=13;  Difficulty=1; }
+//	:~{ File="Secutor_class_Star_Destroyer.ship.png";           				Tier=14;  Difficulty=1; }
+//	:~{ File="Interdictor_class_Star_Destroyer.ship.png";           			Tier=15;  Difficulty=1; }
+
+	// Cruisers
+//	:~{ File="Consular_class_Cruiser.ship.png";           						Tier=7;   Difficulty=2; }
+//	:~{ File="MC40a_Light_Cruiser.ship.png";           							Tier=2;   Difficulty=1; }
+//	:~{ File="MC75_Cruiser.ship.png";           								Tier=3;	  Difficulty=1; }
+//	:~{ File="MC80_Star_Cruiser.ship.png";           							Tier=12;  Difficulty=1; }
+//	:~{ File="MC80A_Star_Cruiser.ship.png";           							Tier=13;  Difficulty=1; }
+//	:~{ File="MC80B_Star_Cruiser.ship.png";           							Tier=13;  Difficulty=2; }
+//	:~{ File="MC85_Star_Cruiser.ship.png";           							Tier=7;   Difficulty=1; }
+//	:~{ File="Dreadnought_class_Heavy_Cruiser.ship.png";           				Tier=15;  Difficulty=2; }
+//	:~{ File="Arquitens_class_Command_Cruiser.ship.png";           				Tier=10;  Difficulty=1; }
+//	:~{ File="Consular_class_Armed_Cruiser.ship.png";           				Tier=9;  Difficulty=1; }
+
+	// Flagships
+//	:~{ File="Mandator_I_class_Dreadnought.ship.png";           				Tier=12;   Difficulty=1; }
+//	:~{ File="Mandator_II_class_Dreadnought.ship.png";           				Tier=13;  Difficulty=1; }
+//	:~{ File="Mandator_III_class_Dreadnought.ship.png";           				Tier=14;  Difficulty=1; }
+//	:~{ File="Mandator_IV_class_Dreadnought.ship.png";           				Tier=15;  Difficulty=1; }
+//	:~{ File="The_Resolute.ship.png";           								Tier=16;  Difficulty=1; }
+//	:~{ File="The_Negotiator.ship.png";           								Tier=17;  Difficulty=1; }
+//	:~{ File="Inexpugnable_class_Tactical_Command_Ship.ship.png";           	Tier=18;  Difficulty=1; }
+//	:~{ File="Endurance_class_Fleet_Carrier.ship.png";           				Tier=18;  Difficulty=1; }
+
+
 	:~{ File="Remove_Naboo-Star-Fighter.ship.png";       									Tier=2;  Difficulty=3; }
 	:~{ File="Republic Gunship.ship.png"; 													Tier=3;  Difficulty=2; }
 	:~{ File="Republic Storm IV Twin-Pod Comba.ship.png";       							Tier=3;  Difficulty=2; }
