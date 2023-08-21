@@ -1,5 +1,6 @@
 Part : &<../xwing_cannon/xwing_cannon.rules>/Part
 {
+	NameKey = "Parts/xwingCannonXLong"
 	ID = SW.fighter_very_long_xwing_cannon
 	ProhibitRects
 	[

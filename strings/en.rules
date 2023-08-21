@@ -1,7 +1,7 @@
 Parts
 {
 	//Fighter X-Wing Cannons
-	xwingCannons = "X-Wing Cannons"
+	xwingCannons = "X-Wing Cannon"
 	xwingCannonsDesc = "X-Wing Cannons are small weapons that can be placed behind armour pieces, and are useful for constructing X-Wing fighters."
 
 	xwingCannon = "X-Wing Cannon"
@@ -14,30 +14,30 @@ Parts
 	xwingCannonLong = "Long X-Wing Cannon"
 	xwingCannonLongIcon = "Long X-Wing Cannon"
 	xwingCannonLongLeft = "Long X-Wing Cannon (Left)"
-	xwingCannonLongLeftIcon = "X-Wing Cannon (L)"
-	xwingCannonLongDesc = "A longer version of the small X-Wing Cannon that can be placed behind armour pieces."
+	xwingCannonLongLeftIcon = "Long X-Wing Cannon (L)"
+	xwingCannonLongDesc = "A long version of the small X-Wing Cannon that can be placed behind armour pieces."
 
 	xwingCannonXLong = "Extra Long X-Wing Cannon"
 	xwingCannonXLongIcon = "Extra Long X-Wing Cannon"
 	xwingCannonXLongLeft = "Extra Long X-Wing Cannon (Left)"
-	xwingCannonXLongLeftIcon = "Extra X-Wing Cannon (L)"
+	xwingCannonXLongLeftIcon = "Extra Long X-Wing Cannon (L)"
 	xwingCannonXLongDesc = "An even longer version of the small X-Wing Cannon that can be placed behind armour pieces."
 
 	//Fighter Miniguns
-	tieMiniguns = "TIE Miniguns"
-	tieMinigunsDesc = "TIE Miniguns are small, rapid-firing weapons that can be placed behind armour pieces. They are inaccurate, but useful for close range engagements."
+	tieMiniguns = "TIE Repeater"
+	tieMinigunsDesc = "TIE Repeaters are small, rapid-firing weapons that can be placed behind armour pieces. They are inaccurate, but useful for close range engagements."
 
-	tieMinigun = "TIE Minigun"
+	tieMinigun = "TIE Repeater"
 	tieMinigunIcon = &tieMinigun
-	tieMinigunLeft = "TIE Minigun (Left)"
-	tieMinigunLeftIcon = "TIE Minigun (L)"
-	tieMinigunDesc = "A rapid-firing TIE Minigun that can be placed behind armour pieces."
+	tieMinigunLeft = "TIE Repeater (Left)"
+	tieMinigunLeftIcon = "TIE Repeater (L)"
+	tieLMinigunDesc = "A rapid-firing Long TIE Repeater that can be placed behind armour pieces."
 }
 
 Stats
 {
 	FighterWeapons = "Laser Bolt"
-	MinigunShot = "Minigun Laser"
+	MinigunShot = "Repeater Laser"
 }
 
 DecalGroups

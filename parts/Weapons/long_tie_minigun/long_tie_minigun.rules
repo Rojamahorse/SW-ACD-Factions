@@ -5,7 +5,7 @@ Part : &<../tie_minigun/tie_minigun.rules>/Part
 	ID = SW.fighter_long_tie_minigun
 	OtherIDs = [] //Clears the array
 	EditorGroup = "WeaponsEnergy"
-	DescriptionKey = "Parts/tieMinigunDesc"
+	DescriptionKey = "Parts/tieLMinigunDesc"
 	ProhibitRects
 	[
 		[fighter, [0, -3, 1, 3]]
