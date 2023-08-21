@@ -1,4 +1,3 @@
-//Inspired entirely by Kroom's fighter weapons. Please check out kroom's forge for yourself, it's a far better mod than I'll ever make.
 Part : &<../xwing_cannon/xwing_cannon.rules>/Part
 {
 	NameKey = "Parts/xwingCannonLong"
