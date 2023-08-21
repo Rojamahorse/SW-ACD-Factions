@@ -11,16 +11,16 @@ StringsFolder = "strings"
 
 Actions
 [
-/*
+
 	/* *********** PARTS ************* */
 
-/*
-// 	{ 
-//		Action = AddMany
-// 		AddTo = "<ships/terran/terran.rules>/terran/parts"
-// 		ManyToAdd = &<parts/Parts.rules>/Parts
-// 	}
-*/
+
+ 	{ 
+		Action = AddMany
+ 		AddTo = "<ships/terran/terran.rules>/terran/parts"
+ 		ManyToAdd = &<parts/Parts.rules>/Parts
+ 	}
+
 	
 	/* *********** DECALS ************* */
 	{

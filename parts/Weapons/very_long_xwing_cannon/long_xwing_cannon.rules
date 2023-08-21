@@ -1,7 +1,6 @@
-//Inspired entirely by Kroom's fighter weapons. Please check out kroom's forge for yourself, it's a far better mod than I'll ever make.
-Part : &<../energy_cannon/energy_cannon.rules>/Part
+Part : &<../xwing_cannon/xwing_cannon.rules>/Part
 {
-	ID = ultranova.fighter_very_long_energy_cannon
+	ID = SW.fighter_very_long_xwing_cannon
 	ProhibitRects
 	[
 		[fighter, [0, -4, 1, 4]]
@@ -17,12 +16,12 @@ Part : &<../energy_cannon/energy_cannon.rules>/Part
 	}
 	Components : ^/0/Components
 	{
-		BulletEmitter : &<../energy_cannon/energy_cannon.rules>/Part/Components/BulletEmitter
+		BulletEmitter : &<../xwing_cannon/xwing_cannon.rules>/Part/Components/BulletEmitter
 		{
 			Location = [3.28, 0]
 		}
 
-		FireEffect : &<../energy_cannon/energy_cannon.rules>/Part/Components/FireEffect
+		FireEffect : &<../xwing_cannon/xwing_cannon.rules>/Part/Components/FireEffect
 		{
 			Location = [3.65, 0]
 		}

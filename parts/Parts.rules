@@ -1,9 +1,23 @@
 Parts
 [
 	
+			/* STORAGE */
+/*			// Modual Storage Floor
+			//&<Storage/Modular Storage Floor/SW_Modular_Storage_Floor.rules>/Part
+*/
+			/* WEAPONS */
+			// TIE Miniguns
+			&<Weapons/long_tie_minigun/long_tie_minigun_left.rules>/Part
+			&<Weapons/long_tie_minigun/long_tie_minigun.rules>/Part
+			&<Weapons/tie_minigun/tie_minigun_left.rules>/Part
+			&<Weapons/tie_minigun/tie_minigun.rules>/Part
 
-			// Modual Storage Floor
-			&<Storage/Modular Storage Floor/SW_Modular_Storage_Floor.rules>/Part
-
-
+			// Xwing Cannons
+			&<Weapons/long_xwing_cannon/long_xwing_cannon_left.rules>/Part
+			&<Weapons/long_xwing_cannon/long_xwing_cannon.rules>/Part
+			&<Weapons/very_long_xwing_cannon/long_xwing_cannon_left.rules>/Part
+			&<Weapons/very_long_xwing_cannon/long_xwing_cannon.rules>/Part
+			&<Weapons/xwing_cannon/xwing_cannon_left.rules>/Part
+			&<Weapons/xwing_cannon/xwing_cannon.rules>/Part
+	
 ]

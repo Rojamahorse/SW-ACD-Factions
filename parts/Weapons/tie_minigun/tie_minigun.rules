@@ -1,13 +1,12 @@
-//Inspired entirely by Kroom's fighter weapons. Please check out kroom's forge for yourself, it's a far better mod than I'll ever make.
-Part : &<../energy_cannon/energy_cannon.rules>/Part
+Part : &<../xwing_cannon/xwing_cannon.rules>/Part
 {
-	NameKey = "Parts/EnergyMinigun"
-	IconNameKey = "Parts/EnergyMinigunIcon"
-	ID = ultranova.fighter_energy_minigun
-	OtherIDs = [ultranova.federation_side_machinegun, ultranova.alliance_side_machinegun]
+	NameKey = "Parts/tieMinigun"
+	IconNameKey = "Parts/tieMinigunIcon"
+	ID = SW.fighter_tie_minigun
+	OtherIDs = [SW.federation_side_machinegun, SW.alliance_side_machinegun]
 	SelectionTypeID = "f_miniguns"
 	EditorGroup = "WeaponsEnergy"
-	DescriptionKey = "Parts/EnergyMinigunDesc"
+	DescriptionKey = "Parts/tieMinigunDesc"
 	EditorIcon
 	{
 		Texture
@@ -37,7 +36,7 @@ Part : &<../energy_cannon/energy_cannon.rules>/Part
 			ReceiveResourceMediaEffects = &/COMMON_EFFECTS/PowerDeliver
 		}
 
-		Turret : &<../energy_cannon/energy_cannon.rules>/Part/Components/Turret
+		Turret : &<../xwing_cannon/xwing_cannon.rules>/Part/Components/Turret
 		{
 			Emitter = BulletEmitter
 			FireInterval = .1
@@ -51,7 +50,7 @@ Part : &<../energy_cannon/energy_cannon.rules>/Part
 			GetTargetFrom = Turret
 			Location = [1.28, 0]
 			OperationalToggle = IsOperational
-			Bullet = &<energy_shot/energy_shot.rules>
+			Bullet = &<tie_shot/tie_shot.rules>
 			ResourceStorage = BatteryStorage
 			ResourcesUsed = 40
 			Spread = [-2d, 2d]

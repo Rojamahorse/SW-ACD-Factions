@@ -1,0 +1,92 @@
+//Inspired entirely by Kroom's fighter weapons. Please check out kroom's forge for yourself, it's a far better mod than I'll ever make.
+Part : &<../tie_minigun/tie_minigun.rules>/Part
+{
+	NameKey = "Parts/tieMinigun"
+	IconNameKey = "Parts/tieMinigunIcon"
+	ID = SW.fighter_long_tie_minigun
+	OtherIDs = [] //Clears the array
+	EditorGroup = "WeaponsEnergy"
+	DescriptionKey = "Parts/tieMinigunDesc"
+	ProhibitRects
+	[
+		[fighter, [0, -3, 1, 3]]
+	]
+	EditorIcon
+	{
+		Texture
+		{
+			File = "icon.png"
+			SampleMode = Linear
+		}
+		Size = [16, 64]
+	}
+	Components : ^/0/Components
+	{
+		BulletEmitter : &<../tie_minigun/tie_minigun.rules>/Part/Components/BulletEmitter
+		{
+			Location = [2.28, 0]
+		}
+
+		FireEffect : &<../tie_minigun/tie_minigun.rules>/Part/Components/FireEffect
+		{
+			Location = [2.75, 0]
+		}
+
+		TurretGraphics
+		{
+			Type = Graphics
+			ChainedTo = Turret
+			Location = [1.25, 0]
+			Rotation = 90d
+			OperationalToggle = IsOperational
+			NonOperationalDoodad
+			{
+				Layer = "turrets"
+				DamageLevels
+				[
+					{
+						File = "barrel_off.png"
+						NormalsFile = "barrel_normals1.png"
+						Size = [1, 3]
+					}
+				]
+			}
+		}
+
+		WeaponSprite
+		{
+			Type = Sprite
+			ChainedTo = Turret
+			Location = [1.25, 0]
+			Rotation = 90d
+			Layer = "turrets"
+			ResetAnimationTrigger = Turret
+			OperationalToggle = IsOperational
+			AtlasSprite
+			{
+				AnimationFiles
+				[
+					"barrel_on2.png"
+					"barrel_on1.png"
+				]
+				NormalsAnimationFiles
+				[
+					"barrel_normals1.png"
+					"barrel_normals2.png"
+				]
+				Size = [1, 3]
+				AnimationInterval = 0.05
+				AnimationStartTime = MinValue
+				ClampAnimation = true
+			}
+		}
+
+		Blueprints
+		{
+			Type = BlueprintSprite
+			File = "blueprints.png"
+			Size = [1, 4]
+			Offset = [0, -1.5]
+		}
+	}
+}

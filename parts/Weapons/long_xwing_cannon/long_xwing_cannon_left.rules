@@ -1,0 +1,40 @@
+Part : &<long_xwing_cannon.rules>/Part
+{
+	NameKey = "Parts/xwingCannonLongLeft"
+	IconNameKey = "Parts/xwingCannonLongLeftIcon"
+	ID = SW.long_fighter_xwing_cannon_left
+	OtherIDs = [SW.long_fighter_xwing_cannon_right]
+	FlipWhenLoadingIDs = [SW.long_fighter_xwing_cannon_right]
+	DescriptionKey = "Parts/xwingCannonLongDesc"
+	IsFlippable = true
+	ProhibitRects
+	[
+		[fighter, [-2, -1, 2, 1]]
+	]
+
+	EditorIcon
+	{
+		Texture
+		{
+			File = "icon_left.png"
+			SampleMode = Linear
+		}
+		Size = [96, 48]
+	}
+
+	Components : ^/0/Components
+	{
+		Turret : &<long_xwing_cannon.rules>/Part/Components/Turret
+		{
+			Rotation = -180d
+		}
+
+		Blueprints
+		{
+			Type = BlueprintSprite
+			File = "blueprints_left.png"
+			Size = [4, 2]
+			Offset = [-1.5, -0.5]
+		}
+	}
+}

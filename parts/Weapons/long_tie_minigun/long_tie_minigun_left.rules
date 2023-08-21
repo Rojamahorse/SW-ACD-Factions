@@ -1,0 +1,50 @@
+Part : &<long_tie_minigun.rules>/Part
+{
+	NameKey = "Parts/tieMinigunLeft"
+	IconNameKey = "Parts/tieMinigunLeftIcon"
+	ID = SW.fighter_long_tie_minigun_left
+	OtherIDs = [SW.fighter_long_tie_minigun_right]
+	FlipWhenLoadingIDs = [SW.fighter_long_tie_minigun_right]
+	DescriptionKey = "Parts/tieMinigunDesc"
+	IsFlippable = true
+	ProhibitRects
+	[
+		[fighter, [-2, -1, 2, 1]]
+	]
+
+	EditorIcon
+	{
+		Texture
+		{
+			File = "icon_left.png"
+			SampleMode = Linear
+		}
+		Size = [96, 48]
+	}
+
+	Components : ^/0/Components
+	{
+		Turret : &<long_tie_minigun.rules>/Part/Components/Turret
+		{
+			Rotation = -180d
+		}
+
+		TurretGraphics : &<long_tie_minigun.rules>/Part/Components/TurretGraphics
+		{
+			Location = [1.36, 0]
+		}
+
+		WeaponSprite : &<long_tie_minigun.rules>/Part/Components/WeaponSprite
+		{
+			Location = [1.36, 0]
+		}
+
+		Blueprints
+		{
+			Type = BlueprintSprite
+			File = "blueprints_left.png"
+			Size = [4, 2]
+			Offset = [-1.5, -0.5]
+		}
+	}
+}
