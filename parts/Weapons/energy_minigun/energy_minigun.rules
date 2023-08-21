@@ -1,0 +1,219 @@
+//Inspired entirely by Kroom's fighter weapons. Please check out kroom's forge for yourself, it's a far better mod than I'll ever make.
+Part : &<../energy_cannon/energy_cannon.rules>/Part
+{
+	NameKey = "Parts/EnergyMinigun"
+	IconNameKey = "Parts/EnergyMinigunIcon"
+	ID = ultranova.fighter_energy_minigun
+	OtherIDs = [ultranova.federation_side_machinegun, ultranova.alliance_side_machinegun]
+	SelectionTypeID = "f_miniguns"
+	EditorGroup = "WeaponsEnergy"
+	DescriptionKey = "Parts/EnergyMinigunDesc"
+	EditorIcon
+	{
+		Texture
+		{
+			File = "icon.png"
+			SampleMode = Linear
+		}
+		Size = [22, 64]
+	}
+
+	Components : ^/0/Components
+	{
+		BatteryStorage
+		{
+			Type = ResourceStorage
+			ResourceType = battery
+			MaxResources = 4000
+		}
+		BatteryConsumer
+		{
+			Type = ResourceConsumer
+			ResourceType = battery
+			Storage = BatteryStorage
+			DefaultPriority = &/PRIORITIES/Weapon_Supply
+			ResupplyThreshold = 1000
+			OperatinalToggle = PowerToggle
+			ReceiveResourceMediaEffects = &/COMMON_EFFECTS/PowerDeliver
+		}
+
+		Turret : &<../energy_cannon/energy_cannon.rules>/Part/Components/Turret
+		{
+			Emitter = BulletEmitter
+			FireInterval = .1
+		}
+
+		BulletEmitter
+		{
+			Type = BulletEmitter
+			ChainedTo = Turret
+			FireTrigger = Turret
+			GetTargetFrom = Turret
+			Location = [1.28, 0]
+			OperationalToggle = IsOperational
+			Bullet = &<energy_shot/energy_shot.rules>
+			ResourceStorage = BatteryStorage
+			ResourcesUsed = 40
+			Spread = [-2d, 2d]
+		}
+
+		FireEffect
+		{
+			Type = TriggeredEffects
+			ChainedTo = Turret
+			Trigger = Turret
+			Location = [1.75, 0]
+			AnchorMediaEffects = true
+
+			MediaEffects
+			[
+				&<particles/minigun_shoot.rules>
+				&<particles/minigun_flash.rules>
+
+				: /BASE_SOUNDS/AudioExterior
+				{
+					Sound = "./Data/ships/terran/laser_blaster_small/shoot.wav"
+					Volume = .6
+					SpeedVariation = .25
+					MaxConcurrent = 10
+				}
+			]
+		}
+
+		TurretGraphics
+		{
+			Type = Graphics
+			ChainedTo = Turret
+			Location = [0.75, 0]
+			Rotation = 90d
+			OperationalToggle = IsOperational
+			NonOperationalDoodad
+			{
+				Layer = "turrets"
+				DamageLevels
+				[
+					{
+						File = "barrel_off.png"
+						NormalsFile = "barrel_normals1.png"
+						Size = [1, 2]
+					}
+				]
+			}
+		}
+
+		WeaponSprite
+		{
+			Type = Sprite
+			ChainedTo = Turret
+			Location = [0.75, 0]
+			Rotation = 90d
+			Layer = "turrets"
+			ResetAnimationTrigger = Turret
+			OperationalToggle = IsOperational
+			AtlasSprite
+			{
+				AnimationFiles
+				[
+					"barrel_on2.png"
+					"barrel_on1.png"
+				]
+				NormalsAnimationFiles
+				[
+					"barrel_normals1.png"
+					"barrel_normals2.png"
+				]
+				Size = [1, 2]
+				AnimationInterval = 0.05
+				AnimationStartTime = MinValue
+				ClampAnimation = true
+			}
+		}
+
+		BatterySpritesA
+		{
+			Type = ResourceSprites
+			Location = [.5, .5]
+			ResourceStorage = BatteryStorage
+			Layer = "doodads_high"
+			RangeLow = 0
+			RangeHigh = 2000
+			ResourceLevels
+			[
+				{
+					File = "../base/batteries2.png"
+					MirrorU = true
+					Size = [1, 1]
+				}
+				{
+					File = "../base/batteries4.png"
+					MirrorU = true
+					Size = [1, 1]
+				}
+			]
+		}
+
+		BatterySpritesB
+		{
+			Type = ResourceSprites
+			Location = [.5, .5]
+			ResourceStorage = BatteryStorage
+			Layer = "doodads_high"
+			RangeLow = 2001
+			RangeHigh = 4000
+			ResourceLevels
+			[
+				{
+					File = "../base/batteries2.png"
+					Size = [1, 1]
+				}
+				{
+					File = "../base/batteries4.png"
+					Size = [1, 1]
+				}
+			]
+		}
+
+		Blueprints
+		{
+			Type = BlueprintSprite
+			File = "blueprints.png"
+			Size = [1, 3]
+			Offset = [0, -1]
+		}
+	}
+
+	Stats
+	{
+		PowerCapacity = (&~/Part/Components/BatteryStorage/MaxResources) / 1000
+
+		MinPower = (&../StatsByCategory/0/Stats/PowerPerSecond) / 2
+		RecPower = &../StatsByCategory/0/Stats/PowerPerSecond
+		MinCrew = (&MinPower) * 2
+		RecCrew = (&RecPower) * 4
+	}
+
+	StatsByCategory
+	[
+		{
+			NameKey = "StatCategories/MinigunShot"
+			Stats
+			{
+				ShieldDamagePerShot = &~/Part/Components/BulletEmitter/Bullet/Components/Hit/HitShield/HitEffects/0/Damage
+				ShieldDamagePerSecond = (&ShieldDamagePerShot) * (&ROF)
+				ShieldDamage = [&../ShieldDamagePerShot, &../ShieldDamagePerSecond]
+				DamagePerShot = &~/Part/Components/BulletEmitter/Bullet/Components/Hit/HitOperational/HitEffects/0/Damage
+				DamagePerSecond = (&DamagePerShot) * (&ROF)
+				Damage = [&../DamagePerShot, &../DamagePerSecond]
+				ROF = 1 / (&~/Part/Components/Turret/FireInterval)
+				Range = &~/Part/Components/BulletEmitter/Bullet/Range
+				Arc = deg(&~/Part/Components/Turret/FiringArc)
+				TurretSpeed = deg(&~/Part/Components/Turret/RotateSpeed)
+				ShotSpeed = &~/Part/Components/BulletEmitter/Bullet/Speed
+				ShotHP = &~/Part/Components/BulletEmitter/Bullet/Components/Targetable/Health
+				PowerPerShot = (&~/Part/Components/BulletEmitter/ResourcesUsed) / 1000
+				PowerPerSecond = (&PowerPerShot) * (&ROF)
+				ShotPowerUsage = [&../PowerPerShot, &../PowerPerSecond]
+			}
+		}
+	]
+}

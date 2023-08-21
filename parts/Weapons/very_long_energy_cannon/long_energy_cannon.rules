@@ -1,0 +1,60 @@
+//Inspired entirely by Kroom's fighter weapons. Please check out kroom's forge for yourself, it's a far better mod than I'll ever make.
+Part : &<../energy_cannon/energy_cannon.rules>/Part
+{
+	ID = ultranova.fighter_very_long_energy_cannon
+	ProhibitRects
+	[
+		[fighter, [0, -4, 1, 4]]
+	]
+	EditorIcon
+	{
+		Texture
+		{
+			File = "icon.png"
+			SampleMode = Linear
+		}
+		Size = [16, 80]
+	}
+	Components : ^/0/Components
+	{
+		BulletEmitter : &<../energy_cannon/energy_cannon.rules>/Part/Components/BulletEmitter
+		{
+			Location = [3.28, 0]
+		}
+
+		FireEffect : &<../energy_cannon/energy_cannon.rules>/Part/Components/FireEffect
+		{
+			Location = [3.65, 0]
+		}
+
+		TurretGraphics
+		{
+			Type = Graphics
+			ChainedTo = Turret
+			Location = [1.86, 0]
+			Rotation = 90d
+			OperationalToggle = IsOperational
+			OperationalDoodad
+			{
+				Layer = "turrets"
+				DamageLevels
+				[
+					{
+						File = "turret_off.png"
+						NormalsFile = "turret_normals.png"
+						Size = [1, 4]
+					}
+				]
+			}
+			NonOperationalDoodad = &OperationalDoodad
+		}
+
+		Blueprints
+		{
+			Type = BlueprintSprite
+			File = "blueprints.png"
+			Size = [1, 5]
+			Offset = [0, -2]
+		}
+	}
+}

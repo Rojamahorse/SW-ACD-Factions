@@ -1,0 +1,58 @@
+Part : &<energy_minigun.rules>/Part
+{
+	NameKey = "Parts/EnergyMinigunLeft"
+	IconNameKey = "Parts/EnergyMinigunLeftIcon"
+	ID = ultranova.fighter_energy_minigun_left
+	OtherIDs = [ultranova.fighter_energy_minigun_right]
+	FlipWhenLoadingIDs = [ultranova.fighter_energy_minigun_right]
+	DescriptionKey = "Parts/EnergyMinigunDesc"
+	IsFlippable = true
+	ProhibitRects
+	[
+		[fighter, [-1, -1, 1, 1]]
+	]
+	CustomCollider
+	[
+		[0, -0.37]
+		[0.40, -0.33]
+		[1, 0]
+		[1, 1]
+		[0, 1]
+	]
+
+	EditorIcon
+	{
+		Texture
+		{
+			File = "icon_left.png"
+			SampleMode = Linear
+		}
+		Size = [90, 60]
+	}
+
+	Components : ^/0/Components
+	{
+		Turret : &<energy_minigun.rules>/Part/Components/Turret
+		{
+			Rotation = -180d
+		}
+
+		TurretGraphics : &<energy_minigun.rules>/Part/Components/TurretGraphics
+		{
+			Location = [0.86, 0]
+		}
+
+		WeaponSprite : &<energy_minigun.rules>/Part/Components/WeaponSprite
+		{
+			Location = [0.86, 0]
+		}
+
+		Blueprints
+		{
+			Type = BlueprintSprite
+			File = "blueprints_left.png"
+			Size = [3, 2]
+			Offset = [-1, -0.5]
+		}
+	}
+}
