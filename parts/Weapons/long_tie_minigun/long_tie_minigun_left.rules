@@ -1,11 +1,11 @@
 Part : &<long_tie_minigun.rules>/Part
 {
-	NameKey = "Parts/tieMinigunLeft"
-	IconNameKey = "Parts/tieMinigunLeftIcon"
+	NameKey = "Parts/tieMinigunLongLeft"
+	IconNameKey = "Parts/tieMinigunLongLeftIcon"
 	ID = SW.fighter_long_tie_minigun_left
 	OtherIDs = [SW.fighter_long_tie_minigun_right]
 	FlipWhenLoadingIDs = [SW.fighter_long_tie_minigun_right]
-	DescriptionKey = "Parts/tieLMinigunDesc"
+	DescriptionKey = "Parts/tieLMinigunLongDesc"
 	IsFlippable = true
 	ProhibitRects
 	[

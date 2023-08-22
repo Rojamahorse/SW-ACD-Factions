@@ -28,10 +28,16 @@ Parts
 	tieMinigunsDesc = "TIE Repeaters are small, rapid-firing weapons that can be placed behind armour pieces. They are inaccurate, but useful for close range engagements."
 
 	tieMinigun = "TIE Repeater"
-	tieMinigunIcon = &tieMinigun
+	tieMinigunIcon = "TIE Repeater"
 	tieMinigunLeft = "TIE Repeater (Left)"
 	tieMinigunLeftIcon = "TIE Repeater (L)"
-	tieLMinigunDesc = "A rapid-firing Long TIE Repeater that can be placed behind armour pieces."
+	tieLMinigunDesc = "A rapid-firing TIE Repeater that can be placed behind armour pieces."
+
+	tieMinigunLong = "TIE Long Repeater"
+	tieMinigunLongIcon = "TIE Long Repeater"
+	tieMinigunLongLeft = "TIE Long Repeater (Left)"
+	tieMinigunLongLeftIcon = "TIE Long Repeater (L)"
+	tieLMinigunLongDesc = "A rapid-firing Long TIE Repeater that can be placed behind armour pieces."
 }
 
 Stats

@@ -1,11 +1,11 @@
 Part : &<../tie_minigun/tie_minigun.rules>/Part
 {
-	NameKey = "Parts/tieMinigun"
-	IconNameKey = "Parts/tieMinigunIcon"
+	NameKey = "Parts/tieMinigunLong"
+	IconNameKey = "Parts/tieMinigunLongIcon"
 	ID = SW.fighter_long_tie_minigun
 	OtherIDs = [] //Clears the array
 	EditorGroup = "WeaponsEnergy"
-	DescriptionKey = "Parts/tieLMinigunDesc"
+	DescriptionKey = "Parts/tieLMinigunLongDesc"
 	ProhibitRects
 	[
 		[fighter, [0, -3, 1, 3]]

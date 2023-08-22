@@ -2,6 +2,9 @@ Part : &<../xwing_cannon/xwing_cannon.rules>/Part
 {
 	NameKey = "Parts/xwingCannonXLong"
 	ID = SW.fighter_very_long_xwing_cannon
+	IconNameKey = "Parts/xwingCannonXLongIcon"
+	DescriptionKey = "Parts/xwingCannonXLongDesc"
+
 	ProhibitRects
 	[
 		[fighter, [0, -4, 1, 4]]
@@ -57,4 +60,7 @@ Part : &<../xwing_cannon/xwing_cannon.rules>/Part
 			Offset = [0, -2]
 		}
 	}
+
+	Stats = &<../xwing_cannon/xwing_cannon.rules>/Part/Stats
+	StatsByCategory = &<../xwing_cannon/xwing_cannon.rules>/Part/StatsByCategory
 }

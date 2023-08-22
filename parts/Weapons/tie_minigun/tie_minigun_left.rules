@@ -5,7 +5,7 @@ Part : &<tie_minigun.rules>/Part
 	ID = SW.fighter_tie_minigun_left
 	OtherIDs = [SW.fighter_tie_minigun_right]
 	FlipWhenLoadingIDs = [SW.fighter_tie_minigun_right]
-	DescriptionKey = "Parts/tieMinigunDesc"
+	DescriptionKey = "Parts/tieLMinigunDesc"
 	IsFlippable = true
 	ProhibitRects
 	[
