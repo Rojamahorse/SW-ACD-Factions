@@ -11,7 +11,7 @@ Ships
 	:~{ File="Rebel RZ-1 A-Wing Bomber v2.ship.png";          							Tier=2;  Difficulty=2; } // Cost $0
 	:~{ File="Rebel RZ-1 A-Wing Bomber.ship.png";           							Tier=2;  Difficulty=2; } // Cost $0
 	:~{ File="Rebel RZ-1 A-Wing Interceptor.ship.png";         							Tier=1;  Difficulty=1; } // Cost $0
-	/*:~{ File="Reb V-19_Torrent_Starfighter.ship.png";*/ 									Tier=1;  Difficulty=2; } // Cost $0
+	/*:~{ File="Reb V-19_Torrent_Starfighter.ship.png";									Tier=1;  Difficulty=2; } // Cost $0 */ 		
 	// :~{ File="Ferret-class_Reconnaissance_Vessel.ship.png"; 							Tier=1;  Difficulty=2; } // Cost $0
 	// :~{ File="RZ-2_A-wing.ship.png";  												Tier=2;  Difficulty=1; } // Cost $0
 	// :~{ File="T-65_X-wing_Starfighter.ship.png"; 	 								Tier=3;  Difficulty=2; } // Cost $0
