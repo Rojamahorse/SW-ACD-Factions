@@ -1,11 +1,11 @@
 ID = SW.StarWarsFactions
 Name = "Star Wars Factions"
-Version = 1.0.0
-CompatibleGameVersions = ["0.23.2"]
+Version = 0.0.1
+CompatibleGameVersions = ["0.23.3","0.23.2"]
 ModifiesMultiplayer = true
 Author = "Rojamahorse"
 Logo = "logo.png"
-Description = "Adds Galactic Empire, Rebel Alliance, Galactic Republic, Mandalorians, Hutts, Rebel Alliance and Confederacy of Independent Systems to the Game"
+Description = "Adds Galactic Empire, Rebel Alliance, Republic, Confederacy of Independent Systems, Black Sun, Mandalorian (coming soon) Factions to the Game"
 StringsFolder = "strings"
 
 
@@ -45,7 +45,7 @@ Actions
 	
 
 	/* *********** FACTIONS ************* */
-	// Add CIS, Galactic Empire, Rebel Alliance, and Republic Factions
+	// Add SW Factions to the game
 	
 	{
 		Action = AddMany
@@ -53,58 +53,58 @@ Actions
         ManyToAdd = &<factions/factions.rules>/Factions
 	}
 
-	//Generate SW factions in career mode
+	// Adds SW Factions in career mode
 	{
 		Action = AddMany
 		AddTo = "<galaxy_map/map_generators/base_galaxy.rules>/Factions/Factions"
         ManyToAdd = &<galaxy_map/map_generators/base_galaxy.rules>/Factions/Factions
 	}
 
-	//Generate the CIS, Galactic Empire, Rebel Alliance, and Republic Faction in career mode
+	// Adds the SW Factions tiers in career mode
 	{
 		Action = AddMany
 		AddTo = "<galaxy_map/map_generators/base_galaxy.rules>/FactionTiers/Factions"
         ManyToAdd = &<galaxy_map/map_generators/base_galaxy.rules>/FactionTiers/Factions
 	}
 	
-	//Generate the CIS, Galactic Empire, Rebel Alliance, and Republic Faction in career mode
+	// Replaces nodes to include SW Factions in career mode
 	{
 		Action = Replace
 		Replace = "<galaxy_map/map_generators/base_galaxy.rules>/StartingNodePicker"
         With = &<galaxy_map/map_generators/base_galaxy.rules>/StartingNodePicker
 	}
 
-	//WIP Replace Name Generator Technique
+	// WIP Replace Name Generator Technique
 
 
-	// Add CIS, Galactic Empire, Rebel Alliance, and Republic codex lore
+	// Add SW Factions to codex lore
 	{
 		Action = AddMany
 		AddTo = "<codex/lore/lore.rules>/CodexPages"
         ManyToAdd = &<codex/lore.rules>/CodexPages
 	}
-	//Generate Mission related to CIS, Galactic Empire, Rebel Alliance, and Republic
+	// Adds missions related to SW Factions
 	{
 		Action = AddMany
 		AddTo = "<modes/career/sysgen_sim_global_missions.rules>/SubSpawners"
         ManyToAdd = &<career/sysgen_sim_global_missions.rules>/SubSpawners
 	}
 	
-	//CIS, Galactic Empire, Rebel Alliance, and Republic Faction Ships
+	// Adds SW Starter Ships in career mode
 	{
 		Action = AddMany
 		AddTo = "<builtin_ships/builtins.rules>/Ships"
         ManyToAdd = &<builtin_ships/builtins.rules>/Ships
 	}
 	
-	//Create FTL Doodads
+	//Create SW FTL Jump Points
 	{
 		Action = AddMany
 		AddTo = "<doodads/doodads.rules>/Doodads"
         ManyToAdd = &<doodads/doodads.rules>/Doodads
 	}
 
-	//CIS, Galactic Empire, Rebel Alliance, and Republic Faction Trade Ship
+	//Adds trade ship functionality to SW Factions in career mode
 	{
 		Action = AddBase
 		AddBaseTo = "<modes/career/career.rules>/TradeRoutes/TradeShips"
@@ -161,7 +161,7 @@ Actions
 
 	/* *********** STARTER SHIPS ************* */
 
-		//Replacement StarterShips
+		//Replacement Starter Ships and Descriptions
 		{
 			Action = Replace
 			Replace = "<modes/career/career.rules>/StarterShips/0/Ship"
