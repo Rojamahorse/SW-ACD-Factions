@@ -95,6 +95,8 @@ Ships
 //	:~{ File="Emp_imperial_star_destroyer_mark_ii.ship.png";				Tier=14;	Difficulty=2; }
 
 	// Cruisers	
+	:~{ File="Acclamator II-Class Cruiser.ship.png";						Tier=13;	Difficulty=1; }
+
 //	:~{ File="Emp_imperial_interdictor.ship.png";							Tier=15;	Difficulty=2; }
 //	:~{ File="Emp_imperial_dreadnought_heavy_cruiser.ship.png";				Tier=15;	Difficulty=2; }
 //	:~{ File="Emp_carrack_class_light_cruiser.ship.png";					Tier=15;	Difficulty=1; }
