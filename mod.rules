@@ -23,20 +23,26 @@ Actions
 
 	
 	/* *********** DECALS ************* */
+
+	//Adds faction decals
 	{
 		Action = Add
 		AddTo = "<ships/terran/terran.rules>/Terran/Roofs/RoofDecalGroups"
 		ToAdd = &<roof_decals/sw_decalgroup.rules>/Group
 	}
 
-	/*
-	//Add custom roof decals related to CIS, Galactic Empire, Rebel Alliance, and Republic Factions in symbols category
+	
+	//Adds gradients, shading, shapes
 	{
-		Action = Add
-		AddTo = "<roof_decals/roof_decals.rules>/Groups/1/Folders"
-		ToAdd = "roof_decals"
+		Action = AddMany
+		AddTo = "<roof_decals/roof_decals.rules>/Groups/0/Folders"
+		ManyToAdd
+		[
+			"roof_decals/sw_adv_shapes"
+			"roof_decals/sw_shading"
+		]
 	}
-	*/
+	
 
 	/* *********** FACTIONS ************* */
 	// Add CIS, Galactic Empire, Rebel Alliance, and Republic Factions
