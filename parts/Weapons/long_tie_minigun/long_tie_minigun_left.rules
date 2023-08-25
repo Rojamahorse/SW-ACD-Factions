@@ -16,7 +16,7 @@ Part : &<long_tie_minigun.rules>/Part
 	{
 		Texture
 		{
-			File = "icon_left.png"
+			File = "icon1_left.png"
 			SampleMode = Linear
 		}
 		Size = [96, 48]

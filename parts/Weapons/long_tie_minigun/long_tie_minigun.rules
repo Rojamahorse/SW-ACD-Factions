@@ -14,7 +14,7 @@ Part : &<../tie_minigun/tie_minigun.rules>/Part
 	{
 		Texture
 		{
-			File = "icon.png"
+			File = "icon1.png"
 			SampleMode = Linear
 		}
 		Size = [16, 64]
@@ -44,8 +44,8 @@ Part : &<../tie_minigun/tie_minigun.rules>/Part
 				DamageLevels
 				[
 					{
-						File = "barrel_off.png"
-						NormalsFile = "barrel_normals1.png"
+						File = "barrel1_off.png"
+						NormalsFile = "barrel1_normals1.png"
 						Size = [1, 3]
 					}
 				]
@@ -65,13 +65,13 @@ Part : &<../tie_minigun/tie_minigun.rules>/Part
 			{
 				AnimationFiles
 				[
-					"barrel_on2.png"
-					"barrel_on1.png"
+					"barrel1_on2.png"
+					"barrel1_on1.png"
 				]
 				NormalsAnimationFiles
 				[
-					"barrel_normals1.png"
-					"barrel_normals2.png"
+					"barrel1_normals1.png"
+					"barrel1_normals2.png"
 				]
 				Size = [1, 3]
 				AnimationInterval = 0.05
