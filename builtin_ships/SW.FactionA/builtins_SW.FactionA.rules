@@ -1,8 +1,0 @@
-Ships :
-	<Combat/builtins_SW.FactionA_combat.rules>/Ships
-	<Defense/builtins_SW.FactionA_defense.rules>/Ships
-	<Civilian/builtins_SW.FactionA_civilian.rules>/Ships
-	<Stations/builtins_SW.FactionA_stations.rules>/Ships
-[
-
-]
