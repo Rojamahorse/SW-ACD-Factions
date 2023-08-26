@@ -49,6 +49,7 @@ Stats
 DecalGroups
 {
 	sw_decals = "Star Wars Faction Decals"
+	sw_adv_shapes = "Advanced Gradients, Shadows, & Shapes"
 }
 
 Factions
