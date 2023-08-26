@@ -24,22 +24,14 @@ Actions
 	
 	/* *********** DECALS ************* */
 
-	//Adds faction decals
-	{
-		Action = Add
-		AddTo = "<ships/terran/terran.rules>/Terran/Roofs/RoofDecalGroups"
-		ToAdd = &<roof_decals/sw_decalgroup.rules>/Group
-	}
-
-	
-	//Adds gradients, shading, shapes
+	//Adds faction decals folder and advanced gradients, shading, and shapes folder
 	{
 		Action = AddMany
-		AddTo = "<roof_decals/roof_decals.rules>/Groups/0/Folders"
+		AddTo = "<ships/terran/terran.rules>/Terran/Roofs/RoofDecalGroups"
 		ManyToAdd
 		[
-			"roof_decals/sw_adv_shapes"
-			"roof_decals/sw_shading"
+			&<roof_decals/sw_decal_group.rules>/SW_factions
+			&<roof_decals/sw_decal_group.rules>/SW_adv_shapes
 		]
 	}
 	
