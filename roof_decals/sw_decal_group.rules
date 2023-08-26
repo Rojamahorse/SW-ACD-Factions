@@ -1,4 +1,4 @@
-Group
+SW_factions
 {
 	Folders = ["sw_decals"]
 	NameKey = "DecalGroups/sw_decals"
@@ -7,6 +7,20 @@ Group
 		Texture
 		{
 			File = "sw_decal_group.png"
+			MipLevels = 2
+			SampleMode = Linear
+		}
+	}
+}
+SW_adv_shapes
+{
+	Folders = ["sw_adv_shapes", "sw_shading"]
+	NameKey = "DecalGroups/sw_adv_shapes"
+	Icon
+	{
+		Texture
+		{
+			File = "sw_adv_paints_alt.png"
 			MipLevels = 2
 			SampleMode = Linear
 		}
