@@ -39,7 +39,7 @@ Components
 			[
 				{
 					Type = Damage
-					Damage = 100
+					Damage = 110
 				}
 				{
 					Type = Impulse;
@@ -109,7 +109,7 @@ Components
 			{
 				Texture
 				{
-					File = "./Data/shots/laser_bolt_small/laser_bolt_small.png"
+					File = tie_laser_bolt_small.png
 					SampleMode = Linear
 					MipLevels = max
 				}
@@ -137,7 +137,7 @@ Components
 				SampleMode = Linear
 			}
 			Size = [6, 6]
-			VertexColor = [255, 0, 0]
+			VertexColor = [0, 255, 0]
 			TargetBlendMode = Add
 			Shader = "./Data/common_effects/fancy_light.shader"
 			_litReflectiveStrength = 24

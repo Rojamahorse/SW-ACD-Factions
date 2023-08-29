@@ -23,13 +23,32 @@ Part : &<../tie_minigun/tie_minigun.rules>/Part
 	{
 		BulletEmitter : &<../tie_minigun/tie_minigun.rules>/Part/Components/BulletEmitter
 		{
-			Location = [2.28, 0]
+			Location = [2.5, 0]
 		}
 
 		FireEffect : &<../tie_minigun/tie_minigun.rules>/Part/Components/FireEffect
 		{
-			Location = [2.75, 0]
+			Type = TriggeredEffects
+			ChainedTo = Turret
+			Trigger = Turret
+			Location = [2.85, 0]
+			AnchorMediaEffects = true
+
+			MediaEffects
+			[
+				&<../tie_minigun/particles/minigun_shoot.rules>
+				&<../tie_minigun/particles/minigun_flash.rules>
+
+				: /BASE_SOUNDS/AudioExterior
+				{
+					Sound =  "./Data/ships/terran/laser_blaster_small/shoot.wav"
+					Volume = .6
+					SpeedVariation = .25
+					MaxConcurrent = 10
+				}
+			]
 		}
+
 
 		TurretGraphics
 		{

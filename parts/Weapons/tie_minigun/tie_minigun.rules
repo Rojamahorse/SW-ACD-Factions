@@ -47,7 +47,7 @@ Part : &<../xwing_cannon/xwing_cannon.rules>/Part
 			ChainedTo = Turret
 			FireTrigger = Turret
 			GetTargetFrom = Turret
-			Location = [1.28, 0]
+			Location = [1.15, 0]
 			OperationalToggle = IsOperational
 			Bullet = &<tie_shot/tie_shot.rules>
 			ResourceStorage = BatteryStorage
@@ -60,7 +60,7 @@ Part : &<../xwing_cannon/xwing_cannon.rules>/Part
 			Type = TriggeredEffects
 			ChainedTo = Turret
 			Trigger = Turret
-			Location = [1.75, 0]
+			Location = [1.25, 0]
 			AnchorMediaEffects = true
 
 			MediaEffects
@@ -70,10 +70,10 @@ Part : &<../xwing_cannon/xwing_cannon.rules>/Part
 
 				: /BASE_SOUNDS/AudioExterior
 				{
-					Sound = "./Data/ships/terran/laser_blaster_small/shoot.wav"
-					Volume = .6
+					Sound =  "../common_effects/sounds/TieGun1.wav"       // tie_shot/TieGun1.wav 
+					Volume = .2
 					SpeedVariation = .25
-					MaxConcurrent = 10
+					MaxConcurrent = 8
 				}
 			]
 		}

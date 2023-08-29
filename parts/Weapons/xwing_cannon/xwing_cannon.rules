@@ -146,7 +146,6 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 						]
 						NormalsAnimationFiles
 						[
-							//I wish there was a better way to do this
 							"../base/doodads_normals.png"
 							"../base/doodads_normals.png"
 							"../base/doodads_normals.png"
@@ -304,8 +303,8 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 
 				: /BASE_SOUNDS/AudioExterior
 				{
-					Sound = "./Data/ships/terran/laser_blaster_small/shoot.wav"
-					Volume = .6
+					Sound = "../common_effects/sounds/XwingCannon1.wav"
+					Volume = .2
 					SpeedVariation = .25
 				}
 			]
