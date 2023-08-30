@@ -35,6 +35,131 @@ Part : &<../xwing_cannon/xwing_cannon.rules>/Part
 			ReceiveResourceMediaEffects = &/COMMON_EFFECTS/PowerDeliver
 		}
 
+		Graphics
+		{
+			Type = Graphics
+			Location = [.5, .5]
+			OperationalToggle = IsOperational
+			Floor
+			{
+				Layer = "floors"
+				DamageLevels
+				[
+					{
+						File = "./Data/ships/terran/point_defense/floor.png"
+						Size = [1, 1]
+					}
+					{
+						File = "./Data/ships/terran/point_defense/floor_33.png"
+						Size = [1, 1]
+					}
+					{
+						File = "./Data/ships/terran/point_defense/floor_66.png"
+						Size = [1, 1]
+					}
+				]
+			}
+			OperationalDoodad
+			{
+				Layer = "doodads_low"
+				Offset = [0, -0.5]
+				DamageLevels
+				[
+					{
+						AnimationFiles
+						[
+							"../base/doodads_on1A.png"
+							"../base/doodads_on2A.png"
+							"../base/doodads_on3A.png"
+							"../base/doodads_on4A.png"
+							"../base/doodads_on5A.png"
+							"../base/doodads_on6A.png"
+							"../base/doodads_on7A.png"
+							"../base/doodads_on8A.png"
+						]
+						NormalsAnimationFiles
+						[
+							"../base/doodads_normalsA.png"
+							"../base/doodads_normalsA.png"
+							"../base/doodads_normalsA.png"
+							"../base/doodads_normalsA.png"
+							"../base/doodads_normalsA.png"
+							"../base/doodads_normalsA.png"
+							"../base/doodads_normalsA.png"
+							"../base/doodads_normalsA.png"
+						]
+						Size = [1, 2]
+						AnimationInterval = 0.1
+					}
+				]
+			}
+			NonOperationalDoodad
+			{
+				Layer = "doodads_low"
+				Offset = [0, -0.5]
+				DamageLevels
+				[
+					{
+						File = "../base/doodads_offA.png"
+						NormalsFile = "../base/doodads_normalsA.png"
+						Size = [1, 2]
+					}
+				]
+			}
+			OperationalLighting
+			{
+				Layer = "lights_add"
+				DamageLevels
+				[
+					{
+						File = "../base/lights.png"
+						Size = [1, 1]
+					}
+				]
+			}
+			Walls
+			{
+				Layer = "walls"
+				DamageLevels
+				[
+					{
+						File = "./Data/ships/terran/point_defense/walls.png"
+						Size = [1, 1]
+					}
+					{
+						File = "./Data/ships/terran/point_defense/walls_33.png"
+						Size = [1, 1]
+					}
+					{
+						File = "./Data/ships/terran/point_defense/walls_66.png"
+						Size = [1, 1]
+					}
+				]
+			}
+			Roof
+			{
+				Layer = "roofs"
+				DamageLevels
+				[
+					{
+						File = "./Data/ships/terran/point_defense/roof.png"
+						NormalsFile = "./Data/ships/terran/point_defense/roof_normals.png"
+						Size = [1, 1]
+					}
+					{
+						File = "./Data/ships/terran/point_defense/roof_33.png"
+						NormalsFile = "./Data/ships/terran/point_defense/roof_normals_33.png"
+						Size = [1, 1]
+					}
+					{
+						File = "./Data/ships/terran/point_defense/roof_66.png"
+						NormalsFile = "./Data/ships/terran/point_defense/roof_normals_66.png"
+						Size = [1, 1]
+					}
+				]
+			}
+		}
+
 		Turret : &<../xwing_cannon/xwing_cannon.rules>/Part/Components/Turret
 		{
 			Emitter = BulletEmitter
