@@ -5,6 +5,7 @@ Ships
 [
 	// Scouts
 	:~{ File="Republic Eta-2 Actis-Class Inter.ship.png";      								Tier=1;  Difficulty=1; }
+	:~{ File="Republic Eta-2 Actis-Class Interceptor_Alt.ship.png";      					Tier=1;  Difficulty=2; }
 	:~{ File="Republic Naboo N-1 Starfighter.ship.png";      								Tier=1;  Difficulty=1; }
 	:~{ File="Republic Z-95 Headhunter.ship.png";      										Tier=1;  Difficulty=1; }
 	:~{ File="Republic BTL-L Y-Wing Bomber.ship.png";        								Tier=1;  Difficulty=1; }
@@ -85,7 +86,7 @@ Ships
 	:~{ File="Republic Gunship.ship.png"; 													Tier=3;  Difficulty=2; }
 	:~{ File="Republic Storm IV Twin-Pod Comba.ship.png";       							Tier=3;  Difficulty=2; }
 	:~{ File="Remove_LAAT.ship.png";       													Tier=3;  Difficulty=2; } //  REMOVE for Release Credit WuzNab
-	:~{ File="Republic Gunship (LAAT).ship.png";        									Tier=3;  Difficulty=3; }
+	:~{ File="Republic Gunship (LAAT).ship.png";        									Tier=5;  Difficulty=3; }
 	:~{ File="Republic Nu-Class Attack Shuttle.ship.png";     								Tier=2;  Difficulty=2; }
 	:~{ File="Republic CR70B Corvette (Heavy).ship.png";          							Tier=4;  Difficulty=2; }
 	:~{ File="Remove_Red Star Frigate.ship.png";        									Tier=4;  Difficulty=3; } //  REMOVE for Release Credit WuzNab
