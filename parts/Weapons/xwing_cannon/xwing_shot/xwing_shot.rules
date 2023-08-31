@@ -1,6 +1,6 @@
 ID = SW.fighter_xwing_shot
-Range = 240
-IdealRange = 165
+Range = 300
+IdealRange = 185
 Speed = 480
 
 Components
