@@ -1,0 +1,115 @@
+ID = ultranova.federation_pd_shot
+Range = 300
+Speed = 160
+
+Components
+{
+	Physics
+	{
+		Type = CirclePhysics
+		Radius = 0.4
+		Density = 0.1
+	}
+
+	Death
+	{
+		Type = DeathByLifetime
+		// Lifetime will be auto-calculated based on range and speed.
+	}
+
+	Sprite
+	{
+		Type = Sprite
+		RenderBucket = BulletUpper1
+		Sprite
+		{
+			Texture
+			{
+				File = "./Data/shots/pd_shot/pd_shot.png"
+				SampleMode = Linear
+				MipLevels = max
+			}
+			Size = [4, .25]
+		}
+		Offset = [-3.5, 0]
+		LerpScaleFrom = [.25, 1]
+		LerpTime = .05
+	}
+	GlowSprite
+	{
+		Type = Sprite
+		RenderBucket = BulletUpper2
+		Z = 0
+		IsLight = true
+		Offset = [-1.5, 0]
+		Sprite
+		{
+			Texture
+			{
+				File = ./Data/shots/pd_shot/pd_shot_glow.png
+				MipLevels = max
+				SampleMode = Linear
+			}
+			Size = [4, 2]
+			VertexColor = [255, 255, 255]
+			TargetBlendMode = Add
+			Shader = "./Data/common_effects/fancy_light.shader"
+			_litReflectiveStrength = 24
+			_litAdditiveStrength = 0.05
+			_unlitAdditiveStrength = 0.2
+		}
+		LerpScaleFrom = [.25, 1]
+		LerpTime = .05
+	}
+
+	Hit
+	{
+		Type = SimpleHit
+		SourceShipLowCollisions = false
+        BulletCollisions
+        {
+            Enemies = true
+            Junk = true
+            Friendlies = true
+            OnlyBulletCategories = [missile, mine, bullet]
+        }
+		HitBullet
+		{
+			Offset = [-0.15, 0]
+
+			HitEffects
+			[
+				{
+					Type = Damage
+					Damage = 300
+				}
+			]
+
+			MediaEffects
+			[
+				&<./Data/shots/pd_shot/particles/pd_shot_spikes.rules>
+				&<./Data/shots/pd_shot/particles/pd_shot_sparks.rules>
+				&<./Data/ships/terran/point_defense/particles/point_defense_shoot_flash.rules>
+			]
+		}
+
+		CrewCollisions = {Enemies=true; Junk=true}
+		HitCrew = &HitOperational
+
+		HitShield = &HitOperational
+		HitOperational
+		{
+			Offset = [-0.15, 0]
+
+			HitEffects
+			[
+				{
+					Type = Damage
+					Damage = 35
+				}
+			]
+			MediaEffects = &../HitBullet/MediaEffects
+		}
+		HitStructural = &HitOperational
+	}
+}
