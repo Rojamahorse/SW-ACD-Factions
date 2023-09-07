@@ -38,6 +38,10 @@ Parts
 	tieMinigunLongLeft = "Long Repeater Cannon (Left)"
 	tieMinigunLongLeftIcon = "Long Repeater Cannon (L)"
 	tieLMinigunLongDesc = "A rapid-firing Long Repeater Cannon that can be placed behind armour pieces."
+
+	DroidTurret = "Droid-Assisted Turret"
+	DroidTurretDesc = "A dual-firing Droid-Assisted Laser Turret that can be placed behind armour pieces."
+	DroidTurretIcon = "Droid-Assisted Turret"
 }
 
 Stats

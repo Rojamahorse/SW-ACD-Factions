@@ -19,5 +19,8 @@ Parts
 			&<Weapons/very_long_xwing_cannon/long_xwing_cannon.rules>/Part
 			&<Weapons/xwing_cannon/xwing_cannon_left.rules>/Part
 			&<Weapons/xwing_cannon/xwing_cannon.rules>/Part
-	
+
+			// Droid Turret
+			&<Weapons/droid_turret/droid_turret.rules>/Part
+
 ]
