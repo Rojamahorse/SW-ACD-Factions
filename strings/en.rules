@@ -89,6 +89,138 @@ Resource
 {
 }
 
+MapSizes
+{	
+	Standard = "Outer Rim (50)"
+	StandardTip = "A standard-sized galaxy resembling the Outer Rim with 50 star systems."
+
+	Large = "Mid Rim (60)"
+	LargeDesc = "A larger galaxy reminiscent of the Mid Rim with 60 star systems."
+
+	VeryLarge = "Core Worlds (80)"
+	VeryLargeDesc = "A very large galaxy resembling the Core Worlds with 80 star systems."
+
+	Huge = "Expanded Universe (100)"
+	HugeDesc = "A huge galaxy inspired by the Expanded Universe with 100 star systems."
+
+	Gigantic = "Unknown Regions (125)"
+	GiganticDesc = "A gigantic galaxy resembling the Unknown Regions with 125 star systems."
+
+	Colossal = "Hyperspace Lanes (150)"
+	ColossalDesc = "A colossal galaxy featuring numerous hyperspace lanes with 150 star systems."
+
+	Titanic = "Star Clusters (200)"
+	TitanicDesc = "A titanic galaxy filled with various star clusters and 200 star systems."
+
+	Galactic = "The Entire Galaxy (500)"
+	GalacticDesc = "An immense galaxy representing the entirety of the Star Wars galaxy with 500 star systems."
+}
+
+
+CareerMode
+{
+	CommsTip = "<b>Holo-Comms</b>\n\nOpen HoloNet communications links with other nearby starships.\n\nHotkey: <btn id='Comms.OpenClose'/>"
+	NewMission = "NEW GALACTIC ASSIGNMENT"
+	MissionCompleted = "MISSION SUCCESS"
+	MissionFailed = "MISSION FAILURE"
+	FameLevelUp = "GALACTIC STANDING INCREASED"
+	ReputationLevelUp = "GALACTIC REPUTATION INCREASED"
+	ReputationLevelDown = "GALACTIC REPUTATION DECREASED"
+	ReputationLevelTitleFmt = "{0} {1} - {2} {0}"
+	CareerLogTip = "Holocron Archive\n\nHotkey: <btn id='Game.MissionLog'/>"
+	StarSystemFmt = "<b>{0} System</b><s6>\n \n</s6>"
+	StarSystemTierFmt = "Sector Risk Factor: {0}"
+	StarSystemFactionLineFmt = "{0}<good>{2:0}%</good> {1}"
+	TierFmt = "<gray>[</gray><b>{0}</b><gray>]</gray>"
+	TierRangeFmt = "<gray>[</gray><b>{0}</b>-<b>{1}</b><gray>]</gray>"
+	GameOver = "ALL HANDS LOST TO THE FORCE"
+	LoadLastSave = "Load Last Holocron"
+	RememberedAsFmt = "The galaxy will remember you as...\n<good>{0}</good>"
+	UnexploredSpace = "Unknown Regions"
+	CustomMarkerTip = "Add/Rename/Delete Galactic Marker\n\nHotkey: <btn id='Game.CustomMarker'/>"
+	TransferShipControl = "Transfer Hyperdrive Control To..."
+	TransferShipControlConfirmFmt = "Are you sure you want to transfer control of the selected starship(s) to <b>{0}</b>?"
+	TransferMoney = "Transfer Galactic Credits To..."
+	TransferMoneyFmt = "How many <money>Credits</money> do you want to transfer to <b>{0}</b>?"
+	CreateCustomMarker = "<btn id='General.UIClick'/> to place a Galactic Marker here."
+	RenameDeleteCustomMarker = "<btn id='General.UIClick'/> to rename this Galactic Marker.\n"\
+	                           "<btn id='General.UIAltClick'/> to delete this Galactic Marker.\n"
+	CustomMarkerName = "Designate a name for this Galactic Marker:"
+	PartLocked = "MISSING STARSHIP SCHEMATICS"
+	Wanted = "⚠GALACTIC WANTED⚠"
+	Victory = "<s32><good><b>YOU ARE A GALACTIC LEGEND</b></good></s32>\n\nCongratulations! You have reached <fame>\"Living Legend\" Fame</fame>, the highest Galactic Standing achievable.\n\n"\
+	          "This is the current \"end\" of the galaxy as we know it and you should <b>consider yourself victorious</b>, but the galaxy is always expanding. New challenges may appear later."
+	GotoNode = "<fame_color>You have starships in this system.</fame_color>\n<btn id='General.UIClick'/> to view this star system."
+}
+
+FameTitles
+[
+	"\"Mynock Bait\""
+	"\"Cantina Regular\""
+	"\"Podracer Prospect\""
+	"\"Galactic Tourist\""
+	"\"Bounty Fodder\""
+	"\"HoloNet Mention\""
+	"\"Smuggler's Acquaintance\""
+	"\"Womp Rat Hunter\""
+	"\"Dashing Smuggler\""
+	"\"System Hopper\""
+	"\"Mercenary Captain\""
+	"\"Deadly Bounty Hunter\""
+	"\"Intergalactic Trader\""
+	"\"Daring Pilot\""
+	"\"Coruscant Socialite\""
+	"\"Rogue Squadron Material\""
+	"\"Holocron Worthy\""
+	"\"Galactic Diplomat\""
+	"\"Grand Admiral\""
+	"\"Living Legend\""
+]
+
+ReputationTitles
+[
+	"Sarlacc Snack"
+	"Death Star Target"
+	"Bantha Poodoo"
+	"Mild Irritant"
+	"HoloNet Acquaintance"
+	"Cantina Buddy"
+	"Sabacc Partner"
+	"Co-Pilot Material"
+	"Wookiee Lifedebt"
+]
+
+Missions
+{
+	ResourceDelivery = "Supplies Run"
+	ResourceDeliveryDesc = "{to_ship} is requesting an emergency delivery of {target_count} {resource_icon} {resource_type_plural} within {time_limit_minutes} minutes. In addition to standard payment for each {resource_type} delivered, an extra bonus of {money} will be paid once the entire delivery has been completed."
+	Bounty = "HoloNet Bounty"
+	BountyDesc = "A fugitive <b>{target_ship}</b> class vessel is wanted for illegal activities within the {mission_location} system. Authorities from the {faction_name} have posted a bounty of {money} to be paid to any star pilot that can eliminate it."
+	FleetBounty = "Outlaw Squadron Bounty"
+	FleetBountyDesc = "A group of rogue starships is wanted for harassing and extorting civilians within the {mission_location} system. Authorities from the {faction_name} have posted a bounty of {money} to be paid to any star pilot that can eliminate them."
+	PirateHunt = "Pirate Scourge"
+	PirateHuntDesc = "Roving pirates have been attacking civilian freighters in the {mission_location} system, disrupting the trade routes of local businesses. The business owners have posted a bounty of {money} to be paid to any star pilot that can destroy {target_count} of them."
+	FactionHunt = "{target_faction} Hunter"
+	FactionHuntDesc = "The {faction_name} is in conflict with the {target_faction} and is offering payment of {money} to any private contractor who can eliminate {target_count} of their ships patrolling the {mission_location} System."
+	ClearAsteroidField = "Asteroid Field Cleanup"
+	ClearAsteroidFieldPiratesDesc = "A handful of pirates have been preying on civilian mining vessels in a nearby asteroid field. The mining guilds have posted a bounty of {money} to be paid to any star pilot that can clear the asteroid field of pirates."
+	ClearAsteroidFieldPlatformsDesc = "Pirates have constructed several stationary defense turrets in a nearby asteroid field, making it dangerous for legitimate civilian miners. The mining guilds have posted a bounty of {money} to be paid to any star pilot that can eliminate those defense turrets."
+	StationContact = "Contact {contact_ship}"
+	StationContactDesc = "{contact_ship} is requesting assistance from any available star pilots to help with a variety of missions. As an added incentive, the station's Mission Board is offering a {money} bonus to the first star pilot to visit the station."
+	StationRescue = "Station SOS"
+	StationRescueDesc = "A distress signal has been received from {contact_ship}! Raiders are attacking the station in overwhelming numbers! The station's governor is promising {money} to any star pilot who can destroy the raiders and secure the station."
+	PirateBaseDestruction = "Destroy Pirate Stronghold"
+	PirateBaseDestructionDesc = "The location of a local pirate fleet's stronghold has been discovered! These pirates have been preying on {faction_name} patrol ships within the system and must be eradicated. Authorities from the {faction_name} have posted a sizable bounty of {money} to be paid to any star pilot brave and competent enough to destroy it."
+	FactionBaseDestruction = "Destroy {target_faction} Outpost"
+	FactionBaseDestructionDesc = "The {faction_name} is in conflict with the {target_faction} and is offering payment of {money} to any private contractor who can take out one of its supply outposts in the {mission_location} System."
+	Explore = "Recon {mission_location} ({discover_perc:0}%)"
+	ExploreDesc = "Navigators from the {faction_name} are requesting data about various points of interest within the {mission_location} System."
+	VisitSystem = "Scan {mission_location}"
+	VisitSystemDesc = "A renowned astrophysicist is requesting data on stellar activity in the {mission_location} System."
+	Debug = "Debug Mission"
+	DebugDesc = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales rutrum eros. Fusce non eros a lacus luctus auctor sit amet at mi. In ac fermentum est. Nam viverra lectus eu turpis cursus vestibulum."
+}
+
 Lore
 {
 	Black_Sun

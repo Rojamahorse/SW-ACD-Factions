@@ -1,0 +1,12 @@
+Spawners
+[
+	: <./Data/galaxy_map/map_generators/base_galaxy.rules>/MapNodes
+	{
+		Count = 125
+	}
+	
+	&<./Data/galaxy_map/map_generators/base_galaxy.rules>/Factions
+	&<./Data/galaxy_map/map_generators/base_galaxy.rules>/FactionTiers
+	&<./Data/galaxy_map/map_generators/base_galaxy.rules>/StartingNodePicker
+	&<./Data/galaxy_map/map_generators/base_galaxy.rules>/ProgressionTiers
+]

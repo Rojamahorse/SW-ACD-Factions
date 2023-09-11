@@ -1,0 +1,48 @@
+Large // 60 star systems
+{
+	NameKey = "MapSizes/Large"
+	TipKey = "MapSizes/LargeDesc"
+	MapGenerator = &<../large.rules>
+}
+
+VeryLarge // 80 star systems
+{
+	NameKey = "MapSizes/VeryLarge"
+	TipKey = "MapSizes/VeryLargeDesc"
+	MapGenerator = &<../verylarge.rules>
+}
+
+Huge // 100 star systems
+{
+	NameKey = "MapSizes/Huge"
+	TipKey = "MapSizes/HugeDesc"
+	MapGenerator = &<../huge.rules>
+}
+
+Gigantic // 125 star systems
+{
+	NameKey = "MapSizes/Gigantic"
+	TipKey = "MapSizes/GiganticDesc"
+	MapGenerator = &<../gigantic.rules>
+}
+
+Colossal // 150 star systems
+{
+	NameKey = "MapSizes/Colossal"
+	TipKey = "MapSizes/ColossalDesc"
+	MapGenerator = &<../colossal.rules>
+}
+
+Titanic // 200 star systems
+{
+	NameKey = "MapSizes/Titanic"
+	TipKey = "MapSizes/TitanicDesc"
+	MapGenerator = &<../titanic.rules>
+}
+
+Galactic // 500 star systems
+{
+	NameKey = "MapSizes/Galactic"
+	TipKey = "MapSizes/GalacticDesc"
+	MapGenerator = &<../galactic.rules>
+}

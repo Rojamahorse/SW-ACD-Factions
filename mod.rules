@@ -45,6 +45,34 @@ Actions
         ManyToAdd = &<factions/factions.rules>/Factions
 	}
 
+	// Adds Size Variety to the game
+	{
+		Action = Overrides
+		OverrideIn = "<galaxy_map/map_generators/map_sizes.rules>"
+		Overrides = &<galaxy_map/map_generators/sizes.rules>
+	}
+	
+	{
+		Action = AddMany
+		AddTo = "<modes/career/career.rules>/MapSizes"
+		ManyToAdd
+		[
+			&<galaxy_map/map_generators/sizes.rules>/Large
+			&<galaxy_map/map_generators/sizes.rules>/VeryLarge
+			&<galaxy_map/map_generators/sizes.rules>/Huge
+			&<galaxy_map/map_generators/sizes.rules>/Gigantic
+			&<galaxy_map/map_generators/sizes.rules>/Colossal
+			&<galaxy_map/map_generators/sizes.rules>/Titanic
+			&<galaxy_map/map_generators/sizes.rules>/Galactic
+		]
+	}
+		
+	/*{
+		Action = Replace
+		Replace = "<strings/en.rules>/MapSizes/Standard"
+		With = &<strings/en.rules>/"Outer Rim (50)"
+	}*/
+
 	// Adds SW Factions in career mode
 	{
 		Action = AddMany
@@ -398,7 +426,7 @@ Actions
 		]
 
 	}
-
+/*
 	//galaxy size to 100
 	{
 		Action = Replace
@@ -416,5 +444,5 @@ Actions
 				&<./Data/galaxy_map/map_generators/base_galaxy.rules>/ProgressionTiers
 			]
 	}	
-
+*/
 ]
