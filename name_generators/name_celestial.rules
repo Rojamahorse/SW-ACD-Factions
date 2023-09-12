@@ -2,11 +2,29 @@ Type = Multi
 SubGenerators
 [
 	{
+		Chance = .5
 		Type = NameList
-		Names = ['Tatoo', 'Corus', 'Hoth', 'Endor', 'Kashyyk', 'Dagob', 'Mustaf', 'Aldera', 'Yavin', 'Bespin']
+		Names
+		[
+	      "Tatooine"
+	      "Alderaan" 
+	      "Coruscant"
+	      "Naboo"
+	      "Kashyyyk"
+	      "Mustafar"
+	      "Hoth" 
+	      "Dagobah"
+	      "Bespin"
+	      "Endor"
+	      "Jakku"
+	      "Crait" 
+		]
 	}
 	{
-		Type = NameList
-		Names = ['Planet', 'Moon', 'Asteroid', 'Star', 'Nebula', 'Galaxy', 'System']
+		Type = Markov
+		MarkovFile = "latin.markov"
+		MinLength = 6
+		MaxLength = 10
+		MaxConsecutiveConsonants = 3
 	}
 ]

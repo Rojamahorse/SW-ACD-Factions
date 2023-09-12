@@ -2,11 +2,20 @@ Type = Multi
 SubGenerators
 [
 	{
-		Type = NameList
-		Names = ['Tatoo', 'Corus', 'Hoth', 'Endor', 'Kashyyk', 'Dagob', 'Mustaf', 'Aldera', 'Yavin', 'Bespin']
+		Type = Markov
+		MarkovFile = "latin.markov"
+		MinLength = 6
+		MaxLength = 10
+		MaxConsecutiveConsonants = 3
 	}
 	{
 		Type = NameList
-		Names = ['Base', 'Station', 'Outpost', 'Fort', 'Hold', 'Haven', 'Sanctuary']
+		Names
+		[
+	      "Station"
+	      "Outpost" 
+	      "Base"
+	      "Platform"
+		]
 	}
 ]

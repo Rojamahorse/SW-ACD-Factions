@@ -46,3 +46,11 @@ Galactic // 500 star systems
 	TipKey = "MapSizes/GalacticDesc"
 	MapGenerator = &<../galactic.rules>
 }
+/*
+//prototype SW Galaxy
+{
+	NameKey = "MapSizes/SW_Galaxy"
+	TipKey = "MapSizes/SWGalaxyDesc"
+	MapGenerator = &<../sw_large.rules>
+}
+*/

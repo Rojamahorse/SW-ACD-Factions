@@ -64,23 +64,19 @@ Actions
 			&<galaxy_map/map_generators/sizes.rules>/Colossal
 			&<galaxy_map/map_generators/sizes.rules>/Titanic
 			&<galaxy_map/map_generators/sizes.rules>/Galactic
+			//&<galaxy_map/map_generators/sizes.rules>/SW_Galaxy //Test for SW Galaxy Unique Settings 
+
 		]
 	}
 		
-	/*{
-		Action = Replace
-		Replace = "<strings/en.rules>/MapSizes/Standard"
-		With = &<strings/en.rules>/"Outer Rim (50)"
-	}*/
-
+/*
 	// Adds SW Factions in career mode
 	{
 		Action = AddMany
 		AddTo = "<galaxy_map/map_generators/base_galaxy.rules>/Factions/Factions"
         ManyToAdd = &<galaxy_map/map_generators/base_galaxy.rules>/Factions/Factions
 	}
-
-	// Adds the SW Factions tiers in career mode
+		// Adds the SW Factions tiers in career mode
 	{
 		Action = AddMany
 		AddTo = "<galaxy_map/map_generators/base_galaxy.rules>/FactionTiers/Factions"
@@ -93,6 +89,28 @@ Actions
 		Replace = "<galaxy_map/map_generators/base_galaxy.rules>/StartingNodePicker"
         With = &<galaxy_map/map_generators/base_galaxy.rules>/StartingNodePicker
 	}
+*/
+//START TESTING
+	// Adds SW Factions in career mode
+	{
+		Action = Replace
+		Replace = "<galaxy_map/map_generators/base_galaxy.rules>/Factions/Factions"
+        With = &<galaxy_map/map_generators/base_galaxy.rules>/Factions/Factions
+	}
+		// Adds the SW Factions tiers in career mode
+	{
+		Action = Replace
+		Replace = "<galaxy_map/map_generators/base_galaxy.rules>/FactionTiers/Factions"
+        With = &<galaxy_map/map_generators/base_galaxy.rules>/FactionTiers/Factions
+	}
+
+	// Replaces nodes to include SW Factions in career mode
+	{
+		Action = Replace
+		Replace = "<galaxy_map/map_generators/base_galaxy.rules>/StartingNodePicker"
+        With = &<galaxy_map/map_generators/base_galaxy.rules>/StartingNodePicker
+	}
+//END TESTING
 
 	// WIP Replace Name Generator Technique
 
@@ -254,14 +272,7 @@ Actions
 
 
 	/* *********** GALAXY MAP GENERATION ************* */
-/*
-	{
-		Action = Replace
-		Replace = "<galaxy_map/map_generators/base_galaxy.rules>/StartingNodePicker/CandidatesClosestToFactions"
-        With = [1, [SW.Rebel_Alliance, SW.CIS, SW.Republic]]
-	}
-*/
-	
+
 	{
 		Action = Replace
 		Replace = "<./Data/factions/factions.rules>/Factions"
@@ -352,7 +363,7 @@ Actions
 				MilitaryPlayerIndex = 500
 				CivilianPlayerIndex = 501
 			}
-
+/*
 			// Monolith Cooperative (Sith Empire)
 			{
 				ID = monolith
@@ -422,27 +433,9 @@ Actions
 				MilitaryPlayerIndex = 900
 				CivilianPlayerIndex = 901
 			}
-
+*/
 		]
 
 	}
-/*
-	//galaxy size to 100
-	{
-		Action = Replace
-		Replace = "<./Data/galaxy_map/map_generators/galaxy_standard.rules>/Spawners"
-        With = 
-			[
-			: <./Data/galaxy_map/map_generators/base_galaxy.rules>/MapNodes
-			{
-				Count = 100
-			}
 
-				&<./Data/galaxy_map/map_generators/base_galaxy.rules>/Factions
-				&<./Data/galaxy_map/map_generators/base_galaxy.rules>/FactionTiers
-				&<./Data/galaxy_map/map_generators/base_galaxy.rules>/StartingNodePicker
-				&<./Data/galaxy_map/map_generators/base_galaxy.rules>/ProgressionTiers
-			]
-	}	
-*/
 ]

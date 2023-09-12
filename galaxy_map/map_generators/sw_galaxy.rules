@@ -1,6 +1,6 @@
 
 // Define MapNotes in the galaxy
-/*
+
 MapNodes
 {
 	Type = MapNodes
@@ -8,7 +8,7 @@ MapNodes
 	ConnectionRadius = 10
 	NameGenerator = &<./Data/name_generators/name_celestial.rules>
 }
-*/
+
 
 // Define factions in the galaxy
 Factions  
@@ -16,56 +16,58 @@ Factions
   // List of factions
   Factions
   [
-
+/*
     // Black Sun faction definition
     {
       FactionID = SW.Black_Sun
-      TerritoryRatio = 15%
+      TerritoryRatio = 5%
       AvoidOtherFactionsStrength = .3
       AvoidEdgeStrength = .2
       FactionStrengthExponent = 2
       MinFactionStrength = 15%
     }
-    
+*/
+/*
     // Confederacy of Independent Systems (CIS) faction definition
     {
       FactionID = SW.CIS
-      TerritoryRatio = 35%  
+      TerritoryRatio = 15%  
       AvoidOtherFactionsStrength = .7
       AvoidEdgeStrength = .2
       FactionStrengthExponent = 3
       MinFactionStrength = 15%
     }
-
+*/
     // Galactic Empire faction definition
     {
       FactionID = SW.Galactic_Empire
-      TerritoryRatio = 100%
+      TerritoryRatio = 75%
       AvoidOtherFactionsStrength = .8
       AvoidEdgeStrength = .2 
       FactionStrengthExponent = 5
-      MinFactionStrength = 45%
+      MinFactionStrength = 50%
     }
 
     // Rebel Alliance faction definition
     {
       FactionID = SW.Rebel_Alliance
-      TerritoryRatio = 30%
+      TerritoryRatio = 20%
       AvoidOtherFactionsStrength = .8
       AvoidEdgeStrength = .2
       FactionStrengthExponent = 2 
-      MinFactionStrength = 5%
+      MinFactionStrength = 40%
     }
-
+/*
     // Galactic Republic faction definition
     {
       FactionID = SW.Republic
-      TerritoryRatio = 100%
+      TerritoryRatio = 30%
       AvoidOtherFactionsStrength = .7
       AvoidEdgeStrength = .2
       FactionStrengthExponent = 4
       MinFactionStrength = 20%
     }
+*/
   ]
 }
 
@@ -82,6 +84,7 @@ FactionTiers
 {
   Factions
   [
+/*
     // Black Sun tier range
     {
       FactionID = SW.Black_Sun
@@ -95,21 +98,21 @@ FactionTiers
       TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
       TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
     }
-    
+  */
     // Galactic Empire tier range
     {
       FactionID = SW.Galactic_Empire
       TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
       TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
     }
-    
+/*
     // Galactic Republic tier range
     {
       FactionID = SW.Republic  
       TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
       TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
     }
-    
+*/
     // Rebel Alliance tier range
     {
       FactionID = SW.Rebel_Alliance
@@ -131,17 +134,16 @@ StartingNodePicker
   MinConnections = 2
 
   // Farthest from Black Sun
-  CandidatesFarthestFromFactions = [5, [SW.Black_Sun]]
+  CandidatesFarthestFromFactions = [5, [SW.Galactic_Empire]]
   
   // Closest to CIS and Republic
-  CandidatesClosestToFactions = [1, [SW.CIS, SW.Republic]]
+  CandidatesClosestToFactions = [1, [SW.Rebel_Alliance]]
 
   // Set starting node tier range
   SetTierRangeTo = [1, 1 + (&~/TierSpread)]
 }
 
-/*
-Factions
+/*Factions
 {
 	Factions
 	[

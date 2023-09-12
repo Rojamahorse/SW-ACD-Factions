@@ -206,7 +206,7 @@ SubSpawners
             }
 		]
 	}
-/*
+
 	// Faction SW.Rebel_Alliance missions.
 	{
 		Type = Mission
@@ -258,5 +258,5 @@ SubSpawners
             }
 		]
 	} 
-*/
+
 ]
