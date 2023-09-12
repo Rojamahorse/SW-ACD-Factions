@@ -64,12 +64,12 @@ Actions
 			&<galaxy_map/map_generators/sizes.rules>/Colossal
 			&<galaxy_map/map_generators/sizes.rules>/Titanic
 			&<galaxy_map/map_generators/sizes.rules>/Galactic
-			//&<galaxy_map/map_generators/sizes.rules>/SW_Galaxy //Test for SW Galaxy Unique Settings 
+			&<galaxy_map/map_generators/sizes.rules>/Rebellion //Test for SW Galaxy Unique Settings 
 
 		]
 	}
 		
-/*
+
 	// Adds SW Factions in career mode
 	{
 		Action = AddMany
@@ -89,7 +89,7 @@ Actions
 		Replace = "<galaxy_map/map_generators/base_galaxy.rules>/StartingNodePicker"
         With = &<galaxy_map/map_generators/base_galaxy.rules>/StartingNodePicker
 	}
-*/
+/*
 //START TESTING
 	// Adds SW Factions in career mode
 	{
@@ -110,7 +110,7 @@ Actions
 		Replace = "<galaxy_map/map_generators/base_galaxy.rules>/StartingNodePicker"
         With = &<galaxy_map/map_generators/base_galaxy.rules>/StartingNodePicker
 	}
-//END TESTING
+//END TESTING */
 
 	// WIP Replace Name Generator Technique
 
@@ -371,7 +371,7 @@ Actions
 				MilitaryPlayerIndex = 500
 				CivilianPlayerIndex = 501
 			}
-/*
+
 			// Monolith Cooperative (Sith Empire)
 			{
 				ID = monolith
@@ -441,7 +441,7 @@ Actions
 				MilitaryPlayerIndex = 900
 				CivilianPlayerIndex = 901
 			}
-*/
+
 		]
 
 

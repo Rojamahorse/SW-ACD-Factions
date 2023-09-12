@@ -31,8 +31,8 @@ Ships
 	:~{ File="Rebel-ASF-01 B-Wing Starfighter.ship.png";         						Tier=4;  Difficulty=1; } // Cost $0
 												
 	// Patrol ships
-	:~{ File="Rebel-Millenium Falcon (Combat Loadout).ship.png";          				Tier=4;  Difficulty=1; } // Cost $0
-	:~{ File="Millenium Falcon (Combat Loadout).ship.png";         						Tier=4;  Difficulty=2; } // Cost $0
+	:~{ File="Rebel-Millenium Falcon (Combat Loadout).ship.png";          				Tier=5;  Difficulty=1; } // Cost $0
+	:~{ File="Millenium Falcon (Combat Loadout).ship.png";         						Tier=6;  Difficulty=2; } // Cost $0
 	:~{ File="Rebel GR-75 Medium Transport v2.ship.png";          						Tier=7;  Difficulty=2; } // Cost $0
 	:~{ File="Rebel GR-75 Medium Transport.ship.png";         							Tier=7;  Difficulty=1; } // Cost $0
 	:~{ File="Rebel Millenium Falcon Combat B.ship.png";           						Tier=4;  Difficulty=2; } // Cost $0
@@ -67,7 +67,7 @@ Ships
 	
 	// Frigates
 	:~{ File="Rebel-Assault Frigate Mk1.ship.png";           							Tier=10; Difficulty=1; } // Cost $0
-	:~{ File="Rebel Assault Frigate Mk II.ship.png"; 									Tier=10; Difficulty=2; } // Cost $0
+	:~{ File="Rebel Assault Frigate Mk II.ship.png"; 									Tier=13; Difficulty=2; } // Cost $0
 	:~{ File="Assault Frigate Mk1.ship.png";    										Tier=9;  Difficulty=1; } // Cost $0
 	:~{ File="Rebel DP20 Frigate.ship.png";           									Tier=6;  Difficulty=2; } // Cost $0
 	:~{ File="Rebel EF76 Nebulon-Escort Frigat.ship.png";       						Tier=7;  Difficulty=2; } // Cost $0
@@ -91,18 +91,18 @@ Ships
 	
 	// Destroyers
 	:~{ File="Rebel Pheonix Supply.ship.png"; 											Tier=13;  Difficulty=1; }  // Cost $0
-	:~{ File="Rebel-Nebula-Class Star Destroyer.ship.png";          					Tier=16;  Difficulty=2; }  // Cost $0
-	:~{ File="Reb Nebula-Class Star Destroyer.ship.png";          						Tier=16;  Difficulty=2; }  // Cost $0
+	:~{ File="Rebel-Nebula-Class Star Destroyer.ship.png";          					Tier=14;  Difficulty=2; }  // Cost $0
+	:~{ File="Reb Nebula-Class Star Destroyer.ship.png";          						Tier=18;  Difficulty=2; }  // Cost $0
 	// :~{ File="Alliance_Escort_Carrier.ship.png";     								Tier=8;  Difficulty=2; }   // Cost $0
 	// :~{ File="Quasar_Fire-class_Cruiser-Carrier.ship.png";     						Tier=12;  Difficulty=2; }  // Cost $0
 	// :~{ File="Starfreighter.ship.png";     											Tier=14;  Difficulty=2; }  // Cost $0
 	
 
 	// Cruisers
-	:~{ File="Rebel MC75 Mon Calamari Cruiser.ship.png"; 								Tier=13;  Difficulty=1; } // Cost $0
-	:~{ File="Rebel MC75 Mon Calamari Star Cru.ship.png";        						Tier=15;  Difficulty=2; } // Cost $0
-	:~{ File="Rebel Sphyrna Heavy Hammerhead C.ship.png";        						Tier=10;  Difficulty=2; } // Cost $0
-	:~{ File="Rebel Sphyrna-Class Hammerhead C.ship.png";      							Tier=10;  Difficulty=1; } // Cost $0
+	:~{ File="Rebel MC75 Mon Calamari Cruiser.ship.png"; 								Tier=15;  Difficulty=1; } // Cost $0
+	:~{ File="Rebel MC75 Mon Calamari Star Cru.ship.png";        						Tier=16;  Difficulty=2; } // Cost $0
+	:~{ File="Rebel Sphyrna Heavy Hammerhead C.ship.png";        						Tier=11;  Difficulty=2; } // Cost $0
+	:~{ File="Rebel Sphyrna-Class Hammerhead C.ship.png";      							Tier=12;  Difficulty=1; } // Cost $0
 	// :~{ File="Viscount-class_Star_Defender.ship.png";          						Tier=10;  Difficulty=2; } // Cost $0
 	// :~{ File="MC85_Star_Cruiser.ship.png";          									Tier=13;  Difficulty=2; } // Cost $0
 	// :~{ File="MC60_Cruiser.ship.png";          										Tier=13;  Difficulty=2; } // Cost $0
@@ -125,7 +125,7 @@ Ships
 	// :~{ File="Venator-class_Star_Destroyer.ship.png";          						Tier=17;  Difficulty=2; } // Cost $0
 
 	// Flagships
-	:~{ File="Rebel Pheonix Home.ship.png";         									Tier=15;  Difficulty=2; } // Cost $0
+	:~{ File="Rebel Pheonix Home.ship.png";         									Tier=17;  Difficulty=2; } // Cost $0
 	:~{ File="Rebel Pheonix Home Alt.ship.png";         								Tier=9;   Difficulty=2; } // Cost $0
 	// :~{ File="MC80_Home_One_type_Star_Cruiser.ship.png";  							Tier=15;  Difficulty=1; } // Cost $0
 	// :~{ File="Home_One-type_MC80_Star_Cruiser.ship.png";  							Tier=15;  Difficulty=2; } // Cost $0

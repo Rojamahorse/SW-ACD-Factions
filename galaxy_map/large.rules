@@ -2,7 +2,7 @@ Spawners
 [
 	: <./Data/galaxy_map/map_generators/base_galaxy.rules>/MapNodes
 	{
-		Count = 60
+		Count = 50
 	}
 	
 	&<./Data/galaxy_map/map_generators/base_galaxy.rules>/Factions

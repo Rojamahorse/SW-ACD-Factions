@@ -4,7 +4,7 @@ Tags = [station]
 Ships
 [
 	// Civilian stations
-	:~{ File="Small SW.Galactic_Empire Trade Station.ship.png"; Tier=4;  Tags : ~/Tags [trade_station]; StasisIcon="Small SW.Galactic_Empire Trade Station.png" }
+	:~{ File="Small SW.Galactic_Empire Trade Station.ship.png"; Tier=1;  Tags : ~/Tags [trade_station]; StasisIcon="Small SW.Galactic_Empire Trade Station.png" }
 	:~{ File="Med SW.Galactic_Empire Trade Station.ship.png";   Tier=8; Tags : ~/Tags [trade_station]; StasisIcon="Med SW.Galactic_Empire Trade Station.png" }
 	:~{ File="Large SW.Galactic_Empire Trade Station.ship.png"; Tier=14; Tags : ~/Tags [trade_station]; StasisIcon="Large SW.Galactic_Empire Trade Station.png" }
 	:~{ File="Huge SW.Galactic_Empire Trade Station.ship.png"; Tier=16; Tags : ~/Tags [trade_station]; StasisIcon="Huge SW.Galactic_Empire Trade Station.png" }

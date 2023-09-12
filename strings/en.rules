@@ -114,6 +114,9 @@ MapSizes
 
 	Galactic = "The Entire Galaxy (500)"
 	GalacticDesc = "An immense galaxy representing the entirety of the Star Wars galaxy with 500 star systems."
+
+	Rebellion = "A New Hope (50)"
+	RebellionDesc = "A true Star Wars classic that's jam-packed with action; You are caught in the middle as the Rebel Alliance goes head to head vs the Empire... Some might even call that a 'ClassicJam'.
 }
 
 CombatDifficulty

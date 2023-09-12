@@ -99,7 +99,7 @@ Factions
 		MilitaryPlayerIndex = 500
 		CivilianPlayerIndex = 501
 	}
-	/*
+	
 		// Monolith Cooperative
 	{
 		ID = monolith
@@ -171,5 +171,5 @@ Factions
 		MilitaryPlayerIndex = 1200
 		CivilianPlayerIndex = 1201
 	}
-	*/
+	
 ]

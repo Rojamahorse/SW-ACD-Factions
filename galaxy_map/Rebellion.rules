@@ -1,0 +1,12 @@
+Spawners
+[
+	: &<map_generators/sw_galaxy_Rebellion.rules>/MapNodes
+	{
+		Count = 50
+	}
+	
+	&<map_generators/sw_galaxy_Rebellion.rules>/Factions
+	&<map_generators/sw_galaxy_Rebellion.rules>/FactionTiers
+	&<map_generators/sw_galaxy_Rebellion.rules>/StartingNodePicker
+	&<map_generators/sw_galaxy_Rebellion.rules>/ProgressionTiers
+]
