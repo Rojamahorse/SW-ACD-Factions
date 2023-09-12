@@ -1,11 +1,11 @@
 SubSpawners
 [
-	// Faction SW.Black_Sun missions.
+// Faction specific missions for SW.Black_Sun
 	{
 		Type = Mission
-		Metatype = FactionHunt
-		SpawnAt = Tag
-		SpawnAtTag = { Mode=Random; Tag=trade_station; OnlyOpposingFactions=true; }
+		Metatype = FactionHunt // Mission type is FactionHunt
+		SpawnAt = Tag 
+		SpawnAtTag = { Mode=Random; Tag=trade_station; OnlyOpposingFactions=true; } // Spawn at a random trade station owned by an opposing faction
 		OkayIfSpawnAtTagNotFound = true
 		Faction = OwnerOfTag
 		FactionTag = &SpawnAtTag
@@ -19,7 +19,7 @@ SubSpawners
 					{
 						Type = DestroyShips
 						TargetsTag = { Tag=faction_wanderer; OnlyFactions=[SW.Black_Sun]; }
-						TargetCountFraction = 50%
+						TargetCountFraction = 50% // Target 50% of SW.Black_Sun faction wanderer ships
 						MissionInvalidIfZeroTargets = true
 						AllowNpcKills = false
 						OverrideDisplayFormatKey = "Objectives/DestroyFactionShips"
@@ -30,7 +30,7 @@ SubSpawners
 				]
 			}
 		]
-		Rewards
+		Rewards // Give money, fame, and reputation rewards based on tier tables
 		[
 			{
 				Type = Money
@@ -51,12 +51,12 @@ SubSpawners
             }
 		]
 	}
-	// Faction SW.CIS missions.
+// Faction specific missions for SW.CIS 
 	{
-		Type = Mission
+		Type = Mission // Mission type is FactionHunt
 		Metatype = FactionHunt
 		SpawnAt = Tag
-		SpawnAtTag = { Mode=Random; Tag=trade_station; OnlyOpposingFactions=true; }
+		SpawnAtTag = { Mode=Random; Tag=trade_station; OnlyOpposingFactions=true; } // Spawn at a random trade station owned by an opposing faction
 		OkayIfSpawnAtTagNotFound = true
 		Faction = OwnerOfTag
 		FactionTag = &SpawnAtTag
@@ -70,7 +70,7 @@ SubSpawners
 					{
 						Type = DestroyShips
 						TargetsTag = { Tag=faction_wanderer; OnlyFactions=[SW.CIS]; }
-						TargetCountFraction = 50%
+						TargetCountFraction = 50% // Target 50% of SW.CIS faction wanderer ships
 						MissionInvalidIfZeroTargets = true
 						AllowNpcKills = false
 						OverrideDisplayFormatKey = "Objectives/DestroyFactionShips"
@@ -81,7 +81,7 @@ SubSpawners
 				]
 			}
 		]
-		Rewards
+		Rewards // Give money, fame, and reputation rewards based on tier tables
 		[
 			{
 				Type = Money
@@ -103,12 +103,12 @@ SubSpawners
 		]
 	}
 	
-	// Faction SW.Galactic_Empire missions.
+// Faction specific missions for SW.Galactic_Empire
 	{
 		Type = Mission
-		Metatype = FactionHunt
-		SpawnAt = Tag
-		SpawnAtTag = { Mode=Random; Tag=trade_station; OnlyOpposingFactions=true; }
+		Metatype = FactionHunt // Mission type is FactionHunt  
+		SpawnAt = Tag 
+		SpawnAtTag = { Mode=Random; Tag=trade_station; OnlyOpposingFactions=true; } // Spawn at a random trade station owned by an opposing faction
 		OkayIfSpawnAtTagNotFound = true
 		Faction = OwnerOfTag
 		FactionTag = &SpawnAtTag
@@ -122,7 +122,7 @@ SubSpawners
 					{
 						Type = DestroyShips
 						TargetsTag = { Tag=faction_wanderer; OnlyFactions=[SW.Galacitc_Empire]; }
-						TargetCountFraction = 50%
+						TargetCountFraction = 50% // Target 50% of SW.Galactic_Empire faction wanderer ships
 						MissionInvalidIfZeroTargets = true
 						AllowNpcKills = false
 						OverrideDisplayFormatKey = "Objectives/DestroyFactionShips"
@@ -133,7 +133,7 @@ SubSpawners
 				]
 			}
 		]
-		Rewards
+		Rewards // Give money, fame, and reputation rewards based on tier tables
 		[
 			{
 				Type = Money
@@ -155,12 +155,12 @@ SubSpawners
 		]
 	}
 
-	// Faction SW.Republic missions.
+// Faction specific missions for SW.Republic
 	{
 		Type = Mission
-		Metatype = FactionHunt
+		Metatype = FactionHunt // Mission type is FactionHunt
 		SpawnAt = Tag
-		SpawnAtTag = { Mode=Random; Tag=trade_station; OnlyOpposingFactions=true; }
+		SpawnAtTag = { Mode=Random; Tag=trade_station; OnlyOpposingFactions=true; } // Spawn at a random trade station owned by an opposing faction
 		OkayIfSpawnAtTagNotFound = true
 		Faction = OwnerOfTag
 		FactionTag = &SpawnAtTag
@@ -174,7 +174,7 @@ SubSpawners
 					{
 						Type = DestroyShips
 						TargetsTag = { Tag=faction_wanderer; OnlyFactions=[SW.Republic]; }
-						TargetCountFraction = 50%
+						TargetCountFraction = 50% // Target 50% of SW.Republic faction wanderer ships
 						MissionInvalidIfZeroTargets = true
 						AllowNpcKills = false
 						OverrideDisplayFormatKey = "Objectives/DestroyFactionShips"
@@ -185,7 +185,7 @@ SubSpawners
 				]
 			}
 		]
-		Rewards
+		Rewards // Give money, fame, and reputation rewards based on tier tables
 		[
 			{
 				Type = Money
@@ -207,12 +207,12 @@ SubSpawners
 		]
 	}
 
-	// Faction SW.Rebel_Alliance missions.
+// Faction specific missions for SW.Rebel_Alliance
 	{
 		Type = Mission
-		Metatype = FactionHunt
+		Metatype = FactionHunt // Mission type is FactionHunt
 		SpawnAt = Tag
-		SpawnAtTag = { Mode=Random; Tag=trade_station; OnlyOpposingFactions=true; }
+		SpawnAtTag = { Mode=Random; Tag=trade_station; OnlyOpposingFactions=true; } // Spawn at a random trade station owned by an opposing faction
 		OkayIfSpawnAtTagNotFound = true
 		Faction = OwnerOfTag
 		FactionTag = &SpawnAtTag
@@ -225,7 +225,7 @@ SubSpawners
 				[
 					{
 						Type = DestroyShips
-						TargetsTag = { Tag=faction_wanderer; OnlyFactions=[SW.Rebel_Alliance]; }
+						TargetsTag = { Tag=faction_wanderer; OnlyFactions=[SW.Rebel_Alliance]; } // Target 50% of SW.Rebel_Alliance faction wanderer ships
 						TargetCountFraction = 50%
 						MissionInvalidIfZeroTargets = true
 						AllowNpcKills = false
@@ -237,7 +237,7 @@ SubSpawners
 				]
 			}
 		]
-		Rewards
+		Rewards // Give money, fame, and reputation rewards based on tier tables
 		[
 			{
 				Type = Money

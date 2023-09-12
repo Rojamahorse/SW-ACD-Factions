@@ -269,6 +269,14 @@ Actions
 		]		
 
 		}
+	/* *********** CAREER ECONOMY DIFFICULTIES ************* */
+
+	{
+		Action = Replace
+		Replace = "<modes/career/career.rules>/EconDifficultyLevels"
+		IgnoreIfNotExisting = false
+		With = &<career/EconDifficultyLevels.rules>/EconDifficultyLevels
+	}
 
 
 	/* *********** GALAXY MAP GENERATION ************* */
@@ -359,7 +367,7 @@ Actions
 						MipLevels = max
 					}
 				}
-				BorderColor = [56, 16, 16]
+				BorderColor = [255, 0, 49]
 				MilitaryPlayerIndex = 500
 				CivilianPlayerIndex = 501
 			}
@@ -435,6 +443,8 @@ Actions
 			}
 */
 		]
+
+
 
 	}
 

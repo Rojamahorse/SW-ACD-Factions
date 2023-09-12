@@ -1,0 +1,57 @@
+EconDifficultyLevels
+[
+	{
+		ID = "free_build"
+		NameKey = "EconDifficulty/FreeBuild"
+		TipKey = "EconDifficulty/FreeBuildTip"
+		StartingMoney = 0
+		StartingFame = 0
+		EnemyResourceDropRateFactor = 100%
+		SelfResourceDropRateFactor = 100%
+		MoneyRewardFactor = 100%
+		FameRewardFactor = 100%
+		ReputationRewardFactor = 100%
+		ResourceSaleRefund = 50%
+		ConstructionMode = InstantFree
+	}
+	{
+		ID = "fast"
+		NameKey = "EconDifficulty/Fast"
+		TipKey = "EconDifficulty/FastTip"
+		IsDefault = true
+		StartingMoney = 65200+70000
+		StartingFame = 0
+		EnemyResourceDropRateFactor = 200%
+		SelfResourceDropRateFactor = 150%
+		MoneyRewardFactor = 200%
+		FameRewardFactor = 150%
+		ReputationRewardFactor = 150%
+		ResourceSaleRefund = 50%
+	}
+	{
+		ID = "normal"
+		NameKey = "EconDifficulty/Normal"
+		TipKey = "EconDifficulty/NormalTip"
+		StartingMoney = 65200+40000
+		StartingFame = 0
+		EnemyResourceDropRateFactor = 100%
+		SelfResourceDropRateFactor = 100%
+		MoneyRewardFactor = 100%
+		FameRewardFactor = 100%
+		ReputationRewardFactor = 100%
+		ResourceSaleRefund = 50%
+	}
+	{
+		ID = "slow"
+		NameKey = "EconDifficulty/Slow"
+		TipKey = "EconDifficulty/SlowTip"
+		StartingMoney = 65200+15000
+		StartingFame = 0
+		EnemyResourceDropRateFactor = 50%
+		SelfResourceDropRateFactor = 50%
+		MoneyRewardFactor = 50%
+		FameRewardFactor = 75%
+		ReputationRewardFactor = 75%
+		ResourceSaleRefund = 50%
+	}
+]

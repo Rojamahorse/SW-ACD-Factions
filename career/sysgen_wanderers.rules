@@ -1,0 +1,57 @@
+Type = None
+SubSpawners
+[
+	// Pirates.
+	{
+		Type = Ships
+		Tags = [pirate]
+		Count = [14, 16]
+		Distance = [6000, 18000]
+		MinDistanceFromTags = [[station, 2000], [pirate, 4500]]
+		SuppressLocationAssertions = true
+		Allegiance = Unique
+		FamePerTier = &<tier_tables.rules>/StandardFamePerTier
+		MaxFamePerTier = &<tier_tables.rules>/StandardMaxFamePerTier
+		ShipCriteria
+		{
+			UseLocalFactionWeights = true
+			UseTierField = true
+			AllowTierRangeExpansion = true
+			Tags = [combat]
+			UseEvenShipTypeDistribution = true
+		}
+		AI
+		{
+			Type = Wanderer
+			PatrolRadius = 7500
+			StasisSpeed = 100
+		}
+	}
+
+	// Faction wanderers.
+	{
+		Type = Ships
+		Tags = [faction_wanderer]
+		Count = [14, 16]
+		Distance = [6000, 18000]
+		MinDistanceFromTags = [[station, 500]]
+		SuppressLocationAssertions = true
+		Allegiance = FactionMilitary
+		FamePerTier = &<tier_tables.rules>/StandardFamePerTier
+		MaxFamePerTier = &<tier_tables.rules>/StandardMaxFamePerTier
+		ShipCriteria
+		{
+			UseLocalFactionWeights = true
+			UseLocalTier = true
+			AllowTierRangeExpansion = true
+			Tags = [combat]
+		}
+		AI
+		{
+			Type = Wanderer
+			PatrolRadius = &../Distance/1
+			PatrolAroundWorldOrigin = true
+			StasisSpeed = 100
+		}
+	}
+]
