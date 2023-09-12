@@ -1,4 +1,18 @@
- Factions
+/* Faction mod compatibility note:
+The game assigns faction ownership to ships using "MilitaryPlayerIndex" and "CivilianPlayerIndex".  
+The builtin factions use indices: 
+  - Monolith: 100/101
+  - Cabal: 200/201
+  - Imperium: 300/301
+  - Fringe: 400/401
+When making a new faction mod, use an index like 500/501 to avoid conflicts.
+However, if another faction mod uses the same index, the game may confuse which faction owns what ships.
+For example, Sampston's and Ekrasys' factions use 600/601 and 500/501 respectively. 
+To avoid conflicts, this mod uses 700/701 instead.
+There's no guarantee full compatibility between arbitrary faction mods.
+The indices don't seem to need multiples of 100, but non-standard indices may cause crashes.*/
+
+Factions
 [
 	// Black_Sun
 	{
@@ -100,8 +114,8 @@
 			}
 		}
 		BorderColor = [0, 196, 255]
-		MilitaryPlayerIndex = 100
-		CivilianPlayerIndex = 101
+		MilitaryPlayerIndex = 800
+		CivilianPlayerIndex = 801
 	}
 
 	// Cabal of Sol
@@ -118,8 +132,8 @@
 			}
 		}
 		BorderColor = [255, 237, 102]
-		MilitaryPlayerIndex = 200
-		CivilianPlayerIndex = 201
+		MilitaryPlayerIndex = 900
+		CivilianPlayerIndex = 901
 	}
 
 	// Centauri Imperium
@@ -136,8 +150,8 @@
 			}
 		}
 		BorderColor = [255, 0, 49]
-		MilitaryPlayerIndex = 300
-		CivilianPlayerIndex = 301
+		MilitaryPlayerIndex = 1000
+		CivilianPlayerIndex = 1001
 	}
 
 	// Fringe Systems Resistance
@@ -154,8 +168,8 @@
 			}
 		}
 		BorderColor = [127, 127, 127, 127]
-		MilitaryPlayerIndex = 400
-		CivilianPlayerIndex = 401
+		MilitaryPlayerIndex = 1200
+		CivilianPlayerIndex = 1201
 	}
 	*/
 ]
