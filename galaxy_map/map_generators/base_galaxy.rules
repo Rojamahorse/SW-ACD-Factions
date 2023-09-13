@@ -165,12 +165,13 @@ FactionTiers
 			TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
 			TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
 		}
+		*/
 		{
 			FactionID = fringe
 			TierRangeLow = 1
 			TierRangeHigh = 1
 		}
-		*/
+		
   ]
 }
 

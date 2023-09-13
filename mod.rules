@@ -231,6 +231,7 @@ Actions
 
 
 	// Adds SW Factions in career mode
+	/*
 	{
 		Action = AddMany
 		AddTo = "<galaxy_map/map_generators/base_galaxy.rules>/Factions/Factions"
@@ -243,7 +244,7 @@ Actions
 		AddTo = "<galaxy_map/map_generators/base_galaxy.rules>/FactionTiers/Factions"
         ManyToAdd = &<galaxy_map/map_generators/base_galaxy.rules>/FactionTiers/Factions
 	}
-	
+	*/
 	// Replaces StartingNodes to include SW Factions in career mode
 	{
 		Action = Replace
@@ -257,7 +258,7 @@ Actions
 		Replace = "<factions/factions.rules>/Factions"
         With = &<factions/factions.rules>/Factions
 	}
-
+*/
 	// Adds SW Factions in career mode
 	{
 		Action = Replace
@@ -271,7 +272,7 @@ Actions
 		Replace = "<galaxy_map/map_generators/base_galaxy.rules>/FactionTiers/Factions"
         With = &<galaxy_map/map_generators/base_galaxy.rules>/FactionTiers/Factions
 	}
-
+/*
 	// Replaces nodes to include SW Factions in career mode
 	{
 		Action = Replace

@@ -10,21 +10,13 @@
 	NameGenerator = &<./Data/name_generators/name_celestial.rules>
 }*/
 
-MapNodes
-{
-	Type = MapNodes
-	Distance = [5, 10]
-	ConnectionRadius = 10
-	NameGenerator = &<./Data/name_generators/name_celestial.rules>
-}
-
 Factions
 {
 	Type = Factions
 	Factions
 	[
 		{
-			FactionID = monolith
+			FactionID = SW.Galactic_Empire
 			TerritoryRatio = 100%
 			AvoidOtherFactionsStrength = .3
 			AvoidEdgeStrength = .2
@@ -32,7 +24,7 @@ Factions
 			MinFactionStrength = 5%
 		}
 		{
-			FactionID = cabal
+			FactionID = SW.Rebel_Alliance
 			TerritoryRatio = 100%
 			AvoidOtherFactionsStrength = .3
 			AvoidEdgeStrength = .2
@@ -40,7 +32,7 @@ Factions
 			MinFactionStrength = 5%
 		}
 		{
-			FactionID = imperium
+			FactionID = SW.Republic
 			TerritoryRatio = 100%
 			AvoidOtherFactionsStrength = .3
 			AvoidEdgeStrength = .2
@@ -63,17 +55,17 @@ FactionTiers
 	Factions
 	[
 		{
-			FactionID = monolith
+			FactionID = SW.Galactic_Empire
 			TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
 			TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
 		}
 		{
-			FactionID = cabal
+			FactionID = SW.Rebel_Alliance
 			TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
 			TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
 		}
 		{
-			FactionID = imperium
+			FactionID =  SW.Republic
 			TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
 			TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
 		}
@@ -88,10 +80,10 @@ FactionTiers
 StartingNodePicker
 {
 	Type = StartingNodePicker
-	AllowedFactions = [fringe]
+	AllowedFactions = [SW.Rebel_Alliance]
 	MinConnections = 2
-	CandidatesFarthestFromFactions = [5, [imperium]]
-	CandidatesClosestToFactions = [1, [monolith, cabal]]
+	CandidatesFarthestFromFactions = [5, [SW.Galactic_Empire]]
+	CandidatesClosestToFactions = [1, [SW.Republic, SW.Rebel_Alliance]]
 	SetTierRangeTo = [1, 1 + (&~/TierSpread)]
 }
 
