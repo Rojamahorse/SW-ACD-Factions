@@ -1,5 +1,5 @@
 
-// Define MapNotes in the galaxy
+// This for some reason results in a galaxy with fringe vs galactic Empire... no clue why but saving it for reference.
 
 
 /*MapNodes
@@ -20,7 +20,7 @@ Factions
 			TerritoryRatio = 100%
 			AvoidOtherFactionsStrength = .3
 			AvoidEdgeStrength = .2
-			FactionStrengthExponent = 2
+			FactionStrengthExponent = 1
 			MinFactionStrength = 55%
 		}
 		{
@@ -28,8 +28,8 @@ Factions
 			TerritoryRatio = 100%
 			AvoidOtherFactionsStrength = .3
 			AvoidEdgeStrength = .2
-			FactionStrengthExponent = 1
-			MinFactionStrength = 45%
+			FactionStrengthExponent = 2
+			MinFactionStrength = 455%
 		}
 		/*{
 			FactionID = SW.Republic
@@ -80,7 +80,7 @@ FactionTiers
 StartingNodePicker
 {
 	Type = StartingNodePicker
-	AllowedFactions = [SW.Rebel_Alliance]
+	AllowedFactions = [fringe]
 	MinConnections = 1
 	CandidatesFarthestFromFactions = [5, [SW.Galactic_Empire]]
 	CandidatesClosestToFactions = [1, [SW.Rebel_Alliance]]

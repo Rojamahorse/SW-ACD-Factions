@@ -210,12 +210,12 @@ Actions
 //						Mandalorian_4  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Large Empire";     Faction=SW.Mandalorian;   TierRange=[1, 10];   StasisSpeed=65; StasisTradeTime=60;}
 //						Mandalorian_5  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Huge Empire";     Faction=SW.Mandalorian;   TierRange=[1, 18];   StasisSpeed=70; StasisTradeTime=65;}
 //						Mandalorian_6  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Extra Huge Emp";     Faction=SW.Mandalorian;   TierRange=[10, 18];   StasisSpeed=75; StasisTradeTime=70;}
-					 	Rebel_Alliance_1  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Millenium Falcon Rebel";     Faction=SW.Rebel_Alliance;   TierRange=[1, 3];   StasisSpeed=40; StasisTradeTime=35;}
-					 	Rebel_Alliance_2  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Tiny Rebel";     Faction=SW.Rebel_Alliance;   TierRange=[1, 5];   StasisSpeed=55; StasisTradeTime=48;}
-						Rebel_Alliance_3  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Small Rebel";     Faction=SW.Rebel_Alliance;   TierRange=[1, 7];   StasisSpeed=60; StasisTradeTime=55;}
-						Rebel_Alliance_4  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Medium Rebel";     Faction=SW.Rebel_Alliance;   TierRange=[1, 10];   StasisSpeed=65; StasisTradeTime=60;}
-						Rebel_Alliance_5  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Large Rebel";     Faction=SW.Rebel_Alliance;   TierRange=[1, 18];   StasisSpeed=70; StasisTradeTime=65;}
-						Rebel_Alliance_6  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Huge Rebel";     Faction=SW.Rebel_Alliance;   TierRange=[10, 18];   StasisSpeed=75; StasisTradeTime=70;}
+					 	Rebel_Alliance_1  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Millenium Falcon Rebel";     Faction=SW.Rebel_Alliance;   TierRange=[1, 9];   StasisSpeed=40; StasisTradeTime=40;}
+					 	Rebel_Alliance_2  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Tiny Rebel";     Faction=SW.Rebel_Alliance;   TierRange=[3, 12];   StasisSpeed=55; StasisTradeTime=48;}
+						Rebel_Alliance_3  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Small Rebel";     Faction=SW.Rebel_Alliance;   TierRange=[6, 18];   StasisSpeed=60; StasisTradeTime=55;}
+						Rebel_Alliance_4  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Medium Rebel";     Faction=SW.Rebel_Alliance;   TierRange=[6, 18];   StasisSpeed=65; StasisTradeTime=60;}
+						Rebel_Alliance_5  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Large Rebel";     Faction=SW.Rebel_Alliance;   TierRange=[12, 18];   StasisSpeed=70; StasisTradeTime=65;}
+						Rebel_Alliance_6  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Huge Rebel";     Faction=SW.Rebel_Alliance;   TierRange=[12, 18];   StasisSpeed=75; StasisTradeTime=100;}
 						Republic_1  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Tiny Republic";     Faction=SW.Republic;   TierRange=[1, 3];   StasisSpeed=40; StasisTradeTime=35;}
 					 	Republic_2  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Small Republic";     Faction=SW.Republic;    TierRange=[1, 5];   StasisSpeed=55; StasisTradeTime=48;}
 						Republic_3  : <./Data/modes/career/career.rules>/BaseTradeShip  {ShipID="Cargo Transporter Medium Republic";     Faction=SW.Republic;   TierRange=[1, 7];   StasisSpeed=60; StasisTradeTime=55;}
