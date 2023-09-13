@@ -64,7 +64,7 @@ Factions
 	Rebel_Alliance = "Rebel Alliance"
 	Republic = "Republic"
 	monolith = "Sith Empire"
-	fringe = "Jedi Order"
+	fringe = "Corporate Sector Authority (CSA)"
 	imperium = "First Order"
 	cabal = "Mandalorians"
 }
@@ -95,28 +95,28 @@ MapSizes
 	VanillaDesc = "A standard-sized boring old Cosmoteer star system... These aren't the star systems you're looking for... move along, move along."
 
 	Standard = "Frontier Systems (50)"
-	StandardTip = "A network of 50 star systems on the edge of explored space, known for their intricate routes and shadowy dealings."
+	StandardTip = "A network of 50 Star Wars systems on the edge of explored space, known for their intricate routes and shadowy dealings."
 
 	Large = "Outer Rim Territories (60)"
-	LargeDesc = "A lawless frontier region reminiscent of the Outer Rim with 60 star systems."
+	LargeDesc = "A lawless frontier region reminiscent of the Outer Rim with 60 Star Wars systems."
 
 	VeryLarge = "Mid Rim Systems (80)" 
-	VeryLargeDesc = "An industrialized region reminiscent of the Mid Rim with 80 star systems."
+	VeryLargeDesc = "An industrialized region reminiscent of the Mid Rim with 80 Star Wars systems."
 
 	Huge = "Inner Rim Worlds (100)"
-	HugeDesc = "A core region reminiscent of the Inner Rim with 100 star systems." 
+	HugeDesc = "A core region reminiscent of the Inner Rim with 100 Star Wars systems." 
 
 	Gigantic = "Core Worlds (125)"
-	GiganticDesc = "The heart of galactic civilization with 125 star systems."
+	GiganticDesc = "The heart of galactic civilization with 125  Star Wars systems."
 
 	Colossal = "Deep Core Systems (150)"
-	ColossalDesc = "A dangerous region on the fringes of the Deep Core with 150 star systems."
+	ColossalDesc = "A dangerous region on the fringes of the Deep Core with 150 Star Wars systems."
 
 	Titanic = "Unknown Regions (200)"
-	TitanicDesc = "A vast uncharted territory shrouded in mystery with 200 star systems."
+	TitanicDesc = "A vast uncharted territory shrouded in mystery with 200 Star Wars systems."
 
 	Galactic = "The Entire Known Galaxy (500)"
-	GalacticDesc = "The full extent of the Star Wars galaxy with 500 star systems."
+	GalacticDesc = "The full extent of the Star Wars galaxy with 500 Star Wars systems."
 
 	Rebellion = "A New Hope (50)"
 	RebellionDesc = "A true Star Wars classic that's jam-packed with action; You are caught in the middle as the Rebel Alliance goes head to head vs the Empire... Some might even call that a 'ClassicJam'."
