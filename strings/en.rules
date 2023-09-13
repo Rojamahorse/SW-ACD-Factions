@@ -89,31 +89,31 @@ Resource
 {
 }
 
-MapSizes
-{	
-	Standard = "Outer Rim (50)"
-	StandardTip = "A standard-sized galaxy resembling the Outer Rim with 50 star systems."
+MapSizes  
+{
+	Standard = "Standard (50)"
+	StandardTip = "A standard-sized boring old Cosmoteer star system... These aren't the star systems you're looking for... move along, move along."
 
-	Large = "Mid Rim (60)"
-	LargeDesc = "A larger galaxy reminiscent of the Mid Rim with 60 star systems."
+	Large = "Outer Rim Territories (60)"
+	LargeDesc = "A lawless frontier region reminiscent of the Outer Rim with 60 star systems."
 
-	VeryLarge = "Core Worlds (80)"
-	VeryLargeDesc = "A very large galaxy resembling the Core Worlds with 80 star systems."
+	VeryLarge = "Mid Rim Systems (80)" 
+	VeryLargeDesc = "An industrialized region reminiscent of the Mid Rim with 80 star systems."
 
-	Huge = "Expanded Universe (100)"
-	HugeDesc = "A huge galaxy inspired by the Expanded Universe with 100 star systems."
+	Huge = "Inner Rim Worlds (100)"
+	HugeDesc = "A core region reminiscent of the Inner Rim with 100 star systems." 
 
-	Gigantic = "Unknown Regions (125)"
-	GiganticDesc = "A gigantic galaxy resembling the Unknown Regions with 125 star systems."
+	Gigantic = "Core Worlds (125)"
+	GiganticDesc = "The heart of galactic civilization with 125 star systems."
 
-	Colossal = "Hyperspace Lanes (150)"
-	ColossalDesc = "A colossal galaxy featuring numerous hyperspace lanes with 150 star systems."
+	Colossal = "Deep Core Systems (150)"
+	ColossalDesc = "A dangerous region on the fringes of the Deep Core with 150 star systems."
 
-	Titanic = "Star Clusters (200)"
-	TitanicDesc = "A titanic galaxy filled with various star clusters and 200 star systems."
+	Titanic = "Unknown Regions (200)"
+	TitanicDesc = "A vast uncharted territory shrouded in mystery with 200 star systems."
 
-	Galactic = "The Entire Galaxy (500)"
-	GalacticDesc = "An immense galaxy representing the entirety of the Star Wars galaxy with 500 star systems."
+	Galactic = "The Entire Known Galaxy (500)"
+	GalacticDesc = "The full extent of the Star Wars galaxy with 500 star systems."
 
 	Rebellion = "A New Hope (50)"
 	RebellionDesc = "A true Star Wars classic that's jam-packed with action; You are caught in the middle as the Rebel Alliance goes head to head vs the Empire... Some might even call that a 'ClassicJam'."

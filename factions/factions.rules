@@ -12,6 +12,8 @@ To avoid conflicts, this mod uses 700/701 instead.
 There's no guarantee full compatibility between arbitrary faction mods.
 The indices don't seem to need multiples of 100, but non-standard indices may cause crashes.*/
 
+
+
 Factions
 [
 	// Black_Sun

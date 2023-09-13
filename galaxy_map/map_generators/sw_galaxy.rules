@@ -1,6 +1,5 @@
 
-// Define MapNotes in the galaxy
-/*
+// Define MapNodes in the galaxy
 MapNodes
 {
 	Type = MapNodes
@@ -8,14 +7,14 @@ MapNodes
 	ConnectionRadius = 10
 	NameGenerator = &<./Data/name_generators/name_celestial.rules>
 }
-*/
 
-// Define factions in the galaxy
-Factions  
+
+
+Factions // Define factions in the galaxy
 {
 	Type = Factions
-  // List of factions
-  Factions
+ 
+  Factions  // List of factions
   [
 
     // Black Sun faction definition
@@ -72,14 +71,11 @@ Factions
 
 
 
-// Maximum technology tier in the galaxy 
-MaxTier = 18
 
-// How many tiers each faction's territory spreads across
-TierSpread = 2 
+MaxTier = 18 // Maximum strength tier in the galaxy 
+TierSpread = 2 // How many tiers each faction's territory spreads across
 
-// Define tier ranges for each faction
-FactionTiers
+FactionTiers // Define tier ranges for each faction
 {
   Type = FactionNodeTiers
   Factions
@@ -124,22 +120,12 @@ FactionTiers
 // Define starting node picker settings
 StartingNodePicker
 {
-  Type = StartingNodePicker
-  
-  // Allowed starting factions
-  AllowedFactions = [SW.Rebel_Alliance] 
-  
-  // Minimum connections for candidate nodes
-  MinConnections = 2
-
-  // Farthest from Black Sun
-  CandidatesFarthestFromFactions = [5, [SW.Black_Sun]]
-  
-  // Closest to CIS and Republic
-  CandidatesClosestToFactions = [1, [SW.CIS, SW.Republic]]
-
-  // Set starting node tier range
-  SetTierRangeTo = [1, 1 + (&~/TierSpread)]
+	Type = StartingNodePicker
+	AllowedFactions = [SW.Rebel_Alliance]
+	MinConnections = 2
+	CandidatesFarthestFromFactions = [5, [SW.Black_Sun]]
+	CandidatesClosestToFactions = [1, [SW.CIS, SW.Republic]]
+	SetTierRangeTo = [1, 1 + (&~/TierSpread)]
 }
 
 /*
