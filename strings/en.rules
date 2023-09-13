@@ -91,8 +91,11 @@ Resource
 
 MapSizes  
 {
-	Standard = "Standard (50)"
-	StandardTip = "A standard-sized boring old Cosmoteer star system... These aren't the star systems you're looking for... move along, move along."
+	Vanilla = "Standard (50)"
+	VanillaDesc = "A standard-sized boring old Cosmoteer star system... These aren't the star systems you're looking for... move along, move along."
+
+	Standard = "Frontier Systems (50)"
+	StandardTip = "A network of 50 star systems on the edge of explored space, known for their intricate routes and shadowy dealings."
 
 	Large = "Outer Rim Territories (60)"
 	LargeDesc = "A lawless frontier region reminiscent of the Outer Rim with 60 star systems."
@@ -117,6 +120,10 @@ MapSizes
 
 	Rebellion = "A New Hope (50)"
 	RebellionDesc = "A true Star Wars classic that's jam-packed with action; You are caught in the middle as the Rebel Alliance goes head to head vs the Empire... Some might even call that a 'ClassicJam'."
+/*
+	SmugglersRun = "Smuggler's Run (50)"
+	SmugglersRunDesc = "A network of 50 star systems known for their intricate routes and shadowy dealings, often frequented by smugglers and outlaws."
+*/
 }
 
 CombatDifficulty

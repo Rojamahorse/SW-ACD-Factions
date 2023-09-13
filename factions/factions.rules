@@ -16,6 +16,162 @@ The indices don't seem to need multiples of 100, but non-standard indices may ca
 
 Factions
 [
+			// Black_Sun
+			{
+				ID = SW.Black_Sun
+				NameKey = "Factions/Black_Sun"
+				Icon
+				{
+					Texture
+					{
+						File = "Black_Sun.png"
+						SampleMode = Linear
+						MipLevels = max
+					}
+				}
+				BorderColor = [204, 0, 255]
+				MilitaryPlayerIndex = 100
+				CivilianPlayerIndex = 101
+			}
+			// Confederacy of Independent Systems
+			{
+				ID = SW.CIS
+				NameKey = "Factions/CIS"
+				Icon
+				{
+					Texture
+					{
+						File = "CIS.png"
+						SampleMode = Linear
+						MipLevels = max
+					}
+				}
+				BorderColor = [6, 78, 123]
+				MilitaryPlayerIndex = 200
+				CivilianPlayerIndex = 201
+			}
+			// Galactic_Empire
+			{
+				ID = SW.Galactic_Empire
+				NameKey = "Factions/Galactic_Empire"
+				Icon
+				{
+					Texture
+					{
+						File = "Galactic_Empire.png"
+						SampleMode = Linear
+						MipLevels = max
+					}
+				}
+				BorderColor = [255, 255, 255]
+				MilitaryPlayerIndex = 300
+				CivilianPlayerIndex = 301
+			}
+			// Rebel_Alliance
+			{
+				ID = SW.Rebel_Alliance
+				NameKey = "Factions/Rebel_Alliance"
+				Icon
+				{
+					Texture
+					{
+						File = "Rebel_Alliance.png"
+						SampleMode = Linear
+						MipLevels = max
+					}
+				}
+				BorderColor = [255, 165, 0]
+				MilitaryPlayerIndex = 400
+				CivilianPlayerIndex = 401
+			}
+			// Republic
+			{
+				ID = SW.Republic
+				NameKey = "Factions/Republic"
+				Icon
+				{
+					Texture
+					{
+						File = "Republic.png"
+						SampleMode = Linear
+						MipLevels = max
+					}
+				}
+				BorderColor = [255, 0, 49]
+				MilitaryPlayerIndex = 500
+				CivilianPlayerIndex = 501
+			}
+
+			// Monolith Cooperative (Sith Empire)
+			{
+				ID = monolith
+				NameKey = "Factions/Monolith"
+				Icon
+				{
+					Texture
+					{
+						File = "monolith.png"
+						SampleMode = Linear
+						MipLevels = max
+					}
+				}
+				BorderColor = [0, 196, 255]
+				MilitaryPlayerIndex = 600
+				CivilianPlayerIndex = 601
+			}
+			// Cabal of Sol (Mandalorians)
+			{
+				ID = cabal
+				NameKey = "Factions/Cabal"
+				Icon
+				{
+					Texture
+					{
+						File = "cabal.png"
+						SampleMode = Linear
+						MipLevels = max
+					}
+				}
+				BorderColor = [255, 237, 102]
+				MilitaryPlayerIndex = 700
+				CivilianPlayerIndex = 701
+			}
+			// Centauri Imperium (First Order)
+			{
+				ID = imperium
+				NameKey = "Factions/Imperium"
+				Icon
+				{
+					Texture
+					{
+						File = "imperium.png"
+						SampleMode = Linear
+						MipLevels = max
+					}
+				}
+				BorderColor = [255, 0, 49]
+				MilitaryPlayerIndex = 800
+				CivilianPlayerIndex = 801
+			}
+
+			// Fringe Systems Resistance (Jedi Order)
+			{
+				ID = fringe
+				NameKey = "Factions/Fringe"
+				Icon
+				{
+					Texture
+					{
+						File = "fringe.png"
+						SampleMode = Linear
+						MipLevels = max
+					}
+				}
+				BorderColor = [127, 127, 127, 127]
+				MilitaryPlayerIndex = 900
+				CivilianPlayerIndex = 901
+			}
+	/*
 	// Black_Sun
 	{
 		ID = SW.Black_Sun
@@ -173,5 +329,6 @@ Factions
 		MilitaryPlayerIndex = 1200
 		CivilianPlayerIndex = 1201
 	}
+	*/
 	
 ]

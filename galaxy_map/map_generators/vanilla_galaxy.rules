@@ -1,0 +1,136 @@
+/*
+MapNodes
+{
+	Type = MapNodes
+	Distance = [5, 10]
+	ConnectionRadius = 10
+	NameGenerator = &<./Data/name_generators/name_celestial.rules>
+}
+*/
+
+Factions
+{
+	Type = Factions
+	Factions
+	[
+		{
+			FactionID = monolith
+			TerritoryRatio = 100%
+			AvoidOtherFactionsStrength = .3
+			AvoidEdgeStrength = .2
+			FactionStrengthExponent = 1
+			MinFactionStrength = 5%
+		}
+		{
+			FactionID = cabal
+			TerritoryRatio = 100%
+			AvoidOtherFactionsStrength = .3
+			AvoidEdgeStrength = .2
+			FactionStrengthExponent = 3
+			MinFactionStrength = 5%
+		}
+		{
+			FactionID = imperium
+			TerritoryRatio = 100%
+			AvoidOtherFactionsStrength = .3
+			AvoidEdgeStrength = .2
+			FactionStrengthExponent = 2
+			MinFactionStrength = 5%
+		}
+	]
+	RemainderFaction = fringe
+	RemainderFactionThreshold = 1.5
+	MinRemainderFactionStrength = 5%
+	AvoidIterations = 10
+}
+
+MaxTier = 18
+TierSpread = 2
+
+FactionTiers
+{
+	Type = FactionNodeTiers
+	Factions
+	[
+		{
+			FactionID = monolith
+			TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
+			TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
+		}
+		{
+			FactionID = cabal
+			TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
+			TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
+		}
+		{
+			FactionID = imperium
+			TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
+			TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
+		}
+		{
+			FactionID = fringe
+			TierRangeLow = 1
+			TierRangeHigh = 1
+		}
+	]
+}
+
+StartingNodePicker
+{
+	Type = StartingNodePicker
+	AllowedFactions = [fringe]
+	MinConnections = 2
+	CandidatesFarthestFromFactions = [5, [imperium]]
+	CandidatesClosestToFactions = [1, [monolith, cabal]]
+	SetTierRangeTo = [1, 1 + (&~/TierSpread)]
+}
+
+ProgressionTiers
+{
+	Type = ProgressionNodeTiers
+	MaxLowTier = (&~/MaxTier) - (&~/TierSpread) - 1 // Leave highest tier exclusively for home systems.
+	MaxChangeableLowTier = (&MaxLowTier) // Don't adjust tier of faction home systems.
+	DesiredTierDeltas
+	[
+		{
+			SourceLowTierDelta = 3
+			Priority = 0 // Low priority is more important.
+			HighTierSpread = &~/TierSpread
+			PreferredAvailableConnections = 2
+		}
+		{
+			SourceLowTierDelta = 1
+			Priority = 0
+			HighTierSpread = &~/TierSpread
+			SourceLowTierRange = [1, 1] // For the tier, we want to have a nearby node at the same tier to ease the difficulty ramp.
+			PreferredAvailableConnections = 1
+		}
+		{
+			SourceLowTierDelta = 2
+			Priority = 1
+			HighTierSpread = &~/TierSpread
+			SourceLowTierRange = [2, (&~/MaxTier)] // At subsequent tiers, we prefer to increase difficulty steadily.
+		}
+		{
+			SourceLowTierDelta = 1
+			Priority = 2
+			HighTierSpread = &~/TierSpread
+		}
+		{
+			SourceLowTierDelta = 0
+			Priority = 3
+			HighTierSpread = &~/TierSpread
+		}
+		{
+			SourceLowTierDelta = -1
+			Priority = 4
+			HighTierSpread = &~/TierSpread
+		}
+		{
+			SourceLowTierDelta = -1
+			Priority = 4
+			HighTierSpread = &~/TierSpread
+		}
+	]
+}
+

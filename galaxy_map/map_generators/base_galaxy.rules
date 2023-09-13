@@ -31,7 +31,7 @@ Factions
     {
       FactionID = SW.CIS
       TerritoryRatio = 35%  
-      AvoidOtherFactionsStrength = .7
+      AvoidOtherFactionsStrength = .3
       AvoidEdgeStrength = .2
       FactionStrengthExponent = 3
       MinFactionStrength = 15%
@@ -41,32 +41,64 @@ Factions
     {
       FactionID = SW.Galactic_Empire
       TerritoryRatio = 100%
-      AvoidOtherFactionsStrength = .8
+      AvoidOtherFactionsStrength = .3
       AvoidEdgeStrength = .2 
       FactionStrengthExponent = 5
-      MinFactionStrength = 45%
+      MinFactionStrength = 40%
     }
 
     // Rebel Alliance faction definition
     {
       FactionID = SW.Rebel_Alliance
-      TerritoryRatio = 30%
-      AvoidOtherFactionsStrength = .8
+      TerritoryRatio = 50%
+      AvoidOtherFactionsStrength = .3
       AvoidEdgeStrength = .2
       FactionStrengthExponent = 2 
-      MinFactionStrength = 5%
+      MinFactionStrength = 10%
     }
 
     // Galactic Republic faction definition
     {
       FactionID = SW.Republic
       TerritoryRatio = 100%
-      AvoidOtherFactionsStrength = .7
+      AvoidOtherFactionsStrength = .3
       AvoidEdgeStrength = .2
       FactionStrengthExponent = 4
-      MinFactionStrength = 20%
+      MinFactionStrength = 30%
     }
+	/*
+    // Vanilla Factions Rebranded
+    {
+			FactionID = monolith
+			TerritoryRatio = 1%
+			AvoidOtherFactionsStrength = .9
+			AvoidEdgeStrength = .2
+			FactionStrengthExponent = 1
+			MinFactionStrength = 1%
+		}
+		{
+			FactionID = cabal
+			TerritoryRatio = 1%
+			AvoidOtherFactionsStrength = .9
+			AvoidEdgeStrength = .2
+			FactionStrengthExponent = 1
+			MinFactionStrength = 1%
+		}
+		{
+			FactionID = imperium
+			TerritoryRatio = 1%
+			AvoidOtherFactionsStrength = .9
+			AvoidEdgeStrength = .2
+			FactionStrengthExponent = 1
+			MinFactionStrength = 1%
+		}
+	*/
+
   ]
+  RemainderFaction = fringe
+	RemainderFactionThreshold = 1.5
+	MinRemainderFactionStrength = 1%
+	AvoidIterations = 10
 }
 
 
@@ -116,6 +148,29 @@ FactionTiers
       TierRangeLow = 1 //[1, (&~/MaxTier) - (&~/TierSpread)]
       TierRangeHigh = 1 //[1 + (&~/TierSpread), (&~/MaxTier)]
     }
+	/*
+    // Vanilla Factions Rebranded
+    {
+			FactionID = monolith
+			TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
+			TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
+		}
+		{
+			FactionID = cabal
+			TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
+			TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
+		}
+		{
+			FactionID = imperium
+			TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
+			TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
+		}
+		{
+			FactionID = fringe
+			TierRangeLow = 1
+			TierRangeHigh = 1
+		}
+		*/
   ]
 }
 

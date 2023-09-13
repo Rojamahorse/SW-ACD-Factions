@@ -53,3 +53,10 @@ Rebellion //prototype SW Galaxy
 	TipKey = "MapSizes/RebellionDesc"
 	MapGenerator = &<../Rebellion.rules>
 }
+
+Vanilla //prototype SW Galaxy
+{
+	NameKey = "MapSizes/Vanilla"
+	TipKey = "MapSizes/VanillaDesc"
+	MapGenerator = &<../vanilla.rules>
+}
