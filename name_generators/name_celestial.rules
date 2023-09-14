@@ -1,16 +1,19 @@
-Type = Multi
-SubGenerators
-[
-	{
-		Chance = .5
-		Type = NameList
+//Type = Multi
+//SubGenerators
+//[
+//	{
+//		Chance = .5
+//		Type = NameList
 		Names
 		[
 	      "Tatooine"
 	      "Alderaan" 
+		  "Exegol"
 	      "Coruscant"
 	      "Naboo"
+		  "Kamino"
 	      "Kashyyyk"
+		  "Geonosis"
 	      "Mustafar"
 	      "Hoth" 
 	      "Dagobah"
@@ -19,12 +22,15 @@ SubGenerators
 	      "Jakku"
 	      "Crait" 
 		]
-	}
-	{
-		Type = Markov
-		MarkovFile = "latin.markov"
-		MinLength = 6
-		MaxLength = 10
-		MaxConsecutiveConsonants = 3
-	}
-]
+//	}
+//	{
+//		Type = Markov
+//		MarkovFile = "latin.markov"
+//		MinLength = 6
+//		MaxLength = 10
+//		MaxConsecutiveConsonants = 3
+//	}
+//]
+	
+
+	

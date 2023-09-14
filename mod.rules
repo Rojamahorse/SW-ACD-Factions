@@ -71,6 +71,14 @@ Actions
 		With = "logo.ship.png"
 	}
 	*/
+	{
+		Action = Replace
+		Replace = "<./Data/gui/text_sprites.rules>/wr_logo/Texture"
+		With = 
+		{
+			File = "acd_logo.png"
+		}
+	}
 
 	/* *********** STARTER SHIPS ************* */
 
@@ -283,10 +291,33 @@ Actions
 //END TESTING 
 */
 	// WIP Replace Name Generator Technique
-
-
-
-	
+/*
+{
+	Action = Overrides
+	OverrideIn = "<name_generators/name_celestial.rules>/Subgenerators/Names/0" 
+	Overrides = 
+	{
+		Names
+		[
+	      "Tatooine"
+	      "Alderaan" 
+		  "Exegol"
+	      "Coruscant"
+	      "Naboo"
+		  "Kamino"
+	      "Kashyyyk"
+		  "Geonosis"
+	      "Mustafar"
+	      "Hoth" 
+	      "Dagobah"
+	      "Bespin"
+	      "Endor"
+	      "Jakku"
+	      "Crait" 
+		]
+	}
+}
+*/
 
 
 	
