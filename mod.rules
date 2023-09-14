@@ -7,7 +7,17 @@ Author = "Rojamahorse"
 Logo = "logo.png"
 Description = "Adds Galactic Empire, Rebel Alliance, Republic, Confederacy of Independent Systems, Black Sun, Mandalorian (coming soon) Factions to the Game"
 StringsFolder = "strings"
-
+/* TO DO:
+Point Defense Dual Turret
+Base Tradeships moved out of Rules
+Base Galaxy Rules back to Vanilla + All
+Create a SW Only for all SW
+Create a Clone Wars Era 
+Create a New Republic Era & Old Republic Era
+Add SW-flavored auxilary sound bites
+Clean up Shots & Common Effects
+Add Codex for Security Faction (e.g., replace fringe)
+*/
 
 Actions
 [

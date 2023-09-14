@@ -1,3 +1,27 @@
+/* ROJAMAHORSE'S NOTES
+These settings control:
+*how the factions are distributed
+*how difficult they are to separate
+*where the player starts
+*how node tiers are chained for progression
+
+	{
+		FactionID = SW.Black_Sun 
+		TerritoryRatio = 100% // The percentage of total map nodes this faction will try to control. Ex. 15% means the faction will try to control 15% of all systems
+		AvoidOtherFactionsStrength = .3 // How strongly this faction will try to avoid overlapping other faction's territory when generating the map. Ex. values from 0 to 1, Higher values make the faction avoid overlapping more.  0 means no avoidance, 1 means maximum avoidance .3 is moderate.
+		AvoidEdgeStrength = .2 // How strongly this faction will try to avoid map edges when generating the map. Ex.  Same as above but for avoiding the edge of map.
+		FactionStrengthExponent = 4 // Controls how sharply the territory drops off from their controlled nodes.  Higher values make borders more distinct Ex. Possibly controls how aggresively the faction expands, typical values are 1 to 3
+		MinFactionStrength = 15% // The minimum strength this faction will have at any point, as a percentage.  Prevents them from getting completely pushed out. Ex. The minimum strength the faction will have in any region it is in, this prevents factions from having tiny useless pockets.
+	}
+  	RemainderFaction = fringe // Any unclaimed nodes after the initial territory is divided up will be assigned to this faction
+	RemainderFactionThreshold = 1.5 // Remainder faction territory percentage before it stops being assigend more nodes
+	MinRemainderFactionStrength = 1%
+	AvoidIterations = 10 // How many rounds of territory adjustments to run when trying to reduce faction overlap
+    
+	MaxLowTier - Highest "low" tier that progession can adjust, leaving highest tiers for faction home systems.
+	DesiredTierDeltas - Defines the desired tier difference rules for how nodes chain together
+*/
+
 
 // Define MapNotes in the galaxy
 /*
@@ -95,7 +119,7 @@ Factions
 	*/
 
   ]
-  RemainderFaction = fringe
+  	RemainderFaction = fringe
 	RemainderFactionThreshold = 1.5
 	MinRemainderFactionStrength = 1%
 	AvoidIterations = 10
@@ -103,13 +127,9 @@ Factions
 
 
 
-// Maximum technology tier in the galaxy 
-MaxTier = 18
-
-// How many tiers each faction's territory spreads across
+MaxTier = 18 
 TierSpread = 2 
 
-// Define tier ranges for each faction
 FactionTiers
 {
   Factions
@@ -180,20 +200,11 @@ StartingNodePicker
 {
   Type = StartingNodePicker
   
-  // Allowed starting factions
-  AllowedFactions = [SW.Rebel_Alliance] 
-  
-  // Minimum connections for candidate nodes
-  MinConnections = 2
-
-  // Farthest from Black Sun
-  CandidatesFarthestFromFactions = [5, [SW.Black_Sun]]
-  
-  // Closest to CIS and Republic
-  CandidatesClosestToFactions = [1, [SW.CIS, SW.Republic]]
-
-  // Set starting node tier range
-  SetTierRangeTo = [1, 1 + (&~/TierSpread)]
+  AllowedFactions = [SW.Rebel_Alliance] // Which factions the starting node can be in.
+  MinConnections = 2 // Minimum connections for starting node candidates
+  CandidatesFarthestFromFactions = [5, [SW.Black_Sun]] // [Max Distance, [FactionIDs]] - Tries to pick a start node near the listed factions.
+  CandidatesClosestToFactions = [1, [SW.CIS, SW.Republic]] // [MinDistance, [FactionIDs]] - Tries to pick a start node near the listed factions.
+  SetTierRangeTo = [1, 1 + (&~/TierSpread)]  // Sets the start node's tier range
 }
 
 /*
@@ -203,12 +214,12 @@ Factions
 	[
 
 		{
-			FactionID = SW.Black_Sun
-			TerritoryRatio = 100%
-			AvoidOtherFactionsStrength = .3
-			AvoidEdgeStrength = .2
-			FactionStrengthExponent = 4
-			MinFactionStrength = 15%
+			FactionID = SW.Black_Sun 
+			TerritoryRatio = 100% // The percentage of total map nodes this faction will try to control
+			AvoidOtherFactionsStrength = .3 // How strongly this faction will try to avoid overlapping other faction's territory when generating the map
+			AvoidEdgeStrength = .2 // How strongly this faction will try to avoid map edges when generating the map
+			FactionStrengthExponent = 4 // Controls how sharply the territory drops off from their controlled nodes.  Higher values make borders more distinct
+			MinFactionStrength = 15% // The minimum strength this faction will have at any point, as a percentage.  Prevents them from getting completely pushed out
 		}
 		{
 			FactionID = SW.CIS
