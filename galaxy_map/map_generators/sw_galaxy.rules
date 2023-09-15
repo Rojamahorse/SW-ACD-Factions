@@ -1,22 +1,47 @@
-
 // Define MapNodes in the galaxy
+/* ROJAMAHORSE'S NOTES
+These settings control:
+*how the factions are distributed
+*how difficult they are to separate
+*where the player starts
+*how node tiers are chained for progression
+
+	{
+		FactionID = SW.Black_Sun 
+		TerritoryRatio = 100% // The percentage of total map nodes this faction will try to control. Ex. 15% means the faction will try to control 15% of all systems
+		AvoidOtherFactionsStrength = .3 // How strongly this faction will try to avoid overlapping other faction's territory when generating the map. Ex. values from 0 to 1, Higher values make the faction avoid overlapping more.  0 means no avoidance, 1 means maximum avoidance .3 is moderate.
+		AvoidEdgeStrength = .2 // How strongly this faction will try to avoid map edges when generating the map. Ex.  Same as above but for avoiding the edge of map.
+		FactionStrengthExponent = 4 // Controls how sharply the territory drops off from their controlled nodes.  Higher values make borders more distinct Ex. Possibly controls how aggresively the faction expands, typical values are 1 to 3
+		MinFactionStrength = 15% // The minimum strength this faction will have at any point, as a percentage.  Prevents them from getting completely pushed out. Ex. The minimum strength the faction will have in any region it is in, this prevents factions from having tiny useless pockets.
+	}
+  RemainderFaction = fringe // Any unclaimed nodes after the initial territory is divided up will be assigned to this faction
+	RemainderFactionThreshold = 1.5 // Remainder faction territory percentage before it stops being assigend more nodes
+	MinRemainderFactionStrength = 1%
+	AvoidIterations = 10 // How many rounds of territory adjustments to run when trying to reduce faction overlap
+    
+	MaxLowTier - Highest "low" tier that progession can adjust, leaving highest tiers for faction home systems.
+	DesiredTierDeltas - Defines the desired tier difference rules for how nodes chain together
+*/
+
+
+// Define MapNotes in the galaxy
+
 MapNodes
 {
 	Type = MapNodes
 	Distance = [5, 10]
 	ConnectionRadius = 10
-	NameGenerator = &<./Data/name_generators/name_celestial.rules>
+	NameGenerator = &<../../name_generators/sw_name_celestial.rules>/CelNameGen
 }
 
 
-
-Factions // Define factions in the galaxy
+// Define factions in the galaxy
+Factions  
 {
-	Type = Factions
- 
-  Factions  // List of factions
+  Type = Factions
+  // List of factions
+  Factions
   [
-
     // Black Sun faction definition
     {
       FactionID = SW.Black_Sun
@@ -24,14 +49,14 @@ Factions // Define factions in the galaxy
       AvoidOtherFactionsStrength = .3
       AvoidEdgeStrength = .2
       FactionStrengthExponent = 2
-      MinFactionStrength = 15%
+      MinFactionStrength = 5%
     }
     
     // Confederacy of Independent Systems (CIS) faction definition
     {
       FactionID = SW.CIS
-      TerritoryRatio = 35%  
-      AvoidOtherFactionsStrength = .7
+      TerritoryRatio = 30%  
+      AvoidOtherFactionsStrength = .3
       AvoidEdgeStrength = .2
       FactionStrengthExponent = 3
       MinFactionStrength = 15%
@@ -41,17 +66,17 @@ Factions // Define factions in the galaxy
     {
       FactionID = SW.Galactic_Empire
       TerritoryRatio = 100%
-      AvoidOtherFactionsStrength = .8
-      AvoidEdgeStrength = .2 
+      AvoidOtherFactionsStrength = .3
+      AvoidEdgeStrength = .5 
       FactionStrengthExponent = 5
-      MinFactionStrength = 45%
+      MinFactionStrength = 40%
     }
 
     // Rebel Alliance faction definition
     {
       FactionID = SW.Rebel_Alliance
-      TerritoryRatio = 30%
-      AvoidOtherFactionsStrength = .8
+      TerritoryRatio = 50%
+      AvoidOtherFactionsStrength = .1
       AvoidEdgeStrength = .2
       FactionStrengthExponent = 2 
       MinFactionStrength = 5%
@@ -61,21 +86,25 @@ Factions // Define factions in the galaxy
     {
       FactionID = SW.Republic
       TerritoryRatio = 100%
-      AvoidOtherFactionsStrength = .7
-      AvoidEdgeStrength = .2
+      AvoidOtherFactionsStrength = .3
+      AvoidEdgeStrength = .5
       FactionStrengthExponent = 4
-      MinFactionStrength = 20%
+      MinFactionStrength = 40%
     }
+
   ]
+  RemainderFaction = fringe
+	RemainderFactionThreshold = 1
+	MinRemainderFactionStrength = 1%
+	AvoidIterations = 10
 }
 
 
 
+MaxTier = 18 
+TierSpread = 2 
 
-MaxTier = 18 // Maximum strength tier in the galaxy 
-TierSpread = 2 // How many tiers each faction's territory spreads across
-
-FactionTiers // Define tier ranges for each faction
+FactionTiers
 {
   Type = FactionNodeTiers
   Factions
@@ -111,21 +140,95 @@ FactionTiers // Define tier ranges for each faction
     // Rebel Alliance tier range
     {
       FactionID = SW.Rebel_Alliance
-      TierRangeLow = 1 //[1, (&~/MaxTier) - (&~/TierSpread)]
-      TierRangeHigh = 1 //[1 + (&~/TierSpread), (&~/MaxTier)]
+      TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
+      TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
     }
+	/*
+    // Vanilla Factions Rebranded
+    {
+			FactionID = monolith
+			TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
+			TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
+		}
+		{
+			FactionID = cabal
+			TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
+			TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
+		}
+		{
+			FactionID = imperium
+			TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
+			TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
+		}
+		*/
+		{
+			FactionID = fringe
+			TierRangeLow = 1
+			TierRangeHigh = 1
+		}
+		
   ]
 }
 
 // Define starting node picker settings
 StartingNodePicker
 {
-	Type = StartingNodePicker
-	AllowedFactions = [SW.Rebel_Alliance]
-	MinConnections = 2
-	CandidatesFarthestFromFactions = [5, [SW.Black_Sun]]
-	CandidatesClosestToFactions = [1, [SW.CIS, SW.Republic]]
-	SetTierRangeTo = [1, 1 + (&~/TierSpread)]
+  Type = StartingNodePicker
+  
+  //AllowedFactions = [SW.Rebel_Alliance, SW.Galactic_Empire, SW.CIS, SW.Republic] // Which factions the starting node can be in.
+  MinConnections = 2 // Minimum connections for starting node candidates
+  //CandidatesFarthestFromFactions = [5, [SW.Black_Sun]] // [Max Distance, [FactionIDs]] - Tries to pick a start node near the listed factions.
+  //CandidatesClosestToFactions = [1, [SW.CIS, SW.Republic]] // [MinDistance, [FactionIDs]] - Tries to pick a start node near the listed factions.
+  SetTierRangeTo = [1, 1 + (&~/TierSpread)]  // Sets the start node's tier range
+}
+
+ProgressionTiers
+{
+	Type = ProgressionNodeTiers
+	MaxLowTier = (&~/MaxTier) - (&~/TierSpread) - 1 // Leave highest tier exclusively for home systems.
+	MaxChangeableLowTier = (&MaxLowTier) // Don't adjust tier of faction home systems.
+	DesiredTierDeltas
+	[
+		{
+			SourceLowTierDelta = 3
+			Priority = 0 // Low priority is more important.
+			HighTierSpread = &~/TierSpread
+			PreferredAvailableConnections = 2
+		}
+		{
+			SourceLowTierDelta = 1
+			Priority = 0
+			HighTierSpread = &~/TierSpread
+			SourceLowTierRange = [1, 1] // For the tier, we want to have a nearby node at the same tier to ease the difficulty ramp.
+			PreferredAvailableConnections = 1
+		}
+		{
+			SourceLowTierDelta = 2
+			Priority = 1
+			HighTierSpread = &~/TierSpread
+			SourceLowTierRange = [2, (&~/MaxTier)] // At subsequent tiers, we prefer to increase difficulty steadily.
+		}
+		{
+			SourceLowTierDelta = 1
+			Priority = 2
+			HighTierSpread = &~/TierSpread
+		}
+		{
+			SourceLowTierDelta = 0
+			Priority = 3
+			HighTierSpread = &~/TierSpread
+		}
+		{
+			SourceLowTierDelta = -1
+			Priority = 4
+			HighTierSpread = &~/TierSpread
+		}
+		{
+			SourceLowTierDelta = -1
+			Priority = 4
+			HighTierSpread = &~/TierSpread
+		}
+	]
 }
 
 /*
@@ -135,12 +238,12 @@ Factions
 	[
 
 		{
-			FactionID = SW.Black_Sun
-			TerritoryRatio = 100%
-			AvoidOtherFactionsStrength = .3
-			AvoidEdgeStrength = .2
-			FactionStrengthExponent = 4
-			MinFactionStrength = 15%
+			FactionID = SW.Black_Sun 
+			TerritoryRatio = 100% // The percentage of total map nodes this faction will try to control
+			AvoidOtherFactionsStrength = .3 // How strongly this faction will try to avoid overlapping other faction's territory when generating the map
+			AvoidEdgeStrength = .2 // How strongly this faction will try to avoid map edges when generating the map
+			FactionStrengthExponent = 4 // Controls how sharply the territory drops off from their controlled nodes.  Higher values make borders more distinct
+			MinFactionStrength = 15% // The minimum strength this faction will have at any point, as a percentage.  Prevents them from getting completely pushed out
 		}
 		{
 			FactionID = SW.CIS
@@ -223,3 +326,141 @@ StartingNodePicker
 	CandidatesClosestToFactions = [1, [SW.CIS, SW.Republic]]
 	SetTierRangeTo = [1, 1 + (&~/TierSpread)]
 }*/
+
+/*
+
+MapNodes
+{
+	Type = MapNodes
+	Distance = [5, 10]
+	ConnectionRadius = 10
+	NameGenerator = &<./Data/name_generators/name_celestial.rules>
+}
+
+
+
+Factions // Define factions in the galaxy
+{
+	Type = Factions
+ 
+  Factions  // List of factions
+  [
+
+    // Black Sun faction definition
+    {
+      FactionID = SW.Black_Sun
+      TerritoryRatio = 15% // % total map nodes this faction will try to control. Ex. 15% means the faction will try to control 15% of all systems
+      AvoidOtherFactionsStrength = .3 // How strongly this faction will try to avoid overlapping other faction's territory when generating the map. Ex. values from 0 to 1, Higher values make the faction avoid overlapping more.  0 means no avoidance, 1 means maximum avoidance .3 is moderate.
+      AvoidEdgeStrength = 0 // How strongly this faction will try to avoid map edges when generating the map. Ex.  Same as above but for avoiding the edge of map.
+      FactionStrengthExponent = 2 // Controls how sharply the territory drops off from their controlled nodes.  Higher values make borders more distinct Ex. Possibly controls how aggresively the faction expands, typical values are 1 to 3
+      MinFactionStrength = 15% // % strength this faction will have at any point, as a percentage.  Prevents them from getting completely pushed out. Ex. The minimum strength the faction will have in any region it is in, this prevents factions from having tiny useless pockets.
+    }
+    
+    // Confederacy of Independent Systems (CIS) faction definition
+    {
+      FactionID = SW.CIS
+      TerritoryRatio = 35%  
+      AvoidOtherFactionsStrength = .7
+      AvoidEdgeStrength = .2
+      FactionStrengthExponent = 3
+      MinFactionStrength = 15%
+    }
+
+    // Galactic Empire faction definition
+    {
+      FactionID = SW.Galactic_Empire
+      TerritoryRatio = 100%
+      AvoidOtherFactionsStrength = .8
+      AvoidEdgeStrength = .2 
+      FactionStrengthExponent = 5
+      MinFactionStrength = 45%
+    }
+
+    // Rebel Alliance faction definition
+    {
+      FactionID = SW.Rebel_Alliance
+      TerritoryRatio = 30%
+      AvoidOtherFactionsStrength = .8
+      AvoidEdgeStrength = .2
+      FactionStrengthExponent = 2 
+      MinFactionStrength = 5%
+    }
+
+    // Galactic Republic faction definition
+    {
+      FactionID = SW.Republic
+      TerritoryRatio = 100%
+      AvoidOtherFactionsStrength = .7
+      AvoidEdgeStrength = .2
+      FactionStrengthExponent = 4
+      MinFactionStrength = 20%
+    }
+  ]
+/*
+  RemainderFaction = fringe // Any unclaimed nodes after the initial territory is divided up will be assigned to this faction
+	RemainderFactionThreshold = 1.5 // Remainder faction territory percentage before it stops being assigend more nodes
+	MinRemainderFactionStrength = 1%
+	AvoidIterations = 10 // How many rounds of territory adjustments to run when trying to reduce faction overlap
+
+}
+*/
+
+/*
+
+MaxTier = 18 // Maximum strength tier in the galaxy 
+TierSpread = 2 // How many tiers each node spreads across; Ex. 12-14, 16-18, etc
+
+FactionTiers // Define tier ranges for each faction
+{
+  Type = FactionNodeTiers
+  Factions
+  [
+    // Black Sun tier range
+    {
+      FactionID = SW.Black_Sun
+      TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)] // Highest "low" tier that progession can adjust, leaving highest tiers for faction home systems.
+      TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)] // Defines the desired tier difference rules for how nodes chain together
+    }
+    
+    // CIS tier range
+    {
+      FactionID = SW.CIS
+      TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
+      TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
+    }
+    
+    // Galactic Empire tier range
+    {
+      FactionID = SW.Galactic_Empire
+      TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
+      TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
+    }
+    
+    // Galactic Republic tier range
+    {
+      FactionID = SW.Republic  
+      TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
+      TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
+    }
+    
+    // Rebel Alliance tier range
+    {
+      FactionID = SW.Rebel_Alliance
+      TierRangeLow = 1 //[1, (&~/MaxTier) - (&~/TierSpread)]
+      TierRangeHigh = 1 //[1 + (&~/TierSpread), (&~/MaxTier)]
+    }
+  ]
+}
+
+// Define starting node picker settings
+StartingNodePicker
+{
+	Type = StartingNodePicker
+	AllowedFactions = [SW.Rebel_Alliance] // Which factions the starting node can be in.(accepts multiple values)
+	MinConnections = 2 // Minimum number of connections for starting node candidates
+	CandidatesFarthestFromFactions = [5, [SW.Black_Sun]] // [Max Distance, [FactionIDs]] - Tries to pick a start node near the listed factions. (accepts multiple values and can be removed entirely)
+	CandidatesClosestToFactions = [1, [SW.CIS, SW.Republic]] // [MinDistance, [FactionIDs]] - Tries to pick a start node near the listed factions. (accepts multiple values and can be removed entirely)
+	SetTierRangeTo = [1, 1 + (&~/TierSpread)] // Sets the start node's tier range
+}
+
+*/

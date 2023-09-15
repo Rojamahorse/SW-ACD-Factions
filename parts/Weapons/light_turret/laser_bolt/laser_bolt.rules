@@ -1,4 +1,4 @@
-ID = ultranova.fighter_turret_bolt
+ID = sw.fighter_turret_bolt
 Range = 260
 IdealRange = [60, 225]
 IdealRadius = [5, 50]

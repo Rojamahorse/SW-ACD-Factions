@@ -63,10 +63,10 @@ Factions
 	Galactic_Empire = "Galactic Empire"
 	Rebel_Alliance = "Rebel Alliance"
 	Republic = "Republic"
-	monolith = "Sith Empire"
+//	monolith = "Sith Empire"
 	fringe = "Corporate Sector Authority (CSA)"
-	imperium = "First Order"
-	cabal = "Mandalorians"
+//	imperium = "First Order"
+//	cabal = "Mandalorians"
 }
 
 StarterShips

@@ -17,4 +17,12 @@ Ships
 	:~{ File="Firespray-31-BS Patrol.ship.png";        						Tier=1;  Tags : ~/Tags [trade] }
 	:~{ File="Med-BS Hauler.ship.png";        								Tier=3;  Tags : ~/Tags [trade] }
 	:~{ File="SoroSuub Lux-BS 3000 Space Yacht.ship.png";        			Tier=5;  Tags : ~/Tags [trade] }
+	:~{ File="BSC Missionary.ship.png";  Tier=3;  Tags : ~/Tags [trade] }
+	:~{ File="BSC Da'i.ship.png";        Tier=3;  Tags : ~/Tags [trade] }
+	:~{ File="BSC Preacher.ship.png";    Tier=5;  Tags : ~/Tags [trade] }
+	:~{ File="BSC Deliverance.ship.png"; Tier=5;  Tags : ~/Tags [trade] }
+	:~{ File="BSC Advocate.ship.png";    Tier=7;  Tags : ~/Tags [trade] }
+	:~{ File="BSC Acolyte.ship.png";     Tier=7;  Tags : ~/Tags [trade] }
+	:~{ File="BSC Celebrant.ship.png";   Tier=10; Tags : ~/Tags [trade] }
+	:~{ File="BSC Witness.ship.png";     Tier=10; Tags : ~/Tags [trade] }
 ]

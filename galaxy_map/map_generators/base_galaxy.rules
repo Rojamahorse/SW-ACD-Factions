@@ -44,7 +44,7 @@ Factions
     // Black Sun faction definition
     {
       FactionID = SW.Black_Sun
-      TerritoryRatio = 15%
+      TerritoryRatio = 100%
       AvoidOtherFactionsStrength = .3
       AvoidEdgeStrength = .2
       FactionStrengthExponent = 2
@@ -54,7 +54,7 @@ Factions
     // Confederacy of Independent Systems (CIS) faction definition
     {
       FactionID = SW.CIS
-      TerritoryRatio = 35%  
+      TerritoryRatio = 100%  
       AvoidOtherFactionsStrength = .3
       AvoidEdgeStrength = .2
       FactionStrengthExponent = 3
@@ -74,7 +74,7 @@ Factions
     // Rebel Alliance faction definition
     {
       FactionID = SW.Rebel_Alliance
-      TerritoryRatio = 50%
+      TerritoryRatio = 100%
       AvoidOtherFactionsStrength = .3
       AvoidEdgeStrength = .2
       FactionStrengthExponent = 2 
@@ -119,10 +119,12 @@ Factions
 	*/
 
   ]
-  	RemainderFaction = fringe
-	RemainderFactionThreshold = 1.5
-	MinRemainderFactionStrength = 1%
+
+  	RemainderFaction = SW.Republic
+	RemainderFactionThreshold = .2
+	MinRemainderFactionStrength = 5%
 	AvoidIterations = 10
+
 }
 
 
@@ -186,11 +188,13 @@ FactionTiers
 			TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
 		}
 		*/
+		/*
 		{
 			FactionID = fringe
 			TierRangeLow = 1
 			TierRangeHigh = 1
 		}
+		*/
 		
   ]
 }

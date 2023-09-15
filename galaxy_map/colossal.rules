@@ -1,6 +1,6 @@
 Spawners
 [
-	: <./Data/galaxy_map/map_generators/base_galaxy.rules>/MapNodes
+	: &<map_generators/sw_galaxy_Rebellion.rules>/MapNodes //<./Data/galaxy_map/map_generators/base_galaxy.rules>/MapNodes
 	{
 		Count = 150
 	}

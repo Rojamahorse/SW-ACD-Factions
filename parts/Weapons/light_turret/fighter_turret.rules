@@ -2,8 +2,8 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 {
 	NameKey = "Parts/TurretFighter"
 	IconNameKey = "Parts/TurretFighterIcon"
-	ID = ultranova.fighter_turret
-	OtherIDs = [ultranova.alliance_small_turret, ultranova.federation_small_turret]
+	ID = sw.fighter_turret
+	//OtherIDs = []
 	EditorGroup = "WeaponsEnergy"
 	DescriptionKey = "Parts/TurretFighterDesc"
 	Resources

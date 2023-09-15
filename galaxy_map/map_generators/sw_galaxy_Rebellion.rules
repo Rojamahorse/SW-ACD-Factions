@@ -2,13 +2,13 @@
 // Define MapNotes in the galaxy
 
 
-/*MapNodes
+MapNodes
 {
 	Type = MapNodes
 	Distance = [5, 10]
 	ConnectionRadius = 10
-	NameGenerator = &<./Data/name_generators/name_celestial.rules>
-}*/
+	NameGenerator = &<../../name_generators/sw_name_celestial.rules>/CelNameGen
+}
 
 Factions
 {
@@ -31,6 +31,7 @@ Factions
 			FactionStrengthExponent = 1
 			MinFactionStrength = 45%
 		}
+/*
 		{
 			FactionID = SW.Black_Sun
 			TerritoryRatio = 30%
@@ -38,7 +39,8 @@ Factions
 			AvoidEdgeStrength = 0
 			FactionStrengthExponent = 1
 			MinFactionStrength = 5%
-		}
+		} 
+*/
 	]
 	RemainderFaction = fringe
 	TerritoryRatio = 5%
@@ -65,11 +67,13 @@ FactionTiers
 			TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
 			TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
 		}
+/*
 		{
 			FactionID =  SW.Black_Sun
 			TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
 			TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
 		}
+*/
 		{
 			FactionID = fringe
 			TierRangeLow = 1

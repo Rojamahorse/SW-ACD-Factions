@@ -13,7 +13,6 @@ MapNodes
 Factions // Define factions in the galaxy
 {
 	Type = Factions
- 
   Factions  // List of factions
   [
 
@@ -126,6 +125,55 @@ StartingNodePicker
 	CandidatesFarthestFromFactions = [5, [SW.Black_Sun]]
 	CandidatesClosestToFactions = [1, [SW.CIS, SW.Republic]]
 	SetTierRangeTo = [1, 1 + (&~/TierSpread)]
+}
+
+ProgressionTiers
+{
+	Type = ProgressionNodeTiers
+	MaxLowTier = (&~/MaxTier) - (&~/TierSpread) - 1 // Leave highest tier exclusively for home systems.
+	MaxChangeableLowTier = (&MaxLowTier) // Don't adjust tier of faction home systems.
+	DesiredTierDeltas
+	[
+		{
+			SourceLowTierDelta = 3
+			Priority = 0 // Low priority is more important.
+			HighTierSpread = &~/TierSpread
+			PreferredAvailableConnections = 2
+		}
+		{
+			SourceLowTierDelta = 1
+			Priority = 0
+			HighTierSpread = &~/TierSpread
+			SourceLowTierRange = [1, 1] // For the tier, we want to have a nearby node at the same tier to ease the difficulty ramp.
+			PreferredAvailableConnections = 1
+		}
+		{
+			SourceLowTierDelta = 2
+			Priority = 1
+			HighTierSpread = &~/TierSpread
+			SourceLowTierRange = [2, (&~/MaxTier)] // At subsequent tiers, we prefer to increase difficulty steadily.
+		}
+		{
+			SourceLowTierDelta = 1
+			Priority = 2
+			HighTierSpread = &~/TierSpread
+		}
+		{
+			SourceLowTierDelta = 0
+			Priority = 3
+			HighTierSpread = &~/TierSpread
+		}
+		{
+			SourceLowTierDelta = -1
+			Priority = 4
+			HighTierSpread = &~/TierSpread
+		}
+		{
+			SourceLowTierDelta = -1
+			Priority = 4
+			HighTierSpread = &~/TierSpread
+		}
+	]
 }
 
 /*

@@ -8,10 +8,19 @@ Ships
 	:~{ File="Med SW.Republic Trade Station.ship.png";   Tier=3; Tags : ~/Tags [trade_station]; StasisIcon="Med SW.Republic Trade Station.png" }
 	:~{ File="Large SW.Republic Trade Station.ship.png"; Tier=7; Tags : ~/Tags [trade_station]; StasisIcon="Large SW.Republic Trade Station.png" }
 	:~{ File="Huge SW.Republic Trade Station.ship.png"; Tier=11; Tags : ~/Tags [trade_station]; StasisIcon="Huge SW.Republic Trade Station.png" }
+	:~{ File="Small Republic Trade Station.ship.png"; Tier=4;  Tags : ~/Tags [trade_station];    StasisIcon="Small Republic Trade Station.png" }
+	:~{ File="Small Republic Trade Station II.ship.png"; Tier=4;  Tags : ~/Tags [trade_station];    StasisIcon="Small Republic Trade Station II.png" }
+	:~{ File="Med Republic Trade Station.ship.png";   Tier=10; Tags : ~/Tags [trade_station];    StasisIcon="Med Republic Trade Station.png" }
+	:~{ File="Large Republic Trade Station.ship.png"; Tier=16; Tags : ~/Tags [trade_station];    StasisIcon="Large Republic Trade Station.png" }
 
 	// Military stations
 	:~{ File="Small SW.Republic Arms Depot.ship.png";     Tier=3;  SpawnTier=1;  Tags : ~/Tags [military_station]; StasisIcon="Small SW.Republic Arms Depot.png";  FlightDirection=UpRight }
 	:~{ File="Med SW.Republic Arms Depot.ship.png";    Tier=7;  SpawnTier=5;  Tags : ~/Tags [military_station]; StasisIcon="Med SW.Republic Arms Depot.png"; FlightDirection=UpRight }
 	:~{ File="Large SW.Republic Arms Depot.ship.png";      Tier=9; SpawnTier=7; Tags : ~/Tags [military_station]; StasisIcon="Large SW.Republic Arms Depot.png";   FlightDirection=UpRight }
 	:~{ File="Huge SW.Republic Arms Depot.ship.png";    Tier=12; SpawnTier=11; Tags : ~/Tags [military_station]; StasisIcon="Huge SW.Republic Arms Depot.png"; FlightDirection=UpRight }
+	:~{ File="Minor Republic Arms Depot.ship.png";    Tier=6;  SpawnTier=3;  Tags : ~/Tags [military_station]; StasisIcon="Minor Republic Arms Depot.png" }
+	:~{ File="Minor Republic Arms Depot II.ship.png";    Tier=6;  SpawnTier=3;  Tags : ~/Tags [military_station]; StasisIcon="Minor Republic Arms Depot II.png" }
+	:~{ File="Small Republic Arms Depot.ship.png";    Tier=9;  SpawnTier=8;  Tags : ~/Tags [military_station]; StasisIcon="Small Republic Arms Depot.png" }
+	:~{ File="Med Republic Arms Depot.ship.png";      Tier=12; SpawnTier=12; Tags : ~/Tags [military_station]; StasisIcon="Med Republic Arms Depot.png" }
+	:~{ File="Large Republic Arms Depot.ship.png";    Tier=16; SpawnTier=16; Tags : ~/Tags [military_station]; StasisIcon="Large Republic Arms Depot.png" }
 ]
