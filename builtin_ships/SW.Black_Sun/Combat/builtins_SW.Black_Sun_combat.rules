@@ -42,9 +42,17 @@ Ships
 	:~{ File="Hyena-BS Droid Bomber.ship.png";          							Tier=4;  Difficulty=1; }
 	:~{ File="Gozanti-Class Cruiser-BS.ship.png";         							Tier=6;  Difficulty=2; }
 	:~{ File="Med-BS Starfighter.ship.png";         								Tier=4;  Difficulty=2; }
-	// :~{ File="CloakShape_Fighter.ship.png"; 										Tier=1;  Difficulty=2; }
-	// :~{ File="Rihkxyrk_Attack_Ship.ship.png"; 									Tier=4;  Difficulty=1; }
-	// :~{ File="Kihraxz_Assault_Fighter.ship.png"; 								Tier=4;  Difficulty=1; }
+	:~{ File="BSC Razor Crest.ship.png"; 											Tier=5;  Difficulty=2; }
+	:~{ File="BSC BountyHunter Razor Crest.ship.png"; 								Tier=5;  Difficulty=2; }
+ 	:~{ File="BSC Gozanti-Class Cruiser.ship.png"; 									Tier=7;  Difficulty=1; }
+	:~{ File="GR-75 Medium Transport (New).ship.png"; 								Tier=8;  Difficulty=1; }
+	:~{ File="Heavy Black Sun Starfighter-BS.ship.png"; 							Tier=9;  Difficulty=1; }
+	:~{ File="Heavy Black Sun Starfighter.ship.png"; 								Tier=10;  Difficulty=1; }
+	:~{ File="Heavy Starfighter-BS Alt.ship.png"; 									Tier=11;  Difficulty=1; }
+	:~{ File="BSC Kom'rk-Class Fighter.ship.png"; 									Tier=9;  Difficulty=1; }
+	:~{ File="BSC YKL-37R Nova Courier.ship.png"; 									Tier=13;  Difficulty=1; }
+	:~{ File="BSC YT-1300a Light Freighter.ship.png"; 								Tier=7;  Difficulty=1; }
+	:~{ File="BSC YT-1300g Light Freighter.ship.png"; 								Tier=8;  Difficulty=1; }
 	// :~{ File="Vaksai_Starfighter.ship.png"; 										Tier=4;  Difficulty=1; }
 	// :~{ File="Skipray_Blastboat.ship.png"; 										Tier=5;  Difficulty=1; }
 	// :~{ File="StarViper-class_Attack_Platform.ship.png"; 						Tier=6;  Difficulty=1; }
@@ -58,7 +66,7 @@ Ships
 	
 
 	// Corvettes
-	// :~{ File="Corellian_Gunship.ship.png"; 										Tier=8;  Difficulty=1; }
+ 	:~{ File="BSC Hardcell-Class Interstellar Transport.ship.png"; 					Tier=8;  Difficulty=1; }
 	// :~{ File="Marauder_Corvette.ship.png"; 										Tier=5;  Difficulty=1; }
 	// :~{ File="CR90_Corvette.ship.png"; 											Tier=7;  Difficulty=1; }
 	// :~{ File="Tartan-class_Patrol_Cruiser.ship.png"; 							Tier=7;  Difficulty=1; }
@@ -75,7 +83,13 @@ Ships
 
 
 	// Destroyers
-	:~{ File="Invisible Hand-BS.ship.png"; 									Tier=13;  Difficulty=1; }
+	:~{ File="Invisible Hand-BS.ship.png"; 									Tier=11;  Difficulty=1; }
+	:~{ File="BSC Invisible Hand.ship.png"; 								Tier=12;  Difficulty=1; }
+	:~{ File="BSC Providence-Class Destroyer.ship.png"; 					Tier=14;  Difficulty=1; }
+	:~{ File="BSC Providence-Class Dreadnought.ship.png"; 					Tier=17;  Difficulty=1; }
+	:~{ File="BSC Pursuer-Class Enforcement-BS.ship.png"; 					Tier=18;  Difficulty=1; }
+	:~{ File="BSC Recusant-Class Light Destroyer 2.ship.png"; 				Tier=15;  Difficulty=1; }
+	:~{ File="BSC Recusant-Class Light Destroyer.ship.png"; 				Tier=16;  Difficulty=1; }
 	// :~{ File="Aggressor-class_Star_Destroyer.ship.png"; 					Tier=14;  Difficulty=1; }
 	// :~{ File="Venator-class_Star_Destroyer.ship.png"; 					Tier=14;  Difficulty=1; }
 	// :~{ File="Victory-class_Star_Destroyer.ship.png"; 					Tier=11;  Difficulty=1; }
@@ -90,6 +104,7 @@ Ships
 
 	// Cruisers
 	:~{ File="AA-9 Coruscant-BS Botajef Freigh.ship.png"; 					Tier=15;  Difficulty=1; }
+	:~{ File="BSC Subjugator-Class Heavy Cruiser.ship.png"; 				Tier=16;  Difficulty=1; }
 	// :~{ File="Black_Sun_Battle_Cruiser.ship.png"; 						Tier=12;  Difficulty=1; }
 	// :~{ File="Modified_Gozanti-class_Cruiser.ship.png"; 					Tier=6;   Difficulty=1; }
 	// :~{ File="Consular-class_Cruiser.ship.png"; 							Tier=6;   Difficulty=1; }
