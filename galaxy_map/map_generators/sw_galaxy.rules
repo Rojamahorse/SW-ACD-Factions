@@ -21,6 +21,23 @@ These settings control:
     
 	MaxLowTier - Highest "low" tier that progession can adjust, leaving highest tiers for faction home systems.
 	DesiredTierDeltas - Defines the desired tier difference rules for how nodes chain together
+
+The tier system is used to control the difficulty progression as you explore the map. Lower tiers indicate easier, earlier game content while higher tiers represent more challenging late game content.
+
+TierRangeLow sets the minimum/starting tier for a faction's systems. TierRangeHigh sets the maximum/ending tier for their territory.
+
+For example:
+
+TierRangeLow = 1 
+TierRangeHigh = 10
+This means the faction's territory will start at tier 1 and go up to tier 10, covering a range of 10 tiers total.
+
+The values reference the MaxTier and TierSpread defined earlier to calculate the ranges.
+
+So TierRangeLow spreads upward from the minimum tier, while TierRangeHigh spreads downward from the max tier. The ranges meet in the middle to cover all tiers in between.
+
+This allows each faction's territory to be constrained within certain difficulty levels and control the progression.
+
 */
 
 

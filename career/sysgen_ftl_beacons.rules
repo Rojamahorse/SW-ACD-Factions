@@ -1,7 +1,12 @@
 	Type = Doodads
 	DoodadTypes
 	[
-		{ Type=Itchys.ftl_beacon_ekrasys; Faction=Itchys.ekrasys; }
+//		{ Type=Itchys.ftl_beacon_ekrasys; Faction=Itchys.ekrasys; }
+		{ Type=SW.ftl_beacon_SW.Black_Sun; Faction=SW.Black_Sun; }
+		{ Type=SW.ftl_beacon_SW.CIS; Faction=SW.CIS; }
+		{ Type=SW.ftl_beacon_SW.Galactic_Empire; Faction=SW.Galactic_Empire; }
+		{ Type=SW.ftl_beacon_SW.Rebel_Alliance; Faction=SW.Rebel_Alliance; }
+		{ Type=SW.ftl_beacon_SW.Republic; Faction=SW.Republic; }
 	]
 
 	/*

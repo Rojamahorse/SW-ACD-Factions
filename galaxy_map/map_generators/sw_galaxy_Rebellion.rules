@@ -21,7 +21,7 @@ Factions
 			AvoidOtherFactionsStrength = 0
 			AvoidEdgeStrength = 0
 			FactionStrengthExponent = 1
-			MinFactionStrength = 45%
+			MinFactionStrength = 40%
 		}
 		{
 			FactionID = SW.Rebel_Alliance
@@ -29,7 +29,7 @@ Factions
 			AvoidOtherFactionsStrength = 0
 			AvoidEdgeStrength = 0
 			FactionStrengthExponent = 1
-			MinFactionStrength = 45%
+			MinFactionStrength = 40%
 		}
 /*
 		{
@@ -50,7 +50,7 @@ Factions
 }
 
 MaxTier = 18
-TierSpread = 2
+TierSpread = 3
 
 FactionTiers
 {
@@ -59,13 +59,13 @@ FactionTiers
 	[
 		{
 			FactionID = SW.Galactic_Empire
-			TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
-			TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
+			TierRangeLow = 1 // [1, (&~/MaxTier) - (&~/TierSpread)]
+			TierRangeHigh = 1 // [1 + (&~/TierSpread), (&~/MaxTier)]
 		}
 		{
 			FactionID = SW.Rebel_Alliance
-			TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
-			TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
+			TierRangeLow = 1 //[1, (&~/MaxTier) - (&~/TierSpread)]
+			TierRangeHigh = 1 //[1 + (&~/TierSpread), (&~/MaxTier)]
 		}
 /*
 		{

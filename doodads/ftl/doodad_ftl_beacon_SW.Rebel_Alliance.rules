@@ -13,5 +13,5 @@ Icon
 	}
 }
 Allegiance = -1 // Neutral
-Ship = "CIS FTL Beacon.ship.png"
+Ship = "Rebel_Alliance FTL Beacon.ship.png"
 IsFtlPoint = true
