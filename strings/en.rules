@@ -64,7 +64,7 @@ Factions
 	Rebel_Alliance = "Rebel Alliance"
 	Republic = "Republic"
 //	monolith = "Sith Empire"
-	fringe = "Corporate Sector Authority (CSA)"
+//	fringe = "Corporate Sector Authority (CSA)"
 //	imperium = "First Order"
 //	cabal = "Mandalorians"
 }
@@ -116,7 +116,7 @@ MapSizes
 	TitanicDesc = "A vast uncharted territory shrouded in mystery with 200 Star Wars systems."
 
 	Galactic = "The Entire Known Galaxy (500)"
-	GalacticDesc = "The full extent of the Star Wars galaxy with 500 Star Wars systems."
+	GalacticDesc = "Cosmoteer and Star Wars collide in the full extent of the Star Wars galaxy with 500 Star Wars systems."
 
 	Rebellion = "A New Hope (50)"
 	RebellionDesc = "A true Star Wars classic that's jam-packed with action; You are caught in the middle as the Rebel Alliance goes head to head vs the Empire... Some might even call that a 'ClassicJam'."

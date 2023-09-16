@@ -42,15 +42,15 @@ Factions
 		} 
 */
 	]
-	RemainderFaction = fringe
-	TerritoryRatio = 5%
-	RemainderFactionThreshold = 1
-	MinRemainderFactionStrength = 1%
-	AvoidIterations = 10
+//	RemainderFaction = SW.Republic
+//	TerritoryRatio = 5%
+//	RemainderFactionThreshold = .1
+//	MinRemainderFactionStrength = 51%
+//	AvoidIterations = 10
 }
 
 MaxTier = 18
-TierSpread = 3
+TierSpread = 2
 
 FactionTiers
 {
@@ -74,11 +74,11 @@ FactionTiers
 			TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
 		}
 */
-		{
-			FactionID = fringe
-			TierRangeLow = 1
-			TierRangeHigh = 1
-		}
+//		{
+//			FactionID = SW.Republic
+//			TierRangeLow = 1
+//			TierRangeHigh = 1
+//		}
 	]
 }
 
