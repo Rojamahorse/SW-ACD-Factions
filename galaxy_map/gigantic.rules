@@ -5,8 +5,8 @@ Spawners
 		Count = 125
 	}
 	
-	&<./Data/galaxy_map/map_generators/base_galaxy.rules>/Factions
-	&<./Data/galaxy_map/map_generators/base_galaxy.rules>/FactionTiers
-	&<./Data/galaxy_map/map_generators/base_galaxy.rules>/StartingNodePicker
-	&<./Data/galaxy_map/map_generators/base_galaxy.rules>/ProgressionTiers
+	&<map_generators/sw_galaxy.rules>/Factions
+	&<map_generators/sw_galaxy.rules>/FactionTiers
+	&<map_generators/sw_galaxy.rules>/StartingNodePicker
+	&<map_generators/sw_galaxy.rules>/ProgressionTiers
 ]
