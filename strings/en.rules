@@ -39,9 +39,9 @@ Parts
 	tieMinigunLongLeftIcon = "Long Repeater Cannon (L)"
 	tieLMinigunLongDesc = "A rapid-firing Long Repeater Cannon that can be placed behind armour pieces."
 
-	DroidTurret = "Droid-Assisted Turret"
-	DroidTurretDesc = "A dual-firing Droid-Assisted Laser Turret that can be placed behind armour pieces."
-	DroidTurretIcon = "Droid-Assisted Turret"
+	DroidTurret = "StarGuard TwinLaser Defense Turret"
+	DroidTurretDesc = "Unleashing dual laser fury, the StarGuard TwinLaser Defense Turret offers unmatched protection against incoming threats."
+	DroidTurretIcon = "Starguard TwinLaser Defense Turret"
 }
 
 Stats
