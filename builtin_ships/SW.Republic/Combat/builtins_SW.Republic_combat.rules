@@ -47,6 +47,8 @@ Ships
 //	:~{ File="Charger_c70_Combat_Retrofit.ship.png";           					Tier=6;  Difficulty=1; }
 
 	// Frigates
+	:~{ File="Republic Assault Frigate Mk II.ship.png";           				Tier=7;  Difficulty=2; }
+	:~{ File="Republic Assault Frigate Mk III.ship.png";           				Tier=7;  Difficulty=2; }
 //	:~{ File="Pelta_class_Frigate.ship.png";           							Tier=7;  Difficulty=2; }
 //	:~{ File="DP20_Frigate.ship.png";           								Tier=8;  Difficulty=1; }
 //	:~{ File="DP23_Frigate.ship.png";           								Tier=9;  Difficulty=1; }
