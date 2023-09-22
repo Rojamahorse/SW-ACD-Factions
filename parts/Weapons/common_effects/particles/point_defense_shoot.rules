@@ -161,18 +161,18 @@ Def
 			Invert = false
 			ValueType = Color
 			FromValue
+			{				//{
+			  	Rf = 1		//			Rf = 1
+			  	Gf = 0		//			Gf = 1
+			  	Bf = 0		//			Bf = 1
+			  	Af = 1 		//			Af = 1
+			}				//}
+			ToValue 
 			{
-				Rf = 1
-				Gf = 1
-				Bf = 1
-				Af = 1
-			}
-			ToValue
-			{
-				Rf = 0.39215687
-				Gf = 0.39215687
-				Bf = 0.39215687
-				Af = 1
+			  	Rf = 0.5 	// 0.39215687
+			  	Gf = 0 		// 0.39215687
+			  	Bf = 0.5 	// 0.39215687
+			  	Af = 1 		// 1
 			}
 			Name = "Alpha lerp"
 			Enabled = true

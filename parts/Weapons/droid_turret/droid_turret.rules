@@ -4,7 +4,7 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 	IconNameKey = "Parts/DroidTurretIcon"
 	ID = SW.droid_turret
 	OtherIDs = []
-	EditorGroup = "WeaponsEnergy"
+	EditorGroups = ["WeaponsEnergy","Defenses"]
 	DescriptionKey = "Parts/DroidTurretDesc"
 	Resources
 	[
@@ -72,6 +72,37 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 			Type = ModeToggle
 			Mode = FireModeToggle
 			OnMode = 2
+		}
+
+		FirePrefToggle
+		{
+			Type = UIToggle
+			ToggleID = "fire_pref"
+			Default = 1
+		}
+		FirePrefAttack
+		{
+			Type = ModeToggle
+			Mode = FirePrefToggle
+			OnModes = [0, 2]
+		}
+		FirePrefDefend
+		{
+			Type = ModeToggle
+			Mode = FirePrefToggle
+			OnModes = [1, 2]
+		}
+		AttackToggle
+		{
+			Type = MultiToggle
+			Toggles = [FireModeToggle, FirePrefAttack]
+			Mode = All
+		}
+		DefendToggle
+		{
+			Type = MultiToggle
+			Toggles = [FireModeToggle, FirePrefDefend]
+			Mode = All
 		}
 
 		BatteryStorage
@@ -190,21 +221,27 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 			Location = [.5, .5]// Relative to upper-left corner of unrotated part.
 			Rotation = -90d// Relative to unrotated part.
 			OperationalToggle = IsOperational
+			AutoFireToggle = AutoFireToggle
 			FireInterval = .75
 //			FirePermissionToggle = FirePermissionToggle
 			FiringArc = 360d
 			RotateSpeed = 90d
 			FireThresholdAngle = 1d
 			AIFirepowerRating = 400
-			AutoFireToggle = AutoFireToggle
 			Emitter = BaseEmitter
 			IgnoreFriendlyShipLowLOSChecks = true
 
 			AutoTargets
 			[
+{
+					TargetType = Bullets
+					BulletTargetCategories = [missile, mine, bullet]
+					Toggle = FirePrefDefend
+				}
 				{
 					TargetType = ShipParts
-					Toggle = AutoTargetToggle
+					Toggle = FirePrefAttack
+					Overridable = true
 				}
 			]
 
@@ -353,10 +390,13 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 			GetTargetFrom = Turret
 			Location = [0, 0]
 			OperationalToggle = IsOperational
-			Bullet = &<../common_shots/laser_bolt/laser_bolt.rules>
-//			Spread = [-2.5d, 2.5d]
+			Bullet = &<../common_shots/pd_shot/pd_shot.rules>
+			Spread = [-2.5d, 2.5d]
 			ResourceStorage = BatteryStorage
-			ResourcesUsed = 50 
+			ResourcesUsed = 25 
+			Burst = 3
+			BurstDelay = .075
+			UseResourcePerShotInBurst = true
 //			Recoil = 240
 		}
 
@@ -386,12 +426,12 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 
 			MediaEffects
 			[
-				&<./Data/ships/terran/laser_blaster_small/particles/laser_blaster_small_shoot.rules>
-				&<./Data/ships/terran/laser_blaster_small/particles/laser_blaster_small_shoot_flash.rules>
+				&<../common_effects/particles/point_defense_shoot.rules>
+				&<./Data/ships/terran/point_defense/particles/point_defense_shoot_flash.rules>
 
 				: /BASE_SOUNDS/AudioExterior
 				{
-					Sound = "./Data/ships/terran/laser_blaster_small/shoot.wav"
+					Sound = "../common_effects/sounds/MassDriver.wav"
 					Volume = .6
 					Delay = 0
 					SpeedVariation = .25
@@ -408,14 +448,14 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 
 			MediaEffects
 			[
-				&<./Data/ships/terran/laser_blaster_small/particles/laser_blaster_small_shoot.rules>
-				&<./Data/ships/terran/laser_blaster_small/particles/laser_blaster_small_shoot_flash.rules>
+				&<../common_effects/particles/point_defense_shoot.rules>
+				&<./Data/ships/terran/point_defense/particles/point_defense_shoot_flash.rules>
 
 				: /BASE_SOUNDS/AudioExterior
 				{
-					Sound = "./Data/ships/terran/laser_blaster_small/shoot.wav"
-					Volume = .6
-					Delay = 0
+					Sound = "../common_effects/sounds/MassDriver.wav"
+					Volume = .25
+					MaxConcurrent = 10
 					SpeedVariation = .25
 				}
 			]
@@ -583,12 +623,14 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 				DamagePerShot = &~/Part/Components/BaseEmitter/Bullet/Components/Hit/HitOperational/HitEffects/0/Damage
 				DamagePerSecond = (&DamagePerShot) * (&ROF)
 				Damage = [&../DamagePerShot, &../DamagePerSecond]
+				Salvo = [(&~/Part/Components/BaseEmitter/Burst), (&~/Part/Components/Turret/FireInterval)]
 				ROF = 1 / (&~/Part/Components/Turret/FireInterval)
 				Range = &~/Part/Components/BaseEmitter/Bullet/Range
 				Arc = deg(&~/Part/Components/Turret/FiringArc)
+				Spread = deg(&~/Part/Components/BaseEmitter/Spread/1)
 				TurretSpeed = deg(&~/Part/Components/Turret/RotateSpeed)
 				ShotSpeed = &~/Part/Components/BaseEmitter/Bullet/Speed
-				ShotHP = &~/Part/Components/BaseEmitter/Bullet/Components/Targetable/Health
+//				ShotHP = &~/Part/Components/BaseEmitter/Bullet/Components/Targetable/Health
 				PowerPerShot = (&~/Part/Components/BaseEmitter/ResourcesUsed) / 1000
 				PowerPerSecond = (&PowerPerShot) * (&ROF)
 				ShotPowerUsage = [&../PowerPerShot, &../PowerPerSecond]
