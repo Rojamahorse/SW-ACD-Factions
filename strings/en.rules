@@ -42,12 +42,17 @@ Parts
 	DroidTurret = "StarGuard TwinLaser Defense Turret"
 	DroidTurretDesc = "Unleashing dual laser fury, the StarGuard TwinLaser Defense Turret offers unmatched protection against incoming threats."
 	DroidTurretIcon = "Starguard TwinLaser Defense Turret"
+
+	PDTurretTiny = "StarGuard TwinLaser Defense Mini-Turret"
+	PDTurretTinyDesc = "Unleashing dual laser fury, the StarGuard TwinLaser Defense Mini Turret offers unmatched protection against incoming threats in tight spaces."
+	PDTurretTinyIcon = "Starguard Mini PD Turret"
 }
 
 Stats
 {
-	FighterWeapons = "Laser Bolt"
+	SWFighterWeapons = "Laser Bolt"
 	MinigunShot = "Repeater Laser"
+	SWPDTurretTiny = "Point Defense Turret"
 }
 
 DecalGroups

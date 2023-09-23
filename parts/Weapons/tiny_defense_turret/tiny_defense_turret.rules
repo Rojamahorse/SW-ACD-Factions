@@ -1,18 +1,18 @@
 Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 {
-	NameKey = "Parts/CIWSSmall"
-	IconNameKey = "Parts/CIWSSmallIcon"
-	ID = ultranova.ciws_small
-	OtherIDs = [ultranova.federation_point_defense]
-	EditorGroup = "Defenses"
-	DescriptionKey = "Parts/CIWSSmallDesc"
+	NameKey = "Parts/PDTurretTiny"
+	IconNameKey = "Parts/PDTurretTinyIcon"
+	ID = SW.tiny_defense_turret
+	OtherIDs = []
+	EditorGroups = ["WeaponsEnergy","Defenses"]
+	DescriptionKey = "Parts/PDTurretTinyDesc"
 	Resources
 	[
-		[steel, 10]
-		[coil, 10]
+		[steel, 20]
+		[coil, 20]
 	]
 	AIValue = 1
-	TypeCategories = [defense, point_defense]
+	TypeCategories = [weapon, defense, point_defense]
 	Size = [1, 1]
 	SelectionPriority = 1
 	SelectionTypeByRotation = true
@@ -20,12 +20,12 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 	InitialPenetrationResistance = 2
 	PenetrationRectType = Normal
 	ProhibitedBy : ^/0/ProhibitedBy [tall]
-	AllowedDoorLocations
-	[
-		[-1, 0]
-		[1, 0]
-		[0, 1]
-	]
+//	AllowedDoorLocations
+//	[
+//		[-1, 0]
+//		[1, 0]
+//		[0, 1]
+//	]
 	EditorIcon
 	{
 		Texture
@@ -33,7 +33,7 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 			File = "icon.png"
 			SampleMode = Linear
 		}
-		Size = [21.33, 21.33]
+		Size = [32, 32]
 	}
 	Components : ^/0/Components
 	{
@@ -121,8 +121,8 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 			Type = ResourceConsumer
 			ResourceType = battery
 			Storage = BatteryStorage
-			ResupplyThreshold = 500
 			DefaultPriority = &/PRIORITIES/Defense_Supply
+			ResupplyThreshold = 500
 			OperationalToggle = PowerToggle
 			ReceiveResourceMediaEffects = &/COMMON_EFFECTS/PowerDeliver
 		}
@@ -138,15 +138,15 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 				DamageLevels
 				[
 					{
-						File = "./Data/ships/terran/point_defense/floor.png"
+						File = "floor.png"
 						Size = [1, 1]
 					}
 					{
-						File = "./Data/ships/terran/point_defense/floor_33.png"
+						File = "floor_33.png"
 						Size = [1, 1]
 					}
 					{
-						File = "./Data/ships/terran/point_defense/floor_66.png"
+						File = "floor_66.png"
 						Size = [1, 1]
 					}
 				]
@@ -251,7 +251,7 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 			FireThresholdAngle = 1d
 			AIFirepowerRating = 150
 			CanBeGivenExplicitTarget = false
-			Emitter = BulletEmitter
+			Emitter = BaseEmitter
 			TargetingRange = 180
 			TargetingArc = 360
 			TargetSearchesPerSecond = 4 // Default is 2.
@@ -291,38 +291,78 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 			ShowProgressFor = Turret
 		}
 		
-		BulletEmitter
+		BaseEmitter
 		{
 			Type = BulletEmitter
 			ChainedTo = Turret
 			FireTrigger = Turret
 			GetTargetFrom = Turret
-			Location = [1.15, 0]
+			Location = [0, 0]
 			OperationalToggle = IsOperational
-			Bullet = &<pd_shot/pd_shot.rules>
+			Bullet = &<../common_shots/pd_shot/pd_shot.rules>
 			Spread = [-5d, 5d]
 			ResourceStorage = BatteryStorage
-			ResourcesUsed = 40
+			ResourcesUsed = 20
 			Burst = 3
 			BurstDelay = .075
 			UseResourcePerShotInBurst = true
+//			Recoil = 240
 		}
 
-		FireEffect
+		Emitter1 : BaseEmitter
+		{
+			Location = [0, -.25]
+			ChainedTo = BaseEmitter
+			FireTrigger = Turret
+			ResourceStorage = BatteryStorage
+		}
+
+		Emitter2 : BaseEmitter
+		{
+			Location = [0, 0.25]
+			ChainedTo = BaseEmitter
+			FireTrigger = Turret
+			ResourceStorage = BatteryStorage
+		}
+
+		FireEffect1
 		{
 			Type = TriggeredEffects
-			ChainedTo = BulletEmitter
-			Trigger = BulletEmitter
+			ChainedTo = Emitter1
+			Trigger = Emitter1
 			AnchorMediaEffects = true
+			Location = [.5, 0]
 
 			MediaEffects
 			[
-				&<particles/point_defense_shoot.rules>
+				&<../common_effects/particles/point_defense_shoot.rules>
 				&<./Data/ships/terran/point_defense/particles/point_defense_shoot_flash.rules>
 
 				: /BASE_SOUNDS/AudioExterior
 				{
-					Sound = "./Data/ships/terran/point_defense/shoot.wav"
+					Sound = "../common_effects/sounds/MassDriver.wav"
+					Volume = .6
+					Delay = 0
+					SpeedVariation = .25
+				}
+			]
+		}
+		FireEffect2 : FireEffect1
+		{
+			Type = TriggeredEffects
+			ChainedTo = Emitter2
+			Trigger = Emitter2
+			Location = [-.5, 0]
+			AnchorMediaEffects = true
+
+			MediaEffects
+			[
+				&<../common_effects/particles/point_defense_shoot.rules>
+				&<./Data/ships/terran/point_defense/particles/point_defense_shoot_flash.rules>
+
+				: /BASE_SOUNDS/AudioExterior
+				{
+					Sound = "../common_effects/sounds/MassDriver.wav"
 					Volume = .25
 					MaxConcurrent = 10
 					SpeedVariation = .25
@@ -343,8 +383,18 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 				DamageLevels
 				[
 					{
-						File = "turret_on.png"
+						File = "turret_roof.png"
 						NormalsFile = "turret_normals.png"
+						Size = [1, 1]
+					}
+					{
+						File = "turret_roof_33.png"
+						NormalsFile = "turret_normals_33.png"
+						Size = [1, 1]
+					}
+					{
+						File = "turret_roof_66.png"
+						NormalsFile = "turret_normals_66.png"
 						Size = [1, 1]
 					}
 				]
@@ -355,8 +405,18 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 				DamageLevels
 				[
 					{
-						File = "turret_off.png"
+						File = "turret_roof.png"
 						NormalsFile = "turret_normals.png"
+						Size = [1, 1]
+					}
+					{
+						File = "turret_roof_33.png"
+						NormalsFile = "turret_normals_33.png"
+						Size = [1, 1]
+					}
+					{
+						File = "turret_roof_66.png"
+						NormalsFile = "turret_normals_66.png"
 						Size = [1, 1]
 					}
 				]
@@ -367,10 +427,10 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 		{
 			Type = Sprite
 			ChainedTo = Turret
-			Location = [.5, 0]
+			Location = [.15, 0]
 			Rotation = 90d
 			Layer = "roof_doodads"
-			ResetAnimationTrigger = BulletEmitter
+			ResetAnimationTrigger = BaseEmitter
 			AtlasSprite
 			{
 				AnimationFiles
@@ -382,18 +442,22 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 					"barrels5.png"
 					"barrels6.png"
 					"barrels7.png"
+					"barrels8.png"
+					"barrels9.png"
 					"barrels1.png"// Loop back to beginning and clamp there.
 				]
 				NormalsAnimationFiles
 				[
-					//"barrel_normals1.png"
-					"barrels_normals2.png"
-					"barrels_normals3.png"
-					"barrels_normals4.png"
-					"barrels_normals5.png"
-					"barrels_normals6.png"
-					"barrels_normals7.png"
-					"barrels_normals1.png"// Loop back to beginning and clamp there.
+					//"barrel1_normals.png"
+					"barrels2_normals.png"
+					"barrels3_normals.png"
+					"barrels4_normals.png"
+					"barrels5_normals.png"
+					"barrels6_normals.png"
+					"barrels7_normals.png"
+					"barrels8_normals.png"
+					"barrels9_normals.png"
+					"barrels1_normals.png"// Loop back to beginning and clamp there.
 				]
 				Size = [1, 1]
 				AnimationInterval = 0.01
@@ -487,23 +551,21 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 	StatsByCategory
 	[
 		{
-			NameKey = "StatCategories/CIWSShot"
+			NameKey = "StatCategories/SWPDTurretTiny"
 			Stats
 			{
-				DamagePerShot = &~/Part/Components/BulletEmitter/Bullet/Components/Hit/HitOperational/HitEffects/0/Damage
+				DamagePerShot = &~/Part/Components/BaseEmitter/Bullet/Components/Hit/HitOperational/HitEffects/0/Damage
 				DamagePerSecond = (&DamagePerShot) * (&ROF)
 				Damage = [&../DamagePerShot, &../DamagePerSecond]
-				ShotDamagePerShot = &~/Part/Components/BulletEmitter/Bullet/Components/Hit/HitBullet/HitEffects/0/Damage
-				ShotDamagePerSecond = (&ShotDamagePerShot) * (&ROF)
-				ShotDamage = [&../ShotDamagePerShot, &../ShotDamagePerSecond]
-				Salvo = [(&~/Part/Components/BulletEmitter/Burst), (&~/Part/Components/Turret/FireInterval)]
-				ROF = (&~/Part/Components/BulletEmitter/Burst) / (&~/Part/Components/Turret/FireInterval)
-				Range = &~/Part/Components/Turret/TargetingRange
+				Salvo = [(&~/Part/Components/BaseEmitter/Burst), (&~/Part/Components/Turret/FireInterval)]
+				ROF = 1 / (&~/Part/Components/Turret/FireInterval)
+				Range = &~/Part/Components/BaseEmitter/Bullet/Range
 				Arc = deg(&~/Part/Components/Turret/FiringArc)
-				Spread = deg(&~/Part/Components/BulletEmitter/Spread/1)
+				Spread = deg(&~/Part/Components/BaseEmitter/Spread/1)
 				TurretSpeed = deg(&~/Part/Components/Turret/RotateSpeed)
-				ShotSpeed = &~/Part/Components/BulletEmitter/Bullet/Speed
-				PowerPerShot = (&~/Part/Components/BulletEmitter/ResourcesUsed) / 1000
+				ShotSpeed = &~/Part/Components/BaseEmitter/Bullet/Speed
+//				ShotHP = &~/Part/Components/BaseEmitter/Bullet/Components/Targetable/Health
+				PowerPerShot = (&~/Part/Components/BaseEmitter/ResourcesUsed) / 1000
 				PowerPerSecond = (&PowerPerShot) * (&ROF)
 				ShotPowerUsage = [&../PowerPerShot, &../PowerPerSecond]
 			}
