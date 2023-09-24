@@ -96,7 +96,7 @@ Factions
 			TerritoryRatio = 100%
 			AvoidOtherFactionsStrength = .3
 			AvoidEdgeStrength = .2
-			FactionStrengthExponent = 1
+			FactionStrengthExponent = 2
 			MinFactionStrength = 10%
 		}
 		{
@@ -112,13 +112,13 @@ Factions
 			TerritoryRatio = 100%
 			AvoidOtherFactionsStrength = .3
 			AvoidEdgeStrength = .2
-			FactionStrengthExponent = 1
+			FactionStrengthExponent = 3
 			MinFactionStrength = 10%
 		}
   ]
 
   	RemainderFaction = fringe
-	RemainderFactionThreshold = 1
+	RemainderFactionThreshold = .5
 	MinRemainderFactionStrength = 5%
 	AvoidIterations = 10
 
