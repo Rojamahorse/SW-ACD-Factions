@@ -1,51 +1,56 @@
 Parts
 {
-	//Fighter X-Wing Cannons
+	//X-Wing Cannons
 	xwingCannons = "X-Wing Cannon"
-	xwingCannonsDesc = "X-Wing Cannons are small weapons that can be placed behind armour pieces, and are useful for constructing X-Wing fighters."
+	xwingCannonsDesc = "X-Wing Cannons are small weapons that can be placed behind and hidden under armor pieces.  They are useful in medium to long range engagements"
+	
+	// Standard X-Wing Cannons
+	xwingCannon = "X-Wing Standard Cannon"
+	xwingCannonIcon = "X-Wing SC"
+	xwingCannonLeft = "X-Wing Standard Cannon (Side)"
+	xwingCannonLeftIcon = "X-Wing SC (Side)"
+	xwingCannonDesc = "Standard X-Wing Cannon, allows for placement behind and hidden under armor pieces."
 
-	xwingCannon = "X-Wing Cannon"
-	xwingCannonIcon = &xwingCannon
-	xwingCannonLeft = "X-Wing Cannon (Left)"
-	xwingCannonLeftIcon = "X-Wing Cannon (L)"
-	xwingCannonDesc = "A small X-Wing Cannon that can be placed behind armour pieces."
+	//Long X-Wing Cannons
+	xwingCannonLong = "RedFury Blaster Cannon"
+	xwingCannonLongIcon = "RedFury Blaster Cannon"
+	xwingCannonLongLeft = "RedFury Blaster Cannon (Side)"
+	xwingCannonLongLeftIcon = "RedFury Blaster Cannon (Side)"
+	xwingCannonLongDesc = "The RedFury Blaster, allows for placement behind and hidden under armor pieces."
 
-	//Long Fighter X-Wing Cannons
-	xwingCannonLong = "Long RedFury Blaster Cannon"
-	xwingCannonLongIcon = "Long RedFury Blaster Cannon"
-	xwingCannonLongLeft = "Long RedFury Blaster Cannon (Left)"
-	xwingCannonLongLeftIcon = "Long RedFury Blaster Cannon (L)"
-	xwingCannonLongDesc = "A long version of the RedFury Blaster Cannon that can be placed behind armour pieces."
+	//Extra Long X-Wing Cannons
+	xwingCannonXLong = "X-Wing Extended Cannon"
+	xwingCannonXLongIcon = "X-Wing EC"
+	xwingCannonXLongLeft = "X-Wing Extended Cannon (Side)"
+	xwingCannonXLongLeftIcon = "X-Wing EC (Side)"
+	xwingCannonXLongDesc = "Extended X-Wing Cannon, allows for placement behind and hidden under armor pieces."
 
-	xwingCannonXLong = "Extra Long X-Wing Cannon"
-	xwingCannonXLongIcon = "Extra Long X-Wing Cannon"
-	xwingCannonXLongLeft = "Extra Long X-Wing Cannon (Left)"
-	xwingCannonXLongLeftIcon = "Extra Long X-Wing Cannon (L)"
-	xwingCannonXLongDesc = "An even longer version of the small X-Wing Cannon that can be placed behind armour pieces."
-
-	//Fighter Miniguns
+	//TIE Repeaters
 	tieMiniguns = "TIE Repeater"
-	tieMinigunsDesc = "TIE Repeaters are small, rapid-firing weapons that can be placed behind armour pieces. They are inaccurate, but useful for close range engagements."
+	tieMinigunsDesc = "TIE Repeaters are small, rapid-firing weapons that allows for placement behind and hidden under armor pieces. They are inaccurate, but useful for close range engagements."
 
+	//Standard TIE Repeaters
 	tieMinigun = "TIE Repeater"
 	tieMinigunIcon = "TIE Repeater"
-	tieMinigunLeft = "TIE Repeater (Left)"
-	tieMinigunLeftIcon = "TIE Repeater (L)"
-	tieLMinigunDesc = "A rapid-firing TIE Repeater that can be placed behind armour pieces."
+	tieMinigunLeft = "TIE Repeater (Side)"
+	tieMinigunLeftIcon = "TIE Repeater (Side)"
+	tieLMinigunDesc = "TIE Repeater, allows for placement behind and hidden under armor pieces."
 
 	tieMinigunLong = "Long Repeater Cannon"
 	tieMinigunLongIcon = "Long Repeater Cannon"
-	tieMinigunLongLeft = "Long Repeater Cannon (Left)"
-	tieMinigunLongLeftIcon = "Long Repeater Cannon (L)"
-	tieLMinigunLongDesc = "A rapid-firing Long Repeater Cannon that can be placed behind armour pieces."
+	tieMinigunLongLeft = "Long Repeater Cannon (Side)"
+	tieMinigunLongLeftIcon = "Long Repeater Cannon (Side)"
+	tieLMinigunLongDesc = "Rapid-firing Long Repeater Cannon, allows for placement behind and hidden under armor pieces."
 
+	// Standard TwinLaser Defense Turret
 	DroidTurret = "StarGuard TwinLaser Defense Turret"
+	DroidTurretIcon = "Starguard TL-D"
 	DroidTurretDesc = "Unleashing dual laser fury, the StarGuard TwinLaser Defense Turret offers unmatched protection against incoming threats."
-	DroidTurretIcon = "Starguard TwinLaser Defense Turret"
 
-	PDTurretTiny = "StarGuard TwinLaser Defense Mini-Turret"
-	PDTurretTinyDesc = "Unleashing dual laser fury, the StarGuard TwinLaser Defense Mini Turret offers unmatched protection against incoming threats in tight spaces."
-	PDTurretTinyIcon = "Starguard Mini PD Turret"
+	// Mini TwinLaser Defense Turret
+	PDTurretTiny = "StarGuard TwinLaser Mini Point Defense Turret"
+	PDTurretTinyIcon = "Starguard TL-PD-Mini"
+	PDTurretTinyDesc = "Unleashing dual laser fury, this miniaturized and fully automated version of the StarGuard TwinLaser Turret is optimized for tight spaces."
 }
 
 Stats
@@ -96,35 +101,39 @@ Resource
 
 MapSizes  
 {
-	Vanilla = "Standard (50)"
-	VanillaDesc = "A standard-sized boring old Cosmoteer star system... These aren't the star systems you're looking for... move along, move along."
+	
+	Standard = "Standard (50)"
+	StandardTip = "A mix of 50 <yellow>Star Wars</yellow> and <white>Vanilla</white> controlled systems on the edge of explored space, known for their intricate routes and shadowy dealings."
 
-	Standard = "Frontier Systems (50)"
-	StandardTip = "A network of 50 Star Wars systems on the edge of explored space, known for their intricate routes and shadowy dealings."
+	Vanilla = "Cosmoteer Standard (50)"
+	VanillaDesc = "A standard-sized boring old vanilla <white>Cosmoteer</white> star system... \n<i>These aren't the star systems you're looking for... move along, move along.</i>"
 
-	Large = "Outer Rim Territories (60)"
-	LargeDesc = "A lawless frontier region reminiscent of the Outer Rim with 60 Star Wars systems."
+//	SWStandard = "Frontier Systems (50)"
+//	SWStandardTip = "A network of 50 Star Wars systems on the edge of explored space, known for their intricate routes and shadowy dealings."
 
-	VeryLarge = "Mid Rim Systems (80)" 
-	VeryLargeDesc = "An industrialized region reminiscent of the Mid Rim with 80 Star Wars systems."
+	SWLarge = "Outer Rim Territories (60)"
+	SWLargeDesc = "A lawless frontier region reminiscent of the Outer Rim with 60 <yellow>Star Wars</yellow> systems."
 
-	Huge = "Inner Rim Worlds (100)"
-	HugeDesc = "A core region reminiscent of the Inner Rim with 100 Star Wars systems." 
+	SWVeryLarge = "Mid Rim Systems (80)" 
+	SWVeryLargeDesc = "An industrialized region reminiscent of the Mid Rim with 80 <yellow>Star Wars</yellow> systems."
 
-	Gigantic = "Core Worlds (125)"
-	GiganticDesc = "The heart of galactic civilization with 125  Star Wars systems."
+	SWHuge = "Inner Rim Worlds (100)"
+	SWHugeDesc = "A core region reminiscent of the Inner Rim with 100 <yellow>Star Wars</yellow> systems." 
 
-	Colossal = "Deep Core Systems (150)"
-	ColossalDesc = "A dangerous region on the fringes of the Deep Core with 150 Star Wars systems."
+	SWGigantic = "Core Worlds (125)"
+	SWGiganticDesc = "The heart of galactic civilization with 125 <yellow>Star Wars</yellow> systems."
 
-	Titanic = "Unknown Regions (200)"
-	TitanicDesc = "A vast uncharted territory shrouded in mystery with 200 Star Wars systems."
+	SWColossal = "Deep Core Systems (150)"
+	SWColossalDesc = "A dangerous region on the fringes of the Deep Core with 150 <yellow>Star Wars</yellow> systems."
 
-	Galactic = "The Entire Known Galaxy (500)"
-	GalacticDesc = "Cosmoteer and Star Wars collide in the full extent of the Star Wars galaxy with 500 Star Wars systems."
+	SWTitanic = "Unknown Regions (200)"
+	SWTitanicDesc = "A vast uncharted territory shrouded in mystery with 200 <yellow>Star Wars</yellow> and <white>Cosmoteer</white> faction-controlled systems."
 
-	Rebellion = "A New Hope (50)"
-	RebellionDesc = "A true Star Wars classic that's jam-packed with action; You are caught in the middle as the Rebel Alliance goes head to head vs the Empire... Some might even call that a 'ClassicJam'."
+	SWGalactic = "The Entire Known Galaxy (500)"
+	SWGalacticDesc = "<white>Cosmoteer</white> and <yellow>Star Wars</yellow> factions collide in the full extent of the known galaxy with 500 systems."
+
+	SWRebellion = "A New Hope (50)"
+	SWRebellionDesc = "A true <yellow>Star Wars</yellow> classic that's jam-packed with action; You are caught in the middle as the <orange>Rebel Alliance</orange> goes head to head vs the <gray>Empire</gray>... Some might even call that a '<yellow>ClassicJam</yellow>'."
 /*
 	SmugglersRun = "Smuggler's Run (50)"
 	SmugglersRunDesc = "A network of 50 star systems known for their intricate routes and shadowy dealings, often frequented by smugglers and outlaws."
@@ -133,20 +142,20 @@ MapSizes
 
 CombatDifficulty
 {
-  NoDeath = "Pacifist"
-  NoDeathTip = "● Damage? What's that? \n● Wouldn't hurt a mynock."
+  NoDeath = "Pacifist (Invulnerable)"
+  NoDeathTip = "● Damage? What's that?\n<i><gray>(No Damage Taken)</gray></i> \n● I wouldn't hurt a mynock.\n<i><gray>(Can Build in Combat)</gray></i>"
   
   Easy = "Nerf Herder" 
-  EasyTip = "● Barely passed flight school. \n● Misses more shots than a stormtrooper."
+  EasyTip = "● I barely passed flight school.\n<i><gray>(-30% Damage Taken)</gray></i> \n● I miss more shots than a stormtrooper.\n<i><gray>(+40% Damage Delt)</gray></i>"
 
   Normal = "Recreational Bounty Hunter"
-  NormalTip = "● Decent piloting skills. \n● Hits about half their shots."
+  NormalTip = "● I'm a decent pilot.\n<i><gray>(Normal Damage Taken)</gray></i>  \n● I hit about half my shots.\n<i><gray>(Normal Damage Delt)</gray></i>"
 
   Hard = "Rogue Squadron"
-  HardTip = "● Graduated top of their class. \n● Could bullseye womp rats back home."
+  HardTip = "● I graduated top of my class.\n<i><gray>(+25% Damage Taken)</gray></i>  \n●  I used to bullseye womp rats\n in my T-16 back home.\n<i><gray>(-20% Damage Delt)</gray></i>"
 
   VeryHard = "Legendary Smuggler"
-  VeryHardTip = "● Flew the Kessel Run in under 12 parsecs. \n● Never tells the odds."
+  VeryHardTip = "● I flew the Kessel Run\n in under 12 parsecs!\n<i><gray>(+40% Damage Taken)</gray></i>  \n● I never tell the odds.\n<i><gray>(-30% Damage Delt)</gray></i>"
 }
 
 
