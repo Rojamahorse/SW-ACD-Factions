@@ -1,0 +1,172 @@
+ID = "joe.disruptor_bolt_fighter"
+Range = 150
+IdealRange = [(&../Range)/3, (&../Range)]
+IdealRadius = [5, 50]
+Speed = (&<./Data/shots/disruptor_bolt/disruptor_bolt.rules>/Speed)
+
+Components
+{
+	Physics
+	{
+		Type = CirclePhysics
+		Radius = 0.01
+		Density = 0.0001
+	}
+
+	Death
+	{
+		Type = DeathByLifetime
+		// Lifetime will be auto-calculated based on range and speed.
+	}
+
+	Targetable
+	{
+		Type = Targetable
+		Health = 30
+		TargetCategory = "laser"
+	}
+
+	Hit
+	{
+		Type = PenetratingHit
+		Penetration = 50 // Enough to get through one shield and lose half penetration.
+		PenetratesOperational = false
+		FactorEffectsWith = Targetable
+
+		CrewCollisions = {Enemies=true; Junk=true}
+		FriendlyShipLowCollisions = false
+		PenetratesCrew = true
+		HitCrew = &HitOperational
+
+		HitShield
+		{
+			ReduceEffectsByPenetration = true
+
+			HitEffects
+			[
+				: ../../HitOperational/HitEffects/0
+				{
+					Amount = 800
+					TreatShieldAsPart = true
+				}
+			]
+
+			MediaEffects = &../HitOperational/MediaEffects
+		}
+		HitOperational
+		{
+			Offset = [-0.15, 0]
+			ReduceEffectsByPenetration = true
+
+			HitEffects
+			[
+				{
+					Type = ResourceDrain
+					ResourceType = battery
+					Amount = 500
+
+					MediaEffectsOnDrain
+					[
+						&<./Data/shots/disruptor_bolt/particles/ship_drain.rules>
+						&<./Data/shots/disruptor_bolt/particles/disruptor_bolt_hit_center_bounce.rules>
+						&<./Data/shots/disruptor_bolt/particles/disruptor_bolt_hit_center_bounce2.rules>
+						&<./Data/shots/disruptor_bolt/particles/disruptor_bolt_hit_sizzle.rules>
+
+						: /BASE_SOUNDS/AudioExterior
+						{
+							Sound = "./Data/shots/disruptor_bolt/discharge.wav"
+							Volume = 1
+							SpeedVariation = .2
+						}
+					]
+				}
+				{
+					Type = Damage
+					Damage = 90
+				}
+			]
+
+			MediaEffects
+			[
+				&<./Data/shots/disruptor_bolt/particles/disruptor_bolt_hit_lightning.rules>
+				&<./Data/shots/disruptor_bolt/particles/disruptor_bolt_hit_orb.rules>
+				&<./Data/shots/disruptor_bolt/particles/disruptor_bolt_hit_bolts.rules>
+
+				: /BASE_SOUNDS/AudioExterior
+				{
+					Sound = "./Data/shots/disruptor_bolt/disruptor_bolt_hit.wav"
+					Volume = .4
+					SpeedVariation = .4
+				}
+			]
+		}
+		HitStructural
+		{
+			ReduceEffectsByPenetration = true
+
+			HitEffects
+			[
+				{
+					Type = Damage
+					Damage = 70
+				}
+			]
+
+			MediaEffects
+			[
+				&<./Data/shots/disruptor_bolt/particles/disruptor_bolt_hit_struct_lightning.rules>
+
+				: /BASE_SOUNDS/AudioExterior
+				{
+					Sound = "./Data/shots/disruptor_bolt/disruptor_bolt_hit.wav"
+					Volume = .3
+					SpeedVariation = .4
+				}
+			]
+		}
+		PenetratingOperational
+		{
+			// No effect.
+		}
+		PenetratingStructural
+		{
+			// No effect.
+		}
+		FinishedPenetratingOperational = &PenetratingOperational
+		FinishedPenetratingStructural = &PenetratingStructural
+	}
+
+	GlowSprite
+	{
+		Type = Sprite
+		RenderBucket = Upper4
+		Z = 0.5
+		IsLight = true
+		Sprite
+		{
+			Texture
+			{
+				File = "./Data/common_effects/particles/blob.png"
+				MipLevels = max
+				SampleMode = Linear
+			}
+			Size = [6, 6]
+			VertexColor = [231, 255, 2]
+			TargetBlendMode = Add
+			Shader = "./Data/common_effects/fancy_light.shader"
+			_litReflectiveStrength = 24
+			_litAdditiveStrength = 0.05
+			_unlitAdditiveStrength = 0.25
+		}
+	}
+
+	MediaEffects
+	{
+		Type = MediaEffects
+		FactorEffectsWith = Hit
+		FactorEffectsExponent = 0.5
+		MediaEffects
+		[
+		]
+	}
+}
