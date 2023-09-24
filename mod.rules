@@ -1,11 +1,11 @@
-ID = SW.StarWarsFactions
+ID = SW.1.StarWarsFactions
 Name = "Star Wars Factions"
-Version = 0.0.2
-CompatibleGameVersions = ["0.24.0","0.23.2","0.23.3"]
+Version = 0.0.3 RC
+CompatibleGameVersions = ["0.24.0","0.23.0"]
 ModifiesMultiplayer = true
-Author = "Rojamahorse"
+Author = "Rojamahorse & SW:ACD DevTeam"
 Logo = "logo.png"
-Description = "Adds Galactic Empire, Rebel Alliance, Republic, Confederacy of Independent Systems, Black Sun, Mandalorian (coming soon) Factions to the Game"
+Description = "Step up your game with the ultimate companion mod to <yellow>Star Wars: A Cosmos Divided</yellow>! \n\nChoose your side—from the <gray>Galactic Empire</gray> and <orange>Rebel Alliance</orange> to the <red>Republic</red> and <blue>CIS</blue>—or navigate the criminal underworld with <magenta>Black Sun</magenta>. \n\nKick off your journey with iconic ships, venture into expansive new maps, and craft your own interstellar adventure. This is the Cosmoteer mod you've been searching for! \n\n<bad>Important: This mod is an extension of <yellow>Star Wars: A Cosmos Divided</yellow> and requires it for full functionality. Please ensure you have the base mod installed.</bad>"
 StringsFolder = "strings"
 /* TO DO:
 Point Defense Dual Turret
@@ -29,6 +29,9 @@ Actions
  	{ 
 		Action = AddMany
  		AddTo = "<ships/terran/terran.rules>/terran/parts"
+
+ 		CreateIfNotExisting = true
+
  		ManyToAdd = &<parts/Parts.rules>/Parts
  	}
 
@@ -59,17 +62,20 @@ Actions
 	{
 		Action = AddMany
 		AddTo = "<modes/career/career.rules>/MapSizes"
+
+// 		CreateIfNotExisting = true
+
 		ManyToAdd
 		[
 			&<galaxy_map/map_generators/sizes.rules>/Vanilla
-			&<galaxy_map/map_generators/sizes.rules>/Large
-			&<galaxy_map/map_generators/sizes.rules>/VeryLarge
-			&<galaxy_map/map_generators/sizes.rules>/Huge
-			&<galaxy_map/map_generators/sizes.rules>/Gigantic
-			&<galaxy_map/map_generators/sizes.rules>/Colossal
-			&<galaxy_map/map_generators/sizes.rules>/Titanic
-			&<galaxy_map/map_generators/sizes.rules>/Galactic
-			&<galaxy_map/map_generators/sizes.rules>/Rebellion //Test for SW Galaxy Unique Settings 
+			&<galaxy_map/map_generators/sizes.rules>/SWLarge
+			&<galaxy_map/map_generators/sizes.rules>/SWVeryLarge
+			&<galaxy_map/map_generators/sizes.rules>/SWHuge
+			&<galaxy_map/map_generators/sizes.rules>/SWGigantic
+			&<galaxy_map/map_generators/sizes.rules>/SWColossal
+			&<galaxy_map/map_generators/sizes.rules>/SWTitanic
+			&<galaxy_map/map_generators/sizes.rules>/SWGalactic
+			&<galaxy_map/map_generators/sizes.rules>/SWRebellion  
 
 		]
 	}

@@ -20,7 +20,8 @@ Parts
 			&<Weapons/xwing_cannon/xwing_cannon_left.rules>/Part
 			&<Weapons/xwing_cannon/xwing_cannon.rules>/Part
 
-			// Droid Turret
+			// Turrets
 			&<Weapons/droid_turret/droid_turret.rules>/Part
+			&<Weapons/tiny_defense_turret/tiny_defense_turret.rules>/Part
 
 ]

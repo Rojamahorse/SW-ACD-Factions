@@ -1,60 +1,60 @@
-Large // 60 star systems
+SWLarge // 60 star systems
 {
-	NameKey = "MapSizes/Large"
-	TipKey = "MapSizes/LargeDesc"
-	MapGenerator = &<../large.rules>
+	NameKey = "MapSizes/SWLarge"
+	TipKey = "MapSizes/SWLargeDesc"
+	MapGenerator = &<../SWlarge.rules>
 }
 
-VeryLarge // 80 star systems
+SWVeryLarge // 80 star systems
 {
-	NameKey = "MapSizes/VeryLarge"
-	TipKey = "MapSizes/VeryLargeDesc"
-	MapGenerator = &<../verylarge.rules>
+	NameKey = "MapSizes/SWVeryLarge"
+	TipKey = "MapSizes/SWVeryLargeDesc"
+	MapGenerator = &<../SWverylarge.rules>
 }
 
-Huge // 100 star systems
+SWHuge // 100 star systems
 {
-	NameKey = "MapSizes/Huge"
-	TipKey = "MapSizes/HugeDesc"
-	MapGenerator = &<../huge.rules>
+	NameKey = "MapSizes/SWHuge"
+	TipKey = "MapSizes/SWHugeDesc"
+	MapGenerator = &<../SWhuge.rules>
 }
 
-Gigantic // 125 star systems
+SWGigantic // 125 star systems
 {
-	NameKey = "MapSizes/Gigantic"
-	TipKey = "MapSizes/GiganticDesc"
-	MapGenerator = &<../gigantic.rules>
+	NameKey = "MapSizes/SWGigantic"
+	TipKey = "MapSizes/SWGiganticDesc"
+	MapGenerator = &<../SWgigantic.rules>
 }
 
-Colossal // 150 star systems
+SWColossal // 150 star systems
 {
-	NameKey = "MapSizes/Colossal"
-	TipKey = "MapSizes/ColossalDesc"
-	MapGenerator = &<../colossal.rules>
+	NameKey = "MapSizes/SWColossal"
+	TipKey = "MapSizes/SWColossalDesc"
+	MapGenerator = &<../SWcolossal.rules>
 }
 
-Titanic // 200 star systems
+SWTitanic // 200 star systems
 {
-	NameKey = "MapSizes/Titanic"
-	TipKey = "MapSizes/TitanicDesc"
-	MapGenerator = &<../titanic.rules>
+	NameKey = "MapSizes/SWTitanic"
+	TipKey = "MapSizes/SWTitanicDesc"
+	MapGenerator = &<../SWtitanic.rules>
 }
 
-Galactic // 500 star systems
+SWGalactic // 500 star systems
 {
-	NameKey = "MapSizes/Galactic"
-	TipKey = "MapSizes/GalacticDesc"
-	MapGenerator = &<../galactic.rules>
+	NameKey = "MapSizes/SWGalactic"
+	TipKey = "MapSizes/SWGalacticDesc"
+	MapGenerator = &<../SWgalactic.rules>
 }
 
-Rebellion //prototype SW Galaxy
+SWRebellion // A New Hope Galaxy - 50 star systems
 {
-	NameKey = "MapSizes/Rebellion"
-	TipKey = "MapSizes/RebellionDesc"
-	MapGenerator = &<../Rebellion.rules>
+	NameKey = "MapSizes/SWRebellion"
+	TipKey = "MapSizes/SWRebellionDesc"
+	MapGenerator = &<../SWRebellion.rules>
 }
 
-Vanilla //prototype SW Galaxy
+Vanilla // Cosmoteer Vanilla
 {
 	NameKey = "MapSizes/Vanilla"
 	TipKey = "MapSizes/VanillaDesc"

@@ -167,12 +167,12 @@ Def
 				Bf = 1
 				Af = 1
 			}
-			ToValue
+			ToValue 
 			{
-				Rf = 0.39215687
-				Gf = 0.39215687
-				Bf = 0.39215687
-				Af = 1
+			  	Rf = 0.39215687
+			  	Gf = 0.39215687
+			  	Bf = 0.39215687
+			  	Af = 1
 			}
 			Name = "Alpha lerp"
 			Enabled = true
@@ -241,7 +241,7 @@ Def
 	{
 		Texture
 		{
-			File = ./Data/ships/terran/point_defense/particles/point_defense_shoot.png
+			File = "point_defense_shoot.png" // ./Data/ships/terran/point_defense/particles/point_defense_shoot.png
 			MipLevels = 8
 			SampleMode = Linear
 		}

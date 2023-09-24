@@ -98,8 +98,9 @@ Ships
 //	:~{ File="Emp_gladiator_class_star_destroyer.ship.png";					Tier=14;	Difficulty=1; }
 //	:~{ File="Emp_imperial_star_destroyer_mark_ii.ship.png";				Tier=14;	Difficulty=2; }
 
+	:~{ File="Immobilizer 420 Cruiser.ship.png";							Tier=13;	Difficulty=2; }  // Remove for Release Credit SR2
 	:~{ File="Galdiator Class Star Destroyer_REMOVE.ship.png";				Tier=13;	Difficulty=2; }  // Remove for Release Credit SR2
-	:~{ File="Imperial Star Destroyer_REMOVE.ship.png";						Tier=12;	Difficulty=2; }  // Remove for Release Credit SR2
+	:~{ File="Imperial Star Destroyer_REMOVE.ship.png";						Tier=10;	Difficulty=2; }  // Remove for Release Credit SR2
 	:~{ File="Imperial Venator Star Destroyer_REMOVE.ship.png";				Tier=14;	Difficulty=2; }  // Remove for Release Credit SR2
 	:~{ File="Interdictor Star Destroyer_REMOVE.ship.png";					Tier=15;	Difficulty=2; }  // Remove for Release Credit SR2
 	:~{ File="Victory Class Star Destroyer_REMOVE.ship.png";				Tier=16;	Difficulty=2; }  // Remove for Release Credit SR2

@@ -14,7 +14,7 @@ SW_factions
 }
 SW_adv_shapes
 {
-	Folders = ["sw_adv_shapes", "sw_shading"]
+	Folders = ["sw_adv_shapes", "sw_shading", "sw_special", "sw_shading_Lg", "sw_adv_shapes_Lg"]
 	NameKey = "DecalGroups/sw_adv_shapes"
 	Icon
 	{
