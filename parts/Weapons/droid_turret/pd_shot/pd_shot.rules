@@ -1,5 +1,5 @@
-ID = SW.pd_shot
-Range = 250
+ID = SW.pd_shotA
+Range = 350
 Speed = 160
 
 Components
@@ -81,7 +81,7 @@ Components
 			[
 				{
 					Type = Damage
-					Damage = 700
+					Damage = 1000
 				}
 			]
 
