@@ -390,7 +390,7 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 			GetTargetFrom = Turret
 			Location = [0, 0]
 			OperationalToggle = IsOperational
-			Bullet = &<../common_shots/pd_shot/pd_shot.rules>
+			Bullet = &<pd_shot/pd_shot.rules>
 			Spread = [-5.5d, 5.5d]
 			ResourceStorage = BatteryStorage
 			ResourcesUsed = 25 
