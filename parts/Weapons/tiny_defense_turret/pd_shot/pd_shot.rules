@@ -81,7 +81,7 @@ Components
 			[
 				{
 					Type = Damage
-					Damage = 700
+					Damage = 650
 				}
 			]
 

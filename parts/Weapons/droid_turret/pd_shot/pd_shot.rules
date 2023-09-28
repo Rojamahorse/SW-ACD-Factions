@@ -51,7 +51,7 @@ Components
 				SampleMode = Linear
 			}
 			Size = [4, 2]
-			VertexColor = [255, 255, 255]
+			VertexColor = [168, 101, 201]
 			TargetBlendMode = Add
 			Shader = "./Data/common_effects/fancy_light.shader"
 			_litReflectiveStrength = 24
