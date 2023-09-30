@@ -1,5 +1,5 @@
 ID = SW.fighter_xwing_shot
-Range = 300
+Range = 350
 IdealRange = 185
 Speed = 480
 
@@ -39,7 +39,7 @@ Components
 			[
 				{
 					Type = Damage
-					Damage = 300
+					Damage = 450
 				}
 				{
 					Type = Impulse;
@@ -71,7 +71,7 @@ Components
 			[
 				{
 					Type = Damage
-					Damage = 400
+					Damage = 650
 				}
 				{
 					Type = Impulse;
