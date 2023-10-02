@@ -39,12 +39,12 @@ Part : &<tie_minigun.rules>/Part
 
 		TurretGraphics : &<tie_minigun.rules>/Part/Components/TurretGraphics
 		{
-			Location = [0.86, 0]
+			Location = [0.75, 0.10]
 		}
 
 		WeaponSprite : &<tie_minigun.rules>/Part/Components/WeaponSprite
 		{
-			Location = [0.86, 0]
+			Location = [0.75, 0.10]
 		}
 
 		Blueprints
