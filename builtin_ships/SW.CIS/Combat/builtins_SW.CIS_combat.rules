@@ -31,6 +31,7 @@ Ships
 	// Patrol ships
 	:~{ File="Hyena-Class Droid Bomber.ship.png";          				Tier=5;  Difficulty=1; }
 	:~{ File="HMP Droid Gunship.ship.png";         						Tier=6;  Difficulty=2; }
+	:~{ File="Droid Tri-Fighter Mk2.ship.png";       			Tier=1;  Difficulty=1; }
 /*
 //	:~{ File="Hyena-class_Bomber.ship.png"; 							Tier=3;  Difficulty=1; }
 //	:~{ File="Tri-Fighter.ship.png"; 									Tier=3;  Difficulty=1; }
