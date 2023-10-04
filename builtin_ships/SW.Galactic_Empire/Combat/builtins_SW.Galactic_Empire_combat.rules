@@ -20,6 +20,7 @@ Ships
 	:~{ File="Emp Rogue Shadow.ship.png";                           		Tier=4;  	Difficulty=1; }
 	:~{ File="Emp Rogue Shadow Alt.ship.png";                       		Tier=3;  	Difficulty=1; }
 	:~{ File="Emp Lamda-Class T-4a Shuttle.ship.png";               		Tier=3;  	Difficulty=1; }
+	:~{ File="Emp TIE (LN) Fighter Mk2.ship.png";							Tier=3;	 	Difficulty=2; }
 //	:~{ File="Emp_tie_fighter.ship.png";									Tier=1;	 	Difficulty=1; }
 //	:~{ File="Emp_tie_interceptor.ship.png";								Tier=4;	 	Difficulty=1; }
 //	:~{ File="Emp_tie_bomber.ship.png";										Tier=5;	 	Difficulty=1; }
@@ -131,6 +132,7 @@ Ships
 //	:~{ File="Emp_imperial_star_galleon_class_frigate.ship.png";			Tier=17;	Difficulty=1; }
 //	:~{ File="Emp_imperial_strike_cruiser.ship.png";						Tier=18;	Difficulty=1; }
 //	:~{ File="Emp_vt_49_decimator.ship.png";								Tier=18;	Difficulty=2; }
+	:~{ File="Executor-Class Star Dreadnought.ship.png";					Tier=18;	Difficulty=2; }
 
 
 
