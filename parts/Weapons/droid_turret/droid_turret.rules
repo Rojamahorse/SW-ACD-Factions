@@ -14,13 +14,15 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 	Size = [1, 2]
 	SelectionPriority = 1
 	SelectionTypeByRotation = true
-	MaxHealth = 2000
+	MaxHealth = 3000
 	TypeCategories = [weapon, uses_power, is_crewed]
 	ReceivableBuffs : ^/0/ReceivableBuffs []
 	ProhibitedBy : ^/0/ProhibitedBy [tall]
 	AllowedDoorLocations
 	[
-		[0, 2]
+		[1,1]
+		[-1,1]
+		[0,2]
 	]
 	EditorIcon
 	{
@@ -218,7 +220,7 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 		Turret
 		{
 			Type = TurretWeapon
-			Location = [.5, .5]// Relative to upper-left corner of unrotated part.
+			Location = [.5, 1]// Relative to upper-left corner of unrotated part.
 			Rotation = -90d// Relative to unrotated part.
 			OperationalToggle = IsOperational
 			AutoFireToggle = AutoFireToggle

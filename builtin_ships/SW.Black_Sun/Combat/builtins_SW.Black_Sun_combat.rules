@@ -19,7 +19,8 @@ Ships
 	// :~{ File="Lucrehulk-class_LH-3210_Cargo_Freighter.ship.png"; 			Tier=4;  Difficulty=1; }
 	// :~{ File="Starfreighter.ship.png"; 										Tier=2;  Difficulty=1; }
 	// :~{ File="Action_IV_Transport.ship.png"; 								Tier=3;  Difficulty=1; }
-	// :~{ File="Modified_YT-1300_Light_Freighter.ship.png"; 					Tier=4;  Difficulty=1; }
+	:~{ File="Modified_YT-1300_Light_Freighter.ship.png"; 						Tier=5;  Difficulty=1; }
+	:~{ File="Modified_YT-1300g_Light_Freighter.ship.png"; 						Tier=6;  Difficulty=1; }
 	// :~{ File="GX1_Short_Hauler.ship.png"; 									Tier=2;  Difficulty=1; }
 	// :~{ File="YT-2400_Light_Freighter.ship.png"; 							Tier=4;  Difficulty=1; }
 	// :~{ File="E-9_Explorer.ship.png"; 										Tier=2;  Difficulty=1; }
@@ -82,8 +83,11 @@ Ships
 	// :~{ File="Pelta-class_Frigate.ship.png"; 								Tier=8;   Difficulty=1; }
 
 
-	// Destroyers
+	// Destroyers 
+	:~{ File="BSC_Invisible Hand.ship.png"; 								Tier=14;  Difficulty=1; }
 	:~{ File="Invisible Hand-BS.ship.png"; 									Tier=11;  Difficulty=1; }
+	:~{ File="BSE Vengeance Class.ship.png"; 									Tier=10;  Difficulty=1; }
+	:~{ File="BSE Invisible Hand Alt.ship.png"; 							Tier=13;  Difficulty=1; }
 	:~{ File="BSC Invisible Hand.ship.png"; 								Tier=12;  Difficulty=1; }
 	:~{ File="BSC Providence-Class Destroyer.ship.png"; 					Tier=14;  Difficulty=1; }
 	:~{ File="BSC Providence-Class Dreadnought.ship.png"; 					Tier=17;  Difficulty=1; }
@@ -106,7 +110,7 @@ Ships
 	:~{ File="AA-9 Coruscant-BS Botajef Freigh.ship.png"; 					Tier=15;  Difficulty=1; }
 	:~{ File="BSC Subjugator-Class Heavy Cruiser.ship.png"; 				Tier=16;  Difficulty=1; }
 	// :~{ File="Black_Sun_Battle_Cruiser.ship.png"; 						Tier=12;  Difficulty=1; }
-	// :~{ File="Modified_Gozanti-class_Cruiser.ship.png"; 					Tier=6;   Difficulty=1; }
+	:~{ File="Modified_Gozanti-class_Cruiser.ship.png"; 					Tier=6;   Difficulty=1; }
 	// :~{ File="Consular-class_Cruiser.ship.png"; 							Tier=6;   Difficulty=1; }
 	// :~{ File="Centurion-class_Battlecruiser.ship.png"; 					Tier=13;  Difficulty=1; }
 	// :~{ File="Arquitens-class_Light_Cruiser.ship.png"; 					Tier=8;   Difficulty=1; }

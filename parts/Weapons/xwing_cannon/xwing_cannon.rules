@@ -3,7 +3,7 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 	NameKey = "Parts/xwingCannon"
 	IconNameKey = "Parts/xwingCannonIcon"
 	ID = SW.fighter_xwing_cannon
-	EditorGroup = "WeaponsEnergy"
+	EditorGroups = ["WeaponsEnergy","TechI"]
 	DescriptionKey = "Parts/xwingCannonDesc"
 	SelectionTypeID = "f_cannons"
 	Resources
