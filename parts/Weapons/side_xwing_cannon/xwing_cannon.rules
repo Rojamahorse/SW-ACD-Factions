@@ -1,25 +1,35 @@
 Part : <./Data/ships/terran/base_part_terran.rules>/Part
 {
-	NameKey = "Parts/TurretFighter"
-	IconNameKey = "Parts/TurretFighterIcon"
-	ID = sw.fighter_turret
-	//OtherIDs = []
-	EditorGroup = "WeaponsEnergy"
-	DescriptionKey = "Parts/TurretFighterDesc"
+	NameKey = "Parts/xwingCannon"
+	IconNameKey = "Parts/xwingCannonIcon"
+	ID = SW.fighter_xwing_cannon
+	EditorGroups = ["WeaponsEnergy","TechI"]
+	DescriptionKey = "Parts/xwingCannonDesc"
+	SelectionTypeID = "f_cannons"
 	Resources
 	[
-		[steel, 40]
-		[coil, 15]
+		[steel, 12]
+		[coil, 10]
 	]
-	TypeCategories = [weapon, uses_power, is_crewed]
-	Size = [1, 2]
+	TypeCategories = [weapon, uses_power]
+	ReceivableBuffs : ^/0/ReceivableBuffs []
+	Size = [1, 1]
 	SelectionPriority = 1
 	SelectionTypeByRotation = true
+	Density = 0.5
 	MaxHealth = 2000
-	ProhibitedBy : ^/0/ProhibitedBy [tall]
+	InitialPenetrationResistance = 1
+	PenetrationRectType = Normal
+	ProhibitedBy : ^/0/ProhibitedBy [fighter]
+	ProhibitRects
+	[
+		[fighter, [0, -2, 1, 2]]
+	]
 	AllowedDoorLocations
 	[
-		[0, 2]
+		[-1, 0]
+		[1, 0]
+		[0, 1]
 	]
 	EditorIcon
 	{
@@ -28,14 +38,15 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 			File = "icon.png"
 			SampleMode = Linear
 		}
-		Size = [32, 64]
+		Size = [22, 64]
 	}
+
 	Components : ^/0/Components
 	{
 		IsOperational
 		{
 			Type = MultiToggle
-			Toggles = [PowerToggle, BatteryStorage, PartCrew]
+			Toggles = [PowerToggle, BatteryStorage]
 			Mode = All
 		}
 
@@ -44,13 +55,14 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 			Type = UIToggle
 			ToggleID = "on_off"
 			Default = 1
+			RequiresCommand = false
 		}
 
 		CommandConsumer
 		{
 			Type = CommandConsumer
 			OperationalToggle = PowerToggle
-			CommandPoints = 2
+			CommandPoints = 1
 		}
 
 		FireModeToggle
@@ -78,22 +90,22 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 			Type = ResourceStorage
 			ResourceType = battery
 			MaxResources = 2000
+			ReceiveResourceMediaEffects = &/COMMON_EFFECTS/PowerDeliver
 		}
 		BatteryConsumer
 		{
 			Type = ResourceConsumer
 			ResourceType = battery
 			Storage = BatteryStorage
-			DefaultPriority = &/PRIORITIES/Weapon_Supply
-			ResupplyThreshold = 500
+			ResupplyThreshold = 1
+			DefaultPriority = &/PRIORITIES/Defense_Supply
 			OperationalToggle = PowerToggle
-			ReceiveResourceMediaEffects = &/COMMON_EFFECTS/PowerDeliver
 		}
 
 		Graphics
 		{
 			Type = Graphics
-			Location = [.5, 1]
+			Location = [.5, .5]
 			OperationalToggle = IsOperational
 			Floor
 			{
@@ -101,39 +113,63 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 				DamageLevels
 				[
 					{
-						File = "floor.png"
-						Size = [1, 2]
+						File = "./Data/ships/terran/point_defense/floor.png"
+						Size = [1, 1]
 					}
 					{
-						File = "floor_33.png"
-						Size = [1, 2]
+						File = "./Data/ships/terran/point_defense/floor_33.png"
+						Size = [1, 1]
 					}
 					{
-						File = "floor_66.png"
-						Size = [1, 2]
+						File = "./Data/ships/terran/point_defense/floor_66.png"
+						Size = [1, 1]
 					}
 				]
 			}
 			OperationalDoodad
 			{
 				Layer = "doodads_low"
+				Offset = [0, -0.5]
 				DamageLevels
 				[
 					{
 						AnimationFiles
 						[
-							"doodads_on1.png"
-							"doodads_on2.png"
-							"doodads_on3.png"
-							"doodads_on4.png"
-							"doodads_on5.png"
-							"doodads_on6.png"
-							"doodads_on7.png"
-							"doodads_on8.png"
+							"../base/doodads_on1.png"
+							"../base/doodads_on2.png"
+							"../base/doodads_on3.png"
+							"../base/doodads_on4.png"
+							"../base/doodads_on5.png"
+							"../base/doodads_on6.png"
+							"../base/doodads_on7.png"
+							"../base/doodads_on8.png"
 						]
-						Size = [1, 1]
-						Offset = [0, -.5]
+						NormalsAnimationFiles
+						[
+							"../base/doodads_normals.png"
+							"../base/doodads_normals.png"
+							"../base/doodads_normals.png"
+							"../base/doodads_normals.png"
+							"../base/doodads_normals.png"
+							"../base/doodads_normals.png"
+							"../base/doodads_normals.png"
+							"../base/doodads_normals.png"
+						]
+						Size = [1, 2]
 						AnimationInterval = 0.1
+					}
+				]
+			}
+			NonOperationalDoodad
+			{
+				Layer = "doodads_low"
+				Offset = [0, -0.5]
+				DamageLevels
+				[
+					{
+						File = "../base/doodads_off.png"
+						NormalsFile = "../base/doodads_normals.png"
+						Size = [1, 2]
 					}
 				]
 			}
@@ -143,8 +179,8 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 				DamageLevels
 				[
 					{
-						File = "lights.png"
-						Size = [1, 2]
+						File = "../base/lights.png"
+						Size = [1, 1]
 					}
 				]
 			}
@@ -154,8 +190,16 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 				DamageLevels
 				[
 					{
-						File = "../../Defences/beam_pd_small/walls.png"
-						Size = [1, 2]
+						File = "./Data/ships/terran/point_defense/walls.png"
+						Size = [1, 1]
+					}
+					{
+						File = "./Data/ships/terran/point_defense/walls_33.png"
+						Size = [1, 1]
+					}
+					{
+						File = "./Data/ships/terran/point_defense/walls_66.png"
+						Size = [1, 1]
 					}
 				]
 			}
@@ -165,19 +209,19 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 				DamageLevels
 				[
 					{
-						File = "../../Defences/beam_pd_small/roof.png"
-						NormalsFile = "../../Defences/beam_pd_small/roof_normals.png"
-						Size = [1, 2]
+						File = "./Data/ships/terran/point_defense/roof.png"
+						NormalsFile = "./Data/ships/terran/point_defense/roof_normals.png"
+						Size = [1, 1]
 					}
 					{
-						File = "../../Defences/beam_pd_small/roof_33.png"
-						NormalsFile = "../../Defences/beam_pd_small/roof_normals_33.png"
-						Size = [1, 2]
+						File = "./Data/ships/terran/point_defense/roof_33.png"
+						NormalsFile = "./Data/ships/terran/point_defense/roof_normals_33.png"
+						Size = [1, 1]
 					}
 					{
-						File = "../../Defences/beam_pd_small/roof_66.png"
-						NormalsFile = "../../Defences/beam_pd_small/roof_normals_66.png"
-						Size = [1, 2]
+						File = "./Data/ships/terran/point_defense/roof_66.png"
+						NormalsFile = "./Data/ships/terran/point_defense/roof_normals_66.png"
+						Size = [1, 1]
 					}
 				]
 			}
@@ -186,18 +230,25 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 		Turret
 		{
 			Type = TurretWeapon
-			Location = [.5, 0.6]// Relative to upper-left corner of unrotated part.
-			Rotation = -90d// Relative to unrotated part.
+			Location = [0.5, -0.25]
+			Rotation = -90d
 			OperationalToggle = IsOperational
-			FireInterval = .75
-			FiringArc = 360d
-			RotateSpeed = 90d
-			FireThresholdAngle = 1d
-			TargetSearchTriesPerFrame = 1
-			AIFirepowerRating = 400
 			AutoFireToggle = AutoFireToggle
-			IgnoreSourceShipLowLOSChecks = true
+			FireInterval = .7
+			FiringArc = 15d
+			RotateSpeed = 360d
+			FireThresholdAngle = 1d
+			AIFirepowerRating = 400
+			AllowFireWithBlockedLOS = true
 			Emitter = BulletEmitter
+
+			AutoTargets
+			[
+				{
+					TargetType = ShipParts
+					Toggle = FireModeToggle
+				}
+			]
 
 			BlueprintArcSprite
 			{
@@ -214,16 +265,8 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 				VertexColor = [255, 255, 255, 51]
 				QuadCount = 64
 			}
-			
-			AutoTargets
-			[
-				{
-					TargetType = ShipParts
-					Toggle = AutoTargetToggle
-				}
-			]
 		}
-		
+
 		ReloadProgressBar
 		{
 			Type = ProgressBar
@@ -234,22 +277,23 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 		BulletEmitter
 		{
 			Type = BulletEmitter
-			Location = [1, 0]
 			ChainedTo = Turret
 			FireTrigger = Turret
 			GetTargetFrom = Turret
+			Location = [1.28, 0]
 			OperationalToggle = IsOperational
-			Bullet = &<laser_bolt/laser_bolt.rules>
+			Bullet = &<xwing_shot/xwing_shot.rules>
 			ResourceStorage = BatteryStorage
-			ResourcesUsed = 200 
+			ResourcesUsed = 125
+			MinResourcesUsed = 1
 		}
 
 		FireEffect
 		{
 			Type = TriggeredEffects
 			ChainedTo = Turret
-			Trigger = BulletEmitter
-			Location = [1, 0]
+			Trigger = Turret
+			Location = [1.675, 0]
 			AnchorMediaEffects = true
 
 			MediaEffects
@@ -259,33 +303,10 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 
 				: /BASE_SOUNDS/AudioExterior
 				{
-					Sound = "./Data/ships/terran/laser_blaster_small/shoot.wav"
-					Volume = .6
-					Delay = 0
+					Sound = "../common_effects/sounds/XwingCannon1.wav"
+					Volume = .2
 					SpeedVariation = .25
 				}
-			]
-		}
-
-		CrewLocation
-		{
-			Type = CrewLocation
-			Location = [.5, 0.6875]
-			Rotation = 0d
-		}
-		PartCrew
-		{
-			Type = PartCrew
-			Crew = 1
-			DefaultPriority = &/PRIORITIES/Weapon_Crew
-			PrerequisitesBeforeCrewing = [BatteryStorage, PowerToggle]
-			CrewDestinations
-			[
-				&../../CrewLocation/Location
-			]
-			CrewLocations
-			[
-				CrewLocation
 			]
 		}
 
@@ -293,24 +314,12 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 		{
 			Type = Graphics
 			ChainedTo = Turret
-			Location = [.5, 0]
+			Location = [0.86, 0]
 			Rotation = 90d
 			OperationalToggle = IsOperational
 			OperationalDoodad
 			{
-				Layer = "roof_turrets"
-				DamageLevels
-				[
-					{
-						File = "turret_on.png"
-						NormalsFile = "turret_normals.png"
-						Size = [1, 2]
-					}
-				]
-			}
-			NonOperationalDoodad
-			{
-				Layer = "roof_turrets"
+				Layer = "turrets"
 				DamageLevels
 				[
 					{
@@ -320,31 +329,44 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 					}
 				]
 			}
+			NonOperationalDoodad = &OperationalDoodad
 		}
 
-		BatterySprites
+		BatterySpritesA
 		{
 			Type = ResourceSprites
-			Location = [.5, 1]
+			Location = [.5, .5]
 			ResourceStorage = BatteryStorage
-			HasZeroResourceSprite = true
 			Layer = "doodads_high"
+			RangeLow = 0
+			RangeHigh = 1000
 			ResourceLevels
-			[	
+			[
 				{
-					File = "batteries0.png"
-					Size = [1, 2]
-				}
-				{
-					File = "batteries1.png"
-					Size = [1, 2]
-				}
-				{
-					File = "batteries2.png"
-					Size = [1, 2]
+					File = "../base/batteries4.png"
+					MirrorU = true
+					Size = [1, 1]
 				}
 			]
 		}
+
+		BatterySpritesB
+		{
+			Type = ResourceSprites
+			Location = [.5, .5]
+			ResourceStorage = BatteryStorage
+			Layer = "doodads_high"
+			RangeLow = 1001
+			RangeHigh = 2000
+			ResourceLevels
+			[
+				{
+					File = "../base/batteries4.png"
+					Size = [1, 1]
+				}
+			]
+		}
+
 
 		OperationEffects
 		{
@@ -358,14 +380,14 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 		DestroyedEffects
 		{
 			Type = DeathEffects
-			MediaEffects = &/COMMON_EFFECTS/MedPartDestroyed
-			Location = [.5, 1.5]
+			MediaEffects = &/COMMON_EFFECTS/SmallPartDestroyed
+			Location = [.5, .5]
 		}
 
 		Indicators
 		{
 			Type = IndicatorSprites
-			Location = [.5, 1.5]
+			Location = [.5, .5]
 			Layer = "indicators"
 			Indicators
 			[
@@ -388,16 +410,6 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 						Size = [1, 1]
 					}
 				}
-
-				// No crew.
-				{
-					Toggle = PartCrew
-					AtlasSprite
-					{
-						File = &/INDICATORS/NoCrew
-						Size = [1, 1]
-					}
-				}
 			]
 		}
 
@@ -405,19 +417,19 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 		{
 			Type = BlueprintSprite
 			File = "blueprints.png"
-			Size = [1, 2]
+			Size = [1, 3]
+			Offset = [0, -1]
 		}
 	}
-	
+
 	Stats
 	{
-		CrewRequired = &~/Part/Components/PartCrew/Crew
 		PowerCapacity = (&~/Part/Components/BatteryStorage/MaxResources) / 1000
 
 		MinPower = (&../StatsByCategory/0/Stats/PowerPerSecond) / 2
 		RecPower = &../StatsByCategory/0/Stats/PowerPerSecond
-		MinCrew = (&CrewRequired) + (&MinPower) * 2
-		RecCrew = (&CrewRequired) + (&RecPower) * 4
+		MinCrew = (&MinPower) * 2
+		RecCrew = (&RecPower) * 4
 	}
 
 	StatsByCategory
@@ -426,6 +438,9 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 			NameKey = "StatCategories/FighterWeapons"
 			Stats
 			{
+				ShieldDamagePerShot = &~/Part/Components/BulletEmitter/Bullet/Components/Hit/HitShield/HitEffects/0/Damage
+				ShieldDamagePerSecond = (&ShieldDamagePerShot) * (&ROF)
+				ShieldDamage = [&../ShieldDamagePerShot, &../ShieldDamagePerSecond]
 				DamagePerShot = &~/Part/Components/BulletEmitter/Bullet/Components/Hit/HitOperational/HitEffects/0/Damage
 				DamagePerSecond = (&DamagePerShot) * (&ROF)
 				Damage = [&../DamagePerShot, &../DamagePerSecond]
