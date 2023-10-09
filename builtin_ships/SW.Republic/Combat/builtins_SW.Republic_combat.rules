@@ -89,6 +89,7 @@ Ships
 //	:~{ File="The_Negotiator.ship.png";           								Tier=17;  Difficulty=1; }
 //	:~{ File="Inexpugnable_class_Tactical_Command_Ship.ship.png";           	Tier=18;  Difficulty=1; }
 //	:~{ File="Endurance_class_Fleet_Carrier.ship.png";           				Tier=18;  Difficulty=1; }
+	:~{ File="Rep Secutor-Class Star Destroyer.ship.png";           			Tier=18;  Difficulty=1; }
 
 
 	:~{ File="Remove_Naboo-Star-Fighter.ship.png";       									Tier=2;  Difficulty=3; } //  REMOVE for Release Credit WuzNab
