@@ -1,8 +1,7 @@
-ID = sw.fighter_turret_bolt
-Range = 260
-IdealRange = [60, 225]
-IdealRadius = [5, 50]
-Speed = 320
+ID = SW.fighter_xwing_shot
+Range = 350
+IdealRange = 185
+Speed = 480
 
 Components
 {
@@ -10,19 +9,18 @@ Components
 	{
 		Type = CirclePhysics
 		Radius = 0.01
-		Density = 0.1
+		Density = 0.0001
 	}
 
 	Death
 	{
 		Type = DeathByLifetime
-		// Lifetime will be auto-calculated based on range and speed.
 	}
 
 	Targetable
 	{
 		Type = Targetable
-		Health = 125
+		Health = 210
 		TargetCategory = "laser"
 	}
 
@@ -33,7 +31,6 @@ Components
 
 		CrewCollisions = {Enemies=true; Junk=true}
 		HitCrew = &HitOperational
-		SourceShipLowCollisions = false
 
 		HitShield = &HitOperational
 		HitOperational
@@ -42,32 +39,29 @@ Components
 			[
 				{
 					Type = Damage
-					Damage = 300
+					Damage = 450
 				}
 				{
 					Type = Impulse;
-					Impulse = 5;
+					Impulse = 3.0;
 				}
 			]
-
 			MediaEffects
 			[
 				&<./Data/shots/laser_bolt_small/particles/laser_bolt_small_hit.rules>
 				&<./Data/shots/laser_bolt_small/particles/laser_bolt_small_flash.rules>
 				&<./Data/shots/laser_bolt_small/particles/laser_bolt_small_sparks.rules>
-				&<./Data/shots/laser_bolt_small/particles/laser_bolt_small_spikes.rules>
 
 				: /BASE_SOUNDS/AudioExterior
 				{
 					Sound = "./Data/shots/laser_bolt_small/laser_bolt_small_hit.wav"
-					Volume = .4
-					SpeedVariation = .4
+					Volume = 0.4
+					SpeedVariation = 0.4
 				}
-
 				: /BASE_SHAKE
 				{
-					ShakeAmount = .03
-					Duration = .3
+					ShakeAmount = .01
+					Duration = .1
 				}
 			]
 		}
@@ -77,27 +71,14 @@ Components
 			[
 				{
 					Type = Damage
-					Damage = 200
+					Damage = 650
 				}
 				{
 					Type = Impulse;
-					Impulse = 2.5;
+					Impulse = 1.5;
 				}
 			]
-
-			MediaEffects
-			[
-				&<./Data/shots/laser_bolt_small/particles/laser_bolt_small_hit_struct.rules>
-				&<./Data/shots/laser_bolt_small/particles/laser_bolt_small_flash.rules>
-				&<./Data/shots/laser_bolt_small/particles/laser_bolt_small_sparks_struct.rules>
-
-				: /BASE_SOUNDS/AudioExterior
-				{
-					Sound = "./Data/shots/laser_bolt_small/laser_bolt_small_hit.wav"
-					Volume = .3
-					SpeedVariation = .4
-				}
-			]
+			MediaEffects = &../HitOperational/MediaEffects
 		}
 		PenetratingOperational
 		{
@@ -120,9 +101,8 @@ Components
 	Sprite
 	{
 		Type = AnimatedSprite
-		RenderBucket = BulletUpper1
-		//ReduceScaleWith = Hit
-		//ReduceScaleExponent = 0.5
+		ReduceScaleWith = Hit
+		ReduceScaleExponent = 0.5
 		Animation
 		{
 			AtlasSprite
@@ -133,7 +113,7 @@ Components
 					SampleMode = Linear
 					MipLevels = max
 				}
-				Size = [1, 1]
+				Size = [2.5, 1]
 			}
 			FrameCount = 8
 			FrameSize = [128, 128]
