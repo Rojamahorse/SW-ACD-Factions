@@ -55,6 +55,7 @@ Ships
 	// Corvettes
 	:~{ File="Hardcell-Class Interstellar Transport (Armed).ship.png";			Tier=7;  Difficulty=1; }
 	:~{ File="Hardcell-Class Interstellar Transport (Combat Refit).ship.png";  	Tier=7;  Difficulty=1; }
+	:~{ File="Hardcell-Class Interstellar Transport (Alt).ship.png";  			Tier=7;  Difficulty=1; }
 /*
 //	:~{ File="Sheathipede-class_Shuttle.ship.png"; 						Tier=7;  Difficulty=1; }
 //	:~{ File="Rogue-class_Porax-38_Starfighter.ship.png"; 				Tier=9;  Difficulty=1; }
@@ -99,6 +100,7 @@ Ships
 
 	// Cruisers
 	:~{ File="Gozanti-Class Cruiser (CIS).ship.png"; 					Tier=8;  Difficulty=1; }
+	:~{ File="Gozanti-Class Cruiser (CIS) Alt.ship.png"; 				Tier=8;  Difficulty=1; }
 	:~{ File="Subjugator-Class Heavy Cruiser.ship.png";        			Tier=14;  Difficulty=2; }
 	:~{ File="Diamond-Class Cruiser.ship.png";        					Tier=15;  Difficulty=2; }
 	:~{ File="Providence-Class Dreadnought.ship.png";          			Tier=16;  Difficulty=2; }

@@ -5,6 +5,7 @@ Tags = [defense]
 Ships
 [
 	// Platforms
+	:~{ File="Small Emp Disruptor Platform Alt.ship.png";     Tier=2; Difficulty=2; }
 	:~{ File="Small Emp Laser Platform1.ship.png";     Tier=2; Difficulty=2; }
 	:~{ File="Small Emp Disruptor Platform1.ship.png"; Tier=2; Difficulty=2; }
 	:~{ File="Small EMP Platform1.ship.png";       Tier=2; Difficulty=2; }
@@ -17,4 +18,5 @@ Ships
 	:~{ File="Small Emp Ion Platform.ship.png";           Tier=2; Difficulty=2; }
 	:~{ File="Small Emp Platform.ship.png";           Tier=2; Difficulty=2; }
 	:~{ File="Small Emp Nuke Platform.ship.png";          Tier=2; Difficulty=2; }
+	:~{ File="Small Emp Torp Platform.ship.png";          Tier=2; Difficulty=2; }
 ]
