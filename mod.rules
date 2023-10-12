@@ -1,14 +1,13 @@
 ID = SW.1.StarWarsFactions
 Name = "Star Wars Factions"
-Version = 0.0.3 RC
+Version = 0.0.4 RC
 CompatibleGameVersions = ["0.24.0","0.23.0"]
-ModifiesMultiplayer = true
+ModifiesGameplay = true
 Author = "Rojamahorse & SW:ACD DevTeam"
 Logo = "logo.png"
 Description = "Step up your game with the ultimate companion mod to <yellow>Star Wars: A Cosmos Divided</yellow>! \n\nChoose your side—from the <gray>Galactic Empire</gray> and <orange>Rebel Alliance</orange> to the <red>Republic</red> and <blue>CIS</blue>—or navigate the criminal underworld with <magenta>Black Sun</magenta>. \n\nKick off your journey with iconic ships, venture into expansive new maps, and craft your own interstellar adventure. This is the Cosmoteer mod you've been searching for! \n\n<bad>Important: This mod is an extension of <yellow>Star Wars: A Cosmos Divided</yellow> and requires it for full functionality. Please ensure you have the base mod installed.</bad>"
 StringsFolder = "strings"
 /* TO DO:
-Point Defense Dual Turret
 Base Tradeships moved out of Rules
 Base Galaxy Rules back to Vanilla + All
 Create a SW Only for all SW
@@ -16,7 +15,6 @@ Create a Clone Wars Era
 Create a New Republic Era & Old Republic Era
 Add SW-flavored auxilary sound bites
 Clean up Shots & Common Effects
-Add Codex for Security Faction (e.g., replace fringe)
 Add SW Crew
 */
 
