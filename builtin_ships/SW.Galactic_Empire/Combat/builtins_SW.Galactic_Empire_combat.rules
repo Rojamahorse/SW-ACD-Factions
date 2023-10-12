@@ -125,6 +125,10 @@ Ships
 	:~{ File="Imperial Acclamator Assault Transport_REMOVE.ship.png";		Tier=10;	Difficulty=1; } // Remove for Release Credit SR2
 	:~{ File="Imperial Arquitens Class Cruiser_REMOVE.ship.png";			Tier=11;	Difficulty=1; } // Remove for Release Credit SR2
 	:~{ File="Imperial Light Cruiser_REMOVE.ship.png";						Tier=8;	Difficulty=1; } // Remove for Release Credit SR2
+	:~{ File="Emp Dreadnought-Class Chain Cru.ship.png";					Tier=11;	Difficulty=2; } // Remove for Release Credit SR2
+	:~{ File="Emp Dreadnought-Class Heavy Crui.ship.png";					Tier=9;	Difficulty=1; } // Remove for Release Credit SR2
+	:~{ File="Emp Imperial Star Destroyer.ship.png";						Tier=11;	Difficulty=1; } // Remove for Release Credit SR2
+	:~{ File="Emp Quasar Fire-Class Cruiser-Carrier.ship.png";				Tier=12;	Difficulty=1; } // Remove for Release Credit SR2
 
 //	:~{ File="Emp_imperial_interdictor.ship.png";							Tier=15;	Difficulty=2; }
 //	:~{ File="Emp_imperial_dreadnought_heavy_cruiser.ship.png";				Tier=15;	Difficulty=2; }

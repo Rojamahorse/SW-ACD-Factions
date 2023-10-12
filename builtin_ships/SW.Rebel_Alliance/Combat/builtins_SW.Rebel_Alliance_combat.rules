@@ -67,6 +67,7 @@ Ships
 	
 	// Frigates
 	:~{ File="Pelta-Class Frigate I (Reb).ship.png";           							Tier=6; Difficulty=2; } // Cost $0
+	:~{ File="Rebel DP20 Frigate Mk2.ship.png";           								Tier=7; Difficulty=2; } // Cost $0
 	:~{ File="Rebel-Assault Frigate Mk1.ship.png";           							Tier=10; Difficulty=1; } // Cost $0
 	:~{ File="Rebel Assault Frigate Mk II.ship.png"; 									Tier=13; Difficulty=2; } // Cost $0
 	:~{ File="Assault Frigate Mk1.ship.png";    										Tier=9;  Difficulty=1; } // Cost $0
