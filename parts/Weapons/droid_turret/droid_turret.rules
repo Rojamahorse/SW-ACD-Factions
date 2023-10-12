@@ -14,13 +14,15 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 	Size = [1, 2]
 	SelectionPriority = 1
 	SelectionTypeByRotation = true
-	MaxHealth = 2000
+	MaxHealth = 3000
 	TypeCategories = [weapon, uses_power, is_crewed]
 	ReceivableBuffs : ^/0/ReceivableBuffs []
 	ProhibitedBy : ^/0/ProhibitedBy [tall]
 	AllowedDoorLocations
 	[
-		[0, 2]
+		[1,1]
+		[-1,1]
+		[0,2]
 	]
 	EditorIcon
 	{
@@ -218,7 +220,7 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 		Turret
 		{
 			Type = TurretWeapon
-			Location = [.5, .5]// Relative to upper-left corner of unrotated part.
+			Location = [.5, 1]// Relative to upper-left corner of unrotated part.
 			Rotation = -90d// Relative to unrotated part.
 			OperationalToggle = IsOperational
 			AutoFireToggle = AutoFireToggle
@@ -390,7 +392,7 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 			GetTargetFrom = Turret
 			Location = [0, 0]
 			OperationalToggle = IsOperational
-			Bullet = &<../common_shots/pd_shot/pd_shot.rules>
+			Bullet = &<pd_shot/pd_shot.rules>
 			Spread = [-5.5d, 5.5d]
 			ResourceStorage = BatteryStorage
 			ResourcesUsed = 25 
@@ -433,7 +435,7 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 				{
 					Sound = "../common_effects/sounds/MassDriver.wav"
 					Volume = .6
-					Delay = 0
+					Delay = .1
 					SpeedVariation = .25
 				}
 			]

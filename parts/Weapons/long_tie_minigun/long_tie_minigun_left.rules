@@ -31,12 +31,12 @@ Part : &<long_tie_minigun.rules>/Part
 
 		TurretGraphics : &<long_tie_minigun.rules>/Part/Components/TurretGraphics
 		{
-			Location = [1.36, 0]
+			Location = [1.36, .10]
 		}
 
 		WeaponSprite : &<long_tie_minigun.rules>/Part/Components/WeaponSprite
 		{
-			Location = [1.36, 0]
+			Location = [1.36, .10]
 		}
 
 		Blueprints

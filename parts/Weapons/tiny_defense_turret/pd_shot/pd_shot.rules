@@ -1,5 +1,5 @@
-ID = ultranova.federation_pd_shot
-Range = 300
+ID = SW.pd_shot
+Range = 250
 Speed = 160
 
 Components
@@ -25,7 +25,7 @@ Components
 		{
 			Texture
 			{
-				File = "./Data/shots/pd_shot/pd_shot.png"
+				File = "../../common_effects/particles/pd_shot.png" //IMAGE
 				SampleMode = Linear
 				MipLevels = max
 			}
@@ -46,7 +46,7 @@ Components
 		{
 			Texture
 			{
-				File = ./Data/shots/pd_shot/pd_shot_glow.png
+				File = ../../common_effects/particles/pd_shot_glow.png // ./Data/shots/pd_shot/pd_shot_glow.png
 				MipLevels = max
 				SampleMode = Linear
 			}
@@ -81,7 +81,7 @@ Components
 			[
 				{
 					Type = Damage
-					Damage = 300
+					Damage = 650
 				}
 			]
 

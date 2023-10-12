@@ -4,7 +4,7 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 	IconNameKey = "Parts/PDTurretTinyIcon"
 	ID = SW.tiny_defense_turret
 	OtherIDs = []
-	EditorGroups = ["WeaponsEnergy","Defenses"]
+	EditorGroups = ["WeaponsEnergy","Defenses","TechI"]
 	DescriptionKey = "Parts/PDTurretTinyDesc"
 	Resources
 	[
@@ -299,11 +299,11 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 			GetTargetFrom = Turret
 			Location = [0, 0]
 			OperationalToggle = IsOperational
-			Bullet = &<../common_shots/pd_shot/pd_shot.rules>
+			Bullet = &<pd_shot/pd_shot.rules>
 			Spread = [-5d, 5d]
 			ResourceStorage = BatteryStorage
-			ResourcesUsed = 20
-			Burst = 3
+			ResourcesUsed = 35 //20
+			Burst = 6 //3
 			BurstDelay = .075
 			UseResourcePerShotInBurst = true
 //			Recoil = 240
@@ -311,7 +311,7 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 
 		Emitter1 : BaseEmitter
 		{
-			Location = [0, -.25]
+			Location = [1, 0] //-.25
 			ChainedTo = BaseEmitter
 			FireTrigger = Turret
 			ResourceStorage = BatteryStorage
@@ -319,7 +319,7 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 
 		Emitter2 : BaseEmitter
 		{
-			Location = [0, 0.25]
+			Location = [1, 0] //.25
 			ChainedTo = BaseEmitter
 			FireTrigger = Turret
 			ResourceStorage = BatteryStorage
@@ -331,7 +331,7 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 			ChainedTo = Emitter1
 			Trigger = Emitter1
 			AnchorMediaEffects = true
-			Location = [.5, 0]
+			Location = [0.5, 0]
 
 			MediaEffects
 			[
@@ -340,9 +340,9 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 
 				: /BASE_SOUNDS/AudioExterior
 				{
-					Sound = "../common_effects/sounds/MassDriver.wav"
+					Sound = "../common_effects/sounds/laserblaster.wav"
 					Volume = .6
-					Delay = 0
+					Delay = .1
 					SpeedVariation = .25
 				}
 			]
@@ -352,7 +352,7 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 			Type = TriggeredEffects
 			ChainedTo = Emitter2
 			Trigger = Emitter2
-			Location = [-.5, 0]
+			Location = [-0.5, 0]
 			AnchorMediaEffects = true
 
 			MediaEffects
@@ -362,7 +362,7 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 
 				: /BASE_SOUNDS/AudioExterior
 				{
-					Sound = "../common_effects/sounds/MassDriver.wav"
+					Sound = "../common_effects/sounds/laserblaster.wav"
 					Volume = .25
 					MaxConcurrent = 10
 					SpeedVariation = .25
