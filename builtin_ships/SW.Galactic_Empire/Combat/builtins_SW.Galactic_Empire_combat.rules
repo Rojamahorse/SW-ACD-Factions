@@ -21,6 +21,11 @@ Ships
 	:~{ File="Emp Rogue Shadow Alt.ship.png";                       		Tier=3;  	Difficulty=1; }
 	:~{ File="Emp Lamda-Class T-4a Shuttle.ship.png";               		Tier=3;  	Difficulty=1; }
 	:~{ File="Emp TIE (LN) Fighter Mk2.ship.png";							Tier=3;	 	Difficulty=2; }
+	:~{ File="Emp_TIE (LN) Fighter.ship.png";								Tier=1;	 	Difficulty=2; } //Neojino
+	:~{ File="Emp_TIE Advanced X1.ship.png";								Tier=3;	 	Difficulty=2; } //Neojino
+	:~{ File="Emp_TIE Interceptor.ship.png";								Tier=3;	 	Difficulty=2; } //Neojino
+	:~{ File="Emp_TIE Reaper.ship.png";										Tier=4;	 	Difficulty=2; } //Neojino
+	:~{ File="Emp_TIE SA Bomber.ship.png";									Tier=3;	 	Difficulty=2; } //Neojino
 	:~{ File="Emp TIE Reaper.ship.png";										Tier=5;	 	Difficulty=2; }
 	:~{ File="Imperial Heavy Cargo Shuttle.ship.png";						Tier=6;	 	Difficulty=1; }
 
@@ -129,6 +134,8 @@ Ships
 	:~{ File="Emp Dreadnought-Class Heavy Crui.ship.png";					Tier=9;	Difficulty=1; } // Remove for Release Credit SR2
 	:~{ File="Emp Imperial Star Destroyer.ship.png";						Tier=11;	Difficulty=1; } // Remove for Release Credit SR2
 	:~{ File="Emp Quasar Fire-Class Cruiser-Carrier.ship.png";				Tier=12;	Difficulty=1; } // Remove for Release Credit SR2
+	:~{ File="Emp Dreadnought Mk2.ship.png";								Tier=10;	Difficulty=2; }
+	:~{ File="Venator II-Class Star Destroyer (Empire).ship.png";			Tier=14;	Difficulty=1; } // Remove for Release Credit SR2
 
 //	:~{ File="Emp_imperial_interdictor.ship.png";							Tier=15;	Difficulty=2; }
 //	:~{ File="Emp_imperial_dreadnought_heavy_cruiser.ship.png";				Tier=15;	Difficulty=2; }

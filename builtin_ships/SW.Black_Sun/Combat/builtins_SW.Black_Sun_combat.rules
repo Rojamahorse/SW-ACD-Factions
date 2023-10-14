@@ -40,6 +40,8 @@ Ships
 	
 
 	// Patrol ships
+	:~{ File="Undr_Razercrest.ship.png";          									Tier=6;  Difficulty=1; }
+	:~{ File="Undr_Z-95 Headhunter.ship.png";         								Tier=4;  Difficulty=2; }
 	:~{ File="Hyena-BS Droid Bomber.ship.png";          							Tier=4;  Difficulty=1; }
 	:~{ File="Gozanti-Class Cruiser-BS.ship.png";         							Tier=6;  Difficulty=2; }
 	:~{ File="Med-BS Starfighter.ship.png";         								Tier=4;  Difficulty=2; }

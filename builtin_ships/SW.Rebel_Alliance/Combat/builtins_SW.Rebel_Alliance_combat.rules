@@ -125,6 +125,7 @@ Ships
 	// :~{ File="Kaloth-class_Battlecruiser.ship.png";          						Tier=15;  Difficulty=2; } // Cost $0
 	// :~{ File="Galactic-class_Battle_Carrier.ship.png";          						Tier=16;  Difficulty=2; } // Cost $0
 	// :~{ File="Venator-class_Star_Destroyer.ship.png";          						Tier=17;  Difficulty=2; } // Cost $0
+	:~{ File="Venator II-Class Star Destroyer (Rebels).ship.png";          				Tier=15;  Difficulty=2; } // Cost $0
 
 	// Flagships
 	:~{ File="Rebel Pheonix Home.ship.png";         									Tier=18;  Difficulty=2; } // Cost $0
