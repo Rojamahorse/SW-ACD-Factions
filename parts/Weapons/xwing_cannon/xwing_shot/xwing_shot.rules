@@ -27,6 +27,7 @@ Components
 	Hit
 	{
 		Type = PenetratingHit
+		SourceShipLowCollisions = false
 		FactorEffectsWith = Targetable
 
 		CrewCollisions = {Enemies=true; Junk=true}
