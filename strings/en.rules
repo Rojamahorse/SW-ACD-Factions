@@ -47,6 +47,12 @@ Parts
 	DroidTurretIcon = "Starguard TL-D"
 	DroidTurretDesc = "Unleashing dual laser fury, the StarGuard TwinLaser Defense Turret offers unmatched protection against incoming threats."
 
+	// SW Multipurpose Turrets
+	SWTurretA = "StarGuard TwinLaser Defense Turret"
+	SWTurretAIcon = "SW MP-A"
+	SWTurretADesc = "Unleashing dual laser fury, the StarGuard TwinLaser Defense Turret offers unmatched protection against incoming threats."
+
+
 	// Mini TwinLaser Defense Turret
 	PDTurretTiny = "StarGuard TwinLaser Mini Point Defense Turret"
 	PDTurretTinyIcon = "Starguard TL-PD-Mini"
