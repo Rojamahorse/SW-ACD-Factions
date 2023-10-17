@@ -104,7 +104,7 @@ Ships
 	:~{ File="Republic Consular-Class CruiserO.ship.png";      								Tier=5;  Difficulty=3; }
 	:~{ File="Republic CR70 Corvette (Armed).ship.png";        								Tier=6;  Difficulty=3; }
 	:~{ File="Republic CR70 Corvette (Heavy).ship.png";       								Tier=7;  Difficulty=2; }
-	:~{ File="Remove_CR-90 Corvette.ship.png";    											Tier=7;  Difficulty=2; } // REMOVE for Release Credit WuzNab
+	:~{ File="Consular-Class_Cruiser_C70_RF.ship.png";    									Tier=7;  Difficulty=2; } // Wolfram
 	:~{ File="Remove_Arquitens-class Republic cruiser.ship.png";       						Tier=8;  Difficulty=3; } //  REMOVE for Release Credit WuzNab
 	:~{ File="Remove_Red Star Star Destroyer.ship.png";        								Tier=8;  Difficulty=2; } //  REMOVE for Release Credit WuzNab
 	:~{ File="Remove_Red Star Assault Ship.ship.png";        								Tier=9;  Difficulty=2; } //  REMOVE for Release Credit WuzNab
