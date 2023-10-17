@@ -1,11 +1,30 @@
-Part : <./Data/ships/terran/base_part_terran.rules>/Part
-{
-	NameKey = "Parts/SWTurretA"
-	IconNameKey = "Parts/SWTurretAIcon"
-	ID = SW.swturreta
+/* ----------------------------------------------------------------------------
+
+Introduction: SW:ACD 0.3.7
+
+Author : Lafiel
+
+Description:
+Currently prototyping. Everything is temporary.
+
+This is based on the 4 small side turrets on the CR90 Blackade Runner seen in the movie.
+Not implemented :
+ o It may serve as an escape pod
+ o shot color changing option?
+
+Versions:
+
+ o 1.0 Cosmoteer 0.15.14
+
+---------------------------------------------------------------------------- */ 
+Part : &<./Data/ships/terran/base_part_terran.rules>/Part
+{	
+	NameKey = "Parts/SWTurretB"
+	IconNameKey = "Parts/SWTurretBIcon"
+	ID = SW.swturretb
 	OtherIDs = []
 	EditorGroups = ["WeaponsEnergy","Defenses"]
-	DescriptionKey = "Parts/SWTurretADesc"
+	DescriptionKey = "Parts/SWTurretBDesc"
 	Resources
 	[
 		[steel, 80]
@@ -28,7 +47,7 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 	{
 		Texture
 		{
-			File = "turret01.png"
+			File = "turret02.png"
 			SampleMode = Linear
 		}
 		Size = [32, 64]
@@ -378,8 +397,8 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 				DamageLevels
 				[
 					{
-						File = "turret01base.png"
-						NormalsFile = "turret01base_normals.png"
+						File = "turret02base.png"
+						NormalsFile = "turret02base_normals.png"
 						Size = [1, 2]
 					}
 				]
@@ -390,8 +409,8 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 				DamageLevels
 				[
 					{
-						File = "turret01base.png"
-						NormalsFile = "turret01base_normals.png"
+						File = "turret02base.png"
+						NormalsFile = "turret02base_normals.png"
 						Size = [1, 2]
 					}
 				]
@@ -493,14 +512,14 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 		RecPower = &PowerPerSecond
 		RecCrew = (&CrewRequired) + (&RecPower) * 4
 
-		ROF = 2 / (&<turbolaser01_green.rules>/Components/Turret/FireInterval)
-		Range = &<turbolaser01_green.rules>/Components/BulletEmitter/Bullet/Range
-		Arc = deg(&<turbolaser01_green.rules>/Components/Turret/FiringArc)
-		TurretSpeed = deg(&<turbolaser01_green.rules>/Components/Turret/RotateSpeed)
-		ShotSpeed = &<turbolaser01_green.rules>/Components/BulletEmitter/Bullet/Speed
-		ShotHP = &<turbolaser01_green.rules>/Components/BulletEmitter/Bullet/Components/Targetable/Health
-		PowerPerShot = (&<turbolaser01_green.rules>/Components/BulletEmitter/ResourcesUsed) / 1000
-		PowerPerSecond = (&PowerPerShot) * 2 / (&<turbolaser01_green.rules>/Components/Turret/FireInterval)
+		ROF = 2 / (&<turbolaser02_green.rules>/Components/Turret/FireInterval)
+		Range = &<turbolaser02_green.rules>/Components/BulletEmitter/Bullet/Range
+		Arc = deg(&<turbolaser02_green.rules>/Components/Turret/FiringArc)
+		TurretSpeed = deg(&<turbolaser02_green.rules>/Components/Turret/RotateSpeed)
+		ShotSpeed = &<turbolaser02_green.rules>/Components/BulletEmitter/Bullet/Speed
+		ShotHP = &<turbolaser02_green.rules>/Components/BulletEmitter/Bullet/Components/Targetable/Health
+		PowerPerShot = (&<turbolaser02_green.rules>/Components/BulletEmitter/ResourcesUsed) / 1000
+		PowerPerSecond = (&PowerPerShot) * 2 / (&<turbolaser02_green.rules>/Components/Turret/FireInterval)
 		ShotPowerUsage = [&../PowerPerShot, &../PowerPerSecond]
 	}
 	StatsByCategory
@@ -641,15 +660,15 @@ TurretBase
 			{
 				AnimationFiles
 				[
-					"turret01_barrel.png"// Loop back to beginning and clamp there.
-					"turret01_barrel_1.png"
-					"turret01_barrel_2.png"				
+					"turret02_barrel.png"// Loop back to beginning and clamp there.
+					"turret02_barrel_1.png"
+					"turret02_barrel_2.png"				
 				]
 				NormalsAnimationFiles
 				[
-					"turret01_barrel_normals.png"// Loop back to beginning and clamp there.
-					"turret01_barrel_1_normals.png"
-					"turret01_barrel_2_normals.png"				
+					"turret02_barrel_normals.png"// Loop back to beginning and clamp there.
+					"turret02_barrel_1_normals.png"
+					"turret02_barrel_2_normals.png"				
 				]
 				Size = [1, 2]
 				AnimationInterval = 0.0625

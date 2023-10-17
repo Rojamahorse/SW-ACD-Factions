@@ -73,6 +73,7 @@ Ships
 	// Frigates
 	:~{ File="Umbaran Support Ship.ship.png";           				Tier=10;  Difficulty=1; }
 	:~{ File="Banking Clan Munificent-Class Star Frigate.ship.png";   	Tier=13;  Difficulty=1; }
+	:~{ File="Banking Clan Munificent-Class Star Frigate Alt.ship.png";   	Tier=13;  Difficulty=2; }
 /*
 //	:~{ File="Munificent-class_Assault_Frigate.ship.png"; 				Tier=13;  Difficulty=1; }
 //	:~{ File="Ginivex-class_Starfighter.ship.png"; 						Tier=8;  Difficulty=1; }
