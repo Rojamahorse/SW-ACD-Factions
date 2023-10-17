@@ -392,10 +392,10 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 			GetTargetFrom = Turret
 			Location = [0, 0]
 			OperationalToggle = IsOperational
-			Bullet = &<pd_shot/pd_shot.rules>
+			Bullet = &/COMMON_SHOTS/bluemedlasercannonshot // &<pd_shot/pd_shot.rules>
 			Spread = [-5.5d, 5.5d]
 			ResourceStorage = BatteryStorage
-			ResourcesUsed = 25 
+			ResourcesUsed = 45 
 			Burst = 2
 			BurstDelay = .075
 			UseResourcePerShotInBurst = true
@@ -433,7 +433,7 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 
 				: /BASE_SOUNDS/AudioExterior
 				{
-					Sound = "../common_effects/sounds/MassDriver.wav"
+					Sound = "../common_effects/sounds/TieGun1.wav"
 					Volume = .6
 					Delay = .1
 					SpeedVariation = .25

@@ -34,7 +34,10 @@ Ships
 	:~{ File="Emp_TIE knift.ship.png";										Tier=3;	 	Difficulty=2; } //Neojino
 	:~{ File="Emp_TIE slider.ship.png";										Tier=1;	 	Difficulty=2; } //Neojino
 	:~{ File="Emp_TIE Xelor.ship.png";										Tier=1;	 	Difficulty=2; } //Neojino
-	:~{ File="Emp-TIE Defender.ship.png";									Tier=3;	 	Difficulty=1; }
+	:~{ File="Emp-TIE Defender.ship.png";									Tier=3;	 	Difficulty=1; } //Neojino
+	:~{ File="Emp_TIE_ETA.ship.png";										Tier=1;	 	Difficulty=2; } //Neojino
+	:~{ File="Emp_TIE_Falcon_Bomber.ship.png";								Tier=4;	 	Difficulty=2; } //Neojino
+	:~{ File="Emp_TIE_M1.ship.png";											Tier=1;	 	Difficulty=2; } //Neojino
 
 //	:~{ File="Emp_tie_striker.ship.png";									Tier=2;	 	Difficulty=1; }
 //	:~{ File="Emp_tie_advanced_x1.ship.png";								Tier=3;	 	Difficulty=1; }
