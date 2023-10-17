@@ -100,7 +100,7 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 		{
 			Type = UIToggle
 			ToggleID = "SW.munition_type"
-			Default = 0
+			Default = 2
 			ToggledOnChoices = [0, 1, 2]
 			AlwaysAllowInBuildMode = true
 			RequiresCommand = false
@@ -117,7 +117,7 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 			Type = ToggledComponents
 			Toggle = RedMunitionToggle
 			IncludeInBlueprints = true
-			Components = &<small_laser_cannon_red.rules>/Components
+			Components = &<small_laser_cannon_redB.rules>/Components
 		}
 		
 		BlueMunitionToggle
@@ -131,7 +131,7 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 			Type = ToggledComponents
 			Toggle = BlueMunitionToggle
 			IncludeInBlueprints = true
-			Components = &<small_laser_cannon_blue.rules>/Components
+			Components = &<small_laser_cannon_blueB.rules>/Components
 		}
         		
 		GreenMunitionToggle
@@ -145,7 +145,7 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 			Type = ToggledComponents
 			Toggle = GreenMunitionToggle
 			IncludeInBlueprints = true
-			Components = &<small_laser_cannon_green.rules>/Components
+			Components = &<small_laser_cannon_greenB.rules>/Components
 		}
 
 		CommonReloadTimer
@@ -525,9 +525,9 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 	StatsByCategory
 	[
 		&~/TurretStats
-		&<small_laser_cannon_red.rules>/LaserStats
-		&<small_laser_cannon_blue.rules>/LaserStats
-		&<small_laser_cannon_green.rules>/LaserStats
+		&<small_laser_cannon_redB.rules>/LaserStats
+		&<small_laser_cannon_blueB.rules>/LaserStats
+		&<small_laser_cannon_greenB.rules>/LaserStats
 	]
 }
 TurretStats
@@ -654,21 +654,21 @@ TurretBase
 			ChainedTo = TurretLocationProxy
 			Location = [0, 0]
 			Rotation = 90d
-			Layer = "roof_turrets"
+			Layer = "roof_doodads"
 			ResetAnimationTrigger = CommonReloadResetTriggerProxy
 			AtlasSprite
 			{
 				AnimationFiles
 				[
-					"turret02_barrel.png"// Loop back to beginning and clamp there.
 					"turret02_barrel_1.png"
 					"turret02_barrel_2.png"				
+					"turret02_barrel.png"// Loop back to beginning and clamp there.
 				]
 				NormalsAnimationFiles
 				[
-					"turret02_barrel_normals.png"// Loop back to beginning and clamp there.
 					"turret02_barrel_1_normals.png"
 					"turret02_barrel_2_normals.png"				
+					"turret02_barrel_normals.png"// Loop back to beginning and clamp there.
 				]
 				Size = [1, 2]
 				AnimationInterval = 0.0625

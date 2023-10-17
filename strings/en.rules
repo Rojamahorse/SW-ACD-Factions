@@ -56,6 +56,10 @@ Parts
 	SWTurretBIcon = "SW MP-B"
 	SWTurretBDesc = "Unleashing dual laser fury, the StarGuard TwinLaser Defense Turret offers unmatched protection against incoming threats."
 
+	SWTurretC = "StarGuard TwinLaser Defense Turret"
+	SWTurretCIcon = "SW MP-C"
+	SWTurretCDesc = "Unleashing dual laser fury, the StarGuard TwinLaser Defense Turret offers unmatched protection against incoming threats."
+
 	// Mini TwinLaser Defense Turret
 	PDTurretTiny = "StarGuard TwinLaser Mini Point Defense Turret"
 	PDTurretTinyIcon = "Starguard TL-PD-Mini"

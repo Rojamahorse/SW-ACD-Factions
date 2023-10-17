@@ -24,7 +24,7 @@ Parts
 			&<Weapons/droid_turret/droid_turret.rules>/Part
 			&<Weapons/sw_turrets/swturret_A.rules>/Part
 			&<Weapons/sw_turrets/swturret_B.rules>/Part
-//			&<Weapons/droid_turret/droid_turret.rules>/Part
+			&<Weapons/sw_turrets/swturret_C.rules>/Part
 			&<Weapons/tiny_defense_turret/tiny_defense_turret.rules>/Part
 
 ]

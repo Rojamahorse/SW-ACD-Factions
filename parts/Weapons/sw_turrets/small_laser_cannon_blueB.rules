@@ -2,15 +2,15 @@ Components
 	{
 		ReloadProgressBar : &<swturret_B.rules>/ReloadProgressBarBase
 		{
-			LowColor = [0, 64, 0]
-			HighColor = [0, 255, 0]
+			LowColor = [0, 0, 64]
+			HighColor = [0, 0, 255]
 		}
 
 		BulletEmitterLeft : &<swturret_B.rules>/BulletEmitterBase
 		{
 			Type = BulletEmitter
 			Location = [1, 0.2]
-			Bullet = &/COMMON_SHOTS/greenmedlasercannonshot
+			Bullet = &/COMMON_SHOTS/bluemedlasercannonshot
 		}
 
 		BulletEmitterRight : BulletEmitterLeft
@@ -28,8 +28,16 @@ Components
 	
 			MediaEffects
 			[
-				&/COMMON_PARTICLES/SmallGreenLaserShoot
-			]
+				&/COMMON_PARTICLES/SmallBlueLaserShoot
+
+				: /BASE_SOUNDS/AudioExterior
+				{
+					Sound = "../common_effects/sounds/laserblaster.wav"
+					Volume = .3
+					MaxConcurrent = 10
+					SpeedVariation = .25
+				}
+			]	
 		}
 
 		FireEffectRight : FireEffectLeft
@@ -55,7 +63,7 @@ Components
 						File = "./Data/ships/common/light_blob.png"
 						Size = &<swturret_B.rules>/OperationalRoofLightingBase/Size
 						Z = &<swturret_B.rules>/OperationalRoofLightingBase/Z
-						VertexColor = [16, 255, 16]
+						VertexColor = [16, 16, 255]
 					}
 				]
 			}
@@ -78,7 +86,7 @@ Components
 						File = "./Data/ships/common/light_blob.png"
 						Size = &<swturret_B.rules>/OperationalRoofLightingBase/Size
 						Z = &<swturret_B.rules>/OperationalRoofLightingBase/Z
-						VertexColor = [16, 255, 16]
+						VertexColor = [16, 16, 255]
 					}
 				]
 			}
@@ -86,7 +94,7 @@ Components
 	}
 LaserStats
 {
-	NameKey = "StatCategories/SWDualGreenLaserCannonshot"
+	NameKey = "StatCategories/SWDualBlueLaserCannonshot"
 	Stats
 	{
 		ShieldDamagePerShot = &~/Components/BulletEmitterLeft/Bullet/Components/Hit/HitShield/HitEffects/0/Damage
