@@ -14,7 +14,7 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 	Size = [1, 2]
 	SelectionPriority = 1
 	SelectionTypeByRotation = true
-	MaxHealth = 8000
+	MaxHealth = 6000
 	TypeCategories = [weapon, uses_power, is_crewed]
 	ReceivableBuffs : ^/0/ReceivableBuffs []
 	ProhibitedBy : ^/0/ProhibitedBy [tall]
@@ -82,6 +82,7 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 			Type = UIToggle
 			ToggleID = "SW.munition_type"
 			Default = 0
+			AvailableChoices= [0, 1, 2]
 			ToggledOnChoices = [0, 1, 2]
 			AlwaysAllowInBuildMode = true
 			RequiresCommand = false
@@ -180,7 +181,7 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 		{
 			Type = ResourceStorage
 			ResourceType = battery
-			MaxResources = 4000
+			MaxResources = 3000
 			ReceiveResourceMediaEffects = &/COMMON_EFFECTS/PowerDeliver
 		}
 		BatteryConsumer
