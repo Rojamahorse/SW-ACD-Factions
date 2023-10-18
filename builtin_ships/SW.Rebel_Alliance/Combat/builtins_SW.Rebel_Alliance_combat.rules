@@ -103,8 +103,9 @@ Ships
 	// Cruisers
 	:~{ File="Rebel MC75 Mon Calamari Cruiser.ship.png"; 								Tier=15;  Difficulty=1; } // Cost $0
 	:~{ File="Rebel MC75 Mon Calamari Star Cru.ship.png";        						Tier=16;  Difficulty=2; } // Cost $0
-	:~{ File="Rebel Sphyrna Heavy Hammerhead C.ship.png";        						Tier=11;  Difficulty=2; } // Cost $0
-	:~{ File="Rebel Sphyrna-Class Hammerhead C.ship.png";      							Tier=12;  Difficulty=1; } // Cost $0
+	:~{ File="Rebel Sphyrna Heavy Hammerhead C.ship.png";        						Tier=7;  Difficulty=2; } // Cost $0
+	:~{ File="Rebel Sphyrna Hvy Hammerhead C.ship.png";        							Tier=8;  Difficulty=2; } // Cost $0
+	:~{ File="Rebel Sphyrna-Class Hammerhead C.ship.png";      							Tier=11;  Difficulty=1; } // Cost $0
 	// :~{ File="Viscount-class_Star_Defender.ship.png";          						Tier=10;  Difficulty=2; } // Cost $0
 	// :~{ File="MC85_Star_Cruiser.ship.png";          									Tier=13;  Difficulty=2; } // Cost $0
 	// :~{ File="MC60_Cruiser.ship.png";          										Tier=13;  Difficulty=2; } // Cost $0
