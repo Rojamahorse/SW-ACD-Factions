@@ -4,18 +4,19 @@ Tags = [civilian]
 Ships
 [
 	// Trade ships
-	:~{ File="Emp Firespray-31-Class Patr.ship.png";  Tier=3;  Tags : ~/Tags [trade] }
-	:~{ File="Emp Corellian G9 Rig Freighter.ship.png";        Tier=5;  Tags : ~/Tags [trade] }
-	:~{ File="Emp Corellian G9 Freighter Mk2.ship.png";        Tier=5;  Tags : ~/Tags [trade] }
-	:~{ File="Cargo Transporter Tiny Empire.ship.png";  Tier=1;  Tags : ~/Tags [trade] }
-	:~{ File="Cargo Transporter Small Empire.ship.png";        Tier=3;  Tags : ~/Tags [trade] }
+	:~{ File="Emp Firespray-31-Class Patr.ship.png";  		Tier=3;  Tags : ~/Tags [trade] }
+	:~{ File="Emp Corellian G9 Rig Freighter.ship.png";     Tier=5;  Tags : ~/Tags [trade] }
+	:~{ File="Emp Corellian G9 Freighter Mk2.ship.png";     Tier=5;  Tags : ~/Tags [trade] }
+	:~{ File="Cargo Transporter Tiny Empire.ship.png";  	Tier=1;  Tags : ~/Tags [trade] }
+	:~{ File="Cargo Transporter Small Empire.ship.png";     Tier=3;  Tags : ~/Tags [trade] }
 	:~{ File="Cargo Transporter Medium Empire.ship.png";    Tier=5;  Tags : ~/Tags [trade] }
-	:~{ File="Pelta-Class Frigate (Empire).ship.png";    Tier=7;  Tags : ~/Tags [trade] }
-	:~{ File="Eta-Class Supply Barge Emp.ship.png";    Tier=7;  Tags : ~/Tags [trade] }
-	:~{ File="Emp_Eta-Class Supply Barge.ship.png";    Tier=7;  Tags : ~/Tags [trade] } //Neojino
-	:~{ File="Emp_Eta-Class Supply Barge2.ship.png";    Tier=7;  Tags : ~/Tags [trade] } //Neojino
-	:~{ File="Cargo Transporter Large Empire.ship.png"; Tier=9;  Tags : ~/Tags [trade] }
-	:~{ File="Cargo Transporter Huge Empire.ship.png";    Tier=10;  Tags : ~/Tags [trade] }
+	:~{ File="Pelta-Class Frigate (Empire).ship.png";    	Tier=7;  Tags : ~/Tags [trade] }
+	:~{ File="Eta-Class Supply Barge Emp.ship.png";    		Tier=7;  Tags : ~/Tags [trade] }
+	:~{ File="Emp_Eta-Class Supply Barge.ship.png";    		Tier=7;  Tags : ~/Tags [trade] } //Neojino
+	:~{ File="Emp_Eta-Class Supply Barge2.ship.png";    	Tier=7;  Tags : ~/Tags [trade] } //Neojino
+	:~{ File="Cargo Transporter Large Empire.ship.png"; 	Tier=9;  Tags : ~/Tags [trade] }
+	:~{ File="Cargo Transporter Huge Empire.ship.png";    	Tier=10;  Tags : ~/Tags [trade] }
+	:~{ File="Emp Lamda-Class T-4a Civ.ship.png";     		Tier=3;  Tags : ~/Tags [trade] }
 	:~{ File="Emp Auklet.ship.png";     Tier=3;  Tags : ~/Tags [trade] }
 	:~{ File="Emp Dovekie.ship.png";    Tier=3;  Tags : ~/Tags [trade] }
 	:~{ File="Emp Cormorant.ship.png";  Tier=5;  Tags : ~/Tags [trade] }

@@ -38,6 +38,9 @@ Ships
 	:~{ File="Emp_TIE_ETA.ship.png";										Tier=1;	 	Difficulty=2; } //Neojino
 	:~{ File="Emp_TIE_Falcon_Bomber.ship.png";								Tier=4;	 	Difficulty=2; } //Neojino
 	:~{ File="Emp_TIE_M1.ship.png";											Tier=1;	 	Difficulty=2; } //Neojino
+	:~{ File="Emp Lamda-Class T-4a Mk2.ship.png";							Tier=4;		Difficulty=2; } 
+	:~{ File="Emp Crusader-Class Cruiser Mk2.ship.png";						Tier=9;	 	Difficulty=2; } 
+	:~{ File="Emp Carrack-class LC Mk2.ship.png";							Tier=8;	 	Difficulty=2; } 
 
 //	:~{ File="Emp_tie_striker.ship.png";									Tier=2;	 	Difficulty=1; }
 //	:~{ File="Emp_tie_advanced_x1.ship.png";								Tier=3;	 	Difficulty=1; }

@@ -32,7 +32,7 @@ Components
 
 				: /BASE_SOUNDS/AudioExterior
 				{
-					Sound = "../common_effects/sounds/laserblaster.wav"
+					Sound = "../common_effects/sounds/sw_G400_1.wav"
 					Volume = .3
 					MaxConcurrent = 10
 					SpeedVariation = .25
