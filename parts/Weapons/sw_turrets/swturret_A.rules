@@ -31,7 +31,7 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 			File = "turret01.png"
 			SampleMode = Linear
 		}
-		Size = [32, 64]
+		Size = [32, 48]
 	}
 	
 	Components : ^/0/Components
@@ -114,7 +114,7 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 			IncludeInBlueprints = true
 			Components = &<small_laser_cannon_blueA.rules>/Components
 		}
-        		
+        
 		GreenMunitionToggle
 		{
 			Type = ModeToggle
@@ -543,9 +543,13 @@ BulletEmitterBase
 	GetTargetFrom = Turret
 	Location = [0.8, 0]
 	FireDelay = 0.03
+	Spread = [-5.5d, 5.5d]
 	ResourceStorage = BatteryStorage
-	ResourcesUsed = 50
-	MinResourcesUsed = 50
+	ResourcesUsed = 100
+	MinResourcesUsed = 100
+	Burst = 2
+	BurstDelay = .075
+	UseResourcePerShotInBurst = true
 	Bullet = &/COMMON_SHOTS/redmedlasercannonshot
 }
 ReloadProgressBarBase

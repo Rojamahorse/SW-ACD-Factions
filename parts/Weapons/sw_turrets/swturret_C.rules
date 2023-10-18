@@ -1,22 +1,3 @@
-/* ----------------------------------------------------------------------------
-
-Introduction: SW:ACD 0.3.7
-
-Author : Lafiel
-
-Description:
-Currently prototyping. Everything is temporary.
-
-This is based on the 4 small side turrets on the CR90 Blackade Runner seen in the movie.
-Not implemented :
- o It may serve as an escape pod
- o shot color changing option?
-
-Versions:
-
- o 1.0 Cosmoteer 0.15.14
-
----------------------------------------------------------------------------- */ 
 Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 {	
 	NameKey = "Parts/SWTurretC"
@@ -33,7 +14,7 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 	Size = [1, 2]
 	SelectionPriority = 1
 	SelectionTypeByRotation = true
-	MaxHealth = 4000
+	MaxHealth = 8000
 	TypeCategories = [weapon, uses_power, is_crewed]
 	ReceivableBuffs : ^/0/ReceivableBuffs []
 	ProhibitedBy : ^/0/ProhibitedBy [tall]
@@ -50,7 +31,7 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 			File = "turret03.png"
 			SampleMode = Linear
 		}
-		Size = [32, 64]
+		Size = [32, 48]
 	}
 	
 	Components : ^/0/Components
@@ -199,7 +180,7 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 		{
 			Type = ResourceStorage
 			ResourceType = battery
-			MaxResources = 2000
+			MaxResources = 4000
 			ReceiveResourceMediaEffects = &/COMMON_EFFECTS/PowerDeliver
 		}
 		BatteryConsumer
