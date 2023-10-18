@@ -4,17 +4,17 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 	IconNameKey = "Parts/SWTurretAIcon"
 	ID = SW.swturreta
 	OtherIDs = []
-	EditorGroups = ["WeaponsEnergy","Defenses"]
+	EditorGroups = ["WeaponsEnergy", "TechI", "TechII"]
 	DescriptionKey = "Parts/SWTurretADesc"
 	Resources
 	[
-		[steel, 80]
-		[coil, 15]
+		[steel, 48]
+		[coil, 18]
 	]
 	Size = [1, 2]
 	SelectionPriority = 1
 	SelectionTypeByRotation = true
-	MaxHealth = 4000
+	MaxHealth = 8000
 	TypeCategories = [weapon, uses_power, is_crewed]
 	ReceivableBuffs : ^/0/ReceivableBuffs []
 	ProhibitedBy : ^/0/ProhibitedBy [tall]
@@ -180,7 +180,7 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 		{
 			Type = ResourceStorage
 			ResourceType = battery
-			MaxResources = 2000
+			MaxResources = 4000
 			ReceiveResourceMediaEffects = &/COMMON_EFFECTS/PowerDeliver
 		}
 		BatteryConsumer
