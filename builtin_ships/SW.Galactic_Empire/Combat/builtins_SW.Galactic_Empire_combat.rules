@@ -124,6 +124,7 @@ Ships
 	:~{ File="Imperial Venator Star Destroyer_REMOVE.ship.png";				Tier=14;	Difficulty=2; }  // Remove for Release Credit SR2
 	:~{ File="Interdictor Star Destroyer_REMOVE.ship.png";					Tier=15;	Difficulty=2; }  // Remove for Release Credit SR2
 	:~{ File="Victory Class Star Destroyer_REMOVE.ship.png";				Tier=16;	Difficulty=2; }  // Remove for Release Credit SR2
+	:~{ File="Emp V-Class Star Frigate Mk2.ship.png";						Tier=14;	Difficulty=2; }  
 	:~{ File="Imperial Quasar Fire Class Crusier_REMOVE.ship.png";			Tier=17;	Difficulty=2; }  // Remove for Release Credit SR2
 
 	// Cruisers	

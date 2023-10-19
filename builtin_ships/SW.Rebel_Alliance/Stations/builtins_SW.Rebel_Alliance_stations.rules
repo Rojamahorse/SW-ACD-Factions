@@ -4,9 +4,10 @@ Tags = [station]
 Ships
 [
 	// Civilian stations
-	:~{ File="Small Rebel Trade Station.ship.png"; Tier=4;  Tags : ~/Tags [trade_station];    StasisIcon="Small Rebel Trade Station.png" }
-	:~{ File="Med Rebel Trade Station.ship.png";   Tier=10; Tags : ~/Tags [trade_station];    StasisIcon="Med Rebel Trade Station.png" }
-	:~{ File="Large Rebel Trade Station.ship.png"; Tier=16; Tags : ~/Tags [trade_station];    StasisIcon="Large Rebel Trade Station.png" }
+	:~{ File="Small Rebel Trade Station.ship.png"; 	Tier=4;  Tags : ~/Tags [trade_station];    	StasisIcon="Small Rebel Trade Station.png" }
+	:~{ File="Med Rebel Trade Station.ship.png";   	Tier=10; Tags : ~/Tags [trade_station];    	StasisIcon="Med Rebel Trade Station.png" }
+	:~{ File="New Republic Rebel - Station.ship.png";   			Tier=6; Tags : ~/Tags [trade_station];    		StasisIcon="Med Rebel Trade Station.png" }
+	:~{ File="Large Rebel Trade Station.ship.png"; 	Tier=16; Tags : ~/Tags [trade_station];    	StasisIcon="Large Rebel Trade Station.png" }
 
 	// Military stations
 	:~{ File="Promise of the Rebel Alliance.ship.png";      Tier=6;  SpawnTier=3;  Tags : ~/Tags [military_station]; StasisIcon="Promise of the Rebel Alliance.png" }

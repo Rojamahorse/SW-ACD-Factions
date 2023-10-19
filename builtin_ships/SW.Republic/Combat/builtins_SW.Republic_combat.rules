@@ -23,7 +23,7 @@ Ships
 	:~{ File="Republic Havoc Marauder.ship.png";     										Tier=2;  Difficulty=2; }
 	:~{ File="ARC-170 Mk II.ship.png";     													Tier=2;  Difficulty=2; }
 	:~{ File="Republic Nu-Class AS Mk2.ship.png";     										Tier=4;  Difficulty=2; }
-	:~{ File="C-9979 Landing Craft (NRep) Atk.ship.png";     										Tier=4;  Difficulty=2; }
+	:~{ File="C-9979 Landing Craft (NRep) Atk.ship.png";     								Tier=4;  Difficulty=2; }
 //	:~{ File="Delta_7_Aethersprite_class_Light_Interceptor.ship.png";           			Tier=1;  Difficulty=2; }
 //	:~{ File="Eta_2_Actis_class_Light_Interceptor.ship.png";           						Tier=2;  Difficulty=1; }
 //	:~{ File="BTL_B_Y_wing_Starfighter_Bomber.ship.png";           							Tier=3;  Difficulty=1; }
@@ -54,11 +54,12 @@ Ships
 //	:~{ File="Charger_c70_Combat_Retrofit.ship.png";           					Tier=6;  Difficulty=1; }
 
 	// Frigates
+	:~{ File="Republic Light Assault Shuttle.ship.png";           				Tier=6;  Difficulty=2; }
 	:~{ File="Republic Assault Frigate Mk II.ship.png";           				Tier=7;  Difficulty=2; }
 	:~{ File="Republic Assault Frigate Mk III.ship.png";           				Tier=7;  Difficulty=2; }
 	:~{ File="Rep Pelta-class Assault Ship MkI.ship.png";           			Tier=9;  Difficulty=2; }
 //	:~{ File="Pelta_class_Frigate.ship.png";           							Tier=7;  Difficulty=2; }
-//	:~{ File="DP20_Frigate.ship.png";           								Tier=8;  Difficulty=1; }
+	:~{ File="DP20 Frigate (Republic).ship.png";           						Tier=8;  Difficulty=1; }
 //	:~{ File="DP23_Frigate.ship.png";           								Tier=9;  Difficulty=1; }
 //	:~{ File="Victory_II_class_Frigate.ship.png";           					Tier=10;  Difficulty=1; }
 //	:~{ File="Nebulon_C_Frigate.ship.png";           							Tier=11;  Difficulty=1; }
@@ -91,6 +92,9 @@ Ships
 //	:~{ File="Inexpugnable_class_Tactical_Command_Ship.ship.png";           	Tier=18;  Difficulty=1; }
 //	:~{ File="Endurance_class_Fleet_Carrier.ship.png";           				Tier=18;  Difficulty=1; }
 	:~{ File="Rep Secutor-Class Star Destroyer.ship.png";           			Tier=18;  Difficulty=1; }
+	:~{ File="V-class CG Star Destroyer (Republic).ship.png";      				Tier=12;  Difficulty=2; } 
+	:~{ File="V-class Nuke Star Destroyer (Republic).ship.png";      			Tier=13;  Difficulty=2; } 
+	:~{ File="Victory-class Star Destroyer (Republic).ship.png";      			Tier=14;  Difficulty=2; } 
 
 
 	:~{ File="Remove_Naboo-Star-Fighter.ship.png";       									Tier=2;  Difficulty=3; } //  REMOVE for Release Credit WuzNab
