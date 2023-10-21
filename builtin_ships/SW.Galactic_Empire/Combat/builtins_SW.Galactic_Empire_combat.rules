@@ -117,6 +117,7 @@ Ships
 //	:~{ File="Emp_mandator_iii_class_dreadnought.ship.png";					Tier=14;	Difficulty=1; }
 //	:~{ File="Emp_gladiator_class_star_destroyer.ship.png";					Tier=14;	Difficulty=1; }
 //	:~{ File="Emp_imperial_star_destroyer_mark_ii.ship.png";				Tier=14;	Difficulty=2; }
+	:~{ File="IPV-1 System Patrol Craft.ship.png";							Tier=6;		Difficulty=2; } // CJ - Orig
 
 	:~{ File="Immobilizer 420 Cruiser.ship.png";							Tier=13;	Difficulty=2; }  // Remove for Release Credit SR2
 	:~{ File="Galdiator Class Star Destroyer_REMOVE.ship.png";				Tier=13;	Difficulty=2; }  // Remove for Release Credit SR2
@@ -126,6 +127,7 @@ Ships
 	:~{ File="Victory Class Star Destroyer_REMOVE.ship.png";				Tier=16;	Difficulty=2; }  // Remove for Release Credit SR2
 	:~{ File="Emp V-Class Star Frigate Mk2.ship.png";						Tier=14;	Difficulty=2; }  
 	:~{ File="Imperial Quasar Fire Class Crusier_REMOVE.ship.png";			Tier=17;	Difficulty=2; }  // Remove for Release Credit SR2
+	:~{ File="Emp Onager-Class Star Destroyer.ship.png";					Tier=12;	Difficulty=1; }
 
 	// Cruisers	
 	:~{ File="Emp Cantwell-Class Arrestor Crui.ship.png";					Tier=8;	Difficulty=1; }
