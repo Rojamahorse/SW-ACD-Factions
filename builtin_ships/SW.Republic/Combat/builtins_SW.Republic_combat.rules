@@ -24,6 +24,7 @@ Ships
 	:~{ File="ARC-170 Mk II.ship.png";     													Tier=2;  Difficulty=2; }
 	:~{ File="Republic Nu-Class AS Mk2.ship.png";     										Tier=4;  Difficulty=2; }
 	:~{ File="C-9979 Landing Craft (NRep) Atk.ship.png";     								Tier=4;  Difficulty=2; }
+	:~{ File="Republic Gunship Cannonade.ship.png";     									Tier=5;  Difficulty=2; }
 //	:~{ File="Delta_7_Aethersprite_class_Light_Interceptor.ship.png";           			Tier=1;  Difficulty=2; }
 //	:~{ File="Eta_2_Actis_class_Light_Interceptor.ship.png";           						Tier=2;  Difficulty=1; }
 //	:~{ File="BTL_B_Y_wing_Starfighter_Bomber.ship.png";           							Tier=3;  Difficulty=1; }
@@ -95,6 +96,7 @@ Ships
 	:~{ File="V-class CG Star Destroyer (Republic).ship.png";      				Tier=12;  Difficulty=2; } 
 	:~{ File="V-class Nuke Star Destroyer (Republic).ship.png";      			Tier=13;  Difficulty=2; } 
 	:~{ File="Victory-class Star Destroyer (Republic).ship.png";      			Tier=14;  Difficulty=2; } 
+	:~{ File="Venator-Class Star Destroyer (Command Cruiser).ship.png";      	Tier=13;  Difficulty=2; } 
 
 
 	:~{ File="Remove_Naboo-Star-Fighter.ship.png";       									Tier=2;  Difficulty=3; } //  REMOVE for Release Credit WuzNab
