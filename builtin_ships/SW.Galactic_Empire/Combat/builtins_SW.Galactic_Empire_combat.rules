@@ -86,6 +86,7 @@ Ships
 	:~{ File="Imperial Raider Corvette_REMOVE.ship.png";					Tier=6;		Difficulty=1; } // Remove for Release Credit SR2
 	:~{ File="Imperial Raider Corvette (Spawn)_REMOVE.ship.png";			Tier=7;		Difficulty=1; } // Remove for Release Credit SR2
 	:~{ File="Imperial Raider (Beacon)_REMOVE.ship.png";					Tier=8;		Difficulty=1; } // Remove for Release Credit SR2
+	:~{ File="Bayonet-Class Patrol Cruiser.ship.png";						Tier=7;		Difficulty=2; } // Credit ClassicJam
 
 	// Corvettes
 //	:~{ File="Emp_vigil_class_corvette.ship.png";							Tier=5;		Difficulty=1; }

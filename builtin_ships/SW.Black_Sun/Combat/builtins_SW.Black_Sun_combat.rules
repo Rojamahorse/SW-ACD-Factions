@@ -40,6 +40,8 @@ Ships
 	
 
 	// Patrol ships
+	:~{ File="Mandalorian Kom'rk-Class-O Fight.ship.png";          					Tier=6;  Difficulty=1; } //ClassicJam
+	:~{ File="Med-BS Starfighter B.ship.png";          								Tier=6;  Difficulty=1; } //ClassicJam
 	:~{ File="Undr_Razercrest.ship.png";          									Tier=6;  Difficulty=1; } //Neojino
 	:~{ File="Undr_Z-95 Headhunter.ship.png";         								Tier=4;  Difficulty=2; } //Neojino
 	:~{ File="Hyena-BS Droid Bomber.ship.png";          							Tier=4;  Difficulty=1; }
