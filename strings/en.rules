@@ -3,7 +3,9 @@ Parts
 	//X-Wing Cannons
 	xwingCannons = "X-Wing Cannon"
 	xwingCannonsDesc = "X-Wing Cannons are small weapons that can be placed behind and hidden under armor pieces.  They are useful in medium to long range engagements"
-	
+
+
+
 	// Standard X-Wing Cannons
 	xwingCannon = "X-Wing Standard Cannon"
 	xwingCannonIcon = "X-Wing SC"
@@ -42,7 +44,13 @@ Parts
 	tieMinigunLongLeftIcon = "Long Repeater Cannon (Side)"
 	tieLMinigunLongDesc = "Rapid-firing Long Repeater Cannon, allows for placement behind and hidden under armor pieces."
 
-
+	// RG-9 Cannons
+	RG9Cannon = "RG-9 Laser Cannon"
+	RG9CannonIcon = "RG-9 LC"
+	RG9CannonLeft = "RG-9 Laser Cannon (Side)"
+	RG9CannonLeftIcon = "RG-9 LC (Side)"
+	RG9CannonDesc = "RG-9 Laser Cannon by <green>Borstel</green>; A quick-firing, versatile small laser mainly used in fighters and small-to-medium ships."
+	RG9CannonLeftDesc = "RG-9 Laser Cannon by <green>Borstel</green>; A quick-firing, versatile small laser mainly used in fighters and small-to-medium ships."
 
 	// SW Multipurpose Turrets
 
@@ -77,6 +85,7 @@ Stats
 	SWFighterWeapons = "Laser Bolt"
 	MinigunShot = "Repeater Laser"
 	SWPDTurretTiny = "Point Defense Turret"
+	SWR9Shot = "R9 Shot"
 }
 
 DecalGroups
