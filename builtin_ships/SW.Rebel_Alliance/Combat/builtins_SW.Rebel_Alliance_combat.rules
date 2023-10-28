@@ -31,6 +31,9 @@ Ships
 	:~{ File="Rebel-ASF-01 B-Wing Starfighter.ship.png";         						Tier=4;  Difficulty=1; } // Cost $0
 												
 	// Patrol ships
+	:~{ File="ASF-01 B-Wing Hvy Starfighter G.ship.png";          						Tier=6;  Difficulty=1; } // Cost $0
+	:~{ File="ASF-01 B-Wing Hvy Starfighter R.ship.png";          						Tier=6;  Difficulty=1; } // Cost $0
+	:~{ File="Rebel Gunship G.ship.png";          										Tier=6;  Difficulty=1; } // Cost $0
 	:~{ File="C-9979 Landing Craft (Reb) Atk.ship.png";          						Tier=5;  Difficulty=1; } // Cost $0
 	:~{ File="Rebel-Millenium Falcon (Combat Loadout).ship.png";          				Tier=5;  Difficulty=1; } // Cost $0
 	:~{ File="Millenium Falcon (Combat Loadout).ship.png";         						Tier=6;  Difficulty=2; } // Cost $0
