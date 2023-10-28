@@ -3,8 +3,8 @@ Part : &<long_xwing_cannon.rules>/Part
 	NameKey = "Parts/xwingCannonLongLeft"
 	IconNameKey = "Parts/xwingCannonLongLeftIcon"
 	ID = SW.long_fighter_xwing_cannon_left
-	OtherIDs = [SW.long_fighter_xwing_cannon_right]
-	FlipWhenLoadingIDs = [SW.long_fighter_xwing_cannon_right]
+	OtherIDs = [SW.x_wing_laserL,SW.long_fighter_xwing_cannon_right,SW.x_wing_laserR]
+	FlipWhenLoadingIDs = [SW.x_wing_laserR,SW.long_fighter_xwing_cannon_right]
 	DescriptionKey = "Parts/xwingCannonLongDesc"
 	IsFlippable = true
 	ProhibitRects

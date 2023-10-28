@@ -3,8 +3,8 @@ Part : &<tie_minigun.rules>/Part
 	NameKey = "Parts/tieMinigunLeft"
 	IconNameKey = "Parts/tieMinigunLeftIcon"
 	ID = SW.fighter_tie_minigun_left
-	OtherIDs = [SW.fighter_tie_minigun_right]
-	FlipWhenLoadingIDs = [SW.fighter_tie_minigun_right]
+	OtherIDs = [SW.fixed_laser_cannonL,SW.fighter_tie_minigun_right,SW.fixed_laser_cannonR]
+	FlipWhenLoadingIDs = [SW.fixed_laser_cannonR,SW.fighter_tie_minigun_right]
 	DescriptionKey = "Parts/tieLMinigunDesc"
 	IsFlippable = true
 	ProhibitRects
