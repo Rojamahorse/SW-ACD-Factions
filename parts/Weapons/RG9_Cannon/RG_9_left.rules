@@ -11,8 +11,8 @@ Part :  <./Data/ships/terran/base_part_terran.rules>/Part
 	SelectionTypeID = "f_cannonsa"
 	Resources
 	[
-		[steel, 12]
-		[coil, 10]
+		[steel, 22]
+		[coil, 8]
 	]
 	TypeCategories = [weapon, uses_power]
 	ReceivableBuffs : ^/0/ReceivableBuffs []
@@ -314,7 +314,7 @@ Part :  <./Data/ships/terran/base_part_terran.rules>/Part
 
 				: /BASE_SOUNDS/AudioExterior
 				{
-					Sound = "../common_effects/sounds/sw_RG-9 Sound2.wav"
+					Sound = "../common_effects/sounds/sw_HOUNDSTOOTH_1.WAV"
 					Volume = .3
 					SpeedVariation = .25
 				}
