@@ -1,0 +1,83 @@
+Range = 275
+IdealRange = 200
+ClipRangeToTarget = true
+
+BeamMediaEffects
+[
+	{
+		Type = Beam
+		BeamSprite
+		{
+			Texture
+			{
+				File = "beam_base.png"
+				SampleMode = Linear
+				MipLevels = 1
+				UVMode = Clamp
+			}
+			_noiseTexture
+			{
+				File = ./Data/common_effects/particles/noise_marble.png
+				SampleMode = Linear
+				MipLevels = max
+				UVMode = Wrap
+			}
+			Shader = "./Data/shots/ion_beam/ion_beam.shader"
+			_extraBeginLength = 0
+			_extraEndLength = 0.5
+			_sizePulseFactor = 1.2
+			_sizePulseInterval = .1
+			_sizePulseUOffsetFactor = -.03
+			_endCapSize = 4
+			Size = [100%, .8]
+			VertexColor = [255, 255, 255, 255]
+			TargetBlendMode
+			{
+				SourceRgbFactor = SourceAlpha
+				DestRgbFactor = One
+				RgbOperator = Add
+				SourceAlphaFactor = InverseDestAlpha
+				DestAlphaFactor = One
+				AlphaOperator = Add
+			}
+		}
+		FadeInTime = .01
+		FadeOutTime = .25
+		Bucket = Upper1
+		RandomTimeOffset = [0, 1]
+		ExtraEndLength = .5
+		ThicknessOverIntensity = [0, 1]
+		ClampIntensity = [0, 100]
+		IntensityExponent = 0.75
+	}
+]
+
+HitNothing
+{
+	HitEffects
+	[
+		{
+			Type = ExplosiveDamage
+			TotalDamage = 500
+			Radius = 2
+            Slices = 1
+			Filter
+			{
+				Ships = false
+				Shields = false
+				Bullets = true
+				OnlyBulletCategories = [missile, bullet, mine]
+			}
+		}
+	]
+
+	MediaEffects
+	[
+		&<particles/sw_beam_shot_sparks.rules>
+		&<particles/sw_beam_shot_spikes.rules>
+	]
+}
+
+HitShield = &HitNothing
+HitOperational = &HitNothing
+HitStructural = &HitNothing
