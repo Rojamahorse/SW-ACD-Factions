@@ -170,32 +170,32 @@ Def
 			[
 				{
 					Rf = 1
-					Gf = 1
-					Bf = 1
+					Gf = 0.5 // 1
+					Bf = 0.5 // 1
 					Af = 0
 				}
 				{
 					Rf = 1
-					Gf = 1
-					Bf = 1
+					Gf = 0.3 // 1
+					Bf = 0.3 // 1
 					Af = 0.5882353
 				}
 				{
 					Rf = 1
-					Gf = 1
-					Bf = 1
+					Gf = 0.2 // 1
+					Bf = 0.2 // 1
 					Af = 0.3137255
 				}
 				{
 					Rf = 1
-					Gf = 1
-					Bf = 1
+					Gf = 0.1 // 1
+					Bf = 0.1 // 1
 					Af = 0.15686275
 				}
 				{
 					Rf = 1
-					Gf = 1
-					Bf = 1
+					Gf = 0 // 1
+					Bf = 0 // 1
 					Af = 0
 				}
 			]
@@ -245,13 +245,13 @@ Def
 		UvRectIn
 		BaseSize
 		{
-			X = 2.5
-			Y = 2.5
+			X = .5 // X = 2.5
+			Y = .5 // Y = 2.5
 		}
 		Offset
 		{
 			X = 0
-			Y = 0.5
+			Y = 0.1 // Y = 0.5
 		}
 		Name = ""
 	}
@@ -276,15 +276,15 @@ Def
 		_color1
 		{
 			X = 1
-			Y = 0.0745
-			Z = 0
+			Y = 0.5 // 0.0745
+			Z = 0.2 // 0
 			W = 1
 		}
 		_color2
 		{
 			X = 1
-			Y = 0.727
-			Z = 0.259
+			Y = 0.3 //0.727
+			Z = 0.1 //0.259
 			W = 1
 		}
 		_noiseTexture
@@ -297,7 +297,7 @@ Def
 		}
 		Texture
 		{
-			File = ./Data/shots/bullet_med/particles/bullet_trail_med.png
+			File = "bullet_trail_med.png" // ./Data/shots/bullet_med/particles/bullet_trail_med.png
 			MipLevels = 8
 			SampleMode = Linear
 		}

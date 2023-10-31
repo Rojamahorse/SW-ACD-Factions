@@ -148,7 +148,7 @@ Components
 		{
 			Texture
 			{
-				File = "bullet_mortar.png"
+				File = "claser_pink.png"
 				SampleMode = Linear
 				MipLevels = max
 			}
@@ -172,7 +172,7 @@ Components
 				SampleMode = Linear
 			}
 			Size = [18, 9]
-			VertexColor = [255, 100, 0]
+			VertexColor = [255, 192, 203] // VertexColor = [255, 100, 0]
 			TargetBlendMode = Add
 			Shader = "./Data/common_effects/fancy_light.shader"
 			_litReflectiveStrength = 24

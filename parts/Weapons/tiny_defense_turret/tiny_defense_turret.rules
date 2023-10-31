@@ -114,7 +114,7 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 		{
 			Type = ResourceStorage
 			ResourceType = battery
-			MaxResources = 2000			
+			MaxResources = 1500			
 		}
 		BatteryConsumer
 		{
@@ -302,8 +302,8 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 			Bullet = &<pd_shot/pd_shot.rules>
 			Spread = [-5d, 5d]
 			ResourceStorage = BatteryStorage
-			ResourcesUsed = 35 //20
-			Burst = 6 //3
+			ResourcesUsed = 50 //20
+			Burst = 2 //3
 			BurstDelay = .075
 			UseResourcePerShotInBurst = true
 //			Recoil = 240

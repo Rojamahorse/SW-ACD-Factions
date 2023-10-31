@@ -129,7 +129,7 @@ Def
 	{
 		Texture
 		{
-			File = ./Data/shots/bullet_large/particles/bullet_hit_large.png
+			File = "bullet_hit_large.png" // ./Data/shots/bullet_large/particles/bullet_hit_large.png
 			MipLevels = 8
 			SampleMode = Linear
 		}
