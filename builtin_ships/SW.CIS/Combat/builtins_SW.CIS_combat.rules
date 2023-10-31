@@ -8,6 +8,7 @@ Ships
 	:~{ File="P-38 Magnaguard Starfighter R.ship.png";         			Tier=3;  Difficulty=1; }
 	:~{ File="P-38 Magnaguard Starfighter Y.ship.png";          		Tier=2;  Difficulty=2; }
 	:~{ File="P-38 Rogue-Class Starfighter Mk2.ship.png";          		Tier=3;  Difficulty=2; }
+	:~{ File="P-42 Rogue-Class Starfighter.ship.png";          			Tier=3;  Difficulty=2; }
 	:~{ File="Vulture-Class Droid Starfighter.ship.png";       			Tier=1;  Difficulty=1; }
 	:~{ File="C-9979 Landing Craft (CIS) Atk.ship.png"; 				Tier=1;  Difficulty=1; }
 /*
