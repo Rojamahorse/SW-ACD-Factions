@@ -307,8 +307,8 @@ EmitterDef
 			ValueType = Color
 			Value
 			{
-				Rf = 1
-				Gf = 0
+				Rf = 0.8
+				Gf = 1
 				Bf = 0
 				Af = 0.11764706
 			}

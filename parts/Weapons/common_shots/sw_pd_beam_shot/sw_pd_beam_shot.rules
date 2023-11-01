@@ -22,7 +22,7 @@ BeamMediaEffects
 				MipLevels = max
 				UVMode = Wrap
 			}
-			Shader = "./Data/shots/ion_beam/ion_beam.shader"
+			Shader = "ion_beam.shader" // "./Data/shots/ion_beam/ion_beam.shader"
 			_extraBeginLength = 0
 			_extraEndLength = 0.5
 			_sizePulseFactor = 1.2
@@ -59,7 +59,7 @@ HitNothing
 		{
 			Type = ExplosiveDamage
 			TotalDamage = 500
-			Radius = 2
+			Radius = 1
             Slices = 1
 			Filter
 			{
