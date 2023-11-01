@@ -81,7 +81,7 @@ PIX_OUTPUT pix(in VERT_OUTPUT_BEAM input) : SV_TARGET
 	innerCombined = (1 - innerCombined) + noiseBase + innerGrad;
 	innerCombined = innerCombined * innerCombined;
 
-	float4 colorA = float4(0.35, 0.35, 0.1, 1); //float4(0.5, 0.219, 0.213, 1); //desired color * 0.5
+	float4 colorA = float4(0.3, 0.3, 0, 1); //float4(0.5, 0.219, 0.213, 1); //desired color * 0.5
 	float4 red = float4(1, 0, 0, 1); 
 	float4 layer1 = colorA * innerCombined * innerSharp; //tinting the processed noise and masking it with innerSharp
 	float4 col = lerp(red, layer1, innerGrad); //blending in red using a cylinder gradient
