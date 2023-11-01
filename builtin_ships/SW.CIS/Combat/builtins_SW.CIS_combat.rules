@@ -84,6 +84,7 @@ Ships
 */	
 
 	// Destroyers
+	:~{ File="CIS Recusant-Class Light Destroy.ship.png"; 				Tier=9;  Difficulty=1; }
 	:~{ File="Recusant-Class Light Destroyer Style 2.ship.png"; 		Tier=9;  Difficulty=1; }
 	:~{ File="Providence-Class Destroyer.ship.png";       				Tier=11;  Difficulty=1; }
 	:~{ File="Recusant-Class Light Destroyer.ship.png";           		Tier=10;  Difficulty=1; }
