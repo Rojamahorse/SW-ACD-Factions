@@ -437,8 +437,8 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 
 			MediaEffects
 			[
-				&<./Data/ships/terran/laser_blaster_small/particles/laser_blaster_small_shoot_flash.rules>
-				&<./Data/ships/terran/laser_blaster_small/particles/laser_blaster_small_shoot.rules>
+				&<particles/yellow_blaster_small_shoot_flash.rules>
+				&<particles/yellow_blaster_small_shoot.rules>
 
 				: /BASE_SOUNDS/AudioExterior
 				{
@@ -458,8 +458,8 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 
 			MediaEffects
 			[
-				&<./Data/ships/terran/laser_blaster_small/particles/laser_blaster_small_shoot_flash.rules>
-				&<./Data/ships/terran/laser_blaster_small/particles/laser_blaster_small_shoot.rules>
+				&<particles/yellow_blaster_small_shoot_flash.rules>
+				&<particles/yellow_blaster_small_shoot.rules>
 
 				: /BASE_SOUNDS/AudioExterior
 				{
