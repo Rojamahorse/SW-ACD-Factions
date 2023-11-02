@@ -4,8 +4,6 @@ Parts
 	xwingCannons = "X-Wing Cannon"
 	xwingCannonsDesc = "X-Wing Cannons are small weapons that can be placed behind and hidden under armor pieces.  They are useful in medium to long range engagements"
 
-
-
 	// Standard X-Wing Cannons
 	xwingCannon = "X-Wing Standard Cannon"
 	xwingCannonIcon = "X-Wing SC"
@@ -80,13 +78,120 @@ Parts
 	PDTurretTinyDesc = "Unleashing dual laser fury, this miniaturized and fully automated version of the StarGuard TwinLaser Turret is optimized for tight spaces."
 }
 
+
+EditorGroups
+{
+}
+
 Stats
 {
-	SWFighterWeapons = "Laser Bolt"
-	MinigunShot = "Repeater Laser"
-	SWPDTurretTiny = "Point Defense Turret"
-	SWR9Shot = "R9 Shot"
+//	BarrelsFmt = "<white>Barrels:</white> <good>{0}</good> <gray>Barrels</gray>"
+//	ReloadTimeFmt = "<white>Reloadtime:</white> <good>{0:0.##}</good> <gray>sec</gray>"
+//	HypermatterGenerationFmt = "<white>Hypermatter Generation:</white> <good>{0:0.##}</good><gray>/sec</gray>"
+//	HypermatterSizeFmt = "<white>Hypermatter Size:</white> <good>{0:0.0#}</good>"
+//	HypermatterFillTimeFmt = "<white>Hypermatter Charge Time:</white> <good>{0:0.0#}</good> <gray>seconds</gray>"
+//	HypermatterCapacityFmt = "<white>Hypermatter Capacity:</white> <good>{0:0.##}</good>"
+//	DooniumIngotProductionFmt = "<white>Production Rate:</white> <good>{0:0.##}</good><gray> doonium ingot/sec</gray>"
+//	DooniumCapacityFmt = "<white>Doonium Capacity:</white> <good>{0}</good>"
+//	DooniumIngotDoonioumFmt = "<white>Raw Doonium Use:</white> <good>{0:0.##}</good><gray>/doonium ingot (</gray><good>{1:0.##}</good><gray>/sec)</gray>"
+//	DooniumIngotCapacityFmt = "<white>Doonium Ingot Capacity:</white> <good>{0}</good>"
+//	DuraSteelProductionFmt = "<white>Production Rate:</white> <good>{0:0.##}</good><gray> durasteel ingot/sec</gray>"
+//	DuraSteelSteelUsageFmt = "<white>Steel Use:</white> <good>{0:0.##}</good><gray>/durasteel ingot (</gray><good>{1:0.##}</good><gray>/sec)</gray>"
+//	DuraSteelCarbonUsageFmt = "<white>Carbon Use:</white> <good>{0:0.##}</good><gray>/durasteel ingot (</gray><good>{1:0.##}</good><gray>/sec)</gray>"
+//	DuraSteelZersiumUsageFmt = "<white>Zersium Use:</white> <good>{0:0.##}</good><gray>/durasteel ingot (</gray><good>{1:0.##}</good><gray>/sec)</gray>"
+//	DuraSteelCapacityFmt = "<white>DuraSteel Capacity:</white> <good>{0}</good>"
+//	ZersiumCapacityFmt = "<white>Zersium Capacity:</white> <good>{0}</good>"
+//	LargeHyperdrive_Notes = "<gray>NOTE: Requires a War Room.</gray>"
+//	HyperNode_Notes = "<gray>NOTE: Requires a Large Hyperdrive.</gray>"
+//	HyperNodeMed_Notes = "<gray>NOTE: Requires a Medium Hyperdrive.</gray>"
+//	MediumHyperdriver_Notes = "<gray>NOTE: Requires a Navi Computer.</gray>"
+//	SmallHyperdriver_Notes = "<gray>NOTE: Requires a Droid.</gray>"
+//	CommandBridge_Notes = "<gray>NOTE: Requires a Command Bridge I.</gray>"
+//	DeathStar_Notes = "<gray>NOTE: Requires a War Room and all other Death Star parts.</gray>"
 }
+
+
+StatCategories
+{
+	SWFighterWeapons = "Small <red>Red</red> Laser Cannon Shot"
+	MinigunShot = "Small <green>Green</green> Repeater Laser Shot"
+	SWPDTurretTiny = "Small <magenta>Purple</magenta> PD Burst Shot"
+	SWRG9Shot = "Small <red>Red</red> RG-9 Burst Cannon Shot"
+	SWBurstLaser = "Small <red>Red</red> Burst Laser Shot"
+	SWPDBeamLaser = "Small <yellow>Yellow</yellow> PD Beam Laser Shot"
+//	Turret = "Turret"
+//	Missile = "Missile"
+//	ProtonRocket = "Proton Torpedo"
+//	BuzzDroid = "Buzz Droid"
+//
+//	SingleRedLasershot = "Small <red>Red</red> Laser Shot"
+//	SingleBlueLasershot = "Small <blue>Blue</blue> Laser Shot"
+//	SingleGreenLasershot = "Small <green>Green</green> Laser Shot"
+//
+//	XWingLasershot = "<red>X-Wing</red> Laser Shot"
+//	BlueXWingLasershot = "<blue>X-Wing</blue> Laser Shot"
+//	GreenXWingLasershot = "<green>X-Wing</green> Laser Shot"
+//	FalconLaserCannonShot = "Falcon <red>Red</red> Laser Shot"
+//	PDLaserShot = "Point Defense Laser Shot"
+//
+//	DualRedLaserCannonshot = "Small-Light <red>Red</red> Laser Shot"
+//	DualBlueLaserCannonshot = "Small-Light <blue>Blue</blue> Laser Shot"
+//	DualGreenLaserCannonshot = "Small-Light <green>Green</green> Laser Shot"
+//
+//	LightRedTurbolasershot = "Light <red>Red</red> Laser Shot"
+//	LightBlueTurbolasershot = "Light <blue>Blue</blue> Laser Shot"
+//	LightGreenTurbolasershot = "Light <green>Green</green> Laser Shot"
+//
+//	TripleRedLasershot = "Light-Medium <red>Red</red> Laser Shot"
+//	TripleBlueLasershot = "Light-Medium <blue>Blue</blue> Laser Shot"
+//	TripleGreenLasershot = "Light-Medium <green>Green</green> Laser Shot"
+//
+//	MedRedLasershot = "Medium <red>Red</red> Laser Shot"
+//	MedBlueLasershot = "Medium<blue>Blue</blue> Laser Shot"
+//	MedGreenLasershot = "Medium <green>Green</green> Laser Shot"
+//
+//	HeavyRedLasershot = "Heavy <red>Red</red> Laser Shot"
+//	HeavyBlueLasershot = "Heavy <blue>Blue</blue> Laser Shot"
+//	HeavyGreenLasershot = "Heavy <green>Green</green> Laser Shot"
+//
+//	CISLasershot = "CIS <red>Red</red> Laser Shot"
+//	RepublicLasershot = "Republic <blue>Blue</blue> Laser Shot"
+//	ImperialLasershot = "Imperial <green>Green</green> Laser Shot"
+//	XX9RedLasershot = "XX9 <red>Red</red> Laser Shot"
+//	XX9GreenLasershot = "XX9 <green>Green</green> Laser Shot"
+//
+//	HeavyCyanIoncannonshot = "Medium Cyan <cyan>Ion</cyan> Cannon Shot"
+//	MediumCyanIoncannonshot = "Light Cyan <cyan>Ion</cyan> Cannon Shot"
+//
+//	//NEW MUNITION
+//	LargeRedTurbolaserLasershot = "Large <red>Red</red> Laser Shot"
+//	LargeBlueTurbolaserLasershot = "Large <blue>Blue</blue> Laser Shot"
+//	LargeGreenTurbolaserLasershot = "Large <green>Green</green> Laser Shot"
+//
+//	HugeRedTurbolaserLasershot = "Huge <red>Red</red> Laser Shot"
+//	HugeBlueTurbolaserLasershot = "Huge <blue>Blue</blue> Laser Shot"
+//	HugeGreenTurbolaserLasershot = "Huge <green>Green</green> Laser Shot"
+//
+//	SiegeRedTurbolaserLasershot = "Siege <red>Red</red> Laser Shot"
+//	SiegeBlueTurbolaserLasershot = "Siege <blue>Blue</blue> Laser Shot"
+//	SiegeGreenTurbolaserLasershot = "Siege <green>Green</green> Laser Shot"
+//
+//	MortarRedTurbolaserLaserShot = "Mortar <red>Red</red> Laser Shot"
+//	MortarBlueTurbolaserLaserShot = "Mortar <blue>Blue</blue> Laser Shot"
+//	MortarGreenTurbolaserLaserShot = "Mortar <green>Green</green> Laser Shot"
+//
+//	BlueArtilleryTurbolaserBeam = "Artillery <blue>Blue</blue> Turbolaser Beam"
+//
+//	RedSiegeParticleShot = "Siege <red>Red</red> Particle Shot"
+//	OrangeSiegeParticleShot = "Siege <orange>Orange</orange> Particle Shot"
+//
+//	RedSuperLaserBeam = "<red>Red</red> Superlaser Beam"
+//
+//	BlueSiegeTurbolaserBeam = "Siege <blue>Blue</blue> Turbolaser Beam"
+//
+//	TIE_WingThruster = "TIE wing thruster"
+}
+
 
 DecalGroups
 {

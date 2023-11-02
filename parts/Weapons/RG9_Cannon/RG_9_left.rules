@@ -454,7 +454,7 @@ Part :  <./Data/ships/terran/base_part_terran.rules>/Part
 	StatsByCategory
 	[
 		{
-			NameKey = "StatCategories/FighterWeapons"
+			NameKey = "StatCategories/SWRG9Shot"
 			Stats
 			{
 				ShieldDamagePerShot = &~/Part/Components/BulletEmitter/Bullet/Components/Hit/HitShield/HitEffects/0/Damage
