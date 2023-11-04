@@ -13,10 +13,10 @@ Parts
 
 	//Long X-Wing Cannons
 	xwingCannonLong = "RedFury Blaster Cannon"
-	xwingCannonLongIcon = "RedFury Blaster Cannon"
+	xwingCannonLongIcon = "RedFury-BC"
 	xwingCannonLongLeft = "RedFury Blaster Cannon (Side)"
-	xwingCannonLongLeftIcon = "RedFury Blaster Cannon (Side)"
-	xwingCannonLongDesc = "The RedFury Blaster, allows for placement behind and hidden under armor pieces."
+	xwingCannonLongLeftIcon = "RedFury-BC (Side)"
+	xwingCannonLongDesc = "The RedFury Blaster by <green>Merr-Sonn Munitions</green>; A hard-hitting Heavy Blaster Cannon that allows for placement behind and hidden under armor pieces."
 
 	//Extra Long X-Wing Cannons
 	xwingCannonXLong = "X-Wing Extended Cannon"
@@ -26,21 +26,21 @@ Parts
 	xwingCannonXLongDesc = "Extended X-Wing Cannon, allows for placement behind and hidden under armor pieces."
 
 	//TIE Repeaters
-	tieMiniguns = "TIE Repeater"
+	tieMiniguns = "TIE Repeater Cannon"
 	tieMinigunsDesc = "TIE Repeaters are small, rapid-firing weapons that allows for placement behind and hidden under armor pieces. They are inaccurate, but useful for close range engagements."
 
 	//Standard TIE Repeaters
-	tieMinigun = "TIE Repeater"
+	tieMinigun = "TIE Repeater Cannon"
 	tieMinigunIcon = "TIE Repeater"
-	tieMinigunLeft = "TIE Repeater (Side)"
+	tieMinigunLeft = "TIE Repeater Cannon (Side)"
 	tieMinigunLeftIcon = "TIE Repeater (Side)"
-	tieLMinigunDesc = "TIE Repeater, allows for placement behind and hidden under armor pieces."
+	tieLMinigunDesc = "TIE Repeater Cannons, allows for placement behind and hidden under armor pieces."
 
-	tieMinigunLong = "Long Repeater Cannon"
-	tieMinigunLongIcon = "Long Repeater Cannon"
-	tieMinigunLongLeft = "Long Repeater Cannon (Side)"
-	tieMinigunLongLeftIcon = "Long Repeater Cannon (Side)"
-	tieLMinigunLongDesc = "Rapid-firing Long Repeater Cannon, allows for placement behind and hidden under armor pieces."
+	tieMinigunLong = "HyCor Heavy Repeater Extended Cannon"
+	tieMinigunLongIcon = "HyCor HR-EC"
+	tieMinigunLongLeft = "HyCor Heavy Repeater Extended Cannon (Side)"
+	tieMinigunLongLeftIcon = "HyCor HR-EC (Side)"
+	tieLMinigunLongDesc = "Heavy Laser Repeater with Extended Cannon by <green>HyCor</green>; A rapid-firing Heavy Laser Repeater modified for use on small-to-medium ships."
 
 	// RG-9 Cannons
 	RG9Cannon = "RG-9 Laser Cannon"
@@ -68,13 +68,13 @@ Parts
 	SWTurretCDesc = "Combining the best of both worlds, the Tiny Turbo Laser - Rapid offers a balanced approach to both burst damage and staying power. This is a <orange>switchable</orange>, crew-operated Laser Cannon."
 
 	// Standard TwinLaser Defense Turret
-	DroidTurret = "StarGuard TwinLaser Defense Turret"
-	DroidTurretIcon = "Starguard TL-D"
-	DroidTurretDesc = "Unleashing dual laser fury, the StarGuard TwinLaser Defense Turret offers unmatched protection against incoming threats."
+	DroidTurret = "StarGuard TwinBeam Defense Turret"
+	DroidTurretIcon = "Starguard TB-DT"
+	DroidTurretDesc = "Unleashing dual beam fury, the StarGuard TwinBeam Defense Turret offers unmatched protection against incoming threats."
 
 	// Mini TwinLaser Defense Turret
-	PDTurretTiny = "StarGuard TwinLaser Mini Point Defense Turret"
-	PDTurretTinyIcon = "Starguard TL-PD-Mini"
+	PDTurretTiny = "StarGuard TwinLaser Compact Point Defense Turret"
+	PDTurretTinyIcon = "Starguard TL-C-PDT"
 	PDTurretTinyDesc = "Unleashing dual laser fury, this miniaturized and fully automated version of the StarGuard TwinLaser Turret is optimized for tight spaces."
 }
 
