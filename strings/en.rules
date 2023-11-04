@@ -76,6 +76,11 @@ Parts
 	PDTurretTiny = "StarGuard TwinLaser Compact Point Defense Turret"
 	PDTurretTinyIcon = "Starguard TL-C-PDT"
 	PDTurretTinyDesc = "Unleashing dual laser fury, this miniaturized and fully automated version of the StarGuard TwinLaser Turret is optimized for tight spaces."
+
+	// Reactors
+	SWMedReactor = "Reinforced Light Reactor"
+	SWMedReactorIcon = "Light Reactor"
+	SWMedReactorDesc = "An armored reactor reinforced with durasteel; A highly-efficient light reactor designed for state-of-the-art medium and large cruisers and frigates with no extra room for outdated and ugly large reactor equipment."
 }
 
 

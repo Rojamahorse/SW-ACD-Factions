@@ -151,6 +151,8 @@ Ships
 	:~{ File="Emp Dreadnought Mk2.ship.png";								Tier=10;	Difficulty=2; }
 	:~{ File="Venator II-Class Star Destroyer (Empire).ship.png";			Tier=14;	Difficulty=1; } // Remove for Release Credit SR2
 	:~{ File="Emp_Vindicator-Class Star Frigat.ship.png";					Tier=13;	Difficulty=1; } //Neojino
+	:~{ File="Bayonet-Class Patrol Cruiser Mk2.ship.png";					Tier=10;	Difficulty=2; } 
+	:~{ File="Imperial II-class Star Destroyer.ship.png";					Tier=13;	Difficulty=1; }
 
 //	:~{ File="Emp_imperial_interdictor.ship.png";							Tier=15;	Difficulty=2; }
 //	:~{ File="Emp_imperial_dreadnought_heavy_cruiser.ship.png";				Tier=15;	Difficulty=2; }

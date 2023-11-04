@@ -5,6 +5,7 @@ Ships
 [
 	// Scouts
 	:~{ File="Rebel RZ-1 A-Wing Interceptor v2.ship.png";     							Tier=2;  Difficulty=1; } // Cost $0
+	:~{ File="A-Wing Starfighter Rogue1.ship.png";     									Tier=3;  Difficulty=2; } // Cost $0
 	:~{ File="Rebel T-65 X-Wing Starfighter.ship.png";          						Tier=3;  Difficulty=2; } // Cost $0
 	:~{ File="Rebel T-65B X-Wing H Starfighter.ship.png";       						Tier=4;  Difficulty=1; } // Cost $0
 	:~{ File="Rebel Z-95 Headhunter.ship.png";   										Tier=1;  Difficulty=2; } // Cost $0
@@ -57,6 +58,9 @@ Ships
 	:~{ File="Rebel CR-90 Corvette B.ship.png";         								Tier=8;  Difficulty=2; } // Cost $0 
 	:~{ File="Rebel CR-90 Corvette R.ship.png";        									Tier=8;  Difficulty=1; } // Cost $0 
 	:~{ File="Rebel Marauder-Class B Corvette.ship.png";         						Tier=8;  Difficulty=2; } // Cost $0
+	:~{ File="ASF-01 B-Wing Hvy Starfighter 2.ship.png";      							Tier=6;  Difficulty=2; } // Cost $0
+	:~{ File="ASF-01 B-Wing Hvy Starfighter B.ship.png";      							Tier=7;  Difficulty=1; } // Cost $0
+	:~{ File="Reb A-Wing Starfighter.ship.png";      									Tier=6;  Difficulty=2; } // Cost $0
  
 	// :~{ File="Lancer-class_Pursuit_Craft.ship.png";  								Tier=8;  Difficulty=1; } // Cost $0
 	// :~{ File="MC40a_Light_Cruiser.ship.png";  										Tier=8;  Difficulty=1; } // Cost $0
