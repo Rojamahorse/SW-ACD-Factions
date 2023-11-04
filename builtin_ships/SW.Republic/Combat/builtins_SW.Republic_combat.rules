@@ -6,7 +6,7 @@ Ships
 	// Scouts
 	:~{ File="Republic Eta-2 Actis-Class Inter.ship.png";      								Tier=1;  Difficulty=1; }
 	:~{ File="A-Wing Starfighter.ship.png";      											Tier=3;  Difficulty=2; }
-	:~{ File="Rep A-Wing Starfighter NRep.ship";      										Tier=3;  Difficulty=2; }
+	:~{ File="Rep A-Wing Starfighter NRep.ship.png";      										Tier=3;  Difficulty=2; }
 	:~{ File="Rep A-Wing Starfighter.ship.png";      										Tier=3;  Difficulty=2; }
 	:~{ File="Republic Eta-2 Actis-Class Alt.ship.png";      								Tier=1;  Difficulty=1; }
 	:~{ File="Republic Eta-2 Actis-Class Mk2.ship.png";      								Tier=1;  Difficulty=2; }
