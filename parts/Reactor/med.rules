@@ -44,16 +44,18 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 			SuppliesResources = true
 			MinResourcesPickUp = 2000
 			MaxResourcesPickUp = 2000
+			InitPickUp = 1001
+			PickUpRate = 1000 / 0.5
 			ExpectedResourceGenerationRate = (&../BatteryProducer/ToQuantity) / (&../BatteryProducer/Interval)
-			ToggleOnResources = 2001
-			ToggleOffResources = 2000
+			ToggleOnResources = 4001
+			ToggleOffResources = 4000
 		}
 		BatteryProducer
 		{
 			Type = ResourceConverter
 			ToStorage = BatteryStorage
-			ToQuantity = 2000
-			Interval = .33
+			ToQuantity = 1000
+			Interval = .4444 / 2
 		}
 
 		BatteryStorageBar
