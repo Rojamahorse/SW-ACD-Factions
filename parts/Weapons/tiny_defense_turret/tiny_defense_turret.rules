@@ -127,30 +127,13 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 			ReceiveResourceMediaEffects = &/COMMON_EFFECTS/PowerDeliver
 		}
 
-		Graphics
+		InsideTurretGraphics
 		{
 			Type = Graphics
-			Location = [.5, .5]
+			ChainedTo = Turret
+			//Location = [.5, .5]
+			Rotation = 90d
 			OperationalToggle = IsOperational
-			Floor
-			{
-				Layer = "floors"
-				DamageLevels
-				[
-					{
-						File = "floor.png"
-						Size = [1, 1]
-					}
-					{
-						File = "floor_33.png"
-						Size = [1, 1]
-					}
-					{
-						File = "floor_66.png"
-						Size = [1, 1]
-					}
-				]
-			}
 			OperationalDoodad
 			{
 				Layer = "turrets"
@@ -175,7 +158,7 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 			}
 			NonOperationalDoodad
 			{
-				Layer = "turrets"
+				Layer = "doodads_low"
 				DamageLevels
 				[
 					{
@@ -184,8 +167,35 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 					}
 				]
 			}
+		}
+
+		Graphics
+		{
+			Type = Graphics
+			Location = [.5, .5]
+			OperationalToggle = IsOperational
+			Floor
+			{
+				Layer = "floors"
+				DamageLevels
+				[
+					{
+						File = "floor.png"
+						Size = [1, 1]
+					}
+					{
+						File = "floor_33.png"
+						Size = [1, 1]
+					}
+					{
+						File = "floor_66.png"
+						Size = [1, 1]
+					}
+				]
+			}
 			OperationalLighting
 			{
+				//ChainedTo = Turret
 				Layer = "lights_add"
 				DamageLevels
 				[
@@ -469,9 +479,11 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 		BatterySprites
 		{
 			Type = ResourceSprites
-			Location = [.5, .5]
+			ChainedTo = Turret
+			Rotation = 90d
+			//Location = [.5, .5]
 			ResourceStorage = BatteryStorage
-			Layer = "doodads_low"
+			Layer = "doodads_high"
 			ResourceLevels
 			[
 				{
