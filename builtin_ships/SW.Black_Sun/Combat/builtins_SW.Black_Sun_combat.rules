@@ -37,6 +37,7 @@ Ships
 	// :~{ File="YT-1760_Small_Transport.ship.png"; 							Tier=3;  Difficulty=1; }
 	// :~{ File="SoroSuub_Personal_Luxury_Yacht_3000.ship.png"; 				Tier=3;  Difficulty=1; }
 	// :~{ File="YZ-2500_Heavy_Transport.ship.png"; 							Tier=4;  Difficulty=1; }
+	:~{ File="Firespray-31-BS Patrol.ship.png";        							Tier=1;  Difficulty=2;}
 	
 
 	// Patrol ships

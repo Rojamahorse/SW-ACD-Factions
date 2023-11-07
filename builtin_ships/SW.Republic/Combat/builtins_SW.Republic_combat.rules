@@ -6,7 +6,7 @@ Ships
 	// Scouts
 	:~{ File="Republic Eta-2 Actis-Class Inter.ship.png";      								Tier=1;  Difficulty=1; }
 	:~{ File="A-Wing Starfighter.ship.png";      											Tier=3;  Difficulty=2; }
-	:~{ File="Rep A-Wing Starfighter NRep.ship.png";      										Tier=3;  Difficulty=2; }
+	:~{ File="Rep A-Wing Starfighter NRep.ship.png";      									Tier=3;  Difficulty=2; }
 	:~{ File="Rep A-Wing Starfighter.ship.png";      										Tier=3;  Difficulty=2; }
 	:~{ File="Republic Eta-2 Actis-Class Alt.ship.png";      								Tier=1;  Difficulty=1; }
 	:~{ File="Republic Eta-2 Actis-Class Mk2.ship.png";      								Tier=1;  Difficulty=2; }
@@ -31,7 +31,9 @@ Ships
 	:~{ File="Republic Gunship Cannonade.ship.png";     									Tier=5;  Difficulty=2; }
 	:~{ File="Republic Storm IV Twin-Pod Comba.ship.png";       							Tier=3;  Difficulty=2; }
 	:~{ File="V-19 Torrent Starfighter B.ship.png";       									Tier=3;  Difficulty=2; } //  Credit ClassicJam
-	:~{ File="Republic Z-95 Headhunter Orig.ship.png";        								Tier=4;  Difficulty=3; } //  Credit ClassicJam
+	:~{ File="Republic Z-95 Headhunter Orig.ship.png";        								Tier=4;  Difficulty=2; } //  Credit ClassicJam
+	:~{ File="Arquitens_Class_Light_Cruiser.ship.png";        								Tier=7;  Difficulty=2; } //  Credit Wolfram
+	
 //	:~{ File="Delta_7_Aethersprite_class_Light_Interceptor.ship.png";           			Tier=1;  Difficulty=2; }
 //	:~{ File="Eta_2_Actis_class_Light_Interceptor.ship.png";           						Tier=2;  Difficulty=1; }
 //	:~{ File="BTL_B_Y_wing_Starfighter_Bomber.ship.png";           							Tier=3;  Difficulty=1; }
@@ -104,6 +106,7 @@ Ships
 	:~{ File="Republic Nu-Class Attack Shuttle.ship.png";     								Tier=2;  Difficulty=2; }
 	:~{ File="Republic CR70B Corvette (Heavy).ship.png";          							Tier=4;  Difficulty=2; }
 	:~{ File="Republic CG Assault Shuttle.ship.png";       									Tier=8;  Difficulty=3; } //  Credit ClassicJam
+	:~{ File="Old Rep YT-1300g Light Freighter.ship.png";      								Tier=6;  Difficulty=2; } //  
 
 
 	// Flagships
@@ -120,17 +123,12 @@ Ships
 	:~{ File="Venator II-Class B Star Destroye.ship.png";      					Tier=12;  Difficulty=2; } //  Credit ClassicJam
 	:~{ File="V-class CG Star Destroyer (Republic).ship.png";      				Tier=12;  Difficulty=2; } 
 	:~{ File="V-class Nuke Star Destroyer (Republic).ship.png";      			Tier=13;  Difficulty=2; } 
+	:~{ File="Rep Venator V.ship.png";      									Tier=15;  Difficulty=2; } 
 	:~{ File="Victory-class Star Destroyer (Republic).ship.png";      			Tier=14;  Difficulty=2; } 
 	:~{ File="Venator-Class Star Destroyer (Command Cruiser).ship.png";      	Tier=13;  Difficulty=2; } 
-	:~{ File="Rep Secutor-Class SD - Orig.ship.png";      						Tier=18;  Difficulty=2; } //  Credit ClassicJam
+	:~{ File="Rep Secutor-Class SD - Orig.ship.png";      						Tier=17;  Difficulty=2; } //  Credit ClassicJam
 
 
-	:~{ File="Remove_Red Star Star Destroyer.ship.png";        								Tier=8;  Difficulty=2; } //  REMOVE for Release Credit WuzNab
-	:~{ File="Remove_Red Star Assault Ship.ship.png";        								Tier=9;  Difficulty=2; } //  REMOVE for Release Credit WuzNab
-	:~{ File="Remove_Venator III.ship.png";      											Tier=13;  Difficulty=2; } //  REMOVE for Release Credit WuzNab
-	:~{ File="Remove_Venator IV.ship.png";      											Tier=14;  Difficulty=2; } //  REMOVE for Release Credit WuzNab
-	:~{ File="Remove_Venator V.ship.png";      												Tier=15;  Difficulty=2; } //  REMOVE for Release Credit WuzNab
-	:~{ File="Remove_Venator VI.ship.png";      											Tier=16;  Difficulty=2; } //  REMOVE for Release Credit WuzNab
-	:~{ File="Remove_Venator VII.ship.png";      											Tier=17;  Difficulty=2; } //  REMOVE for Release Credit WuzNab
+
 	
 ]
