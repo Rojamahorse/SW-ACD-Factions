@@ -40,6 +40,7 @@ Ships
 	:~{ File="Emp_TIE_M1.ship.png";											Tier=1;	 	Difficulty=2; } //Neojino
 	:~{ File="Emp Lamda-Class T-4a Mk2.ship.png";							Tier=4;		Difficulty=2; } 
 	:~{ File="Emp Crusader-Class Cruiser Mk2.ship.png";						Tier=9;	 	Difficulty=2; } 
+	:~{ File="Emp B-Class Lt Torpedo cruiser.ship.png";						Tier=9;	 	Difficulty=2; } //Based off Chryss
 	:~{ File="Emp Carrack-class LC Mk2.ship.png";							Tier=8;	 	Difficulty=2; } 
 	:~{ File="C-9979 Landing Craft (Emp) Atk.ship.png";						Tier=2;	 	Difficulty=1; }
 	:~{ File="Emp Acclamator Heavy Scout.ship.png";							Tier=8;		Difficulty=1; }
