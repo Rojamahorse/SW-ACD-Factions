@@ -234,11 +234,11 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 			Rotation = -90d
 			OperationalToggle = IsOperational
 			AutoFireToggle = AutoFireToggle
-			FireInterval = .7
-			FiringArc = 15d
+			FireInterval = 4 //.7
+			FiringArc = 5d
 			RotateSpeed = 360d
 			FireThresholdAngle = 1d
-			AIFirepowerRating = 400
+			AIFirepowerRating = 600
 			AllowFireWithBlockedLOS = true
 			Emitter = BulletEmitter
 
@@ -283,12 +283,59 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 			GetTargetFrom = Turret
 			Location = [2.28, 0]
 			OperationalToggle = IsOperational
-			Bullet = &<xwing_shot/xwing_shot.rules>
+			Bullet = &<./Data/shots/bullet_railgun/bullet_railgun.rules> // &<xwing_shot/xwing_shot.rules>
 			ResourceStorage = BatteryStorage
-			ResourcesUsed = 125
+			ResourcesUsed = 500
 			MinResourcesUsed = 1
 		}
 
+		ProjectileToggle
+		{
+			Type = TriggeredToggle
+			OnTrigger = Turret
+			OffTrigger = Projectile
+			OperationalToggle = IsOperational
+		}
+
+		Projectile
+		{
+			Type = RailgunProjectile
+			Location = [1, 4.5]
+			OperationalToggle = ProjectileToggle
+			YStartOffset = { BaseValue=3; BuffType=Railgun; BuffMode=Multiply; }
+			YEndOffset = -4
+			SpeedStart = &../BulletEmitter/Bullet/Speed/BaseValue
+			SpeedEnd = &../BulletEmitter/Bullet/Speed
+			Interpolate = true // WARNING: Only use this for interpolating graphics. Using it for game logic will cause multiplayer desyncs.
+		}
+
+		RecoilProjectile : Projectile
+		{
+			Interpolate = false
+		}
+		RecoilTimer
+		{
+			Type = Timer
+			OperationalToggle = ProjectileToggle
+			Duration = 1/30
+			AutoStart = true
+			Repeats = true
+			TriggerWhenStarted = true
+		}
+		RecoilEffects
+		{
+			Type = TriggeredEffects
+			ChainedTo = RecoilProjectile
+			Rotation = 90d
+			Trigger = RecoilTimer
+			HitEffects
+			[
+				{
+					Type = Impulse
+					Impulse = 2000
+				}
+			]
+		}
 		FireEffect
 		{
 			Type = TriggeredEffects
@@ -299,17 +346,92 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 
 			MediaEffects
 			[
-				&<./Data/ships/terran/laser_blaster_small/particles/laser_blaster_small_shoot.rules>
-				&<./Data/ships/terran/laser_blaster_small/particles/laser_blaster_small_shoot_flash.rules>
+				&<./Data/ships/terran/railgun_launcher/particles/railgun_shoot.rules>
+				&<./Data/ships/terran/railgun_launcher/particles/railgun_shoot_distortion.rules>
+				//&<./Data/ships/terran/laser_blaster_small/particles/laser_blaster_small_shoot.rules>
+				//&<./Data/ships/terran/laser_blaster_small/particles/laser_blaster_small_shoot_flash.rules>
 
+	//			: /BASE_SOUNDS/AudioExterior
+	//			{
+	//				Sound = "../common_effects/sounds/XwingCannon1.wav"
+	//				Volume = .2
+	//				SpeedVariation = .25
+	//			}
+			]
+		}
+
+		ToggledProjectileSprite
+		{
+			Type = ToggledComponents
+			Toggle = ProjectileToggle
+			Components
+			{
+				ProjectileGlowSprite
+				{
+					Type = Sprite
+					ChainedTo = Projectile
+					Layer = "lights_add"
+					AtlasSprite
+					{
+						File = "projectile_glow.png"
+						Size = [2, 3]
+					}
+				}
+				ProjectileFancyLightSprite
+				{
+					Type = Sprite
+					ChainedTo = Projectile
+					Layer = "roof_lights_fancy"
+					AtlasSprite
+					{
+						File = "./Data/ships/common/light_blob.png"
+						Size = [9, 9]
+						Z = 0.25 // Controls the "height" of the light for the purposes of normal mapping. Set to -1 (or any negative number) to disable normal lighting for this light.
+						VertexColor
+						{
+							Rf = 0.69*12
+							Gf = 0.96383333*12
+							Bf = 1*12
+							Af = 1
+						}
+					}
+				}
+				ProjectileSprite
+				{
+					Type = Sprite
+					ChainedTo = Projectile
+					Layer = "walls"
+					AtlasSprite
+					{
+						File = "projectile.png"
+						Size = [1.5, 2.25]
+					}
+				}
+			}
+		}
+
+		ProjectileSound
+		{
+			Type = ContinuousEffects
+			ChainedTo = Projectile
+			OperationalToggle = ProjectileToggle
+			FactorMediaEffectsIntensityWith = Projectile
+			MediaEffects
+			[
 				: /BASE_SOUNDS/AudioExterior
 				{
-					Sound = "../common_effects/sounds/XwingCannon1.wav"
-					Volume = .2
-					SpeedVariation = .25
+					Sound = "rail.wav"
+					Volume = 2
+					Speed = .8
+					RampUpTime = .05
+					RampDownTime = .25
+					AllowStacking = false
+					VolumeOverIntensity = 1
+					SpeedOverIntensity = [0.5, 1]
 				}
 			]
 		}
+
 
 		TurretGraphics
 		{
@@ -427,15 +549,39 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 {
 		PowerCapacity = (&~/Part/Components/BatteryStorage/MaxResources) / 1000
 
+		RecPower = &../StatsByCategory/0/Stats/PowerPerSecond
+		RecCrew = (&RecPower) * 4
+
+		/*
+		PowerCapacity = (&~/Part/Components/BatteryStorage/MaxResources) / 1000
+
 		MinPower = (&../StatsByCategory/0/Stats/PowerPerSecond) / 2
 		RecPower = &../StatsByCategory/0/Stats/PowerPerSecond
 		MinCrew = (&MinPower) * 2
 		RecCrew = (&RecPower) * 4
+		*/
 }
 
 StatsByCategory
 	[
 		{
+			NameKey = "StatCategories/BulletRailgun"
+			Stats
+			{
+				DamagePerShot = &~/Part/Components/BulletEmitter/Bullet/Components/DamagePool/Damage/BaseValue
+				DamagePerSecond = (&DamagePerShot) * (&ROF)
+				Damage = [&../DamagePerShot, &../DamagePerSecond]
+				Penetration = &~/Part/Components/BulletEmitter/Bullet/Components/Hit/Penetration/BaseValue
+				ROF = 1 / (&~/Part/Components/Turret/FireInterval)
+				RangeLimited = [&~/Part/Components/BulletEmitter/Bullet/Range/BaseValue, &~/Part/Components/BulletEmitter/Bullet/Range/MaxValue]
+				Arc = 0
+				ShotSpeed = &~/Part/Components/BulletEmitter/Bullet/Speed/BaseValue
+				ShotHP = &~/Part/Components/BulletEmitter/Bullet/Components/Targetable/Health
+				PowerPerShot = (&~/Part/Components/BulletEmitter/ResourcesUsed) / 1000
+				PowerPerSecond = (&PowerPerShot) * (&ROF)
+				ShotPowerUsage = [&../PowerPerShot, &../PowerPerSecond]
+			}
+			/*
 			NameKey = "StatCategories/SWFighterWeapons"
 			Stats
 			{
@@ -455,6 +601,7 @@ StatsByCategory
 				PowerPerSecond = (&PowerPerShot) * (&ROF)
 				ShotPowerUsage = [&../PowerPerShot, &../PowerPerSecond]
 			}
+			*/
 		}
 	]
 }
