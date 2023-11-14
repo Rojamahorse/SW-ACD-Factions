@@ -11,13 +11,21 @@ Parts
 	xwingCannonLeftIcon = "X-Wing SC (Side)"
 	xwingCannonDesc = "Standard X-Wing Cannon, allows for placement behind and hidden under armor pieces."
 
+	//Compact Mass-Driver Cannon
+	xwingCannonLong = "Compact Mass-Driver Cannon"
+	xwingCannonLongIcon = "CMDC"
+	xwingCannonLongLeft = "Compact Mass-Driver Cannon (Side)"
+	xwingCannonLongLeftIcon = "CMDC (Side)"
+	xwingCannonLongDesc = "The Compact Mass-Driver Cannon (CMDC) by <green>Kuat Systems Engineering</green>; A scaled-down yet formidable kinetic weapon, designed for precision and power in dogfights. Its sleek design allows for seamless integration with various Starfighter models, providing unmatched kinetic impact while maintaining aerodynamic efficiency."
+	
+/*
 	//Long X-Wing Cannons
 	xwingCannonLong = "RedFury Blaster Cannon"
 	xwingCannonLongIcon = "RedFury-BC"
 	xwingCannonLongLeft = "RedFury Blaster Cannon (Side)"
 	xwingCannonLongLeftIcon = "RedFury-BC (Side)"
 	xwingCannonLongDesc = "The RedFury Blaster by <green>Merr-Sonn Munitions</green>; A hard-hitting Heavy Blaster Cannon that allows for placement behind and hidden under armor pieces."
-
+*/
 	//Extra Long X-Wing Cannons
 	xwingCannonXLong = "X-Wing Extended Cannon"
 	xwingCannonXLongIcon = "X-Wing EC"
@@ -50,6 +58,7 @@ Parts
 	RG9CannonDesc = "RG-9 Laser Cannon by <green>Borstel</green>; A quick-firing, versatile small laser mainly used in fighters and small-to-medium ships."
 	RG9CannonLeftDesc = "RG-9 Laser Cannon by <green>Borstel</green>; A quick-firing, versatile small laser mainly used in fighters and small-to-medium ships."
 
+/*
 	// SW Multipurpose Turrets
 
 	// Smaller burst damage turret
@@ -66,6 +75,7 @@ Parts
 	SWTurretC = "Tiny Turbo Laser - Rapid"
 	SWTurretCIcon = "Tiny TL - Rapid"
 	SWTurretCDesc = "Combining the best of both worlds, the Tiny Turbo Laser - Rapid offers a balanced approach to both burst damage and staying power. This is a <orange>switchable</orange>, crew-operated Laser Cannon."
+*/
 
 	// Standard TwinLaser Defense Turret
 	DroidTurret = "StarGuard TwinBeam Defense Turret"
