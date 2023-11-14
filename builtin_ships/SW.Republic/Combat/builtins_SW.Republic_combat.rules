@@ -4,6 +4,9 @@ Tags = [combat]
 Ships
 [
 	// Scouts
+	:~{ File="Republic A3 Nimbus-Class V-Wingb Starfighter.ship.png";      					Tier=2;  Difficulty=1; } //  Credit ClassicJam
+	:~{ File="Republic A3 Nimbus-Class V-Wingc Starfighter.ship.png";      					Tier=2;  Difficulty=1; } //  Credit ClassicJam
+	:~{ File="Republic A3 Nimbus-Class V-Wingd Starfighter.ship.png";      					Tier=2;  Difficulty=1; } //  Credit ClassicJam
 	:~{ File="Republic Eta-2 Actis-Class Inter.ship.png";      								Tier=1;  Difficulty=1; }
 	:~{ File="A-Wing Starfighter.ship.png";      											Tier=3;  Difficulty=2; }
 	:~{ File="Rep A-Wing Starfighter NRep.ship.png";      									Tier=3;  Difficulty=2; }
@@ -127,6 +130,9 @@ Ships
 	:~{ File="Rep Venator V.ship.png";      									Tier=15;  Difficulty=2; } 
 	:~{ File="Victory-class Star Destroyer (Republic).ship.png";      			Tier=14;  Difficulty=2; } 
 	:~{ File="Venator-Class Star Destroyer (Command Cruiser).ship.png";      	Tier=13;  Difficulty=2; } 
+	:~{ File="Venator II-Class Star Destroyer B (Republic).ship.png";      		Tier=16;  Difficulty=2; } 
+	:~{ File="Venator II-Class Star Destroyer M (Republic).ship.png";      		Tier=15;  Difficulty=2; } 
+	:~{ File="Venator II-Class Star Destroyer R (Republic).ship.png";      		Tier=14;  Difficulty=2; } 
 	:~{ File="Rep Secutor-Class SD - Orig.ship.png";      						Tier=17;  Difficulty=2; } //  Credit ClassicJam
 
 
