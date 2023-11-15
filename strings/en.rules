@@ -2,14 +2,14 @@ Parts
 {
 	//X-Wing Cannons
 	xwingCannons = "X-Wing Cannon"
-	xwingCannonsDesc = "X-Wing Cannons are small weapons that can be placed behind and hidden under armor pieces.  They are useful in medium to long range engagements"
+	xwingCannonsDesc = "X-Wing Cannons are small weapons that can be placed hidden behind and under armor pieces.  They are useful in medium to long range engagements"
 
 	// Standard X-Wing Cannons
 	xwingCannon = "X-Wing Standard Cannon"
 	xwingCannonIcon = "X-Wing SC"
 	xwingCannonLeft = "X-Wing Standard Cannon (Side)"
 	xwingCannonLeftIcon = "X-Wing SC (Side)"
-	xwingCannonDesc = "Standard X-Wing Cannon, allows for placement behind and hidden under armor pieces."
+	xwingCannonDesc = "Standard X-Wing Cannon, allows for placement hidden behind and under armor pieces."
 
 	//Compact Mass-Driver Cannon
 	xwingCannonLong = "Compact Mass-Driver Cannon"
@@ -31,18 +31,18 @@ Parts
 	xwingCannonXLongIcon = "X-Wing EC"
 	xwingCannonXLongLeft = "X-Wing Extended Cannon (Side)"
 	xwingCannonXLongLeftIcon = "X-Wing EC (Side)"
-	xwingCannonXLongDesc = "Extended X-Wing Cannon, allows for placement behind and hidden under armor pieces."
+	xwingCannonXLongDesc = "Extended X-Wing Cannon, allows for placement hidden behind and under armor pieces."
 
 	//TIE Repeaters
 	tieMiniguns = "TIE Repeater Cannon"
-	tieMinigunsDesc = "TIE Repeaters are small, rapid-firing weapons that allows for placement behind and hidden under armor pieces. They are inaccurate, but useful for close range engagements."
+	tieMinigunsDesc = "TIE Repeaters are small, rapid-firing weapons that allows for placement hidden behind and under armor pieces. They are inaccurate, but useful for close range engagements."
 
 	//Standard TIE Repeaters
 	tieMinigun = "TIE Repeater Cannon"
 	tieMinigunIcon = "TIE Repeater"
 	tieMinigunLeft = "TIE Repeater Cannon (Side)"
 	tieMinigunLeftIcon = "TIE Repeater (Side)"
-	tieLMinigunDesc = "TIE Repeater Cannons, allows for placement behind and hidden under armor pieces."
+	tieLMinigunDesc = "TIE Repeater Cannons, allows for placement hidden behind and under armor pieces."
 
 	tieMinigunLong = "HyCor Heavy Repeater Extended Cannon"
 	tieMinigunLongIcon = "HyCor HR-EC"

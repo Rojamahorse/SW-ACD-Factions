@@ -104,12 +104,13 @@ Ships
 */
 
 	// Cruisers
-	:~{ File="Gozanti-Class Cruiser (CIS).ship.png"; 					Tier=8;  Difficulty=1; }
-	:~{ File="Gozanti-Class Cruiser (CIS) Alt.ship.png"; 				Tier=8;  Difficulty=1; }
+	:~{ File="Gozanti-Class Cruiser (CIS).ship.png"; 					Tier=8;   Difficulty=1; }
+	:~{ File="Gozanti-Class Cruiser (CIS) Alt.ship.png"; 				Tier=8;   Difficulty=1; }
 	:~{ File="Subjugator-Class Heavy Cruiser.ship.png";        			Tier=14;  Difficulty=2; }
 	:~{ File="Diamond-Class Cruiser.ship.png";        					Tier=15;  Difficulty=2; }
 	:~{ File="Providence-Class Dreadnought.ship.png";          			Tier=16;  Difficulty=2; }
 	:~{ File="Munificent-Class Star Frigate 2.ship.png"; 				Tier=14;  Difficulty=2; }
+	:~{ File="Pinnance-Class_Cruiser.ship.ship.png"; 					Tier=9;   Difficulty=1; } //Credit Wolfram
 /*
 //	:~{ File="Munificent-class_Star_Frigate.ship.png"; 					Tier=12;  Difficulty=2; }
 //	:~{ File="Diamond-class_Cruiser.ship.png"; 							Tier=11;  Difficulty=1; }
@@ -124,7 +125,6 @@ Ships
 	:~{ File="Lukrehulk-Class Battlecruiser.ship.png";					Tier=17;  Difficulty=2; }
 	:~{ File="Lucrehulk-Class Battlecruiser.ship.png";         			Tier=17;  Difficulty=2; }
 /*
-//	:~{ File="Providence-class_Dreadnought.ship.png"; 					Tier=15;  Difficulty=1; }
 //	:~{ File="Lucrehulk-class_Battleship.ship.png"; 					Tier=17;  Difficulty=2; }
 //	:~{ File="Malevolence.ship.png"; 									Tier=18;  Difficulty=1; }
 //	:~{ File="Lucrehulk-class_Core_Ship_Mk2_v2.ship.png";				Tier=17;  Difficulty=2; }
