@@ -110,7 +110,7 @@ Ships
 	:~{ File="Diamond-Class Cruiser.ship.png";        					Tier=15;  Difficulty=2; }
 	:~{ File="Providence-Class Dreadnought.ship.png";          			Tier=16;  Difficulty=2; }
 	:~{ File="Munificent-Class Star Frigate 2.ship.png"; 				Tier=14;  Difficulty=2; }
-	:~{ File="Pinnance-Class_Cruiser.ship.ship.png"; 					Tier=9;   Difficulty=1; } //Credit Wolfram
+	:~{ File="Pinnance-Class_Cruiser.ship.png"; 					Tier=9;   Difficulty=1; } //Credit Wolfram
 /*
 //	:~{ File="Munificent-class_Star_Frigate.ship.png"; 					Tier=12;  Difficulty=2; }
 //	:~{ File="Diamond-class_Cruiser.ship.png"; 							Tier=11;  Difficulty=1; }
