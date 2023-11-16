@@ -74,6 +74,7 @@ Ships
 	:~{ File="Emp Imperial Star Destroyer.ship.png";						Tier=11;	Difficulty=1; } 
 	:~{ File="Emp Quasar Fire-Class Cruiser-Carrier.ship.png";				Tier=12;	Difficulty=1; } 
 	:~{ File="Emp Dreadnought Mk2.ship.png";								Tier=10;	Difficulty=2; }
+	:~{ File="Onager-Class Star Destroyer II.ship.png";						Tier=14;	Difficulty=2; } 
 	:~{ File="Venator II-Class Star Destroyer (Empire).ship.png";			Tier=15;	Difficulty=1; } 
 	:~{ File="Emp_Vindicator-Class Star Frigat.ship.png";					Tier=13;	Difficulty=1; } //Neojino
 	:~{ File="Bayonet-Class Patrol Cruiser Mk2.ship.png";					Tier=10;	Difficulty=2; } 
