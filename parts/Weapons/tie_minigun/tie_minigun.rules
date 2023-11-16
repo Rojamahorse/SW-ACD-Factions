@@ -3,9 +3,9 @@ Part : &<../xwing_cannon/xwing_cannon.rules>/Part
 	NameKey = "Parts/tieMinigun"
 	IconNameKey = "Parts/tieMinigunIcon"
 	ID = SW.fighter_tie_minigun
-	SelectionTypeID = "f_miniguns"
+	SelectionTypeID = "fighter"
 	EditorGroups = ["WeaponsEnergy","TechI"]
-	DescriptionKey = "Parts/tieMinigunsDesc"
+	DescriptionKey = "Parts/tieLMinigunDesc"
 	EditorIcon
 	{
 		Texture

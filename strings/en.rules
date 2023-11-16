@@ -9,46 +9,34 @@ Parts
 	xwingCannonIcon = "X-Wing SC"
 	xwingCannonLeft = "X-Wing Short Cannon (Side)"
 	xwingCannonLeftIcon = "X-Wing SC (Side)"
-	xwingCannonDesc = "A shortened version of the X-Wing Cannon, allows for placement hidden behind and under armor pieces."
+	xwingCannonDesc = "<green>Incom Corporation</green> presents the X-Wing SC; a compact, short-barrel cannon for stealthy armor integration, excelling in medium-range combat."
 
 	//Compact Mass-Driver Cannon
-	xwingCannonLong = "Compact Mass-Driver Cannon"
-	xwingCannonLongIcon = "CMDC"
-	xwingCannonLongLeft = "Compact Mass-Driver Cannon (Side)"
-	xwingCannonLongLeftIcon = "CMDC (Side)"
-	xwingCannonLongDesc = "The Compact Mass-Driver Cannon (CMDC) by <green>Kuat Systems Engineering</green>; A scaled-down yet formidable kinetic weapon, designed for precision and power in dogfights. Its sleek design allows for seamless integration with various Starfighter models, providing unmatched kinetic impact while maintaining aerodynamic efficiency."
+	xwingCannonLong = "Mass-Driver Compact Cannon"
+	xwingCannonLongIcon = "Mass-Driver CC"
+	xwingCannonLongLeft = "Mass-Driver Compact Cannon (Side)"
+	xwingCannonLongLeftIcon = "Mass-Driver CC (Side)"
+	xwingCannonLongDesc = "The Mass-Driver Compact Cannon (MD-CC) by <green>Kuat Systems Engineering</green>; A scaled-down yet formidable kinetic weapon, designed for precision and power in dogfights. Its sleek design allows for seamless integration with various Starfighter models, providing unmatched kinetic impact while maintaining aerodynamic efficiency."
 	
-/*
-	//Long X-Wing Cannons
-	xwingCannonLong = "RedFury Blaster Cannon"
-	xwingCannonLongIcon = "RedFury-BC"
-	xwingCannonLongLeft = "RedFury Blaster Cannon (Side)"
-	xwingCannonLongLeftIcon = "RedFury-BC (Side)"
-	xwingCannonLongDesc = "The RedFury Blaster by <green>Merr-Sonn Munitions</green>; A hard-hitting Heavy Blaster Cannon that allows for placement behind and hidden under armor pieces."
-*/
 	//Extra Long X-Wing Cannons
 	xwingCannonXLong = "X-Wing Extended Cannon"
 	xwingCannonXLongIcon = "X-Wing XC"
 	xwingCannonXLongLeft = "X-Wing Extended Cannon (Side)"
 	xwingCannonXLongLeftIcon = "X-Wing XC (Side)"
-	xwingCannonXLongDesc = "An Extended X-Wing Cannon, an enhanced version of the X-Wing cannon allows for placement hidden behind and under armor pieces."
-
-	//TIE Repeaters
-	tieMiniguns = "TIE Repeater Cannon"
-	tieMinigunsDesc = "TIE Repeaters are small, rapid-firing weapons that allows for placement hidden behind and under armor pieces. They are inaccurate, but useful for close range engagements."
+	xwingCannonXLongDesc = "<green>Incom Corporation's</green> X-Wing XC; an extended version of the classic cannon, combining range and stealth for strategic positioning behind armor."
 
 	//Standard TIE Repeaters
-	tieMinigun = "TIE Repeater Cannon"
-	tieMinigunIcon = "TIE Repeater"
-	tieMinigunLeft = "TIE Repeater Cannon (Side)"
-	tieMinigunLeftIcon = "TIE Repeater (Side)"
-	tieLMinigunDesc = "TIE Repeater Cannons, allows for placement hidden behind and under armor pieces."
+	tieMinigun = "TIE Repeater Cannon - Super Edition"
+	tieMinigunIcon = "TIE RC-SE"
+	tieMinigunLeft = "TIE Repeater Cannon - Super Edition (Side)"
+	tieMinigunLeftIcon = "TIE RC-SE (Side)"
+	tieLMinigunDesc = "The <green>Galactic Empire's</green> TIE Repeater Cannons - Super Edition; compact, rapid-firing, and perfect for close-range engagements, with stealthy armor placement capabilities."
 
 	tieMinigunLong = "HyCor Heavy Repeater Extended Cannon"
 	tieMinigunLongIcon = "HyCor HR-XC"
 	tieMinigunLongLeft = "HyCor Heavy Repeater Extended Cannon (Side)"
 	tieMinigunLongLeftIcon = "HyCor HR-XC (Side)"
-	tieLMinigunLongDesc = "Heavy Laser Repeater with Extended Cannon by <green>HyCor</green>; A rapid-firing Heavy Laser Repeater modified for use on small-to-medium ships."
+	tieLMinigunLongDesc = "Heavy Laser Repeater with Extended Cannon by <green>HyCor</green>; rapid-firing and perfect for close-range enagements, this Heavy Laser Repeater is modified for use on small-to-medium ships. Can be placed behind and under ship armor."
 
 	// RG-9 Cannons
 	RG9Cannon = "RG-9 Laser Cannon Enhanced Edition"
@@ -58,6 +46,28 @@ Parts
 	RG9CannonDesc = "RG-9 Laser Cannon by <green>Borstel</green>; An Enhanced Edition of the quick-firing, versatile small A-Wing laser, mainly used in medium to large fighters."
 	RG9CannonLeftDesc = "RG-9 Laser Cannon by <green>Borstel</green>; An Enhanced Edition of the quick-firing, versatile small A-Wing laser, mainly used in medium to large fighters."
 
+	// Standard TwinLaser Defense Turret
+	DroidTurret = "StarGuard TwinBeam Defense Turret"
+	DroidTurretIcon = "Starguard TB-DT"
+	DroidTurretDesc = "The StarGuard TwinBeam Defense Turret manufactured by <green>Corellian ArmsTech</green>; Unleashing dual beam fury, the StarGuard TwinBeam Defense Turret offers unmatched protection against incoming threats."
+
+	// Mini TwinLaser Defense Turret
+	PDTurretTiny = "StarGuard TwinLaser Compact Point Defense Turret"
+	PDTurretTinyIcon = "Starguard TL-C-PDT"
+	PDTurretTinyDesc = "The StarGuard TwinLaser Point Defense Turret manufactured by <green>Corellian ArmsTech</green>; Unleashing dual laser fury, this miniaturized and fully automated version of the StarGuard TwinLaser Turret is optimized for tight spaces."
+/*
+	//Long X-Wing Cannons
+	xwingCannonLong = "RedFury Blaster Cannon"
+	xwingCannonLongIcon = "RedFury-BC"
+	xwingCannonLongLeft = "RedFury Blaster Cannon (Side)"
+	xwingCannonLongLeftIcon = "RedFury-BC (Side)"
+	xwingCannonLongDesc = "The RedFury Blaster by <green>Merr-Sonn Munitions</green>; A hard-hitting Heavy Blaster Cannon that allows for placement behind and hidden under armor pieces."
+*/
+/*
+	//TIE Repeaters
+	tieMiniguns = "TIE Repeater Cannon"
+	tieMinigunsDesc = "TIE Repeaters are small, rapid-firing weapons that allows for placement hidden behind and under armor pieces. They are inaccurate, but useful for close range engagements."
+*/
 /*
 	// SW Multipurpose Turrets
 
@@ -79,18 +89,9 @@ Parts
 	// Reactors
 	SWMedReactor = "Reinforced Light Reactor"
 	SWMedReactorIcon = "Light Reactor"
-	SWMedReactorDesc = "An armored reactor reinforced with durasteel; A highly-efficient light reactor designed for state-of-the-art medium and large cruisers and frigates with no extra room for outdated and ugly large reactor equipment."
+	SWMedReactorDesc = "An armored reactor reinforced with durasteel; A highly-efficient light reactor designed for state-of-the-art medium and large cruisers and frigates with no extra room for outdated and ugly bulky reactor equipment."
 */
 
-	// Standard TwinLaser Defense Turret
-	DroidTurret = "StarGuard TwinBeam Defense Turret"
-	DroidTurretIcon = "Starguard TB-DT"
-	DroidTurretDesc = "Unleashing dual beam fury, the StarGuard TwinBeam Defense Turret offers unmatched protection against incoming threats."
-
-	// Mini TwinLaser Defense Turret
-	PDTurretTiny = "StarGuard TwinLaser Compact Point Defense Turret"
-	PDTurretTinyIcon = "Starguard TL-C-PDT"
-	PDTurretTinyDesc = "Unleashing dual laser fury, this miniaturized and fully automated version of the StarGuard TwinLaser Turret is optimized for tight spaces."
 
 }
 

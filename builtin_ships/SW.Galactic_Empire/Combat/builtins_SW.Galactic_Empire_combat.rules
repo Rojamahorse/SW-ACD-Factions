@@ -24,6 +24,7 @@ Ships
 	:~{ File="Emp_TIE (LN) Fighter.ship.png";								Tier=1;	 	Difficulty=2; } //Neojino
 	:~{ File="Emp_TIE Advanced X1.ship.png";								Tier=3;	 	Difficulty=2; } //Neojino
 	:~{ File="Emp_TIE Interceptor.ship.png";								Tier=3;	 	Difficulty=2; } //Neojino
+	:~{ File="Emp_TIE Prototype R.ship.png";                           		Tier=5;  	Difficulty=2; }
 	:~{ File="Emp_TIE Blackout.ship.png";									Tier=4;	 	Difficulty=2; } //Neojino
 	:~{ File="Emp_TIE Reaper.ship.png";										Tier=4;	 	Difficulty=2; } //Neojino
 	:~{ File="Emp_TIE SA Bomber.ship.png";									Tier=3;	 	Difficulty=2; } //Neojino

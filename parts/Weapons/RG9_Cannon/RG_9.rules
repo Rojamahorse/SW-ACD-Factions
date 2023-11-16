@@ -6,7 +6,7 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 	// OtherIDs = []
 	EditorGroups = ["WeaponsEnergy","TechI"]
 	DescriptionKey = "Parts/RG9CannonDesc"
-	SelectionTypeID = "f_cannonsa"
+	SelectionTypeID = "fighter"
 	Resources
 	[
 		[steel, 22]
