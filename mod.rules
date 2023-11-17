@@ -42,7 +42,7 @@ Actions
 		AddTo = "<ships/terran/terran.rules>/Terran/Roofs/RoofDecalGroups"
 		ManyToAdd
 		[
-			&<roof_decals/sw_decal_group.rules>/SW_factions
+			//&<roof_decals/sw_decal_group.rules>/SW_factions
 			&<roof_decals/sw_decal_group.rules>/SW_adv_shapes
 		]
 	}
