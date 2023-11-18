@@ -231,9 +231,9 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 			RotateSpeed = 225d
 			FireThresholdAngle = 1d
 			AIFirepowerRating = 150
-			// Emitter = BaseEmitter
 			CanBeGivenExplicitTarget = false
-			IgnoreFriendlyShipLowLOSChecks = true
+			IgnoreSourceShipLowLOSChecks = true
+			// Emitter = BaseEmitter
 			TargetSearchesPerSecond = 4 // Default is 2.
 			HoldTargetAfterCancel = .5
 			TargetPathThickness = .2// &../BulletEmitter/Bullet/Components/Physics/Radius
@@ -397,6 +397,7 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 			FireTrigger = Turret
 			GetTargetFrom = Turret
 			Location = [1.4, -.28]
+			SourceShipLowCollisions = false
 			OperationalToggle = IsOperational
 			// Bullet = &<../common_shots/sw_pd_beam_shot/sw_pd_beam_shot.rules>
 			// Spread = [-5.5d, 5.5d]
@@ -406,7 +407,6 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 			Burst = 1
 			FireDelay = .25
 			//UseResourcePerShotInBurst = true
-			SourceShipLowCollisions = false
 
 //			Recoil = 240
 		}
