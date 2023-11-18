@@ -629,7 +629,7 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 			NameKey = "StatCategories/SWPDBeamLaser"
 			Stats
 			{
-				DamagePerShot = &~/Part/Components/BaseEmitter/HitNothing/HitEffects/0/TotalDamage    // Bullet/Components/Hit/HitOperational/HitEffects/0/Damage
+				DamagePerShot = &~/Part/Components/BaseEmitter/HitNothing/HitEffects/0/Damage    // Bullet/Components/Hit/HitOperational/HitEffects/0/Damage
 				DamagePerSecond = (&DamagePerShot) * (&ROF)
 				Damage = [&../DamagePerShot, &../DamagePerSecond]
 				// Salvo = [(&~/Part/Components/BaseEmitter/Burst), (&~/Part/Components/Turret/FireInterval)]

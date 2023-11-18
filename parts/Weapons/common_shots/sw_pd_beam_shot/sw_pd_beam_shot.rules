@@ -1,6 +1,8 @@
-Range = 275
-IdealRange = 200
+Range = 225
+IdealRange = 110
 ClipRangeToTarget = true
+HitInterval = .01
+Width = .1
 
 BeamMediaEffects
 [
@@ -52,10 +54,25 @@ BeamMediaEffects
 	}
 ]
 
+CrewCollisions = {Enemies=true; Junk=true}
+SourceShipLowCollisions = false
+
+
 HitNothing
 {
 	HitEffects
 	[
+		{
+			Type = Damage
+			Damage = 30
+			Filter
+			{
+				Ships = true
+				Shields = true
+				Bullets = false
+				Crew = false
+			}
+		}
 		{
 			Type = ExplosiveDamage
 			TotalDamage = 650
@@ -66,7 +83,8 @@ HitNothing
 				Ships = false
 				Shields = false
 				Bullets = true
-				OnlyBulletCategories = [missile, bullet, mine]
+				OnlyBulletCategories = [missile, laser, bullet, mine]
+				Crew = true
 			}
 		}
 	]
