@@ -16,6 +16,7 @@ Ships
 	:~{ File="Rebel BTL-B Y-Wing Bomberv2.ship.png";         							Tier=4;  Difficulty=2; } // Cost $0
 	:~{ File="Rebel BTL-B Y-Wing Bomber.ship.png";        								Tier=4;  Difficulty=2; } // Cost $0
 	:~{ File="Rebel-ASF-01 B-Wing Starfighter.ship.png";         						Tier=4;  Difficulty=1; } // Cost $0
+	:~{ File="A-Wing Railfighter Alt 2.ship.png";         								Tier=5;  Difficulty=1; } // Cost $0
 												
 	// Patrol ships
 	:~{ File="ASF-01 B-Wing Starfighter.ship.png";          							Tier=6;  Difficulty=1; } // Cost $0
