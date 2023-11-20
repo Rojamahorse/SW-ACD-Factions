@@ -10,6 +10,7 @@ Ships
 	:~{ File="P-38 Rogue-Class Starfighter Mk2.ship.png";          		Tier=3;  Difficulty=2; }
 	:~{ File="P-42 Rogue-Class Starfighter.ship.png";          			Tier=3;  Difficulty=2; }
 	:~{ File="Vulture-Class Droid Starfighter.ship.png";       			Tier=1;  Difficulty=1; }
+	:~{ File="Vulture-Class Droid-R Starfighte.ship.png";       		Tier=3;  Difficulty=2; }
 	:~{ File="C-9979 Landing Craft (CIS) Atk.ship.png"; 				Tier=4;  Difficulty=2; }
 	:~{ File="C-9979 Landing Craft (CIS) III.ship.png"; 				Tier=7;  Difficulty=1; }
 /*
@@ -114,6 +115,7 @@ Ships
 	:~{ File="Subjugator-Class Heavy R Cruiser.ship.png";        		Tier=15;  Difficulty=2; }
 	:~{ File="Providence-Class Dreadnought.ship.png";          			Tier=16;  Difficulty=2; }
 	:~{ File="Munificent-Class Star Frigate 2.ship.png"; 				Tier=14;  Difficulty=2; }
+	:~{ File="Munificent-Class Star Frigate 2R.ship.png"; 				Tier=15;  Difficulty=2; }
 	:~{ File="Pinnance-Class_Cruiser.ship.png"; 					Tier=9;   Difficulty=1; } //Credit Wolfram
 /*
 //	:~{ File="Munificent-class_Star_Frigate.ship.png"; 					Tier=12;  Difficulty=2; }
