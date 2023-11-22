@@ -23,6 +23,14 @@ Actions
 
 	/* *********** PARTS ************* */
 
+	{
+		Action = AddMany
+		AddTo = "<./Data/modes/career/sysgen.rules>/Spawners"
+		ManyToAdd
+		[
+			&<career/fleethideout_spawner.rules>/Fleethideout
+		]
+	}
 
  	{ 
 		Action = AddMany
