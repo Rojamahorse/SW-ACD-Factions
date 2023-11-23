@@ -28,7 +28,7 @@ Actions
 		AddTo = "<./Data/modes/career/sysgen.rules>/Spawners"
 		ManyToAdd
 		[
-			&<career/fleethideout_spawner.rules>/Fleethideout
+			&<career/sysgen_fleethideouts.rules>/Fleethideouts
 		]
 	}
 
@@ -197,7 +197,15 @@ Actions
 		AddTo = "<modes/career/sysgen_sim_global_missions.rules>/SubSpawners"
         ManyToAdd = &<career/sysgen_sim_global_missions.rules>/SubSpawners
 	}
-	
+/*
+	// Adds discoverables related to SW Factions
+	{
+		Action = AddMany
+		AddTo = "<modes/career/sysgen_misc_discoverables.rules>/SubSpawners"
+        ManyToAdd = &<career/sysgen_misc_discoverables.rules>/SubSpawners
+	}
+*/
+
 	// Adds SW Starter Ships in career mode
 	{
 		Action = AddMany

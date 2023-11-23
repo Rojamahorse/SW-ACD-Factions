@@ -1,9 +1,9 @@
-Fleethideout 
+Fleethideouts 
 {
 	Type = None
-	SpawnChance = 50% // 100
+	SpawnChance = 100% // change after debug
 	Tags = [asteroid]
-	Distance = [20000, 30000]
+	Distance = [15000, 20000]
 	SubSpawners
 	[
 		{
@@ -32,8 +32,8 @@ Fleethideout
 					DoodadType = cosmoteer.poi_unknown
 					Tags = [poi_unknown]
 					AutoRemoveWhenDiscovered = true 
-					HideIfUnexplored = true 
-					Undiscovered = true 
+					HideUntilDiscovered = true
+
 				}
 
 				{
@@ -42,7 +42,7 @@ Fleethideout
 					Tags = [military_station]
 					Count = [2, 4]
 					Distance = [550, 650]
-					NameGenerator = &<../name_generators/sw_name_base.rules>
+					NameGenerator = &<../name_generators/sw_name_hiddenbase.rules>
 //					Faction = SW.Black_Sun
 					SynchronizeFactions = true
 					SynchronizeAllegiance = true
@@ -103,7 +103,7 @@ Fleethideout
 							AutoRemoveWhenDiscovered = true // AutoRemoveWhenDiscovered = true HideIfUnexplored = false ShowOnlyInFog = false Undiscovered = false
 							ShowOnlyInFog = true
 						}
-						// Defense platforms.
+						// Defensive platforms.
 						{
 							Type = Ships
 							Tags = [station_defense]
@@ -127,7 +127,7 @@ Fleethideout
 								Type = DefensePlatform
 							}
 						}
-						// Defense ships.
+						// Defensive ships.
 						{
 							Type = Ships
 							Tags = [station_defense]

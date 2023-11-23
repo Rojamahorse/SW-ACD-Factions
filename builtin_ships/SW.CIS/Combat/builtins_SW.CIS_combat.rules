@@ -94,6 +94,7 @@ Ships
 	:~{ File="Recusant-Class Light Destroyer.ship.png";           		Tier=10;  Difficulty=1; }
 	:~{ File="Recusant-Class Light Destroyer 2.ship.png";				Tier=9;  Difficulty=2; }
 	:~{ File="Invisible Hand.ship.png";           						Tier=12;  Difficulty=2; }
+	:~{ File="Providence-Class Dreadnought Mk2.ship.png"; 				Tier=13;  Difficulty=1; }
 /*
 //	:~{ File="Recusant-class_Heavy_Destroyer.ship.png"; 				Tier=14;  Difficulty=1; }
 //	:~{ File="Solar_Sailer.ship.png"; 									Tier=8;  Difficulty=1; }
