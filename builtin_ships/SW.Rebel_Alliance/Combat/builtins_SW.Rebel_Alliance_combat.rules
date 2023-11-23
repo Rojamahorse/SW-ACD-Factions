@@ -60,6 +60,9 @@ Ships
 	:~{ File="Rebel Pheonix Supply.ship.png"; 											Tier=13;  Difficulty=1; }  // Cost $0
 	:~{ File="Rebel-Nebula-Class Star Destroyer.ship.png";          					Tier=14;  Difficulty=2; }  // Cost $0
 	:~{ File="Reb Nebula-Class Star Destroyer.ship.png";          						Tier=17;  Difficulty=2; }  // Cost $0
+	:~{ File="Dreadnought-Class HvyN Cruiser-R.ship.png";          						Tier=17;  Difficulty=2; }  // Cost $0
+	:~{ File="Dreadnought-Class HvyLN Cruiser.ship.png";          						Tier=17;  Difficulty=2; }  // Cost $0
+	:~{ File="Dreadnought-Class Hvy Cruiser-Rb.ship.png";          						Tier=17;  Difficulty=2; }  // Cost $0
 
 	// Cruisers
 	:~{ File="MC75 Mon Calamari Star Cruiser.ship.png"; 								Tier=15;  Difficulty=1; } // Cost $0

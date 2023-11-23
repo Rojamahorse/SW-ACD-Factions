@@ -423,8 +423,8 @@ EmitterDef
 			ValueType = Color
 			Value
 			{
-				Rf = 1
-				Gf = 0
+				Rf = 0
+				Gf = 1
 				Bf = 0
 				Af = 1
 			}

@@ -37,6 +37,8 @@ Ships
 	:~{ File="Republic Z-95 Headhunter Orig.ship.png";        								Tier=4;  Difficulty=2; } //  Credit ClassicJam
 	:~{ File="Arquitens_Class_Light_Cruiser.ship.png";        								Tier=7;  Difficulty=2; } //  Credit Wolfram
 	:~{ File="Republic Delta 4.ship.png";           										Tier=5;  Difficulty=1; }
+	:~{ File="Royal House N-1 Starfighter Mk2.ship.png";           							Tier=3;  Difficulty=2; }
+	:~{ File="Royal House N-1 Starfighter.ship.png";           								Tier=2;  Difficulty=1; }
 	
 //	:~{ File="Delta_7_Aethersprite_class_Light_Interceptor.ship.png";           			Tier=1;  Difficulty=2; }
 //	:~{ File="Eta_2_Actis_class_Light_Interceptor.ship.png";           						Tier=2;  Difficulty=1; }
