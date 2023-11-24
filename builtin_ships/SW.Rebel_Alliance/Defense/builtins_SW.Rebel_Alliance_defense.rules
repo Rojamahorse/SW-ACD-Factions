@@ -8,4 +8,5 @@ Ships
 	:~{ File="Small Rebel Laser Platform.ship.png";         Tier=2; Difficulty=1; }
 	:~{ File="Small Rebel Cannon Platform.ship.png";        Tier=2; Difficulty=1; }
 	:~{ File="Small Rebel Point Defense Platform.ship.png"; Tier=2; Difficulty=1; }
+	:~{ File="Reb_mineemp_platform.ship.png"; 				Tier=2; Difficulty=1; }
 ]

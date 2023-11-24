@@ -4,12 +4,15 @@ Tags = [station]
 Ships
 [
 	// Civilian stations
-	:~{ File="Small Rebel Trade Station.ship.png"; Tier=4;  Tags : ~/Tags [trade_station];    StasisIcon="Small Rebel Trade Station.png" }
-	:~{ File="Med Rebel Trade Station.ship.png";   Tier=10; Tags : ~/Tags [trade_station];    StasisIcon="Med Rebel Trade Station.png" }
-	:~{ File="Large Rebel Trade Station.ship.png"; Tier=16; Tags : ~/Tags [trade_station];    StasisIcon="Large Rebel Trade Station.png" }
+	:~{ File="Small Rebel Trade Station.ship.png"; 					Tier=4;  Tags : ~/Tags [trade_station];    	StasisIcon="Small Rebel Trade Station.png" }
+	:~{ File="Med Rebel Trade Station.ship.png";   					Tier=10; Tags : ~/Tags [trade_station];    	StasisIcon="Med Rebel Trade Station.png" }
+	:~{ File="New Republic Rebel - Station.ship.png";   			Tier=6; Tags : ~/Tags [trade_station];    	StasisIcon="Med Rebel Trade Station.png" }
+	:~{ File="Large Rebel Trade Station.ship.png"; 					Tier=16; Tags : ~/Tags [trade_station];    	StasisIcon="Large Rebel Trade Station.png" }
 
 	// Military stations
-	:~{ File="Promise of the Rebel Alliance.ship.png";      Tier=6;  SpawnTier=3;  Tags : ~/Tags [military_station]; StasisIcon="Promise of the Rebel Alliance.png" }
-	:~{ File="Inconspicuous Rebel Wreckage.ship.png";     Tier=9;  SpawnTier=8;  Tags : ~/Tags [military_station]; StasisIcon="Inconspicuous Rebel Wreckage.png" }
-	:~{ File="Ghost Rebel Hardware.ship.png";             Tier=12; SpawnTier=12; Tags : ~/Tags [military_station]; StasisIcon="Ghost Rebel Hardware.png" }
+	:~{ File="Minor ReB Arms Depot.ship.png";             			Tier=7; SpawnTier=4; Tags : ~/Tags [military_station]; StasisIcon="Small Rebel Trade Station.png" }
+	:~{ File="GRN- Station.ship.png";             					Tier=7; SpawnTier=4; Tags : ~/Tags [military_station]; StasisIcon="Small Rebel Trade Station.png" }
+	:~{ File="Promise of the Rebel Alliance.ship.png";      		Tier=6;  SpawnTier=3;  Tags : ~/Tags [military_station]; StasisIcon="Promise of the Rebel Alliance.png" }
+	:~{ File="Inconspicuous Rebel Wreckage.ship.png";     			Tier=9;  SpawnTier=8;  Tags : ~/Tags [military_station]; StasisIcon="Inconspicuous Rebel Wreckage.png" }
+	:~{ File="Ghost Rebel Hardware.ship.png";             			Tier=12; SpawnTier=12; Tags : ~/Tags [military_station]; StasisIcon="Ghost Rebel Hardware.png" }
 ]

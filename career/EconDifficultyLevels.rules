@@ -19,7 +19,7 @@ EconDifficultyLevels
 		NameKey = "EconDifficulty/Fast"
 		TipKey = "EconDifficulty/FastTip"
 		IsDefault = true
-		StartingMoney = 65200+70000
+		StartingMoney = 65200+120000
 		StartingFame = 0
 		EnemyResourceDropRateFactor = 200%
 		SelfResourceDropRateFactor = 150%
@@ -32,7 +32,7 @@ EconDifficultyLevels
 		ID = "normal"
 		NameKey = "EconDifficulty/Normal"
 		TipKey = "EconDifficulty/NormalTip"
-		StartingMoney = 65200+40000
+		StartingMoney = 65200+95000
 		StartingFame = 0
 		EnemyResourceDropRateFactor = 100%
 		SelfResourceDropRateFactor = 100%
@@ -45,7 +45,7 @@ EconDifficultyLevels
 		ID = "slow"
 		NameKey = "EconDifficulty/Slow"
 		TipKey = "EconDifficulty/SlowTip"
-		StartingMoney = 65200+15000
+		StartingMoney = 65200+75000
 		StartingFame = 0
 		EnemyResourceDropRateFactor = 50%
 		SelfResourceDropRateFactor = 50%

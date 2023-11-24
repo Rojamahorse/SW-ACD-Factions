@@ -5,6 +5,7 @@ Ships
 [
 	// Scouts
 	:~{ File="Rebel RZ-1 A-Wing Interceptor v2.ship.png";     							Tier=2;  Difficulty=1; } // Cost $0
+	:~{ File="A-Wing Starfighter Rogue1.ship.png";     									Tier=3;  Difficulty=2; } // Cost $0
 	:~{ File="Rebel T-65 X-Wing Starfighter.ship.png";          						Tier=3;  Difficulty=2; } // Cost $0
 	:~{ File="Rebel T-65B X-Wing H Starfighter.ship.png";       						Tier=4;  Difficulty=1; } // Cost $0
 	:~{ File="Rebel Z-95 Headhunter.ship.png";   										Tier=1;  Difficulty=2; } // Cost $0
@@ -12,39 +13,28 @@ Ships
 	:~{ File="Rebel RZ-1 A-Wing Bomber.ship.png";           							Tier=2;  Difficulty=2; } // Cost $0
 	:~{ File="Rebel RZ-1 A-Wing Interceptor.ship.png";         							Tier=1;  Difficulty=1; } // Cost $0
 	:~{ File="Reb_V-19_Torrent_Starfighter.ship.png";									Tier=1;  Difficulty=2; } // Cost $0 		
-	// :~{ File="Ferret-class_Reconnaissance_Vessel.ship.png"; 							Tier=1;  Difficulty=2; } // Cost $0
-	// :~{ File="RZ-2_A-wing.ship.png";  												Tier=2;  Difficulty=1; } // Cost $0
-	// :~{ File="T-65_X-wing_Starfighter.ship.png"; 	 								Tier=3;  Difficulty=2; } // Cost $0
-	// :~{ File="Y-wing_Starfighter.ship.png"; 											Tier=1;  Difficulty=1; } // Cost $0
-	// :~{ File="Actis-class_Light_Interceptor.ship.png";  								Tier=1;  Difficulty=1; } // Cost $0
-	// :~{ File="E-wing_Escort_Starfighter.ship.png";  									Tier=2;  Difficulty=1; } // Cost $0
-	// :~{ File="B-wing_Starfighter.ship.png"; 											Tier=4;  Difficulty=1; } // Cost $0
-	// :~{ File="A-wing_Interceptor.ship.png";  										Tier=3;  Difficulty=1; } // Cost $0
-	// :~{ File="ARC-170_Starfighter.ship.png";  										Tier=3;  Difficulty=1; } // Cost $0
-	// :~{ File="Nantex-class_Territorial_Defense_Starfighter.ship.png";  				Tier=3;  Difficulty=1; } // Cost $0
-	// :~{ File="Prowler-class_Reconnaissance_Vessel.ship.png";  						Tier=1;  Difficulty=1; } // Cost $0
-	// :~{ File="T-85_X-wing.ship.png";  												Tier=4;  Difficulty=1; } // Cost $0
-	// :~{ File="Y-wing_Bomber.ship.png";  												Tier=4;  Difficulty=1; } // Cost $0
-	// :~{ File="T-70_X-wing.ship.png"; 												Tier=3;  Difficulty=1; } // Cost $0
 	:~{ File="Rebel BTL-B Y-Wing Bomberv2.ship.png";         							Tier=4;  Difficulty=2; } // Cost $0
 	:~{ File="Rebel BTL-B Y-Wing Bomber.ship.png";        								Tier=4;  Difficulty=2; } // Cost $0
 	:~{ File="Rebel-ASF-01 B-Wing Starfighter.ship.png";         						Tier=4;  Difficulty=1; } // Cost $0
+	:~{ File="A-Wing Railfighter Alt 2.ship.png";         								Tier=5;  Difficulty=1; } // Cost $0
+	:~{ File="T-65B X-Wing PT-R Mk2 Starfighte.ship.png";         						Tier=3;  Difficulty=2; } // Cost $0
+	:~{ File="T-65B X-Wing PT-R Starfighter.ship.png";         							Tier=3;  Difficulty=2; } // Cost $0
+	:~{ File="T-65B X-Wing Starfighter.ship.png";         								Tier=2;  Difficulty=1; } // Cost $0
 												
 	// Patrol ships
+	:~{ File="ASF-01 B-Wing Starfighter.ship.png";          							Tier=6;  Difficulty=1; } // Cost $0
+	:~{ File="ASF-01 B-Wing Hvy Starfighter G.ship.png";          						Tier=6;  Difficulty=1; } // Cost $0
+	:~{ File="ASF-01 B-Wing Hvy Starfighter R.ship.png";          						Tier=6;  Difficulty=1; } // Cost $0
+	:~{ File="Rebel Gunship G.ship.png";          										Tier=6;  Difficulty=1; } // Cost $0
+	:~{ File="C-9979 Landing Craft (Reb) Atk.ship.png";          						Tier=5;  Difficulty=1; } // Cost $0
 	:~{ File="Rebel-Millenium Falcon (Combat Loadout).ship.png";          				Tier=5;  Difficulty=1; } // Cost $0
 	:~{ File="Millenium Falcon (Combat Loadout).ship.png";         						Tier=6;  Difficulty=2; } // Cost $0
 	:~{ File="Rebel GR-75 Medium Transport v2.ship.png";          						Tier=7;  Difficulty=2; } // Cost $0
 	:~{ File="Rebel GR-75 Medium Transport.ship.png";         							Tier=7;  Difficulty=1; } // Cost $0
+	:~{ File="GR-75 Medium Transport.ship.png";         								Tier=6;  Difficulty=2; } // Cost $0
 	:~{ File="Rebel Millenium Falcon Combat B.ship.png";           						Tier=4;  Difficulty=2; } // Cost $0
 	:~{ File="Rebel Millenium Falcon.ship.png";           								Tier=4;  Difficulty=2; } // Cost $0
-	// :~{ File="Delta-class_JV-7_Escort_Shuttle.ship.png"; 							Tier=4;  Difficulty=1; } // Cost $0
-	// :~{ File="U-wing.ship.png"; 														Tier=4;  Difficulty=1; } // Cost $0
-	// :~{ File="GR-75_Medium_Transport.ship.png"; 										Tier=4;  Difficulty=1; } // Cost $0
-	// :~{ File="GR-80_Medium_Transport.ship.png"; 										Tier=4;  Difficulty=1; } // Cost $0
-	// :~{ File="GR-45_Medium_Transport.ship.png"; 										Tier=4;  Difficulty=1; } // Cost $0
-	// :~{ File="YT-13000_Light_Freighter.ship.png"; 									Tier=4;  Difficulty=1; } // Cost $0
-	// :~{ File="Sheathipede-class_Transport_Shuttle.ship.png"; 						Tier=4;  Difficulty=1; } // Cost $0
-	// :~{ File="Ghost_VCX-100.ship.png"; 												Tier=4;  Difficulty=1; } // Cost $0
+	:~{ File="Reb Delta 4.ship.png";           											Tier=5;  Difficulty=1; }
 	
 	// Corvettes
 	:~{ File="Rebel-CR-90 Corvette.ship.png";            								Tier=7;  Difficulty=1; } // Cost $0
@@ -52,18 +42,9 @@ Ships
 	:~{ File="Rebel CR-90 Corvette B.ship.png";         								Tier=8;  Difficulty=2; } // Cost $0 
 	:~{ File="Rebel CR-90 Corvette R.ship.png";        									Tier=8;  Difficulty=1; } // Cost $0 
 	:~{ File="Rebel Marauder-Class B Corvette.ship.png";         						Tier=8;  Difficulty=2; } // Cost $0
- 
-	// :~{ File="Lancer-class_Pursuit_Craft.ship.png";  								Tier=8;  Difficulty=1; } // Cost $0
-	// :~{ File="MC40a_Light_Cruiser.ship.png";  										Tier=8;  Difficulty=1; } // Cost $0
-	// :~{ File="Bayonet-class_Light_Cruiser.ship.png";  								Tier=8;  Difficulty=1; } // Cost $0
-	// :~{ File="CR90_Corvette.ship.png";  												Tier=8;  Difficulty=1; } // Cost $0
-	// :~{ File="Modified_CR90_Corvette.ship.png";  									Tier=8;  Difficulty=1; } // Cost $0
-	// :~{ File="Marauder-class_Corvette.ship.png";  									Tier=8;  Difficulty=1; } // Cost $0
-	// :~{ File="Satos_Hammer.ship.png";  												Tier=8;  Difficulty=1; } // Cost $0
-	// :~{ File="Hammerhead_Corvette.ship.png";  										Tier=8;  Difficulty=1; } // Cost $0
-	// :~{ File="Free_Virgillia-class_Bunkerbuster.ship.png";  							Tier=8;  Difficulty=1; } // Cost $0
-	// :~{ File="Braha'tok-class_Gunship.ship.png";  									Tier=8;  Difficulty=1; } // Cost $0
-	// :~{ File="Gozanti-class_Cruiser.ship.png";  										Tier=8;  Difficulty=1; } // Cost $0
+	:~{ File="ASF-01 B-Wing Hvy Starfighter 2.ship.png";      							Tier=6;  Difficulty=2; } // Cost $0
+	:~{ File="ASF-01 B-Wing Hvy Starfighter B.ship.png";      							Tier=7;  Difficulty=1; } // Cost $0
+	:~{ File="Reb A-Wing Starfighter.ship.png";      									Tier=6;  Difficulty=2; } // Cost $0
 	
 	// Frigates
 	:~{ File="Pelta-Class Frigate I (Reb).ship.png";           							Tier=6; Difficulty=2; } // Cost $0
@@ -73,38 +54,31 @@ Ships
 	:~{ File="Assault Frigate Mk1.ship.png";    										Tier=9;  Difficulty=1; } // Cost $0
 	:~{ File="Rebel DP20 Frigate.ship.png";           									Tier=6;  Difficulty=2; } // Cost $0
 	:~{ File="Rebel EF76 Nebulon-Escort Frigat.ship.png";       						Tier=7;  Difficulty=2; } // Cost $0
-	// :~{ File="DP20_Frigate.ship.png";  												Tier=10;  Difficulty=1; } // Cost $0
-	// :~{ File="EF76_Nebulon-B2_Frigate.ship.png";  									Tier=10;  Difficulty=1; } // Cost $0
-	// :~{ File="EF76_Nebulon-C_Frigate.ship.png";  									Tier=10;  Difficulty=1; } // Cost $0
-	// :~{ File="Modified_Nebulon-B_Frigate.ship.png";  								Tier=10;  Difficulty=1; } // Cost $0
-	// :~{ File="Consular-class_Armed_Frigate.ship.png";  								Tier=10;  Difficulty=1; } // Cost $0
-	// :~{ File="MC30c_Torpedo_Frigate.ship.png";  										Tier=10;  Difficulty=1; } // Cost $0
-	// :~{ File="CC-2100_Star_Frigate.ship.png";  										Tier=10;  Difficulty=1; } // Cost $0
-	// :~{ File="Nebulon-C_Frigate.ship.png";  											Tier=11;  Difficulty=1; } // Cost $0
-	// :~{ File="EF76B_Nebulon-B_Frigate.ship.png"; 					 				Tier=11;  Difficulty=1; } // Cost $0
-	// :~{ File="CC-9600_Star_Frigate.ship.png";  										Tier=12;  Difficulty=1; } // Cost $0
-	// :~{ File="CC-7700E_Interdiction_Frigate.ship.png";  								Tier=12;  Difficulty=1; } // Cost $0
-	// :~{ File="Nebulon-B_Frigate.ship.png";  											Tier=12;  Difficulty=1; } // Cost $0
-	// :~{ File="MC30c_Frigate.ship.png";  												Tier=13;  Difficulty=1; } // Cost $0
-	// :~{ File="MC30b_Frigate.ship.png";  												Tier=13;  Difficulty=1; } // Cost $0
-	// :~{ File="CC-7700_Frigate.ship.png";  											Tier=13;  Difficulty=1; } // Cost $0
-	// :~{ File="KDY_Nebulon-K_Frigate.ship.png";  										Tier=13;  Difficulty=1; } // Cost $0
-	// :~{ File="CC-9600_Frigate.ship.png";  											Tier=13;  Difficulty=1; } // Cost $0
+	:~{ File="EF76 Nebulon-B Escort Frigate II.ship.png";       						Tier=8;  Difficulty=2; } // Cost $0
 	
 	// Destroyers
 	:~{ File="Rebel Pheonix Supply.ship.png"; 											Tier=13;  Difficulty=1; }  // Cost $0
 	:~{ File="Rebel-Nebula-Class Star Destroyer.ship.png";          					Tier=14;  Difficulty=2; }  // Cost $0
 	:~{ File="Reb Nebula-Class Star Destroyer.ship.png";          						Tier=17;  Difficulty=2; }  // Cost $0
-	// :~{ File="Alliance_Escort_Carrier.ship.png";     								Tier=8;  Difficulty=2; }   // Cost $0
-	// :~{ File="Quasar_Fire-class_Cruiser-Carrier.ship.png";     						Tier=12;  Difficulty=2; }  // Cost $0
-	// :~{ File="Starfreighter.ship.png";     											Tier=14;  Difficulty=2; }  // Cost $0
-	
+	:~{ File="Dreadnought-Class HvyN Cruiser-R.ship.png";          						Tier=17;  Difficulty=2; }  // Cost $0
+	:~{ File="Dreadnought-Class HvyLN Cruiser.ship.png";          						Tier=17;  Difficulty=2; }  // Cost $0
+	:~{ File="Dreadnought-Class Hvy Cruiser-Rb.ship.png";          						Tier=17;  Difficulty=2; }  // Cost $0
 
 	// Cruisers
+	:~{ File="MC75 Mon Calamari Star Cruiser.ship.png"; 								Tier=15;  Difficulty=1; } // Cost $0
 	:~{ File="Rebel MC75 Mon Calamari Cruiser.ship.png"; 								Tier=15;  Difficulty=1; } // Cost $0
 	:~{ File="Rebel MC75 Mon Calamari Star Cru.ship.png";        						Tier=16;  Difficulty=2; } // Cost $0
-	:~{ File="Rebel Sphyrna Heavy Hammerhead C.ship.png";        						Tier=11;  Difficulty=2; } // Cost $0
-	:~{ File="Rebel Sphyrna-Class Hammerhead C.ship.png";      							Tier=12;  Difficulty=1; } // Cost $0
+	:~{ File="Rebel Sphyrna Heavy Hammerhead C.ship.png";        						Tier=7;  Difficulty=2; } // Cost $0
+	:~{ File="Rebel Sphyrna Hvy Hammerhead C.ship.png";        							Tier=8;  Difficulty=2; } // Cost $0
+	:~{ File="Rebel Sphyrna-Class Hammerhead C.ship.png";      							Tier=11;  Difficulty=1; } // Cost $0
+	:~{ File="Venator II-Class Star Destroyer (Rebels).ship.png";          				Tier=15;  Difficulty=2; } // Cost $0
+ 	:~{ File="MC80 Liberty-Type Heavy Star Cruiser.ship.png";          					Tier=15;  Difficulty=2; } // Cost $0
+
+	// Flagships
+	:~{ File="Rebel Pheonix Home.ship.png";         									Tier=18;  Difficulty=2; } // Cost $0
+	:~{ File="Rebel Pheonix Home Alt.ship.png";         								Tier=9;   Difficulty=2; } // Cost $0
+]
+
 	// :~{ File="Viscount-class_Star_Defender.ship.png";          						Tier=10;  Difficulty=2; } // Cost $0
 	// :~{ File="MC85_Star_Cruiser.ship.png";          									Tier=13;  Difficulty=2; } // Cost $0
 	// :~{ File="MC60_Cruiser.ship.png";          										Tier=13;  Difficulty=2; } // Cost $0
@@ -125,14 +99,61 @@ Ships
 	// :~{ File="Kaloth-class_Battlecruiser.ship.png";          						Tier=15;  Difficulty=2; } // Cost $0
 	// :~{ File="Galactic-class_Battle_Carrier.ship.png";          						Tier=16;  Difficulty=2; } // Cost $0
 	// :~{ File="Venator-class_Star_Destroyer.ship.png";          						Tier=17;  Difficulty=2; } // Cost $0
-
-	// Flagships
-	:~{ File="Rebel Pheonix Home.ship.png";         									Tier=18;  Difficulty=2; } // Cost $0
-	:~{ File="Rebel Pheonix Home Alt.ship.png";         								Tier=9;   Difficulty=2; } // Cost $0
 	// :~{ File="MC80_Home_One_type_Star_Cruiser.ship.png";  							Tier=15;  Difficulty=1; } // Cost $0
 	// :~{ File="Home_One-type_MC80_Star_Cruiser.ship.png";  							Tier=15;  Difficulty=2; } // Cost $0
 	// :~{ File="Lucrehulk-class_Battleship.ship.png";  								Tier=17;  Difficulty=2; } // Cost $0
 	// :~{ File="Endurance-class_Fleet_Carrier.ship.png";  								Tier=18;  Difficulty=2; } // Cost $0
 	// :~{ File="Rebel Nebula-Class Star Destroye.ship.png";    						Tier=16;  Difficulty=2; } // Cost $0
-]
-
+	// :~{ File="Alliance_Escort_Carrier.ship.png";     								Tier=8;  Difficulty=2; }   // Cost $0
+	// :~{ File="Quasar_Fire-class_Cruiser-Carrier.ship.png";     						Tier=12;  Difficulty=2; }  // Cost $0
+	// :~{ File="Starfreighter.ship.png";     											Tier=14;  Difficulty=2; }  // Cost $0
+	// :~{ File="DP20_Frigate.ship.png";  												Tier=10;  Difficulty=1; } // Cost $0
+	// :~{ File="EF76_Nebulon-B2_Frigate.ship.png";  									Tier=10;  Difficulty=1; } // Cost $0
+	// :~{ File="EF76_Nebulon-C_Frigate.ship.png";  									Tier=10;  Difficulty=1; } // Cost $0
+	// :~{ File="Modified_Nebulon-B_Frigate.ship.png";  								Tier=10;  Difficulty=1; } // Cost $0
+	// :~{ File="Consular-class_Armed_Frigate.ship.png";  								Tier=10;  Difficulty=1; } // Cost $0
+	// :~{ File="MC30c_Torpedo_Frigate.ship.png";  										Tier=10;  Difficulty=1; } // Cost $0
+	// :~{ File="CC-2100_Star_Frigate.ship.png";  										Tier=10;  Difficulty=1; } // Cost $0
+	// :~{ File="Nebulon-C_Frigate.ship.png";  											Tier=11;  Difficulty=1; } // Cost $0
+	// :~{ File="EF76B_Nebulon-B_Frigate.ship.png"; 					 				Tier=11;  Difficulty=1; } // Cost $0
+	// :~{ File="CC-9600_Star_Frigate.ship.png";  										Tier=12;  Difficulty=1; } // Cost $0
+	// :~{ File="CC-7700E_Interdiction_Frigate.ship.png";  								Tier=12;  Difficulty=1; } // Cost $0
+	// :~{ File="Nebulon-B_Frigate.ship.png";  											Tier=12;  Difficulty=1; } // Cost $0
+	// :~{ File="MC30c_Frigate.ship.png";  												Tier=13;  Difficulty=1; } // Cost $0
+	// :~{ File="MC30b_Frigate.ship.png";  												Tier=13;  Difficulty=1; } // Cost $0
+	// :~{ File="CC-7700_Frigate.ship.png";  											Tier=13;  Difficulty=1; } // Cost $0
+	// :~{ File="KDY_Nebulon-K_Frigate.ship.png";  										Tier=13;  Difficulty=1; } // Cost $0
+	// :~{ File="CC-9600_Frigate.ship.png";  											Tier=13;  Difficulty=1; } // Cost $0
+	// :~{ File="Lancer-class_Pursuit_Craft.ship.png";  								Tier=8;  Difficulty=1; } // Cost $0
+	// :~{ File="MC40a_Light_Cruiser.ship.png";  										Tier=8;  Difficulty=1; } // Cost $0
+	// :~{ File="Bayonet-class_Light_Cruiser.ship.png";  								Tier=8;  Difficulty=1; } // Cost $0
+	// :~{ File="CR90_Corvette.ship.png";  												Tier=8;  Difficulty=1; } // Cost $0
+	// :~{ File="Modified_CR90_Corvette.ship.png";  									Tier=8;  Difficulty=1; } // Cost $0
+	// :~{ File="Marauder-class_Corvette.ship.png";  									Tier=8;  Difficulty=1; } // Cost $0
+	// :~{ File="Satos_Hammer.ship.png";  												Tier=8;  Difficulty=1; } // Cost $0
+	// :~{ File="Hammerhead_Corvette.ship.png";  										Tier=8;  Difficulty=1; } // Cost $0
+	// :~{ File="Free_Virgillia-class_Bunkerbuster.ship.png";  							Tier=8;  Difficulty=1; } // Cost $0
+	// :~{ File="Braha'tok-class_Gunship.ship.png";  									Tier=8;  Difficulty=1; } // Cost $0
+	// :~{ File="Gozanti-class_Cruiser.ship.png";  										Tier=8;  Difficulty=1; } // Cost $0
+	// :~{ File="Delta-class_JV-7_Escort_Shuttle.ship.png"; 							Tier=4;  Difficulty=1; } // Cost $0
+	// :~{ File="U-wing.ship.png"; 														Tier=4;  Difficulty=1; } // Cost $0
+	// :~{ File="GR-75_Medium_Transport.ship.png"; 										Tier=4;  Difficulty=1; } // Cost $0
+	// :~{ File="GR-80_Medium_Transport.ship.png"; 										Tier=4;  Difficulty=1; } // Cost $0
+	// :~{ File="GR-45_Medium_Transport.ship.png"; 										Tier=4;  Difficulty=1; } // Cost $0
+	// :~{ File="YT-13000_Light_Freighter.ship.png"; 									Tier=4;  Difficulty=1; } // Cost $0
+	// :~{ File="Sheathipede-class_Transport_Shuttle.ship.png"; 						Tier=4;  Difficulty=1; } // Cost $0
+	// :~{ File="Ghost_VCX-100.ship.png"; 												Tier=4;  Difficulty=1; } // Cost $0
+	// :~{ File="Ferret-class_Reconnaissance_Vessel.ship.png"; 							Tier=1;  Difficulty=2; } // Cost $0
+	// :~{ File="RZ-2_A-wing.ship.png";  												Tier=2;  Difficulty=1; } // Cost $0
+	// :~{ File="T-65_X-wing_Starfighter.ship.png"; 	 								Tier=3;  Difficulty=2; } // Cost $0
+	// :~{ File="Y-wing_Starfighter.ship.png"; 											Tier=1;  Difficulty=1; } // Cost $0
+	// :~{ File="Actis-class_Light_Interceptor.ship.png";  								Tier=1;  Difficulty=1; } // Cost $0
+	// :~{ File="E-wing_Escort_Starfighter.ship.png";  									Tier=2;  Difficulty=1; } // Cost $0
+	// :~{ File="B-wing_Starfighter.ship.png"; 											Tier=4;  Difficulty=1; } // Cost $0
+	// :~{ File="A-wing_Interceptor.ship.png";  										Tier=3;  Difficulty=1; } // Cost $0
+	// :~{ File="ARC-170_Starfighter.ship.png";  										Tier=3;  Difficulty=1; } // Cost $0
+	// :~{ File="Nantex-class_Territorial_Defense_Starfighter.ship.png";  				Tier=3;  Difficulty=1; } // Cost $0
+	// :~{ File="Prowler-class_Reconnaissance_Vessel.ship.png";  						Tier=1;  Difficulty=1; } // Cost $0
+	// :~{ File="T-85_X-wing.ship.png";  												Tier=4;  Difficulty=1; } // Cost $0
+	// :~{ File="Y-wing_Bomber.ship.png";  												Tier=4;  Difficulty=1; } // Cost $0
+	// :~{ File="T-70_X-wing.ship.png"; 												Tier=3;  Difficulty=1; } // Cost $0

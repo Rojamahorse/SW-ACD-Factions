@@ -1,0 +1,185 @@
+Fleethideouts 
+{
+	Type = None
+	SpawnChance = 100% // change after debug
+	Tags = [asteroid]
+	Distance = [15000, 20000]
+	SubSpawners
+	[
+		{
+			Type = Doodads
+			Tags = [asteroid]
+			Count = 1 
+			SpawnChance = 100%
+			MinDistanceFromTags
+			[
+				[station, 4000]
+				[ftl_gate, 800]
+				[misc_discoverable, 750]
+				[ftl_beacon, 250]
+				[asteroid, 100]
+			]
+			DoodadTypes
+			[
+				{ Type=SW.asteroid_doonium_xxl;  ChanceWeight=5; }
+				{ Type=SW.asteroid_zersium_xxl;  ChanceWeight=5; }
+			]
+			SubSpawners
+			[
+				// POI
+				{
+					Type = Doodads
+					DoodadType = cosmoteer.poi_unknown
+					Tags = [poi_unknown]
+					AutoRemoveWhenDiscovered = true 
+					HideUntilDiscovered = true
+
+				}
+
+				{
+					// Hive of Villany and Scum
+					Type = Ships
+					Tags = [military_station]
+					Count = [2, 4]
+					Distance = [550, 650]
+					NameGenerator = &<../name_generators/sw_name_hiddenbase.rules>
+//					Faction = SW.Black_Sun
+					SynchronizeFactions = true
+					SynchronizeAllegiance = true
+//					FamePerTier = &<./Data/modes/career/tier_tables.rules>/StandardFamePerTier
+//					MaxFamePerTier = &<./Data/modes/career/tier_tables.rules>/StandardMaxFamePerTier
+//					FamePerTier = tier_tables.rules>/StandardFamePerTier
+//					MaxFamePerTier = tier_tables.rules>/StandardMaxFamePerTier
+					Allegiance = Unique
+					ShipCriteria
+					{
+						UseLocalFactionWeights = false //true
+						UseTierField = true
+						AllowTierRangeExpansion = true
+						Tags = [military_station]
+						Count = [2, 4]
+						Features = [Landmark]
+						RememberResourcesAndCrew = true
+						Allegiance = FactionMilitary
+					}
+
+					AI
+					{
+						Type = SpaceStation
+					}
+/*
+					Rewards
+					[
+						{
+							Type = Money
+							MoneyPerHighTier = 1000
+							RoundToMultiple = 1000
+							MoneyPerTierMultiplier = 3
+						}
+						{
+							Type = Fame
+							FamePerHighTier = 4
+							MaxFamePerHighTier = 4
+							FamePerTierMultiplier = 2
+						}
+						{
+							Type = Reputation
+							ReputationPerHighTier = 5
+							ReputationPerTierMultiplier = 5
+						}
+					]
+*/
+					SubSpawners
+					[
+						// POI
+						{
+							Type = Doodads
+							DoodadType = cosmoteer.poi_unknown
+							Tags = [poi_unknown]
+							AutoRemoveWhenTagDiscovered = military_station
+							AutoRemoveWhenTagDestroyed = military_station
+							HideIfUnexplored = false
+							Undiscovered = true // false
+							AutoRemoveWhenDiscovered = true // AutoRemoveWhenDiscovered = true HideIfUnexplored = false ShowOnlyInFog = false Undiscovered = false
+							ShowOnlyInFog = true
+						}
+						// Defensive platforms.
+						{
+							Type = Ships
+							Tags = [station_defense]
+							Count = [4, 6]
+							Distance = [100, 250]
+							SpawnsPerSlice = 1
+							SpawnSlicePadding = 35%
+							MinDistanceFromTags = [[asteroid, 0]]
+							SuppressLocationAssertions = true
+							Allegiance = Unique
+
+							ShipCriteria
+							{
+								UseLocalFactionWeights = true
+								AllowTierRangeExpansion = true
+								Tags = [defense]
+							}
+
+							AI
+							{
+								Type = DefensePlatform
+							}
+						}
+						// Defensive ships.
+						{
+							Type = Ships
+							Tags = [station_defense]
+							Count = [6, 8]
+							Distance = [200, 450]
+							MinDistanceFromTags = [[asteroid, 0]]
+							SuppressLocationAssertions = true
+				
+							ShipCriteria
+							{
+								UseLocalFactionWeights = true
+								UseTierField = true
+								AllowTierRangeExpansion = true
+								Tags = [combat]
+							}
+				
+							AI
+							{
+								Type = StationGuard
+								PatrolRadius = 500
+								TargetAcquireRangeFromOrigin = 800
+								TargetUnacquireRangeFromOrigin = 1500
+							}
+						}
+						// Second Tier Ships
+						{
+							Type = Ships
+							Tags = [station_defense]
+							Count = [3, 4]
+							Distance = [300, 450]
+							MinDistanceFromTags = [[asteroid, 0]]
+							SuppressLocationAssertions = true
+				
+							ShipCriteria
+							{
+								UseLocalFactionWeights = true
+								UseTierField = true
+								AllowTierRangeExpansion = true
+								Tags = [combat]
+							}
+				
+							AI
+							{
+								Type = StationGuard
+								PatrolRadius = 800
+								TargetAcquireRangeFromOrigin = 1000
+								TargetUnacquireRangeFromOrigin = 2000
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

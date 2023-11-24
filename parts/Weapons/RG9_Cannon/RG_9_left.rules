@@ -1,0 +1,478 @@
+Part :  <./Data/ships/terran/base_part_terran.rules>/Part 
+{
+	NameKey = "Parts/RG9CannonLeft"
+	IconNameKey = "Parts/RG9CannonLeftIcon"
+	ID = SW.fighter_rg_9_cannon_left
+	OtherIDs = [/*SW.a_wing_laserL,SW.a_wing_laserR,*/SW.fighter_rg_9_cannon_right]
+	EditorGroups = ["WeaponsEnergy","TechI"]
+	FlipWhenLoadingIDs = [SW.fighter_rg_9_cannon_right/*,SW.a_wing_laserR*/]
+	DescriptionKey = "Parts/RG9CannonLeftDesc"
+	IsFlippable = true
+	SelectionTypeID = "fighter"
+	Resources
+	[
+		[steel, 22]
+		[coil, 18]
+	]
+	TypeCategories = [weapon, uses_power]
+	ReceivableBuffs : ^/0/ReceivableBuffs []
+	Size = [1, 1]
+	SelectionPriority = 1
+	SelectionTypeByRotation = true
+	Density = 0.5
+	MaxHealth = 2000
+	InitialPenetrationResistance = 1
+	PenetrationRectType = Normal
+	ProhibitedBy : ^/0/ProhibitedBy [fighter]
+	ProhibitRects
+	[
+		[fighter, [-1, -1, 1, 1]] 
+	]
+	CustomCollider
+	[
+		[0, -0.37]
+		[0.40, -0.33]
+		[1, 0]
+		[1, 1]
+		[0, 1]
+	]
+
+	EditorIcon
+	{
+		Texture
+		{
+			File = "icon_left.png"
+			SampleMode = Linear
+		}
+		Size = [96, 48]
+	}
+
+	Components : ^/0/Components
+	{
+		IsOperational
+		{
+			Type = MultiToggle
+			Toggles = [PowerToggle, BatteryStorage]
+			Mode = All
+		}
+
+		PowerToggle
+		{
+			Type = UIToggle
+			ToggleID = "on_off"
+			Default = 1
+			RequiresCommand = false
+		}
+
+		CommandConsumer
+		{
+			Type = CommandConsumer
+			OperationalToggle = PowerToggle
+			CommandPoints = 1
+		}
+
+		FireModeToggle
+		{
+			Type = UIToggle
+			ToggleID = "fire_mode"
+			Default = 1
+			ToggledOnChoices = [0, 1, 2]
+		}
+		AutoTargetToggle
+		{
+			Type = ModeToggle
+			Mode = FireModeToggle
+			OnModes = [1, 2]
+		}
+		AutoFireToggle
+		{
+			Type = ModeToggle
+			Mode = FireModeToggle
+			OnMode = 2
+		}
+
+		BatteryStorage
+		{
+			Type = ResourceStorage
+			ResourceType = battery
+			MaxResources = 2000
+			ReceiveResourceMediaEffects = &/COMMON_EFFECTS/PowerDeliver
+		}
+		BatteryConsumer
+		{
+			Type = ResourceConsumer
+			ResourceType = battery
+			Storage = BatteryStorage
+			ResupplyThreshold = 1
+			DefaultPriority = &/PRIORITIES/Defense_Supply
+			OperationalToggle = PowerToggle
+		}
+
+		Graphics
+		{
+			Type = Graphics
+			Location = [.5, .5]
+			OperationalToggle = IsOperational
+			Floor
+			{
+				Layer = "floors"
+				DamageLevels
+				[
+					{
+						File = "./Data/ships/terran/point_defense/floor.png"
+						Size = [1, 1]
+					}
+					{
+						File = "./Data/ships/terran/point_defense/floor_33.png"
+						Size = [1, 1]
+					}
+					{
+						File = "./Data/ships/terran/point_defense/floor_66.png"
+						Size = [1, 1]
+					}
+				]
+			}
+			OperationalDoodad
+			{
+				Layer = "doodads_low"
+				Offset = [0, -0.5]
+				DamageLevels
+				[
+					{
+						AnimationFiles
+						[
+							"../base/doodads_on1D.png"
+							"../base/doodads_on2D.png"
+							"../base/doodads_on3D.png"
+							"../base/doodads_on4D.png"
+							"../base/doodads_on5D.png"
+							"../base/doodads_on6D.png"
+							"../base/doodads_on7D.png"
+							"../base/doodads_on8D.png"
+						]
+						NormalsAnimationFiles
+						[
+							"../base/doodadsD_normals.png"
+							"../base/doodadsD_normals.png"
+							"../base/doodadsD_normals.png"
+							"../base/doodadsD_normals.png"
+							"../base/doodadsD_normals.png"
+							"../base/doodadsD_normals.png"
+							"../base/doodadsD_normals.png"
+							"../base/doodadsD_normals.png"
+						]
+						Size = [1, 2]
+						AnimationInterval = 0.1
+					}
+				]
+			}
+			NonOperationalDoodad
+			{
+				Layer = "doodads_low"
+				Offset = [0, -0.5]
+				DamageLevels
+				[
+					{
+						File = "../base/doodads_offD.png"
+						NormalsFile = "../base/doodadsD_normals.png"
+						Size = [1, 2]
+					}
+				]
+			}
+			OperationalLighting
+			{
+				Layer = "lights_add"
+				DamageLevels
+				[
+					{
+						File = "../base/lights.png"
+						Size = [1, 1]
+					}
+				]
+			}
+			Walls
+			{
+				Layer = "walls"
+				DamageLevels
+				[
+					{
+						File = "./Data/ships/terran/point_defense/walls.png"
+						Size = [1, 1]
+					}
+					{
+						File = "./Data/ships/terran/point_defense/walls_33.png"
+						Size = [1, 1]
+					}
+					{
+						File = "./Data/ships/terran/point_defense/walls_66.png"
+						Size = [1, 1]
+					}
+				]
+			}
+			Roof
+			{
+				Layer = "roofs"
+				DamageLevels
+				[
+					{
+						File = "./Data/ships/terran/point_defense/roof.png"
+						NormalsFile = "./Data/ships/terran/point_defense/roof_normals.png"
+						Size = [1, 1]
+					}
+					{
+						File = "./Data/ships/terran/point_defense/roof_33.png"
+						NormalsFile = "./Data/ships/terran/point_defense/roof_normals_33.png"
+						Size = [1, 1]
+					}
+					{
+						File = "./Data/ships/terran/point_defense/roof_66.png"
+						NormalsFile = "./Data/ships/terran/point_defense/roof_normals_66.png"
+						Size = [1, 1]
+					}
+				]
+			}
+		}
+
+		Turret
+		{
+			Type = TurretWeapon
+			Location = [0.5, -0.25]
+			Rotation = -180d
+			OperationalToggle = IsOperational
+			AutoFireToggle = AutoFireToggle
+			FireInterval = .4
+			FiringArc = 15d
+			RotateSpeed = 360d
+			FireThresholdAngle = 5d
+			AIFirepowerRating = 400
+			AllowFireWithBlockedLOS = false
+			IgnoreFriendlyShipLowLOSChecks = false
+			UseResourcePerShotInBurst = true
+			Emitter = BulletEmitter
+
+			AutoTargets
+			[
+				{
+					TargetType = ShipParts
+					Toggle = FireModeToggle
+				}
+			]
+
+			BlueprintArcSprite
+			{
+				Texture = &/INDICATORS/WeaponArc
+				Size = [0, 1.5]
+				Color = [255, 0, 0, 63]
+			}
+			BlueprintArcRadius = 10
+			BlueprintArcSpriteSegments = 64
+
+			CoverageSectorArc
+			{
+				Texture = &/INDICATORS/VerticalGradient
+				VertexColor = [255, 255, 255, 51]
+				QuadCount = 64
+			}
+		}
+
+		ReloadProgressBar
+		{
+			Type = ProgressBar
+			OperationalToggle = IsOperational
+			ShowProgressFor = Turret
+		}
+
+		BulletEmitter
+		{
+			Type = BulletEmitter
+			ChainedTo = Turret
+			FireTrigger = Turret
+			GetTargetFrom = Turret
+			Location = [1.38, 0]
+			OperationalToggle = IsOperational
+			Bullet = &<rg_9_shot/rg_9_shot.rules>
+			Spread = [-3.5d, 3.5d]
+			Burst = 2
+			BurstDelay = 0.075
+			ResourceStorage = BatteryStorage
+			ResourcesUsed = 125
+			MinResourcesUsed = 1
+		}
+
+		FireEffect
+		{
+			Type = TriggeredEffects
+			ChainedTo = Turret
+			Trigger = Turret
+			Location = [1.8675, 0]
+			AnchorMediaEffects = true
+
+			MediaEffects
+			[
+				&<./Data/ships/terran/laser_blaster_small/particles/laser_blaster_small_shoot.rules>
+				&<./Data/ships/terran/laser_blaster_small/particles/laser_blaster_small_shoot_flash.rules>
+
+				: /BASE_SOUNDS/AudioExterior
+				{
+					Sound = "../common_effects/sounds/sw_HOUNDSTOOTH_1.WAV"
+					Volume = .3
+					SpeedVariation = .25
+				}
+			]
+		}
+
+		TurretGraphics
+		{
+			Type = Graphics
+			ChainedTo = Turret
+			Location = [0.50, 0] // .86
+			Rotation = 90d
+			OperationalToggle = IsOperational
+			OperationalDoodad
+			{
+				Layer = "doodads_low"
+				DamageLevels
+				[
+					{
+						File = "turret.png"
+						NormalsFile = "turret_normals.png"
+						Size = [1, 3]
+					}
+				]
+			}
+			NonOperationalDoodad = &OperationalDoodad
+		}
+
+		BatterySpritesA
+		{
+			Type = ResourceSprites
+			Location = [.5, .5]
+			ResourceStorage = BatteryStorage
+			Layer = "doodads_high"
+			RangeLow = 0
+			RangeHigh = 1000
+			ResourceLevels
+			[
+				{
+					File = "../base/batteries4.png"
+					MirrorU = true
+					Size = [1, 1]
+				}
+			]
+		}
+
+		BatterySpritesB
+		{
+			Type = ResourceSprites
+			Location = [.5, .5]
+			ResourceStorage = BatteryStorage
+			Layer = "doodads_high"
+			RangeLow = 1001
+			RangeHigh = 2000
+			ResourceLevels
+			[
+				{
+					File = "../base/batteries4.png"
+					Size = [1, 1]
+				}
+			]
+		}
+
+
+		OperationEffects
+		{
+			Type = ToggleEffects
+			Location = [.5, 1.5]
+			Toggle = IsOperational
+			ToggledOnMediaEffects = &/COMMON_EFFECTS/PowerOn
+			ToggledOffMediaEffects = &/COMMON_EFFECTS/PowerOff
+		}
+
+		DestroyedEffects
+		{
+			Type = DeathEffects
+			MediaEffects = &/COMMON_EFFECTS/SmallPartDestroyed
+			Location = [.5, .5]
+		}
+
+		Indicators
+		{
+			Type = IndicatorSprites
+			Location = [.5, .5]
+			Layer = "indicators"
+			Indicators
+			[
+				// Turned off.
+				{
+					Toggle = PowerToggle
+					AtlasSprite
+					{
+						File = &/INDICATORS/PowerOff
+						Size = [1, 1]
+					}
+				}
+
+				// Out of power.
+				{
+					Toggle = BatteryStorage
+					AtlasSprite
+					{
+						File = &/INDICATORS/NoPower
+						Size = [1, 1]
+					}
+				}
+			]
+		}
+		Blueprints
+		{
+			Type = BlueprintSprite
+			OnlyWithFlip = false
+			File = "blueprints_left.png"
+			Size = [4, 2]
+			Offset = [-0.5, -0.5]
+		}
+		BlueprintsFlipped
+		{
+			Type = BlueprintSprite
+			OnlyWithFlip = true
+			File = "blueprints_left.png"
+			Size = [4, 2]
+			Offset = [-0.5, -0.5]
+		}
+	}
+
+	Stats
+	{
+		PowerCapacity = (&~/Part/Components/BatteryStorage/MaxResources) / 1000
+
+		MinPower = (&../StatsByCategory/0/Stats/PowerPerSecond) / 2
+		RecPower = &../StatsByCategory/0/Stats/PowerPerSecond
+		MinCrew = (&MinPower) * 2
+		RecCrew = (&RecPower) * 4
+	}
+
+	StatsByCategory
+	[
+		{
+			NameKey = "StatCategories/SWRG9Shot"
+			Stats
+			{
+				ShieldDamagePerShot = &~/Part/Components/BulletEmitter/Bullet/Components/Hit/HitShield/HitEffects/0/Damage
+				ShieldDamagePerSecond = (&ShieldDamagePerShot) * (&ROF)
+				ShieldDamage = [&../ShieldDamagePerShot, &../ShieldDamagePerSecond]
+				DamagePerShot = &~/Part/Components/BulletEmitter/Bullet/Components/Hit/HitOperational/HitEffects/0/Damage
+				DamagePerSecond = (&DamagePerShot) * (&ROF)
+				Damage = [&../DamagePerShot, &../DamagePerSecond]
+				ROF = 1 / (&~/Part/Components/Turret/FireInterval)
+				Range = &~/Part/Components/BulletEmitter/Bullet/Range
+				Arc = deg(&~/Part/Components/Turret/FiringArc)
+				TurretSpeed = deg(&~/Part/Components/Turret/RotateSpeed)
+				ShotSpeed = &~/Part/Components/BulletEmitter/Bullet/Speed
+				ShotHP = &~/Part/Components/BulletEmitter/Bullet/Components/Targetable/Health
+				PowerPerShot = (&~/Part/Components/BulletEmitter/ResourcesUsed) / 1000
+				PowerPerSecond = (&PowerPerShot) * (&ROF)
+				ShotPowerUsage = [&../PowerPerShot, &../PowerPerSecond]
+			}
+		}
+	]
+}

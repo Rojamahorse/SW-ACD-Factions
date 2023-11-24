@@ -19,7 +19,11 @@ Ships
 	// :~{ File="Lucrehulk-class_LH-3210_Cargo_Freighter.ship.png"; 			Tier=4;  Difficulty=1; }
 	// :~{ File="Starfreighter.ship.png"; 										Tier=2;  Difficulty=1; }
 	// :~{ File="Action_IV_Transport.ship.png"; 								Tier=3;  Difficulty=1; }
-	:~{ File="Modified_YT-1300_Light_Freighter.ship.png"; 						Tier=5;  Difficulty=1; }
+	:~{ File="BSC Kom'rk-Class Fighter 2.ship.png"; 							Tier=5;  Difficulty=1; }
+	:~{ File="BSC Kom'rk-Class Fighter R.ship.png"; 							Tier=5;  Difficulty=1; }
+	:~{ File="BSC Storm IV Twin-Pod Combat.ship.png"; 							Tier=2;  Difficulty=1; }
+	:~{ File="BSC Storm IVB Twin-Pod Combat.ship.png"; 							Tier=3;  Difficulty=1; }
+	:~{ File="BSC YT-1300f Light Freighter (V2.ship.png"; 						Tier=4;  Difficulty=1; }
 	:~{ File="Modified_YT-1300g_Light_Freighter.ship.png"; 						Tier=6;  Difficulty=1; }
 	// :~{ File="GX1_Short_Hauler.ship.png"; 									Tier=2;  Difficulty=1; }
 	// :~{ File="YT-2400_Light_Freighter.ship.png"; 							Tier=4;  Difficulty=1; }
@@ -37,9 +41,14 @@ Ships
 	// :~{ File="YT-1760_Small_Transport.ship.png"; 							Tier=3;  Difficulty=1; }
 	// :~{ File="SoroSuub_Personal_Luxury_Yacht_3000.ship.png"; 				Tier=3;  Difficulty=1; }
 	// :~{ File="YZ-2500_Heavy_Transport.ship.png"; 							Tier=4;  Difficulty=1; }
+	:~{ File="Firespray-31-BS Patrol.ship.png";        							Tier=1;  Difficulty=2;}
 	
 
 	// Patrol ships
+	:~{ File="Mandalorian Kom'rk-Class-O Fight.ship.png";          					Tier=6;  Difficulty=1; } //ClassicJam
+	:~{ File="Med-BS Starfighter B.ship.png";          								Tier=6;  Difficulty=1; } //ClassicJam
+	:~{ File="Undr_Razercrest.ship.png";          									Tier=6;  Difficulty=1; } //Neojino
+	:~{ File="Undr_Z-95 Headhunter.ship.png";         								Tier=4;  Difficulty=2; } //Neojino
 	:~{ File="Hyena-BS Droid Bomber.ship.png";          							Tier=4;  Difficulty=1; }
 	:~{ File="Gozanti-Class Cruiser-BS.ship.png";         							Tier=6;  Difficulty=2; }
 	:~{ File="Med-BS Starfighter.ship.png";         								Tier=4;  Difficulty=2; }

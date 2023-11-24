@@ -1,11 +1,11 @@
-ID = SW.1.StarWarsFactions
+ID = SW.3.StarWarsFactions
 Name = "Star Wars Factions"
-Version = 0.0.4 RC
+Version = 0.0.5 RC
 CompatibleGameVersions = ["0.24.0","0.23.0"]
 ModifiesGameplay = true
 Author = "Rojamahorse & SW:ACD DevTeam"
 Logo = "logo.png"
-Description = "Step up your game with the ultimate companion mod to <yellow>Star Wars: A Cosmos Divided</yellow>! \n\nChoose your side—from the <gray>Galactic Empire</gray> and <orange>Rebel Alliance</orange> to the <red>Republic</red> and <blue>CIS</blue>—or navigate the criminal underworld with <magenta>Black Sun</magenta>. \n\nKick off your journey with iconic ships, venture into expansive new maps, and craft your own interstellar adventure. This is the Cosmoteer mod you've been searching for! \n\n<bad>Important: This mod is an extension of <yellow>Star Wars: A Cosmos Divided</yellow> and requires it for full functionality. Please ensure you have the base mod installed.</bad>"
+Description = "Step up your game with the ultimate companion mod to <yellow>Star Wars: A Cosmos Divided</yellow>! \n\nChoose your side—from the <gray>Galactic Empire</gray> and <orange>Rebel Alliance</orange> to the <red>Republic</red> and <blue>CIS</blue> — or navigate the criminal underworld with <magenta>Black Sun</magenta>. \n\nKick off your journey with iconic ships, venture into expansive new maps, and craft your own interstellar adventure. This is the Cosmoteer mod you've been searching for! \n\n<b>Ship Contributions by:</b> ClassicJam, Neojino, Wolfram, and the Steam Community! \n\n<bad><b>Important:</b> This mod is an extension of <yellow>Star Wars: A Cosmos Divided</yellow> and requires it for full functionality. Please ensure you have the base mod installed.</bad>"
 StringsFolder = "strings"
 /* TO DO:
 Base Tradeships moved out of Rules
@@ -23,6 +23,14 @@ Actions
 
 	/* *********** PARTS ************* */
 
+	{
+		Action = AddMany
+		AddTo = "<./Data/modes/career/sysgen.rules>/Spawners"
+		ManyToAdd
+		[
+			&<career/sysgen_fleethideouts.rules>/Fleethideouts
+		]
+	}
 
  	{ 
 		Action = AddMany
@@ -42,7 +50,7 @@ Actions
 		AddTo = "<ships/terran/terran.rules>/Terran/Roofs/RoofDecalGroups"
 		ManyToAdd
 		[
-			&<roof_decals/sw_decal_group.rules>/SW_factions
+			//&<roof_decals/sw_decal_group.rules>/SW_factions
 			&<roof_decals/sw_decal_group.rules>/SW_adv_shapes
 		]
 	}
@@ -189,7 +197,15 @@ Actions
 		AddTo = "<modes/career/sysgen_sim_global_missions.rules>/SubSpawners"
         ManyToAdd = &<career/sysgen_sim_global_missions.rules>/SubSpawners
 	}
-	
+/*
+	// Adds discoverables related to SW Factions
+	{
+		Action = AddMany
+		AddTo = "<modes/career/sysgen_misc_discoverables.rules>/SubSpawners"
+        ManyToAdd = &<career/sysgen_misc_discoverables.rules>/SubSpawners
+	}
+*/
+
 	// Adds SW Starter Ships in career mode
 	{
 		Action = AddMany

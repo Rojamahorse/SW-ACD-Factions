@@ -29,7 +29,7 @@ Part : &<long_xwing_cannon.rules>/Part
 			Rotation = -180d
 		}
 
-		Blueprints
+		Blueprints : &<long_xwing_cannon.rules>/Part/Components/Blueprints
 		{
 			Type = BlueprintSprite
 			File = "blueprints_left.png"

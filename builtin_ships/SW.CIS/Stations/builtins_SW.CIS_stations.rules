@@ -21,4 +21,5 @@ Ships
 	:~{ File="Small CIS Arms Depot.ship.png";    Tier=9;  SpawnTier=7;  Tags : ~/Tags [military_station]; StasisIcon="Small CIS Arms Depot.png"; FlightDirection=UpRight }
 	:~{ File="Med CIS Arms Depot.ship.png";      Tier=12; SpawnTier=11; Tags : ~/Tags [military_station]; StasisIcon="Med CIS Arms Depot.png";   FlightDirection=UpRight }
 	:~{ File="Large CIS Arms Depot.ship.png";    Tier=16; SpawnTier=15; Tags : ~/Tags [military_station]; StasisIcon="Large CIS Arms Depot.png"; FlightDirection=UpRight }
+	:~{ File="Lucrehulk-Class_Control_Core.ship.png";    Tier=16; SpawnTier=15; Tags : ~/Tags [military_station]; StasisIcon="Large CIS Arms Depot.png"; FlightDirection=UpRight } //Credit Wolfram
 ]

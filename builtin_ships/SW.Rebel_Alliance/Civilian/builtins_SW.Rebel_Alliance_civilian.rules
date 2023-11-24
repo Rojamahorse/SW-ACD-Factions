@@ -12,8 +12,10 @@ Ships
 	:~{ File="Rebel DP20 Frigate (Cargo).ship.png";     				Tier=5; Tags : ~/Tags [trade] }
 	:~{ File="Rebel CSS-1 Corellian Star Shutt.ship.png";     			Tier=5; Tags : ~/Tags [trade] }
 	:~{ File="Rebel Hammerhead (Civilian).ship.png";     				Tier=6; Tags : ~/Tags [trade] }
+	:~{ File="Pelta-Class Frigate I (Reb) A.ship.png";     				Tier=5; Tags : ~/Tags [trade] }
 	:~{ File="Rebel Pheonix Cargo.ship.png";     						Tier=9; Tags : ~/Tags [trade] }
 	:~{ File="Rebel EF76 Nebulon-Cargo Frigate.ship.png";     			Tier=11; Tags : ~/Tags [trade] }
+	:~{ File="Reb Luxury 3000 Space Yacht.ship.png";     				Tier=8; Tags : ~/Tags [trade] }
 	:~{ File="Cargo Transporter Tiny Rebel.ship.png";  					Tier=3;  Tags : ~/Tags [trade] }
 	:~{ File="Cargo Transporter Small Rebel.ship.png";    				Tier=5;  Tags : ~/Tags [trade] }
 	:~{ File="Cargo Transporter Medium Rebel.ship.png";    				Tier=7;  Tags : ~/Tags [trade] }

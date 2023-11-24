@@ -15,7 +15,7 @@ Ships
 	:~{ File="BSE Corellian Supply Ship.ship.png"; 							Tier=4;  Tags : ~/Tags [trade] }
 	:~{ File="CSS-1 Corellian-BS Star Shuttle.ship.png";     				Tier=9;  Tags : ~/Tags [trade] }
 	:~{ File="Eta-Class Supply Barge Black Sun.ship.png";     				Tier=13; Tags : ~/Tags [trade] }
-	:~{ File="Firespray-31-BS Patrol.ship.png";        						Tier=1;  Tags : ~/Tags [trade] }
+	:~{ File="Firespray-31-BS Patrol Civ.ship.png";        						Tier=1;  Tags : ~/Tags [trade] }
 	:~{ File="Med-BS Hauler.ship.png";        								Tier=3;  Tags : ~/Tags [trade] }
 	:~{ File="SoroSuub Lux-BS 3000 Space Yacht.ship.png";        			Tier=5;  Tags : ~/Tags [trade] }
 	:~{ File="BSC Missionary.ship.png";  Tier=3;  Tags : ~/Tags [trade] }

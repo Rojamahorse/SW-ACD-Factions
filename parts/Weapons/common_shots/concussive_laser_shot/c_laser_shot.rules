@@ -1,0 +1,192 @@
+ID = "sw.c_laser_shot"
+Range = 400
+IdealRange = [200, 300]
+IdealRadius = [5, 50]
+Speed = 90
+
+Components
+{
+	Physics
+	{
+		Type = CirclePhysics
+		Radius = 0.1
+		Density = 0.1
+	}
+
+	Death
+	{
+		Type = DeathByLifetime
+
+		OnDeath = &~/Components/DeathByEnemyProximity/OnDeath
+		// Lifetime will be auto-calculated based on range and speed.
+	}
+
+	DeathByEnemyProximity
+	{
+		Type = DeathByEnemyProximity
+		Interval = .4
+		Range = 1
+		DetectsShips = true
+		DetectsBullets = false
+		StartDelay = .4
+		FactorEffectsWith = Targetable
+
+		OnDeath 
+		{
+			ReduceEffectsByPenetration = false
+			Offset = [0, 0]
+
+			HitEffects
+			[
+				{
+					Type = ExplosiveDamage
+					TotalDamage = 10000
+					Radius = 9
+					ExpandDuration = 0.2
+					ExpandStartRadius = 1
+					ExpandLoss = 100%
+					ImpulsePerNDamage = 10
+					NDamage = 10000
+					// Filter
+					// {
+					// 	Friendlies = true
+					// }
+				}
+				{
+					Type = Damage
+					Damage = 200
+				}
+				{
+					Type = Impulse
+					Impulse = 100
+				}
+			]
+
+			MediaEffects
+			[
+				&<particles/c_laser_hit.rules>
+				&<particles/c_laser_hit_sparks.rules>
+				&<particles/c_laser_smoke.rules>
+				&<particles/c_laser_flash.rules>
+
+				: /BASE_SOUNDS/AudioExterior
+				{
+					Sound = "c_laser_hit.wav"
+					Volume = 1
+					SpeedVariation = .4
+				}
+
+				: /BASE_SHAKE
+				{
+					ShakeAmount = .2
+					Duration = .75
+				}
+			]
+		}
+	}
+
+	Targetable
+	{
+		Type = Targetable
+		Health = 3000
+		TargetCategory = "bullet"
+
+		OnDeath
+		{
+			MediaEffects = &~/Components/DeathByEnemyProximity/OnDeath/MediaEffects
+		}
+	}
+
+	Hit
+	{
+		Type = PenetratingHit
+		Penetration = 200.0
+		PenetrationSpeed = 15
+		PenetratesShields = false
+
+		CrewCollisions = {Enemies=true; Junk=true}
+		FriendlyShipLowCollisions = false
+		PenetratesCrew = true
+		HitCrew = &HitOperational
+
+		HitShield = &~/Components/DeathByEnemyProximity/OnDeath
+		HitOperational
+		{
+			// No effect.
+		}
+		HitStructural
+		{
+			// No effect.
+		}
+		PenetratingOperational
+		{
+			// No effect.
+		}
+		PenetratingStructural
+		{
+			// No effect.
+		}
+		FinishedPenetratingOperational
+		{
+			// No effect.
+		}
+
+		FinishedPenetratingStructural
+		{
+			// No effect.
+		}
+	}
+
+
+	Sprite
+	{
+		Type = Sprite
+		RenderBucket = BulletUpper3
+		ReduceScaleWith = Hit
+		ReduceScaleExponent = 0.5
+		Sprite
+		{
+			Texture
+			{
+				File = "claser_pink.png"
+				SampleMode = Linear
+				MipLevels = max
+			}
+			Size = [1.2, 1.2]
+		}
+	}
+
+	GlowSprite
+	{
+		Type = Sprite
+		RenderBucket = BulletUpper4
+		Z = 0.5
+		IsLight = true
+		Offset = [-1.5, 0]
+		Sprite
+		{
+			Texture
+			{
+				File = "./Data/common_effects/particles/blob.png"
+				MipLevels = max
+				SampleMode = Linear
+			}
+			Size = [18, 9]
+			VertexColor = [255, 192, 203] // VertexColor = [255, 100, 0]
+			TargetBlendMode = Add
+			Shader = "./Data/common_effects/fancy_light.shader"
+			_litReflectiveStrength = 24
+			_litAdditiveStrength = 0.05
+			_unlitAdditiveStrength = 0.125
+		}
+	}
+
+	MediaEffects
+	{
+		Type = MediaEffects
+		MediaEffects
+		[
+			&<particles/c_laser_trail.rules>
+		]
+	}
+}

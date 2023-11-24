@@ -8,4 +8,5 @@ Ships
 	:~{ File="Small Black Sun Point Defense Platform.ship.png"; Tier=2;  Difficulty=2; }
 	:~{ File="Small Black Sun Cannon Platform.ship.png";        Tier=2;  Difficulty=2; }
 	:~{ File="Small Black Sun HE Missile Platform.ship.png";    Tier=2;  Difficulty=2; }
+	:~{ File="BSC_mineemp_platform.ship.png";    				Tier=2;  Difficulty=2; }
 ]

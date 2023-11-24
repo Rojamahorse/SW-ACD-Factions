@@ -1,0 +1,24 @@
+//Multi : <./Data/ships/terran/base_part_terran.rules>/Part
+Type = Multi
+SubGenerators
+[
+	{
+		Type = Markov
+		MarkovFile = "latin.markov"
+		MinLength = 6
+		MaxLength = 10
+		MaxConsecutiveConsonants = 3
+	}
+	{
+		Type = NameList
+		Names
+		[
+	      "Covert Outpost"
+	      "Shadow Haven"
+	      "Secret Hideout"
+	      "Shadow Station"
+	      "Phantom Platform"
+	      "Phantom Facility"
+		]
+	}
+]

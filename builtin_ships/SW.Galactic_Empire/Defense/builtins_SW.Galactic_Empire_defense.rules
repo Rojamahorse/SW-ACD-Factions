@@ -19,4 +19,5 @@ Ships
 	:~{ File="Small Emp Platform.ship.png";           Tier=2; Difficulty=2; }
 	:~{ File="Small Emp Nuke Platform.ship.png";          Tier=2; Difficulty=2; }
 	:~{ File="Small Emp Torp Platform.ship.png";          Tier=2; Difficulty=2; }
+	:~{ File="Emp_mineemp_platform.ship.png";          Tier=2; Difficulty=2; }
 ]

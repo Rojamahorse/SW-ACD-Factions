@@ -15,4 +15,5 @@ Ships
 	:~{ File="Small Black Sun Arms Depot.ship.png";    Tier=9;  SpawnTier=8;  Tags : ~/Tags [military_station]; StasisIcon="Small Black Sun Arms Depot.png" }
 	:~{ File="Med Black Sun Arms Depot.ship.png";      Tier=12; SpawnTier=12; Tags : ~/Tags [military_station]; StasisIcon="Med Black Sun Arms Depot.png" }
 	:~{ File="Large Black Sun Arms Depot.ship.png";    Tier=16; SpawnTier=16; Tags : ~/Tags [military_station]; StasisIcon="Large Black Sun Arms Depot.png" }
+	:~{ File="Black Sun Military Station.ship.png";    Tier=16; SpawnTier=12; Tags : ~/Tags [military_station]; StasisIcon="Large Black Sun Arms Depot.png" }
 ]
