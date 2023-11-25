@@ -73,9 +73,10 @@ Ships
 	:~{ File="Rebel Sphyrna-Class Hammerhead C.ship.png";      							Tier=11;  Difficulty=1; } // Cost $0
 	:~{ File="Venator II-Class Star Destroyer (Rebels).ship.png";          				Tier=15;  Difficulty=2; } // Cost $0
  	:~{ File="MC80 Liberty-Type Heavy Star Cruiser.ship.png";          					Tier=15;  Difficulty=2; } // Cost $0
+ 	:~{ File="MC80a Home One-Type Heavy Star Cruiser.ship.png";          				Tier=16;  Difficulty=2; } // Cost $0
 
 	// Flagships
-	:~{ File="Rebel Pheonix Home.ship.png";         									Tier=18;  Difficulty=2; } // Cost $0
+	:~{ File="Rebel Pheonix Home.ship.png";         									Tier=15;  Difficulty=1; } // Cost $0
 	:~{ File="Rebel Pheonix Home Alt.ship.png";         								Tier=9;   Difficulty=2; } // Cost $0
 ]
 

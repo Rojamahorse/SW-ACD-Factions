@@ -101,6 +101,7 @@ Ships
 	:~{ File="BSC Providence-Class Destroyer.ship.png"; 					Tier=14;  Difficulty=1; }
 	:~{ File="BSC Providence-Class Dreadnought.ship.png"; 					Tier=17;  Difficulty=1; }
 	:~{ File="BSC Pursuer-Class Enforcement-BS.ship.png"; 					Tier=18;  Difficulty=1; }
+	:~{ File="BSC Mando Destroyer.ship.png"; 								Tier=15;  Difficulty=1; }
 	:~{ File="BSC Recusant-Class Light Destroyer 2.ship.png"; 				Tier=15;  Difficulty=1; }
 	:~{ File="BSC Recusant-Class Light Destroyer.ship.png"; 				Tier=16;  Difficulty=1; }
 	// :~{ File="Aggressor-class_Star_Destroyer.ship.png"; 					Tier=14;  Difficulty=1; }

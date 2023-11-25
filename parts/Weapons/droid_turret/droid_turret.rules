@@ -225,19 +225,22 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 			Rotation = -90d// Relative to unrotated part.
 			OperationalToggle = IsOperational
 			AutoFireToggle = AutoFireToggle
-			FireInterval = 1 // .75
-//			FirePermissionToggle = FirePermissionToggle
+			FireInterval = 2/30 //1 // .75
 			FiringArc = 360d
 			RotateSpeed = 225d
 			FireThresholdAngle = 1d
 			AIFirepowerRating = 150
 			CanBeGivenExplicitTarget = false
-			IgnoreSourceShipLowLOSChecks = true
 			// Emitter = BaseEmitter
 			TargetSearchesPerSecond = 4 // Default is 2.
 			HoldTargetAfterCancel = .5
 			TargetPathThickness = .2// &../BulletEmitter/Bullet/Components/Physics/Radius
+			EstimateFirepowerToggle = AttackToggle
+			AlwaysShowCoverage = true
 			AllowDirectControl = false
+			FirePermissionToggle = FireModeToggle
+			AutoTargetCrewSafetyDist = 8
+			IgnoreSourceShipLowLOSChecks = true
 
 			AutoTargets
 			[
