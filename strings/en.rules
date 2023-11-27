@@ -49,7 +49,7 @@ Parts
 	// Standard TwinLaser Defense Turret
 	DroidTurret = "StarGuard TwinBeam Defense Turret"
 	DroidTurretIcon = "Starguard TB-DT"
-	DroidTurretDesc = "The StarGuard TwinBeam Defense Turret manufactured by <green>Corellian ArmsTech</green>; Unleashing dual beam fury, the StarGuard TwinBeam Defense Turret offers unmatched protection against incoming threats."
+	DroidTurretDesc = "The StarGuard TwinBeam Defense Turret manufactured by <green>Corellian ArmsTech</green>; Unleashing dual beam fury, the StarGuard TwinBeam Defense Turret offers unmatched protection against incoming threats and is exceptionally effective at intercepting and neutralizing <cyan>ion shots</cyan>."
 
 	// Mini TwinLaser Defense Turret
 	PDTurretTiny = "StarGuard TwinLaser Compact Point Defense Turret"

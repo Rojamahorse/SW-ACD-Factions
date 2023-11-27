@@ -1,5 +1,26 @@
 Part : <./Data/ships/terran/base_part_terran.rules>/Part
 {
+	//IDs
+
+	//StringKeys
+	
+	//Groups&Categories
+	
+	//Resources&Size&Health
+	
+	//Rects
+	
+	//Selections
+	
+	//PartSpecific
+	
+	//ReceivableBuffs
+	
+	//Doors&Etc
+	
+	//Editor
+	
+	//Components
 	NameKey = "Parts/xwingCannonLong"
 	IconNameKey = "Parts/xwingCannonLongIcon"
 	ID = SW.fighter_long_xwing_cannon

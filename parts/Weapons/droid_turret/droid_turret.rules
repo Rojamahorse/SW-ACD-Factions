@@ -1,29 +1,48 @@
 Part : <./Data/ships/terran/base_part_terran.rules>/Part
 {
-	NameKey = "Parts/DroidTurret"
-	IconNameKey = "Parts/DroidTurretIcon"
+	//IDs
 	ID = SW.droid_turret
 	OtherIDs = []
-	EditorGroups = ["WeaponsEnergy","Defenses", "TechI"]
+
+	//StringKeys
+	NameKey = "Parts/DroidTurret"
+	IconNameKey = "Parts/DroidTurretIcon"
 	DescriptionKey = "Parts/DroidTurretDesc"
+	
+	//Groups&Categories
+	EditorGroups = ["WeaponsEnergy","Defenses", "TechI"]
+	TypeCategories = [weapon, uses_power, is_crewed]
+	
+	//Resources&Size&Health
 	Resources
 	[
 		[steel, 50]
 		[coil, 15]
 	]
 	Size = [1, 2]
+	MaxHealth = 3000
+	
+	//Rects
+	
+	//Selections
 	SelectionPriority = 1
 	SelectionTypeByRotation = true
-	MaxHealth = 3000
-	TypeCategories = [weapon, uses_power, is_crewed]
-	ReceivableBuffs : ^/0/ReceivableBuffs []
+	
+	//PartSpecific
 	ProhibitedBy : ^/0/ProhibitedBy [tall]
+	
+	//ReceivableBuffs
+	ReceivableBuffs : ^/0/ReceivableBuffs []
+	
+	//Doors&Etc
 	AllowedDoorLocations
 	[
 		[1,1]
 		[-1,1]
 		[0,2]
 	]
+	
+	//Editor
 	EditorIcon
 	{
 		Texture
@@ -33,6 +52,8 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 		}
 		Size = [32, 64]
 	}
+
+	//Components
 	Components : ^/0/Components
 	{
 		IsOperational
@@ -246,7 +267,7 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 			[
 				{
 					TargetType = Bullets
-					BulletTargetCategories = [missile, mine, bullet]
+					BulletTargetCategories = [missile, mine, bullet, laser, ion_shot]
 					Toggle = DefendToggle
 				}
 				{
