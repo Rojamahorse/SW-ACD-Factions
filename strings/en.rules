@@ -46,15 +46,16 @@ Parts
 	RG9CannonDesc = "RG-9 Laser Cannon by <cyan>Borstel</cyan>; An Enhanced Edition of the quick-firing, versatile small A-Wing laser, mainly used in medium to large fighters."
 	RG9CannonLeftDesc = "RG-9 Laser Cannon by <cyan>Borstel</cyan>; An Enhanced Edition of the quick-firing, versatile small A-Wing laser, mainly used in medium to large fighters."
 
-	// Standard TwinLaser Defense Turret
+	// Standard TwinBeam Defense Turret
 	DroidTurret = "StarGuard TwinBeam Defense Turret"
 	DroidTurretIcon = "Starguard TB-DT"
-	DroidTurretDesc = "The StarGuard TwinBeam Defense Turret manufactured by <cyan>Corellian ArmsTech</cyan>; Unleashing dual beam fury, the StarGuard TwinBeam Defense Turret offers unmatched protection against incoming threats and is exceptionally effective at intercepting and neutralizing <cyan>ion shots</cyan>."
+	DroidTurretDesc = "Manufactured by <cyan>Corellian ArmsTech</cyan>, the StarGuard TwinBeam Defense Turret unleashes dual-beam fury, offering unmatched protection. Exceptionally effective at intercepting and neutralizing <orange>lasers and ion shots</orange>, it provides superior defense against energy-based projectile threats but ineffective with bullets, mines, and missiles." 
 
 	// Mini TwinLaser Defense Turret
 	PDTurretTiny = "StarGuard TwinLaser Compact Point Defense Turret"
 	PDTurretTinyIcon = "Starguard TL-C-PDT"
-	PDTurretTinyDesc = "The StarGuard TwinLaser Point Defense Turret manufactured by <cyan>Corellian ArmsTech</cyan>; Unleashing dual laser fury, this miniaturized and fully automated version of the StarGuard TwinLaser Turret is optimized for tight spaces."
+	PDTurretTinyDesc = "The StarGuard TwinLaser Point Defense Turret, manufactured by <cyan>Corellian ArmsTech</cyan>, unleashes dual laser fury. This miniaturized and fully automated version of the StarGuard TwinLaser Turret is optimized for tight spaces. It's highly effective at targeting <orange>bullets, mines, and missiles</orange>, but is ineffective against lasers and ion shots."
+
 /*
 	//Long X-Wing Cannons
 	xwingCannonLong = "RedFury Blaster Cannon"

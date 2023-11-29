@@ -259,7 +259,7 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 			EstimateFirepowerToggle = AttackToggle
 			AlwaysShowCoverage = true
 			AllowDirectControl = false
-			FirePermissionToggle = FireModeToggle
+			//FirePermissionToggle = FireModeToggle
 			AutoTargetCrewSafetyDist = 8
 			IgnoreSourceShipLowLOSChecks = true
 
@@ -267,7 +267,7 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 			[
 				{
 					TargetType = Bullets
-					BulletTargetCategories = [missile, mine, bullet, laser, ion_shot]
+					BulletTargetCategories = [/*missile, mine, bullet, */laser, ion_shot]
 					Toggle = DefendToggle
 				}
 				{

@@ -1,10 +1,10 @@
 ID = "SW.bullet_massdriver"
 //OtherIDs = ["bullet_railgun"]
-Range = { BaseValue=300; BuffType=RailgunShot; BuffMode=Multiply; MaxValue=600; }
+Range = { BaseValue=360; BuffType=RailgunShot; BuffMode=Multiply; MaxValue=720; }
 IdealRange
 [
-	{ BaseValue=150; BuffType=RailgunShot; BuffMode=Multiply; MaxValue=300; }
-	{ BaseValue=300; BuffType=RailgunShot; BuffMode=Multiply; MaxValue=600; }
+	{ BaseValue=180; BuffType=RailgunShot; BuffMode=Multiply; MaxValue=360; }
+	{ BaseValue=360; BuffType=RailgunShot; BuffMode=Multiply; MaxValue=720; }
 ]
 IdealRadius = [5, 50]
 Speed = { BaseValue=360; BuffType=RailgunShot; BuffMode=Multiply; MaxValue=1200; }
