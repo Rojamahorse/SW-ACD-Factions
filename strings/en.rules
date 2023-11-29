@@ -9,59 +9,59 @@ Parts
 	xwingCannonIcon = "X-Wing SC"
 	xwingCannonLeft = "X-Wing Short Cannon (Side)"
 	xwingCannonLeftIcon = "X-Wing SC (Side)"
-	xwingCannonDesc = "<green>Incom Corporation</green> presents the X-Wing SC; a compact, short-barrel cannon for stealthy armor integration, excelling in medium-range combat."
+	xwingCannonDesc = "<cyan>Incom Corporation</cyan> presents the X-Wing SC; a compact, short-barrel cannon for stealthy armor integration, excelling in medium-range combat."
 
 	//Compact Mass-Driver Cannon
 	xwingCannonLong = "Mass-Driver Compact Cannon"
 	xwingCannonLongIcon = "Mass-Driver CC"
 	xwingCannonLongLeft = "Mass-Driver Compact Cannon (Side)"
 	xwingCannonLongLeftIcon = "Mass-Driver CC (Side)"
-	xwingCannonLongDesc = "The Mass-Driver Compact Cannon (MD-CC) by <green>Kuat Systems Engineering</green>; A scaled-down yet formidable kinetic weapon, designed for precision and power in dogfights. Its sleek design allows for seamless integration with various Starfighter models, providing unmatched kinetic impact while maintaining aerodynamic efficiency."
+	xwingCannonLongDesc = "The Mass-Driver Compact Cannon (MD-CC) by <cyan>Kuat Systems Engineering</cyan>; A scaled-down yet formidable kinetic weapon, designed for precision and power in dogfights. Its sleek design allows for seamless integration with various Starfighter models, providing unmatched kinetic impact while maintaining aerodynamic efficiency."
 	
 	//Extra Long X-Wing Cannons
 	xwingCannonXLong = "X-Wing Extended Cannon"
 	xwingCannonXLongIcon = "X-Wing XC"
 	xwingCannonXLongLeft = "X-Wing Extended Cannon (Side)"
 	xwingCannonXLongLeftIcon = "X-Wing XC (Side)"
-	xwingCannonXLongDesc = "<green>Incom Corporation's</green> X-Wing XC; an extended version of the classic cannon, combining range and stealth for strategic positioning behind armor."
+	xwingCannonXLongDesc = "<cyan>Incom Corporation's</cyan> X-Wing XC; an extended version of the classic cannon, combining range and stealth for strategic positioning behind armor."
 
 	//Standard TIE Repeaters
 	tieMinigun = "TIE Repeater Cannon - Super Edition"
 	tieMinigunIcon = "TIE RC-SE"
 	tieMinigunLeft = "TIE Repeater Cannon - Super Edition (Side)"
 	tieMinigunLeftIcon = "TIE RC-SE (Side)"
-	tieLMinigunDesc = "The <green>Galactic Empire's</green> TIE Repeater Cannons - Super Edition; compact, rapid-firing, and perfect for close-range engagements, with stealthy armor placement capabilities."
+	tieLMinigunDesc = "The <cyan>Galactic Empire's</cyan> TIE Repeater Cannons - Super Edition; compact, rapid-firing, and perfect for close-range engagements, with stealthy armor placement capabilities."
 
 	tieMinigunLong = "HyCor Heavy Repeater Extended Cannon"
 	tieMinigunLongIcon = "HyCor HR-XC"
 	tieMinigunLongLeft = "HyCor Heavy Repeater Extended Cannon (Side)"
 	tieMinigunLongLeftIcon = "HyCor HR-XC (Side)"
-	tieLMinigunLongDesc = "Heavy Laser Repeater with Extended Cannon by <green>HyCor</green>; rapid-firing and perfect for close-range enagements, this Heavy Laser Repeater is modified for use on small-to-medium ships. Can be placed behind and under ship armor."
+	tieLMinigunLongDesc = "Heavy Laser Repeater with Extended Cannon by <cyan>HyCor</cyan>; rapid-firing and perfect for close-range enagements, this Heavy Laser Repeater is modified for use on small-to-medium ships. Can be placed behind and under ship armor."
 
 	// RG-9 Cannons
 	RG9Cannon = "RG-9 Laser Cannon Enhanced Edition"
 	RG9CannonIcon = "RG-9 LC-EE"
 	RG9CannonLeft = "RG-9 Laser Cannon Enhanced Edition (Side)"
 	RG9CannonLeftIcon = "RG-9 LC-EE (Side)"
-	RG9CannonDesc = "RG-9 Laser Cannon by <green>Borstel</green>; An Enhanced Edition of the quick-firing, versatile small A-Wing laser, mainly used in medium to large fighters."
-	RG9CannonLeftDesc = "RG-9 Laser Cannon by <green>Borstel</green>; An Enhanced Edition of the quick-firing, versatile small A-Wing laser, mainly used in medium to large fighters."
+	RG9CannonDesc = "RG-9 Laser Cannon by <cyan>Borstel</cyan>; An Enhanced Edition of the quick-firing, versatile small A-Wing laser, mainly used in medium to large fighters."
+	RG9CannonLeftDesc = "RG-9 Laser Cannon by <cyan>Borstel</cyan>; An Enhanced Edition of the quick-firing, versatile small A-Wing laser, mainly used in medium to large fighters."
 
 	// Standard TwinLaser Defense Turret
 	DroidTurret = "StarGuard TwinBeam Defense Turret"
 	DroidTurretIcon = "Starguard TB-DT"
-	DroidTurretDesc = "The StarGuard TwinBeam Defense Turret manufactured by <green>Corellian ArmsTech</green>; Unleashing dual beam fury, the StarGuard TwinBeam Defense Turret offers unmatched protection against incoming threats and is exceptionally effective at intercepting and neutralizing <cyan>ion shots</cyan>."
+	DroidTurretDesc = "The StarGuard TwinBeam Defense Turret manufactured by <cyan>Corellian ArmsTech</cyan>; Unleashing dual beam fury, the StarGuard TwinBeam Defense Turret offers unmatched protection against incoming threats and is exceptionally effective at intercepting and neutralizing <cyan>ion shots</cyan>."
 
 	// Mini TwinLaser Defense Turret
 	PDTurretTiny = "StarGuard TwinLaser Compact Point Defense Turret"
 	PDTurretTinyIcon = "Starguard TL-C-PDT"
-	PDTurretTinyDesc = "The StarGuard TwinLaser Point Defense Turret manufactured by <green>Corellian ArmsTech</green>; Unleashing dual laser fury, this miniaturized and fully automated version of the StarGuard TwinLaser Turret is optimized for tight spaces."
+	PDTurretTinyDesc = "The StarGuard TwinLaser Point Defense Turret manufactured by <cyan>Corellian ArmsTech</cyan>; Unleashing dual laser fury, this miniaturized and fully automated version of the StarGuard TwinLaser Turret is optimized for tight spaces."
 /*
 	//Long X-Wing Cannons
 	xwingCannonLong = "RedFury Blaster Cannon"
 	xwingCannonLongIcon = "RedFury-BC"
 	xwingCannonLongLeft = "RedFury Blaster Cannon (Side)"
 	xwingCannonLongLeftIcon = "RedFury-BC (Side)"
-	xwingCannonLongDesc = "The RedFury Blaster by <green>Merr-Sonn Munitions</green>; A hard-hitting Heavy Blaster Cannon that allows for placement behind and hidden under armor pieces."
+	xwingCannonLongDesc = "The RedFury Blaster by <cyan>Merr-Sonn Munitions</cyan>; A hard-hitting Heavy Blaster Cannon that allows for placement behind and hidden under armor pieces."
 */
 /*
 	//TIE Repeaters
@@ -102,29 +102,7 @@ EditorGroups
 
 Stats
 {
-//	BarrelsFmt = "<white>Barrels:</white> <good>{0}</good> <gray>Barrels</gray>"
-//	ReloadTimeFmt = "<white>Reloadtime:</white> <good>{0:0.##}</good> <gray>sec</gray>"
-//	HypermatterGenerationFmt = "<white>Hypermatter Generation:</white> <good>{0:0.##}</good><gray>/sec</gray>"
-//	HypermatterSizeFmt = "<white>Hypermatter Size:</white> <good>{0:0.0#}</good>"
-//	HypermatterFillTimeFmt = "<white>Hypermatter Charge Time:</white> <good>{0:0.0#}</good> <gray>seconds</gray>"
-//	HypermatterCapacityFmt = "<white>Hypermatter Capacity:</white> <good>{0:0.##}</good>"
-//	DooniumIngotProductionFmt = "<white>Production Rate:</white> <good>{0:0.##}</good><gray> doonium ingot/sec</gray>"
-//	DooniumCapacityFmt = "<white>Doonium Capacity:</white> <good>{0}</good>"
-//	DooniumIngotDoonioumFmt = "<white>Raw Doonium Use:</white> <good>{0:0.##}</good><gray>/doonium ingot (</gray><good>{1:0.##}</good><gray>/sec)</gray>"
-//	DooniumIngotCapacityFmt = "<white>Doonium Ingot Capacity:</white> <good>{0}</good>"
-//	DuraSteelProductionFmt = "<white>Production Rate:</white> <good>{0:0.##}</good><gray> durasteel ingot/sec</gray>"
-//	DuraSteelSteelUsageFmt = "<white>Steel Use:</white> <good>{0:0.##}</good><gray>/durasteel ingot (</gray><good>{1:0.##}</good><gray>/sec)</gray>"
-//	DuraSteelCarbonUsageFmt = "<white>Carbon Use:</white> <good>{0:0.##}</good><gray>/durasteel ingot (</gray><good>{1:0.##}</good><gray>/sec)</gray>"
-//	DuraSteelZersiumUsageFmt = "<white>Zersium Use:</white> <good>{0:0.##}</good><gray>/durasteel ingot (</gray><good>{1:0.##}</good><gray>/sec)</gray>"
-//	DuraSteelCapacityFmt = "<white>DuraSteel Capacity:</white> <good>{0}</good>"
-//	ZersiumCapacityFmt = "<white>Zersium Capacity:</white> <good>{0}</good>"
-//	LargeHyperdrive_Notes = "<gray>NOTE: Requires a War Room.</gray>"
-//	HyperNode_Notes = "<gray>NOTE: Requires a Large Hyperdrive.</gray>"
-//	HyperNodeMed_Notes = "<gray>NOTE: Requires a Medium Hyperdrive.</gray>"
-//	MediumHyperdriver_Notes = "<gray>NOTE: Requires a Navi Computer.</gray>"
-//	SmallHyperdriver_Notes = "<gray>NOTE: Requires a Droid.</gray>"
-//	CommandBridge_Notes = "<gray>NOTE: Requires a Command Bridge I.</gray>"
-//	DeathStar_Notes = "<gray>NOTE: Requires a War Room and all other Death Star parts.</gray>"
+
 }
 
 

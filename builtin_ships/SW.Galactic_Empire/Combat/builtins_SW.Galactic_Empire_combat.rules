@@ -46,8 +46,9 @@ Ships
 	:~{ File="Emp Carrack-class LC Mk2.ship.png";							Tier=8;	 	Difficulty=2; } 
 	:~{ File="C-9979 Landing Craft (Emp) Atk.ship.png";						Tier=4;	 	Difficulty=2; }
 	:~{ File="Emp Acclamator Heavy Scout.ship.png";							Tier=8;		Difficulty=1; }
-	:~{ File="Bayonet-Class Patrol Cruiser.ship.png";						Tier=7;		Difficulty=2; } // Credit ClassicJam
-	:~{ File="Lancer-Class Frigate.ship.png";								Tier=6;		Difficulty=2; } 
+	:~{ File="Bayonet-Class Patrol Cruiser.ship.png";						Tier=7;		Difficulty=12; } // Credit ClassicJam
+	:~{ File="Lancer-Class Frigate.ship.png";								Tier=6;		Difficulty=1; } 
+	:~{ File="Emp Lancer-Class Frigate.ship.png";							Tier=6;		Difficulty=1; } 
 	:~{ File="Raider-Class Corvette Mk2.ship.png";							Tier=8;		Difficulty=1; } // Credit ClassicJam
 	:~{ File="Raider-Class Corvette.ship.png";								Tier=7;		Difficulty=1; } // Credit ClassicJam
 	:~{ File="Tector-Class Star Destroyer.ship.png";						Tier=14;	Difficulty=2; } // Credit ClassicJam
@@ -64,6 +65,7 @@ Ships
 	:~{ File="Victory Class Star Destroyer_REMOVE.ship.png";				Tier=16;	Difficulty=2; }  // Remove for Release Credit SR2
 	:~{ File="Emp V-Class Star Frigate Mk2.ship.png";						Tier=14;	Difficulty=2; }  
 	:~{ File="Emp Onager-Class Star Destroyer.ship.png";					Tier=12;	Difficulty=1; }
+	:~{ File="Emp Gladiator-Class Star Destroy.ship.png";					Tier=9;		Difficulty=1; }
 
 	// Cruisers	
 	:~{ File="Emp Cantwell-Class Arrestor Crui.ship.png";					Tier=8;		Difficulty=1; }

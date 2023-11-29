@@ -83,7 +83,7 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 		{
 			Type = CommandConsumer
 			OperationalToggle = PowerToggle
-			CommandPoints = 1
+			CommandPoints = 3
 		}
 
 		FireModeToggle
@@ -304,7 +304,7 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 			GetTargetFrom = Turret
 			Location = [2.28, 0]
 			OperationalToggle = IsOperational
-			Bullet = &<./Data/shots/bullet_railgun/bullet_railgun.rules> // &<xwing_shot/xwing_shot.rules>
+			Bullet = &<../common_shots/sw_bullet_massdriver/sw_bullet_massdriver.rules>// &<./Data/shots/bullet_railgun/bullet_railgun.rules> // &<xwing_shot/xwing_shot.rules>
 			ResourceStorage = BatteryStorage
 			ResourcesUsed = 500
 			MinResourcesUsed = 1
@@ -372,12 +372,12 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 				//&<./Data/ships/terran/laser_blaster_small/particles/laser_blaster_small_shoot.rules>
 				//&<./Data/ships/terran/laser_blaster_small/particles/laser_blaster_small_shoot_flash.rules>
 
-	//			: /BASE_SOUNDS/AudioExterior
-	//			{
-	//				Sound = "../common_effects/sounds/XwingCannon1.wav"
-	//				Volume = .2
-	//				SpeedVariation = .25
-	//			}
+				: /BASE_SOUNDS/AudioExterior
+				{
+					Sound = "../common_effects/sounds/MassDriver.wav" // "../common_effects/sounds/XwingCannon1.wav"
+					Volume = .2
+					SpeedVariation = .25
+				}
 			]
 		}
 
@@ -441,7 +441,7 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 			[
 				: /BASE_SOUNDS/AudioExterior
 				{
-					Sound = "rail.wav"
+					Sound = "rail.wav" //"../common_effects/sounds/MassDriver.wav"
 					Volume = 2
 					Speed = .8
 					RampUpTime = .05

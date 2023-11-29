@@ -75,8 +75,8 @@ HitNothing
 		}
 		{
 			Type = ExplosiveDamage
-			TotalDamage = 1050
-			Radius = 4
+			TotalDamage = 2050
+			Radius = 6
             Slices = 1
 			Filter
 			{
@@ -93,6 +93,7 @@ HitNothing
 	[
 		&<particles/sw_beam_shot_sparks.rules>
 		&<particles/sw_beam_shot_spikes.rules>
+		&<particles/sw_laser_smoke.rules>
 	]
 }
 
