@@ -326,6 +326,29 @@ Actions
 			}
 	}
 
+	//Adds trade defensive platforms to SW Factions in career mode
+	{
+		Action = Replace
+		Replace = "<modes/career/sysgen_trade_stations.rules>/SubSpawners/7/SubSpawners/0/Count"
+		With = 2
+    }
+    {
+		Action = Replace
+		Replace = "<modes/career/sysgen_trade_stations.rules>/SubSpawners/7/SubSpawners/1/Count"
+		With = [0, 2]
+    }
+    {
+		Action = Replace
+		Replace = "<modes/career/sysgen_trade_stations.rules>/StationDefenses/Count"
+		With = [5, 8]
+    }
+    {
+		Action = Replace
+		Replace = "<modes/career/sysgen_trade_stations.rules>/StationDefenses/Distance"
+		With = 250
+    }
+
+
 	/* *********** FACTION GENERATION ************* */
 
 

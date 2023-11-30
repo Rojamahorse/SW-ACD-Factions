@@ -9,5 +9,6 @@ Ships
 	:~{ File="Small Disruptor Platform4.ship.png"; Tier=2; Difficulty=2; }
 	:~{ File="Small EMP Platform4.ship.png";       Tier=2; Difficulty=2; }
 	:~{ File="Small Ion Platform4.ship.png";       Tier=2; Difficulty=2; }
-	:~{ File="CIS_mineemp_platform.ship.png";       Tier=2; Difficulty=2; }
+	:~{ File="CIS_mineemp_platform.ship.png";      Tier=2; Difficulty=2; }
+	:~{ File="Lg CIS Ion Platform.ship.png";       Tier=2; Difficulty=2; }
 ]

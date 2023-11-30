@@ -14,4 +14,5 @@ Ships
 	:~{ File="1Small EMP Platform.ship.png";           Tier=2; Difficulty=2; }
 	:~{ File="1Small Nuke Platform.ship.png";          Tier=2; Difficulty=2; }
 	:~{ File="Rep_mineemp_platform.ship.png";          Tier=2; Difficulty=2; }
+	:~{ File="Lg Rep Ion Platform.ship.png";          Tier=2; Difficulty=2; }
 ]
