@@ -36,4 +36,5 @@ Ships
     :~{ File="Reb_mineemp_platform.ship.png";               Tier=2; Difficulty=1; }
     :~{ File="Sm Reb Laser Platform.ship.png";              Tier=2; Difficulty=1; }
     :~{ File="Reb XL Railgun Platform.ship.png";            Tier=2; Difficulty=1; }
+    :~{ File="Reb XL Asteroid Def Platform.ship.png";       Tier=2; Difficulty=1; }
 ]
