@@ -17,7 +17,7 @@ Ships
 	:~{ File="Munificent-Class Star Frigate (InterGalactic Banking Clan).ship.png";    	Tier=14;  Tags : ~/Tags [trade] }
 	:~{ File="Munificent-Class Star Frigate.ship.png";    								Tier=10;  Tags : ~/Tags [trade] }
 //	:~{ File="Munificent-Class Star Frigate 2.ship.png";    							Tier=11;  Tags : ~/Tags [trade] }
-	:~{ File="Lukrehulk-Class Droid Control Ship.ship.png";     						Tier=13;  Tags : ~/Tags [trade] }
+//	:~{ File="Lukrehulk-Class Droid Control Ship.ship.png";     						Tier=13;  Tags : ~/Tags [trade] }
 	:~{ File="CIS Package Distributor.ship.png"; 										Tier=3;  Tags : ~/Tags [trade] }
 	:~{ File="CIS Minor Shipper.ship.png";       										Tier=3;  Tags : ~/Tags [trade] }
 	:~{ File="CIS Dwarf Freighter.ship.png";     										Tier=3;  Tags : ~/Tags [trade] }

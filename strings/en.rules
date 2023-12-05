@@ -416,7 +416,7 @@ CareerMode
 	                           "<btn id='General.UIAltClick'/> to delete this Galactic Marker.\n"
 	CustomMarkerName = "Designate a name for this Galactic Marker:"
 	PartLocked = "MISSING STARSHIP SCHEMATICS"
-	Wanted = "⚠GALACTIC WANTED⚠"
+	Wanted = "YOU REBEL SCUM!!! \n\n⚠A HOLONET BOUNTY HAS BEEN PLACED ON YOUR HEAD⚠"
 	Victory = "<s32><good><b>YOU ARE A GALACTIC LEGEND</b></good></s32>\n\nCongratulations! You have reached <fame>\"Living Legend\" Fame</fame>, the highest Galactic Standing achievable.\n\n"\
 	          "This is the current \"end\" of the galaxy as we know it and you should <b>consider yourself victorious</b>, but the galaxy is always expanding. New challenges may appear later."
 	GotoNode = "<fame_color>You have starships in this system.</fame_color>\n<btn id='General.UIClick'/> to view this star system."
