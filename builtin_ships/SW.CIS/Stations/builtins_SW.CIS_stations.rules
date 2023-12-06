@@ -11,6 +11,7 @@ Ships
 	:~{ File="Small CIS Trade Station.ship.png"; Tier=4;  Tags : ~/Tags [trade_station]; StasisIcon="Small CIS Trade Station.png" }
 	:~{ File="Med CIS Trade Station.ship.png";   Tier=10; Tags : ~/Tags [trade_station]; StasisIcon="Med CIS Trade Station.png" }
 	:~{ File="Large CIS Trade Station.ship.png"; Tier=16; Tags : ~/Tags [trade_station]; StasisIcon="Large CIS Trade Station.png" }
+	:~{ File="Lukrehulk-Class Droid Control Ship.ship.png"; Tier=16; Tags : ~/Tags [trade_station]; StasisIcon="Large CIS Trade Station.png" }
 
 	// Military stations
 	:~{ File="Small SW.CIS Arms Depot.ship.png";     Tier=6;  SpawnTier=3;  Tags : ~/Tags [military_station]; StasisIcon="Small SW.CIS Arms Depot.png";  FlightDirection=UpRight }

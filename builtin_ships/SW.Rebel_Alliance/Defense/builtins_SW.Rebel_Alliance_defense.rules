@@ -9,32 +9,32 @@ Ships
     :~{ File="Small Rebel Cannon Platform.ship.png";        Tier=2; Difficulty=1; }
     :~{ File="Small Rebel Point Defense Platform.ship.png"; Tier=2; Difficulty=1; }
     :~{ File="Reb_mineemp_platform.ship.png";               Tier=2; Difficulty=1; }
-    :~{ File="Lg Reb Ion Platform.ship.png";                Tier=2; Difficulty=1; }
-    :~{ File="Reb Blackout EMP Platform.ship.png";          Tier=2; Difficulty=1; }
-    :~{ File="Reb Lg Cannon Platform.ship.png";             Tier=2; Difficulty=1; }
-    :~{ File="Reb Lg HE Missile Platform.ship.png";         Tier=2; Difficulty=1; }
-    :~{ File="Reb Lg Laser Platform.ship.png";              Tier=2; Difficulty=1; }
-    :~{ File="Reb Lg Nuke Platform.ship.png";               Tier=2; Difficulty=1; }
-    :~{ File="Reb M Ion Platform.ship.png";                 Tier=2; Difficulty=1; }
-    :~{ File="Reb Med 2xIon Platform.ship.png";             Tier=2; Difficulty=1; }
-    :~{ File="Reb Med 2xRailgun Platform.ship.png";         Tier=2; Difficulty=1; }
-    :~{ File="Reb Med Cannon Platform.ship.png";            Tier=2; Difficulty=1; }
-    :~{ File="Reb Med Flak Platform.ship.png";              Tier=2; Difficulty=1; }
-    :~{ File="Reb Med HE Missile Platform Mk2.ship.png";    Tier=2; Difficulty=1; }
-    :~{ File="Reb Med HE Missile Platform.ship.png";        Tier=2; Difficulty=1; }
-    :~{ File="Reb Med Laser Platform.ship.png";             Tier=2; Difficulty=1; }
-    :~{ File="Reb Med Mixed Platform.ship.png";             Tier=2; Difficulty=1; }
-    :~{ File="Reb Med PD Platform.ship.png";                Tier=2; Difficulty=1; }
-    :~{ File="Reb Med Railgun Platform.ship.png";           Tier=2; Difficulty=1; }
-    :~{ File="Reb Med Sq Cannon Platform.ship.png";         Tier=2; Difficulty=1; }
+    :~{ File="Lg Reb Ion Platform.ship.png";                Tier=6; Difficulty=1; }
+    :~{ File="Reb Blackout EMP Platform.ship.png";          Tier=6; Difficulty=1; }
+    :~{ File="Reb Lg Cannon Platform.ship.png";             Tier=6; Difficulty=1; }
+    :~{ File="Reb Lg HE Missile Platform.ship.png";         Tier=6; Difficulty=1; }
+    :~{ File="Reb Lg Laser Platform.ship.png";              Tier=6; Difficulty=1; }
+    :~{ File="Reb Lg Nuke Platform.ship.png";               Tier=6; Difficulty=1; }
+    :~{ File="Reb M Ion Platform.ship.png";                 Tier=4; Difficulty=1; }
+    :~{ File="Reb Med Cannon Platform.ship.png";            Tier=4; Difficulty=1; }
+    :~{ File="Reb Med 2xIon Platform.ship.png";             Tier=4; Difficulty=1; }
+    :~{ File="Reb Med 2xRailgun Platform.ship.png";         Tier=4; Difficulty=1; }
+    :~{ File="Reb Med Flak Platform.ship.png";              Tier=4; Difficulty=1; }
+    :~{ File="Reb Med HE Missile Platform Mk2.ship.png";    Tier=4; Difficulty=1; }
+    :~{ File="Reb Med HE Missile Platform.ship.png";        Tier=4; Difficulty=1; }
+    :~{ File="Reb Med Laser Platform.ship.png";             Tier=4; Difficulty=1; }
+    :~{ File="Reb Med Mixed Platform.ship.png";             Tier=4; Difficulty=1; }
+    :~{ File="Reb Med PD Platform.ship.png";                Tier=4; Difficulty=1; }
+    :~{ File="Reb Med Railgun Platform.ship.png";           Tier=4; Difficulty=1; }
+    :~{ File="Reb Med Sq Cannon Platform.ship.png";         Tier=4; Difficulty=1; }
     :~{ File="Reb Sm Mixed Platform.ship.png";              Tier=2; Difficulty=1; }
     :~{ File="Reb Sm PD Platform.ship.png";                 Tier=2; Difficulty=1; }
     :~{ File="Reb Sm Railgun Platform.ship.png";            Tier=2; Difficulty=1; }
     :~{ File="Reb Sm Sq Cannon Platform.ship.png";          Tier=2; Difficulty=1; }
     :~{ File="Reb Small HE Missile Platform.ship.png";      Tier=2; Difficulty=1; }
-    :~{ File="Reb XL EMP Def Platform.ship.png";            Tier=2; Difficulty=1; }
-    :~{ File="Reb XL Nuke Platform.ship.png";               Tier=2; Difficulty=1; }
+    :~{ File="Reb XL EMP Def Platform.ship.png";            Tier=8; Difficulty=1; }
+    :~{ File="Reb XL Nuke Platform.ship.png";               Tier=8; Difficulty=1; }
     :~{ File="Sm Reb Laser Platform.ship.png";              Tier=2; Difficulty=1; }
-    :~{ File="Reb XL Railgun Platform.ship.png";            Tier=2; Difficulty=1; }
-    :~{ File="Reb XL Asteroid Def Platform.ship.png";       Tier=2; Difficulty=1; }
+    :~{ File="Reb XL Railgun Platform.ship.png";            Tier=8; Difficulty=1; }
+    :~{ File="Reb XL Asteroid Def Platform.ship.png";       Tier=8; Difficulty=1; }
 ]
