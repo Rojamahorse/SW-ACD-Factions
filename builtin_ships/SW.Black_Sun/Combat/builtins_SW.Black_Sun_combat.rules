@@ -8,6 +8,7 @@ Ships
 	:~{ File="Black Sun Fighter-BS H (Combat).ship.png";         				Tier=4;  Difficulty=2; }
 	:~{ File="Black Sun Fighter-BS (Combat).ship.png";          				Tier=3;  Difficulty=2; }
 	:~{ File="Black Sun ARC-170-BS.ship.png";       							Tier=3;  Difficulty=2; }
+	:~{ File="Pyke ARC-170-BS.ship.png";       									Tier=3;  Difficulty=2; }
 	:~{ File="Mandalorian ARC-170.ship.png";   									Tier=3;  Difficulty=2; }
 	:~{ File="Storm IV Twin-Pod BS Combat.ship.png";          					Tier=3;  Difficulty=2; }
 	:~{ File="Small-BS Fighter.ship.png";           							Tier=2;  Difficulty=2; }
