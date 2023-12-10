@@ -1,14 +1,23 @@
 Part : &<../xwing_cannon/xwing_cannon.rules>/Part
 {
 	//IDs
+	ID = SW.fighter_very_long_xwing_cannon
 
 	//StringKeys
+	NameKey = "Parts/xwingCannonXLong"
+	IconNameKey = "Parts/xwingCannonXLongIcon"
+	DescriptionKey = "Parts/xwingCannonXLongDesc"
 	
 	//Groups&Categories
+	EditorGroups = ["WeaponsEnergy","TechI"]
 	
 	//Resources&Size&Health
 	
 	//Rects
+	ProhibitRects
+	[
+		[fighter, [0, -4, 1, 4]]
+	]
 	
 	//Selections
 	
@@ -19,18 +28,6 @@ Part : &<../xwing_cannon/xwing_cannon.rules>/Part
 	//Doors&Etc
 	
 	//Editor
-	
-	//Components
-	NameKey = "Parts/xwingCannonXLong"
-	ID = SW.fighter_very_long_xwing_cannon
-	IconNameKey = "Parts/xwingCannonXLongIcon"
-	DescriptionKey = "Parts/xwingCannonXLongDesc"
-	EditorGroups = ["WeaponsEnergy","TechI"]
-
-	ProhibitRects
-	[
-		[fighter, [0, -4, 1, 4]]
-	]
 	EditorIcon
 	{
 		Texture
@@ -40,6 +37,8 @@ Part : &<../xwing_cannon/xwing_cannon.rules>/Part
 		}
 		Size = [16, 80]
 	}
+	
+	//Components
 	Components : ^/0/Components
 	{
 		BulletEmitter : &<../xwing_cannon/xwing_cannon.rules>/Part/Components/BulletEmitter

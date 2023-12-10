@@ -40,11 +40,11 @@ Components
 			[
 				{
 					Type = Damage
-					Damage = 150
+					Damage = 100
 				}
 				{
 					Type = Impulse;
-					Impulse = 3.0;
+					Impulse = 1.5;
 				}
 			]
 			MediaEffects

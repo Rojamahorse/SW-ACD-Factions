@@ -1,6 +1,6 @@
 ID = SW.fighter_railcannon_shot
 Range = 350
-IdealRange = 185
+IdealRange = [96, 320]
 Speed = 480
 
 Components
@@ -20,13 +20,15 @@ Components
 	Targetable
 	{
 		Type = Targetable
-		Health = 210
+		Health = 300
 		TargetCategory = "laser"
 	}
 
 	Hit
 	{
 		Type = PenetratingHit
+		Penetration = 2
+		PenetrationSpeed = 100
 		SourceShipLowCollisions = false
 		FactorEffectsWith = Targetable
 
@@ -36,6 +38,7 @@ Components
 		HitShield = &HitOperational
 		HitOperational
 		{
+			ReduceEffectsByPenetration = true
 			HitEffects
 			[
 				{
@@ -68,6 +71,7 @@ Components
 		}
 		HitStructural
 		{
+			ReduceEffectsByPenetration = true
 			HitEffects
 			[
 				{
