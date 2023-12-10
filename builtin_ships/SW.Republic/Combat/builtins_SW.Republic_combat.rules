@@ -47,6 +47,7 @@ Ships
 	:~{ File="Rep Firespray-31-Class P&A Craft.ship.png";           						Tier=3;  Difficulty=1; }
 	:~{ File="Rep Pelta-Class Frigate (Grey).ship.png";           							Tier=8;  Difficulty=1; }
 	:~{ File="Rep Pelta-Class Frigate (M-Freig.ship.png";           						Tier=8;  Difficulty=1; }
+	:~{ File="Rep Dreadnought Mk2.ship.png";           										Tier=12;  Difficulty=1; }
 
 //	:~{ File="Delta_7_Aethersprite_class_Light_Interceptor.ship.png";           			Tier=1;  Difficulty=2; }
 //	:~{ File="Eta_2_Actis_class_Light_Interceptor.ship.png";           						Tier=2;  Difficulty=1; }

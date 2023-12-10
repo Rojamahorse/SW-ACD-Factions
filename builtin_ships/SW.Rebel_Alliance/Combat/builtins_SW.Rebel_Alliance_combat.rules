@@ -35,6 +35,7 @@ Ships
 	:~{ File="Rebel Millenium Falcon Combat B.ship.png";           						Tier=4;  Difficulty=2; } // Cost $0
 	:~{ File="Rebel Millenium Falcon.ship.png";           								Tier=4;  Difficulty=2; } // Cost $0
 	:~{ File="Reb Delta 4.ship.png";           											Tier=5;  Difficulty=1; }
+	:~{ File="Reb Dreadnought-Class HvyLN Crui.ship.png";           					Tier=12;  Difficulty=1; }
 	
 	// Corvettes
 	:~{ File="Rebel-CR-90 Corvette.ship.png";            								Tier=7;  Difficulty=1; } // Cost $0
