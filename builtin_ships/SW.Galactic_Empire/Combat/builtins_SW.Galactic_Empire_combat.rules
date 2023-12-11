@@ -4,13 +4,12 @@ Tags = [combat]
 
 Ships	
 [	
-	// Scouts	
 	:~{ File="Emp_TIE Xelor.ship.png";										Tier=1;	 	Difficulty=1; } //Neojino
-	:~{ File="Emp TIE Fighter (Siena Blue).ship.png";               		Tier=1;  	Difficulty=1; }
-	:~{ File="Emp TIE (LN) Fighter (Sienar Blu.ship.png";           		Tier=1;  	Difficulty=2; }
-	:~{ File="Emp TIE Fighter.ship.png";                            		Tier=1;  	Difficulty=1; }
-	:~{ File="Emp TIE Heavy.ship.png";                              		Tier=2;  	Difficulty=1; }
-	:~{ File="Emp TIE Interceptor (Sienar Blue.ship.png";           		Tier=2;  	Difficulty=2; }
+	:~{ File="Emp TIE Fighter (Siena Blue).ship.png"; 	      				Tier=1;  	Difficulty=1; }
+	:~{ File="Emp TIE (LN) Fighter (Sienar Blu.ship.png";     				Tier=1;  	Difficulty=2; }
+	:~{ File="Emp TIE Fighter.ship.png";                   					Tier=1;  	Difficulty=1; }
+	:~{ File="Emp TIE Heavy.ship.png";            							Tier=2;  	Difficulty=1; }
+	:~{ File="Emp TIE Interceptor (Sienar Blue.ship.png";    				Tier=2;  	Difficulty=2; }
 	:~{ File="Emp TIE Interceptor-B MkII.ship.png";                 		Tier=2;  	Difficulty=2; }
 	:~{ File="Emp TIE Interceptor MkII.ship.png";                   		Tier=3;  	Difficulty=1; }
 	:~{ File="Emp TIE Interceptor.ship.png";                        		Tier=2;  	Difficulty=2; }
@@ -56,10 +55,6 @@ Ships
 	:~{ File="Emp_Supremacy I-class Star_DES.ship.png";						Tier=12;	Difficulty=2; } //Neojino
 	:~{ File="IPV-1 System Patrol Craft.ship.png";							Tier=6;		Difficulty=2; } // CJ - Orig
 	:~{ File="Immobilizer 420 Cruiser.ship.png";							Tier=13;	Difficulty=2; }  
-//	:~{ File="Galdiator Class Star Destroyer_REMOVE.ship.png";				Tier=13;	Difficulty=2; }  // Remove for Release Credit SR2
-//	:~{ File="Imperial Star Destroyer_REMOVE.ship.png";						Tier=10;	Difficulty=2; }  // Remove for Release Credit SR2
-//	:~{ File="Imperial Venator Star Destroyer_REMOVE.ship.png";				Tier=14;	Difficulty=2; }  // Remove for Release Credit SR2
-//	:~{ File="Victory Class Star Destroyer_REMOVE.ship.png";				Tier=16;	Difficulty=2; }  // Remove for Release Credit SR2
 	:~{ File="Emp V-Class Star Frigate Mk2.ship.png";						Tier=14;	Difficulty=2; }  
 	:~{ File="Emp Onager-Class Star Destroyer.ship.png";					Tier=12;	Difficulty=1; }
 	:~{ File="Emp Gladiator-Class Star Destroy.ship.png";					Tier=9;		Difficulty=1; }
@@ -83,8 +78,23 @@ Ships
 	:~{ File="Bayonet-Class Patrol Cruiser Mk2.ship.png";					Tier=10;	Difficulty=2; } 
 	:~{ File="Imperial II-class Star Destroyer.ship.png";					Tier=13;	Difficulty=2; }
 	:~{ File="Executor-Class Star Dreadnought.ship.png";					Tier=18;	Difficulty=2; }
-
+    :~{ File="Dreadnought-Class Star Cruiser.ship.png"; 					Tier=10; 	Difficulty=1; }
+    :~{ File="Emp Rogue Shadow MkII.ship.png"; 								Tier=3; 	Difficulty=1; }
+    :~{ File="Emp_TIE Prototype D.ship.png"; 								Tier=4; 	Difficulty=1; }
+    :~{ File="Executor-Class Star Dreadnought (Small).ship.png"; 			Tier=17; 	Difficulty=2; }
+    :~{ File="Imperial EF76 Nebulon-B Escort Frigate.ship.png"; 			Tier=6; 	Difficulty=2; }
+    :~{ File="Lamda-Class T-4a Imperial Shuttle.ship.png"; 					Tier=4; 	Difficulty=1; }
+    :~{ File="Marauder-Class Cruiser (Empire).ship.png"; 					Tier=7; 	Difficulty=1; }
+    :~{ File="Nu-Class Attack Shuttle.ship.png"; 							Tier=5; 	Difficulty=1; }
+    :~{ File="Pelta-Class Frigate C (Empire).ship.png"; 					Tier=7; 	Difficulty=1; }
+    :~{ File="Praetor Mark-II Class Battlecruiser.ship.png"; 				Tier=17; 	Difficulty=2; }
+    :~{ File="Tartan-class Patrol Cruiser.ship.png"; 						Tier=7; 	Difficulty=2; }
+    :~{ File="TIE Advanced X1 (Sienar Blue).ship.png"; 						Tier=3; 	Difficulty=1; }
+    :~{ File="Victory II-class Star Destroyer.ship.png"; 					Tier=13; 	Difficulty=2; }
+    :~{ File="Victory-class Star Destroyer.ship.png"; 						Tier=12; 	Difficulty=2; }
 ]
+
+
 
 // Patrol ships
 //	:~{ File="Emp_imperial_assault_carrier.ship.png";						Tier=5;		Difficulty=1; }

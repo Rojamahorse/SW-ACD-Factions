@@ -4,7 +4,7 @@ Tags = [civilian]
 Ships
 [
 	// Trade ships 
-	:~{ File="Emp_Probe Droid Civ.ship.png";  		Tier=1;  Tags : ~/Tags [trade] } //SkipperWraith
+	:~{ File="Emp_Probe Droid Civ.ship.png";  				Tier=1;  Tags : ~/Tags [trade] } //SkipperWraith
 	:~{ File="Emp Firespray-31-Class Patr.ship.png";  		Tier=3;  Tags : ~/Tags [trade] }
 	:~{ File="Emp Corellian G9 Rig Freighter.ship.png";     Tier=5;  Tags : ~/Tags [trade] }
 	:~{ File="Emp Corellian G9 Freighter Mk2.ship.png";     Tier=5;  Tags : ~/Tags [trade] }
