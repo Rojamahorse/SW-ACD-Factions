@@ -1,38 +1,35 @@
 Part : &<long_xwing_cannon.rules>/Part
 {
 	//IDs
+	ID = SW.long_fighter_xwing_cannon_left
+	OtherIDs = [SW.long_fighter_xwing_cannon_right]
+	FlipWhenLoadingIDs = [SW.long_fighter_xwing_cannon_right]
 
 	//StringKeys
+	NameKey = "Parts/xwingCannonLongLeft"
+	IconNameKey = "Parts/xwingCannonLongLeftIcon"
+	DescriptionKey = "Parts/xwingCannonLongDesc"
 	
 	//Groups&Categories
 	
 	//Resources&Size&Health
 	
 	//Rects
+	ProhibitRects
+	[
+		[fighter, [-2, -1, 2, 1]]
+	]
 	
 	//Selections
 	
 	//PartSpecific
+	IsFlippable = true
 	
 	//ReceivableBuffs
 	
 	//Doors&Etc
 	
 	//Editor
-	
-	//Components
-	NameKey = "Parts/xwingCannonLongLeft"
-	IconNameKey = "Parts/xwingCannonLongLeftIcon"
-	ID = SW.long_fighter_xwing_cannon_left
-	OtherIDs = [SW.long_fighter_xwing_cannon_right]
-	FlipWhenLoadingIDs = [SW.long_fighter_xwing_cannon_right]
-	DescriptionKey = "Parts/xwingCannonLongDesc"
-	IsFlippable = true
-	ProhibitRects
-	[
-		[fighter, [-2, -1, 2, 1]]
-	]
-
 	EditorIcon
 	{
 		Texture
@@ -42,7 +39,8 @@ Part : &<long_xwing_cannon.rules>/Part
 		}
 		Size = [96, 48]
 	}
-
+	
+	//Components
 	Components : ^/0/Components
 	{
 		Turret : &<long_xwing_cannon.rules>/Part/Components/Turret

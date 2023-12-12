@@ -4,24 +4,26 @@ Tags = [combat]
 
 Ships	
 [	
-	:~{ File="Emp_TIE Xelor.ship.png";										Tier=1;	 	Difficulty=1; } //Neojino
-	:~{ File="Emp TIE Fighter (Siena Blue).ship.png"; 	      				Tier=1;  	Difficulty=1; }
+	:~{ File="Emp_TIE Xelor.ship.png";										Tier=1;	 	Difficulty=1; } 	//28,130 //Neojino
 	:~{ File="Emp TIE (LN) Fighter (Sienar Blu.ship.png";     				Tier=1;  	Difficulty=2; }
+	:~{ File="Emp TIE (LN) Fighter Mk2.ship.png";							Tier=3;	 	Difficulty=2; }
+	:~{ File="Emp_TIE (LN) Fighter.ship.png";								Tier=1;	 	Difficulty=2; } //Neojino
+	:~{ File="Emp_TIE_ETA.ship.png";										Tier=2;	 	Difficulty=2; } //Neojino
+	:~{ File="Emp TIE Fighter (Siena Blue).ship.png"; 	      				Tier=1;  	Difficulty=1; }
 	:~{ File="Emp TIE Fighter.ship.png";                   					Tier=1;  	Difficulty=1; }
-	:~{ File="Emp TIE Heavy.ship.png";            							Tier=2;  	Difficulty=1; }
+	:~{ File="Emp_TIE_M1.ship.png";											Tier=2;	 	Difficulty=1; } //Neojino
 	:~{ File="Emp TIE Interceptor (Sienar Blue.ship.png";    				Tier=2;  	Difficulty=2; }
+	:~{ File="Emp TIE Heavy.ship.png";            							Tier=3;  	Difficulty=2; }
 	:~{ File="Emp TIE Interceptor-B MkII.ship.png";                 		Tier=2;  	Difficulty=2; }
 	:~{ File="Emp TIE Interceptor MkII.ship.png";                   		Tier=3;  	Difficulty=1; }
 	:~{ File="Emp TIE Interceptor.ship.png";                        		Tier=2;  	Difficulty=2; }
 	:~{ File="Emp TIE SA Bomber (Sienar Blue).ship.png";            		Tier=3;  	Difficulty=1; }
 	:~{ File="Emp TIE SA Bomber.ship.png";                          		Tier=3;  	Difficulty=1; }
-	:~{ File="Emp TIE SA Bomber MkII.ship.png";                     		Tier=3;  	Difficulty=2; }
+	:~{ File="Emp TIE SA Bomber MkII.ship.png";                     		Tier=4;  	Difficulty=2; }
 	:~{ File="Emp TIE SA-B Bomber MkII.ship.png";                   		Tier=4;  	Difficulty=1; }
 	:~{ File="Emp Rogue Shadow.ship.png";                           		Tier=4;  	Difficulty=1; }
 	:~{ File="Emp Rogue Shadow Alt.ship.png";                       		Tier=3;  	Difficulty=1; }
 	:~{ File="Emp Lamda-Class T-4a Shuttle.ship.png";               		Tier=3;  	Difficulty=1; }
-	:~{ File="Emp TIE (LN) Fighter Mk2.ship.png";							Tier=3;	 	Difficulty=2; }
-	:~{ File="Emp_TIE (LN) Fighter.ship.png";								Tier=1;	 	Difficulty=2; } //Neojino
 	:~{ File="Emp_TIE Advanced X1.ship.png";								Tier=3;	 	Difficulty=2; } //Neojino
 	:~{ File="Emp_TIE Interceptor.ship.png";								Tier=3;	 	Difficulty=2; } //Neojino
 	:~{ File="Emp_TIE Prototype R.ship.png";                           		Tier=5;  	Difficulty=2; }
@@ -33,12 +35,10 @@ Ships
 	:~{ File="Emp_TIE bat.ship.png";										Tier=2;	 	Difficulty=1; } //Neojino
 	:~{ File="Emp_TIE bat Elite.ship.png";									Tier=2;	 	Difficulty=2; } //Neojino
 	:~{ File="Emp_TIE knift.ship.png";										Tier=3;	 	Difficulty=1; } //Neojino
-	:~{ File="Emp_TIE slider.ship.png";										Tier=1;	 	Difficulty=1; } //Neojino
-	:~{ File="Emp-TIE Defender.ship.png";									Tier=3;	 	Difficulty=1; } //Neojino
-	:~{ File="Emp_TIE_ETA.ship.png";										Tier=1;	 	Difficulty=1; } //Neojino
-	:~{ File="Emp_TIE_Falcon_Bomber.ship.png";								Tier=4;	 	Difficulty=2; } //Neojino
+	:~{ File="Emp_TIE slider.ship.png";										Tier=3;	 	Difficulty=1; } //Neojino
+	:~{ File="Emp-TIE Defender.ship.png";									Tier=5;	 	Difficulty=1; } //Neojino
+	:~{ File="Emp_TIE_Falcon_Bomber.ship.png";								Tier=5;	 	Difficulty=2; } //Neojino
 	:~{ File="Emp_TIE_Falcon_Bomber R.ship.png";							Tier=6;	 	Difficulty=2; } //Neojino
-	:~{ File="Emp_TIE_M1.ship.png";											Tier=1;	 	Difficulty=1; } //Neojino
 	:~{ File="Emp Lamda-Class T-4a Mk2.ship.png";							Tier=4;		Difficulty=2; } 
 	:~{ File="Emp Crusader-Class Cruiser Mk2.ship.png";						Tier=9;	 	Difficulty=2; } 
 	:~{ File="Emp B-Class Lt Torpedo cruiser.ship.png";						Tier=9;	 	Difficulty=2; } //Based off Chryss

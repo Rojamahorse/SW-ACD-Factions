@@ -30,7 +30,7 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 	]
 	
 	//Selections
-	SelectionTypeID = "f_cannons"
+	SelectionTypeID = "fighter"
 	SelectionPriority = 1
 	SelectionTypeByRotation = true
 	

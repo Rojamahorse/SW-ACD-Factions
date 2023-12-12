@@ -5,14 +5,14 @@ Ships
 [
 	// Scouts
 	:~{ File="Rebel RZ-1 A-Wing Interceptor v2.ship.png";     							Tier=2;  Difficulty=1; } // Cost $0
-	:~{ File="A-Wing Starfighter Rogue1.ship.png";     									Tier=3;  Difficulty=2; } // Cost $0
-	:~{ File="Rebel T-65 X-Wing Starfighter.ship.png";          						Tier=3;  Difficulty=2; } // Cost $0
+	:~{ File="A-Wing Starfighter Rogue1.ship.png";     									Tier=1;  Difficulty=2; } // Cost $0
+	:~{ File="Rebel T-65 X-Wing Starfighter.ship.png";          						Tier=2;  Difficulty=1; } // Cost $0
 	:~{ File="Rebel T-65B X-Wing H Starfighter.ship.png";       						Tier=4;  Difficulty=1; } // Cost $0
 	:~{ File="Rebel Z-95 Headhunter.ship.png";   										Tier=1;  Difficulty=2; } // Cost $0
-	:~{ File="Rebel RZ-1 A-Wing Bomber v2.ship.png";          							Tier=2;  Difficulty=2; } // Cost $0
+	:~{ File="Rebel RZ-1 A-Wing Bomber v2.ship.png";          							Tier=3;  Difficulty=2; } // Cost $0
 	:~{ File="Rebel RZ-1 A-Wing Bomber.ship.png";           							Tier=2;  Difficulty=2; } // Cost $0
 	:~{ File="Rebel RZ-1 A-Wing Interceptor.ship.png";         							Tier=1;  Difficulty=1; } // Cost $0
-	:~{ File="Reb_V-19_Torrent_Starfighter.ship.png";									Tier=1;  Difficulty=2; } // Cost $0 		
+	:~{ File="Reb_V-19_Torrent_Starfighter.ship.png";									Tier=4;  Difficulty=2; } // Cost $0 		
 	:~{ File="Rebel BTL-B Y-Wing Bomberv2.ship.png";         							Tier=4;  Difficulty=2; } // Cost $0
 	:~{ File="Rebel BTL-B Y-Wing Bomber.ship.png";        								Tier=4;  Difficulty=2; } // Cost $0
 	:~{ File="Rebel-ASF-01 B-Wing Starfighter.ship.png";         						Tier=4;  Difficulty=1; } // Cost $0
