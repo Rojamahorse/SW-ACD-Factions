@@ -17,6 +17,7 @@ Ships
 	:~{ File="Emp_Eta-Class Supply Barge2.ship.png";    	Tier=7;  Tags : ~/Tags [trade] } //Neojino
 	:~{ File="Cargo Transporter Large Empire.ship.png"; 	Tier=9;  Tags : ~/Tags [trade] }
 	:~{ File="Cargo Transporter Huge Empire.ship.png";    	Tier=10;  Tags : ~/Tags [trade] }
+	:~{ File="Lamda-Class Transport 4a.ship.png";     		Tier=3;  Tags : ~/Tags [trade] }
 	:~{ File="Emp Lamda-Class T-4a Civ.ship.png";     		Tier=3;  Tags : ~/Tags [trade] }
 	:~{ File="Emp Auklet.ship.png";     Tier=3;  Tags : ~/Tags [trade] }
 	:~{ File="Emp Dovekie.ship.png";    Tier=3;  Tags : ~/Tags [trade] }
