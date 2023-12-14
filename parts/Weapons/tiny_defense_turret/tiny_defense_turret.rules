@@ -85,6 +85,7 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 			Type = UIToggle
 			ToggleID = "fire_mode"
 			Default = 1
+			AvailableChoices = [-1, 1, 2]
 			ToggledOnChoices = [0, 1, 2]
 		}
 		AutoTargetToggle
@@ -121,13 +122,13 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 		AttackToggle
 		{
 			Type = MultiToggle
-			Toggles = [FireModeToggle, FirePrefAttack]
+			Toggles = [AutoTargetToggle, FirePrefAttack]
 			Mode = All
 		}
 		DefendToggle
 		{
 			Type = MultiToggle
-			Toggles = [FireModeToggle, FirePrefDefend]
+			Toggles = [AutoTargetToggle, FirePrefDefend]
 			Mode = All
 		}
 
@@ -135,17 +136,17 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 		{
 			Type = ResourceStorage
 			ResourceType = battery
-			MaxResources = 1500			
+			MaxResources = 2000			
+			ReceiveResourceMediaEffects = &/COMMON_EFFECTS/PowerDeliver
 		}
 		BatteryConsumer
 		{
 			Type = ResourceConsumer
 			ResourceType = battery
 			Storage = BatteryStorage
+			ResupplyThreshold = 1
 			DefaultPriority = &/PRIORITIES/Defense_Supply
-			ResupplyThreshold = 500
 			OperationalToggle = PowerToggle
-			ReceiveResourceMediaEffects = &/COMMON_EFFECTS/PowerDeliver
 		}
 
 		InsideTurretGraphics
@@ -283,13 +284,14 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 			AIFirepowerRating = 150
 			CanBeGivenExplicitTarget = false
 			Emitter = BaseEmitter
-			TargetingRange = 180
-			TargetingArc = 360
 			TargetSearchesPerSecond = 4 // Default is 2.
 			HoldTargetAfterDeath = .5
 			TargetPathThickness = .2// &../BulletEmitter/Bullet/Components/Physics/Radius
 			EstimateFirepowerToggle = AttackToggle
+			AlwaysShowCoverage = true
 			AllowDirectControl = false
+			FirePermissionToggle = FireModeToggle
+			AutoTargetCrewSafetyDist = 8
 			IgnoreSourceShipLowLOSChecks = true
 
 			AutoTargets
@@ -297,11 +299,11 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 				{
 					TargetType = Bullets
 					BulletTargetCategories = [missile, mine, bullet]
-					Toggle = FirePrefDefend
+					Toggle = DefendToggle
 				}
 				{
 					TargetType = ShipParts
-					Toggle = FirePrefAttack
+					Toggle = AttackToggle
 					Overridable = true
 				}
 			]
@@ -314,6 +316,14 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 			}
 			BlueprintArcRadius = 10
 			BlueprintArcSpriteSegments = 64
+
+			CoverageSectorArc
+			{
+				Texture = &/INDICATORS/VerticalGradient
+				VertexColor = [255, 255, 255, 51]
+				QuadCount = 64
+			}
+
 		}
 
 		ReloadProgressBar
@@ -331,7 +341,7 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 			Location = [0, 0]
 			OperationalToggle = IsOperational
 			Bullet = &<pd_shot/pd_shot.rules>
-			Spread = [-5d, 5d]
+			//Spread = [-5d, 5d]
 			ResourceStorage = BatteryStorage
 			ResourcesUsed = 50 //20
 			Burst = 2 //3
@@ -575,9 +585,9 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 	{
 		PowerCapacity = (&~/Part/Components/BatteryStorage/MaxResources) / 1000
 
-		MinPower = (&../StatsByCategory/0/Stats/PowerPerSecond) / 2
+//		MinPower = (&../StatsByCategory/0/Stats/PowerPerSecond) / 2
 		RecPower = &../StatsByCategory/0/Stats/PowerPerSecond
-		MinCrew = (&MinPower) * 2
+//		MinCrew = (&MinPower) * 2
 		RecCrew = (&RecPower) * 4
 	}
 
@@ -594,7 +604,7 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 				ROF = 1 / (&~/Part/Components/Turret/FireInterval)
 				Range = &~/Part/Components/BaseEmitter/Bullet/Range
 				Arc = deg(&~/Part/Components/Turret/FiringArc)
-				Spread = deg(&~/Part/Components/BaseEmitter/Spread/1)
+//				Spread = deg(&~/Part/Components/BaseEmitter/Spread/1)
 				TurretSpeed = deg(&~/Part/Components/Turret/RotateSpeed)
 				ShotSpeed = &~/Part/Components/BaseEmitter/Bullet/Speed
 //				ShotHP = &~/Part/Components/BaseEmitter/Bullet/Components/Targetable/Health

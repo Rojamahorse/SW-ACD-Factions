@@ -82,7 +82,7 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 			Type = UIToggle
 			ToggleID = "fire_mode"
 			Default = 1
-			// AvailableChoices = [-1, 1, 2]
+			AvailableChoices = [-1, 1, 2]
 			ToggledOnChoices = [0, 1, 2]
 		}
 		AutoTargetToggle
@@ -97,7 +97,7 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 			Mode = FireModeToggle
 			OnMode = 2
 		}
-/*
+
 		FirePrefToggle
 		{
 			Type = UIToggle
@@ -129,7 +129,7 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 			Toggles = [AutoTargetToggle, FirePrefDefend]
 			Mode = All
 		}
-*/
+
 		BatteryStorage
 		{
 			Type = ResourceStorage
@@ -259,23 +259,23 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 			HoldTargetAfterCancel = .5
 			TargetPathThickness = .2// &../BulletEmitter/Bullet/Components/Physics/Radius
 			AllowDirectControl = false
-//			AlwaysShowCoverage = true
-//			AutoTargetCrewSafetyDist = 8
-//			EstimateFirepowerToggle = AttackToggle
-			//FirePermissionToggle = FireModeToggle
+			AlwaysShowCoverage = true
+			AutoTargetCrewSafetyDist = 8
+			EstimateFirepowerToggle = AttackToggle
+			FirePermissionToggle = FireModeToggle
 
 			AutoTargets
 			[
 				{
 					TargetType = Bullets
-					BulletTargetCategories = [/*missile, mine, bullet, */laser, ion_shot]
-					Toggle = FireModeToggle
+					BulletTargetCategories = [laser, ion_shot]
+					Toggle = DefendToggle
 				}
-//				{
-//					TargetType = ShipParts
-//					Toggle = AttackToggle
-//					Overridable = true
-//				}
+				{
+					TargetType = ShipParts
+					Toggle = AttackToggle
+					Overridable = true
+				}
 			]
 
 			BlueprintArcSprite
