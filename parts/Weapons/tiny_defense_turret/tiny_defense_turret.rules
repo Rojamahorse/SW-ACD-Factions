@@ -34,7 +34,7 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 	InitialPenetrationResistance = 2
 	
 	//ReceivableBuffs
-	ProhibitedBy : ^/0/ProhibitedBy [tall]
+	//ProhibitedBy : ^/0/ProhibitedBy [tall]
 	
 	//Doors&Etc
 //	AllowedDoorLocations
@@ -277,7 +277,7 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 			Rotation = -90d// Relative to unrotated part.
 			OperationalToggle = IsOperational
 			AutoFireToggle = AutoFireToggle
-			FireInterval = .7
+			FireInterval = 2/30 //.5
 			FiringArc = 360d
 			RotateSpeed = 180d
 			FireThresholdAngle = 1d
@@ -341,12 +341,13 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 			Location = [0, 0]
 			OperationalToggle = IsOperational
 			Bullet = &<pd_shot/pd_shot.rules>
-			//Spread = [-5d, 5d]
+//			Spread = [-1d, 1d]
 			ResourceStorage = BatteryStorage
 			ResourcesUsed = 50 //20
-			Burst = 2 //3
-			BurstDelay = .075
-			UseResourcePerShotInBurst = true
+			MinResourcesUsed = 2
+			//Burst = 2 //3
+			//BurstDelay = .075
+			//UseResourcePerShotInBurst = true
 //			Recoil = 240
 		}
 
@@ -600,7 +601,7 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 				DamagePerShot = &~/Part/Components/BaseEmitter/Bullet/Components/Hit/HitOperational/HitEffects/0/Damage
 				DamagePerSecond = (&DamagePerShot) * (&ROF)
 				Damage = [&../DamagePerShot, &../DamagePerSecond]
-				Salvo = [(&~/Part/Components/BaseEmitter/Burst), (&~/Part/Components/Turret/FireInterval)]
+				//Salvo = [(&~/Part/Components/BaseEmitter/Burst), (&~/Part/Components/Turret/FireInterval)]
 				ROF = 1 / (&~/Part/Components/Turret/FireInterval)
 				Range = &~/Part/Components/BaseEmitter/Bullet/Range
 				Arc = deg(&~/Part/Components/Turret/FiringArc)
