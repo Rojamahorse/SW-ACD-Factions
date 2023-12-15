@@ -20,6 +20,7 @@ Ships
 	// :~{ File="Lucrehulk-class_LH-3210_Cargo_Freighter.ship.png"; 			Tier=4;  Difficulty=1; }
 	// :~{ File="Starfreighter.ship.png"; 										Tier=2;  Difficulty=1; }
 	// :~{ File="Action_IV_Transport.ship.png"; 								Tier=3;  Difficulty=1; }
+	:~{ File="Black Sun OutPost.ship.png"; 										Tier=7;  Difficulty=1; }
 	:~{ File="BSC Kom'rk-Class Fighter 2.ship.png"; 							Tier=5;  Difficulty=1; }
 	:~{ File="BSC Kom'rk-Class Fighter R.ship.png"; 							Tier=5;  Difficulty=1; }
 	:~{ File="BSC Storm IV Twin-Pod Combat.ship.png"; 							Tier=2;  Difficulty=1; }
