@@ -84,6 +84,21 @@ Components
 					Type = Damage
 					Damage = 850
 				}
+				{
+					Type = ExplosiveDamage
+					TotalDamage = 1550
+					Radius = 6
+            		Slices = 1
+					Filter
+					{
+						Ships = false
+						Shields = false
+						Bullets = true
+						OnlyBulletCategories = [missile, bullet, mine]
+						Crew = true
+					}
+				}
+
 			]
 
 			MediaEffects
@@ -91,6 +106,7 @@ Components
 				&<./Data/shots/pd_shot/particles/pd_shot_spikes.rules>
 				&<./Data/shots/pd_shot/particles/pd_shot_sparks.rules>
 				&<./Data/ships/terran/point_defense/particles/point_defense_shoot_flash.rules>
+				&<../../common_shots/sw_pd_beam_shot/particles/sw_laser_smoke.rules>
 			]
 		}
 
