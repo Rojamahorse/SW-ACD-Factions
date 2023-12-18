@@ -81,6 +81,7 @@ Actions
 			&<galaxy_map/map_generators/sizes.rules>/SWTitanic
 			&<galaxy_map/map_generators/sizes.rules>/SWGalactic
 			&<galaxy_map/map_generators/sizes.rules>/SWRebellion  
+			&<galaxy_map/map_generators/sizes.rules>/SWClonewars  
 
 		]
 	}
