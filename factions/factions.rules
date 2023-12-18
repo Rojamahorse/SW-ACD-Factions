@@ -30,8 +30,8 @@ Factions
 					}
 				}
 				BorderColor = [204, 0, 255]
-				MilitaryPlayerIndex = 100
-				CivilianPlayerIndex = 101
+				MilitaryPlayerIndex = 500
+				CivilianPlayerIndex = 501
 			}
 			// Confederacy of Independent Systems
 			{
@@ -47,8 +47,8 @@ Factions
 					}
 				}
 				BorderColor = [6, 78, 123]
-				MilitaryPlayerIndex = 200
-				CivilianPlayerIndex = 201
+				MilitaryPlayerIndex = 600
+				CivilianPlayerIndex = 601
 			}
 			// Galactic_Empire
 			{
@@ -64,8 +64,8 @@ Factions
 					}
 				}
 				BorderColor = [255, 255, 255]
-				MilitaryPlayerIndex = 300
-				CivilianPlayerIndex = 301
+				MilitaryPlayerIndex = 700
+				CivilianPlayerIndex = 701
 			}
 			// Rebel_Alliance
 			{
@@ -81,8 +81,8 @@ Factions
 					}
 				}
 				BorderColor = [255, 165, 0]
-				MilitaryPlayerIndex = 400
-				CivilianPlayerIndex = 401
+				MilitaryPlayerIndex = 800
+				CivilianPlayerIndex = 801
 			}
 			// Republic
 			{
@@ -98,10 +98,10 @@ Factions
 					}
 				}
 				BorderColor = [255, 0, 49]
-				MilitaryPlayerIndex = 500
-				CivilianPlayerIndex = 501
+				MilitaryPlayerIndex = 900
+				CivilianPlayerIndex = 901
 			}
-
+/*
 			// Monolith Cooperative (Sith Empire)
 			{
 				ID = monolith
@@ -171,6 +171,7 @@ Factions
 				MilitaryPlayerIndex = 900
 				CivilianPlayerIndex = 901
 			}
+*/
 	/*
 	// Black_Sun
 	{

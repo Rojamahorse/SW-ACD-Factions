@@ -416,7 +416,7 @@ Actions
 		AddTo = "<factions/factions.rules>/Factions"
         ManyToAdd = &<factions/factions.rules>/Factions
 	}
-
+/*
 	{
 		Action = Replace
 		Replace = "<./Data/factions/factions.rules>/Factions"
@@ -582,6 +582,6 @@ Actions
 
 
 
-	}
+	}*/
 
 ]
