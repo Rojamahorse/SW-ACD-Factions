@@ -230,12 +230,11 @@ Resource
 
 MapSizes  
 {
+	Standard = "Cosmoteer Standard (50)"
+	StandardTip = "A standard-sized boring old vanilla <white>Cosmoteer</white> star system... \n<i>These aren't the star systems you're looking for... move along, move along.</i>"
 	
-	Standard = "Standard (50)"
-	StandardTip = "A mix of 50 <yellow>Star Wars</yellow> and <white>Vanilla</white> controlled systems on the edge of explored space, known for their intricate routes and shadowy dealings."
-
-	Vanilla = "Cosmoteer Standard (50)"
-	VanillaDesc = "A standard-sized boring old vanilla <white>Cosmoteer</white> star system... \n<i>These aren't the star systems you're looking for... move along, move along.</i>"
+	Vanilla = "Standard (50)"
+	VanillaDesc = "A mix of 50 <yellow>Star Wars</yellow> and <white>Vanilla</white> controlled systems on the edge of explored space, known for their intricate routes and shadowy dealings."
 
 //	SWStandard = "Frontier Systems (50)"
 //	SWStandardTip = "A network of 50 Star Wars systems on the edge of explored space, known for their intricate routes and shadowy dealings."
