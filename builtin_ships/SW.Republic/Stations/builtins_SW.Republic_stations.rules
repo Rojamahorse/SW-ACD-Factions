@@ -4,18 +4,18 @@ Tags = [station]
 Ships
 [
 	// Civilian stations
-	:~{ File="SW.Republic Trade Station 1 XS.ship.png"; Tier=1;  Tags : ~/Tags [trade_station]; 	StasisIcon="SW.Republic Trade Station 1.png" }
-	:~{ File="SW.Republic Trade Station 2 Sm.ship.png";   Tier=3; Tags : ~/Tags [trade_station]; 	StasisIcon="SW.Republic Trade Station 2.png" }
-	:~{ File="SW.Republic Trade Station 3 Sm.ship.png"; Tier=7; Tags : ~/Tags [trade_station]; 		StasisIcon="SW.Republic Trade Station 3.png" }
-	:~{ File="SW.Republic Trade Station 4 Med.ship.png"; Tier=10; Tags : ~/Tags [trade_station]; 	StasisIcon="SW.Republic Trade Station 4.png" }
-	:~{ File="SW.Republic Trade Station 5 Med.ship.png"; Tier=11; Tags : ~/Tags [trade_station]; 	StasisIcon="SW.Republic Trade Station 5.png" }
-	:~{ File="SW.Republic Trade Station 6 Lg.ship.png"; Tier=16;  Tags : ~/Tags [trade_station];    StasisIcon="SW.Republic Trade Station 6.png" }
+	:~{ File="SW.Republic Trade Station 1 XS.ship.png"; Tier=1;  Tags : ~/Tags [trade_station]; 	StasisIcon="SW.Republic Trade Station 1.png"; OtherIDs=["Small SW.Republic Trade Station"] }
+	:~{ File="SW.Republic Trade Station 2 Sm.ship.png";   Tier=3; Tags : ~/Tags [trade_station]; 	StasisIcon="SW.Republic Trade Station 2.png"; OtherIDs=["Small Republic Trade Station", "Small Republic Trade Station II"] }
+	:~{ File="SW.Republic Trade Station 3 Sm.ship.png"; Tier=7; Tags : ~/Tags [trade_station]; 		StasisIcon="SW.Republic Trade Station 3.png"; OtherIDs=["Rep Haven-class cargo station"] }
+	:~{ File="SW.Republic Trade Station 4 Med.ship.png"; Tier=10; Tags : ~/Tags [trade_station]; 	StasisIcon="SW.Republic Trade Station 4.png"; OtherIDs=["Med SW.Republic Trade Station","Med Republic Trade Station"] }
+	:~{ File="SW.Republic Trade Station 5 Med.ship.png"; Tier=11; Tags : ~/Tags [trade_station]; 	StasisIcon="SW.Republic Trade Station 5.png"; OtherIDs=["Large Republic Trade Station"] }
+	:~{ File="SW.Republic Trade Station 6 Lg.ship.png"; Tier=16;  Tags : ~/Tags [trade_station];    StasisIcon="SW.Republic Trade Station 6.png"; OtherIDs=["Large SW.Republic Trade Station","Huge SW.Republic Trade Station"] }
 
 	// Military stations
-	:~{ File="SW.Republic Arms Depot 1 Minor.ship.png";     Tier=1; 	SpawnTier=1;  	Tags : ~/Tags [military_station]; StasisIcon="SW.Republic Arms Depot 1.png"; FlightDirection=UpRight }
-	:~{ File="SW.Republic Arms Depot 2 Small.ship.png";    	Tier=3;  	SpawnTier=5;  	Tags : ~/Tags [military_station]; StasisIcon="SW.Republic Arms Depot 2.png"; FlightDirection=UpRight }
-	:~{ File="SW.Republic Arms Depot 3 Medium.ship.png";    Tier=7; 	SpawnTier=7; 	Tags : ~/Tags [military_station]; StasisIcon="SW.Republic Arms Depot 3.png"; FlightDirection=UpRight }
-	:~{ File="SW.Republic Arms Depot 4 Large.ship.png";   	Tier=9; 	SpawnTier=8; 	Tags : ~/Tags [military_station]; StasisIcon="SW.Republic Arms Depot 4.png"; FlightDirection=UpRight }
-	:~{ File="SW.Republic Arms Depot 5 XLarge.ship.png";    Tier=12;  	SpawnTier=12;  	Tags : ~/Tags [military_station]; StasisIcon="SW.Republic Arms Depot 5.png"; FlightDirection=UpRight }
-	:~{ File="SW.Republic Arms Depot 6 Huge.ship.png";    	Tier=16;  	SpawnTier=16;  	Tags : ~/Tags [military_station]; StasisIcon="SW.Republic Arms Depot 6.png"; FlightDirection=UpRight }
+	:~{ File="SW.Republic Arms Depot 1 Minor.ship.png";     Tier=1; 	SpawnTier=1;  	Tags : ~/Tags [military_station]; StasisIcon="SW.Republic Arms Depot 1.png"; OtherIDs=["Minor Republic Arms Depot", "Small SW.Republic Arms Depot"]; FlightDirection=UpRight }
+	:~{ File="SW.Republic Arms Depot 2 Small.ship.png";    	Tier=3;  	SpawnTier=5;  	Tags : ~/Tags [military_station]; StasisIcon="SW.Republic Arms Depot 2.png"; OtherIDs=["Minor Republic Arms Depot II", "Small Republic Arms Depot"]; FlightDirection=UpRight }
+	:~{ File="SW.Republic Arms Depot 3 Medium.ship.png";    Tier=7; 	SpawnTier=7; 	Tags : ~/Tags [military_station]; StasisIcon="SW.Republic Arms Depot 3.png"; OtherIDs=["Med SW.Republic Arms Depot", "Med Republic Arms Depot"]; FlightDirection=UpRight }
+	:~{ File="SW.Republic Arms Depot 4 Large.ship.png";   	Tier=9; 	SpawnTier=8; 	Tags : ~/Tags [military_station]; StasisIcon="SW.Republic Arms Depot 4.png"; OtherIDs=["Large SW.Republic Arms Depot", "Large Republic Arms Depot"]; FlightDirection=UpRight }
+	:~{ File="SW.Republic Arms Depot 5 XLarge.ship.png";    Tier=12;  	SpawnTier=12;  	Tags : ~/Tags [military_station]; StasisIcon="SW.Republic Arms Depot 5.png"; OtherIDs=["Huge SW.Republic Arms Depot"]; FlightDirection=UpRight }
+	:~{ File="SW.Republic Arms Depot 6 Huge.ship.png";    	Tier=16;  	SpawnTier=16;  	Tags : ~/Tags [military_station]; StasisIcon="SW.Republic Arms Depot 6.png"; OtherIDs=[""]; FlightDirection=UpRight }
 ]

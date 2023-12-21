@@ -4,18 +4,18 @@ Tags = [station]
 Ships
 [
 	// Civilian stations
-	:~{ File="SW.CIS Trade Station 1 Minor.ship.png"; Tier=1;  Tags : ~/Tags [trade_station]; StasisIcon="SW.CIS Trade Station 1.png" }
-	:~{ File="SW.CIS Trade Station 2 Small.ship.png"; Tier=3;  Tags : ~/Tags [trade_station]; StasisIcon="SW.CIS Trade Station 2.png" }
-	:~{ File="SW.CIS Trade Station 3 Medium.ship.png";   Tier=7; Tags : ~/Tags [trade_station]; StasisIcon="SW.CIS Trade Station 3.png" }
-	:~{ File="SW.CIS Trade Station 4 Large.ship.png"; Tier=11; Tags : ~/Tags [trade_station]; StasisIcon="SW.CIS Trade Station 4.png" }
+	:~{ File="SW.CIS Trade Station 1 Minor.ship.png"; Tier=1;  Tags : ~/Tags [trade_station]; StasisIcon="SW.CIS Trade Station 1.png"; OtherIDs=["Small CIS Trade Station"]; }
+	:~{ File="SW.CIS Trade Station 2 Small.ship.png"; Tier=3;  Tags : ~/Tags [trade_station]; StasisIcon="SW.CIS Trade Station 2.png"; OtherIDs=["Small SW.CIS Trade Station"]; }
+	:~{ File="SW.CIS Trade Station 3 Medium.ship.png";   Tier=7; Tags : ~/Tags [trade_station]; StasisIcon="SW.CIS Trade Station 3.png"; OtherIDs=["Med SW.CIS Trade Station", "Med CIS Trade Station"]; }
+	:~{ File="SW.CIS Trade Station 4 Large.ship.png"; Tier=11; Tags : ~/Tags [trade_station]; StasisIcon="SW.CIS Trade Station 4.png"; OtherIDs=["Large SW.CIS Trade Station", "Large CIS Trade Station", "Lukrehulk-Class Droid Control Ship", "Huge SW.CIS Trade Station"]; }
 //	:~{ File="Huge SW.CIS Trade Station.ship.png"; Tier=11; Tags : ~/Tags [trade_station]; StasisIcon="Huge SW.CIS Trade Station.png" }
 //	:~{ File="Lukrehulk-Class Droid Control Ship.ship.png"; Tier=16; Tags : ~/Tags [trade_station]; StasisIcon="Large CIS Trade Station.png" }
 
 	// Military stations
-	:~{ File="SW.CIS Arms Depot 1 Tiny.ship.png";     Tier=6;  SpawnTier=3;  Tags : ~/Tags [military_station]; StasisIcon="SW.CIS Arms Depot 1.png";  FlightDirection=UpRight }
-	:~{ File="SW.CIS Arms Depot 2 Small.ship.png";    Tier=9;  SpawnTier=7;  Tags : ~/Tags [military_station]; StasisIcon="SW.CIS Arms Depot 2.png"; FlightDirection=UpRight }
-	:~{ File="SW.CIS Arms Depot 3 Medium.ship.png";      Tier=11; SpawnTier=11; Tags : ~/Tags [military_station]; StasisIcon="SW.CIS Arms Depot 3.png";   FlightDirection=UpRight }
-	:~{ File="SW.CIS Arms Depot 4 Large.ship.png";    Tier=13; SpawnTier=12; Tags : ~/Tags [military_station]; StasisIcon="SW.CIS Arms Depot 4.png"; FlightDirection=UpRight }
-	:~{ File="SW.CIS Arms Depot 5 XLarge.ship.png";    Tier=16; SpawnTier=15; Tags : ~/Tags [military_station]; StasisIcon="SW.CIS Arms Depot 5.png"; FlightDirection=UpRight }
+	:~{ File="SW.CIS Arms Depot 1 Tiny.ship.png";     Tier=6;  SpawnTier=3;  Tags : ~/Tags [military_station]; StasisIcon="SW.CIS Arms Depot 1.png"; OtherIDs=["Small SW.CIS Arms Depot","Small CIS Arms Depot"];  FlightDirection=UpRight }
+	:~{ File="SW.CIS Arms Depot 2 Small.ship.png";    Tier=9;  SpawnTier=7;  Tags : ~/Tags [military_station]; StasisIcon="SW.CIS Arms Depot 2.png"; OtherIDs=["Tiny CIS Arms Depot"]; FlightDirection=UpRight }
+	:~{ File="SW.CIS Arms Depot 3 Medium.ship.png";      Tier=11; SpawnTier=11; Tags : ~/Tags [military_station]; StasisIcon="SW.CIS Arms Depot 3.png"; OtherIDs=["Med SW.CIS Arms Depot", "Med CIS Arms Depot"]; FlightDirection=UpRight }
+	:~{ File="SW.CIS Arms Depot 4 Large.ship.png";    Tier=13; SpawnTier=12; Tags : ~/Tags [military_station]; StasisIcon="SW.CIS Arms Depot 4.png"; OtherIDs=["Large SW.CIS Arms Depot", "Large CIS Arms Depot"]; FlightDirection=UpRight }
+	:~{ File="SW.CIS Arms Depot 5 XLarge.ship.png";    Tier=16; SpawnTier=15; Tags : ~/Tags [military_station]; StasisIcon="SW.CIS Arms Depot 5.png"; OtherIDs=["Huge SW.CIS Arms Depot", "Lucrehulk-Class_Control_Core"]; FlightDirection=UpRight }
 	:~{ File="SW.CIS Arms Depot 6 Huge.ship.png";    Tier=16; SpawnTier=18; Tags : ~/Tags [military_station]; StasisIcon="SW.CIS Arms Depot 6.png"; FlightDirection=UpRight } 
 ]
