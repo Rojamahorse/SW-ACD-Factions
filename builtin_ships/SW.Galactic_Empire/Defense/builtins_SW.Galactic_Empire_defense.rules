@@ -20,7 +20,7 @@ Ships
 	:~{ File="Small Emp Nuke Platform.ship.png";                Tier=2; Difficulty=2; }
 	:~{ File="Small Emp Torp Platform.ship.png";                Tier=2; Difficulty=2; }
 	:~{ File="Lg Emp Ion Platform.ship.png";                    Tier=6; Difficulty=2; }
-    :~{ File="Emp Blackout EMP Platform.ship.png";              Tier=2; Difficulty=1; }
+    :~{ File="Emp Blackout EMP Platform.ship.png";              Tier=4; Difficulty=1; }
 //    :~{ File="Emp Lg Cannon Platform.ship.png";               Tier=2; Difficulty=1; }
     :~{ File="Emp Lg HE Missile Platform.ship.png";             Tier=4; Difficulty=1; }
     :~{ File="Emp Lg Laser Platform.ship.png";                  Tier=6; Difficulty=1; }
@@ -39,7 +39,7 @@ Ships
     :~{ File="Emp Med Sq Cannon Platform.ship.png";             Tier=4; Difficulty=1; }
     :~{ File="Emp Sm Mixed Platform.ship.png";                  Tier=2; Difficulty=1; }
     :~{ File="Emp Sm PD Platform.ship.png";                     Tier=2; Difficulty=1; }
-    :~{ File="Emp Sm Railgun Platform.ship.png";                Tier=2; Difficulty=1; }
+    :~{ File="Emp Sm Railgun Platform.ship.png";                Tier=4; Difficulty=1; }
     :~{ File="Emp Sm Sq Cannon Platform.ship.png";              Tier=2; Difficulty=1; }
     :~{ File="Emp Small HE Missile Platform.ship.png";          Tier=2; Difficulty=1; }
     :~{ File="Emp XL EMP Def Platform.ship.png";                Tier=6; Difficulty=1; }

@@ -33,7 +33,7 @@ Ships
     :~{ File="Rep Med Sq Cannon Platform.ship.png";    		Tier=4; Difficulty=2; }
     :~{ File="Rep Sm Mixed Platform.ship.png";         		Tier=2; Difficulty=2; }
     :~{ File="Rep Sm PD Platform.ship.png";            		Tier=2; Difficulty=2; }
-    :~{ File="Rep Sm Railgun Platform.ship.png";       		Tier=2; Difficulty=2; }
+    :~{ File="Rep Sm Railgun Platform.ship.png";       		Tier=4; Difficulty=2; }
     :~{ File="Rep Sm Sq Cannon Platform.ship.png";     		Tier=2; Difficulty=2; }
     :~{ File="Rep Small HE Missile Platform.ship.png"; 		Tier=2; Difficulty=2; }
     :~{ File="Rep XL Asteroid Def Platform.ship.png";  		Tier=8; Difficulty=2; }

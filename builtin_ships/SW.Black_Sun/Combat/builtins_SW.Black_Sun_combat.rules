@@ -38,6 +38,7 @@ Ships
 	:~{ File="Undr_Z-95 Headhunter.ship.png";         								Tier=4;  Difficulty=2; } //Neojino
 	:~{ File="Hyena-BS Droid Bomber.ship.png";          							Tier=4;  Difficulty=1; }
 	:~{ File="Gozanti-Class Cruiser-BS.ship.png";         							Tier=6;  Difficulty=2; }
+	:~{ File="Shadow Collective Destroyer.ship.png";         						Tier=8;  Difficulty=2; }
 	:~{ File="Med-BS Starfighter.ship.png";         								Tier=4;  Difficulty=2; }
 	:~{ File="BSC Razor Crest.ship.png"; 											Tier=5;  Difficulty=2; }
 	:~{ File="BSC BountyHunter Razor Crest.ship.png"; 								Tier=5;  Difficulty=2; }

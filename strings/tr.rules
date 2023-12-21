@@ -1,91 +1,100 @@
 Parts
 {
-    //X-Wing Cannons
-    xwingCannons = "X翼炮"
-    xwingCannonsDesc = "X翼炮是小型武器，可以隐藏在装甲件的后面和下面。它们在中到长距离交战中非常有用。"
+	//X-Wing Cannons
+	xwingCannons = "X-Wing Cannon"
+	xwingCannonsDesc = "X-Wing Cannons are small weapons that can be placed hidden behind and under armor pieces.  They are useful in medium to long range engagements"
 
-    // Standard X-Wing Cannons
-    xwingCannon = "X翼短炮"
-    xwingCannonIcon = "X翼短炮"
-    xwingCannonLeft = "X翼短炮（侧面）"
-    xwingCannonLeftIcon = "X翼短炮（侧面）"
-    xwingCannonDesc = "<cyan>英康公司</cyan>推出的X翼短炮；一种紧凑的短管炮，适合隐秘装甲集成，在中距离战斗中表现出色。"
+	// Standard X-Wing Cannons
+	xwingCannon = "X-Wing Short Cannon"
+	xwingCannonIcon = "X-Wing SC"
+	xwingCannonLeft = "X-Wing Short Cannon (Side)"
+	xwingCannonLeftIcon = "X-Wing SC (Side)"
+	xwingCannonDesc = "<cyan>Incom Corporation</cyan> presents the X-Wing SC; a compact, short-barrel cannon for stealthy armor integration, excelling in medium-range combat."
 
-    //Compact Mass-Driver Cannon
-    xwingCannonLong = "质量驱动紧凑型炮"
-    xwingCannonLongIcon = "质量驱动紧凑型炮"
-    xwingCannonLongLeft = "质量驱动紧凑型炮（侧面）"
-    xwingCannonLongLeftIcon = "质量驱动紧凑型炮（侧面）"
-    xwingCannonLongDesc = "<cyan>夸特系统工程</cyan>的质量驱动紧凑型炮（MD-CC）；一种缩小版但强大的动能武器，专为空战中的精确和威力设计。其流线型设计允许与各种星际战斗机型号无缝集成，提供无与伦比的动能冲击，同时保持空气动力效率。"
+	//Compact Mass-Driver Cannon
+	xwingCannonLong = "Mass-Driver Compact Cannon"
+	xwingCannonLongIcon = "Mass-Driver CC"
+	xwingCannonLongLeft = "Mass-Driver Compact Cannon (Side)"
+	xwingCannonLongLeftIcon = "Mass-Driver CC (Side)"
+	xwingCannonLongDesc = "The Mass-Driver Compact Cannon (MD-CC) by <cyan>Kuat Systems Engineering</cyan>; A scaled-down yet formidable kinetic weapon, designed for precision and power in dogfights. Its sleek design allows for seamless integration with various Starfighter models, providing unmatched kinetic impact while maintaining aerodynamic efficiency."
+	
+	//Extra Long X-Wing Cannons
+	xwingCannonXLong = "X-Wing Extended Cannon"
+	xwingCannonXLongIcon = "X-Wing XC"
+	xwingCannonXLongLeft = "X-Wing Extended Cannon (Side)"
+	xwingCannonXLongLeftIcon = "X-Wing XC (Side)"
+	xwingCannonXLongDesc = "<cyan>Incom Corporation's</cyan> X-Wing XC; an extended version of the classic cannon, combining range and stealth for strategic positioning behind armor."
 
-    //Extra Long X-Wing Cannons
-    xwingCannonXLong = "X翼加长炮"
-    xwingCannonXLongIcon = "X翼加长炮"
-    xwingCannonXLongLeft = "X翼加长炮（侧面）"
-    xwingCannonXLongLeftIcon = "X翼加长炮（侧面）"
-    xwingCannonXLongDesc = "<cyan>英康公司</cyan>的X翼加长炮；经典炮的加长版本，结合射程和隐蔽性，用于装甲后的战略定位。"
+	//Standard TIE Repeaters
+	tieMinigun = "TIE Repeater Cannon - Super Edition"
+	tieMinigunIcon = "TIE RC-SE"
+	tieMinigunLeft = "TIE Repeater Cannon - Super Edition (Side)"
+	tieMinigunLeftIcon = "TIE RC-SE (Side)"
+	tieLMinigunDesc = "The <cyan>Galactic Empire's</cyan> TIE Repeater Cannons - Super Edition; compact, rapid-firing, and perfect for close-range engagements, with stealthy armor placement capabilities."
 
-    //Standard TIE Repeaters
-    tieMinigun = "TIE重复炮 - 超级版"
-    tieMinigunIcon = "TIE重复炮-超级版"
-    tieMinigunLeft = "TIE重复炮 - 超级版（侧面）"
-    tieMinigunLeftIcon = "TIE重复炮-超级版（侧面）"
-    tieLMinigunDesc = "<cyan>银河帝国</cyan>的TIE重复炮 - 超级版；紧凑型，快速射击，非常适合近距离交战，具有隐秘装甲放置能力。"
+	tieMinigunLong = "HyCor Heavy Repeater Extended Cannon"
+	tieMinigunLongIcon = "HyCor HR-XC"
+	tieMinigunLongLeft = "HyCor Heavy Repeater Extended Cannon (Side)"
+	tieMinigunLongLeftIcon = "HyCor HR-XC (Side)"
+	tieLMinigunLongDesc = "Heavy Laser Repeater with Extended Cannon by <cyan>HyCor</cyan>; rapid-firing and perfect for close-range enagements, this Heavy Laser Repeater is modified for use on small-to-medium ships. Can be placed behind and under ship armor."
 
-    tieMinigunLong = "海克尔重型重复炮加长型"
-    tieMinigunLongIcon = "海克尔重型重复炮加长型"
-    tieMinigunLongLeft = "海克尔重型重复炮加长型（侧面）"
-    tieMinigunLongLeftIcon = "海克尔重型重复炮加长型（侧面）"
-    tieLMinigunLongDesc = "<cyan>HyCor</cyan>的重型激光重复炮加长型；快速射击，非常适合近距离交战，这种重型激光重复炮已修改用于小型至中型船只。可放置在船只装甲的后面和下面。"
+	// RG-9 Cannons
+	RG9Cannon = "RG-9 Laser Cannon Enhanced Edition"
+	RG9CannonIcon = "RG-9 LC-EE"
+	RG9CannonLeft = "RG-9 Laser Cannon Enhanced Edition (Side)"
+	RG9CannonLeftIcon = "RG-9 LC-EE (Side)"
+	RG9CannonDesc = "RG-9 Laser Cannon by <cyan>Borstel</cyan>; An Enhanced Edition of the quick-firing, versatile small A-Wing laser, mainly used in medium to large fighters."
+	RG9CannonLeftDesc = "RG-9 Laser Cannon by <cyan>Borstel</cyan>; An Enhanced Edition of the quick-firing, versatile small A-Wing laser, mainly used in medium to large fighters."
 
-    // RG-9 Cannons
-    RG9Cannon = "RG-9激光炮增强版"
-    RG9CannonIcon = "RG-9激光炮增强版"
-    RG9CannonLeft = "RG-9激光炮增强版（侧面）"
-    RG9CannonLeftIcon = "RG-9激光炮增强版（侧面）"
-    RG9CannonDesc = "<cyan>博斯特尔</cyan>的RG-9激光炮；快速射击，多功能的小型A翼激光的增强版，主要用于中型至大型战斗机。"
-    RG9CannonLeftDesc = "<cyan>博斯特尔</cyan>的RG-9激光炮；快速射击，多功能的小型A翼激光的增强版，主要用于中型至大型战斗机。"
+	// Standard TwinBeam Defense Turret
+	DroidTurret = "StarGuard TwinBeam Defense Turret"
+	DroidTurretIcon = "Starguard TB-DT"
+	DroidTurretDesc = "Manufactured by <cyan>Corellian ArmsTech</cyan>, the StarGuard TwinBeam Defense Turret unleashes dual-beam fury, offering unmatched protection. Exceptionally effective at intercepting and neutralizing <orange>lasers and ion shots</orange>, it provides superior defense against energy-based projectile threats but ineffective with bullets, mines, and missiles." 
 
-    // Standard TwinBeam Defense Turret
-    DroidTurret = "StarGuard双光束防御炮塔"
-    DroidTurretIcon = "StarGuard双光束防御炮塔"
-    DroidTurretDesc = "由<cyan>科雷利安武器科技</cyan>制造，StarGuard双光束防御炮塔释放双光束之怒，提供无与伦比的保护。特别擅长拦截和中和<orange>激光和离子射击</orange>，对抗基于能量的弹道威胁提供优越的防御，但对子弹、地雷和导弹无效。"
+	// Mini TwinLaser Defense Turret
+	PDTurretTiny = "StarGuard TwinLaser Compact Point Defense Turret"
+	PDTurretTinyIcon = "Starguard TL-C-PDT"
+	PDTurretTinyDesc = "The StarGuard TwinLaser Point Defense Turret, manufactured by <cyan>Corellian ArmsTech</cyan>, unleashes dual laser fury. This miniaturized and fully automated version of the StarGuard TwinLaser Turret is optimized for tight spaces. It's highly effective at targeting <orange>bullets, mines, and missiles</orange>, but is ineffective against lasers and ion shots."
 
-    // Mini TwinLaser Defense Turret
-    PDTurretTiny = "StarGuard迷你双激光点防御炮塔"
-    PDTurretTinyIcon = "StarGuard迷你双激光点防御炮塔"
-    PDTurretTinyDesc = "<cyan>科雷利安武器科技</cyan>制造的StarGuard迷你双激光点防御炮塔释放双激光之怒。这种微型化且全自动化的StarGuard双激光炮塔专为狭小空间优化。它在瞄准<orange>子弹、地雷和导弹</orange>方面非常有效，但对激光和离子射击无效。"
 }
 
+
+EditorGroups
+{
+
+}
 
 Stats
 {
+
 }
+
 
 StatCategories
 {
-    SWFighterWeapons = "小型<red>红色</red>激光炮射击"
-    MinigunShot = "小型<green>绿色</green>重复激光射击"
-    SWPDTurretTiny = "小型<magenta>紫色</magenta>PD爆发射击"
-    SWRG9Shot = "小型<red>红色</red>RG-9爆发炮射击"
-    SWBurstLaser = "小型<red>红色</red>爆发激光射击"
-    SWPDBeamLaser = "小型<yellow>黄色</yellow>PD激光束射击"
+    SWFighterWeapons = "Küçük <red>Kırmızı</red> Lazer Topu Atışı"
+    MinigunShot = "Küçük <green>Yeşil</green> Tekrarlayıcı Lazer Atışı"
+    SWPDTurretTiny = "Küçük <magenta>Mor</magenta> PD Patlama Atışı"
+    SWRG9Shot = "Küçük <red>Kırmızı</red> RG-9 Patlama Topu Atışı"
+    SWBurstLaser = "Küçük <red>Kırmızı</red> Patlama Lazer Atışı"
+    SWPDBeamLaser = "Küçük <yellow>Sarı</yellow> PD Işın Lazer Atışı"
 }
+
 
 
 DecalGroups
 {
-    // sw_decals = "星球大战派系贴花"
-    sw_adv_shapes = "高级渐变、阴影和形状"
+    // sw_decals = "Star Wars Gruplarına Ait Çıkartmalar"
+    sw_adv_shapes = "Gelişmiş Gradyanlar, Gölgeler ve Şekiller"
 }
 
 Factions
 {
-	Black_Sun = "黑日集团"
-	CIS = "独立星系联邦"
-	Galactic_Empire = "银河帝国"
-	Rebel_Alliance = "义军同盟"
-	Republic = "共和国"
+	Black_Sun = "Kara Güneş Kolektifi"
+	CIS = "Bağımsız Sistemler Konfederasyonu"
+	Galactic_Empire = "Galaktik İmparatorluk"
+	Rebel_Alliance = "Asi İttifakı"
+	Republic = "Cumhuriyet"
 }
 
 StarterShips
@@ -110,14 +119,12 @@ Resource
 
 MapSizes  
 {
+	
 	Standard = "Cosmoteer Standard (50)"
 	StandardTip = "A standard-sized boring old vanilla <white>Cosmoteer</white> star system... \n<i>These aren't the star systems you're looking for... move along, move along.</i>"
 	
 	Vanilla = "Standard (50)"
 	VanillaDesc = "A mix of 50 <yellow>Star Wars</yellow> and <white>Vanilla</white> controlled systems on the edge of explored space, known for their intricate routes and shadowy dealings."
-
-//	SWStandard = "Frontier Systems (50)"
-//	SWStandardTip = "A network of 50 Star Wars systems on the edge of explored space, known for their intricate routes and shadowy dealings."
 
 	SWLarge = "Outer Rim Territories (60)"
 	SWLargeDesc = "A lawless frontier region reminiscent of the Outer Rim with 60 <yellow>Star Wars</yellow> systems."
@@ -402,7 +409,7 @@ Lore
 		
 		Lore5 = "Despite its many strengths, the Republic was not without flaws. Bureaucracy and political maneuvering often hindered swift action, allowing discontent and disenchantment to fester in some regions. The outbreak of the Clone Wars, orchestrated by the Sith, put the Republic to the ultimate test, challenging its core values and exposing vulnerabilities that would eventually lead to the Republic's transformation into the Galactic Empire."
 	}
-	
+
 	Rebel_Alliance
 	{
 		Title = "The Rebel Alliance"
@@ -419,3 +426,151 @@ Lore
 	}
 	
 }
+
+/*UNUSED*/
+/*
+	//Long X-Wing Cannons
+	xwingCannonLong = "RedFury Blaster Cannon"
+	xwingCannonLongIcon = "RedFury-BC"
+	xwingCannonLongLeft = "RedFury Blaster Cannon (Side)"
+	xwingCannonLongLeftIcon = "RedFury-BC (Side)"
+	xwingCannonLongDesc = "The RedFury Blaster by <cyan>Merr-Sonn Munitions</cyan>; A hard-hitting Heavy Blaster Cannon that allows for placement behind and hidden under armor pieces."
+*/
+/*
+	//TIE Repeaters
+	tieMiniguns = "TIE Repeater Cannon"
+	tieMinigunsDesc = "TIE Repeaters are small, rapid-firing weapons that allows for placement hidden behind and under armor pieces. They are inaccurate, but useful for close range engagements."
+*/
+/*
+	// SW Multipurpose Turrets
+
+	// Smaller burst damage turret
+	SWTurretA = "Tiny Turbo Laser - Burst"
+	SWTurretAIcon = "Tiny TL - Burst"
+	SWTurretADesc = "A compact yet powerful turret, the Tiny Turbo Laser - Burst version specializes in burst damage, ideal for quickly neutralizing smaller threats. This is a <orange>switchable</orange>, crew-operated Laser Cannon."
+
+	// Sturdier-looking turret
+	SWTurretB = "Tiny Turbo Laser - Heavy"
+	SWTurretBIcon = "Tiny TL - Heavy"
+	SWTurretBDesc = "The Tiny Turbo Laser - Heavy is built for durability and sustained firepower, making it effective against a wide range of targets. This is a <orange>switchable</orange>, crew-operated Laser Cannon."
+
+	// Mix of the two
+	SWTurretC = "Tiny Turbo Laser - Rapid"
+	SWTurretCIcon = "Tiny TL - Rapid"
+	SWTurretCDesc = "Combining the best of both worlds, the Tiny Turbo Laser - Rapid offers a balanced approach to both burst damage and staying power. This is a <orange>switchable</orange>, crew-operated Laser Cannon."
+
+	// Reactors
+	SWMedReactor = "Reinforced Light Reactor"
+	SWMedReactorIcon = "Light Reactor"
+	SWMedReactorDesc = "An armored reactor reinforced with durasteel; A highly-efficient light reactor designed for state-of-the-art medium and large cruisers and frigates with no extra room for outdated and ugly bulky reactor equipment."
+*/
+//	Turret = "Turret"
+//	Missile = "Missile"
+//	ProtonRocket = "Proton Torpedo"
+//	BuzzDroid = "Buzz Droid"
+//
+//	SingleRedLasershot = "Small <red>Red</red> Laser Shot"
+//	SingleBlueLasershot = "Small <blue>Blue</blue> Laser Shot"
+//	SingleGreenLasershot = "Small <green>Green</green> Laser Shot"
+//
+//	XWingLasershot = "<red>X-Wing</red> Laser Shot"
+//	BlueXWingLasershot = "<blue>X-Wing</blue> Laser Shot"
+//	GreenXWingLasershot = "<green>X-Wing</green> Laser Shot"
+//	FalconLaserCannonShot = "Falcon <red>Red</red> Laser Shot"
+//	PDLaserShot = "Point Defense Laser Shot"
+//
+//	DualRedLaserCannonshot = "Small-Light <red>Red</red> Laser Shot"
+//	DualBlueLaserCannonshot = "Small-Light <blue>Blue</blue> Laser Shot"
+//	DualGreenLaserCannonshot = "Small-Light <green>Green</green> Laser Shot"
+//
+//	LightRedTurbolasershot = "Light <red>Red</red> Laser Shot"
+//	LightBlueTurbolasershot = "Light <blue>Blue</blue> Laser Shot"
+//	LightGreenTurbolasershot = "Light <green>Green</green> Laser Shot"
+//
+//	TripleRedLasershot = "Light-Medium <red>Red</red> Laser Shot"
+//	TripleBlueLasershot = "Light-Medium <blue>Blue</blue> Laser Shot"
+//	TripleGreenLasershot = "Light-Medium <green>Green</green> Laser Shot"
+//
+//	MedRedLasershot = "Medium <red>Red</red> Laser Shot"
+//	MedBlueLasershot = "Medium<blue>Blue</blue> Laser Shot"
+//	MedGreenLasershot = "Medium <green>Green</green> Laser Shot"
+//
+//	HeavyRedLasershot = "Heavy <red>Red</red> Laser Shot"
+//	HeavyBlueLasershot = "Heavy <blue>Blue</blue> Laser Shot"
+//	HeavyGreenLasershot = "Heavy <green>Green</green> Laser Shot"
+//
+//	CISLasershot = "CIS <red>Red</red> Laser Shot"
+//	RepublicLasershot = "Republic <blue>Blue</blue> Laser Shot"
+//	ImperialLasershot = "Imperial <green>Green</green> Laser Shot"
+//	XX9RedLasershot = "XX9 <red>Red</red> Laser Shot"
+//	XX9GreenLasershot = "XX9 <green>Green</green> Laser Shot"
+//
+//	HeavyCyanIoncannonshot = "Medium Cyan <cyan>Ion</cyan> Cannon Shot"
+//	MediumCyanIoncannonshot = "Light Cyan <cyan>Ion</cyan> Cannon Shot"
+//
+//	//NEW MUNITION
+//	LargeRedTurbolaserLasershot = "Large <red>Red</red> Laser Shot"
+//	LargeBlueTurbolaserLasershot = "Large <blue>Blue</blue> Laser Shot"
+//	LargeGreenTurbolaserLasershot = "Large <green>Green</green> Laser Shot"
+//
+//	HugeRedTurbolaserLasershot = "Huge <red>Red</red> Laser Shot"
+//	HugeBlueTurbolaserLasershot = "Huge <blue>Blue</blue> Laser Shot"
+//	HugeGreenTurbolaserLasershot = "Huge <green>Green</green> Laser Shot"
+//
+//	SiegeRedTurbolaserLasershot = "Siege <red>Red</red> Laser Shot"
+//	SiegeBlueTurbolaserLasershot = "Siege <blue>Blue</blue> Laser Shot"
+//	SiegeGreenTurbolaserLasershot = "Siege <green>Green</green> Laser Shot"
+//
+//	MortarRedTurbolaserLaserShot = "Mortar <red>Red</red> Laser Shot"
+//	MortarBlueTurbolaserLaserShot = "Mortar <blue>Blue</blue> Laser Shot"
+//	MortarGreenTurbolaserLaserShot = "Mortar <green>Green</green> Laser Shot"
+//
+//	BlueArtilleryTurbolaserBeam = "Artillery <blue>Blue</blue> Turbolaser Beam"
+//
+//	RedSiegeParticleShot = "Siege <red>Red</red> Particle Shot"
+//	OrangeSiegeParticleShot = "Siege <orange>Orange</orange> Particle Shot"
+//
+//	RedSuperLaserBeam = "<red>Red</red> Superlaser Beam"
+//
+//	BlueSiegeTurbolaserBeam = "Siege <blue>Blue</blue> Turbolaser Beam"
+//
+//	TIE_WingThruster = "TIE wing thruster"
+
+//	SWStandard = "Frontier Systems (50)"
+//	SWStandardTip = "A network of 50 Star Wars systems on the edge of explored space, known for their intricate routes and shadowy dealings."
+
+/*
+CombatDifficulty
+{
+  NoDeath = "Pacifist (Invulnerable)"
+  NoDeathTip = "● Damage? What's that?\n<i><gray>(No Damage Taken)</gray></i> \n● I wouldn't hurt a mynock.\n<i><gray>(Can Build in Combat)</gray></i>"
+  
+  Easy = "Nerf Herder" 
+  EasyTip = "● I barely passed flight school.\n<i><gray>(-30% Damage Taken)</gray></i> \n● I miss more shots than a stormtrooper.\n<i><gray>(+40% Damage Delt)</gray></i>"
+
+  Normal = "Recreational Bounty Hunter"
+  NormalTip = "● I'm a decent pilot.\n<i><gray>(Normal Damage Taken)</gray></i>  \n● I hit about half my shots.\n<i><gray>(Normal Damage Delt)</gray></i>"
+
+  Hard = "Rogue Squadron"
+  HardTip = "● I graduated top of my class.\n<i><gray>(+25% Damage Taken)</gray></i>  \n●  I used to bullseye womp rats\n in my T-16 back home.\n<i><gray>(-20% Damage Delt)</gray></i>"
+
+  VeryHard = "Legendary Smuggler"
+  VeryHardTip = "● I flew the Kessel Run\n in under 12 parsecs!\n<i><gray>(+40% Damage Taken)</gray></i>  \n● I never tell the odds.\n<i><gray>(-30% Damage Delt)</gray></i>"
+}
+
+
+EconDifficulty
+{
+  FreeBuild = "Midichlorian Master"
+  FreeBuildTip = "● Unlimited force powers allow building anywhere and anytime without credits or resources. \n● Normal resource drop rates. \n● Normal credits rewards. \n● Normal reputation rewards."
+  
+  Fast = "Smuggler" 
+  FastTip = "● Resource drop rates increased 100% (shhh don't ask where they came from). \n● Credit rewards increased 100% (tax-free of course). \n● Reputation rewards increased 50% (fame spreads fast in the underworld)."
+
+  Normal = "Freelancer"
+  NormalTip = "● Normal resource drop rates. \n● Normal credit rewards. \n● Normal reputation rewards."
+
+  Slow = "Moisture Farmer"
+  SlowTip = "● Resource drop rates reduced 50% (curse this barren wasteland). \n● Credit rewards reduced 50% (water ain't free). \n● Reputation rewards reduced 25% (who cares about farmers anyway)."
+}
+*/

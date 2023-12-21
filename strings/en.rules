@@ -115,77 +115,7 @@ StatCategories
 	SWRG9Shot = "Small <red>Red</red> RG-9 Burst Cannon Shot"
 	SWBurstLaser = "Small <red>Red</red> Burst Laser Shot"
 	SWPDBeamLaser = "Small <yellow>Yellow</yellow> PD Beam Laser Shot"
-//	Turret = "Turret"
-//	Missile = "Missile"
-//	ProtonRocket = "Proton Torpedo"
-//	BuzzDroid = "Buzz Droid"
-//
-//	SingleRedLasershot = "Small <red>Red</red> Laser Shot"
-//	SingleBlueLasershot = "Small <blue>Blue</blue> Laser Shot"
-//	SingleGreenLasershot = "Small <green>Green</green> Laser Shot"
-//
-//	XWingLasershot = "<red>X-Wing</red> Laser Shot"
-//	BlueXWingLasershot = "<blue>X-Wing</blue> Laser Shot"
-//	GreenXWingLasershot = "<green>X-Wing</green> Laser Shot"
-//	FalconLaserCannonShot = "Falcon <red>Red</red> Laser Shot"
-//	PDLaserShot = "Point Defense Laser Shot"
-//
-//	DualRedLaserCannonshot = "Small-Light <red>Red</red> Laser Shot"
-//	DualBlueLaserCannonshot = "Small-Light <blue>Blue</blue> Laser Shot"
-//	DualGreenLaserCannonshot = "Small-Light <green>Green</green> Laser Shot"
-//
-//	LightRedTurbolasershot = "Light <red>Red</red> Laser Shot"
-//	LightBlueTurbolasershot = "Light <blue>Blue</blue> Laser Shot"
-//	LightGreenTurbolasershot = "Light <green>Green</green> Laser Shot"
-//
-//	TripleRedLasershot = "Light-Medium <red>Red</red> Laser Shot"
-//	TripleBlueLasershot = "Light-Medium <blue>Blue</blue> Laser Shot"
-//	TripleGreenLasershot = "Light-Medium <green>Green</green> Laser Shot"
-//
-//	MedRedLasershot = "Medium <red>Red</red> Laser Shot"
-//	MedBlueLasershot = "Medium<blue>Blue</blue> Laser Shot"
-//	MedGreenLasershot = "Medium <green>Green</green> Laser Shot"
-//
-//	HeavyRedLasershot = "Heavy <red>Red</red> Laser Shot"
-//	HeavyBlueLasershot = "Heavy <blue>Blue</blue> Laser Shot"
-//	HeavyGreenLasershot = "Heavy <green>Green</green> Laser Shot"
-//
-//	CISLasershot = "CIS <red>Red</red> Laser Shot"
-//	RepublicLasershot = "Republic <blue>Blue</blue> Laser Shot"
-//	ImperialLasershot = "Imperial <green>Green</green> Laser Shot"
-//	XX9RedLasershot = "XX9 <red>Red</red> Laser Shot"
-//	XX9GreenLasershot = "XX9 <green>Green</green> Laser Shot"
-//
-//	HeavyCyanIoncannonshot = "Medium Cyan <cyan>Ion</cyan> Cannon Shot"
-//	MediumCyanIoncannonshot = "Light Cyan <cyan>Ion</cyan> Cannon Shot"
-//
-//	//NEW MUNITION
-//	LargeRedTurbolaserLasershot = "Large <red>Red</red> Laser Shot"
-//	LargeBlueTurbolaserLasershot = "Large <blue>Blue</blue> Laser Shot"
-//	LargeGreenTurbolaserLasershot = "Large <green>Green</green> Laser Shot"
-//
-//	HugeRedTurbolaserLasershot = "Huge <red>Red</red> Laser Shot"
-//	HugeBlueTurbolaserLasershot = "Huge <blue>Blue</blue> Laser Shot"
-//	HugeGreenTurbolaserLasershot = "Huge <green>Green</green> Laser Shot"
-//
-//	SiegeRedTurbolaserLasershot = "Siege <red>Red</red> Laser Shot"
-//	SiegeBlueTurbolaserLasershot = "Siege <blue>Blue</blue> Laser Shot"
-//	SiegeGreenTurbolaserLasershot = "Siege <green>Green</green> Laser Shot"
-//
-//	MortarRedTurbolaserLaserShot = "Mortar <red>Red</red> Laser Shot"
-//	MortarBlueTurbolaserLaserShot = "Mortar <blue>Blue</blue> Laser Shot"
-//	MortarGreenTurbolaserLaserShot = "Mortar <green>Green</green> Laser Shot"
-//
-//	BlueArtilleryTurbolaserBeam = "Artillery <blue>Blue</blue> Turbolaser Beam"
-//
-//	RedSiegeParticleShot = "Siege <red>Red</red> Particle Shot"
-//	OrangeSiegeParticleShot = "Siege <orange>Orange</orange> Particle Shot"
-//
-//	RedSuperLaserBeam = "<red>Red</red> Superlaser Beam"
-//
-//	BlueSiegeTurbolaserBeam = "Siege <blue>Blue</blue> Turbolaser Beam"
-//
-//	TIE_WingThruster = "TIE wing thruster"
+
 }
 
 
@@ -202,10 +132,6 @@ Factions
 	Galactic_Empire = "Galactic Empire"
 	Rebel_Alliance = "Rebel Alliance"
 	Republic = "Republic"
-//	monolith = "Sith Empire"
-//	fringe = "Corporate Sector Authority (CSA)"
-//	imperium = "First Order"
-//	cabal = "Mandalorians"
 }
 
 StarterShips
@@ -355,41 +281,7 @@ EconDifficulty
   SlowTip = "• Resource drop rates <bad>reduced 50%</bad>.\n<i><gray>(Curse this barren wasteland.)</gray></i>\n• Credit rewards <bad>reduced 50%</bad>.\n<i><gray>(Water ain't free.)</gray></i>\n• Reputation rewards <bad>reduced 25%</bad>.\n<i><gray>(Who cares about farmers anyway?)</gray></i>"
 }
 
-/*
-CombatDifficulty
-{
-  NoDeath = "Pacifist (Invulnerable)"
-  NoDeathTip = "● Damage? What's that?\n<i><gray>(No Damage Taken)</gray></i> \n● I wouldn't hurt a mynock.\n<i><gray>(Can Build in Combat)</gray></i>"
-  
-  Easy = "Nerf Herder" 
-  EasyTip = "● I barely passed flight school.\n<i><gray>(-30% Damage Taken)</gray></i> \n● I miss more shots than a stormtrooper.\n<i><gray>(+40% Damage Delt)</gray></i>"
 
-  Normal = "Recreational Bounty Hunter"
-  NormalTip = "● I'm a decent pilot.\n<i><gray>(Normal Damage Taken)</gray></i>  \n● I hit about half my shots.\n<i><gray>(Normal Damage Delt)</gray></i>"
-
-  Hard = "Rogue Squadron"
-  HardTip = "● I graduated top of my class.\n<i><gray>(+25% Damage Taken)</gray></i>  \n●  I used to bullseye womp rats\n in my T-16 back home.\n<i><gray>(-20% Damage Delt)</gray></i>"
-
-  VeryHard = "Legendary Smuggler"
-  VeryHardTip = "● I flew the Kessel Run\n in under 12 parsecs!\n<i><gray>(+40% Damage Taken)</gray></i>  \n● I never tell the odds.\n<i><gray>(-30% Damage Delt)</gray></i>"
-}
-
-
-EconDifficulty
-{
-  FreeBuild = "Midichlorian Master"
-  FreeBuildTip = "● Unlimited force powers allow building anywhere and anytime without credits or resources. \n● Normal resource drop rates. \n● Normal credits rewards. \n● Normal reputation rewards."
-  
-  Fast = "Smuggler" 
-  FastTip = "● Resource drop rates increased 100% (shhh don't ask where they came from). \n● Credit rewards increased 100% (tax-free of course). \n● Reputation rewards increased 50% (fame spreads fast in the underworld)."
-
-  Normal = "Freelancer"
-  NormalTip = "● Normal resource drop rates. \n● Normal credit rewards. \n● Normal reputation rewards."
-
-  Slow = "Moisture Farmer"
-  SlowTip = "● Resource drop rates reduced 50% (curse this barren wasteland). \n● Credit rewards reduced 50% (water ain't free). \n● Reputation rewards reduced 25% (who cares about farmers anyway)."
-}
-*/
 
 CareerMode
 {
@@ -573,3 +465,115 @@ Lore
 	}
 	
 }
+
+
+
+	//Appendix
+
+/*
+CombatDifficulty
+{
+  NoDeath = "Pacifist (Invulnerable)"
+  NoDeathTip = "● Damage? What's that?\n<i><gray>(No Damage Taken)</gray></i> \n● I wouldn't hurt a mynock.\n<i><gray>(Can Build in Combat)</gray></i>"
+  
+  Easy = "Nerf Herder" 
+  EasyTip = "● I barely passed flight school.\n<i><gray>(-30% Damage Taken)</gray></i> \n● I miss more shots than a stormtrooper.\n<i><gray>(+40% Damage Delt)</gray></i>"
+
+  Normal = "Recreational Bounty Hunter"
+  NormalTip = "● I'm a decent pilot.\n<i><gray>(Normal Damage Taken)</gray></i>  \n● I hit about half my shots.\n<i><gray>(Normal Damage Delt)</gray></i>"
+
+  Hard = "Rogue Squadron"
+  HardTip = "● I graduated top of my class.\n<i><gray>(+25% Damage Taken)</gray></i>  \n●  I used to bullseye womp rats\n in my T-16 back home.\n<i><gray>(-20% Damage Delt)</gray></i>"
+
+  VeryHard = "Legendary Smuggler"
+  VeryHardTip = "● I flew the Kessel Run\n in under 12 parsecs!\n<i><gray>(+40% Damage Taken)</gray></i>  \n● I never tell the odds.\n<i><gray>(-30% Damage Delt)</gray></i>"
+}
+
+
+EconDifficulty
+{
+  FreeBuild = "Midichlorian Master"
+  FreeBuildTip = "● Unlimited force powers allow building anywhere and anytime without credits or resources. \n● Normal resource drop rates. \n● Normal credits rewards. \n● Normal reputation rewards."
+  
+  Fast = "Smuggler" 
+  FastTip = "● Resource drop rates increased 100% (shhh don't ask where they came from). \n● Credit rewards increased 100% (tax-free of course). \n● Reputation rewards increased 50% (fame spreads fast in the underworld)."
+
+  Normal = "Freelancer"
+  NormalTip = "● Normal resource drop rates. \n● Normal credit rewards. \n● Normal reputation rewards."
+
+  Slow = "Moisture Farmer"
+  SlowTip = "● Resource drop rates reduced 50% (curse this barren wasteland). \n● Credit rewards reduced 50% (water ain't free). \n● Reputation rewards reduced 25% (who cares about farmers anyway)."
+}
+*/
+
+//	Turret = "Turret"
+//	Missile = "Missile"
+//	ProtonRocket = "Proton Torpedo"
+//	BuzzDroid = "Buzz Droid"
+//
+//	SingleRedLasershot = "Small <red>Red</red> Laser Shot"
+//	SingleBlueLasershot = "Small <blue>Blue</blue> Laser Shot"
+//	SingleGreenLasershot = "Small <green>Green</green> Laser Shot"
+//
+//	XWingLasershot = "<red>X-Wing</red> Laser Shot"
+//	BlueXWingLasershot = "<blue>X-Wing</blue> Laser Shot"
+//	GreenXWingLasershot = "<green>X-Wing</green> Laser Shot"
+//	FalconLaserCannonShot = "Falcon <red>Red</red> Laser Shot"
+//	PDLaserShot = "Point Defense Laser Shot"
+//
+//	DualRedLaserCannonshot = "Small-Light <red>Red</red> Laser Shot"
+//	DualBlueLaserCannonshot = "Small-Light <blue>Blue</blue> Laser Shot"
+//	DualGreenLaserCannonshot = "Small-Light <green>Green</green> Laser Shot"
+//
+//	LightRedTurbolasershot = "Light <red>Red</red> Laser Shot"
+//	LightBlueTurbolasershot = "Light <blue>Blue</blue> Laser Shot"
+//	LightGreenTurbolasershot = "Light <green>Green</green> Laser Shot"
+//
+//	TripleRedLasershot = "Light-Medium <red>Red</red> Laser Shot"
+//	TripleBlueLasershot = "Light-Medium <blue>Blue</blue> Laser Shot"
+//	TripleGreenLasershot = "Light-Medium <green>Green</green> Laser Shot"
+//
+//	MedRedLasershot = "Medium <red>Red</red> Laser Shot"
+//	MedBlueLasershot = "Medium<blue>Blue</blue> Laser Shot"
+//	MedGreenLasershot = "Medium <green>Green</green> Laser Shot"
+//
+//	HeavyRedLasershot = "Heavy <red>Red</red> Laser Shot"
+//	HeavyBlueLasershot = "Heavy <blue>Blue</blue> Laser Shot"
+//	HeavyGreenLasershot = "Heavy <green>Green</green> Laser Shot"
+//
+//	CISLasershot = "CIS <red>Red</red> Laser Shot"
+//	RepublicLasershot = "Republic <blue>Blue</blue> Laser Shot"
+//	ImperialLasershot = "Imperial <green>Green</green> Laser Shot"
+//	XX9RedLasershot = "XX9 <red>Red</red> Laser Shot"
+//	XX9GreenLasershot = "XX9 <green>Green</green> Laser Shot"
+//
+//	HeavyCyanIoncannonshot = "Medium Cyan <cyan>Ion</cyan> Cannon Shot"
+//	MediumCyanIoncannonshot = "Light Cyan <cyan>Ion</cyan> Cannon Shot"
+//
+//	//NEW MUNITION
+//	LargeRedTurbolaserLasershot = "Large <red>Red</red> Laser Shot"
+//	LargeBlueTurbolaserLasershot = "Large <blue>Blue</blue> Laser Shot"
+//	LargeGreenTurbolaserLasershot = "Large <green>Green</green> Laser Shot"
+//
+//	HugeRedTurbolaserLasershot = "Huge <red>Red</red> Laser Shot"
+//	HugeBlueTurbolaserLasershot = "Huge <blue>Blue</blue> Laser Shot"
+//	HugeGreenTurbolaserLasershot = "Huge <green>Green</green> Laser Shot"
+//
+//	SiegeRedTurbolaserLasershot = "Siege <red>Red</red> Laser Shot"
+//	SiegeBlueTurbolaserLasershot = "Siege <blue>Blue</blue> Laser Shot"
+//	SiegeGreenTurbolaserLasershot = "Siege <green>Green</green> Laser Shot"
+//
+//	MortarRedTurbolaserLaserShot = "Mortar <red>Red</red> Laser Shot"
+//	MortarBlueTurbolaserLaserShot = "Mortar <blue>Blue</blue> Laser Shot"
+//	MortarGreenTurbolaserLaserShot = "Mortar <green>Green</green> Laser Shot"
+//
+//	BlueArtilleryTurbolaserBeam = "Artillery <blue>Blue</blue> Turbolaser Beam"
+//
+//	RedSiegeParticleShot = "Siege <red>Red</red> Particle Shot"
+//	OrangeSiegeParticleShot = "Siege <orange>Orange</orange> Particle Shot"
+//
+//	RedSuperLaserBeam = "<red>Red</red> Superlaser Beam"
+//
+//	BlueSiegeTurbolaserBeam = "Siege <blue>Blue</blue> Turbolaser Beam"
+//
+//	TIE_WingThruster = "TIE wing thruster"
