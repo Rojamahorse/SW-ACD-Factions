@@ -39,7 +39,7 @@ Actions
  	}
 
 	
-	/* *********** DECALS ************* */
+	/* *********** DECALS & SHIP SIZES ************* */
 
 	//Adds faction decals folder and advanced gradients, shading, and shapes folder
 	{
@@ -52,6 +52,20 @@ Actions
 		]
 	}
 	
+	{
+		Action = Overrides
+		OverrideIn = "<ships/base_ship.rules>"
+		Overrides
+		{
+			MaxBorders
+			{
+				Left = -500
+				Right = 500
+				Top = -500
+				Bottom = 500
+			}
+		}
+	}
 
 
 
