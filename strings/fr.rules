@@ -105,236 +105,241 @@ Resource
 {
 }
 
-MapSizes  
+MapSizes
 {
 	Standard = "Cosmoteer Standard (50)"
-	StandardTip = "A standard-sized boring old vanilla <white>Cosmoteer</white> star system... \n<i>These aren't the star systems you're looking for... move along, move along.</i>"
-	
+	StandardTip = "Un système stellaire <white>Cosmoteer</white> de taille standard et ennuyeux... \n<i>Ce ne sont pas les systèmes stellaires que vous recherchez... passez votre chemin, passez votre chemin.</i>"
+
 	Vanilla = "Standard (50)"
-	VanillaDesc = "A mix of 50 <yellow>Star Wars</yellow> and <white>Vanilla</white> controlled systems on the edge of explored space, known for their intricate routes and shadowy dealings."
+	VanillaDesc = "Un mélange de 50 systèmes contrôlés par <yellow>Star Wars</yellow> et <white>Vanilla</white> à la limite de l'espace exploré, connus pour leurs itinéraires complexes et leurs transactions obscures."
 
-//	SWStandard = "Frontier Systems (50)"
-//	SWStandardTip = "A network of 50 Star Wars systems on the edge of explored space, known for their intricate routes and shadowy dealings."
+	//	SWStandard = "Systèmes Frontaliers (50)"
+	//	SWStandardTip = "Un réseau de 50 systèmes Star Wars à la limite de l'espace exploré, connus pour leurs itinéraires complexes et leurs transactions obscures."
 
-	SWLarge = "Outer Rim Territories (60)"
-	SWLargeDesc = "A lawless frontier region reminiscent of the Outer Rim with 60 <yellow>Star Wars</yellow> systems."
+	SWLarge = "Territoires de la Bordure Extérieure (60)"
+	SWLargeDesc = "Une région frontalière sans loi rappelant la Bordure Extérieure avec 60 systèmes <yellow>Star Wars</yellow>."
 
-	SWVeryLarge = "Mid Rim Systems (80)" 
-	SWVeryLargeDesc = "An industrialized region reminiscent of the Mid Rim with 80 <yellow>Star Wars</yellow> systems."
+	SWVeryLarge = "Systèmes du Noyau Médian (80)"
+	SWVeryLargeDesc = "Une région industrialisée rappelant le Noyau Médian avec 80 systèmes <yellow>Star Wars</yellow>."
 
-	SWHuge = "Inner Rim Worlds (100)"
-	SWHugeDesc = "A core region reminiscent of the Inner Rim with 100 <yellow>Star Wars</yellow> systems." 
+	SWHuge = "Mondes du Noyau Intérieur (100)"
+	SWHugeDesc = "Une région centrale rappelant le Noyau Intérieur avec 100 systèmes <yellow>Star Wars</yellow>."
 
-	SWGigantic = "Core Worlds (125)"
-	SWGiganticDesc = "The heart of galactic civilization with 125 <yellow>Star Wars</yellow> systems."
+	SWGigantic = "Mondes du Noyau (125)"
+	SWGiganticDesc = "Le cœur de la civilisation galactique avec 125 systèmes <yellow>Star Wars</yellow>."
 
-	SWColossal = "Deep Core Systems (150)"
-	SWColossalDesc = "A dangerous region on the fringes of the Deep Core with 150 <yellow>Star Wars</yellow> systems."
+	SWColossal = "Systèmes du Noyau Profond (150)"
+	SWColossalDesc = "Une région dangereuse aux confins du Noyau Profond avec 150 systèmes <yellow>Star Wars</yellow>."
 
-	SWTitanic = "Unknown Regions (200)"
-	SWTitanicDesc = "A vast uncharted territory shrouded in mystery with 200 <yellow>Star Wars</yellow> and <white>Cosmoteer</white> faction-controlled systems."
+	SWTitanic = "Régions Inconnues (200)"
+	SWTitanicDesc = "Un vaste territoire inexploré enveloppé de mystère avec 200 systèmes contrôlés par les factions <yellow>Star Wars</yellow> et <white>Cosmoteer</white>."
 
-	SWGalactic = "The Entire Known Galaxy (500)"
-	SWGalacticDesc = "<white>Cosmoteer</white> and <yellow>Star Wars</yellow> factions collide in the full extent of the known galaxy with 500 systems."
+	SWGalactic = "La Galaxie Connue Entière (500)"
+	SWGalacticDesc = "Les factions <white>Cosmoteer</white> et <yellow>Star Wars</yellow> se rencontrent dans toute l'étendue de la galaxie connue avec 500 systèmes."
 
-	// The Rebellion Era Galaxy Map
-	SWRebellion = "A New Hope (50)"
-	SWRebellionDesc = "A true <yellow>Star Wars</yellow> classic that's jam-packed with action; You are caught in the middle as the <orange>Rebel Alliance</orange> goes head to head vs the <gray>Empire</gray>... Some might even call that a '<yellow>ClassicJam</yellow>'."
+	// La Carte de la Galaxie de l'Ère de la Rébellion
+	SWRebellion = "Un Nouvel Espoir (50)"
+	SWRebellionDesc = "Un classique <yellow>Star Wars</yellow> authentique plein d'action ; Vous êtes pris au milieu alors que l'<orange>Alliance Rebelle</orange> affronte l'<gray>Empire</gray>... Certains pourraient même appeler cela un '<yellow>ClassicJam</yellow>'."
 
-	// The Clone Wars Era Galaxy Map
-	SWClonewars = "The Clone Wars Era (50)"
-	SWClonewarsDesc = "Step into the heart of the <yellow>Clone Wars</yellow>, where the <red>Galactic Republic</red> clashes with the <blue>Confederacy of Independent Systems (CIS)</blue>, while the <magenta>Black Sun</magenta> lurks in the shadows. Experience the iconic galactic turmoil in a period known as the '<yellow>Galactic Tension</yellow>'." 
+	// La Carte de la Galaxie de l'Ère des Guerres Cloniques
+	SWClonewars = "L'Ère des Guerres Cloniques (50)"
+	SWClonewarsDesc = "Plongez au cœur des <yellow>Guerres Cloniques</yellow>, où la <red>République Galactique</red> s'oppose à la <blue>Confédération des Systèmes Indépendants (CSI)</blue>, tandis que le <magenta>Soleil Noir</magenta> rôde dans l'ombre. Vivez le tumulte galactique emblématique d'une période connue sous le nom de '<yellow>Tension Galactique</yellow>'."
 
 	/*
-	SmugglersRun = "Smuggler's Run (50)"
-	SmugglersRunDesc = "A network of 50 star systems known for their intricate routes and shadowy dealings, often frequented by smugglers and outlaws."
+	SmugglersRun = "La Course des Contrebandiers (50)"
+	SmugglersRunDesc = "Un réseau de 50 systèmes stellaires connus pour leurs itinéraires complexes et leurs transactions obscures, souvent fréquentés par des contrebandiers et des hors-la-loi."
 	*/
 }
 
+
+
+
 CareerModeConfig
 {
-  Name = "Galactic Legacy"
-  Description = "Construct, combat, and scavenge your way to becoming a legendary Starship Commander amidst the stars."
-  DescriptionMP = "Chart a course through a galaxy forged by the Force, engaging in epic missions, battling opposing factions, and gathering resources. "\
-                "Join forces with up to four Squad Leaders in a cooperative multiplayer adventure."
+  Name = "Héritage Galactique"
+  Description = "Construisez, combattez et récupérez pour devenir un Commandant de Vaisseau légendaire parmi les étoiles."
+  DescriptionMP = "Tracez un cours à travers une galaxie forgée par la Force, en vous engageant dans des missions épiques, en combattant des factions opposées et en rassemblant des ressources. "\
+                "Joignez-vous à jusqu'à quatre Chefs d'Escadron dans une aventure multijoueur coopérative."
 
-  CombatDifficulty = "Combat Prowess"
-  CombatDifficultyTip = "Choose your path in the stars - will you become the galaxy's peacekeeper or its worst nightmare? Each setting has its own tale to tell."
+  CombatDifficulty = "Prouesse au Combat"
+  CombatDifficultyTip = "Choisissez votre chemin parmi les étoiles - deviendrez-vous le gardien de la paix de la galaxie ou son pire cauchemar ? Chaque paramètre a sa propre histoire à raconter."
   
-  EconDifficulty = "Galactic Economy"
-  EconDifficultyTip = "Will you swim in a vault of credits or scrimp and save every galactic penny? Set the stakes for your economic adventure."
+  EconDifficulty = "Économie Galactique"
+  EconDifficultyTip = "Nagerez-vous dans un coffre de crédits ou économiserez-vous chaque denier galactique ? Définissez les enjeux de votre aventure économique."
   
-  CrewScarcity = "Mind Trick Recruiting"
-  CrewScarcityTip = "Tweak the Force's suggestive power to make potential recruits believe you're the legend they've been looking to follow. A stronger 'suggestion' means more hands on deck, letting you navigate the stars with ease without ringing the dinner bell for the sector's big bads."
+  CrewScarcity = "Recrutement par Astuce Mentale"
+  CrewScarcityTip = "Ajustez le pouvoir suggestif de la Force pour faire croire aux recrues potentielles que vous êtes la légende qu'elles cherchent à suivre. Une 'suggestion' plus forte signifie plus de mains à bord, vous permettant de naviguer parmi les étoiles aisément sans alerter les grands méchants du secteur."
 
-  DisableCrewConstruction = "Force Assembly"
-  DisableCrewConstructionTip = "Engage this to channel the Force, allowing your will to instantly manifest ship modifications across the galaxy without the need for crew labor."
+  DisableCrewConstruction = "Assemblage par la Force"
+  DisableCrewConstructionTip = "Activez ceci pour canaliser la Force, permettant à votre volonté de manifester instantanément des modifications de vaisseau à travers la galaxie sans nécessiter de travail d'équipage."
 
-  DisableExploration = "Force-Fueled Farsight"
-  DisableExplorationTip = "Who needs probes and scouts when you have the Force? Activate your inner Yoda to see all the galaxy's secrets, from Dagobah's swamps to Tatooine's cantinas, with no fog of war to cloud your cosmic vision."
+  DisableExploration = "Clairvoyance Alimentée par la Force"
+  DisableExplorationTip = "Qui a besoin de sondes et d'éclaireurs quand on a la Force ? Activez votre Yoda intérieur pour voir tous les secrets de la galaxie, des marais de Dagobah aux cantinas de Tatooine, sans aucun brouillard de guerre pour obscurcir votre vision cosmique."
 
-  DisableSalvaging = "Junkyard Bypass"
-  DisableSalvagingTip = "● Mission payouts doubled - like betting on Sebulba to lose.\n"\
-                        "● Who needs scrap? Ships can't be turned into resources - they're not droids!\n"\
-                        "● Instant ship tweaking anywhere in the galaxy, just throw credits at the problem - no construction crew required."
+  DisableSalvaging = "Contournement de la Casse"
+  DisableSalvagingTip = "● Paiements de mission doublés - comme parier sur la défaite de Sebulba.\n"\
+                        "● Qui a besoin de ferraille ? Les vaisseaux ne peuvent pas être transformés en ressources - ce ne sont pas des droïdes !\n"\
+                        "● Ajustement instantané des vaisseaux n'importe où dans la galaxie, jetez simplement des crédits sur le problème - pas besoin d'équipe de construction."
 
-  CantDisableSalvagingTip = "Note: 'Junkyard Bypass' mode requires 'Force Assembly' to be active."
+  CantDisableSalvagingTip = "Note : le mode 'Contournement de la Casse' nécessite que 'Assemblage par la Force' soit actif."
 
-  GalaxySeed = "Hyperlane Coordinates"
-  GalaxySeedTip = "Coordinates for the hyperlane navicomputer, determining the fabric of space-time. Identical inputs forge identical star maps, in this timeline or the next."
+  GalaxySeed = "Coordonnées d'Hypervoie"
+  GalaxySeedTip = "Coordonnées pour le navicomputer d'hypervoie, déterminant le tissu de l'espace-temps. Des entrées identiques forgent des cartes stellaires identiques, dans cette ligne temporelle ou la prochaine."
 
-  MapSize = "Sector Scope"
-  MapSizeTip = "Determines the breadth of known space, from the Outer Rim to the Core Worlds. The number signifies the myriad of systems waiting to be charted by your hand."
+  MapSize = "Portée du Secteur"
+  MapSizeTip = "Détermine l'étendue de l'espace connu, de la Bordure Extérieure aux Mondes du Noyau. Le nombre signifie la myriade de systèmes en attente d'être cartographiés par votre main."
 
   MaxPlayers = &~/PvpModeConfig/MaxPlayers
   MaxPlayersTip = &~/PvpModeConfig/MaxPlayersTip
 
-ShipInfoFmt = "<s24>{0}</s24>\n\n{1}\n\nGalactic Credits Remaining: {2}"
-CustomShipInfoFmt = "<s24>{0}</s24> - Custom Starcruiser\n\nGalactic Credits Remaining: {1}"
-LoadShip = "Summon Custom Starship"
-PlayerTeamFmt = "Squad Leader {0}"
-SharedPlayerTeamFmt = "Allied Squadron {0}"
-Advanced = "Holocron Settings"
-AdvancedInfo = "Tweak the fabric of the cosmos here! These options let you reshape the game far from its original destiny. Tinker at your own risk, but remember, the Force is more fun when it's a bit unpredictable."
+ShipInfoFmt = "<s24>{0}</s24>\n\n{1}\n\nCrédits Galactiques Restants : {2}"
+CustomShipInfoFmt = "<s24>{0}</s24> - Croiseur Stellaire Personnalisé\n\nCrédits Galactiques Restants : {1}"
+LoadShip = "Invoquer Vaisseau Stellaire Personnalisé"
+PlayerTeamFmt = "Chef d'Escadron {0}"
+SharedPlayerTeamFmt = "Escadron Allié {0}"
+Advanced = "Paramètres Holocron"
+AdvancedInfo = "Modifiez ici le tissu du cosmos ! Ces options vous permettent de remodeler le jeu loin de son destin original. Bricolez à vos risques et périls, mais rappelez-vous, la Force est plus amusante lorsqu'elle est un peu imprévisible."
 }
+
 
 CombatDifficulty
 {
-  NoDeath = "Pacifist (Invulnerable)"
-  NoDeathTip = "• No Damage Taken\n<i><gray>(Damage? What's that?)</gray></i>\n• Can Build in Combat\n<i><gray>(I wouldn't hurt a mynock.)</gray></i>"
+  NoDeath = "Pacifiste (Invulnérable)"
+  NoDeathTip = "• Aucun Dégât Subi\n<i><gray>(Dégât ? C'est quoi ça ?)</gray></i>\n• Peut Construire en Combat\n<i><gray>(Je ne ferais pas de mal à un mynock.)</gray></i>"
   
-  Easy = "Nerf Herder" 
-  EasyTip = "• <good>-30%</good> Damage Taken\n<i><gray>(I barely passed flight school.)</gray></i>\n• <good>+40%</good> Damage Dealt\n<i><gray>(I miss more shots than a stormtrooper.)</gray></i>"
+  Easy = "Berger de Nerfs" 
+  EasyTip = "• <good>-30%</good> Dégâts Subis\n<i><gray>(J'ai à peine réussi l'école de vol.)</gray></i>\n• <good>+40%</good> Dégâts Infligés\n<i><gray>(Je rate plus de tirs qu'un stormtrooper.)</gray></i>"
 
-  Normal = "Recreational Bounty Hunter"
-  NormalTip = "• Normal Damage Taken\n<i><gray>(I'm a decent pilot.)</gray></i>\n• Normal Damage Dealt\n<i><gray>(I hit about half my shots.)</gray></i>"
+  Normal = "Chasseur de Primes Récréatif"
+  NormalTip = "• Dégâts Normaux Subis\n<i><gray>(Je suis un pilote correct.)</gray></i>\n• Dégâts Normaux Infligés\n<i><gray>(Je touche environ la moitié de mes tirs.)</gray></i>"
 
-  Hard = "Rogue Squadron"
-  HardTip = "• <bad>+25%</bad> Damage Taken\n<i><gray>(I graduated top of my class.)</gray></i>\n• <bad>-20%</bad> Damage Dealt\n<i><gray>(I used to bullseye womp rats in my T-16 back home.)</gray></i>"
+  Hard = "Escadron Rogue"
+  HardTip = "• <bad>+25%</bad> Dégâts Subis\n<i><gray>(J'ai été major de ma promotion.)</gray></i>\n• <bad>-20%</bad> Dégâts Infligés\n<i><gray>(J'avais l'habitude de viser des rats womp dans mon T-16 à la maison.)</gray></i>"
 
-  VeryHard = "Legendary Smuggler"
-  VeryHardTip = "• <bad>+40%</bad> Damage Taken\n<i><gray>(I flew the Kessel Run in under 12 parsecs!)</gray></i>\n• <bad>-30%</bad> Damage Dealt\n<i><gray>(I never tell the odds.)</gray></i>"
+  VeryHard = "Contrebandier Légendaire"
+  VeryHardTip = "• <bad>+40%</bad> Dégâts Subis\n<i><gray>(J'ai fait le Run de Kessel en moins de 12 parsecs !)</gray></i>\n• <bad>-30%</bad> Dégâts Infligés\n<i><gray>(Je ne parle jamais des chances.)</gray></i>"
 }
+
 
 
 EconDifficulty
 {
-  FreeBuild = "Midichlorian Master"
-  FreeBuildTip = "• Unlimited force powers allow building anywhere and anytime without credits or resources.\n<i><gray>(Having a high midichlorian count sure is handy.)</gray></i>\n• Normal resource drop rates.\n<i><gray>(Resources flow as naturally as the Force.)</gray></i>\n• Normal credits rewards.\n<i><gray>(Credits will do fine.)</gray></i>\n• Normal reputation rewards.\n<i><gray>(Your reputation precedes you.)</gray></i>"
+  FreeBuild = "Maître Midichlorien"
+  FreeBuildTip = "• Pouvoirs de la Force illimités permettant de construire n'importe où et n'importe quand sans crédits ni ressources.\n<i><gray>(Avoir un taux élevé de midichloriens est certainement pratique.)</gray></i>\n• Taux de chute de ressources normaux.\n<i><gray>(Les ressources coulent aussi naturellement que la Force.)</gray></i>\n• Récompenses normales en crédits.\n<i><gray>(Les crédits feront l'affaire.)</gray></i>\n• Récompenses normales en réputation.\n<i><gray>(Votre réputation vous précède.)</gray></i>"
   
-  Fast = "Smuggler" 
-  FastTip = "• Resource drop rates <good>increased 100%</good>.\n<i><gray>(Shhh, don't ask where they came from.)</gray></i>\n• Credit rewards <good>increased 100%</good>.\n<i><gray>(Tax-free, of course.)</gray></i>\n• Reputation rewards <good>increased 50%</good>.\n<i><gray>(Fame spreads fast in the underworld.)</gray></i>"
+  Fast = "Contrebandier" 
+  FastTip = "• Taux de chute de ressources <good>augmentés de 100%</good>.\n<i><gray>(Chut, ne demandez pas d'où ils viennent.)</gray></i>\n• Récompenses en crédits <good>augmentées de 100%</good>.\n<i><gray>(Sans taxes, bien sûr.)</gray></i>\n• Récompenses en réputation <good>augmentées de 50%</good>.\n<i><gray>(La renommée se répand rapidement dans le monde souterrain.)</gray></i>"
 
   Normal = "Freelancer"
-  NormalTip = "• Normal resource drop rates.\n<i><gray>(Just another day hauling goods.)</gray></i>\n• Normal credit rewards.\n<i><gray>(Honest pay for an honest day's work.)</gray></i>\n• Normal reputation rewards.\n<i><gray>(Building a name for yourself, one job at a time.)</gray></i>"
+  NormalTip = "• Taux de chute de ressources normaux.\n<i><gray>(Juste un autre jour à transporter des marchandises.)</gray></i>\n• Récompenses en crédits normales.\n<i><gray>(Un salaire honnête pour une journée de travail honnête.)</gray></i>\n• Récompenses en réputation normales.\n<i><gray>(Se faire un nom, un travail à la fois.)</gray></i>"
 
-  Slow = "Moisture Farmer"
-  SlowTip = "• Resource drop rates <bad>reduced 50%</bad>.\n<i><gray>(Curse this barren wasteland.)</gray></i>\n• Credit rewards <bad>reduced 50%</bad>.\n<i><gray>(Water ain't free.)</gray></i>\n• Reputation rewards <bad>reduced 25%</bad>.\n<i><gray>(Who cares about farmers anyway?)</gray></i>"
+  Slow = "Fermier d'Humidité"
+  SlowTip = "• Taux de chute de ressources <bad>réduits de 50%</bad>.\n<i><gray>(Maudite soit cette terre aride.)</gray></i>\n• Récompenses en crédits <bad>réduites de 50%</bad>.\n<i><gray>(L'eau n'est pas gratuite.)</gray></i>\n• Récompenses en réputation <bad>réduites de 25%</bad>.\n<i><gray>(Qui se soucie des fermiers de toute façon ?)</gray></i>"
 }
 
 
 
 CareerMode
 {
-	CommsTip = "<b>Holo-Comms</b>\n\nOpen HoloNet communications links with other nearby starships.\n\nHotkey: <btn id='Comms.OpenClose'/>"
-	NewMission = "NEW GALACTIC ASSIGNMENT"
-	MissionCompleted = "MISSION SUCCESS"
-	MissionFailed = "MISSION FAILURE"
-	FameLevelUp = "GALACTIC STANDING INCREASED"
-	ReputationLevelUp = "GALACTIC REPUTATION INCREASED"
-	ReputationLevelDown = "GALACTIC REPUTATION DECREASED"
+	CommsTip = "<b>Holo-Comms</b>\n\nOuvrez des liens de communication HoloNet avec d'autres vaisseaux spatiaux à proximité.\n\nRaccourci : <btn id='Comms.OpenClose'/>"
+	NewMission = "NOUVELLE ASSIGNATION GALACTIQUE"
+	MissionCompleted = "SUCCÈS DE LA MISSION"
+	MissionFailed = "ÉCHEC DE LA MISSION"
+	FameLevelUp = "RÉPUTATION GALACTIQUE AUGMENTÉE"
+	ReputationLevelUp = "RÉPUTATION GALACTIQUE ACCRUE"
+	ReputationLevelDown = "RÉPUTATION GALACTIQUE DIMINUÉE"
 	ReputationLevelTitleFmt = "{0} {1} - {2} {0}"
-	CareerLogTip = "Holocron Archive\n\nHotkey: <btn id='Game.MissionLog'/>"
-	StarSystemFmt = "<b>{0} System</b><s6>\n \n</s6>"
-	StarSystemTierFmt = "Sector Risk Factor: {0}"
+	CareerLogTip = "Archive Holocron\n\nRaccourci : <btn id='Game.MissionLog'/>"
+	StarSystemFmt = "<b>Système {0}</b><s6>\n \n</s6>"
+	StarSystemTierFmt = "Facteur de Risque du Secteur : {0}"
 	StarSystemFactionLineFmt = "{0}<good>{2:0}%</good> {1}"
 	TierFmt = "<gray>[</gray><b>{0}</b><gray>]</gray>"
 	TierRangeFmt = "<gray>[</gray><b>{0}</b>-<b>{1}</b><gray>]</gray>"
-	GameOver = "ALL HANDS LOST TO THE FORCE"
-	LoadLastSave = "Load Last Holocron"
-	RememberedAsFmt = "The galaxy will remember you as...\n<good>{0}</good>"
-	UnexploredSpace = "Unknown Regions"
-	CustomMarkerTip = "Add/Rename/Delete Galactic Marker\n\nHotkey: <btn id='Game.CustomMarker'/>"
-	TransferShipControl = "Transfer Hyperdrive Control To..."
-	TransferShipControlConfirmFmt = "Are you sure you want to transfer control of the selected starship(s) to <b>{0}</b>?"
-	TransferMoney = "Transfer Galactic Credits To..."
-	TransferMoneyFmt = "How many <money>Credits</money> do you want to transfer to <b>{0}</b>?"
-	CreateCustomMarker = "<btn id='General.UIClick'/> to place a Galactic Marker here."
-	RenameDeleteCustomMarker = "<btn id='General.UIClick'/> to rename this Galactic Marker.\n"\
-	                           "<btn id='General.UIAltClick'/> to delete this Galactic Marker.\n"
-	CustomMarkerName = "Designate a name for this Galactic Marker:"
-	PartLocked = "MISSING STARSHIP SCHEMATICS"
-	Wanted = "YOU REBEL SCUM!!! \n\n⚠A HOLONET BOUNTY HAS BEEN PLACED ON YOUR HEAD⚠"
-	Victory = "<s32><good><b>YOU ARE A GALACTIC LEGEND</b></good></s32>\n\nCongratulations! You have reached <fame>\"Living Legend\" Fame</fame>, the highest Galactic Standing achievable.\n\n"\
-	          "This is the current \"end\" of the galaxy as we know it and you should <b>consider yourself victorious</b>, but the galaxy is always expanding. New challenges may appear later."
-	GotoNode = "<fame_color>You have starships in this system.</fame_color>\n<btn id='General.UIClick'/> to view this star system."
+	GameOver = "TOUS LES MAINS PERDUS À LA FORCE"
+	LoadLastSave = "Charger le Dernier Holocron"
+	RememberedAsFmt = "La galaxie se souviendra de vous comme...\n<good>{0}</good>"
+	UnexploredSpace = "Régions Inconnues"
+	CustomMarkerTip = "Ajouter/Renommer/Supprimer un Marqueur Galactique\n\nRaccourci : <btn id='Game.CustomMarker'/>"
+	TransferShipControl = "Transférer le Contrôle de l'Hyperdrive À..."
+	TransferShipControlConfirmFmt = "Êtes-vous sûr de vouloir transférer le contrôle du/des vaisseau(x) sélectionné(s) à <b>{0}</b> ?"
+	TransferMoney = "Transférer des Crédits Galactiques À..."
+	TransferMoneyFmt = "Combien de <money>Crédits</money> souhaitez-vous transférer à <b>{0}</b> ?"
+	CreateCustomMarker = "<btn id='General.UIClick'/> pour placer un Marqueur Galactique ici."
+	RenameDeleteCustomMarker = "<btn id='General.UIClick'/> pour renommer ce Marqueur Galactique.\n"\
+	                           "<btn id='General.UIAltClick'/> pour supprimer ce Marqueur Galactique.\n"
+	CustomMarkerName = "Désignez un nom pour ce Marqueur Galactique :"
+	PartLocked = "SCHÉMAS DE VAISSEAU MANQUANTS"
+	Wanted = "RACAILLE DE REBELLE !!! \n\n⚠UN BOUNTY HOLONET A ÉTÉ PLACÉ SUR VOTRE TÊTE⚠"
+	Victory = "<s32><good><b>VOUS ÊTES UNE LÉGENDE GALACTIQUE</b></good></s32>\n\nFélicitations ! Vous avez atteint la <fame>\"Légende Vivante\" Fame</fame>, la plus haute Réputation Galactique atteignable.\n\n"\
+	          "Ceci est l'actuelle \"fin\" de la galaxie telle que nous la connaissons et vous devriez <b>vous considérer victorieux</b>, mais la galaxie est toujours en expansion. De nouveaux défis peuvent apparaître plus tard."
+	GotoNode = "<fame_color>Vous avez des vaisseaux spatiaux dans ce système.</fame_color>\n<btn id='General.UIClick'/> pour voir ce système stellaire."
 }
 
 FameTitles
 [
-	"\"Mynock Bait\""
-	"\"Nerf Herder\""
-	"\"Cantina Regular\""
-	"\"Podracer Prospect\""
-	"\"Jawa Junk Trader\""
-	"\"Bounty Fodder\""
-	"\"Smuggler's Acquaintance\""
-	"\"HoloNet Mention\""
-	"\"Bounty Hunter Trainee\""
-	"\"Scoundrel\""
-	"\"Mercenary Captain\""
-	"\"Deadly Bounty Hunter\""
-	"\"Intergalactic Trader\""
-	"\"Daring Pilot\""
-	"\"Coruscant Socialite\""
-	"\"Rogue Squadron Material\""
-	"\"Holocron Worthy\""
-	"\"Galactic Diplomat\""
-	"\"Grand Admiral\""
-	"\"Living Legend\""
+	"\"Appât à Mynock\""
+	"\"Gardeur de Nerfs\""
+	"\"Habitué de la Cantina\""
+	"\"Espoir de Podracing\""
+	"\"Marchand de Ferrailles Jawa\""
+	"\"Proie à Prime\""
+	"\"Connaissance de Contrebandier\""
+	"\"Mention HoloNet\""
+	"\"Apprenti Chasseur de Primes\""
+	"\"Canaille\""
+	"\"Capitaine Mercenaire\""
+	"\"Chasseur de Primes Mortel\""
+	"\"Marchand Intergalactique\""
+	"\"Pilote Audacieux\""
+	"\"Mondain de Coruscant\""
+	"\"Matériel d'Escadron Rogue\""
+	"\"Digne d'un Holocron\""
+	"\"Diplomate Galactique\""
+	"\"Grand Amiral\""
+	"\"Légende Vivante\""
 ]
 
 ReputationTitles
 [
-	"Sarlacc Snack"
-	"Death Star Target"
-	"Bantha Poodoo"
-	"Mild Irritant"
-	"HoloNet Acquaintance"
-	"Cantina Buddy"
-	"Sabacc Partner"
-	"Co-Pilot Material"
-	"Wookiee Lifedebt"
+	"En-cas de Sarlacc"
+	"Cible de l'Étoile de la Mort"
+	"Poodoo de Bantha"
+	"Irritant Léger"
+	"Connaissance du HoloNet"
+	"Compagnon de Cantina"
+	"Partenaire de Sabacc"
+	"Matériel de Copilote"
+	"Dettes de Vie Wookiee"
 ]
 
 Missions
 {
-	ResourceDelivery = "Supplies Run"
-	ResourceDeliveryDesc = "{to_ship} is requesting an emergency delivery of {target_count} {resource_icon} {resource_type_plural} within {time_limit_minutes} minutes. In addition to standard payment for each {resource_type} delivered, an extra bonus of {money} will be paid once the entire delivery has been completed."
-	Bounty = "HoloNet Bounty"
-	BountyDesc = "A fugitive <b>{target_ship}</b> class vessel is wanted for illegal activities within the {mission_location} system. Authorities from the {faction_name} have posted a bounty of {money} to be paid to any star pilot that can eliminate it."
-	FleetBounty = "Outlaw Squadron Bounty"
-	FleetBountyDesc = "A group of rogue starships is wanted for harassing and extorting civilians within the {mission_location} system. Authorities from the {faction_name} have posted a bounty of {money} to be paid to any star pilot that can eliminate them."
-	PirateHunt = "Pirate Scourge"
-	PirateHuntDesc = "Roving pirates have been attacking civilian freighters in the {mission_location} system, disrupting the trade routes of local businesses. The business owners have posted a bounty of {money} to be paid to any star pilot that can destroy {target_count} of them."
-	FactionHunt = "{target_faction} Hunter"
-	FactionHuntDesc = "The {faction_name} is in conflict with the {target_faction} and is offering payment of {money} to any private contractor who can eliminate {target_count} of their ships patrolling the {mission_location} System."
-	ClearAsteroidField = "Asteroid Field Cleanup"
-	ClearAsteroidFieldPiratesDesc = "A handful of pirates have been preying on civilian mining vessels in a nearby asteroid field. The mining guilds have posted a bounty of {money} to be paid to any star pilot that can clear the asteroid field of pirates."
-	ClearAsteroidFieldPlatformsDesc = "Pirates have constructed several stationary defense turrets in a nearby asteroid field, making it dangerous for legitimate civilian miners. The mining guilds have posted a bounty of {money} to be paid to any star pilot that can eliminate those defense turrets."
+	ResourceDelivery = "Livraison de Ressources"
+	ResourceDeliveryDesc = "{to_ship} demande une livraison d'urgence de {target_count} {resource_icon} {resource_type_plural} dans les {time_limit_minutes} minutes. En plus du paiement standard pour chaque {resource_type} livré, un bonus supplémentaire de {money} sera payé une fois la livraison complète effectuée."
+	Bounty = "Prime HoloNet"
+	BountyDesc = "Un vaisseau de classe <b>{target_ship}</b> fugitif est recherché pour activités illégales dans le système {mission_location}. Les autorités de {faction_name} ont posté une prime de {money} à payer à tout pilote stellaire capable de l'éliminer."
+	FleetBounty = "Prime sur Escadron Hors-la-Loi"
+	FleetBountyDesc = "Un groupe de vaisseaux stellaires renégats est recherché pour avoir harcelé et extorqué des civils dans le système {mission_location}. Les autorités de {faction_name} ont posté une prime de {money} à payer à tout pilote stellaire capable de les éliminer."
+	PirateHunt = "Fléau Pirate"
+	PirateHuntDesc = "Des pirates errants ont attaqué des cargos civils dans le système {mission_location}, perturbant les routes commerciales des entreprises locales. Les propriétaires d'entreprises ont posté une prime de {money} à payer à tout pilote stellaire capable de détruire {target_count} d'entre eux."
+	FactionHunt = "Chasseur de {target_faction}"
+	FactionHuntDesc = "La {faction_name} est en conflit avec la {target_faction} et offre un paiement de {money} à tout contractant privé capable d'éliminer {target_count} de leurs navires patrouillant le Système {mission_location}."
+	ClearAsteroidField = "Nettoyage de Champ d'Astéroïdes"
+	ClearAsteroidFieldPiratesDesc = "Une poignée de pirates ont attaqué des vaisseaux miniers civils dans un champ d'astéroïdes à proximité. Les guildes minières ont posté une prime de {money} à payer à tout pilote stellaire capable de nettoyer le champ d'astéroïdes des pirates."
+	ClearAsteroidFieldPlatformsDesc = "Des pirates ont construit plusieurs tourelles de défense stationnaires dans un champ d'astéroïdes à proximité, le rendant dangereux pour les mineurs civils légitimes. Les guildes minières ont posté une prime de {money} à payer à tout pilote stellaire capable d'éliminer ces tourelles de défense."
 	StationContact = "Contact {contact_ship}"
-	StationContactDesc = "{contact_ship} is requesting assistance from any available star pilots to help with a variety of missions. As an added incentive, the station's Mission Board is offering a {money} bonus to the first star pilot to visit the station."
-	StationRescue = "Station SOS"
-	StationRescueDesc = "A distress signal has been received from {contact_ship}! Raiders are attacking the station in overwhelming numbers! The station's governor is promising {money} to any star pilot who can destroy the raiders and secure the station."
-	PirateBaseDestruction = "Destroy Pirate Stronghold"
-	PirateBaseDestructionDesc = "The location of a local pirate fleet's stronghold has been discovered! These pirates have been preying on {faction_name} patrol ships within the system and must be eradicated. Authorities from the {faction_name} have posted a sizable bounty of {money} to be paid to any star pilot brave and competent enough to destroy it."
-	FactionBaseDestruction = "Destroy {target_faction} Outpost"
-	FactionBaseDestructionDesc = "The {faction_name} is in conflict with the {target_faction} and is offering payment of {money} to any private contractor who can take out one of its supply outposts in the {mission_location} System."
-	Explore = "Recon {mission_location} ({discover_perc:0}%)"
-	ExploreDesc = "Navigators from the {faction_name} are requesting data about various points of interest within the {mission_location} System."
-	VisitSystem = "Scan {mission_location}"
-	VisitSystemDesc = "A renowned astrophysicist is requesting data on stellar activity in the {mission_location} System."
-	Debug = "Debug Mission"
+	StationContactDesc = "{contact_ship} demande l'assistance de tout pilote stellaire disponible pour aider avec une variété de missions. Comme incitation supplémentaire, le Tableau de Missions de la station offre un bonus de {money} au premier pilote stellaire qui visite la station."
+	StationRescue = "SOS de Station"
+	StationRescueDesc = "Un signal de détresse a été reçu de {contact_ship} ! Des pillards attaquent la station en nombre écrasant ! Le gouverneur de la station promet {money} à tout pilote stellaire capable de détruire les pillards et de sécuriser la station."
+	PirateBaseDestruction = "Détruire la Forteresse Pirate"
+	PirateBaseDestructionDesc = "La localisation d'une forteresse de flotte pirate locale a été découverte ! Ces pirates ont attaqué des navires de patrouille de {faction_name} dans le système et doivent être éradiqués. Les autorités de {faction_name} ont posté une prime substantielle de {money} à payer à tout pilote stellaire assez courageux et compétent pour la détruire."
+	FactionBaseDestruction = "Détruire le Poste Avancé {target_faction}"
+	FactionBaseDestructionDesc = "La {faction_name} est en conflit avec la {target_faction} et offre un paiement de {money} à tout contractant privé capable de détruire l'un de ses postes de ravitaillement dans le Système {mission_location}."
+	Explore = "Reconnaissance {mission_location} ({discover_perc:0}%)"
+	ExploreDesc = "Des navigateurs de la {faction_name} demandent des données sur divers points d'intérêt dans le Système {mission_location}."
+	VisitSystem = "Scanner {mission_location}"
+	VisitSystemDesc = "Un astrophysicien renommé demande des données sur l'activité stellaire dans le Système {mission_location}."
+	Debug = "Mission de Débogage"
 	DebugDesc = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales rutrum eros. Fusce non eros a lacus luctus auctor sit amet at mi. In ac fermentum est. Nam viverra lectus eu turpis cursus vestibulum."
 }
 
