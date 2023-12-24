@@ -80,6 +80,21 @@ StatCategories
     SWPDBeamLaser = "小型<yellow>黄</yellow>PDビームレーザーショット"
 }
 
+SWFactionsBlacksun = "SW ファクションズ: ブラックサン"
+SWFactionsBlacksunTip = "スター・ウォーズ ファクションズ ブラックサンの船のコレクション"
+
+SWFactionsCIS = "SW ファクションズ: CIS"
+SWFactionsCISTip = "スター・ウォーズ ファクションズ CISの船のコレクション"
+
+SWFactionsEmpire = "SW ファクションズ: 帝国"
+SWFactionsEmpireTip = "スター・ウォーズ ファクションズ 帝国の船のコレクション"
+
+SWFactionsRebelAlliance = "SW ファクションズ: 反乱同盟"
+SWFactionsRebelAllianceTip = "スター・ウォーズ ファクションズ 反乱同盟の船のコレクション"
+
+SWFactionsRepublic = "SW ファクションズ: 共和国"
+SWFactionsRepublicTip = "スター・ウォーズ ファクションズ 共和国の船のコレクション"
+
 
 DecalGroups
 {

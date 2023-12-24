@@ -72,6 +72,21 @@ StatCategories
     SWPDBeamLaser = "小型<yellow>黄色</yellow>PD激光束射击"
 }
 
+SWFactionsBlacksun = "SW 派系：黑日"
+SWFactionsBlacksunTip = "星球大战派系黑日舰队集合"
+
+SWFactionsCIS = "SW 派系：CIS"
+SWFactionsCISTip = "星球大战派系CIS舰队集合"
+
+SWFactionsEmpire = "SW 派系：帝国"
+SWFactionsEmpireTip = "星球大战派系帝国舰队集合"
+
+SWFactionsRebelAlliance = "SW 派系：叛军联盟"
+SWFactionsRebelAllianceTip = "星球大战派系叛军联盟舰队集合"
+
+SWFactionsRepublic = "SW 派系：共和国"
+SWFactionsRepublicTip = "星球大战派系共和国舰队集合"
+
 
 DecalGroups
 {

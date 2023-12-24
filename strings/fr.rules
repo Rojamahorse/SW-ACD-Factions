@@ -68,6 +68,21 @@ StatCategories
     SWPDBeamLaser = "Tir de Laser à Faisceau PD <yellow>Jaune</yellow> Petit"
 }
 
+SWFactionsBlacksun = "SW Factions : Soleil Noir"
+SWFactionsBlacksunTip = "Une collection de vaisseaux du Soleil Noir des Factions Star Wars"
+
+SWFactionsCIS = "SW Factions : CIS"
+SWFactionsCISTip = "Une collection de vaisseaux CIS des Factions Star Wars"
+
+SWFactionsEmpire = "SW Factions : Empire"
+SWFactionsEmpireTip = "Une collection de vaisseaux de l'Empire des Factions Star Wars"
+
+SWFactionsRebelAlliance = "SW Factions : Alliance Rebelle"
+SWFactionsRebelAllianceTip = "Une collection de vaisseaux de l'Alliance Rebelle des Factions Star Wars"
+
+SWFactionsRepublic = "SW Factions : République"
+SWFactionsRepublicTip = "Une collection de vaisseaux de la République des Factions Star Wars"
+
 
 DecalGroups
 {

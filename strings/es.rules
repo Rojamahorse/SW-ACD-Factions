@@ -68,6 +68,21 @@ StatCategories
     SWPDBeamLaser = "Disparo de Láser de Haz PD <yellow>Amarillo</yellow> Pequeño"
 }
 
+SWFactionsBlacksun = "SW Facciones: Sol Negro"
+SWFactionsBlacksunTip = "Una colección de naves de Sol Negro de las Facciones de Star Wars"
+
+SWFactionsCIS = "SW Facciones: CIS"
+SWFactionsCISTip = "Una colección de naves CIS de las Facciones de Star Wars"
+
+SWFactionsEmpire = "SW Facciones: Imperio"
+SWFactionsEmpireTip = "Una colección de naves del Imperio de las Facciones de Star Wars"
+
+SWFactionsRebelAlliance = "SW Facciones: Alianza Rebelde"
+SWFactionsRebelAllianceTip = "Una colección de naves de la Alianza Rebelde de las Facciones de Star Wars"
+
+SWFactionsRepublic = "SW Facciones: República"
+SWFactionsRepublicTip = "Una colección de naves de la República de las Facciones de Star Wars"
+
 
 DecalGroups
 {

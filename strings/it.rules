@@ -81,6 +81,20 @@ StatCategories
 }
 
 
+SWFactionsBlacksun = "SW Fazioni: Sole Nero"
+SWFactionsBlacksunTip = "Una collezione di navi del Sole Nero delle Fazioni di Star Wars"
+
+SWFactionsCIS = "SW Fazioni: CIS"
+SWFactionsCISTip = "Una collezione di navi CIS delle Fazioni di Star Wars"
+
+SWFactionsEmpire = "SW Fazioni: Impero"
+SWFactionsEmpireTip = "Una collezione di navi dell'Impero delle Fazioni di Star Wars"
+
+SWFactionsRebelAlliance = "SW Fazioni: Alleanza Ribelle"
+SWFactionsRebelAllianceTip = "Una collezione di navi dell'Alleanza Ribelle delle Fazioni di Star Wars"
+
+SWFactionsRepublic = "SW Fazioni: Repubblica"
+SWFactionsRepublicTip = "Una collezione di navi della Repubblica delle Fazioni di Star Wars"
 
 
 DecalGroups

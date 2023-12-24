@@ -72,6 +72,20 @@ StatCategories
     SWPDBeamLaser = "Маленький <yellow>жёлтый</yellow> PD лучевой лазерный выстрел"
 }
 
+SWFactionsBlacksun = "SW Фракции: Черное Солнце"
+SWFactionsBlacksunTip = "Коллекция кораблей Черного Солнца Фракций Звездных Войн"
+
+SWFactionsCIS = "SW Фракции: КИС"
+SWFactionsCISTip = "Коллекция кораблей КИС Фракций Звездных Войн"
+
+SWFactionsEmpire = "SW Фракции: Империя"
+SWFactionsEmpireTip = "Коллекция кораблей Империи Фракций Звездных Войн"
+
+SWFactionsRebelAlliance = "SW Фракции: Альянс Повстанцев"
+SWFactionsRebelAllianceTip = "Коллекция кораблей Альянса Повстанцев Фракций Звездных Войн"
+
+SWFactionsRepublic = "SW Фракции: Республика"
+SWFactionsRepublicTip = "Коллекция кораблей Республики Фракций Звездных Войн"
 
 
 DecalGroups

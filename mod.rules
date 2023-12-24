@@ -15,6 +15,37 @@ Clean up Shots & Common Effects
 Add SW Crew
 */
 
+	/* *********** SHIP LIBRARIES ************* */
+
+ShipLibraries
+[
+    {
+        Folder = "builtin_ships/SW.Black_Sun/Combat"
+        NameKey = "SWFactionsBlacksun"
+        TooltipKey = "SWFactionsBlacksunTip" 
+    }
+	{
+        Folder = "builtin_ships/SW.CIS/Combat"
+        NameKey = "SWFactionsCIS"
+        TooltipKey = "SWFactionsCISTip" 
+    }
+    {
+        Folder = "builtin_ships/SW.Galactic_Empire/Combat"
+        NameKey = "SWFactionsEmpire"
+        TooltipKey = "SWFactionsEmpireTip" 
+    }
+    {
+        Folder = "builtin_ships/SW.Rebel_Alliance/Combat"
+        NameKey = "SWFactionsRebelAlliance"
+        TooltipKey = "SWFactionsRebelAllianceTip" 
+    }
+    {
+        Folder = "builtin_ships/SW.Republic/Combat"
+        NameKey = "SWFactionsRepublic"
+        TooltipKey = "SWFactionsRepublicTip" 
+    }
+]
+
 Actions
 [
 
@@ -39,7 +70,7 @@ Actions
  	}
 
 	
-	/* *********** DECALS & SHIP SIZES ************* */
+	/* *********** DECALS & SHIPS & SHIP SIZES ************* */
 
 	//Adds faction decals folder and advanced gradients, shading, and shapes folder
 	{
@@ -66,7 +97,6 @@ Actions
 			}
 		}
 	}
-
 
 
 	/* *********** MAP SIZES ************* */

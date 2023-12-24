@@ -109,6 +109,22 @@ StarterShips
 	X_Wing_Z95 = "This vintage vessel boasts cup holders and a navigation system that doubles as your personal, snarky co-pilot. Proficient in both piloting and sarcastic commentary, if you can't defeat them, at least roast them!"
 }
 
+SWFactionsBlacksun = "SW Faksiyonlar: Kara Güneş"
+SWFactionsBlacksunTip = "Star Wars Faksiyonları Kara Güneş gemileri koleksiyonu"
+
+SWFactionsCIS = "SW Faksiyonlar: CIS"
+SWFactionsCISTip = "Star Wars Faksiyonları CIS gemileri koleksiyonu"
+
+SWFactionsEmpire = "SW Faksiyonlar: İmparatorluk"
+SWFactionsEmpireTip = "Star Wars Faksiyonları İmparatorluk gemileri koleksiyonu"
+
+SWFactionsRebelAlliance = "SW Faksiyonlar: İsyan İttifakı"
+SWFactionsRebelAllianceTip = "Star Wars Faksiyonları İsyan İttifakı gemileri koleksiyonu"
+
+SWFactionsRepublic = "SW Faksiyonlar: Cumhuriyet"
+SWFactionsRepublicTip = "Star Wars Faksiyonları Cumhuriyet gemileri koleksiyonu"
+
+
 Doodads
 {
 }

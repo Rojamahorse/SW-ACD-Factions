@@ -69,6 +69,23 @@ StatCategories
 }
 
 
+
+SWFactionsBlacksun = "SW Fraktionen: Schwarze Sonne"
+SWFactionsBlacksunTip = "Eine Sammlung von Schwarze Sonne Schiffen der Star Wars Fraktionen"
+
+SWFactionsCIS = "SW Fraktionen: CIS"
+SWFactionsCISTip = "Eine Sammlung von CIS Schiffen der Star Wars Fraktionen"
+
+SWFactionsEmpire = "SW Fraktionen: Imperium"
+SWFactionsEmpireTip = "Eine Sammlung von Imperium Schiffen der Star Wars Fraktionen"
+
+SWFactionsRebelAlliance = "SW Fraktionen: Rebellen-Allianz"
+SWFactionsRebelAllianceTip = "Eine Sammlung von Schiffen der Rebellen-Allianz der Star Wars Fraktionen"
+
+SWFactionsRepublic = "SW Fraktionen: Republik"
+SWFactionsRepublicTip = "Eine Sammlung von Republik Schiffen der Star Wars Fraktionen"
+
+
 DecalGroups
 {
     // sw_decals = "Star Wars Fraktionsabziehbilder"

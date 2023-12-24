@@ -119,6 +119,22 @@ StatCategories
 }
 
 
+SWFactionsBlacksun = "SW Factions: Black Sun"
+SWFactionsBlacksunTip = "A collection of Star Wars Factions Black Sun ships"
+
+SWFactionsCIS = "SW Factions: CIS"
+SWFactionsCISTip = "A collection of Star Wars Factions CIS ships"
+
+SWFactionsEmpire = "SW Factions: Empire"
+SWFactionsEmpireTip = "A collection of Star Wars Factions Empire ships"
+
+SWFactionsRebelAlliance = "SW Factions: Rebel Alliance"
+SWFactionsRebelAllianceTip = "A collection of Star Wars Factions Rebel Alliance ships"
+
+SWFactionsRepublic = "SW Factions: Republic"
+SWFactionsRepublicTip = "A collection of Star Wars Factions Republic ships"
+
+
 DecalGroups
 {
 	sw_decals = "Star Wars Faction Decals"
