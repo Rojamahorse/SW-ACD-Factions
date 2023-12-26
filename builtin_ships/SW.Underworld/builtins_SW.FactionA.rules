@@ -1,8 +1,0 @@
-Ships :
-	<Combat/builtins_SW.UnderWorld_combat.rules>/Ships
-	<Defense/builtins_SW.UnderWorld_defense.rules>/Ships
-	<Civilian/builtins_SW.UnderWorld_civilian.rules>/Ships
-	<Stations/builtins_SW.UnderWorld_stations.rules>/Ships
-[
-
-]
