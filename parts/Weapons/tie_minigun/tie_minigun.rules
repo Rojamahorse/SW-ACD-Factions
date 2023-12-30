@@ -9,10 +9,6 @@ Part : &<../xwing_cannon/xwing_cannon.rules>/Part
 	DescriptionKey = "Parts/tieLMinigunDesc"
 	
 	//Groups&Categories
-	EditorGroups = ["WeaponsEnergy","TechI"]
-	DescriptionKey = "Parts/tieLMinigunDesc"
-	
-	//Groups&Categories
 	EditorGroups = ["WeaponsEnergy","SWTechI"]
 	
 	//Resources&Size&Health
