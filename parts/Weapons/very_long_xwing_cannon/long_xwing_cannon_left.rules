@@ -1,5 +1,26 @@
 Part : &<long_xwing_cannon.rules>/Part
 {
+	//IDs
+
+	//StringKeys
+	
+	//Groups&Categories
+	
+	//Resources&Size&Health
+	
+	//Rects
+	
+	//Selections
+	
+	//PartSpecific
+	
+	//ReceivableBuffs
+	
+	//Doors&Etc
+	
+	//Editor
+	
+	//Components
 	NameKey = "Parts/xwingCannonXLongLeft"
 	IconNameKey = "Parts/xwingCannonXLongLeftIcon"
 	ID = SW.very_long_fighter_xwing_cannon_left

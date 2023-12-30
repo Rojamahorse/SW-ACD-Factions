@@ -16,36 +16,26 @@ Factions
 	Factions
 	[
 		{
-			FactionID = SW.Galactic_Empire
+			FactionID = SW.Republic
 			TerritoryRatio = 100%
 			AvoidOtherFactionsStrength = .3
 			AvoidEdgeStrength = .2
-			FactionStrengthExponent = 3
-			MinFactionStrength = 10%
-		}
-		{
-			FactionID = SW.Republic
-			TerritoryRatio = 100%
-			AvoidOtherFactionsStrength = .1
-			AvoidEdgeStrength = 0
 			FactionStrengthExponent = 1
-			MinFactionStrength = 35%
+			MinFactionStrength = 5%
 		}
-
 		{
 			FactionID = SW.CIS
 			TerritoryRatio = 100%
-			AvoidOtherFactionsStrength = .1
-			AvoidEdgeStrength = 0
+			AvoidOtherFactionsStrength = .3
+			AvoidEdgeStrength = .2
 			FactionStrengthExponent = 1
-			MinFactionStrength = 35%
+			MinFactionStrength = 5%
 		} 
 
 	]
 	
 	RemainderFaction = SW.Black_Sun
-	TerritoryRatio = 25%
-	RemainderFactionThreshold = .1
+	RemainderFactionThreshold = 1.5
 	MinRemainderFactionStrength = 5%
 	AvoidIterations = 10
 }
@@ -58,11 +48,6 @@ FactionTiers
 	Type = FactionNodeTiers
 	Factions
 	[
-		{
-			FactionID = SW.Galactic_Empire
-			TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
-			TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
-		}
 		{
 			FactionID = SW.Republic
 			TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
@@ -88,8 +73,8 @@ StartingNodePicker
 {
 	Type = StartingNodePicker
 	AllowedFactions = [SW.CIS, SW.Republic] 
-	MinConnections = 1
-	CandidatesFarthestFromFactions = [5, [SW.Galactic_Empire]]
+	MinConnections = 2
+	CandidatesFarthestFromFactions = [5, [SW.Black_Sun]]
 	CandidatesClosestToFactions = [1, [SW.Republic, SW.CIS]]
 	SetTierRangeTo = [1, 1 + (&~/TierSpread)]
 }

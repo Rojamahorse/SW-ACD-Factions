@@ -1,0 +1,592 @@
+Parts
+{
+	//X-Wing Cannons
+	xwingCannons = "X-Wing Cannon"
+	xwingCannonsDesc = "X-Wing Cannons are small weapons that can be placed hidden behind and under armor pieces.  They are useful in medium to long range engagements"
+
+	// Standard X-Wing Cannons
+	xwingCannon = "X-Wing Short Cannon"
+	xwingCannonIcon = "X-Wing SC"
+	xwingCannonLeft = "X-Wing Short Cannon (Side)"
+	xwingCannonLeftIcon = "X-Wing SC (Side)"
+	xwingCannonDesc = "<cyan>Incom Corporation</cyan> presents the X-Wing SC; a compact, short-barrel cannon for stealthy armor integration, excelling in medium-range combat."
+
+	//Compact Mass-Driver Cannon
+	xwingCannonLong = "Mass-Driver Compact Cannon"
+	xwingCannonLongIcon = "Mass-Driver CC"
+	xwingCannonLongLeft = "Mass-Driver Compact Cannon (Side)"
+	xwingCannonLongLeftIcon = "Mass-Driver CC (Side)"
+	xwingCannonLongDesc = "The Mass-Driver Compact Cannon (MD-CC) by <cyan>Kuat Systems Engineering</cyan>; A scaled-down yet formidable kinetic weapon, designed for precision and power in dogfights. Its sleek design allows for seamless integration with various Starfighter models, providing unmatched kinetic impact while maintaining aerodynamic efficiency."
+	
+	//Extra Long X-Wing Cannons
+	xwingCannonXLong = "X-Wing Extended Cannon"
+	xwingCannonXLongIcon = "X-Wing XC"
+	xwingCannonXLongLeft = "X-Wing Extended Cannon (Side)"
+	xwingCannonXLongLeftIcon = "X-Wing XC (Side)"
+	xwingCannonXLongDesc = "<cyan>Incom Corporation's</cyan> X-Wing XC; an extended version of the classic cannon, combining range and stealth for strategic positioning behind armor."
+
+	//Standard TIE Repeaters
+	tieMinigun = "TIE Repeater Cannon - Super Edition"
+	tieMinigunIcon = "TIE RC-SE"
+	tieMinigunLeft = "TIE Repeater Cannon - Super Edition (Side)"
+	tieMinigunLeftIcon = "TIE RC-SE (Side)"
+	tieLMinigunDesc = "The <cyan>Galactic Empire's</cyan> TIE Repeater Cannons - Super Edition; compact, rapid-firing, and perfect for close-range engagements, with stealthy armor placement capabilities."
+
+	tieMinigunLong = "HyCor Heavy Repeater Extended Cannon"
+	tieMinigunLongIcon = "HyCor HR-XC"
+	tieMinigunLongLeft = "HyCor Heavy Repeater Extended Cannon (Side)"
+	tieMinigunLongLeftIcon = "HyCor HR-XC (Side)"
+	tieLMinigunLongDesc = "Heavy Laser Repeater with Extended Cannon by <cyan>HyCor</cyan>; rapid-firing and perfect for close-range enagements, this Heavy Laser Repeater is modified for use on small-to-medium ships. Can be placed behind and under ship armor."
+
+	// RG-9 Cannons
+	RG9Cannon = "RG-9 Laser Cannon Enhanced Edition"
+	RG9CannonIcon = "RG-9 LC-EE"
+	RG9CannonLeft = "RG-9 Laser Cannon Enhanced Edition (Side)"
+	RG9CannonLeftIcon = "RG-9 LC-EE (Side)"
+	RG9CannonDesc = "RG-9 Laser Cannon by <cyan>Borstel</cyan>; An Enhanced Edition of the quick-firing, versatile small A-Wing laser, mainly used in medium to large fighters."
+	RG9CannonLeftDesc = "RG-9 Laser Cannon by <cyan>Borstel</cyan>; An Enhanced Edition of the quick-firing, versatile small A-Wing laser, mainly used in medium to large fighters."
+
+	// Standard TwinBeam Defense Turret
+	DroidTurret = "StarGuard TwinBeam Defense Turret"
+	DroidTurretIcon = "Starguard TB-DT"
+	DroidTurretDesc = "Manufactured by <cyan>Corellian ArmsTech</cyan>, the StarGuard TwinBeam Defense Turret unleashes dual-beam fury, offering unmatched protection. Exceptionally effective at intercepting and neutralizing <orange>lasers and ion shots</orange>, it provides superior defense against energy-based projectile threats but ineffective with bullets, mines, and missiles." 
+
+	// Mini TwinLaser Defense Turret
+	PDTurretTiny = "StarGuard TwinLaser Compact Point Defense Turret"
+	PDTurretTinyIcon = "Starguard TL-C-PDT"
+	PDTurretTinyDesc = "The StarGuard TwinLaser Point Defense Turret, manufactured by <cyan>Corellian ArmsTech</cyan>, unleashes dual laser fury. This miniaturized and fully automated version of the StarGuard TwinLaser Turret is optimized for tight spaces. It's highly effective at targeting <orange>bullets, mines, and missiles</orange>, but is ineffective against lasers and ion shots."
+
+}
+
+
+EditorGroups
+{
+
+}
+
+Stats
+{
+
+}
+
+
+StatCategories
+{
+    SWFighterWeapons = "Küçük <red>Kırmızı</red> Lazer Topu Atışı"
+    MinigunShot = "Küçük <green>Yeşil</green> Tekrarlayıcı Lazer Atışı"
+    SWPDTurretTiny = "Küçük <magenta>Mor</magenta> PD Patlama Atışı"
+    SWRG9Shot = "Küçük <red>Kırmızı</red> RG-9 Patlama Topu Atışı"
+    SWBurstLaser = "Küçük <red>Kırmızı</red> Patlama Lazer Atışı"
+    SWPDBeamLaser = "Küçük <yellow>Sarı</yellow> PD Işın Lazer Atışı"
+}
+
+
+
+DecalGroups
+{
+    // sw_decals = "Star Wars Gruplarına Ait Çıkartmalar"
+    sw_adv_shapes = "Gelişmiş Gradyanlar, Gölgeler ve Şekiller"
+}
+
+Factions
+{
+	Black_Sun = "Kara Güneş Kolektifi"
+	CIS = "Bağımsız Sistemler Konfederasyonu"
+	Galactic_Empire = "Galaktik İmparatorluk"
+	Rebel_Alliance = "Asi İttifakı"
+	Republic = "Cumhuriyet"
+}
+
+StarterShips
+{
+	A_Wing = "Like a caffeinated space weasel on roller skates, it's quick, agile, and unpredictable in a dogfight. Designed for efficiency, they made R2 take the next shuttle. No backseat drivers here, strap in and bring your A-game!"
+	Black_Sun_Fighter =  "Combines sleek elegance and the finesse of a disco ball in zero gravity. With a stealth mode that's just as effective as sneaking in tap shoes, this ship offers a unique blend of flair and futility."
+	Durasteel_Prospector = "This rusty-but-trusty hauler proves that style isn't everything. Grab your shovel and your space hard hat, because it's time to get your hands dirty in the name of profit!"
+	Hyena_Class_Droid_Bomber = "The answer to the question no one asked: 'What if we turned a droid into a kamikaze confetti dispenser?' With all the subtlety of a parade float on fire, this ship brings chaos and colorful explosions wherever it goes."
+	N_1_Starfighter = "The 'Nerf Herder's Dream', This ship is for pilots who believe that precision is overrated and that curves are the true path to victory. This ship is a true work of art... as long as your definition of art includes unintentional barrel rolls."
+	TIE_Fighter = "The Tie Fighter, Experience the thrill of imminent doom every time you get into the cockpit. No safety belts, just adrenaline-fueled panic. Remember, it's not about the size of the lasers, but how you use them!"
+	Y_Wing = "The 'Y' stands for 'Why carry one or two bombs when you could treat the whole galaxy to a dazzling fireworks display? Perfect for adding a touch of sparkle to space battles and occasionally giving enemies a starry surprise."
+	X_Wing_Z95 = "This vintage vessel boasts cup holders and a navigation system that doubles as your personal, snarky co-pilot. Proficient in both piloting and sarcastic commentary, if you can't defeat them, at least roast them!"
+}
+
+SWFactionsBlacksun = "SW Faksiyonlar: Kara Güneş"
+SWFactionsBlacksunTip = "Star Wars Faksiyonları Kara Güneş gemileri koleksiyonu"
+
+SWFactionsCIS = "SW Faksiyonlar: CIS"
+SWFactionsCISTip = "Star Wars Faksiyonları CIS gemileri koleksiyonu"
+
+SWFactionsEmpire = "SW Faksiyonlar: İmparatorluk"
+SWFactionsEmpireTip = "Star Wars Faksiyonları İmparatorluk gemileri koleksiyonu"
+
+SWFactionsRebelAlliance = "SW Faksiyonlar: İsyan İttifakı"
+SWFactionsRebelAllianceTip = "Star Wars Faksiyonları İsyan İttifakı gemileri koleksiyonu"
+
+SWFactionsRepublic = "SW Faksiyonlar: Cumhuriyet"
+SWFactionsRepublicTip = "Star Wars Faksiyonları Cumhuriyet gemileri koleksiyonu"
+
+
+Doodads
+{
+}
+
+Resource
+{
+}
+
+MapSizes  
+{
+	
+	Standard = "Cosmoteer Standard (50)"
+	StandardTip = "A standard-sized boring old vanilla <white>Cosmoteer</white> star system... \n<i>These aren't the star systems you're looking for... move along, move along.</i>"
+	
+	Vanilla = "Standard (50)"
+	VanillaDesc = "A mix of 50 <yellow>Star Wars</yellow> and <white>Vanilla</white> controlled systems on the edge of explored space, known for their intricate routes and shadowy dealings."
+
+	SWLarge = "Outer Rim Territories (60)"
+	SWLargeDesc = "A lawless frontier region reminiscent of the Outer Rim with 60 <yellow>Star Wars</yellow> systems."
+
+	SWVeryLarge = "Mid Rim Systems (80)" 
+	SWVeryLargeDesc = "An industrialized region reminiscent of the Mid Rim with 80 <yellow>Star Wars</yellow> systems."
+
+	SWHuge = "Inner Rim Worlds (100)"
+	SWHugeDesc = "A core region reminiscent of the Inner Rim with 100 <yellow>Star Wars</yellow> systems." 
+
+	SWGigantic = "Core Worlds (125)"
+	SWGiganticDesc = "The heart of galactic civilization with 125 <yellow>Star Wars</yellow> systems."
+
+	SWColossal = "Deep Core Systems (150)"
+	SWColossalDesc = "A dangerous region on the fringes of the Deep Core with 150 <yellow>Star Wars</yellow> systems."
+
+	SWTitanic = "Unknown Regions (200)"
+	SWTitanicDesc = "A vast uncharted territory shrouded in mystery with 200 <yellow>Star Wars</yellow> and <white>Cosmoteer</white> faction-controlled systems."
+
+	SWGalactic = "The Entire Known Galaxy (500)"
+	SWGalacticDesc = "<white>Cosmoteer</white> and <yellow>Star Wars</yellow> factions collide in the full extent of the known galaxy with 500 systems."
+
+	// The Rebellion Era Galaxy Map
+	SWRebellion = "A New Hope (50)"
+	SWRebellionDesc = "A true <yellow>Star Wars</yellow> classic that's jam-packed with action; You are caught in the middle as the <orange>Rebel Alliance</orange> goes head to head vs the <gray>Empire</gray>... Some might even call that a '<yellow>ClassicJam</yellow>'."
+
+	// The Clone Wars Era Galaxy Map
+	SWClonewars = "The Clone Wars Era (50)"
+	SWClonewarsDesc = "Step into the heart of the <yellow>Clone Wars</yellow>, where the <red>Galactic Republic</red> clashes with the <blue>Confederacy of Independent Systems (CIS)</blue>, while the <magenta>Black Sun</magenta> lurks in the shadows. Experience the iconic galactic turmoil in a period known as the '<yellow>Galactic Tension</yellow>'." 
+
+	/*
+	SmugglersRun = "Smuggler's Run (50)"
+	SmugglersRunDesc = "A network of 50 star systems known for their intricate routes and shadowy dealings, often frequented by smugglers and outlaws."
+	*/
+}
+
+CareerModeConfig
+{
+  Name = "Galactic Legacy"
+  Description = "Construct, combat, and scavenge your way to becoming a legendary Starship Commander amidst the stars."
+  DescriptionMP = "Chart a course through a galaxy forged by the Force, engaging in epic missions, battling opposing factions, and gathering resources. "\
+                "Join forces with up to four Squad Leaders in a cooperative multiplayer adventure."
+
+  CombatDifficulty = "Combat Prowess"
+  CombatDifficultyTip = "Choose your path in the stars - will you become the galaxy's peacekeeper or its worst nightmare? Each setting has its own tale to tell."
+  
+  EconDifficulty = "Galactic Economy"
+  EconDifficultyTip = "Will you swim in a vault of credits or scrimp and save every galactic penny? Set the stakes for your economic adventure."
+  
+  CrewScarcity = "Mind Trick Recruiting"
+  CrewScarcityTip = "Tweak the Force's suggestive power to make potential recruits believe you're the legend they've been looking to follow. A stronger 'suggestion' means more hands on deck, letting you navigate the stars with ease without ringing the dinner bell for the sector's big bads."
+
+  DisableCrewConstruction = "Force Assembly"
+  DisableCrewConstructionTip = "Engage this to channel the Force, allowing your will to instantly manifest ship modifications across the galaxy without the need for crew labor."
+
+  DisableExploration = "Force-Fueled Farsight"
+  DisableExplorationTip = "Who needs probes and scouts when you have the Force? Activate your inner Yoda to see all the galaxy's secrets, from Dagobah's swamps to Tatooine's cantinas, with no fog of war to cloud your cosmic vision."
+
+  DisableSalvaging = "Junkyard Bypass"
+  DisableSalvagingTip = "● Mission payouts doubled - like betting on Sebulba to lose.\n"\
+                        "● Who needs scrap? Ships can't be turned into resources - they're not droids!\n"\
+                        "● Instant ship tweaking anywhere in the galaxy, just throw credits at the problem - no construction crew required."
+
+  CantDisableSalvagingTip = "Note: 'Junkyard Bypass' mode requires 'Force Assembly' to be active."
+
+  GalaxySeed = "Hyperlane Coordinates"
+  GalaxySeedTip = "Coordinates for the hyperlane navicomputer, determining the fabric of space-time. Identical inputs forge identical star maps, in this timeline or the next."
+
+  MapSize = "Sector Scope"
+  MapSizeTip = "Determines the breadth of known space, from the Outer Rim to the Core Worlds. The number signifies the myriad of systems waiting to be charted by your hand."
+
+  MaxPlayers = &~/PvpModeConfig/MaxPlayers
+  MaxPlayersTip = &~/PvpModeConfig/MaxPlayersTip
+
+ShipInfoFmt = "<s24>{0}</s24>\n\n{1}\n\nGalactic Credits Remaining: {2}"
+CustomShipInfoFmt = "<s24>{0}</s24> - Custom Starcruiser\n\nGalactic Credits Remaining: {1}"
+LoadShip = "Summon Custom Starship"
+PlayerTeamFmt = "Squad Leader {0}"
+SharedPlayerTeamFmt = "Allied Squadron {0}"
+Advanced = "Holocron Settings"
+AdvancedInfo = "Tweak the fabric of the cosmos here! These options let you reshape the game far from its original destiny. Tinker at your own risk, but remember, the Force is more fun when it's a bit unpredictable."
+}
+
+CombatDifficulty
+{
+  NoDeath = "Pacifist (Invulnerable)"
+  NoDeathTip = "• No Damage Taken\n<i><gray>(Damage? What's that?)</gray></i>\n• Can Build in Combat\n<i><gray>(I wouldn't hurt a mynock.)</gray></i>"
+  
+  Easy = "Nerf Herder" 
+  EasyTip = "• <good>-30%</good> Damage Taken\n<i><gray>(I barely passed flight school.)</gray></i>\n• <good>+40%</good> Damage Dealt\n<i><gray>(I miss more shots than a stormtrooper.)</gray></i>"
+
+  Normal = "Recreational Bounty Hunter"
+  NormalTip = "• Normal Damage Taken\n<i><gray>(I'm a decent pilot.)</gray></i>\n• Normal Damage Dealt\n<i><gray>(I hit about half my shots.)</gray></i>"
+
+  Hard = "Rogue Squadron"
+  HardTip = "• <bad>+25%</bad> Damage Taken\n<i><gray>(I graduated top of my class.)</gray></i>\n• <bad>-20%</bad> Damage Dealt\n<i><gray>(I used to bullseye womp rats in my T-16 back home.)</gray></i>"
+
+  VeryHard = "Legendary Smuggler"
+  VeryHardTip = "• <bad>+40%</bad> Damage Taken\n<i><gray>(I flew the Kessel Run in under 12 parsecs!)</gray></i>\n• <bad>-30%</bad> Damage Dealt\n<i><gray>(I never tell the odds.)</gray></i>"
+}
+
+
+EconDifficulty
+{
+  FreeBuild = "Midichlorian Master"
+  FreeBuildTip = "• Unlimited force powers allow building anywhere and anytime without credits or resources.\n<i><gray>(Having a high midichlorian count sure is handy.)</gray></i>\n• Normal resource drop rates.\n<i><gray>(Resources flow as naturally as the Force.)</gray></i>\n• Normal credits rewards.\n<i><gray>(Credits will do fine.)</gray></i>\n• Normal reputation rewards.\n<i><gray>(Your reputation precedes you.)</gray></i>"
+  
+  Fast = "Smuggler" 
+  FastTip = "• Resource drop rates <good>increased 100%</good>.\n<i><gray>(Shhh, don't ask where they came from.)</gray></i>\n• Credit rewards <good>increased 100%</good>.\n<i><gray>(Tax-free, of course.)</gray></i>\n• Reputation rewards <good>increased 50%</good>.\n<i><gray>(Fame spreads fast in the underworld.)</gray></i>"
+
+  Normal = "Freelancer"
+  NormalTip = "• Normal resource drop rates.\n<i><gray>(Just another day hauling goods.)</gray></i>\n• Normal credit rewards.\n<i><gray>(Honest pay for an honest day's work.)</gray></i>\n• Normal reputation rewards.\n<i><gray>(Building a name for yourself, one job at a time.)</gray></i>"
+
+  Slow = "Moisture Farmer"
+  SlowTip = "• Resource drop rates <bad>reduced 50%</bad>.\n<i><gray>(Curse this barren wasteland.)</gray></i>\n• Credit rewards <bad>reduced 50%</bad>.\n<i><gray>(Water ain't free.)</gray></i>\n• Reputation rewards <bad>reduced 25%</bad>.\n<i><gray>(Who cares about farmers anyway?)</gray></i>"
+}
+
+
+
+CareerMode
+{
+	CommsTip = "<b>Holo-Comms</b>\n\nOpen HoloNet communications links with other nearby starships.\n\nHotkey: <btn id='Comms.OpenClose'/>"
+	NewMission = "NEW GALACTIC ASSIGNMENT"
+	MissionCompleted = "MISSION SUCCESS"
+	MissionFailed = "MISSION FAILURE"
+	FameLevelUp = "GALACTIC STANDING INCREASED"
+	ReputationLevelUp = "GALACTIC REPUTATION INCREASED"
+	ReputationLevelDown = "GALACTIC REPUTATION DECREASED"
+	ReputationLevelTitleFmt = "{0} {1} - {2} {0}"
+	CareerLogTip = "Holocron Archive\n\nHotkey: <btn id='Game.MissionLog'/>"
+	StarSystemFmt = "<b>{0} System</b><s6>\n \n</s6>"
+	StarSystemTierFmt = "Sector Risk Factor: {0}"
+	StarSystemFactionLineFmt = "{0}<good>{2:0}%</good> {1}"
+	TierFmt = "<gray>[</gray><b>{0}</b><gray>]</gray>"
+	TierRangeFmt = "<gray>[</gray><b>{0}</b>-<b>{1}</b><gray>]</gray>"
+	GameOver = "ALL HANDS LOST TO THE FORCE"
+	LoadLastSave = "Load Last Holocron"
+	RememberedAsFmt = "The galaxy will remember you as...\n<good>{0}</good>"
+	UnexploredSpace = "Unknown Regions"
+	CustomMarkerTip = "Add/Rename/Delete Galactic Marker\n\nHotkey: <btn id='Game.CustomMarker'/>"
+	TransferShipControl = "Transfer Hyperdrive Control To..."
+	TransferShipControlConfirmFmt = "Are you sure you want to transfer control of the selected starship(s) to <b>{0}</b>?"
+	TransferMoney = "Transfer Galactic Credits To..."
+	TransferMoneyFmt = "How many <money>Credits</money> do you want to transfer to <b>{0}</b>?"
+	CreateCustomMarker = "<btn id='General.UIClick'/> to place a Galactic Marker here."
+	RenameDeleteCustomMarker = "<btn id='General.UIClick'/> to rename this Galactic Marker.\n"\
+	                           "<btn id='General.UIAltClick'/> to delete this Galactic Marker.\n"
+	CustomMarkerName = "Designate a name for this Galactic Marker:"
+	PartLocked = "MISSING STARSHIP SCHEMATICS"
+	Wanted = "YOU REBEL SCUM!!! \n\n⚠A HOLONET BOUNTY HAS BEEN PLACED ON YOUR HEAD⚠"
+	Victory = "<s32><good><b>YOU ARE A GALACTIC LEGEND</b></good></s32>\n\nCongratulations! You have reached <fame>\"Living Legend\" Fame</fame>, the highest Galactic Standing achievable.\n\n"\
+	          "This is the current \"end\" of the galaxy as we know it and you should <b>consider yourself victorious</b>, but the galaxy is always expanding. New challenges may appear later."
+	GotoNode = "<fame_color>You have starships in this system.</fame_color>\n<btn id='General.UIClick'/> to view this star system."
+}
+
+FameTitles
+[
+	"\"Mynock Bait\""
+	"\"Nerf Herder\""
+	"\"Cantina Regular\""
+	"\"Podracer Prospect\""
+	"\"Jawa Junk Trader\""
+	"\"Bounty Fodder\""
+	"\"Smuggler's Acquaintance\""
+	"\"HoloNet Mention\""
+	"\"Bounty Hunter Trainee\""
+	"\"Scoundrel\""
+	"\"Mercenary Captain\""
+	"\"Deadly Bounty Hunter\""
+	"\"Intergalactic Trader\""
+	"\"Daring Pilot\""
+	"\"Coruscant Socialite\""
+	"\"Rogue Squadron Material\""
+	"\"Holocron Worthy\""
+	"\"Galactic Diplomat\""
+	"\"Grand Admiral\""
+	"\"Living Legend\""
+]
+
+ReputationTitles
+[
+	"Sarlacc Snack"
+	"Death Star Target"
+	"Bantha Poodoo"
+	"Mild Irritant"
+	"HoloNet Acquaintance"
+	"Cantina Buddy"
+	"Sabacc Partner"
+	"Co-Pilot Material"
+	"Wookiee Lifedebt"
+]
+
+Missions
+{
+	ResourceDelivery = "Supplies Run"
+	ResourceDeliveryDesc = "{to_ship} is requesting an emergency delivery of {target_count} {resource_icon} {resource_type_plural} within {time_limit_minutes} minutes. In addition to standard payment for each {resource_type} delivered, an extra bonus of {money} will be paid once the entire delivery has been completed."
+	Bounty = "HoloNet Bounty"
+	BountyDesc = "A fugitive <b>{target_ship}</b> class vessel is wanted for illegal activities within the {mission_location} system. Authorities from the {faction_name} have posted a bounty of {money} to be paid to any star pilot that can eliminate it."
+	FleetBounty = "Outlaw Squadron Bounty"
+	FleetBountyDesc = "A group of rogue starships is wanted for harassing and extorting civilians within the {mission_location} system. Authorities from the {faction_name} have posted a bounty of {money} to be paid to any star pilot that can eliminate them."
+	PirateHunt = "Pirate Scourge"
+	PirateHuntDesc = "Roving pirates have been attacking civilian freighters in the {mission_location} system, disrupting the trade routes of local businesses. The business owners have posted a bounty of {money} to be paid to any star pilot that can destroy {target_count} of them."
+	FactionHunt = "{target_faction} Hunter"
+	FactionHuntDesc = "The {faction_name} is in conflict with the {target_faction} and is offering payment of {money} to any private contractor who can eliminate {target_count} of their ships patrolling the {mission_location} System."
+	ClearAsteroidField = "Asteroid Field Cleanup"
+	ClearAsteroidFieldPiratesDesc = "A handful of pirates have been preying on civilian mining vessels in a nearby asteroid field. The mining guilds have posted a bounty of {money} to be paid to any star pilot that can clear the asteroid field of pirates."
+	ClearAsteroidFieldPlatformsDesc = "Pirates have constructed several stationary defense turrets in a nearby asteroid field, making it dangerous for legitimate civilian miners. The mining guilds have posted a bounty of {money} to be paid to any star pilot that can eliminate those defense turrets."
+	StationContact = "Contact {contact_ship}"
+	StationContactDesc = "{contact_ship} is requesting assistance from any available star pilots to help with a variety of missions. As an added incentive, the station's Mission Board is offering a {money} bonus to the first star pilot to visit the station."
+	StationRescue = "Station SOS"
+	StationRescueDesc = "A distress signal has been received from {contact_ship}! Raiders are attacking the station in overwhelming numbers! The station's governor is promising {money} to any star pilot who can destroy the raiders and secure the station."
+	PirateBaseDestruction = "Destroy Pirate Stronghold"
+	PirateBaseDestructionDesc = "The location of a local pirate fleet's stronghold has been discovered! These pirates have been preying on {faction_name} patrol ships within the system and must be eradicated. Authorities from the {faction_name} have posted a sizable bounty of {money} to be paid to any star pilot brave and competent enough to destroy it."
+	FactionBaseDestruction = "Destroy {target_faction} Outpost"
+	FactionBaseDestructionDesc = "The {faction_name} is in conflict with the {target_faction} and is offering payment of {money} to any private contractor who can take out one of its supply outposts in the {mission_location} System."
+	Explore = "Recon {mission_location} ({discover_perc:0}%)"
+	ExploreDesc = "Navigators from the {faction_name} are requesting data about various points of interest within the {mission_location} System."
+	VisitSystem = "Scan {mission_location}"
+	VisitSystemDesc = "A renowned astrophysicist is requesting data on stellar activity in the {mission_location} System."
+	Debug = "Debug Mission"
+	DebugDesc = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales rutrum eros. Fusce non eros a lacus luctus auctor sit amet at mi. In ac fermentum est. Nam viverra lectus eu turpis cursus vestibulum."
+}
+
+Lore
+{
+	Black_Sun
+	{
+		Title = "The Black Sun Collective"
+
+		Lore1 = "The Black Sun Collective is a notorious and clandestine criminal organization that operates in the shadows, engaging in various illicit activities and exerting significant influence over the criminal underworld."
+
+		Lore2 = "Originating as a small spice smuggling ring, the Black Sun grew into a sprawling criminal empire under the leadership of influential crime lords such as Prince Xizor. Its rise to power was marked by ruthless ambition and a willingness to eliminate rivals and competitors through intimidation, coercion, and assassination."
+
+		Lore3 = "The Black Sun Collective operates in multiple sectors of the galaxy, including the infamous Corellian Sector and the lawless Outer Rim Territories. With a vast network of operatives and informants, Black Sun maintains control over a wide range of criminal activities, including spice smuggling, illegal arms trade, piracy, and even the infiltration of legitimate businesses for money laundering and extortion."
+
+		Lore4 = "One of the Black Sun's most dangerous assets is its network of skilled and deadly mercenaries, assassins, and enforcers. The organization recruits individuals from various species and backgrounds, ensuring a diverse and highly capable workforce to carry out its criminal enterprises."
+
+		Lore5 = "Despite its notoriety, the Black Sun operates with a high degree of secrecy and discretion, making it challenging for law enforcement and other factions to dismantle its operations completely. This elusive nature has enabled the Black Sun Collective to survive and thrive for generations, evading justice and becoming a powerful force in the galaxy's criminal underworld."
+	}
+
+	CIS
+	{
+		Title = "The Confederacy of Independent Systems"
+
+		Lore1 = "The Confederacy of Independent Systems, also known as the Separatists, was a galactic faction formed during the tumultuous era of the Clone Wars, advocating for the autonomy of star systems and seeking to break away from the Galactic Republic's central authority."
+		
+		Lore2 = "Originally conceived as a political movement to address grievances against the perceived corruption and bureaucracy of the Republic, the Confederacy grew into a formidable faction under the leadership of Count Dooku, a former Jedi Master who became the Sith Lord Darth Tyranus. Secretly manipulated by Darth Sidious, the Sith Lord who would later become Emperor Palpatine, the Separatists served as a tool in the Sith's plan to destabilize the Republic and ultimately pave the way for the rise of the Galactic Empire."
+		
+		Lore3 = "The Confederacy garnered support from various star systems and corporate entities disillusioned with the Republic's perceived inefficiency and favoritism towards the Core Worlds. Key members of the Separatist cause included powerful corporations such as the Trade Federation, the Techno Union, and the Banking Clan, which provided vast resources and battle droids for the Separatist military."
+		
+		Lore4 = "The backbone of the Separatist military force was its vast army of battle droids, including B1 battle droids (commonly known as battle droids) and B2 super battle droids. These droids allowed the Confederacy to field massive armies at a relatively low cost, challenging the Republic's clone army on various fronts."
+		
+		Lore5 = "Though the Confederacy claimed to champion the cause of autonomy and independence, their methods often involved ruthless tactics and military aggression. Countless worlds were embroiled in the conflict, leading to devastating battles and loss of life. The most iconic symbol of the Confederacy's military might was the formidable droid control ship, a massive vessel that coordinated the actions of its vast droid armies during large-scale engagements."
+	}
+
+	Galactic_Empire
+	{
+		Title = "The Galactic Empire"
+
+		Lore1 = "The Galactic Empire is an authoritarian regime that emerged from the ashes of the Clone Wars, consolidating power under the leadership of Emperor Palpatine with the promise of bringing stability and order to the galaxy."
+
+		Lore2 = "Formed on the foundation of the former Galactic Republic, the Empire was the brainchild of Emperor Palpatine, also known as Darth Sidious, who manipulated political events to orchestrate the Republic's transformation into a centralized and autocratic government. Palpatine exploited the fear and chaos of the Clone Wars to instill public support for his emergency powers, ultimately declaring himself Emperor and dissolving the Republic's democratic institutions."
+
+		Lore3 = "With its capital on the ecumenopolis of Coruscant, the Empire extended its reach across the galaxy, enforcing its rule through a vast military force known as the Imperial Army and Navy. Stormtroopers, the faceless soldiers clad in white armor, symbolized the might and uniformity of the Imperial military. The Empire's dark enforcers, the Sith Lords, including Darth Vader, were feared and wielded the power of the dark side of the Force."
+
+		Lore4 = "The Imperial fleet comprised an array of technologically advanced warships, including the colossal Imperial-class Star Destroyers and the moon-sized Death Star battle stations. These intimidating vessels were used to project Imperial power and maintain control over star systems through displays of overwhelming force."
+
+		Lore5 = "While the Empire presented itself as a force for order and progress, its rule was marked by oppression, fear, and the suppression of individual freedoms. Planets that dared to challenge Imperial authority faced brutal consequences, often leading to the use of superweapons or massed military forces to crush dissent. The infamous destruction of Alderaan, a peaceful world, served as a chilling example of the Empire's willingness to exert its dominance."
+	}
+
+	Republic
+	{
+		Title = "The Republic"
+		
+		Lore1 = "The Republic was a sprawling democratic institution that served as the governing body of the galaxy for over a thousand generations, promoting cooperation, diplomacy, and the rule of law among its member worlds."
+		
+		Lore2 = "Founded on the principles of freedom and representation, the Republic emerged from the aftermath of the conflicts between the Rakatan Infinite Empire and the ancient Je'daii Order. Over time, it grew to encompass thousands of star systems, each represented in the Galactic Senate on the capital world of Coruscant."
+		
+		Lore3 = "The Jedi Order played a crucial role in the Republic's governance, serving as peacekeepers and diplomats across the galaxy. As guardians of peace and justice, the Jedi Knights adhered to a strict code, striving to maintain balance and harmony in the Force. Throughout its history, the Republic faced various threats, from the Sith to external invasions, but its strength lay in its ability to unite diverse species and cultures under a common banner."
+		
+		Lore4 = "The Republic maintained a standing military known as the Grand Army of the Republic, composed of clone troopers created from the genetic template of the bounty hunter Jango Fett. These clones were bred and trained to be loyal soldiers, fiercely defending the Republic during the Clone Wars against the Separatist forces."
+		
+		Lore5 = "Despite its many strengths, the Republic was not without flaws. Bureaucracy and political maneuvering often hindered swift action, allowing discontent and disenchantment to fester in some regions. The outbreak of the Clone Wars, orchestrated by the Sith, put the Republic to the ultimate test, challenging its core values and exposing vulnerabilities that would eventually lead to the Republic's transformation into the Galactic Empire."
+	}
+
+	Rebel_Alliance
+	{
+		Title = "The Rebel Alliance"
+
+		Lore1 = "The Rebel Alliance is a courageous and determined faction that rose in resistance against the tyrannical rule of the Galactic Empire, striving for freedom and justice across the galaxy."
+		
+		Lore2 = "Formed secretly in the early years of the Galactic Empire's dominance, the Rebel Alliance was a collective effort of various rebel cells, planetary resistance groups, and disillusioned individuals from diverse backgrounds. The Alliance's initial roots can be traced back to the Clone Wars era, where opposition to the Republic's transformation into the Empire began to take shape. Their primary goal was to restore the democratic ideals of the Old Republic and overthrow the oppressive regime of Emperor Palpatine and his Sith followers."
+		
+		Lore3 = "Throughout its existence, the Rebel Alliance established hidden bases on remote planets, using them as hubs for recruitment, training, and planning strategic strikes against the Imperial forces. Their most notable base was located on the ice planet Hoth, which served as a temporary headquarters and a refuge for the Alliance High Command. The Alliance's leadership comprised charismatic figures such as Mon Mothma, Bail Organa, and Princess Leia Organa, who inspired hope and unity among their followers."
+		
+		Lore4 = "The Rebel Alliance's military forces, known as the Alliance Fleet, consisted of a diverse array of starfighters and capital ships. Their flagship, the Mon Calamari Star Cruiser named 'Home One,' symbolized the collaborative efforts of different species in the fight for freedom. The Alliance was renowned for its skilled pilots, including the legendary Luke Skywalker, who played a crucial role in the downfall of the Empire."
+		
+		Lore5 = "As a grassroots movement, the Rebel Alliance did not seek control over the galaxy; instead, they fought to dismantle the oppressive regime and restore freedom to the citizens of the galaxy. Their struggle was not without sacrifice, and many brave individuals gave their lives for the cause. Despite facing overwhelming odds, the Rebel Alliance's resilience and determination inspired countless others to join their ranks, proving that even in the darkest times, hope can ignite the flames of rebellion."
+	}
+	
+}
+
+/*UNUSED*/
+/*
+	//Long X-Wing Cannons
+	xwingCannonLong = "RedFury Blaster Cannon"
+	xwingCannonLongIcon = "RedFury-BC"
+	xwingCannonLongLeft = "RedFury Blaster Cannon (Side)"
+	xwingCannonLongLeftIcon = "RedFury-BC (Side)"
+	xwingCannonLongDesc = "The RedFury Blaster by <cyan>Merr-Sonn Munitions</cyan>; A hard-hitting Heavy Blaster Cannon that allows for placement behind and hidden under armor pieces."
+*/
+/*
+	//TIE Repeaters
+	tieMiniguns = "TIE Repeater Cannon"
+	tieMinigunsDesc = "TIE Repeaters are small, rapid-firing weapons that allows for placement hidden behind and under armor pieces. They are inaccurate, but useful for close range engagements."
+*/
+/*
+	// SW Multipurpose Turrets
+
+	// Smaller burst damage turret
+	SWTurretA = "Tiny Turbo Laser - Burst"
+	SWTurretAIcon = "Tiny TL - Burst"
+	SWTurretADesc = "A compact yet powerful turret, the Tiny Turbo Laser - Burst version specializes in burst damage, ideal for quickly neutralizing smaller threats. This is a <orange>switchable</orange>, crew-operated Laser Cannon."
+
+	// Sturdier-looking turret
+	SWTurretB = "Tiny Turbo Laser - Heavy"
+	SWTurretBIcon = "Tiny TL - Heavy"
+	SWTurretBDesc = "The Tiny Turbo Laser - Heavy is built for durability and sustained firepower, making it effective against a wide range of targets. This is a <orange>switchable</orange>, crew-operated Laser Cannon."
+
+	// Mix of the two
+	SWTurretC = "Tiny Turbo Laser - Rapid"
+	SWTurretCIcon = "Tiny TL - Rapid"
+	SWTurretCDesc = "Combining the best of both worlds, the Tiny Turbo Laser - Rapid offers a balanced approach to both burst damage and staying power. This is a <orange>switchable</orange>, crew-operated Laser Cannon."
+
+	// Reactors
+	SWMedReactor = "Reinforced Light Reactor"
+	SWMedReactorIcon = "Light Reactor"
+	SWMedReactorDesc = "An armored reactor reinforced with durasteel; A highly-efficient light reactor designed for state-of-the-art medium and large cruisers and frigates with no extra room for outdated and ugly bulky reactor equipment."
+*/
+//	Turret = "Turret"
+//	Missile = "Missile"
+//	ProtonRocket = "Proton Torpedo"
+//	BuzzDroid = "Buzz Droid"
+//
+//	SingleRedLasershot = "Small <red>Red</red> Laser Shot"
+//	SingleBlueLasershot = "Small <blue>Blue</blue> Laser Shot"
+//	SingleGreenLasershot = "Small <green>Green</green> Laser Shot"
+//
+//	XWingLasershot = "<red>X-Wing</red> Laser Shot"
+//	BlueXWingLasershot = "<blue>X-Wing</blue> Laser Shot"
+//	GreenXWingLasershot = "<green>X-Wing</green> Laser Shot"
+//	FalconLaserCannonShot = "Falcon <red>Red</red> Laser Shot"
+//	PDLaserShot = "Point Defense Laser Shot"
+//
+//	DualRedLaserCannonshot = "Small-Light <red>Red</red> Laser Shot"
+//	DualBlueLaserCannonshot = "Small-Light <blue>Blue</blue> Laser Shot"
+//	DualGreenLaserCannonshot = "Small-Light <green>Green</green> Laser Shot"
+//
+//	LightRedTurbolasershot = "Light <red>Red</red> Laser Shot"
+//	LightBlueTurbolasershot = "Light <blue>Blue</blue> Laser Shot"
+//	LightGreenTurbolasershot = "Light <green>Green</green> Laser Shot"
+//
+//	TripleRedLasershot = "Light-Medium <red>Red</red> Laser Shot"
+//	TripleBlueLasershot = "Light-Medium <blue>Blue</blue> Laser Shot"
+//	TripleGreenLasershot = "Light-Medium <green>Green</green> Laser Shot"
+//
+//	MedRedLasershot = "Medium <red>Red</red> Laser Shot"
+//	MedBlueLasershot = "Medium<blue>Blue</blue> Laser Shot"
+//	MedGreenLasershot = "Medium <green>Green</green> Laser Shot"
+//
+//	HeavyRedLasershot = "Heavy <red>Red</red> Laser Shot"
+//	HeavyBlueLasershot = "Heavy <blue>Blue</blue> Laser Shot"
+//	HeavyGreenLasershot = "Heavy <green>Green</green> Laser Shot"
+//
+//	CISLasershot = "CIS <red>Red</red> Laser Shot"
+//	RepublicLasershot = "Republic <blue>Blue</blue> Laser Shot"
+//	ImperialLasershot = "Imperial <green>Green</green> Laser Shot"
+//	XX9RedLasershot = "XX9 <red>Red</red> Laser Shot"
+//	XX9GreenLasershot = "XX9 <green>Green</green> Laser Shot"
+//
+//	HeavyCyanIoncannonshot = "Medium Cyan <cyan>Ion</cyan> Cannon Shot"
+//	MediumCyanIoncannonshot = "Light Cyan <cyan>Ion</cyan> Cannon Shot"
+//
+//	//NEW MUNITION
+//	LargeRedTurbolaserLasershot = "Large <red>Red</red> Laser Shot"
+//	LargeBlueTurbolaserLasershot = "Large <blue>Blue</blue> Laser Shot"
+//	LargeGreenTurbolaserLasershot = "Large <green>Green</green> Laser Shot"
+//
+//	HugeRedTurbolaserLasershot = "Huge <red>Red</red> Laser Shot"
+//	HugeBlueTurbolaserLasershot = "Huge <blue>Blue</blue> Laser Shot"
+//	HugeGreenTurbolaserLasershot = "Huge <green>Green</green> Laser Shot"
+//
+//	SiegeRedTurbolaserLasershot = "Siege <red>Red</red> Laser Shot"
+//	SiegeBlueTurbolaserLasershot = "Siege <blue>Blue</blue> Laser Shot"
+//	SiegeGreenTurbolaserLasershot = "Siege <green>Green</green> Laser Shot"
+//
+//	MortarRedTurbolaserLaserShot = "Mortar <red>Red</red> Laser Shot"
+//	MortarBlueTurbolaserLaserShot = "Mortar <blue>Blue</blue> Laser Shot"
+//	MortarGreenTurbolaserLaserShot = "Mortar <green>Green</green> Laser Shot"
+//
+//	BlueArtilleryTurbolaserBeam = "Artillery <blue>Blue</blue> Turbolaser Beam"
+//
+//	RedSiegeParticleShot = "Siege <red>Red</red> Particle Shot"
+//	OrangeSiegeParticleShot = "Siege <orange>Orange</orange> Particle Shot"
+//
+//	RedSuperLaserBeam = "<red>Red</red> Superlaser Beam"
+//
+//	BlueSiegeTurbolaserBeam = "Siege <blue>Blue</blue> Turbolaser Beam"
+//
+//	TIE_WingThruster = "TIE wing thruster"
+
+//	SWStandard = "Frontier Systems (50)"
+//	SWStandardTip = "A network of 50 Star Wars systems on the edge of explored space, known for their intricate routes and shadowy dealings."
+
+/*
+CombatDifficulty
+{
+  NoDeath = "Pacifist (Invulnerable)"
+  NoDeathTip = "● Damage? What's that?\n<i><gray>(No Damage Taken)</gray></i> \n● I wouldn't hurt a mynock.\n<i><gray>(Can Build in Combat)</gray></i>"
+  
+  Easy = "Nerf Herder" 
+  EasyTip = "● I barely passed flight school.\n<i><gray>(-30% Damage Taken)</gray></i> \n● I miss more shots than a stormtrooper.\n<i><gray>(+40% Damage Delt)</gray></i>"
+
+  Normal = "Recreational Bounty Hunter"
+  NormalTip = "● I'm a decent pilot.\n<i><gray>(Normal Damage Taken)</gray></i>  \n● I hit about half my shots.\n<i><gray>(Normal Damage Delt)</gray></i>"
+
+  Hard = "Rogue Squadron"
+  HardTip = "● I graduated top of my class.\n<i><gray>(+25% Damage Taken)</gray></i>  \n●  I used to bullseye womp rats\n in my T-16 back home.\n<i><gray>(-20% Damage Delt)</gray></i>"
+
+  VeryHard = "Legendary Smuggler"
+  VeryHardTip = "● I flew the Kessel Run\n in under 12 parsecs!\n<i><gray>(+40% Damage Taken)</gray></i>  \n● I never tell the odds.\n<i><gray>(-30% Damage Delt)</gray></i>"
+}
+
+
+EconDifficulty
+{
+  FreeBuild = "Midichlorian Master"
+  FreeBuildTip = "● Unlimited force powers allow building anywhere and anytime without credits or resources. \n● Normal resource drop rates. \n● Normal credits rewards. \n● Normal reputation rewards."
+  
+  Fast = "Smuggler" 
+  FastTip = "● Resource drop rates increased 100% (shhh don't ask where they came from). \n● Credit rewards increased 100% (tax-free of course). \n● Reputation rewards increased 50% (fame spreads fast in the underworld)."
+
+  Normal = "Freelancer"
+  NormalTip = "● Normal resource drop rates. \n● Normal credit rewards. \n● Normal reputation rewards."
+
+  Slow = "Moisture Farmer"
+  SlowTip = "● Resource drop rates reduced 50% (curse this barren wasteland). \n● Credit rewards reduced 50% (water ain't free). \n● Reputation rewards reduced 25% (who cares about farmers anyway)."
+}
+*/

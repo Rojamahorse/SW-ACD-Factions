@@ -1,9 +1,14 @@
 Part : &<../xwing_cannon/xwing_cannon.rules>/Part
 {
+	//IDs
+	ID = SW.fighter_tie_minigun
+
+	//StringKeys
 	NameKey = "Parts/tieMinigun"
 	IconNameKey = "Parts/tieMinigunIcon"
-	ID = SW.fighter_tie_minigun
-	SelectionTypeID = "fighter"
+	DescriptionKey = "Parts/tieLMinigunDesc"
+	
+	//Groups&Categories
 	EditorGroups = ["WeaponsEnergy","TechI"]
 	DescriptionKey = "Parts/tieLMinigunDesc"
 	
@@ -33,6 +38,8 @@ Part : &<../xwing_cannon/xwing_cannon.rules>/Part
 		}
 		Size = [22, 64]
 	}
+	
+	//Components
 
 	Components : ^/0/Components
 	{

@@ -1,5 +1,10 @@
 Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 {
+	//IDs
+	ID = SW.tiny_defense_turret
+	OtherIDs = []
+
+	//StringKeys
 	NameKey = "Parts/PDTurretTiny"
 	IconNameKey = "Parts/PDTurretTinyIcon"
 	DescriptionKey = "Parts/PDTurretTinyDesc"
@@ -14,21 +19,32 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 		[steel, 20]
 		[coil, 20]
 	]
-	AIValue = 1
-	TypeCategories = [weapon, defense, point_defense]
 	Size = [1, 1]
+	MaxHealth = 2000
+	
+	//Rects
+	
+	//Selections
 	SelectionPriority = 1
 	SelectionTypeByRotation = true
-	MaxHealth = 2000
-	InitialPenetrationResistance = 2
 	PenetrationRectType = Normal
-	ProhibitedBy : ^/0/ProhibitedBy [tall]
+	
+	//PartSpecific
+	AIValue = 1
+	InitialPenetrationResistance = 2
+	
+	//ReceivableBuffs
+	//ProhibitedBy : ^/0/ProhibitedBy [tall]
+	
+	//Doors&Etc
 //	AllowedDoorLocations
 //	[
 //		[-1, 0]
 //		[1, 0]
 //		[0, 1]
 //	]
+	
+	//Editor
 	EditorIcon
 	{
 		Texture
@@ -38,6 +54,8 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 		}
 		Size = [32, 32]
 	}
+	
+	//Components
 	Components : ^/0/Components
 	{
 		IsOperational
@@ -59,7 +77,7 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 		{
 			Type = CommandConsumer
 			OperationalToggle = PowerToggle
-			CommandPoints = 1
+			CommandPoints = 2
 		}
 
 		FireModeToggle
@@ -67,6 +85,7 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 			Type = UIToggle
 			ToggleID = "fire_mode"
 			Default = 1
+			AvailableChoices = [-1, 1, 2]
 			ToggledOnChoices = [0, 1, 2]
 		}
 		AutoTargetToggle
@@ -81,6 +100,12 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 			Mode = FireModeToggle
 			OnMode = 2
 		}
+		FireAlternatingToggle
+		{
+			Type = UIToggle
+			ToggleID = "fire_alternating"
+			Default = 0
+		}
 
 		FirePrefToggle
 		{
@@ -88,6 +113,7 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 			ToggleID = "fire_pref"
 			Default = 1
 		}
+
 		FirePrefAttack
 		{
 			Type = ModeToggle
@@ -103,13 +129,13 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 		AttackToggle
 		{
 			Type = MultiToggle
-			Toggles = [FireModeToggle, FirePrefAttack]
+			Toggles = [AutoTargetToggle, FirePrefAttack]
 			Mode = All
 		}
 		DefendToggle
 		{
 			Type = MultiToggle
-			Toggles = [FireModeToggle, FirePrefDefend]
+			Toggles = [AutoTargetToggle, FirePrefDefend]
 			Mode = All
 		}
 
@@ -117,17 +143,17 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 		{
 			Type = ResourceStorage
 			ResourceType = battery
-			MaxResources = 1500			
+			MaxResources = 2000			
+			ReceiveResourceMediaEffects = &/COMMON_EFFECTS/PowerDeliver
 		}
 		BatteryConsumer
 		{
 			Type = ResourceConsumer
 			ResourceType = battery
 			Storage = BatteryStorage
+			ResupplyThreshold = 1
 			DefaultPriority = &/PRIORITIES/Defense_Supply
-			ResupplyThreshold = 500
 			OperationalToggle = PowerToggle
-			ReceiveResourceMediaEffects = &/COMMON_EFFECTS/PowerDeliver
 		}
 
 		InsideTurretGraphics
@@ -258,20 +284,21 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 			Rotation = -90d// Relative to unrotated part.
 			OperationalToggle = IsOperational
 			AutoFireToggle = AutoFireToggle
-			FireInterval = .7
+			FireInterval = .1 //2/30 //.5
 			FiringArc = 360d
 			RotateSpeed = 180d
 			FireThresholdAngle = 1d
 			AIFirepowerRating = 150
 			CanBeGivenExplicitTarget = false
 			Emitter = BaseEmitter
-			TargetingRange = 180
-			TargetingArc = 360
 			TargetSearchesPerSecond = 4 // Default is 2.
 			HoldTargetAfterDeath = .5
 			TargetPathThickness = .2// &../BulletEmitter/Bullet/Components/Physics/Radius
 			EstimateFirepowerToggle = AttackToggle
+			AlwaysShowCoverage = true
 			AllowDirectControl = false
+			FirePermissionToggle = FireModeToggle
+			AutoTargetCrewSafetyDist = 8
 			IgnoreSourceShipLowLOSChecks = true
 
 			AutoTargets
@@ -279,11 +306,11 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 				{
 					TargetType = Bullets
 					BulletTargetCategories = [missile, mine, bullet]
-					Toggle = FirePrefDefend
+					Toggle = DefendToggle
 				}
 				{
 					TargetType = ShipParts
-					Toggle = FirePrefAttack
+					Toggle = AttackToggle
 					Overridable = true
 				}
 			]
@@ -296,45 +323,157 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 			}
 			BlueprintArcRadius = 10
 			BlueprintArcSpriteSegments = 64
+
+			CoverageSectorArc
+			{
+				Texture = &/INDICATORS/VerticalGradient
+				VertexColor = [255, 255, 255, 51]
+				QuadCount = 64
+			}
+
 		}
 
-		ReloadProgressBar
+		ShootSynchronizedComponents
 		{
-			Type = ProgressBar
-			ShowProgressFor = Turret
+			Type = ToggledComponents
+			Toggle = FireAlternatingToggle
+			Invert = true
+			Components
+			{
+				FireTimer
+				{
+					Type = Timer
+					OperationalToggle = IsOperational
+					Duration = .7*2//1.25*2
+					AutoStart = true
+					StartTrigger = Turret
+				}
+
+				ReloadProgressBar
+				{
+					Type = ProgressBar
+					OperationalToggle = IsOperational
+					ShowProgressFor = FireTimer
+					Invert = true
+				}
+
+				ShootLeftTrigger
+				{
+					Type = TriggerProxy
+					ComponentID = Turret
+				}
+
+				ShootRightTrigger
+				{
+					Type = TriggerProxy
+					ComponentID = Turret
+				}
+			}
+		}
+
+		ShootAlternatingComponents
+		{
+			Type = ToggledComponents
+			Toggle = FireAlternatingToggle
+			Components
+			{
+				FireTimer
+				{
+					Type = Timer
+					OperationalToggle = IsOperational
+					Duration = .7 //1.25
+					AutoStart = true
+					StartTrigger = Turret
+				}
+
+				ReloadProgressBar
+				{
+					Type = ProgressBar
+					OperationalToggle = IsOperational
+					ShowProgressFor = FireTimer
+					Invert = true
+				}
+
+				ShootCycle
+				{
+					Type = ModeCycle
+					ModeRange = [0, 1]
+					IncrementTrigger = Turret
+					StartingMode = 1 // First shot will switch to mode 0.
+				}
+
+				ShootLeftTrigger
+				{
+					Type = ModeTrigger
+					Mode = ShootCycle
+					TriggerInModes = [0]
+				}
+
+				ShootRightTrigger
+				{
+					Type = ModeTrigger
+					Mode = ShootCycle
+					TriggerInModes = [1]
+					OperationalToggle = FireAlternatingToggle
+				}
+			}
+		}
+
+		FireTimerProxy
+		{
+			Type = ToggleProxy
+			ComponentID = FireTimer
+		}
+		FirePermissionToggle
+		{
+			Type = MultiToggle
+			Toggles = [FireTimerProxy, FireModeToggle]
+			Mode = All
+		}
+
+		ShootTrigger1
+		{
+			Type = TriggerProxy
+			ComponentID = ShootLeftTrigger
+		}
+		ShootTrigger2
+		{
+			Type = TriggerProxy
+			ComponentID = ShootRightTrigger
 		}
 		
 		BaseEmitter
 		{
 			Type = BulletEmitter
 			ChainedTo = Turret
-			FireTrigger = Turret
+			FireTrigger // = Turret
 			GetTargetFrom = Turret
 			Location = [0, 0]
 			OperationalToggle = IsOperational
 			Bullet = &<pd_shot/pd_shot.rules>
-			Spread = [-5d, 5d]
+//			Spread = [-1d, 1d]
 			ResourceStorage = BatteryStorage
-			ResourcesUsed = 50 //20
-			Burst = 2 //3
-			BurstDelay = .075
-			UseResourcePerShotInBurst = true
+			ResourcesUsed = 250 //20
+			MinResourcesUsed = 1
+			//Burst = 2 //3
+			//BurstDelay = .075
+			//UseResourcePerShotInBurst = true
 //			Recoil = 240
 		}
 
 		Emitter1 : BaseEmitter
 		{
-			Location = [1, 0] //-.25
-			ChainedTo = BaseEmitter
-			FireTrigger = Turret
+			Location = [1, -.15] //-.25
+			//ChainedTo = BaseEmitter
+			FireTrigger = ShootTrigger1
 			ResourceStorage = BatteryStorage
 		}
 
 		Emitter2 : BaseEmitter
 		{
-			Location = [1, 0] //.25
-			ChainedTo = BaseEmitter
-			FireTrigger = Turret
+			Location = [1, .15] //.25
+			//ChainedTo = BaseEmitter
+			FireTrigger = ShootTrigger2
 			ResourceStorage = BatteryStorage
 		}
 
@@ -343,7 +482,7 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 			Type = TriggeredEffects
 			ChainedTo = Emitter1
 			Trigger = Emitter1
-			AnchorMediaEffects = true
+			//AnchorMediaEffects = true
 			Location = [0.5, 0]
 
 			MediaEffects
@@ -362,11 +501,11 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 		}
 		FireEffect2 : FireEffect1
 		{
-			Type = TriggeredEffects
+			//Type = TriggeredEffects
 			ChainedTo = Emitter2
 			Trigger = Emitter2
 			Location = [-0.5, 0]
-			AnchorMediaEffects = true
+			//AnchorMediaEffects = true
 
 			MediaEffects
 			[
@@ -387,7 +526,7 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 		{
 			Type = Graphics
 			ChainedTo = Turret
-			Location = [0, 0]
+			//Location = [0, 0]
 			Rotation = 90d
 			OperationalToggle = IsOperational
 			OperationalDoodad
@@ -443,37 +582,80 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 			Location = [.15, 0]
 			Rotation = 90d
 			Layer = "roof_doodads"
-			ResetAnimationTrigger = BaseEmitter
+			ResetAnimationTrigger = Emitter1
 			AtlasSprite
 			{
 				AnimationFiles
 				[
 					//"barrel1.png"
-					"barrels2.png"
-					"barrels3.png"
-					"barrels4.png"
-					"barrels5.png"
-					"barrels6.png"
-					"barrels7.png"
-					"barrels8.png"
-					"barrels9.png"
-					"barrels1.png"// Loop back to beginning and clamp there.
+					"barrels2a.png"
+					"barrels3a.png"
+					"barrels4a.png"
+					"barrels5a.png"
+					"barrels6a.png"
+					"barrels7a.png"
+					"barrels8a.png"
+					"barrels9a.png"
+					"barrels1a.png"// Loop back to beginning and clamp there.
 				]
 				NormalsAnimationFiles
 				[
 					//"barrel1_normals.png"
-					"barrels2_normals.png"
-					"barrels3_normals.png"
-					"barrels4_normals.png"
-					"barrels5_normals.png"
-					"barrels6_normals.png"
-					"barrels7_normals.png"
-					"barrels8_normals.png"
-					"barrels9_normals.png"
-					"barrels1_normals.png"// Loop back to beginning and clamp there.
+					"barrels2_normalsa.png"
+					"barrels3_normalsa.png"
+					"barrels4_normalsa.png"
+					"barrels5_normalsa.png"
+					"barrels6_normalsa.png"
+					"barrels7_normalsa.png"
+					"barrels8_normalsa.png"
+					"barrels9_normalsa.png"
+					"barrels1_normalsa.png"// Loop back to beginning and clamp there.
 				]
 				Size = [1, 1]
-				AnimationInterval = 0.01
+				AnimationInterval = 0.04
+				AnimationStartTime = MinValue
+				ClampAnimation = true
+			}
+		}
+
+		BarrelSprite2
+		{
+			Type = Sprite
+			ChainedTo = Turret
+			Location = [.15, 0]
+			Rotation = 90d
+			Layer = "roof_doodads"
+			ResetAnimationTrigger = Emitter2
+			AtlasSprite
+			{
+				AnimationFiles
+				[
+					//"barrel1.png"
+					"barrels2b.png"
+					"barrels3b.png"
+					"barrels4b.png"
+					"barrels5b.png"
+					"barrels6b.png"
+					"barrels7b.png"
+					"barrels8b.png"
+					"barrels9b.png"
+					"barrels1b.png"// Loop back to beginning and clamp there.
+				]
+				NormalsAnimationFiles
+				[
+					//"barrel1_normals.png"
+					"barrels2_normalsb.png"
+					"barrels3_normalsb.png"
+					"barrels4_normalsb.png"
+					"barrels5_normalsb.png"
+					"barrels6_normalsb.png"
+					"barrels7_normalsb.png"
+					"barrels8_normalsb.png"
+					"barrels9_normalsb.png"
+					"barrels1_normalsb.png"// Loop back to beginning and clamp there.
+				]
+				Size = [1, 1]
+				AnimationInterval = 0.04
 				AnimationStartTime = MinValue
 				ClampAnimation = true
 			}
@@ -557,9 +739,9 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 	{
 		PowerCapacity = (&~/Part/Components/BatteryStorage/MaxResources) / 1000
 
-		MinPower = (&../StatsByCategory/0/Stats/PowerPerSecond) / 2
+//		MinPower = (&../StatsByCategory/0/Stats/PowerPerSecond) / 2
 		RecPower = &../StatsByCategory/0/Stats/PowerPerSecond
-		MinCrew = (&MinPower) * 2
+//		MinCrew = (&MinPower) * 2
 		RecCrew = (&RecPower) * 4
 	}
 
@@ -572,11 +754,12 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 				DamagePerShot = &~/Part/Components/BaseEmitter/Bullet/Components/Hit/HitOperational/HitEffects/0/Damage
 				DamagePerSecond = (&DamagePerShot) * (&ROF)
 				Damage = [&../DamagePerShot, &../DamagePerSecond]
-				Salvo = [(&~/Part/Components/BaseEmitter/Burst), (&~/Part/Components/Turret/FireInterval)]
-				ROF = 1 / (&~/Part/Components/Turret/FireInterval)
+				//Salvo = [(&~/Part/Components/BaseEmitter/Burst), (&~/Part/Components/Turret/FireInterval)]
+				ROF = 1 / (&~/Part/Components/ShootAlternatingComponents/Components/FireTimer/Duration)
+				//ROF = 1 / (&~/Part/Components/Turret/FireInterval)
 				Range = &~/Part/Components/BaseEmitter/Bullet/Range
 				Arc = deg(&~/Part/Components/Turret/FiringArc)
-				Spread = deg(&~/Part/Components/BaseEmitter/Spread/1)
+//				Spread = deg(&~/Part/Components/BaseEmitter/Spread/1)
 				TurretSpeed = deg(&~/Part/Components/Turret/RotateSpeed)
 				ShotSpeed = &~/Part/Components/BaseEmitter/Bullet/Speed
 //				ShotHP = &~/Part/Components/BaseEmitter/Bullet/Components/Targetable/Health

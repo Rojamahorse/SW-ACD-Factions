@@ -1,12 +1,19 @@
 Spawners
 [
-	: <./Data/galaxy_map/map_generators/base_galaxy.rules>/MapNodes //base_galaxy without all the extra
+	: &<map_generators/sw_galaxy_Chaos.rules>/MapNodes
+//	: <./Data/galaxy_map/map_generators/base_galaxy.rules>/MapNodes //base_galaxy without all the extra
 	{
 		Count = 50
 	}
-	
+
+	&<map_generators/sw_galaxy_Chaos.rules>/Factions
+	&<map_generators/sw_galaxy_Chaos.rules>/FactionTiers
+	&<map_generators/sw_galaxy_Chaos.rules>/StartingNodePicker
+	&<map_generators/sw_galaxy_Chaos.rules>/ProgressionTiers
+/*
 	&<map_generators/vanilla_galaxy.rules>/Factions
 	&<map_generators/vanilla_galaxy.rules>/FactionTiers
 	&<map_generators/vanilla_galaxy.rules>/StartingNodePicker
 	&<map_generators/vanilla_galaxy.rules>/ProgressionTiers
+*/
 ]

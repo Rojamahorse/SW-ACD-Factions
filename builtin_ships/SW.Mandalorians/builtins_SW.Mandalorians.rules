@@ -1,8 +1,0 @@
-Ships :
-	<Combat/builtins_SW.CIS_combat.rules>/Ships
-	<Defense/builtins_SW.CIS_defense.rules>/Ships
-	<Civilian/builtins_SW.CIS_civilian.rules>/Ships
-	<Stations/builtins_SW.CIS_stations.rules>/Ships
-[
-
-]
