@@ -7,8 +7,12 @@ Part :  <./Data/ships/terran/base_part_terran.rules>/Part
 	EditorGroups = ["WeaponsEnergy","TechI"]
 	FlipWhenLoadingIDs = [SW.fighter_rg_9_cannon_right/*,SW.a_wing_laserR*/]
 	DescriptionKey = "Parts/RG9CannonLeftDesc"
-	IsFlippable = true
-	SelectionTypeID = "fighter"
+	
+	//Groups&Categories
+	EditorGroups = ["WeaponsEnergy","SWTechI"]
+	TypeCategories = [weapon, uses_power]
+	
+	//Resources&Size&Health
 	Resources
 	[
 		[steel, 22]

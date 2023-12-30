@@ -6,6 +6,24 @@ Part : &<../xwing_cannon/xwing_cannon.rules>/Part
 	SelectionTypeID = "fighter"
 	EditorGroups = ["WeaponsEnergy","TechI"]
 	DescriptionKey = "Parts/tieLMinigunDesc"
+	
+	//Groups&Categories
+	EditorGroups = ["WeaponsEnergy","SWTechI"]
+	
+	//Resources&Size&Health
+	
+	//Rects
+	
+	//Selections
+	SelectionTypeID = "fighter"
+	
+	//PartSpecific
+	
+	//ReceivableBuffs
+	
+	//Doors&Etc
+	
+	//Editor
 	EditorIcon
 	{
 		Texture

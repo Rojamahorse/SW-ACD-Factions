@@ -2,10 +2,13 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 {
 	NameKey = "Parts/PDTurretTiny"
 	IconNameKey = "Parts/PDTurretTinyIcon"
-	ID = SW.tiny_defense_turret
-	OtherIDs = []
-	EditorGroups = ["WeaponsEnergy","Defenses","TechI"]
 	DescriptionKey = "Parts/PDTurretTinyDesc"
+	
+	//Groups&Categories
+	EditorGroups = ["WeaponsEnergy","Defenses","SWTechI"]
+	TypeCategories = [weapon, defense, point_defense]
+	
+	//Resources&Size&Health
 	Resources
 	[
 		[steel, 20]

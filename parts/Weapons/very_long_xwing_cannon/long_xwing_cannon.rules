@@ -4,8 +4,13 @@ Part : &<../xwing_cannon/xwing_cannon.rules>/Part
 	ID = SW.fighter_very_long_xwing_cannon
 	IconNameKey = "Parts/xwingCannonXLongIcon"
 	DescriptionKey = "Parts/xwingCannonXLongDesc"
-	EditorGroups = ["WeaponsEnergy","TechI"]
-
+	
+	//Groups&Categories
+	EditorGroups = ["WeaponsEnergy","SWTechI"]
+	
+	//Resources&Size&Health
+	
+	//Rects
 	ProhibitRects
 	[
 		[fighter, [0, -4, 1, 4]]

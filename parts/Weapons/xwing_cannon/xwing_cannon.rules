@@ -5,7 +5,12 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 	ID = SW.fighter_xwing_cannon
 	EditorGroups = ["WeaponsEnergy","TechI"]
 	DescriptionKey = "Parts/xwingCannonDesc"
-	SelectionTypeID = "f_cannons"
+	
+	//Groups&Categories
+	EditorGroups = ["WeaponsEnergy","SWTechI"]
+	TypeCategories = [weapon, uses_power]
+	
+	//Resources&Size&Health
 	Resources
 	[
 		[steel, 12]

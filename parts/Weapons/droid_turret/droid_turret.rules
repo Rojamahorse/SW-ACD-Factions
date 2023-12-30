@@ -2,10 +2,13 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 {
 	NameKey = "Parts/DroidTurret"
 	IconNameKey = "Parts/DroidTurretIcon"
-	ID = SW.droid_turret
-	OtherIDs = []
-	EditorGroups = ["WeaponsEnergy","Defenses", "TechI"]
 	DescriptionKey = "Parts/DroidTurretDesc"
+	
+	//Groups&Categories
+	EditorGroups = ["WeaponsEnergy","Defenses", "SWTechI"]
+	TypeCategories = [weapon, uses_power, is_crewed]
+	
+	//Resources&Size&Health
 	Resources
 	[
 		[steel, 50]
