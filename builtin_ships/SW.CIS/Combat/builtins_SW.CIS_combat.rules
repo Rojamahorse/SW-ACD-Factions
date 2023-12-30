@@ -39,11 +39,11 @@ Ships
 	:~{ File="Providence-Class Dreadnought Mk2.ship.png"; 									Tier=13;  Difficulty=1; }
 	:~{ File="Gozanti-Class Cruiser (CIS).ship.png"; 										Tier=6;   Difficulty=1; }
 	:~{ File="Gozanti-Class Cruiser (CIS) Alt.ship.png"; 									Tier=7;   Difficulty=1; }
-	:~{ File="Subjugator-Class Heavy Cruiser.ship.png";        								Tier=14;  Difficulty=2; }
+	:~{ File="CIS-Subjugator-Class Heavy Cruiser.ship.png";        								Tier=14;  Difficulty=2; }
 	:~{ File="Diamond-Class Cruiser.ship.png";        										Tier=12;  Difficulty=1; }
 	:~{ File="Invisible Hand 2 alt.ship.png";        										Tier=13;  Difficulty=2; }
 	:~{ File="Invisible Hand 2.ship.png";        											Tier=13;  Difficulty=2; }
-	:~{ File="Subjugator-Class Heavy R Cruiser.ship.png";        							Tier=15;  Difficulty=2; }
+	:~{ File="CIS-Subjugator-Class Heavy R Cruiser.ship.png";        							Tier=15;  Difficulty=2; }
 	:~{ File="Providence-Class Dreadnought.ship.png";          								Tier=16;  Difficulty=2; }
 	:~{ File="Munificent-Class Star Frigate 2.ship.png"; 									Tier=14;  Difficulty=2; }
 	:~{ File="Munificent-Class Star Frigate 2R.ship.png"; 									Tier=15;  Difficulty=2; }
