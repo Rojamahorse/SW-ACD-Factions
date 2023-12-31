@@ -31,7 +31,7 @@ Ships
 	:~{ File="Emp_TIE Reaper.ship.png";										Tier=4;	 	Difficulty=2; } //Neojino
 	:~{ File="Emp_TIE SA Bomber.ship.png";									Tier=3;	 	Difficulty=2; } //Neojino
 	:~{ File="Emp TIE Reaper.ship.png";										Tier=5;	 	Difficulty=2; }
-	:~{ File="Imperial Heavy Cargo Shuttle.ship.png";						Tier=6;	 	Difficulty=1; } //Neojino
+	:~{ File="Emp Imperial Heavy Cargo Shuttle.ship.png";					Tier=6;	 	Difficulty=1; /*OtherIDs=["Imperial Heavy Cargo Shuttle"]*/ } //Neojino
 	:~{ File="Emp_TIE bat.ship.png";										Tier=2;	 	Difficulty=1; } //Neojino
 	:~{ File="Emp_TIE bat Elite.ship.png";									Tier=2;	 	Difficulty=2; } //Neojino
 	:~{ File="Emp_TIE knift.ship.png";										Tier=3;	 	Difficulty=1; } //Neojino
