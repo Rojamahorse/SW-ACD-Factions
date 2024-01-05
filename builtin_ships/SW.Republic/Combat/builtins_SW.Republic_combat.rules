@@ -12,7 +12,7 @@ Ships
 	:~{ File="Rep A-Wing Starfighter NRep.ship.png";      									Tier=3;  Difficulty=2; }
 	:~{ File="Rep A-Wing Starfighter.ship.png";      										Tier=3;  Difficulty=2; }
 	:~{ File="Republic Eta-2 Actis-Class Alt.ship.png";      								Tier=1;  Difficulty=1; }
-	:~{ File="Republic Eta-2 Actis-Class Mk2.ship.png";      								Tier=1;  Difficulty=2; }
+	:~{ File="Republic Eta-2 Actis-Class Mk2.ship.png";      								Tier=3;  Difficulty=2; }
 	:~{ File="Republic Eta-2 Actis-Class Mk3.ship.png";      								Tier=1;  Difficulty=2; }
 	:~{ File="Republic E-Wing Starfighter.ship.png";      									Tier=4;  Difficulty=1; }
 	:~{ File="BTL-A4 Y-Wing Bomber.ship.png";      											Tier=1;  Difficulty=1; }

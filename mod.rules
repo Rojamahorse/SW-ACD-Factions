@@ -20,6 +20,11 @@ Add SW Crew
 ShipLibraries
 [
     {
+        Folder = "builtin_ships/SW.Starter"
+        NameKey = "SWFactionsStarters"
+        TooltipKey = "SWFactionsStartersTip" 
+    }
+    {
         Folder = "builtin_ships/SW.Black_Sun/Combat"
         NameKey = "SWFactionsBlacksun"
         TooltipKey = "SWFactionsBlacksunTip" 

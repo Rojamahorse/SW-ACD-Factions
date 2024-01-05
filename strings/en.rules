@@ -134,6 +134,9 @@ SWFactionsRebelAllianceTip = "A collection of Star Wars Factions Rebel Alliance 
 SWFactionsRepublic = "SW Factions: Republic"
 SWFactionsRepublicTip = "A collection of Star Wars Factions Republic ships"
 
+SWFactionsStarters = "SW Factions: Starter Ships"
+SWFactionsStartersTip = "A collection of Star Wars Factions Starter Ships"
+
 
 DecalGroups
 {
