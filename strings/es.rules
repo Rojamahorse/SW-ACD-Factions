@@ -215,6 +215,22 @@ Advanced = "Ajustes del Holocrón"
 AdvancedInfo = "¡Retoca el tejido del cosmos aquí! Estas opciones te permiten remodelar el juego lejos de su destino original. Toca a tu propio riesgo, pero recuerda, la Fuerza es más divertida cuando es un poco impredecible."
 }
 
+CrewScarcity
+{
+	Max = "Convergencia Galáctica"
+	MaxTip = "Con la impresionante cantidad de <yellow>3000</yellow> tripulantes disponibles para contratar, es como organizar una cumbre intergaláctica en tu nave estelar. Perfecto para comandantes que disfrutan de una tripulación bulliciosa y diversa, asegurando que ningún rincón de la galaxia quede inexplorado."
+	SWPlentifulPlus = "Asamblea Jedi"
+	SWPlentifulPlusTip = "Este nivel ofrece un <good>100%</good> más de tripulantes, hasta un estelar <yellow>3000</yellow>. Es como convocar un cónclave Jedi: muchas manos hábiles para cada tarea. Ideal para capitanes que quieren la fuerza de un pequeño ejército, menos los sables de luz."
+	SWPlentiful = "Congregación de la Cantina"
+	SWPlentifulTip = "Con un <good>66%</good> más de tripulantes, hasta <yellow>2500</yellow>, se asemeja a una noche concurrida en la Cantina de Mos Eisley. Un grupo diverso y animado, listo para enfrentar cualquier desafío en la galaxia. Genial para aquellos que aprecian una tripulación tan variada como los clientes de una taberna de Tatooine."
+	Plentiful = "Reunión Rebelde"
+	PlentifulTip = "Con un <good>33%</good> más de tripulantes, alcanzando hasta <yellow>2000</yellow>, este nivel refleja una reunión de la Alianza Rebelde. Es perfecto para capitanes que desean una tripulación robusta, cada miembro tan animado y dedicado como un luchador por la libertad de Yavin IV."
+	Standard = "Estándar"
+	StandardTip = "La cantidad estándar de tripulantes estará disponible para contratar dependiendo de la fama del jugador, hasta <yellow>1500</yellow>."
+	Scarce = "Tripulación de Contrabandistas"
+	ScarceTip = "Ofreciendo un <bad>33%</bad> menos de tripulantes, con un máximo de <yellow>1000</yellow>, este nivel es como reunir una tripulación compacta de contrabandistas. Cada miembro es tan crucial como un copiloto en la Carrera de Kessel, haciendo que cada viaje sea una aventura emocionante y estratégica."
+}
+
 
 CombatDifficulty
 {

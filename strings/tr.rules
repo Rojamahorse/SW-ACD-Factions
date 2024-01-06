@@ -224,6 +224,23 @@ Advanced = "Holocron Settings"
 AdvancedInfo = "Tweak the fabric of the cosmos here! These options let you reshape the game far from its original destiny. Tinker at your own risk, but remember, the Force is more fun when it's a bit unpredictable."
 }
 
+CrewScarcity
+{
+	Max = "Galaktik Yakınlaşma"
+	MaxTip = "<yellow>3000</yellow> mürettebatın işe alınabilir olması, uzay geminizde bir galaksi zirvesi düzenlemek gibi. Çeşitli ve canlı bir mürettebatın keyfini çıkaran komutanlar için mükemmel, galaksinin hiçbir köşesinin keşfedilmemiş kalmamasını sağlar."
+	SWPlentifulPlus = "Jedi Meclisi"
+	SWPlentifulPlusTip = "Bu seviye, yıldız gibi parlayan <yellow>3000</yellow>'e kadar <%100> fazla mürettebat sunar. Bir Jedi konklavını toplamak gibi - her iş için yetenekli eller. Işıç kılıçları olmaksızın küçük bir ordu gücünü isteyen kaptanlar için ideal."
+	SWPlentiful = "Kantina Topluluğu"
+	SWPlentifulTip = "<yellow>2500</yellow>'e kadar <%66> fazla mürettebat ile, Mos Eisley Kantinası'nda yoğun bir geceye benzer. Galaksinin her meydan okumasına hazır çeşitli ve canlı bir grup. Tatooine tavernasının müdavimleri kadar çeşitli bir mürettebatı takdir edenler için harika."
+	Plentiful = "İsyan Toplantısı"
+	PlentifulTip = "<yellow>2000</yellow>'e kadar <%33> fazla mürettebat ile, bir İsyan Birliği toplantısını yansıtır. Yavin IV'teki bir özgürlük savaşçısı kadar coşkulu ve adanmış her üyesiyle sağlam bir mürettebat isteyen kaptanlar için mükemmel."
+	Standard = "Standart"
+	StandardTip = "Oyuncunun şöhretine bağlı olarak, en fazla <yellow>1500</yellow> standart sayıda mürettebat işe alınabilir."
+	Scarce = "Kaçakçı Mürettebatı"
+	ScarceTip = "En fazla <yellow>1000</yellow> ile <%33> daha az mürettebat sunar, bu seviye sıkı sıkıya bağlı bir kaçakçı ekibi toplamak gibidir. Her üye, Kessel Koşusu'nda bir yardımcı pilot kadar önemlidir, her yolculuğu heyecan verici ve stratejik bir maceraya dönüştürür."
+}
+
+
 CombatDifficulty
 {
   NoDeath = "Pacifist (Invulnerable)"

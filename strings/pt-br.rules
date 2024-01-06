@@ -214,6 +214,23 @@ Advanced = "Holocron Settings"
 AdvancedInfo = "Tweak the fabric of the cosmos here! These options let you reshape the game far from its original destiny. Tinker at your own risk, but remember, the Force is more fun when it's a bit unpredictable."
 }
 
+CrewScarcity
+{
+	Max = "Convergência Galáctica"
+	MaxTip = "Com impressionantes <yellow>3000</yellow> tripulantes disponíveis para contratação, é como hospedar uma cúpula intergaláctica na sua nave estelar. Perfeito para comandantes que apreciam uma tripulação agitada e diversificada, garantindo que nenhum canto da galáxia fique inexplorado."
+	SWPlentifulPlus = "Assembleia Jedi"
+	SWPlentifulPlusTip = "Este nível oferece <good>100%</good> a mais de tripulantes, até um estelar <yellow>3000</yellow>. É como convocar um conclave Jedi - muitas mãos habilidosas para cada tarefa. Ideal para capitães que desejam a força de um pequeno exército, menos os sabres de luz."
+	SWPlentiful = "Congregação da Cantina"
+	SWPlentifulTip = "Com <good>66%</good> a mais de tripulantes, até <yellow>2500</yellow>, é como uma noite agitada na Cantina de Mos Eisley. Um grupo diverso e animado, pronto para enfrentar qualquer desafio na galáxia. Ótimo para aqueles que apreciam uma tripulação tão variada quanto os frequentadores de uma taverna em Tatooine."
+	Plentiful = "Reunião Rebelde"
+	PlentifulTip = "Com <good>33%</good> a mais de tripulantes, chegando a <yellow>2000</yellow>, este nível reflete um encontro da Aliança Rebelde. Perfeito para capitães que desejam uma tripulação robusta, cada membro tão animado e dedicado quanto um lutador pela liberdade de Yavin IV."
+	Standard = "Padrão"
+	StandardTip = "O número padrão de tripulantes estará disponível para contratação dependendo da fama do jogador, até <yellow>1500</yellow>."
+	Scarce = "Tripulação de Contrabandistas"
+	ScarceTip = "Oferecendo <bad>33%</bad> menos tripulantes, limitado a <yellow>1000</yellow>, este nível é como montar uma tripulação de contrabandistas unida. Cada membro é tão crucial quanto um copiloto na Corrida de Kessel, tornando cada jornada uma aventura emocionante e estratégica."
+}
+
+
 CombatDifficulty
 {
   NoDeath = "Pacifist (Invulnerable)"

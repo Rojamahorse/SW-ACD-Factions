@@ -1,0 +1,61 @@
+
+CrewScarcityLevels
+[
+	{
+		ID = "max"
+		NameKey = "CrewScarcity/Max"
+		TipKey = "CrewScarcity/MaxTip"
+		CrewFamePrereqFameRange = [0, &<tier_tables.rules>/MaxFame]
+		CrewFamePrereqFameRoundToMultiple = 5
+		CrewFamePrereqCountRange = [3000, 3000]
+	}
+
+	{
+		ID = "swplentifulplus"
+		NameKey = "CrewScarcity/SWPlentifulPlus"
+		TipKey = "CrewScarcity/SWPlentifulPlusTip"
+		CrewFamePrereqFameRange = [0, &<tier_tables.rules>/MaxFame]
+		CrewFamePrereqFameRoundToMultiple = 5
+		CrewFamePrereqCountRange = [48, 3000]
+	}
+
+
+	{
+		ID = "swplentiful"
+		NameKey = "CrewScarcity/SWPlentiful"
+		TipKey = "CrewScarcity/SWPlentifulTip"
+		CrewFamePrereqFameRange = [0, &<tier_tables.rules>/MaxFame]
+		CrewFamePrereqFameRoundToMultiple = 5
+		CrewFamePrereqCountRange = [40, 2500]
+	}
+
+	
+	{
+		ID = "plentiful"
+		NameKey = "CrewScarcity/Plentiful"
+		TipKey = "CrewScarcity/PlentifulTip"
+		CrewFamePrereqFameRange = [0, &<tier_tables.rules>/MaxFame]
+		CrewFamePrereqFameRoundToMultiple = 5
+		CrewFamePrereqCountRange = [32, 2000]
+	}
+
+	{
+		ID = "standard"
+		NameKey = "CrewScarcity/Standard"
+		TipKey = "CrewScarcity/StandardTip"
+		IsDefault = true
+		CrewFamePrereqFameRange = [0, &<tier_tables.rules>/MaxFame]
+		CrewFamePrereqFameRoundToMultiple = 5
+		CrewFamePrereqCountRange = [24, 1500]
+	}
+
+	{
+		ID = "scarce"
+		NameKey = "CrewScarcity/Scarce"
+		TipKey = "CrewScarcity/ScarceTip"
+		CrewFamePrereqFameRange = [0, &<tier_tables.rules>/MaxFame]
+		CrewFamePrereqFameRoundToMultiple = 5
+		CrewFamePrereqCountRange = [16, 1000]
+	}
+
+]

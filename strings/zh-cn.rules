@@ -216,6 +216,23 @@ Advanced = "Holocron Settings"
 AdvancedInfo = "Tweak the fabric of the cosmos here! These options let you reshape the game far from its original destiny. Tinker at your own risk, but remember, the Force is more fun when it's a bit unpredictable."
 }
 
+CrewScarcity
+{
+	Max = "银河汇聚"
+	MaxTip = "拥有惊人的<yellow>3000</yellow>名可雇佣船员，就像在您的宇宙飞船上举办一次银河峰会。非常适合喜欢热闹多样船员的指挥官，确保银河系的每个角落都被探索。"
+	SWPlentifulPlus = "绝地大会"
+	SWPlentifulPlusTip = "这个等级提供高达<yellow>3000</yellow>的<good>100%</good>额外船员。就像召集一个绝地议会——每个任务都有熟练的双手。非常适合想要拥有一支小型军队实力的船长，不包括光剑。"
+	SWPlentiful = "酒馆聚集"
+	SWPlentifulTip = "提供高达<yellow>2500</yellow>的<good>66%</good>额外船员，就像摩斯艾斯利酒馆的繁忙之夜。一个多样而活跃的团队，随时准备应对银河系中的任何挑战。非常适合那些喜欢像塔图因酒馆顾客一样多样化的船员的人。"
+	Plentiful = "反抗军集会"
+	PlentifulTip = "提供高达<yellow>2000</yellow>的<good>33%</good>额外船员，就像反抗联盟的集会。非常适合希望拥有强大船员阵容的船长，每个成员都像亚文四号上的自由战士一样充满活力和奉献精神。"
+	Standard = "标准"
+	StandardTip = "根据玩家的名望，最多可雇佣<yellow>1500</yellow>名标准数量的船员。"
+	Scarce = "走私者船员"
+	ScarceTip = "提供最多<yellow>1000</yellow>名船员，少了<bad>33%</bad>，就像组建一支紧密的走私者团队。每个成员都像开赛尔跑道的副驾驶一样至关重要，使每次旅行都成为一次激动人心的战略冒险。"
+}
+
+
 CombatDifficulty
 {
   NoDeath = "Pacifist (Invulnerable)"

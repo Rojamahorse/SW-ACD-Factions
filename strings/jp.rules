@@ -222,6 +222,23 @@ Advanced = "Holocron Settings"
 AdvancedInfo = "Tweak the fabric of the cosmos here! These options let you reshape the game far from its original destiny. Tinker at your own risk, but remember, the Force is more fun when it's a bit unpredictable."
 }
 
+CrewScarcity
+{
+	Max = "銀河の収束"
+	MaxTip = "驚異的な<yellow>3000</yellow>の乗組員が雇用可能で、あなたの宇宙船で銀河間サミットを開催しているようなものです。多様で活気あるクルーを楽しむ指揮官にとって完璧で、銀河の隅々まで探索されていない場所はありません。"
+	SWPlentifulPlus = "ジェダイ集会"
+	SWPlentifulPlusTip = "このレベルは、最大<yellow>3000</yellow>までの<good>100%</good>増しのクルーを提供します。ジェダイ会議を集めるようなもので、あらゆる任務に対応する熟練の手がたくさんいます。光剣を除いた小規模な軍隊の力を求める船長に最適です。"
+	SWPlentiful = "カンティーナの集会"
+	SWPlentifulTip = "<yellow>2500</yellow>まで<good>66%</good>増しのクルーを特色とし、モス・アイズリーのカンティーナでの賑やかな夜のようです。銀河のあらゆる挑戦に立ち向かう準備ができた多様で活発な一団です。タトゥイーンの酒場の客のように多様なクルーを評価する人に最適です。"
+	Plentiful = "反乱軍の集会"
+	PlentifulTip = "最大<yellow>2000</yellow>まで<good>33%</good>増しのクルーで、反乱同盟の集会を映し出しています。Yavin IVの自由戦士のように精力的で献身的なメンバーで満たされた強固なクルーを望むキャプテンにぴったりです。"
+	Standard = "標準"
+	StandardTip = "プレイヤーの名声に応じて、最大<yellow>1500</yellow>までの標準的な乗組員が雇用可能です。"
+	Scarce = "密輸業者のクルー"
+	ScarceTip = "最大<yellow>1000</yellow>までの<bad>33%</bad>減少したクルーを提供し、このレベルは緊密な密輸業者のクルーを組織するようなものです。ケッセルランでの共同パイロットのように、各メンバーはそれぞれ重要で、すべての旅をスリリングで戦略的な冒険にします。"
+}
+
+
 CombatDifficulty
 {
   NoDeath = "Pacifist (Invulnerable)"

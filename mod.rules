@@ -231,6 +231,15 @@ Actions
 		With = &<career/EconDifficultyLevels.rules>/EconDifficultyLevels
 	}
 
+	/* *********** CREW SCARCITY ************* */
+	{
+		Action = Replace
+		Replace = "<modes/career/career.rules>/CrewScarcityLevels"
+		IgnoreIfNotExisting = false
+		With = &<career/crewscarcitylevels.rules>/CrewScarcityLevels
+	}
+
+	
 
 	// Add SW Factions to codex lore
 	{

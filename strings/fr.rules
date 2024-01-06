@@ -216,6 +216,22 @@ Advanced = "Paramètres Holocron"
 AdvancedInfo = "Modifiez ici le tissu du cosmos ! Ces options vous permettent de remodeler le jeu loin de son destin original. Bricolez à vos risques et périls, mais rappelez-vous, la Force est plus amusante lorsqu'elle est un peu imprévisible."
 }
 
+CrewScarcity
+{
+	Max = "Convergence Galactique"
+	MaxTip = "Avec un énorme <yellow>3000</yellow> membres d'équipage disponibles à l'embauche, c'est comme organiser un sommet intergalactique sur votre vaisseau spatial. Parfait pour les commandants qui apprécient une équipe animée et diversifiée, garantissant qu'aucun coin de la galaxie ne reste inexploré."
+	SWPlentifulPlus = "Assemblée Jedi"
+	SWPlentifulPlusTip = "Ce niveau offre <good>100%</good> de membres d'équipage en plus, jusqu'à un stellaire <yellow>3000</yellow>. C'est comme rassembler un conclave Jedi - beaucoup de mains habiles pour chaque tâche. Idéal pour les capitaines qui veulent la force d'une petite armée, moins les sabres laser."
+	SWPlentiful = "Congrégation de la Cantina"
+	SWPlentifulTip = "Avec <good>66%</good> de membres d'équipage en plus, jusqu'à <yellow>2500</yellow>, c'est semblable à une nuit animée à la Cantina de Mos Eisley. Un groupe diversifié et dynamique, prêt à relever tout défi dans la galaxie. Super pour ceux qui apprécient une équipe aussi variée que les clients d'une taverne de Tatooine."
+	Plentiful = "Rassemblement Rebelle"
+	PlentifulTip = "Avec <good>33%</good> de membres d'équipage en plus, atteignant jusqu'à <yellow>2000</yellow>, ce niveau reflète un rassemblement de l'Alliance Rebelle. C'est parfait pour les capitaines qui désirent une équipe robuste, chaque membre aussi énergique et dévoué qu'un combattant de la liberté de Yavin IV."
+	Standard = "Standard"
+	StandardTip = "Le nombre standard de membres d'équipage sera disponible à l'embauche en fonction de la renommée du joueur, jusqu'à <yellow>1500</yellow>."
+	Scarce = "Équipage de Contrebandier"
+	ScarceTip = "Offrant <bad>33%</bad> de membres d'équipage en moins, plafonné à <yellow>1000</yellow>, ce niveau est comme assembler une équipe soudée de contrebandiers. Chaque membre est aussi crucial qu'un copilote dans le Run de Kessel, rendant chaque voyage une aventure passionnante et stratégique."
+}
+
 
 CombatDifficulty
 {

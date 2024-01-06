@@ -217,6 +217,22 @@ Advanced = "Holocron-Einstellungen"
 AdvancedInfo = "Passe hier das Gewebe des Kosmos an! Diese Optionen ermöglichen es dir, das Spiel weit von seinem ursprünglichen Schicksal zu verändern. Experimentiere auf eigene Gefahr, aber denke daran, die Macht macht mehr Spaß, wenn sie ein wenig unberechenbar ist."
 }
 
+CrewScarcity
+{
+	Max = "Galaktische Konvergenz"
+	MaxTip = "Mit gewaltigen <yellow>3000</yellow> verfügbaren Crewmitgliedern zum Anwerben, ist es wie ein intergalaktisches Gipfeltreffen auf Ihrem Raumschiff. Perfekt für Kommandanten, die eine lebhafte, vielfältige Crew genießen und sicherstellen wollen, dass kein Eck der Galaxie unerforscht bleibt."
+	SWPlentifulPlus = "Jedi-Versammlung"
+	SWPlentifulPlusTip = "Dieses Level bietet <good>100%</good> mehr Crew, bis zu einem stellaren <yellow>3000</yellow>. Es ist wie das Versammeln eines Jedi-Konklaves - viele geschickte Hände für jede Aufgabe. Ideal für Kapitäne, die die Stärke einer kleinen Armee wollen, minus die Lichtschwerter."
+	SWPlentiful = "Kantinen-Versammlung"
+	SWPlentifulTip = "Mit <good>66%</good> mehr Crew, bis zu <yellow>2500</yellow>, ähnelt es einer belebten Nacht in der Mos Eisley-Kantine. Eine vielfältige und lebhafte Truppe, bereit, jede Herausforderung in der Galaxie zu meistern. Großartig für diejenigen, die eine Crew schätzen, die so vielfältig ist wie die Gäste einer Tatooiner Taverne."
+	Plentiful = "Rebellen-Treffen"
+	PlentifulTip = "Mit <good>33%</good> mehr Crew, bis zu <yellow>2000</yellow>, spiegelt dieses Level eine Versammlung der Rebellenallianz wider. Perfekt für Kapitäne, die eine robuste Crew bevorzugen, deren jedes Mitglied so lebhaft und engagiert ist wie ein Freiheitskämpfer von Yavin IV."
+	Standard = "Standard"
+	StandardTip = "Die Standardanzahl an Crewmitgliedern wird zum Anwerben verfügbar sein, abhängig vom Ruhm des Spielers, bis zu <yellow>1500</yellow>."
+	Scarce = "Schmuggler-Crew"
+	ScarceTip = "Bietet <bad>33%</bad> weniger Crew, begrenzt auf <yellow>1000</yellow>, dieses Level ist wie das Zusammenstellen einer eng verbundenen Schmuggler-Crew. Jedes Mitglied ist so entscheidend wie ein Co-Pilot beim Kessel-Flug, wodurch jede Reise zu einem aufregenden und strategischen Abenteuer wird."
+}
+
 
 CombatDifficulty
 {
