@@ -92,8 +92,8 @@ Ships
     :~{ File="TIE Advanced X1 (Sienar Blue).ship.png"; 						Tier=3; 	Difficulty=1; }
     :~{ File="Victory II-class Star Destroyer.ship.png"; 					Tier=13; 	Difficulty=2; }
     :~{ File="Victory-class Star Destroyer.ship.png"; 						Tier=12; 	Difficulty=2; }
+    :~{ File="Emp Bewitcher_Class_Super_Cruiser.ship.png"; 					Tier=17; 	Difficulty=2; } // Credit Hello360Jelly Jr
 ]
-
 
 
 // Patrol ships
