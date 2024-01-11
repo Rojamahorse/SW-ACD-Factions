@@ -1,6 +1,6 @@
 ID = SW.r9_shot
-Range = 300
-IdealRange = 185
+Range = 400
+IdealRange = 285
 Speed = 500
 
 Components

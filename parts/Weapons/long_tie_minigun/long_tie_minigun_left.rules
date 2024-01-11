@@ -1,38 +1,35 @@
 Part : &<long_tie_minigun.rules>/Part
 {
 	//IDs
+	ID = SW.fighter_long_tie_minigun_left
+	OtherIDs = [SW.fighter_long_tie_minigun_right]
+	FlipWhenLoadingIDs = [SW.fighter_long_tie_minigun_right]
 
 	//StringKeys
+	NameKey = "Parts/tieMinigunLongLeft"
+	IconNameKey = "Parts/tieMinigunLongLeftIcon"
+	DescriptionKey = "Parts/tieLMinigunLongDesc"
 	
 	//Groups&Categories
 	
 	//Resources&Size&Health
 	
 	//Rects
+	ProhibitRects
+	[
+		[fighter, [-2, -1, 2, 1]]
+	]
 	
 	//Selections
 	
 	//PartSpecific
+	IsFlippable = true
 	
 	//ReceivableBuffs
 	
 	//Doors&Etc
 	
 	//Editor
-	
-	//Components
-	NameKey = "Parts/tieMinigunLongLeft"
-	IconNameKey = "Parts/tieMinigunLongLeftIcon"
-	ID = SW.fighter_long_tie_minigun_left
-	OtherIDs = [SW.fighter_long_tie_minigun_right]
-	FlipWhenLoadingIDs = [SW.fighter_long_tie_minigun_right]
-	DescriptionKey = "Parts/tieLMinigunLongDesc"
-	IsFlippable = true
-	ProhibitRects
-	[
-		[fighter, [-2, -1, 2, 1]]
-	]
-
 	EditorIcon
 	{
 		Texture
@@ -42,7 +39,8 @@ Part : &<long_tie_minigun.rules>/Part
 		}
 		Size = [96, 48]
 	}
-
+	
+	//Components
 	Components : ^/0/Components
 	{
 		Turret : &<long_tie_minigun.rules>/Part/Components/Turret
