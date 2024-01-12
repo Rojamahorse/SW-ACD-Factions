@@ -20,5 +20,6 @@ Ships
 	:~{ File="Cargo Transporter Small Rebel.ship.png";    				Tier=5;  Tags : ~/Tags [trade] }
 	:~{ File="Cargo Transporter Medium Rebel.ship.png";    				Tier=7;  Tags : ~/Tags [trade] }
 	:~{ File="Cargo Transporter Large Rebel.ship.png";   				Tier=10; Tags : ~/Tags [trade] }
+	:~{ File="Rebel EF76 Nebulon Hvy Cargo G.ship.png";   				Tier=10; Tags : ~/Tags [trade] }
 	:~{ File="Cargo Transporter Huge Rebel.ship.png";     				Tier=13; Tags : ~/Tags [trade] }
 ]
