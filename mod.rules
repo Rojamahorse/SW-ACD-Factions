@@ -1,22 +1,55 @@
 ID = SW.3.StarWarsFactions
 Name = "Star Wars Factions"
-Version = 0.0.5 RC
-CompatibleGameVersions = ["0.24.0","0.23.0"]
+Version = 0.1.1
+CompatibleGameVersions = ["0.25.0","0.24.0","0.23.0"]
 ModifiesGameplay = true
 Author = "Rojamahorse & SW:ACD DevTeam"
 Logo = "logo.png"
-Description = "Step up your game with the ultimate companion mod to <yellow>Star Wars: A Cosmos Divided</yellow>! \n\nChoose your side—from the <gray>Galactic Empire</gray> and <orange>Rebel Alliance</orange> to the <red>Republic</red> and <blue>CIS</blue> — or navigate the criminal underworld with <magenta>Black Sun</magenta>. \n\nKick off your journey with iconic ships, venture into expansive new maps, and craft your own interstellar adventure. This is the Cosmoteer mod you've been searching for! \n\n<b>Ship Contributions by:</b> ClassicJam, Neojino, Wolfram, and the Steam Community! \n\n<bad><b>Important:</b> This mod is an extension of <yellow>Star Wars: A Cosmos Divided</yellow> and requires it for full functionality. Please ensure you have the base mod installed.</bad>"
+Description = "Step up your game with the ultimate companion mod to <yellow>Star Wars: A Cosmos Divided</yellow>! \n\nChoose your side—from the <gray>Galactic Empire</gray> and <orange>Rebel Alliance</orange> to the <red>Republic</red> and <blue>CIS</blue> — or navigate the criminal underworld with <magenta>Black Sun</magenta>. \n\nKick off your journey with iconic ships, venture into expansive new maps, and craft your own interstellar adventure. This is the Cosmoteer mod you've been searching for! \n\n<b>Ship Contributions by:</b> ClassicJam, Neojino, Wolfram, Fusion, and the Steam Community! \n\n<bad><b>Important:</b> This mod is an extension of <yellow>Star Wars: A Cosmos Divided</yellow> and requires it for full functionality. Please ensure you have the base mod installed.</bad>"
 StringsFolder = "strings"
 /* TO DO:
-Base Tradeships moved out of Rules
 Base Galaxy Rules back to Vanilla + All
-Create a SW Only for all SW
-Create a Clone Wars Era 
 Create a New Republic Era & Old Republic Era
 Add SW-flavored auxilary sound bites
 Clean up Shots & Common Effects
 Add SW Crew
 */
+
+	/* *********** SHIP LIBRARIES ************* */
+
+ShipLibraries
+[
+    {
+        Folder = "builtin_ships/SW.Starter"
+        NameKey = "SWFactionsStarters"
+        TooltipKey = "SWFactionsStartersTip" 
+    }
+    {
+        Folder = "builtin_ships/SW.Black_Sun/Combat"
+        NameKey = "SWFactionsBlacksun"
+        TooltipKey = "SWFactionsBlacksunTip" 
+    }
+	{
+        Folder = "builtin_ships/SW.CIS/Combat"
+        NameKey = "SWFactionsCIS"
+        TooltipKey = "SWFactionsCISTip" 
+    }
+    {
+        Folder = "builtin_ships/SW.Galactic_Empire/Combat"
+        NameKey = "SWFactionsEmpire"
+        TooltipKey = "SWFactionsEmpireTip" 
+    }
+    {
+        Folder = "builtin_ships/SW.Rebel_Alliance/Combat"
+        NameKey = "SWFactionsRebelAlliance"
+        TooltipKey = "SWFactionsRebelAllianceTip" 
+    }
+    {
+        Folder = "builtin_ships/SW.Republic/Combat"
+        NameKey = "SWFactionsRepublic"
+        TooltipKey = "SWFactionsRepublicTip" 
+    }
+]
 
 Actions
 [
@@ -42,7 +75,7 @@ Actions
  	}
 
 	
-	/* *********** DECALS ************* */
+	/* *********** DECALS & SHIPS & SHIP SIZES ************* */
 
 	//Adds faction decals folder and advanced gradients, shading, and shapes folder
 	{
@@ -55,7 +88,20 @@ Actions
 		]
 	}
 	
-
+	{
+		Action = Overrides
+		OverrideIn = "<ships/base_ship.rules>"
+		Overrides
+		{
+			MaxBorders
+			{
+				Left = -500
+				Right = 500
+				Top = -500
+				Bottom = 500
+			}
+		}
+	}
 
 
 	/* *********** MAP SIZES ************* */
@@ -69,7 +115,7 @@ Actions
 		Action = AddMany
 		AddTo = "<modes/career/career.rules>/MapSizes"
 
-// 		CreateIfNotExisting = true
+		//CreateIfNotExisting = true
 
 		ManyToAdd
 		[
@@ -82,6 +128,7 @@ Actions
 			&<galaxy_map/map_generators/sizes.rules>/SWTitanic
 			&<galaxy_map/map_generators/sizes.rules>/SWGalactic
 			&<galaxy_map/map_generators/sizes.rules>/SWRebellion  
+			&<galaxy_map/map_generators/sizes.rules>/SWClonewars  
 
 		]
 	}
@@ -184,6 +231,15 @@ Actions
 		With = &<career/EconDifficultyLevels.rules>/EconDifficultyLevels
 	}
 
+	/* *********** CREW SCARCITY ************* */
+	{
+		Action = Replace
+		Replace = "<modes/career/career.rules>/CrewScarcityLevels"
+		IgnoreIfNotExisting = false
+		With = &<career/crewscarcitylevels.rules>/CrewScarcityLevels
+	}
+
+	
 
 	// Add SW Factions to codex lore
 	{
@@ -234,124 +290,48 @@ Actions
 		]
 	}
 
-
-	//Adds trade ship functionality to SW Factions in career mode
+	//Adds Civilian Tradeships to SW Factions in career mode
 	{
 		Action = AddBase
+		Name = Civilian
 		AddBaseTo = "<modes/career/career.rules>/TradeRoutes/TradeShips"
-		BaseToAdd = 	{
-			// Black_Sun
-			bsc_3a  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Cargo Transporter Tiny Black_Sun";               	Faction=SW.Black_Sun;   TierRange=[1, 9];   StasisSpeed=50; StasisTradeTime=40; }
-			bsc_3b  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Cargo Transporter Small Black_Sun";     			Faction=SW.Black_Sun;   TierRange=[1, 9];   StasisSpeed=53; StasisTradeTime=40; }
-			bsc_5a  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Cargo Transporter Medium Black_Sun";             	Faction=SW.Black_Sun;   TierRange=[3, 12];  StasisSpeed=80; StasisTradeTime=60; }
-			bsc_5b  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Cargo Transporter Large Black_Sun";              	Faction=SW.Black_Sun;   TierRange=[3, 12];  StasisSpeed=35; StasisTradeTime=60; }
-			bsc_7a  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Cargo Transporter Huge Black_Sun";        			Faction=SW.Black_Sun;   TierRange=[6, 18];  StasisSpeed=28; StasisTradeTime=80; }
-			bsc_7b  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="CSS-1 Corellian-BS Star Shuttle"; 					Faction=SW.Black_Sun;   TierRange=[6, 18];  StasisSpeed=25; StasisTradeTime=80; }
-			bsc_7c  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Corellian G9-BS Rigger Freighter";      			Faction=SW.Black_Sun;   TierRange=[6, 18];  StasisSpeed=52; StasisTradeTime=80; }
-			bsc_10a : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Eta-Class Supply Barge Black Sun";     			Faction=SW.Black_Sun;   TierRange=[12, 18]; StasisSpeed=78; StasisTradeTime=100; }
-			bsc_10b : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="SoroSuub Lux-BS 3000 Space Yacht";        			Faction=SW.Black_Sun;   TierRange=[12, 18]; StasisSpeed=88; StasisTradeTime=100; }
-
-			// Confederacy of Independant Systems
-			cis_3a  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Cargo Transporter Tiny CIS";  						Faction=SW.CIS; TierRange=[1, 9];   StasisSpeed=85; StasisTradeTime=40; }
-			cis_3b  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="CIS Package Distributor";        					Faction=SW.CIS; TierRange=[1, 9];   StasisSpeed=68; StasisTradeTime=40; }
-			cis_3c  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="CIS Minor Shipper";      							Faction=SW.CIS; TierRange=[1, 9];   StasisSpeed=68; StasisTradeTime=40; }
-			cis_3d  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="CIS Porter";               							Faction=SW.CIS; TierRange=[1, 9];   StasisSpeed=68; StasisTradeTime=40; }
-			cis_5a  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Cargo Transporter Small CIS";      				Faction=SW.CIS; TierRange=[3, 12];  StasisSpeed=85; StasisTradeTime=60; }
-			cis_5b  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="CIS Minor Modulus";        							Faction=SW.CIS; TierRange=[3, 12];  StasisSpeed=75; StasisTradeTime=60; }
-			cis_5c  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="CIS Minor Freighter";      							Faction=SW.CIS; TierRange=[3, 12];  StasisSpeed=75; StasisTradeTime=60; }
-			cis_5d  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="CIS Minor Hauler";         							Faction=SW.CIS; TierRange=[3, 12];  StasisSpeed=75; StasisTradeTime=60; }
-			cis_7a  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Cargo Transporter Medium CIS";       				Faction=SW.CIS; TierRange=[6, 18];  StasisSpeed=77; StasisTradeTime=80; }
-			cis_7b  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="CIS Bulk Shipper";         							Faction=SW.CIS; TierRange=[6, 18];  StasisSpeed=57; StasisTradeTime=80; }
-			cis_7c  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="CIS Workhorse";            							Faction=SW.CIS; TierRange=[6, 18];  StasisSpeed=57; StasisTradeTime=80; }
-			cis_7d  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="CIS Factotum";             							Faction=SW.CIS; TierRange=[6, 18];  StasisSpeed=57; StasisTradeTime=80; }
-			cis_10a : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Cargo Transporter Large CIS";         				Faction=SW.CIS; TierRange=[12, 18]; StasisSpeed=83; StasisTradeTime=100; }
-			cis_10b : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="CIS Bulk Extractor";       							Faction=SW.CIS; TierRange=[12, 18]; StasisSpeed=75; StasisTradeTime=100; }
-			cis_10c : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Cargo Transporter Huge CIS";       				Faction=SW.CIS; TierRange=[12, 18]; StasisSpeed=75; StasisTradeTime=100; }
-			cis_10d : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="CIS Bulk Hauler";          							Faction=SW.CIS; TierRange=[12, 18]; StasisSpeed=75; StasisTradeTime=100; }
-			cis_10e : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Eta-Class Supply Barge CIS";      					Faction=SW.CIS; TierRange=[12, 18]; StasisSpeed=75; StasisTradeTime=100; }
-
-			// Galactic Empire
-			emp_3a  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Cargo Transporter Tiny Empire";               		Faction=SW.Galactic_Empire; 	TierRange=[1, 9];   StasisSpeed=40; StasisTradeTime=40; }
-			emp_3b  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Emp Dovekie";              							Faction=SW.Galactic_Empire; 	TierRange=[1, 9];   StasisSpeed=61; StasisTradeTime=40; }
-			emp_5a  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Cargo Transporter Small Empire";            		Faction=SW.Galactic_Empire; 	TierRange=[3, 12];  StasisSpeed=67; StasisTradeTime=60; }
-			emp_5b  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Emp Fulmar";               							Faction=SW.Galactic_Empire; 	TierRange=[3, 12];  StasisSpeed=73; StasisTradeTime=60; }
-			emp_5c  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Emp Murrelet";             							Faction=SW.Galactic_Empire; 	TierRange=[3, 12];  StasisSpeed=73; StasisTradeTime=60; }
-			emp_7a  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Cargo Transporter Medium Empire";              	Faction=SW.Galactic_Empire; 	TierRange=[6, 18];  StasisSpeed=47; StasisTradeTime=80; }
-			emp_7b  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Cargo Transporter Large Empire";               	Faction=SW.Galactic_Empire; 	TierRange=[6, 18];  StasisSpeed=47; StasisTradeTime=80; }
-			emp_7c  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Emp Guillemot";            							Faction=SW.Galactic_Empire; 	TierRange=[6, 18];  StasisSpeed=47; StasisTradeTime=80; }
-			emp_10a : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Cargo Transporter Huge Empire";            		Faction=SW.Galactic_Empire; 	TierRange=[12, 18]; StasisSpeed=56; StasisTradeTime=100; }
-			emp_10b : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Eta-Class Supply Barge Emp";           			Faction=SW.Galactic_Empire; 	TierRange=[12, 18]; StasisSpeed=90; StasisTradeTime=100; }
-
-/*
-			// Mandalorian
-			mndl_3a  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Cargo Transporter Tiny";              	Faction=SW.Mandalorian;    TierRange=[1, 9];   StasisSpeed=77; StasisTradeTime=40; }
-			mndl_3b  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Da'i";                    				Faction=SW.Mandalorian;    TierRange=[1, 9];   StasisSpeed=73; StasisTradeTime=40; }
-			mndl_5a  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Preacher";                				Faction=SW.Mandalorian;    TierRange=[3, 12];  StasisSpeed=55; StasisTradeTime=60; }
-			mndl_5b  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Deliverance";             				Faction=SW.Mandalorian;    TierRange=[3, 12];  StasisSpeed=86; StasisTradeTime=60; }
-			mndl_7a  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Advocate";                				Faction=SW.Mandalorian;    TierRange=[6, 18];  StasisSpeed=35; StasisTradeTime=80; }
-			mndl_7b  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Acolyte";                 				Faction=SW.Mandalorian;    TierRange=[6, 18];  StasisSpeed=47; StasisTradeTime=80; }
-			mndl_10a : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Celebrant";               				Faction=SW.Mandalorian;    TierRange=[12, 18]; StasisSpeed=31; StasisTradeTime=100; }
-			mndl_10b : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Witness";                 				Faction=SW.Mandalorian;    TierRange=[12, 18]; StasisSpeed=84; StasisTradeTime=100; }
-*/
-
-			// Rebel Alliance
-			reb_3a  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Cargo Transporter Tiny Rebel";              	Faction=SW.Rebel_Alliance;    TierRange=[1, 9];   StasisSpeed=77; StasisTradeTime=40; }
-			reb_3b  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Millenium Falcon Rebel";                    	Faction=SW.Rebel_Alliance;    TierRange=[1, 9];   StasisSpeed=73; StasisTradeTime=40; }
-			reb_5a  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Cargo Transporter Small Rebel";                Faction=SW.Rebel_Alliance;    TierRange=[3, 12];  StasisSpeed=55; StasisTradeTime=60; }
-			reb_5b  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Cargo Transporter Medium Rebel";             	Faction=SW.Rebel_Alliance;    TierRange=[3, 12];  StasisSpeed=86; StasisTradeTime=60; }
-			reb_7a  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Rebel Firespray-31-Class Patr";                Faction=SW.Rebel_Alliance;    TierRange=[6, 18];  StasisSpeed=35; StasisTradeTime=80; }
-			reb_7b  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Cargo Transporter Large Rebel";                Faction=SW.Rebel_Alliance;    TierRange=[6, 18];  StasisSpeed=47; StasisTradeTime=80; }
-			reb_10a : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Cargo Transporter Huge Rebel";               	Faction=SW.Rebel_Alliance;    TierRange=[12, 18]; StasisSpeed=31; StasisTradeTime=100; }
-			reb_10b : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Rebel DP20 Frigate (Cargo)";                 	Faction=SW.Rebel_Alliance;    TierRange=[12, 18]; StasisSpeed=84; StasisTradeTime=100; }
-
-			// Republic
-			rep_3a  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Cargo Transporter Tiny Republic";  				Faction=SW.Republic; TierRange=[1, 9];   StasisSpeed=85; StasisTradeTime=40; }
-			rep_3b  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Republic Firespray-31-Class Patr";        			Faction=SW.Republic; TierRange=[1, 9];   StasisSpeed=68; StasisTradeTime=40; }
-			rep_3c  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Republic CSS-1 Corellian Star Sh";      			Faction=SW.Republic; TierRange=[1, 9];   StasisSpeed=68; StasisTradeTime=40; }
-			rep_3d  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Republic Corellian G9 Freighter";               	Faction=SW.Republic; TierRange=[1, 9];   StasisSpeed=68; StasisTradeTime=40; }
-			rep_5a  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Cargo Transporter Small Republic";      			Faction=SW.Republic; TierRange=[3, 12];  StasisSpeed=85; StasisTradeTime=60; }
-			rep_5b  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Republic Consular-Class CruiserB";        			Faction=SW.Republic; TierRange=[3, 12];  StasisSpeed=75; StasisTradeTime=60; }
-			rep_5c  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Republic CR70 Corvette (Civ)";      				Faction=SW.Republic; TierRange=[3, 12];  StasisSpeed=75; StasisTradeTime=60; }
-			rep_5d  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Republic CR70 Corvette (Cargo)";         			Faction=SW.Republic; TierRange=[3, 12];  StasisSpeed=75; StasisTradeTime=60; }
-			rep_7a  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Cargo Transporter Medium Republic";       			Faction=SW.Republic; TierRange=[6, 18];  StasisSpeed=77; StasisTradeTime=80; }
-			rep_7b  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Rep SoroSuub Lux 3000 Space Yach";         		Faction=SW.Republic; TierRange=[6, 18];  StasisSpeed=57; StasisTradeTime=80; }
-//			rep_7c  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Workhorse";            							Faction=SW.Republic; TierRange=[6, 18];  StasisSpeed=57; StasisTradeTime=80; }
-//			rep_7d  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Factotum";             							Faction=SW.Republic; TierRange=[6, 18];  StasisSpeed=57; StasisTradeTime=80; }
-			rep_10a : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Cargo Transporter Large Republic";         		Faction=SW.Republic; TierRange=[12, 18]; StasisSpeed=83; StasisTradeTime=100; }
-			rep_10b : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Cargo Transporter Huge Republic";       			Faction=SW.Republic; TierRange=[12, 18]; StasisSpeed=75; StasisTradeTime=100; }
-			rep_10c : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Eta-Class Supply Barge Republic";       			Faction=SW.Republic; TierRange=[12, 18]; StasisSpeed=75; StasisTradeTime=100; }
-//			rep_10d : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Bulk Hauler";          							Faction=SW.Republic; TierRange=[12, 18]; StasisSpeed=75; StasisTradeTime=100; }
-//			rep_10e : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Atlas Freighter";      							Faction=SW.Republic; TierRange=[12, 18]; StasisSpeed=75; StasisTradeTime=100; 
-
-			}
+		BaseToAdd = &<career\TradeShips.rules>/TradeShips
 	}
+
+
+
+	//Adds trade defensive platforms to SW Factions in career mode
+	{
+		Action = Replace
+		Replace = "<modes/career/sysgen_trade_stations.rules>/SubSpawners/7/SubSpawners/0/Count"
+		With = 2
+    }
+    {
+		Action = Replace
+		Replace = "<modes/career/sysgen_trade_stations.rules>/SubSpawners/7/SubSpawners/1/Count"
+		With = [0, 2]
+    }
+    {
+		Action = Replace
+		Replace = "<modes/career/sysgen_trade_stations.rules>/StationDefenses/Count"
+		With = [5, 8]
+    }
+    {
+		Action = Replace
+		Replace = "<modes/career/sysgen_trade_stations.rules>/StationDefenses/Distance"
+		With = 250
+    }
 
 	/* *********** FACTION GENERATION ************* */
 
-
-
-
-	// Adds SW Factions in career mode
-	/*
-	{
-		Action = AddMany
-		AddTo = "<galaxy_map/map_generators/base_galaxy.rules>/Factions/Factions"
-        ManyToAdd = &<galaxy_map/map_generators/base_galaxy.rules>/Factions/Factions
-	}
-
-		// Adds SW FactionTiers in career mode
-	{
-		Action = AddMany
-		AddTo = "<galaxy_map/map_generators/base_galaxy.rules>/FactionTiers/Factions"
-        ManyToAdd = &<galaxy_map/map_generators/base_galaxy.rules>/FactionTiers/Factions
-	}
-	*/
+/*
 	// Replaces StartingNodes to include SW Factions in career mode
 	{
 		Action = Replace
 		Replace = "<galaxy_map/map_generators/base_galaxy.rules>/StartingNodePicker"
         With = &<galaxy_map/map_generators/base_galaxy.rules>/StartingNodePicker
 	}
+*/
 /*
 //START TESTING
 	{
@@ -360,19 +340,22 @@ Actions
         With = &<factions/factions.rules>/Factions
 	}
 */
+/*
 	// Adds SW Factions in career mode
 	{
 		Action = Replace
 		Replace = "<galaxy_map/map_generators/base_galaxy.rules>/Factions/Factions"
         With = &<galaxy_map/map_generators/base_galaxy.rules>/Factions/Factions
 	}
-
+*/
+/*
 		// Adds the SW Factions tiers in career mode
 	{
 		Action = Replace
 		Replace = "<galaxy_map/map_generators/base_galaxy.rules>/FactionTiers/Factions"
         With = &<galaxy_map/map_generators/base_galaxy.rules>/FactionTiers/Factions
 	}
+*/
 /*
 	// Replaces nodes to include SW Factions in career mode
 	{
@@ -393,6 +376,34 @@ Actions
 		AddTo = "<factions/factions.rules>/Factions"
         ManyToAdd = &<factions/factions.rules>/Factions
 	}
+
+
+]
+
+// Appendix
+	/* *********** FACTION GENERATION ************* */
+
+
+
+
+	// Adds SW Factions in career mode
+	/*
+	{
+		Action = AddMany
+		AddTo = "<galaxy_map/map_generators/base_galaxy.rules>/Factions/Factions"
+        ManyToAdd = &<galaxy_map/map_generators/base_galaxy.rules>/Factions/Factions
+	}
+
+		// Adds SW FactionTiers in career mode
+	{
+		Action = AddMany
+		AddTo = "<galaxy_map/map_generators/base_galaxy.rules>/FactionTiers/Factions"
+        ManyToAdd = &<galaxy_map/map_generators/base_galaxy.rules>/FactionTiers/Factions
+	}
+	*/
+
+/*
+
 
 	{
 		Action = Replace
@@ -559,6 +570,4 @@ Actions
 
 
 
-	}
-
-]
+	}*/

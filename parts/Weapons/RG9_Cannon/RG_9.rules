@@ -1,38 +1,57 @@
 Part : <./Data/ships/terran/base_part_terran.rules>/Part
 {
-	NameKey = "Parts/RG9Cannon"
-	IconNameKey = "Parts/RG9CannonIcon"
+	//IDs
 	ID = SW.fighter_rg_9_cannon
 	// OtherIDs = []
-	EditorGroups = ["WeaponsEnergy","TechI"]
+
+	//StringKeys
+	NameKey = "Parts/RG9Cannon"
+	IconNameKey = "Parts/RG9CannonIcon"
 	DescriptionKey = "Parts/RG9CannonDesc"
-	SelectionTypeID = "fighter"
+	
+	//Groups&Categories
+	EditorGroups = ["WeaponsEnergy","SWTechI"]
+	TypeCategories = [weapon, uses_power]
+	
+	//Resources&Size&Health
 	Resources
 	[
 		[steel, 22]
 		[coil, 8]
 	]
-	TypeCategories = [weapon, uses_power]
-	ReceivableBuffs : ^/0/ReceivableBuffs []
 	Size = [1, 1]
-	SelectionPriority = 1
-	SelectionTypeByRotation = true
-	Density = 0.5
 	MaxHealth = 2000
-	InitialPenetrationResistance = 1
+	
+	//Rects
 	PenetrationRectType = Normal
-	ProhibitedBy : ^/0/ProhibitedBy [fighter]
 	ProhibitRects
 	[
 		[fighter, [0, -2, 1, 2]]
 	]
+	
+	//Selections
+	SelectionTypeID = "fighter"
+	SelectionPriority = 1
+	SelectionTypeByRotation = true
+	
+	//PartSpecific
+	InitialPenetrationResistance = 1
+	IsFlippable = true
+	Density = 0.5
+	
+	//ReceivableBuffs
+	ReceivableBuffs : ^/0/ReceivableBuffs []
+	ProhibitedBy : ^/0/ProhibitedBy [fighter]
+	
+	//Doors&Etc
 	AllowedDoorLocations
 	[
 		[-1, 0]
 		[1, 0]
 		[0, 1]
 	]
-
+	
+	//Editor
 	EditorIcon
 	{
 		Texture
@@ -42,7 +61,8 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 		}
 		Size = [16, 64]
 	}
-
+	
+	//Components
 	Components : ^/0/Components
 	{
 		IsOperational
@@ -64,7 +84,7 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 		{
 			Type = CommandConsumer
 			OperationalToggle = PowerToggle
-			CommandPoints = 1
+			CommandPoints = 2
 		}
 
 		FireModeToggle
@@ -91,7 +111,7 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 		{
 			Type = ResourceStorage
 			ResourceType = battery
-			MaxResources = 2000
+			MaxResources = 2500
 			ReceiveResourceMediaEffects = &/COMMON_EFFECTS/PowerDeliver
 		}
 		BatteryConsumer
@@ -236,14 +256,14 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 			Rotation = -90d
 			OperationalToggle = IsOperational
 			AutoFireToggle = AutoFireToggle
-			FireInterval = .7
+			FireInterval = .8
 			FiringArc = 10d
 			RotateSpeed = 90d
 			FireThresholdAngle = 5d			
-
 			AIFirepowerRating = 400
 			AllowFireWithBlockedLOS = true
 			IgnoreFriendlyShipLowLOSChecks = false
+			UseResourcePerShotInBurst = true
 			Emitter = BulletEmitter
 
 			AutoTargets
@@ -291,7 +311,7 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 			Burst = 2
 			BurstDelay = 0.075
 			ResourceStorage = BatteryStorage
-			ResourcesUsed = 100
+			ResourcesUsed = 125
 			MinResourcesUsed = 1
 		}
 

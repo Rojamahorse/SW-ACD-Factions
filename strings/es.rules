@@ -1,28 +1,105 @@
 Parts
 {
+    //X-Wing Cannons
+    xwingCannons = "Cañón X-Wing"
+    xwingCannonsDesc = "Los cañones X-Wing son armas pequeñas que pueden colocarse ocultas detrás y debajo de piezas de armadura. Son útiles en enfrentamientos a medio y largo alcance."
+
+    // Standard X-Wing Cannons
+    xwingCannon = "Cañón Corto X-Wing"
+    xwingCannonIcon = "X-Wing CC"
+    xwingCannonLeft = "Cañón Corto X-Wing (Lateral)"
+    xwingCannonLeftIcon = "X-Wing CC (Lateral)"
+    xwingCannonDesc = "<cyan>Incom Corporation</cyan> presenta el X-Wing CC; un cañón compacto de cañón corto para integración sigilosa en armaduras, sobresaliendo en combate a media distancia."
+
+    //Compact Mass-Driver Cannon
+    xwingCannonLong = "Cañón Compacto Impulsor de Masa"
+    xwingCannonLongIcon = "Impulsor de Masa CC"
+    xwingCannonLongLeft = "Cañón Compacto Impulsor de Masa (Lateral)"
+    xwingCannonLongLeftIcon = "Impulsor de Masa CC (Lateral)"
+    xwingCannonLongDesc = "El Cañón Compacto Impulsor de Masa (MD-CC) de <cyan>Kuat Systems Engineering</cyan>; Un arma cinética reducida pero formidable, diseñada para precisión y potencia en combates aéreos. Su diseño elegante permite una integración perfecta con varios modelos de cazas estelares, proporcionando un impacto cinético inigualable mientras mantiene la eficiencia aerodinámica."
+
+    //Extra Long X-Wing Cannons
+    xwingCannonXLong = "Cañón Extendido X-Wing"
+    xwingCannonXLongIcon = "X-Wing CE"
+    xwingCannonXLongLeft = "Cañón Extendido X-Wing (Lateral)"
+    xwingCannonXLongLeftIcon = "X-Wing CE (Lateral)"
+    xwingCannonXLongDesc = "<cyan>Incom Corporation</cyan> presenta el X-Wing CE; una versión extendida del cañón clásico, combinando alcance y sigilo para una colocación estratégica detrás de la armadura."
+
+    //Standard TIE Repeaters
+    tieMinigun = "Cañón Repetidor TIE - Edición Súper"
+    tieMinigunIcon = "TIE RC-SE"
+    tieMinigunLeft = "Cañón Repetidor TIE - Edición Súper (Lateral)"
+    tieMinigunLeftIcon = "TIE RC-SE (Lateral)"
+    tieLMinigunDesc = "Los cañones repetidores TIE - Edición Súper del <cyan>Imperio Galáctico</cyan>; compactos, de disparo rápido y perfectos para enfrentamientos a corta distancia, con capacidad de colocación sigilosa en armaduras."
+
+    tieMinigunLong = "Cañón Repetidor Pesado HyCor Extendido"
+    tieMinigunLongIcon = "HyCor HR-CE"
+    tieMinigunLongLeft = "Cañón Repetidor Pesado HyCor Extendido (Lateral)"
+    tieMinigunLongLeftIcon = "HyCor HR-CE (Lateral)"
+    tieLMinigunLongDesc = "Repetidor Láser Pesado con Cañón Extendido de <cyan>HyCor</cyan>; de disparo rápido y perfecto para enfrentamientos a corta distancia, este repetidor láser pesado está modificado para uso en naves pequeñas a medianas. Puede colocarse detrás y debajo de la armadura de la nave."
+
+    // RG-9 Cannons
+    RG9Cannon = "Cañón Láser RG-9 Edición Mejorada"
+    RG9CannonIcon = "RG-9 LC-EM"
+    RG9CannonLeft = "Cañón Láser RG-9 Edición Mejorada (Lateral)"
+    RG9CannonLeftIcon = "RG-9 LC-EM (Lateral)"
+    RG9CannonDesc = "Cañón Láser RG-9 de <cyan>Borstel</cyan>; una Edición Mejorada del láser pequeño A-Wing rápido y versátil, principalmente utilizado en cazas medianos a grandes."
+    RG9CannonLeftDesc = "Cañón Láser RG-9 de <cyan>Borstel</cyan>; una Edición Mejorada del láser pequeño A-Wing rápido y versátil, principalmente utilizado en cazas medianos a grandes."
+
+    // Standard TwinBeam Defense Turret
+    DroidTurret = "Torreta de Defensa Doble Haz StarGuard"
+    DroidTurretIcon = "Starguard TD-DH"
+    DroidTurretDesc = "Fabricada por <cyan>Corellian ArmsTech</cyan>, la torreta de defensa doble haz StarGuard desata furia de doble rayo, ofreciendo protección inigualable. Excepcionalmente efectiva en interceptar y neutralizar <orange>láseres y disparos de iones</orange>, proporciona defensa superior contra amenazas de proyectiles basados en energía pero es ineficaz con balas, minas y misiles."
+
+    // Mini TwinLaser Defense Turret
+    PDTurretTiny = "Torreta de Punto de Defensa Compacta Doble Láser StarGuard"
+    PDTurretTinyIcon = "Starguard TL-CD-PD"
+    PDTurretTinyDesc = "La Torreta de Punto de Defensa Doble Láser StarGuard, fabricada por <cyan>Corellian ArmsTech</cyan>, desata furia de doble láser. Esta versión miniaturizada y completamente automatizada de la Torreta Doble Láser StarGuard está optimizada para espacios reducidos. Es muy efectiva en el objetivo de <orange>balas, minas y misiles</orange>, pero es ineficaz contra láseres y disparos de iones."
 }
 
-Stats
+
+StatCategories
 {
+    SWFighterWeapons = "Disparo de Cañón Láser <red>Rojo</red> Pequeño"
+    MinigunShot = "Disparo de Repeater Láser <green>Verde</green> Pequeño"
+    SWPDTurretTiny = "Disparo de Ráfaga PD <magenta>Morado</magenta> Pequeño"
+    SWRG9Shot = "Disparo de Cañón de Ráfaga RG-9 <red>Rojo</red> Pequeño"
+    SWBurstLaser = "Disparo de Láser de Ráfaga <red>Rojo</red> Pequeño"
+    SWPDBeamLaser = "Disparo de Láser de Haz PD <yellow>Amarillo</yellow> Pequeño"
 }
+
+SWFactionsBlacksun = "SW Facciones: Sol Negro"
+SWFactionsBlacksunTip = "Una colección de naves de Sol Negro de las Facciones de Star Wars"
+
+SWFactionsCIS = "SW Facciones: CIS"
+SWFactionsCISTip = "Una colección de naves CIS de las Facciones de Star Wars"
+
+SWFactionsEmpire = "SW Facciones: Imperio"
+SWFactionsEmpireTip = "Una colección de naves del Imperio de las Facciones de Star Wars"
+
+SWFactionsRebelAlliance = "SW Facciones: Alianza Rebelde"
+SWFactionsRebelAllianceTip = "Una colección de naves de la Alianza Rebelde de las Facciones de Star Wars"
+
+SWFactionsRepublic = "SW Facciones: República"
+SWFactionsRepublicTip = "Una colección de naves de la República de las Facciones de Star Wars"
+
 
 DecalGroups
 {
-	sw_decals = "Star Wars Decals"
+    // sw_decals = "Calcomanías de la Facción de Star Wars"
+    sw_adv_shapes = "Gradientes Avanzados, Sombras y Formas"
 }
+
 
 Factions
 {
-	Black_Sun = "Colectivo Sol Negro"
-	CIS = "Confederación de Sistemas Independientes"
-	Galactic_Empire = "Imperio Galáctico"
-	Rebel_Alliance = "Alianza Rebelde"
-	Republic = "República"
-	monolith = "Imperio Sith"
-	fringe = "Orden Jedi"
-	imperium = "Primer Orden"
-	cabal = "Mandalorianos"
+    Black_Sun = "Colectivo Sol Negro"
+    CIS = "Confederación de Sistemas Independientes"
+    Galactic_Empire = "Imperio Galáctico"
+    Rebel_Alliance = "Alianza Rebelde"
+    Republic = "República"
 }
+
 
 StarterShips
 {
@@ -42,6 +119,261 @@ Doodads
 
 Resource
 {
+}
+
+MapSizes  
+{
+	Standard = "Cosmoteer Estándar (50)"
+	StandardTip = "Un sistema estelar estándar y aburrido del viejo <white>Cosmoteer</white>... \n<i>Estos no son los sistemas estelares que buscas... sigue adelante, sigue adelante.</i>"
+	
+	Vanilla = "Estándar (50)"
+	VanillaDesc = "Una mezcla de 50 sistemas controlados por <yellow>Star Wars</yellow> y <white>Vanilla</white> en el borde del espacio explorado, conocidos por sus rutas intrincadas y tratos sombríos."
+
+//	SWStandard = "Sistemas Fronterizos (50)"
+//	SWStandardTip = "Una red de 50 sistemas de Star Wars en el borde del espacio explorado, conocidos por sus rutas intrincadas y tratos sombríos."
+
+	SWLarge = "Territorios del Borde Exterior (60)"
+	SWLargeDesc = "Una región fronteriza sin ley que recuerda al Borde Exterior con 60 sistemas de <yellow>Star Wars</yellow>."
+
+	SWVeryLarge = "Sistemas del Borde Medio (80)" 
+	SWVeryLargeDesc = "Una región industrializada que recuerda al Borde Medio con 80 sistemas de <yellow>Star Wars</yellow>."
+
+	SWHuge = "Mundos del Borde Interior (100)"
+	SWHugeDesc = "Una región central que recuerda al Borde Interior con 100 sistemas de <yellow>Star Wars</yellow>." 
+
+	SWGigantic = "Mundos del Núcleo (125)"
+	SWGiganticDesc = "El corazón de la civilización galáctica con 125 sistemas de <yellow>Star Wars</yellow>."
+
+	SWColossal = "Sistemas del Núcleo Profundo (150)"
+	SWColossalDesc = "Una región peligrosa en las fronteras del Núcleo Profundo con 150 sistemas de <yellow>Star Wars</yellow>."
+
+	SWTitanic = "Regiones Desconocidas (200)"
+	SWTitanicDesc = "Un vasto territorio inexplorado envuelto en misterio con 200 sistemas controlados por las facciones de <yellow>Star Wars</yellow> y <white>Cosmoteer</white>."
+
+	SWGalactic = "La Galaxia Conocida Completa (500)"
+	SWGalacticDesc = "Las facciones de <white>Cosmoteer</white> y <yellow>Star Wars</yellow> colisionan en toda la extensión de la galaxia conocida con 500 sistemas."
+
+	// El Mapa de la Galaxia de la Era de la Rebelión
+	SWRebellion = "Una Nueva Esperanza (50)"
+	SWRebellionDesc = "Un clásico verdadero de <yellow>Star Wars</yellow> lleno de acción; Te encuentras en medio mientras la <orange>Alianza Rebelde</orange> se enfrenta cara a cara contra el <gray>Imperio</gray>... Algunos incluso podrían llamarlo un '<yellow>ClásicoJam</yellow>'."
+
+	// El Mapa de la Galaxia de la Era de las Guerras Clon
+	SWClonewars = "La Era de las Guerras Clon (50)"
+	SWClonewarsDesc = "Adéntrate en el corazón de las <yellow>Guerras Clon</yellow>, donde la <red>República Galáctica</red> choca con la <blue>Confederación de Sistemas Independientes (CIS)</blue>, mientras el <magenta>Sol Negro</magenta> acecha en las sombras. Experimenta el icónico tumulto galáctico en un período conocido como la '<yellow>Tensión Galáctica</yellow>'." 
+
+	/*
+	SmugglersRun = "La Carrera del Contrabandista (50)"
+	SmugglersRunDesc = "Una red de 50 sistemas estelares conocidos por sus rutas intrincadas y tratos sombríos, frecuentemente visitados por contrabandistas y forajidos."
+	*/
+}
+
+
+CareerModeConfig
+{
+  Name = "Legado Galáctico"
+  Description = "Construye, combate y busca tu camino para convertirte en un legendario Comandante de Naves Estelares entre las estrellas."
+  DescriptionMP = "Trazar un curso a través de una galaxia forjada por la Fuerza, participando en misiones épicas, combatiendo facciones opuestas y recolectando recursos. "\
+                "Únete a fuerzas con hasta cuatro Líderes de Escuadrón en una aventura cooperativa multijugador."
+
+  CombatDifficulty = "Proeza de Combate"
+  CombatDifficultyTip = "Elige tu camino entre las estrellas: ¿te convertirás en el guardián de la paz de la galaxia o en su peor pesadilla? Cada ajuste tiene su propia historia que contar."
+  
+  EconDifficulty = "Economía Galáctica"
+  EconDifficultyTip = "¿Nadarás en una bóveda de créditos o ahorrarás cada centavo galáctico? Establece las apuestas para tu aventura económica."
+  
+  CrewScarcity = "Reclutamiento con Truco Mental"
+  CrewScarcityTip = "Ajusta el poder sugerente de la Fuerza para hacer que los posibles reclutas crean que eres la leyenda que han estado buscando seguir. Una 'sugerencia' más fuerte significa más manos a bordo, lo que te permite navegar por las estrellas con facilidad sin llamar la atención de los malos grandes del sector."
+
+  DisableCrewConstruction = "Ensamblaje con la Fuerza"
+  DisableCrewConstructionTip = "Activa esto para canalizar la Fuerza, permitiendo que tu voluntad manifieste instantáneamente modificaciones de naves a través de la galaxia sin necesidad de trabajo de la tripulación."
+
+  DisableExploration = "Visión Lejana Alimentada por la Fuerza"
+  DisableExplorationTip = "¿Quién necesita sondas y exploradores cuando tienes la Fuerza? Activa tu Yoda interior para ver todos los secretos de la galaxia, desde los pantanos de Dagobah hasta las cantinas de Tatooine, sin niebla de guerra que nuble tu visión cósmica."
+
+  DisableSalvaging = "Atajo del Desguace"
+  DisableSalvagingTip = "● Pagos de misiones duplicados - como apostar a que Sebulba pierda.\n"\
+                        "● ¿Quién necesita chatarra? Las naves no se pueden convertir en recursos - ¡no son droides!\n"\
+                        "● Ajustes de naves instantáneos en cualquier lugar de la galaxia, solo lanza créditos al problema - no se requiere equipo de construcción."
+
+  CantDisableSalvagingTip = "Nota: El modo 'Atajo del Desguace' requiere que 'Ensamblaje con la Fuerza' esté activo."
+
+  GalaxySeed = "Coordenadas de la Hipervía"
+  GalaxySeedTip = "Coordenadas para el navicomputador de la hipervía, determinando el tejido del espacio-tiempo. Entradas idénticas forjan mapas estelares idénticos, en esta línea temporal o en la siguiente."
+
+  MapSize = "Alcance del Sector"
+  MapSizeTip = "Determina la amplitud del espacio conocido, desde el Borde Exterior hasta los Mundos del Núcleo. El número indica la miríada de sistemas esperando ser cartografiados por tu mano."
+
+  MaxPlayers = &~/PvpModeConfig/MaxPlayers
+  MaxPlayersTip = &~/PvpModeConfig/MaxPlayersTip
+
+ShipInfoFmt = "<s24>{0}</s24>\n\n{1}\n\nCréditos Galácticos Restantes: {2}"
+CustomShipInfoFmt = "<s24>{0}</s24> - Crucero Estelar Personalizado\n\nCréditos Galácticos Restantes: {1}"
+LoadShip = "Invocar Nave Estelar Personalizada"
+PlayerTeamFmt = "Líder de Escuadrón {0}"
+SharedPlayerTeamFmt = "Escuadrón Aliado {0}"
+Advanced = "Ajustes del Holocrón"
+AdvancedInfo = "¡Retoca el tejido del cosmos aquí! Estas opciones te permiten remodelar el juego lejos de su destino original. Toca a tu propio riesgo, pero recuerda, la Fuerza es más divertida cuando es un poco impredecible."
+}
+
+CrewScarcity
+{
+	Max = "Convergencia Galáctica"
+	MaxTip = "Con la impresionante cantidad de <yellow>3000</yellow> tripulantes disponibles para contratar, es como organizar una cumbre intergaláctica en tu nave estelar. Perfecto para comandantes que disfrutan de una tripulación bulliciosa y diversa, asegurando que ningún rincón de la galaxia quede inexplorado."
+	SWPlentifulPlus = "Asamblea Jedi"
+	SWPlentifulPlusTip = "Este nivel ofrece un <good>100%</good> más de tripulantes, hasta un estelar <yellow>3000</yellow>. Es como convocar un cónclave Jedi: muchas manos hábiles para cada tarea. Ideal para capitanes que quieren la fuerza de un pequeño ejército, menos los sables de luz."
+	SWPlentiful = "Congregación de la Cantina"
+	SWPlentifulTip = "Con un <good>66%</good> más de tripulantes, hasta <yellow>2500</yellow>, se asemeja a una noche concurrida en la Cantina de Mos Eisley. Un grupo diverso y animado, listo para enfrentar cualquier desafío en la galaxia. Genial para aquellos que aprecian una tripulación tan variada como los clientes de una taberna de Tatooine."
+	Plentiful = "Reunión Rebelde"
+	PlentifulTip = "Con un <good>33%</good> más de tripulantes, alcanzando hasta <yellow>2000</yellow>, este nivel refleja una reunión de la Alianza Rebelde. Es perfecto para capitanes que desean una tripulación robusta, cada miembro tan animado y dedicado como un luchador por la libertad de Yavin IV."
+	Standard = "Estándar"
+	StandardTip = "La cantidad estándar de tripulantes estará disponible para contratar dependiendo de la fama del jugador, hasta <yellow>1500</yellow>."
+	Scarce = "Tripulación de Contrabandistas"
+	ScarceTip = "Ofreciendo un <bad>33%</bad> menos de tripulantes, con un máximo de <yellow>1000</yellow>, este nivel es como reunir una tripulación compacta de contrabandistas. Cada miembro es tan crucial como un copiloto en la Carrera de Kessel, haciendo que cada viaje sea una aventura emocionante y estratégica."
+}
+
+
+CombatDifficulty
+{
+  NoDeath = "Pacifista (Invulnerable)"
+  NoDeathTip = "• Sin Daño Recibido\n<i><gray>(¿Daño? ¿Qué es eso?)</gray></i>\n• Puede Construir en Combate\n<i><gray>(No le haría daño a un mynock.)</gray></i>"
+  
+  Easy = "Pastor de Nerfs" 
+  EasyTip = "• <good>-30%</good> Daño Recibido\n<i><gray>(Apenas pasé la escuela de vuelo.)</gray></i>\n• <good>+40%</good> Daño Infligido\n<i><gray>(Fallo más tiros que un soldado de asalto.)</gray></i>"
+
+  Normal = "Cazarecompensas Recreativo"
+  NormalTip = "• Daño Normal Recibido\n<i><gray>(Soy un piloto decente.)</gray></i>\n• Daño Normal Infligido\n<i><gray>(Acierto la mitad de mis disparos.)</gray></i>"
+
+  Hard = "Escuadrón Rebelde"
+  HardTip = "• <bad>+25%</bad> Daño Recibido\n<i><gray>(Me gradué el primero de mi clase.)</gray></i>\n• <bad>-20%</bad> Daño Infligido\n<i><gray>(Solía dar en el blanco a las ratas womp con mi T-16 en casa.)</gray></i>"
+
+  VeryHard = "Contrabandista Legendario"
+  VeryHardTip = "• <bad>+40%</bad> Daño Recibido\n<i><gray>(¡Crucé la Ruta de Kessel en menos de 12 parsecs!)</gray></i>\n• <bad>-30%</bad> Daño Infligido\n<i><gray>(Nunca cuento las probabilidades.)</gray></i>"
+}
+
+
+
+EconDifficulty
+{
+  FreeBuild = "Maestro de Midiclorianos"
+  FreeBuildTip = "• Poderes ilimitados de la Fuerza permiten construir en cualquier lugar y momento sin créditos ni recursos.\n<i><gray>(Tener un alto conteo de midiclorianos es muy útil.)</gray></i>\n• Tasas de caída de recursos normales.\n<i><gray>(Los recursos fluyen tan naturalmente como la Fuerza.)</gray></i>\n• Recompensas normales de créditos.\n<i><gray>(Los créditos estarán bien.)</gray></i>\n• Recompensas normales de reputación.\n<i><gray>(Tu reputación te precede.)</gray></i>"
+  
+  Fast = "Contrabandista" 
+  FastTip = "• Tasas de caída de recursos <good>aumentadas 100%</good>.\n<i><gray>(Shhh, no preguntes de dónde vienen.)</gray></i>\n• Recompensas de créditos <good>aumentadas 100%</good>.\n<i><gray>(Libres de impuestos, por supuesto.)</gray></i>\n• Recompensas de reputación <good>aumentadas 50%</good>.\n<i><gray>(La fama se esparce rápido en el inframundo.)</gray></i>"
+
+  Normal = "Trabajador Autónomo"
+  NormalTip = "• Tasas de caída de recursos normales.\n<i><gray>(Solo otro día transportando mercancías.)</gray></i>\n• Recompensas normales de créditos.\n<i><gray>(Pago justo por un día de trabajo honesto.)</gray></i>\n• Recompensas normales de reputación.\n<i><gray>(Construyendo un nombre por ti mismo, trabajo a trabajo.)</gray></i>"
+
+  Slow = "Granjero de Humedad"
+  SlowTip = "• Tasas de caída de recursos <bad>reducidas 50%</bad>.\n<i><gray>(Maldita sea este páramo estéril.)</gray></i>\n• Recompensas de créditos <bad>reducidas 50%</bad>.\n<i><gray>(El agua no es gratis.)</gray></i>\n• Recompensas de reputación <bad>reducidas 25%</bad>.\n<i><gray>(¿A quién le importan los granjeros de todos modos?)</gray></i>"
+}
+
+
+
+CareerMode
+{
+	CommsTip = "<b>Holo-Comunicaciones</b>\n\nAbre enlaces de comunicación de HoloNet con otras naves estelares cercanas.\n\nTecla rápida: <btn id='Comms.OpenClose'/>"
+	NewMission = "NUEVA ASIGNACIÓN GALÁCTICA"
+	MissionCompleted = "MISIÓN EXITOSA"
+	MissionFailed = "FALLA DE MISIÓN"
+	FameLevelUp = "POSICIÓN GALÁCTICA AUMENTADA"
+	ReputationLevelUp = "REPUTACIÓN GALÁCTICA AUMENTADA"
+	ReputationLevelDown = "REPUTACIÓN GALÁCTICA DISMINUIDA"
+	ReputationLevelTitleFmt = "{0} {1} - {2} {0}"
+	CareerLogTip = "Archivo de Holocrón\n\nTecla rápida: <btn id='Game.MissionLog'/>"
+	StarSystemFmt = "<b>Sistema {0}</b><s6>\n \n</s6>"
+	StarSystemTierFmt = "Factor de Riesgo del Sector: {0}"
+	StarSystemFactionLineFmt = "{0}<good>{2:0}%</good> {1}"
+	TierFmt = "<gray>[</gray><b>{0}</b><gray>]</gray>"
+	TierRangeFmt = "<gray>[</gray><b>{0}</b>-<b>{1}</b><gray>]</gray>"
+	GameOver = "TODAS LAS MANOS PERDIDAS A LA FUERZA"
+	LoadLastSave = "Cargar Último Holocrón"
+	RememberedAsFmt = "La galaxia te recordará como...\n<good>{0}</good>"
+	UnexploredSpace = "Regiones Desconocidas"
+	CustomMarkerTip = "Añadir/Renombrar/Eliminar Marcador Galáctico\n\nTecla rápida: <btn id='Game.CustomMarker'/>"
+	TransferShipControl = "Transferir Control del Hiperimpulsor A..."
+	TransferShipControlConfirmFmt = "¿Estás seguro de querer transferir el control de la(s) nave(s) estelar(es) seleccionada(s) a <b>{0}</b>?"
+	TransferMoney = "Transferir Créditos Galácticos A..."
+	TransferMoneyFmt = "¿Cuántos <money>Créditos</money> deseas transferir a <b>{0}</b>?"
+	CreateCustomMarker = "<btn id='General.UIClick'/> para colocar un Marcador Galáctico aquí."
+	RenameDeleteCustomMarker = "<btn id='General.UIClick'/> para renombrar este Marcador Galáctico.\n"\
+	                           "<btn id='General.UIAltClick'/> para eliminar este Marcador Galáctico.\n"
+	CustomMarkerName = "Designa un nombre para este Marcador Galáctico:"
+	PartLocked = "ESQUEMAS DE NAVE ESTELAR AUSENTES"
+	Wanted = "¡¡¡ESCORIA REBELDE!!! \n\n⚠SE HA PUESTO UNA RECOMPENSA DEL HOLONET EN TU CABEZA⚠"
+	Victory = "<s32><good><b>ERES UNA LEYENDA GALÁCTICA</b></good></s32>\n\n¡Felicitaciones! Has alcanzado <fame>\"Leyenda Viva\" Fama</fame>, el más alto Posicionamiento Galáctico alcanzable.\n\n"\
+	          "Este es el \"final\" actual de la galaxia tal como la conocemos y debes <b>considerarte victorioso</b>, pero la galaxia siempre se está expandiendo. Nuevos desafíos pueden aparecer más adelante."
+	GotoNode = "<fame_color>Tienes naves estelares en este sistema.</fame_color>\n<btn id='General.UIClick'/> para ver este sistema estelar."
+}
+
+
+FameTitles
+[
+	"\"Carnada de Mynock\""
+	"\"Pastor de Nerfs\""
+	"\"Habitual de la Cantina\""
+	"\"Prospecto de Podcorredor\""
+	"\"Comerciante de Chatarra Jawa\""
+	"\"Presas de Cazarrecompensas\""
+	"\"Conocido de Contrabandistas\""
+	"\"Mención en HoloNet\""
+	"\"Aprendiz de Cazarrecompensas\""
+	"\"Pícaro\""
+	"\"Capitán Mercenario\""
+	"\"Cazarrecompensas Mortal\""
+	"\"Comerciante Intergaláctico\""
+	"\"Piloto Audaz\""
+	"\"Socialité de Coruscant\""
+	"\"Material de Escuadrón Rebelde\""
+	"\"Digno de Holocrón\""
+	"\"Diplomático Galáctico\""
+	"\"Gran Almirante\""
+	"\"Leyenda Viva\""
+]
+
+
+ReputationTitles
+[
+	"Bocadillo de Sarlacc"
+	"Objetivo de la Estrella de la Muerte"
+	"Poodoo de Bantha"
+	"Irritante Leve"
+	"Conocido del HoloNet"
+	"Amigo de la Cantina"
+	"Compañero de Sabacc"
+	"Material para Copiloto"
+	"Deuda de Vida Wookiee"
+]
+
+
+Missions
+{
+	ResourceDelivery = "Entrega de Suministros"
+	ResourceDeliveryDesc = "{to_ship} está solicitando una entrega de emergencia de {target_count} {resource_icon} {resource_type_plural} dentro de {time_limit_minutes} minutos. Además del pago estándar por cada {resource_type} entregado, se pagará un bono adicional de {money} una vez que se haya completado toda la entrega."
+	Bounty = "Recompensa de HoloNet"
+	BountyDesc = "Una nave fugitiva clase <b>{target_ship}</b> es buscada por actividades ilegales dentro del sistema {mission_location}. Las autoridades de {faction_name} han publicado una recompensa de {money} a ser pagada a cualquier piloto estelar que pueda eliminarla."
+	FleetBounty = "Recompensa de Escuadrón Fuera de la Ley"
+	FleetBountyDesc = "Un grupo de naves estelares renegadas es buscado por hostigar y extorsionar a civiles dentro del sistema {mission_location}. Las autoridades de {faction_name} han publicado una recompensa de {money} a ser pagada a cualquier piloto estelar que pueda eliminarlas."
+	PirateHunt = "Azote de Piratas"
+	PirateHuntDesc = "Piratas errantes han estado atacando cargueros civiles en el sistema {mission_location}, interrumpiendo las rutas comerciales de negocios locales. Los dueños de negocios han publicado una recompensa de {money} a ser pagada a cualquier piloto estelar que pueda destruir {target_count} de ellos."
+	FactionHunt = "Cazador de {target_faction}"
+	FactionHuntDesc = "La {faction_name} está en conflicto con {target_faction} y está ofreciendo un pago de {money} a cualquier contratista privado que pueda eliminar {target_count} de sus naves patrullando el Sistema {mission_location}."
+	ClearAsteroidField = "Limpieza de Campo de Asteroides"
+	ClearAsteroidFieldPiratesDesc = "Un puñado de piratas ha estado cazando naves mineras civiles en un campo de asteroides cercano. Los gremios mineros han publicado una recompensa de {money} a ser pagada a cualquier piloto estelar que pueda despejar el campo de asteroides de piratas."
+	ClearAsteroidFieldPlatformsDesc = "Los piratas han construido varias torretas de defensa estacionarias en un campo de asteroides cercano, haciéndolo peligroso para los mineros civiles legítimos. Los gremios mineros han publicado una recompensa de {money} a ser pagada a cualquier piloto estelar que pueda eliminar esas torretas de defensa."
+	StationContact = "Contactar {contact_ship}"
+	StationContactDesc = "{contact_ship} está solicitando asistencia de cualquier piloto estelar disponible para ayudar con una variedad de misiones. Como incentivo adicional, la Tabla de Misiones de la estación está ofreciendo un bono de {money} al primer piloto estelar que visite la estación."
+	StationRescue = "SOS de Estación"
+	StationRescueDesc = "¡Se ha recibido una señal de socorro de {contact_ship}! ¡Asaltantes están atacando la estación en números abrumadores! El gobernador de la estación está prometiendo {money} a cualquier piloto estelar que pueda destruir a los asaltantes y asegurar la estación."
+	PirateBaseDestruction = "Destruir Fortaleza Pirata"
+	PirateBaseDestructionDesc = "¡Se ha descubierto la ubicación de una fortaleza de una flota pirata local! Estos piratas han estado cazando naves de patrulla de {faction_name} dentro del sistema y deben ser erradicados. Las autoridades de {faction_name} han publicado una considerable recompensa de {money} a ser pagada a cualquier piloto estelar lo suficientemente valiente y competente para destruirla."
+	FactionBaseDestruction = "Destruir Puesto Avanzado de {target_faction}"
+	FactionBaseDestructionDesc = "La {faction_name} está en conflicto con {target_faction} y está ofreciendo un pago de {money} a cualquier contratista privado que pueda tomar uno de sus puestos de suministros en el Sistema {mission_location}."
+	Explore = "Reconocimiento {mission_location} ({discover_perc:0}%)"
+	ExploreDesc = "Navegantes de {faction_name} están solicitando datos sobre varios puntos de interés dentro del Sistema {mission_location}."
+	VisitSystem = "Explorar {mission_location}"
+	VisitSystemDesc = "Un astrofísico renombrado está solicitando datos sobre la actividad estelar en el Sistema {mission_location}."
+	Debug = "Misión de Depuración"
+	DebugDesc = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales rutrum eros. Fusce non eros a lacus luctus auctor sit amet at mi. In ac fermentum est. Nam viverra lectus eu turpis cursus vestibulum."
 }
 
 Lore

@@ -1,6 +1,6 @@
 ID = SW.fighter_tie_minigun_shot
-Range = 225
-IdealRange = 150
+Range = 325
+IdealRange = 250
 Speed = 350
 
 Components
@@ -40,11 +40,11 @@ Components
 			[
 				{
 					Type = Damage
-					Damage = 150
+					Damage = 100
 				}
 				{
 					Type = Impulse;
-					Impulse = 3.0;
+					Impulse = 1.5;
 				}
 			]
 			MediaEffects

@@ -9,4 +9,32 @@ Ships
 	:~{ File="Small Black Sun Cannon Platform.ship.png";        Tier=2;  Difficulty=2; }
 	:~{ File="Small Black Sun HE Missile Platform.ship.png";    Tier=2;  Difficulty=2; }
 	:~{ File="BSC_mineemp_platform.ship.png";    				Tier=2;  Difficulty=2; }
+	:~{ File="Lg BSC Ion Platform.ship.png";    				Tier=6;  Difficulty=2; }
+    :~{ File="BSC Blackout EMP Platform.ship.png";          Tier=6; Difficulty=1; }
+    :~{ File="BSC Lg Cannon Platform.ship.png";             Tier=6; Difficulty=1; }
+    :~{ File="BSC Lg HE Missile Platform.ship.png";         Tier=6; Difficulty=1; }
+    :~{ File="BSC Lg Laser Platform.ship.png";              Tier=6; Difficulty=1; }
+    :~{ File="BSC Lg Nuke Platform.ship.png";               Tier=6; Difficulty=1; }
+    :~{ File="BSC M Ion Platform.ship.png";                 Tier=4; Difficulty=1; }
+    :~{ File="BSC Med 2xIon Platform.ship.png";             Tier=4; Difficulty=1; }
+    :~{ File="BSC Med 2xRailgun Platform.ship.png";         Tier=4; Difficulty=1; }
+    :~{ File="BSC Med Cannon Platform.ship.png";            Tier=4; Difficulty=1; }
+    :~{ File="BSC Med Flak Platform.ship.png";              Tier=4; Difficulty=1; }
+    :~{ File="BSC Med HE Missile Platform Mk2.ship.png";    Tier=4; Difficulty=1; }
+    :~{ File="BSC Med HE Missile Platform.ship.png";        Tier=4; Difficulty=1; }
+    :~{ File="BSC Med Laser Platform.ship.png";             Tier=4; Difficulty=1; }
+    :~{ File="BSC Med Mixed Platform.ship.png";             Tier=4; Difficulty=1; }
+    :~{ File="BSC Med PD Platform.ship.png";                Tier=4; Difficulty=1; }
+    :~{ File="BSC Med Railgun Platform.ship.png";           Tier=4; Difficulty=1; }
+    :~{ File="BSC Med Sq Cannon Platform.ship.png";         Tier=4; Difficulty=1; }
+    :~{ File="BSC Sm Mixed Platform.ship.png";              Tier=2; Difficulty=1; }
+    :~{ File="BSC Sm PD Platform.ship.png";                 Tier=2; Difficulty=1; }
+    :~{ File="BSC Sm Railgun Platform.ship.png";            Tier=2; Difficulty=1; }
+    :~{ File="BSC Sm Sq Cannon Platform.ship.png";          Tier=2; Difficulty=1; }
+    :~{ File="BSC Small HE Missile Platform.ship.png";      Tier=2; Difficulty=1; }
+    :~{ File="BSC XL EMP Def Platform.ship.png";            Tier=8; Difficulty=1; }
+    :~{ File="BSC XL Nuke Platform.ship.png";               Tier=8; Difficulty=1; }
+//    :~{ File="Sm BSC Laser Platform.ship.png";              Tier=2; Difficulty=1; }
+    :~{ File="BSC XL Railgun Platform.ship.png";            Tier=8; Difficulty=1; }
+    :~{ File="BSC XL Asteroid Def Platform.ship.png";       Tier=8; Difficulty=1; }
 ]

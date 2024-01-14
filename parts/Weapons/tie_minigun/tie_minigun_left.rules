@@ -1,5 +1,26 @@
 Part : &<tie_minigun.rules>/Part
 {
+	//IDs
+
+	//StringKeys
+	
+	//Groups&Categories
+	
+	//Resources&Size&Health
+	
+	//Rects
+	
+	//Selections
+	
+	//PartSpecific
+	
+	//ReceivableBuffs
+	
+	//Doors&Etc
+	
+	//Editor
+	
+	//Components
 	NameKey = "Parts/tieMinigunLeft"
 	IconNameKey = "Parts/tieMinigunLeftIcon"
 	ID = SW.fighter_tie_minigun_left

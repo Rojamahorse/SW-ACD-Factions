@@ -4,6 +4,20 @@ Tags = [station]
 Ships
 [
 	// Civilian stations
+	:~{ File="SW.Reb Trade Station 1 Small.ship.png"; 				Tier=4;  Tags : ~/Tags [trade_station];    	StasisIcon="SW.Reb Trade Station 1.png";	OtherIDs=["Small Rebel Trade Station"] }
+	:~{ File="SW.Reb Trade Station 2 Medium.ship.png";   			Tier=10; Tags : ~/Tags [trade_station];    	StasisIcon="SW.Reb Trade Station 2.png";	OtherIDs=["Med Rebel Trade Station"] }
+	:~{ File="SW.Reb Trade Station 3 Large.ship.png";   			Tier=16; Tags : ~/Tags [trade_station];    	StasisIcon="SW.Reb Trade Station 3.png";	OtherIDs=["New Republic Rebel - Station1", "Large Rebel Trade Station"] }
+//	:~{ File="Large Rebel Trade Station.ship.png"; 					Tier=16; Tags : ~/Tags [trade_station];    	StasisIcon="Large Rebel Trade Station.png";	OtherIDs=[""] }
+
+	// Military stations
+	:~{ File="SW.Reb Arms Depot 1 Small.ship.png";             	Tier=3; SpawnTier=1; 	Tags : ~/Tags [military_station]; StasisIcon="SW.Reb Arms Depot 1.png";	OtherIDs=["Minor ReB Arms Depot"] }
+	:~{ File="SW.Reb Arms Depot 2 Medium.ship.png";             Tier=6;  SpawnTier=3;	Tags : ~/Tags [military_station]; StasisIcon="SW.Reb Arms Depot 2.png";	OtherIDs=["GRN- Station"] }
+	:~{ File="SW.Reb Arms Depot 3 Large.ship.png";      		Tier=7; SpawnTier=4;  	Tags : ~/Tags [military_station]; StasisIcon="SW.Reb Arms Depot 3.png";	OtherIDs=["Promise of the Rebel Alliance"] }
+	:~{ File="SW.Reb Arms Depot 4 XLarge.ship.png";     		Tier=9;  SpawnTier=8;  	Tags : ~/Tags [military_station]; StasisIcon="SW.Reb Arms Depot 4.png";	OtherIDs=["Inconspicuous Rebel Wreckage"] }
+	:~{ File="SW.Reb Arms Depot 5 Huge.ship.png";             	Tier=12; SpawnTier=12; 	Tags : ~/Tags [military_station]; StasisIcon="SW.Reb Arms Depot 5.png";	OtherIDs=["Ghost Rebel Hardware"] }
+]
+/*
+	// Civilian stations
 	:~{ File="Small Rebel Trade Station.ship.png"; 					Tier=4;  Tags : ~/Tags [trade_station];    	StasisIcon="Small Rebel Trade Station.png" }
 	:~{ File="Med Rebel Trade Station.ship.png";   					Tier=10; Tags : ~/Tags [trade_station];    	StasisIcon="Med Rebel Trade Station.png" }
 	:~{ File="New Republic Rebel - Station.ship.png";   			Tier=6; Tags : ~/Tags [trade_station];    	StasisIcon="Med Rebel Trade Station.png" }
@@ -15,4 +29,4 @@ Ships
 	:~{ File="Promise of the Rebel Alliance.ship.png";      		Tier=6;  SpawnTier=3;  Tags : ~/Tags [military_station]; StasisIcon="Promise of the Rebel Alliance.png" }
 	:~{ File="Inconspicuous Rebel Wreckage.ship.png";     			Tier=9;  SpawnTier=8;  Tags : ~/Tags [military_station]; StasisIcon="Inconspicuous Rebel Wreckage.png" }
 	:~{ File="Ghost Rebel Hardware.ship.png";             			Tier=12; SpawnTier=12; Tags : ~/Tags [military_station]; StasisIcon="Ghost Rebel Hardware.png" }
-]
+*/

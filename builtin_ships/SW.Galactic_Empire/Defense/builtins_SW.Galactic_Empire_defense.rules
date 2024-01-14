@@ -5,19 +5,47 @@ Tags = [defense]
 Ships
 [
 	// Platforms
-	:~{ File="Small Emp Disruptor Platform Alt.ship.png";     Tier=2; Difficulty=2; }
-	:~{ File="Small Emp Laser Platform1.ship.png";     Tier=2; Difficulty=2; }
-	:~{ File="Small Emp Disruptor Platform1.ship.png"; Tier=2; Difficulty=2; }
-	:~{ File="Small EMP Platform1.ship.png";       Tier=2; Difficulty=2; }
-	:~{ File="Small Emp Ion Platform1.ship.png";       Tier=2; Difficulty=2; }
-	:~{ File="Small Emp Cannon Platform.ship.png";        Tier=2; Difficulty=2; }
-	:~{ File="Small Emp HE Missile Platform.ship.png";    Tier=2; Difficulty=2; }
-	:~{ File="Small Emp Point Defense Platform.ship.png"; Tier=2; Difficulty=2; }
-	:~{ File="Small Emp Laser Platform.ship.png";         Tier=2; Difficulty=2; }
-	:~{ File="Small Emp Disruptor Platform.ship.png";     Tier=2; Difficulty=2; }
-	:~{ File="Small Emp Ion Platform.ship.png";           Tier=2; Difficulty=2; }
-	:~{ File="Small Emp Platform.ship.png";           Tier=2; Difficulty=2; }
-	:~{ File="Small Emp Nuke Platform.ship.png";          Tier=2; Difficulty=2; }
-	:~{ File="Small Emp Torp Platform.ship.png";          Tier=2; Difficulty=2; }
-	:~{ File="Emp_mineemp_platform.ship.png";          Tier=2; Difficulty=2; }
+	:~{ File="Small Emp Disruptor Platform Alt.ship.png";       Tier=2; Difficulty=2; }
+	:~{ File="Small Emp Laser Platform1.ship.png";              Tier=2; Difficulty=2; }
+	:~{ File="Small Emp Disruptor Platform1.ship.png";          Tier=2; Difficulty=2; }
+	:~{ File="Small EMP Platform1.ship.png";                    Tier=2; Difficulty=2; }
+	:~{ File="Small Emp Ion Platform1.ship.png";                Tier=2; Difficulty=2; }
+	:~{ File="Small Emp Cannon Platform.ship.png";              Tier=2; Difficulty=2; }
+	:~{ File="Small Emp HE Missile Platform.ship.png";          Tier=2; Difficulty=2; }
+	:~{ File="Small Emp Point Defense Platform.ship.png";       Tier=2; Difficulty=2; }
+	:~{ File="Small Emp Laser Platform.ship.png";               Tier=2; Difficulty=2; }
+	:~{ File="Small Emp Disruptor Platform.ship.png";           Tier=2; Difficulty=2; }
+	:~{ File="Small Emp Ion Platform.ship.png";                 Tier=2; Difficulty=2; }
+	:~{ File="Small Emp Platform.ship.png";                     Tier=2; Difficulty=2; }
+	:~{ File="Small Emp Nuke Platform.ship.png";                Tier=2; Difficulty=2; }
+	:~{ File="Small Emp Torp Platform.ship.png";                Tier=2; Difficulty=2; }
+	:~{ File="Lg Emp Ion Platform.ship.png";                    Tier=6; Difficulty=2; }
+    :~{ File="Emp Blackout EMP Platform.ship.png";              Tier=4; Difficulty=1; }
+//    :~{ File="Emp Lg Cannon Platform.ship.png";               Tier=2; Difficulty=1; }
+    :~{ File="Emp Lg HE Missile Platform.ship.png";             Tier=4; Difficulty=1; }
+    :~{ File="Emp Lg Laser Platform.ship.png";                  Tier=6; Difficulty=1; }
+    :~{ File="Emp Lg Nuke Platform.ship.png";                   Tier=4; Difficulty=1; }
+    :~{ File="Emp M Ion Platform.ship.png";                     Tier=4; Difficulty=1; }
+    :~{ File="Emp Med 2xIon Platform.ship.png";                 Tier=4; Difficulty=1; }
+    :~{ File="Emp Med 2xRailgun Platform.ship.png";             Tier=4; Difficulty=1; }
+    :~{ File="Emp Med Cannon Platform.ship.png";                Tier=4; Difficulty=1; }
+    :~{ File="Emp Med Flak Platform.ship.png";                  Tier=4; Difficulty=1; }
+    :~{ File="Emp Med HE Missile Platform Mk2.ship.png";        Tier=4; Difficulty=1; }
+    :~{ File="Emp Med HE Missile Platform.ship.png";            Tier=4; Difficulty=1; }
+    :~{ File="Emp Med Laser Platform.ship.png";                 Tier=4; Difficulty=1; }
+    :~{ File="Emp Med Mixed Platform.ship.png";                 Tier=4; Difficulty=1; }
+    :~{ File="Emp Med PD Platform.ship.png";                    Tier=4; Difficulty=1; }
+    :~{ File="Emp Med Railgun Platform.ship.png";               Tier=4; Difficulty=1; }
+    :~{ File="Emp Med Sq Cannon Platform.ship.png";             Tier=4; Difficulty=1; }
+    :~{ File="Emp Sm Mixed Platform.ship.png";                  Tier=2; Difficulty=1; }
+    :~{ File="Emp Sm PD Platform.ship.png";                     Tier=2; Difficulty=1; }
+    :~{ File="Emp Sm Railgun Platform.ship.png";                Tier=4; Difficulty=1; }
+    :~{ File="Emp Sm Sq Cannon Platform.ship.png";              Tier=2; Difficulty=1; }
+    :~{ File="Emp Small HE Missile Platform.ship.png";          Tier=2; Difficulty=1; }
+    :~{ File="Emp XL EMP Def Platform.ship.png";                Tier=6; Difficulty=1; }
+    :~{ File="Emp XL Nuke Platform.ship.png";                   Tier=6; Difficulty=1; }
+    :~{ File="Emp_mineemp_platform.ship.png";                   Tier=2; Difficulty=1; }
+    :~{ File="Sm Emp Laser Platform.ship.png";                  Tier=2; Difficulty=1; }
+    :~{ File="Emp XL Railgun Platform.ship.png";                Tier=6; Difficulty=1; }
+    :~{ File="Emp XL Asteroid Def Platform.ship.png";           Tier=6; Difficulty=1; }
 ]

@@ -3,7 +3,7 @@ Fleethideouts
 	Type = None
 	SpawnChance = 100% // change after debug
 	Tags = [asteroid]
-	Distance = [15000, 20000]
+	Distance = [7000, 15000]
 	SubSpawners
 	[
 		{
@@ -131,7 +131,7 @@ Fleethideouts
 						{
 							Type = Ships
 							Tags = [station_defense]
-							Count = [6, 8]
+							Count = [5, 7]
 							Distance = [200, 450]
 							MinDistanceFromTags = [[asteroid, 0]]
 							SuppressLocationAssertions = true

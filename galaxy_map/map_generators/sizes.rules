@@ -54,6 +54,13 @@ SWRebellion // A New Hope Galaxy - 50 star systems
 	MapGenerator = &<../SWRebellion.rules>
 }
 
+SWClonewars // The Clone Wars - 50 star systems
+{
+	NameKey = "MapSizes/SWClonewars"
+	TipKey = "MapSizes/SWClonewarsDesc"
+	MapGenerator = &<../SWClonewars.rules>
+}
+
 Vanilla // Cosmoteer Vanilla
 {
 	NameKey = "MapSizes/Vanilla"

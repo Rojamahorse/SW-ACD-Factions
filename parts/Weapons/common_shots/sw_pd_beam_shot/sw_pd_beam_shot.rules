@@ -75,15 +75,15 @@ HitNothing
 		}
 		{
 			Type = ExplosiveDamage
-			TotalDamage = 650
-			Radius = 2
+			TotalDamage = 2050
+			Radius = 6
             Slices = 1
 			Filter
 			{
 				Ships = false
 				Shields = false
 				Bullets = true
-				OnlyBulletCategories = [missile, laser, bullet, mine]
+				OnlyBulletCategories = [missile, laser, bullet, mine, ion_shot]
 				Crew = true
 			}
 		}
@@ -93,6 +93,7 @@ HitNothing
 	[
 		&<particles/sw_beam_shot_sparks.rules>
 		&<particles/sw_beam_shot_spikes.rules>
+		&<particles/sw_laser_smoke.rules>
 	]
 }
 
