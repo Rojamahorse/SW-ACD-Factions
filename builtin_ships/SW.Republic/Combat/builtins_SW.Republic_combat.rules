@@ -134,7 +134,7 @@ Ships
 //	:~{ File="Inexpugnable_class_Tactical_Command_Ship.ship.png";           	Tier=18;  Difficulty=1; }
 //	:~{ File="Endurance_class_Fleet_Carrier.ship.png";           				Tier=18;  Difficulty=1; }
 	:~{ File="Rep Secutor-Class Star Destroyer.ship.png";           			Tier=18;  Difficulty=2; }
-	:~{ File="Venator II-Class Star Destroyer.ship.png";          				Tier=11;  Difficulty=2; } //  Credit ClassicJam
+	:~{ File="Venator II-Class Star Destroyer.ship.png";          				Tier=16;  Difficulty=2; } //  Credit ClassicJam
 	:~{ File="Venator II-Class B Star Destroye.ship.png";      					Tier=12;  Difficulty=2; } //  Credit ClassicJam
 	:~{ File="V-class CG Star Destroyer (Republic).ship.png";      				Tier=12;  Difficulty=2; } 
 	:~{ File="Acclamator I-Class Cruiser (Red).ship.png";      					Tier=13;  Difficulty=2; } 
@@ -142,10 +142,10 @@ Ships
 	:~{ File="Rep Venator V.ship.png";      									Tier=15;  Difficulty=2; } 
 	:~{ File="Victory-class Star Destroyer (Republic).ship.png";      			Tier=14;  Difficulty=2; } 
 	:~{ File="Venator-Class Star Destroyer (Command Cruiser).ship.png";      	Tier=13;  Difficulty=2; } 
-	:~{ File="Venator II-Class Star Destroyer B (Republic).ship.png";      		Tier=16;  Difficulty=2; } 
-	:~{ File="Venator II-Class Star Destroyer M (Republic).ship.png";      		Tier=15;  Difficulty=2; } 
-	:~{ File="Venator II-Class Star Destroyer R (Republic).ship.png";      		Tier=14;  Difficulty=2; } 
-	:~{ File="Rep Secutor-Class SD - Orig.ship.png";      						Tier=18;  Difficulty=2; } //  Credit ClassicJam
+	:~{ File="Venator II-Class Star Destroyer B (Republic).ship.png";      		Tier=17;  Difficulty=2; } 
+	:~{ File="Venator II-Class Star Destroyer M (Republic).ship.png";      		Tier=16;  Difficulty=2; } 
+	:~{ File="Venator II-Class Star Destroyer R (Republic).ship.png";      		Tier=17;  Difficulty=2; } 
+	:~{ File="Rep Secutor-Class SD - Orig.ship.png";      						Tier=19;  Difficulty=2; } //  Credit ClassicJam
 
 
 
