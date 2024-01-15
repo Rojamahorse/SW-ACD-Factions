@@ -20,7 +20,9 @@ Ships
 /*65,790*/		:~{ File="CIS Droid Tri-Fighter.ship.png";       										Tier=3;  Difficulty=1; }
 /**/		:~{ File="Droid Tri-Fighter Mk2.ship.png";       										Tier=3;  Difficulty=1; }
 /**/		:~{ File="Droid Tri-Fighter Mk3.ship.png";       										Tier=4;  Difficulty=1; }
-/*64,290*/		:~{ File="CIS Droid S-One.ship.png";       												Tier=4;  Difficulty=1; }
+/*64,290*/		:~{ File="CIS Droid S-One.ship.png";       											Tier=4;  Difficulty=1; }
+/**/		:~{ File="CIS Droid S-One B.ship.png";       											Tier=5;  Difficulty=1; }
+/**/		:~{ File="CIS Droid S-One S Type-S.ship.png";       									Tier=5;  Difficulty=1; }
 /**/		:~{ File="CIS Trade Federation Escort.ship.png";       									Tier=8;  Difficulty=2; }
 /**/		:~{ File="Diamond-Class Cruiser I.ship.png";       										Tier=7;  Difficulty=2; }
 /**/		:~{ File="Diamond-Class Cruiser II.ship.png";       									Tier=9;  Difficulty=1; }

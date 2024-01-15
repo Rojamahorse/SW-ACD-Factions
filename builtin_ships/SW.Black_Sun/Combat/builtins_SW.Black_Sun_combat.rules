@@ -55,16 +55,19 @@ Ships
 /**/ 	:~{ File="BSC Hardcell-Class Interstellar Transport.ship.png"; 					Tier=8;  Difficulty=1; }
 /**/	:~{ File="BSC_Invisible Hand.ship.png"; 										Tier=14;  Difficulty=1; }
 /**/	:~{ File="Invisible Hand-BS.ship.png"; 											Tier=11;  Difficulty=1; }
+/**/	:~{ File="BSC Harrower-class Dreadnought.ship.png"; 							Tier=11;  Difficulty=1; }
 /**/	:~{ File="BSE Vengeance Class.ship.png"; 										Tier=10;  Difficulty=1; }
 /**/	:~{ File="BSE Invisible Hand Alt.ship.png"; 									Tier=13;  Difficulty=1; }
 /**/	:~{ File="BSC Invisible Hand.ship.png"; 										Tier=12;  Difficulty=1; }
 /**/	:~{ File="BSC Providence-Class Destroyer.ship.png"; 							Tier=14;  Difficulty=1; }
 /**/	:~{ File="BSC Providence-Class Dreadnought.ship.png"; 							Tier=17;  Difficulty=1; }
+/**/	:~{ File="BSC Harrower-class-II Dreadnaugh.ship.png"; 							Tier=17;  Difficulty=1; }
 /*137,170*/	:~{ File="BSC Pursuer-Class Enforcement-BS.ship.png"; 						Tier=5;  Difficulty=1; }
 /*139,670*/	:~{ File="Pursuer-Class Enforcement-BS.ship.png"; 							Tier=5;  Difficulty=1; }
 /**/	:~{ File="BSC Mando Destroyer.ship.png"; 										Tier=15;  Difficulty=1; }
 /**/	:~{ File="BSC Recusant-Class Light Destroyer 2.ship.png"; 						Tier=15;  Difficulty=1; }
 /**/	:~{ File="BSC Recusant-Class Light Destroyer.ship.png"; 						Tier=16;  Difficulty=1; }
+/**/	:~{ File="BSC Redeemer_Class_Battleship.ship.png"; 						Tier=18;  Difficulty=1; }
 	
 	]
 	// Patrol ships

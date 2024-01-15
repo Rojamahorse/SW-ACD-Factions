@@ -61,7 +61,9 @@ Ships
 	:~{ File="Emp 546_Light_Cruiser Mk2.ship.png";							Tier=11;	Difficulty=2; } // Credit ClassicJam
 	:~{ File="Emp Acclamator Light Assault.ship.png";						Tier=7;		Difficulty=2; } // Credit ClassicJam
 	:~{ File="Emp Cantwell-Class Arrestor Crui.ship.png";					Tier=8;		Difficulty=1; }
+	:~{ File="Emp Harrower-class Dreadnought.ship.png";						Tier=9;		Difficulty=1; }
 	:~{ File="Acclamator II-Class Cruiser.ship.png";						Tier=13;	Difficulty=1; }
+	:~{ File="Emp Harrower-class-II Dreadnaugh.ship.png";					Tier=16;	Difficulty=1; }
 	:~{ File="Emp Acclamator II-Class Cruiser.ship.png";					Tier=13;	Difficulty=1; }
 	:~{ File="Emp Carrack-class Light Cruiser.ship.png";					Tier=10;	Difficulty=1; }
 	:~{ File="Emp Class 546 Light Cruiser.ship.png";						Tier=9;		Difficulty=1; }
@@ -87,12 +89,13 @@ Ships
     :~{ File="Marauder-Class Cruiser (Empire).ship.png"; 					Tier=7; 	Difficulty=1; }
     :~{ File="Nu-Class Attack Shuttle.ship.png"; 							Tier=5; 	Difficulty=1; }
     :~{ File="Pelta-Class Frigate C (Empire).ship.png"; 					Tier=7; 	Difficulty=1; }
-    :~{ File="Praetor Mark-II Class Battlecruiser.ship.png"; 				Tier=17; 	Difficulty=2; }
+    :~{ File="Praetor Mark-II Class Battlecruiser.ship.png"; 				Tier=19; 	Difficulty=2; }
     :~{ File="Tartan-class Patrol Cruiser.ship.png"; 						Tier=7; 	Difficulty=2; }
     :~{ File="TIE Advanced X1 (Sienar Blue).ship.png"; 						Tier=3; 	Difficulty=1; }
     :~{ File="Victory II-class Star Destroyer.ship.png"; 					Tier=13; 	Difficulty=2; }
     :~{ File="Victory-class Star Destroyer.ship.png"; 						Tier=12; 	Difficulty=2; }
     :~{ File="Emp Bewitcher_Class_Super_Cruiser.ship.png"; 					Tier=17; 	Difficulty=2; } // Credit Hello360Jelly Jr
+    :~{ File="Emp Redeemer_Class_Battleship.ship.png"; 						Tier=19; 	Difficulty=2; } // Credit Hello360Jelly Jr
 ]
 
 
