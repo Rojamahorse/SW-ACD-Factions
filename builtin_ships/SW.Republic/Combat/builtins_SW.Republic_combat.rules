@@ -32,7 +32,9 @@ Ships
 	:~{ File="Republic Nu-Class AS Mk2.ship.png";     										Tier=4;  Difficulty=2; }
 	:~{ File="C-9979 Landing Craft (NRep) Atk.ship.png";     								Tier=4;  Difficulty=2; }
 	:~{ File="Republic Gunship Cannonade.ship.png";     									Tier=5;  Difficulty=2; }
-/*263,000*/	:~{ File="Rep Baudo-Class Space Yacht.ship.png";     									Tier=6;  Difficulty=2; }
+/**/	:~{ File="Rep YT-2400 Light Freighter.ship.png";     								Tier=6;  Difficulty=2; } // Original
+/*263,000*/	:~{ File="Rep Baudo-Class Yacht (combat).ship.png";     						Tier=6;  Difficulty=2; } // Original
+/*263,000*/	:~{ File="Rep Baudo-Class Space Yacht.ship.png";     							Tier=6;  Difficulty=2; } // Original
 	:~{ File="Republic Storm IV Twin-Pod Comba.ship.png";       							Tier=3;  Difficulty=2; }
 	:~{ File="V-19 Torrent Starfighter B.ship.png";       									Tier=3;  Difficulty=2; } //  Credit ClassicJam
 	:~{ File="Republic Z-95 Headhunter Orig.ship.png";        								Tier=4;  Difficulty=2; } //  Credit ClassicJam
