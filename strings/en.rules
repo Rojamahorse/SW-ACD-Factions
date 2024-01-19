@@ -420,8 +420,16 @@ Missions
 	VisitSystemDesc = "A renowned astrophysicist is requesting data on stellar activity in the {mission_location} System."
 	Debug = "Debug Mission"
 	DebugDesc = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales rutrum eros. Fusce non eros a lacus luctus auctor sit amet at mi. In ac fermentum est. Nam viverra lectus eu turpis cursus vestibulum."
+	ClearRogueElements = "Neutralize Defectors"
+	ClearRogueElementsDesc = "Mission Info."
+	DefeatRenegadeLeader = "Neutralize \"{target_ship}\" Renegade Leader"
+	DefeatRenegadeLeaderDesc = "Mission Info"
 }
-
+Objectives
+{
+	EliminateDefectors = "Eliminate Defectors"
+	EliminateRenegadeLeader = "Eliminate {0} Renegade Leader"
+}
 Lore
 {
 	Black_Sun

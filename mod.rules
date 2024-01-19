@@ -322,6 +322,96 @@ Actions
 		With = 250
     }
 
+	/* *********** FACTION MISSIONS ************* */
+/*
+	{
+		Action = Overrides
+		OverrideIn = "<./data/modes/career/career.rules>/MissionMetatypes"
+		Overrides
+		{
+			SWSupressDefectingSquadron
+			{
+				NameKey = "Missions/ClearRogueElements"
+				DescriptionKey = "Missions/ClearRogueElementsDesc"
+				CategoryID = bounties
+			}
+			SWDefeatRenegadeBoss
+			{
+				NameKey = "Missions/DefeatRenegadeLeader"
+				DescriptionKey = "Missions/DefeatRenegadeLeaderDesc"
+				CategoryID = bounties
+			}
+		}
+
+	}
+	*/
+
+	/* *********** SW MISSION AI ************* */
+
+
+	/*
+	{
+		Action = Overrides
+		OverrideIn = "<./data/ai/ai.rules>"
+		Overrides
+		{
+			SWRenegadeAI
+			{
+				NameKey = "AI/SWMissionAI"
+				UpdateInterval = [.5, 1] // A random range. Slower than the average AI.
+				IsAvailableInCreativeMode = true
+				IsAvailableInMultiplayer = true
+
+				StrategyModules
+				[
+					{
+						Type = AreaPatrol
+						DefaultPatrolRadius = 800
+						AvoidableDoodadTags = [sun, station]
+						AvoidableDoodadBuffer = 100
+					}
+					{
+						Type = FollowFleetLeader
+					}
+					{
+						Type = AggroEnemies
+						TargetSwitchThresholdFactor = 2
+						TargetDistanceFactorExponent = 0.5
+						TargetFirepowerCacheTime = 10
+						AcquireAggroWithinRadar = true
+						ReleaseAggroWithinRadar = true
+					}
+				]
+
+				TacticsModules
+				[
+					{
+						Type = DefaultAttackRadiusAndRotation
+						AttackRotationSwitchThresholdFactor = 1.25
+						AttackRotationsToCheck = 8
+						UseSavedAboveHealth = 0%
+					}
+					{
+						Type = RandomAttackAngle
+						AttackAngleChangeInterval = [10, 20]
+						AttackAngleChangeDelta = [-50d, 50d]
+						CoordinateFlanking = true
+					}
+				]
+
+				TargetingModules
+				[
+					{
+						Type = ValueTargeter
+						TargetChecksPerUpdate = 10
+						TargetSwitchThresholdFactor = 2
+						TargetValueFactorPerPenetrationDist = .75
+					}
+				]
+			}
+		}
+	}
+*/
 	/* *********** FACTION GENERATION ************* */
 
 /*
