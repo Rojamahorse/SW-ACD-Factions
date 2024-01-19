@@ -15,6 +15,7 @@ Ships
 	:~{ File="BSC Preacher.ship.png";    									Tier=5;  Tags : ~/Tags [trade] }
 	:~{ File="BSC Witness.ship.png";     									Tier=10; Tags : ~/Tags [trade] }
 	:~{ File="BSE Corellian Supply Ship.ship.png"; 							Tier=4;  Tags : ~/Tags [trade] }
+	:~{ File="BSC Leisure Baudo-Class Yacht (C.ship.png"; 					Tier=5;  Tags : ~/Tags [trade] }
 	:~{ File="Cargo Transporter Huge Black_Sun.ship.png";     				Tier=10; Tags : ~/Tags [trade] }
 	:~{ File="Cargo Transporter Large Black_Sun.ship.png";   				Tier=10; Tags : ~/Tags [trade] }
 	:~{ File="Cargo Transporter Medium Black_Sun.ship.png";    				Tier=7;  Tags : ~/Tags [trade] }
