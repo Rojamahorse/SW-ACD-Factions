@@ -21,7 +21,9 @@ Ships
 /*92,720*/			:~{ File="BSC Storm IVB Twin-Pod Combat.ship.png"; 						Tier=4;  Difficulty=1; }
 /*105,420*/			:~{ File="Black Sun Fighter-BS (Combat).ship.png";          			Tier=3;  Difficulty=2; }
 /*109,710*/			:~{ File="Med-BS Starfighter.ship.png";         						Tier=3;  Difficulty=2; }
+/*113,460*/			:~{ File="BSC Heavy Black Sun Fighter.ship.png";          				Tier=5;  Difficulty=2; } //ClassicJam
 /*113,910*/			:~{ File="Med-BS Starfighter B.ship.png";          						Tier=4;  Difficulty=2; } //ClassicJam
+/*138,890*/			:~{ File="BSC Mandalorian Fang Fighter.ship.png"; 						Tier=4;  Difficulty=2; }
 /*139,600*/			:~{ File="BSC BountyHunter Razor Crest.ship.png"; 						Tier=4;  Difficulty=2; }
 /*140,020*/			:~{ File="Black Sun ARC-170-BS.ship.png";       						Tier=5;  Difficulty=1; }
 /*144,020*/			:~{ File="Mandalorian ARC-170.ship.png";   								Tier=3;  Difficulty=2; }
@@ -40,6 +42,7 @@ Ships
 /*190,090*/			:~{ File="Mandalorian Kom'rk-Class-O Fight.ship.png";          			Tier=6;  Difficulty=1; } //ClassicJam 
 /*203,910*/			:~{ File="BSC Kom'rk-Class Fighter R.ship.png"; 						Tier=7;  Difficulty=1; }
 /*203,940*/			:~{ File="Mandalorian Kom'rk-Class (Gauntlet)BS Fighter.ship.png";      Tier=6;  Difficulty=2; } //ClassicJam
+/*268,850*/			:~{ File="BSC Smuggler's Luxury Yacht 3000.ship.png"; 					Tier=6;  Difficulty=1; }
 /*270,630*/			:~{ File="GR-75 Medium Transport (New).ship.png"; 						Tier=8;  Difficulty=1; }
 /*352,480*/			:~{ File="BSC YT-1300f Light Freighter (V2.ship.png"; 					Tier=4;  Difficulty=1; }
 /*353,080*/			:~{ File="BSC YT-1300g Light Freighter.ship.png"; 						Tier=7;  Difficulty=1; }
@@ -66,6 +69,7 @@ Ships
 /*2,183,980*/		:~{ File="AA-9 Coruscant-BS (Combat).ship.png"; 						Tier=12;  Difficulty=1; }
 /*2,264,773*/		:~{ File="BSE Vengeance Class.ship.png"; 								Tier=12;  Difficulty=1; }
 /*4,529,860*/		:~{ File="BSC Recusant-Class Light Destroyer 2.ship.png"; 				Tier=13;  Difficulty=1; }
+/*4,609,240*/		:~{ File="BSC R-Class Light Destroyer 2.ship.png"; 						Tier=13;  Difficulty=1; }
 /*4,634,240*/		:~{ File="BSC Recusant-Class Light Destroyer.ship.png"; 				Tier=13;  Difficulty=1; }
 
 //Tier 14-17 (5,000,001 to 10,000,000)
