@@ -1,0 +1,98 @@
+Type = None
+/*Conditions
+{
+	MinNodeTier = 8
+}*/
+SubSpawners
+[
+	// Boss Ships.
+	{
+		Type = Ships
+		Tags = [JaniBoss, Boss, target_leviathan, bounty_ship] // target_leviathan is used for avoiding if existing idk
+		Count = [1, 1]
+		Distance = [28000, 35000]
+		MinDistanceFromTags = [[Boss, 8000],[station, 8000],[target_leviathan, 8000]]
+		Allegiance = Unique
+		SynchronizeAllegiance = true
+		FamePerTier = &<./data/modes/career/tier_tables.rules>/StandardFamePerTier
+		MaxFamePerTier = &<./data/modes/career/tier_tables.rules>/StandardMaxFamePerTier
+		Radius = 4000
+		Labels = ["janiboss"] // undo this and make each boss its own spawner inside a subspawner with random.
+		ShipCriteria
+		{
+			//UseLocalFactionWeights = false
+			UseTierField = true
+			AllowTierRangeExpansion = true
+			Tags = [janibossship]
+		}
+		AI
+		{
+			Type = BossAICosmilite
+			PatrolRadius = 800
+			TargetAcquireRangeFromOrigin = 1000
+			TargetUnacquireRangeFromOrigin = 7000
+			StasisSpeed = 0
+		}
+		SubSpawners
+		[
+			// POI
+			{
+				Type = Doodads
+				DoodadType = janiTNT.BossPOI
+				ShowOnlyInFog = true
+				Undiscovered = true
+				HideIfUnexplored = true
+				ScaleFactor = &../../Radius
+				Tags = [JaniBossArea, bounty_area, poi_unknown, boss_field_poi]
+				AutoRemoveWhenTagDestroyed = JaniBoss
+			}
+			{
+				Type = Mission
+				Metatype = DefeatBossJani
+				SpawnAt = Tag
+				SpawnAtTag = { Mode=Nearest; Tag=trade_station; }
+				Faction = OwnerOfTag
+				FactionTag = &SpawnAtTag
+				Objectives
+				[
+					{
+						Type = Sequential
+						SubObjectives
+						[
+							{
+								Type = DestroyShips
+								TargetsTag = { Tag=JaniBoss; LimitToBatch=true; Max=1; }
+								TargetAreaTag = JaniBossArea
+								AutoDiscoverTargetArea = true
+								OverrideDisplayFormatKey = "Objectives/DefeatBossJani"
+							}
+							{
+								Type = ReceiveRewards
+							}
+						]
+					}
+				]
+				Rewards
+				[
+					{
+						Type = Money
+						MoneyPerHighTier = &<./data/modes/career/tier_tables.rules>/StandardMoneyPerTier
+						MoneyPerTierMultiplier = 12
+						RoundToMultiple = 1000
+					}
+					{
+						Type = Fame
+						FamePerHighTier = &<./data/modes/career/tier_tables.rules>/StandardFamePerTier
+						FamePerTierMultiplier = 10
+						MaxFamePerHighTier = &<./data/modes/career/tier_tables.rules>/StandardMaxFamePerTier
+					}
+					{
+						Type = Reputation
+						ReputationPerHighTier = &<./data/modes/career/tier_tables.rules>/StandardReputationPerTier
+						ReputationPerTierMultiplier = 10
+					}
+				]
+			}
+		]
+	}
+]

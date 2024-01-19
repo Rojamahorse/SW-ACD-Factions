@@ -1,0 +1,402 @@
+Type = None
+Conditions
+{
+	MinNodeTier = 4
+}
+SubSpawners
+[
+	{
+		Type = Doodads
+		Count = [1, 1]
+		//Count = [10, 15]
+		Distance = [20750, 27000]
+		Tags = [rare_asteroid, asteroid, megaroid, hyperoid, gigaroid]
+		MinDistanceFromTags = [[station, 2000], [bounty, 2000], [asteroid_field, 800], [ftl_gate, 1200]]
+		//MinDistanceFromTags = [[station, 1000], [asteroid, 1000], [bounty, 1000], [ftl_gate, 1000]]
+		DoodadTypes
+		[
+			{ Type=janiTNT.hyperoid_l;     ChanceWeight=1; }
+			{ Type=janiTNT.common_ore_hyperoid_m;       ChanceWeight=1; }
+			{ Type=janiTNT.metal_ore_hyperoid_m;       ChanceWeight=1; }
+			{ Type=janiTNT.rare_ore_hyperoid_m;       ChanceWeight=0.5; }
+		]
+		SubSpawners = &~/HyperoidSubSpawnersHandler
+	}
+	{
+		Type = Doodads
+		Count = [0, 1]
+		//Count = 5
+		Distance = [4000, 16000]
+		Tags = [rare_asteroid, asteroid, megaroid, hyperoid, gigaroid]
+		MinDistanceFromTags = [[station, 2000], [bounty, 2000], [asteroid_field, 800], [ftl_gate, 1200]]
+		//MinDistanceFromTags = [[station, 1000], [asteroid, 1000], [bounty, 1000], [ftl_gate, 1000]]
+		DoodadTypes
+		[
+			{ Type=janiTNT.hyperoid_l;     ChanceWeight=4/3; }
+			{ Type=janiTNT.common_ore_hyperoid_m;       ChanceWeight=1; }
+			{ Type=janiTNT.metal_ore_hyperoid_m;       ChanceWeight=1; }
+			{ Type=janiTNT.rare_ore_hyperoid_m;       ChanceWeight=0.25; }
+		]
+		SubSpawners = &~/HyperoidSubSpawnersHandler
+	}
+]
+HyperoidSubSpawnersHandler
+[
+	// Guardian Ships.
+	{
+		Type = Ships
+		Tags = [HyperoidGuardian]
+		Count = [5, 6]
+		Distance = [700, 800]
+		MinDistanceFromTags = [[HyperoidGuardian, 60][asteroid, 60]]
+		Allegiance = Unique
+		SynchronizeAllegiance = true
+		SpawnsPerSlice = 1
+		SpawnSlicePadding = 15%
+		RandomHealthRange = [100%, 100%]
+		FamePerTier = &<./data/modes/career/tier_tables.rules>/StandardFamePerTier
+		MaxFamePerTier = &<./data/modes/career/tier_tables.rules>/StandardMaxFamePerTier
+		ShipCriteria
+		{
+			//UseLocalFactionWeights = false
+			UseTierField = true
+			//FleetTierRemapTable = &<./data/modes/career/fleet_tier_remap_table.rules>/FleetTierRemapTable
+			AllowTierRangeExpansion = true
+			UseEvenShipTypeDistribution = true
+			Tags = [HyperoidGuardian]
+		}
+		AI
+		{
+			Type = StationGuard
+			PatrolRadius = 400
+			TargetAcquireRangeFromOrigin = 900
+			TargetUnacquireRangeFromOrigin = 1500
+			StasisSpeed = 0
+		}
+	}
+	{
+		Type = None // Asteroid field and junk and POI
+		Count = 1
+		Tags = [asteroid_field, hyperoid_field]
+		Radius = 1500
+
+		SubSpawners
+		[
+			// Giant asteroids. Moons.
+			{
+				Type = Doodads
+				Count = [1, 3]
+				DoodadTypes = [cosmoteer.megaroid_l, cosmoteer.megaroid_xl]
+				Tags = [asteroid]
+				Distance = [1450, (&../../../Radius)]
+				RootLocation = Grandparent
+				AddDistance = ParentToGrandparent
+				SpawnsPerSlice = 1
+				SpawnSlicePadding = 35%
+				MinDistanceFromTags = [[asteroid, 120][HyperoidGuardian, 200]]
+				NameGenerator
+				{
+					Type = Multi
+					SubGenerators
+					[
+						{
+							Chance = .05
+							Type = NameList
+							Names
+							[
+								"Severely Depressed"
+								"DUMB"
+								"Gay"
+							]
+						}
+						{
+							Chance = .75
+							Type = NameList
+							Names
+							[
+								"Rocky"
+								"Stoney"
+								"Rubbly"
+								"Cobbly"
+								"Stone"
+								"Rock"
+								"Basalt"
+								"Andesite"
+								"Diorite"
+								"Granite"
+								"Marble"
+								"Evil"		
+							]
+						}
+						{
+							Chance = 1
+							Type = NameList
+							Names
+							[
+								"Moon"
+								"Sattelite"
+							]
+						}
+					]
+				}
+			}
+			// Dead Abandoned Ship
+			{
+				Tags = [misc_discoverable, combat, abandoned]
+				Count = [3, 4]
+				Distance = [500, (&../../../Radius)]
+				MinDistanceFromTags
+				[
+					[misc_discoverable, 100]
+					[asteroid, 50]
+					[HyperoidGuardian, 100]
+				]
+				SuppressLocationAssertions = true
+				
+				Type = Ships
+				Allegiance = Junk
+				InitToMax = false
+				SpawnCrew = false
+				RandomHealthRange = [25%, 100%]
+				Labels = ["abandoned"]
+				ShipCriteria
+				{
+					UseLocalFactionWeights = true
+					UseTierField = true
+					Tier = -2
+					AllowTierRangeExpansion = true
+					Tags = [combat]
+				}
+			}
+			// Free Valuable Storage pod.
+			/*{
+				Tags = [misc_discoverable, storage_pod]
+				Count = [3, 4]
+				Distance = [600, (&../../../Radius)]
+				MinDistanceFromTags
+				[
+					[misc_discoverable, 100]
+					[asteroid, 50]
+					[HyperoidGuardian, 100]
+				]
+				SuppressLocationAssertions = true
+				
+				Type = Ships
+				Allegiance = Junk
+				RandomHealthRange = [25%, 50%]
+				ShipCriteria
+				{
+					Tags = [storage_pod]
+				}
+
+				ResourceLoadout
+				[
+					{ ResourceType=tristeel;         RandomWeight=1; Quantity=[10, 20]; }
+					{ ResourceType=diamond;          RandomWeight=1; Quantity=[3, 2]; }
+					{ ResourceType=processor;        RandomWeight=1; Quantity=[2, 3]; }
+					{ ResourceType=enriched_uranium; RandomWeight=1; Quantity=[2, 7]; }
+				]
+			}*/
+			/*{
+				Type = None
+				Tags = [misc_discoverable]
+				Count = [6, 8]
+				Distance = [600, (&../../../Radius)]
+				MinDistanceFromTags
+				[
+					//[station, 1000]
+					//[ftl_gate, 3000]
+					//[ftl_beacon, 1500]
+					[misc_discoverable, 100]
+					[asteroid, 50]
+					[HyperoidGuardian, 100]
+				]
+				SuppressLocationAssertions = true
+
+				RandomSubSpawnerCount = 1
+				SubSpawners
+				[
+					// Dead Abandoned Ship
+					{
+						Tags = [misc_discoverable, combat, abandoned]
+						Count = [3, 4]
+						Distance = [600, (&../../../Radius)]
+						MinDistanceFromTags
+						[
+							[misc_discoverable, 100]
+							[asteroid, 50]
+							[HyperoidGuardian, 100]
+						]
+						SuppressLocationAssertions = true
+						
+						Type = Ships
+						Allegiance = Junk
+						InitToMax = false
+						SpawnCrew = false
+						RandomHealthRange = [25%, 100%]
+						Labels = ["abandoned"]
+						ShipCriteria
+						{
+							UseLocalFactionWeights = true
+							UseTierField = true
+							Tier = -2
+							AllowTierRangeExpansion = true
+							Tags = [combat]
+						}
+					}
+					// Free Valuable Storage pod.
+					{
+						Tags = [misc_discoverable, storage_pod]
+						Count = [3, 4]
+						Distance = [600, (&../../../Radius)]
+						MinDistanceFromTags
+						[
+							[misc_discoverable, 100]
+							[asteroid, 50]
+							[HyperoidGuardian, 100]
+						]
+						SuppressLocationAssertions = true
+						
+						Type = Ships
+						Allegiance = Junk
+						RandomHealthRange = [25%, 25%]
+						ShipCriteria
+						{
+							Tags = [storage_pod]
+						}
+
+						ResourceLoadout
+						[
+							{ ResourceType=tristeel;         RandomWeight=1; Quantity=[10, 20]; }
+							{ ResourceType=diamond;          RandomWeight=1; Quantity=[3, 2]; }
+							{ ResourceType=processor;        RandomWeight=1; Quantity=[2, 3]; }
+							{ ResourceType=enriched_uranium; RandomWeight=1; Quantity=[2, 7]; }
+						]
+					}
+				]
+			}*/
+			{
+				Type = Doodads
+				Count = [60, 80]
+				Distance = [500, (&../../../Radius)*1.1]
+				Tags = [asteroid]
+				RootLocation = Grandparent
+				AddDistance = ParentToGrandparent
+				//MinDistanceFromTags = [[station, 500], [asteroid, 50]]
+				MinDistanceFromTags
+				[
+					[misc_discoverable, 20]
+					[asteroid, 20]
+					[HyperoidGuardian, 100]
+				]
+				DoodadTypes = &<./data/modes/career/sysgen_asteroids.rules>/CommonAsteroidTypes
+			}
+			// Valuable asteroid.
+			{
+				Type = Doodads
+				Tags = [rare_asteroid]
+				RootLocation = Grandparent
+				AddDistance = ParentToGrandparent
+				Count = [2, 3]
+				Distance = [600, (&../../../Radius)]
+				MinDistanceFromTags
+				[
+					[misc_discoverable, 20]
+					[asteroid, 20]
+					[HyperoidGuardian, 100]
+				]
+				DoodadTypes = &<./data/modes/career/sysgen_asteroids.rules>/RareAsteroidTypes
+			}
+			{ // Graveyard ships
+				Type = Ships
+				Count = [100, 120]
+				Distance = [500, (&../../../Radius)*1.25]
+				SuppressLocationAssertions = true
+				Allegiance = Junk
+				InitToMax = false
+				SpawnCrew = false
+				ShipCriteria { Tags = [wreckage] }
+				MinDistanceFromTags
+				[
+					[wreckage, 5]
+					[misc_discoverable, 5]
+					[asteroid, 10]
+					[HyperoidGuardian, 10]
+				]
+				RandomHealthRange = [10%, 75%]
+				NameGenerator = { Type=None; }
+				RootLocation = Grandparent
+				AddDistance = ParentToGrandparent
+			}
+			/*{
+				Type = Doodads
+				Tags = [asteroid_ring_poi, poi_unknown]
+				RootLocation = Grandparent
+				ScaleMode = ParentToGrandparent
+				DoodadType = cosmoteer.poi_ring
+				ShowOnlyInFog = true
+				HideIfUnexplored = true
+				Undiscovered = true
+			}*/
+			// POI
+			{
+				Type = Doodads
+				DoodadType = janiTNT.HyperoidPOI
+				ShowOnlyInFog = true
+				Undiscovered = true
+				HideIfUnexplored = true
+				ScaleFactor = &../../Radius
+				Tags = [asteroid_field_poi, poi_unknown, hyperoid_field_poi]
+				//AutoRemoveWhenTagDestroyed = hyperoid
+			}
+		]
+	}
+	// Mission to hunt guardians around hyperoid inside the ring
+	{
+		Type = Mission
+		Metatype = ClearHyperoidGuardians
+		SpawnAt = Tag
+		SpawnAtTag = { Mode=Nearest; Tag=trade_station; }
+		Faction = OwnerOfTag
+		FactionTag = &SpawnAtTag
+		Objectives
+		[
+			{
+				Type = Sequential
+				SubObjectives
+				[
+					{
+						Type = DestroyShips
+						TargetsTag = { Tag=HyperoidGuardian; LimitToBatch=true; }
+						TargetAreaTag = hyperoid_field_poi
+						AutoDiscoverTargetArea = true
+						OverrideDisplayFormatKey = "Objectives/DestroyGuardians"
+					}
+					{
+						Type = ReceiveRewards
+					}
+				]
+			}
+		]
+		Rewards
+		[
+			{
+				Type = Money
+				MoneyPerHighTier = &<./data/modes/career/tier_tables.rules>/StandardMoneyPerTier
+				MoneyPerTierMultiplier = 4
+				RoundToMultiple = 1000
+			}
+			{
+				Type = Fame
+				FamePerHighTier = &<./data/modes/career/tier_tables.rules>/StandardFamePerTier
+				FamePerTierMultiplier = 3
+				MaxFamePerHighTier = &<./data/modes/career/tier_tables.rules>/StandardMaxFamePerTier
+			}
+			{
+				Type = Reputation
+				ReputationPerHighTier = &<./data/modes/career/tier_tables.rules>/StandardReputationPerTier
+				ReputationPerTierMultiplier = 4
+			}
+		]
+	}
+]

@@ -56,14 +56,7 @@ Actions
 
 	/* *********** PARTS ************* */
 
-	{
-		Action = AddMany
-		AddTo = "<./Data/modes/career/sysgen.rules>/Spawners"
-		ManyToAdd
-		[
-			&<career/sysgen_fleethideouts.rules>/Fleethideouts
-		]
-	}
+
 
  	{ 
 		Action = AddMany
@@ -247,12 +240,7 @@ Actions
 		AddTo = "<codex/lore/lore.rules>/CodexPages"
         ManyToAdd = &<codex/lore.rules>/CodexPages
 	}
-	// Adds missions related to SW Factions
-	{
-		Action = AddMany
-		AddTo = "<modes/career/sysgen_sim_global_missions.rules>/SubSpawners"
-        ManyToAdd = &<career/sysgen_sim_global_missions.rules>/SubSpawners
-	}
+
 /*
 	// Adds discoverables related to SW Factions
 	{
@@ -298,7 +286,18 @@ Actions
 		BaseToAdd = &<career\TradeShips.rules>/TradeShips
 	}
 
+	//Adds SW Misson Markers
+	{	
+		Action = AddMany
 
+		AddTo = "<doodads/doodads.rules>/Doodads"
+
+		ManyToAdd
+		[
+			&<career/sw_defectorsPOI.rules>
+			&<career/sw_renegadeleaderPOI.rules>
+		]
+	}
 
 	//Adds trade defensive platforms to SW Factions in career mode
 	{
@@ -321,9 +320,26 @@ Actions
 		Replace = "<modes/career/sysgen_trade_stations.rules>/StationDefenses/Distance"
 		With = 250
     }
+	/* ********** SPAWNERS *********** */
+	{
+		Action = AddMany
+		AddTo = "<./Data/modes/career/sysgen.rules>/Spawners"
+		ManyToAdd
+		[
+			&<career/sysgen_fleethideouts.rules>/Fleethideouts
+			//&<career/sysgen_sw_defectors.rules>
+			//&<career/sysgen_sw_renegadeleaders.rules>
+		]
+	}
 
 	/* *********** FACTION MISSIONS ************* */
 /*
+	// Adds missions related to SW Factions
+	{
+		Action = AddMany
+		AddTo = "<modes/career/sysgen_sim_global_missions.rules>/SubSpawners"
+        ManyToAdd = &<career/sysgen_sim_global_missions.rules>/SubSpawners
+	}
 	{
 		Action = Overrides
 		OverrideIn = "<./data/modes/career/career.rules>/MissionMetatypes"
@@ -349,7 +365,7 @@ Actions
 	/* *********** SW MISSION AI ************* */
 
 
-	/*
+
 	{
 		Action = Overrides
 		OverrideIn = "<./data/ai/ai.rules>"
@@ -357,7 +373,7 @@ Actions
 		{
 			SWRenegadeAI
 			{
-				NameKey = "AI/SWMissionAI"
+				NameKey = "AI/ImperialFleetCommandAI"
 				UpdateInterval = [.5, 1] // A random range. Slower than the average AI.
 				IsAvailableInCreativeMode = true
 				IsAvailableInMultiplayer = true
@@ -411,7 +427,7 @@ Actions
 			}
 		}
 	}
-*/
+
 	/* *********** FACTION GENERATION ************* */
 
 /*
