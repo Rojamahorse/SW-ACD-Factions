@@ -423,14 +423,14 @@ Missions
 	VisitSystemDesc = "A renowned astrophysicist is requesting data on stellar activity in the {mission_location} System."
 	Debug = "Debug Mission"
 	DebugDesc = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales rutrum eros. Fusce non eros a lacus luctus auctor sit amet at mi. In ac fermentum est. Nam viverra lectus eu turpis cursus vestibulum."
-	ClearRogueElements = "Neutralize Defectors"
+	ClearRogueElements = "Neutralize Rogue Fleet"
 	ClearRogueElementsDesc =  "A squadron formerly under the command of the {faction_name} has gone rogue and is currently taking refuge in a dense asteroid field in the {mission_location} System. Composed of various class vessels, this rogue squadron is exploiting the field's complex terrain to launch surprise attacks, disrupting local stability and posing a significant threat. The {faction_name} is urgently seeking a skilled pilot to navigate the asteroid field, neutralize this squadron, and restore order in the sector. A substantial bounty of {money} is promised to anyone who can successfully eliminate this elusive threat."
 	DefeatRenegadeLeader = "Neutralize \"{target_ship}\" Renegade Leader"
 	DefeatRenegadeLeaderDesc = "A formidable <b>{target_ship}</b> class vessel, commanded by a notorious leader, is causing chaos in the {mission_location} System. This ship, known for its advanced technology and formidable firepower, poses a significant threat to the stability of the area. The {faction_name} has issued a high bounty of {money} for any skilled pilot able to neutralize this threat. Intelligence reports suggest that the ship's technology could be extremely valuable for those who can secure it."
 }
 Objectives
 {
-	EliminateDefectors = "Neutralize Defectors"
+	EliminateDefectors = "Neutralize Rogue Fleet"
 	EliminateRenegadeLeader = "Eliminate {0} Renegade Leader"
 }
 AI

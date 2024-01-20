@@ -327,7 +327,7 @@ Actions
 		ManyToAdd
 		[
 			&<career/sysgen_fleethideouts.rules>/Fleethideouts
-			//&<career/sysgen_sw_defectors.rules>
+			&<career/sysgen_sw_defectors.rules>
 			//&<career/sysgen_sw_renegadeleaders.rules>
 		]
 	}
@@ -340,7 +340,7 @@ Actions
 		AddTo = "<modes/career/sysgen_sim_global_missions.rules>/SubSpawners"
         ManyToAdd = &<career/sysgen_sim_global_missions.rules>/SubSpawners
 	}
-/*
+
 	{
 		Action = Overrides
 		OverrideIn = "<./data/modes/career/career.rules>/MissionMetatypes"
@@ -352,16 +352,17 @@ Actions
 				DescriptionKey = "Missions/ClearRogueElementsDesc"
 				CategoryID = bounties
 			}
+/*
 			SWDefeatRenegadeBoss
 			{
 				NameKey = "Missions/DefeatRenegadeLeader"
 				DescriptionKey = "Missions/DefeatRenegadeLeaderDesc"
 				CategoryID = bounties
 			}
+*/
 		}
 
 	}
-	*/
 
 	/* *********** SW MISSION AI ************* */
 
