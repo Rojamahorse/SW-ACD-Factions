@@ -333,13 +333,14 @@ Actions
 	}
 
 	/* *********** FACTION MISSIONS ************* */
-/*
+
 	// Adds missions related to SW Factions
 	{
 		Action = AddMany
 		AddTo = "<modes/career/sysgen_sim_global_missions.rules>/SubSpawners"
         ManyToAdd = &<career/sysgen_sim_global_missions.rules>/SubSpawners
 	}
+/*
 	{
 		Action = Overrides
 		OverrideIn = "<./data/modes/career/career.rules>/MissionMetatypes"

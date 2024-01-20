@@ -8,26 +8,26 @@ SubSpawners
 	// Boss Ships.
 	{
 		Type = Ships
-		Tags = [JaniBoss, Boss, target_leviathan, bounty_ship] // target_leviathan is used for avoiding if existing idk
+		Tags = [SWRenegadeLeader, SWBoss, target_SWBoss, bounty_ship] // target_SWBoss is used for avoiding if existing
 		Count = [1, 1]
 		Distance = [28000, 35000]
-		MinDistanceFromTags = [[Boss, 8000],[station, 8000],[target_leviathan, 8000]]
+		MinDistanceFromTags = [[SWBoss, 8000],[station, 8000],[target_SWBoss, 8000]]
 		Allegiance = Unique
 		SynchronizeAllegiance = true
 		FamePerTier = &<./data/modes/career/tier_tables.rules>/StandardFamePerTier
 		MaxFamePerTier = &<./data/modes/career/tier_tables.rules>/StandardMaxFamePerTier
 		Radius = 4000
-		Labels = ["janiboss"] // undo this and make each boss its own spawner inside a subspawner with random.
+		Labels = ["swrenegadeleader"] // undo this and make each boss its own spawner inside a subspawner with random.
 		ShipCriteria
 		{
 			//UseLocalFactionWeights = false
 			UseTierField = true
 			AllowTierRangeExpansion = true
-			Tags = [janibossship]
+			Tags = [swbossship]
 		}
 		AI
 		{
-			Type = BossAICosmilite
+			Type = SWRenegadeAI
 			PatrolRadius = 800
 			TargetAcquireRangeFromOrigin = 1000
 			TargetUnacquireRangeFromOrigin = 7000
@@ -38,17 +38,17 @@ SubSpawners
 			// POI
 			{
 				Type = Doodads
-				DoodadType = janiTNT.BossPOI
+				DoodadType = sw.renegadeleaderPOI
 				ShowOnlyInFog = true
 				Undiscovered = true
 				HideIfUnexplored = true
 				ScaleFactor = &../../Radius
-				Tags = [JaniBossArea, bounty_area, poi_unknown, boss_field_poi]
-				AutoRemoveWhenTagDestroyed = JaniBoss
+				Tags = [SWRenegadeLeaderArea, bounty_area, poi_unknown, boss_field_poi]
+				AutoRemoveWhenTagDestroyed = SWRenegadeLeader
 			}
 			{
 				Type = Mission
-				Metatype = DefeatBossJani
+				Metatype = SWDefeatRenegadeBoss
 				SpawnAt = Tag
 				SpawnAtTag = { Mode=Nearest; Tag=trade_station; }
 				Faction = OwnerOfTag
@@ -61,10 +61,10 @@ SubSpawners
 						[
 							{
 								Type = DestroyShips
-								TargetsTag = { Tag=JaniBoss; LimitToBatch=true; Max=1; }
-								TargetAreaTag = JaniBossArea
+								TargetsTag = { Tag=SWRenegadeLeader; LimitToBatch=true; Max=1; }
+								TargetAreaTag = SWRenegadeLeaderArea
 								AutoDiscoverTargetArea = true
-								OverrideDisplayFormatKey = "Objectives/DefeatBossJani"
+								OverrideDisplayFormatKey = "Objectives/EliminateRenegadeLeader"
 							}
 							{
 								Type = ReceiveRewards
