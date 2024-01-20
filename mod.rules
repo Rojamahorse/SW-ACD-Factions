@@ -313,7 +313,7 @@ Actions
     {
 		Action = Replace
 		Replace = "<modes/career/sysgen_trade_stations.rules>/StationDefenses/Count"
-		With = [5, 8]
+		With = [3, 8]
     }
     {
 		Action = Replace
@@ -328,7 +328,7 @@ Actions
 		[
 			&<career/sysgen_fleethideouts.rules>/Fleethideouts
 			&<career/sysgen_sw_defectors.rules>
-			//&<career/sysgen_sw_renegadeleaders.rules>
+			&<career/sysgen_sw_renegadeleaders.rules>
 		]
 	}
 
@@ -352,14 +352,14 @@ Actions
 				DescriptionKey = "Missions/ClearRogueElementsDesc"
 				CategoryID = bounties
 			}
-/*
+
 			SWDefeatRenegadeBoss
 			{
 				NameKey = "Missions/DefeatRenegadeLeader"
 				DescriptionKey = "Missions/DefeatRenegadeLeaderDesc"
 				CategoryID = bounties
 			}
-*/
+
 		}
 
 	}

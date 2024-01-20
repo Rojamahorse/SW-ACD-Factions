@@ -46,7 +46,7 @@ DefectorsSubSpawnersHandler
 	{
 		Type = Ships
 		Tags = [Combat]
-		Count = [6, 10]
+		Count = [2, 4]
 		Distance = [700, 800]
 		MinDistanceFromTags = [[Combat, 60][asteroid, 60]]
 		Allegiance = Unique

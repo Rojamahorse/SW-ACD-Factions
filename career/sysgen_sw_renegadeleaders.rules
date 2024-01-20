@@ -1,17 +1,17 @@
 Type = None
-/*Conditions
+Conditions
 {
-	MinNodeTier = 8
-}*/
+	MinNodeTier = 18
+}
 SubSpawners
 [
-	// Boss Ships.
+	// Target Ship
 	{
 		Type = Ships
-		Tags = [SWRenegadeLeader, SWBoss, target_SWBoss, bounty_ship] // target_SWBoss is used for avoiding if existing
+		Tags = [SWRenegadeLeader, SWBoss, JaniBoss, Boss, target_leviathan, bounty_ship] //  target_leviathan & janiboss is used for compatibility to avoiding if existing
 		Count = [1, 1]
 		Distance = [28000, 35000]
-		MinDistanceFromTags = [[SWBoss, 8000],[station, 8000],[target_SWBoss, 8000]]
+		MinDistanceFromTags = [[SWBoss, 8000],[station, 8000],[target_leviathan, 8000],[JaniBoss, 8000]]
 		Allegiance = Unique
 		SynchronizeAllegiance = true
 		FamePerTier = &<./data/modes/career/tier_tables.rules>/StandardFamePerTier
@@ -23,7 +23,7 @@ SubSpawners
 			//UseLocalFactionWeights = false
 			UseTierField = true
 			AllowTierRangeExpansion = true
-			Tags = [swbossship]
+			Tags = [swboss]
 		}
 		AI
 		{
@@ -46,6 +46,7 @@ SubSpawners
 				Tags = [SWRenegadeLeaderArea, bounty_area, poi_unknown, boss_field_poi]
 				AutoRemoveWhenTagDestroyed = SWRenegadeLeader
 			}
+			// Mission
 			{
 				Type = Mission
 				Metatype = SWDefeatRenegadeBoss
