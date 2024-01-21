@@ -163,7 +163,7 @@ SubSpawners
 			Type = SWRenegadeAI
 			PatrolRadius = 800
 			TargetAcquireRangeFromOrigin = 1000
-			TargetUnacquireRangeFromOrigin = 7000
+			TargetUnacquireRangeFromOrigin = 7500
 			StasisSpeed = 0
 		}
 		SubSpawners
