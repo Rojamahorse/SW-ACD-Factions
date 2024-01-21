@@ -51,7 +51,8 @@ Ships
 /**/		:~{ File="Munificent-Class Star Frigate 2.ship.png"; 									Tier=14;  Difficulty=2; Tags = [combat] }
 /**/		:~{ File="Munificent-Class Star Frigate 2R.ship.png"; 									Tier=18;  Difficulty=2; Tags = [combat] }
 /**/		:~{ File="Pinnance-Class_Cruiser.ship.png"; 											Tier=9;   Difficulty=1; Tags = [combat] } //Credit Wolfram
-/**/		:~{ File="Lukrehulk-Class Battlecruiser.ship.png";										Tier=18;  Difficulty=2; Tags = [swboss] }
+/**/		:~{ File="LukrehulkWP24.ship.png";														Tier=16;  Difficulty=2; Tags = [swboss] }
+/**/		:~{ File="Lukrehulk-Class Battlecruiser.ship.png";										Tier=17;  Difficulty=2; Tags = [swboss] }
 /**/		:~{ File="Lucrehulk-Class Battlecruiser.ship.png";         								Tier=18;  Difficulty=2; Tags = [swboss] }
 /*
 //	:~{ File="LukrehulkWP24.ship.png";    								Tier=18;  Difficulty=2; }

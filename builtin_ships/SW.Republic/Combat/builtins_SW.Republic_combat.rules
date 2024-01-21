@@ -96,9 +96,9 @@ Ships
 
 //Tier 18
 /*12,325,647*/    	:~{ File="Venator II-Class Star Destroyer M (Republic).ship.png";                       Tier=17; Difficulty=2; Tags = [combat] }
-/*12,153,264*/    	:~{ File="Venator II-Class Star Destroyer R (Republic).ship.png";                       Tier=17; Difficulty=2; Tags = [combat] }
+/*12,153,264*/    	:~{ File="Venator II-Class Star Destroyer R (Republic).ship.png";                       Tier=16; Difficulty=2; Tags = [swboss] }
 /*11,474,134*/    	:~{ File="Venator-Class Star Destroyer (Command Cruiser).ship.png";                     Tier=18; Difficulty=2; Tags = [combat] }
-/*40,531,110*/    	:~{ File="Rep Secutor-Class SD - Orig.ship.png";                                         Tier=18;  Difficulty=2; Tags = [swboss] } //  Credit ClassicJam
+/*40,531,110*/    	:~{ File="Rep Secutor-Class SD - Orig.ship.png";                                         Tier=17;  Difficulty=2; Tags = [swboss] } //  Credit ClassicJam
 /*42,756,295*/    	:~{ File="Rep Secutor-Class Star Destroyer.ship.png";                                    Tier=18;  Difficulty=2; Tags = [swboss] }
 ]
 

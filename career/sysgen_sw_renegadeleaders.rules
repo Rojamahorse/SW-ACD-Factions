@@ -1,7 +1,7 @@
 Type = None
 Conditions
 {
-	MinNodeTier = 18
+	MinNodeTier = 5 //
 }
 SubSpawners
 [
@@ -18,10 +18,143 @@ SubSpawners
 		MaxFamePerTier = &<./data/modes/career/tier_tables.rules>/StandardMaxFamePerTier
 		Radius = 4000
 		Labels = ["swrenegadeleader"] // undo this and make each boss its own spawner inside a subspawner with random.
+		NameGenerator
+		{
+		    Type = Multi
+		    SubGenerators
+		    [
+		        {
+		            Chance = 1
+		            Type = NameList
+		            Names
+					[
+					    "Admiral"
+					    "Captain"
+					    "Commander"
+					    "General"
+					    "Moff"
+					    "Colonel"
+					    "Major"
+					    "Lieutenant"
+					    "Marshal"
+					    "Ensign"
+					    "Squadron Leader"
+					    "Wing Commander"
+					    "Warlord"
+					    "Overlord"
+					    "Viceroy"
+					    "Agent"
+					    "Archduke"
+					    "Baron"
+					    "Chieftain"
+					    "Consul"
+					    "Count"
+					    "Duke"
+					    "Emir"
+					    "Governor"
+					    "King"
+					    "Magistrate"
+					    "Minister"
+					    "Prince"
+					    "Queen"
+					    "Regent"
+					    "Senator"
+					    "Supreme Leader"
+					]
+		        }
+		        {
+		            Chance = 1
+		            Type = NameList
+		            Names
+					[
+					    "Antilles"
+					    "Vader"
+					    "Kenobi"
+					    "Tarkin"
+					    "Fett"
+					    "Windu"
+					    "Thrawn"
+					    "Organa"
+					    "Solo"
+					    "Skywalker"
+					    "Krennic"
+					    "Ackbar"
+					    "Hux"
+					    "Piett"
+					    "Veers"
+					    "Rendar"
+					    "Marek"
+					    "Calrissian"
+					    "Secura"
+					    "Tiin"
+					    "Jinn"
+					    "Katarn"
+					    "Syndulla"
+					    "Djarin"
+					    "Kryze"
+					    "Saxon"
+					    "Vos"
+					    "Bane"
+					    "Malachor"
+					    "Tano"
+					    "Shan"
+					    "Snoke"
+					    "Grievous"
+					    "Durron"
+					    "Nihilus"
+					    "Revan"
+					    "Malgus"
+					    "Gunray"
+					    "Hutt"
+					    "Zann"
+					    "Tyranus"
+					    "Sidious"
+					    "Maul"
+					    "Ventress"
+					    "Opress"
+					    "Tambor"
+					    "Krayt"
+					    "Satele"
+					    "Cadera"
+					    "Tal"
+					    "Vizsla"
+					    "Fisto"
+					    "Gallia"
+					    "Plo"
+					    "Mundi"
+					    "Unduli"
+					    "Ti"
+					    "Koon"
+					    "Secura"
+					    "Amedda"
+					    "Valorum"
+					    "Bonteri"
+					    "Mothma"
+					    "Dodonna"
+					    "Madine"
+					    "Rieekan"
+					    "Ozzel"
+					    "Piett"
+					    "Jerjerrod"
+					    "Tiaan"
+						"SkipperWraith"
+						"ClassicJam"
+						"Jani"
+						"Lafiel"
+						"Wolfram"
+						"Neojino"
+						"Kroom"
+						"Roasted"
+					]
+		        }
+		    ]
+		}
+
 		ShipCriteria
 		{
-			//UseLocalFactionWeights = false
+			UseLocalFactionWeights = true
 			UseTierField = true
+			//Tier = +2
 			AllowTierRangeExpansion = true
 			Tags = [swboss]
 		}
