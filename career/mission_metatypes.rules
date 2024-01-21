@@ -1,0 +1,13 @@
+SWSupressDefectingSquadron
+{
+	NameKey = "Missions/ClearRogueElements"
+	DescriptionKey = "Missions/ClearRogueElementsDesc"
+	CategoryID = bounties
+}
+
+SWDefeatRenegadeBoss
+{
+	NameKey = "Missions/DefeatRenegadeLeader"
+	DescriptionKey = "Missions/DefeatRenegadeLeaderDesc"
+	CategoryID = bounties
+}
