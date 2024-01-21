@@ -8,8 +8,8 @@ SubSpawners
 	{
 		Type = Doodads
 		Count = [1, 1]
-		//Count = [10, 15]
-		Distance = [20750, 27000]
+		//Count = [6, 12]
+		Distance = [20000, 28000]
 		Tags = [rare_asteroid, asteroid, megaroid]
 		MinDistanceFromTags = [[station, 2000], [bounty, 2000], [asteroid_field, 800], [ftl_gate, 1200]]
 		//MinDistanceFromTags = [[station, 1000], [asteroid, 1000], [bounty, 1000], [ftl_gate, 1000]]
@@ -26,7 +26,7 @@ SubSpawners
 		Type = Doodads
 		Count = [0, 1]
 		//Count = 5
-		Distance = [4000, 16000]
+		Distance = [4000, 14000]
 		Tags = [rare_asteroid, asteroid, megaroid]
 		MinDistanceFromTags = [[station, 2000], [bounty, 2000], [asteroid_field, 800], [ftl_gate, 1200]]
 		//MinDistanceFromTags = [[station, 1000], [asteroid, 1000], [bounty, 1000], [ftl_gate, 1000]]
@@ -277,7 +277,7 @@ DefectorsSubSpawnersHandler
 			}*/
 			{
 				Type = Doodads
-				Count = [60, 80]
+				Count = [30, 60]
 				Distance = [500, (&../../../Radius)*1.1]
 				Tags = [asteroid]
 				RootLocation = Grandparent
@@ -309,7 +309,7 @@ DefectorsSubSpawnersHandler
 			}
 			{ // Graveyard ships
 				Type = Ships
-				Count = [100, 120]
+				Count = [60, 100]
 				Distance = [500, (&../../../Radius)*1.25]
 				SuppressLocationAssertions = true
 				Allegiance = Junk
