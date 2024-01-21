@@ -9,7 +9,7 @@ SubSpawners
 		Type = Doodads
 		Count = [1, 1]
 		//Count = [6, 12]
-		Distance = [20000, 28000]
+		Distance = [20000, 25000]
 		Tags = [rare_asteroid, asteroid, megaroid]
 		MinDistanceFromTags = [[station, 2000], [bounty, 2000], [asteroid_field, 800], [ftl_gate, 1200]]
 		//MinDistanceFromTags = [[station, 1000], [asteroid, 1000], [bounty, 1000], [ftl_gate, 1000]]
@@ -46,8 +46,8 @@ DefectorsSubSpawnersHandler
 	{
 		Type = Ships
 		Tags = [Combat]
-		Count = [2, 4]
-		Distance = [700, 800]
+		Count = [2, 3]
+		Distance = [500, 800]
 		MinDistanceFromTags = [[Combat, 60][asteroid, 60]]
 		Allegiance = Unique
 		SynchronizeAllegiance = true
@@ -140,7 +140,7 @@ DefectorsSubSpawnersHandler
 					]
 				}
 			}
-			// Dead Abandoned Ship
+			// Abandoned Ship
 			{
 				Tags = [misc_discoverable, combat, abandoned]
 				Count = [3, 4]
