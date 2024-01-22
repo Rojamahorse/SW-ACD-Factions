@@ -1,7 +1,9 @@
 Type = None
 Conditions
 {
-	MinNodeTier = 5 //
+	MinNodeTier = 15 //
+	SpawnChance = 75% // change after debug
+
 }
 SubSpawners
 [
@@ -164,7 +166,7 @@ SubSpawners
 			PatrolRadius = 800
 			TargetAcquireRangeFromOrigin = 1000
 			TargetUnacquireRangeFromOrigin = 7500
-			StasisSpeed = 0
+			//StasisSpeed = 0
 		}
 		SubSpawners
 		[

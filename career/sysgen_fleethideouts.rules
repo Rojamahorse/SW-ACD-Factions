@@ -1,7 +1,7 @@
 Fleethideouts 
 {
 	Type = None
-	SpawnChance = 100% // change after debug
+	SpawnChance = 5% // change after debug
 	Tags = [asteroid]
 	Distance = [7000, 15000]
 	SubSpawners
