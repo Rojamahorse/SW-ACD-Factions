@@ -167,10 +167,10 @@ StarterShips
 
 Doodads
 {
-	POIEliminateDefectors = "Defecting Fleet Location"
+	POIEliminateDefectors = "Rogue Fleet Location"
 	POIEliminateRenegadeLeader = "Renegade Leader Location"
-
 }
+
 
 Resource
 {
@@ -383,8 +383,8 @@ FameTitles
 
 ReputationTitles
 [
-	"Sarlacc Snack"
 	"Death Star Target"
+	"Sarlacc Snack"
 	"Bantha Poodoo"
 	"Mild Irritant"
 	"HoloNet Acquaintance"
@@ -424,14 +424,17 @@ Missions
 	Debug = "Debug Mission"
 	DebugDesc = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales rutrum eros. Fusce non eros a lacus luctus auctor sit amet at mi. In ac fermentum est. Nam viverra lectus eu turpis cursus vestibulum."
 	ClearRogueElements = "Neutralize Rogue Fleet"
-	ClearRogueElementsDesc =  "A squadron formerly under the command of the {faction_name} has gone rogue and is currently taking refuge in a dense asteroid field in the {mission_location} System. Composed of various class vessels, this rogue squadron is exploiting the field's complex terrain to launch surprise attacks, disrupting local stability and posing a significant threat. The {faction_name} is urgently seeking a skilled pilot to navigate the asteroid field, neutralize this squadron, and restore order in the sector. A substantial bounty of {money} is promised to anyone who can successfully eliminate this elusive threat."
+	ClearRogueElementsDesc =  "A squadron formerly under the command of the \"{faction_name}\" has gone rogue and is currently taking refuge with a local fleet of Outlaws in a dense asteroid field in the {mission_location} System. Composed of various class vessels, this rogue squadron is exploiting the field's complex terrain to launch surprise attacks, disrupting local stability and posing a significant threat. The {faction_name} is urgently seeking a skilled pilot to navigate the asteroid field, neutralize this squadron, and restore order in the sector. A substantial bounty of {money} is promised to anyone who can successfully eliminate this elusive threat."
 	DefeatRenegadeLeader = "Eliminate \"{target_ship}\", the Deadly Renegade Leader"
 	DefeatRenegadeLeaderDesc = "A notorious renegade leader known as \"{target_ship}\" is wreaking havoc in the {mission_location} System. Commanding a vessel equipped with advanced technology and substantial firepower, this high value target is a major threat to regional stability. The {faction_name} has authorized a substantial bounty of {money} for any skilled pilot capable of confronting and neutralizing this threat. Intelligence reports highlight the strategic importance of this mission, suggesting that eliminating '{target_ship}' could deliver a significant blow to their nefarious activities."
+	RescueVIP = "MissonName"
+	RescueVIPDesc = "Misson Description"
 }
 Objectives
 {
 	EliminateDefectors = "Neutralize Rogue Fleet"
 	EliminateRenegadeLeader = "Eliminate {0} Renegade Leader"
+	SavetheVIP = "Rescue {0} V.I.P."
 }
 AI
 {

@@ -1,0 +1,125 @@
+Type = Ships
+Tags = [vip_ship]
+Conditions { MinNodeTier=1; }
+RandomWeight = 1
+Count = 1
+Allegiance = FactionMilitary
+InitToMax = false
+SpawnCrew = true
+RandomHealthRange = [90%, 100%]
+Labels = ["Abandoned"]
+	ShipCriteria
+	{
+		UseLocalFactionWeights = true
+		Tier = +2
+		UseTierField = true
+		AllowTierRangeExpansion = true
+		Tags = [combat]
+	}
+	AI
+	{
+		Type = DefensePlatform
+	}
+		SynchronizeFactions = true
+		SynchronizeAllegiance = false
+		SubSpawners
+		[
+			// POI
+			{
+				Type = Doodads
+				Tags = [asteroid_field_poi, poi_unknown]
+				DoodadType = cosmoteer.poi_unknown
+				ShowOnlyInFog = true
+				Undiscovered = true
+				HideIfUnexplored = true
+				AutoRemoveWhenDiscovered = true
+
+			}
+			// The bad guys.
+			{
+				Type = Ships
+				Tags = [space_pirate]
+				Count = [2,3]
+				Distance = 333
+				SpawnsPerSlice = 1
+				SpawnSlicePadding = 33%
+				Allegiance = Unique
+				FamePerTier = &<./Data/modes/career/tier_tables.rules>/StandardFamePerTier
+				MaxFamePerTier = &<./Data/modes/career/tier_tables.rules>/StandardMaxFamePerTier
+
+				ShipCriteria
+				{
+					UseLocalFactionWeights = true
+					UseTierField = true
+					Tier = -1
+					AllowTierRangeExpansion = true
+					Tags = [combat]
+				}
+
+				AI 
+				{
+					Type = StationGuard
+					PatrolRadius = 200
+					TargetAcquireRangeFromOrigin = 550
+					TargetUnacquireRangeFromOrigin = 750
+				}
+			}
+			// Mission to save ship
+			{
+				Type = Mission
+				Metatype = SWRescueVIP
+				SpawnAt = Tag
+				SpawnAtTag = { Mode=Nearest; Tag=trade_station; }
+				Faction = OwnerOfTag
+				FactionTag = &SpawnAtTag
+				Objectives
+				[
+					{
+						Type = Sequential
+						SubObjectives
+						[
+							{
+								Type = AnyOrder
+								TierCombineMode = Max
+								SubObjectives
+								[
+									{
+										Type = DestroyShips
+										TargetsTag = { Tag=space_pirate; Distance=800;}
+										OverrideDisplayFormatKey = "Objectives/DestroyPirates"
+									}
+									{
+										Type = ProtectShips
+										TargetsTag = { Mode=Nearest; Tag=vip_ship; Max=1; }
+									}
+								]
+							}
+							{
+								Type = ReceiveRewards
+								ContactShipTag = { Mode=Nearest; Tag=trade_station; }
+							}
+						]
+					}
+				]
+				Rewards
+				[
+					{
+						Type = Money
+						MoneyPerHighTier = &<./Data/modes/career/tier_tables.rules>/StandardMoneyPerTier
+						MoneyPerTierMultiplier = 2
+						RoundToMultiple = 500
+					}
+					{
+						Type = Fame
+						FamePerHighTier = &<./Data/modes/career/tier_tables.rules>/StandardFamePerTier
+						FamePerTierMultiplier = 2
+						MaxFamePerHighTier = &<./Data/modes/career/tier_tables.rules>/StandardMaxFamePerTier
+					}
+		            {
+		                Type = Reputation
+		                ReputationPerHighTier = &<./Data/modes/career/tier_tables.rules>/StandardReputationPerTier
+		                ReputationPerTierMultiplier = 4
+		            }
+				]
+			}
+		]

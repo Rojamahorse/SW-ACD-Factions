@@ -1,8 +1,10 @@
 Type = None
+Count = [0, 1]
+
 Conditions
 {
 	MinNodeTier = 15 //
-	SpawnChance = 75% // change after debug
+	//SpawnChance = 75% // change after debug
 
 }
 SubSpawners
@@ -154,7 +156,7 @@ SubSpawners
 
 		ShipCriteria
 		{
-			UseLocalFactionWeights = true
+			//UseLocalFactionWeights = true
 			UseTierField = true
 			//Tier = +2
 			AllowTierRangeExpansion = true
@@ -232,3 +234,4 @@ SubSpawners
 		]
 	}
 ]
+
