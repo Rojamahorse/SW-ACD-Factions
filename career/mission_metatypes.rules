@@ -11,11 +11,11 @@ SWDefeatRenegadeBoss
 	DescriptionKey = "Missions/DefeatRenegadeLeaderDesc"
 	CategoryID = bounties
 }
-/*
+
 SWRescueVIP
 {
 	NameKey = "Missions/RescueVIP"
 	DescriptionKey = "Missions/RescueVIPDesc"
 	CategoryID = bounties
 }
-*/
+

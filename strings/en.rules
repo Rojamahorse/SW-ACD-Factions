@@ -427,14 +427,14 @@ Missions
 	ClearRogueElementsDesc =  "A squadron formerly under the command of the \"{faction_name}\" has gone rogue and is currently taking refuge with a local fleet of Outlaws in a dense asteroid field in the {mission_location} System. Composed of various class vessels, this rogue squadron is exploiting the field's complex terrain to launch surprise attacks, disrupting local stability and posing a significant threat. The {faction_name} is urgently seeking a skilled pilot to navigate the asteroid field, neutralize this squadron, and restore order in the sector. A substantial bounty of {money} is promised to anyone who can successfully eliminate this elusive threat."
 	DefeatRenegadeLeader = "Eliminate \"{target_ship}\", the Deadly Renegade Leader"
 	DefeatRenegadeLeaderDesc = "A notorious renegade leader known as \"{target_ship}\" is wreaking havoc in the {mission_location} System. Commanding a vessel equipped with advanced technology and substantial firepower, this high value target is a major threat to regional stability. The {faction_name} has authorized a substantial bounty of {money} for any skilled pilot capable of confronting and neutralizing this threat. Intelligence reports highlight the strategic importance of this mission, suggesting that eliminating '{target_ship}' could deliver a significant blow to their nefarious activities."
-	RescueVIP = "MissonName"
-	RescueVIPDesc = "Misson Description"
+	RescueVIP = "Rescue the Dignitary"
+	RescueVIPDesc = "An urgent distress call has been issued from a disabled civilian vessel under siege by bounty hunters. Aboard the ship is a dignitary of great importance to the {faction_name}. Immediate assistance is required to fend off the attackers, allowing the vessel to conduct repairs and make an escape. The {faction_name} is offering a substantial reward of {money} for the successful defense and safe extraction of the dignitary. Swift and decisive action is crucial to prevent the situation from worsening."
 }
 Objectives
 {
-	EliminateDefectors = "Neutralize Rogue Fleet"
-	EliminateRenegadeLeader = "Eliminate {0} Renegade Leader"
-	SavetheVIP = "Rescue {0} V.I.P."
+	EliminateDefectors = "Neutralize the Rogue Fleet"
+	EliminateRenegadeLeader = "Eliminate {0}, the Renegade Leader"
+	SavetheVIP = "Rescue the Dignitary"
 }
 AI
 {

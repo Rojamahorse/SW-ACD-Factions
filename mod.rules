@@ -327,6 +327,7 @@ Actions
 			&<career/sysgen_fleethideouts.rules>/Fleethideouts
 			&<career/sysgen_sw_defectors.rules>
 			&<career/sysgen_sw_renegadeleaders.rules>
+			&<career/sysgen_sw_viprescue.rules>
 		]
 	}
 

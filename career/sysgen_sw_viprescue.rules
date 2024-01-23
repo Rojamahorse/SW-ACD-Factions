@@ -3,18 +3,150 @@ Tags = [vip_ship]
 Conditions { MinNodeTier=1; }
 RandomWeight = 1
 Count = 1
+Distance = [7500, 11000]
 Allegiance = FactionMilitary
 InitToMax = false
 SpawnCrew = true
 RandomHealthRange = [90%, 100%]
 Labels = ["Abandoned"]
+		NameGenerator
+		{
+		    Type = Multi
+		    SubGenerators
+		    [
+		        {
+		            Chance = 1
+		            Type = NameList
+		            Names
+					[
+					    "Admiral"
+					    "Captain"
+					    "Commander"
+					    "General"
+					    "Moff"
+					    "Colonel"
+					    "Major"
+					    "Lieutenant"
+					    "Marshal"
+					    "Ensign"
+					    "Squadron Leader"
+					    "Wing Commander"
+					    "Warlord"
+					    "Overlord"
+					    "Viceroy"
+					    "Agent"
+					    "Archduke"
+					    "Baron"
+					    "Chieftain"
+					    "Consul"
+					    "Count"
+					    "Duke"
+					    "Emir"
+					    "Governor"
+					    "King"
+					    "Magistrate"
+					    "Minister"
+					    "Prince"
+					    "Queen"
+					    "Regent"
+					    "Senator"
+					    "Supreme Leader"
+					]
+		        }
+		        {
+		            Chance = 1
+		            Type = NameList
+		            Names
+					[
+					    "Antilles"
+					    "Vader"
+					    "Kenobi"
+					    "Tarkin"
+					    "Fett"
+					    "Windu"
+					    "Thrawn"
+					    "Organa"
+					    "Solo"
+					    "Skywalker"
+					    "Krennic"
+					    "Ackbar"
+					    "Hux"
+					    "Piett"
+					    "Veers"
+					    "Rendar"
+					    "Marek"
+					    "Calrissian"
+					    "Secura"
+					    "Tiin"
+					    "Jinn"
+					    "Katarn"
+					    "Syndulla"
+					    "Djarin"
+					    "Kryze"
+					    "Saxon"
+					    "Vos"
+					    "Bane"
+					    "Malachor"
+					    "Tano"
+					    "Shan"
+					    "Snoke"
+					    "Grievous"
+					    "Durron"
+					    "Nihilus"
+					    "Revan"
+					    "Malgus"
+					    "Gunray"
+					    "Hutt"
+					    "Zann"
+					    "Tyranus"
+					    "Sidious"
+					    "Maul"
+					    "Ventress"
+					    "Opress"
+					    "Tambor"
+					    "Krayt"
+					    "Satele"
+					    "Cadera"
+					    "Tal"
+					    "Vizsla"
+					    "Fisto"
+					    "Gallia"
+					    "Plo"
+					    "Mundi"
+					    "Unduli"
+					    "Ti"
+					    "Koon"
+					    "Secura"
+					    "Amedda"
+					    "Valorum"
+					    "Bonteri"
+					    "Mothma"
+					    "Dodonna"
+					    "Madine"
+					    "Rieekan"
+					    "Ozzel"
+					    "Piett"
+					    "Jerjerrod"
+					    "Tiaan"
+						"SkipperWraith"
+						"ClassicJam"
+						"Jani"
+						"Lafiel"
+						"Wolfram"
+						"Neojino"
+						"Kroom"
+						"Roasted"
+					]
+		        }
+		    ]
+		}
 	ShipCriteria
 	{
 		UseLocalFactionWeights = true
 		Tier = +2
 		UseTierField = true
 		AllowTierRangeExpansion = true
-		Tags = [combat]
+		Tags = [civilian]
 	}
 	AI
 	{
@@ -28,7 +160,7 @@ Labels = ["Abandoned"]
 			{
 				Type = Doodads
 				Tags = [asteroid_field_poi, poi_unknown]
-				DoodadType = cosmoteer.poi_unknown
+				DoodadType = sw.renegadeleaderPOI // cosmoteer.poi_unknown
 				ShowOnlyInFog = true
 				Undiscovered = true
 				HideIfUnexplored = true
@@ -38,7 +170,7 @@ Labels = ["Abandoned"]
 			// The bad guys.
 			{
 				Type = Ships
-				Tags = [space_pirate]
+				Tags = [hive_of_villany]
 				Count = [2,3]
 				Distance = 333
 				SpawnsPerSlice = 1
@@ -85,7 +217,7 @@ Labels = ["Abandoned"]
 								[
 									{
 										Type = DestroyShips
-										TargetsTag = { Tag=space_pirate; Distance=800;}
+										TargetsTag = { Tag=hive_of_villany; Distance=800;}
 										OverrideDisplayFormatKey = "Objectives/DestroyPirates"
 									}
 									{
