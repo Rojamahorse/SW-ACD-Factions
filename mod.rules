@@ -294,6 +294,7 @@ Actions
 		[
 			&<career/sw_defectorsPOI.rules>
 			&<career/sw_renegadeleaderPOI.rules>
+			&<career/sw_distressPOI.rules>
 		]
 	}
 

@@ -169,6 +169,8 @@ Doodads
 {
 	POIEliminateDefectors = "Rogue Fleet Location"
 	POIEliminateRenegadeLeader = "Renegade Leader Location"
+	POIDistressSignalUndiscovered = "Distress Signal Location"
+	POIDistressSignal = "Dignitary in Distress"
 }
 
 

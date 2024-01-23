@@ -2,7 +2,7 @@ Type = Ships
 Tags = [vip_ship]
 Conditions { MinNodeTier=1; }
 RandomWeight = 1
-Count = 1
+Count = [0, 2]
 Distance = [7500, 11000]
 Allegiance = FactionMilitary
 InitToMax = false
@@ -160,7 +160,7 @@ Labels = ["Abandoned"]
 			{
 				Type = Doodads
 				Tags = [asteroid_field_poi, poi_unknown]
-				DoodadType = sw.renegadeleaderPOI // cosmoteer.poi_unknown
+				DoodadType = sw.distressPOI // cosmoteer.poi_unknown
 				ShowOnlyInFog = true
 				Undiscovered = true
 				HideIfUnexplored = true
@@ -238,7 +238,7 @@ Labels = ["Abandoned"]
 					{
 						Type = Money
 						MoneyPerHighTier = &<./Data/modes/career/tier_tables.rules>/StandardMoneyPerTier
-						MoneyPerTierMultiplier = 2
+						MoneyPerTierMultiplier = 4
 						RoundToMultiple = 500
 					}
 					{
