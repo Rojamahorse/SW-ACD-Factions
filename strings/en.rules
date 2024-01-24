@@ -430,17 +430,18 @@ Missions
 	DefeatRenegadeLeader = "Eliminate \"{target_ship}\", the Deadly Renegade Leader"
 	DefeatRenegadeLeaderDesc = "A notorious renegade leader known as \"{target_ship}\" is wreaking havoc in the {mission_location} System. Commanding a vessel equipped with advanced technology and substantial firepower, this high value target is a major threat to regional stability. The {faction_name} has authorized a substantial bounty of {money} for any skilled pilot capable of confronting and neutralizing this threat. Intelligence reports highlight the strategic importance of this mission, suggesting that eliminating '{target_ship}' could deliver a significant blow to their nefarious activities."
 	RescueVIP = "Rescue the Dignitary"
-	RescueVIPDesc = "An urgent distress call has been issued from a disabled civilian vessel under siege by bounty hunters. Aboard the ship is a dignitary of great importance to the {faction_name}. Immediate assistance is required to fend off the attackers, allowing the vessel to conduct repairs and make an escape. The {faction_name} is offering a substantial reward of {money} for the successful defense and safe extraction of the dignitary. Swift and decisive action is crucial to prevent the situation from worsening."
+	RescueVIPDesc = "An urgent distress call has been issued from a disabled civilian vessel under siege by bounty hunters. Aboard the ship is a dignitary of great importance to the {faction_name}. Immediate assistance is required to fend off the attackers, allowing the vessel to conduct repairs to their hyperdrives and make an escape. The {faction_name} is offering a substantial reward of {money} for the successful defense and safe extraction of the dignitary. Swift and decisive action is crucial to prevent the situation from worsening."
 }
 Objectives
 {
 	EliminateDefectors = "Neutralize the Rogue Fleet"
 	EliminateRenegadeLeader = "Eliminate {0}, the Renegade Leader"
-	SavetheVIP = "Rescue the Dignitary"
+	SavetheVIP = "Eliminate Bounty Hunters"
 }
 AI
 {
-	ImperialFleetCommandAI = "A.I. SWACD"
+	ImperialFleetCommandAI = "A.I. SWACD - Combat"
+	CivFleetCommandAI =  "A.I. SWACD - Civilian"
 }
 Lore
 {

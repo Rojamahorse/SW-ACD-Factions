@@ -1,0 +1,61 @@
+
+NameKey = "AI/CivFleetCommandAI"
+UpdateInterval = [.75, 1.25] // A random range.
+IsAvailableInCreativeMode = true
+IsAvailableInMultiplayer = true
+
+StrategyModules
+[
+	{
+		Type = HoldPosition
+		HoldRotation = false
+		FleeDistance = 100
+		RecallCrew = true
+		AvoidableDoodadTags = [sun]
+	}
+	{
+		Type = FollowFleetLeader
+	}
+	{
+		Type = SelfRepair
+		RepairChecksPerTick = 10
+		RepairDamaged = true
+		RebuildDestroyed = true
+		AllowPartialRepair = true
+		AllowPartialRebuild = false
+	}
+]
+
+TacticsModules
+[
+	{
+		Type = DefaultAttackRadiusAndRotation
+		AttackRotationSwitchThresholdFactor = 1.25
+		AttackRotationsToCheck = 8
+		UseSavedAboveHealth = 0%
+	}
+	{
+		Type = RandomAttackAngle
+		AttackAngleChangeInterval = [10, 20]
+		AttackAngleChangeDelta = [-50d, 50d]
+		CoordinateFlanking = true
+	}
+]
+
+TargetingModules
+[
+	{
+		Type = ValueTargeter
+		TargetChecksPerUpdate = 10
+		TargetSwitchThresholdFactor = 2
+		TargetValueFactorPerPenetrationDist = .75
+	}
+]
+
+//StasisModules
+//[
+//	{
+//		Type = MissionProvider
+//	}
+//]
+

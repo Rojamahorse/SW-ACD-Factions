@@ -1,2 +1,2 @@
 SWRenegadeAI = &<ai_swrenegade.rules>
-//SWExampleAI = &<ai_swexample.rules>
+SWCivilianAI = &<ai_swcivtarget.rules>
