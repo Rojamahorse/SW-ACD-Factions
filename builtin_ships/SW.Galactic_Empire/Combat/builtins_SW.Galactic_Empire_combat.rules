@@ -99,8 +99,8 @@ Ships
 
 //Tier 16 - 17 (10,000,001 - 15,000,000)
 /*10,498,184*/	:~{ File="Venator II-Class Star Destroyer (Empire).ship.png";			Tier=16;	Difficulty=1; Tags = [combat] } 
-/*11,637,640*/    :~{ File="Victory II-class Star Destroyer.ship.png"; 					Tier=16; 	Difficulty=2; Tags = [combat] }
-/*11,692,058*/    :~{ File="Victory-class Star Destroyer.ship.png"; 					Tier=17; 	Difficulty=2; Tags = [combat] }
+/*11,637,640*/  :~{ File="Victory II-class Star Destroyer.ship.png"; 					Tier=16; 	Difficulty=2; Tags = [combat] }
+/*11,692,058*/  :~{ File="Victory-class Star Destroyer.ship.png"; 						Tier=17; 	Difficulty=2; Tags = [combat] }
 /*13,020,370*/	:~{ File="Emp Harrower-class-II Dreadnaugh.ship.png";					Tier=17;	Difficulty=1; Tags = [combat] }
 /*13,589,664*/	:~{ File="Emp Onager-Class Star Destroyer.ship.png";					Tier=17;	Difficulty=1; Tags = [combat] }
 
@@ -108,13 +108,14 @@ Ships
 /*14,261,552*/	:~{ File="Onager-Class Star Destroyer II.ship.png";						Tier=18;	Difficulty=2; Tags = [combat] } 
 /*18,809,805*/	:~{ File="Emp_Supremacy I-class Star_DES.ship.png";						Tier=18;	Difficulty=2; Tags = [combat] } //Neojino
 
+
 //Tier 18 BOSS
-/*18,728,800*/    :~{ File="Executor-Class Star Dreadnought (Small).ship.png"; 			Tier=17; 	Difficulty=2; Tags = [swboss] }
+/*18,728,800*/  :~{ File="Executor-Class Star Dreadnought (Small).ship.png"; 			Tier=17; 	Difficulty=2; Tags = [swboss] }
 /*20,011,224*/	:~{ File="Tector-Class Star Destroyer.ship.png";						Tier=16;	Difficulty=2; Tags = [swboss] } // Credit ClassicJam
 /*22,419,985*/	:~{ File="Imperial II-class Star Destroyer.ship.png";					Tier=16;	Difficulty=2; Tags = [swboss] }
-/*38,832,020*/    :~{ File="Emp Bewitcher_Class_Super_Cruiser.ship.png"; 				Tier=18; 	Difficulty=2; Tags = [swboss] } // Credit Hello360Jelly Jr
-/*55,471,950*/    :~{ File="Praetor Mark-II Class Battlecruiser.ship.png"; 				Tier=17; 	Difficulty=2; Tags = [swboss] }
-/*61,272,660*/    :~{ File="Emp Redeemer_Class_Battleship.ship.png"; 					Tier=18; 	Difficulty=2; Tags = [swboss] } // Credit Hello360Jelly Jr
+/*38,832,020*/  :~{ File="Emp Bewitcher_Class_Super_Cruiser.ship.png"; 					Tier=18; 	Difficulty=2; Tags = [swboss] } // Credit Hello360Jelly Jr
+/*55,471,950*/  :~{ File="Praetor Mark-II Class Battlecruiser.ship.png"; 				Tier=17; 	Difficulty=2; Tags = [swboss] }
+/*61,272,660*/  :~{ File="Emp Redeemer_Class_Battleship.ship.png"; 						Tier=18; 	Difficulty=2; Tags = [swboss] } // Credit Hello360Jelly Jr
 /*71,928,384*/	:~{ File="Executor-Class Star Dreadnought.ship.png";					Tier=18;	Difficulty=2; Tags = [swboss] }
 
 ]
