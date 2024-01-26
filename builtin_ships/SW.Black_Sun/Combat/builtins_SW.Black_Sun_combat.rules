@@ -43,7 +43,7 @@ Ships
 /*203,940*/			:~{ File="Mandalorian Kom'rk-Class (Gauntlet)BS Fighter.ship.png";      Tier=6;  Difficulty=2; Tags = [combat] } //ClassicJam
 /*268,850*/			:~{ File="BSC Smuggler's Luxury Yacht 3000.ship.png"; 					Tier=6;  Difficulty=1; Tags = [combat] }
 /*270,630*/			:~{ File="GR-75 Medium Transport (New).ship.png"; 						Tier=8;  Difficulty=1; Tags = [combat] }
-/*352,480*/			:~{ File="BSC YT-1300f Light Freighter (V2.ship.png"; 					Tier=4;  Difficulty=1; Tags = [combat] }
+/*352,480*/			:~{ File="BSC YT-1300f Light Freighter (V2.ship.png"; 					Tier=5;  Difficulty=1; Tags = [combat] }
 /*353,080*/			:~{ File="BSC YT-1300g Light Freighter.ship.png"; 						Tier=7;  Difficulty=1; Tags = [combat] }
 /*353,080*/			:~{ File="YT-1300g SC Freighter.ship.png"; 								Tier=6;  Difficulty=2; Tags = [combat] }
 /*358,590*/			:~{ File="Modified_YT-1300g_Light_Freighter.ship.png"; 					Tier=6;  Difficulty=1; Tags = [combat] }
@@ -55,15 +55,17 @@ Ships
 /*368,040*/			:~{ File="YT-1300bs Light Freighter.ship.png"; 							Tier=6;  Difficulty=1; Tags = [combat] }
 
 //Tier 8-10 (400,001 to 2,000,000)
-/*437,780*/			:~{ File="Modified_Gozanti-class_Cruiser.ship.png"; 					Tier=8;   Difficulty=1; Tags = [combat] }
+/*437,780*/			:~{ File="Modified_Gozanti-class_Cruiser.ship.png"; 					Tier=8;  Difficulty=1; Tags = [combat] }
 /*453,540*/ 		:~{ File="BSC Gozanti-Class Cruiser.ship.png"; 							Tier=8;  Difficulty=1; Tags = [combat] }
 /*462,900*/			:~{ File="Gozanti-Class Cruiser-BS.ship.png";         					Tier=8;  Difficulty=2; Tags = [combat] }
+/*612,450*/			:~{ File="BSC Delta 4 Smuggler.ship.png"; 								Tier=9;  Difficulty=1; Tags = [combat] }
 /*662,470*/			:~{ File="BSC YKL-37R Nova Courier.ship.png"; 							Tier=9;  Difficulty=1; Tags = [combat] }
-/*1,082,704*/		:~{ File="Black Sun OutPost.ship.png"; 									Tier=10;  Difficulty=1; Tags = [combat] }
-/*1,222,860*/ 		:~{ File="BSC Hardcell-Class Interstellar Transport.ship.png"; 			Tier=10;  Difficulty=1; Tags = [combat] }
+/*1,082,704*/		:~{ File="Black Sun OutPost.ship.png"; 									Tier=10; Difficulty=1; Tags = [combat] }
+/*1,222,860*/ 		:~{ File="BSC Hardcell-Class Interstellar Transport.ship.png"; 			Tier=10; Difficulty=1; Tags = [combat] }
+/*1,465,628*/		:~{ File="Shadow Collective Destroyer.ship.png";         				Tier=10; Difficulty=2; Tags = [combat] }
 
 //Tier 11-13 (2,000,001 to 5,000,000)
-/*1,465,628*/		:~{ File="Shadow Collective Destroyer.ship.png";         				Tier=11;  Difficulty=2; Tags = [combat] }
+/*1,560,340*/		:~{ File="BSC Hutta Destroyer.ship.png";         						Tier=11;  Difficulty=2; Tags = [combat] }
 /*2,098,820*/		:~{ File="AA-9 Coruscant-BS Botajef Freigh.ship.png"; 					Tier=11;  Difficulty=1; Tags = [combat] }
 /*2,183,980*/		:~{ File="AA-9 Coruscant-BS (Combat).ship.png"; 						Tier=12;  Difficulty=1; Tags = [combat] }
 /*2,264,773*/		:~{ File="BSE Vengeance Class.ship.png"; 								Tier=12;  Difficulty=1; Tags = [combat] }
@@ -84,6 +86,7 @@ Ships
 /*16,019,736*/		:~{ File="BSC Mando Destroyer.ship.png"; 								Tier=17;  Difficulty=1; Tags = [swboss] }
 
 //Tier 18
+/*38,760,000*/		//:~{ File="BSC Proto Raider Arquitens-Class.ship.png"; 					Tier=18;  Difficulty=2; Tags = [swboss] }
 /*61,272,660*/		:~{ File="BSC Redeemer_Class_Battleship.ship.png"; 						Tier=18;  Difficulty=2; Tags = [swboss] }
 	
 	]

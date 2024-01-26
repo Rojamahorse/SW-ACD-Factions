@@ -59,12 +59,14 @@ Ships
 /*393,960*/    		:~{ File="Consular-Class Cruiser (Charger c70 Retrofit) Grey.ship.png";                  Tier=6;  Difficulty=1; Tags = [combat] }
 /*424,820*/    		:~{ File="C-9979 Landing Craft (NRep) Atk.ship.png";                                     Tier=5;  Difficulty=2; Tags = [combat] }
 /*432,630*/    		:~{ File="Rep YT-2400 Light Freighter.ship.png";                                         Tier=6;  Difficulty=2; Tags = [combat] } // Original
+/*432,630*/    		:~{ File="Rep YT-2400-R Light Freighter.ship.png";                                       Tier=7;  Difficulty=2; Tags = [combat] } // Original
 /*434,020*/    		:~{ File="DP20 Frigate (Republic).ship.png";                                             Tier=7;  Difficulty=1; Tags = [combat] }
 /*458,200*/    		:~{ File="Rep CR90 Corvette (Republic).ship.png";                                        Tier=8;  Difficulty=1; Tags = [combat] }
 /*458,200*/    		:~{ File="CR90 Corvette (Republic).ship.png";                                            Tier=6;  Difficulty=1; Tags = [combat] }
 /*499,710*/    		:~{ File="Republic Light Assault Shuttle.ship.png";                                      Tier=6;  Difficulty=2; Tags = [combat] }
 /*509,382*/    		:~{ File="Republic CG Assault Shuttle.ship.png";                                         Tier=8;  Difficulty=3; Tags = [combat] } //  Credit ClassicJam
 /*602,730*/    		:~{ File="Republic Delta 4.ship.png";                                                    Tier=8;  Difficulty=1; Tags = [combat] }
+/*602,730*/    		:~{ File="Rep Delta 4 Smuggler.ship.png";                                                    Tier=8;  Difficulty=1; Tags = [combat] }
 /*951,100*/    		:~{ File="Rep Pelta-Class Frigate (Grey).ship.png";                                      Tier=9;  Difficulty=1; Tags = [combat] }
 /*984,742*/			:~{ File="Marauder-Class Cruiser (Republic.ship.png";      								 Tier=9;  Difficulty=2; Tags = [combat] } //  Credit ClassicJam
 

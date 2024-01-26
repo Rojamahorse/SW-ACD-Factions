@@ -111,12 +111,13 @@ Ships
 
 //Tier 18 BOSS
 /*18,728,800*/  :~{ File="Executor-Class Star Dreadnought (Small).ship.png"; 			Tier=17; 	Difficulty=2; Tags = [swboss] }
-/*20,011,224*/	:~{ File="Tector-Class Star Destroyer.ship.png";						Tier=16;	Difficulty=2; Tags = [swboss] } // Credit ClassicJam
+/*20,011,224*/	:~{ File="Tector-Class Star Destroyer.ship.png";						Tier=16;	Difficulty=2; Tags = [swboss] } 
 /*22,419,985*/	:~{ File="Imperial II-class Star Destroyer.ship.png";					Tier=16;	Difficulty=2; Tags = [swboss] }
 /*38,832,020*/  :~{ File="Emp Bewitcher_Class_Super_Cruiser.ship.png"; 					Tier=18; 	Difficulty=2; Tags = [swboss] } // Credit Hello360Jelly Jr
 /*55,471,950*/  :~{ File="Praetor Mark-II Class Battlecruiser.ship.png"; 				Tier=17; 	Difficulty=2; Tags = [swboss] }
 /*61,272,660*/  :~{ File="Emp Redeemer_Class_Battleship.ship.png"; 						Tier=18; 	Difficulty=2; Tags = [swboss] } // Credit Hello360Jelly Jr
 /*71,928,384*/	:~{ File="Executor-Class Star Dreadnought.ship.png";					Tier=18;	Difficulty=2; Tags = [swboss] }
+/*99,928,384*/	:~{ File="Emp_ISD_Banisher.ship.png";									Tier=18;	Difficulty=2; Tags = [swboss] } // Credit Choppyranger
 
 ]
 
