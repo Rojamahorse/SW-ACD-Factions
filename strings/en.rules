@@ -115,7 +115,7 @@ StatCategories
 	SWRG9Shot = "Small <red>Red</red> RG-9 Burst Cannon Shot"
 	SWBurstLaser = "Small <red>Red</red> Burst Laser Shot"
 	SWPDBeamLaser = "Small <yellow>Yellow</yellow> PD Beam Laser Shot"
-
+	SWSlug = "Small <white>Metal</white> Massdriver Slug Shot"
 }
 
 

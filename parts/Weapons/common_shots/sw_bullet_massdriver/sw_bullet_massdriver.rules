@@ -35,7 +35,7 @@ Components
 	Targetable
 	{
 		Type = Targetable
-		Health = 2250
+		Health = 2000
 		TargetCategory = "bullet"
 
 		OnDeath
@@ -53,6 +53,7 @@ Components
 	Hit
 	{
 		Type = PenetratingHit
+		SourceShipLowCollisions = false
 		Penetration = { BaseValue=15; BuffType=RailgunShot; BuffMode=Multiply; }
 		PenetrationSpeed = &~/Speed
 

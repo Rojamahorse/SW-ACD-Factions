@@ -37,8 +37,8 @@ Ships
 /*137,170*/			:~{ File="BSC Pursuer-Class Enforcement-BS.ship.png"; 					Tier=5;  Difficulty=1; Tags = [combat] }
 /*139,670*/			:~{ File="Pursuer-Class Enforcement-BS.ship.png"; 						Tier=5;  Difficulty=1; Tags = [combat] }
 /*172,870*/			:~{ File="Heavy Black Sun Starfighter-BS.ship.png"; 					Tier=5;  Difficulty=1; Tags = [combat] }
-/*172,870*/			:~{ File="Heavy Black Sun Starfighter-BS.ship.png"; 					Tier=5;  Difficulty=1; Tags = [combat] }
-/*TBD*/				:~{ File="C-9979 LC Death Gang (BSC) Atk.ship.ship.png"; 					Tier=6;  Difficulty=1; Tags = [combat] }
+/*172,870*/			:~{ File="Heavy Black Sun Starfighter.ship.png"; 						Tier=6;  Difficulty=1; Tags = [combat] }
+/*TBD*/				:~{ File="C-9979 LC Death Gang (BSC) Atk.ship.png"; 					Tier=6;  Difficulty=1; Tags = [combat] }
 /*184,790*/			:~{ File="BSC Kom'rk-Class Fighter.ship.png"; 							Tier=6;  Difficulty=1; Tags = [combat] }
 /*190,090*/			:~{ File="Mandalorian Kom'rk-Class-O Fight.ship.png";          			Tier=6;  Difficulty=1; Tags = [combat] } //ClassicJam 
 /*203,910*/			:~{ File="BSC Kom'rk-Class Fighter R.ship.png"; 						Tier=7;  Difficulty=1; Tags = [combat] }
