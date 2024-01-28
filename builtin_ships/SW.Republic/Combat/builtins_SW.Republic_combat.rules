@@ -55,6 +55,7 @@ Ships
 /*362,060*/    		:~{ File="Republic Consular-Class CruiserO.ship.png";                                    Tier=6;  Difficulty=2; Tags = [combat] }
 /*350,840*/    		:~{ File="Republic Consular-Class CruiserR.ship.png";                                    Tier=6;  Difficulty=2; Tags = [combat] }
 /*369,350*/    		:~{ File="Old Rep YT-1300g Light Freighter.ship.png";                                    Tier=7;  Difficulty=2; Tags = [combat] } //  
+/*369,350*/    		:~{ File="Old Rep YT-1300w Light Freighter.ship.png";                                    Tier=7;  Difficulty=2; Tags = [combat] } //  
 /*369,480*/    		:~{ File="GR-75 MC Medium Cruiser.ship.png";                                             Tier=6;  Difficulty=1; Tags = [combat] }
 /*393,960*/    		:~{ File="Consular-Class Cruiser (Charger c70 Retrofit) Grey.ship.png";                  Tier=6;  Difficulty=1; Tags = [combat] }
 /*424,820*/    		:~{ File="C-9979 Landing Craft (NRep) Atk.ship.png";                                     Tier=5;  Difficulty=2; Tags = [combat] }

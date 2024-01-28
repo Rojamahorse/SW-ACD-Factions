@@ -29,6 +29,7 @@ Ships
 	:~{ File="Rebel-Millenium Falcon (Combat Loadout).ship.png";          				Tier=5;  Difficulty=1; Tags = [combat] } // Cost $0
 	:~{ File="Millenium Falcon (Combat Loadout).ship.png";         						Tier=6;  Difficulty=2; Tags = [combat] } // Cost $0
 	:~{ File="Rebel GR-75 Medium Transport v2.ship.png";          						Tier=7;  Difficulty=2; Tags = [combat] } // Cost $0
+/*369,350*/    		:~{ File="Reb YT-1300w Light Freighter.ship.png";               	Tier=7;  Difficulty=2; Tags = [combat] } //  
 	:~{ File="Rebel GR-75 Medium Transport.ship.png";         							Tier=7;  Difficulty=1; Tags = [combat] } // Cost $0
 	:~{ File="GR-75 Medium Transport.ship.png";         								Tier=6;  Difficulty=2; Tags = [combat] } // Cost $0
 	:~{ File="Rebel Millenium Falcon Combat B.ship.png";           						Tier=4;  Difficulty=2; Tags = [combat] } // Cost $0
