@@ -1,7 +1,9 @@
 ID = SW.fighter_xwing_shot
 Range = 425
-IdealRange = [285 - 425]
+IdealRange = [200 - 400]
 Speed = 480
+HitEffectsScaleOverRange = [1, 400 - (&../Range) / 1000]
+
 
 Components
 {
