@@ -40,6 +40,7 @@ Ships
 /*1,134,000*/        :~{ File="CIS Belbullab Heavy Cruiser.ship.png";                                Tier=9;  Difficulty=1; Tags = [combat] }
 /*1,250,470*/        :~{ File="Umbaran Support Ship.ship.png";                                       Tier=10;  Difficulty=1; Tags = [combat] }
 /*1,313,800*/        :~{ File="CIS Belbullab Heavy Cruiser (S).ship.png";                            Tier=10;  Difficulty=1; Tags = [combat] }
+/*1,313,800*/        :~{ File="CIS Belbullab Heavy Cruiser B (S.ship.png";                           Tier=10;  Difficulty=1; Tags = [combat] }
 /*1,465,628*/        :~{ File="CIS Trade Federation Escort.ship.png";                                Tier=9;  Difficulty=2; Tags = [combat] }
 
     //Tier 11-13 (2,000,001 to 5,000,000)
