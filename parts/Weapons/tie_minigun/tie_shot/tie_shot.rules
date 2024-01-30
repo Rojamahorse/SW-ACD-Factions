@@ -1,7 +1,8 @@
 ID = SW.fighter_tie_minigun_shot
-Range = 325
-IdealRange = 250
+Range = 375
+IdealRange = 275
 Speed = 350
+//HitEffectsScaleOverRange = [1, 1 - (&../Range) / 1000]
 
 Components
 {
