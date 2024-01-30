@@ -1,7 +1,8 @@
 ID = SW.r9_shot
-Range = 400
-IdealRange = 285
+Range = 375
+IdealRange = [50 - 325]
 Speed = 500
+//HitEffectsScaleOverRange = [1, 1 - (&../Range) / 1000]
 
 Components
 {
