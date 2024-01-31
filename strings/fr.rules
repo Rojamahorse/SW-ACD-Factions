@@ -57,6 +57,14 @@ Parts
     PDTurretTinyDesc = "La tourelle de défense pointue double laser StarGuard, fabriquée par <cyan>Corellian ArmsTech</cyan>, déchaîne une furie de double laser. Cette version miniaturisée et entièrement automatisée de la tourelle double laser StarGuard est optimisée pour les espaces restreints. Elle est très efficace pour cibler <orange>les balles, les mines et les missiles</orange>, mais est inefficace contre les lasers et les tirs ioniques."
 }
 
+EditorGroups
+{
+}
+
+Stats
+{
+
+}
 
 StatCategories
 {
@@ -66,6 +74,7 @@ StatCategories
     SWRG9Shot = "Tir de Canon à Rafales RG-9 <red>Rouge</red> Petit"
     SWBurstLaser = "Tir de Laser à Rafales <red>Rouge</red> Petit"
     SWPDBeamLaser = "Tir de Laser à Faisceau PD <yellow>Jaune</yellow> Petit"
+	SWSlug = "Tir de Projectile Massif <white>Métallique</white> Petit"
 }
 
 SWFactionsBlacksun = "SW Factions : Soleil Noir"
@@ -82,6 +91,12 @@ SWFactionsRebelAllianceTip = "Une collection de vaisseaux de l'Alliance Rebelle 
 
 SWFactionsRepublic = "SW Factions : République"
 SWFactionsRepublicTip = "Une collection de vaisseaux de la République des Factions Star Wars"
+
+SWFactionsStarters = "SW Factions : Vaisseaux de Départ"
+SWFactionsStartersTip = "Une collection de Vaisseaux de Départ des Factions de Star Wars"
+
+SWCommunitySubmissions = "Contributions de la Communauté SW"
+SWCommunitySubmissionsTip = "Une collection de Soumissions de Vaisseaux Star Wars par la communauté"
 
 
 DecalGroups
@@ -114,7 +129,12 @@ StarterShips
 
 Doodads
 {
+    POIEliminateDefectors = "Emplacement de la Flotte Défectueuse"
+    POIEliminateRenegadeLeader = "Emplacement du Leader Renégat"
+    POIDistressSignalUndiscovered = "Emplacement du Signal de Détresse"
+    POIDistressSignal = "Dignitaire en Détresse"
 }
+
 
 Resource
 {
@@ -332,8 +352,8 @@ FameTitles
 
 ReputationTitles
 [
-	"En-cas de Sarlacc"
 	"Cible de l'Étoile de la Mort"
+	"En-cas de Sarlacc"
 	"Poodoo de Bantha"
 	"Irritant Léger"
 	"Connaissance du HoloNet"
@@ -372,6 +392,25 @@ Missions
 	VisitSystemDesc = "Un astrophysicien renommé demande des données sur l'activité stellaire dans le Système {mission_location}."
 	Debug = "Mission de Débogage"
 	DebugDesc = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales rutrum eros. Fusce non eros a lacus luctus auctor sit amet at mi. In ac fermentum est. Nam viverra lectus eu turpis cursus vestibulum."
+	ClearRogueElements = "Neutraliser la Flotte Renégate"
+	ClearRogueElementsDesc = "Un escadron précédemment sous le commandement de \"{faction_name}\" est devenu renégat et se réfugie actuellement avec une flotte locale d'Outlaws dans un champ d'astéroïdes dense dans le Système {mission_location}. Composé de divers types de vaisseaux, cet escadron renégat exploite le terrain complexe du champ pour lancer des attaques surprises, perturbant la stabilité locale et représentant une menace significative. {faction_name} recherche de toute urgence un pilote compétent pour naviguer dans le champ d'astéroïdes, neutraliser cet escadron et restaurer l'ordre dans le secteur. Une récompense généreuse de {money} est promise à quiconque peut éliminer cette menace insaisissable.\n\n"\
+		"<bad>Attention : C'est une mission dangereuse et ne devrait être tentée que par des pilotes compétents ayant l'expérience et les compétences nécessaires.</bad>"
+	DefeatRenegadeLeader = "Éliminer \"{target_ship}\", le Leader Renégat Mortel"
+	DefeatRenegadeLeaderDesc = "Un leader renégat notoire connu sous le nom de \"{target_ship}\" sème le chaos dans le Système {mission_location}. Commandant un vaisseau équipé de technologies avancées et d'une puissance de feu considérable, cette cible de haute valeur est une grande menace pour la stabilité régionale. {faction_name} a autorisé une récompense généreuse de {money} pour tout pilote compétent capable de confronter et de neutraliser cette menace. Les rapports de renseignements soulignent l'importance stratégique de cette mission, suggérant que l'élimination de '{target_ship}' pourrait porter un coup significatif à leurs activités néfastes.\n\n"\
+		"<bad>Attention : C'est une mission très dangereuse et ne devrait être tentée que par des pilotes compétents ayant l'expérience et les compétences nécessaires.</bad>"
+	RescueVIP = "Sauver le Dignitaire"
+	RescueVIPDesc = "Un appel de détresse urgent a été émis par un navire civil désactivé assiégé par des chasseurs de primes. À bord du navire se trouve un dignitaire d'une grande importance pour {faction_name}. Une assistance immédiate est requise pour repousser les attaquants, permettant au navire d'effectuer des réparations sur ses hyperpropulseurs et de s'échapper. {faction_name} offre une récompense substantielle de {money} pour la défense réussie et l'extraction en toute sécurité du dignitaire. Une action rapide et décisive est cruciale pour empêcher la situation de s'aggraver."
+}
+Objectives
+{
+	EliminateDefectors = "Neutraliser la Flotte Renégate"
+	EliminateRenegadeLeader = "Éliminer {0}, le Leader Renégat"
+	SavetheVIP = "Éliminer les Chasseurs de Primes"
+}
+AI
+{
+	ImperialFleetCommandAI = "I.A. SWACD - Combat"
+	CivFleetCommandAI =  "I.A. SWACD - Civil"
 }
 
 Lore

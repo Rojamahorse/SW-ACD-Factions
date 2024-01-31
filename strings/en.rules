@@ -137,10 +137,12 @@ SWFactionsRepublicTip = "A collection of Star Wars Factions Republic ships"
 SWFactionsStarters = "SW Factions: Starter Ships"
 SWFactionsStartersTip = "A collection of Star Wars Factions Starter Ships"
 
+SWCommunitySubmissions = "SW Community Submissions"
+SWCommunitySubmissionsTip = "A collection of Star Wars Ship Submissions from the community"
 
 DecalGroups
 {
-	sw_decals = "Star Wars Faction Decals"
+	//sw_decals = "Star Wars Faction Decals"
 	sw_adv_shapes = "Advanced Gradients, Shadows, & Shapes"
 }
 
@@ -396,6 +398,7 @@ ReputationTitles
 	"Wookiee Lifedebt"
 ]
 
+
 Missions
 {
 	ResourceDelivery = "Supplies Run"
@@ -445,6 +448,8 @@ AI
 	ImperialFleetCommandAI = "A.I. SWACD - Combat"
 	CivFleetCommandAI =  "A.I. SWACD - Civilian"
 }
+
+
 Lore
 {
 	Black_Sun
