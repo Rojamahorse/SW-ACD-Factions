@@ -49,6 +49,11 @@ ShipLibraries
         NameKey = "SWFactionsRepublic"
         TooltipKey = "SWFactionsRepublicTip" 
     }
+    {
+        Folder = "builtin_ships/SW.Community"
+        NameKey = "SWCommunitySubmissions"
+        TooltipKey = "SWCommunitySubmissionsTip" 
+    }
 ]
 
 Actions

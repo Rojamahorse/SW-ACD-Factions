@@ -13,7 +13,7 @@ Ships
     //Tier 3-4 (100,001 to 200,000)
 /*52,440*/           :~{ File="Vulture-Class Droid-R Starfighte.ship.png";                           Tier=3;  Difficulty=2; Tags = [combat] }
 /*55,100*/           :~{ File="Hyena-Class Droid Bomber.ship.png";                                   Tier=3;  Difficulty=2; Tags = [combat] }
-/*64,440*/           :~{ File="CIS P-38 Magnaguard Starfighter T.ship.png";                               Tier=3;  Difficulty=2; Tags = [combat] }
+/*64,440*/           :~{ File="CIS P-38 Magnaguard Starfighter T.ship.png";                          Tier=3;  Difficulty=2; Tags = [combat] }
 /*65,790*/           :~{ File="CIS Droid Tri-Fighter.ship.png";                                      Tier=3;  Difficulty=1; Tags = [combat] }
 /*67,290*/           :~{ File="Droid Tri-Fighter Mk3.ship.png";                                      Tier=3;  Difficulty=1; Tags = [combat] }
 /*72,590*/           :~{ File="Droid Tri-Fighter Mk2.ship.png";                                      Tier=3;  Difficulty=1; Tags = [combat] }
@@ -22,6 +22,7 @@ Ships
 /*84,290*/           :~{ File="CIS Droid S-One B.ship.png";                                          Tier=4;  Difficulty=1; Tags = [combat] }
 /*85,130*/           :~{ File="P-38 Rogue-Class Starfighter Mk2.ship.png";                           Tier=3;  Difficulty=2; Tags = [combat] }
 /*87,110*/           :~{ File="CIS Droid S-One S Type-S.ship.png";                                   Tier=4;  Difficulty=1; Tags = [combat] }
+/*95,160*/           :~{ File="CIS P-38 Rogue-Class (Magnaguard) Starfighter.ship.png";              Tier=4;  Difficulty=2; Tags = [combat] }
 
     //Tier 5-7 (180,001 to 400,000)
 /*248,452*/          :~{ File="HMP Droid Gunship.ship.png";                                          Tier=5;  Difficulty=2; Tags = [combat] }
