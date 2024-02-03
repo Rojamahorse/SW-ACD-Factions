@@ -50,7 +50,7 @@ Factions
 }
 
 MaxTier = 18
-TierSpread = 2
+TierSpread = 1
 
 FactionTiers
 {
@@ -76,8 +76,8 @@ FactionTiers
 */
 		{
 			FactionID = SW.Rebel_Alliance
-			TierRangeLow = 1
-			TierRangeHigh = 1
+			TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]	//TierRangeLow = 1
+			TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]	//TierRangeHigh = 1
 		}
 	]
 }
