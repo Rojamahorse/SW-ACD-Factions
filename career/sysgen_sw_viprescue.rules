@@ -5,7 +5,8 @@ RandomWeight = 1
 Count = [0, 1]
 Distance = [1000, 14000]
 MinDistanceFromTags = [[asteroid, 120],[vip_ship, 5000],[station, 2000],[bounty, 2000]]
-Allegiance = FactionMilitary
+//SynchronizeFactions = true
+Allegiance = FactionCivilian
 InitToMax = false
 SpawnCrew = true
 RandomHealthRange = [90%, 100%]
@@ -346,12 +347,14 @@ Labels = ["Abandoned"]
 									{
 										Type = DestroyShips
 										TargetsTag = { Tag=hive_of_villany; Distance=800;}
+										TargetAreaTag = { Mode=Nearest; Tag=poi_unknown; }
 										OverrideDisplayFormatKey = "Objectives/SavetheVIP"
 									}
 									{
 										Type = ProtectShips
 										TargetsTag = { Mode=Nearest; Tag=vip_ship; Max=1; }
-									}
+										TargetAreaTag = { Mode=Nearest; Tag=poi_unknown; }
+							}
 								]
 							}
 							{
