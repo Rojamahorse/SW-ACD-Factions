@@ -65,6 +65,8 @@ TradeShips
 			reb_5b  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Cargo Transporter Medium Rebel";             	Faction=SW.Rebel_Alliance;    TierRange=[3, 12];  StasisSpeed=86; StasisTradeTime=60; }
 			reb_7a  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Rebel Firespray-31-Class Patr";                Faction=SW.Rebel_Alliance;    TierRange=[6, 18];  StasisSpeed=35; StasisTradeTime=80; }
 			reb_7b  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Cargo Transporter Large Rebel";                Faction=SW.Rebel_Alliance;    TierRange=[6, 18];  StasisSpeed=47; StasisTradeTime=80; }
+			reb_7c  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Reb Vakbeor-class Cargo Frigate (Civ)";        Faction=SW.Rebel_Alliance;    TierRange=[6, 18];  StasisSpeed=47; StasisTradeTime=80; }
+			reb_7d  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Reb Pelta-Class Medical Frigate";              Faction=SW.Rebel_Alliance;    TierRange=[6, 18];  StasisSpeed=47; StasisTradeTime=80; }
 			reb_10a : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Cargo Transporter Huge Rebel";               	Faction=SW.Rebel_Alliance;    TierRange=[12, 18]; StasisSpeed=31; StasisTradeTime=100; }
 			reb_10b : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Rebel DP20 Frigate (Cargo)";                 	Faction=SW.Rebel_Alliance;    TierRange=[12, 18]; StasisSpeed=84; StasisTradeTime=100; }
 
@@ -81,6 +83,8 @@ TradeShips
 			rep_7b  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Rep SoroSuub Lux 3000 Space Yach";         		Faction=SW.Republic; TierRange=[6, 18];  StasisSpeed=57; StasisTradeTime=80; }
 //			rep_7c  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Workhorse";            							Faction=SW.Republic; TierRange=[6, 18];  StasisSpeed=57; StasisTradeTime=80; }
 //			rep_7d  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Factotum";             							Faction=SW.Republic; TierRange=[6, 18];  StasisSpeed=57; StasisTradeTime=80; }
+			rep_7c  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Rep Vakbeor-class Cargo Frigate";             		Faction=SW.Republic; TierRange=[6, 18];  StasisSpeed=47; StasisTradeTime=100; }
+			rep_7d  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Rep Pelta-Class Medical Frigate";              	Faction=SW.Republic; TierRange=[6, 18];  StasisSpeed=47; StasisTradeTime=100; }
 			rep_10a : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Cargo Transporter Large Republic";         		Faction=SW.Republic; TierRange=[12, 18]; StasisSpeed=83; StasisTradeTime=100; }
 			rep_10b : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Cargo Transporter Huge Republic";       			Faction=SW.Republic; TierRange=[12, 18]; StasisSpeed=75; StasisTradeTime=100; }
 			rep_10c : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Eta-Class Supply Barge Republic";       			Faction=SW.Republic; TierRange=[12, 18]; StasisSpeed=75; StasisTradeTime=100; }

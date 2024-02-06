@@ -42,6 +42,9 @@ Ships
 
 //Tier 5-7 (180,001 to 400,000)
 /*121,855*/    		:~{ File="Royal House N-1R Starfighter Mk2.ship.png";                                    Tier=5;  Difficulty=1; Tags = [combat] }
+/*222,855*/    		:~{ File="Rep UT-60D U-Wing Starfighter Lb.ship.png";                                    Tier=5;  Difficulty=1; Tags = [combat] }
+/*229,315*/    		:~{ File="Rep UT-60D U-Wing Starfighter Y.ship.png";                                     Tier=6;  Difficulty=2; Tags = [combat] }
+/*227,725*/    		:~{ File="Rep UT-60D U-Wing Starfighter.ship.png";                                       Tier=6;  Difficulty=2; Tags = [combat] } // Wolfram
 /*264,490*/    		:~{ File="Rep Baudo-Class Space Yacht.ship.png";                                         Tier=5;  Difficulty=2; Tags = [combat] } // Original
 /*264,490*/    		:~{ File="Rep Baudo-Class Yacht (combat).ship.png";                                      Tier=5;  Difficulty=2; Tags = [combat] } // Original
 /*281,180*/    		:~{ File="Republic Gunship.ship.png";                                                    Tier=5;  Difficulty=2; Tags = [combat] }
@@ -80,6 +83,7 @@ Ships
 /*1,320,447*/    	:~{ File="Arquitens_Class_Light_Cruiser.ship.png";                                       Tier=10;  Difficulty=2; Tags = [combat] } //  Credit Wolfram
 /*1,742,510*/    	:~{ File="Arquitens-Class Light Cruiser (Grey).ship.png";                                Tier=12;  Difficulty=2; Tags = [combat] } //  Credit ClassicJam
 /*1,742,510*/    	:~{ File="Arquitens-Class Light Cruiser (Red).ship.png";                                 Tier=12;  Difficulty=2; Tags = [combat] } //  Credit ClassicJam
+/*1,742,510*/    	:~{ File="Rep Vakbeor-class Missile Frigat.ship.png";                                 	 Tier=10;  Difficulty=2; Tags = [combat] } //  Credit ClassicJam
 /*3,227,757*/    	:~{ File="Rep Dreadnought Mk2.ship.png";                                                 Tier=13;  Difficulty=1; Tags = [combat] }
 /*3,316,856*/    	:~{ File="Republic Assault Frigate Mk II.ship.png";                                      Tier=13;  Difficulty=2; Tags = [combat] }
 

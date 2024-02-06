@@ -25,6 +25,8 @@ Ships
 /*188,200*/		:~{ File="Rebel-ASF-01 B-Wing Starfighter.ship.png";    						Tier=4;    Difficulty=1; Tags = [combat] }
 /*192,100*/		:~{ File="ASF-01 B-Wing Hvy Starfighter R.ship.png";     						Tier=6;    Difficulty=1; Tags = [combat] }  
 /*183,700*/		:~{ File="ASF-01 B-Wing Starfighter.ship.png";     								Tier=6;    Difficulty=1; Tags = [combat] }  
+/*230,700*/		:~{ File="Reb UT-60D U-Wing Starfighter O.ship.png";     						Tier=6;    Difficulty=1; Tags = [combat] }  
+/*230,700*/		:~{ File="Reb UT-60D U-Wing Starfighter R.ship.png";     						Tier=6;    Difficulty=1; Tags = [combat] }  
 /*322,090*/		:~{ File="Rebel GR-75 Medium Transport v2.ship.png";     						Tier=7;    Difficulty=2; Tags = [combat] }
 /*324,350*/		:~{ File="Rebel GR-75 Medium Transport.ship.png"; 								Tier=7;    Difficulty=1; Tags = [combat] }
 /*325,025*/		:~{ File="Rebel Gunship G.ship.png";     										Tier=6;    Difficulty=1; Tags = [combat] }
@@ -56,10 +58,12 @@ Ships
 /*1,036,664*/	:~{ File="Rebel Marauder-Class B Corvette.ship.png";     					Tier=8;    		Difficulty=2; Tags = [combat] }
 /*1,035,650*/	:~{ File="Rebel-Marauder-Class Corvette.ship.png";      					Tier=9;    		Difficulty=2; Tags = [combat] }
 /*1,142,580*/	:~{ File="EF76 Nebulon-B Escort Frigate II.ship.png";     					Tier=8;    	Difficulty=2; Tags = [combat] }
+/*1,167,580*/	:~{ File="Reb Pelta-Class Cbt Medical Frig.ship.png";     					Tier=8;    	Difficulty=2; Tags = [combat] }
 /*1,312,720*/	:~{ File="Rebel Pheonix Home Alt.ship.png"; 								Tier=9; 	Difficulty=2; Tags = [combat] }
 /*1,292,720*/	:~{ File="Rebel Pheonix Home.ship.png";     								Tier=12;    Difficulty=1; Tags = [combat] }
 /*1,217,480*/	:~{ File="Rebel Pheonix Supply.ship.png"; 			 						Tier=13;    Difficulty=1; Tags = [combat] } 
 /*1,808,600*/	:~{ File="Reb Arquitens-Class Light Cruiser (Red).ship.png";     			Tier=9;    	Difficulty=1; Tags = [combat] }
+/*1,862,7700*/	:~{ File="Reb Vakbeor-class Missle Frigate.ship.png";     					Tier=9;    	Difficulty=1; Tags = [combat] }
 
 /*3,158,566*/	:~{ File="Assault Frigate Mk1.ship.png";     								Tier=10;    	Difficulty=1; Tags = [combat] }  
 /*3,289,786*/	:~{ File="Rebel-Assault Frigate Mk1.ship.png"; 								Tier=10; 	Difficulty=1; Tags = [combat] }
