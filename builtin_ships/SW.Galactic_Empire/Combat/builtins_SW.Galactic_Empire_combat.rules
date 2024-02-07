@@ -15,11 +15,13 @@ Ships
 // Tier 2 ($50,000 - $100,000)
 /*57,930*/	:~{ File="Emp TIE Interceptor (Sienar Blue.ship.png";    				Tier=2;  	Difficulty=2; Tags = [combat] }
 /*69,550*/	:~{ File="Emp TIE Heavy.ship.png";            							Tier=3;  	Difficulty=2; Tags = [combat] }
+/*72,550*/	:~{ File="Emp Imperial Transport.ship.png";            					Tier=3;  	Difficulty=1; Tags = [combat] }
 /*81,630*/	:~{ File="Emp TIE Interceptor-B MkII.ship.png";                 		Tier=2;  	Difficulty=2; Tags = [combat] }
 /*81,630*/	:~{ File="Emp TIE Interceptor MkII.ship.png";                   		Tier=3;  	Difficulty=1; Tags = [combat] }
 /*60,930*/	:~{ File="Emp TIE Interceptor.ship.png";                        		Tier=2;  	Difficulty=2; Tags = [combat] }
 /*83,320*/	:~{ File="Emp TIE SA Bomber (Sienar Blue).ship.png";            		Tier=3;  	Difficulty=1; Tags = [combat] }
 /*80,420*/	:~{ File="Emp TIE SA Bomber.ship.png";                          		Tier=3;  	Difficulty=1; Tags = [combat] }
+
 // Tier 3 ($100,000 - $150,000)
 /*126,300*/	:~{ File="Emp TIE SA Bomber MkII.ship.png";                     		Tier=4;  	Difficulty=2; Tags = [combat] }
 /*130,000*/	:~{ File="Emp TIE SA-B Bomber MkII.ship.png";                   		Tier=4;  	Difficulty=1; Tags = [combat] }
@@ -27,6 +29,7 @@ Ships
 /*113,420*/	:~{ File="Emp Rogue Shadow Alt.ship.png";                       		Tier=3;  	Difficulty=1; Tags = [combat] }
 /*118,480*/	:~{ File="Emp Lamda-Class T-4a Shuttle.ship.png";               		Tier=3;  	Difficulty=1; Tags = [combat] }
 /*131,010*/	:~{ File="Emp_TIE Advanced X1.ship.png";								Tier=3;	 	Difficulty=2; Tags = [combat] } //Neojino
+
 // Tier 4 - 6 ($150,000 - $200,000)
 /*70,310*/	:~{ File="Emp_TIE Interceptor.ship.png";								Tier=3;	 	Difficulty=2; Tags = [combat] } //Neojino
 /*94,700*/	:~{ File="Emp_TIE Prototype R.ship.png";                           		Tier=5;  	Difficulty=2; Tags = [combat] }
@@ -39,6 +42,7 @@ Ships
 /*100,350*/	:~{ File="Emp_TIE knift.ship.png";										Tier=3;	 	Difficulty=1; Tags = [combat] } //Neojino
 /*93,740*/	:~{ File="Emp_TIE slider.ship.png";										Tier=3;	 	Difficulty=1; Tags = [combat] } //Neojino
 /*77,390*/	:~{ File="Emp-TIE Defender.ship.png";									Tier=5;	 	Difficulty=1; Tags = [combat] } //Neojino
+/*187,290*/	:~{ File="Emp Sith Tie Dagger.ship.png";								Tier=5;	 	Difficulty=2; Tags = [combat] } //
 /*218,290*/	:~{ File="Emp_TIE_Falcon_Bomber.ship.png";								Tier=5;	 	Difficulty=2; Tags = [combat] } //Neojino
 /*301,470*/	:~{ File="Emp_TIE_Falcon_Bomber R.ship.png";							Tier=6;	 	Difficulty=2; Tags = [combat] } //Neojino
 /*249,800*/	:~{ File="Emp Lamda-Class T-4a Mk2.ship.png";							Tier=4;		Difficulty=2; Tags = [combat] } 
