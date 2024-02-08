@@ -14,6 +14,7 @@ Ships
 /*116,225*/		:~{ File="Rebel T-65B X-Wing H Starfighter.ship.png"; 							Tier=4;    Difficulty=1; Tags = [combat] }  
 /*134,045*/		:~{ File="Rebel T-65 X-Wing Starfighter.ship.png";     							Tier=3;    Difficulty=1; Tags = [combat] }  
 /*121,180*/		:~{ File="Rebel BTL-A4 Y-Wing Bomber.ship.png"; 								Tier=4;    Difficulty=2; Tags = [combat] }  
+/*121,180*/		:~{ File="Reb T-70 X-Wing Starfighter.ship.png"; 								Tier=5;    Difficulty=2; Tags = [combat] }  
 /*123,645*/		:~{ File="T-65B X-Wing Starfighter.ship.png";     								Tier=2;    Difficulty=1; Tags = [combat] }
 /*144,200*/		:~{ File="Rebel BTL-B Y-Wing Bomber.ship.png";     								Tier=4;    Difficulty=2; Tags = [combat] }  
 /*144,200*/		:~{ File="Rebel BTL-B Y-Wing Bomberv2.ship.png"; 								Tier=4;    Difficulty=2; Tags = [combat] }
@@ -25,6 +26,7 @@ Ships
 /*188,200*/		:~{ File="Rebel-ASF-01 B-Wing Starfighter.ship.png";    						Tier=4;    Difficulty=1; Tags = [combat] }
 /*192,100*/		:~{ File="ASF-01 B-Wing Hvy Starfighter R.ship.png";     						Tier=6;    Difficulty=1; Tags = [combat] }  
 /*183,700*/		:~{ File="ASF-01 B-Wing Starfighter.ship.png";     								Tier=6;    Difficulty=1; Tags = [combat] }  
+/*191,700*/		:~{ File="Reb T-71 X-Wing Starfighter S.ship.png";     							Tier=6;    Difficulty=1; Tags = [combat] }  
 /*230,700*/		:~{ File="Reb UT-60D U-Wing Starfighter O.ship.png";     						Tier=6;    Difficulty=1; Tags = [combat] }  
 /*230,700*/		:~{ File="Reb UT-60D U-Wing Starfighter R.ship.png";     						Tier=6;    Difficulty=1; Tags = [combat] }  
 /*322,090*/		:~{ File="Rebel GR-75 Medium Transport v2.ship.png";     						Tier=7;    Difficulty=2; Tags = [combat] }
@@ -34,7 +36,7 @@ Ships
 /*361,520*/		:~{ File="Rebel-Millenium Falcon (Combat Loadout).ship.png";     				Tier=5;    Difficulty=1; Tags = [combat] }
 /*371,900*/		:~{ File="Rebel Sphyrna Hvy Hammerhead C.ship.png"; 							Tier=8;    Difficulty=2; Tags = [combat] }
 /*370,570*/		:~{ File="Rebel Sphyrna-Class Hammerhead C.ship.png";   						Tier=7;    Difficulty=1; Tags = [combat] }
-/*373,640*/		:~{ File="Rebel Millenium Falcon Combat B.ship.png";     					Tier=4;    Difficulty=2; Tags = [combat] }
+/*373,640*/		:~{ File="Rebel Millenium Falcon Combat B.ship.png";     						Tier=4;    Difficulty=2; Tags = [combat] }
 /*393,710*/		:~{ File="Rebel Sphyrna Heavy Hammerhead C.ship.png";   						Tier=7;    Difficulty=2; Tags = [combat] }
 /*400,850*/		:~{ File="Millenium Falcon (Combat Loadout).ship.png"; 							Tier=6;    Difficulty=2; Tags = [combat] }
 /*417,885*/		:~{ File="Reb YT-1300w Light Freighter.ship.png"; 								Tier=7;    Difficulty=2; Tags = [combat] } 
@@ -62,6 +64,7 @@ Ships
 /*1,312,720*/	:~{ File="Rebel Pheonix Home Alt.ship.png"; 								Tier=9; 	Difficulty=2; Tags = [combat] }
 /*1,292,720*/	:~{ File="Rebel Pheonix Home.ship.png";     								Tier=12;    Difficulty=1; Tags = [combat] }
 /*1,217,480*/	:~{ File="Rebel Pheonix Supply.ship.png"; 			 						Tier=13;    Difficulty=1; Tags = [combat] } 
+/*1,684,600*/	:~{ File="Reb Nebulon-C Escort Frigate.ship.ship.png";     					Tier=8;    	Difficulty=1; Tags = [combat] }
 /*1,808,600*/	:~{ File="Reb Arquitens-Class Light Cruiser (Red).ship.png";     			Tier=9;    	Difficulty=1; Tags = [combat] }
 /*1,862,7700*/	:~{ File="Reb Vakbeor-class Missle Frigate.ship.png";     					Tier=9;    	Difficulty=1; Tags = [combat] }
 
