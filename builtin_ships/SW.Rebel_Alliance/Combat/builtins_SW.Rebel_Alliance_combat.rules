@@ -64,7 +64,7 @@ Ships
 /*1,312,720*/	:~{ File="Rebel Pheonix Home Alt.ship.png"; 								Tier=9; 	Difficulty=2; Tags = [combat] }
 /*1,292,720*/	:~{ File="Rebel Pheonix Home.ship.png";     								Tier=12;    Difficulty=1; Tags = [combat] }
 /*1,217,480*/	:~{ File="Rebel Pheonix Supply.ship.png"; 			 						Tier=13;    Difficulty=1; Tags = [combat] } 
-/*1,684,600*/	:~{ File="Reb Nebulon-C Escort Frigate.ship.ship.png";     					Tier=8;    	Difficulty=1; Tags = [combat] }
+/*1,684,600*/	:~{ File="Reb Nebulon-C Escort Frigate.ship.png";     					Tier=8;    	Difficulty=1; Tags = [combat] }
 /*1,808,600*/	:~{ File="Reb Arquitens-Class Light Cruiser (Red).ship.png";     			Tier=9;    	Difficulty=1; Tags = [combat] }
 /*1,862,7700*/	:~{ File="Reb Vakbeor-class Missle Frigate.ship.png";     					Tier=9;    	Difficulty=1; Tags = [combat] }
 
