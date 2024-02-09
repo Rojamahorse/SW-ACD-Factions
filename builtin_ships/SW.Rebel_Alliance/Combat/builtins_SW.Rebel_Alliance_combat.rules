@@ -49,7 +49,8 @@ Ships
 /*451,220*/		:~{ File="Rebel CR-90 Corvette B.ship.png"; 								Tier=8;    Difficulty=2; Tags = [combat] } 
 /*463,220*/		:~{ File="Rebel DP20 Frigate Mk2.ship.png"; 								Tier=7; Difficulty=2; Tags = [combat] }
 /*475,500*/		:~{ File="Rebel DP20 Frigate.ship.png";     								Tier=6;    Difficulty=2; Tags = [combat] }
-/*559,510*/		:~{ File="Reb Delta 4.ship.png"; 												Tier=7;    Difficulty=1; Tags = [combat] }
+/*559,510*/		:~{ File="Reb Delta 4.ship.png"; 											Tier=7;    Difficulty=1; Tags = [combat] }
+/*728,290*/		:~{ File="Reb Ghost.ship.png";     											Tier=7;    Difficulty=2; Tags = [combat] }
 /*754,290*/		:~{ File="Rebel EF76 Nebulon-Escort Frigat.ship.png";     					Tier=10;    Difficulty=2; Tags = [combat] }
 
 
@@ -63,6 +64,7 @@ Ships
 /*1,142,580*/	:~{ File="EF76 Nebulon-B Escort Frigate II.ship.png";     					Tier=8;    	Difficulty=2; Tags = [combat] }
 /*1,167,580*/	:~{ File="Reb Pelta-Class Cbt Medical Frig.ship.png";     					Tier=8;    	Difficulty=2; Tags = [combat] }
 /*1,312,720*/	:~{ File="Rebel Pheonix Home Alt.ship.png"; 								Tier=9; 	Difficulty=2; Tags = [combat] }
+/*1,312,720*/	:~{ File="Reb MC-75 Artillery Cruiser.ship.png"; 							Tier=9; 	Difficulty=2; Tags = [combat] }
 /*1,292,720*/	:~{ File="Rebel Pheonix Home.ship.png";     								Tier=12;    Difficulty=1; Tags = [combat] }
 /*1,217,480*/	:~{ File="Rebel Pheonix Supply.ship.png"; 			 						Tier=13;    Difficulty=1; Tags = [combat] } 
 /*1,684,600*/	:~{ File="Reb Nebulon-C Escort Frigate.ship.png";     					Tier=8;    	Difficulty=1; Tags = [combat] }

@@ -13,6 +13,7 @@ Ships
 /*42,950*/	:~{ File="Emp_TIE_M1.ship.png";											Tier=2;	 	Difficulty=1; Tags = [combat] } //Neojino
 
 // Tier 2 ($50,000 - $100,000)
+/*42,440*/	:~{ File="Emp FO First Order Tie Fighter.ship.png";    					Tier=2;  	Difficulty=2; Tags = [combat] }
 /*57,930*/	:~{ File="Emp TIE Interceptor (Sienar Blue.ship.png";    				Tier=2;  	Difficulty=2; Tags = [combat] }
 /*69,550*/	:~{ File="Emp TIE Heavy.ship.png";            							Tier=3;  	Difficulty=2; Tags = [combat] }
 /*72,550*/	:~{ File="Emp Imperial Transport.ship.png";            					Tier=3;  	Difficulty=1; Tags = [combat] }

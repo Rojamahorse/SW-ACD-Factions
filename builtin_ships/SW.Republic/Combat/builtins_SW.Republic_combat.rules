@@ -44,7 +44,8 @@ Ships
 /*121,855*/    		:~{ File="Royal House N-1R Starfighter Mk2.ship.png";                                    Tier=5;  Difficulty=1; Tags = [combat] }
 /*222,855*/    		:~{ File="Rep UT-60D U-Wing Starfighter Lb.ship.png";                                    Tier=5;  Difficulty=1; Tags = [combat] }
 /*229,315*/    		:~{ File="Rep UT-60D U-Wing Starfighter Y.ship.png";                                     Tier=6;  Difficulty=2; Tags = [combat] }
-/*227,725*/    		:~{ File="Rep UT-60D U-Wing Starfighter.ship.png";                                       Tier=6;  Difficulty=2; Tags = [combat] } // Wolfram
+/*227,725*/    		:~{ File="Rep UT-60D U-Wing Starfighter.ship.png";                                       Tier=6;  Difficulty=2; Tags = [combat] } // Altraxia
+/*239,725*/    		:~{ File="Rep E-Wing Escort Starfighter.ship.png";                                       Tier=5;  Difficulty=2; Tags = [combat] } // Altraxia
 /*264,490*/    		:~{ File="Rep Baudo-Class Space Yacht.ship.png";                                         Tier=5;  Difficulty=2; Tags = [combat] } // Original
 /*264,490*/    		:~{ File="Rep Baudo-Class Yacht (combat).ship.png";                                      Tier=5;  Difficulty=2; Tags = [combat] } // Original
 /*281,180*/    		:~{ File="Republic Gunship.ship.png";                                                    Tier=5;  Difficulty=2; Tags = [combat] }
