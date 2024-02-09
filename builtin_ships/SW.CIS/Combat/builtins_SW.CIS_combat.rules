@@ -12,7 +12,9 @@ Ships
 
     //Tier 3-4 (100,001 to 200,000)
 /*52,440*/           :~{ File="Vulture-Class Droid-R Starfighte.ship.png";                           Tier=3;  Difficulty=2; Tags = [combat] }
+/*65,440*/           :~{ File="CIS Vulture-Class Droid-B Starfighte.ship.png";                          Tier=3;  Difficulty=2; Tags = [combat] }
 /*55,100*/           :~{ File="Hyena-Class Droid Bomber.ship.png";                                   Tier=3;  Difficulty=2; Tags = [combat] }
+/*75,100*/           :~{ File="CIS Hyena-Class Droid Bomber B.ship.png";                             Tier=3;  Difficulty=2; Tags = [combat] }
 /*64,440*/           :~{ File="CIS P-38 Magnaguard Starfighter T.ship.png";                          Tier=3;  Difficulty=2; Tags = [combat] }
 /*65,790*/           :~{ File="CIS Droid Tri-Fighter.ship.png";                                      Tier=3;  Difficulty=1; Tags = [combat] }
 /*67,290*/           :~{ File="Droid Tri-Fighter Mk3.ship.png";                                      Tier=3;  Difficulty=1; Tags = [combat] }
