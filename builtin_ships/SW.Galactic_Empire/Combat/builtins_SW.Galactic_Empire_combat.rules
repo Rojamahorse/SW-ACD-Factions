@@ -38,6 +38,7 @@ Ships
 /*114,170*/	:~{ File="Emp_TIE Reaper.ship.png";										Tier=4;	 	Difficulty=2; Tags = [combat] } //Neojino
 /*80,720*/	:~{ File="Emp_TIE SA Bomber.ship.png";									Tier=3;	 	Difficulty=2; Tags = [combat] } //Neojino
 /*206,350*/	:~{ File="Emp TIE Reaper.ship.png";										Tier=5;	 	Difficulty=2; Tags = [combat] }
+/*226,350*/	:~{ File="Emp TIE Assault Fighter.ship.png";							Tier=6;	 	Difficulty=2; Tags = [combat] }
 /*129,280*/	:~{ File="Emp_TIE bat.ship.png";										Tier=2;	 	Difficulty=1; Tags = [combat] } //Neojino
 /*156,280*/	:~{ File="Emp_TIE bat Elite.ship.png";									Tier=2;	 	Difficulty=2; Tags = [combat] } //Neojino
 /*100,350*/	:~{ File="Emp_TIE knift.ship.png";										Tier=3;	 	Difficulty=1; Tags = [combat] } //Neojino

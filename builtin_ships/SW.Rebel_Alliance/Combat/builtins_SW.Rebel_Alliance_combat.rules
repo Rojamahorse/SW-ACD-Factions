@@ -58,7 +58,7 @@ Ships
 
 /*975,282*/		:~{ File="Marauder-Class Corvette.ship.png";      							Tier=11;    		Difficulty=2; Tags = [combat] }
 /*987,422*/		:~{ File="Rebel Marauder-Class Corvette.ship.png";     						Tier=10;    	Difficulty=2; Tags = [combat] }
-/*908,030*/		:~{ File="Pelta-Class Frigate I (Reb).ship.png"; 								Tier=8; 		Difficulty=2; Tags = [combat] }
+/*908,030*/		:~{ File="Pelta-Class Frigate I (Reb).ship.png"; 							Tier=8; 		Difficulty=2; Tags = [combat] }
 /*1,036,664*/	:~{ File="Rebel Marauder-Class B Corvette.ship.png";     					Tier=8;    		Difficulty=2; Tags = [combat] }
 /*1,035,650*/	:~{ File="Rebel-Marauder-Class Corvette.ship.png";      					Tier=9;    		Difficulty=2; Tags = [combat] }
 /*1,142,580*/	:~{ File="EF76 Nebulon-B Escort Frigate II.ship.png";     					Tier=8;    	Difficulty=2; Tags = [combat] }
@@ -66,12 +66,15 @@ Ships
 /*1,312,720*/	:~{ File="Rebel Pheonix Home Alt.ship.png"; 								Tier=9; 	Difficulty=2; Tags = [combat] }
 /*1,312,720*/	:~{ File="Reb MC-75 Artillery Cruiser.ship.png"; 							Tier=9; 	Difficulty=2; Tags = [combat] }
 /*1,292,720*/	:~{ File="Rebel Pheonix Home.ship.png";     								Tier=12;    Difficulty=1; Tags = [combat] }
-/*1,217,480*/	:~{ File="Rebel Pheonix Supply.ship.png"; 			 						Tier=13;    Difficulty=1; Tags = [combat] } 
-/*1,684,600*/	:~{ File="Reb Nebulon-C Escort Frigate.ship.png";     					Tier=8;    	Difficulty=1; Tags = [combat] }
+/*1,217,480*/	:~{ File="Rebel Pheonix Supply.ship.png"; 			 						Tier=8;    Difficulty=1; Tags = [combat] } 
+/*1,684,600*/	:~{ File="Reb Nebulon-C Escort Frigate.ship.png";     						Tier=8;    	Difficulty=1; Tags = [combat] }
+/*1,779,600*/	:~{ File="Reb MC-80b-Class Star Cruiser.ship.png";     						Tier=8;    	Difficulty=1; Tags = [combat] }
 /*1,808,600*/	:~{ File="Reb Arquitens-Class Light Cruiser (Red).ship.png";     			Tier=9;    	Difficulty=1; Tags = [combat] }
 /*1,862,7700*/	:~{ File="Reb Vakbeor-class Missle Frigate.ship.png";     					Tier=9;    	Difficulty=1; Tags = [combat] }
+/*1,862,7700*/	:~{ File="Reb MC-75 Torpedo Cruiser.ship.png";     							Tier=9;    	Difficulty=1; Tags = [combat] }
 
-/*3,158,566*/	:~{ File="Assault Frigate Mk1.ship.png";     								Tier=10;    	Difficulty=1; Tags = [combat] }  
+/*2,314,566*/	:~{ File="Reb Free Virgillia-class Bunkerb.ship.png";     					Tier=10;    Difficulty=1; Tags = [combat] }  
+/*3,158,566*/	:~{ File="Assault Frigate Mk1.ship.png";     								Tier=10;    Difficulty=1; Tags = [combat] }  
 /*3,289,786*/	:~{ File="Rebel-Assault Frigate Mk1.ship.png"; 								Tier=10; 	Difficulty=1; Tags = [combat] }
 /*3,832,476*/	:~{ File="Rebel Assault Frigate Mk II.ship.png"; 							Tier=13; 	Difficulty=2; Tags = [combat] }
 /*4,354,426*/	:~{ File="Dreadnought-Class Hvy Cruiser-Rb.ship.png";     					Tier=12;    Difficulty=2; Tags = [combat] } 

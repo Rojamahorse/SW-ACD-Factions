@@ -71,7 +71,7 @@ Ships
 /*499,710*/    		:~{ File="Republic Light Assault Shuttle.ship.png";                                      Tier=6;  Difficulty=2; Tags = [combat] }
 /*509,382*/    		:~{ File="Republic CG Assault Shuttle.ship.png";                                         Tier=8;  Difficulty=3; Tags = [combat] } //  Credit ClassicJam
 /*602,730*/    		:~{ File="Republic Delta 4.ship.png";                                                    Tier=8;  Difficulty=1; Tags = [combat] }
-/*602,730*/    		:~{ File="Rep Delta 4 Smuggler.ship.png";                                                    Tier=8;  Difficulty=1; Tags = [combat] }
+/*602,730*/    		:~{ File="Rep Delta 4 Smuggler.ship.png";                                                Tier=8;  Difficulty=1; Tags = [combat] }
 /*951,100*/    		:~{ File="Rep Pelta-Class Frigate (Grey).ship.png";                                      Tier=9;  Difficulty=1; Tags = [combat] }
 /*984,742*/			:~{ File="Marauder-Class Cruiser (Republic.ship.png";      								 Tier=9;  Difficulty=2; Tags = [combat] } //  Credit ClassicJam
 
