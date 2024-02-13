@@ -45,6 +45,7 @@ TradeShips
 			emp_7c  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Emp Guillemot";            							Faction=SW.Galactic_Empire; 	TierRange=[6, 18];  StasisSpeed=47; StasisTradeTime=80; }
 			emp_10a : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Cargo Transporter Huge Empire";            		Faction=SW.Galactic_Empire; 	TierRange=[12, 18]; StasisSpeed=56; StasisTradeTime=100; }
 			emp_10b : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Eta-Class Supply Barge Emp";           			Faction=SW.Galactic_Empire; 	TierRange=[12, 18]; StasisSpeed=90; StasisTradeTime=100; }
+			emp_10c : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Emp Imperial Cargo Transport";           			Faction=SW.Galactic_Empire; 	TierRange=[12, 18]; StasisSpeed=90; StasisTradeTime=100; }
 
 /*
 			// Mandalorian

@@ -19,16 +19,17 @@ Ships
 	:~{ File="Cargo Transporter Huge Empire.ship.png";    	Tier=10;  Tags : ~/Tags [trade] }
 	:~{ File="Lamda-Class Transport 4a.ship.png";     		Tier=3;  Tags : ~/Tags [trade] }
 	:~{ File="Emp Lamda-Class T-4a Civ.ship.png";     		Tier=3;  Tags : ~/Tags [trade] }
-	:~{ File="Emp Auklet.ship.png";     Tier=3;  Tags : ~/Tags [trade] }
-	:~{ File="Emp Dovekie.ship.png";    Tier=3;  Tags : ~/Tags [trade] }
-	:~{ File="Emp Cormorant.ship.png";  Tier=5;  Tags : ~/Tags [trade] }
-	:~{ File="Emp Fulmar.ship.png";     Tier=5;  Tags : ~/Tags [trade] }
-	:~{ File="Emp Murrelet.ship.png";   Tier=5;  Tags : ~/Tags [trade] }
-	:~{ File="Emp Pelican.ship.png";    Tier=7;  Tags : ~/Tags [trade] }
-	:~{ File="Emp Petrel.ship.png";     Tier=7;  Tags : ~/Tags [trade] }
-	:~{ File="Emp Guillemot.ship.png";  Tier=7;  Tags : ~/Tags [trade] }
-	:~{ File="Emp Albatross.ship.png";  Tier=10; Tags : ~/Tags [trade] }
-	:~{ File="Emp EF76 Nebulon Hvy Cargo G.ship.png";  Tier=10; Tags : ~/Tags [trade] }
-	:~{ File="Emp Shearwater.ship.png"; Tier=10; Tags : ~/Tags [trade] }
+	:~{ File="Emp Auklet.ship.png";     					Tier=3;  Tags : ~/Tags [trade] }
+	:~{ File="Emp Dovekie.ship.png";    					Tier=3;  Tags : ~/Tags [trade] }
+	:~{ File="Emp Cormorant.ship.png";  					Tier=5;  Tags : ~/Tags [trade] }
+	:~{ File="Emp Fulmar.ship.png";     					Tier=5;  Tags : ~/Tags [trade] }
+	:~{ File="Emp Murrelet.ship.png";   					Tier=5;  Tags : ~/Tags [trade] }
+	:~{ File="Emp Pelican.ship.png";    					Tier=7;  Tags : ~/Tags [trade] }
+	:~{ File="Emp Petrel.ship.png";     					Tier=7;  Tags : ~/Tags [trade] }
+	:~{ File="Emp Guillemot.ship.png";  					Tier=7;  Tags : ~/Tags [trade] }
+	:~{ File="Emp Albatross.ship.png";  					Tier=10; Tags : ~/Tags [trade] }
+	:~{ File="Emp Imperial Cargo Transport.ship.png";  		Tier=10; Tags : ~/Tags [trade] }
+	:~{ File="Emp EF76 Nebulon Hvy Cargo G.ship.png";  		Tier=10; Tags : ~/Tags [trade] }
+	:~{ File="Emp Shearwater.ship.png"; 					Tier=10; Tags : ~/Tags [trade] }
 //	:~{ File="Cargo Transporter Extra Huge Emp.ship.png";     Tier=13;  Tags : ~/Tags [trade] }
 ]

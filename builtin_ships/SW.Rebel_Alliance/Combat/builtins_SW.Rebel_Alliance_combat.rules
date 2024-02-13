@@ -50,6 +50,8 @@ Ships
 /*451,220*/		:~{ File="Rebel CR-90 Corvette B.ship.png"; 									Tier=8;    Difficulty=2; Tags = [combat] } 
 /*463,220*/		:~{ File="Rebel DP20 Frigate Mk2.ship.png"; 									Tier=7;    Difficulty=2; Tags = [combat] }
 /*475,500*/		:~{ File="Rebel DP20 Frigate.ship.png";     									Tier=6;    Difficulty=2; Tags = [combat] }
+/*559,510*/		:~{ File="Reb MG-100 StarFortress SF-17 Heavy Bomber.ship.png"; 				Tier=7;    Difficulty=2; Tags = [combat] }
+/*559,510*/		:~{ File="Reb MG-100 StarFortress SF-17 Heavy BomberR.ship.png"; 				Tier=8;    Difficulty=1; Tags = [combat] }
 /*559,510*/		:~{ File="Reb Delta 4.ship.png"; 												Tier=7;    Difficulty=1; Tags = [combat] }
 /*728,290*/		:~{ File="Reb Ghost.ship.png";     												Tier=7;    Difficulty=2; Tags = [combat] }
 /*754,290*/		:~{ File="Rebel EF76 Nebulon-Escort Frigat.ship.png";     						Tier=10;    Difficulty=2; Tags = [combat] }
@@ -84,10 +86,11 @@ Ships
 /*4,443,946*/	:~{ File="Dreadnought-Class HvyLN Cruiser.ship.png";     					Tier=15;    Difficulty=2; Tags = [combat] } 
 /*4,451,114*/	:~{ File="Dreadnought-Class HvyN Cruiser-R.ship.png";     					Tier=15;    Difficulty=2; Tags = [combat] } 
 /*4,136,850*/	:~{ File="MC Light Cruiser.ship.png";     									Tier=14;    Difficulty=1; Tags = [combat] }
+/*4,136,850*/	:~{ File="Reb Starhawk-Class Battleship.ship.png";     						Tier=17;    Difficulty=2; Tags = [combat] }
 
 /*6,943,294*/	:~{ File="Rebel MC75 Mon Calamari Cruiser.ship.png";     					Tier=16;    Difficulty=1; Tags = [combat] }
 /*7,884,422*/	:~{ File="Rebel MC75 Mon Calamari Star Cru.ship.png";     					Tier=16;    Difficulty=2; Tags = [combat] }
-/*12,038,206*/	:~{ File="Rebel-Nebula-Class Star Destroyer.ship.png"; 						Tier=17;    Difficulty=2; Tags = [combat] } 
+/*12,038,206*/	:~{ File="Rebel-Nebula-Class Star Destroyer.ship.png"; 						Tier=18;    Difficulty=3; Tags = [combat] } 
 /*10,496,784*/	:~{ File="Venator II-Class Star Destroyer (Rebels).ship.png";     			Tier=18;    Difficulty=2; Tags = [combat] }
 /*8,019,360*/	:~{ File="MC75 Mon Calamari Star Cruiser.ship.png"; 						Tier=17;    Difficulty=1; Tags = [combat] }
 
