@@ -12,7 +12,7 @@ Ships
 
     //Tier 3-4 (100,001 to 200,000)
 /*52,440*/           :~{ File="Vulture-Class Droid-R Starfighte.ship.png";                           Tier=3;  Difficulty=2; Tags = [combat] }
-/*65,440*/           :~{ File="CIS Vulture-Class Droid-B Starfighte.ship.png";                          Tier=3;  Difficulty=2; Tags = [combat] }
+/*65,440*/           :~{ File="CIS Vulture-Class Droid-B Starfighte.ship.png";                       Tier=3;  Difficulty=2; Tags = [combat] }
 /*55,100*/           :~{ File="Hyena-Class Droid Bomber.ship.png";                                   Tier=3;  Difficulty=2; Tags = [combat] }
 /*75,100*/           :~{ File="CIS Hyena-Class Droid Bomber B.ship.png";                             Tier=3;  Difficulty=2; Tags = [combat] }
 /*64,440*/           :~{ File="CIS P-38 Magnaguard Starfighter T.ship.png";                          Tier=3;  Difficulty=2; Tags = [combat] }
@@ -69,8 +69,8 @@ Ships
 /*7,269,700*/        :~{ File="CIS Providence-class A Dreadnought.ship.png";                         Tier=17;  Difficulty=2; Tags = [combat]; OtherIDs=["Invisible Hand 2 alt"]; }
 /*7,269,700*/        :~{ File="CIS Providence-class B Dreadnought.ship.png";                         Tier=17;  Difficulty=2; Tags = [combat]; OtherIDs=["Invisible Hand 2"]; }
 /*7,347,516*/        :~{ File="Providence-Class Dreadnought Mk2.ship.png";                           Tier=18;  Difficulty=1; Tags = [combat] }
-/*7,575,668*/        :~{ File="Providence-Class Destroyer.ship.png";                                 Tier=18;  Difficulty=1; Tags = [combat] }
-/*8,677,800*/        :~{ File="Invisible Hand.ship.png";                                             Tier=18;  Difficulty=2; Tags = [combat, swboss] }
+/*7,575,668*/        :~{ File="Providence-Class Destroyer.ship.png";                                 Tier=18;  Difficulty=2; Tags = [combat] }
+/*8,677,800*/        :~{ File="Invisible Hand.ship.png";                                             Tier=18;  Difficulty=3; Tags = [combat] }
 
     //Tier 18
 /*40,429,820*/       :~{ File="CIS Lukrehulk Battleship.ship.png";                                   Tier=16;  Difficulty=2; Tags = [swboss]; OtherIDs=["LukrehulkWP24"]; }

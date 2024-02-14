@@ -67,6 +67,8 @@ Ships
 /*1,035,650*/	:~{ File="Rebel-Marauder-Class Corvette.ship.png";      					Tier=9;    	Difficulty=2; Tags = [combat] }
 /*1,142,580*/	:~{ File="EF76 Nebulon-B Escort Frigate II.ship.png";     					Tier=8;    	Difficulty=2; Tags = [combat] }
 /*1,167,580*/	:~{ File="Reb Pelta-Class Cbt Medical Frig.ship.png";     					Tier=8;    	Difficulty=2; Tags = [combat] }
+/*1,267,580*/	:~{ File="Reb Nebulon B-2 Hvy Frigate MkII.ship.png";     					Tier=7;    	Difficulty=2; Tags = [combat] }
+/*1,267,580*/	:~{ File="Reb Nebulon B-2B Hvy Frigate MkI.ship.png";     					Tier=8;    	Difficulty=1; Tags = [combat] }
 /*1,312,720*/	:~{ File="Rebel Pheonix Home Alt.ship.png"; 								Tier=9; 	Difficulty=2; Tags = [combat] }
 /*1,312,720*/	:~{ File="Reb MC-75 Artillery Cruiser.ship.png"; 							Tier=9; 	Difficulty=2; Tags = [combat] }
 /*1,292,720*/	:~{ File="Rebel Pheonix Home.ship.png";     								Tier=12;    Difficulty=1; Tags = [combat] }

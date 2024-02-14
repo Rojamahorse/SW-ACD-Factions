@@ -108,12 +108,12 @@ Ships
 /*10,498,184*/	:~{ File="Venator II-Class Star Destroyer (Empire).ship.png";			Tier=16;	Difficulty=1; Tags = [combat] } 
 /*11,637,640*/  :~{ File="Victory II-class Star Destroyer.ship.png"; 					Tier=16; 	Difficulty=2; Tags = [combat] }
 /*11,692,058*/  :~{ File="Victory-class Star Destroyer.ship.png"; 						Tier=17; 	Difficulty=2; Tags = [combat] }
-/*13,020,370*/	:~{ File="Emp Harrower-class-II Dreadnaugh.ship.png";					Tier=17;	Difficulty=1; Tags = [combat] }
-/*13,589,664*/	:~{ File="Emp Onager-Class Star Destroyer.ship.png";					Tier=17;	Difficulty=1; Tags = [combat] }
+/*13,020,370*/	:~{ File="Emp Harrower-class-II Dreadnaugh.ship.png";					Tier=17;	Difficulty=2; Tags = [combat] }
+/*13,589,664*/	:~{ File="Emp Onager-Class Star Destroyer.ship.png";					Tier=18;	Difficulty=3; Tags = [combat] }
 
 //Tier 18 (15,000,001+)
 /*14,261,552*/	:~{ File="Onager-Class Star Destroyer II.ship.png";						Tier=18;	Difficulty=2; Tags = [combat] } 
-/*18,809,805*/	:~{ File="Emp_Supremacy I-class Star_DES.ship.png";						Tier=18;	Difficulty=2; Tags = [combat] } //Neojino
+/*18,809,805*/	:~{ File="Emp_Supremacy I-class Star_DES.ship.png";						Tier=18;	Difficulty=3; Tags = [combat] } //Neojino
 
 
 //Tier 18 BOSS

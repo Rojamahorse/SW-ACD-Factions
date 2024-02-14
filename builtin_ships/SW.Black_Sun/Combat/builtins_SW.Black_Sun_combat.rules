@@ -65,6 +65,7 @@ Ships
 /*662,470*/			:~{ File="BSC YKL-37R Nova Courier.ship.png"; 							Tier=9;  Difficulty=1; Tags = [combat] }
 /*1,082,704*/		:~{ File="Black Sun OutPost.ship.png"; 									Tier=10; Difficulty=1; Tags = [combat] }
 /*1,222,860*/ 		:~{ File="BSC Hardcell-Class Interstellar Transport.ship.png"; 			Tier=10; Difficulty=1; Tags = [combat] }
+/*1,222,860*/ 		:~{ File="BSC Nebulon B-2B Hvy Frigate MkI.ship.png"; 					Tier=7;  Difficulty=3;  Tags = [combat] }
 /*1,465,628*/		:~{ File="Shadow Collective Destroyer.ship.png";         				Tier=10; Difficulty=2; Tags = [combat] }
 
 //Tier 11-13 (2,000,001 to 5,000,000)
@@ -77,7 +78,7 @@ Ships
 /*4,634,240*/		:~{ File="BSC Recusant-Class Light Destroyer.ship.png"; 				Tier=13;  Difficulty=1; Tags = [combat] }
 
 //Tier 14-17 (5,000,001 to 10,000,000)
-/*7,425,790*/		:~{ File="BSC Harrower-class Dreadnought.ship.png"; 					Tier=16;  Difficulty=3; Tags = [combat] }
+/*7,425,790*/		:~{ File="BSC Harrower-class Dreadnought.ship.png"; 					Tier=16;  Difficulty=3; Tags = [combat, swboss] }
 /*7,445,884*/		:~{ File="BSC Providence-Class Destroyer.ship.png"; 					Tier=14;  Difficulty=2; Tags = [combat] }
 /*7,445,880*/		:~{ File="BSC Providence-Class Dreadnought.ship.png"; 					Tier=18;  Difficulty=1; Tags = [combat] }
 /*7,690,012*/		:~{ File="BSE Invisible Hand Alt.ship.png"; 							Tier=15;  Difficulty=3; Tags = [combat] }
