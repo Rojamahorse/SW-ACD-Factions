@@ -40,6 +40,7 @@ Ships
 /*370,570*/		:~{ File="Rebel Sphyrna-Class Hammerhead C.ship.png";   						Tier=7;    Difficulty=1; Tags = [combat] }
 /*373,640*/		:~{ File="Rebel Millenium Falcon Combat B.ship.png";     						Tier=4;    Difficulty=2; Tags = [combat] }
 /*393,710*/		:~{ File="Rebel Sphyrna Heavy Hammerhead C.ship.png";   						Tier=7;    Difficulty=2; Tags = [combat] }
+/*393,710*/		:~{ File="Reb H-Wing Starfighter.ship.png";   									Tier=6;    Difficulty=1; Tags = [combat] }
 /*400,850*/		:~{ File="Millenium Falcon (Combat Loadout).ship.png"; 							Tier=6;    Difficulty=2; Tags = [combat] }
 /*417,885*/		:~{ File="Reb YT-1300w Light Freighter.ship.png"; 								Tier=7;    Difficulty=2; Tags = [combat] } 
 /*425,420*/		:~{ File="C-9979 Landing Craft (Reb) Atk.ship.png"; 							Tier=5;    Difficulty=1; Tags = [combat] }  

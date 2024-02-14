@@ -53,6 +53,9 @@ Ships
 /*292,820*/    		:~{ File="Republic Gunship (LAAT) Mk2.ship.png";                                         Tier=6;  Difficulty=2; Tags = [combat] }
 /*308,915*/    		:~{ File="Republic Gunship Cannonade.ship.png";                                          Tier=5;  Difficulty=2; Tags = [combat] }
 /*301,640*/    		:~{ File="Republic CR70 Corvette (Armed).ship.png";                                      Tier=6;  Difficulty=2; Tags = [combat] }
+/*301,640*/    		:~{ File="Rep M-Wing Fighter B.ship.png";                                      			 Tier=7;  Difficulty=2; Tags = [combat] }
+/*301,640*/    		:~{ File="Rep M-Wing Fighter G.ship.png";                                      			 Tier=8;  Difficulty=1; Tags = [combat] }
+/*301,640*/    		:~{ File="Rep H-Wing Starfighter.ship.png";                                      		 Tier=6;  Difficulty=2; Tags = [combat] }
 /*319,120*/    		:~{ File="Republic CR70 Corvette (Heavy).ship.png";                                      Tier=7;  Difficulty=2; Tags = [combat] }
 /*325,750*/    		:~{ File="Republic CR70B Corvette (Heavy).ship.png";                                     Tier=5;  Difficulty=2; Tags = [combat] }
 /*324,410*/    		:~{ File="Rep Nubian Royal Starship (Cbt).ship.png";                                     Tier=5;  Difficulty=2; Tags = [combat] } // Remake
