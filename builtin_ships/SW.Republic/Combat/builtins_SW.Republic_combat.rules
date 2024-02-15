@@ -88,7 +88,8 @@ Ships
 /*1,280,190*/    	:~{ File="Rep Nebulon B-2B Hvy Frigate MkI.ship.png";                                    Tier=11;  Difficulty=1; Tags = [combat] }
 /*1,320,447*/    	:~{ File="Arquitens_Class_Light_Cruiser.ship.png";                                       Tier=10;  Difficulty=2; Tags = [combat] } //  Credit Wolfram
 /*1,742,510*/    	:~{ File="Arquitens-Class Light Cruiser (Grey).ship.png";                                Tier=12;  Difficulty=2; Tags = [combat] } //  Credit ClassicJam
-/*1,742,510*/    	:~{ File="Arquitens-Class Light Cruiser (Red).ship.png";                                 Tier=12;  Difficulty=2; Tags = [combat] } //  Credit ClassicJam
+/*1,742,510*/    	:~{ File="Rep The Galactic Voyager.ship.png";                                			 Tier=12;  Difficulty=2; Tags = [combat] } //  Credit Altraxia
+/*1,742,510*/    	:~{ File="Arquitens-Class Light Cruiser (Red).ship.png";                                 Tier=12;  Difficulty=1; Tags = [combat] } //  Credit ClassicJam
 /*1,742,510*/    	:~{ File="Rep Vakbeor-class Missile Frigat.ship.png";                                 	 Tier=10;  Difficulty=2; Tags = [combat] } //  Credit ClassicJam
 /*3,227,757*/    	:~{ File="Rep Dreadnought Mk2.ship.png";                                                 Tier=13;  Difficulty=1; Tags = [combat] }
 /*3,316,856*/    	:~{ File="Republic Assault Frigate Mk II.ship.png";                                      Tier=13;  Difficulty=2; Tags = [combat] }
