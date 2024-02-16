@@ -28,6 +28,7 @@ Components
 	Hit
 	{
 		Type = PenetratingHit
+		FriendlyShipLowCollisions = true
 		SourceShipLowCollisions = false
 		FactorEffectsWith = Targetable
 
