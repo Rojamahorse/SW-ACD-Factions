@@ -15,15 +15,16 @@ Ships
 // Tier 2 ($50,000 - $100,000)
 /*42,440*/	:~{ File="Emp FO First Order Tie Fighter.ship.png";    					Tier=2;  	Difficulty=2; Tags = [combat] }
 /*57,930*/	:~{ File="Emp TIE Interceptor (Sienar Blue.ship.png";    				Tier=2;  	Difficulty=2; Tags = [combat] }
+/*81,630*/	:~{ File="Emp TIE Interceptor-B MkII.ship.png";                 		Tier=2;  	Difficulty=2; Tags = [combat] }
+/*60,930*/	:~{ File="Emp TIE Interceptor.ship.png";                        		Tier=2;  	Difficulty=2; Tags = [combat] }
+
+// Tier 3 ($60,000 - $150,000)
+/*66,440*/	:~{ File="Emp_First_Order_Tie_Fighter.ship.png";    					Tier=3;  	Difficulty=1; Tags = [combat] }
 /*69,550*/	:~{ File="Emp TIE Heavy.ship.png";            							Tier=3;  	Difficulty=2; Tags = [combat] }
 /*72,550*/	:~{ File="Emp Imperial Transport.ship.png";            					Tier=3;  	Difficulty=1; Tags = [combat] }
-/*81,630*/	:~{ File="Emp TIE Interceptor-B MkII.ship.png";                 		Tier=2;  	Difficulty=2; Tags = [combat] }
 /*81,630*/	:~{ File="Emp TIE Interceptor MkII.ship.png";                   		Tier=3;  	Difficulty=1; Tags = [combat] }
-/*60,930*/	:~{ File="Emp TIE Interceptor.ship.png";                        		Tier=2;  	Difficulty=2; Tags = [combat] }
 /*83,320*/	:~{ File="Emp TIE SA Bomber (Sienar Blue).ship.png";            		Tier=3;  	Difficulty=1; Tags = [combat] }
 /*80,420*/	:~{ File="Emp TIE SA Bomber.ship.png";                          		Tier=3;  	Difficulty=1; Tags = [combat] }
-
-// Tier 3 ($100,000 - $150,000)
 /*126,300*/	:~{ File="Emp TIE SA Bomber MkII.ship.png";                     		Tier=4;  	Difficulty=2; Tags = [combat] }
 /*130,000*/	:~{ File="Emp TIE SA-B Bomber MkII.ship.png";                   		Tier=4;  	Difficulty=1; Tags = [combat] }
 /*113,320*/	:~{ File="Emp Rogue Shadow.ship.png";                           		Tier=4;  	Difficulty=1; Tags = [combat] }
@@ -70,12 +71,12 @@ Ships
 /*898,380*/    :~{ File="Tartan-class Patrol Cruiser.ship.png"; 					Tier=7; 	Difficulty=2; Tags = [combat] }
 /*970,450*/    :~{ File="Imperial EF76 Nebulon-B Escort Frigate.ship.png"; 			Tier=7; 	Difficulty=2; Tags = [combat] }
 /*1,055,200*/	:~{ File="Bayonet-Class Patrol Cruiser.ship.png";					Tier=8;		Difficulty=12; Tags = [combat] } // Credit ClassicJam
-/*1,251,940*/	:~{ File="Bayonet-Class Patrol Cruiser Mk2.ship.png";				Tier=8;	Difficulty=2; Tags = [combat] } 
+/*1,251,940*/	:~{ File="Bayonet-Class Patrol Cruiser Mk2.ship.png";				Tier=8;		Difficulty=2; Tags = [combat] } 
 /*1,276,300*/	:~{ File="Emp Imperial Heavy Cargo Shuttle.ship.png";				Tier=7;	 	Difficulty=1; Tags = [combat] /*OtherIDs=["Imperial Heavy Cargo Shuttle"]*/ } //Neojino
 /*1,340,540*/	:~{ File="Emp Carrack-class LC Mk2.ship.png";						Tier=8;	 	Difficulty=2; Tags = [combat] } 
 /*1,588,440*/	:~{ File="Emp Cantwell-Class Arrestor Crui.ship.png";				Tier=7;		Difficulty=1; Tags = [combat] }
 /*1,609,810*/	:~{ File="Emp_Cantwell-Class Arrestor Cruiser.ship.png";			Tier=8;		Difficulty=1; Tags = [combat] }
-/*1,319,700*/	:~{ File="Emp Carrack-class Light Cruiser.ship.png";				Tier=9;	Difficulty=1; Tags = [combat] }
+/*1,319,700*/	:~{ File="Emp Carrack-class Light Cruiser.ship.png";				Tier=9;		Difficulty=1; Tags = [combat] }
 /*1,375,170*/    :~{ File="Pelta-Class Frigate C (Empire).ship.png"; 				Tier=9; 	Difficulty=1; Tags = [combat] }
 /*1,064,362*/    :~{ File="Marauder-Class Cruiser (Empire).ship.png"; 				Tier=9; 	Difficulty=1; Tags = [combat] }
 

@@ -75,6 +75,7 @@ Ships
 /*1,217,480*/	:~{ File="Rebel Pheonix Supply.ship.png"; 			 						Tier=8;     Difficulty=1; Tags = [combat] } 
 /*1,684,600*/	:~{ File="Reb Nebulon-C Escort Frigate.ship.png";     						Tier=8;    	Difficulty=1; Tags = [combat] }
 /*1,779,600*/	:~{ File="Reb MC-80b-Class Star Cruiser.ship.png";     						Tier=8;    	Difficulty=1; Tags = [combat] }
+/*1,779,600*/	:~{ File="Reb MC-80b-Class Star Cruiser 2.ship.png";     					Tier=9;    	Difficulty=2; Tags = [combat] }
 /*1,779,600*/	:~{ File="Reb The Galactic Voyager.ship.png";     							Tier=8;    	Difficulty=3; Tags = [combat] }
 /*1,779,600*/	:~{ File="Reb Mon Calamari GV.ship.png";     								Tier=10;    Difficulty=1; Tags = [combat] }
 /*1,779,600*/	:~{ File="Reb Mon Calamari GV II.ship.png";     							Tier=12;    Difficulty=3; Tags = [combat] }
@@ -87,6 +88,7 @@ Ships
 /*3,289,786*/	:~{ File="Rebel-Assault Frigate Mk1.ship.png"; 								Tier=10; 	Difficulty=1; Tags = [combat] }
 /*3,832,476*/	:~{ File="Rebel Assault Frigate Mk II.ship.png"; 							Tier=13; 	Difficulty=2; Tags = [combat] }
 /*3,755,000*/	:~{ File="Reb MC Blue Diver-Class Hvy Carr.ship.png"; 						Tier=13; 	Difficulty=2; Tags = [combat] }
+/*3,755,000*/	:~{ File="Reb MC Blue Diver-Class Heavy Carrier 2.ship.png"; 				Tier=14; 	Difficulty=2; Tags = [combat] }
 /*4,354,426*/	:~{ File="Dreadnought-Class Hvy Cruiser-Rb.ship.png";     					Tier=12;    Difficulty=2; Tags = [combat] } 
 /*4,448,226*/	:~{ File="Reb Dreadnought-Class HvyLN Crui.ship.png";     					Tier=12;    Difficulty=1; Tags = [combat] }
 /*4,443,946*/	:~{ File="Dreadnought-Class HvyLN Cruiser.ship.png";     					Tier=15;    Difficulty=2; Tags = [combat] } 

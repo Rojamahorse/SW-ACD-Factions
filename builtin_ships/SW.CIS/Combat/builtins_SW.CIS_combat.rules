@@ -61,6 +61,7 @@ Ships
 /*4,692,140*/        :~{ File="Recusant-Class Light Destroyer 2.ship.png";                           Tier=13;  Difficulty=2; Tags = [combat] }
 
     //Tier 14-17 (5,000,001 to 10,000,000)
+/*4,731,624*/        :~{ File="CIS Separatist Support Ship.ship.png";                                Tier=14;  Difficulty=2; Tags = [combat] }
 /*4,714,624*/        :~{ File="Munificent-Class Star Frigate 2.ship.png";                            Tier=14;  Difficulty=2; Tags = [combat] }
 /*5,089,754*/        :~{ File="Munificent-Class Star Frigate 2R.ship.png";                           Tier=14;  Difficulty=2; Tags = [combat] }
 /*6,042,480*/        :~{ File="Providence-Class Dreadnought.ship.png";                               Tier=15;  Difficulty=2; Tags = [combat] }

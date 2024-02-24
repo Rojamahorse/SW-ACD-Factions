@@ -33,6 +33,7 @@ Ships
 /*107,920*/    		:~{ File="V-19 Torrent Starfighter B.ship.png";                                          Tier=3;  Difficulty=2; Tags = [combat] } //  Credit ClassicJam
 /*135,850*/    		:~{ File="ARC-170 Mk II.ship.png";                                                       Tier=3;  Difficulty=2; Tags = [combat] }
 /*144,100*/    		:~{ File="Republic BTL-B Y-Wing Bomber.ship.png";                                        Tier=3;  Difficulty=2; Tags = [combat] }
+/*135,900*/    		:~{ File="NRep T-85 X-Wing B.ship.png";                                        			 Tier=4;  Difficulty=1; Tags = [combat] }
 /*135,900*/    		:~{ File="Republic BTL-L Y-Wing Bomber.ship.png";                                        Tier=3;  Difficulty=1; Tags = [combat] }
 /*147,180*/    		:~{ File="Republic Aggressive ReConnaissance-170 Starfighter.ship.png";                  Tier=3;  Difficulty=2; Tags = [combat] }
 /*229,315*/    		:~{ File="Republic Nu-Class AS Mk2.ship.png";                                            Tier=5;  Difficulty=2; Tags = [combat] }
