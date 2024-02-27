@@ -21,4 +21,7 @@ Ships
 	:~{ File="Rep Vakbeor-class Cargo Frigate.ship.png";   		Tier=9; Tags : ~/Tags [trade] }
 	:~{ File="NRep EF76 Nebulon Hvy Cargo G.ship.png";     		Tier=9;  Tags : ~/Tags [trade] }
 	:~{ File="Rep SoroSuub Lux 3000 Space Yach.ship.png";     	Tier=5;  Tags : ~/Tags [trade] }
+	:~{ File="Rep Industrial Cargo Freighter.ship.png";     	Tier=10;  Tags : ~/Tags [trade] }
+	:~{ File="Rep Industrial Cargo Freighter 2.ship.png";     	Tier=10;  Tags : ~/Tags [trade] }
+	:~{ File="Rep Industrial Cargo Freighter 3.ship.png";     	Tier=10;  Tags : ~/Tags [trade] }
 ]

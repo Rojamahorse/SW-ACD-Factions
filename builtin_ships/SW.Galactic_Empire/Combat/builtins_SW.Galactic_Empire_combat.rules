@@ -30,6 +30,7 @@ Ships
 /*113,320*/	:~{ File="Emp Rogue Shadow.ship.png";                           		Tier=4;  	Difficulty=1; Tags = [combat] }
 /*113,420*/	:~{ File="Emp Rogue Shadow Alt.ship.png";                       		Tier=3;  	Difficulty=1; Tags = [combat] }
 /*118,480*/	:~{ File="Emp Lamda-Class T-4a Shuttle.ship.png";               		Tier=3;  	Difficulty=1; Tags = [combat] }
+/*122,010*/	:~{ File="Emp TIE Vector.ship.png";										Tier=4;	 	Difficulty=1; Tags = [combat] } //Altraxia
 /*131,010*/	:~{ File="Emp_TIE Advanced X1.ship.png";								Tier=3;	 	Difficulty=2; Tags = [combat] } //Neojino
 
 // Tier 4 - 6 ($150,000 - $200,000)

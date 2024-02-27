@@ -31,5 +31,5 @@ Ships
 	:~{ File="Emp Imperial Cargo Transport.ship.png";  		Tier=10; Tags : ~/Tags [trade] }
 	:~{ File="Emp EF76 Nebulon Hvy Cargo G.ship.png";  		Tier=10; Tags : ~/Tags [trade] }
 	:~{ File="Emp Shearwater.ship.png"; 					Tier=10; Tags : ~/Tags [trade] }
-//	:~{ File="Cargo Transporter Extra Huge Emp.ship.png";     Tier=13;  Tags : ~/Tags [trade] }
+	:~{ File="Emp Industrial Cargo Freighter.ship.png";     Tier=13;  Tags : ~/Tags [trade] }
 ]

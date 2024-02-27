@@ -67,6 +67,7 @@ Ships
 /*1,035,650*/	:~{ File="Rebel-Marauder-Class Corvette.ship.png";      					Tier=9;    	Difficulty=2; Tags = [combat] }
 /*1,142,580*/	:~{ File="EF76 Nebulon-B Escort Frigate II.ship.png";     					Tier=8;    	Difficulty=2; Tags = [combat] }
 /*1,167,580*/	:~{ File="Reb Pelta-Class Cbt Medical Frig.ship.png";     					Tier=8;    	Difficulty=2; Tags = [combat] }
+/*1,267,580*/	:~{ File="Reb MC-80 Liberty Class LT Star Cruiser.ship.png";     			Tier=7;    	Difficulty=2; Tags = [combat] }
 /*1,267,580*/	:~{ File="Reb Nebulon B-2 Hvy Frigate MkII.ship.png";     					Tier=7;    	Difficulty=2; Tags = [combat] }
 /*1,267,580*/	:~{ File="Reb Nebulon B-2B Hvy Frigate MkI.ship.png";     					Tier=8;    	Difficulty=1; Tags = [combat] }
 /*1,312,720*/	:~{ File="Rebel Pheonix Home Alt.ship.png"; 								Tier=9; 	Difficulty=2; Tags = [combat] }
@@ -79,9 +80,11 @@ Ships
 /*1,779,600*/	:~{ File="Reb The Galactic Voyager.ship.png";     							Tier=8;    	Difficulty=3; Tags = [combat] }
 /*1,779,600*/	:~{ File="Reb Mon Calamari GV.ship.png";     								Tier=10;    Difficulty=1; Tags = [combat] }
 /*1,779,600*/	:~{ File="Reb Mon Calamari GV II.ship.png";     							Tier=12;    Difficulty=3; Tags = [combat] }
+/*1,862,7700*/	:~{ File="Reb MC-80 Light Star Cruiser.ship.png";     						Tier=13;    Difficulty=1; Tags = [combat] }
 /*1,808,600*/	:~{ File="Reb Arquitens-Class Light Cruiser (Red).ship.png";     			Tier=9;    	Difficulty=1; Tags = [combat] }
 /*1,862,7700*/	:~{ File="Reb Vakbeor-class Missle Frigate.ship.png";     					Tier=9;    	Difficulty=1; Tags = [combat] }
 /*1,862,7700*/	:~{ File="Reb MC-75 Torpedo Cruiser.ship.png";     							Tier=9;    	Difficulty=1; Tags = [combat] }
+/*1,862,7700*/	:~{ File="Reb MC-75 Support Cruiser.ship.png";     							Tier=7;    	Difficulty=1; Tags = [combat] }
 
 /*2,314,566*/	:~{ File="Reb Free Virgillia-class Bunkerb.ship.png";     					Tier=10;    Difficulty=1; Tags = [combat] }  
 /*3,158,566*/	:~{ File="Assault Frigate Mk1.ship.png";     								Tier=10;    Difficulty=1; Tags = [combat] }  
@@ -101,11 +104,13 @@ Ships
 /*12,038,206*/	:~{ File="Rebel-Nebula-Class Star Destroyer.ship.png"; 						Tier=18;    Difficulty=3; Tags = [combat] } 
 /*10,496,784*/	:~{ File="Venator II-Class Star Destroyer (Rebels).ship.png";     			Tier=18;    Difficulty=2; Tags = [combat] }
 /*8,019,360*/	:~{ File="MC75 Mon Calamari Star Cruiser.ship.png"; 						Tier=17;    Difficulty=1; Tags = [combat] }
+/*10,813,774*/	:~{ File="MC80 Liberty-Type Heavy Star Cruiser.ship.png"; 					Tier=18;    Difficulty=2; Tags = [combat] }
 
 //SWBoss
-/*10,813,774*/	:~{ File="MC80 Liberty-Type Heavy Star Cruiser.ship.png"; 					Tier=17;    Difficulty=2; Tags = [swboss] }
-/*11,740,710*/	:~{ File="MC80a Home One-Type Heavy Star Cruiser.ship.png"; 				Tier=18;    Difficulty=2; Tags = [swboss] }
-/*15,473,160*/	:~{ File="Reb Nebula-Class Star Destroyer.ship.png";     					Tier=18;    Difficulty=2; Tags = [swboss] } 
+/*11,740,710*/	:~{ File="MC80a Home One-Type Heavy Star Cruiser.ship.png"; 				Tier=16;    Difficulty=2; Tags = [swboss] }
+/*12,740,710*/	:~{ File="Rebel One.ship.png"; 												Tier=18;    Difficulty=2; Tags = [swboss] }
+/*12,740,710*/	:~{ File="Reb MC80 Liberty-Type Heavy Star Cruiser.ship.png"; 				Tier=17;    Difficulty=2; Tags = [swboss] }
+/*15,473,160*/	:~{ File="Reb Nebula-Class Star Destroyer.ship.png";     					Tier=15;    Difficulty=2; Tags = [swboss] } 
 ]
 
 

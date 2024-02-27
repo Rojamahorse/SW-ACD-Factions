@@ -24,4 +24,5 @@ Ships
 	:~{ File="Reb Vakbeor-class Cargo Frigate (Civ).ship.png";   		Tier=9; Tags : ~/Tags [trade] }
 	:~{ File="Rebel EF76 Nebulon Hvy Cargo G.ship.png";   				Tier=10; Tags : ~/Tags [trade] }
 	:~{ File="Cargo Transporter Huge Rebel.ship.png";     				Tier=13; Tags : ~/Tags [trade] }
+	:~{ File="Reb Industrial Cargo Freighter.ship.png";     			Tier=12;  Tags : ~/Tags [trade] }
 ]
