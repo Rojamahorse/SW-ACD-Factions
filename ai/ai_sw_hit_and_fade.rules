@@ -1,4 +1,4 @@
-NamKey = "AI/HitAndFadeAI"
+NameKey = "AI/HitAndFadeAI"
 //Description: Employs a tactical retreat followed by a swift advance, ideal for fast ships equipped with high-impact weapons, allowing for repeated strike and evade maneuvers.
 UpdateInterval = [9.75, 10]
 IsAvailableInCreativeMode = true

@@ -1,5 +1,5 @@
 
-NamKey = "AI/EvasiveReconAI"
+NameKey = "AI/ReconAI"
 //Description: Maintains a safe operational distance from hostiles, utilizing enhanced sensors for reconnaissance, staying out of missile range while monitoring enemy movements.
 UpdateInterval = 0.5
 IsAvailableInCreativeMode = true

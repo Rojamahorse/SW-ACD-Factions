@@ -1,9 +1,10 @@
 
-NamKey = "AI/EvasiveDeploymentAI"
+NameKey = "AI/BomberAI"
 //Description: Retreats in a direct line, creating distance while deploying mines or launching missiles, emphasizing evasion and indirect attack methods.
 UpdateInterval = [9.75, 10]
 IsAvailableInCreativeMode = true
 IsAvailableInMultiplayer = true
+
 StrategyModules
 [
 
