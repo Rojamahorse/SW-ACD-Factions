@@ -1,0 +1,48 @@
+
+NameKey = "AI/PositionalDefenseAI"
+//Description: Engages enemies within range while prioritizing the return to its initial strategic position, maintaining a defensive stance.
+UpdateInterval = 2
+IsAvailableInCreativeMode = true
+IsAvailableInMultiplayer = true
+
+StrategyModules
+[
+	{
+		Type = FollowFleetLeader
+	}
+	{
+		Type = AggroEnemies
+		TargetSwitchThresholdFactor = 2
+		TargetDistanceFactorExponent = 0
+		TargetFirepowerCacheTime = 10
+		AcquireAggroWithinRadar = false
+		ReleaseAggroWithinRadar = false
+	}
+]
+
+TacticsModules
+[
+	{
+		Type = DefaultAttackRadiusAndRotation
+		AttackRotationSwitchThresholdFactor = 5
+		AttackRotationsToCheck = 1
+		UseSavedAboveHealth = 0%
+	}
+	{
+		Type = RandomAttackAngle
+		AttackAngleChangeInterval = 10
+		AttackAngleChangeDelta = 0
+		CoordinateFlanking = false
+	}
+]
+
+TargetingModules
+[
+	{
+		Type = ValueTargeter
+		TargetChecksPerUpdate = 10
+		TargetSwitchThresholdFactor = 2
+		TargetValueFactorPerPenetrationDist = .75
+	}
+]
+
