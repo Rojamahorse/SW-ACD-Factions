@@ -65,6 +65,7 @@ Ships
 /*184,320*/    :~{ File="Lamda-Class T-4a Imperial Shuttle.ship.png"; 				Tier=4; 	Difficulty=1; Tags = [combat] }
 /*172,450*/    :~{ File="Nu-Class Attack Shuttle.ship.png"; 						Tier=5; 	Difficulty=1; Tags = [combat] }
 /*128,810*/    :~{ File="TIE Advanced X1 (Sienar Blue).ship.png"; 					Tier=3; 	Difficulty=1; Tags = [combat] }
+/*122,810*/    :~{ File="Emp First_Order_Tie_Defender.ship.png"; 					Tier=4; 	Difficulty=2; Tags = [combat] }
 /*634,780*/	:~{ File="Emp Crusader-Class Cruiser Mk2.ship.png";						Tier=6;	 	Difficulty=2; Tags = [combat] } 
 
 //Tier 7 - 9 (8000,001 - 2,000,000)
