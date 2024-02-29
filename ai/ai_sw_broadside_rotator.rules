@@ -1,0 +1,47 @@
+
+NameKey = "AI/BroadsideRotatorAI"
+//Description: Alternates its firing stance with high precision, focusing on targeted assaults with weapons like railguns and broadside cannons, where accuracy is paramount.
+UpdateInterval = 7 // 7 matches the fire interval of massdrivers
+IsAvailableInCreativeMode = true
+IsAvailableInMultiplayer = true
+
+StrategyModules
+[
+	{
+		Type = FollowFleetLeader
+	}
+		
+	{
+		Type = AggroEnemies
+		TargetSwitchThresholdFactor = 1 // Ship retargets on update
+		TargetDistanceFactorExponent = 1 
+		TargetFirepowerCacheTime = 10
+		AcquireAggroWithinRadar = true
+		ReleaseAggroWithinRadar = true
+	}
+]
+
+TacticsModules
+[
+	{
+		Type = DefaultAttackRadiusAndRotation
+		AttackRotationSwitchThresholdFactor = 0	
+		AttackRotationsToCheck = 17  
+	}
+	{
+		Type = RandomAttackAngle
+		AttackAngleChangeInterval = 50
+		AttackAngleChangeDelta = 0d
+		CoordinateFlanking = true 
+	}
+]
+
+TargetingModules
+[
+	{
+		Type = ValueTargeter
+		TargetChecksPerUpdate = 20 
+		TargetSwitchThresholdFactor = 20
+		TargetValueFactorPerPenetrationDist = 1
+	}
+]

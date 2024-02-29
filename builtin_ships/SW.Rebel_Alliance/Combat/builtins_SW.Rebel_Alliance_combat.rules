@@ -85,6 +85,8 @@ Ships
 /*1,862,7700*/	:~{ File="Reb Vakbeor-class Missle Frigate.ship.png";     					Tier=9;    	Difficulty=1; Tags = [combat] }
 /*1,862,7700*/	:~{ File="Reb MC-75 Torpedo Cruiser.ship.png";     							Tier=9;    	Difficulty=1; Tags = [combat] }
 /*1,862,7700*/	:~{ File="Reb MC-75 Support Cruiser.ship.png";     							Tier=7;    	Difficulty=1; Tags = [combat] }
+/*1,862,7700*/	:~{ File="Reb MC90 Star Cruiser.ship.png";     								Tier=9;    	Difficulty=1; Tags = [combat] }
+/*1,962,7700*/	:~{ File="Reb MC90 Star Cruiser Mk2.ship.png";     							Tier=9;    	Difficulty=1; Tags = [combat] }
 
 /*2,314,566*/	:~{ File="Reb Free Virgillia-class Bunkerb.ship.png";     					Tier=10;    Difficulty=1; Tags = [combat] }  
 /*3,158,566*/	:~{ File="Assault Frigate Mk1.ship.png";     								Tier=10;    Difficulty=1; Tags = [combat] }  

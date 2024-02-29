@@ -1,0 +1,48 @@
+NameKey = "AI/AssaultAdvancerAI"
+//Description: Aggressively moves toward the enemy, maintaining a controlled approach to optimize firing range without initiating a ramming maneuver.
+UpdateInterval = 2
+IsAvailableInCreativeMode = true
+IsAvailableInMultiplayer = true
+	
+StrategyModules
+[
+	{
+		Type = AreaPatrol
+		DefaultPatrolRadius = 300
+		AvoidableDoodadTags = []
+		AvoidableDoodadBuffer = 0
+	}
+	{
+		Type = FleeFromEnemies
+		FleeDistance = -350
+		RecallCrew = false
+	}
+	
+	{
+		Type = AggroEnemies
+		TargetSwitchThresholdFactor = 10
+		TargetDistanceFactorExponent = 40 //Higher = won't attack until close
+		TargetFirepowerCacheTime = 10
+		AcquireAggroWithinRadar = true
+		ReleaseAggroWithinRadar = false
+	}
+]
+
+TacticsModules
+[
+	{
+		Type = DefaultAttackRadiusAndRotation
+		AttackRotationSwitchThresholdFactor = 5
+		AttackRotationsToCheck = 1
+	}
+]
+
+TargetingModules
+[
+	{
+		Type = ValueTargeter
+		TargetChecksPerUpdate = 10
+		TargetSwitchThresholdFactor = 5
+		TargetValueFactorPerPenetrationDist = .75
+	}
+]
