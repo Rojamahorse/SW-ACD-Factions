@@ -445,8 +445,17 @@ Objectives
 }
 AI
 {
-	ImperialFleetCommandAI = "A.I. SWACD - Combat"
+	ImperialFleetCommandAI = "A.I. SWACD - Standard"
 	CivFleetCommandAI =  "A.I. SWACD - Civilian"
+	AgileFlankerAI =  "A.I. SWACD - Agile Flanker"
+	AssaultAdvancerAI =  "A.I. SWACD - Assault Advancer"
+	BroadsideRotatorAI =  "A.I. SWACD - Broadsider"
+	CircleClockwiseAI =  "A.I. SWACD - Clockwise Circler"
+	CircleCounterClockwiseAI =  "A.I. SWACD - Counter Clockwise Circler"
+	BomberAI =  "A.I. SWACD - Bomber"
+	ReconAI =  "A.I. SWACD - Reconnaissance Scout"
+	HitAndFadeAI =  "A.I. SWACD - Hit and Fader"
+	PositionalDefenseAI =  "A.I. SWACD - Positional Defender"
 }
 
 
