@@ -99,6 +99,7 @@ Ships
 /*4,443,946*/	:~{ File="Dreadnought-Class HvyLN Cruiser.ship.png";     					Tier=15;    Difficulty=2; Tags = [combat] } 
 /*4,451,114*/	:~{ File="Dreadnought-Class HvyN Cruiser-R.ship.png";     					Tier=15;    Difficulty=2; Tags = [combat] } 
 /*4,136,850*/	:~{ File="MC Light Cruiser.ship.png";     									Tier=14;    Difficulty=1; Tags = [combat] }
+/*4,136,850*/	:~{ File="Reb MC Medium Cruiser.ship.png";     								Tier=14;    Difficulty=1; Tags = [combat] }
 /*4,136,850*/	:~{ File="Reb Starhawk-Class Battleship.ship.png";     						Tier=17;    Difficulty=2; Tags = [combat] }
 
 /*6,943,294*/	:~{ File="Rebel MC75 Mon Calamari Cruiser.ship.png";     					Tier=16;    Difficulty=1; Tags = [combat] }
@@ -106,6 +107,7 @@ Ships
 /*12,038,206*/	:~{ File="Rebel-Nebula-Class Star Destroyer.ship.png"; 						Tier=18;    Difficulty=3; Tags = [combat] } 
 /*10,496,784*/	:~{ File="Venator II-Class Star Destroyer (Rebels).ship.png";     			Tier=18;    Difficulty=2; Tags = [combat] }
 /*8,019,360*/	:~{ File="MC75 Mon Calamari Star Cruiser.ship.png"; 						Tier=17;    Difficulty=1; Tags = [combat] }
+/*9,136,850*/	:~{ File="Reb MC75 Heavy Star Cruiser.ship.png";     						Tier=16;    Difficulty=1; Tags = [combat] }
 /*10,813,774*/	:~{ File="MC80 Liberty-Type Heavy Star Cruiser.ship.png"; 					Tier=18;    Difficulty=2; Tags = [combat] }
 
 //SWBoss
