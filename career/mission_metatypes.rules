@@ -19,3 +19,46 @@ SWRescueVIP
 	CategoryID = bounties
 }
 
+/*
+SWClearAsteroidFieldMiningGuild
+{
+	NameKey = "Missions/ClearAsteroidField"
+	DescriptionKey = "Missions/ClearAsteroidFieldPiratesDesc"
+	CategoryID = bounties
+}
+
+SWRepublicFleetBounty
+{
+	NameKey = "Missions/FleetBounty"
+	DescriptionKey = "Missions/FleetBountyDesc"
+	CategoryID = bounties
+}
+
+SWRebelFleetBounty
+{
+	NameKey = "Missions/FleetBounty"
+	DescriptionKey = "Missions/FleetBountyDesc"
+	CategoryID = bounties
+}
+
+SWEmpireFleetBounty
+{
+	NameKey = "Missions/FleetBounty"
+	DescriptionKey = "Missions/FleetBountyDesc"
+	CategoryID = bounties
+}
+
+SWCISFleetBounty
+{
+	NameKey = "Missions/FleetBounty"
+	DescriptionKey = "Missions/FleetBountyDesc"
+	CategoryID = bounties
+}
+
+SWHiveOfVillanyFleetBounty
+{
+	NameKey = "Missions/FleetBounty"
+	DescriptionKey = "Missions/FleetBountyDesc"
+	CategoryID = bounties
+}
+*/
