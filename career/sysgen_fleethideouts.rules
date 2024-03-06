@@ -32,7 +32,7 @@ Fleethideouts
 					DoodadType = cosmoteer.poi_unknown
 					Tags = [poi_unknown]
 					AutoRemoveWhenDiscovered = true 
-					HideUntilDiscovered = true
+					HideUntilDiscovered = false
 
 				}
 
@@ -99,7 +99,7 @@ Fleethideouts
 							AutoRemoveWhenTagDiscovered = military_station
 							AutoRemoveWhenTagDestroyed = military_station
 							HideIfUnexplored = false
-							Undiscovered = true // false
+							Undiscovered = false
 							AutoRemoveWhenDiscovered = true // AutoRemoveWhenDiscovered = true HideIfUnexplored = false ShowOnlyInFog = false Undiscovered = false
 							ShowOnlyInFog = true
 						}
