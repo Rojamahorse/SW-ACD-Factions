@@ -47,11 +47,14 @@ Ships
 /*93,740*/	:~{ File="Emp_TIE slider.ship.png";										Tier=3;	 	Difficulty=1; Tags = [combat] } //Neojino
 /*77,390*/	:~{ File="Emp-TIE Defender.ship.png";									Tier=5;	 	Difficulty=1; Tags = [combat] } //Neojino
 /*187,290*/	:~{ File="Emp Sith Tie Dagger.ship.png";								Tier=5;	 	Difficulty=2; Tags = [combat] } //
+/*218,290*/	:~{ File="Emp TIE Brute .ship.png";										Tier=5;	 	Difficulty=2; Tags = [combat] } //Altraxia
+/*218,290*/	:~{ File="Emp TIE Brute Alt.ship.png";									Tier=5;	 	Difficulty=2; Tags = [combat] } //Altraxia
 /*218,290*/	:~{ File="Emp_TIE_Falcon_Bomber.ship.png";								Tier=5;	 	Difficulty=2; Tags = [combat] } //Neojino
 /*301,470*/	:~{ File="Emp_TIE_Falcon_Bomber R.ship.png";							Tier=6;	 	Difficulty=2; Tags = [combat] } //Neojino
 /*249,800*/	:~{ File="Emp Tie Defender D MkII.ship.png";							Tier=5;		Difficulty=2; Tags = [combat] } 
 /*249,800*/	:~{ File="Emp Lamda-Class T-4a Mk2.ship.png";							Tier=4;		Difficulty=2; Tags = [combat] } 
 /*446,245*/	:~{ File="Emp B-Class Lt Torpedo cruiser.ship.png";						Tier=6;	 	Difficulty=2; Tags = [combat] } //Based off Chryss
+/*424,820*/	:~{ File="Emp Tartan-class patrol cruiser.ship.png";					Tier=6;	 	Difficulty=2; Tags = [combat] }
 /*424,820*/	:~{ File="C-9979 Landing Craft (Emp) Atk.ship.png";						Tier=5;	 	Difficulty=2; Tags = [combat] }
 /*626,760*/	:~{ File="Lancer-Class Frigate.ship.png";								Tier=6;		Difficulty=1; Tags = [combat] } 
 /*616,240*/	:~{ File="Emp Lancer-Class Frigate.ship.png";							Tier=6;		Difficulty=1; Tags = [combat] } 

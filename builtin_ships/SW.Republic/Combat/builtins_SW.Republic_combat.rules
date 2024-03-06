@@ -30,6 +30,8 @@ Ships
 /*106,220*/    		:~{ File="Republic V-19 Torrent Starfighte.ship.png";                                    Tier=3;  Difficulty=2; Tags = [combat] }
 /*107,210*/    		:~{ File="Republic Z-95 Headhunter.ship.png";                                            Tier=3;  Difficulty=1; Tags = [combat] }
 /*108,650*/    		:~{ File="Republic Z-95 Headhunter Orig.ship.png";                                       Tier=4;  Difficulty=2; Tags = [combat] } //  Credit ClassicJam
+/*108,650*/    		:~{ File="Rep C-Wing Interceptor.ship.png";                                       		 Tier=4;  Difficulty=2; Tags = [combat] } //  Credit ClassicJam
+/*108,650*/    		:~{ File="Rep N-Wing.ship.png";                                       		 			 Tier=4;  Difficulty=2; Tags = [combat] } //  Credit ClassicJam
 /*107,920*/    		:~{ File="V-19 Torrent Starfighter B.ship.png";                                          Tier=3;  Difficulty=2; Tags = [combat] } //  Credit ClassicJam
 /*135,850*/    		:~{ File="ARC-170 Mk II.ship.png";                                                       Tier=3;  Difficulty=2; Tags = [combat] }
 /*144,100*/    		:~{ File="Republic BTL-B Y-Wing Bomber.ship.png";                                        Tier=3;  Difficulty=2; Tags = [combat] }
