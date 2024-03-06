@@ -148,6 +148,14 @@ Actions
 		}
 	}
 
+	/* *********** TIER REMAPPING ************ */
+	{
+		Action = Replace
+		Replace = "<modes/career/fleet_tier_remap_table.rules>/FleetTierRemapTable"
+		With = &<career/sw_fleet_tier_remap_table.rules>/FleetTierRemapTable
+	}
+
+
 	/* *********** STARTER SHIPS ************* */
 
 		//Replacement Starter Ships and Descriptions
