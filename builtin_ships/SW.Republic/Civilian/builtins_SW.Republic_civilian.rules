@@ -4,17 +4,24 @@ Tags = [civilian]
 Ships
 [
 	// Trade ships
-	:~{ File="Cargo Transporter Tiny Republic.ship.png";     Tier=1;  Tags : ~/Tags [trade] }
-	:~{ File="Cargo Transporter Small Republic.ship.png";    Tier=3;  Tags : ~/Tags [trade] }
-	:~{ File="Cargo Transporter Medium Republic.ship.png";  Tier=5;  Tags : ~/Tags [trade] }
-	:~{ File="Cargo Transporter Large Republic.ship.png";     Tier=7;  Tags : ~/Tags [trade] }
-	:~{ File="Cargo Transporter Huge Republic.ship.png";    Tier=9;  Tags : ~/Tags [trade] }
-	:~{ File="Eta-Class Supply Barge Republic.ship.png";     Tier=10;  Tags : ~/Tags [trade] }
-	:~{ File="Republic Firespray-31-Class Patr.ship.png";     Tier=1;  Tags : ~/Tags [trade] }
-	:~{ File="Republic CSS-1 Corellian Star Sh.ship.png";    Tier=5;  Tags : ~/Tags [trade] }
-	:~{ File="Republic Corellian G9 Freighter.ship.png";  Tier=3;  Tags : ~/Tags [trade] }
-	:~{ File="Republic Consular-Class CruiserB.ship.png";     Tier=2;  Tags : ~/Tags [trade] }
-	:~{ File="Republic CR70 Corvette (Civ).ship.png";     Tier=4;  Tags : ~/Tags [trade] }
-	:~{ File="Republic CR70 Corvette (Cargo).ship.png";     Tier=6;  Tags : ~/Tags [trade] }
-	:~{ File="Rep SoroSuub Lux 3000 Space Yach.ship.png";     Tier=5;  Tags : ~/Tags [trade] }
+	:~{ File="Cargo Transporter Tiny Republic.ship.png";     	Tier=1;  Tags : ~/Tags [trade] }
+	:~{ File="Cargo Transporter Small Republic.ship.png";    	Tier=3;  Tags : ~/Tags [trade] }
+	:~{ File="Cargo Transporter Medium Republic.ship.png";  	Tier=5;  Tags : ~/Tags [trade] }
+	:~{ File="Cargo Transporter Large Republic.ship.png";     	Tier=7;  Tags : ~/Tags [trade] }
+	:~{ File="Cargo Transporter Huge Republic.ship.png";    	Tier=9;  Tags : ~/Tags [trade] }
+	:~{ File="Eta-Class Supply Barge Republic.ship.png";     	Tier=10;  Tags : ~/Tags [trade] }
+	:~{ File="Republic Firespray-31-Class Patr.ship.png";     	Tier=1;  Tags : ~/Tags [trade] }
+	:~{ File="Republic CSS-1 Corellian Star Sh.ship.png";    	Tier=5;  Tags : ~/Tags [trade] }
+	:~{ File="Rep Baudo-Class Yacht (Civ).ship.png";    		Tier=5;  Tags : ~/Tags [trade] }
+	:~{ File="Republic Corellian G9 Freighter.ship.png";  		Tier=3;  Tags : ~/Tags [trade] }
+	:~{ File="Republic Consular-Class CruiserB.ship.png";     	Tier=2;  Tags : ~/Tags [trade] }
+	:~{ File="Republic CR70 Corvette (Civ).ship.png";     		Tier=4;  Tags : ~/Tags [trade] }
+	:~{ File="Rep Pelta-Class Medical Frigate.ship.png";    	Tier=6;  Tags : ~/Tags [trade] }
+	:~{ File="Republic CR70 Corvette (Cargo).ship.png";     	Tier=6;  Tags : ~/Tags [trade] }
+	:~{ File="Rep Vakbeor-class Cargo Frigate.ship.png";   		Tier=9; Tags : ~/Tags [trade] }
+	:~{ File="NRep EF76 Nebulon Hvy Cargo G.ship.png";     		Tier=9;  Tags : ~/Tags [trade] }
+	:~{ File="Rep SoroSuub Lux 3000 Space Yach.ship.png";     	Tier=5;  Tags : ~/Tags [trade] }
+	:~{ File="Rep Industrial Cargo Freighter.ship.png";     	Tier=10;  Tags : ~/Tags [trade] }
+	:~{ File="Rep Industrial Cargo Freighter 2.ship.png";     	Tier=10;  Tags : ~/Tags [trade] }
+	:~{ File="Rep Industrial Cargo Freighter 3.ship.png";     	Tier=10;  Tags : ~/Tags [trade] }
 ]

@@ -1,6 +1,6 @@
 ID = "SW.bullet_massdriver"
 //OtherIDs = ["bullet_railgun"]
-Range = { BaseValue=360; BuffType=RailgunShot; BuffMode=Multiply; MaxValue=720; }
+Range = { BaseValue=385; BuffType=RailgunShot; BuffMode=Multiply; MaxValue=720; }
 IdealRange
 [
 	{ BaseValue=180; BuffType=RailgunShot; BuffMode=Multiply; MaxValue=360; }
@@ -9,6 +9,7 @@ IdealRange
 IdealRadius = [5, 50]
 Speed = { BaseValue=360; BuffType=RailgunShot; BuffMode=Multiply; MaxValue=1200; }
 ReceivableBuffs = [RailgunShot]
+//HitEffectsScaleOverRange = [1, 1 - (&../Range) / 1000]
 
 Components
 {
@@ -35,7 +36,7 @@ Components
 	Targetable
 	{
 		Type = Targetable
-		Health = 2250
+		Health = 2000
 		TargetCategory = "bullet"
 
 		OnDeath
@@ -53,6 +54,8 @@ Components
 	Hit
 	{
 		Type = PenetratingHit
+		FriendlyShipLowCollisions = true
+		SourceShipLowCollisions = false
 		Penetration = { BaseValue=15; BuffType=RailgunShot; BuffMode=Multiply; }
 		PenetrationSpeed = &~/Speed
 

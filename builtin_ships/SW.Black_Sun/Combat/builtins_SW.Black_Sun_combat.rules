@@ -1,88 +1,117 @@
 Faction = SW.Black_Sun
-Tags = [combat]
 
 Ships
 [
-	// Scouts
-	:~{ File="Black Sun Fighter (Combat).ship.png";     						Tier=1;  Difficulty=1; }
-	:~{ File="Black Sun Fighter-BS H (Combat).ship.png";         				Tier=4;  Difficulty=2; }
-	:~{ File="Black Sun Fighter-BS (Combat).ship.png";          				Tier=3;  Difficulty=2; }
-	:~{ File="Black Sun ARC-170-BS.ship.png";       							Tier=3;  Difficulty=2; }
-	:~{ File="Firespray-31-BS-Y Patrol.ship.png";       						Tier=1;  Difficulty=2; }
-	:~{ File="Pyke ARC-170-BS.ship.png";       									Tier=3;  Difficulty=2; }
-	:~{ File="Mandalorian ARC-170.ship.png";   									Tier=3;  Difficulty=2; }
-	:~{ File="Storm IV Twin-Pod BS Combat.ship.png";          					Tier=3;  Difficulty=2; }
-	:~{ File="Small-BS Fighter.ship.png";           							Tier=2;  Difficulty=2; }
-	:~{ File="Hutt-BS Fighter.ship.png";         								Tier=2;  Difficulty=2; }
-	:~{ File="BSC Storm IVB Twin-Pod Combat Y.ship.png"; 						Tier=4;  Difficulty=1; }
-	:~{ File="Black Sun OutPost.ship.png"; 										Tier=7;  Difficulty=1; }
-	:~{ File="BSC Kom'rk-Class Fighter 2.ship.png"; 							Tier=5;  Difficulty=1; }
-	:~{ File="BSC Kom'rk-Class Fighter R.ship.png"; 							Tier=5;  Difficulty=1; }
-	:~{ File="BSC Storm IV Twin-Pod Combat.ship.png"; 							Tier=2;  Difficulty=1; }
-	:~{ File="BSC Storm IVB Twin-Pod Combat.ship.png"; 							Tier=3;  Difficulty=1; }
-	:~{ File="BSC YT-1300f Light Freighter (V2.ship.png"; 						Tier=4;  Difficulty=1; }
-	:~{ File="Modified_YT-1300g_Light_Freighter.ship.png"; 						Tier=6;  Difficulty=1; }
-	:~{ File="BSC YT-1300a Corrupt Freighter.ship.png"; 						Tier=5;  Difficulty=1; }
-	:~{ File="BSC YT-1300bscg Light Freighter .ship.png"; 						Tier=5;  Difficulty=1; }
-	:~{ File="BSC YT-1300g Dirty Freighter.ship.png"; 							Tier=6;  Difficulty=1; }
-	:~{ File="Modified_YT-1300g_BS_Freighter.ship.png"; 						Tier=6;  Difficulty=1; }
-	:~{ File="YT-1300bs Light Freighter.ship.png"; 								Tier=5;  Difficulty=1; }
-	:~{ File="YT-1300g SC Freighter.ship.png"; 									Tier=5;  Difficulty=1; }
-	:~{ File="Firespray-31-BS Patrol.ship.png";        							Tier=1;  Difficulty=2;}
-	:~{ File="AA-9 Coruscant-BS Botajef Freigh.ship.png"; 							Tier=15;  Difficulty=1; }
-	:~{ File="BSC Subjugator-Class Heavy Cruiser.ship.png"; 						Tier=16;  Difficulty=1; }
-	:~{ File="Modified_Gozanti-class_Cruiser.ship.png"; 							Tier=6;   Difficulty=1; }
-	:~{ File="Mandalorian Kom'rk-Class-O Fight.ship.png";          					Tier=6;  Difficulty=1; } //ClassicJam
-	:~{ File="Med-BS Starfighter B.ship.png";          								Tier=6;  Difficulty=1; } //ClassicJam
-	:~{ File="Undr_Razercrest.ship.png";          									Tier=6;  Difficulty=1; } //Neojino
-	:~{ File="Undr_Z-95 Headhunter.ship.png";         								Tier=4;  Difficulty=2; } //Neojino
-	:~{ File="Hyena-BS Droid Bomber.ship.png";          							Tier=4;  Difficulty=1; }
-	:~{ File="Gozanti-Class Cruiser-BS.ship.png";         							Tier=6;  Difficulty=2; }
-	:~{ File="Shadow Collective Destroyer.ship.png";         						Tier=8;  Difficulty=2; }
-	:~{ File="Med-BS Starfighter.ship.png";         								Tier=4;  Difficulty=2; }
-	:~{ File="BSC Razor Crest.ship.png"; 											Tier=5;  Difficulty=2; }
-	:~{ File="BSC BountyHunter Razor Crest.ship.png"; 								Tier=5;  Difficulty=2; }
- 	:~{ File="BSC Gozanti-Class Cruiser.ship.png"; 									Tier=7;  Difficulty=1; }
-	:~{ File="GR-75 Medium Transport (New).ship.png"; 								Tier=8;  Difficulty=1; }
-	:~{ File="Heavy Black Sun Starfighter-BS.ship.png"; 							Tier=9;  Difficulty=1; }
-	:~{ File="Heavy Black Sun Starfighter.ship.png"; 								Tier=10;  Difficulty=1; }
-	:~{ File="Heavy Starfighter-BS Alt.ship.png"; 									Tier=11;  Difficulty=1; }
-	:~{ File="BSC Kom'rk-Class Fighter.ship.png"; 									Tier=9;  Difficulty=1; }
-	:~{ File="BSC YKL-37R Nova Courier.ship.png"; 									Tier=13;  Difficulty=1; }
-	:~{ File="BSC YT-1300a Light Freighter.ship.png"; 								Tier=7;  Difficulty=1; }
-	:~{ File="BSC YT-1300g Light Freighter.ship.png"; 								Tier=8;  Difficulty=1; }
- 	:~{ File="BSC Hardcell-Class Interstellar Transport.ship.png"; 					Tier=8;  Difficulty=1; }
-	:~{ File="BSC_Invisible Hand.ship.png"; 										Tier=14;  Difficulty=1; }
-	:~{ File="Invisible Hand-BS.ship.png"; 											Tier=11;  Difficulty=1; }
-	:~{ File="BSE Vengeance Class.ship.png"; 										Tier=10;  Difficulty=1; }
-	:~{ File="BSE Invisible Hand Alt.ship.png"; 									Tier=13;  Difficulty=1; }
-	:~{ File="BSC Invisible Hand.ship.png"; 										Tier=12;  Difficulty=1; }
-	:~{ File="BSC Providence-Class Destroyer.ship.png"; 							Tier=14;  Difficulty=1; }
-	:~{ File="BSC Providence-Class Dreadnought.ship.png"; 							Tier=17;  Difficulty=1; }
-	:~{ File="BSC Pursuer-Class Enforcement-BS.ship.png"; 							Tier=18;  Difficulty=1; }
-	:~{ File="BSC Mando Destroyer.ship.png"; 										Tier=15;  Difficulty=1; }
-	:~{ File="BSC Recusant-Class Light Destroyer 2.ship.png"; 						Tier=15;  Difficulty=1; }
-	:~{ File="BSC Recusant-Class Light Destroyer.ship.png"; 						Tier=16;  Difficulty=1; }
+//Tier 1-2 (Up to 100,000)
+/*54,100*/			:~{ File="Hyena-BS Droid Bomber.ship.png";          					Tier=2;  Difficulty=2; Tags = [combat] } 
+/*68,280*/			:~{ File="Storm IV Twin-Pod BS Combat.ship.png";          				Tier=1;  Difficulty=2; Tags = [combat] } 
+/*73,520*/			:~{ File="Small-BS Fighter.ship.png";           						Tier=2;  Difficulty=2; Tags = [combat] }
+/*73,520*/			:~{ File="Hutt-BS Fighter.ship.png";         							Tier=2;  Difficulty=2; Tags = [combat] }
+/*80,020*/			:~{ File="Undr_Z-95 Headhunter.ship.png";         						Tier=1;  Difficulty=2; Tags = [combat] } //Neojino
+/*80,420*/			:~{ File="BSC Storm IVB Twin-Pod Combat Y.ship.png"; 					Tier=2;  Difficulty=2; Tags = [combat] }
+/*81,180*/			:~{ File="Black Sun Fighter (Combat).ship.png";     					Tier=2;  Difficulty=1; Tags = [combat] }
+/*84,230*/			:~{ File="Black Sun Fighter-BS H (Combat).ship.png";         			Tier=3;  Difficulty=2; Tags = [combat] }
+/*99,440*/			:~{ File="Firespray-31-BS-Y Patrol.ship.png";       					Tier=1;  Difficulty=2; Tags = [combat] }
+/*102,040*/			:~{ File="Firespray-31-BS Patrol.ship.png";        						Tier=2;  Difficulty=1; Tags = [combat] }
+
+
+//Tier 3-4 (100,001 to 200,000)
+/*93,920*/			:~{ File="BSC Storm IV Twin-Pod Combat.ship.png"; 						Tier=4;  Difficulty=1; Tags = [combat] }
+/*92,720*/			:~{ File="BSC Storm IVB Twin-Pod Combat.ship.png"; 						Tier=4;  Difficulty=1; Tags = [combat] }
+/*105,420*/			:~{ File="Black Sun Fighter-BS (Combat).ship.png";          			Tier=3;  Difficulty=2; Tags = [combat] }
+/*109,710*/			:~{ File="Med-BS Starfighter.ship.png";         						Tier=3;  Difficulty=2; Tags = [combat] }
+/*113,460*/			:~{ File="BSC Heavy Black Sun Fighter.ship.png";          				Tier=5;  Difficulty=2; Tags = [combat] } //ClassicJam
+/*113,910*/			:~{ File="Med-BS Starfighter B.ship.png";          						Tier=4;  Difficulty=2; Tags = [combat] } //ClassicJam
+/*138,890*/			:~{ File="BSC Mandalorian Fang Fighter.ship.png"; 						Tier=4;  Difficulty=2; Tags = [combat] }
+/*139,600*/			:~{ File="BSC BountyHunter Razor Crest.ship.png"; 						Tier=4;  Difficulty=2; Tags = [combat] }
+/*140,020*/			:~{ File="Black Sun ARC-170-BS.ship.png";       						Tier=5;  Difficulty=1; Tags = [combat] }
+/*144,020*/			:~{ File="Mandalorian ARC-170.ship.png";   								Tier=3;  Difficulty=2; Tags = [combat] }
+/*155,000*/			:~{ File="BSC Razor Crest.ship.png"; 									Tier=4;  Difficulty=2; Tags = [combat] }
+/*161,120*/			:~{ File="Death Gang ARC-170-BSC-R.ship.png";       					Tier=3;  Difficulty=2; Tags = [combat] }
+/*161,120*/			:~{ File="Pyke ARC-170-BS.ship.png";       								Tier=3;  Difficulty=2; Tags = [combat] }
+/*161,380*/			:~{ File="Undr_Razercrest.ship.png";          							Tier=5;  Difficulty=1; Tags = [combat] } //Neojino
+/*164,610*/			:~{ File="Heavy Starfighter-BS Alt.ship.png"; 							Tier=5;  Difficulty=2; Tags = [combat] }
+/*181,710*/			:~{ File="BSC Kom'rk-Class Fighter 2.ship.png"; 						Tier=4;  Difficulty=2; Tags = [combat] }
+
+//Tier 5-7 (180,001 to 400,000)
+/*137,170*/			:~{ File="BSC Pursuer-Class Enforcement-BS.ship.png"; 					Tier=5;  Difficulty=1; Tags = [combat] }
+/*139,670*/			:~{ File="Pursuer-Class Enforcement-BS.ship.png"; 						Tier=5;  Difficulty=1; Tags = [combat] }
+/*172,870*/			:~{ File="Heavy Black Sun Starfighter-BS.ship.png"; 					Tier=5;  Difficulty=1; Tags = [combat] }
+/*172,870*/			:~{ File="Heavy Black Sun Starfighter.ship.png"; 						Tier=6;  Difficulty=1; Tags = [combat] }
+/*TBD*/				:~{ File="C-9979 LC Death Gang (BSC) Atk.ship.png"; 					Tier=6;  Difficulty=1; Tags = [combat] }
+/*184,790*/			:~{ File="BSC Kom'rk-Class Fighter.ship.png"; 							Tier=6;  Difficulty=1; Tags = [combat] }
+/*190,090*/			:~{ File="Mandalorian Kom'rk-Class-O Fight.ship.png";          			Tier=6;  Difficulty=1; Tags = [combat] } //ClassicJam 
+/*203,910*/			:~{ File="BSC Kom'rk-Class Fighter R.ship.png"; 						Tier=7;  Difficulty=1; Tags = [combat] }
+/*203,940*/			:~{ File="Mandalorian Kom'rk-Class (Gauntlet)BS Fighter.ship.png";      Tier=6;  Difficulty=2; Tags = [combat] } //ClassicJam
+/*268,850*/			:~{ File="BSC Smuggler's Luxury Yacht 3000.ship.png"; 					Tier=6;  Difficulty=1; Tags = [combat] }
+/*270,630*/			:~{ File="GR-75 Medium Transport (New).ship.png"; 						Tier=8;  Difficulty=1; Tags = [combat] }
+/*352,480*/			:~{ File="BSC YT-1300f Light Freighter (V2.ship.png"; 					Tier=5;  Difficulty=1; Tags = [combat] }
+/*353,080*/			:~{ File="BSC YT-1300g Light Freighter.ship.png"; 						Tier=7;  Difficulty=1; Tags = [combat] }
+/*353,080*/			:~{ File="Death Gang YT-1300g Freighter.ship.png"; 						Tier=6;  Difficulty=2; Tags = [combat] }
+/*353,080*/			:~{ File="YT-1300g SC Freighter.ship.png"; 								Tier=6;  Difficulty=2; Tags = [combat] }
+/*358,590*/			:~{ File="Modified_YT-1300g_Light_Freighter.ship.png"; 					Tier=6;  Difficulty=1; Tags = [combat] }
+/*361,680*/			:~{ File="BSC YT-1300a Corrupt Freighter.ship.png"; 					Tier=7;  Difficulty=1; Tags = [combat] }
+/*359,980*/			:~{ File="BSC YT-1300bscg Light Freighter .ship.png"; 					Tier=7;  Difficulty=1; Tags = [combat] }
+/*362,880*/			:~{ File="BSC YT-1300g Dirty Freighter.ship.png"; 						Tier=6;  Difficulty=1; Tags = [combat] }
+/*358,590*/			:~{ File="Modified_YT-1300g_BS_Freighter.ship.png"; 					Tier=6;  Difficulty=1; Tags = [combat] }
+/*361,060*/			:~{ File="BSC YT-1300a Light Freighter.ship.png"; 						Tier=7;  Difficulty=1; Tags = [combat] }
+/*368,040*/			:~{ File="YT-1300bs Light Freighter.ship.png"; 							Tier=6;  Difficulty=2; Tags = [combat] }
+
+//Tier 8-10 (400,001 to 2,000,000)
+/*437,780*/			:~{ File="Modified_Gozanti-class_Cruiser.ship.png"; 					Tier=8;  Difficulty=1; Tags = [combat] }
+/*453,540*/ 		:~{ File="BSC Gozanti-Class Cruiser.ship.png"; 							Tier=8;  Difficulty=1; Tags = [combat] }
+/*462,900*/			:~{ File="Gozanti-Class Cruiser-BS.ship.png";         					Tier=8;  Difficulty=2; Tags = [combat] }
+/*612,450*/			:~{ File="BSC Delta 4 Smuggler.ship.png"; 								Tier=9;  Difficulty=1; Tags = [combat] }
+/*662,470*/			:~{ File="BSC YKL-37R Nova Courier.ship.png"; 							Tier=9;  Difficulty=1; Tags = [combat] }
+/*1,082,704*/		:~{ File="Black Sun OutPost.ship.png"; 									Tier=10; Difficulty=1; Tags = [combat] }
+/*1,222,860*/ 		:~{ File="BSC Hardcell-Class Interstellar Transport.ship.png"; 			Tier=10; Difficulty=1; Tags = [combat] }
+/*1,222,860*/ 		:~{ File="BSC Nebulon B-2B Hvy Frigate MkI.ship.png"; 					Tier=7;  Difficulty=3;  Tags = [combat] }
+/*1,465,628*/		:~{ File="Shadow Collective Destroyer.ship.png";         				Tier=10; Difficulty=2; Tags = [combat] }
+
+//Tier 11-13 (2,000,001 to 5,000,000)
+/*1,560,340*/		:~{ File="BSC Hutta Destroyer.ship.png";         						Tier=11;  Difficulty=2; Tags = [combat] }
+/*2,098,820*/		:~{ File="AA-9 Coruscant-BS Botajef Freigh.ship.png"; 					Tier=11;  Difficulty=1; Tags = [combat] }
+/*2,183,980*/		:~{ File="AA-9 Coruscant-BS (Combat).ship.png"; 						Tier=12;  Difficulty=1; Tags = [combat] }
+/*2,264,773*/		:~{ File="BSE Vengeance Class.ship.png"; 								Tier=12;  Difficulty=1; Tags = [combat] }
+/*4,529,860*/		:~{ File="BSC Recusant-Class Light Destroyer 2.ship.png"; 				Tier=13;  Difficulty=1; Tags = [combat] }
+/*4,609,240*/		:~{ File="BSC R-Class Light Destroyer 2.ship.png"; 						Tier=13;  Difficulty=1; Tags = [combat] }
+/*4,634,240*/		:~{ File="BSC Recusant-Class Light Destroyer.ship.png"; 				Tier=13;  Difficulty=1; Tags = [combat] }
+
+//Tier 14-17 (5,000,001 to 10,000,000)
+/*7,425,790*/		:~{ File="BSC Harrower-class Dreadnought.ship.png"; 					Tier=16;  Difficulty=3; Tags = [combat, swboss] }
+/*7,445,884*/		:~{ File="BSC Providence-Class Destroyer.ship.png"; 					Tier=14;  Difficulty=2; Tags = [combat] }
+/*7,445,880*/		:~{ File="BSC Providence-Class Dreadnought.ship.png"; 					Tier=18;  Difficulty=1; Tags = [combat] }
+/*7,690,012*/		:~{ File="BSE Invisible Hand Alt.ship.png"; 							Tier=15;  Difficulty=3; Tags = [combat] }
+/*7,877,900*/		:~{ File="BSC_Invisible Hand.ship.png"; 								Tier=15;  Difficulty=2; Tags = [combat] }
+/*7,912,269*/		:~{ File="BSC Subjugator-Class Heavy Cruiser.ship.png"; 				Tier=17;  Difficulty=1; Tags = [combat] }
+/*8,199,985*/		:~{ File="Invisible Hand-BS.ship.png"; 									Tier=16;  Difficulty=1; Tags = [combat] }
+/*8,348,900*/		:~{ File="BSC Invisible Hand.ship.png"; 								Tier=17;  Difficulty=2; Tags = [combat] }
+/*12,782,900*/		:~{ File="BSC Harrower-class-II Dreadnaugh.ship.png"; 					Tier=18;  Difficulty=2; Tags = [combat, swboss] }
+/*16,019,736*/		:~{ File="BSC Mando Destroyer.ship.png"; 								Tier=17;  Difficulty=3; Tags = [swboss] }
+
+//Tier 18
+/*38,760,000*/		//:~{ File="BSC Proto Raider Arquitens-Class.ship.png"; 					Tier=18;  Difficulty=2; Tags = [swboss] }
+/*61,272,660*/		:~{ File="BSC Redeemer_Class_Battleship.ship.png"; 						Tier=18;  Difficulty=2; Tags = [swboss] }
 	
 	]
 	// Patrol ships
-	// :~{ File="G9_Rigger_Freighter.ship.png"; 								Tier=2;  Difficulty=1; }
-	// :~{ File="Baudo-class_Star_Yacht.ship.png"; 								Tier=3;  Difficulty=1; }
-	// :~{ File="YT-2000_Light_Freighter.ship.png"; 							Tier=3;  Difficulty=1; }
-	// :~{ File="Wayfarer-class_Medium_Freighter.ship.png"; 					Tier=2;  Difficulty=1; }
-	// :~{ File="Lucrehulk-class_LH-3210_Cargo_Freighter.ship.png"; 			Tier=4;  Difficulty=1; }
-	// :~{ File="Starfreighter.ship.png"; 										Tier=2;  Difficulty=1; }
-	// :~{ File="Action_IV_Transport.ship.png"; 								Tier=3;  Difficulty=1; }
-	// :~{ File="Vaksai_Starfighter.ship.png"; 										Tier=4;  Difficulty=1; }
-	// :~{ File="Skipray_Blastboat.ship.png"; 										Tier=5;  Difficulty=1; }
-	// :~{ File="StarViper-class_Attack_Platform.ship.png"; 						Tier=6;  Difficulty=1; }
-	// :~{ File="Supa_Fighter.ship.png"; 											Tier=1;  Difficulty=2; }
-	// :~{ File="Z-95_Headhunter.ship.png"; 										Tier=1;  Difficulty=2; }
-	// :~{ File="Firespray-31-class_Patrol_and_Attack_Craft.ship.png"; 				Tier=5;  Difficulty=1; }
-	// :~{ File="Shadow_Caster.ship.png"; 											Tier=4;  Difficulty=1; }
-	// :~{ File="Sabaoth_Defender.ship.png"; 										Tier=5;  Difficulty=1; }
-	// :~{ File="IPV-1_System_Patrol_Craft.ship.png"; 								Tier=5;  Difficulty=1; }
-	// :~{ File="Kom'rk-class_Fighter.ship.png"; 									Tier=5;  Difficulty=1; }
+	// :~{ File="G9_Rigger_Freighter.ship.png"; 								Tier=2;  Difficulty=1; Tags = [combat] }
+	// :~{ File="Baudo-class_Star_Yacht.ship.png"; 								Tier=3;  Difficulty=1; Tags = [combat] }
+	// :~{ File="YT-2000_Light_Freighter.ship.png"; 							Tier=3;  Difficulty=1; Tags = [combat] }
+	// :~{ File="Wayfarer-class_Medium_Freighter.ship.png"; 					Tier=2;  Difficulty=1; Tags = [combat] }
+	// :~{ File="Lucrehulk-class_LH-3210_Cargo_Freighter.ship.png"; 			Tier=4;  Difficulty=1; Tags = [combat] }
+	// :~{ File="Starfreighter.ship.png"; 										Tier=2;  Difficulty=1; Tags = [combat] }
+	// :~{ File="Action_IV_Transport.ship.png"; 								Tier=3;  Difficulty=1; Tags = [combat] }
+	// :~{ File="Vaksai_Starfighter.ship.png"; 										Tier=4;  Difficulty=1; Tags = [combat] }
+	// :~{ File="Skipray_Blastboat.ship.png"; 										Tier=5;  Difficulty=1; Tags = [combat] }
+	// :~{ File="StarViper-class_Attack_Platform.ship.png"; 						Tier=6;  Difficulty=1; Tags = [combat] }
+	// :~{ File="Supa_Fighter.ship.png"; 											Tier=1;  Difficulty=2; Tags = [combat] }
+	// :~{ File="Z-95_Headhunter.ship.png"; 										Tier=1;  Difficulty=2; Tags = [combat] }
+	// :~{ File="Firespray-31-class_Patrol_and_Attack_Craft.ship.png"; 				Tier=5;  Difficulty=1; Tags = [combat] }
+	// :~{ File="Shadow_Caster.ship.png"; 											Tier=4;  Difficulty=1; Tags = [combat] }
+	// :~{ File="Sabaoth_Defender.ship.png"; 										Tier=5;  Difficulty=1; Tags = [combat] }
+	// :~{ File="IPV-1_System_Patrol_Craft.ship.png"; 								Tier=5;  Difficulty=1; Tags = [combat] }
+	// :~{ File="Kom'rk-class_Fighter.ship.png"; 									Tier=5;  Difficulty=1; Tags = [combat] }
 	
 
 	// Corvettes

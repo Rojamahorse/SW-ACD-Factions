@@ -1,0 +1,391 @@
+Type = Ships
+Tags = [vip_ship]
+Conditions { MinNodeTier=1; }
+RandomWeight = 1
+Count = [0, 1]
+Distance = [5000, 14000]
+MinDistanceFromTags = [[asteroid, 120],[vip_ship, 5000],[station, 2000],[bounty, 2000]]
+//SynchronizeFactions = true
+Allegiance = FactionCivilian
+InitToMax = false
+SpawnCrew = true
+RandomHealthRange = [90%, 100%]
+Labels = ["Abandoned"]
+		NameGenerator
+		{
+		    Type = Multi
+		    SubGenerators
+		    [
+		        {
+		            Chance = 1
+		            Type = NameList
+		            Names
+					[
+					    "Admiral"
+					    "Captain"
+					    "Commander"
+					    "General"
+					    "Moff"
+					    "Colonel"
+					    "Major"
+					    "Lieutenant"
+					    "Marshal"
+					    "Ensign"
+					    "Squadron Leader"
+					    "Wing Commander"
+					    "Warlord"
+					    "Overlord"
+					    "Viceroy"
+					    "Agent"
+					    "Archduke"
+					    "Baron"
+					    "Chieftain"
+					    "Consul"
+					    "Count"
+					    "Duke"
+					    "Emir"
+					    "Governor"
+					    "King"
+					    "Magistrate"
+					    "Minister"
+					    "Prince"
+					    "Queen"
+					    "Regent"
+					    "Senator"
+					    "Supreme Leader"
+					]
+		        }
+		        {
+		            Chance = 1
+		            Type = NameList
+		            Names
+					[
+					    "Antilles"
+					    "Vader"
+					    "Kenobi"
+					    "Tarkin"
+					    "Fett"
+					    "Windu"
+					    "Thrawn"
+					    "Organa"
+					    "Solo"
+					    "Skywalker"
+					    "Krennic"
+					    "Ackbar"
+					    "Hux"
+					    "Piett"
+					    "Veers"
+					    "Rendar"
+					    "Marek"
+					    "Calrissian"
+					    "Secura"
+					    "Tiin"
+					    "Jinn"
+					    "Katarn"
+					    "Syndulla"
+					    "Djarin"
+					    "Kryze"
+					    "Saxon"
+					    "Vos"
+					    "Bane"
+					    "Malachor"
+					    "Tano"
+					    "Shan"
+					    "Snoke"
+					    "Grievous"
+					    "Durron"
+					    "Nihilus"
+					    "Revan"
+					    "Malgus"
+					    "Gunray"
+					    "Hutt"
+					    "Zann"
+					    "Tyranus"
+					    "Sidious"
+					    "Maul"
+					    "Ventress"
+					    "Opress"
+					    "Tambor"
+					    "Krayt"
+					    "Satele"
+					    "Cadera"
+					    "Tal"
+					    "Vizsla"
+					    "Fisto"
+					    "Gallia"
+					    "Plo"
+					    "Mundi"
+					    "Unduli"
+					    "Ti"
+					    "Koon"
+					    "Secura"
+					    "Amedda"
+					    "Valorum"
+					    "Bonteri"
+					    "Mothma"
+					    "Dodonna"
+					    "Madine"
+					    "Rieekan"
+					    "Ozzel"
+					    "Piett"
+					    "Jerjerrod"
+					    "Tiaan"
+						"SkipperWraith"
+						"ClassicJam"
+						"Jani"
+						"Lafiel"
+						"Wolfram"
+						"Neojino"
+						"Kroom"
+						"Roasted"
+						"Jerico"
+						"Altraxia"
+						"Winterbreeze"
+						
+					]
+		        }
+		    ]
+		}
+	ShipCriteria
+	{
+		UseLocalFactionWeights = true
+		Tier = +2
+		UseTierField = true
+		AllowTierRangeExpansion = true
+		Tags = [civilian]
+	}
+	AI
+	{
+		Type = SWCivilianAI
+
+	}
+		SynchronizeFactions = true
+		SynchronizeAllegiance = false
+		SubSpawners
+		[
+			// POI
+			{
+				Type = Doodads
+				Tags = [asteroid_field_poi, poi_unknown]
+				DoodadType = sw.distressPOI // cosmoteer.poi_unknown
+				ShowOnlyInFog = true
+				Undiscovered = true
+				HideIfUnexplored = false
+				AutoRemoveWhenDiscovered = true
+				//AutoRemoveWhenTagDestroyed = vip_ship
+
+			}
+			// The bad guys.
+			{
+				Type = Ships
+				Tags = [hive_of_villany]
+				Count = [2,3]
+				Distance = 333
+				SpawnsPerSlice = 1
+				SpawnSlicePadding = 33%
+				Allegiance = Unique
+				FamePerTier = &<./Data/modes/career/tier_tables.rules>/StandardFamePerTier
+				MaxFamePerTier = &<./Data/modes/career/tier_tables.rules>/StandardMaxFamePerTier
+		NameGenerator
+		{
+		    Type = Multi
+		    SubGenerators
+		    [
+		        {
+		            Chance = 1
+		            Type = NameList
+		            Names
+					[
+						"Tracker"
+						"Seeker"
+						"Hunter"
+						"Shadow"
+						"Stalker"
+						"Scout"
+						"Reclaimer"
+						"Pursuer"
+						"Interceptor"
+						"Sleuth"
+						"Vindicator"
+						"Ravager"
+						"Huntsman"
+						"Predator"
+						"Nighthawk"
+						"Outrider"
+						"Strider"
+						"Trapper"
+						"Marauder"
+						"Bane"
+						"Harrier"
+						"Pathfinder"
+						"Ranger"
+						"Reaper"
+						"Vigilante"
+					]
+		        }
+		        {
+		            Chance = 1
+		            Type = NameList
+		            Names
+					[
+					    "Antilles"
+					    "Vader"
+					    "Kenobi"
+					    "Tarkin"
+					    "Fett"
+					    "Windu"
+					    "Thrawn"
+					    "Organa"
+					    "Solo"
+					    "Skywalker"
+					    "Krennic"
+					    "Ackbar"
+					    "Hux"
+					    "Piett"
+					    "Veers"
+					    "Rendar"
+					    "Marek"
+					    "Calrissian"
+					    "Secura"
+					    "Tiin"
+					    "Jinn"
+					    "Katarn"
+					    "Syndulla"
+					    "Djarin"
+					    "Kryze"
+					    "Saxon"
+					    "Vos"
+					    "Bane"
+					    "Malachor"
+					    "Tano"
+					    "Shan"
+					    "Snoke"
+					    "Grievous"
+					    "Durron"
+					    "Nihilus"
+					    "Revan"
+					    "Malgus"
+					    "Gunray"
+					    "Hutt"
+					    "Zann"
+					    "Tyranus"
+					    "Sidious"
+					    "Maul"
+					    "Ventress"
+					    "Opress"
+					    "Tambor"
+					    "Krayt"
+					    "Satele"
+					    "Cadera"
+					    "Tal"
+					    "Vizsla"
+					    "Fisto"
+					    "Gallia"
+					    "Plo"
+					    "Mundi"
+					    "Unduli"
+					    "Ti"
+					    "Koon"
+					    "Secura"
+					    "Amedda"
+					    "Valorum"
+					    "Bonteri"
+					    "Mothma"
+					    "Dodonna"
+					    "Madine"
+					    "Rieekan"
+					    "Ozzel"
+					    "Piett"
+					    "Jerjerrod"
+					    "Tiaan"
+						"SkipperWraith"
+						"ClassicJam"
+						"Jani"
+						"Lafiel"
+						"Wolfram"
+						"Neojino"
+						"Kroom"
+						"Roasted"
+						"Jerico"
+					]
+		        }
+		    ]
+		}
+				ShipCriteria
+				{
+					UseLocalFactionWeights = true
+					UseTierField = true
+					Tier = -1
+					AllowTierRangeExpansion = true
+					Tags = [combat]
+				}
+
+				AI 
+				{
+					Type = StationGuard
+					PatrolRadius = 200
+					TargetAcquireRangeFromOrigin = 550
+					TargetUnacquireRangeFromOrigin = 750
+				}
+			}
+			// Mission to save ship
+			{
+				Type = Mission
+				Metatype = SWRescueVIP
+				SpawnAt = Tag
+				SpawnAtTag = { Mode=Nearest; Tag=trade_station; }
+				Faction = OwnerOfTag
+				FactionTag = &SpawnAtTag
+				Objectives
+				[
+					{
+						Type = Sequential
+						SubObjectives
+						[
+							{
+								Type = AnyOrder
+								TierCombineMode = Max
+								SubObjectives
+								[
+									{
+										Type = DestroyShips
+										TargetsTag = { Tag=hive_of_villany; Distance=800;}
+										TargetAreaTag = { Mode=Nearest; Tag=poi_unknown; }
+										OverrideDisplayFormatKey = "Objectives/SavetheVIP"
+									}
+									{
+										Type = ProtectShips
+										TargetsTag = { Mode=Nearest; Tag=vip_ship; Max=1; }
+										TargetAreaTag = { Mode=Nearest; Tag=poi_unknown; }
+							}
+								]
+							}
+							{
+								Type = ReceiveRewards
+								ContactShipTag = { Mode=Nearest; Tag=trade_station; }
+							}
+						]
+					}
+				]
+				Rewards
+				[
+					{
+						Type = Money
+						MoneyPerHighTier = &<./Data/modes/career/tier_tables.rules>/StandardMoneyPerTier
+						MoneyPerTierMultiplier = 6
+						RoundToMultiple = 500
+					}
+					{
+						Type = Fame
+						FamePerHighTier = &<./Data/modes/career/tier_tables.rules>/StandardFamePerTier
+						FamePerTierMultiplier = 2
+						MaxFamePerHighTier = &<./Data/modes/career/tier_tables.rules>/StandardMaxFamePerTier
+					}
+		            {
+		                Type = Reputation
+		                ReputationPerHighTier = &<./Data/modes/career/tier_tables.rules>/StandardReputationPerTier
+		                ReputationPerTierMultiplier = 4
+		            }
+				]
+			}
+		]

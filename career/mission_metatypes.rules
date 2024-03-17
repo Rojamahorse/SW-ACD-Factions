@@ -1,0 +1,64 @@
+SWSupressDefectingSquadron
+{
+	NameKey = "Missions/ClearRogueElements"
+	DescriptionKey = "Missions/ClearRogueElementsDesc"
+	CategoryID = bounties
+}
+
+SWDefeatRenegadeBoss
+{
+	NameKey = "Missions/DefeatRenegadeLeader"
+	DescriptionKey = "Missions/DefeatRenegadeLeaderDesc"
+	CategoryID = bounties
+}
+
+SWRescueVIP
+{
+	NameKey = "Missions/RescueVIP"
+	DescriptionKey = "Missions/RescueVIPDesc"
+	CategoryID = bounties
+}
+
+/*
+SWClearAsteroidFieldMiningGuild
+{
+	NameKey = "Missions/ClearAsteroidField"
+	DescriptionKey = "Missions/ClearAsteroidFieldPiratesDesc"
+	CategoryID = bounties
+}
+
+SWRepublicFleetBounty
+{
+	NameKey = "Missions/FleetBounty"
+	DescriptionKey = "Missions/FleetBountyDesc"
+	CategoryID = bounties
+}
+
+SWRebelFleetBounty
+{
+	NameKey = "Missions/FleetBounty"
+	DescriptionKey = "Missions/FleetBountyDesc"
+	CategoryID = bounties
+}
+
+SWEmpireFleetBounty
+{
+	NameKey = "Missions/FleetBounty"
+	DescriptionKey = "Missions/FleetBountyDesc"
+	CategoryID = bounties
+}
+
+SWCISFleetBounty
+{
+	NameKey = "Missions/FleetBounty"
+	DescriptionKey = "Missions/FleetBountyDesc"
+	CategoryID = bounties
+}
+
+SWHiveOfVillanyFleetBounty
+{
+	NameKey = "Missions/FleetBounty"
+	DescriptionKey = "Missions/FleetBountyDesc"
+	CategoryID = bounties
+}
+*/

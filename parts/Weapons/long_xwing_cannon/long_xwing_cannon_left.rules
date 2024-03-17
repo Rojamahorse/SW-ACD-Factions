@@ -19,7 +19,7 @@ Part : &<long_xwing_cannon.rules>/Part
 	[
 		[fighter, [-2, -1, 2, 1]]
 	]
-	
+    //ProhibitAboveLeft=2
 	//Selections
 	
 	//PartSpecific

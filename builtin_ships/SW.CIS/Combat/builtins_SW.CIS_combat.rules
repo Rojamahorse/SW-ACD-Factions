@@ -1,146 +1,86 @@
 Faction = SW.CIS
-Tags = [combat]
+
 
 Ships
 [
-	// Scouts
-	:~{ File="P-38 Rogue-Class (Magnaguard) Starfighter.ship.png";     						Tier=1;  Difficulty=1; }
-	:~{ File="P-38 Magnaguard Starfighter R.ship.png";         								Tier=3;  Difficulty=1; }
-	:~{ File="P-38 Magnaguard Starfighter Y.ship.png";          							Tier=2;  Difficulty=2; }
-	:~{ File="P-38 Rogue-Class Starfighter Mk2.ship.png";          							Tier=3;  Difficulty=2; }
-	:~{ File="P-42 Rogue-Class Starfighter.ship.png";          								Tier=3;  Difficulty=2; }
-	:~{ File="Vulture-Class Droid Starfighter.ship.png";       								Tier=1;  Difficulty=1; }
-	:~{ File="Vulture-Class Droid-R Starfighte.ship.png";       							Tier=3;  Difficulty=2; }
-	:~{ File="C-9979 Landing Craft (CIS) Atk.ship.png"; 									Tier=4;  Difficulty=2; }
-	:~{ File="C-9979 Landing Craft (CIS) III.ship.png"; 									Tier=7;  Difficulty=1; }
-	:~{ File="Hyena-Class Droid Bomber.ship.png";          									Tier=4;  Difficulty=1; }
-	:~{ File="Hyena-Class Droid Bomber Mk2.ship.png";          								Tier=4;  Difficulty=1; }
-	:~{ File="HMP Droid Gunship.ship.png";         											Tier=5;  Difficulty=2; }
-	:~{ File="HMP Droid MineLayer.ship.png";         										Tier=6;  Difficulty=2; }
-	:~{ File="Droid Tri-Fighter Mk2.ship.png";       										Tier=3;  Difficulty=1; }
-	:~{ File="Droid Tri-Fighter Mk3.ship.png";       										Tier=4;  Difficulty=1; }
-	:~{ File="CIS Droid S-One.ship.png";       												Tier=4;  Difficulty=1; }
-	:~{ File="CIS Trade Federation Escort.ship.png";       									Tier=8;  Difficulty=2; }
-	:~{ File="Diamond-Class Cruiser I.ship.png";       										Tier=7;  Difficulty=2; }
-	:~{ File="Diamond-Class Cruiser II.ship.png";       									Tier=9;  Difficulty=1; }
-	:~{ File="Hardcell-Class Interstellar Transport (Alt).ship.png";  						Tier=7;  Difficulty=1; }
-	:~{ File="Hardcell-Class Interstellar Transport (Armed).ship.png";						Tier=7;  Difficulty=1; }
-	:~{ File="Hardcell-Class Interstellar Transport (Combat Refit).ship.png";  				Tier=7;  Difficulty=1; }
-	:~{ File="Umbaran Support Ship.ship.png";           									Tier=10;  Difficulty=1; }
-	:~{ File="Umbaran Shield Support Ship.ship.png";           								Tier=11;  Difficulty=1; }
-	:~{ File="Banking Clan Munificent-Class Star Frigate.ship.png";   						Tier=13;  Difficulty=1; }
-	:~{ File="Banking Clan Munificent-Class Star Frigate Alt.ship.png";   					Tier=13;  Difficulty=2; }
-	:~{ File="CIS Recusant-Class Light Destroy.ship.png"; 									Tier=9;  Difficulty=1; }
-	:~{ File="Recusant-Class Light Destroyer Style 2.ship.png"; 							Tier=9;  Difficulty=1; }
-	:~{ File="Providence-Class Destroyer.ship.png";       									Tier=11;  Difficulty=1; }
-	:~{ File="Recusant-Class Light Destroyer.ship.png";           							Tier=10;  Difficulty=1; }
-	:~{ File="Recusant-Class Light Destroyer 2.ship.png";									Tier=9;  Difficulty=2; }
-	:~{ File="Invisible Hand.ship.png";           											Tier=12;  Difficulty=2; }
-	:~{ File="Providence-Class Dreadnought Mk2.ship.png"; 									Tier=13;  Difficulty=1; }
-	:~{ File="Gozanti-Class Cruiser (CIS).ship.png"; 										Tier=6;   Difficulty=1; }
-	:~{ File="Gozanti-Class Cruiser (CIS) Alt.ship.png"; 									Tier=7;   Difficulty=1; }
-	:~{ File="Subjugator-Class Heavy Cruiser.ship.png";        								Tier=14;  Difficulty=2; }
-	:~{ File="Diamond-Class Cruiser.ship.png";        										Tier=12;  Difficulty=1; }
-	:~{ File="Invisible Hand 2 alt.ship.png";        										Tier=13;  Difficulty=2; }
-	:~{ File="Invisible Hand 2.ship.png";        											Tier=13;  Difficulty=2; }
-	:~{ File="Subjugator-Class Heavy R Cruiser.ship.png";        							Tier=15;  Difficulty=2; }
-	:~{ File="Providence-Class Dreadnought.ship.png";          								Tier=16;  Difficulty=2; }
-	:~{ File="Munificent-Class Star Frigate 2.ship.png"; 									Tier=14;  Difficulty=2; }
-	:~{ File="Munificent-Class Star Frigate 2R.ship.png"; 									Tier=15;  Difficulty=2; }
-	:~{ File="Pinnance-Class_Cruiser.ship.png"; 											Tier=9;   Difficulty=1; } //Credit Wolfram
-	:~{ File="Lukrehulk-Class Battlecruiser.ship.png";										Tier=18;  Difficulty=2; }
-	:~{ File="Lucrehulk-Class Battlecruiser.ship.png";         								Tier=17;  Difficulty=2; }
-/*
-//	:~{ File="LukrehulkWP24.ship.png";    								Tier=18;  Difficulty=2; }
-//	:~{ File="Vulture_Droid_Starfighter.ship.png"; 						Tier=1;  Difficulty=1; }
-//	:~{ File="Nantex-class_Territorial_Defense_Starfighter.ship.png"; 	Tier=2;  Difficulty=1; }
-//	:~{ File="Belbullab-22_Starfighter.ship.png"; 						Tier=8;  Difficulty=1; }
-//	:~{ File="Shield_Ship.ship.png"; 									Tier=5;  Difficulty=1; }
-//	:~{ File="Rabaan-class_Landing_Ship.ship.png"; 						Tier=3;  Difficulty=1; }
-//	:~{ File="Accresker-class_Fast_Attack_Ship.ship.png"; 				Tier=4;  Difficulty=1; }							
-//	:~{ File="Scout_Fighter.ship.png"; 									Tier=2;  Difficulty=1; }
-//	:~{ File="Porax-38_Starfighter_Mk2.ship.png"; 						Tier=3;  Difficulty=1; }
-//	:~{ File="Commerce_Guild_Destroyer_Mk2.ship.png"; 					Tier=5;  Difficulty=2; }
-//	:~{ File="Lucrehulk-class_Core_Ship_Mk2.ship.png"; 					Tier=6;  Difficulty=2; }
-//	:~{ File="Dwarf_Spider_Droid_Starfighter.ship.png"; 				Tier=2;  Difficulty=1; }	
-//	:~{ File="Droch-class_Boarding_Ship.ship.png"; 						Tier=2;  Difficulty=1; }
-//	:~{ File="Teroch-type_Gunship.ship.png"; 							Tier=4;  Difficulty=1; }	
-//	:~{ File="Variable_Geometry_Self-Propelled_Battle_Droid.ship.png"; 	Tier=3;  Difficulty=1; }
-//	:~{ File="Droid_Gunship.ship.png"; 									Tier=4;  Difficulty=1; }
-//	:~{ File="Droid_Gunship_Mk2.ship.png"; 								Tier=4;  Difficulty=2; }
-*/	
+    //Tier 1-2 (Up to 100,000)
+/*38,460*/           :~{ File="Vulture-Class Droid Starfighter.ship.png";                            Tier=1;  Difficulty=1; Tags = [combat] }
+/*55,100*/           :~{ File="Hyena-Class Droid Bomber Mk2.ship.png";                               Tier=1;  Difficulty=2; Tags = [combat] }
+/*61,780*/           :~{ File="P-38 Magnaguard Starfighter Y.ship.png";                              Tier=2;  Difficulty=2; Tags = [combat] }
+/*64,290*/           :~{ File="CIS Droid S-One.ship.png";                                            Tier=2;  Difficulty=1; Tags = [combat] }
+/*73,470*/           :~{ File="P-38 Rogue-Class (Magnaguard) Starfighter.ship.png";                  Tier=1;  Difficulty=2; Tags = [combat] }
 
+    //Tier 3-4 (100,001 to 200,000)
+/*52,440*/           :~{ File="Vulture-Class Droid-R Starfighte.ship.png";                           Tier=3;  Difficulty=2; Tags = [combat] }
+/*65,440*/           :~{ File="CIS Vulture-Class Droid-B Starfighte.ship.png";                       Tier=3;  Difficulty=2; Tags = [combat] }
+/*55,100*/           :~{ File="Hyena-Class Droid Bomber.ship.png";                                   Tier=3;  Difficulty=2; Tags = [combat] }
+/*75,100*/           :~{ File="CIS Geonosian Starfighter.ship.png";                                  Tier=3;  Difficulty=2; Tags = [combat] }
+/*75,100*/           :~{ File="CIS Hyena-Class Droid Bomber B.ship.png";                             Tier=3;  Difficulty=2; Tags = [combat] }
+/*64,440*/           :~{ File="CIS P-38 Magnaguard Starfighter T.ship.png";                          Tier=3;  Difficulty=2; Tags = [combat] }
+/*65,790*/           :~{ File="CIS Droid Tri-Fighter.ship.png";                                      Tier=3;  Difficulty=1; Tags = [combat] }
+/*67,290*/           :~{ File="Droid Tri-Fighter Mk3.ship.png";                                      Tier=3;  Difficulty=1; Tags = [combat] }
+/*72,590*/           :~{ File="Droid Tri-Fighter Mk2.ship.png";                                      Tier=3;  Difficulty=1; Tags = [combat] }
+/*82,630*/           :~{ File="P-42 Rogue-Class Starfighter.ship.png";                               Tier=3;  Difficulty=2; Tags = [combat] }
+/*83,480*/           :~{ File="P-38 Magnaguard Starfighter R.ship.png";                              Tier=3;  Difficulty=1; Tags = [combat] }
+/*84,290*/           :~{ File="CIS Droid S-One B.ship.png";                                          Tier=4;  Difficulty=1; Tags = [combat] }
+/*85,130*/           :~{ File="P-38 Rogue-Class Starfighter Mk2.ship.png";                           Tier=3;  Difficulty=2; Tags = [combat] }
+/*87,110*/           :~{ File="CIS Droid S-One S Type-S.ship.png";                                   Tier=4;  Difficulty=1; Tags = [combat] }
+/*95,160*/           :~{ File="CIS P-38 Rogue-Class (Magnaguard) Starfighter.ship.png";              Tier=4;  Difficulty=2; Tags = [combat] }
 
-	// Patrol ships
-/*
-//	:~{ File="Hyena-class_Bomber.ship.png"; 							Tier=3;  Difficulty=1; }
-//	:~{ File="Tri-Fighter.ship.png"; 									Tier=3;  Difficulty=1; }
-//	:~{ File="Recusant-class_Light_Destroyer.ship.png"; 				Tier=10;  Difficulty=1; }
-//	:~{ File="Geonosian_Starfighter.ship.png"; 							Tier=7;  Difficulty=1; }
-//	:~{ File="Umbaran_MHC-class_Starfighter.ship.png"; 					Tier=11;  Difficulty=1; }
-//	:~{ File="Providence-class_Battleship_Enhanced.ship.png"; 			Tier=6;  Difficulty=1; }
-//	:~{ File="Manta-class_Assault_Starfighter.ship.png"; 				Tier=4;  Difficulty=1; }
-//	:~{ File="Crucible-class_Carrier.ship.png"; 						Tier=4;  Difficulty=1; }
-//	:~{ File="Commerce_Guild_Destroyer.ship.png"; 						Tier=5;  Difficulty=1; }
-//	:~{ File="Commerce_Guild_Support_Ship.ship.png"; 					Tier=4;  Difficulty=1; }
-//	:~{ File="Zenuas_33_Umbaran_Starfighter.ship.png"; 					Tier=3;  Difficulty=1; }
-//	:~{ File="Belbullab-22_Starfighter_Mk2.ship.png"; 					Tier=3;  Difficulty=1; }
-//	:~{ File="Providence-class_Destroyer.ship.png"; 					Tier=6;  Difficulty=1; }
-//	:~{ File="DZ-87_Starfighter.ship.png"; 								Tier=3;  Difficulty=1; }
-//	:~{ File="Rogue-class_Starfighter.ship.png"; 						Tier=3;  Difficulty=1; }
-//	:~{ File="Heavy_Missile_Platform_Mk2.ship.png"; 					Tier=4;  Difficulty=1; }
-*/	
+    //Tier 5-7 (180,001 to 400,000)
+/*248,452*/          :~{ File="HMP Droid Gunship.ship.png";                                          Tier=5;  Difficulty=2; Tags = [combat] }
+/*235,176*/          :~{ File="HMP Droid MineLayer.ship.png";                                        Tier=5;  Difficulty=2; Tags = [combat] }
+/*424,820*/          :~{ File="C-9979 Landing Craft (CIS) Atk.ship.png";                             Tier=6;  Difficulty=2; Tags = [combat] }
+/*442,800*/          :~{ File="CIS YT-2400 Light Freighter.ship.png";                                Tier=5;  Difficulty=2; Tags = [combat] /*OtherIDs=["Subjugator-Class Heavy Cruiser"];*/ }
+/*472,300*/          :~{ File="C-9979 Landing Craft (CIS) III.ship.png";                             Tier=7;  Difficulty=1; Tags = [combat] }
+/*483,680*/          :~{ File="Gozanti-Class Cruiser (CIS) Alt.ship.png";                            Tier=6;   Difficulty=1; Tags = [combat] }
+/*483,680*/          :~{ File="Gozanti-Class Cruiser (CIS).ship.png";                                Tier=7;   Difficulty=1; Tags = [combat] }
+/*483,680*/          :~{ File="Gozanti-Class Cruiser 2 (CIS).ship.png";                              Tier=6;   Difficulty=1; Tags = [combat] }
 
-	// Corvettes
-/*
-//	:~{ File="Sheathipede-class_Shuttle.ship.png"; 						Tier=7;  Difficulty=1; }
-//	:~{ File="Rogue-class_Porax-38_Starfighter.ship.png"; 				Tier=9;  Difficulty=1; }
-//	:~{ File="Hardcell-class_Interstellar_Transport.ship.png"; 			Tier=10;  Difficulty=1; }
-//	:~{ File="Separatist_Dreadnought.ship.png"; 						Tier=15;  Difficulty=1; }
-//	:~{ File="Porax-38_Starfighter.ship.png"; 							Tier=9;  Difficulty=1; }
-//	:~{ File="NovaSword_Space_Superiority_Fighter.ship.png"; 			Tier=10;  Difficulty=1; }
-//	:~{ File="P-100_Starfreighter.ship.png"; 							Tier=7;  Difficulty=1; }
-//	:~{ File="Lucrehulk-class_Battleship_Carrier_Variant.ship.png"; 	Tier=16;  Difficulty=1; }
-//	:~{ File="KDB-1_Cutter.ship.png"; 									Tier=8;  Difficulty=1; }
-//	:~{ File="Droid_Tri-Fighter_Mk2.ship.png"; 							Tier=10;  Difficulty=1; }
-//	:~{ File="Komrk-class_Fighter.ship.png"; 							Tier=10;  Difficulty=1; }
-*/
+    //Tier 8-10 (400,001 to 2,000,000)
+/*1,023,710*/        :~{ File="Hardcell-Class Interstellar Transport (Alt).ship.png";                Tier=8;  Difficulty=1; Tags = [combat] }
+/*1,023,710*/        :~{ File="Hardcell-Class Interstellar Transport (Armed).ship.png";              Tier=8;  Difficulty=1; Tags = [combat] }
+/*1,028,182*/        :~{ File="Hardcell-Class Interstellar Transport (Combat Refit).ship.png";       Tier=8;  Difficulty=1; Tags = [combat] }
+/*1,134,000*/        :~{ File="CIS Belbullab Heavy Cruiser.ship.png";                                Tier=9;  Difficulty=1; Tags = [combat] }
+/*1,250,470*/        :~{ File="Umbaran Support Ship.ship.png";                                       Tier=10;  Difficulty=1; Tags = [combat] }
+/*1,313,800*/        :~{ File="CIS Belbullab Heavy Cruiser (S).ship.png";                            Tier=10;  Difficulty=1; Tags = [combat] }
+/*1,313,800*/        :~{ File="CIS Belbullab Heavy Cruiser B (S.ship.png";                           Tier=10;  Difficulty=1; Tags = [combat] }
+/*1,465,628*/        :~{ File="CIS Trade Federation Escort.ship.png";                                Tier=9;  Difficulty=2; Tags = [combat] }
 
-	// Frigates
-/*
-//	:~{ File="Munificent-class_Assault_Frigate.ship.png"; 				Tier=13;  Difficulty=1; }
-//	:~{ File="Ginivex-class_Starfighter.ship.png"; 						Tier=8;  Difficulty=1; }
-//	:~{ File="Hyena-class_Bomber_Mk2.ship.png"; 						Tier=11;  Difficulty=1; }
-*/	
+    //Tier 11-13 (2,000,001 to 5,000,000)
+/*1,983,070*/        :~{ File="Umbaran Shield Support Ship.ship.png";                                Tier=11;  Difficulty=1; Tags = [combat] }
+/*2,019,520*/        :~{ File="CIS Dreadnought-Class_Battleship.ship.png";                           Tier=11;  Difficulty=1; Tags = [combat] }
+/*3,040,232*/        :~{ File="Diamond-Class Cruiser.ship.png";                                      Tier=12;  Difficulty=1; Tags = [combat] }
+/*3,007,955*/        :~{ File="Pinnance-Class_Cruiser.ship.png";                                     Tier=11;   Difficulty=1; Tags = [combat] } //Credit Wolfram
+/*3,280,160*/        :~{ File="Diamond-Class Cruiser I.ship.png";                                    Tier=11;  Difficulty=2; Tags = [combat] }
+/*3,312,020*/        :~{ File="Diamond-Class Cruiser II.ship.png";                                   Tier=12;  Difficulty=2; Tags = [combat] }
+/*4,159,840*/        :~{ File="Recusant-Class Light Destroyer Style 2.ship.png";                     Tier=12;  Difficulty=2; Tags = [combat] }
+/*4,595,760*/        :~{ File="Banking Clan Munificent-Class Star Frigate.ship.png";                 Tier=13;  Difficulty=1; Tags = [combat] }
+/*4,595,760*/        :~{ File="Banking Clan Munificent-Class Star Frigate Alt.ship.png";             Tier=13;  Difficulty=2; Tags = [combat] }
+/*4,641,300*/        :~{ File="Recusant-Class Light Destroyer.ship.png";                             Tier=11;  Difficulty=1; Tags = [combat] }
+/*4,683,300*/        :~{ File="CIS Recusant-Class Light Destroy.ship.png";                           Tier=13;  Difficulty=1; Tags = [combat] }
+/*4,692,140*/        :~{ File="Recusant-Class Light Destroyer 2.ship.png";                           Tier=13;  Difficulty=2; Tags = [combat] }
 
-	// Destroyers
-/*
-//	:~{ File="Recusant-class_Heavy_Destroyer.ship.png"; 				Tier=14;  Difficulty=1; }
-//	:~{ File="Solar_Sailer.ship.png"; 									Tier=8;  Difficulty=1; }
-//	:~{ File="TS-6413_Heavy_Lift_Starship.ship.png"; 					Tier=9;  Difficulty=1; }
-//	:~{ File="Punworcca_116-class_Interstellar_Sloop.ship.png"; 		Tier=7;  Difficulty=1; }
-//	:~{ File="Droid_Gunship_Mk2.ship.png"; 								Tier=14;  Difficulty=1; }
-//	:~{ File="Heavy_Missile_Platform.ship.png"; 						Tier=12;  Difficulty=1; }
-//	:~{ File="R-H009_Sailship.ship.png"; 								Tier=7;  Difficulty=1; }
-//	:~{ File="Unidentified_Separatist_Frigate.ship.png"; 				Tier=13;  Difficulty=1; }
-//	:~{ File="Commerce_Guild_Destroyer_Mk2_v2.ship.png"; 				Tier=15;  Difficulty=1; }
-//	:~{ File="Providence-class_Destroyer_Mk2.ship.png"; 				Tier=16;  Difficulty=1; }
-*/
+    //Tier 14-17 (5,000,001 to 10,000,000)
+/*4,731,624*/        :~{ File="CIS Separatist Support Ship.ship.png";                                Tier=14;  Difficulty=2; Tags = [combat] }
+/*4,714,624*/        :~{ File="Munificent-Class Star Frigate 2.ship.png";                            Tier=14;  Difficulty=2; Tags = [combat] }
+/*5,089,754*/        :~{ File="Munificent-Class Star Frigate 2R.ship.png";                           Tier=14;  Difficulty=2; Tags = [combat] }
+/*6,042,480*/        :~{ File="Providence-Class Dreadnought.ship.png";                               Tier=15;  Difficulty=2; Tags = [combat] }
+/*6,451,329*/        :~{ File="CIS-Subjugator-Class Heavy Cruiser.ship.png";                         Tier=15;  Difficulty=2; Tags = [combat] /*OtherIDs=["Subjugator-Class Heavy Cruiser"];*/ }
+/*6,862,329*/        :~{ File="CIS-Subjugator-Class Heavy R Cruiser.ship.png";                       Tier=16;  Difficulty=2; Tags = [combat] OtherIDs=["Subjugator-Class Heavy R Cruiser"]; }
+/*7,269,700*/        :~{ File="CIS Providence-class A Dreadnought.ship.png";                         Tier=17;  Difficulty=2; Tags = [combat]; OtherIDs=["Invisible Hand 2 alt"]; }
+/*7,269,700*/        :~{ File="CIS Providence-class B Dreadnought.ship.png";                         Tier=17;  Difficulty=2; Tags = [combat]; OtherIDs=["Invisible Hand 2"]; }
+/*7,347,516*/        :~{ File="Providence-Class Dreadnought Mk2.ship.png";                           Tier=18;  Difficulty=1; Tags = [combat] }
+/*7,575,668*/        :~{ File="Providence-Class Destroyer.ship.png";                                 Tier=18;  Difficulty=2; Tags = [combat] }
+/*8,677,800*/        :~{ File="Invisible Hand.ship.png";                                             Tier=18;  Difficulty=3; Tags = [combat] }
 
-	// Cruisers
-/*
-//	:~{ File="Munificent-class_Star_Frigate.ship.png"; 					Tier=12;  Difficulty=2; }
-//	:~{ File="Diamond-class_Cruiser.ship.png"; 							Tier=11;  Difficulty=1; }
-//	:~{ File="C-9979_Landing_Craft.ship.png"; 							Tier=6;  Difficulty=1; }
-//	:~{ File="Gozanti-class_Armed_Transport_CIS_version.ship.png"; 		Tier=8;  Difficulty=2; }
-//	:~{ File="Subjugator-class_Heavy_Cruiser.ship.png"; 				Tier=16;  Difficulty=2; }
-//	:~{ File="Separatist_Supply_Ship.ship.png"; 						Tier=12;  Difficulty=2; }
-*/	
+    //Tier 18
+/*40,429,820*/       :~{ File="CIS Lukrehulk Battleship.ship.png";                                   Tier=16;  Difficulty=2; Tags = [swboss]; OtherIDs=["LukrehulkWP24"]; }
+/*50,327,340*/       :~{ File="Lucrehulk-Class Battlecruiser.ship.png";                              Tier=18;  Difficulty=2; Tags = [swboss] }
+/*63,799,740*/       :~{ File="Lukrehulk-Class Battlecruiser.ship.png";                              Tier=17;  Difficulty=2; Tags = [swboss] }
 
-	// Flagships
-/*
-//	:~{ File="Lucrehulk-class_Battleship.ship.png"; 					Tier=17;  Difficulty=2; }
-//	:~{ File="Malevolence.ship.png"; 									Tier=18;  Difficulty=1; }
-//	:~{ File="Lucrehulk-class_Core_Ship_Mk2_v2.ship.png";				Tier=17;  Difficulty=2; }
-*/	
 ]
+
+/*
+
+*/

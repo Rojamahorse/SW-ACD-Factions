@@ -1,5 +1,6 @@
 ID = SW.pd_shot
-Range = 250
+Range = 150
+IdealRange = 65
 Speed = 160
 
 Components
@@ -82,11 +83,11 @@ Components
 			[
 				{
 					Type = Damage
-					Damage = 850
+					Damage = 1000
 				}
 				{
 					Type = ExplosiveDamage
-					TotalDamage = 1550
+					TotalDamage = 2550
 					Radius = 6
             		Slices = 1
 					Filter

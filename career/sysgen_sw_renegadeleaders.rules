@@ -1,0 +1,237 @@
+Type = None
+Count = [0, 1]
+
+Conditions
+{
+	MinNodeTier = 15 //
+	//SpawnChance = 75% // change after debug
+
+}
+SubSpawners
+[
+	// Target Ship
+	{
+		Type = Ships
+		Tags = [SWRenegadeLeader, SWBoss, JaniBoss, Boss, target_leviathan, bounty_ship] //  target_leviathan & janiboss is used for compatibility to avoiding if existing
+		Count = [1, 1]
+		Distance = [28000, 35000]
+		MinDistanceFromTags = [[SWBoss, 8000],[station, 8000],[target_leviathan, 8000],[JaniBoss, 8000]]
+		Allegiance = Unique
+		SynchronizeAllegiance = true
+		FamePerTier = &<./data/modes/career/tier_tables.rules>/StandardFamePerTier
+		MaxFamePerTier = &<./data/modes/career/tier_tables.rules>/StandardMaxFamePerTier
+		Radius = 4000
+		Labels = ["swrenegadeleader"] // undo this and make each boss its own spawner inside a subspawner with random.
+		NameGenerator
+		{
+		    Type = Multi
+		    SubGenerators
+		    [
+		        {
+		            Chance = 1
+		            Type = NameList
+		            Names
+					[
+					    "Admiral"
+					    "Captain"
+					    "Commander"
+					    "General"
+					    "Moff"
+					    "Colonel"
+					    "Major"
+					    "Lieutenant"
+					    "Marshal"
+					    "Ensign"
+					    "Squadron Leader"
+					    "Wing Commander"
+					    "Warlord"
+					    "Overlord"
+					    "Viceroy"
+					    "Agent"
+					    "Archduke"
+					    "Baron"
+					    "Chieftain"
+					    "Consul"
+					    "Count"
+					    "Duke"
+					    "Emir"
+					    "Governor"
+					    "King"
+					    "Magistrate"
+					    "Minister"
+					    "Prince"
+					    "Queen"
+					    "Regent"
+					    "Senator"
+					    "Supreme Leader"
+					]
+		        }
+		        {
+		            Chance = 1
+		            Type = NameList
+		            Names
+					[
+					    "Antilles"
+					    "Vader"
+					    "Kenobi"
+					    "Tarkin"
+					    "Fett"
+					    "Windu"
+					    "Thrawn"
+					    "Organa"
+					    "Solo"
+					    "Skywalker"
+					    "Krennic"
+					    "Ackbar"
+					    "Hux"
+					    "Piett"
+					    "Veers"
+					    "Rendar"
+					    "Marek"
+					    "Calrissian"
+					    "Secura"
+					    "Tiin"
+					    "Jinn"
+					    "Katarn"
+					    "Syndulla"
+					    "Djarin"
+					    "Kryze"
+					    "Saxon"
+					    "Vos"
+					    "Bane"
+					    "Malachor"
+					    "Tano"
+					    "Shan"
+					    "Snoke"
+					    "Grievous"
+					    "Durron"
+					    "Nihilus"
+					    "Revan"
+					    "Malgus"
+					    "Gunray"
+					    "Hutt"
+					    "Zann"
+					    "Tyranus"
+					    "Sidious"
+					    "Maul"
+					    "Ventress"
+					    "Opress"
+					    "Tambor"
+					    "Krayt"
+					    "Satele"
+					    "Cadera"
+					    "Tal"
+					    "Vizsla"
+					    "Fisto"
+					    "Gallia"
+					    "Plo"
+					    "Mundi"
+					    "Unduli"
+					    "Ti"
+					    "Koon"
+					    "Secura"
+					    "Amedda"
+					    "Valorum"
+					    "Bonteri"
+					    "Mothma"
+					    "Dodonna"
+					    "Madine"
+					    "Rieekan"
+					    "Ozzel"
+					    "Piett"
+					    "Jerjerrod"
+					    "Tiaan"
+						"SkipperWraith"
+						"ClassicJam"
+						"Jani"
+						"Lafiel"
+						"Wolfram"
+						"Neojino"
+						"Kroom"
+						"Roasted"
+					]
+		        }
+		    ]
+		}
+
+		ShipCriteria
+		{
+			//UseLocalFactionWeights = true
+			UseTierField = true
+			//Tier = +2
+			AllowTierRangeExpansion = true
+			Tags = [swboss]
+		}
+		AI
+		{
+			Type = SWRenegadeAI
+			PatrolRadius = 800
+			TargetAcquireRangeFromOrigin = 1000
+			TargetUnacquireRangeFromOrigin = 7500
+			//StasisSpeed = 0
+		}
+		SubSpawners
+		[
+			// POI
+			{
+				Type = Doodads
+				DoodadType = sw.renegadeleaderPOI
+				ShowOnlyInFog = true
+				Undiscovered = true
+				HideIfUnexplored = true
+				ScaleFactor = &../../Radius
+				Tags = [SWRenegadeLeaderArea, bounty_area, poi_unknown, boss_field_poi]
+				AutoRemoveWhenTagDestroyed = SWRenegadeLeader
+			}
+			// Mission
+			{
+				Type = Mission
+				Metatype = SWDefeatRenegadeBoss
+				SpawnAt = Tag
+				SpawnAtTag = { Mode=Nearest; Tag=trade_station; }
+				Faction = OwnerOfTag
+				FactionTag = &SpawnAtTag
+				Objectives
+				[
+					{
+						Type = Sequential
+						SubObjectives
+						[
+							{
+								Type = DestroyShips
+								TargetsTag = { Tag=SWRenegadeLeader; LimitToBatch=true; Max=1; }
+								TargetAreaTag = SWRenegadeLeaderArea
+								AutoDiscoverTargetArea = true
+								OverrideDisplayFormatKey = "Objectives/EliminateRenegadeLeader"
+							}
+							{
+								Type = ReceiveRewards
+							}
+						]
+					}
+				]
+				Rewards
+				[
+					{
+						Type = Money
+						MoneyPerHighTier = &<./data/modes/career/tier_tables.rules>/StandardMoneyPerTier
+						MoneyPerTierMultiplier = 12
+						RoundToMultiple = 1000
+					}
+					{
+						Type = Fame
+						FamePerHighTier = &<./data/modes/career/tier_tables.rules>/StandardFamePerTier
+						FamePerTierMultiplier = 10
+						MaxFamePerHighTier = &<./data/modes/career/tier_tables.rules>/StandardMaxFamePerTier
+					}
+					{
+						Type = Reputation
+						ReputationPerHighTier = &<./data/modes/career/tier_tables.rules>/StandardReputationPerTier
+						ReputationPerTierMultiplier = 10
+					}
+				]
+			}
+		]
+	}
+]
+

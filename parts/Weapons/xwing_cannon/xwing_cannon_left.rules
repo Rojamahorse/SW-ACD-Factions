@@ -1,37 +1,20 @@
 Part : &<xwing_cannon.rules>/Part
 {
 	//IDs
+	ID = SW.fighter_xwing_cannon_left
+	OtherIDs = [SW.fighter_xwing_cannon_right]
+	FlipWhenLoadingIDs = [SW.fighter_xwing_cannon_right]
 
 	//StringKeys
+	NameKey = "Parts/xwingCannonLeft"
+	IconNameKey = "Parts/xwingCannonLeftIcon"
+	DescriptionKey = "Parts/xwingCannonDesc"
 	
 	//Groups&Categories
 	
 	//Resources&Size&Health
 	
 	//Rects
-	
-	//Selections
-	
-	//PartSpecific
-	
-	//ReceivableBuffs
-	
-	//Doors&Etc
-	
-	//Editor
-	
-	//Components
-	NameKey = "Parts/xwingCannonLeft"
-	IconNameKey = "Parts/xwingCannonLeftIcon"
-	ID = SW.fighter_xwing_cannon_left
-	OtherIDs = [SW.fighter_xwing_cannon_right]
-	FlipWhenLoadingIDs = [SW.fighter_xwing_cannon_right]
-	DescriptionKey = "Parts/xwingCannonDesc"
-	IsFlippable = true
-	ProhibitRects
-	[
-		[fighter, [-1, -1, 1, 1]]
-	]
 	CustomCollider
 	[
 		[0, -0.37]
@@ -40,7 +23,21 @@ Part : &<xwing_cannon.rules>/Part
 		[1, 1]
 		[0, 1]
 	]
-
+	
+	//Selections
+	
+	//PartSpecific
+	IsFlippable = true
+	ProhibitRects
+	[
+		[fighter, [-1, -1, 1, 1]]
+	]
+	
+	//ReceivableBuffs
+	
+	//Doors&Etc
+	
+	//Editor
 	EditorIcon
 	{
 		Texture
@@ -50,6 +47,9 @@ Part : &<xwing_cannon.rules>/Part
 		}
 		Size = [90, 60]
 	}
+	
+	//Components
+
 
 	Components : ^/0/Components
 	{

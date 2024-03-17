@@ -1,0 +1,22 @@
+
+NameKey = "AI/ReconAI"
+//Description: Maintains a safe operational distance from hostiles, utilizing enhanced sensors for reconnaissance, staying out of missile range while monitoring enemy movements.
+UpdateInterval = 0.5
+IsAvailableInCreativeMode = true
+IsAvailableInMultiplayer = true
+
+StrategyModules
+[
+	{
+		Type = FollowFleetLeader
+	}
+		
+	{
+		Type = AggroEnemies
+		TargetSwitchThresholdFactor = 0 
+		TargetDistanceFactorExponent = 1  
+		TargetFirepowerCacheTime = 10
+		AcquireAggroWithinRadar = true
+		ReleaseAggroWithinRadar = true
+	}
+]

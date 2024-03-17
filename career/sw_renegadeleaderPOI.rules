@@ -1,0 +1,35 @@
+ID = sw.renegadeleaderPOI
+Type = RingedPOI
+DescriptionKey = "Doodads/POIEliminateRenegadeLeader"
+UndiscoveredDescriptionKey = "Doodads/POIEliminateRenegadeLeader"
+CategoryKey = "Doodads/POI"
+Icon = &HudIcon
+HudIcon
+{
+	Texture
+	{
+		File = "sw_renegadeleaderPOI.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+	Size = [64, 64]
+}
+UndiscoveredHudIcon //= &<./data/doodads/poi/doodad_poi_unknown.rules>/HudIcon
+{
+	Texture
+	{
+		File = "sw_renegadeleaderPOI.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+	Size = [64, 64]
+}
+RingCircle = &<./data/doodads/poi/doodad_poi_ring.rules>/RingCircle
+CameraRelativeThickness = true
+DynamicUPerCircumference = 1
+DefaultScale = 4000
+MinimapThickness = 20
+MouseHoverColorFactor = [255, 255, 255, 255*2]
+MouseHoverColorTweenTime = .5
+DiscoveredAlphaTweenTime = 1
+FadeOutSizeRange = [0.25, 0.75]

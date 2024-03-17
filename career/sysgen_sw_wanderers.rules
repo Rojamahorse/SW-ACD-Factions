@@ -1,7 +1,7 @@
 Type = None
 SubSpawners
 [
-	// Pirates.
+	// Hive Pirates.
 	{
 		Type = Ships
 		Tags = [pirate]
@@ -17,7 +17,7 @@ SubSpawners
 			UseLocalFactionWeights = true
 			UseTierField = true
 			AllowTierRangeExpansion = true
-			Tags = [combat]
+			Tags = [pirate]//[combat]
 			UseEvenShipTypeDistribution = true
 		}
 		AI

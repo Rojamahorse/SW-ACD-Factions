@@ -1,11 +1,11 @@
 ID = SW.3.StarWarsFactions
 Name = "Star Wars Factions"
-Version = 0.1.0 RC
-CompatibleGameVersions = ["0.25.0","0.24.0","0.23.0"]
+Version = 0.1.1
+CompatibleGameVersions = ["0.26.0","0.25.0","0.24.0","0.23.0"]
 ModifiesGameplay = true
 Author = "Rojamahorse & SW:ACD DevTeam"
 Logo = "logo.png"
-Description = "Step up your game with the ultimate companion mod to <yellow>Star Wars: A Cosmos Divided</yellow>! \n\nChoose your side—from the <gray>Galactic Empire</gray> and <orange>Rebel Alliance</orange> to the <red>Republic</red> and <blue>CIS</blue> — or navigate the criminal underworld with <magenta>Black Sun</magenta>. \n\nKick off your journey with iconic ships, venture into expansive new maps, and craft your own interstellar adventure. This is the Cosmoteer mod you've been searching for! \n\n<b>Ship Contributions by:</b> ClassicJam, Neojino, Wolfram, Fusion, and the Steam Community! \n\n<bad><b>Important:</b> This mod is an extension of <yellow>Star Wars: A Cosmos Divided</yellow> and requires it for full functionality. Please ensure you have the base mod installed.</bad>"
+Description = "Step up your game with the ultimate companion mod to <yellow>Star Wars: A Cosmos Divided</yellow>! \n\nChoose your side—from the <gray>Galactic Empire</gray> and <orange>Rebel Alliance</orange> to the <red>Republic</red> and <blue>CIS</blue> — or navigate the criminal underworld with <magenta>Black Sun</magenta>. \n\nKick off your journey with iconic ships, venture into expansive new maps, and craft your own interstellar adventure. This is the Cosmoteer mod you've been searching for! \n\n<b>Ship Contributions by:</b> ClassicJam, Neojino, Wolfram, Fusion, Altraxia, Roasted and the Steam Community! \n\n<bad><b>Important:</b> This mod is an extension of <yellow>Star Wars: A Cosmos Divided</yellow> and requires it for full functionality. Please ensure you have the base mod installed.</bad>"
 StringsFolder = "strings"
 /* TO DO:
 Base Galaxy Rules back to Vanilla + All
@@ -19,6 +19,11 @@ Add SW Crew
 
 ShipLibraries
 [
+    {
+        Folder = "builtin_ships/SW.Starter"
+        NameKey = "SWFactionsStarters"
+        TooltipKey = "SWFactionsStartersTip" 
+    }
     {
         Folder = "builtin_ships/SW.Black_Sun/Combat"
         NameKey = "SWFactionsBlacksun"
@@ -44,6 +49,11 @@ ShipLibraries
         NameKey = "SWFactionsRepublic"
         TooltipKey = "SWFactionsRepublicTip" 
     }
+    {
+        Folder = "builtin_ships/SW.Community"
+        NameKey = "SWCommunitySubmissions"
+        TooltipKey = "SWCommunitySubmissionsTip" 
+    }
 ]
 
 Actions
@@ -51,14 +61,7 @@ Actions
 
 	/* *********** PARTS ************* */
 
-	{
-		Action = AddMany
-		AddTo = "<./Data/modes/career/sysgen.rules>/Spawners"
-		ManyToAdd
-		[
-			&<career/sysgen_fleethideouts.rules>/Fleethideouts
-		]
-	}
+
 
  	{ 
 		Action = AddMany
@@ -145,6 +148,14 @@ Actions
 		}
 	}
 
+	/* *********** TIER REMAPPING ************ */
+	{
+		Action = Replace
+		Replace = "<modes/career/fleet_tier_remap_table.rules>/FleetTierRemapTable"
+		With = &<career/sw_fleet_tier_remap_table.rules>/FleetTierRemapTable
+	}
+
+
 	/* *********** STARTER SHIPS ************* */
 
 		//Replacement Starter Ships and Descriptions
@@ -226,6 +237,15 @@ Actions
 		With = &<career/EconDifficultyLevels.rules>/EconDifficultyLevels
 	}
 
+	/* *********** CREW SCARCITY ************* */
+	{
+		Action = Replace
+		Replace = "<modes/career/career.rules>/CrewScarcityLevels"
+		IgnoreIfNotExisting = false
+		With = &<career/crewscarcitylevels.rules>/CrewScarcityLevels
+	}
+
+	
 
 	// Add SW Factions to codex lore
 	{
@@ -233,12 +253,7 @@ Actions
 		AddTo = "<codex/lore/lore.rules>/CodexPages"
         ManyToAdd = &<codex/lore.rules>/CodexPages
 	}
-	// Adds missions related to SW Factions
-	{
-		Action = AddMany
-		AddTo = "<modes/career/sysgen_sim_global_missions.rules>/SubSpawners"
-        ManyToAdd = &<career/sysgen_sim_global_missions.rules>/SubSpawners
-	}
+
 /*
 	// Adds discoverables related to SW Factions
 	{
@@ -284,7 +299,17 @@ Actions
 		BaseToAdd = &<career\TradeShips.rules>/TradeShips
 	}
 
-
+	//Adds SW POI Misson Markers
+	{	
+		Action = AddMany
+		AddTo = "<doodads/doodads.rules>/Doodads"
+		ManyToAdd
+		[
+			&<career/sw_defectorsPOI.rules>
+			&<career/sw_renegadeleaderPOI.rules>
+			&<career/sw_distressPOI.rules>
+		]
+	}
 
 	//Adds trade defensive platforms to SW Factions in career mode
 	{
@@ -300,14 +325,67 @@ Actions
     {
 		Action = Replace
 		Replace = "<modes/career/sysgen_trade_stations.rules>/StationDefenses/Count"
-		With = [5, 8]
+		With = [3, 8]
     }
     {
 		Action = Replace
 		Replace = "<modes/career/sysgen_trade_stations.rules>/StationDefenses/Distance"
 		With = 250
     }
+	/* ********** SPAWNERS *********** */
+	{
+		Action = AddMany
+		AddTo = "<./Data/modes/career/sysgen.rules>/Spawners"
+		ManyToAdd
+		[
+			&<career/sysgen_fleethideouts.rules>/Fleethideouts
+			&<career/sysgen_sw_defectors.rules>
+			&<career/sysgen_sw_renegadeleaders.rules>
+			&<career/sysgen_sw_viprescue.rules>
+		]
+	}
 
+	/* *********** FACTION MISSIONS ************* */
+
+	// Adds missions related to SW Factions
+	{
+		Action = AddMany
+		AddTo = "<modes/career/sysgen_sim_global_missions.rules>/SubSpawners"
+        ManyToAdd = &<career/sysgen_sim_global_missions.rules>/SubSpawners
+	}
+	{
+		Action = Overrides
+		OverrideIn = "<modes/career/mission_metatypes.rules>"
+		CreateIfNotExisting = false
+		IgnoreIfNotExisting = false
+		Overrides = &<career/mission_metatypes.rules>
+	}
+
+	/* *********** SW MISSION AI ************* */
+
+	{
+		Action = Overrides
+		OverrideIn = "<ai/ai.rules>"
+		IgnoreIfNotExisting = false
+		Overrides = &<ai/sw_ai.rules>
+	}
+
+
+
+
+	/* *********** FACTIONS ************* */
+	
+	// Add SW Factions to the game
+	{
+		Action = AddMany
+		AddTo = "<factions/factions.rules>/Factions"
+        ManyToAdd = &<factions/factions.rules>/Factions
+	}
+
+
+]
+
+// Appendix
 	/* *********** FACTION GENERATION ************* */
 
 /*
@@ -354,14 +432,53 @@ Actions
 */
 
 
-	/* *********** FACTIONS ************* */
-	
-	// Add SW Factions to the game
+
+
+	//Adds trade defensive platforms to SW Factions in career mode
+	{
+		Action = Replace
+		Replace = "<modes/career/sysgen_trade_stations.rules>/SubSpawners/7/SubSpawners/0/Count"
+		With = 2
+    }
+    {
+		Action = Replace
+		Replace = "<modes/career/sysgen_trade_stations.rules>/SubSpawners/7/SubSpawners/1/Count"
+		With = [0, 2]
+    }
+    {
+		Action = Replace
+		Replace = "<modes/career/sysgen_trade_stations.rules>/StationDefenses/Count"
+		With = [5, 8]
+    }
+    {
+		Action = Replace
+		Replace = "<modes/career/sysgen_trade_stations.rules>/StationDefenses/Distance"
+		With = 250
+    }
+
+	/* *********** FACTION GENERATION ************* */
+
+
+
+
+	// Adds SW Factions in career mode
+	/*
 	{
 		Action = AddMany
-		AddTo = "<factions/factions.rules>/Factions"
-        ManyToAdd = &<factions/factions.rules>/Factions
+		AddTo = "<galaxy_map/map_generators/base_galaxy.rules>/Factions/Factions"
+        ManyToAdd = &<galaxy_map/map_generators/base_galaxy.rules>/Factions/Factions
 	}
+
+		// Adds SW FactionTiers in career mode
+	{
+		Action = AddMany
+		AddTo = "<galaxy_map/map_generators/base_galaxy.rules>/FactionTiers/Factions"
+        ManyToAdd = &<galaxy_map/map_generators/base_galaxy.rules>/FactionTiers/Factions
+	}
+	*/
+
+/*
+
 
 
 ]

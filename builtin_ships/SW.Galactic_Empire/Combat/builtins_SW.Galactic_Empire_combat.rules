@@ -1,99 +1,139 @@
 Faction = SW.Galactic_Empire
-Tags = [combat]
-
 
 Ships	
 [	
-	:~{ File="Emp_TIE Xelor.ship.png";										Tier=1;	 	Difficulty=1; } 	//28,130 //Neojino
-	:~{ File="Emp TIE (LN) Fighter (Sienar Blu.ship.png";     				Tier=1;  	Difficulty=2; }
-	:~{ File="Emp TIE (LN) Fighter Mk2.ship.png";							Tier=3;	 	Difficulty=2; }
-	:~{ File="Emp_TIE (LN) Fighter.ship.png";								Tier=1;	 	Difficulty=2; } //Neojino
-	:~{ File="Emp_TIE_ETA.ship.png";										Tier=2;	 	Difficulty=2; } //Neojino
-	:~{ File="Emp TIE Fighter (Siena Blue).ship.png"; 	      				Tier=1;  	Difficulty=1; }
-	:~{ File="Emp TIE Fighter.ship.png";                   					Tier=1;  	Difficulty=1; }
-	:~{ File="Emp_TIE_M1.ship.png";											Tier=2;	 	Difficulty=1; } //Neojino
-	:~{ File="Emp TIE Interceptor (Sienar Blue.ship.png";    				Tier=2;  	Difficulty=2; }
-	:~{ File="Emp TIE Heavy.ship.png";            							Tier=3;  	Difficulty=2; }
-	:~{ File="Emp TIE Interceptor-B MkII.ship.png";                 		Tier=2;  	Difficulty=2; }
-	:~{ File="Emp TIE Interceptor MkII.ship.png";                   		Tier=3;  	Difficulty=1; }
-	:~{ File="Emp TIE Interceptor.ship.png";                        		Tier=2;  	Difficulty=2; }
-	:~{ File="Emp TIE SA Bomber (Sienar Blue).ship.png";            		Tier=3;  	Difficulty=1; }
-	:~{ File="Emp TIE SA Bomber.ship.png";                          		Tier=3;  	Difficulty=1; }
-	:~{ File="Emp TIE SA Bomber MkII.ship.png";                     		Tier=4;  	Difficulty=2; }
-	:~{ File="Emp TIE SA-B Bomber MkII.ship.png";                   		Tier=4;  	Difficulty=1; }
-	:~{ File="Emp Rogue Shadow.ship.png";                           		Tier=4;  	Difficulty=1; }
-	:~{ File="Emp Rogue Shadow Alt.ship.png";                       		Tier=3;  	Difficulty=1; }
-	:~{ File="Emp Lamda-Class T-4a Shuttle.ship.png";               		Tier=3;  	Difficulty=1; }
-	:~{ File="Emp_TIE Advanced X1.ship.png";								Tier=3;	 	Difficulty=2; } //Neojino
-	:~{ File="Emp_TIE Interceptor.ship.png";								Tier=3;	 	Difficulty=2; } //Neojino
-	:~{ File="Emp_TIE Prototype R.ship.png";                           		Tier=5;  	Difficulty=2; }
-	:~{ File="Emp_TIE Blackout.ship.png";									Tier=4;	 	Difficulty=2; } //Neojino
-	:~{ File="Emp_TIE Reaper.ship.png";										Tier=4;	 	Difficulty=2; } //Neojino
-	:~{ File="Emp_TIE SA Bomber.ship.png";									Tier=3;	 	Difficulty=2; } //Neojino
-	:~{ File="Emp TIE Reaper.ship.png";										Tier=5;	 	Difficulty=2; }
-	:~{ File="Imperial Heavy Cargo Shuttle.ship.png";						Tier=6;	 	Difficulty=1; } //Neojino
-	:~{ File="Emp_TIE bat.ship.png";										Tier=2;	 	Difficulty=1; } //Neojino
-	:~{ File="Emp_TIE bat Elite.ship.png";									Tier=2;	 	Difficulty=2; } //Neojino
-	:~{ File="Emp_TIE knift.ship.png";										Tier=3;	 	Difficulty=1; } //Neojino
-	:~{ File="Emp_TIE slider.ship.png";										Tier=3;	 	Difficulty=1; } //Neojino
-	:~{ File="Emp-TIE Defender.ship.png";									Tier=5;	 	Difficulty=1; } //Neojino
-	:~{ File="Emp_TIE_Falcon_Bomber.ship.png";								Tier=5;	 	Difficulty=2; } //Neojino
-	:~{ File="Emp_TIE_Falcon_Bomber R.ship.png";							Tier=6;	 	Difficulty=2; } //Neojino
-	:~{ File="Emp Lamda-Class T-4a Mk2.ship.png";							Tier=4;		Difficulty=2; } 
-	:~{ File="Emp Crusader-Class Cruiser Mk2.ship.png";						Tier=9;	 	Difficulty=2; } 
-	:~{ File="Emp B-Class Lt Torpedo cruiser.ship.png";						Tier=9;	 	Difficulty=2; } //Based off Chryss
-	:~{ File="Emp Carrack-class LC Mk2.ship.png";							Tier=8;	 	Difficulty=2; } 
-	:~{ File="C-9979 Landing Craft (Emp) Atk.ship.png";						Tier=4;	 	Difficulty=2; }
-	:~{ File="Emp Acclamator Heavy Scout.ship.png";							Tier=8;		Difficulty=1; }
-	:~{ File="Bayonet-Class Patrol Cruiser.ship.png";						Tier=7;		Difficulty=12; } // Credit ClassicJam
-	:~{ File="Lancer-Class Frigate.ship.png";								Tier=6;		Difficulty=1; } 
-	:~{ File="Emp Lancer-Class Frigate.ship.png";							Tier=6;		Difficulty=1; } 
-	:~{ File="Raider-Class Corvette Mk2.ship.png";							Tier=8;		Difficulty=1; } // Credit ClassicJam
-	:~{ File="Raider-Class Corvette.ship.png";								Tier=7;		Difficulty=1; } // Credit ClassicJam
-	:~{ File="Tector-Class Star Destroyer.ship.png";						Tier=14;	Difficulty=2; } // Credit ClassicJam
-	:~{ File="Emp_Arquitens-Class Cruiser.ship.png";						Tier=8;		Difficulty=1; } //Neojino
-	:~{ File="Emp_Supremacy I-class Star_DES.ship.png";						Tier=12;	Difficulty=2; } //Neojino
-	:~{ File="IPV-1 System Patrol Craft.ship.png";							Tier=6;		Difficulty=2; } // CJ - Orig
-	:~{ File="Immobilizer 420 Cruiser.ship.png";							Tier=13;	Difficulty=2; }  
-	:~{ File="Emp V-Class Star Frigate Mk2.ship.png";						Tier=14;	Difficulty=2; }  
-	:~{ File="Emp Onager-Class Star Destroyer.ship.png";					Tier=12;	Difficulty=1; }
-	:~{ File="Emp Gladiator-Class Star Destroy.ship.png";					Tier=9;		Difficulty=1; }
-	:~{ File="Emp 546_Light_Cruiser Mk2.ship.png";							Tier=11;	Difficulty=2; } // Credit ClassicJam
-	:~{ File="Emp Acclamator Light Assault.ship.png";						Tier=7;		Difficulty=2; } // Credit ClassicJam
-	:~{ File="Emp Cantwell-Class Arrestor Crui.ship.png";					Tier=8;		Difficulty=1; }
-	:~{ File="Acclamator II-Class Cruiser.ship.png";						Tier=13;	Difficulty=1; }
-	:~{ File="Emp Acclamator II-Class Cruiser.ship.png";					Tier=13;	Difficulty=1; }
-	:~{ File="Emp Carrack-class Light Cruiser.ship.png";					Tier=10;	Difficulty=1; }
-	:~{ File="Emp Class 546 Light Cruiser.ship.png";						Tier=9;		Difficulty=1; }
-	:~{ File="Emp Crusader-Class Cruiser.ship.png";							Tier=11;	Difficulty=1; }
-	:~{ File="Emp Gozanti-Class Cruiser.ship.png";							Tier=11;	Difficulty=1; }
-	:~{ File="Emp Dreadnought-Class Chain Cru.ship.png";					Tier=11;	Difficulty=2; } 
-	:~{ File="Emp Dreadnought-Class Heavy Crui.ship.png";					Tier=9;		Difficulty=1; }
-	:~{ File="Emp Imperial Star Destroyer.ship.png";						Tier=11;	Difficulty=1; } 
-	:~{ File="Emp Quasar Fire-Class Cruiser-Carrier.ship.png";				Tier=12;	Difficulty=1; } 
-	:~{ File="Emp Dreadnought Mk2.ship.png";								Tier=10;	Difficulty=2; }
-	:~{ File="Onager-Class Star Destroyer II.ship.png";						Tier=14;	Difficulty=2; } 
-	:~{ File="Venator II-Class Star Destroyer (Empire).ship.png";			Tier=15;	Difficulty=1; } 
-	:~{ File="Emp_Vindicator-Class Star Frigat.ship.png";					Tier=13;	Difficulty=1; } //Neojino
-	:~{ File="Bayonet-Class Patrol Cruiser Mk2.ship.png";					Tier=10;	Difficulty=2; } 
-	:~{ File="Imperial II-class Star Destroyer.ship.png";					Tier=13;	Difficulty=2; }
-	:~{ File="Executor-Class Star Dreadnought.ship.png";					Tier=18;	Difficulty=2; }
-    :~{ File="Dreadnought-Class Star Cruiser.ship.png"; 					Tier=10; 	Difficulty=1; }
-    :~{ File="Emp Rogue Shadow MkII.ship.png"; 								Tier=3; 	Difficulty=1; }
-    :~{ File="Emp_TIE Prototype D.ship.png"; 								Tier=4; 	Difficulty=1; }
-    :~{ File="Executor-Class Star Dreadnought (Small).ship.png"; 			Tier=17; 	Difficulty=2; }
-    :~{ File="Imperial EF76 Nebulon-B Escort Frigate.ship.png"; 			Tier=6; 	Difficulty=2; }
-    :~{ File="Lamda-Class T-4a Imperial Shuttle.ship.png"; 					Tier=4; 	Difficulty=1; }
-    :~{ File="Marauder-Class Cruiser (Empire).ship.png"; 					Tier=7; 	Difficulty=1; }
-    :~{ File="Nu-Class Attack Shuttle.ship.png"; 							Tier=5; 	Difficulty=1; }
-    :~{ File="Pelta-Class Frigate C (Empire).ship.png"; 					Tier=7; 	Difficulty=1; }
-    :~{ File="Praetor Mark-II Class Battlecruiser.ship.png"; 				Tier=17; 	Difficulty=2; }
-    :~{ File="Tartan-class Patrol Cruiser.ship.png"; 						Tier=7; 	Difficulty=2; }
-    :~{ File="TIE Advanced X1 (Sienar Blue).ship.png"; 						Tier=3; 	Difficulty=1; }
-    :~{ File="Victory II-class Star Destroyer.ship.png"; 					Tier=13; 	Difficulty=2; }
-    :~{ File="Victory-class Star Destroyer.ship.png"; 						Tier=12; 	Difficulty=2; }
-]
+// Tier 1 ($0 - $50,000)
+/*26,850*/	:~{ File="Emp_TIE Xelor.ship.png";										Tier=1;	 	Difficulty=1; Tags = [combat] } 	//28,130 //Neojino
+/*30,950*/	:~{ File="Emp TIE (LN) Fighter (Sienar Blu.ship.png";     				Tier=1;  	Difficulty=2; Tags = [combat] }
+/*32,250*/	:~{ File="Emp TIE (LN) Fighter Mk2.ship.png";							Tier=3;	 	Difficulty=2; Tags = [combat] }
+/*32,610*/	:~{ File="Emp_TIE (LN) Fighter.ship.png";								Tier=1;	 	Difficulty=2; Tags = [combat] } //Neojino
+/*39,300*/	:~{ File="Emp_TIE_ETA.ship.png";										Tier=2;	 	Difficulty=2; Tags = [combat] } //Neojino
+/*42,150*/	:~{ File="Emp TIE Fighter (Siena Blue).ship.png"; 	      				Tier=1;  	Difficulty=1; Tags = [combat] }
+/*42,950*/	:~{ File="Emp TIE Fighter.ship.png";                   					Tier=1;  	Difficulty=1; Tags = [combat] }
+/*42,950*/	:~{ File="Emp_TIE_M1.ship.png";											Tier=2;	 	Difficulty=1; Tags = [combat] } //Neojino
 
+// Tier 2 ($50,000 - $100,000)
+/*42,440*/	:~{ File="Emp FO First Order Tie Fighter.ship.png";    					Tier=2;  	Difficulty=2; Tags = [combat] }
+/*57,930*/	:~{ File="Emp TIE Interceptor (Sienar Blue.ship.png";    				Tier=2;  	Difficulty=2; Tags = [combat] }
+/*81,630*/	:~{ File="Emp TIE Interceptor-B MkII.ship.png";                 		Tier=2;  	Difficulty=2; Tags = [combat] }
+/*60,930*/	:~{ File="Emp TIE Interceptor.ship.png";                        		Tier=2;  	Difficulty=2; Tags = [combat] }
+
+// Tier 3 ($60,000 - $150,000)
+/*66,440*/	:~{ File="Emp_First_Order_Tie_Fighter.ship.png";    					Tier=3;  	Difficulty=1; Tags = [combat] }
+/*69,550*/	:~{ File="Emp TIE Heavy.ship.png";            							Tier=3;  	Difficulty=2; Tags = [combat] }
+/*72,550*/	:~{ File="Emp Imperial Transport.ship.png";            					Tier=3;  	Difficulty=1; Tags = [combat] }
+/*81,630*/	:~{ File="Emp TIE Interceptor MkII.ship.png";                   		Tier=3;  	Difficulty=1; Tags = [combat] }
+/*83,320*/	:~{ File="Emp TIE SA Bomber (Sienar Blue).ship.png";            		Tier=3;  	Difficulty=1; Tags = [combat] }
+/*80,420*/	:~{ File="Emp TIE SA Bomber.ship.png";                          		Tier=3;  	Difficulty=1; Tags = [combat] }
+/*126,300*/	:~{ File="Emp TIE SA Bomber MkII.ship.png";                     		Tier=4;  	Difficulty=2; Tags = [combat] }
+/*130,000*/	:~{ File="Emp TIE SA-B Bomber MkII.ship.png";                   		Tier=4;  	Difficulty=1; Tags = [combat] }
+/*113,320*/	:~{ File="Emp Rogue Shadow.ship.png";                           		Tier=4;  	Difficulty=1; Tags = [combat] }
+/*113,420*/	:~{ File="Emp Rogue Shadow Alt.ship.png";                       		Tier=3;  	Difficulty=1; Tags = [combat] }
+/*118,480*/	:~{ File="Emp Lamda-Class T-4a Shuttle.ship.png";               		Tier=3;  	Difficulty=1; Tags = [combat] }
+/*122,010*/	:~{ File="Emp TIE Vector.ship.png";										Tier=4;	 	Difficulty=1; Tags = [combat] } //Altraxia
+/*131,010*/	:~{ File="Emp_TIE Advanced X1.ship.png";								Tier=3;	 	Difficulty=2; Tags = [combat] } //Neojino
+
+// Tier 4 - 6 ($150,000 - $200,000)
+/*70,310*/	:~{ File="Emp_TIE Interceptor.ship.png";								Tier=3;	 	Difficulty=2; Tags = [combat] } //Neojino
+/*94,700*/	:~{ File="Emp_TIE Prototype R.ship.png";                           		Tier=5;  	Difficulty=2; Tags = [combat] }
+/*116,510*/	:~{ File="Emp_TIE Blackout.ship.png";									Tier=4;	 	Difficulty=2; Tags = [combat] } //Neojino
+/*114,170*/	:~{ File="Emp_TIE Reaper.ship.png";										Tier=4;	 	Difficulty=2; Tags = [combat] } //Neojino
+/*80,720*/	:~{ File="Emp_TIE SA Bomber.ship.png";									Tier=3;	 	Difficulty=2; Tags = [combat] } //Neojino
+/*206,350*/	:~{ File="Emp TIE Reaper.ship.png";										Tier=5;	 	Difficulty=2; Tags = [combat] }
+/*226,350*/	:~{ File="Emp TIE Assault Fighter.ship.png";							Tier=6;	 	Difficulty=2; Tags = [combat] }
+/*129,280*/	:~{ File="Emp_TIE bat.ship.png";										Tier=2;	 	Difficulty=1; Tags = [combat] } //Neojino
+/*156,280*/	:~{ File="Emp_TIE bat Elite.ship.png";									Tier=2;	 	Difficulty=2; Tags = [combat] } //Neojino
+/*100,350*/	:~{ File="Emp_TIE knift.ship.png";										Tier=3;	 	Difficulty=1; Tags = [combat] } //Neojino
+/*93,740*/	:~{ File="Emp_TIE slider.ship.png";										Tier=3;	 	Difficulty=1; Tags = [combat] } //Neojino
+/*77,390*/	:~{ File="Emp-TIE Defender.ship.png";									Tier=5;	 	Difficulty=1; Tags = [combat] } //Neojino
+/*187,290*/	:~{ File="Emp Sith Tie Dagger.ship.png";								Tier=5;	 	Difficulty=2; Tags = [combat] } //
+/*218,290*/	:~{ File="Emp TIE Brute .ship.png";										Tier=5;	 	Difficulty=2; Tags = [combat] } //Altraxia
+/*218,290*/	:~{ File="Emp TIE Brute Alt.ship.png";									Tier=5;	 	Difficulty=2; Tags = [combat] } //Altraxia
+/*218,290*/	:~{ File="Emp_TIE_Falcon_Bomber.ship.png";								Tier=5;	 	Difficulty=2; Tags = [combat] } //Neojino
+/*301,470*/	:~{ File="Emp_TIE_Falcon_Bomber R.ship.png";							Tier=6;	 	Difficulty=2; Tags = [combat] } //Neojino
+/*249,800*/	:~{ File="Emp Tie Defender D MkII.ship.png";							Tier=5;		Difficulty=2; Tags = [combat] } 
+/*249,800*/	:~{ File="Emp Lamda-Class T-4a Mk2.ship.png";							Tier=4;		Difficulty=2; Tags = [combat] } 
+/*446,245*/	:~{ File="Emp B-Class Lt Torpedo cruiser.ship.png";						Tier=6;	 	Difficulty=2; Tags = [combat] } //Based off Chryss
+/*424,820*/	:~{ File="Emp Tartan-class patrol cruiser.ship.png";					Tier=6;	 	Difficulty=2; Tags = [combat] }
+/*424,820*/	:~{ File="C-9979 Landing Craft (Emp) Atk.ship.png";						Tier=5;	 	Difficulty=2; Tags = [combat] }
+/*626,760*/	:~{ File="Lancer-Class Frigate.ship.png";								Tier=6;		Difficulty=1; Tags = [combat] } 
+/*616,240*/	:~{ File="Emp Lancer-Class Frigate.ship.png";							Tier=6;		Difficulty=1; Tags = [combat] } 
+/*628,920*/	:~{ File="Raider-Class Corvette Mk2.ship.png";							Tier=6;		Difficulty=1; Tags = [combat] } // Credit ClassicJam
+/*573,560*/	:~{ File="Raider-Class Corvette.ship.png";								Tier=7;		Difficulty=1; Tags = [combat] } // Credit ClassicJam
+/*569,092*/	:~{ File="IPV-1 System Patrol Craft.ship.png";							Tier=6;		Difficulty=2; Tags = [combat] } // CJ - Orig
+/*628,140*/	:~{ File="Emp Crusader-Class Cruiser.ship.png";							Tier=7;	Difficulty=1; Tags = [combat] }
+/*478,680*/	:~{ File="Emp Gozanti-Class Cruiser.ship.png";							Tier=6;	Difficulty=1; Tags = [combat] }
+/*116,120*/    :~{ File="Emp Rogue Shadow MkII.ship.png"; 							Tier=3; 	Difficulty=1; Tags = [combat] }
+/*81,200*/    :~{ File="Emp_TIE Prototype D.ship.png"; 								Tier=4; 	Difficulty=1; Tags = [combat] }
+/*184,320*/    :~{ File="Lamda-Class T-4a Imperial Shuttle.ship.png"; 				Tier=4; 	Difficulty=1; Tags = [combat] }
+/*172,450*/    :~{ File="Nu-Class Attack Shuttle.ship.png"; 						Tier=5; 	Difficulty=1; Tags = [combat] }
+/*128,810*/    :~{ File="TIE Advanced X1 (Sienar Blue).ship.png"; 					Tier=3; 	Difficulty=1; Tags = [combat] }
+/*122,810*/    :~{ File="Emp First_Order_Tie_Defender.ship.png"; 					Tier=4; 	Difficulty=2; Tags = [combat] }
+/*634,780*/	:~{ File="Emp Crusader-Class Cruiser Mk2.ship.png";						Tier=6;	 	Difficulty=2; Tags = [combat] } 
+
+//Tier 7 - 9 (8000,001 - 2,000,000)
+/*800,610*/	:~{ File="Emp Acclamator Heavy Scout.ship.png";							Tier=7;		Difficulty=1; Tags = [combat] }
+/*898,380*/    :~{ File="Tartan-class Patrol Cruiser.ship.png"; 					Tier=7; 	Difficulty=2; Tags = [combat] }
+/*970,450*/    :~{ File="Imperial EF76 Nebulon-B Escort Frigate.ship.png"; 			Tier=7; 	Difficulty=2; Tags = [combat] }
+/*1,055,200*/	:~{ File="Bayonet-Class Patrol Cruiser.ship.png";					Tier=8;		Difficulty=12; Tags = [combat] } // Credit ClassicJam
+/*1,251,940*/	:~{ File="Bayonet-Class Patrol Cruiser Mk2.ship.png";				Tier=8;		Difficulty=2; Tags = [combat] } 
+/*1,276,300*/	:~{ File="Emp Imperial Heavy Cargo Shuttle.ship.png";				Tier=7;	 	Difficulty=1; Tags = [combat] /*OtherIDs=["Imperial Heavy Cargo Shuttle"]*/ } //Neojino
+/*1,340,540*/	:~{ File="Emp Carrack-class LC Mk2.ship.png";						Tier=8;	 	Difficulty=2; Tags = [combat] } 
+/*1,588,440*/	:~{ File="Emp Cantwell-Class Arrestor Crui.ship.png";				Tier=7;		Difficulty=1; Tags = [combat] }
+/*1,609,810*/	:~{ File="Emp_Cantwell-Class Arrestor Cruiser.ship.png";			Tier=8;		Difficulty=1; Tags = [combat] }
+/*1,319,700*/	:~{ File="Emp Carrack-class Light Cruiser.ship.png";				Tier=9;		Difficulty=1; Tags = [combat] }
+/*1,375,170*/    :~{ File="Pelta-Class Frigate C (Empire).ship.png"; 				Tier=9; 	Difficulty=1; Tags = [combat] }
+/*1,064,362*/    :~{ File="Marauder-Class Cruiser (Empire).ship.png"; 				Tier=9; 	Difficulty=1; Tags = [combat] }
+
+
+//Tier 10 - 13 (2,000,001 - 5,000,000)
+/*1,870,822*/	:~{ File="Emp_Arquitens-Class Cruiser.ship.png";						Tier=10;		Difficulty=1; Tags = [combat] } //Neojino
+/*2,773,242*/	:~{ File="Emp Dreadnought-Class Chain Cru.ship.png";					Tier=10;	Difficulty=2; Tags = [combat] } 
+/*2,785,314*/	:~{ File="Emp Dreadnought-Class Heavy Crui.ship.png";					Tier=11;		Difficulty=1; Tags = [combat] }
+/*2,458,142*/	:~{ File="Emp_Vindicator-Class Star Frigat.ship.png";					Tier=11;	Difficulty=1; Tags = [combat] } //Neojino
+/*2,965,172*/	:~{ File="Emp V-Class Star Frigate Mk2.ship.png";						Tier=12;	Difficulty=2; Tags = [combat] }  
+/*2,581,594*/	:~{ File="Emp Gladiator-Class Star Destroy.ship.png";					Tier=12;		Difficulty=1; Tags = [combat] }
+/*3,143,840*/	:~{ File="Emp Acclamator Light Assault.ship.png";						Tier=12;		Difficulty=2; Tags = [combat] } // Credit ClassicJam
+/*3,177,797*/	:~{ File="Emp Dreadnought Mk2.ship.png";								Tier=13;	Difficulty=2; Tags = [combat] }
+/*3,062,310*/	:~{ File="Emp Quasar Fire-Class Cruiser-Carrier.ship.png";				Tier=13;	Difficulty=1; Tags = [combat] } 
+/*3,970,305*/    :~{ File="Dreadnought-Class Star Cruiser.ship.png"; 					Tier=13; 	Difficulty=1; Tags = [combat] }
+
+
+//Tier 13 - 15 (5,000,001 - 10,000,000)
+/*4,794,503*/	:~{ File="Emp Class 546 Light Cruiser.ship.png";						Tier=13;	Difficulty=1; Tags = [combat] }
+/*5,473,825*/	:~{ File="Emp Venator Star Destroyer.ship.png";							Tier=13;	Difficulty=1; Tags = [combat] } 
+/*5,688,236*/	:~{ File="Emp Imperial Star Destroyer.ship.png";						Tier=14;	Difficulty=2; Tags = [combat] } 
+/*6,419,271*/	:~{ File="Immobilizer 420 Cruiser.ship.png";							Tier=14;	Difficulty=2; Tags = [combat] }  
+/*6,509,224*/	:~{ File="Acclamator II-Class Cruiser.ship.png";						Tier=14;	Difficulty=1; Tags = [combat] }
+/*6,317,139*/	:~{ File="Emp Acclamator II-Class Cruiser.ship.png";					Tier=15;	Difficulty=1; Tags = [combat] }
+/*7,425,790*/	:~{ File="Emp Harrower-class Dreadnought.ship.png";						Tier=15;	Difficulty=1; Tags = [combat] }
+/*9,367,340*/	:~{ File="Emp 546_Light_Cruiser Mk2.ship.png";							Tier=16;	Difficulty=2; Tags = [combat] } // Credit Fusion
+
+
+//Tier 16 - 17 (10,000,001 - 15,000,000)
+/*10,498,184*/	:~{ File="Venator II-Class Star Destroyer (Empire).ship.png";			Tier=17;	Difficulty=2; Tags = [combat] } 
+/*11,637,640*/  :~{ File="Victory II-class Star Destroyer.ship.png"; 					Tier=16; 	Difficulty=2; Tags = [combat] }
+/*11,692,058*/  :~{ File="Victory-class Star Destroyer.ship.png"; 						Tier=17; 	Difficulty=2; Tags = [combat] }
+/*13,020,370*/	:~{ File="Emp Harrower-class-II Dreadnaugh.ship.png";					Tier=17;	Difficulty=2; Tags = [combat] }
+/*13,589,664*/	:~{ File="Emp Onager-Class Star Destroyer.ship.png";					Tier=18;	Difficulty=3; Tags = [combat] }
+
+//Tier 18 (15,000,001+)
+/*14,261,552*/	:~{ File="Onager-Class Star Destroyer II.ship.png";						Tier=18;	Difficulty=2; Tags = [combat] } 
+/*18,809,805*/	:~{ File="Emp_Supremacy I-class Star_DES.ship.png";						Tier=18;	Difficulty=3; Tags = [combat] } //Neojino
+
+
+//Tier 18 BOSS
+/*18,728,800*/  :~{ File="Executor-Class Star Dreadnought (Small).ship.png"; 			Tier=17; 	Difficulty=2; Tags = [swboss] }
+/*20,011,224*/	:~{ File="Tector-Class Star Destroyer.ship.png";						Tier=16;	Difficulty=2; Tags = [swboss] } 
+/*22,419,985*/	:~{ File="Imperial II-class Star Destroyer.ship.png";					Tier=16;	Difficulty=2; Tags = [swboss] }
+/*38,832,020*/  :~{ File="Emp Bewitcher_Class_Super_Cruiser.ship.png"; 					Tier=18; 	Difficulty=2; Tags = [swboss] } // Credit Hello360Jelly Jr
+/*55,471,950*/  :~{ File="Praetor Mark-II Class Battlecruiser.ship.png"; 				Tier=17; 	Difficulty=2; Tags = [swboss] }
+/*61,272,660*/  :~{ File="Emp Redeemer_Class_Battleship.ship.png"; 						Tier=18; 	Difficulty=2; Tags = [swboss] } // Credit Hello360Jelly Jr
+/*71,928,384*/	:~{ File="Executor-Class Star Dreadnought.ship.png";					Tier=18;	Difficulty=3; Tags = [swboss] }
+/*99,928,384*/	:~{ File="Emp_ISD_Banisher.ship.png";									Tier=18;	Difficulty=2; Tags = [swboss] } // Credit Choppyranger
+/*61,928,384*/	:~{ File="Emp_Resurgent_Class_Battlecruiser.ship.png";					Tier=18;	Difficulty=2; Tags = [swboss] } // Credit Fusion
+
+]
 
 
 // Patrol ships

@@ -1,0 +1,56 @@
+NameKey = "AI/HitAndFadeAI"
+//Description: Employs a tactical retreat followed by a swift advance, ideal for fast ships equipped with high-impact weapons, allowing for repeated strike and evade maneuvers.
+UpdateInterval = [9.75, 10]
+IsAvailableInCreativeMode = true
+IsAvailableInMultiplayer = true
+StrategyModules
+[
+
+	{
+		Type = AreaPatrol 
+		DefaultPatrolRadius = 600
+		AvoidableDoodadTags = [sun, station, ship, enemy]
+		AvoidableDoodadBuffer =  -100
+	}
+	
+	{
+		Type = FleeFromEnemies
+		FleeDistance = -1100
+		RecallCrew = false
+	}
+	
+	{
+		Type = AggroEnemies
+		TargetSwitchThresholdFactor = 10
+		TargetDistanceFactorExponent = 30 
+		TargetFirepowerCacheTime = 10
+		AcquireAggroWithinRadar = true
+		ReleaseAggroWithinRadar = true
+	}
+]
+
+TacticsModules
+[
+	{
+		Type = DefaultAttackRadiusAndRotation
+		AttackRotationSwitchThresholdFactor = 0
+		AttackRotationsToCheck = 6
+		UseSavedAboveHealth = 0%
+	}
+	{
+		Type = RandomAttackAngle
+		AttackAngleChangeInterval = 1
+		AttackAngleChangeDelta = 180d
+		CoordinateFlanking = true
+	}
+]
+
+TargetingModules
+[
+	{
+		Type = ValueTargeter
+		TargetChecksPerUpdate = 10
+		TargetSwitchThresholdFactor = 0
+		TargetValueFactorPerPenetrationDist = 0
+	}
+]

@@ -1,0 +1,50 @@
+
+NameKey = "AI/AgileFlankerAI"
+//TipKey = "AI/AgileFlankerAITip"
+//Description: Utilizes superior maneuverability to navigate rapidly around the enemy, ideal for ships equipped with short-range weapons like lasers, seeking to exploit weaknesses in the enemy's defenses.
+UpdateInterval = 4
+IsAvailableInCreativeMode = true
+IsAvailableInMultiplayer = true
+
+
+StrategyModules
+[
+	{
+		Type = FollowFleetLeader
+	}
+	{
+		Type = AggroEnemies
+		TargetSwitchThresholdFactor = 1 // If set very low, changes target ship every update
+		TargetDistanceFactorExponent = 1
+		TargetFirepowerCacheTime = 10
+		AcquireAggroWithinRadar = true
+		ReleaseAggroWithinRadar = true
+	}
+]
+
+TacticsModules
+[
+	{
+		Type = DefaultAttackRadiusAndRotation
+		AttackRotationSwitchThresholdFactor = 0
+		AttackRotationsToCheck = 7
+		UseSavedAboveHealth = 90% // ignores default attack distance and angle if below this hp
+	}
+	{
+		Type = RandomAttackAngle
+		AttackAngleChangeInterval = 4 
+		AttackAngleChangeDelta = [90d, 270d]
+		CoordinateFlanking = true
+	}
+]
+
+TargetingModules
+[
+	{
+		Type = ValueTargeter
+		TargetChecksPerUpdate = 20
+		TargetSwitchThresholdFactor = 20
+		TargetValueFactorPerPenetrationDist = .3
+	}
+]
+

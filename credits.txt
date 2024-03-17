@@ -1,0 +1,203 @@
+
+
+
+
+
+<image name='wr_logo'/>
+
+
+<color r="255" g="255" b="255" a="127">Copyright © 2011-<copyright_year/> Walternate Realities™ LLC.</color>
+<color r="255" g="255" b="255" a="127">All Rights Reserved.</color>
+
+
+Created By
+<b><s20><fame_color>Walt Destler</fame_color></s20></b>
+
+
+Lead Programming &amp; Game Design
+<b><s20><fame_color>Walt Destler</fame_color></s20></b>
+
+
+Additional Programming &amp; Game Design
+<b><s20><fame_color>Neil Conlon</fame_color></s20></b>
+
+
+Ship Art &amp; Animation
+<b><s20><fame_color>Miguel M. Jiménez (a.k.a. Kroom)</fame_color></s20></b>
+
+
+VFX &amp; Technical Art
+<b><s20><fame_color>Luke Pierson</fame_color></s20></b>
+
+
+UI &amp; Background Art
+<b><s20><fame_color>Walt Destler</fame_color></s20></b>
+
+
+Music
+<b><s20><fame_color>Dubmood</fame_color></s20></b>
+
+
+Sound Design
+<b><s20><fame_color>Walt Destler</fame_color></s20></b>
+<b><s20><fame_color>TSHASK</fame_color></s20></b>
+<gray>Lead Sound Designer</gray> | Diego Hevia
+<gray>Sound Designer</gray> | Filip Wajszczuk
+<gray>Sound Designer</gray> | Omer Ege
+<gray>Sound Designer</gray> | Krzysztof Chodkiewicz
+
+
+Ship Designs
+<b><s20><fame_color>0neye</fame_color></s20></b>
+<b><s20><fame_color>Cosmopyr</fame_color></s20></b>
+<b><s20><fame_color>Door</fame_color></s20></b>
+<b><s20><fame_color>Hatter</fame_color></s20></b>
+<b><s20><fame_color>Saris</fame_color></s20></b>
+<b><s20><fame_color>Vilda</fame_color></s20></b>
+
+
+Quality Assurance &amp; Community Support
+<b><s20><fame_color>Captain Redstone</fame_color></s20></b>
+
+
+Business Development &amp; Publishing
+<b><s20><fame_color>Caboodle Games / Alastair Hebson</fame_color></s20></b>
+
+
+Localization
+<b><s20><fame_color>Local Heroes Worldwide</fame_color></s20></b>
+<gray>Localization Project Manager</gray> | Vincent Leeuw
+<b><s20><gray>Brazilian Portuguese</gray></s20></b> | <b><s20><fame_color>Locsmiths</fame_color></s20></b>
+<gray>Translator/Proofreader</gray> | Fábio Ludwig
+<gray>Proofreader</gray> | Karine Fonte
+<gray>Project Manager</gray> | Johnny Marques
+<b><s20><gray>French</gray></s20></b> | <b><s20><fame_color>Loc-3</fame_color></s20></b>
+<gray>Translator/Proofreader</gray> | Claire Deiller
+<gray>Translator/Proofreader</gray> | Eric Emanuel
+<gray>Translator/Proofreader</gray> | Marie Lorbach
+<b><s20><gray>German</gray></s20></b> | <b><s20><fame_color>4-Real</fame_color></s20></b>
+<gray>Translator</gray> | Christoph Beckers-Malecki
+<gray>Proofreader</gray> | Steffen Nowak
+<b><s20><gray>Latin-American Spanish</gray></s20></b> | <b><s20><fame_color>Pinknoise</fame_color></s20></b>
+<gray>Translator/Proofreader</gray> | Martin Gallo
+<gray>Translator/Proofreader</gray> | Isaac Enrique Caro Valdivia
+<gray>Translator/Proofreader</gray> | Daniel Meléndez
+<b><s20><gray>Russian</gray></s20></b> | <b><s20><fame_color>Levsha</fame_color></s20></b>
+<gray>Translator</gray> | Dmitriy Akenin
+<gray>Translator</gray> | Vasiliy Kozin
+<gray>Project Manager</gray> | Elena Kononova
+<b><s20><gray>Simplified Chinese</gray></s20></b> | <b><s20><fame_color>Yeehe</fame_color></s20></b>
+<gray>Translator</gray> | Zhenhua, Fu
+<gray>Translator</gray> | Mr.Spock
+<gray>Proofreader</gray> | Xiaoxiao, Qu
+<b><s20><fame_color>Words in Style</fame_color></s20></b>
+<gray>Brazilian Portuguese</gray> | Cristine Martin
+<gray>French</gray> | Xavier Kling
+<gray>German</gray> | Martin Thauer
+<gray>Russian</gray> | Alexandra Frolova
+<gray>Simplified Chinese</gray> | Allen Yu
+<gray>Spanish</gray> | Guillermo Gonzales Cavazos
+<gray>Project Manager</gray> | Leandro Feldmann
+
+
+Concept Art
+<b><s20><fame_color>Elias Stern</fame_color></s20></b>
+<gray>artstation.com/elias_stern</gray>
+
+
+Trailers
+<color r="255" g="255" b="255" a="127">2023 Gameplay Trailer</color> | <b><s20><fame_color>Bartosz Strusewicz</fame_color></s20></b>
+<color r="255" g="255" b="255" a="127">2022 Gameplay Trailer</color> | <b><s20><fame_color>Trailer Squad / Chris Correia</fame_color></s20></b>
+
+
+Ship Design Contest Winners
+<color r="255" g="255" b="255" a="127">Feb. 2023 Design Contest</color> | <b>Avokado</b>
+                                                                        | <b>Nick</b>
+                                                                        | <b>Xsnow (Icycold)</b>
+                                                                        | <b>IonTinker</b>
+                                                                        | <b>corrupt_again</b>
+                                                                        | <b>Fusion</b>
+                                                                        | <b>TastyCoffee</b>
+                                                                        | <b>Air</b>
+                                                                        | <b>kine</b>
+                                                                        | <b>ze Kommandant</b>
+                                                                        | <b>Kaine and Kiana</b>
+                                                                        | <b>XDERP7</b>
+                                                                        | <b>Scari</b>
+<color r="255" g="255" b="255" a="127">May. 2023 Design Contest</color> | <b>Yugi150</b>
+                                                                        | <b>Hawaiian_1ce</b>
+                                                                        | <b>J_Yuuki</b>
+                                                                        | <b>Lord Draconis</b>
+                                                                        | <b>Kaine and Kiana</b>
+                                                                        | <b>ze Kommandant</b>
+                                                                        | <b>Xsnow (Icycold)</b>
+                                                                        | <b>Nick</b>
+                                                                        | <b>Fusion </b>
+                                                                        | <b>Corrupt_again</b>
+                                                                        | <b>kine</b>
+<color r="255" g="255" b="255" a="127">Oct. 2023 Design Contest</color> | <b>PistonLoop</b>
+                                                                        | <b>月胧星烁</b>
+                                                                        | <b>Immtrm</b>
+                                                                        | <b>Lord Draconis</b>
+                                                                        | <b>kine</b>
+                                                                        | <b>Kaine Rey M. Galo</b>
+                                                                        | <b>activatewindows</b>
+                                                                        | <b>Avokado &amp; Air</b>
+                                                                        | <b>rosehip</b>
+                                                                        | <b>Nick</b>
+                                                                        | <b>yugi150</b>
+
+
+Special Thanks                                           | <b>ProntoManagement</b><color r="255" g="255" b="255" a="127">, supervising moderator</color>
+<color r="255" g="255" b="255" a="127">Community</color> | <b>IVIemories</b><color r="255" g="255" b="255" a="127">, senior moderator, tournament organization</color>
+                                                         | <b>Minimurgle</b><color r="255" g="255" b="255" a="127">, senior moderator</color>
+                                                         | <b>Bubbet</b><color r="255" g="255" b="255" a="127">, senior moderator</color>
+                                                         | <b>Yobeefjerky</b><color r="255" g="255" b="255" a="127">, senior moderator</color>
+                                                         | <b>Captain Redstone</b><color r="255" g="255" b="255" a="127">, moderator</color>
+                                                         | <b>JarHead</b><color r="255" g="255" b="255" a="127">, moderator</color>
+                                                         | <b>Saris</b><color r="255" g="255" b="255" a="127">, moderator, tournament organization</color>
+                                                         | <b>Ultranova</b><color r="255" g="255" b="255" a="127">, moderator</color>
+                                                         | <b>Lafiel</b><color r="255" g="255" b="255" a="127">, mods &amp; wiki</color>
+                                                         | <b>Dalas120</b><color r="255" g="255" b="255" a="127">, game balance feedback</color>
+                                                         | <b>Tim Dullinger a.k.a. GhostTaker</b><color r="255" g="255" b="255" a="127">, evangelism</color>
+                                                         | <b>BlakeBatpony</b><color r="255" g="255" b="255" a="127">, tournament organization</color>
+
+
+Special Thanks                                                      | <b>Noah Bench</b>
+<color r="255" g="255" b="255" a="127">Friends &amp; Family</color> | <b>Mike Bernard</b>
+                                                                    | <b>David Billingsley</b>
+                                                                    | <b>Josh Black</b>
+                                                                    | <b>Greg Bliss</b>
+                                                                    | <b>Tom Corbett</b>
+                                                                    | <b>Stephen Dewhurst</b>
+                                                                    | <b>Dan Driscoll</b>
+                                                                    | <b>Adam Edwards</b>
+                                                                    | <b>Jerry Fu</b>
+                                                                    | <b>Luke Goodmuth</b>
+                                                                    | <b>Ryan Hart</b>
+                                                                    | <b>Matt Kelly</b>
+                                                                    | <b>Chase Kiefiuk</b>
+                                                                    | <b>Art Min &amp; Family</b>
+                                                                    | <b>Curran Muhlberger</b>
+                                                                    | <b>Rusty Rockstroh</b>
+                                                                    | <b>Yang Shan</b>
+                                                                    | <b>Erik Slack</b>
+
+
+Open Source Software                                                            | <b>Aether.Physics2D</b><color r="255" g="255" b="255" a="127">, Copyright (c) Kastellanos Nikolaos, Ian Qvist, Erin Catto</color>
+<color r="255" g="255" b="255" a="127">Please see the LICENSES.txt file</color> | <b>IronPython</b><color r="255" g="255" b="255" a="127">, Copyright (c) Microsoft Corporation</color>
+<color r="255" g="255" b="255" a="127">for licenses governing the</color>       | <b>NAudio</b><color r="255" g="255" b="255" a="127">, Copyright (c) 2020 Mark Heath</color>
+<color r="255" g="255" b="255" a="127">contained open source software.</color>  | <b>NVorbis</b><color r="255" g="255" b="255" a="127">, Copyright (c) 2020 Andrew Ward</color>
+                                                                                | <b>Wintellect's Power Collections for .NET</b>
+                                                                                | <b>SharpDX</b><color r="255" g="255" b="255" a="127">, Copyright (c) 2010-2014 SharpDX - Alexandre Mutel</color>
+                                                                                | <b>GameAnalytics SDK for Mono / .Net 4.5</b><color r="255" g="255" b="255" a="127">, Copyright (c) 2016 Game Analytics</color>
+                                                                                | <b>NLog</b><color r="255" g="255" b="255" a="127">, Copyright (c) 2004-2019 Jaroslaw Kowalski, Kim Christensen, Julian Verdurmen</color>
+                                                                                | <b>"Play" TrueType Font</b><color r="255" g="255" b="255" a="127">, Copyright (c) 2011, Jonas Hecksher, Playtypes, e-types AS</color>
+                                                                                | <b>FreeImage</b>
+                                                                                | <b>TeximpNet</b><color r="255" g="255" b="255" a="127">, Copyright (c) 2016-2017 TeximpNet - Nicholas Woodfield</color>
+                                                                                | <b>ImageSharp</b><color r="255" g="255" b="255" a="127">, Copyright (c) Six Labors</color>
+                                                                                | <b>NVIDIA Texture Tools</b><color r="255" g="255" b="255" a="127">, Copyright (c) 2009-2016 Ignacio Castano, 2007-2009 NVIDIA Corporation</color>
+                                                                                | <b>MathParser.org-mXparser</b><color r="255" g="255" b="255" a="127">, Copyright (c) 2017 Mariusz Gromada</color>
+                                                                                | <b>Crc32.NET</b><color r="255" g="255" b="255" a="127">, Copyright (c) 2016 force</color>
+                                                                                | <b>Steamworks.NET</b><color r="255" g="255" b="255" a="127">, Copyright (c) 2013-2022 Riley Labrecque</color>
+                                                                                | <b>ImeSharp</b><color r="255" g="255" b="255" a="127">, Copyright (c) 2020 ryancheung</color>

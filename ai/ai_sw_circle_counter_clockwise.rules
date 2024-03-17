@@ -1,0 +1,43 @@
+
+NameKey = "AI/CircleCounterClockwiseAI"
+//Description: Orbits the target counter-clockwise, adjusting its attack angle for strategic positioning and continuous fire from a calculated direction.
+UpdateInterval = 0.5
+IsAvailableInCreativeMode = true
+IsAvailableInMultiplayer = true
+
+
+StrategyModules
+[
+	{
+		Type = FollowFleetLeader
+	}
+	{
+		Type = AggroEnemies
+		TargetSwitchThresholdFactor = 1 
+		TargetDistanceFactorExponent = 1
+		TargetFirepowerCacheTime = 10
+		AcquireAggroWithinRadar = true
+		ReleaseAggroWithinRadar = true
+	}
+]
+
+TacticsModules
+[
+	{
+		Type = RandomAttackAngle
+		AttackAngleChangeInterval = 1
+		AttackAngleChangeDelta = -90d
+		CoordinateFlanking = false
+		UseSavedAboveHealth = 50%
+	}
+]
+
+TargetingModules
+[
+	{
+		Type = ValueTargeter
+		TargetChecksPerUpdate = 10
+		TargetSwitchThresholdFactor = 20
+		TargetValueFactorPerPenetrationDist = .75
+	}
+]

@@ -1,14 +1,24 @@
 Part : &<../tie_minigun/tie_minigun.rules>/Part
 {
 	//IDs
+	ID = SW.fighter_long_tie_minigun
+	OtherIDs = [] //Clears the array
 
 	//StringKeys
+	NameKey = "Parts/tieMinigunLong"
+	IconNameKey = "Parts/tieMinigunLongIcon"
+	DescriptionKey = "Parts/tieLMinigunLongDesc"
 	
 	//Groups&Categories
+	EditorGroup = "WeaponsEnergy"
 	
 	//Resources&Size&Health
 	
 	//Rects
+	//ProhibitRects
+	//[
+	//	[fighter, [0, -3, 1, 3]]
+	//]
 	
 	//Selections
 	
@@ -19,18 +29,6 @@ Part : &<../tie_minigun/tie_minigun.rules>/Part
 	//Doors&Etc
 	
 	//Editor
-	
-	//Components
-	NameKey = "Parts/tieMinigunLong"
-	IconNameKey = "Parts/tieMinigunLongIcon"
-	ID = SW.fighter_long_tie_minigun
-	OtherIDs = [] //Clears the array
-	EditorGroup = "WeaponsEnergy"
-	DescriptionKey = "Parts/tieLMinigunLongDesc"
-	ProhibitRects
-	[
-		[fighter, [0, -3, 1, 3]]
-	]
 	EditorIcon
 	{
 		Texture
@@ -40,6 +38,8 @@ Part : &<../tie_minigun/tie_minigun.rules>/Part
 		}
 		Size = [16, 64]
 	}
+	
+	//Components
 	Components : ^/0/Components
 	{
 		Graphics

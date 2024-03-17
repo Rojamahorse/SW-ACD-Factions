@@ -224,6 +224,22 @@ Advanced = "Holocron Settings"
 AdvancedInfo = "Tweak the fabric of the cosmos here! These options let you reshape the game far from its original destiny. Tinker at your own risk, but remember, the Force is more fun when it's a bit unpredictable."
 }
 
+CrewScarcity
+{
+	Max = "Convergenza Galattica"
+	MaxTip = "Con ben <yellow>3000</yellow> membri dell'equipaggio disponibili per l'assunzione, è come ospitare un vertice intergalattico sulla tua astronave. Perfetto per i comandanti che godono di un equipaggio vivace e diversificato, assicurando che nessun angolo della galassia rimanga inesplorato."
+	SWPlentifulPlus = "Assemblea Jedi"
+	SWPlentifulPlusTip = "Questo livello offre un <good>100%</good> in più di equipaggio, fino a un stellare <yellow>3000</yellow>. È come radunare un conclave Jedi: tante mani abili per ogni compito. Ideale per i capitani che vogliono la forza di un piccolo esercito, meno le spade laser."
+	SWPlentiful = "Congregazione della Cantina"
+	SWPlentifulTip = "Con un <good>66%</good> in più di equipaggio, fino a <yellow>2500</yellow>, è come una notte movimentata nella Cantina di Mos Eisley. Un gruppo diversificato e vivace, pronto ad affrontare ogni sfida nella galassia. Ottimo per chi apprezza un equipaggio vario come i frequentatori di una taverna di Tatooine."
+	Plentiful = "Raduno Ribelle"
+	PlentifulTip = "Con un <good>33%</good> in più di equipaggio, raggiungendo fino a <yellow>2000</yellow>, questo livello riflette un raduno dell'Alleanza Ribelle. Perfetto per i capitani che desiderano un equipaggio robusto, ogni membro è tanto vivace e dedicato quanto un combattente per la libertà di Yavin IV."
+	Standard = "Standard"
+	StandardTip = "Il numero standard di membri dell'equipaggio sarà disponibile per l'assunzione a seconda della fama del giocatore, fino a <yellow>1500</yellow>."
+	Scarce = "Equipaggio del Contrabbandiere"
+	ScarceTip = "Offrendo un <bad>33%</bad> in meno di equipaggio, limitato a <yellow>1000</yellow>, questo livello è come assemblare un equipaggio compatto di contrabbandieri. Ogni membro è cruciale come un copilota nella Corsa di Kessel, rendendo ogni viaggio un'avventura emozionante e strategica."
+}
+
 CombatDifficulty
 {
   NoDeath = "Pacifist (Invulnerable)"

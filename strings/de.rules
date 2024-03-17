@@ -66,6 +66,7 @@ StatCategories
     SWRG9Shot = "Kleiner <red>roter</red> RG-9 Salvenkanonenschuss"
     SWBurstLaser = "Kleiner <red>roter</red> Salvenlaserschuss"
     SWPDBeamLaser = "Kleiner <yellow>gelber</yellow> PD-Strahllaserschuss"
+    SWSlug = "Kleiner <white>Metall</white>-Massentreiber-Geschoss-Schuss"
 }
 
 
@@ -85,6 +86,11 @@ SWFactionsRebelAllianceTip = "Eine Sammlung von Schiffen der Rebellen-Allianz de
 SWFactionsRepublic = "SW Fraktionen: Republik"
 SWFactionsRepublicTip = "Eine Sammlung von Republik Schiffen der Star Wars Fraktionen"
 
+SWFactionsStarters = "SW Fraktionen: Starter-Schiffe"
+SWFactionsStartersTip = "Eine Sammlung von Star Wars Fraktionen Starter-Schiffen"
+
+SWCommunitySubmissions = "SW Community-Einsendungen"
+SWCommunitySubmissionsTip = "Eine Sammlung von Star Wars Schiff-Einsendungen aus der Community"
 
 DecalGroups
 {
@@ -117,7 +123,12 @@ StarterShips
 
 Doodads
 {
+    POIEliminateDefectors = "Standort der Abtrünnigen Flotte"
+    POIEliminateRenegadeLeader = "Standort des Renegatenführers"
+    POIDistressSignalUndiscovered = "Standort des Notsignals"
+    POIDistressSignal = "Notlage eines Würdenträgers"
 }
+
 
 Resource
 {
@@ -215,6 +226,22 @@ PlayerTeamFmt = "Staffelführer {0}"
 SharedPlayerTeamFmt = "Verbündete Staffel {0}"
 Advanced = "Holocron-Einstellungen"
 AdvancedInfo = "Passe hier das Gewebe des Kosmos an! Diese Optionen ermöglichen es dir, das Spiel weit von seinem ursprünglichen Schicksal zu verändern. Experimentiere auf eigene Gefahr, aber denke daran, die Macht macht mehr Spaß, wenn sie ein wenig unberechenbar ist."
+}
+
+CrewScarcity
+{
+	Max = "Galaktische Konvergenz"
+	MaxTip = "Mit gewaltigen <yellow>3000</yellow> verfügbaren Crewmitgliedern zum Anwerben, ist es wie ein intergalaktisches Gipfeltreffen auf Ihrem Raumschiff. Perfekt für Kommandanten, die eine lebhafte, vielfältige Crew genießen und sicherstellen wollen, dass kein Eck der Galaxie unerforscht bleibt."
+	SWPlentifulPlus = "Jedi-Versammlung"
+	SWPlentifulPlusTip = "Dieses Level bietet <good>100%</good> mehr Crew, bis zu einem stellaren <yellow>3000</yellow>. Es ist wie das Versammeln eines Jedi-Konklaves - viele geschickte Hände für jede Aufgabe. Ideal für Kapitäne, die die Stärke einer kleinen Armee wollen, minus die Lichtschwerter."
+	SWPlentiful = "Kantinen-Versammlung"
+	SWPlentifulTip = "Mit <good>66%</good> mehr Crew, bis zu <yellow>2500</yellow>, ähnelt es einer belebten Nacht in der Mos Eisley-Kantine. Eine vielfältige und lebhafte Truppe, bereit, jede Herausforderung in der Galaxie zu meistern. Großartig für diejenigen, die eine Crew schätzen, die so vielfältig ist wie die Gäste einer Tatooiner Taverne."
+	Plentiful = "Rebellen-Treffen"
+	PlentifulTip = "Mit <good>33%</good> mehr Crew, bis zu <yellow>2000</yellow>, spiegelt dieses Level eine Versammlung der Rebellenallianz wider. Perfekt für Kapitäne, die eine robuste Crew bevorzugen, deren jedes Mitglied so lebhaft und engagiert ist wie ein Freiheitskämpfer von Yavin IV."
+	Standard = "Standard"
+	StandardTip = "Die Standardanzahl an Crewmitgliedern wird zum Anwerben verfügbar sein, abhängig vom Ruhm des Spielers, bis zu <yellow>1500</yellow>."
+	Scarce = "Schmuggler-Crew"
+	ScarceTip = "Bietet <bad>33%</bad> weniger Crew, begrenzt auf <yellow>1000</yellow>, dieses Level ist wie das Zusammenstellen einer eng verbundenen Schmuggler-Crew. Jedes Mitglied ist so entscheidend wie ein Co-Pilot beim Kessel-Flug, wodurch jede Reise zu einem aufregenden und strategischen Abenteuer wird."
 }
 
 
@@ -317,16 +344,17 @@ FameTitles
 	"\"Lebende Legende\""
 ]
 
+
 ReputationTitles
-[
-	"Sarlacc-Snack"
-	"Ziel des Todessterns"
-	"Bantha-Poodoo"
-	"Leichtes Ärgernis"
-	"HoloNet-Bekanntschaft"
-	"Cantina-Kumpel"
-	"Sabacc-Partner"
-	"Co-Pilot-Material"
+[   
+	"Todesstern-Ziel"    
+	"Sarlacc-Snack"    
+	"Bantha-Poodoo"    
+	"Leichtes Ärgernis"    
+	"HoloNet-Bekanntschaft"    
+	"Kantinen-Kumpel"    
+	"Sabacc-Partner"    
+	"Co-Pilot-Material"    
 	"Wookiee-Lebensschuld"
 ]
 
@@ -360,6 +388,25 @@ Missions
 	VisitSystemDesc = "Ein renommierter Astrophysiker bittet um Daten über die Sternenaktivität im {mission_location}-System."
 	Debug = "Debug-Mission"
 	DebugDesc = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales rutrum eros. Fusce non eros a lacus luctus auctor sit amet at mi. In ac fermentum est. Nam viverra lectus eu turpis cursus vestibulum."
+	ClearRogueElements = "Rogue-Flotte Neutralisieren"
+	ClearRogueElementsDesc = "Ein Geschwader, das ehemals unter dem Kommando von \"{faction_name}\" stand, ist abtrünnig geworden und sucht derzeit Zuflucht bei einer lokalen Flotte von Gesetzlosen in einem dichten Asteroidenfeld im {mission_location} System. Bestehend aus verschiedenen Klassen von Schiffen, nutzt dieses abtrünnige Geschwader das komplexe Terrain des Feldes, um Überraschungsangriffe zu starten, die lokale Stabilität zu stören und eine erhebliche Bedrohung darzustellen. {faction_name} sucht dringend einen geschickten Piloten, um das Asteroidenfeld zu navigieren, dieses Geschwader zu neutralisieren und die Ordnung im Sektor wiederherzustellen. Eine beträchtliche Prämie von {money} wird jedem versprochen, der diese schwer fassbare Bedrohung erfolgreich ausschalten kann.\n\n"\
+		"<bad>Warnung: Dies ist eine gefährliche Mission und sollte nur von erfahrenen und qualifizierten Piloten versucht werden.</bad>"
+	DefeatRenegadeLeader = "Beseitige \"{target_ship}\", den tödlichen Renegatenführer"
+	DefeatRenegadeLeaderDesc = "Ein berüchtigter Renegatenführer namens \"{target_ship}\" verursacht Chaos im {mission_location} System. Kommandierend über ein Schiff mit fortschrittlicher Technologie und erheblicher Feuerkraft stellt dieses hochwertige Ziel eine große Bedrohung für die regionale Stabilität dar. {faction_name} hat eine beträchtliche Prämie von {money} für jeden geschickten Piloten autorisiert, der in der Lage ist, diese Bedrohung zu konfrontieren und zu neutralisieren. Geheimdienstberichte heben die strategische Bedeutung dieser Mission hervor und deuten darauf hin, dass die Beseitigung von '{target_ship}' einen bedeutenden Schlag gegen ihre schändlichen Aktivitäten darstellen könnte.\n\n"\
+		"<bad>Warnung: Dies ist eine sehr gefährliche Mission und sollte nur von erfahrenen und qualifizierten Piloten versucht werden.</bad>"
+	RescueVIP = "Rette den Würdenträger"
+	RescueVIPDesc = "Ein dringender Notruf wurde von einem behinderten zivilen Schiff abgesetzt, das von Kopfgeldjägern belagert wird. An Bord des Schiffes befindet sich ein Würdenträger von großer Bedeutung für {faction_name}. Sofortige Hilfe ist erforderlich, um die Angreifer abzuwehren, damit das Schiff Reparaturen an seinen Hyperantrieben durchführen und fliehen kann. {faction_name} bietet eine beträchtliche Belohnung von {money} für die erfolgreiche Verteidigung und sichere Extraktion des Würdenträgers. Schnelles und entschlossenes Handeln ist entscheidend, um eine Verschlimmerung der Situation zu verhindern."
+}
+Objectives
+{
+	EliminateDefectors = "Neutralisiere die Rogue-Flotte"
+	EliminateRenegadeLeader = "Eliminiere {0}, den Renegatenführer"
+	SavetheVIP = "Kopfgeldjäger ausschalten"
+}
+AI
+{
+	ImperialFleetCommandAI = "K.I. SWACD - Kampf"
+	CivFleetCommandAI =  "K.I. SWACD - Zivil"
 }
 
 

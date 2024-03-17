@@ -14,8 +14,8 @@ Ships
 	:~{ File="C-9979 Landing Craft Normal.ship.png"; 									Tier=9;  Tags : ~/Tags [trade] }
 	:~{ File="Hardcell-Class Interstellar Transport.ship.png";							Tier=11;  Tags : ~/Tags [trade] }
 	:~{ File="Pelta-Class Frigate (CIS).ship.png";    									Tier=7;  Tags : ~/Tags [trade] }
-	:~{ File="Munificent-Class Star Frigate (InterGalactic Banking Clan).ship.png";    	Tier=14;  Tags : ~/Tags [trade] }
-	:~{ File="Munificent-Class Star Frigate.ship.png";    								Tier=10;  Tags : ~/Tags [trade] }
+	:~{ File="CIS CIV Munificent-Class Star Frigate (InterGalactic Banking Clan).ship.png";    	Tier=14;  Tags : ~/Tags [trade]; /*OtherIDs=["Munificent-Class Star Frigate (InterGalactic Banking Clan)"];*/ }
+	:~{ File="CIS CIV Munificent-Class Star Frigate.ship.png";    								Tier=10;  Tags : ~/Tags [trade]; /*OtherIDs=["Munificent-Class Star Frigate"];*/ }
 //	:~{ File="Munificent-Class Star Frigate 2.ship.png";    							Tier=11;  Tags : ~/Tags [trade] }
 //	:~{ File="Lukrehulk-Class Droid Control Ship.ship.png";     						Tier=13;  Tags : ~/Tags [trade] }
 	:~{ File="CIS Package Distributor.ship.png"; 										Tier=3;  Tags : ~/Tags [trade] }

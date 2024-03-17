@@ -1,7 +1,9 @@
 ID = SW.fighter_xwing_shot
-Range = 350
-IdealRange = 185
+Range = 425
+IdealRange = [200 - 380]
 Speed = 480
+//HitEffectsScaleOverRange = [1, 1 - (&../Range) / 1000]
+
 
 Components
 {
@@ -27,6 +29,7 @@ Components
 	Hit
 	{
 		Type = PenetratingHit
+		FriendlyShipLowCollisions = true
 		SourceShipLowCollisions = false
 		FactorEffectsWith = Targetable
 

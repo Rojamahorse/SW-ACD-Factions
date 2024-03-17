@@ -35,13 +35,14 @@ Factions
 	]
 	
 	RemainderFaction = SW.Black_Sun
-	RemainderFactionThreshold = 1.5
+	TerritoryRatio = 5%
+	RemainderFactionThreshold = 1
 	MinRemainderFactionStrength = 5%
 	AvoidIterations = 10
 }
 
 MaxTier = 18
-TierSpread = 2
+TierSpread = 1
 
 FactionTiers
 {
@@ -62,8 +63,8 @@ FactionTiers
 
 		{
 			FactionID =  SW.Black_Sun
-			TierRangeLow = 1 // [1, (&~/MaxTier) - (&~/TierSpread)]
-			TierRangeHigh = 1 // [1 + (&~/TierSpread), (&~/MaxTier)]
+			TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
+			TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
 		}
 	]
 
@@ -73,9 +74,9 @@ StartingNodePicker
 {
 	Type = StartingNodePicker
 	AllowedFactions = [SW.CIS, SW.Republic] 
-	MinConnections = 2
-	CandidatesFarthestFromFactions = [5, [SW.Black_Sun]]
-	CandidatesClosestToFactions = [1, [SW.Republic, SW.CIS]]
+	MinConnections = 1
+	CandidatesFarthestFromFactions = [3, [SW.Black_Sun]]
+	//CandidatesClosestToFactions = [1, [SW.Republic, SW.CIS]]
 	SetTierRangeTo = [1, 1 + (&~/TierSpread)]
 }
 

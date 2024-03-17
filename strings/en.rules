@@ -115,7 +115,7 @@ StatCategories
 	SWRG9Shot = "Small <red>Red</red> RG-9 Burst Cannon Shot"
 	SWBurstLaser = "Small <red>Red</red> Burst Laser Shot"
 	SWPDBeamLaser = "Small <yellow>Yellow</yellow> PD Beam Laser Shot"
-
+	SWSlug = "Small <white>Metal</white> Massdriver Slug Shot"
 }
 
 
@@ -134,10 +134,15 @@ SWFactionsRebelAllianceTip = "A collection of Star Wars Factions Rebel Alliance 
 SWFactionsRepublic = "SW Factions: Republic"
 SWFactionsRepublicTip = "A collection of Star Wars Factions Republic ships"
 
+SWFactionsStarters = "SW Factions: Starter Ships"
+SWFactionsStartersTip = "A collection of Star Wars Factions Starter Ships"
+
+SWCommunitySubmissions = "SW Community Submissions"
+SWCommunitySubmissionsTip = "A collection of Star Wars Ship Submissions from the community"
 
 DecalGroups
 {
-	sw_decals = "Star Wars Faction Decals"
+	//sw_decals = "Star Wars Faction Decals"
 	sw_adv_shapes = "Advanced Gradients, Shadows, & Shapes"
 }
 
@@ -164,7 +169,12 @@ StarterShips
 
 Doodads
 {
+	POIEliminateDefectors = "Rogue Fleet Location"
+	POIEliminateRenegadeLeader = "Renegade Leader Location"
+	POIDistressSignalUndiscovered = "Distress Signal Location"
+	POIDistressSignal = "Dignitary in Distress"
 }
+
 
 Resource
 {
@@ -261,6 +271,22 @@ PlayerTeamFmt = "Squad Leader {0}"
 SharedPlayerTeamFmt = "Allied Squadron {0}"
 Advanced = "Holocron Settings"
 AdvancedInfo = "Tweak the fabric of the cosmos here! These options let you reshape the game far from its original destiny. Tinker at your own risk, but remember, the Force is more fun when it's a bit unpredictable."
+}
+
+CrewScarcity
+{
+	Max = "Galactic Convergence"
+	MaxTip = "With a whopping <yellow>3000</yellow> crew available for hire, it's like hosting an intergalactic summit on your starship. Perfect for commanders who enjoy a bustling, diverse crew, ensuring no corner of the galaxy feels unexplored."
+	SWPlentifulPlus = "Jedi Assembly"
+	SWPlentifulPlusTip = "This level offers <good>100%</good> more crew, up to a stellar <yellow>3000</yellow>. It's like rallying a Jedi conclave - plenty of skilled hands for every task. Ideal for captains who want the strength of a small army, minus the lightsabers."
+	SWPlentiful = "Cantina Congregation"
+	SWPlentifulTip = "Featuring <good>66%</good> more crew, up to <yellow>2500</yellow>, it's akin to a busy night at Mos Eisley Cantina. A diverse and lively bunch, ready to tackle any challenge in the galaxy. Great for those who appreciate a crew as varied as the patrons of a Tatooine tavern."
+	Plentiful = "Rebel Gathering"
+	PlentifulTip = "With <good>33%</good> more crew, reaching up to <yellow>2000</yellow>, this level mirrors a Rebel Alliance rally. It's perfect for captains who desire a robust crew, each member as spirited and dedicated as a freedom fighter from Yavin IV"
+	Standard = "Standard"
+	StandardTip = "The standard number of crew will be available for hire depending on the player's fame, up to <yellow>1500</yellow>."
+	Scarce = "Smuggler's Crew"
+	ScarceTip = "Offering <bad>33%</bad> fewer crew, capped at <yellow>1000</yellow>, this level is like assembling a tight-knit smuggler's crew. Each member is as crucial as a co-pilot in a Kessel Run, making every journey a thrilling and strategic adventure."
 }
 
 CombatDifficulty
@@ -361,8 +387,8 @@ FameTitles
 
 ReputationTitles
 [
-	"Sarlacc Snack"
 	"Death Star Target"
+	"Sarlacc Snack"
 	"Bantha Poodoo"
 	"Mild Irritant"
 	"HoloNet Acquaintance"
@@ -371,6 +397,7 @@ ReputationTitles
 	"Co-Pilot Material"
 	"Wookiee Lifedebt"
 ]
+
 
 Missions
 {
@@ -401,7 +428,36 @@ Missions
 	VisitSystemDesc = "A renowned astrophysicist is requesting data on stellar activity in the {mission_location} System."
 	Debug = "Debug Mission"
 	DebugDesc = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales rutrum eros. Fusce non eros a lacus luctus auctor sit amet at mi. In ac fermentum est. Nam viverra lectus eu turpis cursus vestibulum."
+	ClearRogueElements = "Neutralize Rogue Fleet"
+	ClearRogueElementsDesc =  "A squadron formerly under the command of the \"{faction_name}\" has gone rogue and is currently taking refuge with a local fleet of Outlaws in a dense asteroid field in the {mission_location} System. Composed of various class vessels, this rogue squadron is exploiting the field's complex terrain to launch surprise attacks, disrupting local stability and posing a significant threat. The {faction_name} is urgently seeking a skilled pilot to navigate the asteroid field, neutralize this squadron, and restore order in the sector. A substantial bounty of {money} is promised to anyone who can successfully eliminate this elusive threat.\n\n"\
+		"<bad>Warning: This is a dangerous mission, and should only be attempted by skilled pilots with the necessary experience and skill.</bad>"
+	DefeatRenegadeLeader = "Eliminate \"{target_ship}\", the Deadly Renegade Leader"
+	DefeatRenegadeLeaderDesc = "A notorious renegade leader known as \"{target_ship}\" is wreaking havoc in the {mission_location} System. Commanding a vessel equipped with advanced technology and substantial firepower, this high value target is a major threat to regional stability. The {faction_name} has authorized a substantial bounty of {money} for any skilled pilot capable of confronting and neutralizing this threat. Intelligence reports highlight the strategic importance of this mission, suggesting that eliminating '{target_ship}' could deliver a significant blow to their nefarious activities.\n\n"\
+		"<bad>Warning: This is a very dangerous mission, and should only be attempted by skilled pilots with the necessary experience and skill.</bad>"
+	RescueVIP = "Rescue the Dignitary"
+	RescueVIPDesc = "An urgent distress call has been issued from a disabled civilian vessel under siege by bounty hunters. Aboard the ship is a dignitary of great importance to the {faction_name}. Immediate assistance is required to fend off the attackers, allowing the vessel to conduct repairs to their hyperdrives and make an escape. The {faction_name} is offering a substantial reward of {money} for the successful defense and safe extraction of the dignitary. Swift and decisive action is crucial to prevent the situation from worsening."
 }
+Objectives
+{
+	EliminateDefectors = "Neutralize the Rogue Fleet"
+	EliminateRenegadeLeader = "Eliminate {0}, the Renegade Leader"
+	SavetheVIP = "Eliminate Bounty Hunters"
+}
+AI
+{
+	ImperialFleetCommandAI = "A.I. SWACD - Standard"
+	CivFleetCommandAI =  "A.I. SWACD - Civilian"
+	AgileFlankerAI =  "A.I. SWACD - Agile Flanker"
+	AssaultAdvancerAI =  "A.I. SWACD - Assault Advancer"
+	BroadsideRotatorAI =  "A.I. SWACD - Broadsider"
+	CircleClockwiseAI =  "A.I. SWACD - Clockwise Circler"
+	CircleCounterClockwiseAI =  "A.I. SWACD - Counter Clockwise Circler"
+	BomberAI =  "A.I. SWACD - Bomber"
+	ReconAI =  "A.I. SWACD - Reconnaissance Scout"
+	HitAndFadeAI =  "A.I. SWACD - Hit and Fader"
+	PositionalDefenseAI =  "A.I. SWACD - Positional Defender"
+}
+
 
 Lore
 {

@@ -1,7 +1,8 @@
 ID = SW.r9_shot
-Range = 300
-IdealRange = 185
+Range = 375
+IdealRange = [50 - 325]
 Speed = 500
+//HitEffectsScaleOverRange = [1, 1 - (&../Range) / 1000]
 
 Components
 {
@@ -27,6 +28,7 @@ Components
 	Hit
 	{
 		Type = PenetratingHit
+		FriendlyShipLowCollisions = true
 		SourceShipLowCollisions = false
 		FactorEffectsWith = Targetable
 

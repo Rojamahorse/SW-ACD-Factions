@@ -57,6 +57,14 @@ Parts
     PDTurretTinyDesc = "La tourelle de défense pointue double laser StarGuard, fabriquée par <cyan>Corellian ArmsTech</cyan>, déchaîne une furie de double laser. Cette version miniaturisée et entièrement automatisée de la tourelle double laser StarGuard est optimisée pour les espaces restreints. Elle est très efficace pour cibler <orange>les balles, les mines et les missiles</orange>, mais est inefficace contre les lasers et les tirs ioniques."
 }
 
+EditorGroups
+{
+}
+
+Stats
+{
+
+}
 
 StatCategories
 {
@@ -66,6 +74,7 @@ StatCategories
     SWRG9Shot = "Tir de Canon à Rafales RG-9 <red>Rouge</red> Petit"
     SWBurstLaser = "Tir de Laser à Rafales <red>Rouge</red> Petit"
     SWPDBeamLaser = "Tir de Laser à Faisceau PD <yellow>Jaune</yellow> Petit"
+	SWSlug = "Tir de Projectile Massif <white>Métallique</white> Petit"
 }
 
 SWFactionsBlacksun = "SW Factions : Soleil Noir"
@@ -82,6 +91,12 @@ SWFactionsRebelAllianceTip = "Une collection de vaisseaux de l'Alliance Rebelle 
 
 SWFactionsRepublic = "SW Factions : République"
 SWFactionsRepublicTip = "Une collection de vaisseaux de la République des Factions Star Wars"
+
+SWFactionsStarters = "SW Factions : Vaisseaux de Départ"
+SWFactionsStartersTip = "Une collection de Vaisseaux de Départ des Factions de Star Wars"
+
+SWCommunitySubmissions = "Contributions de la Communauté SW"
+SWCommunitySubmissionsTip = "Une collection de Soumissions de Vaisseaux Star Wars par la communauté"
 
 
 DecalGroups
@@ -114,7 +129,12 @@ StarterShips
 
 Doodads
 {
+    POIEliminateDefectors = "Emplacement de la Flotte Défectueuse"
+    POIEliminateRenegadeLeader = "Emplacement du Leader Renégat"
+    POIDistressSignalUndiscovered = "Emplacement du Signal de Détresse"
+    POIDistressSignal = "Dignitaire en Détresse"
 }
+
 
 Resource
 {
@@ -214,6 +234,22 @@ PlayerTeamFmt = "Chef d'Escadron {0}"
 SharedPlayerTeamFmt = "Escadron Allié {0}"
 Advanced = "Paramètres Holocron"
 AdvancedInfo = "Modifiez ici le tissu du cosmos ! Ces options vous permettent de remodeler le jeu loin de son destin original. Bricolez à vos risques et périls, mais rappelez-vous, la Force est plus amusante lorsqu'elle est un peu imprévisible."
+}
+
+CrewScarcity
+{
+	Max = "Convergence Galactique"
+	MaxTip = "Avec un énorme <yellow>3000</yellow> membres d'équipage disponibles à l'embauche, c'est comme organiser un sommet intergalactique sur votre vaisseau spatial. Parfait pour les commandants qui apprécient une équipe animée et diversifiée, garantissant qu'aucun coin de la galaxie ne reste inexploré."
+	SWPlentifulPlus = "Assemblée Jedi"
+	SWPlentifulPlusTip = "Ce niveau offre <good>100%</good> de membres d'équipage en plus, jusqu'à un stellaire <yellow>3000</yellow>. C'est comme rassembler un conclave Jedi - beaucoup de mains habiles pour chaque tâche. Idéal pour les capitaines qui veulent la force d'une petite armée, moins les sabres laser."
+	SWPlentiful = "Congrégation de la Cantina"
+	SWPlentifulTip = "Avec <good>66%</good> de membres d'équipage en plus, jusqu'à <yellow>2500</yellow>, c'est semblable à une nuit animée à la Cantina de Mos Eisley. Un groupe diversifié et dynamique, prêt à relever tout défi dans la galaxie. Super pour ceux qui apprécient une équipe aussi variée que les clients d'une taverne de Tatooine."
+	Plentiful = "Rassemblement Rebelle"
+	PlentifulTip = "Avec <good>33%</good> de membres d'équipage en plus, atteignant jusqu'à <yellow>2000</yellow>, ce niveau reflète un rassemblement de l'Alliance Rebelle. C'est parfait pour les capitaines qui désirent une équipe robuste, chaque membre aussi énergique et dévoué qu'un combattant de la liberté de Yavin IV."
+	Standard = "Standard"
+	StandardTip = "Le nombre standard de membres d'équipage sera disponible à l'embauche en fonction de la renommée du joueur, jusqu'à <yellow>1500</yellow>."
+	Scarce = "Équipage de Contrebandier"
+	ScarceTip = "Offrant <bad>33%</bad> de membres d'équipage en moins, plafonné à <yellow>1000</yellow>, ce niveau est comme assembler une équipe soudée de contrebandiers. Chaque membre est aussi crucial qu'un copilote dans le Run de Kessel, rendant chaque voyage une aventure passionnante et stratégique."
 }
 
 
@@ -316,8 +352,8 @@ FameTitles
 
 ReputationTitles
 [
-	"En-cas de Sarlacc"
 	"Cible de l'Étoile de la Mort"
+	"En-cas de Sarlacc"
 	"Poodoo de Bantha"
 	"Irritant Léger"
 	"Connaissance du HoloNet"
@@ -356,6 +392,25 @@ Missions
 	VisitSystemDesc = "Un astrophysicien renommé demande des données sur l'activité stellaire dans le Système {mission_location}."
 	Debug = "Mission de Débogage"
 	DebugDesc = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales rutrum eros. Fusce non eros a lacus luctus auctor sit amet at mi. In ac fermentum est. Nam viverra lectus eu turpis cursus vestibulum."
+	ClearRogueElements = "Neutraliser la Flotte Renégate"
+	ClearRogueElementsDesc = "Un escadron précédemment sous le commandement de \"{faction_name}\" est devenu renégat et se réfugie actuellement avec une flotte locale d'Outlaws dans un champ d'astéroïdes dense dans le Système {mission_location}. Composé de divers types de vaisseaux, cet escadron renégat exploite le terrain complexe du champ pour lancer des attaques surprises, perturbant la stabilité locale et représentant une menace significative. {faction_name} recherche de toute urgence un pilote compétent pour naviguer dans le champ d'astéroïdes, neutraliser cet escadron et restaurer l'ordre dans le secteur. Une récompense généreuse de {money} est promise à quiconque peut éliminer cette menace insaisissable.\n\n"\
+		"<bad>Attention : C'est une mission dangereuse et ne devrait être tentée que par des pilotes compétents ayant l'expérience et les compétences nécessaires.</bad>"
+	DefeatRenegadeLeader = "Éliminer \"{target_ship}\", le Leader Renégat Mortel"
+	DefeatRenegadeLeaderDesc = "Un leader renégat notoire connu sous le nom de \"{target_ship}\" sème le chaos dans le Système {mission_location}. Commandant un vaisseau équipé de technologies avancées et d'une puissance de feu considérable, cette cible de haute valeur est une grande menace pour la stabilité régionale. {faction_name} a autorisé une récompense généreuse de {money} pour tout pilote compétent capable de confronter et de neutraliser cette menace. Les rapports de renseignements soulignent l'importance stratégique de cette mission, suggérant que l'élimination de '{target_ship}' pourrait porter un coup significatif à leurs activités néfastes.\n\n"\
+		"<bad>Attention : C'est une mission très dangereuse et ne devrait être tentée que par des pilotes compétents ayant l'expérience et les compétences nécessaires.</bad>"
+	RescueVIP = "Sauver le Dignitaire"
+	RescueVIPDesc = "Un appel de détresse urgent a été émis par un navire civil désactivé assiégé par des chasseurs de primes. À bord du navire se trouve un dignitaire d'une grande importance pour {faction_name}. Une assistance immédiate est requise pour repousser les attaquants, permettant au navire d'effectuer des réparations sur ses hyperpropulseurs et de s'échapper. {faction_name} offre une récompense substantielle de {money} pour la défense réussie et l'extraction en toute sécurité du dignitaire. Une action rapide et décisive est cruciale pour empêcher la situation de s'aggraver."
+}
+Objectives
+{
+	EliminateDefectors = "Neutraliser la Flotte Renégate"
+	EliminateRenegadeLeader = "Éliminer {0}, le Leader Renégat"
+	SavetheVIP = "Éliminer les Chasseurs de Primes"
+}
+AI
+{
+	ImperialFleetCommandAI = "I.A. SWACD - Combat"
+	CivFleetCommandAI =  "I.A. SWACD - Civil"
 }
 
 Lore

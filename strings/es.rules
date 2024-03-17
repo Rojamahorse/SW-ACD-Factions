@@ -58,6 +58,17 @@ Parts
 }
 
 
+
+EditorGroups
+{
+}
+
+Stats
+{
+
+}
+
+
 StatCategories
 {
     SWFighterWeapons = "Disparo de Cañón Láser <red>Rojo</red> Pequeño"
@@ -66,7 +77,9 @@ StatCategories
     SWRG9Shot = "Disparo de Cañón de Ráfaga RG-9 <red>Rojo</red> Pequeño"
     SWBurstLaser = "Disparo de Láser de Ráfaga <red>Rojo</red> Pequeño"
     SWPDBeamLaser = "Disparo de Láser de Haz PD <yellow>Amarillo</yellow> Pequeño"
+    SWSlug = "Disparo de Proyectil de Masas <white>Metálico</white> Pequeño"
 }
+
 
 SWFactionsBlacksun = "SW Facciones: Sol Negro"
 SWFactionsBlacksunTip = "Una colección de naves de Sol Negro de las Facciones de Star Wars"
@@ -83,6 +96,11 @@ SWFactionsRebelAllianceTip = "Una colección de naves de la Alianza Rebelde de l
 SWFactionsRepublic = "SW Facciones: República"
 SWFactionsRepublicTip = "Una colección de naves de la República de las Facciones de Star Wars"
 
+SWFactionsStarters = "SW Facciones: Naves Iniciales"
+SWFactionsStartersTip = "Una colección de Naves Iniciales de las Facciones de Star Wars"
+
+SWCommunitySubmissions = "Contribuciones de la Comunidad SW"
+SWCommunitySubmissionsTip = "Una colección de Envíos de Naves de Star Wars por la comunidad"
 
 DecalGroups
 {
@@ -115,7 +133,12 @@ StarterShips
 
 Doodads
 {
+    POIEliminateDefectors = "Ubicación de la Flota Desertora"
+    POIEliminateRenegadeLeader = "Ubicación del Líder Renegado"
+    POIDistressSignalUndiscovered = "Ubicación de la Señal de Socorro"
+    POIDistressSignal = "Dignatario en Apuros"
 }
+
 
 Resource
 {
@@ -213,6 +236,22 @@ PlayerTeamFmt = "Líder de Escuadrón {0}"
 SharedPlayerTeamFmt = "Escuadrón Aliado {0}"
 Advanced = "Ajustes del Holocrón"
 AdvancedInfo = "¡Retoca el tejido del cosmos aquí! Estas opciones te permiten remodelar el juego lejos de su destino original. Toca a tu propio riesgo, pero recuerda, la Fuerza es más divertida cuando es un poco impredecible."
+}
+
+CrewScarcity
+{
+	Max = "Convergencia Galáctica"
+	MaxTip = "Con la impresionante cantidad de <yellow>3000</yellow> tripulantes disponibles para contratar, es como organizar una cumbre intergaláctica en tu nave estelar. Perfecto para comandantes que disfrutan de una tripulación bulliciosa y diversa, asegurando que ningún rincón de la galaxia quede inexplorado."
+	SWPlentifulPlus = "Asamblea Jedi"
+	SWPlentifulPlusTip = "Este nivel ofrece un <good>100%</good> más de tripulantes, hasta un estelar <yellow>3000</yellow>. Es como convocar un cónclave Jedi: muchas manos hábiles para cada tarea. Ideal para capitanes que quieren la fuerza de un pequeño ejército, menos los sables de luz."
+	SWPlentiful = "Congregación de la Cantina"
+	SWPlentifulTip = "Con un <good>66%</good> más de tripulantes, hasta <yellow>2500</yellow>, se asemeja a una noche concurrida en la Cantina de Mos Eisley. Un grupo diverso y animado, listo para enfrentar cualquier desafío en la galaxia. Genial para aquellos que aprecian una tripulación tan variada como los clientes de una taberna de Tatooine."
+	Plentiful = "Reunión Rebelde"
+	PlentifulTip = "Con un <good>33%</good> más de tripulantes, alcanzando hasta <yellow>2000</yellow>, este nivel refleja una reunión de la Alianza Rebelde. Es perfecto para capitanes que desean una tripulación robusta, cada miembro tan animado y dedicado como un luchador por la libertad de Yavin IV."
+	Standard = "Estándar"
+	StandardTip = "La cantidad estándar de tripulantes estará disponible para contratar dependiendo de la fama del jugador, hasta <yellow>1500</yellow>."
+	Scarce = "Tripulación de Contrabandistas"
+	ScarceTip = "Ofreciendo un <bad>33%</bad> menos de tripulantes, con un máximo de <yellow>1000</yellow>, este nivel es como reunir una tripulación compacta de contrabandistas. Cada miembro es tan crucial como un copiloto en la Carrera de Kessel, haciendo que cada viaje sea una aventura emocionante y estratégica."
 }
 
 
@@ -316,15 +355,15 @@ FameTitles
 
 
 ReputationTitles
-[
-	"Bocadillo de Sarlacc"
-	"Objetivo de la Estrella de la Muerte"
-	"Poodoo de Bantha"
-	"Irritante Leve"
-	"Conocido del HoloNet"
-	"Amigo de la Cantina"
-	"Compañero de Sabacc"
-	"Material para Copiloto"
+[   
+	"Objetivo de la Estrella de la Muerte"    
+	"Aperitivo de Sarlacc"
+	"Poodoo de Bantha"    
+	"Irritante Leve"    
+	"Conocido del HoloNet"    
+	"Compañero de Cantina"    
+	"Socio de Sabacc"    
+	"Material de Copiloto"    
 	"Deuda de Vida Wookiee"
 ]
 
@@ -358,7 +397,27 @@ Missions
 	VisitSystemDesc = "Un astrofísico renombrado está solicitando datos sobre la actividad estelar en el Sistema {mission_location}."
 	Debug = "Misión de Depuración"
 	DebugDesc = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales rutrum eros. Fusce non eros a lacus luctus auctor sit amet at mi. In ac fermentum est. Nam viverra lectus eu turpis cursus vestibulum."
+	ClearRogueElements = "Neutralizar la Flota Desertora"
+	ClearRogueElementsDesc = "Un escuadrón anteriormente bajo el mando de \"{faction_name}\" se ha vuelto renegado y actualmente se refugia con una flota local de Forajidos en un denso campo de asteroides en el Sistema {mission_location}. Compuesto por varios tipos de naves, este escuadrón renegado está explotando el terreno complejo del campo para lanzar ataques sorpresa, perturbando la estabilidad local y representando una amenaza significativa. {faction_name} está buscando urgentemente a un piloto hábil para navegar por el campo de asteroides, neutralizar a este escuadrón y restaurar el orden en el sector. Se promete una generosa recompensa de {money} a quien logre eliminar esta amenaza escurridiza.\n\n"\
+		"<bad>Aviso: Esta es una misión peligrosa y solo debe ser intentada por pilotos hábiles con la experiencia y habilidad necesarias.</bad>"
+	DefeatRenegadeLeader = "Eliminar a \"{target_ship}\", el Líder Renegado Mortal"
+	DefeatRenegadeLeaderDesc = "Un líder renegado notorio conocido como \"{target_ship}\" está causando estragos en el Sistema {mission_location}. Al mando de una nave equipada con tecnología avanzada y un considerable poder de fuego, este objetivo de alto valor es una gran amenaza para la estabilidad regional. {faction_name} ha autorizado una generosa recompensa de {money} para cualquier piloto hábil capaz de enfrentar y neutralizar esta amenaza. Los informes de inteligencia destacan la importancia estratégica de esta misión, sugiriendo que eliminar a '{target_ship}' podría asestar un golpe significativo a sus actividades nefastas.\n\n"\
+		"<bad>Aviso: Esta es una misión muy peligrosa y solo debe ser intentada por pilotos hábiles con la experiencia y habilidad necesarias.</bad>"
+	RescueVIP = "Rescatar al Dignatario"
+	RescueVIPDesc = "Se ha emitido una llamada de socorro urgente desde una nave civil discapacitada sitiada por cazadores de recompensas. A bordo de la nave se encuentra un dignatario de gran importancia para {faction_name}. Se requiere asistencia inmediata para repeler a los atacantes, permitiendo que la nave realice reparaciones en sus hiperimpulsores y pueda escapar. {faction_name} está ofreciendo una recompensa sustancial de {money} por la defensa exitosa y la extracción segura del dignatario. Una acción rápida y decisiva es crucial para evitar que la situación empeore."
 }
+Objectives
+{
+	EliminateDefectors = "Neutralizar la Flota Desertora"
+	EliminateRenegadeLeader = "Eliminar a {0}, el Líder Renegado"
+	SavetheVIP = "Eliminar a los Cazadores de Recompensas"
+}
+AI
+{
+	ImperialFleetCommandAI = "I.A. SWACD - Combate"
+	CivFleetCommandAI =  "I.A. SWACD - Civil"
+}
+
 
 Lore
 {
