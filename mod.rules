@@ -59,18 +59,23 @@ ShipLibraries
 Actions
 [
 
+/*	// Adding Backgrounds //Empty rn, but keep for possible future use
+	{ 	//0
+		Action = AddMany
+		AddTo = "<./Data/backgrounds/backgrounds.rules>/Styles"
+		ManyToAdd = &<backgrounds/backgrounds.rules>/Styles
+	} */
+
 	/* *********** PARTS ************* */
 
-
-
- 	{ 
+	{ 
 		Action = AddMany
- 		AddTo = "<ships/terran/terran.rules>/terran/parts"
+		AddTo = "<ships/terran/terran.rules>/terran/parts"
 
- 		CreateIfNotExisting = true
+		CreateIfNotExisting = true
 
- 		ManyToAdd = &<parts/Parts.rules>/Parts
- 	}
+		ManyToAdd = &<parts/Parts.rules>/Parts
+	}
 
 	
 	/* *********** DECALS & SHIPS & SHIP SIZES ************* */
