@@ -19,41 +19,41 @@ Add SW Crew
 
 ShipLibraries
 [
-    {
-        Folder = "builtin_ships/SW.Starter"
-        NameKey = "SWFactionsStarters"
-        TooltipKey = "SWFactionsStartersTip" 
-    }
-    {
-        Folder = "builtin_ships/SW.Black_Sun/Combat"
-        NameKey = "SWFactionsBlacksun"
-        TooltipKey = "SWFactionsBlacksunTip" 
-    }
 	{
-        Folder = "builtin_ships/SW.CIS/Combat"
-        NameKey = "SWFactionsCIS"
-        TooltipKey = "SWFactionsCISTip" 
-    }
-    {
-        Folder = "builtin_ships/SW.Galactic_Empire/Combat"
-        NameKey = "SWFactionsEmpire"
-        TooltipKey = "SWFactionsEmpireTip" 
-    }
-    {
-        Folder = "builtin_ships/SW.Rebel_Alliance/Combat"
-        NameKey = "SWFactionsRebelAlliance"
-        TooltipKey = "SWFactionsRebelAllianceTip" 
-    }
-    {
-        Folder = "builtin_ships/SW.Republic/Combat"
-        NameKey = "SWFactionsRepublic"
-        TooltipKey = "SWFactionsRepublicTip" 
-    }
-    {
-        Folder = "builtin_ships/SW.Community"
-        NameKey = "SWCommunitySubmissions"
-        TooltipKey = "SWCommunitySubmissionsTip" 
-    }
+		Folder = "builtin_ships/SW.Starter"
+		NameKey = "SWFactionsStarters"
+		TooltipKey = "SWFactionsStartersTip" 
+	}
+	{
+		Folder = "builtin_ships/SW.Black_Sun/Combat"
+		NameKey = "SWFactionsBlacksun"
+		TooltipKey = "SWFactionsBlacksunTip" 
+	}
+	{
+		Folder = "builtin_ships/SW.CIS/Combat"
+		NameKey = "SWFactionsCIS"
+		TooltipKey = "SWFactionsCISTip" 
+	}
+	{
+		Folder = "builtin_ships/SW.Galactic_Empire/Combat"
+		NameKey = "SWFactionsEmpire"
+		TooltipKey = "SWFactionsEmpireTip" 
+	}
+	{
+		Folder = "builtin_ships/SW.Rebel_Alliance/Combat"
+		NameKey = "SWFactionsRebelAlliance"
+		TooltipKey = "SWFactionsRebelAllianceTip" 
+	}
+	{
+		Folder = "builtin_ships/SW.Republic/Combat"
+		NameKey = "SWFactionsRepublic"
+		TooltipKey = "SWFactionsRepublicTip" 
+	}
+	{
+		Folder = "builtin_ships/SW.Community"
+		NameKey = "SWCommunitySubmissions"
+		TooltipKey = "SWCommunitySubmissionsTip" 
+	}
 ]
 
 Actions
@@ -64,7 +64,8 @@ Actions
 		Action = AddMany
 		AddTo = "<./Data/backgrounds/backgrounds.rules>/Styles"
 		ManyToAdd = &<backgrounds/backgrounds.rules>/Styles
-	} */
+	} 
+*/
 
 	/* *********** PARTS ************* */
 
@@ -205,31 +206,31 @@ Actions
 		{
 		Action = AddMany
 		AddTo = "<modes/career/career.rules>/StarterShips"
- 
- 		CreateIfNotExisting = true
+		
+		CreateIfNotExisting = true
 
 		ManyToAdd
 		[
-    		{
-    		    Ship = "builtin_ships/SW.Starter/Starter Y-Wing Bomber.ship.png"
-    		    DescriptionKey = "StarterShips/Y_Wing"
-    		}
-    		{
-    		    Ship = "builtin_ships/SW.Starter/Starter Z-95 Headhunter.ship.png"
-    		    DescriptionKey = "StarterShips/X_Wing_Z95"
-    		}
-    		{
-    		    Ship = "builtin_ships/SW.Starter/Starter N-1 Starfighter.ship.png"
-    		    DescriptionKey = "StarterShips/N_1_Starfighter"
-    		}
-    		{
-    		    Ship = "builtin_ships/SW.Starter/Starter Black Sun Fighter.ship.png"
-    		    DescriptionKey = "StarterShips/Black_Sun_Fighter"
-    		}
-    		{
-    		    Ship = "builtin_ships/SW.Starter/Starter Hyena-Class Droid Bomber.ship.png"
-    		    DescriptionKey = "StarterShips/Hyena_Class_Droid_Bomber"
-    		}
+			{
+				Ship = "builtin_ships/SW.Starter/Starter Y-Wing Bomber.ship.png"
+				DescriptionKey = "StarterShips/Y_Wing"
+			}
+			{
+				Ship = "builtin_ships/SW.Starter/Starter Z-95 Headhunter.ship.png"
+				DescriptionKey = "StarterShips/X_Wing_Z95"
+			}
+			{
+				Ship = "builtin_ships/SW.Starter/Starter N-1 Starfighter.ship.png"
+				DescriptionKey = "StarterShips/N_1_Starfighter"
+			}
+			{
+				Ship = "builtin_ships/SW.Starter/Starter Black Sun Fighter.ship.png"
+				DescriptionKey = "StarterShips/Black_Sun_Fighter"
+			}
+			{
+				Ship = "builtin_ships/SW.Starter/Starter Hyena-Class Droid Bomber.ship.png"
+				DescriptionKey = "StarterShips/Hyena_Class_Droid_Bomber"
+			}
 		]		
 
 		}
@@ -256,7 +257,7 @@ Actions
 	{
 		Action = AddMany
 		AddTo = "<codex/lore/lore.rules>/CodexPages"
-        ManyToAdd = &<codex/lore.rules>/CodexPages
+		ManyToAdd = &<codex/lore.rules>/CodexPages
 	}
 
 /*
@@ -264,7 +265,7 @@ Actions
 	{
 		Action = AddMany
 		AddTo = "<modes/career/sysgen_misc_discoverables.rules>/SubSpawners"
-        ManyToAdd = &<career/sysgen_misc_discoverables.rules>/SubSpawners
+		ManyToAdd = &<career/sysgen_misc_discoverables.rules>/SubSpawners
 	}
 */
 
@@ -272,14 +273,14 @@ Actions
 	{
 		Action = AddMany
 		AddTo = "<builtin_ships/builtins.rules>/Ships"
-        ManyToAdd = &<builtin_ships/builtins.rules>/Ships
+		ManyToAdd = &<builtin_ships/builtins.rules>/Ships
 	}
 	
 	//Create SW FTL Jump Points
 	{
 		Action = AddMany
 		AddTo = "<doodads/doodads.rules>/Doodads"
-        ManyToAdd = &<doodads/doodads.rules>/Doodads
+		ManyToAdd = &<doodads/doodads.rules>/Doodads
 	}
 
 
@@ -321,22 +322,22 @@ Actions
 		Action = Replace
 		Replace = "<modes/career/sysgen_trade_stations.rules>/SubSpawners/7/SubSpawners/0/Count"
 		With = 2
-    }
-    {
+	}
+	{
 		Action = Replace
 		Replace = "<modes/career/sysgen_trade_stations.rules>/SubSpawners/7/SubSpawners/1/Count"
 		With = [0, 2]
-    }
-    {
+	}
+	{
 		Action = Replace
 		Replace = "<modes/career/sysgen_trade_stations.rules>/StationDefenses/Count"
 		With = [3, 8]
-    }
-    {
+	}
+	{
 		Action = Replace
 		Replace = "<modes/career/sysgen_trade_stations.rules>/StationDefenses/Distance"
 		With = 250
-    }
+	}
 	/* ********** SPAWNERS *********** */
 	{
 		Action = AddMany
@@ -356,7 +357,7 @@ Actions
 	{
 		Action = AddMany
 		AddTo = "<modes/career/sysgen_sim_global_missions.rules>/SubSpawners"
-        ManyToAdd = &<career/sysgen_sim_global_missions.rules>/SubSpawners
+		ManyToAdd = &<career/sysgen_sim_global_missions.rules>/SubSpawners
 	}
 	{
 		Action = Overrides
@@ -384,7 +385,7 @@ Actions
 	{
 		Action = AddMany
 		AddTo = "<factions/factions.rules>/Factions"
-        ManyToAdd = &<factions/factions.rules>/Factions
+		ManyToAdd = &<factions/factions.rules>/Factions
 	}
 
 
@@ -398,7 +399,7 @@ Actions
 	{
 		Action = Replace
 		Replace = "<galaxy_map/map_generators/base_galaxy.rules>/StartingNodePicker"
-        With = &<galaxy_map/map_generators/base_galaxy.rules>/StartingNodePicker
+		With = &<galaxy_map/map_generators/base_galaxy.rules>/StartingNodePicker
 	}
 */
 /*
@@ -406,7 +407,7 @@ Actions
 	{
 		Action = Replace
 		Replace = "<factions/factions.rules>/Factions"
-        With = &<factions/factions.rules>/Factions
+		With = &<factions/factions.rules>/Factions
 	}
 */
 /*
@@ -414,7 +415,7 @@ Actions
 	{
 		Action = Replace
 		Replace = "<galaxy_map/map_generators/base_galaxy.rules>/Factions/Factions"
-        With = &<galaxy_map/map_generators/base_galaxy.rules>/Factions/Factions
+		With = &<galaxy_map/map_generators/base_galaxy.rules>/Factions/Factions
 	}
 */
 /*
@@ -422,7 +423,7 @@ Actions
 	{
 		Action = Replace
 		Replace = "<galaxy_map/map_generators/base_galaxy.rules>/FactionTiers/Factions"
-        With = &<galaxy_map/map_generators/base_galaxy.rules>/FactionTiers/Factions
+		With = &<galaxy_map/map_generators/base_galaxy.rules>/FactionTiers/Factions
 	}
 */
 /*
@@ -430,7 +431,7 @@ Actions
 	{
 		Action = Replace
 		Replace = "<galaxy_map/map_generators/base_galaxy.rules>/StartingNodePicker"
-        With = &<galaxy_map/map_generators/base_galaxy.rules>/StartingNodePicker
+		With = &<galaxy_map/map_generators/base_galaxy.rules>/StartingNodePicker
 	}
 
 //END TESTING 
@@ -444,22 +445,22 @@ Actions
 		Action = Replace
 		Replace = "<modes/career/sysgen_trade_stations.rules>/SubSpawners/7/SubSpawners/0/Count"
 		With = 2
-    }
-    {
+	}
+	{
 		Action = Replace
 		Replace = "<modes/career/sysgen_trade_stations.rules>/SubSpawners/7/SubSpawners/1/Count"
 		With = [0, 2]
-    }
-    {
+	}
+	{
 		Action = Replace
 		Replace = "<modes/career/sysgen_trade_stations.rules>/StationDefenses/Count"
 		With = [5, 8]
-    }
-    {
+	}
+	{
 		Action = Replace
 		Replace = "<modes/career/sysgen_trade_stations.rules>/StationDefenses/Distance"
 		With = 250
-    }
+	}
 
 	/* *********** FACTION GENERATION ************* */
 
@@ -471,14 +472,14 @@ Actions
 	{
 		Action = AddMany
 		AddTo = "<galaxy_map/map_generators/base_galaxy.rules>/Factions/Factions"
-        ManyToAdd = &<galaxy_map/map_generators/base_galaxy.rules>/Factions/Factions
+		ManyToAdd = &<galaxy_map/map_generators/base_galaxy.rules>/Factions/Factions
 	}
 
 		// Adds SW FactionTiers in career mode
 	{
 		Action = AddMany
 		AddTo = "<galaxy_map/map_generators/base_galaxy.rules>/FactionTiers/Factions"
-        ManyToAdd = &<galaxy_map/map_generators/base_galaxy.rules>/FactionTiers/Factions
+		ManyToAdd = &<galaxy_map/map_generators/base_galaxy.rules>/FactionTiers/Factions
 	}
 	*/
 
@@ -499,14 +500,14 @@ Actions
 	{
 		Action = AddMany
 		AddTo = "<galaxy_map/map_generators/base_galaxy.rules>/Factions/Factions"
-        ManyToAdd = &<galaxy_map/map_generators/base_galaxy.rules>/Factions/Factions
+		ManyToAdd = &<galaxy_map/map_generators/base_galaxy.rules>/Factions/Factions
 	}
 
 		// Adds SW FactionTiers in career mode
 	{
 		Action = AddMany
 		AddTo = "<galaxy_map/map_generators/base_galaxy.rules>/FactionTiers/Factions"
-        ManyToAdd = &<galaxy_map/map_generators/base_galaxy.rules>/FactionTiers/Factions
+		ManyToAdd = &<galaxy_map/map_generators/base_galaxy.rules>/FactionTiers/Factions
 	}
 	*/
 
