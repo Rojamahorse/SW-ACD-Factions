@@ -16,6 +16,8 @@ Ships
 /*121,180*/		:~{ File="Reb ASF-01 B-Wing Lt Starfighter 2.ship.png"; 						Tier=4;    Difficulty=1; Tags = [combat] }  
 /*121,180*/		:~{ File="Rebel BTL-A4 Y-Wing Bomber.ship.png"; 								Tier=4;    Difficulty=2; Tags = [combat] }  
 /*121,180*/		:~{ File="Reb T-70 X-Wing Starfighter.ship.png"; 								Tier=5;    Difficulty=2; Tags = [combat] }  
+/*121,180*/		:~{ File="Reb T-70 X-Wing Starfighter R.ship.png"; 								Tier=5;    Difficulty=2; Tags = [combat] }  
+/*121,180*/		:~{ File="Reb T-70 X-Wing Starfighter Y.ship.png"; 								Tier=5;    Difficulty=2; Tags = [combat] }  
 /*123,440*/		:~{ File="Reb T-70 X-Wing Black.ship.png";     									Tier=5;    Difficulty=1; Tags = [combat] }  
 /*123,645*/		:~{ File="T-65B X-Wing Starfighter.ship.png";     								Tier=2;    Difficulty=1; Tags = [combat] }
 /*144,200*/		:~{ File="Rebel BTL-B Y-Wing Bomber.ship.png";     								Tier=4;    Difficulty=2; Tags = [combat] }  
