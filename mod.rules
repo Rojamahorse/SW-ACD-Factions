@@ -10,7 +10,6 @@ StringsFolder = "strings"
 /* TO DO:
 Base Galaxy Rules back to Vanilla + All
 Create a New Republic Era & Old Republic Era
-Add SW-flavored auxilary sound bites
 Clean up Shots & Common Effects
 Add SW Crew
 */
@@ -303,6 +302,15 @@ Actions
 		AddBaseTo = "<modes/career/career.rules>/TradeRoutes/TradeShips"
 		BaseToAdd = &<career\TradeShips.rules>/TradeShips
 	}
+
+	//StarWars Sounds
+	{
+		Action = Replace
+		Replace = "<modes/career/career.rules>/Wanted/WantedAlertSound/Sound"
+		IgnoreIfNotExisting = false
+		With = "sounds/sw_ship_alarm.wav"
+	}
+
 
 	//Adds SW POI Misson Markers
 	{	
