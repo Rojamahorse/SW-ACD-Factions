@@ -96,7 +96,8 @@ TradeShips
 			rep_10d : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Rep Industrial Cargo Freighter";          			Faction=SW.Republic; TierRange=[12, 18]; StasisSpeed=75; StasisTradeTime=100; }
 			rep_10e : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Rep Industrial Cargo Freighter 2";          		Faction=SW.Republic; TierRange=[12, 18]; StasisSpeed=75; StasisTradeTime=100; }
 			rep_10f : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Rep Industrial Cargo Freighter 3";          		Faction=SW.Republic; TierRange=[12, 18]; StasisSpeed=75; StasisTradeTime=100; }
-//			rep_10g : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Atlas Freighter";      							Faction=SW.Republic; TierRange=[12, 18]; StasisSpeed=75; StasisTradeTime=100; 
+			rep_10g : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Rep Galactic_Republic_Transport_Ship_civ";      	Faction=SW.Republic; TierRange=[3, 18]; StasisSpeed=75; StasisTradeTime=100; }
+
 }
 
 		

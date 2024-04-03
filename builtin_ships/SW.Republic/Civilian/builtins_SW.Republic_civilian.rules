@@ -24,4 +24,5 @@ Ships
 	:~{ File="Rep Industrial Cargo Freighter.ship.png";     	Tier=10;  Tags : ~/Tags [trade] }
 	:~{ File="Rep Industrial Cargo Freighter 2.ship.png";     	Tier=10;  Tags : ~/Tags [trade] }
 	:~{ File="Rep Industrial Cargo Freighter 3.ship.png";     	Tier=10;  Tags : ~/Tags [trade] }
+	:~{ File="Rep Galactic_Republic_Transport_Ship_civ.ship.png";     	Tier=3;  Tags : ~/Tags [trade] }
 ]
