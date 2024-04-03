@@ -185,6 +185,7 @@ Part : &<../xwing_cannon/xwing_cannon.rules>/Part
 		{
 			Emitter = BulletEmitter
 			FireInterval = .1
+			FiringArc = .60
 		}
 
 		BulletEmitter

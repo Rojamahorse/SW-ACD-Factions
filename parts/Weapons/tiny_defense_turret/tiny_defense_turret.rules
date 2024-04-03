@@ -495,7 +495,7 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 					Sound = "../common_effects/sounds/laserblaster.wav"
 					Volume = .6
 					Delay = .1
-					SpeedVariation = .25
+					//SpeedVariation = .25
 				}
 			]
 		}
