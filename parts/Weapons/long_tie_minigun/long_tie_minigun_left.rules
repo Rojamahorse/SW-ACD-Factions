@@ -46,6 +46,9 @@ Part : &<long_tie_minigun.rules>/Part
 		Turret : &<long_tie_minigun.rules>/Part/Components/Turret
 		{
 			Rotation = -180d
+			AllowFireWithBlockedLOS = true
+			IgnoreSourceShipLowLOSChecks = true
+			IgnoreFriendlyShipLowLOSChecks = false
 		}
 
 		TurretGraphics : &<long_tie_minigun.rules>/Part/Components/TurretGraphics

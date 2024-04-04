@@ -48,6 +48,9 @@ Part : &<long_xwing_cannon.rules>/Part
 		Turret : &<long_xwing_cannon.rules>/Part/Components/Turret
 		{
 			Rotation = -180d
+			AllowFireWithBlockedLOS = true
+			IgnoreSourceShipLowLOSChecks = true
+			IgnoreFriendlyShipLowLOSChecks = false
 		}
 
 		Blueprints

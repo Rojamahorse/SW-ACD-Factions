@@ -264,7 +264,8 @@ Part :  <./Data/ships/terran/base_part_terran.rules>/Part
 			RotateSpeed = 90d
 			FireThresholdAngle = 5d
 			AIFirepowerRating = 400
-			AllowFireWithBlockedLOS = false
+			AllowFireWithBlockedLOS = true
+			IgnoreSourceShipLowLOSChecks = true
 			IgnoreFriendlyShipLowLOSChecks = false
 			UseResourcePerShotInBurst = true
 			Emitter = BulletEmitter

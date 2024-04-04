@@ -54,8 +54,9 @@ Components
 	Hit
 	{
 		Type = PenetratingHit
-		FriendlyShipLowCollisions = true
+		FriendlyShipLowCollisions = false
 		SourceShipLowCollisions = false
+		//SourcePartCollisionDelay = 1.5/30
 		Penetration = { BaseValue=15; BuffType=RailgunShot; BuffMode=Multiply; }
 		PenetrationSpeed = &~/Speed
 
