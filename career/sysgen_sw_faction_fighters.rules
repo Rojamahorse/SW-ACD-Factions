@@ -1,0 +1,30 @@
+Type = None
+SubSpawners
+[
+	// Faction wanderers.
+	{
+		Type = Ships
+		Tags = [faction_wanderer]
+		Count = [14, 16]
+		Distance = [6000, 18000]
+		MinDistanceFromTags = [[station, 500]]
+		SuppressLocationAssertions = true
+		Allegiance = Unique //OLD: FactionMilitary
+		FamePerTier = &<./Data/modes/career/tier_tables.rules>/StandardFamePerTier
+		MaxFamePerTier = &<./Data/modes/career/tier_tables.rules>/StandardMaxFamePerTier
+		ShipCriteria
+		{
+			UseLocalFactionWeights = true
+			UseLocalTier = true
+			AllowTierRangeExpansion = true
+			Tags = [rebelCombat]
+		}
+		AI
+		{
+			Type = Wanderer
+			PatrolRadius = &../Distance/1
+			PatrolAroundWorldOrigin = true
+			StasisSpeed = 100
+		}
+	}
+]

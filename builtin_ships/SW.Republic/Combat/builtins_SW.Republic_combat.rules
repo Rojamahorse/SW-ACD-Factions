@@ -3,40 +3,40 @@ Faction = SW.Republic
 Ships
 [
 //Tier 1-2 (Up to 100,000)
-/*29,500*/    		:~{ File="Rep Jedi Starfighter 2.ship.png";                                      		 Tier=1;  Difficulty=1; Tags = [combat] }
-/*29,500*/    		:~{ File="Rep Jedi Starfighter.ship.png";                                      			 Tier=1;  Difficulty=1; Tags = [combat] }
-/*29,500*/    		:~{ File="Republic Eta-2 Actis-Class Alt.ship.png";                                      Tier=1;  Difficulty=1; Tags = [combat] }
-/*30,060*/    		:~{ File="Republic Eta-2 Actis-Class Inter.ship.png";                                    Tier=1;  Difficulty=1; Tags = [combat] }
-/*38,740*/    		:~{ File="Republic A3 Nimbus-Class V-Wing Starfighter.ship.png";                         Tier=1;  Difficulty=2; Tags = [combat] }
-/*38,920*/    		:~{ File="Republic Eta-2 Actis-Class Interceptor_Alt.ship.png";                          Tier=2;  Difficulty=2; Tags = [combat] }
-/*46,880*/    		:~{ File="Republic Naboo N-1 Starfighter.ship.png";                                      Tier=1;  Difficulty=1; Tags = [combat] }
-/*48,000*/    		:~{ File="Republic Delta 7 Jedi Starfight.ship.png";                                     Tier=2;  Difficulty=1; Tags = [combat] }
-/*48,000*/    		:~{ File="Republic Delta 7L Starfighter.ship.png";                                       Tier=2;  Difficulty=2; Tags = [combat] }
-/*66,590*/    		:~{ File="A-Wing Starfighter.ship.png";                                                  Tier=2;  Difficulty=2; Tags = [combat] }
-/*70,190*/     		:~{ File="Rep A-Wing Starfighter NRep.ship.png";                                         Tier=2;  Difficulty=2; Tags = [combat] }
-/*66,590*/   		:~{ File="Rep A-Wing Starfighter.ship.png";                                              Tier=2;  Difficulty=2; Tags = [combat] }
+/*29,500*/    		:~{ File="Rep Jedi Starfighter 2.ship.png";                                      		 Tier=1;  Difficulty=1; Tags = [combat, swfighter, repfighter] }
+/*29,500*/    		:~{ File="Rep Jedi Starfighter.ship.png";                                      			 Tier=1;  Difficulty=1; Tags = [combat, swfighter, repfighter] }
+/*29,500*/    		:~{ File="Republic Eta-2 Actis-Class Alt.ship.png";                                      Tier=1;  Difficulty=1; Tags = [combat, swfighter, repfighter] }
+/*30,060*/    		:~{ File="Republic Eta-2 Actis-Class Inter.ship.png";                                    Tier=1;  Difficulty=1; Tags = [combat, swfighter, repfighter] }
+/*38,740*/    		:~{ File="Republic A3 Nimbus-Class V-Wing Starfighter.ship.png";                         Tier=1;  Difficulty=2; Tags = [combat, swfighter, repfighter] }
+/*38,920*/    		:~{ File="Republic Eta-2 Actis-Class Interceptor_Alt.ship.png";                          Tier=2;  Difficulty=2; Tags = [combat, swfighter, repfighter] }
+/*46,880*/    		:~{ File="Republic Naboo N-1 Starfighter.ship.png";                                      Tier=1;  Difficulty=1; Tags = [combat, swfighter, repfighter] }
+/*48,000*/    		:~{ File="Republic Delta 7 Jedi Starfight.ship.png";                                     Tier=2;  Difficulty=1; Tags = [combat, swfighter, repfighter] }
+/*48,000*/    		:~{ File="Republic Delta 7L Starfighter.ship.png";                                       Tier=2;  Difficulty=2; Tags = [combat, swfighter, repfighter] }
+/*66,590*/    		:~{ File="A-Wing Starfighter.ship.png";                                                  Tier=2;  Difficulty=2; Tags = [combat, swfighter, repfighter] }
+/*70,190*/     		:~{ File="Rep A-Wing Starfighter NRep.ship.png";                                         Tier=2;  Difficulty=2; Tags = [combat, swfighter, repfighter] }
+/*66,590*/   		:~{ File="Rep A-Wing Starfighter.ship.png";                                              Tier=2;  Difficulty=2; Tags = [combat, swfighter, repfighter] }
 
 //Tier 3-4 (50,001 to 200,000)
-/*73,360*/    		:~{	File="Royal House N-1 Starfighter.ship.png";                                         Tier=3;  Difficulty=1; Tags = [combat] }
-/*52,700*/    		:~{ File="Republic Delta 7B Jedi Starfight.ship.png";                                    Tier=3;  Difficulty=2; Tags = [combat] }
-/*46,100*/    		:~{ File="Republic Eta-2 Actis-Class Mk2.ship.png";                                      Tier=4;  Difficulty=2; Tags = [combat] }
-/*58,220*/    		:~{ File="Republic Eta-2 Actis-Class Mk3.ship.png";                                      Tier=4;  Difficulty=2; Tags = [combat] }
-/*59,660*/    		:~{ File="Republic A3 Nimbus-Class V-Wingb Starfighter.ship.png";                        Tier=3;  Difficulty=1; Tags = [combat] } 
-/*59,660*/    		:~{ File="Republic A3 Nimbus-Class V-Wingc Starfighter.ship.png";                        Tier=3;  Difficulty=1; Tags = [combat] } 
-/*71,960*/    		:~{ File="Republic A3 Nimbus-Class V-Wingd Starfighter.ship.png";                        Tier=3;  Difficulty=1; Tags = [combat] } 
-/*88,060*/    		:~{ File="Royal House N-1 Starfighter Mk2.ship.png";                                     Tier=4;  Difficulty=2; Tags = [combat] }
-/*80,040*/    		:~{ File="Republic Storm IV Twin-Pod Comba.ship.png";                                    Tier=3;  Difficulty=2; Tags = [combat] }
-/*93,420*/    		:~{ File="Republic E-Wing Starfighter.ship.png";                                         Tier=4;  Difficulty=2; Tags = [combat] }
-/*108,060*/    		:~{ File="Rep Firespray-31-Class P&A Craft.ship.png";                                    Tier=3;  Difficulty=1; Tags = [combat] }
+/*73,360*/    		:~{	File="Royal House N-1 Starfighter.ship.png";                                         Tier=3;  Difficulty=1; Tags = [combat, swfighter, repfighter] }
+/*52,700*/    		:~{ File="Republic Delta 7B Jedi Starfight.ship.png";                                    Tier=3;  Difficulty=2; Tags = [combat, swfighter, repfighter] }
+/*46,100*/    		:~{ File="Republic Eta-2 Actis-Class Mk2.ship.png";                                      Tier=4;  Difficulty=2; Tags = [combat, swfighter, repfighter] }
+/*58,220*/    		:~{ File="Republic Eta-2 Actis-Class Mk3.ship.png";                                      Tier=4;  Difficulty=2; Tags = [combat, swfighter, repfighter] }
+/*59,660*/    		:~{ File="Republic A3 Nimbus-Class V-Wingb Starfighter.ship.png";                        Tier=3;  Difficulty=1; Tags = [combat, swfighter, repfighter] } 
+/*59,660*/    		:~{ File="Republic A3 Nimbus-Class V-Wingc Starfighter.ship.png";                        Tier=3;  Difficulty=1; Tags = [combat, swfighter, repfighter] } 
+/*71,960*/    		:~{ File="Republic A3 Nimbus-Class V-Wingd Starfighter.ship.png";                        Tier=3;  Difficulty=1; Tags = [combat, swfighter, repfighter] } 
+/*88,060*/    		:~{ File="Royal House N-1 Starfighter Mk2.ship.png";                                     Tier=4;  Difficulty=2; Tags = [combat, swfighter, repfighter] }
+/*80,040*/    		:~{ File="Republic Storm IV Twin-Pod Comba.ship.png";                                    Tier=3;  Difficulty=2; Tags = [combat, swfighter, repfighter] }
+/*93,420*/    		:~{ File="Republic E-Wing Starfighter.ship.png";                                         Tier=4;  Difficulty=2; Tags = [combat, swfighter, repfighter] }
+/*108,060*/    		:~{ File="Rep Firespray-31-Class P&A Craft.ship.png";                                    Tier=3;  Difficulty=1; Tags = [combat, swfighter, repfighter] }
 /*104,080*/    		:~{ File="BTL-A4 Y-Wing Bomber.ship.png";                                                Tier=3;  Difficulty=1; Tags = [combat] }
-/*106,220*/    		:~{ File="Republic V-19 Torrent Starfighte.ship.png";                                    Tier=3;  Difficulty=2; Tags = [combat] }
-/*107,210*/    		:~{ File="Republic Z-95 Headhunter.ship.png";                                            Tier=3;  Difficulty=1; Tags = [combat] }
-/*108,650*/    		:~{ File="Republic Z-95 Headhunter Orig.ship.png";                                       Tier=4;  Difficulty=2; Tags = [combat] } 
-/*108,650*/    		:~{ File="Rep C-Wing Interceptor.ship.png";                                       		 Tier=4;  Difficulty=2; Tags = [combat] } 
-/*108,650*/    		:~{ File="Rep N-Wing.ship.png";                                       		 			 Tier=4;  Difficulty=2; Tags = [combat] } 
-/*108,650*/    		:~{ File="Rep N-Wing Mk2.ship.png";                                       		 		 Tier=5;  Difficulty=2; Tags = [combat] } 
-/*107,920*/    		:~{ File="V-19 Torrent Starfighter B.ship.png";                                          Tier=3;  Difficulty=2; Tags = [combat] } 
-/*135,850*/    		:~{ File="ARC-170 Mk II.ship.png";                                                       Tier=3;  Difficulty=2; Tags = [combat] }
+/*106,220*/    		:~{ File="Republic V-19 Torrent Starfighte.ship.png";                                    Tier=3;  Difficulty=2; Tags = [combat, swfighter, repfighter] }
+/*107,210*/    		:~{ File="Republic Z-95 Headhunter.ship.png";                                            Tier=3;  Difficulty=1; Tags = [combat, swfighter, repfighter] }
+/*108,650*/    		:~{ File="Republic Z-95 Headhunter Orig.ship.png";                                       Tier=4;  Difficulty=2; Tags = [combat, swfighter, repfighter] } 
+/*108,650*/    		:~{ File="Rep C-Wing Interceptor.ship.png";                                       		 Tier=4;  Difficulty=2; Tags = [combat, swfighter, repfighter] } 
+/*108,650*/    		:~{ File="Rep N-Wing.ship.png";                                       		 			 Tier=4;  Difficulty=2; Tags = [combat, swfighter, repfighter] } 
+/*108,650*/    		:~{ File="Rep N-Wing Mk2.ship.png";                                       		 		 Tier=5;  Difficulty=2; Tags = [combat, swfighter, repfighter] } 
+/*107,920*/    		:~{ File="V-19 Torrent Starfighter B.ship.png";                                          Tier=3;  Difficulty=2; Tags = [combat, swfighter, repfighter] } 
+/*135,850*/    		:~{ File="ARC-170 Mk II.ship.png";                                                       Tier=3;  Difficulty=2; Tags = [combat, swfighter, repfighter] }
 /*144,100*/    		:~{ File="Republic BTL-B Y-Wing Bomber.ship.png";                                        Tier=3;  Difficulty=2; Tags = [combat] }
 /*135,900*/    		:~{ File="NRep T-85 X-Wing B.ship.png";                                        			 Tier=4;  Difficulty=1; Tags = [combat] }
 /*135,900*/    		:~{ File="Republic BTL-L Y-Wing Bomber.ship.png";                                        Tier=3;  Difficulty=1; Tags = [combat] }
@@ -47,11 +47,11 @@ Ships
 /*470,320*/    		:~{ File="Republic Havoc Marauder.ship.png";                                             Tier=5;  Difficulty=2; Tags = [combat] }
 
 //Tier 5-7 (180,001 to 400,000)
-/*121,855*/    		:~{ File="Royal House N-1R Starfighter Mk2.ship.png";                                    Tier=5;  Difficulty=1; Tags = [combat] }
-/*222,855*/    		:~{ File="Rep UT-60D U-Wing Starfighter Lb.ship.png";                                    Tier=5;  Difficulty=1; Tags = [combat] }
-/*229,315*/    		:~{ File="Rep UT-60D U-Wing Starfighter Y.ship.png";                                     Tier=6;  Difficulty=2; Tags = [combat] }
-/*227,725*/    		:~{ File="Rep UT-60D U-Wing Starfighter.ship.png";                                       Tier=6;  Difficulty=2; Tags = [combat] } // Altraxia
-/*239,725*/    		:~{ File="Rep E-Wing Escort Starfighter.ship.png";                                       Tier=5;  Difficulty=2; Tags = [combat] } // Altraxia
+/*121,855*/    		:~{ File="Royal House N-1R Starfighter Mk2.ship.png";                                    Tier=5;  Difficulty=1; Tags = [combat, swfighter, repfighter] }
+/*222,855*/    		:~{ File="Rep UT-60D U-Wing Starfighter Lb.ship.png";                                    Tier=5;  Difficulty=1; Tags = [combat, swfighter, repfighter] }
+/*229,315*/    		:~{ File="Rep UT-60D U-Wing Starfighter Y.ship.png";                                     Tier=6;  Difficulty=2; Tags = [combat, swfighter, repfighter] }
+/*227,725*/    		:~{ File="Rep UT-60D U-Wing Starfighter.ship.png";                                       Tier=6;  Difficulty=2; Tags = [combat, swfighter, repfighter] } // Altraxia
+/*239,725*/    		:~{ File="Rep E-Wing Escort Starfighter.ship.png";                                       Tier=5;  Difficulty=2; Tags = [combat, swfighter, repfighter] } // Altraxia
 /*264,490*/    		:~{ File="Rep Baudo-Class Space Yacht.ship.png";                                         Tier=5;  Difficulty=2; Tags = [combat] } // Original
 /*264,490*/    		:~{ File="Rep Baudo-Class Yacht (combat).ship.png";                                      Tier=5;  Difficulty=2; Tags = [combat] } // Original
 /*281,180*/    		:~{ File="Republic Gunship.ship.png";                                                    Tier=5;  Difficulty=2; Tags = [combat] }

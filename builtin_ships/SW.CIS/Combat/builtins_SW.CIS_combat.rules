@@ -4,29 +4,29 @@ Faction = SW.CIS
 Ships
 [
     //Tier 1-2 (Up to 100,000)
-/*38,460*/           :~{ File="Vulture-Class Droid Starfighter.ship.png";                            Tier=1;  Difficulty=1; Tags = [combat] }
-/*55,100*/           :~{ File="Hyena-Class Droid Bomber Mk2.ship.png";                               Tier=1;  Difficulty=2; Tags = [combat] }
-/*61,780*/           :~{ File="P-38 Magnaguard Starfighter Y.ship.png";                              Tier=2;  Difficulty=2; Tags = [combat] }
-/*64,290*/           :~{ File="CIS Droid S-One.ship.png";                                            Tier=2;  Difficulty=1; Tags = [combat] }
-/*73,470*/           :~{ File="P-38 Rogue-Class (Magnaguard) Starfighter.ship.png";                  Tier=1;  Difficulty=2; Tags = [combat] }
+/*38,460*/           :~{ File="Vulture-Class Droid Starfighter.ship.png";                            Tier=1;  Difficulty=1; Tags = [combat, swfighter, cisfighter] }
+/*55,100*/           :~{ File="Hyena-Class Droid Bomber Mk2.ship.png";                               Tier=1;  Difficulty=2; Tags = [combat, swfighter, cisfighter] }
+/*61,780*/           :~{ File="P-38 Magnaguard Starfighter Y.ship.png";                              Tier=2;  Difficulty=2; Tags = [combat, swfighter, cisfighter] }
+/*64,290*/           :~{ File="CIS Droid S-One.ship.png";                                            Tier=2;  Difficulty=1; Tags = [combat, swfighter, cisfighter] }
+/*73,470*/           :~{ File="P-38 Rogue-Class (Magnaguard) Starfighter.ship.png";                  Tier=1;  Difficulty=2; Tags = [combat, swfighter, cisfighter] }
 
     //Tier 3-4 (100,001 to 200,000)
-/*52,440*/           :~{ File="Vulture-Class Droid-R Starfighte.ship.png";                           Tier=3;  Difficulty=2; Tags = [combat] }
-/*65,440*/           :~{ File="CIS Vulture-Class Droid-B Starfighte.ship.png";                       Tier=3;  Difficulty=2; Tags = [combat] }
+/*52,440*/           :~{ File="Vulture-Class Droid-R Starfighte.ship.png";                           Tier=3;  Difficulty=2; Tags = [combat, swfighter, cisfighter] }
+/*65,440*/           :~{ File="CIS Vulture-Class Droid-B Starfighte.ship.png";                       Tier=3;  Difficulty=2; Tags = [combat, swfighter, cisfighter] }
 /*55,100*/           :~{ File="Hyena-Class Droid Bomber.ship.png";                                   Tier=3;  Difficulty=2; Tags = [combat] }
-/*75,100*/           :~{ File="CIS Geonosian Starfighter.ship.png";                                  Tier=3;  Difficulty=2; Tags = [combat] }
-/*75,100*/           :~{ File="CIS Geonosian Starfighter Mk2.ship.png";                              Tier=4;  Difficulty=2; Tags = [combat] }
+/*75,100*/           :~{ File="CIS Geonosian Starfighter.ship.png";                                  Tier=3;  Difficulty=2; Tags = [combat, swfighter, cisfighter] }
+/*75,100*/           :~{ File="CIS Geonosian Starfighter Mk2.ship.png";                              Tier=4;  Difficulty=2; Tags = [combat, swfighter, cisfighter] }
 /*75,100*/           :~{ File="CIS Hyena-Class Droid Bomber B.ship.png";                             Tier=3;  Difficulty=2; Tags = [combat] }
-/*64,440*/           :~{ File="CIS P-38 Magnaguard Starfighter T.ship.png";                          Tier=3;  Difficulty=2; Tags = [combat] }
-/*65,790*/           :~{ File="CIS Droid Tri-Fighter.ship.png";                                      Tier=3;  Difficulty=1; Tags = [combat] }
-/*67,290*/           :~{ File="Droid Tri-Fighter Mk3.ship.png";                                      Tier=3;  Difficulty=1; Tags = [combat] }
-/*72,590*/           :~{ File="Droid Tri-Fighter Mk2.ship.png";                                      Tier=3;  Difficulty=1; Tags = [combat] }
-/*82,630*/           :~{ File="P-42 Rogue-Class Starfighter.ship.png";                               Tier=3;  Difficulty=2; Tags = [combat] }
-/*83,480*/           :~{ File="P-38 Magnaguard Starfighter R.ship.png";                              Tier=3;  Difficulty=1; Tags = [combat] }
-/*84,290*/           :~{ File="CIS Droid S-One B.ship.png";                                          Tier=4;  Difficulty=1; Tags = [combat] }
-/*85,130*/           :~{ File="P-38 Rogue-Class Starfighter Mk2.ship.png";                           Tier=3;  Difficulty=2; Tags = [combat] }
-/*87,110*/           :~{ File="CIS Droid S-One S Type-S.ship.png";                                   Tier=4;  Difficulty=1; Tags = [combat] }
-/*95,160*/           :~{ File="CIS P-38 Rogue-Class (Magnaguard) Starfighter.ship.png";              Tier=4;  Difficulty=2; Tags = [combat] }
+/*64,440*/           :~{ File="CIS P-38 Magnaguard Starfighter T.ship.png";                          Tier=3;  Difficulty=2; Tags = [combat, swfighter, cisfighter] }
+/*65,790*/           :~{ File="CIS Droid Tri-Fighter.ship.png";                                      Tier=3;  Difficulty=1; Tags = [combat, swfighter, cisfighter] }
+/*67,290*/           :~{ File="Droid Tri-Fighter Mk3.ship.png";                                      Tier=3;  Difficulty=1; Tags = [combat, swfighter, cisfighter] }
+/*72,590*/           :~{ File="Droid Tri-Fighter Mk2.ship.png";                                      Tier=3;  Difficulty=1; Tags = [combat, swfighter, cisfighter] }
+/*82,630*/           :~{ File="P-42 Rogue-Class Starfighter.ship.png";                               Tier=3;  Difficulty=2; Tags = [combat, swfighter, cisfighter] }
+/*83,480*/           :~{ File="P-38 Magnaguard Starfighter R.ship.png";                              Tier=3;  Difficulty=1; Tags = [combat, swfighter, cisfighter] }
+/*84,290*/           :~{ File="CIS Droid S-One B.ship.png";                                          Tier=4;  Difficulty=1; Tags = [combat, swfighter, cisfighter] }
+/*85,130*/           :~{ File="P-38 Rogue-Class Starfighter Mk2.ship.png";                           Tier=3;  Difficulty=2; Tags = [combat, swfighter, cisfighter] }
+/*87,110*/           :~{ File="CIS Droid S-One S Type-S.ship.png";                                   Tier=4;  Difficulty=1; Tags = [combat, swfighter, cisfighter] }
+/*95,160*/           :~{ File="CIS P-38 Rogue-Class (Magnaguard) Starfighter.ship.png";              Tier=4;  Difficulty=2; Tags = [combat, swfighter, cisfighter] }
 
     //Tier 5-7 (180,001 to 400,000)
 /*248,452*/          :~{ File="HMP Droid Gunship.ship.png";                                          Tier=5;  Difficulty=2; Tags = [combat] }

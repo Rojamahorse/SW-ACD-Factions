@@ -1,0 +1,33 @@
+Type = None
+SubSpawners
+[
+	// Pirates.
+	{
+		Type = Ships
+		Tags = [swvillan] 
+		Count = [14, 16] 
+		Distance = [6000, 45000]
+		MinDistanceFromTags = [[station, 7500], [pirate, 2500], [swvillan, 500], [bounty, 10000]]
+		SuppressLocationAssertions = true
+		Allegiance = Unique //OLD: Unique
+		SynchronizeAllegiance = true
+		FamePerTier = &<./Data/modes/career/tier_tables.rules>/StandardFamePerTier
+		MaxFamePerTier = &<./Data/modes/career/tier_tables.rules>/StandardMaxFamePerTier
+		ShipCriteria
+		{
+			UseLocalFactionWeights = true
+			UseTierField = true
+			AllowTierRangeExpansion = true
+			Tags = [swvillan]
+			UseEvenShipTypeDistribution = true
+		}
+		AI
+		{
+			Type = Wanderer
+			PatrolRadius = 7500
+			StasisSpeed = 100
+		}
+	}
+
+
+]
