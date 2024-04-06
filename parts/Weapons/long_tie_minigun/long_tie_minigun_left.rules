@@ -15,10 +15,10 @@ Part : &<long_tie_minigun.rules>/Part
 	//Resources&Size&Health
 	
 	//Rects
-	ProhibitRects
-	[
-		[fighter, [-2, -1, 2, 1]]
-	]
+	//ProhibitRects
+	//[
+	//	[fighter, [-2, -1, 2, 1]]
+	//]
 	
 	//Selections
 	

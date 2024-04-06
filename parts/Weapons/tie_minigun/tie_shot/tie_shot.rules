@@ -51,9 +51,10 @@ Components
 			]
 			MediaEffects
 			[
-				&<./Data/shots/laser_bolt_small/particles/laser_bolt_small_hit.rules>
-				&<./Data/shots/laser_bolt_small/particles/laser_bolt_small_flash.rules>
-				&<./Data/shots/laser_bolt_small/particles/laser_bolt_small_sparks.rules>
+			
+			&/SW_PARTICLES/Shot/Laser/Hit/Med/Green	//&<./Data/shots/laser_bolt_small/particles/laser_bolt_small_hit.rules>
+			&/SW_PARTICLES/Shot/Laser/Flash/Med/Green	//&<./Data/shots/laser_bolt_small/particles/laser_bolt_small_flash.rules>
+			&/SW_PARTICLES/Shot/Laser/Sparks/Med/Green	//&<./Data/shots/laser_bolt_small/particles/laser_bolt_small_sparks.rules>
 
 				: /BASE_SOUNDS/AudioExterior
 				{
