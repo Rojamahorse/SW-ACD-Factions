@@ -1,10 +1,10 @@
 ID = "SW.bullet_massdriver"
 //OtherIDs = ["bullet_railgun"]
-Range = { BaseValue=385; BuffType=RailgunShot; BuffMode=Multiply; MaxValue=720; }
+Range = { BaseValue=400; BuffType=RailgunShot; BuffMode=Multiply; MaxValue=720; }
 IdealRange
 [
-	{ BaseValue=180; BuffType=RailgunShot; BuffMode=Multiply; MaxValue=360; }
-	{ BaseValue=360; BuffType=RailgunShot; BuffMode=Multiply; MaxValue=720; }
+	{ BaseValue=180; BuffType=RailgunShot; BuffMode=Multiply; MaxValue=400; }
+	{ BaseValue=360; BuffType=RailgunShot; BuffMode=Multiply; MaxValue=800; }
 ]
 IdealRadius = [5, 50]
 Speed = { BaseValue=360; BuffType=RailgunShot; BuffMode=Multiply; MaxValue=1200; }
@@ -109,7 +109,7 @@ Components
 
 				: /BASE_SOUNDS/AudioExterior
 				{
-					Sound = "bullet_railgun_hit.wav"
+					Sound = "MassDriver_Hit.wav" //"bullet_railgun_hit.wav"
 					Volume = { BaseValue=.75; BuffType=RailgunShot; BuffMode=Multiply; }
 					SpeedVariation = .4
 				}
@@ -145,7 +145,7 @@ Components
 
 				: /BASE_SOUNDS/AudioExterior
 				{
-					Sound = "bullet_railgun_hit_structure.wav"
+					Sound = "MassDriver_HitA.wav"
 					Volume = { BaseValue=.5; BuffType=RailgunShot; BuffMode=Multiply; }
 					SpeedVariation = .4
 				}
