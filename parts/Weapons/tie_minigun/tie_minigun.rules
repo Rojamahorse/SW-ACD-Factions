@@ -203,6 +203,9 @@ Part : &<../xwing_cannon/xwing_cannon.rules>/Part
 			ResourceStorage = BatteryStorage
 			ResourcesUsed = 40
 			Spread = [-2d, 2d]
+			AllowFireWithBlockedLOS = true
+			IgnoreSourceShipLowLOSChecks = true
+			IgnoreFriendlyShipLowLOSChecks = false
 		}
 
 		FireEffect
