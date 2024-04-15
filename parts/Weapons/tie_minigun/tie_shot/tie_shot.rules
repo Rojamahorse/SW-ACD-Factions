@@ -18,19 +18,19 @@ Components
 		Type = DeathByLifetime
 	}
 
-	Targetable
-	{
-		Type = Targetable
-		Health = 210
-		TargetCategory = "laser"
-	}
+//	Targetable
+//	{
+//		Type = Targetable
+//		Health = 210
+//		TargetCategory = "laser"
+//	}
 
 	Hit
 	{
 		Type = PenetratingHit
 		FriendlyShipLowCollisions = true
 		SourceShipLowCollisions = false
-		FactorEffectsWith = Targetable
+//		FactorEffectsWith = Targetable
 
 		CrewCollisions = {Enemies=true; Junk=true}
 		HitCrew = &HitOperational
