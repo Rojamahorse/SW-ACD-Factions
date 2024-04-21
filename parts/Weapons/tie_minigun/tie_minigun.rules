@@ -245,7 +245,7 @@ Part : &<../xwing_cannon/xwing_cannon.rules>/Part
 				[
 					{
 						File = "barrel_off.png"
-						NormalsFile = "barrel_normals1.png"
+						NormalsFile = "barrel_off_normals.png"
 						Size = [1, 2]
 					}
 				]
@@ -270,8 +270,8 @@ Part : &<../xwing_cannon/xwing_cannon.rules>/Part
 				]
 				NormalsAnimationFiles
 				[
-					"barrel_normals1.png"
-					"barrel_normals2.png"
+					"barrel_on2_normals.png"
+					"barrel_on1_normals.png"
 				]
 				Size = [1, 2]
 				AnimationInterval = 0.05
