@@ -176,7 +176,29 @@ Part : &<../xwing_cannon/xwing_cannon.rules>/Part
 			}
 		}
 
-		TurretGraphics
+		TurretGraphicsHigh
+		{
+			Type = Graphics
+			ChainedTo = Turret
+			Location = [1.86, 0]
+			Rotation = 90d
+			OperationalToggle = IsOperational
+			OperationalDoodad
+			{
+				Layer = "roof_turrets"
+				DamageLevels
+				[
+					{
+						File = "turret_off.png"
+						NormalsFile = "turret_normals.png"
+						Size = [1, 4]
+					}
+				]
+			}
+			NonOperationalDoodad = &OperationalDoodad
+		}
+
+		TurretGraphicsLow
 		{
 			Type = Graphics
 			ChainedTo = Turret

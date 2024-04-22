@@ -353,7 +353,30 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 			}
 		}
 */
-		TurretGraphics
+		TurretGraphicsHigh
+		{
+			Type = Graphics
+			ChainedTo = Turret
+			Location = [0.4, 0]// [0.86, 0]
+			Rotation = 90d
+			OperationalToggle = IsOperational
+			OperationalDoodad
+			{
+				Layer = "roof_turrets"
+				DamageLevels
+				[
+					{
+						File = "turret_dual_off_alt.png"
+						NormalsFile = "turret_dual_off_alt_normals.png"
+						Size = [1, 3]
+						//Offset = [0, .2]
+					}
+				]
+			}
+			NonOperationalDoodad = &OperationalDoodad
+		}
+
+		TurretGraphicsLow
 		{
 			Type = Graphics
 			ChainedTo = Turret
@@ -367,7 +390,7 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 				[
 					{
 						File = "turret_dual_off_alt.png"
-						NormalsFile = "turret_alt_normals.png"
+						NormalsFile = "turret_dual_off_alt_normals.png"
 						Size = [1, 3]
 						//Offset = [0, .2]
 					}
@@ -375,6 +398,7 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 			}
 			NonOperationalDoodad = &OperationalDoodad
 		}
+
 
 		BatterySpritesA
 		{

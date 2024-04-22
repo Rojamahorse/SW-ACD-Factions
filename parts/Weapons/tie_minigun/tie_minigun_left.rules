@@ -61,12 +61,23 @@ Part : &<tie_minigun.rules>/Part
 			IgnoreFriendlyShipLowLOSChecks = false
 		}
 
-		TurretGraphics : &<tie_minigun.rules>/Part/Components/TurretGraphics
+		TurretGraphicsHigh : &<tie_minigun.rules>/Part/Components/TurretGraphicsHigh
 		{
 			Location = [0.75, 0.10]
 		}
 
-		WeaponSprite : &<tie_minigun.rules>/Part/Components/WeaponSprite
+		TurretGraphicsLow : &<tie_minigun.rules>/Part/Components/TurretGraphicsLow
+		{
+			Location = [0.75, 0.10]
+		}
+
+
+		WeaponSpriteHigh : &<tie_minigun.rules>/Part/Components/WeaponSpriteHigh
+		{
+			Location = [0.75, 0.10]
+		}
+
+		WeaponSpriteLow : &<tie_minigun.rules>/Part/Components/WeaponSpriteLow
 		{
 			Location = [0.75, 0.10]
 		}

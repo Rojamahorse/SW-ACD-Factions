@@ -333,7 +333,29 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 			]
 		}
 
-		TurretGraphics
+		TurretGraphicsHigh
+		{
+			Type = Graphics
+			ChainedTo = Turret
+			Location = [0.86, 0]
+			Rotation = 90d
+			OperationalToggle = IsOperational
+			OperationalDoodad
+			{
+				Layer = "roof_turrets"
+				DamageLevels
+				[
+					{
+						File = "turret_off.png"
+						NormalsFile = "turret_normals.png"
+						Size = [1, 2]
+					}
+				]
+			}
+			NonOperationalDoodad = &OperationalDoodad
+		}
+
+		TurretGraphicsLow
 		{
 			Type = Graphics
 			ChainedTo = Turret

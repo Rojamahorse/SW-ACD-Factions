@@ -231,7 +231,28 @@ Part : &<../xwing_cannon/xwing_cannon.rules>/Part
 			]
 		}
 
-		TurretGraphics
+		TurretGraphicsHigh
+		{
+			Type = Graphics
+			ChainedTo = Turret
+			Location = [0.75, 0]
+			Rotation = 90d
+			OperationalToggle = IsOperational
+			NonOperationalDoodad
+			{
+				Layer = "roof_turrets"
+				DamageLevels
+				[
+					{
+						File = "barrel_off.png"
+						NormalsFile = "barrel_off_normals.png"
+						Size = [1, 2]
+					}
+				]
+			}
+		}
+
+		TurretGraphicsLow
 		{
 			Type = Graphics
 			ChainedTo = Turret
@@ -252,7 +273,35 @@ Part : &<../xwing_cannon/xwing_cannon.rules>/Part
 			}
 		}
 
-		WeaponSprite
+		WeaponSpriteHigh
+		{
+			Type = Sprite
+			ChainedTo = Turret
+			Location = [0.75, 0]
+			Rotation = 90d
+			Layer = "roof_turrets"
+			ResetAnimationTrigger = Turret
+			OperationalToggle = IsOperational
+			AtlasSprite
+			{
+				AnimationFiles
+				[
+					"barrel_on2.png"
+					"barrel_on1.png"
+				]
+				NormalsAnimationFiles
+				[
+					"barrel_on2_normals.png"
+					"barrel_on1_normals.png"
+				]
+				Size = [1, 2]
+				AnimationInterval = 0.05
+				AnimationStartTime = MinValue
+				ClampAnimation = true
+			}
+		}
+
+		WeaponSpriteLow
 		{
 			Type = Sprite
 			ChainedTo = Turret
