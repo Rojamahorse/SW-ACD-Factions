@@ -1,7 +1,7 @@
 ID = SW.r9_shot
 Range = 375
 IdealRange = [50 - 325]
-Speed = 500
+Speed = 375
 //HitEffectsScaleOverRange = [1, 1 - (&../Range) / 1000]
 
 Components
@@ -112,16 +112,16 @@ Components
 			{
 				Texture
 				{
-					File = "./Data/shots/laser_bolt_small/laser_bolt_small.png"
+					File = "laser_bolt_small.png" // ./Data/shots/laser_bolt_small/
 					SampleMode = Linear
 					MipLevels = max
 				}
-				Size = [2.5, 1]
+				Size = [2.5, 2.5]
 			}
 			FrameCount = 8
 			FrameSize = [128, 128]
 			FramesPerRow = 2
-			FramesPerSecond = 60
+			FramesPerSecond = 32
 		}
 	}
 

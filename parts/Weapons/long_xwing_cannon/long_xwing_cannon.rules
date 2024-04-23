@@ -454,6 +454,8 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 				}
 			]
 		}
+
+
 /*
 		TurretGraphicsHigh
 		{
@@ -578,6 +580,26 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 				]
 			}
 		}
+
+/*
+			TurretHolderGraphics
+			{
+				Type = Graphics
+				Location = [0.5, 0.5]
+				Rotation = 90d
+				Offset = [0, 0.5]
+				Layer = "roof_turrets"
+				DamageLevels
+				[
+					{
+						File = "../base/doodads.png"
+						NormalsFile = "../base/doodads_normals.png"
+						Size = [1, 2]
+						//Offset = [0, .2] 
+					}
+				]
+			}
+*/
 
 		BatterySpritesA
 		{

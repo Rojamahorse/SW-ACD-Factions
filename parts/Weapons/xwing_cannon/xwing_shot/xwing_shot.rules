@@ -1,7 +1,7 @@
 ID = SW.fighter_xwing_shot
 Range = 425
 IdealRange = [200 - 380]
-Speed = 480
+Speed = 300
 //HitEffectsScaleOverRange = [1, 1 - (&../Range) / 1000]
 
 
@@ -113,16 +113,16 @@ Components
 			{
 				Texture
 				{
-					File = "./Data/shots/laser_bolt_small/laser_bolt_small.png"
+					File = "LaserBallR.png"
 					SampleMode = Linear
 					MipLevels = max
 				}
-				Size = [2.5, 1]
+				Size = [2.5, 2.5]
 			}
 			FrameCount = 8
 			FrameSize = [128, 128]
 			FramesPerRow = 2
-			FramesPerSecond = 60
+			FramesPerSecond = 16
 		}
 	}
 

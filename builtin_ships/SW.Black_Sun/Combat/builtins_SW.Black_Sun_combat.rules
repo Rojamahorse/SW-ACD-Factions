@@ -64,6 +64,7 @@ Ships
 /*612,450*/			:~{ File="BSC Delta 4 Smuggler.ship.png"; 								Tier=9;  Difficulty=1; Tags = [combat] }
 /*662,470*/			:~{ File="BSC YKL-37R Nova Courier.ship.png"; 							Tier=9;  Difficulty=1; Tags = [combat] }
 /*1,082,704*/		:~{ File="Black Sun OutPost.ship.png"; 									Tier=10; Difficulty=1; Tags = [combat] }
+/*1,082,704*/		:~{ File="Zan Interceptor III Class BSC.ship.png"; 						Tier=10; Difficulty=2; Tags = [combat] }
 /*1,222,860*/ 		:~{ File="BSC Hardcell-Class Interstellar Transport.ship.png"; 			Tier=10; Difficulty=1; Tags = [combat] }
 /*1,222,860*/ 		:~{ File="BSC Nebulon B-2B Hvy Frigate MkI.ship.png"; 					Tier=7;  Difficulty=3;  Tags = [combat] }
 /*1,465,628*/		:~{ File="Shadow Collective Destroyer.ship.png";         				Tier=10; Difficulty=2; Tags = [combat] }
