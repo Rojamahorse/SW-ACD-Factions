@@ -175,7 +175,7 @@ Part : &<../xwing_cannon/xwing_cannon.rules>/Part
 				]
 			}
 		}
-
+/*
 		TurretGraphicsHigh
 		{
 			Type = Graphics
@@ -185,7 +185,7 @@ Part : &<../xwing_cannon/xwing_cannon.rules>/Part
 			OperationalToggle = IsOperational
 			OperationalDoodad
 			{
-				Layer = "roof_turrets"
+				Layer = "turrets"
 				DamageLevels
 				[
 					{
@@ -197,7 +197,7 @@ Part : &<../xwing_cannon/xwing_cannon.rules>/Part
 			}
 			NonOperationalDoodad = &OperationalDoodad
 		}
-
+*/
 		TurretGraphicsLow
 		{
 			Type = Graphics
@@ -207,7 +207,7 @@ Part : &<../xwing_cannon/xwing_cannon.rules>/Part
 			OperationalToggle = IsOperational
 			OperationalDoodad
 			{
-				Layer = "turrets"
+				Layer = "weapons"
 				DamageLevels
 				[
 					{

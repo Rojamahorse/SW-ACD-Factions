@@ -15,23 +15,23 @@ Part : &<xwing_cannon.rules>/Part
 	//Resources&Size&Health
 	
 	//Rects
-	CustomCollider
-	[
-		[0, -0.37]
-		[0.40, -0.33]
-		[1, 0]
-		[1, 1]
-		[0, 1]
-	]
+//	CustomCollider
+//	[
+//		[0, -0.37]
+//		[0.40, -0.33]
+//		[1, 0]
+//		[1, 1]
+//		[0, 1]
+//	]
 	
 	//Selections
 	
 	//PartSpecific
 	IsFlippable = true
-	ProhibitRects
-	[
-		[fighter, [-1, -1, 1, 1]]
-	]
+//	ProhibitRects
+//	[
+//		[fighter, [-1, -1, 1, 1]]
+//	]
 	
 	//ReceivableBuffs
 	

@@ -28,18 +28,18 @@ Part : &<tie_minigun.rules>/Part
 	FlipWhenLoadingIDs = [SW.fighter_tie_minigun_right]
 	DescriptionKey = "Parts/tieLMinigunDesc"
 	IsFlippable = true
-	ProhibitRects
-	[
-		[fighter, [-1, -1, 1, 1]]
-	]
-	CustomCollider
-	[
-		[0, -0.37]
-		[0.40, -0.33]
-		[1, 0]
-		[1, 1]
-		[0, 1]
-	]
+//	ProhibitRects
+//	[
+//		[fighter, [-1, -1, 1, 1]]
+//	]
+//	CustomCollider
+//	[
+//		[0, -0.37]
+//		[0.40, -0.33]
+//		[1, 0]
+//		[1, 1]
+//		[0, 1]
+//	]
 
 	EditorIcon
 	{
@@ -60,23 +60,23 @@ Part : &<tie_minigun.rules>/Part
 			IgnoreSourceShipLowLOSChecks = true
 			IgnoreFriendlyShipLowLOSChecks = false
 		}
-
+/*
 		TurretGraphicsHigh : &<tie_minigun.rules>/Part/Components/TurretGraphicsHigh
 		{
 			Location = [0.75, 0.10]
 		}
-
+*/
 		TurretGraphicsLow : &<tie_minigun.rules>/Part/Components/TurretGraphicsLow
 		{
 			Location = [0.75, 0.10]
 		}
 
-
+/*
 		WeaponSpriteHigh : &<tie_minigun.rules>/Part/Components/WeaponSpriteHigh
 		{
 			Location = [0.75, 0.10]
 		}
-
+*/
 		WeaponSpriteLow : &<tie_minigun.rules>/Part/Components/WeaponSpriteLow
 		{
 			Location = [0.75, 0.10]

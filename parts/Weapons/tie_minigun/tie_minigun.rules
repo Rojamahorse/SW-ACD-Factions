@@ -230,29 +230,8 @@ Part : &<../xwing_cannon/xwing_cannon.rules>/Part
 				}
 			]
 		}
-
+/*
 		TurretGraphicsHigh
-		{
-			Type = Graphics
-			ChainedTo = Turret
-			Location = [0.75, 0]
-			Rotation = 90d
-			OperationalToggle = IsOperational
-			NonOperationalDoodad
-			{
-				Layer = "roof_turrets"
-				DamageLevels
-				[
-					{
-						File = "barrel_off.png"
-						NormalsFile = "barrel_off_normals.png"
-						Size = [1, 2]
-					}
-				]
-			}
-		}
-
-		TurretGraphicsLow
 		{
 			Type = Graphics
 			ChainedTo = Turret
@@ -272,14 +251,35 @@ Part : &<../xwing_cannon/xwing_cannon.rules>/Part
 				]
 			}
 		}
-
+*/
+		TurretGraphicsLow
+		{
+			Type = Graphics
+			ChainedTo = Turret
+			Location = [0.75, 0]
+			Rotation = 90d
+			OperationalToggle = IsOperational
+			NonOperationalDoodad
+			{
+				Layer = "weapons"
+				DamageLevels
+				[
+					{
+						File = "barrel_off.png"
+						NormalsFile = "barrel_off_normals.png"
+						Size = [1, 2]
+					}
+				]
+			}
+		}
+/*
 		WeaponSpriteHigh
 		{
 			Type = Sprite
 			ChainedTo = Turret
 			Location = [0.75, 0]
 			Rotation = 90d
-			Layer = "roof_turrets"
+			Layer = "turrets"
 			ResetAnimationTrigger = Turret
 			OperationalToggle = IsOperational
 			AtlasSprite
@@ -300,14 +300,14 @@ Part : &<../xwing_cannon/xwing_cannon.rules>/Part
 				ClampAnimation = true
 			}
 		}
-
+*/
 		WeaponSpriteLow
 		{
 			Type = Sprite
 			ChainedTo = Turret
 			Location = [0.75, 0]
 			Rotation = 90d
-			Layer = "turrets"
+			Layer = "weapons"
 			ResetAnimationTrigger = Turret
 			OperationalToggle = IsOperational
 			AtlasSprite

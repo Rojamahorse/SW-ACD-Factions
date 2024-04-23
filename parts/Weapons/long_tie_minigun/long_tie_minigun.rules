@@ -195,29 +195,8 @@ Part : &<../tie_minigun/tie_minigun.rules>/Part
 			]
 		}
 
-
+/*
 		TurretGraphicsHigh
-		{
-			Type = Graphics
-			ChainedTo = Turret
-			Location = [1.25, 0]
-			Rotation = 90d
-			OperationalToggle = IsOperational
-			NonOperationalDoodad
-			{
-				Layer = "roof_turrets"
-				DamageLevels
-				[
-					{
-						File = "barrel1_off.png"
-						NormalsFile = "barrel1_off_normals.png"
-						Size = [1, 3]
-					}
-				]
-			}
-		}
-
-		TurretGraphicsLow
 		{
 			Type = Graphics
 			ChainedTo = Turret
@@ -237,14 +216,35 @@ Part : &<../tie_minigun/tie_minigun.rules>/Part
 				]
 			}
 		}
-
+*/
+		TurretGraphicsLow
+		{
+			Type = Graphics
+			ChainedTo = Turret
+			Location = [1.25, 0]
+			Rotation = 90d
+			OperationalToggle = IsOperational
+			NonOperationalDoodad
+			{
+				Layer = "weapons"
+				DamageLevels
+				[
+					{
+						File = "barrel1_off.png"
+						NormalsFile = "barrel1_off_normals.png"
+						Size = [1, 3]
+					}
+				]
+			}
+		}
+/*
 		WeaponSpriteHigh
 		{
 			Type = Sprite
 			ChainedTo = Turret
 			Location = [1.25, 0]
 			Rotation = 90d
-			Layer = "roof_turrets"
+			Layer = "turrets"
 			ResetAnimationTrigger = Turret
 			OperationalToggle = IsOperational
 			AtlasSprite
@@ -265,7 +265,7 @@ Part : &<../tie_minigun/tie_minigun.rules>/Part
 				ClampAnimation = true
 			}
 		}
-
+*/
 		WeaponSpriteLow
 		{
 			Type = Sprite

@@ -23,10 +23,10 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 	MaxHealth = 2500
 	
 	//Rects
-	ProhibitRects
-	[
-		[fighter, [0, -2, 1, 2]]
-	]
+//	ProhibitRects
+//	[
+//		[fighter, [0, -2, 1, 2]]
+//	]
 	
 	//Selections
 	SelectionTypeID = "fighter"
@@ -332,7 +332,7 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 				}
 			]
 		}
-
+/*
 		TurretGraphicsHigh
 		{
 			Type = Graphics
@@ -342,19 +342,19 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 			OperationalToggle = IsOperational
 			OperationalDoodad
 			{
-				Layer = "roof_turrets"
+				Layer = "turrets"
 				DamageLevels
 				[
 					{
 						File = "turret_off.png"
-						NormalsFile = "turret_normals.png"
+						//NormalsFile = "turret_normals.png"
 						Size = [1, 2]
 					}
 				]
 			}
 			NonOperationalDoodad = &OperationalDoodad
 		}
-
+*/
 		TurretGraphicsLow
 		{
 			Type = Graphics
@@ -364,7 +364,7 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 			OperationalToggle = IsOperational
 			OperationalDoodad
 			{
-				Layer = "turrets"
+				Layer = "weapons"
 				DamageLevels
 				[
 					{

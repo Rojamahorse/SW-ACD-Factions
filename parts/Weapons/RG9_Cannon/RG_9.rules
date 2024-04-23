@@ -353,6 +353,7 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 			}
 		}
 */
+/*
 		TurretGraphicsHigh
 		{
 			Type = Graphics
@@ -375,7 +376,7 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 			}
 			NonOperationalDoodad = &OperationalDoodad
 		}
-
+*/
 		TurretGraphicsLow
 		{
 			Type = Graphics
@@ -385,7 +386,7 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 			OperationalToggle = IsOperational
 			OperationalDoodad
 			{
-				Layer = "turrets"
+				Layer = "weapons"
 				DamageLevels
 				[
 					{
