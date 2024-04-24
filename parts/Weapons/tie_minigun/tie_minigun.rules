@@ -189,6 +189,7 @@ Part : &<../xwing_cannon/xwing_cannon.rules>/Part
 			AllowFireWithBlockedLOS = true
 			IgnoreSourceShipLowLOSChecks = true
 			IgnoreFriendlyShipLowLOSChecks = false
+			IgnoreSourceShipLOSChecks = true
 		}
 
 		BulletEmitter
@@ -206,6 +207,7 @@ Part : &<../xwing_cannon/xwing_cannon.rules>/Part
 			AllowFireWithBlockedLOS = true
 			IgnoreSourceShipLowLOSChecks = true
 			IgnoreFriendlyShipLowLOSChecks = false
+			IgnoreSourceShipLOSChecks = true
 		}
 
 		FireEffect
