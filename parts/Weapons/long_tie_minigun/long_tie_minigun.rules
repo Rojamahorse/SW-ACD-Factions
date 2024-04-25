@@ -13,6 +13,14 @@ Part : &<../tie_minigun/tie_minigun.rules>/Part
 	EditorGroup = "WeaponsEnergy"
 	
 	//Resources&Size&Health
+	Resources
+	[
+		[steel, 20]
+		[coil, 14]
+		[coil2, 2]
+	]
+	Size = [1, 1]
+	MaxHealth = 3000
 	
 	//Rects
 	//ProhibitRects
