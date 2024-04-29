@@ -9,7 +9,7 @@ Part : &<../tie_minigun/tie_minigun.rules>/Part
 	IconNameKey = "Parts/tieMinigunLongIcon"
 	DescriptionKey = "Parts/tieLMinigunLongDesc"
 	
-	//Groups&Categories
+	//Groups&Categories 
 	EditorGroup = "WeaponsEnergy"
 	
 	//Resources&Size&Health
