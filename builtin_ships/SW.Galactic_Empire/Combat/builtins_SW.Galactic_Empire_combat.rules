@@ -79,6 +79,7 @@ Ships
 /*1,251,940*/	:~{ File="Bayonet-Class Patrol Cruiser Mk2.ship.png";				Tier=8;		Difficulty=2;  Tags = [combat] } 
 /*1,276,300*/	:~{ File="Emp Imperial Heavy Cargo Shuttle.ship.png";				Tier=7;	 	Difficulty=1;  Tags = [combat] /*OtherIDs=["Imperial Heavy Cargo Shuttle"]*/ } //Neojino
 /*1,340,540*/	:~{ File="Emp Carrack-class LC Mk2.ship.png";						Tier=8;	 	Difficulty=2;  Tags = [combat] } 
+/*5,473,825*/	:~{ File="Emp Gladiator-class_Star_Destroyer.ship.png";				Tier=8;		Difficulty=1;  Tags = [combat] } 
 /*1,588,440*/	:~{ File="Emp Cantwell-Class Arrestor Crui.ship.png";				Tier=7;		Difficulty=1;  Tags = [combat] }
 /*1,609,810*/	:~{ File="Emp_Cantwell-Class Arrestor Cruiser.ship.png";			Tier=8;		Difficulty=1;  Tags = [combat] }
 /*1,319,700*/	:~{ File="Emp Carrack-class Light Cruiser.ship.png";				Tier=9;		Difficulty=1;  Tags = [combat] }
@@ -102,12 +103,15 @@ Ships
 //Tier 13 - 15 (5,000,001 - 10,000,000)
 /*4,794,503*/	:~{ File="Emp Class 546 Light Cruiser.ship.png";						Tier=13;	Difficulty=1; Tags = [combat] }
 /*5,473,825*/	:~{ File="Emp Venator Star Destroyer.ship.png";							Tier=13;	Difficulty=1; Tags = [combat] } 
+/*5,473,825*/	:~{ File="Emp_Gladiator-class_Star_Destroy.ship.png";					Tier=11;	Difficulty=1; Tags = [combat] } 
+/*5,473,825*/	:~{ File="Emp_Imperial_II-class_Frigate.ship.png";						Tier=11;	Difficulty=1; Tags = [combat] } 
 /*5,688,236*/	:~{ File="Emp Imperial Star Destroyer.ship.png";						Tier=14;	Difficulty=2; Tags = [combat] } 
 /*6,419,271*/	:~{ File="Immobilizer 420 Cruiser.ship.png";							Tier=14;	Difficulty=2; Tags = [combat] }  
 /*6,509,224*/	:~{ File="Acclamator II-Class Cruiser.ship.png";						Tier=14;	Difficulty=1; Tags = [combat] }
 /*6,317,139*/	:~{ File="Emp Acclamator II-Class Cruiser.ship.png";					Tier=15;	Difficulty=1; Tags = [combat] }
 /*7,425,790*/	:~{ File="Emp Harrower-class Dreadnought.ship.png";						Tier=15;	Difficulty=1; Tags = [combat] }
 /*9,367,340*/	:~{ File="Emp 546_Light_Cruiser Mk2.ship.png";							Tier=16;	Difficulty=2; Tags = [combat] } // Credit Fusion
+/*10,498,184*/	:~{ File="Emp_Provocator-class_Star_Destroyer.ship.png";				Tier=15;	Difficulty=1; Tags = [combat] } 
 
 
 //Tier 16 - 17 (10,000,001 - 15,000,000)

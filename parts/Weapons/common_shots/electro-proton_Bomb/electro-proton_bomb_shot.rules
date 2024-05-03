@@ -1,0 +1,213 @@
+ID = "sw.electro-proton_bomb_shot"
+Range = 400
+IdealRange = [60, 180]
+IdealRadius = [5, 50]
+Speed = 190
+
+
+Components
+{
+	Physics
+	{
+		Type = CirclePhysics
+		Radius = 0.01
+		Density = 0.0001
+	}
+
+	Death
+	{
+		Type = DeathByLifetime
+		// Lifetime will be auto-calculated based on range and speed.
+	}
+
+	Targetable
+	{
+		Type = Targetable
+		Health = 100
+		TargetCategory = "laser"
+	}
+
+	Hit
+	{
+		Type = SimpleHit
+		
+		HitShield = &HitOperational
+		HitOperational
+		{
+			HitEffects
+			[
+				{
+					Type = ExplosiveResourceDrain
+					ResourceType = battery
+					TotalDrain = 2000 / 8
+					Radius = 5
+					Slices = 1
+					Filter
+					{
+						Ships = true
+						Shields = true
+					}
+
+					MediaEffectsOnDrainFactor = .0005
+					MediaEffectsOnDrain
+					[
+						&<particles/electro-proton_hit_orb.rules>
+						&<particles/electro-proton_hit_sizzle.rules>
+						&<particles/electro-proton_lightning.rules>
+						&<particles/electro-proton_drain.rules>
+
+						: /BASE_SOUNDS/AudioExterior
+						{
+							Sound = "./data/shots/disruptor_bolt/discharge.wav"
+							Volume = 1
+							SpeedVariation = .2
+						}
+					]
+				}
+				: &0
+				{
+					Delay = .5
+				}
+				: &0
+				{
+					Delay = 1.0
+				}
+				: &0
+				{
+					Delay = 1.5
+				}
+				: &0
+				{
+					Delay = 2.0
+				}
+				: &0
+				{
+					Delay = 2.5
+				}
+				: &0
+				{
+					Delay = 3.0
+				}
+				: &0
+				{
+					Delay = 3.5
+				}/*
+				: &0
+				{
+					Delay = 4.0
+				}
+				: &0
+				{
+					Delay = 4.5
+				}*/
+				
+				{
+					Type = ExplosiveResourceDrain
+					ResourceType = battery
+					TotalDrain = 5000 / 2
+					Radius = 5
+					Slices = 1
+					Filter
+					{
+						Ships = true
+						Shields = true
+					}
+
+					MediaEffectsOnDrainFactor = .0005
+					MediaEffectsOnDrain
+					[
+						&<particles/electro-proton_hit_orb.rules>
+						&<particles/electro-proton_hit_sizzle.rules>
+						&<particles/electro-proton_lightning.rules>
+						&<particles/electro-proton_drain.rules>
+
+						: /BASE_SOUNDS/AudioExterior
+						{
+							Sound = "./data/shots/disruptor_bolt/discharge.wav"
+							Volume = 1
+							SpeedVariation = .2
+						}
+					]
+				}
+			]
+
+			MediaEffects
+			[
+				&<particles/electro-proton_hit_orb.rules>
+				&<particles/electro-proton_hit_bolts.rules>
+
+				: /BASE_SOUNDS/AudioExterior
+				{
+					Sound = "./data/shots/missile_emp/missile_emp_hit.wav"
+					Volume = 1
+					SpeedVariation = .2
+				}
+
+				: /BASE_SHAKE
+				{
+					ShakeAmount = .05
+					Duration = .75
+				}
+			]
+		}
+		HitStructural = &HitOperational
+
+		HitFriendly
+		{
+			MediaEffects
+			[
+				&<particles/electro-proton_hit_orb.rules>
+				&<particles/electro-proton_hit_bolts.rules>
+
+				: /BASE_SOUNDS/AudioExterior
+				{
+					Sound = "./data/shots/missile_emp/missile_emp_hit.wav"
+					Volume = 1
+					SpeedVariation = .2
+				}
+			]
+		}
+	}
+	
+	BallSprite
+	{
+		Type = Sprite
+		RenderBucket = BulletUpper1
+		Sprite
+		{
+			Texture
+			{
+				File = "./data/shots/disruptor_bolt/particles/disruptor_bolt_hit_orb.png"
+				MipLevels = max
+				SampleMode = Linear
+			}
+			Size = [1, 1]
+			VertexColor = [2, 255, 255]
+			//TargetBlendMode = Add
+		}
+	}
+
+	GlowSprite
+	{
+		Type = Sprite
+		RenderBucket = BulletUpper2
+		Z = 0
+		IsLight = true
+		Sprite
+		{
+			Texture
+			{
+				File = "./Data/common_effects/particles/blob.png"
+				MipLevels = max
+				SampleMode = Linear
+			}
+			Size = [2, 2]
+			VertexColor = [2, 255, 255]
+			TargetBlendMode = Add
+			Shader = "./Data/common_effects/fancy_light.shader"
+			_litReflectiveStrength = 24
+			_litAdditiveStrength = 0.05
+			_unlitAdditiveStrength = 0.25
+		}
+	}
+}
