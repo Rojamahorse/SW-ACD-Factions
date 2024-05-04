@@ -148,7 +148,7 @@ Actions
 		Replace = "<./Data/gui/text_sprites.rules>/wr_logo/Texture"
 		With = 
 		{
-			File = "acd_logo.png"
+			File = "acd_logo_credits.png"
 		}
 	}
 
