@@ -109,10 +109,9 @@ Ships
 /*5,385,694*/   	:~{ File="Rep Starhawk-Class Battleship.ship.png";                                      Tier=16; Difficulty=2; Tags = [combat] }
 /*5,385,694*/   	:~{ File="Rep Starhawk-Class E Battleship.ship.png";                                    Tier=17; Difficulty=2; Tags = [combat] }
 /*5,385,694*/   	:~{ File="Rep Starhawk-Class N Battleship.ship.png";                                    Tier=18; Difficulty=1; Tags = [combat] }
-/*8,046,774*/		:~{ File="Rep Venator V.ship.png";      												Tier=14; Difficulty=2; Tags = [combat] } 
 
 //Tier 14-17 (5,000,001 to 10,000,000)
-/*9,865,858*/    	:~{ File="V-class Nuke Star Destroyer (Republic).ship.png";                             Tier=15; Difficulty=1; Tags = [combat] }
+/*9,865,858*/    	:~{ File="V-class Nuke Star Destroyer (Republic).ship.png";                             Tier=15; Difficulty=1; Tags = [combat]; OtherIDs=["Rep Venator V"]; }
 /*10,316,614*/    	:~{ File="V-class CG Star Destroyer (Republic).ship.png";                               Tier=15; Difficulty=2; Tags = [combat] }
 /*9,979,214*/    	:~{ File="Victory-class Star Destroyer (Republic).ship.png";                            Tier=15; Difficulty=2; Tags = [combat] }
 /*10,047,954*/    	:~{ File="Venator II-Class B Star Destroye.ship.png";                                   Tier=16; Difficulty=2; Tags = [combat] } 
