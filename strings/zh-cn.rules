@@ -2,59 +2,69 @@ Parts
 {
     //X-Wing Cannons
     xwingCannons = "X翼炮"
-    xwingCannonsDesc = "X翼炮是小型武器，可以隐藏在装甲件的后面和下面。它们在中到长距离交战中非常有用。"
+    xwingCannonsDesc = "X翼炮是小型武器，可以隐藏在装甲件的后面和下面。它们在中到长距离交战中非常有用。"\
+	"\n<gray><i>Mod: SW:ACD Factions</i></gray>"
 
     // Standard X-Wing Cannons
     xwingCannon = "X翼短炮"
     xwingCannonIcon = "X翼短炮"
     xwingCannonLeft = "X翼短炮（侧面）"
     xwingCannonLeftIcon = "X翼短炮（侧面）"
-    xwingCannonDesc = "<cyan>英康公司</cyan>推出的X翼短炮；一种紧凑的短管炮，适合隐秘装甲集成，在中距离战斗中表现出色。"
+    xwingCannonDesc = "<cyan>英康公司</cyan>推出的X翼短炮；一种紧凑的短管炮，适合隐秘装甲集成，在中距离战斗中表现出色。"\
+	"\n<gray><i>Mod: SW:ACD Factions</i></gray>"
 
     //Compact Mass-Driver Cannon
     xwingCannonLong = "质量驱动紧凑型炮"
     xwingCannonLongIcon = "质量驱动紧凑型炮"
     xwingCannonLongLeft = "质量驱动紧凑型炮（侧面）"
     xwingCannonLongLeftIcon = "质量驱动紧凑型炮（侧面）"
-    xwingCannonLongDesc = "<cyan>夸特系统工程</cyan>的质量驱动紧凑型炮（MD-CC）；一种缩小版但强大的动能武器，专为空战中的精确和威力设计。其流线型设计允许与各种星际战斗机型号无缝集成，提供无与伦比的动能冲击，同时保持空气动力效率。"
+    xwingCannonLongDesc = "<cyan>夸特系统工程</cyan>的质量驱动紧凑型炮（MD-CC）；一种缩小版但强大的动能武器，专为空战中的精确和威力设计。其流线型设计允许与各种星际战斗机型号无缝集成，提供无与伦比的动能冲击，同时保持空气动力效率。"\
+	"\n<gray><i>Mod: SW:ACD Factions</i></gray>"
 
     //Extra Long X-Wing Cannons
     xwingCannonXLong = "X翼加长炮"
     xwingCannonXLongIcon = "X翼加长炮"
     xwingCannonXLongLeft = "X翼加长炮（侧面）"
     xwingCannonXLongLeftIcon = "X翼加长炮（侧面）"
-    xwingCannonXLongDesc = "<cyan>英康公司</cyan>的X翼加长炮；经典炮的加长版本，结合射程和隐蔽性，用于装甲后的战略定位。"
+    xwingCannonXLongDesc = "<cyan>英康公司</cyan>的X翼加长炮；经典炮的加长版本，结合射程和隐蔽性，用于装甲后的战略定位。"\
+	"\n<gray><i>Mod: SW:ACD Factions</i></gray>"
 
     //Standard TIE Repeaters
     tieMinigun = "TIE重复炮 - 超级版"
     tieMinigunIcon = "TIE重复炮-超级版"
     tieMinigunLeft = "TIE重复炮 - 超级版（侧面）"
     tieMinigunLeftIcon = "TIE重复炮-超级版（侧面）"
-    tieLMinigunDesc = "<cyan>银河帝国</cyan>的TIE重复炮 - 超级版；紧凑型，快速射击，非常适合近距离交战，具有隐秘装甲放置能力。"
+    tieLMinigunDesc = "<cyan>银河帝国</cyan>的TIE重复炮 - 超级版；紧凑型，快速射击，非常适合近距离交战，具有隐秘装甲放置能力。"\
+	"\n<gray><i>Mod: SW:ACD Factions</i></gray>"
 
     tieMinigunLong = "海克尔重型重复炮加长型"
     tieMinigunLongIcon = "海克尔重型重复炮加长型"
     tieMinigunLongLeft = "海克尔重型重复炮加长型（侧面）"
     tieMinigunLongLeftIcon = "海克尔重型重复炮加长型（侧面）"
-    tieLMinigunLongDesc = "<cyan>HyCor</cyan>的重型激光重复炮加长型；快速射击，非常适合近距离交战，这种重型激光重复炮已修改用于小型至中型船只。可放置在船只装甲的后面和下面。"
+    tieLMinigunLongDesc = "<cyan>HyCor</cyan>的重型激光重复炮加长型；快速射击，非常适合近距离交战，这种重型激光重复炮已修改用于小型至中型船只。可放置在船只装甲的后面和下面。"\
+	"\n<gray><i>Mod: SW:ACD Factions</i></gray>"
 
     // RG-9 Cannons
     RG9Cannon = "RG-9激光炮增强版"
     RG9CannonIcon = "RG-9激光炮增强版"
     RG9CannonLeft = "RG-9激光炮增强版（侧面）"
     RG9CannonLeftIcon = "RG-9激光炮增强版（侧面）"
-    RG9CannonDesc = "<cyan>博斯特尔</cyan>的RG-9激光炮；快速射击，多功能的小型A翼激光的增强版，主要用于中型至大型战斗机。"
-    RG9CannonLeftDesc = "<cyan>博斯特尔</cyan>的RG-9激光炮；快速射击，多功能的小型A翼激光的增强版，主要用于中型至大型战斗机。"
+    RG9CannonDesc = "<cyan>博斯特尔</cyan>的RG-9激光炮；快速射击，多功能的小型A翼激光的增强版，主要用于中型至大型战斗机。"\
+	"\n<gray><i>Mod: SW:ACD Factions</i></gray>"
+    RG9CannonLeftDesc = "<cyan>博斯特尔</cyan>的RG-9激光炮；快速射击，多功能的小型A翼激光的增强版，主要用于中型至大型战斗机。"\
+	"\n<gray><i>Mod: SW:ACD Factions</i></gray>"
 
     // Standard TwinBeam Defense Turret
     DroidTurret = "StarGuard双光束防御炮塔"
     DroidTurretIcon = "StarGuard双光束防御炮塔"
-    DroidTurretDesc = "由<cyan>科雷利安武器科技</cyan>制造，StarGuard双光束防御炮塔释放双光束之怒，提供无与伦比的保护。特别擅长拦截和中和<orange>激光和离子射击</orange>，对抗基于能量的弹道威胁提供优越的防御，但对子弹、地雷和导弹无效。"
+    DroidTurretDesc = "由<cyan>科雷利安武器科技</cyan>制造，StarGuard双光束防御炮塔释放双光束之怒，提供无与伦比的保护。特别擅长拦截和中和<orange>激光和离子射击</orange>，对抗基于能量的弹道威胁提供优越的防御，但对子弹、地雷和导弹无效。"\
+	"\n<gray><i>Mod: SW:ACD Factions</i></gray>"
 
     // Mini TwinLaser Defense Turret
     PDTurretTiny = "StarGuard迷你双激光点防御炮塔"
     PDTurretTinyIcon = "StarGuard迷你双激光点防御炮塔"
-    PDTurretTinyDesc = "<cyan>科雷利安武器科技</cyan>制造的StarGuard迷你双激光点防御炮塔释放双激光之怒。这种微型化且全自动化的StarGuard双激光炮塔专为狭小空间优化。它在瞄准<orange>子弹、地雷和导弹</orange>方面非常有效，但对激光和离子射击无效。"
+    PDTurretTinyDesc = "<cyan>科雷利安武器科技</cyan>制造的StarGuard迷你双激光点防御炮塔释放双激光之怒。这种微型化且全自动化的StarGuard双激光炮塔专为狭小空间优化。它在瞄准<orange>子弹、地雷和导弹</orange>方面非常有效，但对激光和离子射击无效。"\
+	"\n<gray><i>Mod: SW:ACD Factions</i></gray>"
 }
 
 

@@ -2,59 +2,69 @@ Parts
 {
     //X-Wing Cannons
     xwingCannons = "Cañón X-Wing"
-    xwingCannonsDesc = "Los cañones X-Wing son armas pequeñas que pueden colocarse ocultas detrás y debajo de piezas de armadura. Son útiles en enfrentamientos a medio y largo alcance."
+    xwingCannonsDesc = "Los cañones X-Wing son armas pequeñas que pueden colocarse ocultas detrás y debajo de piezas de armadura. Son útiles en enfrentamientos a medio y largo alcance."\
+	"\n<gray><i>Mod: SW:ACD Factions</i></gray>"
 
     // Standard X-Wing Cannons
     xwingCannon = "Cañón Corto X-Wing"
     xwingCannonIcon = "X-Wing CC"
     xwingCannonLeft = "Cañón Corto X-Wing (Lateral)"
     xwingCannonLeftIcon = "X-Wing CC (Lateral)"
-    xwingCannonDesc = "<cyan>Incom Corporation</cyan> presenta el X-Wing CC; un cañón compacto de cañón corto para integración sigilosa en armaduras, sobresaliendo en combate a media distancia."
+    xwingCannonDesc = "<cyan>Incom Corporation</cyan> presenta el X-Wing CC; un cañón compacto de cañón corto para integración sigilosa en armaduras, sobresaliendo en combate a media distancia."\
+	"\n<gray><i>Mod: SW:ACD Factions</i></gray>"
 
     //Compact Mass-Driver Cannon
     xwingCannonLong = "Cañón Compacto Impulsor de Masa"
     xwingCannonLongIcon = "Impulsor de Masa CC"
     xwingCannonLongLeft = "Cañón Compacto Impulsor de Masa (Lateral)"
     xwingCannonLongLeftIcon = "Impulsor de Masa CC (Lateral)"
-    xwingCannonLongDesc = "El Cañón Compacto Impulsor de Masa (MD-CC) de <cyan>Kuat Systems Engineering</cyan>; Un arma cinética reducida pero formidable, diseñada para precisión y potencia en combates aéreos. Su diseño elegante permite una integración perfecta con varios modelos de cazas estelares, proporcionando un impacto cinético inigualable mientras mantiene la eficiencia aerodinámica."
+    xwingCannonLongDesc = "El Cañón Compacto Impulsor de Masa (MD-CC) de <cyan>Kuat Systems Engineering</cyan>; Un arma cinética reducida pero formidable, diseñada para precisión y potencia en combates aéreos. Su diseño elegante permite una integración perfecta con varios modelos de cazas estelares, proporcionando un impacto cinético inigualable mientras mantiene la eficiencia aerodinámica."\
+	"\n<gray><i>Mod: SW:ACD Factions</i></gray>"
 
     //Extra Long X-Wing Cannons
     xwingCannonXLong = "Cañón Extendido X-Wing"
     xwingCannonXLongIcon = "X-Wing CE"
     xwingCannonXLongLeft = "Cañón Extendido X-Wing (Lateral)"
     xwingCannonXLongLeftIcon = "X-Wing CE (Lateral)"
-    xwingCannonXLongDesc = "<cyan>Incom Corporation</cyan> presenta el X-Wing CE; una versión extendida del cañón clásico, combinando alcance y sigilo para una colocación estratégica detrás de la armadura."
+    xwingCannonXLongDesc = "<cyan>Incom Corporation</cyan> presenta el X-Wing CE; una versión extendida del cañón clásico, combinando alcance y sigilo para una colocación estratégica detrás de la armadura."\
+	"\n<gray><i>Mod: SW:ACD Factions</i></gray>"
 
     //Standard TIE Repeaters
     tieMinigun = "Cañón Repetidor TIE - Edición Súper"
     tieMinigunIcon = "TIE RC-SE"
     tieMinigunLeft = "Cañón Repetidor TIE - Edición Súper (Lateral)"
     tieMinigunLeftIcon = "TIE RC-SE (Lateral)"
-    tieLMinigunDesc = "Los cañones repetidores TIE - Edición Súper del <cyan>Imperio Galáctico</cyan>; compactos, de disparo rápido y perfectos para enfrentamientos a corta distancia, con capacidad de colocación sigilosa en armaduras."
+    tieLMinigunDesc = "Los cañones repetidores TIE - Edición Súper del <cyan>Imperio Galáctico</cyan>; compactos, de disparo rápido y perfectos para enfrentamientos a corta distancia, con capacidad de colocación sigilosa en armaduras."\
+	"\n<gray><i>Mod: SW:ACD Factions</i></gray>"
 
     tieMinigunLong = "Cañón Repetidor Pesado HyCor Extendido"
     tieMinigunLongIcon = "HyCor HR-CE"
     tieMinigunLongLeft = "Cañón Repetidor Pesado HyCor Extendido (Lateral)"
     tieMinigunLongLeftIcon = "HyCor HR-CE (Lateral)"
-    tieLMinigunLongDesc = "Repetidor Láser Pesado con Cañón Extendido de <cyan>HyCor</cyan>; de disparo rápido y perfecto para enfrentamientos a corta distancia, este repetidor láser pesado está modificado para uso en naves pequeñas a medianas. Puede colocarse detrás y debajo de la armadura de la nave."
+    tieLMinigunLongDesc = "Repetidor Láser Pesado con Cañón Extendido de <cyan>HyCor</cyan>; de disparo rápido y perfecto para enfrentamientos a corta distancia, este repetidor láser pesado está modificado para uso en naves pequeñas a medianas. Puede colocarse detrás y debajo de la armadura de la nave."\
+	"\n<gray><i>Mod: SW:ACD Factions</i></gray>"
 
     // RG-9 Cannons
     RG9Cannon = "Cañón Láser RG-9 Edición Mejorada"
     RG9CannonIcon = "RG-9 LC-EM"
     RG9CannonLeft = "Cañón Láser RG-9 Edición Mejorada (Lateral)"
     RG9CannonLeftIcon = "RG-9 LC-EM (Lateral)"
-    RG9CannonDesc = "Cañón Láser RG-9 de <cyan>Borstel</cyan>; una Edición Mejorada del láser pequeño A-Wing rápido y versátil, principalmente utilizado en cazas medianos a grandes."
-    RG9CannonLeftDesc = "Cañón Láser RG-9 de <cyan>Borstel</cyan>; una Edición Mejorada del láser pequeño A-Wing rápido y versátil, principalmente utilizado en cazas medianos a grandes."
+    RG9CannonDesc = "Cañón Láser RG-9 de <cyan>Borstel</cyan>; una Edición Mejorada del láser pequeño A-Wing rápido y versátil, principalmente utilizado en cazas medianos a grandes."\
+	"\n<gray><i>Mod: SW:ACD Factions</i></gray>"
+    RG9CannonLeftDesc = "Cañón Láser RG-9 de <cyan>Borstel</cyan>; una Edición Mejorada del láser pequeño A-Wing rápido y versátil, principalmente utilizado en cazas medianos a grandes."\
+	"\n<gray><i>Mod: SW:ACD Factions</i></gray>"
 
     // Standard TwinBeam Defense Turret
     DroidTurret = "Torreta de Defensa Doble Haz StarGuard"
     DroidTurretIcon = "Starguard TD-DH"
-    DroidTurretDesc = "Fabricada por <cyan>Corellian ArmsTech</cyan>, la torreta de defensa doble haz StarGuard desata furia de doble rayo, ofreciendo protección inigualable. Excepcionalmente efectiva en interceptar y neutralizar <orange>láseres y disparos de iones</orange>, proporciona defensa superior contra amenazas de proyectiles basados en energía pero es ineficaz con balas, minas y misiles."
+    DroidTurretDesc = "Fabricada por <cyan>Corellian ArmsTech</cyan>, la torreta de defensa doble haz StarGuard desata furia de doble rayo, ofreciendo protección inigualable. Excepcionalmente efectiva en interceptar y neutralizar <orange>láseres y disparos de iones</orange>, proporciona defensa superior contra amenazas de proyectiles basados en energía pero es ineficaz con balas, minas y misiles."\
+	"\n<gray><i>Mod: SW:ACD Factions</i></gray>"
 
     // Mini TwinLaser Defense Turret
     PDTurretTiny = "Torreta de Punto de Defensa Compacta Doble Láser StarGuard"
     PDTurretTinyIcon = "Starguard TL-CD-PD"
-    PDTurretTinyDesc = "La Torreta de Punto de Defensa Doble Láser StarGuard, fabricada por <cyan>Corellian ArmsTech</cyan>, desata furia de doble láser. Esta versión miniaturizada y completamente automatizada de la Torreta Doble Láser StarGuard está optimizada para espacios reducidos. Es muy efectiva en el objetivo de <orange>balas, minas y misiles</orange>, pero es ineficaz contra láseres y disparos de iones."
+    PDTurretTinyDesc = "La Torreta de Punto de Defensa Doble Láser StarGuard, fabricada por <cyan>Corellian ArmsTech</cyan>, desata furia de doble láser. Esta versión miniaturizada y completamente automatizada de la Torreta Doble Láser StarGuard está optimizada para espacios reducidos. Es muy efectiva en el objetivo de <orange>balas, minas y misiles</orange>, pero es ineficaz contra láseres y disparos de iones."\
+	"\n<gray><i>Mod: SW:ACD Factions</i></gray>"
 }
 
 
