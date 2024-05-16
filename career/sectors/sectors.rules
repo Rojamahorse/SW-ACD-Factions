@@ -1,0 +1,7 @@
+Sectors
+[
+	&<sector_basic/sector_basic.rules>/Sector
+	&<sector_binary/sector_binary.rules>/Sector
+	&<sector_high_density_nebula/sector_high_density_nebula.rules>/Sector
+	&<sector_supernova/sector_supernova.rules>/Sector
+]

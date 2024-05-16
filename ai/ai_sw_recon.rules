@@ -20,3 +20,5 @@ StrategyModules
 		ReleaseAggroWithinRadar = true
 	}
 ]
+
+CommsModules = &<./Data/ai/ai_common.rules>/CommsModulesDefault

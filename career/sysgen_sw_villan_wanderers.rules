@@ -6,13 +6,14 @@ SubSpawners
 		Type = Ships
 		Tags = [swvillan] 
 		Count = [14, 16] 
-		Distance = [6000, 45000]
-		MinDistanceFromTags = [[station, 7500], [pirate, 2500], [swvillan, 500], [bounty, 10000]]
+		Distance = [0, 25000]
+		MinDistanceFromTags = [[sun, 6000],[station, 7500], [pirate, 2500], [swvillan, 500], [bounty, 10000]]
+		MinDistanceFromNebulas = [[ion_storm, 500]]
 		SuppressLocationAssertions = true
 		Allegiance = Unique //OLD: Unique
 		SynchronizeAllegiance = true
-		FamePerTier = &<./Data/modes/career/tier_tables.rules>/StandardFamePerTier
-		MaxFamePerTier = &<./Data/modes/career/tier_tables.rules>/StandardMaxFamePerTier
+		FamePerTier = &/TIER_TABLES/StandardFamePerTier
+		MaxFamePerTier = &/TIER_TABLES/StandardMaxFamePerTier
 		ShipCriteria
 		{
 			UseLocalFactionWeights = true

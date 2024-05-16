@@ -1,0 +1,81 @@
+ID = "distress"
+MinOtherTriggersBeforeReTrigger = 0
+Conditions
+{
+	MinParentFieldTier = &<../fleet_tier_remap_table.rules>/FleetTierRemapTable/0/OriginalTier
+	RequiredFame = 20000//don't want this to trigger right now because its broken.
+}
+
+EncounterGenerator
+{
+	Spawners
+	[
+		{
+			Type = Ships
+			Tags = [bounty_ship]
+			Allegiance = Unique
+			SynchronizeAllegiance = true
+			FamePerTier = &<../tier_tables.rules>/StandardFamePerTier // Mission reward ALSO gives standard fame, effectively doubling fame reward for this bounty.
+			MaxFamePerTier = &<../tier_tables.rules>/StandardMaxFamePerTier
+			ShipCriteria
+			{
+				UseLocalFactionWeights = true
+				UseTierField = true
+				AllowTierRangeExpansion = true
+				Tags = [combat]
+				UseEvenShipTypeDistribution = false
+				FleetTierRemapTable = &<../fleet_tier_remap_table.rules>/FleetTierRemapTable
+			}
+			AI
+			{
+				Type = Normal
+				PatrolRadius = 1000
+				TargetAcquireRangeFromOrigin = 3000
+				TargetUnacquireRangeFromOrigin = 4000
+			}
+
+			SubSpawners
+			[
+				{
+					Type = Mission
+					Metatype = Distress
+					SpawnAt = Player
+					Faction = SystemController
+					Objectives
+					[
+						{
+							Type = Sequential
+							SubObjectives
+							[
+								{
+									Type = DefeatShips
+									TargetsTag = { Tag=bounty_ship; LimitToFleet=true; }
+									AutoDiscoverTargetArea = true
+									TierCombineMode = ValueSum
+								}
+							]
+						}
+					]
+					Rewards
+					[
+						{
+							Type = Money
+							MoneyPerHighTier = &<../tier_tables.rules>/StandardMoneyPerTier
+							RoundToMultiple = 500
+						}
+						{
+							Type = Fame
+							FamePerHighTier = &<../tier_tables.rules>/StandardFamePerTier
+							MaxFamePerHighTier = &<../tier_tables.rules>/StandardMaxFamePerTier
+						}
+						{
+							Type = Reputation
+							ReputationPerHighTier = &<../tier_tables.rules>/StandardReputationPerTier
+							ReputationPerTierMultiplier = 2
+						}
+					]
+				}
+			]
+		}
+	]
+}

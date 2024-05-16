@@ -1,0 +1,15 @@
+Type = FtlGates
+Distance = [18750, 22500]
+Tags = [ftl_gate]
+DoodadType = cosmoteer.ftl_gate
+Invulnerable = true
+
+SubSpawners
+[
+	// Prevent nebulas from spawning near gates.
+	{
+		Type = Nebula
+		NebulaType = ""
+		NebulaRadius = 2000
+	}
+]

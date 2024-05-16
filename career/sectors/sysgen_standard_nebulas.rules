@@ -1,0 +1,51 @@
+Type = None
+Conditions { ProhibitSpawnFlags = [no_standard_nebulas] }
+
+SubSpawners
+[
+	// Ye old basic cloudy nebula.
+	{
+		Type = Nebula
+		NebulaType = cloudy
+		NebulaRadius = 25000
+
+		PerlinNoise
+		{
+			GridSize = [8, 4]
+			Octaves = 2
+			OutputShift = -0.25
+			Repeat = [&../GridSize/0, 0]
+		}
+		PerlinNoiseCenterOffset = -1
+		PerlinNoiseCenterOffsetExponent = 4
+		MinPerlinNebulaTris = 3
+		UsePolarPerlinCoordinates = true
+		MaxDistanceFromWorldOrigin = &<../career.rules>/Exploration/UnexploredRadius
+	}
+
+	// Electron Clouds
+	{
+		Conditions { IsInitNode=false }
+		Type = Nebula
+		SpawnChance = 50%
+		Count = [1, 2]
+		Distance = [5000, 25000]
+		NebulaType = electron
+		NebulaRadius = 100000
+		NebulaSplatTriCount = [120, 240]
+		MaxDistanceFromWorldOrigin = &<../career.rules>/Exploration/UnexploredRadius
+	}
+
+	// Ion Storms
+	{
+		Conditions { IsInitNode=false }
+		Type = Nebula
+		Count = [0, 2]
+		Distance = [10000, 25000]
+		NebulaType = ion_storm
+		NebulaRadius = 100000
+		NebulaSplatTriCount = [20, 40]
+		UseIrregularSplatShape = true
+		MaxDistanceFromWorldOrigin = &<../career.rules>/Exploration/UnexploredRadius
+	}
+]

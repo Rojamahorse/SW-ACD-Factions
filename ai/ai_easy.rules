@@ -33,3 +33,5 @@ TacticsModules
 		UseSavedAboveHealth = 50%
 	}
 ]
+
+CommsModules = &<./Data/ai/ai_common.rules>/CommsModulesDefault

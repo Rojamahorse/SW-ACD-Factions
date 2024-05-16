@@ -25,7 +25,7 @@ StrategyModules
 	}
 ]
 
-CommsModules
+CommsModules : &<./Data/ai/ai_common.rules>/CommsModulesDefault
 [
 	{
 		Type = Trade
@@ -39,3 +39,4 @@ CommsModules
 		CrewHireCostRoundToMultiple = &<./Data/modes/career/career.rules>/CrewHireCostRoundToMultiple
 	}
 ]
+

@@ -1,0 +1,22 @@
+Type = None
+SubSpawners
+[
+	// Unary sun.
+	{
+		Conditions { ProhibitSpawnFlags = [binary_sun, no_sun] }
+		Type = Doodads
+		DoodadType = cosmoteer.planet_sun
+	}
+
+	// Binary suns.
+	{
+		Conditions { RequireSpawnFlags = [binary_sun] }
+		Type = Doodads
+		DoodadType = cosmoteer.planet_sun
+		Count = 2
+		Distance = 2000
+		ScaleFactor = [50%, 75%]
+		SpawnsPerSlice = 1
+		SpawnSlicePadding = 89d
+	}
+]

@@ -6,12 +6,13 @@ SubSpawners
 		Type = Ships
 		Tags = [faction_wanderer]
 		Count = [14, 16]
-		Distance = [6000, 18000]
-		MinDistanceFromTags = [[station, 500]]
+		Distance = [0, 18000]
+		MinDistanceFromTags = [[sun, 6000], [station, 500]]
+		MinDistanceFromNebulas = [[ion_storm, 500]]
 		SuppressLocationAssertions = true
-		Allegiance = Unique //OLD: FactionMilitary
-		FamePerTier = &<./Data/modes/career/tier_tables.rules>/StandardFamePerTier
-		MaxFamePerTier = &<./Data/modes/career/tier_tables.rules>/StandardMaxFamePerTier
+		Allegiance = FactionMilitary //OLD: Unique
+		FamePerTier = &/TIER_TABLES/StandardFamePerTier
+		MaxFamePerTier = &/TIER_TABLES/StandardMaxFamePerTier
 		ShipCriteria
 		{
 			UseLocalFactionWeights = true

@@ -5,6 +5,7 @@ Spawners
 		Count = 500
 	}
 	
+	&<map_generators/sw_galaxy_Chaos.rules>/SectorTypes //Nebulas	
 	&<map_generators/sw_galaxy_Chaos.rules>/Factions
 	&<map_generators/sw_galaxy_Chaos.rules>/FactionTiers
 	&<map_generators/sw_galaxy_Chaos.rules>/StartingNodePicker

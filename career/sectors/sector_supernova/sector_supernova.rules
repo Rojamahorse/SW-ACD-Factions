@@ -1,0 +1,7 @@
+Sector : <../sector_basic/sector_basic.rules>/Sector
+{
+	ID = supernova
+	NameKey = "SectorTypes/Supernova"
+	SpawnFlags = [no_standard_nebulas, supernova_nebulas, no_sun, no_inner_planets, multiple_asteroid_belts]
+	BackgroundStyles = [bg_red_blue, bg_yellow_orange, bg_tan_pink_silver]
+}

@@ -10,6 +10,31 @@ MapNodes
 	NameGenerator = &<../../name_generators/sw_name_celestial.rules>/CelNameGen
 }
 
+//Nebulas
+SectorTypes
+{
+	Type = RandomSectorTypes
+	SectorTypes
+	[
+		{
+			Type = basic
+			RandomWeight = 1
+		}
+		{
+			Type = binary
+			RandomWeight = 0.5
+		}
+		{
+			Type = high_density_nebula
+			RandomWeight = 0.5
+		}
+		{
+			Type = supernova
+			RandomWeight = 0.5
+		}
+	]
+}
+
 Factions
 {
 	Type = Factions
@@ -90,6 +115,7 @@ StartingNodePicker
 	CandidatesFarthestFromFactions = [3, [SW.Galactic_Empire]]
 //	CandidatesClosestToFactions = [1, [SW.Rebel_Alliance]]
 	SetTierRangeTo = [1, 1 + (&~/TierSpread)]
+	SetSectorTypeTo = basic //Nebulas
 }
 
 ProgressionTiers
@@ -221,6 +247,7 @@ StartingNodePicker // Define starting node picker settings
   CandidatesFarthestFromFactions = [5, [SW.Galactic_Empire]] // Farthest from Galactic Empire
   CandidatesClosestToFactions = [1, [SW.Rebel_Alliance]] // Closest to CIS and Republic
   SetTierRangeTo = [1, 1 + (&~/TierSpread)] // Set starting node tier range
+	SetSectorTypeTo = basic //Nebulas
 }
 
 ProgressionTiers

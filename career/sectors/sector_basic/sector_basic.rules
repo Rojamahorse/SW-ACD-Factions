@@ -1,0 +1,208 @@
+Sector
+{
+	ID = basic
+	NameKey = "SectorTypes/Basic"
+
+	// Rule: Since this basic sector type is used as a base for other sector types, it
+	// doesn't define any spawn flags. Any basic spawns that need to get removed from sub-types
+	// should define their own flags to disable them.
+
+	SystemGenerator
+	{
+		Spawners
+		[
+			&<../sysgen_suns.rules>
+			&<../sysgen_planets.rules>
+			&<../sysgen_standard_nebulas.rules>
+			&<../sysgen_high_density_nebulas.rules>
+			&<../sysgen_supernova_nebulas.rules>
+			&<../sysgen_ftl_gates.rules>
+			&<../sysgen_trade_stations.rules>
+			&<../sysgen_military_stations.rules>
+			&<../sysgen_wanderers.rules>
+			&<../sysgen_bounties.rules>
+			&<../sysgen_asteroids.rules>
+			&<../sysgen_misc_discoverables.rules>
+			&<../sysgen_ftl_beacons.rules>
+			&<../sysgen_sim_global_missions.rules>
+		]
+	}
+
+	TradeRoutes
+	{
+		MaxTradeShipsPerEndpoint = 2.25
+		MaxSimultaneousTradeShipsPerStation = 3
+		TradeShipSpawnInterval = [5, 10]
+		DestinationReachedDistance = 5
+		DestinationReachedSpeed = 0.25
+		FtlRemoveDelay = &<./Data/ships/base_ship.rules>/FtlEffects/TotalDuration
+		MinTradeShipSpawnDistFromEndpoints = 1000
+
+		StationResourceTradeDeltas
+		[
+			{ ResourceType=hyperium;          DesiredDelta=[-20, 20]; }
+			{ ResourceType=steel;             DesiredDelta=[-200, 200]; }
+			{ ResourceType=coil;              DesiredDelta=[-100, 100]; }
+			{ ResourceType=coil2;             DesiredDelta=[-100, 100]; }
+			{ ResourceType=tristeel;          DesiredDelta=[-10, 10]; }
+			{ ResourceType=diamond;           DesiredDelta=[-10, 10]; }
+			{ ResourceType=processor;         DesiredDelta=[-10, 10]; }
+			{ ResourceType=enriched_uranium;  DesiredDelta=[-10, 10]; }
+			{ ResourceType=sulfur;            DesiredDelta=[-50, 50]; }
+			{ ResourceType=iron;              DesiredDelta=[-100, 100]; }
+			{ ResourceType=copper;            DesiredDelta=[-50, 50]; }
+			{ ResourceType=tritanium;         DesiredDelta=[-10, 10]; }
+			{ ResourceType=carbon;            DesiredDelta=[-10, 10]; }
+			{ ResourceType=gold;              DesiredDelta=[-10, 10]; }
+			{ ResourceType=uranium;           DesiredDelta=[-10, 10]; }
+			{ ResourceType=bullet;            DesiredDelta=[-100, 100]; }
+			{ ResourceType=missile_part_he;   DesiredDelta=[-50, 50]; }
+			{ ResourceType=missile_part_emp;  DesiredDelta=[-10, 10]; }
+			{ ResourceType=missile_part_nuke; DesiredDelta=[-10, 10]; }
+			{ ResourceType=mine_part;         DesiredDelta=[-30, 30]; }
+		]
+	}
+
+	ResourceDeliveryMissions
+	{
+		Metatype = ResourceDelivery
+		TimeLimit = 30:00
+		SimultaneousMissionsPerStation = 2
+		RewardMoneyPerSellPrice = 75%
+		RoundRewardMoneyToMultiple = 100
+		DeliveryTypes
+		[
+			{
+				ResourceType = steel
+				Quantity = [80, 120]
+				RoundQuantityToMultiple = 20
+			}
+			{
+				ResourceType = coil
+				Quantity = [40, 60]
+				RoundQuantityToMultiple = 20
+			}
+			{
+				ResourceType = coil2
+				Quantity = [30, 45]
+				RoundQuantityToMultiple = 20
+			}
+			{
+				ResourceType = tristeel
+				Quantity = [20, 40]
+				RoundQuantityToMultiple = 20
+			}
+			{
+				ResourceType = diamond
+				Quantity = [2, 3]
+			}
+			{
+				ResourceType = processor
+				Quantity = [3, 5]
+			}
+			{
+				ResourceType = enriched_uranium
+				Quantity = [4, 6]
+			}
+			{
+				ResourceType = hyperium
+				Quantity = [20, 40]
+				RoundQuantityToMultiple = 20
+			}
+			{
+				ResourceType = iron
+				Quantity = [20, 30]
+				RoundQuantityToMultiple = 5
+			}
+			{
+				ResourceType = copper
+				Quantity = [15, 25]
+				RoundQuantityToMultiple = 5
+			}
+			{
+				ResourceType = tritanium
+				Quantity = [10, 15]
+				RoundQuantityToMultiple = 5
+			}
+			{
+				ResourceType = carbon
+				Quantity = [10, 15]
+				RoundQuantityToMultiple = 5
+			}
+			{
+				ResourceType = gold
+				Quantity = [5, 10]
+				RoundQuantityToMultiple = 5
+			}
+			{
+				ResourceType = uranium
+				Quantity = [5, 10]
+				RoundQuantityToMultiple = 5
+			}
+			{
+				ResourceType = sulfur
+				Quantity = [20, 30]
+				RoundQuantityToMultiple = 5
+			}
+			{
+				ResourceType = bullet
+				Quantity = [320, 480]
+				RoundQuantityToMultiple = 20
+			}
+			{
+				ResourceType = missile_part_he
+				Quantity = [160, 240]
+				RoundQuantityToMultiple = 10
+			}
+			{
+				ResourceType = missile_part_emp
+				Quantity = [80, 120]
+				RoundQuantityToMultiple = 10
+			}
+			{
+				ResourceType = missile_part_nuke
+				Quantity = [40, 60]
+				RoundQuantityToMultiple = 10
+			}
+			{
+				ResourceType = mine_part
+				Quantity = [64, 96]
+				RoundQuantityToMultiple = 4
+			}
+		]
+	}
+
+	EncounterRules
+	{
+		MinTimeBetweenEncounters = 500
+		TriggerRadius = 1700  //sensor radius is 2400, so we can do 2400 / 1.3, so higher than 1846
+		_spaceBetweenOthers = 400
+		TimeBeforeForcedRegenerate = 2000
+		EncounterTriggersGenerator
+		{
+			Spawners
+			[
+				/*{
+					Type = EncounterTriggers
+					Tags = [encounter_trigger]
+					Count = 99 //as many as possible
+					SuppressLocationAssertions = true //needed when we have 99 counts because not finding one is normal
+					_distanceToOthers = (&~/Sector/EncounterRules/TriggerRadius) + (&~/Sector/EncounterRules/_spaceBetweenOthers)
+					Distance = [0, 20000]
+					MinDistanceFromSiblings = &_distanceToOthers
+					MinDistanceFromTags
+					[
+						[sun, 2500 + (&../../_distanceToOthers)]
+						[station, &../../_distanceToOthers]
+						[bounty_area, &../../_distanceToOthers]
+						[player_ship, (&../../_distanceToOthers)]
+					]
+				}*/
+			]
+		}
+		PossibleEncounters
+		[
+			&<../../encounters/encounter_ambush.rules>
+		]
+	}
+}

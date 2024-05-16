@@ -56,3 +56,5 @@ TargetingModules
 		TargetValueFactorPerPenetrationDist = 0
 	}
 ]
+
+CommsModules = &<./Data/ai/ai_common.rules>/CommsModulesDefault

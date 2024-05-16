@@ -4,7 +4,7 @@ Spawners
 	{
 		Count = 50
 	}
-	
+	&<map_generators/sw_galaxy_Clone.rules>/SectorTypes //Nebulas	
 	&<map_generators/sw_galaxy_Clone.rules>/Factions
 	&<map_generators/sw_galaxy_Clone.rules>/FactionTiers
 	&<map_generators/sw_galaxy_Clone.rules>/StartingNodePicker

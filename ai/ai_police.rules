@@ -3,7 +3,9 @@ UpdateInterval = [.25, .75] // A random range.
 StrategyModules
 [
 	{
-		Type = DeleteSelf
+		Type = ExitSector
+		AvoidableDoodadTags = [sun]
+		AvoidableDoodadBuffer = 100
 	}
 	{
 		Type = WantedSearch
@@ -49,7 +51,10 @@ TargetingModules
 StasisModules
 [
 	{
-		Type = DeleteSelf
+		Type = ExitSector
+		DefaultStasisSpeed = 100
+		AvoidableDoodadTags = [sun]
+		AvoidableDoodadBuffer = 100
 	}
 	{
 		Type = WantedSearch
@@ -58,3 +63,5 @@ StasisModules
 		AvoidableDoodadBuffer = 100
 	}
 ]
+
+CommsModules = &<./Data/ai/ai_common.rules>/CommsModulesDefault

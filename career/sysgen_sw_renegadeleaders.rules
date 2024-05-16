@@ -18,8 +18,8 @@ SubSpawners
 		MinDistanceFromTags = [[SWBoss, 8000],[station, 8000],[target_leviathan, 8000],[JaniBoss, 8000]]
 		Allegiance = Unique
 		SynchronizeAllegiance = true
-		FamePerTier = &<./data/modes/career/tier_tables.rules>/StandardFamePerTier
-		MaxFamePerTier = &<./data/modes/career/tier_tables.rules>/StandardMaxFamePerTier
+		FamePerTier = &/TIER_TABLES/StandardFamePerTier
+		MaxFamePerTier = &/TIER_TABLES/StandardMaxFamePerTier
 		Radius = 4000
 		Labels = ["swrenegadeleader"] // undo this and make each boss its own spawner inside a subspawner with random.
 		NameGenerator
@@ -203,11 +203,12 @@ SubSpawners
 						SubObjectives
 						[
 							{
-								Type = DestroyShips
+								Type = DefeatShips
 								TargetsTag = { Tag=SWRenegadeLeader; LimitToBatch=true; Max=1; }
 								TargetAreaTag = SWRenegadeLeaderArea
 								AutoDiscoverTargetArea = true
 								OverrideDisplayFormatKey = "Objectives/EliminateRenegadeLeader"
+								AllowSurrender = false
 							}
 							{
 								Type = ReceiveRewards
@@ -219,19 +220,19 @@ SubSpawners
 				[
 					{
 						Type = Money
-						MoneyPerHighTier = &<./data/modes/career/tier_tables.rules>/StandardMoneyPerTier
+						MoneyPerHighTier = &/TIER_TABLES/StandardMoneyPerTier
 						MoneyPerTierMultiplier = 12
 						RoundToMultiple = 1000
 					}
 					{
 						Type = Fame
-						FamePerHighTier = &<./data/modes/career/tier_tables.rules>/StandardFamePerTier
+						FamePerHighTier = &/TIER_TABLES/StandardFamePerTier
 						FamePerTierMultiplier = 10
-						MaxFamePerHighTier = &<./data/modes/career/tier_tables.rules>/StandardMaxFamePerTier
+						MaxFamePerHighTier = &/TIER_TABLES/StandardMaxFamePerTier
 					}
 					{
 						Type = Reputation
-						ReputationPerHighTier = &<./data/modes/career/tier_tables.rules>/StandardReputationPerTier
+						ReputationPerHighTier = &/TIER_TABLES/StandardReputationPerTier
 						ReputationPerTierMultiplier = 10
 					}
 				]

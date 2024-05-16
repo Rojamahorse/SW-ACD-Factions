@@ -8,6 +8,31 @@ MapNodes
 }
 */
 
+//Nebulas
+SectorTypes
+{
+	Type = RandomSectorTypes
+	SectorTypes
+	[
+		{
+			Type = basic
+			RandomWeight = 1
+		}
+		{
+			Type = binary
+			RandomWeight = 0.5
+		}
+		{
+			Type = high_density_nebula
+			RandomWeight = 0.5
+		}
+		{
+			Type = supernova
+			RandomWeight = 0.5
+		}
+	]
+}
+
 Factions
 {
 	Type = Factions
@@ -83,6 +108,7 @@ StartingNodePicker
 	CandidatesFarthestFromFactions = [5, [imperium]]
 	CandidatesClosestToFactions = [1, [monolith, cabal]]
 	SetTierRangeTo = [1, 1 + (&~/TierSpread)]
+	SetSectorTypeTo = basic //Nebulas
 }
 
 ProgressionTiers

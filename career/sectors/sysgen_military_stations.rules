@@ -1,0 +1,235 @@
+Type = None
+SubSpawners
+[
+	// Faction bases.
+	: ~/BaseMilitaryStation
+	{
+		Count = [2, 3]
+		Features = [OperationalStation, FtlPoint, HideUntilDiscovered]
+		RememberResourcesAndCrew = true
+		Allegiance = FactionMilitary
+
+		SubSpawners : ^/0/SubSpawners
+		[
+			// Mission to destroy faction base.
+			{
+				Type = Mission
+				Metatype = FactionBaseDestruction
+				SpawnAt = Tag
+				SpawnAtTag = { Mode=Nearest; Tag=trade_station; OnlyOpposingFactions=true; }
+				OkayIfSpawnAtTagNotFound = true
+				Faction = OwnerOfTag
+				FactionTag = &SpawnAtTag
+				OkayIfFactionTagNotFound = true
+				Objectives
+				[
+					{
+						Type = Sequential
+						SubObjectives
+						[
+							{
+								Type = DefeatShips
+								TargetsTag = { Tag=military_station; Max=1; }
+								TargetAreaTag = { Mode=Nearest; Tag=poi_unknown; }
+								AutoDiscoverTargetArea = true
+								AllowSurrender = false
+							}
+							{
+								Type = ReceiveRewards
+							}
+						]
+					}
+				]
+				Rewards
+				[
+					{
+						Type = Money
+						MoneyPerHighTier = &/TIER_TABLES/StandardMoneyPerTier
+						RoundToMultiple = 1000
+						MoneyPerTierMultiplier = 3
+					}
+					{
+						Type = Fame
+						FamePerHighTier = &/TIER_TABLES/StandardFamePerTier
+						MaxFamePerHighTier = &/TIER_TABLES/StandardMaxFamePerTier
+						FamePerTierMultiplier = 2
+					}
+		            {
+						Type = Reputation
+						ReputationPerHighTier = &/TIER_TABLES/StandardReputationPerTier
+						ReputationPerTierMultiplier = 5
+		            }
+				]
+			}
+		]
+	}
+
+	// Pirate bases.
+	: ~/BaseMilitaryStation
+	{
+		Count = [2, 3]
+		Features = [Landmark, HideUntilDiscovered]
+		Allegiance = Unique
+
+		SubSpawners : ^/0/SubSpawners
+		[
+			// Mission to destroy pirate base.
+			{
+				Type = Mission
+				Metatype = PirateBaseDestruction
+				SpawnAt = Tag
+				SpawnAtTag = { Mode=Nearest; Tag=trade_station; }
+				Faction = OwnerOfTag
+				FactionTag = &SpawnAtTag
+				Objectives
+				[
+					{
+						Type = Sequential
+						SubObjectives
+						[
+							{
+								Type = DefeatShips
+								TargetsTag = { Tag=military_station; Max=1; }
+								TargetAreaTag = { Mode=Nearest; Tag=poi_unknown; }
+								AutoDiscoverTargetArea = true
+								AllowSurrender = false
+							}
+							{
+								Type = ReceiveRewards
+							}
+						]
+					}
+				]
+				Rewards
+				[
+					{
+						Type = Money
+						MoneyPerHighTier = &/TIER_TABLES/StandardMoneyPerTier
+						RoundToMultiple = 1000
+						MoneyPerTierMultiplier = 2
+					}
+					{
+						Type = Fame
+						FamePerHighTier = &/TIER_TABLES/StandardFamePerTier
+						MaxFamePerHighTier = &/TIER_TABLES/StandardMaxFamePerTier
+						FamePerTierMultiplier = 2
+					}
+		            {
+						Type = Reputation
+						ReputationPerHighTier = &/TIER_TABLES/StandardReputationPerTier
+						ReputationPerTierMultiplier = 3
+		            }
+				]
+			}
+		]
+	}
+]
+
+BaseMilitaryStation
+{
+	Type = Ships
+	Distance = [0, 20000]
+	SpawnsPerSlice = 1
+	SpawnSlicePadding = 35%
+	MinDistanceFromTags = [[sun, 7500], [station, 6000], [ftl_gate, 3000]]
+	MinDistanceFromNebulas = [[electron, 1000], [ion_storm, 1000]]
+	Tags = [station, military_station]
+	NameGenerator = &<./Data/name_generators/name_base.rules>
+	SynchronizeFactions = true
+	SynchronizeAllegiance = true
+	FamePerTier = &/TIER_TABLES/StandardFamePerTier
+	MaxFamePerTier = &/TIER_TABLES/StandardMaxFamePerTier
+
+	ShipCriteria
+	{
+		UseLocalFactionWeights = true
+		UseTierField = true
+		AllowTierRangeExpansion = true
+		Tags = [military_station]
+	}
+
+	AI
+	{
+		Type = MilitaryStation
+		ChanceToConsiderSurrenderingToPlayer = 0
+	}
+
+	SubSpawners
+	[
+		// POI
+		{
+			Type = Doodads
+			DoodadType = cosmoteer.poi_unknown
+			Tags = [poi_unknown]
+			AutoRemoveWhenTagDiscovered = station
+			AutoRemoveWhenTagDestroyed = station
+			HideIfUnexplored = true
+		}
+
+		// Giant asteroids.
+		{
+			Type = Doodads
+			Count = [0, 4]
+			DoodadTypes = [cosmoteer.megaroid_l, cosmoteer.megaroid_xl]
+			Tags = [asteroid]
+			Distance = [250, 350]
+			SpawnsPerSlice = 1
+			SpawnSlicePadding = 35%
+		}
+
+		// Defense platforms.
+		{
+			Type = Ships
+			Tags = [station_defense]
+			Count = [2, 4]
+			Distance = [100, 150]
+			SpawnsPerSlice = 1
+			SpawnSlicePadding = 35%
+			MinDistanceFromTags = [[asteroid, 0]]
+			FamePerTier = &/TIER_TABLES/StandardFamePerTier
+			MaxFamePerTier = &/TIER_TABLES/StandardMaxFamePerTier
+			SuppressLocationAssertions = true
+
+			ShipCriteria
+			{
+				UseLocalFactionWeights = true
+				UseTierField = true
+				AllowTierRangeExpansion = true
+				Tags = [defense]
+			}
+
+			AI
+			{
+				Type = DefensePlatform
+			}
+		}
+
+		// Defense ships.
+		{
+			Type = Ships
+			Tags = [station_defense]
+			Count = [2, 4]
+			Distance = [300, 450]
+			MinDistanceFromTags = [[asteroid, 0]]
+			FamePerTier = &/TIER_TABLES/StandardFamePerTier
+			MaxFamePerTier = &/TIER_TABLES/StandardMaxFamePerTier
+			SuppressLocationAssertions = true
+
+			ShipCriteria
+			{
+				UseLocalFactionWeights = true
+				UseTierField = true
+				AllowTierRangeExpansion = true
+				Tags = [combat]
+			}
+
+			AI
+			{
+				Type = StationGuard
+				PatrolRadius = 500
+				TargetAcquireRangeFromOrigin = 750
+				TargetUnacquireRangeFromOrigin = 1500
+			}
+		}
+	]
+}

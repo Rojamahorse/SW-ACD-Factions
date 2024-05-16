@@ -63,3 +63,5 @@ StasisModules
 		AvoidableDoodadBuffer = 100
 	}
 ]
+
+CommsModules = &<./Data/ai/ai_common.rules>/CommsModulesDefault

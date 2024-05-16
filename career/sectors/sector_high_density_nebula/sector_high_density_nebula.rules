@@ -1,0 +1,7 @@
+Sector : <../sector_basic/sector_basic.rules>/Sector
+{
+	ID = high_density_nebula
+	NameKey = "SectorTypes/HighDensityNebula"
+	SpawnFlags = [no_standard_nebulas, high_density_nebulas]
+	BackgroundStyles = [bg_blue, bg_tan_teal_blue]
+}

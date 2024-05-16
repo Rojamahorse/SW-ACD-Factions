@@ -46,8 +46,8 @@ Fleethideouts
 //					Faction = SW.Black_Sun
 					SynchronizeFactions = true
 					SynchronizeAllegiance = true
-//					FamePerTier = &<./Data/modes/career/tier_tables.rules>/StandardFamePerTier
-//					MaxFamePerTier = &<./Data/modes/career/tier_tables.rules>/StandardMaxFamePerTier
+//					FamePerTier = &/TIER_TABLES/StandardFamePerTier
+//					MaxFamePerTier = &/TIER_TABLES/StandardMaxFamePerTier
 //					FamePerTier = tier_tables.rules>/StandardFamePerTier
 //					MaxFamePerTier = tier_tables.rules>/StandardMaxFamePerTier
 					Allegiance = Unique

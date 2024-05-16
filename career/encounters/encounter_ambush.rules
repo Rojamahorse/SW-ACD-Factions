@@ -1,0 +1,103 @@
+ID = "ambush"
+MinOtherTriggersBeforeReTrigger = 0
+RandomRadarRadiusRatio = 0.95
+Conditions
+{
+	MinParentFieldTier = 1
+	RequiredFame = 0
+}
+
+EncounterGenerator
+{
+	Spawners
+	[
+		{
+			Type = Ships
+			Tags = [bounty_ship]
+			Allegiance = Unique
+			FamePerTier = &/TIER_TABLES/StandardFamePerTier // Mission reward ALSO gives standard fame, effectively doubling fame reward for this bounty.
+			MaxFamePerTier = &/TIER_TABLES/StandardMaxFamePerTier
+			ShipCriteria
+			{
+				UseLocalFactionWeights = true
+				UseTierField = true
+				AllowTierRangeExpansion = true
+				Tags = [combat]
+				UseEvenShipTypeDistribution = true
+			}
+			AI
+			{
+				Type = Normal
+				PatrolRadius = 6000
+				TargetAcquireRangeFromOrigin = 6000
+				TargetUnacquireRangeFromOrigin = 6000
+			}
+			InitialShipCommand
+			{
+				Type = MoveToLocation
+				TargetsTag = {Mode = Nearest, Tag = player_ship}
+				InitialSpeed = 100
+			}
+
+			SubSpawners
+			[
+				{
+					Type = Mission
+					Metatype = Ambush
+					SpawnAt = Player
+					Faction = SystemController
+					Objectives
+					[
+						{
+							Type = AnyOrder
+							NumRequiredToComplete = 1
+							OverrideDisplayFormatKey = "Objectives/EncounterAmbush"
+							SubObjectives
+							[
+								{
+									Type = AnyOrder
+									NumRequiredToComplete = 1
+									SubObjectives
+									[
+										{
+											Type = GotoShip
+											InvertGoTo = true;
+											InvertGoToDistance = 4500
+											DestinationShipTag = { Tag=bounty_ship; LimitToFleet=true; }
+											GetTierFromTierField = true
+										}
+										{
+											Type = DefeatShips
+											TargetsTag = { Tag=bounty_ship; LimitToFleet=true; }
+											AutoDiscoverTargetArea = true
+											TierCombineMode = ValueSum
+										}
+									]
+								}
+								{
+									Type = ProtectShips
+									TargetsTag = { Mode=Nearest; Distance = 2400; Tag=player_ship; }
+									targetCount = 1 //If any survive, the mission is a success.
+									TierCombineMode = None
+								}
+								{
+									Type = DontSurrenderTo
+									TargetsTag = { Tag=bounty_ship; LimitToFleet=true; }
+									TierCombineMode = None
+								}
+							]
+						}
+					]
+					Rewards
+					[
+						{
+							Type = Fame
+							FamePerHighTier = &<../tier_tables.rules>/StandardFamePerTier
+							MaxFamePerHighTier = &<../tier_tables.rules>/StandardMaxFamePerTier
+						}
+					]
+				}
+			]
+		}
+	]
+}

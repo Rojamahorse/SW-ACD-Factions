@@ -6,12 +6,13 @@ SubSpawners
 		Type = Ships
 		Tags = [pirate]
 		Count = [14, 16]
-		Distance = [6000, 18000]
-		MinDistanceFromTags = [[station, 2000], [pirate, 4500]]
+		Distance = [0, 18000]
+		MinDistanceFromTags = [[sun, 6000], [station, 500]]
+		MinDistanceFromNebulas = [[ion_storm, 500]]
 		SuppressLocationAssertions = true
 		Allegiance = Unique
-		FamePerTier = &<tier_tables.rules>/StandardFamePerTier
-		MaxFamePerTier = &<tier_tables.rules>/StandardMaxFamePerTier
+		FamePerTier = &/TIER_TABLES/StandardFamePerTier
+		MaxFamePerTier = &/TIER_TABLES/StandardMaxFamePerTier
 		ShipCriteria
 		{
 			UseLocalFactionWeights = true
@@ -37,8 +38,8 @@ SubSpawners
 		MinDistanceFromTags = [[station, 500]]
 		SuppressLocationAssertions = true
 		Allegiance = FactionMilitary
-		FamePerTier = &<tier_tables.rules>/StandardFamePerTier
-		MaxFamePerTier = &<tier_tables.rules>/StandardMaxFamePerTier
+		FamePerTier = &/TIER_TABLES/StandardFamePerTier
+		MaxFamePerTier = &/TIER_TABLES/StandardMaxFamePerTier
 		ShipCriteria
 		{
 			UseLocalFactionWeights = true

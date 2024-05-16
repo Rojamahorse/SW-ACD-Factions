@@ -1,0 +1,54 @@
+Type = None
+Conditions { RequireSpawnFlags = [high_density_nebulas] }
+
+SubSpawners
+[
+	// A big blob of regular nebula.
+	{
+		Type = Nebula
+		NebulaType = cloudy
+		NebulaRadius = 25000
+	}
+
+	// Carve out plain areas inside the nebula.
+	{
+		Type = Nebula
+		NebulaType = ""
+		NebulaRadius = 25000
+
+		PerlinNoise
+		{
+			GridSize = [8, 4]
+			Octaves = 2
+			OutputShift = -0.1
+			Repeat = [&../GridSize/0, 0]
+		}
+		MinPerlinNebulaTris = 3
+		UsePolarPerlinCoordinates = true
+	}
+
+	// Electron Clouds
+	{
+		Conditions { IsInitNode=false }
+		Type = Nebula
+		Count = [0, 2]
+		Distance = [10000, 25000]
+		NebulaType = electron
+		NebulaRadius = 5000
+		NebulaSplatTriCount = [30, 60]
+		MaxDistanceFromWorldOrigin = &<../career.rules>/Exploration/UnexploredRadius
+	}
+
+	// Ion Storms
+	{
+		Conditions { IsInitNode=false }
+		Type = Nebula
+		Count = [0, 2]
+		Distance = [10000, 25000]
+		NebulaType = ion_storm
+		NebulaRadius = 100000
+		NebulaSplatTriCount = [20, 40]
+		UseIrregularSplatShape = true
+		MaxDistanceFromWorldOrigin = &<../career.rules>/Exploration/UnexploredRadius
+	}
+]

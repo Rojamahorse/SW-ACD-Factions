@@ -1,0 +1,44 @@
+Type = None
+SubSpawners
+[
+	{
+		Type = Doodads
+		Count = 30
+		Distance = [0, 20000]
+		DoodadTypes
+		[
+			{ Type=cosmoteer.ftl_beacon_fringe; Faction=fringe; }
+			{ Type=cosmoteer.ftl_beacon_monolith; Faction=monolith; }
+			{ Type=cosmoteer.ftl_beacon_cabal; Faction=cabal; }
+			{ Type=cosmoteer.ftl_beacon_imperium; Faction=imperium; }
+		]
+		Tags = [ftl_beacon]
+		MinDistanceFromSiblings = 7500
+		MinDistanceFromTags
+		[
+			[sun, 4500]
+			[station, 7500]
+			[ftl_gate, 7500]
+			[asteroid, 100]
+			[bounty, 1500]
+			[misc_discoverable, 1500]
+			[rare_asteroid, 1500]
+		]
+		MinDistanceFromNebulas = [[ion_storm, 500], [electron, 1500]]
+		SuppressLocationAssertions = true
+		HideUntilDiscovered = true
+
+		SubSpawners
+		[
+			// POI
+			{
+				Type = Doodads
+				DoodadType = cosmoteer.poi_unknown
+				Tags = [poi_unknown]
+				AutoRemoveWhenTagDiscovered = ftl_beacon
+				AutoRemoveWhenTagDestroyed = ftl_beacon
+				HideIfUnexplored = true
+			}
+		]
+	}
+]

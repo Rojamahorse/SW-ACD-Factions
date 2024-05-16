@@ -1,0 +1,185 @@
+Type = None
+Count = 99 // Spawn as many as we can!
+Tags = [bounty]
+SuppressLocationAssertions = true
+Distance = [0, 19000]
+MinDistanceFromTags = [[sun, 6000], [station, 4000], [bounty, 6000]]
+MinDistanceFromNebulas = [[ion_storm, 1000]]
+
+RandomSubSpawnerCount = 1
+SubSpawners
+[
+	// Single ship bounty.
+	{
+		Type = Ships
+		Tags = [bounty_ship]
+     	Allegiance = Unique
+		FamePerTier = &/TIER_TABLES/StandardFamePerTier // Mission reward ALSO gives standard fame, effectively doubling fame reward for this bounty.
+		MaxFamePerTier = &/TIER_TABLES/StandardMaxFamePerTier
+		ShipCriteria
+		{
+			UseLocalFactionWeights = true
+			UseTierField = true
+     		AllowTierRangeExpansion = true
+			Tags = [combat]
+			UseEvenShipTypeDistribution = true
+		}
+		AI
+		{
+			Type = Normal
+			ChanceToConsiderSurrenderingToPlayer = 0
+			PatrolRadius = 1000
+			TargetAcquireRangeFromOrigin = 3000
+			TargetUnacquireRangeFromOrigin = 4000
+		}
+
+		SubSpawners
+		[
+			{
+				Type = Doodads
+				Distance = [0, (&../ScaleFactor) - (&../../../AI/PatrolRadius)]
+				ScaleFactor = 2250
+				Tags = [bounty_area, poi_unknown]
+				DoodadType = cosmoteer.poi_target_area
+				ShowOnlyInFog = true
+				Undiscovered = true
+				HideIfUnexplored = true
+				AutoRemoveWhenTagDestroyed = bounty_ship
+			}
+			{
+				Type = Mission
+				Metatype = Bounty
+				SpawnAt = Tag
+				SpawnAtTag = { Mode=Nearest; Tag=trade_station; }
+				Faction = OwnerOfTag
+				FactionTag = &SpawnAtTag
+				Objectives
+				[
+					{
+						Type = Sequential
+						SubObjectives
+						[
+							{
+								Type = DefeatShips
+								TargetsTag = { Tag=bounty_ship; Max=1; }
+								TargetAreaTag = bounty_area
+								AutoDiscoverTargetArea = true
+								AllowSurrender = false
+							}
+							{
+								Type = ReceiveRewards
+							}
+						]
+					}
+				]
+				Rewards
+				[
+					{
+						Type = Money
+						MoneyPerHighTier = &/TIER_TABLES/StandardMoneyPerTier
+						RoundToMultiple = 500
+					}
+					{
+						Type = Fame
+						FamePerHighTier = &/TIER_TABLES/StandardFamePerTier
+						MaxFamePerHighTier = &/TIER_TABLES/StandardMaxFamePerTier
+					}
+					{
+						Type = Reputation
+						ReputationPerHighTier = &/TIER_TABLES/StandardReputationPerTier
+						ReputationPerTierMultiplier = 2
+					}
+				]
+			}
+		]
+	}
+
+	// Fleet bounty.
+	{
+		Conditions { MinParentFieldTier = &/FLEET_TIER_REMAP_TABLE/FleetTierRemapTable/0/OriginalTier; }
+		Type = Ships
+		Tags = [bounty_ship]
+     	Allegiance = Unique
+     	SynchronizeAllegiance = true
+		FamePerTier = &/TIER_TABLES/StandardFamePerTier // Mission reward ALSO gives standard fame, effectively doubling fame reward for this bounty.
+		MaxFamePerTier = &/TIER_TABLES/StandardMaxFamePerTier
+		ShipCriteria
+		{
+			UseLocalFactionWeights = true
+			UseTierField = true
+     		AllowTierRangeExpansion = true
+			Tags = [combat]
+			UseEvenShipTypeDistribution = false
+			FleetTierRemapTable = &/FLEET_TIER_REMAP_TABLE/FleetTierRemapTable
+		}
+		AI
+		{
+			Type = Normal
+			ChanceToConsiderSurrenderingToPlayer = 0
+			PatrolRadius = 1000
+			TargetAcquireRangeFromOrigin = 3000
+			TargetUnacquireRangeFromOrigin = 4000
+		}
+
+		SubSpawners
+		[
+			{
+				Type = Doodads
+				Distance = [0, (&../ScaleFactor) - (&../../../AI/PatrolRadius)]
+				ScaleFactor = 2250
+				Tags = [bounty_area, poi_unknown]
+				DoodadType = cosmoteer.poi_target_area
+				ShowOnlyInFog = true
+				Undiscovered = true
+				HideIfUnexplored = true
+				AutoRemoveWhenTagsDestroyed = { Tag=bounty_ship; LimitToFleet=true; }
+			}
+			{
+				Type = Mission
+				Metatype = FleetBounty
+				SpawnAt = Tag
+				SpawnAtTag = { Mode=Nearest; Tag=trade_station; }
+				Faction = OwnerOfTag
+				FactionTag = &SpawnAtTag
+				Objectives
+				[
+					{
+						Type = Sequential
+						SubObjectives
+						[
+							{
+								Type = DefeatShips
+								TargetsTag = { Tag=bounty_ship; LimitToFleet=true; }
+								TargetAreaTag = bounty_area
+								AutoDiscoverTargetArea = true
+								TierCombineMode = ValueSum
+								AllowSurrender = false
+							}
+							{
+								Type = ReceiveRewards
+							}
+						]
+					}
+				]
+				Rewards
+				[
+					{
+						Type = Money
+						MoneyPerHighTier = &/TIER_TABLES/StandardMoneyPerTier
+						RoundToMultiple = 500
+					}
+					{
+						Type = Fame
+						FamePerHighTier = &/TIER_TABLES/StandardFamePerTier
+						MaxFamePerHighTier = &/TIER_TABLES/StandardMaxFamePerTier
+					}
+					{
+						Type = Reputation
+						ReputationPerHighTier = &/TIER_TABLES/StandardReputationPerTier
+						ReputationPerTierMultiplier = 2
+					}
+				]
+			}
+		]
+	}
+]

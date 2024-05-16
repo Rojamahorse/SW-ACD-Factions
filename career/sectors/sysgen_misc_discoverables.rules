@@ -1,0 +1,238 @@
+Type = None
+Tags = [misc_discoverable]
+Count = [17, 20]
+Distance = [0, 25000]
+MinDistanceFromTags
+[
+	[sun, 6000]
+	[station, 3000]
+	[ftl_gate, 3000]
+	[ftl_beacon, 1500]
+	[misc_discoverable, 6000]
+	[asteroid, 100]
+]
+SuppressLocationAssertions = true
+
+RandomSubSpawnerCount = 1
+SubSpawners
+[
+	// Ship graveyard.
+	{
+		Type = None
+		RandomWeight = 2
+		Tags = [graveyard]
+		Radius = 500
+		MinDistanceFromNebulas = [[ion_storm, 1000]]
+		SuppressLocationAssertions = true // Might not be able to spawn due to nebula distance requirement.
+		SubSpawners
+		[
+			{
+				Type = Ships
+				Count = [75, 100]
+				Distance = [0, (&../../../Radius)]
+				SuppressLocationAssertions = true
+				Allegiance = Junk
+				InitToMax = false
+				SpawnCrew = false
+				ShipCriteria { Tags = [wreckage] }
+				RandomHealthRange = [10%, 75%]
+				NameGenerator = { Type=None; }
+			}
+			{
+				Type = None
+				SpawnChance = 75%
+				SynchronizeAllegiance = true
+				SubSpawners
+				[
+					{
+						Type = Ships
+						Tags = [graveyard_pirate]
+						Count = [0, 2]
+						Distance = [0, (&../../../../../Radius) - (&../AI/PatrolRadius)]
+						MinDistanceFromTags = [[graveyard_pirate, 200]]
+						Allegiance = Unique
+						FamePerTier = &/TIER_TABLES/StandardFamePerTier
+						MaxFamePerTier = &/TIER_TABLES/StandardMaxFamePerTier
+						ShipCriteria
+						{
+							UseLocalFactionWeights = true
+							UseTierField = true
+							AllowTierRangeExpansion = true
+							Tags = [combat]
+						}
+						AI
+						{
+							Type = Wanderer
+							PatrolRadius = 250
+							StasisSpeed = 0
+						}
+					}
+					{
+						Type = Ships
+						Tags = [asteroid_platform]
+						Count = [0, 2]
+						Distance = [0, (&../../../../../Radius)]
+						MinDistanceFromTags = [[graveyard_platform, 200]]
+						Allegiance = Unique
+						FamePerTier = &/TIER_TABLES/StandardFamePerTier
+						MaxFamePerTier = &/TIER_TABLES/StandardMaxFamePerTier
+						ShipCriteria
+						{
+							UseLocalFactionWeights = true
+							UseTierField = true
+							AllowTierRangeExpansion = true
+							Tags = [defense]
+						}
+						AI
+						{
+							Type = DefensePlatform
+						}
+					}
+				]
+			}
+			{
+				Type = Doodads
+				Tags = [asteroid_field_poi, poi_unknown]
+				ScaleFactor = &../../Radius
+				DoodadType = cosmoteer.poi_graveyard
+				ShowOnlyInFog = true
+				Undiscovered = true
+				HideIfUnexplored = true
+			}
+		]
+	}
+
+	// Valuable asteroid.
+	{
+		Type = Doodads
+		RandomWeight = 5
+		Tags = [rare_asteroid]
+		MinDistanceFromNebulas = [[ion_storm, 200]]
+		SuppressLocationAssertions = true
+		DoodadTypes = &<sysgen_asteroids.rules>/RareAsteroidTypes
+
+		SubSpawners
+		[
+			// POI
+			{
+				Type = Doodads
+				DoodadType = cosmoteer.poi_unknown
+				Tags = [poi_unknown]
+				AutoRemoveWhenDiscovered = true
+				HideIfUnexplored = true
+			}
+		]
+	}
+
+	// Storage pod.
+	{
+		Type = Ships
+		RandomWeight = 3
+		Tags = [storage_pod]
+		Count = 1
+		MinDistanceFromNebulas = [[ion_storm, 200]]
+		SuppressLocationAssertions = true
+     	Allegiance = Junk
+     	RememberPhysicalState = true
+     	RememberResourcesAndCrew = true
+		ShipCriteria
+		{
+			Tags = [storage_pod]
+		}
+
+		ResourceLoadout
+		[
+			{ ResourceType=tristeel;         RandomWeight=1; Quantity=[5, 20]; }
+			{ ResourceType=diamond;          RandomWeight=1; Quantity=[1, 2]; }
+			{ ResourceType=processor;        RandomWeight=1; Quantity=[1, 2]; }
+			{ ResourceType=enriched_uranium; RandomWeight=1; Quantity=[2, 4]; }
+			{ ResourceType=tritanium;        RandomWeight=1; Quantity=[2, 5]; }
+			{ ResourceType=gold;             RandomWeight=1; Quantity=[2, 5]; }
+			{ ResourceType=uranium;          RandomWeight=1; Quantity=[2, 5]; }
+		]
+
+		SubSpawners
+		[
+			// POI
+			{
+				Type = Doodads
+				DoodadType = cosmoteer.poi_unknown
+				Tags = [poi_unknown]
+				AutoRemoveWhenDiscovered = true
+				HideIfUnexplored = true
+			}
+
+			// Guard ships & platforms.
+			{
+				Type = Ships
+				Tags = [storage_pod_guard]
+				Count = [0, 3]
+				Distance = [110, 200]
+				SpawnsPerSlice = 1
+				SpawnSlicePadding = 45%
+				Allegiance = Unique
+				SynchronizeFactions = true
+				SynchronizeAllegiance = true
+				FamePerTier = &/TIER_TABLES/StandardFamePerTier
+				MaxFamePerTier = &/TIER_TABLES/StandardMaxFamePerTier
+
+				ShipCriteria
+				{
+					UseLocalFactionWeights = true
+					UseTierField = true
+					AllowTierRangeExpansion = true
+					Tags = [combat, defense]
+				}
+
+				AIByTag
+				{
+					combat
+					{
+						Type = StationGuard
+						PatrolRadius = 250
+						TargetAcquireRangeFromOrigin = 500
+						TargetUnacquireRangeFromOrigin = 1500
+					}
+					defense
+					{
+						Type = DefensePlatform
+					}
+				}
+			}
+		]
+	}
+
+	// Abandoned Ship
+	{
+		Type = Ships
+		RandomWeight = 2
+		Count = 1
+		MinDistanceFromNebulas = [[ion_storm, 200]]
+		SuppressLocationAssertions = true
+		Allegiance = Junk
+		InitToMax = false
+		SpawnCrew = false
+		RandomHealthRange = [25%, 100%]
+		Labels = ["abandoned"]
+		ShipCriteria
+		{
+			UseLocalFactionWeights = true
+			UseTierField = true
+			Tier = -4
+			AllowTierRangeExpansion = true
+			Tags = [combat]
+		}
+
+		SubSpawners
+		[
+			// POI
+			{
+				Type = Doodads
+				DoodadType = cosmoteer.poi_unknown
+				Tags = [poi_unknown]
+				AutoRemoveWhenDiscovered = true
+				HideIfUnexplored = true
+			}
+		]
+	}
+]
