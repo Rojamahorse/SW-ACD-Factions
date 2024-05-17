@@ -52,8 +52,27 @@ TargetingModules
 	}
 ]
 
-CommsModules = &<./Data/ai/ai_common.rules>/CommsModulesDefault
+CommsModules : &<./Data/ai/ai_common.rules>/CommsModulesDefault
 
+[
+	{
+		Type = Trade
+		AllowHumanTrade = true
+		AllowNpcTrade = true
+		HelpWithConstruction = true
+		AllowO2Refill = true
+	}
+	{
+		Type = MissionProvider
+	}
+]
+
+StasisModules
+[
+	{
+		Type = MissionProvider
+	}
+]
 //StasisModules
 //[
 //	{

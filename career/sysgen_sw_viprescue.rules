@@ -1,24 +1,24 @@
-Type = Ships
-Tags = [vip_ship]
-Conditions { MinNodeTier=1; }
-RandomWeight = 1
-Count = [0, 1]
-Distance = [5000, 14000]
-MinDistanceFromTags = [[asteroid, 120],[vip_ship, 5000],[station, 2000],[bounty, 2000]]
+Type = Ships // Configuration for spawning ships
+Tags = [vip_ship] // Tags associated with the ships being spawned
+Conditions { MinNodeTier=1; } // Conditions for triggering the ship spawn & Minimum node tier required for spawning
+RandomWeight = 1 // Weighting for the randomness of this spawn
+Count = [0, 1] // Range for the number of ships to spawn
+Distance = [0, 14000] // Distance range within which the ships can spawn
+MinDistanceFromTags = [[sun, 7500],[asteroid, 120],[vip_ship, 5000],[station, 2000],[bounty, 2000]] // Minimum distances from various tags to ensure proper placement of ships
 //SynchronizeFactions = true
-Allegiance = FactionCivilian
-InitToMax = false
-SpawnCrew = true
-RandomHealthRange = [90%, 100%]
-Labels = ["Abandoned"]
-		NameGenerator
+Allegiance = FactionCivilian // Allegiance of the spawned ships
+InitToMax = false // Whether to initialize ship health to maximum
+SpawnCrew = true // Whether to spawn crew members on the ship
+RandomHealthRange = [90%, 100%] // Range for randomizing the ship's health percentage
+Labels = ["Abandoned"] // Labels assigned to the ship
+		NameGenerator // Configuration for generating ship names
 		{
-		    Type = Multi
-		    SubGenerators
+		    Type = Multi // Type of name generator
+		    SubGenerators  // Sub-generators for names
 		    [
 		        {
-		            Chance = 1
-		            Type = NameList
+		            Chance = 1  // Chance for this name list to be selected
+		            Type = NameList // Type of list
 		            Names
 					[
 					    "Admiral"
@@ -56,9 +56,9 @@ Labels = ["Abandoned"]
 					]
 		        }
 		        {
-		            Chance = 1
-		            Type = NameList
-		            Names
+		            Chance = 1  // Chance for this name list to be selected
+		            Type = NameList // Type of list
+		            Names  // List of names for the ship
 					[
 					    "Antilles"
 					    "Vader"
@@ -147,22 +147,23 @@ Labels = ["Abandoned"]
 		        }
 		    ]
 		}
-	ShipCriteria
+	ShipCriteria // Criteria for selecting the ships to spawn
 	{
-		UseLocalFactionWeights = true
-		Tier = +2
-		UseTierField = true
-		AllowTierRangeExpansion = true
-		Tags = [civilian]
+		UseLocalFactionWeights = true // Use local faction weights for ship selection
+		Tier = +2  // Adjust the tier of the ships spawned by +2
+		UseTierField = true // Consider the curret tier field for ship selection
+		AllowTierRangeExpansion = true     // Allow expansion of tier range for selection
+		Tags = [civilian] // Tags indicating the purpose of the ships
 	}
 	AI
 	{
-		Type = SWCivilianAI
+		Type = SWCivilianAI   // Custom AI type for civilian ships
 
 	}
+		// Synchronization settings for factions and allegiance
 		SynchronizeFactions = true
 		SynchronizeAllegiance = false
-		SubSpawners
+		SubSpawners // Array of sub-spawners for additional encounter elements
 		[
 			// POI
 			{
@@ -176,7 +177,7 @@ Labels = ["Abandoned"]
 				//AutoRemoveWhenTagDestroyed = vip_ship
 
 			}
-			// The bad guys.
+			 // Spawner for the "bad guys"
 			{
 				Type = Ships
 				Tags = [hive_of_villany]
@@ -187,7 +188,8 @@ Labels = ["Abandoned"]
 				Allegiance = Unique
 				FamePerTier = &/TIER_TABLES/StandardFamePerTier
 				MaxFamePerTier = &/TIER_TABLES/StandardMaxFamePerTier
-		NameGenerator
+		
+		NameGenerator   // Name generator for the "bad guys"
 		{
 		    Type = Multi
 		    SubGenerators
@@ -308,11 +310,16 @@ Labels = ["Abandoned"]
 						"Kroom"
 						"Roasted"
 						"Jerico"
+						"Altraxia"
+						"Winterbreeze"
+						"Caudrea"
+						"Trefies"
+						"Fusion"
 					]
 		        }
 		    ]
 		}
-				ShipCriteria
+				ShipCriteria         // Criteria for selecting the "bad guys" ships to spawn
 				{
 					UseLocalFactionWeights = true
 					UseTierField = true
@@ -321,7 +328,7 @@ Labels = ["Abandoned"]
 					Tags = [combat]
 				}
 
-				AI 
+				AI         // AI behavior settings for the "bad guys" ships
 				{
 					Type = StationGuard
 					PatrolRadius = 200
@@ -329,42 +336,45 @@ Labels = ["Abandoned"]
 					TargetUnacquireRangeFromOrigin = 750
 				}
 			}
-			// Mission to save ship
+    		// Mission to save the VIP ship
 			{
-				Type = Mission
-				Metatype = SWRescueVIP
-				SpawnAt = Tag
-				SpawnAtTag = { Mode=Nearest; Tag=trade_station; }
-				Faction = OwnerOfTag
-				FactionTag = &SpawnAtTag
-				Objectives
+				Type = Mission // Type of mission to spawn
+				Metatype = SWRescueVIP // Metatype of the mission to spawn
+				SpawnAt = Tag	    // Location to spawn the mission at, using a tag
+				SpawnAtTag = { Mode=Nearest; Tag=trade_station; }     // Tag indicating where to spawn the mission (the VIP ship that needs to be rescued)
+				Faction = OwnerOfTag     // Faction involved in the mission, based on the owner of the tag
+				FactionTag = &SpawnAtTag     // Tag indicating the faction, linked to the spawn location tag
+				Objectives     // Objectives for the mission
 				[
 					{
-						Type = Sequential
-						SubObjectives
+						Type = Sequential // Objective type requiring sequential completion of sub-objectives
+						SubObjectives // Sub-objectives within the main objective
 						[
 							{
-								Type = AnyOrder
-								TierCombineMode = Max
-								SubObjectives
+								Type = AnyOrder  // Objective type allowing any order
+								TierCombineMode = Max // Mode for combining tiers (maximum in this case)
+								SubObjectives  // Further sub-objectives
 								[
 									{
-										Type = DefeatShips
-										TargetsTag = { Tag=hive_of_villany; Distance=800;}
-										TargetAreaTag = { Mode=Nearest; Tag=poi_unknown; }
-										OverrideDisplayFormatKey = "Objectives/SavetheVIP"
-										AllowSurrender = false
+										Type = DefeatShips // Objective type to defeat ships
+										TargetsTag = { Tag=hive_of_villany; Distance=800;} // Tag indicating the target ships to defeat, within a certain distance
+										TargetAreaTag = { Mode=Nearest; Tag=poi_unknown; } // Tag indicating the target area for the objective
+										OverrideDisplayFormatKey = "Objectives/SavetheVIP" // Key to override the display format for the objective
+										//AllowSurrender = false // Disallow surrender for this objective
 									}
 									{
-										Type = ProtectShips
-										TargetsTag = { Mode=Nearest; Tag=vip_ship; Max=1; }
-										TargetAreaTag = { Mode=Nearest; Tag=poi_unknown; }
+										Type = ProtectShips // Objective type to protect ships
+										TargetsTag = { Mode=Nearest; Tag=vip_ship; Max=1; }  // Tag indicating the ships to protect (nearest VIP ship)
+										TargetAreaTag = { Mode=Nearest; Tag=poi_unknown; } // Tag indicating the target area for the objective
+										//OverrideDisplayFormatKey = "Objectives/SavetheVIP"
 									}
 								]
 							}
 							{
+								// Objective type to receive rewards
 								Type = ReceiveRewards
-								ContactShipTag = { Mode=Nearest; Tag=trade_station; }
+								// Tag indicating the ship to contact for receiving rewards (nearest VIP ship)
+								ContactShipTag = { Mode=Nearest; Tag=vip_ship/*trade_station*/; }//{ Mode=Nearest; Tag=vip_ship; }//{ Mode=Nearest; Tag=trade_station; }
 							}
 						]
 					}

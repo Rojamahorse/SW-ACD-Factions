@@ -1,81 +1,157 @@
+// Unique identifier for the distress event
 ID = "distress"
+
+// Minimum number of other triggers required before this can re-trigger
 MinOtherTriggersBeforeReTrigger = 0
+
+// Conditions for triggering the distress event
 Conditions
 {
-	MinParentFieldTier = &<../fleet_tier_remap_table.rules>/FleetTierRemapTable/0/OriginalTier
-	RequiredFame = 20000//don't want this to trigger right now because its broken.
+    // Minimum tier of the parent field required for the event, using a remap table
+    MinParentFieldTier = &<../fleet_tier_remap_table.rules>/FleetTierRemapTable/0/OriginalTier
+
+    // Required fame level to trigger the event, set high to prevent triggering because it's broken
+    RequiredFame = 20000 // don't want this to trigger right now because it's broken.
 }
 
+// Generator for the encounter details
 EncounterGenerator
 {
-	Spawners
-	[
-		{
-			Type = Ships
-			Tags = [bounty_ship]
-			Allegiance = Unique
-			SynchronizeAllegiance = true
-			FamePerTier = &<../tier_tables.rules>/StandardFamePerTier // Mission reward ALSO gives standard fame, effectively doubling fame reward for this bounty.
-			MaxFamePerTier = &<../tier_tables.rules>/StandardMaxFamePerTier
-			ShipCriteria
-			{
-				UseLocalFactionWeights = true
-				UseTierField = true
-				AllowTierRangeExpansion = true
-				Tags = [combat]
-				UseEvenShipTypeDistribution = false
-				FleetTierRemapTable = &<../fleet_tier_remap_table.rules>/FleetTierRemapTable
-			}
-			AI
-			{
-				Type = Normal
-				PatrolRadius = 1000
-				TargetAcquireRangeFromOrigin = 3000
-				TargetUnacquireRangeFromOrigin = 4000
-			}
+    // Array of spawners involved in the encounter
+    Spawners
+    [
+        {
+            // Type of entity to spawn (ships in this case)
+            Type = Ships
 
-			SubSpawners
-			[
-				{
-					Type = Mission
-					Metatype = Distress
-					SpawnAt = Player
-					Faction = SystemController
-					Objectives
-					[
-						{
-							Type = Sequential
-							SubObjectives
-							[
-								{
-									Type = DefeatShips
-									TargetsTag = { Tag=bounty_ship; LimitToFleet=true; }
-									AutoDiscoverTargetArea = true
-									TierCombineMode = ValueSum
-								}
-							]
-						}
-					]
-					Rewards
-					[
-						{
-							Type = Money
-							MoneyPerHighTier = &<../tier_tables.rules>/StandardMoneyPerTier
-							RoundToMultiple = 500
-						}
-						{
-							Type = Fame
-							FamePerHighTier = &<../tier_tables.rules>/StandardFamePerTier
-							MaxFamePerHighTier = &<../tier_tables.rules>/StandardMaxFamePerTier
-						}
-						{
-							Type = Reputation
-							ReputationPerHighTier = &<../tier_tables.rules>/StandardReputationPerTier
-							ReputationPerTierMultiplier = 2
-						}
-					]
-				}
-			]
-		}
-	]
+            // Tags associated with the ships being spawned
+            Tags = [bounty_ship]
+
+            // Allegiance of the spawned ships
+            Allegiance = Unique
+
+            // Synchronize allegiance among spawned ships
+            SynchronizeAllegiance = true
+
+            // Fame reward per tier for completing the mission, doubling the standard fame reward
+            FamePerTier = &<../tier_tables.rules>/StandardFamePerTier
+            MaxFamePerTier = &<../tier_tables.rules>/StandardMaxFamePerTier
+
+            // Criteria for selecting the ships to spawn
+            ShipCriteria
+            {
+                // Use local faction weights for ship selection
+                UseLocalFactionWeights = true
+
+                // Consider the tier field for ship selection
+                UseTierField = true
+
+                // Allow expansion of tier range for selection
+                AllowTierRangeExpansion = true
+
+                // Tags indicating the purpose of the ships
+                Tags = [combat]
+
+                // Ensure even distribution of ship types
+                UseEvenShipTypeDistribution = false
+
+                // Use fleet tier remap table for selection criteria
+                FleetTierRemapTable = &<../fleet_tier_remap_table.rules>/FleetTierRemapTable
+            }
+
+            // AI behavior settings for the spawned ships
+            AI
+            {
+                // Normal AI type
+                Type = Normal
+
+                // Radius within which the ships will patrol
+                PatrolRadius = 1000
+
+                // Range for acquiring and unacquiring targets from the origin
+                TargetAcquireRangeFromOrigin = 3000
+                TargetUnacquireRangeFromOrigin = 4000
+            }
+
+            // Array of sub-spawners for additional encounter elements
+            SubSpawners
+            [
+                {
+                    // Type of sub-spawner (mission in this case)
+                    Type = Mission
+
+                    // Meta type of the mission (distress in this case)
+                    Metatype = Distress
+
+                    // Location to spawn the mission at (near the player)
+                    SpawnAt = Player
+
+                    // Faction involved in the mission
+                    Faction = SystemController
+
+                    // Objectives for the mission
+                    Objectives
+                    [
+                        {
+                            // Objective type requiring sequential completion
+                            Type = Sequential
+
+                            // Sub-objectives within the main objective
+                            SubObjectives
+                            [
+                                {
+                                    // Objective type to defeat ships
+                                    Type = DefeatShips
+
+                                    // Tag indicating the target ships to defeat
+                                    TargetsTag = { Tag=bounty_ship; LimitToFleet=true; }
+
+                                    // Automatically discover the target area
+                                    AutoDiscoverTargetArea = true
+
+                                    // Mode for combining tiers (sum of values)
+                                    TierCombineMode = ValueSum
+                                }
+                            ]
+                        }
+                    ]
+
+                    // Rewards for completing the mission
+                    Rewards
+                    [
+                        {
+                            // Reward type (money in this case)
+                            Type = Money
+
+                            // Money reward per high tier
+                            MoneyPerHighTier = &<../tier_tables.rules>/StandardMoneyPerTier
+
+                            // Round the money reward to the nearest multiple of 500
+                            RoundToMultiple = 500
+                        }
+                        {
+                            // Reward type (fame in this case)
+                            Type = Fame
+
+                            // Fame reward per high tier
+                            FamePerHighTier = &<../tier_tables.rules>/StandardFamePerTier
+
+                            // Maximum fame reward per high tier
+                            MaxFamePerHighTier = &<../tier_tables.rules>/StandardMaxFamePerTier
+                        }
+                        {
+                            // Reward type (reputation in this case)
+                            Type = Reputation
+
+                            // Reputation reward per high tier
+                            ReputationPerHighTier = &<../tier_tables.rules>/StandardReputationPerTier
+
+                            // Multiplier for reputation reward per tier
+                            ReputationPerTierMultiplier = 2
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
 }
