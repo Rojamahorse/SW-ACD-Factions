@@ -3,51 +3,51 @@ Faction = SW.Galactic_Empire
 Ships	
 [
 //Fighters	
-/*26,850*/	:~{ File="Emp_TIE Xelor.ship.png";	                                    Tier=1;	 	Difficulty=1; Tags = [combat, swfighter, empfighter] }
-/*30,950*/	:~{ File="Emp TIE (LN) Fighter (Sienar Blu.ship.png";     				Tier=1;  	Difficulty=2; Tags = [combat, swfighter, empfighter] }
-/*32,250*/	:~{ File="Emp TIE (LN) Fighter Mk2.ship.png";							Tier=3;	 	Difficulty=2; Tags = [combat, swfighter, empfighter] }
-/*32,610*/	:~{ File="Emp_TIE (LN) Fighter.ship.png";								Tier=1;	 	Difficulty=2; Tags = [combat, swfighter, empfighter] }
-/*39,300*/	:~{ File="Emp_TIE_ETA.ship.png";										Tier=2;	 	Difficulty=2; Tags = [combat, swfighter, empfighter] }
-/*42,150*/	:~{ File="Emp TIE Fighter (Siena Blue).ship.png"; 	      				Tier=1;  	Difficulty=1; Tags = [combat, swfighter, empfighter] }
-/*42,950*/	:~{ File="Emp TIE Fighter.ship.png";                   					Tier=1;  	Difficulty=1; Tags = [combat, swfighter, empfighter] }
-/*42,950*/	:~{ File="Emp_TIE_M1.ship.png";											Tier=2;	 	Difficulty=1; Tags = [combat, swfighter, empfighter] }
-/*42,440*/	:~{ File="Emp FO First Order Tie Fighter.ship.png";    					Tier=2;  	Difficulty=2; Tags = [combat, swfighter, empfighter] }
-/*66,440*/	:~{ File="Emp_First_Order_Tie_Fighter.ship.png";    					Tier=3;  	Difficulty=1; Tags = [combat, swfighter, empfighter] }
-/*69,550*/	:~{ File="Emp TIE Heavy.ship.png";            							Tier=3;  	Difficulty=2; Tags = [combat, swfighter, empfighter] }
-/*81,630*/	:~{ File="Emp TIE Interceptor MkII.ship.png";                   		Tier=3;  	Difficulty=1; Tags = [combat, swfighter, empfighter] }
-/*81,630*/	:~{ File="Emp TIE Interceptor-B MkII.ship.png";                 		Tier=2;  	Difficulty=2; Tags = [combat, swfighter, empfighter] }
-/*130,000*/	:~{ File="Emp TIE SA-B Bomber MkII.ship.png";                   		Tier=4;  	Difficulty=1; Tags = [combat, swfighter, empfighter] }
-/*113,320*/	:~{ File="Emp Rogue Shadow.ship.png";                           		Tier=4;  	Difficulty=1; Tags = [combat, swfighter, empfighter] }
-/*122,010*/	:~{ File="Emp TIE Vector.ship.png";										Tier=4;	 	Difficulty=1; Tags = [combat, swfighter, empfighter] }
-/*131,010*/	:~{ File="Emp_TIE Advanced X1.ship.png";								Tier=3;	 	Difficulty=2; Tags = [combat, swfighter, empfighter] }
-/*116,510*/	:~{ File="Emp_TIE Blackout.ship.png";									Tier=4;	 	Difficulty=2; Tags = [combat, swfighter, empfighter] }
-/*114,170*/	:~{ File="Emp_TIE Reaper.ship.png";										Tier=4;	 	Difficulty=2; Tags = [combat, swfighter, empfighter] }
-/*206,350*/	:~{ File="Emp TIE Reaper.ship.png";										Tier=5;	 	Difficulty=2; Tags = [combat, swfighter, empfighter] }
-/*226,350*/	:~{ File="Emp TIE Assault Fighter.ship.png";							Tier=6;	 	Difficulty=2; Tags = [combat, swfighter, empfighter] }
-/*129,280*/	:~{ File="Emp_TIE bat.ship";											Tier=2;	 	Difficulty=1; Tags = [combat, swfighter, empfighter] }
-/*156,280*/	:~{ File="Emp_TIE bat Elite.ship.png";									Tier=2;	 	Difficulty=2; Tags = [combat, swfighter, empfighter] }
-/*100,350*/	:~{ File="Emp_TIE knift.ship";											Tier=3;	 	Difficulty=1; Tags = [combat, swfighter, empfighter] }
-/*93,740*/	:~{ File="Emp_TIE slider.ship";											Tier=3;	 	Difficulty=1; Tags = [combat, swfighter, empfighter] }
-/*77,390*/	:~{ File="Emp-TIE Defender.ship";										Tier=5;	 	Difficulty=1; Tags = [combat, swfighter, empfighter] }
-/*187,290*/	:~{ File="Emp Sith Tie Dagger.ship";									Tier=5;	 	Difficulty=2; Tags = [combat, swfighter, empfighter] }
-/*218,290*/	:~{ File="Emp TIE Brute .ship";										Tier=5;	 	Difficulty=2; Tags = [combat, swfighter, empfighter] }
-/*218,290*/	:~{ File="Emp TIE Brute Alt.ship";									Tier=5;	 	Difficulty=2; Tags = [combat, swfighter, empfighter] }
-/*128,810*/    :~{ File="TIE Advanced X1 (Sienar Blue).ship.png"; 					Tier=3; 	Difficulty=1; Tags = [combat, swfighter, empfighter] }
-/*122,810*/    :~{ File="Emp First_Order_Tie_Defender.ship.png"; 					Tier=4; 	Difficulty=2; Tags = [combat, swfighter, empfighter] }
+/*26,850*/		:~{ File="Emp_TIE Xelor.ship.png";	                                    Tier=1;	 	Difficulty=1; Tags = [combat, swfighter, empfighter] }
+/*30,950*/		:~{ File="Emp TIE (LN) Fighter (Sienar Blu.ship.png";     				Tier=1;  	Difficulty=2; Tags = [combat, swfighter, empfighter] }
+/*32,250*/		:~{ File="Emp TIE (LN) Fighter Mk2.ship.png";							Tier=3;	 	Difficulty=2; Tags = [combat, swfighter, empfighter] }
+/*32,610*/		:~{ File="Emp_TIE (LN) Fighter.ship.png";								Tier=1;	 	Difficulty=2; Tags = [combat, swfighter, empfighter] }
+/*39,300*/		:~{ File="Emp_TIE_ETA.ship.png";										Tier=2;	 	Difficulty=2; Tags = [combat, swfighter, empfighter] }
+/*42,150*/		:~{ File="Emp TIE Fighter (Siena Blue).ship.png"; 	      				Tier=1;  	Difficulty=1; Tags = [combat, swfighter, empfighter] }
+/*42,950*/		:~{ File="Emp TIE Fighter.ship.png";                   					Tier=1;  	Difficulty=1; Tags = [combat, swfighter, empfighter] }
+/*42,950*/		:~{ File="Emp_TIE_M1.ship.png";											Tier=2;	 	Difficulty=1; Tags = [combat, swfighter, empfighter] }
+/*42,440*/		:~{ File="Emp FO First Order Tie Fighter.ship.png";    					Tier=2;  	Difficulty=2; Tags = [combat, swfighter, empfighter] }
+/*66,440*/		:~{ File="Emp_First_Order_Tie_Fighter.ship.png";    					Tier=3;  	Difficulty=1; Tags = [combat, swfighter, empfighter] }
+/*69,550*/		:~{ File="Emp TIE Heavy.ship.png";            							Tier=3;  	Difficulty=2; Tags = [combat, swfighter, empfighter] }
+/*81,630*/		:~{ File="Emp TIE Interceptor MkII.ship.png";                   		Tier=3;  	Difficulty=1; Tags = [combat, swfighter, empfighter] }
+/*81,630*/		:~{ File="Emp TIE Interceptor-B MkII.ship.png";                 		Tier=2;  	Difficulty=2; Tags = [combat, swfighter, empfighter] }
+/*130,000*/		:~{ File="Emp TIE SA-B Bomber MkII.ship.png";                   		Tier=4;  	Difficulty=1; Tags = [combat, swfighter, empfighter] }
+/*113,320*/		:~{ File="Emp Rogue Shadow.ship.png";                           		Tier=4;  	Difficulty=1; Tags = [combat, swfighter, empfighter] }
+/*122,010*/		:~{ File="Emp TIE Vector.ship.png";										Tier=4;	 	Difficulty=1; Tags = [combat, swfighter, empfighter] }
+/*131,010*/		:~{ File="Emp_TIE Advanced X1.ship.png";								Tier=3;	 	Difficulty=2; Tags = [combat, swfighter, empfighter] }
+/*116,510*/		:~{ File="Emp_TIE Blackout.ship.png";									Tier=4;	 	Difficulty=2; Tags = [combat, swfighter, empfighter] }
+/*114,170*/		:~{ File="Emp_TIE Reaper.ship.png";										Tier=4;	 	Difficulty=2; Tags = [combat, swfighter, empfighter] }
+/*206,350*/		:~{ File="Emp TIE Reaper.ship.png";										Tier=5;	 	Difficulty=2; Tags = [combat, swfighter, empfighter] }
+/*226,350*/		:~{ File="Emp TIE Assault Fighter.ship.png";							Tier=6;	 	Difficulty=2; Tags = [combat, swfighter, empfighter] }
+/*129,280*/		:~{ File="Emp_TIE bat.ship.png";										Tier=2;	 	Difficulty=1; Tags = [combat, swfighter, empfighter] }
+/*156,280*/		:~{ File="Emp_TIE bat Elite.ship.png";									Tier=2;	 	Difficulty=2; Tags = [combat, swfighter, empfighter] }
+/*100,350*/		:~{ File="Emp_TIE knift.ship.png";										Tier=3;	 	Difficulty=1; Tags = [combat, swfighter, empfighter] }
+/*93,740*/		:~{ File="Emp_TIE slider.ship.png";										Tier=3;	 	Difficulty=1; Tags = [combat, swfighter, empfighter] }
+/*77,390*/		:~{ File="Emp-TIE Defender.ship.png";									Tier=5;	 	Difficulty=1; Tags = [combat, swfighter, empfighter] }
+/*187,290*/		:~{ File="Emp Sith Tie Dagger.ship.png";								Tier=5;	 	Difficulty=2; Tags = [combat, swfighter, empfighter] }
+/*218,290*/		:~{ File="Emp TIE Brute .ship.png";										Tier=5;	 	Difficulty=2; Tags = [combat, swfighter, empfighter] }
+/*218,290*/		:~{ File="Emp TIE Brute Alt.ship.png";									Tier=5;	 	Difficulty=2; Tags = [combat, swfighter, empfighter] }
+/*128,810*/ 	:~{ File="TIE Advanced X1 (Sienar Blue).ship.png"; 						Tier=3; 	Difficulty=1; Tags = [combat, swfighter, empfighter] }
+/*122,810*/ 	:~{ File="Emp First_Order_Tie_Defender.ship.png"; 						Tier=4; 	Difficulty=2; Tags = [combat, swfighter, empfighter] }
 
 //Bombers
-/*83,320*/	:~{ File="Emp TIE SA Bomber (Sienar Blue).ship.png";            		Tier=3;  	Difficulty=1; Tags = [combat, empbomber] }
-/*80,420*/	:~{ File="Emp TIE SA Bomber.ship.png";                          		Tier=3;  	Difficulty=1; Tags = [combat, empbomber] }
-/*126,300*/	:~{ File="Emp TIE SA Bomber MkII.ship.png";                     		Tier=4;  	Difficulty=2; Tags = [combat, empbomber] }
-/*80,720*/	:~{ File="Emp_TIE SA Bomber.ship.png";									Tier=3;	 	Difficulty=2; Tags = [combat, empbomber] }
-/*218,290*/	:~{ File="Emp_TIE_Falcon_Bomber.ship.png";								Tier=5;	 	Difficulty=2; Tags = [combat, empbomber] }
-/*301,470*/	:~{ File="Emp_TIE_Falcon_Bomber R.ship.png";							Tier=6;	 	Difficulty=2; Tags = [combat, empbomber] }
-/*426,350*/	:~{ File="Emp B-Class Lt Torpedo cruiser.ship.png";						Tier=6;	 	Difficulty=2; Tags = [combat, empbomber] }
+/*83,320*/		:~{ File="Emp TIE SA Bomber (Sienar Blue).ship.png";            		Tier=3;  	Difficulty=1; Tags = [combat, empbomber] }
+/*80,420*/		:~{ File="Emp TIE SA Bomber.ship.png";                          		Tier=3;  	Difficulty=1; Tags = [combat, empbomber] }
+/*126,300*/		:~{ File="Emp TIE SA Bomber MkII.ship.png";                     		Tier=4;  	Difficulty=2; Tags = [combat, empbomber] }
+/*80,720*/		:~{ File="Emp_TIE SA Bomber.ship.png";									Tier=3;	 	Difficulty=2; Tags = [combat, empbomber] }
+/*218,290*/		:~{ File="Emp_TIE_Falcon_Bomber.ship.png";								Tier=5;	 	Difficulty=2; Tags = [combat, empbomber] }
+/*301,470*/		:~{ File="Emp_TIE_Falcon_Bomber R.ship.png";							Tier=6;	 	Difficulty=2; Tags = [combat, empbomber] }
+/*426,350*/		:~{ File="Emp B-Class Lt Torpedo cruiser.ship.png";						Tier=6;	 	Difficulty=2; Tags = [combat, empbomber] }
 
 //Interceptors
-/*57,930*/	:~{ File="Emp TIE Interceptor (Sienar Blue.ship.png";    					Tier=2;  	Difficulty=2; Tags = [combat, empinterceptor] }
-/*60,930*/	:~{ File="Emp TIE Interceptor.ship.png";                        			Tier=2;  	Difficulty=2; Tags = [combat, empinterceptor] }
-/*70,310*/	:~{ File="Emp_TIE Interceptor.ship.png";									Tier=3;	 	Difficulty=2; Tags = [combat, empinterceptor] } 
+/*57,930*/		:~{ File="Emp TIE Interceptor (Sienar Blue.ship.png";    				Tier=2;  	Difficulty=2; Tags = [combat, empinterceptor] }
+/*60,930*/		:~{ File="Emp TIE Interceptor.ship.png";                        		Tier=2;  	Difficulty=2; Tags = [combat, empinterceptor] }
+/*70,310*/		:~{ File="Emp_TIE Interceptor.ship.png";								Tier=3;	 	Difficulty=2; Tags = [combat, empinterceptor] } 
 
 //Shuttles & Transports
 /*118,480*/		:~{ File="Emp Lamda-Class T-4a Shuttle.ship.png";               		Tier=3;  	Difficulty=1; 	Tags = [combat, empshuttle] }
@@ -71,8 +71,8 @@ Ships
 /*1,055,200*/	:~{ File="Bayonet-Class Patrol Cruiser.ship.png";						Tier=8;		Difficulty=12; 	Tags = [combat, empcapital] }
 /*1,251,940*/	:~{ File="Bayonet-Class Patrol Cruiser Mk2.ship.png";					Tier=8;		Difficulty=2;  	Tags = [combat, empcapital] }
 /*1,340,540*/	:~{ File="Emp Carrack-class LC Mk2.ship.png";							Tier=8;	 	Difficulty=2;  	Tags = [combat, empcapital] }
-/*5,473,825*/	:~{ File="Emp Gladiator-class_Star_Destroyer.ship";						Tier=8;		Difficulty=1;  	Tags = [combat, empcapital] }
-/*1,588,440*/	:~{ File="Emp Cantwell-Class Arrestor Crui.ship";						Tier=7;		Difficulty=1;  	Tags = [combat, empcapital] }
+/*5,473,825*/	:~{ File="Emp Gladiator-class_Star_Destroyer.ship.png";					Tier=8;		Difficulty=1;  	Tags = [combat, empcapital] }
+/*1,588,440*/	:~{ File="Emp Cantwell-Class Arrestor Crui.ship.png";					Tier=7;		Difficulty=1;  	Tags = [combat, empcapital] }
 /*1,473,825*/	:~{ File="Emp_Imperial_II-class_Frigate.ship.png";						Tier=7;		Difficulty=1; 	Tags = [combat, empcapital] }
 /*1,609,810*/	:~{ File="Emp_Cantwell-Class Arrestor Cruiser.ship.png";				Tier=8;		Difficulty=1;  	Tags = [combat, empcapital] }
 /*1,319,700*/	:~{ File="Emp Carrack-class Light Cruiser.ship.png";					Tier=9;		Difficulty=1;  	Tags = [combat, empcapital] }
@@ -94,22 +94,21 @@ Ships
 /*4,794,503*/	:~{ File="Emp_Ardent-class_Fast_Frigate.ship.png";						Tier=12;	Difficulty=1; Tags = [combat, empcapital] }
 /*5,498,184*/	:~{ File="Emp_Provocator-class_Star_Destroyer.ship.png";				Tier=12;	Difficulty=2; Tags = [combat, empcapital] } 
 /*5,473,825*/	:~{ File="Emp Venator Star Destroyer.ship.png";							Tier=13;	Difficulty=1; Tags = [combat, empcapital] } 
-/*5,473,825*/	:~{ File="Emp_Gladiator-class_Star_Destroy.ship";						Tier=11;	Difficulty=1; Tags = [combat, empcapital] } 
+/*5,473,825*/	:~{ File="Emp_Gladiator-class_Star_Destroy.ship.png";					Tier=11;	Difficulty=1; Tags = [combat, empcapital] } 
 /*5,688,236*/	:~{ File="Emp Imperial Star Destroyer.ship.png";						Tier=14;	Difficulty=2; Tags = [combat, empcapital] } 
 /*6,419,271*/	:~{ File="Immobilizer 420 Cruiser.ship.png";							Tier=14;	Difficulty=2; Tags = [combat, empcapital] }  
 /*6,509,224*/	:~{ File="Acclamator II-Class Cruiser.ship.png";						Tier=14;	Difficulty=1; Tags = [combat, empcapital] }
 /*6,317,139*/	:~{ File="Emp Acclamator II-Class Cruiser.ship.png";					Tier=15;	Difficulty=1; Tags = [combat, empcapital] }
 /*7,425,790*/	:~{ File="Emp Harrower-class Dreadnought.ship.png";						Tier=15;	Difficulty=1; Tags = [combat, empcapital] }
 /*9,367,340*/	:~{ File="Emp 546_Light_Cruiser Mk2.ship.png";							Tier=16;	Difficulty=2; Tags = [combat, empcapital] }
-/*10,498,184*/	:~{ File="Emp_Procursator-class_Star_Destroyer.ship.png";				Tier=17;	Difficulty=2; Tags = [combat, empcapital] } 
-/*10,498,184*/	:~{ File="Venator II-Class Star Destroyer (Empire).ship.png";			Tier=17;	Difficulty=2; Tags = [combat, empcapital] } 
-/*11,637,640*/  :~{ File="Victory II-class Star Destroyer.ship.png"; 					Tier=16; 	Difficulty=2; Tags = [combat, empcapital] }
-/*11,692,058*/  :~{ File="Victory-class Star Destroyer.ship.png"; 						Tier=17; 	Difficulty=2; Tags = [combat, empcapital] }
-/*13,020,370*/	:~{ File="Emp Harrower-class-II Dreadnaugh.ship.png";					Tier=17;	Difficulty=2; Tags = [combat, empcapital] }
-/*13,589,664*/	:~{ File="Emp Onager-Class Star Destroyer.ship.png";					Tier=18;	Difficulty=3; Tags = [combat, empcapital] }
-/*14,261,552*/	:~{ File="Onager-Class Star Destroyer II.ship.png";						Tier=18;	Difficulty=2; Tags = [combat, empcapital] } 
-/*18,809,805*/	:~{ File="Emp_Supremacy I-class Star_DES.ship.png";						Tier=18;	Difficulty=3; Tags = [combat, empcapital] } 
-
+/*10,498,184*/	:~{ File="Emp_Procursator-class_Star_Destroyer.ship.png";				Tier=17;	Difficulty=2; Tags = [combat, empcapitalXL] } 
+/*10,498,184*/	:~{ File="Venator II-Class Star Destroyer (Empire).ship.png";			Tier=17;	Difficulty=2; Tags = [combat, empcapitalXL] } 
+/*11,637,640*/  :~{ File="Victory II-class Star Destroyer.ship.png"; 					Tier=16; 	Difficulty=2; Tags = [combat, empcapitalXL] }
+/*11,692,058*/  :~{ File="Victory-class Star Destroyer.ship.png"; 						Tier=17; 	Difficulty=2; Tags = [combat, empcapitalXL] }
+/*13,020,370*/	:~{ File="Emp Harrower-class-II Dreadnaugh.ship.png";					Tier=17;	Difficulty=2; Tags = [combat, empcapitalXL] }
+/*13,589,664*/	:~{ File="Emp Onager-Class Star Destroyer.ship.png";					Tier=18;	Difficulty=3; Tags = [combat, empcapitalXL] }
+/*14,261,552*/	:~{ File="Onager-Class Star Destroyer II.ship.png";						Tier=18;	Difficulty=2; Tags = [combat, empcapitalXL] } 
+/*18,809,805*/	:~{ File="Emp_Supremacy I-class Star_DES.ship.png";						Tier=18;	Difficulty=3; Tags = [combat, empcapitalXL] } 
 
 //Bosses
 /*18,728,800*/  :~{ File="Executor-Class Star Dreadnought (Small).ship.png"; 			Tier=17; 	Difficulty=2; Tags = [swboss, empboss] }
