@@ -49,7 +49,7 @@ Part :  <./Data/ships/terran/base_part_terran.rules>/Part
 	Density = 0.5
 	
 	//ReceivableBuffs
-	ReceivableBuffs : ^/0/ReceivableBuffs []
+	ReceivableBuffs : ^/0/ReceivableBuffs [ElectronBuff]
 	ProhibitedBy : ^/0/ProhibitedBy [fighter]
 	
 	//Doors&Etc
@@ -500,10 +500,10 @@ Part :  <./Data/ships/terran/base_part_terran.rules>/Part
 			NameKey = "StatCategories/SWRG9Shot"
 			Stats
 			{
-				ShieldDamagePerShot = &~/Part/Components/BulletEmitter/Bullet/Components/Hit/HitShield/HitEffects/0/Damage
+				ShieldDamagePerShot = &~/Part/Components/BulletEmitter/Bullet/Components/Hit/HitShield/HitEffects/0/Damage/BaseValue
 				ShieldDamagePerSecond = (&ShieldDamagePerShot) * (&ROF)
 				ShieldDamage = [&../ShieldDamagePerShot, &../ShieldDamagePerSecond]
-				DamagePerShot = &~/Part/Components/BulletEmitter/Bullet/Components/Hit/HitOperational/HitEffects/0/Damage
+				DamagePerShot = &~/Part/Components/BulletEmitter/Bullet/Components/Hit/HitOperational/HitEffects/0/Damage/BaseValue
 				DamagePerSecond = (&DamagePerShot) * (&ROF)
 				Damage = [&../DamagePerShot, &../DamagePerSecond]
 				ROF = 1 / (&~/Part/Components/Turret/FireInterval)
