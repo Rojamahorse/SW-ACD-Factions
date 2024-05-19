@@ -1,70 +1,63 @@
+CommonStringModName = 	"\n<s16><gray>Mod: SW:ACD Factions</gray></s16>"
+
+
 Parts
 {
     //X-Wing Cannons
     xwingCannons = "Canon X-Wing"
-    xwingCannonsDesc = "Les canons X-Wing sont de petites armes qui peuvent être placées cachées derrière et sous des pièces d'armure. Ils sont utiles dans les affrontements à moyenne et longue portée."\
-	"\n<gray><i>Mod: SW:ACD Factions</i></gray>"
+    xwingCannonsDesc = "Les canons X-Wing sont de petites armes qui peuvent être placées cachées derrière et sous des pièces d'armure. Ils sont utiles dans les affrontements à moyenne et longue portée. <string id='CommonStringModName'/>"
 
     // Standard X-Wing Cannons
     xwingCannon = "Canon Court X-Wing"
     xwingCannonIcon = "X-Wing CC"
     xwingCannonLeft = "Canon Court X-Wing (Côté)"
     xwingCannonLeftIcon = "X-Wing CC (Côté)"
-    xwingCannonDesc = "<cyan>Incom Corporation</cyan> présente le X-Wing CC ; un canon compact à canon court pour une intégration discrète dans l'armure, excellent dans les combats à moyenne portée."\
-	"\n<gray><i>Mod: SW:ACD Factions</i></gray>"
+    xwingCannonDesc = "<cyan>Incom Corporation</cyan> présente le X-Wing CC ; un canon compact à canon court pour une intégration discrète dans l'armure, excellent dans les combats à moyenne portée. <string id='CommonStringModName'/>"
 
     //Compact Mass-Driver Cannon
     xwingCannonLong = "Canon Compact Mass-Driver"
     xwingCannonLongIcon = "Mass-Driver CC"
     xwingCannonLongLeft = "Canon Compact Mass-Driver (Côté)"
     xwingCannonLongLeftIcon = "Mass-Driver CC (Côté)"
-    xwingCannonLongDesc = "Le Canon Compact Mass-Driver (MD-CC) de <cyan>Kuat Systems Engineering</cyan> ; une arme cinétique réduite mais redoutable, conçue pour la précision et la puissance dans les combats aériens. Son design épuré permet une intégration sans faille avec divers modèles de chasseurs stellaires, offrant un impact cinétique inégalé tout en maintenant une efficacité aérodynamique."\
-	"\n<gray><i>Mod: SW:ACD Factions</i></gray>"
+    xwingCannonLongDesc = "Le Canon Compact Mass-Driver (MD-CC) de <cyan>Kuat Systems Engineering</cyan> ; une arme cinétique réduite mais redoutable, conçue pour la précision et la puissance dans les combats aériens. Son design épuré permet une intégration sans faille avec divers modèles de chasseurs stellaires, offrant un impact cinétique inégalé tout en maintenant une efficacité aérodynamique. <string id='CommonStringModName'/>"
 
     //Extra Long X-Wing Cannons
     xwingCannonXLong = "Canon X-Wing Étendu"
     xwingCannonXLongIcon = "X-Wing XC"
     xwingCannonXLongLeft = "Canon X-Wing Étendu (Côté)"
     xwingCannonXLongLeftIcon = "X-Wing XC (Côté)"
-    xwingCannonXLongDesc = "<cyan>Incom Corporation</cyan> présente le X-Wing XC ; une version étendue du canon classique, combinant portée et discrétion pour un positionnement stratégique derrière l'armure."\
-	"\n<gray><i>Mod: SW:ACD Factions</i></gray>"
+    xwingCannonXLongDesc = "<cyan>Incom Corporation</cyan> présente le X-Wing XC ; une version étendue du canon classique, combinant portée et discrétion pour un positionnement stratégique derrière l'armure. <string id='CommonStringModName'/>"
 
     //Standard TIE Repeaters
     tieMinigun = "Canon Répéteur TIE - Édition Super"
     tieMinigunIcon = "TIE RC-SE"
     tieMinigunLeft = "Canon Répéteur TIE - Édition Super (Côté)"
     tieMinigunLeftIcon = "TIE RC-SE (Côté)"
-    tieLMinigunDesc = "Les canons répéteurs TIE - Édition Super de l'<cyan>Empire Galactique</cyan> ; compacts, à tir rapide, parfaits pour les affrontements à courte portée, avec des capacités de placement discret sous l'armure."\
-	"\n<gray><i>Mod: SW:ACD Factions</i></gray>"
+    tieLMinigunDesc = "Les canons répéteurs TIE - Édition Super de l'<cyan>Empire Galactique</cyan> ; compacts, à tir rapide, parfaits pour les affrontements à courte portée, avec des capacités de placement discret sous l'armure. <string id='CommonStringModName'/>"
 
     tieMinigunLong = "Canon Répéteur Lourd HyCor Étendu"
     tieMinigunLongIcon = "HyCor HR-XC"
     tieMinigunLongLeft = "Canon Répéteur Lourd HyCor Étendu (Côté)"
     tieMinigunLongLeftIcon = "HyCor HR-XC (Côté)"
-    tieLMinigunLongDesc = "Répéteur Laser Lourd avec Canon Étendu par <cyan>HyCor</cyan> ; tir rapide et parfait pour les engagements à courte portée, ce répéteur laser lourd est modifié pour une utilisation sur des vaisseaux de petite à moyenne taille. Peut être placé derrière et sous l'armure du vaisseau."\
-	"\n<gray><i>Mod: SW:ACD Factions</i></gray>"
+    tieLMinigunLongDesc = "Répéteur Laser Lourd avec Canon Étendu par <cyan>HyCor</cyan> ; tir rapide et parfait pour les engagements à courte portée, ce répéteur laser lourd est modifié pour une utilisation sur des vaisseaux de petite à moyenne taille. Peut être placé derrière et sous l'armure du vaisseau. <string id='CommonStringModName'/>"
 
     // RG-9 Cannons
     RG9Cannon = "Canon Laser RG-9 Édition Améliorée"
     RG9CannonIcon = "RG-9 LC-EA"
     RG9CannonLeft = "Canon Laser RG-9 Édition Améliorée (Côté)"
     RG9CannonLeftIcon = "RG-9 LC-EA (Côté)"
-    RG9CannonDesc = "Canon Laser RG-9 de <cyan>Borstel</cyan> ; une Édition Améliorée du laser rapide et polyvalent du petit A-Wing, principalement utilisé dans les chasseurs moyens à grands."\
-	"\n<gray><i>Mod: SW:ACD Factions</i></gray>"
-    RG9CannonLeftDesc = "Canon Laser RG-9 de <cyan>Borstel</cyan> ; une Édition Améliorée du laser rapide et polyvalent du petit A-Wing, principalement utilisé dans les chasseurs moyens à grands."\
-	"\n<gray><i>Mod: SW:ACD Factions</i></gray>"
+    RG9CannonDesc = "Canon Laser RG-9 de <cyan>Borstel</cyan> ; une Édition Améliorée du laser rapide et polyvalent du petit A-Wing, principalement utilisé dans les chasseurs moyens à grands. <string id='CommonStringModName'/>"
+    RG9CannonLeftDesc = "Canon Laser RG-9 de <cyan>Borstel</cyan> ; une Édition Améliorée du laser rapide et polyvalent du petit A-Wing, principalement utilisé dans les chasseurs moyens à grands. <string id='CommonStringModName'/>"
 
     // Standard TwinBeam Defense Turret
     DroidTurret = "Tourelle de Défense Double Faisceau StarGuard"
     DroidTurretIcon = "Starguard DF-DT"
-    DroidTurretDesc = "Fabriquée par <cyan>Corellian ArmsTech</cyan>, la tourelle de défense double faisceau StarGuard déchaîne une furie de double rayon, offrant une protection inégalée. Exceptionnellement efficace pour intercepter et neutraliser <orange>les tirs lasers et ioniques</orange>, elle offre une défense supérieure contre les menaces de projectiles à base d'énergie mais est inefficace contre les balles, les mines et les missiles."\
-	"\n<gray><i>Mod: SW:ACD Factions</i></gray>"
+    DroidTurretDesc = "Fabriquée par <cyan>Corellian ArmsTech</cyan>, la tourelle de défense double faisceau StarGuard déchaîne une furie de double rayon, offrant une protection inégalée. Exceptionnellement efficace pour intercepter et neutraliser <orange>les tirs lasers et ioniques</orange>, elle offre une défense supérieure contre les menaces de projectiles à base d'énergie mais est inefficace contre les balles, les mines et les missiles. <string id='CommonStringModName'/>"
 
     // Mini TwinLaser Defense Turret
     PDTurretTiny = "Tourelle de Défense Compacte Double Laser StarGuard"
     PDTurretTinyIcon = "Starguard DL-C-PDT"
-    PDTurretTinyDesc = "La tourelle de défense pointue double laser StarGuard, fabriquée par <cyan>Corellian ArmsTech</cyan>, déchaîne une furie de double laser. Cette version miniaturisée et entièrement automatisée de la tourelle double laser StarGuard est optimisée pour les espaces restreints. Elle est très efficace pour cibler <orange>les balles, les mines et les missiles</orange>, mais est inefficace contre les lasers et les tirs ioniques."\
-	"\n<gray><i>Mod: SW:ACD Factions</i></gray>"
+    PDTurretTinyDesc = "La tourelle de défense pointue double laser StarGuard, fabriquée par <cyan>Corellian ArmsTech</cyan>, déchaîne une furie de double laser. Cette version miniaturisée et entièrement automatisée de la tourelle double laser StarGuard est optimisée pour les espaces restreints. Elle est très efficace pour cibler <orange>les balles, les mines et les missiles</orange>, mais est inefficace contre les lasers et les tirs ioniques. <string id='CommonStringModName'/>"
 }
 
 EditorGroups

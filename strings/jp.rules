@@ -1,70 +1,62 @@
+CommonStringModName = 	"\n<s16><gray>Mod: SW:ACD Factions</gray></s16>"
+
 Parts
 {
     //X-Wing Cannons
     xwingCannons = "Xウィングキャノン"
-    xwingCannonsDesc = "Xウィングキャノンは、装甲の背後や下に隠して設置できる小型武器です。中距離から長距離の交戦に有効です。"\
-	"\n<gray><i>Mod: SW:ACD Factions</i></gray>"
+    xwingCannonsDesc = "Xウィングキャノンは、装甲の背後や下に隠して設置できる小型武器です。中距離から長距離の交戦に有効です。. <string id='CommonStringModName'/>"
 
     // Standard X-Wing Cannons
     xwingCannon = "Xウィング短砲"
     xwingCannonIcon = "XウィングSC"
     xwingCannonLeft = "Xウィング短砲（側面）"
     xwingCannonLeftIcon = "XウィングSC（側面）"
-    xwingCannonDesc = "<cyan>インコム社</cyan>が提供するXウィングSC；コンパクトな短砲身のキャノンで、装甲に隠して設置可能、中距離戦闘で優れた性能を発揮します。"\
-	"\n<gray><i>Mod: SW:ACD Factions</i></gray>"
+    xwingCannonDesc = "<cyan>インコム社</cyan>が提供するXウィングSC；コンパクトな短砲身のキャノンで、装甲に隠して設置可能、中距離戦闘で優れた性能を発揮します。. <string id='CommonStringModName'/>"
 
     //Compact Mass-Driver Cannon
     xwingCannonLong = "マスドライバーコンパクトキャノン"
     xwingCannonLongIcon = "マスドライバーCC"
     xwingCannonLongLeft = "マスドライバーコンパクトキャノン（側面）"
     xwingCannonLongLeftIcon = "マスドライバーCC（側面）"
-    xwingCannonLongDesc = "<cyan>クワットシステムズエンジニアリング</cyan>のマスドライバーコンパクトキャノン（MD-CC）；サイズは小さいながらも強力な運動エネルギー武器で、空中戦での精度と威力に優れています。スリークなデザインは、さまざまなスターファイターモデルとのシームレスな統合を可能にし、空気力学的効率を保ちながら比類のない運動エネルギーの影響を提供します。"\
-	"\n<gray><i>Mod: SW:ACD Factions</i></gray>"
+    xwingCannonLongDesc = "<cyan>クワットシステムズエンジニアリング</cyan>のマスドライバーコンパクトキャノン（MD-CC）；サイズは小さいながらも強力な運動エネルギー武器で、空中戦での精度と威力に優れています。スリークなデザインは、さまざまなスターファイターモデルとのシームレスな統合を可能にし、空気力学的効率を保ちながら比類のない運動エネルギーの影響を提供します。. <string id='CommonStringModName'/>"
 
     //Extra Long X-Wing Cannons
     xwingCannonXLong = "Xウィング延長キャノン"
     xwingCannonXLongIcon = "XウィングXC"
     xwingCannonXLongLeft = "Xウィング延長キャノン（側面）"
     xwingCannonXLongLeftIcon = "XウィングXC（側面）"
-    xwingCannonXLongDesc = "<cyan>インコム社</cyan>のXウィングXC；古典的なキャノンの延長版で、範囲と隠密性を兼ね備えて装甲の後ろに戦略的に配置します。"\
-	"\n<gray><i>Mod: SW:ACD Factions</i></gray>"
+    xwingCannonXLongDesc = "<cyan>インコム社</cyan>のXウィングXC；古典的なキャノンの延長版で、範囲と隠密性を兼ね備えて装甲の後ろに戦略的に配置します。. <string id='CommonStringModName'/>"
 
     //Standard TIE Repeaters
     tieMinigun = "TIEリピーターキャノン - スーパーエディション"
     tieMinigunIcon = "TIE RC-SE"
     tieMinigunLeft = "TIEリピーターキャノン - スーパーエディション（側面）"
     tieMinigunLeftIcon = "TIE RC-SE（側面）"
-    tieLMinigunDesc = "<cyan>銀河帝国</cyan>のTIEリピーターキャノン - スーパーエディション；コンパクトで高速射撃が可能、近距離戦闘に最適で、装甲に隠して設置可能です。"\
-	"\n<gray><i>Mod: SW:ACD Factions</i></gray>"
+    tieLMinigunDesc = "<cyan>銀河帝国</cyan>のTIEリピーターキャノン - スーパーエディション；コンパクトで高速射撃が可能、近距離戦闘に最適で、装甲に隠して設置可能です。. <string id='CommonStringModName'/>"
 
     tieMinigunLong = "ハイコア重リピーター拡張キャノン"
     tieMinigunLongIcon = "ハイコアHR-XC"
     tieMinigunLongLeft = "ハイコア重リピーター拡張キャノン（側面）"
     tieMinigunLongLeftIcon = "ハイコアHR-XC（側面）"
-    tieLMinigunLongDesc = "<cyan>ハイコア</cyan>の拡張キャノン付き重レーザーリピーター；高速射撃で近距離戦闘に最適、この重レーザーリピーターは小型から中型の船での使用に改造されています。船の装甲の下や背後に設置可能です。"\
-	"\n<gray><i>Mod: SW:ACD Factions</i></gray>"
+    tieLMinigunLongDesc = "<cyan>ハイコア</cyan>の拡張キャノン付き重レーザーリピーター；高速射撃で近距離戦闘に最適、この重レーザーリピーターは小型から中型の船での使用に改造されています。船の装甲の下や背後に設置可能です。. <string id='CommonStringModName'/>"
 
     // RG-9 Cannons
     RG9Cannon = "RG-9レーザーキャノン強化版"
     RG9CannonIcon = "RG-9 LC-EE"
     RG9CannonLeft = "RG-9レーザーキャノン強化版（側面）"
     RG9CannonLeftIcon = "RG-9 LC-EE（側面）"
-    RG9CannonDesc = "<cyan>ボルステル</cyan>のRG-9レーザーキャノン；高速発射可能で多用途の小型Aウィングレーザーの強化版、主に中から大型の戦闘機で使用されます。"\
-	"\n<gray><i>Mod: SW:ACD Factions</i></gray>"
-    RG9CannonLeftDesc = "<cyan>ボルステル</cyan>のRG-9レーザーキャノン；高速発射可能で多用途の小型Aウィングレーザーの強化版、主に中から大型の戦闘機で使用されます。"\
-	"\n<gray><i>Mod: SW:ACD Factions</i></gray>"
+    RG9CannonDesc = "<cyan>ボルステル</cyan>のRG-9レーザーキャノン；高速発射可能で多用途の小型Aウィングレーザーの強化版、主に中から大型の戦闘機で使用されます。. <string id='CommonStringModName'/>"
+    RG9CannonLeftDesc = "<cyan>ボルステル</cyan>のRG-9レーザーキャノン；高速発射可能で多用途の小型Aウィングレーザーの強化版、主に中から大型の戦闘機で使用されます。. <string id='CommonStringModName'/>"
 
     // Standard TwinBeam Defense Turret
     DroidTurret = "スターガードツインビーム防御ターレット"
     DroidTurretIcon = "スターガードTB-DT"
-    DroidTurretDesc = "<cyan>コレリアンアームズテック</cyan>製、スターガードツインビーム防御ターレットは二重ビームの怒りを解き放ち、比類のない保護を提供します。特に<orange>レーザーとイオンショット</orange>を迎撃し中和するのに効果的で、エネルギーに基づく弾丸の脅威に対して優れた防御を提供しますが、弾丸、地雷、ミサイルには無効です。"\
-	"\n<gray><i>Mod: SW:ACD Factions</i></gray>"
+    DroidTurretDesc = "<cyan>コレリアンアームズテック</cyan>製、スターガードツインビーム防御ターレットは二重ビームの怒りを解き放ち、比類のない保護を提供します。特に<orange>レーザーとイオンショット</orange>を迎撃し中和するのに効果的で、エネルギーに基づく弾丸の脅威に対して優れた防御を提供しますが、弾丸、地雷、ミサイルには無効です。. <string id='CommonStringModName'/>"
 
     // Mini TwinLaser Defense Turret
     PDTurretTiny = "スターガードツインレーザーコンパクトポイント防御ターレット"
     PDTurretTinyIcon = "スターガードTL-C-PDT"
-    PDTurretTinyDesc = "<cyan>コレリアンアームズテック</cyan>製、スターガードツインレーザーポイント防御ターレットは二重レーザーの怒りを解き放ちます。このスターガードツインレーザーターレットの小型化された完全自動バージョンは、狭いスペースに最適化されています。<orange>弾丸、地雷、ミサイル</orange>を標的にするのに非常に効果的ですが、レーザーやイオンショットには効果がありません。"\
-	"\n<gray><i>Mod: SW:ACD Factions</i></gray>"
+    PDTurretTinyDesc = "<cyan>コレリアンアームズテック</cyan>製、スターガードツインレーザーポイント防御ターレットは二重レーザーの怒りを解き放ちます。このスターガードツインレーザーターレットの小型化された完全自動バージョンは、狭いスペースに最適化されています。<orange>弾丸、地雷、ミサイル</orange>を標的にするのに非常に効果的ですが、レーザーやイオンショットには効果がありません。. <string id='CommonStringModName'/>"
 }
 
 

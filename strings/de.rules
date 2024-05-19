@@ -1,60 +1,62 @@
+CommonStringModName = 	"\n<s16><gray>Mod: SW:ACD Factions</gray></s16>"
+
 Parts
 {
     //X-Wing Cannons
     xwingCannons = "X-Flügel Kanone"
-    xwingCannonsDesc = "X-Flügel Kanonen sind kleine Waffen, die versteckt hinter und unter Panzerungsteilen platziert werden können. Sie sind nützlich in mittleren bis langen Kampfentfernungen."
+    xwingCannonsDesc = "X-Flügel Kanonen sind kleine Waffen, die versteckt hinter und unter Panzerungsteilen platziert werden können. Sie sind nützlich in mittleren bis langen Kampfentfernungen. <string id='CommonStringModName'/>"
 
     // Standard X-Wing Cannons
     xwingCannon = "X-Flügel Kurzkanone"
     xwingCannonIcon = "X-Flügel SK"
     xwingCannonLeft = "X-Flügel Kurzkanone (Seite)"
     xwingCannonLeftIcon = "X-Flügel SK (Seite)"
-    xwingCannonDesc = "<cyan>Incom Corporation</cyan> präsentiert die X-Flügel SK; eine kompakte, kurzläufige Kanone für heimliche Panzerintegration, hervorragend im mittleren Kampfbereich."
+    xwingCannonDesc = "<cyan>Incom Corporation</cyan> präsentiert die X-Flügel SK; eine kompakte, kurzläufige Kanone für heimliche Panzerintegration, hervorragend im mittleren Kampfbereich. <string id='CommonStringModName'/>"
 
     //Compact Mass-Driver Cannon
     xwingCannonLong = "Massentreiber Kompaktkanone"
     xwingCannonLongIcon = "Massentreiber KK"
     xwingCannonLongLeft = "Massentreiber Kompaktkanone (Seite)"
     xwingCannonLongLeftIcon = "Massentreiber KK (Seite)"
-    xwingCannonLongDesc = "Die Massentreiber Kompaktkanone (MD-KK) von <cyan>Kuat Systems Engineering</cyan>; eine verkleinerte, aber gewaltige kinetische Waffe, entworfen für Präzision und Leistung in Hundekämpfen. Ihr schlankes Design ermöglicht eine nahtlose Integration mit verschiedenen Jägermodellen und bietet unübertroffene kinetische Wirkung bei gleichzeitiger Erhaltung der aerodynamischen Effizienz."
+    xwingCannonLongDesc = "Die Massentreiber Kompaktkanone (MD-KK) von <cyan>Kuat Systems Engineering</cyan>; eine verkleinerte, aber gewaltige kinetische Waffe, entworfen für Präzision und Leistung in Hundekämpfen. Ihr schlankes Design ermöglicht eine nahtlose Integration mit verschiedenen Jägermodellen und bietet unübertroffene kinetische Wirkung bei gleichzeitiger Erhaltung der aerodynamischen Effizienz. <string id='CommonStringModName'/>"
 
     //Extra Long X-Wing Cannons
     xwingCannonXLong = "X-Flügel Verlängerte Kanone"
     xwingCannonXLongIcon = "X-Flügel XC"
     xwingCannonXLongLeft = "X-Flügel Verlängerte Kanone (Seite)"
     xwingCannonXLongLeftIcon = "X-Flügel XC (Seite)"
-    xwingCannonXLongDesc = "<cyan>Incom Corporation</cyan> präsentiert die X-Flügel XC; eine erweiterte Version der klassischen Kanone, die Reichweite und Tarnung für strategische Positionierung hinter der Panzerung kombiniert."
+    xwingCannonXLongDesc = "<cyan>Incom Corporation</cyan> präsentiert die X-Flügel XC; eine erweiterte Version der klassischen Kanone, die Reichweite und Tarnung für strategische Positionierung hinter der Panzerung kombiniert. <string id='CommonStringModName'/>"
 
     //Standard TIE Repeaters
     tieMinigun = "TIE Repeaterkanone - Super Edition"
     tieMinigunIcon = "TIE RK-SE"
     tieMinigunLeft = "TIE Repeaterkanone - Super Edition (Seite)"
     tieMinigunLeftIcon = "TIE RK-SE (Seite)"
-    tieLMinigunDesc = "Die TIE Repeaterkanonen - Super Edition des <cyan>Galaktischen Imperiums</cyan>; kompakt, schnellfeuernd und perfekt für Nahkampfgefechte, mit der Möglichkeit zur heimlichen Panzerplatzierung."
+    tieLMinigunDesc = "Die TIE Repeaterkanonen - Super Edition des <cyan>Galaktischen Imperiums</cyan>; kompakt, schnellfeuernd und perfekt für Nahkampfgefechte, mit der Möglichkeit zur heimlichen Panzerplatzierung. <string id='CommonStringModName'/>"
 
     tieMinigunLong = "HyCor Schwerer Repeater Erweiterte Kanone"
     tieMinigunLongIcon = "HyCor HR-XK"
     tieMinigunLongLeft = "HyCor Schwerer Repeater Erweiterte Kanone (Seite)"
     tieMinigunLongLeftIcon = "HyCor HR-XK (Seite)"
-    tieLMinigunLongDesc = "Schwerer Laser-Repeater mit erweiterter Kanone von <cyan>HyCor</cyan>; schnellfeuernd und perfekt für Nahkampfgefechte, dieser schwere Laser-Repeater ist für den Einsatz auf kleinen bis mittleren Schiffen modifiziert. Kann hinter und unter der Schiffspanzerung platziert werden."
+    tieLMinigunLongDesc = "Schwerer Laser-Repeater mit erweiterter Kanone von <cyan>HyCor</cyan>; schnellfeuernd und perfekt für Nahkampfgefechte, dieser schwere Laser-Repeater ist für den Einsatz auf kleinen bis mittleren Schiffen modifiziert. Kann hinter und unter der Schiffspanzerung platziert werden. <string id='CommonStringModName'/>"
 
     // RG-9 Cannons
     RG9Cannon = "RG-9 Laserkanone Erweiterte Edition"
     RG9CannonIcon = "RG-9 LK-EE"
     RG9CannonLeft = "RG-9 Laserkanone Erweiterte Edition (Seite)"
     RG9CannonLeftIcon = "RG-9 LK-EE (Seite)"
-    RG9CannonDesc = "RG-9 Laserkanone von <cyan>Borstel</cyan>; eine Erweiterte Edition der schnellfeuernden, vielseitigen kleinen A-Flügel-Laser, hauptsächlich verwendet in mittleren bis großen Jägern."
-    RG9CannonLeftDesc = "RG-9 Laserkanone von <cyan>Borstel</cyan>; eine Erweiterte Edition der schnellfeuernden, vielseitigen kleinen A-Flügel-Laser, hauptsächlich verwendet in mittleren bis großen Jägern."
+    RG9CannonDesc = "RG-9 Laserkanone von <cyan>Borstel</cyan>; eine Erweiterte Edition der schnellfeuernden, vielseitigen kleinen A-Flügel-Laser, hauptsächlich verwendet in mittleren bis großen Jägern. <string id='CommonStringModName'/>"
+    RG9CannonLeftDesc = "RG-9 Laserkanone von <cyan>Borstel</cyan>; eine Erweiterte Edition der schnellfeuernden, vielseitigen kleinen A-Flügel-Laser, hauptsächlich verwendet in mittleren bis großen Jägern. <string id='CommonStringModName'/>"
 
     // Standard TwinBeam Defense Turret
     DroidTurret = "StarGuard Zweistrahl-Abwehrturm"
     DroidTurretIcon = "Starguard ZA-T"
-    DroidTurretDesc = "Hergestellt von <cyan>Corellian ArmsTech</cyan>, entfesselt der StarGuard Zweistrahl-Abwehrturm eine Doppellaser-Wut und bietet unübertroffenen Schutz. Besonders effektiv beim Abfangen und Neutralisieren von <orange>Laser- und Ionenschüssen</orange>, bietet er überlegenen Schutz gegen energiebasierte Projektilbedrohungen, ist aber ineffektiv gegen Kugeln, Minen und Raketen."
+    DroidTurretDesc = "Hergestellt von <cyan>Corellian ArmsTech</cyan>, entfesselt der StarGuard Zweistrahl-Abwehrturm eine Doppellaser-Wut und bietet unübertroffenen Schutz. Besonders effektiv beim Abfangen und Neutralisieren von <orange>Laser- und Ionenschüssen</orange>, bietet er überlegenen Schutz gegen energiebasierte Projektilbedrohungen, ist aber ineffektiv gegen Kugeln, Minen und Raketen. <string id='CommonStringModName'/>"
 
     // Mini TwinLaser Defense Turret
     PDTurretTiny = "StarGuard Kompakter Zwillingslaser-Punktverteidigungsturm"
     PDTurretTinyIcon = "Starguard KL-K-PVT"
-    PDTurretTinyDesc = "Der StarGuard Zwillingslaser-Punktverteidigungsturm, hergestellt von <cyan>Corellian ArmsTech</cyan>, entfesselt eine Doppellaser-Wut. Diese miniaturisierte und vollautomatische Version des StarGuard Zwillingslaser-Turms ist optimiert für enge Räume. Er ist sehr effektiv bei der Zielverfolgung von <orange>Kugeln, Minen und Raketen</orange>, aber ineffektiv gegen Laser und Ionenschüsse."
+    PDTurretTinyDesc = "Der StarGuard Zwillingslaser-Punktverteidigungsturm, hergestellt von <cyan>Corellian ArmsTech</cyan>, entfesselt eine Doppellaser-Wut. Diese miniaturisierte und vollautomatische Version des StarGuard Zwillingslaser-Turms ist optimiert für enge Räume. Er ist sehr effektiv bei der Zielverfolgung von <orange>Kugeln, Minen und Raketen</orange>, aber ineffektiv gegen Laser und Ionenschüsse. <string id='CommonStringModName'/>"
 }
 
 

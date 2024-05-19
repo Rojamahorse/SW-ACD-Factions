@@ -1,70 +1,62 @@
+CommonStringModName = 	"\n<s16><gray>Mod: SW:ACD Factions</gray></s16>"
+
 Parts
 {
 	//X-Wing Cannons
 	xwingCannons = "X-Wing Cannon"
-	xwingCannonsDesc = "X-Wing Cannons are small weapons that can be placed hidden behind and under armor pieces.  They are useful in medium to long range engagements"\
-	"\n<gray><i>Mod: SW:ACD Factions</i></gray>"
+	xwingCannonsDesc = "X-Wing Cannons are small weapons that can be placed hidden behind and under armor pieces.  They are useful in medium to long range engagements<string id='CommonStringModName'/>"
 
 	// Standard X-Wing Cannons
 	xwingCannon = "X-Wing Short Cannon"
 	xwingCannonIcon = "X-Wing SC"
 	xwingCannonLeft = "X-Wing Short Cannon (Side)"
 	xwingCannonLeftIcon = "X-Wing SC (Side)"
-	xwingCannonDesc = "<cyan>Incom Corporation</cyan> presents the X-Wing SC; a compact, short-barrel cannon for stealthy armor integration, excelling in medium-range combat."\
-	"\n<gray><i>Mod: SW:ACD Factions</i></gray>"
+	xwingCannonDesc = "<cyan>Incom Corporation</cyan> presents the X-Wing SC; a compact, short-barrel cannon for stealthy armor integration, excelling in medium-range combat.<string id='CommonStringModName'/>"
 
 	//Compact Mass-Driver Cannon
 	xwingCannonLong = "Mass-Driver Compact Cannon"
 	xwingCannonLongIcon = "Mass-Driver CC"
 	xwingCannonLongLeft = "Mass-Driver Compact Cannon (Side)"
 	xwingCannonLongLeftIcon = "Mass-Driver CC (Side)"
-	xwingCannonLongDesc = "The Mass-Driver Compact Cannon (MD-CC) by <cyan>Kuat Systems Engineering</cyan>; A scaled-down yet formidable kinetic weapon, designed for precision and power in dogfights. Its sleek design allows for seamless integration with various Starfighter models, providing unmatched kinetic impact while maintaining aerodynamic efficiency."\
-	"\n<gray><i>Mod: SW:ACD Factions</i></gray>"
+	xwingCannonLongDesc = "The Mass-Driver Compact Cannon (MD-CC) by <cyan>Kuat Systems Engineering</cyan>; A scaled-down yet formidable kinetic weapon, designed for precision and power in dogfights. Its sleek design allows for seamless integration with various Starfighter models, providing unmatched kinetic impact while maintaining aerodynamic efficiency.<string id='CommonStringModName'/>"
 	
 	//Extra Long X-Wing Cannons
 	xwingCannonXLong = "X-Wing Extended Cannon"
 	xwingCannonXLongIcon = "X-Wing XC"
 	xwingCannonXLongLeft = "X-Wing Extended Cannon (Side)"
 	xwingCannonXLongLeftIcon = "X-Wing XC (Side)"
-	xwingCannonXLongDesc = "<cyan>Incom Corporation's</cyan> X-Wing XC; an extended version of the classic cannon, combining range and stealth for strategic positioning behind armor."\
-	"\n<gray><i>Mod: SW:ACD Factions</i></gray>"
+	xwingCannonXLongDesc = "<cyan>Incom Corporation's</cyan> X-Wing XC; an extended version of the classic cannon, combining range and stealth for strategic positioning behind armor.<string id='CommonStringModName'/>"
 
 	//Standard TIE Repeaters
 	tieMinigun = "TIE Repeater Cannon - Super Edition"
 	tieMinigunIcon = "TIE RC-SE"
 	tieMinigunLeft = "TIE Repeater Cannon - Super Edition (Side)"
 	tieMinigunLeftIcon = "TIE RC-SE (Side)"
-	tieLMinigunDesc = "The <cyan>Galactic Empire's</cyan> TIE Repeater Cannons - Super Edition; compact, rapid-firing, and perfect for close-range engagements, with stealthy armor placement capabilities."\
-	"\n<gray><i>Mod: SW:ACD Factions</i></gray>"
+	tieLMinigunDesc = "The <cyan>Galactic Empire's</cyan> TIE Repeater Cannons - Super Edition; compact, rapid-firing, and perfect for close-range engagements, with stealthy armor placement capabilities.<string id='CommonStringModName'/>"
 
 	tieMinigunLong = "HyCor Heavy Repeater Extended Cannon"
 	tieMinigunLongIcon = "HyCor HR-XC"
 	tieMinigunLongLeft = "HyCor Heavy Repeater Extended Cannon (Side)"
 	tieMinigunLongLeftIcon = "HyCor HR-XC (Side)"
-	tieLMinigunLongDesc = "Heavy Laser Repeater with Extended Cannon by <cyan>HyCor</cyan>; rapid-firing and perfect for close-range enagements, this Heavy Laser Repeater is modified for use on small-to-medium ships. Can be placed behind and under ship armor."\
-	"\n<gray><i>Mod: SW:ACD Factions</i></gray>"
+	tieLMinigunLongDesc = "Heavy Laser Repeater with Extended Cannon by <cyan>HyCor</cyan>; rapid-firing and perfect for close-range enagements, this Heavy Laser Repeater is modified for use on small-to-medium ships. Can be placed behind and under ship armor.<string id='CommonStringModName'/>"
 
 	// RG-9 Cannons
 	RG9Cannon = "RG-9 Laser Cannon Enhanced Edition"
 	RG9CannonIcon = "RG-9 LC-EE"
 	RG9CannonLeft = "RG-9 Laser Cannon Enhanced Edition (Side)"
 	RG9CannonLeftIcon = "RG-9 LC-EE (Side)"
-	RG9CannonDesc = "RG-9 Laser Cannon by <cyan>Borstel</cyan>; An Enhanced Edition of the quick-firing, versatile small A-Wing laser, mainly used in medium to large fighters."\
-	"\n<gray><i>Mod: SW:ACD Factions</i></gray>"
-	RG9CannonLeftDesc = "RG-9 Laser Cannon by <cyan>Borstel</cyan>; An Enhanced Edition of the quick-firing, versatile small A-Wing laser, mainly used in medium to large fighters."\
-	"\n<gray><i>Mod: SW:ACD Factions</i></gray>"
+	RG9CannonDesc = "RG-9 Laser Cannon by <cyan>Borstel</cyan>; An Enhanced Edition of the quick-firing, versatile small A-Wing laser, mainly used in medium to large fighters.<string id='CommonStringModName'/>"
+	RG9CannonLeftDesc = "RG-9 Laser Cannon by <cyan>Borstel</cyan>; An Enhanced Edition of the quick-firing, versatile small A-Wing laser, mainly used in medium to large fighters.<string id='CommonStringModName'/>"
 
 	// Standard TwinBeam Defense Turret
 	DroidTurret = "StarGuard TwinBeam Defense Turret"
 	DroidTurretIcon = "Starguard TB-DT"
-	DroidTurretDesc = "Manufactured by <cyan>Corellian ArmsTech</cyan>, the StarGuard TwinBeam Defense Turret unleashes dual-beam fury, offering unmatched protection. Exceptionally effective at intercepting and neutralizing <orange>lasers and ion shots</orange>, it provides superior defense against energy-based projectile threats but ineffective with bullets, mines, and missiles."\
-	"\n<gray><i>Mod: SW:ACD Factions</i></gray>" 
+	DroidTurretDesc = "Manufactured by <cyan>Corellian ArmsTech</cyan>, the StarGuard TwinBeam Defense Turret unleashes dual-beam fury, offering unmatched protection. Exceptionally effective at intercepting and neutralizing <orange>lasers and ion shots</orange>, it provides superior defense against energy-based projectile threats but ineffective with bullets, mines, and missiles.<string id='CommonStringModName'/>" 
 
 	// Mini TwinLaser Defense Turret
 	PDTurretTiny = "StarGuard TwinLaser Compact Point Defense Turret"
 	PDTurretTinyIcon = "Starguard TL-C-PDT"
-	PDTurretTinyDesc = "The StarGuard TwinLaser Point Defense Turret, manufactured by <cyan>Corellian ArmsTech</cyan>, unleashes dual laser fury. This miniaturized and fully automated version of the StarGuard TwinLaser Turret is optimized for tight spaces. It's highly effective at targeting <orange>bullets, mines, and missiles</orange>, but is ineffective against lasers and ion shots."\
-	"\n<gray><i>Mod: SW:ACD Factions</i></gray>"
+	PDTurretTinyDesc = "The StarGuard TwinLaser Point Defense Turret, manufactured by <cyan>Corellian ArmsTech</cyan>, unleashes dual laser fury. This miniaturized and fully automated version of the StarGuard TwinLaser Turret is optimized for tight spaces. It's highly effective at targeting <orange>bullets, mines, and missiles</orange>, but is ineffective against lasers and ion shots.<string id='CommonStringModName'/>"
 
 }
 

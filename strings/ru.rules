@@ -1,70 +1,62 @@
+CommonStringModName = 	"\n<s16><gray>Mod: SW:ACD Factions</gray></s16>"
+
 Parts
 {
     //X-Wing Cannons
     xwingCannons = "Пушка X-Wing"
-    xwingCannonsDesc = "Пушки X-Wing - это маленькое оружие, которое можно спрятать за и под броневыми элементами. Они эффективны на средние и длинные дистанции."\
-	"\n<gray><i>Mod: SW:ACD Factions</i></gray>"
+    xwingCannonsDesc = "Пушки X-Wing - это маленькое оружие, которое можно спрятать за и под броневыми элементами. Они эффективны на средние и длинные дистанции.<string id='CommonStringModName'/>"
 
     // Standard X-Wing Cannons
     xwingCannon = "Короткая пушка X-Wing"
     xwingCannonIcon = "X-Wing КП"
     xwingCannonLeft = "Короткая пушка X-Wing (боковая)"
     xwingCannonLeftIcon = "X-Wing КП (боковая)"
-    xwingCannonDesc = "<cyan>Корпорация Инком</cyan> представляет X-Wing КП; компактная пушка с коротким стволом для скрытной интеграции в броню, отлично подходит для боя на средние дистанции."\
-	"\n<gray><i>Mod: SW:ACD Factions</i></gray>"
+    xwingCannonDesc = "<cyan>Корпорация Инком</cyan> представляет X-Wing КП; компактная пушка с коротким стволом для скрытной интеграции в броню, отлично подходит для боя на средние дистанции.<string id='CommonStringModName'/>"
 
     //Compact Mass-Driver Cannon
     xwingCannonLong = "Компактная пушка Mass-Driver"
     xwingCannonLongIcon = "Mass-Driver КК"
     xwingCannonLongLeft = "Компактная пушка Mass-Driver (боковая)"
     xwingCannonLongLeftIcon = "Mass-Driver КК (боковая)"
-    xwingCannonLongDesc = "Компактная пушка Mass-Driver (MD-КК) от <cyan>Куат Системс Инжиниринг</cyan>; Мощное кинетическое оружие меньшего размера, разработанное для точности и мощности в воздушных боях. Её элегантный дизайн позволяет бесшовно интегрироваться с различными моделями звездных истребителей, обеспечивая непревзойденное кинетическое воздействие, сохраняя при этом аэродинамическую эффективность."\
-	"\n<gray><i>Mod: SW:ACD Factions</i></gray>"
+    xwingCannonLongDesc = "Компактная пушка Mass-Driver (MD-КК) от <cyan>Куат Системс Инжиниринг</cyan>; Мощное кинетическое оружие меньшего размера, разработанное для точности и мощности в воздушных боях. Её элегантный дизайн позволяет бесшовно интегрироваться с различными моделями звездных истребителей, обеспечивая непревзойденное кинетическое воздействие, сохраняя при этом аэродинамическую эффективность.<string id='CommonStringModName'/>"
 
     //Extra Long X-Wing Cannons
     xwingCannonXLong = "Удлинённая пушка X-Wing"
     xwingCannonXLongIcon = "X-Wing УП"
     xwingCannonXLongLeft = "Удлинённая пушка X-Wing (боковая)"
     xwingCannonXLongLeftIcon = "X-Wing УП (боковая)"
-    xwingCannonXLongDesc = "<cyan>Корпорация Инком</cyan> представляет X-Wing УП; удлинённая версия классической пушки, сочетающая дальность и скрытность для стратегического размещения за бронёй."\
-	"\n<gray><i>Mod: SW:ACD Factions</i></gray>"
+    xwingCannonXLongDesc = "<cyan>Корпорация Инком</cyan> представляет X-Wing УП; удлинённая версия классической пушки, сочетающая дальность и скрытность для стратегического размещения за бронёй.<string id='CommonStringModName'/>"
 
     //Standard TIE Repeaters
     tieMinigun = "Повторитель пушек TIE - Супер Издание"
     tieMinigunIcon = "TIE ПП-СИ"
     tieMinigunLeft = "Повторитель пушек TIE - Супер Издание (боковая)"
     tieMinigunLeftIcon = "TIE ПП-СИ (боковая)"
-    tieLMinigunDesc = "<cyan>Галактическая Империя</cyan> представляет повторители пушек TIE - Супер Издание; компактные, быстрострельные и идеальные для ближнего боя, с возможностью скрытной установки в броне."\
-	"\n<gray><i>Mod: SW:ACD Factions</i></gray>"
+    tieLMinigunDesc = "<cyan>Галактическая Империя</cyan> представляет повторители пушек TIE - Супер Издание; компактные, быстрострельные и идеальные для ближнего боя, с возможностью скрытной установки в броне.<string id='CommonStringModName'/>"
 
     tieMinigunLong = "Удлинённая тяжёлая повторительная пушка HyCor"
     tieMinigunLongIcon = "HyCor ТП-УП"
     tieMinigunLongLeft = "Удлинённая тяжёлая повторительная пушка HyCor (боковая)"
     tieMinigunLongLeftIcon = "HyCor ТП-УП (боковая)"
-    tieLMinigunLongDesc = "Тяжёлый лазерный повторитель с удлинённой пушкой от <cyan>HyCor</cyan>; быстрострельное и идеальное для ближнего боя, этот тяжёлый лазерный повторитель модифицирован для использования на небольших и средних кораблях. Может быть установлен за и под корабельной бронёй."\
-	"\n<gray><i>Mod: SW:ACD Factions</i></gray>"
+    tieLMinigunLongDesc = "Тяжёлый лазерный повторитель с удлинённой пушкой от <cyan>HyCor</cyan>; быстрострельное и идеальное для ближнего боя, этот тяжёлый лазерный повторитель модифицирован для использования на небольших и средних кораблях. Может быть установлен за и под корабельной бронёй.<string id='CommonStringModName'/>"
 
     // RG-9 Cannons
     RG9Cannon = "Усовершенствованная лазерная пушка RG-9"
     RG9CannonIcon = "RG-9 ЛП-У"
     RG9CannonLeft = "Усовершенствованная лазерная пушка RG-9 (боковая)"
     RG9CannonLeftIcon = "RG-9 ЛП-У (боковая)"
-    RG9CannonDesc = "Лазерная пушка RG-9 от <cyan>Борстель</cyan>; Усовершенствованная версия быстрострельного, универсального малого лазера A-Wing, в основном используется на средних и крупных истребителях."\
-	"\n<gray><i>Mod: SW:ACD Factions</i></gray>"
-    RG9CannonLeftDesc = "Лазерная пушка RG-9 от <cyan>Борстель</cyan>; Усовершенствованная версия быстрострельного, универсального малого лазера A-Wing, в основном используется на средних и крупных истребителях."\
-	"\n<gray><i>Mod: SW:ACD Factions</i></gray>"
+    RG9CannonDesc = "Лазерная пушка RG-9 от <cyan>Борстель</cyan>; Усовершенствованная версия быстрострельного, универсального малого лазера A-Wing, в основном используется на средних и крупных истребителях.<string id='CommonStringModName'/>"
+    RG9CannonLeftDesc = "Лазерная пушка RG-9 от <cyan>Борстель</cyan>; Усовершенствованная версия быстрострельного, универсального малого лазера A-Wing, в основном используется на средних и крупных истребителях.<string id='CommonStringModName'/>"
 
     // Standard TwinBeam Defense Turret
     DroidTurret = "Защитная турель TwinBeam StarGuard"
     DroidTurretIcon = "Starguard TB-DT"
-    DroidTurretDesc = "Произведено <cyan>Кореллианской АрмТех</cyan>, защитная турель TwinBeam StarGuard выпускает двойные лучи ярости, предлагая непревзойдённую защиту. Особенно эффективна в перехвате и нейтрализации <orange>лазеров и ионных выстрелов</orange>, обеспечивает превосходную защиту против угроз энергетических снарядов, но неэффективна против пуль, мин и ракет."\
-	"\n<gray><i>Mod: SW:ACD Factions</i></gray>"
+    DroidTurretDesc = "Произведено <cyan>Кореллианской АрмТех</cyan>, защитная турель TwinBeam StarGuard выпускает двойные лучи ярости, предлагая непревзойдённую защиту. Особенно эффективна в перехвате и нейтрализации <orange>лазеров и ионных выстрелов</orange>, обеспечивает превосходную защиту против угроз энергетических снарядов, но неэффективна против пуль, мин и ракет.<string id='CommonStringModName'/>"
 
     // Mini TwinLaser Defense Turret
     PDTurretTiny = "Компактная защитная турель TwinLaser StarGuard"
     PDTurretTinyIcon = "Starguard TL-C-PDT"
-    PDTurretTinyDesc = "Компактная защитная турель TwinLaser StarGuard, произведенная <cyan>Кореллианской АрмТех</cyan>, выпускает двойные лазерные лучи. Эта миниатюризированная и полностью автоматизированная версия турели TwinLaser StarGuard оптимизирована для узких пространств. Она очень эффективна в цели <orange>пуль, мин и ракет</orange>, но неэффективна против лазеров и ионных выстрелов."\
-	"\n<gray><i>Mod: SW:ACD Factions</i></gray>"
+    PDTurretTinyDesc = "Компактная защитная турель TwinLaser StarGuard, произведенная <cyan>Кореллианской АрмТех</cyan>, выпускает двойные лазерные лучи. Эта миниатюризированная и полностью автоматизированная версия турели TwinLaser StarGuard оптимизирована для узких пространств. Она очень эффективна в цели <orange>пуль, мин и ракет</orange>, но неэффективна против лазеров и ионных выстрелов.<string id='CommonStringModName'/>"
 }
 
 
