@@ -84,7 +84,7 @@ __DebugOnly = false
 // 	Coil2 = "Hyper-\u200bCoil"
 // 	Tristeel = "Tri-\u200bSteel"
 
-Notes on Copying String Keys
+Further Explanation on Combining Strings using String Keys
 Both methods, using &xxxx for copying strings and <string id='...'/> for referencing strings, are correct and serve similar purposes. However, they may have slightly different use cases depending on the implementation in your specific context. Here’s a summary of both methods:
 
 Method 1: Using &xxxx
