@@ -1,7 +1,3 @@
-
-// Define MapNotes in the galaxy
-
-
 MapNodes
 {
 	Type = MapNodes
@@ -10,7 +6,7 @@ MapNodes
 	NameGenerator = &<../../name_generators/sw_name_celestial.rules>/CelNameGen
 }
 
-//Nebulas
+// Nebulas
 SectorTypes
 {
 	Type = RandomSectorTypes
@@ -43,29 +39,30 @@ Factions
 		{
 			FactionID = SW.Galactic_Empire
 			TerritoryRatio = 100%
-			AvoidOtherFactionsStrength = .3
-			AvoidEdgeStrength = .2
-			FactionStrengthExponent = 1
+			AvoidOtherFactionsStrength = 0.3
+			AvoidEdgeStrength = 0.2
+			FactionStrengthExponent = 0.4
 			MinFactionStrength = 5%
+			AvoidIterations = 10
 		}
 		{
 			FactionID = SW.Republic
 			TerritoryRatio = 100%
-			AvoidOtherFactionsStrength = .3
-			AvoidEdgeStrength = .2
-			FactionStrengthExponent = 1
+			AvoidOtherFactionsStrength = 0.3
+			AvoidEdgeStrength = 0.1
+			FactionStrengthExponent = 0.3
 			MinFactionStrength = 5%
+			AvoidIterations = 10
 		}
-/*
-		{
+		/*{
 			FactionID = SW.Black_Sun
-			TerritoryRatio = 30%
-			AvoidOtherFactionsStrength = .3
-			AvoidEdgeStrength = 0
-			FactionStrengthExponent = 1
-			MinFactionStrength = 5%
-		} 
-*/
+			TerritoryRatio = 100%
+			AvoidOtherFactionsStrength = 0.3
+			AvoidEdgeStrength = 0.1
+			FactionStrengthExponent = 0.1
+			MinFactionStrength = 2%
+			AvoidIterations = 10
+		}*/
 	]
 	RemainderFaction = SW.Rebel_Alliance
 	//TerritoryRatio = 5%
@@ -92,42 +89,39 @@ FactionTiers
 			TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
 			TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
 		}
-/*
 		{
-			FactionID =  SW.Black_Sun
+			FactionID = SW.Rebel_Alliance
 			TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
 			TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
 		}
-*/
-		{
-			FactionID = SW.Rebel_Alliance
-			TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]	//TierRangeLow = 1
-			TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]	//TierRangeHigh = 1
-		}
+/*		{
+			FactionID = SW.Black_Sun
+			TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
+			TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
+		}*/
 	]
 }
 
 StartingNodePicker
 {
 	Type = StartingNodePicker
-	AllowedFactions = [SW.Rebel_Alliance /*, SW.Galactic_Empire*/] 
+	AllowedFactions = [SW.Rebel_Alliance, SW.Galactic_Empire]
 	MinConnections = 1
-	CandidatesFarthestFromFactions = [3, [SW.Galactic_Empire]]
-//	CandidatesClosestToFactions = [1, [SW.Rebel_Alliance]]
+//	CandidatesFarthestFromFactions = [2, [SW.Republic]]
 	SetTierRangeTo = [1, 1 + (&~/TierSpread)]
-	SetSectorTypeTo = basic //Nebulas
+	SetSectorTypeTo = basic
 }
 
 ProgressionTiers
 {
 	Type = ProgressionNodeTiers
-	MaxLowTier = (&~/MaxTier) - (&~/TierSpread) - 1 // Leave highest tier exclusively for home systems.
-	MaxChangeableLowTier = (&MaxLowTier) // Don't adjust tier of faction home systems.
+	MaxLowTier = (&~/MaxTier) - (&~/TierSpread) - 1
+	MaxChangeableLowTier = (&MaxLowTier)
 	DesiredTierDeltas
 	[
 		{
 			SourceLowTierDelta = 3
-			Priority = 0 // Low priority is more important.
+			Priority = 0
 			HighTierSpread = &~/TierSpread
 			PreferredAvailableConnections = 2
 		}
@@ -135,14 +129,14 @@ ProgressionTiers
 			SourceLowTierDelta = 1
 			Priority = 0
 			HighTierSpread = &~/TierSpread
-			SourceLowTierRange = [1, 1] // For the tier, we want to have a nearby node at the same tier to ease the difficulty ramp.
+			SourceLowTierRange = [1, 1]
 			PreferredAvailableConnections = 1
 		}
 		{
 			SourceLowTierDelta = 2
 			Priority = 1
 			HighTierSpread = &~/TierSpread
-			SourceLowTierRange = [2, (&~/MaxTier)] // At subsequent tiers, we prefer to increase difficulty steadily.
+			SourceLowTierRange = [2, (&~/MaxTier)]
 		}
 		{
 			SourceLowTierDelta = 1
@@ -166,206 +160,87 @@ ProgressionTiers
 		}
 	]
 }
+
+
 
 /*
-// Define factions in the galaxy
-Factions  
+MapNodes
 {
-	Type = Factions
-  // List of factions
-  Factions
-  [
-	
-		{
-			FactionID = SW.Black_Sun // Black Sun Collective faction definition
-			TerritoryRatio = 10%
-			AvoidOtherFactionsStrength = .3
-			AvoidEdgeStrength = .2
-			FactionStrengthExponent = 1
-			MinFactionStrength = 5%
-		}
-    	{
-    	  	FactionID = SW.Galactic_Empire // Galactic Empire faction definition
-    	  	TerritoryRatio = 100%
-    	  	AvoidOtherFactionsStrength = .3
-    	  	AvoidEdgeStrength = .2 
-    	  	FactionStrengthExponent = 3
-    	  	MinFactionStrength = 50%
-    	}
-    	{
-    		FactionID = SW.Rebel_Alliance // Rebel Alliance faction definition
-    		TerritoryRatio = 100%
-    		AvoidOtherFactionsStrength = .3
-    		AvoidEdgeStrength = .2
-    		FactionStrengthExponent = 2
-    		MinFactionStrength = 40%
-    	}
- 	]
-	RemainderFaction = SW.Republic
-	RemainderFactionThreshold = 1.5
-	MinRemainderFactionStrength = 5%
-	AvoidIterations = 10	
+	Type = MapNodes
+	Distance = [5, 10]
+	ConnectionRadius = 10
+	NameGenerator = &<../../name_generators/sw_name_celestial.rules>/CelNameGen
 }
 
-
-MaxTier = 18 // Maximum strength tier in the galaxy 
-TierSpread = 2 // How many tiers each faction's territory spreads across
-
-FactionTiers // Define tier ranges for each faction
+// Nebulas
+SectorTypes
 {
-  Type = FactionNodeTiers
-  Factions
-  [
-	{
-		FactionID = SW.Black_Sun
-		TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
-		TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
-	}
-    {
-      	FactionID = SW.Galactic_Empire
-      	TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
-      	TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
-    }
-    {
-    	FactionID = SW.Rebel_Alliance
-      	TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
-      	TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
-    }
-	{
-		FactionID = SW.Republic
-		TierRangeLow = 1
-		TierRangeHigh = 1
-	}
-  ]
-}
-
-StartingNodePicker // Define starting node picker settings
-{
-  Type = StartingNodePicker 
-  AllowedFactions = [SW.Republic]   // Allowed starting factions 
-  MinConnections = 2 // Minimum connections for candidate nodes
-  CandidatesFarthestFromFactions = [5, [SW.Galactic_Empire]] // Farthest from Galactic Empire
-  CandidatesClosestToFactions = [1, [SW.Rebel_Alliance]] // Closest to CIS and Republic
-  SetTierRangeTo = [1, 1 + (&~/TierSpread)] // Set starting node tier range
-	SetSectorTypeTo = basic //Nebulas
-}
-
-ProgressionTiers
-{
-	Type = ProgressionNodeTiers
-	MaxLowTier = (&~/MaxTier) - (&~/TierSpread) - 1 // Leave highest tier exclusively for home systems.
-	MaxChangeableLowTier = (&MaxLowTier) // Don't adjust tier of faction home systems.
-	DesiredTierDeltas
+	Type = RandomSectorTypes
+	SectorTypes
 	[
 		{
-			SourceLowTierDelta = 3
-			Priority = 0 // Low priority is more important.
-			HighTierSpread = &~/TierSpread
-			PreferredAvailableConnections = 2
+			Type = basic
+			RandomWeight = 1
 		}
 		{
-			SourceLowTierDelta = 1
-			Priority = 0
-			HighTierSpread = &~/TierSpread
-			SourceLowTierRange = [1, 1] // For the tier, we want to have a nearby node at the same tier to ease the difficulty ramp.
-			PreferredAvailableConnections = 1
+			Type = binary
+			RandomWeight = 0.5
 		}
 		{
-			SourceLowTierDelta = 2
-			Priority = 1
-			HighTierSpread = &~/TierSpread
-			SourceLowTierRange = [2, (&~/MaxTier)] // At subsequent tiers, we prefer to increase difficulty steadily.
+			Type = high_density_nebula
+			RandomWeight = 0.5
 		}
 		{
-			SourceLowTierDelta = 1
-			Priority = 2
-			HighTierSpread = &~/TierSpread
-		}
-		{
-			SourceLowTierDelta = 0
-			Priority = 3
-			HighTierSpread = &~/TierSpread
-		}
-		{
-			SourceLowTierDelta = -1
-			Priority = 4
-			HighTierSpread = &~/TierSpread
-		}
-		{
-			SourceLowTierDelta = -1
-			Priority = 4
-			HighTierSpread = &~/TierSpread
+			Type = supernova
+			RandomWeight = 0.5
 		}
 	]
 }
 
-/*Factions
+Factions
 {
+	Type = Factions
 	Factions
 	[
-
-		{
-			FactionID = SW.Black_Sun
-			TerritoryRatio = 100%
-			AvoidOtherFactionsStrength = .3
-			AvoidEdgeStrength = .2
-			FactionStrengthExponent = 4
-			MinFactionStrength = 15%
-		}
-		{
-			FactionID = SW.CIS
-			TerritoryRatio = 100%
-			AvoidOtherFactionsStrength = .3
-			AvoidEdgeStrength = .2
-			FactionStrengthExponent = 3
-			MinFactionStrength = 15%
-		}
 		{
 			FactionID = SW.Galactic_Empire
-			TerritoryRatio = 100%
-			AvoidOtherFactionsStrength = .5
-			AvoidEdgeStrength = .2
-			FactionStrengthExponent = 5
-			MinFactionStrength = 45%
-		}
-		{
-			FactionID = SW.Rebel_Alliance
-			TerritoryRatio = 100%
-			AvoidOtherFactionsStrength = .3
-			AvoidEdgeStrength = .2
+			TerritoryRatio = 30%
+			AvoidOtherFactionsStrength = 0.5
+			AvoidEdgeStrength = 0.3
 			FactionStrengthExponent = 1
 			MinFactionStrength = 5%
 		}
 		{
 			FactionID = SW.Republic
-			TerritoryRatio = 100%
-			AvoidOtherFactionsStrength = .3
-			AvoidEdgeStrength = .2
-			FactionStrengthExponent = 2
-			MinFactionStrength = 20%
+			TerritoryRatio = 30%
+			AvoidOtherFactionsStrength = 0.5
+			AvoidEdgeStrength = 0.3
+			FactionStrengthExponent = 1
+			MinFactionStrength = 5%
+		}
+		{
+			FactionID = SW.Black_Sun
+			TerritoryRatio = 20%
+			AvoidOtherFactionsStrength = 0.3
+			AvoidEdgeStrength = 0.1
+			FactionStrengthExponent = 1
+			MinFactionStrength = 5%
 		}
 	]
+	RemainderFaction = SW.Rebel_Alliance
+	RemainderFactionThreshold = 0.2
+	MinRemainderFactionStrength = 5%
+	AvoidIterations = 10
 }
 
-
-
 MaxTier = 18
-TierSpread = 2
+TierSpread = 1
 
 FactionTiers
 {
+	Type = FactionNodeTiers
 	Factions
 	[
-		{
-			FactionID = SW.Black_Sun
-			TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
-			TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
-		}
-		{
-			FactionID = SW.CIS
-			TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
-			TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
-		}
 		{
 			FactionID = SW.Galactic_Empire
 			TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
@@ -377,9 +252,14 @@ FactionTiers
 			TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
 		}
 		{
+			FactionID = SW.Black_Sun
+			TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
+			TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
+		}
+		{
 			FactionID = SW.Rebel_Alliance
-			TierRangeLow = 1 //[1, (&~/MaxTier) - (&~/TierSpread)]
-			TierRangeHigh = 1 //[1 + (&~/TierSpread), (&~/MaxTier)]
+			TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
+			TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
 		}
 	]
 }
@@ -387,9 +267,59 @@ FactionTiers
 StartingNodePicker
 {
 	Type = StartingNodePicker
-	AllowedFactions = [SW.Rebel_Alliance]
-	MinConnections = 2
-	CandidatesFarthestFromFactions = [5, [SW.Black_Sun]]
-	CandidatesClosestToFactions = [1, [SW.CIS, SW.Republic]]
+	AllowedFactions = [SW.Rebel_Alliance, SW.Galactic_Empire]
+	MinConnections = 1
+	CandidatesFarthestFromFactions = [2, [SW.Republic, SW.Black_Sun]]
 	SetTierRangeTo = [1, 1 + (&~/TierSpread)]
-}*/
+	SetSectorTypeTo = basic
+}
+
+ProgressionTiers
+{
+	Type = ProgressionNodeTiers
+	MaxLowTier = (&~/MaxTier) - (&~/TierSpread) - 1
+	MaxChangeableLowTier = (&MaxLowTier)
+	DesiredTierDeltas
+	[
+		{
+			SourceLowTierDelta = 3
+			Priority = 0
+			HighTierSpread = &~/TierSpread
+			PreferredAvailableConnections = 2
+		}
+		{
+			SourceLowTierDelta = 1
+			Priority = 0
+			HighTierSpread = &~/TierSpread
+			SourceLowTierRange = [1, 1]
+			PreferredAvailableConnections = 1
+		}
+		{
+			SourceLowTierDelta = 2
+			Priority = 1
+			HighTierSpread = &~/TierSpread
+			SourceLowTierRange = [2, (&~/MaxTier)]
+		}
+		{
+			SourceLowTierDelta = 1
+			Priority = 2
+			HighTierSpread = &~/TierSpread
+		}
+		{
+			SourceLowTierDelta = 0
+			Priority = 3
+			HighTierSpread = &~/TierSpread
+		}
+		{
+			SourceLowTierDelta = -1
+			Priority = 4
+			HighTierSpread = &~/TierSpread
+		}
+		{
+			SourceLowTierDelta = -1
+			Priority = 4
+			HighTierSpread = &~/TierSpread
+		}
+	]
+}
+*/
