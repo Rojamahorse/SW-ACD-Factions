@@ -3,7 +3,7 @@ Range = 375
 IdealRange = [50 - 325]
 Speed = 375
 ReceivableBuffs = [ElectronBuff]
-//HitEffectsScaleOverRange = [1, 1 - (&../Range) / 1000]
+HitEffectsScaleOverRange = [2, 1] //[1, 1 - (&../Range) / 1000]
 
 Components
 {
@@ -29,8 +29,8 @@ Components
 	Hit
 	{
 		Type = PenetratingHit
-		FriendlyShipLowCollisions = true
-		SourceShipLowCollisions = false
+		FriendlyShipLowCollisions = false
+		NonFriendlyShipLowCollisions = true
 		FactorEffectsWith = Targetable
 
 		CrewCollisions = {Enemies=true; Junk=true}
