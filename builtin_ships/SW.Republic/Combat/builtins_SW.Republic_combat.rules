@@ -52,8 +52,9 @@ Ships
 /*229,315*/    		:~{ File="Rep UT-60D U-Wing Starfighter Y.ship.png";                                     Tier=6;  Difficulty=2; Tags = [combat, swfighter, repfighter] }
 /*227,725*/    		:~{ File="Rep UT-60D U-Wing Starfighter.ship.png";                                       Tier=6;  Difficulty=2; Tags = [combat, swfighter, repfighter] } // Altraxia
 /*239,725*/    		:~{ File="Rep E-Wing Escort Starfighter.ship.png";                                       Tier=5;  Difficulty=2; Tags = [combat, swfighter, repfighter] } // Altraxia
-/*264,490*/    		:~{ File="Rep Baudo-Class Space Yacht.ship.png";                                         Tier=5;  Difficulty=2; Tags = [combat] } // Original
-/*264,490*/    		:~{ File="Rep Baudo-Class Yacht (combat).ship.png";                                      Tier=5;  Difficulty=2; Tags = [combat] } // Original
+/*264,490*/    		:~{ File="Rep Baudo-Class Space Yacht.ship.png";                                         Tier=5;  Difficulty=2; Tags = [combat, swfighter, repfighter] } // Original
+/*264,490*/    		:~{ File="Rep Baudo-Class Yacht (combat).ship.png";                                      Tier=5;  Difficulty=2; Tags = [combat, swfighter, repfighter] } // Original
+/*264,490*/    		:~{ File="Rep Baudo-Class Space Yacht-S.ship.png";                                       Tier=5;  Difficulty=2; Tags = [combat, swfighter, repfighter] } // Original
 /*281,180*/    		:~{ File="Republic Gunship.ship.png";                                                    Tier=5;  Difficulty=2; Tags = [combat] }
 /*292,820*/    		:~{ File="Republic Gunship (LAAT).ship.png";                                             Tier=5;  Difficulty=2; Tags = [combat] }
 /*292,820*/    		:~{ File="Republic Gunship (LAAT) Mk2.ship.png";                                         Tier=6;  Difficulty=2; Tags = [combat] }
