@@ -3,7 +3,7 @@ Range = 375
 IdealRange = [50 - 325]
 Speed = 375
 ReceivableBuffs = [ElectronBuff]
-HitEffectsScaleOverRange = [8, 1] //[1, 1 - (&../Range) / 1000]
+HitEffectsScaleOverRange = [2, 1 - (&../Range) / 1000]
 
 Components
 {
