@@ -1,14 +1,14 @@
-Part : &<long_xwing_cannon.rules>/Part
+Part : &<mass_driver_s.rules>/Part
 {
 	//IDs
-	ID = SW.long_fighter_xwing_cannon_left
-	OtherIDs = [SW.long_fighter_xwing_cannon_right]
+	ID = SW.fighter_mass_driver_cannon_left
+	OtherIDs = [SW.long_fighter_xwing_cannon_right, SW.long_fighter_xwing_cannon_left]
 	FlipWhenLoadingIDs = [SW.long_fighter_xwing_cannon_right]
 
 	//StringKeys
-	NameKey = "Parts/xwingCannonLongLeft"
-	IconNameKey = "Parts/xwingCannonLongLeftIcon"
-	DescriptionKey = "Parts/xwingCannonLongDesc"
+	NameKey = "Parts/massdriversmallLeft"
+	IconNameKey = "Parts/massdriversmallLeftIcon"
+	DescriptionKey = "Parts/massdriversmallDesc"
 	
 	//Groups&Categories
 	
@@ -43,7 +43,7 @@ Part : &<long_xwing_cannon.rules>/Part
 	//Components
 	Components : ^/0/Components
 	{
-		Turret : &<long_xwing_cannon.rules>/Part/Components/Turret
+		Turret : &<mass_driver_s.rules>/Part/Components/Turret
 		{
 			Rotation = -180d
 			AllowFireWithBlockedLOS = true
@@ -51,7 +51,7 @@ Part : &<long_xwing_cannon.rules>/Part
 			IgnoreFriendlyShipLowLOSChecks = false
 		}
 
-		Blueprints : &<long_xwing_cannon.rules>/Part/Components/Blueprints
+		Blueprints : &<mass_driver_s.rules>/Part/Components/Blueprints
 		{
 			Type = BlueprintSprite
 			File = "blueprints_left.png"

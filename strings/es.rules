@@ -15,11 +15,11 @@ Parts
     xwingCannonDesc = "<cyan>Incom Corporation</cyan> presenta el X-Wing CC; un cañón compacto de cañón corto para integración sigilosa en armaduras, sobresaliendo en combate a media distancia. <string id='CommonStringModName'/>"
 
     //Compact Mass-Driver Cannon
-    xwingCannonLong = "Cañón Compacto Impulsor de Masa"
-    xwingCannonLongIcon = "Impulsor de Masa CC"
-    xwingCannonLongLeft = "Cañón Compacto Impulsor de Masa (Lateral)"
-    xwingCannonLongLeftIcon = "Impulsor de Masa CC (Lateral)"
-    xwingCannonLongDesc = "El Cañón Compacto Impulsor de Masa (MD-CC) de <cyan>Kuat Systems Engineering</cyan>; Un arma cinética reducida pero formidable, diseñada para precisión y potencia en combates aéreos. Su diseño elegante permite una integración perfecta con varios modelos de cazas estelares, proporcionando un impacto cinético inigualable mientras mantiene la eficiencia aerodinámica. <string id='CommonStringModName'/>"
+    massdriversmall = "Cañón Compacto Impulsor de Masa"
+    massdriversmallIcon = "Impulsor de Masa CC"
+    massdriversmallLeft = "Cañón Compacto Impulsor de Masa (Lateral)"
+    massdriversmallLeftIcon = "Impulsor de Masa CC (Lateral)"
+    massdriversmallDesc = "El Cañón Compacto Impulsor de Masa (MD-CC) de <cyan>Kuat Systems Engineering</cyan>; Un arma cinética reducida pero formidable, diseñada para precisión y potencia en combates aéreos. Su diseño elegante permite una integración perfecta con varios modelos de cazas estelares, proporcionando un impacto cinético inigualable mientras mantiene la eficiencia aerodinámica. <string id='CommonStringModName'/>"
 
     //Extra Long X-Wing Cannons
     xwingCannonXLong = "Cañón Extendido X-Wing"

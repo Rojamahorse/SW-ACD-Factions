@@ -14,11 +14,11 @@ Parts
     xwingCannonDesc = "<cyan>インコム社</cyan>が提供するXウィングSC；コンパクトな短砲身のキャノンで、装甲に隠して設置可能、中距離戦闘で優れた性能を発揮します。. <string id='CommonStringModName'/>"
 
     //Compact Mass-Driver Cannon
-    xwingCannonLong = "マスドライバーコンパクトキャノン"
-    xwingCannonLongIcon = "マスドライバーCC"
-    xwingCannonLongLeft = "マスドライバーコンパクトキャノン（側面）"
-    xwingCannonLongLeftIcon = "マスドライバーCC（側面）"
-    xwingCannonLongDesc = "<cyan>クワットシステムズエンジニアリング</cyan>のマスドライバーコンパクトキャノン（MD-CC）；サイズは小さいながらも強力な運動エネルギー武器で、空中戦での精度と威力に優れています。スリークなデザインは、さまざまなスターファイターモデルとのシームレスな統合を可能にし、空気力学的効率を保ちながら比類のない運動エネルギーの影響を提供します。. <string id='CommonStringModName'/>"
+    massdriversmall = "マスドライバーコンパクトキャノン"
+    massdriversmallIcon = "マスドライバーCC"
+    massdriversmallLeft = "マスドライバーコンパクトキャノン（側面）"
+    massdriversmallLeftIcon = "マスドライバーCC（側面）"
+    massdriversmallDesc = "<cyan>クワットシステムズエンジニアリング</cyan>のマスドライバーコンパクトキャノン（MD-CC）；サイズは小さいながらも強力な運動エネルギー武器で、空中戦での精度と威力に優れています。スリークなデザインは、さまざまなスターファイターモデルとのシームレスな統合を可能にし、空気力学的効率を保ちながら比類のない運動エネルギーの影響を提供します。. <string id='CommonStringModName'/>"
 
     //Extra Long X-Wing Cannons
     xwingCannonXLong = "Xウィング延長キャノン"
@@ -463,11 +463,11 @@ Lore
 /*UNUSED*/
 /*
 	//Long X-Wing Cannons
-	xwingCannonLong = "RedFury Blaster Cannon"
-	xwingCannonLongIcon = "RedFury-BC"
-	xwingCannonLongLeft = "RedFury Blaster Cannon (Side)"
-	xwingCannonLongLeftIcon = "RedFury-BC (Side)"
-	xwingCannonLongDesc = "The RedFury Blaster by <cyan>Merr-Sonn Munitions</cyan>; A hard-hitting Heavy Blaster Cannon that allows for placement behind and hidden under armor pieces."
+	massdriversmall = "RedFury Blaster Cannon"
+	massdriversmallIcon = "RedFury-BC"
+	massdriversmallLeft = "RedFury Blaster Cannon (Side)"
+	massdriversmallLeftIcon = "RedFury-BC (Side)"
+	massdriversmallDesc = "The RedFury Blaster by <cyan>Merr-Sonn Munitions</cyan>; A hard-hitting Heavy Blaster Cannon that allows for placement behind and hidden under armor pieces."
 */
 /*
 	//TIE Repeaters

@@ -15,11 +15,11 @@ Parts
     xwingCannonDesc = "<cyan>Incom Corporation</cyan> présente le X-Wing CC ; un canon compact à canon court pour une intégration discrète dans l'armure, excellent dans les combats à moyenne portée. <string id='CommonStringModName'/>"
 
     //Compact Mass-Driver Cannon
-    xwingCannonLong = "Canon Compact Mass-Driver"
-    xwingCannonLongIcon = "Mass-Driver CC"
-    xwingCannonLongLeft = "Canon Compact Mass-Driver (Côté)"
-    xwingCannonLongLeftIcon = "Mass-Driver CC (Côté)"
-    xwingCannonLongDesc = "Le Canon Compact Mass-Driver (MD-CC) de <cyan>Kuat Systems Engineering</cyan> ; une arme cinétique réduite mais redoutable, conçue pour la précision et la puissance dans les combats aériens. Son design épuré permet une intégration sans faille avec divers modèles de chasseurs stellaires, offrant un impact cinétique inégalé tout en maintenant une efficacité aérodynamique. <string id='CommonStringModName'/>"
+    massdriversmall = "Canon Compact Mass-Driver"
+    massdriversmallIcon = "Mass-Driver CC"
+    massdriversmallLeft = "Canon Compact Mass-Driver (Côté)"
+    massdriversmallLeftIcon = "Mass-Driver CC (Côté)"
+    massdriversmallDesc = "Le Canon Compact Mass-Driver (MD-CC) de <cyan>Kuat Systems Engineering</cyan> ; une arme cinétique réduite mais redoutable, conçue pour la précision et la puissance dans les combats aériens. Son design épuré permet une intégration sans faille avec divers modèles de chasseurs stellaires, offrant un impact cinétique inégalé tout en maintenant une efficacité aérodynamique. <string id='CommonStringModName'/>"
 
     //Extra Long X-Wing Cannons
     xwingCannonXLong = "Canon X-Wing Étendu"

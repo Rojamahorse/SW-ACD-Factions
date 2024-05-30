@@ -14,11 +14,11 @@ Parts
     xwingCannonDesc = "<cyan>Incom Corporation</cyan> präsentiert die X-Flügel SK; eine kompakte, kurzläufige Kanone für heimliche Panzerintegration, hervorragend im mittleren Kampfbereich. <string id='CommonStringModName'/>"
 
     //Compact Mass-Driver Cannon
-    xwingCannonLong = "Massentreiber Kompaktkanone"
-    xwingCannonLongIcon = "Massentreiber KK"
-    xwingCannonLongLeft = "Massentreiber Kompaktkanone (Seite)"
-    xwingCannonLongLeftIcon = "Massentreiber KK (Seite)"
-    xwingCannonLongDesc = "Die Massentreiber Kompaktkanone (MD-KK) von <cyan>Kuat Systems Engineering</cyan>; eine verkleinerte, aber gewaltige kinetische Waffe, entworfen für Präzision und Leistung in Hundekämpfen. Ihr schlankes Design ermöglicht eine nahtlose Integration mit verschiedenen Jägermodellen und bietet unübertroffene kinetische Wirkung bei gleichzeitiger Erhaltung der aerodynamischen Effizienz. <string id='CommonStringModName'/>"
+    massdriversmall = "Massentreiber Kompaktkanone"
+    massdriversmallIcon = "Massentreiber KK"
+    massdriversmallLeft = "Massentreiber Kompaktkanone (Seite)"
+    massdriversmallLeftIcon = "Massentreiber KK (Seite)"
+    massdriversmallDesc = "Die Massentreiber Kompaktkanone (MD-KK) von <cyan>Kuat Systems Engineering</cyan>; eine verkleinerte, aber gewaltige kinetische Waffe, entworfen für Präzision und Leistung in Hundekämpfen. Ihr schlankes Design ermöglicht eine nahtlose Integration mit verschiedenen Jägermodellen und bietet unübertroffene kinetische Wirkung bei gleichzeitiger Erhaltung der aerodynamischen Effizienz. <string id='CommonStringModName'/>"
 
     //Extra Long X-Wing Cannons
     xwingCannonXLong = "X-Flügel Verlängerte Kanone"

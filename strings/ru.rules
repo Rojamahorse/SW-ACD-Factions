@@ -14,11 +14,11 @@ Parts
     xwingCannonDesc = "<cyan>Корпорация Инком</cyan> представляет X-Wing КП; компактная пушка с коротким стволом для скрытной интеграции в броню, отлично подходит для боя на средние дистанции.<string id='CommonStringModName'/>"
 
     //Compact Mass-Driver Cannon
-    xwingCannonLong = "Компактная пушка Mass-Driver"
-    xwingCannonLongIcon = "Mass-Driver КК"
-    xwingCannonLongLeft = "Компактная пушка Mass-Driver (боковая)"
-    xwingCannonLongLeftIcon = "Mass-Driver КК (боковая)"
-    xwingCannonLongDesc = "Компактная пушка Mass-Driver (MD-КК) от <cyan>Куат Системс Инжиниринг</cyan>; Мощное кинетическое оружие меньшего размера, разработанное для точности и мощности в воздушных боях. Её элегантный дизайн позволяет бесшовно интегрироваться с различными моделями звездных истребителей, обеспечивая непревзойденное кинетическое воздействие, сохраняя при этом аэродинамическую эффективность.<string id='CommonStringModName'/>"
+    massdriversmall = "Компактная пушка Mass-Driver"
+    massdriversmallIcon = "Mass-Driver КК"
+    massdriversmallLeft = "Компактная пушка Mass-Driver (боковая)"
+    massdriversmallLeftIcon = "Mass-Driver КК (боковая)"
+    massdriversmallDesc = "Компактная пушка Mass-Driver (MD-КК) от <cyan>Куат Системс Инжиниринг</cyan>; Мощное кинетическое оружие меньшего размера, разработанное для точности и мощности в воздушных боях. Её элегантный дизайн позволяет бесшовно интегрироваться с различными моделями звездных истребителей, обеспечивая непревзойденное кинетическое воздействие, сохраняя при этом аэродинамическую эффективность.<string id='CommonStringModName'/>"
 
     //Extra Long X-Wing Cannons
     xwingCannonXLong = "Удлинённая пушка X-Wing"

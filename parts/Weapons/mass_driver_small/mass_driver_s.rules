@@ -1,13 +1,13 @@
 Part : <./Data/ships/terran/base_part_terran.rules>/Part
 {
 	//IDs
-	ID = SW.fighter_long_xwing_cannon
-	OtherIDs = [] //Clears the array
+	ID = SW.fighter_mass_driver_cannon
+	OtherIDs = [SW.fighter_long_xwing_cannon] //Clears the array
 
 	//StringKeys
-	NameKey = "Parts/xwingCannonLong"
-	IconNameKey = "Parts/xwingCannonLongIcon"
-	DescriptionKey = "Parts/xwingCannonLongDesc"
+	NameKey = "Parts/massdriversmall"
+	IconNameKey = "Parts/massdriversmallIcon"
+	DescriptionKey = "Parts/massdriversmallDesc"
 		
 	//Groups&Categories
 	EditorGroup = "WeaponsEnergy"

@@ -14,11 +14,11 @@ Parts
     xwingCannonDesc = "<cyan>英康公司</cyan>推出的X翼短炮；一种紧凑的短管炮，适合隐秘装甲集成，在中距离战斗中表现出色。<string id='CommonStringModName'/>"
 
     //Compact Mass-Driver Cannon
-    xwingCannonLong = "质量驱动紧凑型炮"
-    xwingCannonLongIcon = "质量驱动紧凑型炮"
-    xwingCannonLongLeft = "质量驱动紧凑型炮（侧面）"
-    xwingCannonLongLeftIcon = "质量驱动紧凑型炮（侧面）"
-    xwingCannonLongDesc = "<cyan>夸特系统工程</cyan>的质量驱动紧凑型炮（MD-CC）；一种缩小版但强大的动能武器，专为空战中的精确和威力设计。其流线型设计允许与各种星际战斗机型号无缝集成，提供无与伦比的动能冲击，同时保持空气动力效率。<string id='CommonStringModName'/>"
+    massdriversmall = "质量驱动紧凑型炮"
+    massdriversmallIcon = "质量驱动紧凑型炮"
+    massdriversmallLeft = "质量驱动紧凑型炮（侧面）"
+    massdriversmallLeftIcon = "质量驱动紧凑型炮（侧面）"
+    massdriversmallDesc = "<cyan>夸特系统工程</cyan>的质量驱动紧凑型炮（MD-CC）；一种缩小版但强大的动能武器，专为空战中的精确和威力设计。其流线型设计允许与各种星际战斗机型号无缝集成，提供无与伦比的动能冲击，同时保持空气动力效率。<string id='CommonStringModName'/>"
 
     //Extra Long X-Wing Cannons
     xwingCannonXLong = "X翼加长炮"

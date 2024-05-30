@@ -13,8 +13,8 @@ Parts
 			&<Weapons/tie_minigun/tie_minigun.rules>/Part
 
 			// Xwing Cannons
-			&<Weapons/long_xwing_cannon/long_xwing_cannon_left.rules>/Part
-			&<Weapons/long_xwing_cannon/long_xwing_cannon.rules>/Part
+			&<Weapons/mass_driver_small/mass_driver_s_left.rules>/Part
+			&<Weapons/mass_driver_small/mass_driver_s.rules>/Part
 			&<Weapons/very_long_xwing_cannon/long_xwing_cannon_left.rules>/Part
 			&<Weapons/very_long_xwing_cannon/long_xwing_cannon.rules>/Part
 			&<Weapons/xwing_cannon/xwing_cannon_left.rules>/Part
