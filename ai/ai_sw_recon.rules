@@ -8,9 +8,19 @@ IsAvailableInMultiplayer = true
 StrategyModules
 [
 	{
+		Type = AreaPatrol
+		DefaultPatrolRadius = 1000
+		AvoidableDoodadTags = [sun, station]
+		AvoidableDoodadBuffer = 100
+	}
+	{
 		Type = FollowFleetLeader
 	}
-		
+	{
+		Type = FleeFromEnemies
+		FleeDistance = -1100
+		RecallCrew = false
+	}	
 	{
 		Type = AggroEnemies
 		TargetSwitchThresholdFactor = 0 

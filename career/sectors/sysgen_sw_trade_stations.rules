@@ -1,0 +1,384 @@
+Type = None
+SubSpawners
+[
+	// First choose locations for all stations.
+	{
+		Conditions { IsInitNode=true; }
+		Type = None
+		Tags = [station_loc]
+		Count = 3 // Always 3 stations in the starting system.
+		Distance = [0, 11000]
+		MinDistanceFromTags = [[sun, 7500]]
+		SpawnsPerSlice = 1
+		SpawnSlicePadding = 35%
+	}
+	{
+		Conditions { IsInitNode=false; }
+		Type = None
+		Tags = [station_loc]
+		Count = [2, 4]
+		Distance = [0, 11000]
+		MinDistanceFromTags = [[sun, 7500]]
+		SpawnsPerSlice = 1
+		SpawnSlicePadding = 35%
+	}
+
+	// Then choose player spawn point.
+	{
+		Conditions = { IsInitNode=true; }
+		Type = SpawnPoint
+		Tags = [spawn_loc]
+		RootLocation = Tag
+		RootLocationTag = station_loc
+		RootLocationFarthestFromTag = ftl_gate
+		Distance = 100
+	}
+	{
+		Conditions = { IsInitNode=false; }
+		Type = SpawnPoint
+		RootLocation = MinTierGate
+	}
+
+	// Spawn tier fields centered at each station.
+	{
+		Type = None
+		SortByDistanceToSpawnPoint = true // The first spawned station will always be the starting station.
+		RootLocation = Tag
+		RootLocationTag = station_loc
+		ForEachRootMax = 999
+
+		SubSpawners
+		[
+			{
+				Type = TierField
+			}
+		]
+	}
+
+	// Spawn the actual stations at the decided locations.
+	{
+		Type = None
+		SortByDistanceToSpawnPoint = true // The first spawned station will always be the starting station.
+		RootLocation = Tag
+		RootLocationTag = station_loc
+		ForEachRootMax = 999
+
+		SubSpawners
+		[
+			// First station is always discovered.
+			: ~/DiscoveredStation
+			{
+				Conditions { ParentIndex=0; }
+			}
+
+			// Subsequent stations may sometimes be captured and require liberation.
+			{
+				Type = None
+				Conditions { ParentIndex=[1, 999]; }
+
+				RandomSubSpawnerCount = 1
+				SubSpawners
+				[
+					&~/FreeStation
+					&~/CapturedStation
+				]
+			}
+		]
+	}
+
+	// The starting station should have an asteroid field near it.
+	: <sysgen_asteroids.rules>/AsteroidField
+	{
+		Conditions { IsInitNode=true; }
+		RootLocation = Tag
+		RootLocationTag = spawn_loc
+		Distance = [3000, 4000]
+	}
+
+	// Spawn defenses or guards around captured stations with a mission to liberate them.
+	// (Can't be direct child of station spawner due to faction/allegiance synchronization.)
+	{
+		Type = None
+		RootLocation = Tag
+		RootLocationTag = captured_station
+		ForEachRootMax = 999
+		SynchronizeFactions = true
+		SynchronizeAllegiance = true
+
+		SubSpawners
+		[
+			// The guard ships/platforms.
+			{
+				Type = Ships
+				Tags = [station_captor]
+				Count = 2
+				Distance = 150
+				SpawnsPerSlice = 1
+				SpawnSlicePadding = 45%
+				Allegiance = Unique
+				FamePerTier = &/TIER_TABLES/StandardFamePerTier
+				MaxFamePerTier = &/TIER_TABLES/StandardMaxFamePerTier
+
+				ShipCriteria
+				{
+					UseLocalFactionWeights = true
+					UseTierField = true
+					Tier = -1
+					AllowTierRangeExpansion = true
+					Tags = [combat]
+				}
+
+				AI
+				{
+					Type = StationGuard
+					PatrolRadius = 250
+					TargetAcquireRangeFromOrigin = 500
+					TargetUnacquireRangeFromOrigin = 1500
+				}
+			}
+			{
+				Type = Ships
+				Tags = [station_captor_defense]
+				Count = [0, 2]
+				Distance = 150
+				SpawnsPerSlice = 1
+				SpawnSlicePadding = 45%
+				Allegiance = Unique
+				FamePerTier = &/TIER_TABLES/StandardFamePerTier
+				MaxFamePerTier = &/TIER_TABLES/StandardMaxFamePerTier
+
+				ShipCriteria
+				{
+					UseLocalFactionWeights = true
+					UseTierField = true
+					AllowTierRangeExpansion = true
+					Tags = [defense]
+				}
+
+				AI
+				{
+					Type = DefensePlatform
+				}
+			}
+
+			// Mission to liberate the station.
+			{
+				Type = Mission
+				Metatype = StationRescue
+				SpawnAt = SimGlobal
+				Faction = OwnerOfTag
+				FactionTag = { Mode=Nearest; Tag=trade_station; }
+				FamePrereqPerLowTier = &/TIER_TABLES/StandardFamePrereqPerTier
+				Objectives
+				[
+					{
+						Type = Sequential
+						SubObjectives
+						[
+							{
+								Type = AnyOrder
+								TierCombineMode = Max
+								SubObjectives
+								[
+									{
+										Type = DefeatShips
+										TargetsTag = { Tag=station_captor; Distance=500; }
+										TargetAreaTag = { Mode=Nearest; Tag=poi_unknown; }
+										TargetLandmarkTag = { Mode=Nearest; Tag=trade_station; }
+										TierOffset = 1
+										OverrideDisplayFormatKey = "Objectives/DefeatPirates"
+									}
+									{
+										Type = DefeatShips
+										TargetsTag = { Tag=station_captor_defense; Distance=500; }
+										TargetAreaTag = { Mode=Nearest; Tag=poi_unknown; }
+										TargetLandmarkTag = { Mode=Nearest; Tag=trade_station; }
+										OverrideDisplayFormatKey = "Objectives/DestroyPlatforms"
+									}
+									{
+										Type = ProtectShips
+										TargetsTag = { Mode=Nearest; Tag=trade_station; Max=1; }
+										TargetAreaTag = { Mode=Nearest; Tag=poi_unknown; }
+									}
+								]
+							}
+							{
+								Type = ReceiveRewards
+								ContactShipTag = { Mode=Nearest; Tag=trade_station; }
+							}
+						]
+					}
+				]
+				Rewards
+				[
+					{
+						Type = Money
+						MoneyPerHighTier = &/TIER_TABLES/StandardMoneyPerTier
+						MoneyPerTierMultiplier = 2
+						RoundToMultiple = 500
+					}
+					{
+						Type = Fame
+						FamePerHighTier = &/TIER_TABLES/StandardFamePerTier
+						FamePerTierMultiplier = 2
+						MaxFamePerHighTier = &/TIER_TABLES/StandardMaxFamePerTier
+					}
+		            {
+		                Type = Reputation
+		                ReputationPerHighTier = &/TIER_TABLES/StandardReputationPerTier
+		                ReputationPerTierMultiplier = 4
+		            }
+				]
+			}
+		]
+	}
+]
+
+BaseStation
+{
+	Type = Ships
+	Tags = [station, trade_station]
+	Features = [Station, FtlPoint]
+	NameGenerator = &<../../name_generators/sw_name_station.rules>
+	RememberResourcesAndCrew = true
+	SynchronizeFactions = true
+	Allegiance = FactionCivilian
+
+	ShipCriteria
+	{
+		UseLocalFactionWeights = true
+		UseTierField = true
+		AllowTierRangeExpansion = true
+		Tags = [trade_station]
+	}
+
+	AI
+	{
+		Type = SpaceStation
+	}
+
+	SubSpawners
+	[
+		// Middle planets usually spawn near stations.
+		: <./Data/modes/career/sectors/sysgen_planets.rules>/InnerPlanet
+		{
+			Conditions { IsInitNode=true; }
+			Distance = [0, 500]
+		}
+		: <./Data/modes/career/sectors/sysgen_planets.rules>/InnerPlanet
+		{
+			Conditions { IsInitNode=false; }
+			SpawnChance = 75% // Stations not in the first system don't always have planets.
+			Distance = [0, 500]
+		}
+
+		// Prevent nebulas from spawning near stations.
+		{
+			Type = Nebula
+			NebulaType = ""
+			NebulaRadius = 2000
+		}
+	]
+}
+
+DiscoveredStation : BaseStation
+{
+	Features : ^/0/Features [OperationalStation]
+
+	SubSpawners : ^/0/SubSpawners
+	[
+		&~/StationDefenses
+	]
+}
+
+UndiscoveredStation : BaseStation
+{
+	Features : ^/0/Features [HideUntilDiscovered]
+	SubSpawners : ^/0/SubSpawners
+	[
+		// POI
+		{
+			Type = Doodads
+			DoodadType = cosmoteer.poi_unknown
+			Tags = [poi_unknown]
+			AutoRemoveWhenTagDiscovered = station
+			AutoRemoveWhenTagDestroyed = station
+		}
+	]
+}
+
+FreeStation : UndiscoveredStation
+{
+	Features : ^/0/Features [OperationalStation]
+
+	SubSpawners : ^/0/SubSpawners
+	[
+		&~/StationDefenses
+
+		// Mission to contact station.
+		{
+			Type = Mission
+			Metatype = StationContact
+			SpawnAt = SimGlobal
+			Faction = OwnerOfTag
+			FactionTag = &Objectives/0/SubObjectives/0/DestinationShipTag
+			FamePrereqPerLowTier = &/TIER_TABLES/StandardFamePrereqPerTier
+			Objectives
+			[
+				{
+					Type = Sequential
+					SubObjectives
+					[
+						{
+							Type = GotoShip
+							DestinationShipTag = { Mode=Nearest; Tag=trade_station; }
+							DestinationShipAreaTag = { Mode=Nearest; Tag=poi_unknown; }
+							GetTierFromTierField = true
+						}
+						{
+							Type = ReceiveRewards
+							ContactShipTag = { Mode=Nearest; Tag=trade_station; }
+						}
+					]
+				}
+			]
+			Rewards
+			[
+				{
+					Type = Money
+					Money = 1000
+				}
+			]
+		}
+	]
+}
+
+CapturedStation : UndiscoveredStation
+{
+	Tags = : ^/0/Tags [captured_station]
+}
+
+StationDefenses
+{
+	Type = Ships
+	Count = [4, 8]
+	Distance = 250
+	SpawnsPerSlice = 1
+	SpawnSlicePadding = 45%
+	Allegiance = FactionCivilian
+	FamePerTier = &/TIER_TABLES/StandardFamePerTier
+	MaxFamePerTier = &/TIER_TABLES/StandardMaxFamePerTier
+
+	ShipCriteria
+	{
+		UseLocalFactionWeights = true
+		UseTierField = true
+		AllowTierRangeExpansion = true
+		Tags = [defense]
+	}
+
+	AI
+	{
+		Type = DefensePlatform
+	}
+}

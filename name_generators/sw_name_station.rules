@@ -16,6 +16,7 @@ SubGenerators
 	      "Outpost" 
 	      "Base"
 	      "Platform"
+		  "Haven"
 		]
 	}
 ]

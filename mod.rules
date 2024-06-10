@@ -1,6 +1,6 @@
 ID = SW.3.StarWarsFactions
 Name = "Star Wars Factions"
-Version = 0.1.1
+Version = 0.2
 CompatibleGameVersions = ["0.26.0","0.25.0","0.24.0","0.23.0"]
 ModifiesGameplay = true
 Author = "Rojamahorse & SW:ACD DevTeam"
@@ -85,7 +85,6 @@ Actions
 		AddTo = "<ships/terran/terran.rules>/Terran/Roofs/RoofDecalGroups"
 		ManyToAdd
 		[
-			//&<roof_decals/sw_decal_group.rules>/SW_factions
 			&<roof_decals/sw_decal_group.rules>/SW_adv_shapes
 		]
 	}
@@ -136,13 +135,7 @@ Actions
 	}
 
 	/* *********** MAIN MENU ************* */
-	/*
-	{
-		Action = Replace
-		Replace = "<gui/menus.rules>/LogoShip"
-		With = "logo.ship.png"
-	}
-	*/
+
 	{
 		Action = Replace
 		Replace = "<./Data/gui/text_sprites.rules>/wr_logo/Texture"
@@ -152,12 +145,6 @@ Actions
 		}
 	}
 
-	/* *********** TIER REMAPPING ************ */
-	{
-		Action = Replace
-		Replace = "<modes/career/fleet_tier_remap_table.rules>/FleetTierRemapTable"
-		With = &<career/sw_fleet_tier_remap_table.rules>/FleetTierRemapTable
-	}
 
 
 	/* *********** STARTER SHIPS ************* */
@@ -258,15 +245,6 @@ Actions
         ManyToAdd = &<codex/lore.rules>/CodexPages
 	}
 
-/*
-	// Adds discoverables related to SW Factions
-	{
-		Action = AddMany
-		AddTo = "<modes/career/sysgen_misc_discoverables.rules>/SubSpawners"
-        ManyToAdd = &<career/sysgen_misc_discoverables.rules>/SubSpawners
-	}
-*/
-
 	// Adds SW Starter Ships in career mode
 	{
 		Action = AddMany
@@ -302,15 +280,7 @@ Actions
 		AddBaseTo = "<modes/career/career.rules>/TradeShips"
 		BaseToAdd = &<career\TradeShips.rules>/TradeShips
 	}
-/*OLD
-	//Adds Civilian Tradeships to SW Factions in career mode
-	{
-		Action = AddBase
-		Name = Civilian
-		AddBaseTo = "<modes/career/career.rules>/TradeRoutes/TradeShips"
-		BaseToAdd = &<career\TradeShips.rules>/TradeShips
-	}
-*/
+
 	//StarWars Sounds
 	{
 		Action = Replace
@@ -332,48 +302,19 @@ Actions
 		]
 	}
 
-	//Adds trade defensive platforms to SW Factions in career mode
-	{
-		Action = Replace
-		Replace = "<modes/career/sectors/sysgen_trade_stations.rules>/SubSpawners/7/SubSpawners/0/Count"
-		With = 2
-    }
-    {
-		Action = Replace
-		Replace = "<modes/career/sectors/sysgen_trade_stations.rules>/SubSpawners/7/SubSpawners/1/Count"
-		With = [0, 2]
-    }
-    {
-		Action = Replace
-		Replace = "<modes/career/sectors/sysgen_trade_stations.rules>/StationDefenses/Count"
-		With = [3, 8]
-    }
-    {
-		Action = Replace
-		Replace = "<modes/career/sectors/sysgen_trade_stations.rules>/StationDefenses/Distance"
-		With = 250
-    }
+
 	/* ********** SPAWNERS *********** */
+		//Sector Types
 	{
 		Action = AddMany
-		AddTo = "<./Data/modes/career/sectors/sector_basic/sector_basic.rules>/Sector/SystemGenerator/Spawners"
+		AddTo = "<./Data/modes/career/sectors/sectors.rules>/Sectors"
 		ManyToAdd
 		[
-			&<career/sysgen_fleethideouts.rules>/Fleethideouts
-			&<career/sysgen_sw_defectors.rules>
-			&<career/sysgen_sw_renegadeleaders.rules>
-			&<career/sysgen_sw_viprescue.rules>
+			&<career/sectors/sector_basic/sector_sw_basic.rules>/Sector
 		]
 	}
 
-	/* *********** FACTION MISSIONS ************* */
-
-	// Adds missions related to SW Factions
-	{
-		Action = AddMany
-		AddTo = "<modes/career/sectors/sysgen_sim_global_missions.rules>/SubSpawners"
-        ManyToAdd = &<career/sectors/sysgen_sim_global_missions.rules>/SubSpawners
-	}
+		//Missions
 	{
 		Action = Overrides
 		OverrideIn = "<modes/career/mission_metatypes.rules>"
@@ -405,6 +346,103 @@ Actions
 
 
 ]
+
+/* Pre-Career 2.0
+
+	/* Disabled for Nebula 2.0 Changes
+	{
+		Action = AddMany
+		AddTo = "<./Data/modes/career/sectors/sector_basic/sector_basic.rules>/Sector/SystemGenerator/Spawners"
+		ManyToAdd
+		[
+			&<career/sysgen_fleethideouts.rules>/Fleethideouts
+			&<career/sysgen_sw_defectors.rules>
+			&<career/sysgen_sw_renegadeleaders.rules>
+			&<career/sysgen_sw_viprescue.rules>
+		]
+	}
+	*/
+		//Encounters
+	/* Disabled for Nebula 2.0 Changes
+	{
+		Action = AddMany
+		AddTo = "<./Data/modes/career/sectors/sector_basic/sector_basic.rules>/Sector/EncounterRules/PossibleEncounters"
+		ManyToAdd
+		[
+			&<career/encounters/encounter_sw_ambush_empire_sm.rules>
+		]
+	}
+	*/
+
+	/* *********** FACTION MISSIONS ************* */
+
+	// Adds missions related to SW Factions
+	/* Disabled for Nebula 2.0 Changes
+	{
+		Action = AddMany
+		AddTo = "<modes/career/sectors/sysgen_sim_global_missions.rules>/SubSpawners"
+        ManyToAdd = &<career/sectors/sysgen_sim_global_missions.rules>/SubSpawners
+	}
+	*/
+
+	//Adds trade defensive platforms to SW Factions in career mode
+	/* Disabled for Nebula 2.0 Changes
+	{
+		Action = Replace
+		Replace = "<modes/career/sectors/sysgen_trade_stations.rules>/SubSpawners/7/SubSpawners/0/Count"
+		With = 2
+    }
+    {
+		Action = Replace
+		Replace = "<modes/career/sectors/sysgen_trade_stations.rules>/SubSpawners/7/SubSpawners/1/Count"
+		With = [0, 2]
+    }
+    {
+		Action = Replace
+		Replace = "<modes/career/sectors/sysgen_trade_stations.rules>/StationDefenses/Count"
+		With = [3, 8]
+    }
+    {
+		Action = Replace
+		Replace = "<modes/career/sectors/sysgen_trade_stations.rules>/StationDefenses/Distance"
+		With = 250
+    }
+	*/
+
+	//Adds Civilian Tradeships to SW Factions in career mode
+/*
+	{
+		Action = AddBase
+		Name = Civilian
+		AddBaseTo = "<modes/career/career.rules>/TradeRoutes/TradeShips"
+		BaseToAdd = &<career\TradeShips.rules>/TradeShips
+	}
+*/
+/*
+	// Adds discoverables related to SW Factions
+	{
+		Action = AddMany
+		AddTo = "<modes/career/sysgen_misc_discoverables.rules>/SubSpawners"
+        ManyToAdd = &<career/sysgen_misc_discoverables.rules>/SubSpawners
+	}
+*/
+	/* ********** FACTION LOGOS ************* */
+	/*Disabling
+	{
+		Action = Replace
+		Replace = "<gui/menus.rules>/LogoShip"
+		With = "logo.ship.png"
+	}
+	*/
+
+	/* *********** TIER REMAPPING ************ */
+	/*Disabling 
+	{
+		Action = Replace
+		Replace = "<modes/career/fleet_tier_remap_table.rules>/FleetTierRemapTable"
+		With = &<career/sw_fleet_tier_remap_table.rules>/FleetTierRemapTable
+	}
+	*/
 
 // Appendix
 	/* *********** FACTION GENERATION ************* */

@@ -14,13 +14,14 @@ StrategyModules
 		AvoidableDoodadTags = [sun, station, ship, enemy]
 		AvoidableDoodadBuffer =  -100
 	}
-	
+	{
+		Type = FollowFleetLeader
+	}	
 	{
 		Type = FleeFromEnemies
 		FleeDistance = -1100
 		RecallCrew = false
 	}
-	
 	{
 		Type = AggroEnemies
 		TargetSwitchThresholdFactor = 10

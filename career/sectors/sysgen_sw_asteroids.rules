@@ -1,0 +1,403 @@
+Type = None
+SubSpawners
+[
+	// Asteroid belt
+	: ~/AsteroidBelt
+	{
+		Conditions { ProhibitSpawnFlags = [no_asteroid_belt, multiple_asteroid_belts] }
+		Count = 1
+		Distance = [11000, 15000]
+	}
+
+	// Multiple asteroid belts
+	: ~/AsteroidBelt
+	{
+		Conditions { RequireSpawnFlags = [multiple_asteroid_belts] }
+		Count = [1, 3]
+		Distance = [0, 20000]
+		MinDistanceFromSiblingOrbits = 2000
+	}
+
+	// Asteroid fields.
+	: ~/AsteroidFieldWithMaybePirates
+	{
+		Count = [4, 6]
+		Distance = [0, 15000]
+		MinDistanceFromTags = [[sun, 6000], [station, 3000], [asteroid_field, 600]]
+	}
+
+	// Rare asteroids within sun damage zone.
+	{
+		Type = Doodads
+		Count = [25, 50]
+		Distance = [1875, 3375]
+		Tags = [rare_asteroid]
+		RootLocation = Tag
+		RootLocationTag = sun
+		ForEachRootMax = 999
+		MinDistanceFromTags
+		[
+			[sun, 1875]
+			[rare_asteroid, 500]
+		]
+		SuppressLocationAssertions = true
+		DoodadTypes = &~/SunAsteroidTypes
+	}
+
+	// Misc assorted asteroids randomly scattered around the system.
+	{
+		Type = Doodads
+		Count = [125, 150]
+		Distance = [0, 19000]
+		Tags = [asteroid]
+		MinDistanceFromTags = [[sun, 3850], [station, 0], [asteroid, 0], [bounty, 0]]
+		DoodadTypes = &~/CommonAsteroidTypes
+	}
+]
+
+AsteroidBelt
+{
+	Type = None
+	SubSpawners
+	[
+		{
+			Type = Doodads
+			Count = [750, 900]
+			Distance = [-500, 500]
+			Tags = [asteroid]
+			RootLocation = Grandparent
+			AddDistance = ParentToGrandparent
+			MinDistanceFromTags = [[station, 0], [asteroid, 0], [bounty, 0]]
+			DoodadTypes = &~/CommonAsteroidTypes
+		}
+		{
+			Type = Doodads
+			RootLocation = Grandparent
+			ScaleMode = ParentToGrandparent
+			DoodadType = cosmoteer.poi_ring
+			ShowOnlyInFog = true
+		}
+	]
+}
+
+AsteroidField
+{
+	Type = None
+	Tags = [asteroid_field]
+	Radius = 1500
+	MinDistanceFromNebulas = [[ion_storm, 2000]]
+	SuppressLocationAssertions = true
+	SubSpawners
+	[
+		{
+			Type = Doodads
+			Tags = [asteroid]
+			Count = [0, 3]
+			Distance = [0, (&../../../Radius) / 2]
+			MinDistanceFromTags = [[station, 0], [asteroid, 0]]
+			DoodadTypes
+			[
+				{ Type=cosmoteer.megaroid_l;  ChanceWeight=2; }
+				{ Type=cosmoteer.megaroid_xl; ChanceWeight=1; }
+			]
+		}
+		{
+			Type = Doodads
+			Tags = [asteroid]
+			Count = [75, 100]
+			Distance = [0, (&../../../Radius)]
+			MinDistanceFromTags = [[station, 0], [asteroid, 0]]
+			DoodadTypes = &<sysgen_asteroids.rules>/CommonAsteroidTypes
+		}
+		{
+			Type = Doodads
+			Tags = [asteroid_field_poi, poi_unknown]
+			ScaleFactor = &../../Radius
+			DoodadType = cosmoteer.poi_asteroid_field
+			ShowOnlyInFog = true
+			Undiscovered = true
+			HideIfUnexplored = true
+		}
+	]
+}
+
+AsteroidFieldWithMaybePirates : AsteroidField
+{
+	Type = None
+	Tags = [asteroid_field]
+	Radius = 1500
+	SubSpawners : ^/0/SubSpawners
+	[
+		{
+			Type = None
+			SpawnChance = 2/3
+			SynchronizeFactions = true
+
+			RandomSubSpawnerCount = 1
+			SubSpawners
+			[
+				&~/AsteroidFieldPirates
+				&~/AsteroidFieldPlatforms
+			]
+		}
+	]
+}
+
+AsteroidFieldPirates
+{
+	Type = None
+	SubSpawners
+	[
+		// The pirate ships.
+     	{
+     		Type = Ships
+     		Tags = [asteroid_pirate]
+     		Count = [2, 3]
+     		Distance = [0, (&~/AsteroidField/Radius) - (&../AI/PatrolRadius)]
+     		MinDistanceFromTags = [[asteroid_pirate, 500]]
+     		Allegiance = Unique
+     		SynchronizeAllegiance = true
+     		FamePerTier = &/TIER_TABLES/StandardFamePerTier
+     		MaxFamePerTier = &/TIER_TABLES/StandardMaxFamePerTier
+     		ShipCriteria
+     		{
+     			UseLocalFactionWeights = true
+     			UseTierField = true
+     			AllowTierRangeExpansion = true
+     			Tags = [combat]
+     		}
+     		AI
+     		{
+     			Type = Wanderer
+     			PatrolRadius = 750
+     			StasisSpeed = 0
+     		}
+     	}
+
+     	// Mission to hunt pirates in asteroid field.
+     	{
+     		Type = Mission
+     		Metatype = ClearAsteroidFieldPirates
+     		SpawnAt = Tag
+     		SpawnAtTag = { Mode=Nearest; Tag=trade_station; }
+     		Faction = OwnerOfTag
+     		FactionTag = &SpawnAtTag
+     		Objectives
+     		[
+     			{
+     				Type = Sequential
+     				SubObjectives
+     				[
+     					{
+     						Type = DefeatShips
+     						TargetsTag = { Tag=asteroid_pirate; LimitToBatch=true; }
+     						TargetAreaTag = asteroid_field_poi
+     						AutoDiscoverTargetArea = true
+							OverrideDisplayFormatKey = "Objectives/DefeatPirates"
+     					}
+     					{
+     						Type = ReceiveRewards
+     					}
+     				]
+     			}
+     		]
+     		Rewards
+     		[
+     			{
+     				Type = Money
+     				MoneyPerHighTier = &/TIER_TABLES/StandardMoneyPerTier
+     				MoneyPerTierMultiplier = 2
+     				RoundToMultiple = 500
+     			}
+     			{
+     				Type = Fame
+     				FamePerHighTier = &/TIER_TABLES/StandardFamePerTier
+     				FamePerTierMultiplier = 2
+     				MaxFamePerHighTier = &/TIER_TABLES/StandardMaxFamePerTier
+     			}
+     			{
+     				Type = Reputation
+     				ReputationPerHighTier = &/TIER_TABLES/StandardReputationPerTier
+     				ReputationPerTierMultiplier = 4
+     			}
+     		]
+     	}
+	]
+}
+
+AsteroidFieldPlatforms
+{
+	Type = None
+	Conditions { MaxNodeTier=2; }
+	SubSpawners
+	[
+		// The defense platforms.
+		{
+			Type = Ships
+			Tags = [asteroid_platform]
+			Count = [3, 4]
+			Distance = [0, &~/AsteroidField/Radius]
+			MinDistanceFromTags = [[asteroid_platform, 500]]
+     		Allegiance = Unique
+     		SynchronizeAllegiance = true
+			FamePerTier = &/TIER_TABLES/StandardFamePerTier
+			MaxFamePerTier = &/TIER_TABLES/StandardMaxFamePerTier
+			ShipCriteria
+			{
+				UseLocalFactionWeights = true
+				UseTierField = true
+				AllowTierRangeExpansion = true
+				Tags = [defense]
+			}
+			AI
+			{
+				Type = DefensePlatform
+			}
+		}
+
+		// Mission to destroy defenses in asteroid field.
+		{
+			Type = Mission
+			Metatype = ClearAsteroidFieldPlatforms
+			SpawnAt = Tag
+	        SpawnAtTag = { Mode=Nearest; Tag=trade_station; }
+     		Faction = OwnerOfTag
+     		FactionTag = &SpawnAtTag
+			Objectives
+			[
+				{
+					Type = Sequential
+					SubObjectives
+					[
+						{
+							Type = DefeatShips
+							TargetsTag = { Tag=asteroid_platform; LimitToBatch=true; }
+							TargetAreaTag = asteroid_field_poi
+							AutoDiscoverTargetArea = true
+							OverrideDisplayFormatKey = "Objectives/DestroyPlatforms"
+						}
+						{
+							Type = ReceiveRewards
+						}
+					]
+				}
+			]
+			Rewards
+			[
+				{
+					Type = Money
+					MoneyPerHighTier = &/TIER_TABLES/StandardMoneyPerTier
+					MoneyPerTierMultiplier = 2.5
+					RoundToMultiple = 500
+				}
+				{
+					Type = Fame
+					FamePerHighTier = &/TIER_TABLES/StandardFamePerTier
+					FamePerTierMultiplier = 2.5
+					MaxFamePerHighTier = &/TIER_TABLES/StandardMaxFamePerTier
+				}
+     			{
+     				Type = Reputation
+     				ReputationPerHighTier = &/TIER_TABLES/StandardReputationPerTier
+     				ReputationPerTierMultiplier = 5
+     			}
+			]
+		}
+	]
+}
+
+CommonChance = 1
+UnCommonChance = 2/3 //SW added value
+RareChance = 1/16
+SChance = 1
+MChance = 1/2
+LChance = 1/4
+XLChance = 1/8
+XXLChance = 1/16
+CommonAsteroidTypes
+[
+	{ Type=cosmoteer.asteroid_s;            ChanceWeight=(&~/CommonChance)*(&~/SChance); }
+	{ Type=cosmoteer.asteroid_iron_s;       ChanceWeight=(&~/CommonChance)*(&~/SChance); }
+	{ Type=SW.asteroid_doonium_s;  			ChanceWeight=(&~/CommonChance)*(&~/SChance); } //SW.asteroid_doonium_s
+	{ Type=cosmoteer.asteroid_copper_s;     ChanceWeight=(&~/CommonChance)*(&~/SChance); }
+	{ Type=SW.asteroid_zersium_s;  			ChanceWeight=(&~/UnCommonChance)*(&~/SChance); } //SW.asteroid_zersium_s
+	{ Type=cosmoteer.asteroid_sulfur_s;     ChanceWeight=(&~/CommonChance)*(&~/SChance); }
+	{ Type=cosmoteer.asteroid_hyperium_s;   ChanceWeight=(&~/CommonChance)*(&~/SChance); }
+	{ Type=cosmoteer.asteroid_m;            ChanceWeight=(&~/CommonChance)*(&~/MChance); }
+	{ Type=cosmoteer.asteroid_iron_m;       ChanceWeight=(&~/CommonChance)*(&~/MChance); }
+	{ Type=SW.asteroid_doonium_m;  			ChanceWeight=(&~/CommonChance)*(&~/MChance); } //SW.asteroid_doonium_m
+	{ Type=cosmoteer.asteroid_copper_m;     ChanceWeight=(&~/CommonChance)*(&~/MChance); }
+	{ Type=SW.asteroid_zersium_m;  			ChanceWeight=(&~/UnCommonChance)*(&~/MChance); } //SW.asteroid_zersium_m
+	{ Type=cosmoteer.asteroid_sulfur_m;     ChanceWeight=(&~/CommonChance)*(&~/MChance); }
+	{ Type=cosmoteer.asteroid_hyperium_m;   ChanceWeight=(&~/CommonChance)*(&~/MChance); }
+	{ Type=cosmoteer.asteroid_l;            ChanceWeight=(&~/CommonChance)*(&~/LChance); }
+	{ Type=cosmoteer.asteroid_iron_l;       ChanceWeight=(&~/CommonChance)*(&~/LChance); }
+	{ Type=SW.asteroid_doonium_l;  			ChanceWeight=(&~/CommonChance)*(&~/LChance); } //SW.asteroid_doonium_l
+	{ Type=cosmoteer.asteroid_copper_l;     ChanceWeight=(&~/CommonChance)*(&~/LChance); }
+	{ Type=SW.asteroid_zersium_l;  			ChanceWeight=(&~/UnCommonChance)*(&~/LChance); } //SW.asteroid_zersium_l
+	{ Type=cosmoteer.asteroid_sulfur_l;     ChanceWeight=(&~/CommonChance)*(&~/LChance); }
+	{ Type=cosmoteer.asteroid_hyperium_l;   ChanceWeight=(&~/CommonChance)*(&~/LChance); }
+	{ Type=cosmoteer.asteroid_xl;           ChanceWeight=(&~/CommonChance)*(&~/XLChance); }
+	{ Type=cosmoteer.asteroid_iron_xl;      ChanceWeight=(&~/CommonChance)*(&~/XLChance); }
+	{ Type=SW.asteroid_doonium_xl;			ChanceWeight=(&~/UnCommonChance)*(&~/XLChance); } //SW.asteroid_doonium_xl
+	{ Type=cosmoteer.asteroid_copper_xl;    ChanceWeight=(&~/CommonChance)*(&~/XLChance); }
+	{ Type=SW.asteroid_zersium_xl; 			ChanceWeight=(&~/UnCommonChance)*(&~/XLChance); } //SW.asteroid_zersium_xl
+	{ Type=cosmoteer.asteroid_sulfur_xl;    ChanceWeight=(&~/CommonChance)*(&~/XLChance); }
+	{ Type=cosmoteer.asteroid_hyperium_xl;  ChanceWeight=(&~/CommonChance)*(&~/XLChance); }
+	{ Type=cosmoteer.asteroid_xxl;          ChanceWeight=(&~/CommonChance)*(&~/XXLChance); }
+	{ Type=cosmoteer.asteroid_iron_xxl;     ChanceWeight=(&~/CommonChance)*(&~/XXLChance); }
+	{ Type=SW.asteroid_doonium_xxl; 		ChanceWeight=(&~/UnCommonChance)*(&~/XXLChance); } //SW.asteroid_doonium_xxl
+	{ Type=cosmoteer.asteroid_copper_xxl;  ChanceWeight=(&~/CommonChance)*(&~/XXLChance); }
+	{ Type=SW.asteroid_zersium_xxl; 		ChanceWeight=(&~/UnCommonChance)*(&~/XXLChance); } //SW.asteroid_zersium_xxl
+	{ Type=cosmoteer.asteroid_sulfur_xxl;   ChanceWeight=(&~/CommonChance)*(&~/XXLChance); }
+	{ Type=cosmoteer.asteroid_hyperium_xxl; ChanceWeight=(&~/CommonChance)*(&~/XXLChance); }
+
+	{ Type=cosmoteer.asteroid_carbon_s;     ChanceWeight=(&~/RareChance)*(&~/SChance); }
+	{ Type=cosmoteer.asteroid_gold_s;       ChanceWeight=(&~/RareChance)*(&~/SChance); }
+	{ Type=cosmoteer.asteroid_tritanium_s;  ChanceWeight=(&~/RareChance)*(&~/SChance); }
+	{ Type=cosmoteer.asteroid_uranium_s;    ChanceWeight=(&~/RareChance)*(&~/SChance); }
+	{ Type=cosmoteer.asteroid_carbon_m;     ChanceWeight=(&~/RareChance)*(&~/MChance); }
+	{ Type=cosmoteer.asteroid_gold_m;       ChanceWeight=(&~/RareChance)*(&~/MChance); }
+	{ Type=cosmoteer.asteroid_tritanium_m;  ChanceWeight=(&~/RareChance)*(&~/MChance); }
+	{ Type=cosmoteer.asteroid_uranium_m;    ChanceWeight=(&~/RareChance)*(&~/MChance); }
+	{ Type=cosmoteer.asteroid_carbon_l;     ChanceWeight=(&~/RareChance)*(&~/LChance); }
+	{ Type=cosmoteer.asteroid_gold_l;       ChanceWeight=(&~/RareChance)*(&~/LChance); }
+	{ Type=cosmoteer.asteroid_tritanium_l;  ChanceWeight=(&~/RareChance)*(&~/LChance); }
+	{ Type=cosmoteer.asteroid_uranium_l;    ChanceWeight=(&~/RareChance)*(&~/LChance); }
+]
+
+RareAsteroidTypes
+[
+	{ Type=SW.asteroid_doonium_xl;  		 ChanceWeight=1; }
+	{ Type=SW.asteroid_doonium_xxl;  		 ChanceWeight=1/2; }
+	{ Type=SW.asteroid_zersium_xl;  		 ChanceWeight=1; }
+	{ Type=SW.asteroid_zersium_xxl;  		 ChanceWeight=1/2; }
+	{ Type=cosmoteer.asteroid_carbon_xl;     ChanceWeight=1; }
+	{ Type=cosmoteer.asteroid_gold_xl;       ChanceWeight=1; }
+	{ Type=cosmoteer.asteroid_tritanium_xl;  ChanceWeight=1; }
+	{ Type=cosmoteer.asteroid_uranium_xl;    ChanceWeight=1; }
+	{ Type=cosmoteer.asteroid_carbon_xxl;     ChanceWeight=1/2; }
+	{ Type=cosmoteer.asteroid_gold_xxl;       ChanceWeight=1/2; }
+	{ Type=cosmoteer.asteroid_tritanium_xxl;  ChanceWeight=1/2; }
+	{ Type=cosmoteer.asteroid_uranium_xxl;    ChanceWeight=1/2; }
+]
+
+SunAsteroidTypes
+[
+	{ Type=SW.asteroid_doonium_xl;  		ChanceWeight=1; } //SW.asteroid_doonium_xl;
+	{ Type=SW.asteroid_doonium_xxl;  		ChanceWeight=1/2; } //SW.asteroid_doonium_xxl;
+	{ Type=SW.asteroid_zersium_xl;  		ChanceWeight=1; } //SW.asteroid_zersium_xl;
+	{ Type=SW.asteroid_zersium_xxl;  		ChanceWeight=1/2; } //SW.asteroid_zersium_xxl;
+	{ Type=cosmoteer.asteroid_carbon_l;     ChanceWeight=1; }
+	{ Type=cosmoteer.asteroid_gold_l;       ChanceWeight=1; }
+	{ Type=cosmoteer.asteroid_tritanium_l;  ChanceWeight=1; }
+	{ Type=cosmoteer.asteroid_uranium_l;    ChanceWeight=1; }
+	{ Type=cosmoteer.asteroid_carbon_xl;     ChanceWeight=1/2; }
+	{ Type=cosmoteer.asteroid_gold_xl;       ChanceWeight=1/2; }
+	{ Type=cosmoteer.asteroid_tritanium_xl;  ChanceWeight=1/2; }
+	{ Type=cosmoteer.asteroid_uranium_xl;    ChanceWeight=1/2; }
+	{ Type=cosmoteer.asteroid_carbon_xxl;     ChanceWeight=1/4; }
+	{ Type=cosmoteer.asteroid_gold_xxl;       ChanceWeight=1/4; }
+	{ Type=cosmoteer.asteroid_tritanium_xxl;  ChanceWeight=1/4; }
+	{ Type=cosmoteer.asteroid_uranium_xxl;    ChanceWeight=1/4; }
+]

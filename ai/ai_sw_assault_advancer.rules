@@ -13,11 +13,13 @@ StrategyModules
 		AvoidableDoodadBuffer = 0
 	}
 	{
+		Type = FollowFleetLeader
+	}
+	{
 		Type = FleeFromEnemies
 		FleeDistance = -350
 		RecallCrew = false
 	}
-	
 	{
 		Type = AggroEnemies
 		TargetSwitchThresholdFactor = 10

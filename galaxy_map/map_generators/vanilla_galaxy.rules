@@ -15,7 +15,7 @@ SectorTypes
 	SectorTypes
 	[
 		{
-			Type = basic
+			Type = SW.basic
 			RandomWeight = 1
 		}
 		{

@@ -1,0 +1,210 @@
+// Unique identifier for the ambush event
+ID = "sw_ambush_empire_fighters"
+
+// Minimum number of other triggers required before this can re-trigger
+MinOtherTriggersBeforeReTrigger = 0
+
+// Ratio to determine radar radius for random encounters
+RandomRadarRadiusRatio = 0.95
+
+// Conditions for triggering the ambush event
+Conditions
+{
+    // Minimum tier of the parent field required for the event
+    MinParentFieldTier = 4
+
+    // Required fame level to trigger the event
+    RequiredFame = 0
+}
+
+// Generator for the encounter details
+EncounterGenerator
+{
+    // Array of spawners involved in the encounter
+    Spawners
+    [
+        {
+            // Type of entity to spawn (ships in this case)
+            Type = Ships
+
+            // Tags associated with the ships being spawned
+            Tags = [empfighter]
+ 
+            // Count of ships to spawn
+            Count = [3, 10]
+ 
+            // Allegiance of the spawned ships
+            Allegiance = Unique
+            SynchronizeAllegiance = true
+		    //SpawnsPerSlice = 1
+		    //SpawnSlicePadding = 15%
+
+            // Fame reward per tier for completing the mission, doubling the standard fame reward
+            FamePerTier = &/TIER_TABLES/StandardFamePerTier
+            MaxFamePerTier = &/TIER_TABLES/StandardMaxFamePerTier
+
+            // Criteria for selecting the ships to spawn
+            ShipCriteria
+            {
+                // Use local faction weights for ship selection
+                UseLocalFactionWeights = false
+
+                // Consider the tier field for ship selection
+                UseTierField = false
+
+                // Allow expansion of tier range for selection
+                AllowTierRangeExpansion = true
+
+                // Tags indicating the purpose of the ships
+                Tags = [empfighter]
+
+                // Ensure even distribution of ship types
+                UseEvenShipTypeDistribution = false
+            }
+
+            // AI behavior settings for the spawned ships
+            AI
+            {
+                // Normal AI type
+                Type = SWAgileFlankerAI
+
+                // Radius within which the ships will patrol
+                PatrolRadius = 6000
+
+                // Range for acquiring and unacquiring targets from the origin
+                TargetAcquireRangeFromOrigin = 6000
+                TargetUnacquireRangeFromOrigin = 12000
+            }
+
+            // Initial command given to the ships upon spawning
+            InitialShipCommand
+            {
+                // Command type to move to a location
+                Type = MoveToLocation
+
+                // Target tag to determine the location
+                TargetsTag = {Mode = Nearest, Tag = player_ship}
+
+                // Initial speed of the ships when moving
+                InitialSpeed = 100
+            }
+
+            // Array of sub-spawners for additional encounter elements
+            SubSpawners
+            [
+                {
+                    // Type of sub-spawner (mission in this case)
+                    Type = Mission
+
+                    // Meta type of the mission (ambush in this case)
+                    Metatype = Ambush
+
+                    // Location to spawn the mission at (near the player)
+                    SpawnAt = Player
+
+                    // Faction involved in the mission
+                    Faction = SystemController
+
+                    // Objectives for the mission
+                    Objectives
+                    [
+                        {
+                            // Objective type allowing any order
+                            Type = AnyOrder
+
+                            // Number of objectives required to complete the mission
+                            NumRequiredToComplete = 1
+
+                            // Key to override the display format for the objective
+                            OverrideDisplayFormatKey = "Objectives/EncounterAmbush"
+
+                            // Sub-objectives within the main objective
+                            SubObjectives
+                            [
+                                {
+                                    // Objective type allowing any order
+                                    Type = AnyOrder
+
+                                    // Number of sub-objectives required to complete this part
+                                    NumRequiredToComplete = 1
+
+                                    // Further sub-objectives
+                                    SubObjectives
+                                    [
+                                        {
+                                            // Objective type to go to a ship
+                                            Type = GotoShip
+
+                                            // Invert the go-to behavior
+                                            InvertGoTo = true
+
+                                            // Distance for inverting the go-to behavior
+                                            InvertGoToDistance = 4500
+
+                                            // Tag indicating the destination ship
+                                            DestinationShipTag = { Tag=empfighter; LimitToFleet=true; }
+
+                                            // Use tier from the tier field for the objective
+                                            GetTierFromTierField = true
+                                        }
+                                        {
+                                            // Objective type to defeat ships
+                                            Type = DefeatShips
+
+                                            // Tag indicating the target ships to defeat
+                                            TargetsTag = { Tag=empfighter; LimitToFleet=true; }
+
+                                            // Automatically discover the target area
+                                            AutoDiscoverTargetArea = true
+
+                                            // Mode for combining tiers (sum of values)
+                                            TierCombineMode = ValueSum
+                                        }
+                                    ]
+                                }
+                                {
+                                    // Objective type to protect ships
+                                    Type = ProtectShips
+
+                                    // Tag indicating the ships to protect
+                                    TargetsTag = { Mode=Nearest; Distance = 2400; Tag=player_ship; }
+
+                                    // Number of ships that need to survive for success
+                                    targetCount = 1 // If any survive, the mission is a success.
+
+                                    // Mode for combining tiers (none in this case)
+                                    TierCombineMode = None
+                                }
+                                {
+                                    // Objective type to ensure no surrender to target ships
+                                    Type = DontSurrenderTo
+
+                                    // Tag indicating the ships not to surrender to
+                                    TargetsTag = { Tag=bounty_ship; LimitToFleet=true; }
+
+                                    // Mode for combining tiers (none in this case)
+                                    TierCombineMode = None
+                                }
+                            ]
+                        }
+                    ]
+
+                    // Rewards for completing the mission
+                    Rewards
+                    [
+                        {
+                            // Reward type (fame in this case)
+                            Type = Fame
+
+                            // Fame reward per high tier
+                            FamePerHighTier = &<../tier_tables.rules>/StandardFamePerTier
+
+                            // Maximum fame reward per high tier
+                            MaxFamePerHighTier = &<../tier_tables.rules>/StandardMaxFamePerTier
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

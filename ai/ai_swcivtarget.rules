@@ -22,7 +22,7 @@ StrategyModules
 		RepairDamaged = true
 		RebuildDestroyed = true
 		AllowPartialRepair = true
-		AllowPartialRebuild = false
+		AllowPartialRebuild = true
 	}
 ]
 

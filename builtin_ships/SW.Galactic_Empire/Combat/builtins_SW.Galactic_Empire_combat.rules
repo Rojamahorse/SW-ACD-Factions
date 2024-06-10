@@ -60,6 +60,7 @@ Ships
 /*616,240*/	:~{ File="Emp Lancer-Class Frigate.ship.png";							Tier=6;		Difficulty=1; 	Tags = [combat] } 
 /*628,920*/	:~{ File="Raider-Class Corvette Mk2.ship.png";							Tier=6;		Difficulty=1; 	Tags = [combat] } // Credit ClassicJam
 /*573,560*/	:~{ File="Raider-Class Corvette.ship.png";								Tier=7;		Difficulty=1; 	Tags = [combat] } // Credit ClassicJam
+/*573,560*/	:~{ File="Emp Raider-Class Corvette-S.ship.png";						Tier=7;		Difficulty=2; 	Tags = [combat] } 
 /*569,092*/	:~{ File="IPV-1 System Patrol Craft.ship.png";							Tier=6;		Difficulty=2; 	Tags = [combat] } // CJ - Orig
 /*628,140*/	:~{ File="Emp Crusader-Class Cruiser.ship.png";							Tier=7;		Difficulty=1; 	Tags = [combat] }
 /*478,680*/	:~{ File="Emp Gozanti-Class Cruiser.ship.png";							Tier=6;		Difficulty=1; 	Tags = [combat] }
