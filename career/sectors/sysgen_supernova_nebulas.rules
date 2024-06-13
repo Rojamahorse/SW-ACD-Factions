@@ -42,7 +42,7 @@ SubSpawners
 		{
 			GridSize = [1, 16]
 			Octaves = 2
-			OutputShift = -0.05
+			OutputShift = -0.125
 			Repeat = [&../GridSize/0, 0]
 		}
 		MinPerlinNebulaTris = 3

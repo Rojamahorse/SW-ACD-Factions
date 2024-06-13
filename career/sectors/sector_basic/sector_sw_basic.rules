@@ -251,7 +251,7 @@ Sector
             // List of spawners for generating encounter triggers
             Spawners
             [
-                /*{
+                {
                     Type = EncounterTriggers
                     Tags = [encounter_trigger]
                     Count = 99 // spawn as many as possible
@@ -266,7 +266,7 @@ Sector
                         [bounty_area, &../../_distanceToOthers]
                         [player_ship, (&../../_distanceToOthers)]
                     ]
-                }*/
+                }
             ]
         }
 
@@ -274,7 +274,7 @@ Sector
         PossibleEncounters
         [
              &<./Data/modes/career/encounters/encounter_ambush.rules> // Reference to the ambush encounter configuration
-            //&<../../encounters/encounter_sw_ambush_empire_sm.rules> // Reference to the SW ambush encounter configuration
+             &<../../encounters/encounter_sw_ambush_empire_sm.rules> // Reference to the SW ambush encounter configuration
         ]
     }
 }

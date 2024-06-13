@@ -23,6 +23,7 @@ StrategyModules
 		Type = AggroEnemies
 		TargetSwitchThresholdFactor = 1 // If set very low, changes target ship every update
 		TargetDistanceFactorExponent = 1
+		AlreadyTargetedByAllyFactor = 0.7
 		TargetFirepowerCacheTime = 10
 		AcquireAggroWithinRadar = true
 		ReleaseAggroWithinRadar = false

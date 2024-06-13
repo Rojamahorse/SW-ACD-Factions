@@ -24,6 +24,7 @@ StrategyModules
 		Type = AggroEnemies
 		TargetSwitchThresholdFactor = 10
 		TargetDistanceFactorExponent = 40 //Higher = won't attack until close
+		AlreadyTargetedByAllyFactor = 0.7
 		TargetFirepowerCacheTime = 10
 		AcquireAggroWithinRadar = true
 		ReleaseAggroWithinRadar = false

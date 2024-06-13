@@ -136,30 +136,6 @@ SubSpawners
 					TargetUnacquireRangeFromOrigin = 1500
 				}
 			}
-			{
-				Type = Ships
-				Tags = [station_captor_defense]
-				Count = [0, 2]
-				Distance = 150
-				SpawnsPerSlice = 1
-				SpawnSlicePadding = 45%
-				Allegiance = Unique
-				FamePerTier = &/TIER_TABLES/StandardFamePerTier
-				MaxFamePerTier = &/TIER_TABLES/StandardMaxFamePerTier
-
-				ShipCriteria
-				{
-					UseLocalFactionWeights = true
-					UseTierField = true
-					AllowTierRangeExpansion = true
-					Tags = [defense]
-				}
-
-				AI
-				{
-					Type = DefensePlatform
-				}
-			}
 
 			// Mission to liberate the station.
 			{
