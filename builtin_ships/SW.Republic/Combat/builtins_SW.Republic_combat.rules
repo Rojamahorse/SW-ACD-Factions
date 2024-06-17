@@ -87,6 +87,7 @@ Ships
 /*602,730*/    		:~{ File="Rep Delta 4 Combat.ship.png";                                                	 Tier=8;  Difficulty=1; Tags = [combat] }
 /*951,100*/    		:~{ File="Rep Pelta-Class Frigate (Grey).ship.png";                                      Tier=9;  Difficulty=1; Tags = [combat] }
 /*984,742*/			:~{ File="Marauder-Class Cruiser (Republic.ship.png";      								 Tier=9;  Difficulty=2; Tags = [combat] } 
+/*984,742*/			:~{ File="Rep R-Class Corvette-S.ship.png";      								 		 Tier=9;  Difficulty=2; Tags = [combat] } 
 
 //Tier 8-10 (400,001 to 2,000,000)
 /*1,020,554*/		:~{ File="Marauder-CN Cruiser (Republic).ship.png";      								 Tier=10;  Difficulty=2; Tags = [combat] } 
