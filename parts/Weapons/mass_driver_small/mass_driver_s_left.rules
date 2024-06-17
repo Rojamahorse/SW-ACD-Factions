@@ -51,6 +51,21 @@ Part : &<mass_driver_s.rules>/Part
 			IgnoreFriendlyShipLowLOSChecks = false
 		}
 
+		RecoilEffects : &<mass_driver_s.rules>/Part/Components/RecoilEffects
+		{
+			Type = TriggeredEffects
+			ChainedTo = RecoilProjectile
+			Rotation = -180d
+			Trigger = RecoilTimer
+			HitEffects
+			[
+				{
+					Type = Impulse
+					Impulse = 200
+				}
+			]
+		}
+
 		Blueprints : &<mass_driver_s.rules>/Part/Components/Blueprints
 		{
 			Type = BlueprintSprite
