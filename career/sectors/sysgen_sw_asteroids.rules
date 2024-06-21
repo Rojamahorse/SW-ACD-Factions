@@ -14,7 +14,7 @@ SubSpawners
 	{
 		Conditions { RequireSpawnFlags = [multiple_asteroid_belts] }
 		Count = [1, 3]
-		Distance = [0, 20000]
+		Distance = [5000, 20000]
 		MinDistanceFromSiblingOrbits = 2000
 	}
 
@@ -25,7 +25,7 @@ SubSpawners
 		Distance = [0, 15000]
 		MinDistanceFromTags = [[sun, 6000], [station, 3000], [asteroid_field, 600]]
 	}
-
+/*
 	// Rare asteroids within sun damage zone.
 	{
 		Type = Doodads
@@ -43,7 +43,7 @@ SubSpawners
 		SuppressLocationAssertions = true
 		DoodadTypes = &~/SunAsteroidTypes
 	}
-
+*/
 	// Misc assorted asteroids randomly scattered around the system.
 	{
 		Type = Doodads
@@ -381,7 +381,7 @@ RareAsteroidTypes
 	{ Type=cosmoteer.asteroid_tritanium_xxl;  ChanceWeight=1/2; }
 	{ Type=cosmoteer.asteroid_uranium_xxl;    ChanceWeight=1/2; }
 ]
-
+/*
 SunAsteroidTypes
 [
 	{ Type=SW.asteroid_doonium_xl;  		ChanceWeight=1; } //SW.asteroid_doonium_xl;
@@ -401,3 +401,4 @@ SunAsteroidTypes
 	{ Type=cosmoteer.asteroid_tritanium_xxl;  ChanceWeight=1/4; }
 	{ Type=cosmoteer.asteroid_uranium_xxl;    ChanceWeight=1/4; }
 ]
+*/

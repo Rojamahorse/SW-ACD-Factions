@@ -69,4 +69,8 @@ SunAsteroidTypes
 	{ Type=cosmoteer.asteroid_gold_xxl;       ChanceWeight=1/4; }
 	{ Type=cosmoteer.asteroid_tritanium_xxl;  ChanceWeight=1/4; }
 	{ Type=cosmoteer.asteroid_uranium_xxl;    ChanceWeight=1/4; }
+	{ Type=SW.asteroid_doonium_xl;  ChanceWeight=1; }
+	{ Type=SW.asteroid_doonium_xxl;  ChanceWeight=1/2; }
+	{ Type=SW.asteroid_zersium_xl;  ChanceWeight=1; }
+	{ Type=SW.asteroid_zersium_xxl;  ChanceWeight=1/2; }
 ]

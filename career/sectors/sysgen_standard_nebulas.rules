@@ -47,5 +47,6 @@ SubSpawners
 		NebulaSplatTriCount = [20, 40]
 		UseIrregularSplatShape = true
 		MaxDistanceFromWorldOrigin = &<../career.rules>/Exploration/UnexploredRadius
+		ContiguousPathCheckSearchIterations = 20
 	}
 ]

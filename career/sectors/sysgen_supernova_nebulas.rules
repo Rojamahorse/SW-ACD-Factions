@@ -32,11 +32,20 @@ SubSpawners
 		MaxDistanceFromWorldOrigin = &<../career.rules>/Exploration/UnexploredRadius
 	}
 
+	// Supernova ion center.
+	{
+		Type = Nebula
+		NebulaType = ion_storm
+		NebulaRadius = 3000
+		MaxDistanceFromWorldOrigin = &<../career.rules>/Exploration/UnexploredRadius
+	}
+
 	// Supernova ion storm.
 	{
 		Type = Nebula
 		NebulaType = ion_storm
 		NebulaRadius = 25000
+		ContiguousPathCheckSearchIterations = 20
 
 		PerlinNoise
 		{
@@ -48,5 +57,16 @@ SubSpawners
 		MinPerlinNebulaTris = 3
 		UsePolarPerlinCoordinates = true
 		MaxDistanceFromWorldOrigin = &<../career.rules>/Exploration/UnexploredRadius
+	}
+
+	// Rare asteroids within ion center.
+	{
+		Type = Doodads
+		Count = [50, 100]
+		Distance = [0, 2900]
+		Tags = [rare_asteroid]
+		SuppressLocationAssertions = true
+		DoodadTypes = &<sysgen_suns.rules>/SunAsteroidTypes
+		MaxDistanceFromNebulas = [[ion_storm, 0]]
 	}
 ]

@@ -17,20 +17,20 @@ Sector
         // List of spawner configurations for generating various system elements within the sector
         Spawners
         [
-            &<./Data/modes/career/sectors/sysgen_suns.rules>                 // Configuration for generating suns
-            &<./Data/modes/career/sectors/sysgen_planets.rules>              // Configuration for generating planets
-            &<./Data/modes/career/sectors/sysgen_standard_nebulas.rules>     // Configuration for generating standard nebulas
-            &<./Data/modes/career/sectors/sysgen_high_density_nebulas.rules> // Configuration for generating high-density nebulas
-            &<./Data/modes/career/sectors/sysgen_supernova_nebulas.rules>    // Configuration for generating supernova nebulas
-            &<./Data/modes/career/sectors/sysgen_ftl_gates.rules>            // Configuration for generating FTL gates
-            &<../sysgen_sw_trade_stations.rules>                       // DONE! Configuration for generating trade stations
-            &<../sysgen_sw_military_stations.rules>                    // Configuration for generating military stations
-            &<../sysgen_sw_wanderers.rules>                            // DONE! Configuration for generating wanderer ships
-            &<../sysgen_sw_bounties.rules>                             // Configuration for generating bounty missions
-            &<../sysgen_sw_asteroids.rules>                            // DONE! Configuration for generating asteroid fields
-            &<../sysgen_sw_misc_discoverables.rules>                   // Configuration for generating miscellaneous discoverables
-            &<../sysgen_sw_ftl_beacons.rules>                          // Configuration for generating FTL beacons
-            &<../sysgen_sw_sim_global_missions.rules>                  // DONE! Configuration for generating global missions
+            &<./Data/modes/career/sectors/sysgen_planets.rules>                 // Configuration for generating planets
+            &<./Data/modes/career/sectors/sysgen_standard_nebulas.rules>        // Configuration for generating standard nebulas
+            &<./Data/modes/career/sectors/sysgen_high_density_nebulas.rules>    // Configuration for generating high-density nebulas
+            &<./Data/modes/career/sectors/sysgen_supernova_nebulas.rules>       // Configuration for generating supernova nebulas
+            &<./Data/modes/career/sectors/sysgen_ftl_gates.rules>               // Configuration for generating FTL gates
+            &<../sysgen_sw_suns.rules>                                          // Configuration for generating suns
+            &<../sysgen_sw_trade_stations.rules>                                // DONE! Configuration for generating trade stations
+            &<../sysgen_sw_military_stations.rules>                             // Configuration for generating military stations
+            &<../sysgen_sw_wanderers.rules>                                     // DONE! Configuration for generating wanderer ships
+            &<../sysgen_sw_bounties.rules>                                      // Configuration for generating bounty missions
+            &<../sysgen_sw_asteroids.rules>                                     // DONE! Configuration for generating asteroid fields
+            &<../sysgen_sw_misc_discoverables.rules>                            // Configuration for generating miscellaneous discoverables
+            &<../sysgen_sw_ftl_beacons.rules>                                   // Configuration for generating FTL beacons
+            &<../sysgen_sw_sim_global_missions.rules>                           // DONE! Configuration for generating global missions
 			&<../../sysgen_fleethideouts.rules>/Fleethideouts
 			&<../../sysgen_sw_defectors.rules>
 			&<../../sysgen_sw_renegadeleaders.rules>
