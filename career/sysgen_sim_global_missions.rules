@@ -17,12 +17,12 @@ SubSpawners
 				SubObjectives
 				[
 					{
-						Type = DestroyShips
+						Type = DefeatShips						
 						TargetsTag = { Tag=faction_wanderer; OnlyFactions=[SW.Black_Sun]; }
 						TargetCountFraction = 50% // Target 50% of SW.Black_Sun faction wanderer ships
 						MissionInvalidIfZeroTargets = true
 						AllowNpcKills = false
-						OverrideDisplayFormatKey = "Objectives/DestroyFactionShips"
+						OverrideDisplayFormatKey = "Objectives/DefeatFactionShips"
 					}
 					{
 						Type = ReceiveRewards
@@ -68,12 +68,12 @@ SubSpawners
 				SubObjectives
 				[
 					{
-						Type = DestroyShips
+						Type = DefeatShips						
 						TargetsTag = { Tag=faction_wanderer; OnlyFactions=[SW.CIS]; }
 						TargetCountFraction = 50% // Target 50% of SW.CIS faction wanderer ships
 						MissionInvalidIfZeroTargets = true
 						AllowNpcKills = false
-						OverrideDisplayFormatKey = "Objectives/DestroyFactionShips"
+						OverrideDisplayFormatKey = "Objectives/DefeatFactionShips"
 					}
 					{
 						Type = ReceiveRewards
@@ -120,12 +120,12 @@ SubSpawners
 				SubObjectives
 				[
 					{
-						Type = DestroyShips
+						Type = DefeatShips						
 						TargetsTag = { Tag=faction_wanderer; OnlyFactions=[SW.Galacitc_Empire]; }
 						TargetCountFraction = 50% // Target 50% of SW.Galactic_Empire faction wanderer ships
 						MissionInvalidIfZeroTargets = true
 						AllowNpcKills = false
-						OverrideDisplayFormatKey = "Objectives/DestroyFactionShips"
+						OverrideDisplayFormatKey = "Objectives/DefeatFactionShips"
 					}
 					{
 						Type = ReceiveRewards
@@ -172,12 +172,12 @@ SubSpawners
 				SubObjectives
 				[
 					{
-						Type = DestroyShips
+						Type = DefeatShips						
 						TargetsTag = { Tag=faction_wanderer; OnlyFactions=[SW.Republic]; }
 						TargetCountFraction = 50% // Target 50% of SW.Republic faction wanderer ships
 						MissionInvalidIfZeroTargets = true
 						AllowNpcKills = false
-						OverrideDisplayFormatKey = "Objectives/DestroyFactionShips"
+						OverrideDisplayFormatKey = "Objectives/DefeatFactionShips"
 					}
 					{
 						Type = ReceiveRewards
@@ -224,12 +224,12 @@ SubSpawners
 				SubObjectives
 				[
 					{
-						Type = DestroyShips
+						Type = DefeatShips						
 						TargetsTag = { Tag=faction_wanderer; OnlyFactions=[SW.Rebel_Alliance]; } // Target 50% of SW.Rebel_Alliance faction wanderer ships
 						TargetCountFraction = 50%
 						MissionInvalidIfZeroTargets = true
 						AllowNpcKills = false
-						OverrideDisplayFormatKey = "Objectives/DestroyFactionShips"
+						OverrideDisplayFormatKey = "Objectives/DefeatFactionShips"
 					}
 					{
 						Type = ReceiveRewards

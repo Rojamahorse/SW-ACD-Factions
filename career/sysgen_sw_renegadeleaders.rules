@@ -203,7 +203,7 @@ SubSpawners
 						SubObjectives
 						[
 							{
-								Type = DestroyShips
+								Type = DefeatShips								
 								TargetsTag = { Tag=SWRenegadeLeader; LimitToBatch=true; Max=1; }
 								TargetAreaTag = SWRenegadeLeaderArea
 								AutoDiscoverTargetArea = true

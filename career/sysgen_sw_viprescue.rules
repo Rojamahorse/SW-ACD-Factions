@@ -349,7 +349,7 @@ Labels = ["Abandoned"]
 								SubObjectives
 								[
 									{
-										Type = DestroyShips
+										Type = DefeatShips										
 										TargetsTag = { Tag=hive_of_villany; Distance=800;}
 										TargetAreaTag = { Mode=Nearest; Tag=poi_unknown; }
 										OverrideDisplayFormatKey = "Objectives/SavetheVIP"

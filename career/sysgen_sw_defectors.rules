@@ -289,7 +289,7 @@ DefectorsSubSpawnersHandler
 					[asteroid, 20]
 					[combat, 100]
 				]
-				DoodadTypes = &<./data/modes/career/sysgen_asteroids.rules>/CommonAsteroidTypes
+				DoodadTypes = &<./data/modes/career/sectors/sysgen_asteroids.rules>/CommonAsteroidTypes
 			}
 			// Valuable asteroid.
 			{
@@ -305,7 +305,7 @@ DefectorsSubSpawnersHandler
 					[asteroid, 20]
 					[combat, 100]
 				]
-				DoodadTypes = &<./data/modes/career/sysgen_asteroids.rules>/RareAsteroidTypes
+				DoodadTypes = &<./data/modes/career/sectors/sysgen_asteroids.rules>/RareAsteroidTypes
 			}
 			{ // Graveyard ships
 				Type = Ships
@@ -366,7 +366,7 @@ DefectorsSubSpawnersHandler
 				SubObjectives
 				[
 					{
-						Type = DestroyShips
+						Type = DefeatShips						
 						TargetsTag = { Tag=combat; LimitToBatch=true; }
 						TargetAreaTag = sw_defectors_field_poi
 						AutoDiscoverTargetArea = true

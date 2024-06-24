@@ -1,7 +1,7 @@
 ID = SW.3.StarWarsFactions
 Name = "Star Wars Factions"
-Version = 0.1.1
-CompatibleGameVersions = ["0.26.0","0.25.0","0.24.0","0.23.0"]
+Version = 0.1.26.2RC1
+CompatibleGameVersions = ["0.26.2","0.26.0","0.25.0","0.24.0","0.23.0"]
 ModifiesGameplay = true
 Author = "Rojamahorse & SW:ACD DevTeam"
 Logo = "logo.png"
@@ -153,12 +153,13 @@ Actions
 	}
 
 	/* *********** TIER REMAPPING ************ */
+	/*
 	{
 		Action = Replace
 		Replace = "<modes/career/fleet_tier_remap_table.rules>/FleetTierRemapTable"
 		With = &<career/sw_fleet_tier_remap_table.rules>/FleetTierRemapTable
 	}
-
+	*/
 
 	/* *********** STARTER SHIPS ************* */
 
@@ -284,7 +285,7 @@ Actions
 
 	{
 		Action = AddMany
-		AddTo = "<modes/career/sysgen_ftl_beacons.rules>/SubSpawners/0/DoodadTypes/"
+		AddTo = "<modes/career/sectors/sysgen_ftl_beacons.rules>/SubSpawners/0/DoodadTypes/"
 		ManyToAdd 
 		[
 			{ Type=SW.ftl_beacon_SW.Black_Sun; Faction=SW.Black_Sun; }
@@ -299,7 +300,7 @@ Actions
 	{
 		Action = AddBase
 		Name = Civilian
-		AddBaseTo = "<modes/career/career.rules>/TradeRoutes/TradeShips"
+		AddBaseTo = "<modes/career/career.rules>/TradeShips"
 		BaseToAdd = &<career\TradeShips.rules>/TradeShips
 	}
 
@@ -325,30 +326,32 @@ Actions
 	}
 
 	//Adds trade defensive platforms to SW Factions in career mode
+/*
 	{
 		Action = Replace
-		Replace = "<modes/career/sysgen_trade_stations.rules>/SubSpawners/7/SubSpawners/0/Count"
+		Replace = "<modes/career/sectors/sysgen_trade_stations.rules>/SubSpawners/7/SubSpawners/0/Count"
 		With = 2
     }
     {
 		Action = Replace
-		Replace = "<modes/career/sysgen_trade_stations.rules>/SubSpawners/7/SubSpawners/1/Count"
+		Replace = "<modes/career/sectors/sysgen_trade_stations.rules>/SubSpawners/7/SubSpawners/1/Count"
 		With = [0, 2]
     }
+*/
     {
 		Action = Replace
-		Replace = "<modes/career/sysgen_trade_stations.rules>/StationDefenses/Count"
+		Replace = "<modes/career/sectors/sysgen_trade_stations.rules>/StationDefenses/Count"
 		With = [3, 8]
     }
     {
 		Action = Replace
-		Replace = "<modes/career/sysgen_trade_stations.rules>/StationDefenses/Distance"
+		Replace = "<modes/career/sectors/sysgen_trade_stations.rules>/StationDefenses/Distance"
 		With = 250
     }
 	/* ********** SPAWNERS *********** */
 	{
 		Action = AddMany
-		AddTo = "<./Data/modes/career/sysgen.rules>/Spawners"
+		AddTo = "<./Data/modes/career/sectors/sector_basic/sector_basic.rules>/Sector/SystemGenerator/Spawners"
 		ManyToAdd
 		[
 			&<career/sysgen_fleethideouts.rules>/Fleethideouts
@@ -363,7 +366,7 @@ Actions
 	// Adds missions related to SW Factions
 	{
 		Action = AddMany
-		AddTo = "<modes/career/sysgen_sim_global_missions.rules>/SubSpawners"
+		AddTo = "<modes/career/sectors/sysgen_sim_global_missions.rules>/SubSpawners"
         ManyToAdd = &<career/sysgen_sim_global_missions.rules>/SubSpawners
 	}
 	{

@@ -8,8 +8,9 @@ StrategyModules
 	}
 	{
 		Type = AggroEnemies
-		TargetSwitchThresholdFactor = 2
-		TargetDistanceFactorExponent = 0.5
+		TargetSwitchThresholdFactor = 1.7
+		TargetDistanceFactorExponent = 1.5
+		AlreadyTargetedByAllyFactor = 0.7
 		TargetFirepowerCacheTime = 10
 		AcquireAggroWithinRadar = false
 		ReleaseAggroWithinRadar = false
@@ -37,3 +38,5 @@ TargetingModules
 		TargetValueFactorPerPenetrationDist = .75
 	}
 ]
+
+CommsModules = &<./Data/ai/ai_common.rules>/CommsModulesDefault

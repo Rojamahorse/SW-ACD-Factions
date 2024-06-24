@@ -14,8 +14,9 @@ StrategyModules
 	}
 	{
 		Type = AggroEnemies
-		TargetSwitchThresholdFactor = 1 // If set very low, changes target ship every update
-		TargetDistanceFactorExponent = 1
+		TargetSwitchThresholdFactor = 1.7
+		TargetDistanceFactorExponent = 1.5
+		AlreadyTargetedByAllyFactor = 0.7
 		TargetFirepowerCacheTime = 10
 		AcquireAggroWithinRadar = true
 		ReleaseAggroWithinRadar = true
@@ -48,3 +49,4 @@ TargetingModules
 	}
 ]
 
+CommsModules = &<./Data/ai/ai_common.rules>/CommsModulesDefault
