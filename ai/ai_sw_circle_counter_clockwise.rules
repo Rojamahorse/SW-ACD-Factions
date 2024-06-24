@@ -9,6 +9,12 @@ IsAvailableInMultiplayer = true
 StrategyModules
 [
 	{
+		Type = AreaPatrol
+		DefaultPatrolRadius = 500
+		AvoidableDoodadTags = [sun, station]
+		AvoidableDoodadBuffer = 100
+	}
+	{
 		Type = FollowFleetLeader
 	}
 	{

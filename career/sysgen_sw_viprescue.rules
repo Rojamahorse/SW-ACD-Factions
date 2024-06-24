@@ -308,6 +308,11 @@ Labels = ["Abandoned"]
 						"Kroom"
 						"Roasted"
 						"Jerico"
+						"Altraxia"
+						"Winterbreeze"
+						"Caudrea"
+						"Trefies"
+						"Fusion"
 					]
 		        }
 		    ]
@@ -340,31 +345,47 @@ Labels = ["Abandoned"]
 				Objectives
 				[
 					{
-						Type = Sequential
-						SubObjectives
+						Type = AnyOrder // Objective type requiring sequential completion of sub-objectives
+						NumRequiredToComplete = 2
+						SubObjectives // Sub-objectives within the main objective
 						[
 							{
-								Type = AnyOrder
-								TierCombineMode = Max
-								SubObjectives
-								[
-									{
-										Type = DefeatShips										
-										TargetsTag = { Tag=hive_of_villany; Distance=800;}
-										TargetAreaTag = { Mode=Nearest; Tag=poi_unknown; }
-										OverrideDisplayFormatKey = "Objectives/SavetheVIP"
-									}
-									{
-										Type = ProtectShips
-										TargetsTag = { Mode=Nearest; Tag=vip_ship; Max=1; }
-										TargetAreaTag = { Mode=Nearest; Tag=poi_unknown; }
+								Type = GotoShip
+								//InvertGoTo = false;
+								//InvertGoToDistance = 4500
+								DestinationShipTag = { Tag=vip_ship; LimitToFleet=true; }
+								GetTierFromTierField = true
 							}
-								]
+							{		
+								Type = DefeatShips // Objective type to defeat ships
+								TargetsTag = { Tag=hive_of_villany; Distance=800; Max=3;} // Tag indicating the target ships to defeat, within a certain distance
+                                targetCount = 3 // Kill EVERYONE
+								TargetAreaTag = { Mode=Nearest; Tag=poi_unknown; } // Tag indicating the target area for the objective
+								OverrideDisplayFormatKey = "Objectives/SavetheVIP" // Key to override the display format for the objective
+								TierCombineMode = None
+								//AllowSurrender = false // Disallow surrender for this objective
 							}
 							{
-								Type = ReceiveRewards
-								ContactShipTag = { Mode=Nearest; Tag=trade_station; }
+								Type = ProtectShips // Objective type to protect ships
+								TargetsTag = { Mode=Nearest; Distance=2400; Tag=vip_ship; Max=1; }  // Tag indicating the ships to protect (nearest VIP ship)
+								TargetAreaTag = { Mode=Nearest; Tag=poi_unknown; } // Tag indicating the target area for the objective
+								OverrideDisplayFormatKey = "Objectives/SavetheVIP"
+                                targetCount = 1 // If any VIP ship survives, the mission is a success
+								TierCombineMode = None
 							}
+							/*
+							{
+								Type = DontSurrenderTo
+								TargetsTag = { Tag=hive_of_villany; LimitToFleet=true; }
+								TierCombineMode = None
+							}
+							*/
+//							{
+//								// Objective type to receive rewards
+//								Type = ReceiveRewards
+//								Tag indicating the ship to contact for receiving rewards (nearest VIP ship)
+//								ContactShipTag = { Mode=Nearest; Tag=vip_ship/*trade_station*/; }//{ Mode=Nearest; Tag=vip_ship; }//{ Mode=Nearest; Tag=trade_station; }
+//							}
 						]
 					}
 				]
@@ -372,19 +393,19 @@ Labels = ["Abandoned"]
 				[
 					{
 						Type = Money
-						MoneyPerHighTier = &<./Data/modes/career/tier_tables.rules>/StandardMoneyPerTier
+						MoneyPerHighTier = &/TIER_TABLES/StandardMoneyPerTier
 						MoneyPerTierMultiplier = 6
 						RoundToMultiple = 500
 					}
 					{
 						Type = Fame
-						FamePerHighTier = &<./Data/modes/career/tier_tables.rules>/StandardFamePerTier
+						FamePerHighTier = &/TIER_TABLES/StandardFamePerTier
 						FamePerTierMultiplier = 2
-						MaxFamePerHighTier = &<./Data/modes/career/tier_tables.rules>/StandardMaxFamePerTier
+						MaxFamePerHighTier = &/TIER_TABLES/StandardMaxFamePerTier
 					}
 		            {
 		                Type = Reputation
-		                ReputationPerHighTier = &<./Data/modes/career/tier_tables.rules>/StandardReputationPerTier
+		                ReputationPerHighTier = &/TIER_TABLES/StandardReputationPerTier
 		                ReputationPerTierMultiplier = 4
 		            }
 				]

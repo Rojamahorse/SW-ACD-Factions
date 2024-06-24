@@ -85,7 +85,6 @@ Actions
 		AddTo = "<ships/terran/terran.rules>/Terran/Roofs/RoofDecalGroups"
 		ManyToAdd
 		[
-			//&<roof_decals/sw_decal_group.rules>/SW_factions
 			&<roof_decals/sw_decal_group.rules>/SW_adv_shapes
 		]
 	}
@@ -136,13 +135,7 @@ Actions
 	}
 
 	/* *********** MAIN MENU ************* */
-	/*
-	{
-		Action = Replace
-		Replace = "<gui/menus.rules>/LogoShip"
-		With = "logo.ship.png"
-	}
-	*/
+
 	{
 		Action = Replace
 		Replace = "<./Data/gui/text_sprites.rules>/wr_logo/Texture"
@@ -152,14 +145,7 @@ Actions
 		}
 	}
 
-	/* *********** TIER REMAPPING ************ */
-	/*
-	{
-		Action = Replace
-		Replace = "<modes/career/fleet_tier_remap_table.rules>/FleetTierRemapTable"
-		With = &<career/sw_fleet_tier_remap_table.rules>/FleetTierRemapTable
-	}
-	*/
+
 
 	/* *********** STARTER SHIPS ************* */
 
@@ -259,15 +245,6 @@ Actions
         ManyToAdd = &<codex/lore.rules>/CodexPages
 	}
 
-/*
-	// Adds discoverables related to SW Factions
-	{
-		Action = AddMany
-		AddTo = "<modes/career/sysgen_misc_discoverables.rules>/SubSpawners"
-        ManyToAdd = &<career/sysgen_misc_discoverables.rules>/SubSpawners
-	}
-*/
-
 	// Adds SW Starter Ships in career mode
 	{
 		Action = AddMany
@@ -325,29 +302,7 @@ Actions
 		]
 	}
 
-	//Adds trade defensive platforms to SW Factions in career mode
-/*
-	{
-		Action = Replace
-		Replace = "<modes/career/sectors/sysgen_trade_stations.rules>/SubSpawners/7/SubSpawners/0/Count"
-		With = 2
-    }
-    {
-		Action = Replace
-		Replace = "<modes/career/sectors/sysgen_trade_stations.rules>/SubSpawners/7/SubSpawners/1/Count"
-		With = [0, 2]
-    }
-*/
-    {
-		Action = Replace
-		Replace = "<modes/career/sectors/sysgen_trade_stations.rules>/StationDefenses/Count"
-		With = [3, 8]
-    }
-    {
-		Action = Replace
-		Replace = "<modes/career/sectors/sysgen_trade_stations.rules>/StationDefenses/Distance"
-		With = 250
-    }
+
 	/* ********** SPAWNERS *********** */
 	{
 		Action = AddMany
