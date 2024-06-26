@@ -2,7 +2,7 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 {
 	//IDs
 	ID = SW.fighter_mass_driver_cannon
-	OtherIDs = [SW.fighter_long_xwing_cannon] //Clears the array
+	OtherIDs = [SW.fighter_long_xwing_cannon, SW.3.fighter_long_xwing_cannon] //Clears the array
 
 	//StringKeys
 	NameKey = "Parts/massdriversmall"

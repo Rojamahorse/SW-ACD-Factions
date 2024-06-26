@@ -2,8 +2,8 @@ Part : &<mass_driver_s.rules>/Part
 {
 	//IDs
 	ID = SW.fighter_mass_driver_cannon_left
-	OtherIDs = [SW.long_fighter_xwing_cannon_right, SW.long_fighter_xwing_cannon_left]
-	FlipWhenLoadingIDs = [SW.long_fighter_xwing_cannon_right]
+	OtherIDs = [SW.long_fighter_xwing_cannon_left, SW.3.long_fighter_xwing_cannon_left, SW.3.long_fighter_xwing_cannon_right, SW.long_fighter_xwing_cannon_right]
+	FlipWhenLoadingIDs = [SW.long_fighter_xwing_cannon_right, SW.3.long_fighter_xwing_cannon_right]
 
 	//StringKeys
 	NameKey = "Parts/massdriversmallLeft"
