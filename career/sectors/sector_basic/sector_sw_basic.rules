@@ -31,7 +31,7 @@ Sector
             &<../sysgen_sw_misc_discoverables.rules>                            // Configuration for generating miscellaneous discoverables
             &<../sysgen_sw_ftl_beacons.rules>                                   // Configuration for generating FTL beacons
             &<../sysgen_sw_sim_global_missions.rules>                           // DONE! Configuration for generating global missions
-			&<../../sysgen_fleethideouts.rules>/Fleethideouts
+			&<../../sysgen_sw_fleethideouts.rules>/SWFleethideouts
 			&<../../sysgen_sw_defectors.rules>
 			&<../../sysgen_sw_renegadeleaders.rules>
 			&<../../sysgen_sw_viprescue.rules>        

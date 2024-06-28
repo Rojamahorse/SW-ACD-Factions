@@ -1,9 +1,11 @@
-Fleethideouts 
+SWFleethideouts 
 {
 	Type = None
-	SpawnChance = 5% // change after debug
+	SpawnChance = 15% // change after debug
+	MinNodeTier = 4
 	Tags = [asteroid]
-	Distance = [7000, 15000]
+	Distance = [10000, 20000]
+	MinDistanceFromTags = [[sun, 7000], [station, 2000], [bounty, 2000], [asteroid_field, 800], [ftl_gate, 1200]]
 	SubSpawners
 	[
 		{

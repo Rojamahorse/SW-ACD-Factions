@@ -1,0 +1,76 @@
+Type = None
+SubSpawners
+[
+	// Unary sun.
+	{
+		Conditions { ProhibitSpawnFlags = [binary_sun, no_sun] }
+		Type = Doodads
+		DoodadType = cosmoteer.planet_sun
+
+		SubSpawners
+		[
+			// Rare asteroids within sun damage zone.
+			{
+				Type = Doodads
+				Count = [25, 50]
+				Distance = [1875, 3375]
+				Tags = [rare_asteroid]
+				MinDistanceFromTags
+				[
+					[rare_asteroid, 500]
+				]
+				SuppressLocationAssertions = true
+				DoodadTypes = &~/SunAsteroidTypes
+			}
+		]
+	}
+
+	// Binary suns.
+	{
+		Conditions { RequireSpawnFlags = [binary_sun] }
+		Type = Doodads
+		DoodadType = cosmoteer.planet_sun
+		Count = 2
+		Distance = 2000
+		ScaleFactor = 60%
+		SpawnsPerSlice = 1
+		SpawnSlicePadding = 89d
+
+		SubSpawners
+		[
+			// Rare asteroids within sun damage zone.
+			{
+				Type = Doodads
+				Count = [15, 30]
+				Distance = [1125, 2025]
+				Tags = [rare_asteroid]
+				MinDistanceFromTags
+				[
+					[rare_asteroid, 500]
+				]
+				SuppressLocationAssertions = true
+				DoodadTypes = &~/SunAsteroidTypes
+			}
+		]
+	}
+]
+
+SunAsteroidTypes
+[
+	{ Type=cosmoteer.asteroid_carbon_l;     ChanceWeight=1; }
+	{ Type=cosmoteer.asteroid_gold_l;       ChanceWeight=1; }
+	{ Type=cosmoteer.asteroid_tritanium_l;  ChanceWeight=1; }
+	{ Type=cosmoteer.asteroid_uranium_l;    ChanceWeight=1; }
+	{ Type=cosmoteer.asteroid_carbon_xl;     ChanceWeight=1/2; }
+	{ Type=cosmoteer.asteroid_gold_xl;       ChanceWeight=1/2; }
+	{ Type=cosmoteer.asteroid_tritanium_xl;  ChanceWeight=1/2; }
+	{ Type=cosmoteer.asteroid_uranium_xl;    ChanceWeight=1/2; }
+	{ Type=cosmoteer.asteroid_carbon_xxl;     ChanceWeight=1/4; }
+	{ Type=cosmoteer.asteroid_gold_xxl;       ChanceWeight=1/4; }
+	{ Type=cosmoteer.asteroid_tritanium_xxl;  ChanceWeight=1/4; }
+	{ Type=cosmoteer.asteroid_uranium_xxl;    ChanceWeight=1/4; }
+	{ Type=SW.asteroid_doonium_xl;  ChanceWeight=1; }
+	{ Type=SW.asteroid_doonium_xxl;  ChanceWeight=1/2; }
+	{ Type=SW.asteroid_zersium_xl;  ChanceWeight=1; }
+	{ Type=SW.asteroid_zersium_xxl;  ChanceWeight=1/2; }
+]

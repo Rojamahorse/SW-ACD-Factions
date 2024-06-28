@@ -6,5 +6,7 @@ Doodads
 	&<ftl/doodad_ftl_beacon_SW.Galactic_Empire.rules>
 	&<ftl/doodad_ftl_beacon_SW.Rebel_Alliance.rules>
 	&<ftl/doodad_ftl_beacon_SW.Republic.rules>
-
+	&<../career/sw_defectorsPOI.rules>
+	&<../career/sw_renegadeleaderPOI.rules>
+	&<../career/sw_distressPOI.rules>
 ]

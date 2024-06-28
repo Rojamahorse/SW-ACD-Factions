@@ -88,7 +88,7 @@ SubSpawners
 	}
 
 	// The starting station should have an asteroid field near it.
-	: <sysgen_asteroids.rules>/AsteroidField
+	: <sysgen_sw_asteroids.rules>/AsteroidField
 	{
 		Conditions { IsInitNode=true; }
 		RootLocation = Tag

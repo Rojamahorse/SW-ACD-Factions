@@ -28,23 +28,27 @@ Ships
 /*80,040*/    		:~{ File="Republic Storm IV Twin-Pod Comba.ship.png";                                    Tier=3;  Difficulty=2; Tags = [combat, swfighter, repfighter] }
 /*93,420*/    		:~{ File="Republic E-Wing Starfighter.ship.png";                                         Tier=4;  Difficulty=2; Tags = [combat, swfighter, repfighter] }
 /*108,060*/    		:~{ File="Rep Firespray-31-Class P&A Craft.ship.png";                                    Tier=3;  Difficulty=1; Tags = [combat, swfighter, repfighter] }
-/*104,080*/    		:~{ File="BTL-A4 Y-Wing Bomber.ship.png";                                                Tier=3;  Difficulty=1; Tags = [combat] }
+/*104,080*/    		:~{ File="BTL-A4 Y-Wing Bomber.ship.png";                                                Tier=3;  Difficulty=1; Tags = [combat, repbomber] }
 /*106,220*/    		:~{ File="Republic V-19 Torrent Starfighte.ship.png";                                    Tier=3;  Difficulty=2; Tags = [combat, swfighter, repfighter] }
 /*107,210*/    		:~{ File="Republic Z-95 Headhunter.ship.png";                                            Tier=3;  Difficulty=1; Tags = [combat, swfighter, repfighter] }
 /*108,650*/    		:~{ File="Republic Z-95 Headhunter Orig.ship.png";                                       Tier=4;  Difficulty=2; Tags = [combat, swfighter, repfighter] } 
 /*108,650*/    		:~{ File="Rep C-Wing Interceptor.ship.png";                                       		 Tier=4;  Difficulty=2; Tags = [combat, swfighter, repfighter] } 
 /*108,650*/    		:~{ File="Rep N-Wing.ship.png";                                       		 			 Tier=4;  Difficulty=2; Tags = [combat, swfighter, repfighter] } 
+/*108,650*/    		:~{ File="Rep N-Wing v2.ship.png";                                       		 		 Tier=5;  Difficulty=2; Tags = [combat, swfighter, repfighter] } 
 /*108,650*/    		:~{ File="Rep N-Wing Mk2.ship.png";                                       		 		 Tier=5;  Difficulty=2; Tags = [combat, swfighter, repfighter] } 
 /*107,920*/    		:~{ File="V-19 Torrent Starfighter B.ship.png";                                          Tier=3;  Difficulty=2; Tags = [combat, swfighter, repfighter] } 
 /*135,850*/    		:~{ File="ARC-170 Mk II.ship.png";                                                       Tier=3;  Difficulty=2; Tags = [combat, swfighter, repfighter] }
-/*144,100*/    		:~{ File="Republic BTL-B Y-Wing Bomber.ship.png";                                        Tier=3;  Difficulty=2; Tags = [combat] }
-/*135,900*/    		:~{ File="NRep T-85 X-Wing B.ship.png";                                        			 Tier=4;  Difficulty=1; Tags = [combat] }
-/*135,900*/    		:~{ File="Republic BTL-L Y-Wing Bomber.ship.png";                                        Tier=3;  Difficulty=1; Tags = [combat] }
-/*147,180*/    		:~{ File="Republic Aggressive ReConnaissance-170 Starfighter.ship.png";                  Tier=3;  Difficulty=2; Tags = [combat] }
-/*229,315*/    		:~{ File="Republic Nu-Class AS Mk2.ship.png";                                            Tier=5;  Difficulty=2; Tags = [combat] }
-/*229,315*/    		:~{ File="Republic Nu-Class Attack Shuttle.ship.png";                                    Tier=3;  Difficulty=2; Tags = [combat] }
+/*144,100*/    		:~{ File="Republic BTL-B Y-Wing Bomber.ship.png";                                        Tier=3;  Difficulty=2; Tags = [combat, repbomber] }
+/*135,900*/    		:~{ File="NRep T-85 X-Wing B.ship.png";                                        			 Tier=4;  Difficulty=1; Tags = [combat, repbomber] }
+/*135,900*/    		:~{ File="Republic BTL-L Y-Wing Bomber.ship.png";                                        Tier=3;  Difficulty=1; Tags = [combat, repbomber] }
+/*135,900*/    		:~{ File="BTL-A4 Y-Wing Bomber v2.ship.png";                                       		 Tier=4;  Difficulty=1; Tags = [combat, repbomber] }
+/*147,180*/    		:~{ File="Republic Aggressive ReConnaissance-170 Starfighter.ship.png";                  Tier=3;  Difficulty=2; Tags = [combat, swfighter, repfighter] }
+/*229,315*/    		:~{ File="Republic Nu-Class AS Mk2.ship.png";                                            Tier=5;  Difficulty=2; Tags = [combat, repshuttle] }
+/*229,315*/    		:~{ File="Republic Nu-Class AS v2.ship.png";                                    		 Tier=4;  Difficulty=2; Tags = [combat, repshuttle] }
+/*229,315*/    		:~{ File="Republic Nu-Class Attack Shuttle.ship.png";                                    Tier=3;  Difficulty=2; Tags = [combat, repshuttle] }
 /*227,725*/    		:~{ File="Consular-Class_Cruiser_C70_RF.ship.png";                                       Tier=5;  Difficulty=2; Tags = [combat] } // Wolfram
-/*470,320*/    		:~{ File="Republic Havoc Marauder.ship.png";                                             Tier=5;  Difficulty=2; Tags = [combat] }
+/*470,320*/    		:~{ File="Republic Havoc Marauder.ship.png";                                             Tier=5;  Difficulty=2; Tags = [combat, repshuttle] }
+/*470,320*/    		:~{ File="Republic Havoc Marauder v2.ship.png";                                          Tier=6;  Difficulty=2; Tags = [combat] }
 
 //Tier 5-7 (180,001 to 400,000)
 /*121,855*/    		:~{ File="Royal House N-1R Starfighter Mk2.ship.png";                                    Tier=5;  Difficulty=1; Tags = [combat, swfighter, repfighter] }
@@ -52,10 +56,12 @@ Ships
 /*229,315*/    		:~{ File="Rep UT-60D U-Wing Starfighter Y.ship.png";                                     Tier=6;  Difficulty=2; Tags = [combat, swfighter, repfighter] }
 /*227,725*/    		:~{ File="Rep UT-60D U-Wing Starfighter.ship.png";                                       Tier=6;  Difficulty=2; Tags = [combat, swfighter, repfighter] } // Altraxia
 /*239,725*/    		:~{ File="Rep E-Wing Escort Starfighter.ship.png";                                       Tier=5;  Difficulty=2; Tags = [combat, swfighter, repfighter] } // Altraxia
-/*264,490*/    		:~{ File="Rep Baudo-Class Space Yacht.ship.png";                                         Tier=5;  Difficulty=2; Tags = [combat, swfighter, repfighter] } // Original
+/*264,490*/    		:~{ File="Rep Baudo-Class Space Yacht.ship.png";                                         Tier=5;  Difficulty=2; Tags = [combat, swfighter, repfighter, repshuttle] } // Original
 /*264,490*/    		:~{ File="Rep Baudo-Class Yacht (combat).ship.png";                                      Tier=5;  Difficulty=2; Tags = [combat, swfighter, repfighter] } // Original
 /*264,490*/    		:~{ File="Rep Baudo-Class Space Yacht-S.ship.png";                                       Tier=5;  Difficulty=2; Tags = [combat, swfighter, repfighter] } // Original
+/*264,490*/    		:~{ File="Rep Baudo-Class Yacht (combat)v2.ship.png";                                    Tier=6;  Difficulty=2; Tags = [combat, swfighter, repfighter] } // Original
 /*281,180*/    		:~{ File="Republic Gunship.ship.png";                                                    Tier=5;  Difficulty=2; Tags = [combat] }
+/*281,180*/    		:~{ File="Republic Gunship v2.ship.png";                                                 Tier=6;  Difficulty=2; Tags = [combat] }
 /*292,820*/    		:~{ File="Republic Gunship (LAAT).ship.png";                                             Tier=5;  Difficulty=2; Tags = [combat] }
 /*292,820*/    		:~{ File="Republic Gunship (LAAT) Mk2.ship.png";                                         Tier=6;  Difficulty=2; Tags = [combat] }
 /*308,915*/    		:~{ File="Republic Gunship Cannonade.ship.png";                                          Tier=5;  Difficulty=2; Tags = [combat] }
@@ -63,27 +69,29 @@ Ships
 /*301,640*/    		:~{ File="Rep M-Wing Fighter B.ship.png";                                      			 Tier=7;  Difficulty=2; Tags = [combat] }
 /*301,640*/    		:~{ File="Rep M-Wing Fighter G.ship.png";                                      			 Tier=8;  Difficulty=1; Tags = [combat] }
 /*301,640*/    		:~{ File="Rep H-Wing Starfighter.ship.png";                                      		 Tier=6;  Difficulty=2; Tags = [combat] }
-/*312,350*/    		:~{ File="Rep Galactic_Republic_Transport_Ship_armed.ship.png";                          Tier=6;  Difficulty=1; Tags = [combat] }
+/*301,640*/    		:~{ File="Rep H-Wing Starfighter v2.ship.png";                                      	 Tier=7;  Difficulty=2; Tags = [combat] }
+/*312,350*/    		:~{ File="Rep Galactic_Republic_Transport_Ship_armed.ship.png";                          Tier=6;  Difficulty=1; Tags = [combat, repshuttle] }
 /*319,120*/    		:~{ File="Republic CR70 Corvette (Heavy).ship.png";                                      Tier=7;  Difficulty=2; Tags = [combat] }
 /*325,750*/    		:~{ File="Republic CR70B Corvette (Heavy).ship.png";                                     Tier=5;  Difficulty=2; Tags = [combat] }
-/*324,410*/    		:~{ File="Rep Nubian Royal Starship (Cbt).ship.png";                                     Tier=5;  Difficulty=2; Tags = [combat] } // Remake
-/*362,060*/    		:~{ File="Republic Consular-Class CruiserO.ship.png";                                    Tier=6;  Difficulty=2; Tags = [combat] }
-/*350,840*/    		:~{ File="Republic Consular-Class CruiserR.ship.png";                                    Tier=6;  Difficulty=2; Tags = [combat] }
-/*369,350*/    		:~{ File="Old Rep YT-1300g Light Freighter.ship.png";                                    Tier=7;  Difficulty=2; Tags = [combat] } //  
-/*369,350*/    		:~{ File="Old Rep YT-1300w Light Freighter.ship.png";                                    Tier=7;  Difficulty=2; Tags = [combat] } //  
+/*324,410*/    		:~{ File="Rep Nubian Royal Starship (Cbt).ship.png";                                     Tier=5;  Difficulty=2; Tags = [combat, repshuttle] } // Remake
+/*362,060*/    		:~{ File="Republic Consular-Class CruiserO.ship.png";                                    Tier=6;  Difficulty=2; Tags = [combat, repshuttle] }
+/*350,840*/    		:~{ File="Republic Consular-Class CruiserR.ship.png";                                    Tier=6;  Difficulty=2; Tags = [combat, repshuttle] }
+/*369,350*/    		:~{ File="Old Rep YT-1300g Light Freighter.ship.png";                                    Tier=7;  Difficulty=2; Tags = [combat, repshuttle] } //  
+/*369,350*/    		:~{ File="Old Rep YT-1300w Light Freighter.ship.png";                                    Tier=7;  Difficulty=2; Tags = [combat, repshuttle] } //  
 /*369,480*/    		:~{ File="GR-75 MC Medium Cruiser.ship.png";                                             Tier=6;  Difficulty=1; Tags = [combat] }
 /*393,960*/    		:~{ File="Consular-Class Cruiser (Charger c70 Retrofit) Grey.ship.png";                  Tier=6;  Difficulty=1; Tags = [combat] }
-/*424,820*/    		:~{ File="C-9979 Landing Craft (NRep) Atk.ship.png";                                     Tier=5;  Difficulty=2; Tags = [combat] }
+/*424,820*/    		:~{ File="C-9979 Landing Craft (NRep) Atk.ship.png";                                     Tier=5;  Difficulty=2; Tags = [combat, repshuttle] }
 /*432,630*/    		:~{ File="Rep YT-2400 Light Freighter.ship.png";                                         Tier=6;  Difficulty=2; Tags = [combat] } // Original
 /*432,630*/    		:~{ File="Rep YT-2400-R Light Freighter.ship.png";                                       Tier=7;  Difficulty=2; Tags = [combat] } // Original
 /*434,020*/    		:~{ File="DP20 Frigate (Republic).ship.png";                                             Tier=7;  Difficulty=1; Tags = [combat] }
 /*458,200*/    		:~{ File="Rep CR90 Corvette (Republic).ship.png";                                        Tier=8;  Difficulty=1; Tags = [combat] }
-/*470,320*/    		:~{ File="Rep MG-100 StarFortress SF-17 Heavy BomberR.ship.png";                         Tier=7;  Difficulty=2; Tags = [combat] }
+/*470,320*/    		:~{ File="Rep MG-100 StarFortress SF-17 Heavy BomberR.ship.png";                         Tier=7;  Difficulty=2; Tags = [combat, repbomber] }
 /*458,200*/    		:~{ File="CR90 Corvette (Republic).ship.png";                                            Tier=6;  Difficulty=1; Tags = [combat] }
-/*499,710*/    		:~{ File="Republic Light Assault Shuttle.ship.png";                                      Tier=6;  Difficulty=2; Tags = [combat] }
-/*509,382*/    		:~{ File="Republic CG Assault Shuttle.ship.png";                                         Tier=8;  Difficulty=3; Tags = [combat] } 
+/*499,710*/    		:~{ File="Republic Light Assault Shuttle.ship.png";                                      Tier=6;  Difficulty=2; Tags = [combat, repshuttle] }
+/*499,710*/    		:~{ File="Republic Light Assault Shuttlev2.ship.png";                                    Tier=7;  Difficulty=2; Tags = [combat, repshuttle] }
+/*509,382*/    		:~{ File="Republic CG Assault Shuttle.ship.png";                                         Tier=8;  Difficulty=3; Tags = [combat, repshuttle] } 
 /*602,730*/    		:~{ File="Republic Delta 4.ship.png";                                                    Tier=8;  Difficulty=1; Tags = [combat] }
-/*602,730*/    		:~{ File="Rep Delta 4 Smuggler.ship.png";                                                Tier=8;  Difficulty=1; Tags = [combat] }
+/*602,730*/    		:~{ File="Rep Delta 4 Smuggler.ship.png";                                                Tier=8;  Difficulty=1; Tags = [combat, repshuttle] }
 /*602,730*/    		:~{ File="Rep Delta 4 Combat.ship.png";                                                	 Tier=8;  Difficulty=1; Tags = [combat] }
 /*951,100*/    		:~{ File="Rep Pelta-Class Frigate (Grey).ship.png";                                      Tier=9;  Difficulty=1; Tags = [combat] }
 /*984,742*/			:~{ File="Marauder-Class Cruiser (Republic.ship.png";      								 Tier=9;  Difficulty=2; Tags = [combat] } 
@@ -95,35 +103,35 @@ Ships
 /*1,312,970*/    	:~{ File="Pelta-Class Frigate (Red).ship.png";                                           Tier=10;  Difficulty=1; Tags = [combat] }
 /*1,315,250*/    	:~{ File="Rep Pelta-Class Frigate (M-Freig.ship.png";                                    Tier=11;  Difficulty=1; Tags = [combat] }
 /*1,280,190*/    	:~{ File="Rep Pelta-class Assault Ship MkI.ship.png";                                    Tier=11;  Difficulty=2; Tags = [combat] }
-/*1,280,190*/    	:~{ File="Rep Nebulon B-2B Hvy Frigate MkI.ship.png";                                    Tier=11;  Difficulty=1; Tags = [combat] }
-/*1,320,447*/    	:~{ File="Arquitens_Class_Light_Cruiser.ship.png";                                       Tier=10;  Difficulty=2; Tags = [combat] } //  Credit Wolfram
+/*1,280,190*/    	:~{ File="Rep Nebulon B-2B Hvy Frigate MkI.ship.png";                                    Tier=12;  Difficulty=1; Tags = [combat] }
+/*1,320,447*/    	:~{ File="Arquitens_Class_Light_Cruiser.ship.png";                                       Tier=11;  Difficulty=2; Tags = [combat] } //  Credit Wolfram
 /*1,742,510*/    	:~{ File="Arquitens-Class Light Cruiser (Grey).ship.png";                                Tier=12;  Difficulty=2; Tags = [combat] } 
-/*1,742,510*/    	:~{ File="Rep The Galactic Voyager.ship.png";                                			 Tier=12;  Difficulty=2; Tags = [combat] } //  Credit Altraxia
-/*1,742,510*/    	:~{ File="Arquitens-Class Light Cruiser (Red).ship.png";                                 Tier=12;  Difficulty=1; Tags = [combat] } 
+/*1,742,510*/    	:~{ File="Rep The Galactic Voyager.ship.png";                                			 Tier=13;  Difficulty=2; Tags = [combat] } //  Credit Altraxia
+/*1,742,510*/    	:~{ File="Arquitens-Class Light Cruiser (Red).ship.png";                                 Tier=13;  Difficulty=1; Tags = [combat] } 
 /*1,742,510*/    	:~{ File="Rep Vakbeor-class Missile Frigat.ship.png";                                 	 Tier=10;  Difficulty=2; Tags = [combat] } 
-/*3,227,757*/    	:~{ File="Rep Dreadnought Mk2.ship.png";                                                 Tier=13;  Difficulty=1; Tags = [combat] }
-/*3,316,856*/    	:~{ File="Republic Assault Frigate Mk II.ship.png";                                      Tier=13;  Difficulty=2; Tags = [combat] }
+/*3,227,757*/    	:~{ File="Rep Dreadnought Mk2.ship.png";                                                 Tier=14;  Difficulty=1; Tags = [combat] }
+/*3,316,856*/    	:~{ File="Republic Assault Frigate Mk II.ship.png";                                      Tier=14;  Difficulty=2; Tags = [combat] }
 
 //Tier 11-13 (2,000,001 to 5,000,000)
-/*3,323,856*/    	:~{ File="Republic Assault Frigate Mk III.ship.png";                                     Tier=14; Difficulty=1; Tags = [combat] }
-/*5,382,304*/    	:~{ File="Acclamator I-Class Cruiser (Red).ship.png";                                    Tier=14; Difficulty=2; Tags = [combat] } 
-/*5,385,694*/   	:~{ File="Rep Acclamator I-Class Cruiser.ship.png";                                      Tier=14; Difficulty=1; Tags = [combat] }
-/*5,385,694*/   	:~{ File="Rep Starhawk-Class Battleship.ship.png";                                      Tier=16; Difficulty=2; Tags = [combat] }
-/*5,385,694*/   	:~{ File="Rep Starhawk-Class E Battleship.ship.png";                                    Tier=17; Difficulty=2; Tags = [combat] }
-/*5,385,694*/   	:~{ File="Rep Starhawk-Class N Battleship.ship.png";                                    Tier=18; Difficulty=1; Tags = [combat] }
+/*3,323,856*/    	:~{ File="Republic Assault Frigate Mk III.ship.png";                                    Tier=14; Difficulty=1; Tags = [combat] }
+/*5,382,304*/    	:~{ File="Acclamator I-Class Cruiser (Red).ship.png";                                   Tier=15; Difficulty=2; Tags = [combat, repcapital] } 
+/*5,385,694*/   	:~{ File="Rep Acclamator I-Class Cruiser.ship.png";                                     Tier=15; Difficulty=2; Tags = [combat, repcapital] }
+/*5,385,694*/   	:~{ File="Rep Starhawk-Class Battleship.ship.png";                                      Tier=16; Difficulty=2; Tags = [combat, repcapital] }
+/*5,385,694*/   	:~{ File="Rep Starhawk-Class E Battleship.ship.png";                                    Tier=17; Difficulty=2; Tags = [combat, repcapital] }
+/*5,385,694*/   	:~{ File="Rep Starhawk-Class N Battleship.ship.png";                                    Tier=18; Difficulty=2; Tags = [combat, repcapital] }
 
 //Tier 14-17 (5,000,001 to 10,000,000)
-/*9,865,858*/    	:~{ File="V-class Nuke Star Destroyer (Republic).ship.png";                             Tier=15; Difficulty=1; Tags = [combat]; OtherIDs=["Rep Venator V"]; }
-/*10,316,614*/    	:~{ File="V-class CG Star Destroyer (Republic).ship.png";                               Tier=15; Difficulty=2; Tags = [combat] }
-/*9,979,214*/    	:~{ File="Victory-class Star Destroyer (Republic).ship.png";                            Tier=15; Difficulty=2; Tags = [combat] }
-/*10,047,954*/    	:~{ File="Venator II-Class B Star Destroye.ship.png";                                   Tier=16; Difficulty=2; Tags = [combat] } 
-/*10,047,954*/    	:~{ File="Venator II-Class Star Destroyer.ship.png";                                    Tier=16; Difficulty=2; Tags = [combat] } 
-/*12,325,674*/    	:~{ File="Venator II-Class Star Destroyer B (Republic).ship.png";                       Tier=16; Difficulty=2; Tags = [combat] }
+/*10,316,614*/    	:~{ File="V-class CG Star Destroyer (Republic).ship.png";                               Tier=16; Difficulty=2; Tags = [combat, repcapital] }
+/*9,979,214*/    	:~{ File="Victory-class Star Destroyer (Republic).ship.png";                            Tier=16; Difficulty=2; Tags = [combat, repcapital] }
+/*10,047,954*/    	:~{ File="Venator II-Class B Star Destroye.ship.png";                                   Tier=17; Difficulty=2; Tags = [combat, repcapital] } 
+/*10,047,954*/    	:~{ File="Venator II-Class Star Destroyer.ship.png";                                    Tier=17; Difficulty=2; Tags = [combat, repcapital] } 
+/*12,325,674*/    	:~{ File="Venator II-Class Star Destroyer B (Republic).ship.png";                       Tier=17; Difficulty=2; Tags = [combat, repcapital] }
+/*9,865,858*/    	:~{ File="V-class Nuke Star Destroyer (Republic).ship.png";                             Tier=16; Difficulty=2; Tags = [combat, repcapital]; OtherIDs=["Rep Venator V"]; }
 
 //Tier 18
 /*12,325,647*/    	:~{ File="Venator II-Class Star Destroyer M (Republic).ship.png";                       Tier=17; Difficulty=2; Tags = [combat] }
 /*12,153,264*/    	:~{ File="Venator II-Class Star Destroyer R (Republic).ship.png";                       Tier=16; Difficulty=2; Tags = [swboss] }
-/*11,474,134*/    	:~{ File="Venator-Class Star Destroyer (Command Cruiser).ship.png";                     Tier=18; Difficulty=2; Tags = [combat] }
+/*11,474,134*/    	:~{ File="Venator-Class Star Destroyer (Command Cruiser).ship.png";                     Tier=18; Difficulty=2; Tags = [combat, repcapital] }
 /*40,531,110*/    	:~{ File="Rep Secutor-Class SD - Orig.ship.png";                                         Tier=17;  Difficulty=2; Tags = [swboss] } 
 /*42,756,295*/    	:~{ File="Rep Secutor-Class Star Destroyer.ship.png";                                    Tier=18;  Difficulty=2; Tags = [swboss] }
 ]

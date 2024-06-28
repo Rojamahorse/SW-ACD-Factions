@@ -45,11 +45,12 @@ DefectorsSubSpawnersHandler
 	// Defector Ships.
 	{
 		Type = Ships
-		Tags = [Combat]
+		Tags = [SWDefectors]
 		Count = [2, 3]
 		Distance = [500, 800]
-		MinDistanceFromTags = [[Combat, 60][asteroid, 60]]
+		MinDistanceFromTags = [[SWDefectors, 60][asteroid, 60]]
 		Allegiance = Unique
+		SynchronizeFactions = true
 		SynchronizeAllegiance = true
 		SpawnsPerSlice = 1
 		SpawnSlicePadding = 15%
@@ -60,14 +61,14 @@ DefectorsSubSpawnersHandler
 		{
 			UseLocalFactionWeights = true
 			UseTierField = true
-			FleetTierRemapTable = &<./data/modes/career/fleet_tier_remap_table.rules>/FleetTierRemapTable
+			FleetTierRemapTable = &/SW_FLEET_TIER_REMAP_TABLE/FleetTierRemapTable
 			AllowTierRangeExpansion = true
-			UseEvenShipTypeDistribution = true
-			Tags = [Combat]
+			UseEvenShipTypeDistribution = false
+			Tags = [combat]
 		}
 		AI
 		{
-			Type = StationGuard
+			Type = SWAgileFlankerAI
 			PatrolRadius = 400
 			TargetAcquireRangeFromOrigin = 900
 			TargetUnacquireRangeFromOrigin = 1500
@@ -289,7 +290,7 @@ DefectorsSubSpawnersHandler
 					[asteroid, 20]
 					[combat, 100]
 				]
-				DoodadTypes = &<./data/modes/career/sectors/sysgen_asteroids.rules>/CommonAsteroidTypes
+				DoodadTypes = &<sectors/sysgen_sw_asteroids.rules>/CommonAsteroidTypes
 			}
 			// Valuable asteroid.
 			{
@@ -305,7 +306,7 @@ DefectorsSubSpawnersHandler
 					[asteroid, 20]
 					[combat, 100]
 				]
-				DoodadTypes = &<./data/modes/career/sectors/sysgen_asteroids.rules>/RareAsteroidTypes
+				DoodadTypes = &<sectors/sysgen_sw_asteroids.rules>/RareAsteroidTypes
 			}
 			{ // Graveyard ships
 				Type = Ships
@@ -328,30 +329,20 @@ DefectorsSubSpawnersHandler
 				RootLocation = Grandparent
 				AddDistance = ParentToGrandparent
 			}
-			/*{
-				Type = Doodads
-				Tags = [asteroid_ring_poi, poi_unknown]
-				RootLocation = Grandparent
-				ScaleMode = ParentToGrandparent
-				DoodadType = cosmoteer.poi_ring
-				ShowOnlyInFog = true
-				HideIfUnexplored = true
-				Undiscovered = true
-			}*/
 			// POI
 			{
 				Type = Doodads
 				DoodadType = sw.defectorsPOI
-				ShowOnlyInFog = true
+				ShowOnlyInFog = false
 				Undiscovered = true
-				HideIfUnexplored = true
+				HideIfUnexplored = false
 				ScaleFactor = &../../Radius
-				Tags = [asteroid_field_poi, poi_unknown, sw_defectors_field_poi]
+				Tags = [/*asteroid_field_poi, poi_unknown, */sw_defectors_field_poi]
 				//AutoRemoveWhenTagDestroyed = defectors
 			}
 		]
 	}
-	// Mission to hunt defectors inside the ring
+	// Mission to hunt defectors
 	{
 		Type = Mission
 		Metatype = SWSupressDefectingSquadron
@@ -367,7 +358,7 @@ DefectorsSubSpawnersHandler
 				[
 					{
 						Type = DefeatShips
-						TargetsTag = { Tag=combat; LimitToBatch=true; }
+						TargetsTag = { Tag=SWDefectors; LimitToBatch=true; }
 						TargetAreaTag = sw_defectors_field_poi
 						AutoDiscoverTargetArea = true
 						OverrideDisplayFormatKey = "Objectives/EliminateDefectors"

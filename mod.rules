@@ -252,7 +252,7 @@ Actions
         ManyToAdd = &<builtin_ships/builtins.rules>/Ships
 	}
 	
-	//Create SW FTL Jump Points
+	//Create SW POIs & FTL Jump Points
 	{
 		Action = AddMany
 		AddTo = "<doodads/doodads.rules>/Doodads"
@@ -290,29 +290,22 @@ Actions
 	}
 
 
-	//Adds SW POI Misson Markers
-	{	
-		Action = AddMany
-		AddTo = "<doodads/doodads.rules>/Doodads"
-		ManyToAdd
-		[
-			&<career/sw_defectorsPOI.rules>
-			&<career/sw_renegadeleaderPOI.rules>
-			&<career/sw_distressPOI.rules>
-		]
-	}
 
 
 	/* ********** SPAWNERS *********** */
 		//Sector Types
+
 	{
 		Action = AddMany
 		AddTo = "<./Data/modes/career/sectors/sectors.rules>/Sectors"
 		ManyToAdd
 		[
 			&<career/sectors/sector_basic/sector_sw_basic.rules>/Sector
+			&<career/sectors/sector_basic/sector_sw_cw_basic.rules>/Sector
+			&<career/sectors/sector_basic/sector_sw_nh_basic.rules>/Sector
 		]
 	}
+
 
 		//Missions
 	{
@@ -344,8 +337,37 @@ Actions
         ManyToAdd = &<factions/factions.rules>/Factions
 	}
 
+	/* *********** MAGIC ************* */
+	{	//1
+		Action = Add
+		AddTo = <cosmoteer.rules>
+		Name = SW_FLEET_TIER_REMAP_TABLE
+		OnlyIfNotExisting = true
+		ToAdd = &<proxy.rules>
+	}
+
+	//Lists
+	{	//1
+		Action = Overrides
+		OverrideIn = <cosmoteer.rules>/SW_FLEET_TIER_REMAP_TABLE
+		Overrides = &<career/sw_fleet_tier_remap_table.rules>
+	}
 
 ]
+
+/*
+	//Adds SW POI Misson Markers
+	{	
+		Action = AddMany
+		AddTo = "<doodads/doodads.rules>/Doodads"
+		ManyToAdd
+		[
+			&<career/sw_defectorsPOI.rules>
+			&<career/sw_renegadeleaderPOI.rules>
+			&<career/sw_distressPOI.rules>
+		]
+	}
+*/
 
 /* Pre-Career 2.0
 

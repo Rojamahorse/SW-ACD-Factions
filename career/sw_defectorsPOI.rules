@@ -1,3 +1,4 @@
+/*
 ID = sw.defectorsPOI
 Type = RingedPOI
 DescriptionKey = "Doodads/POIEliminateDefectors"
@@ -28,6 +29,35 @@ RingCircle = &<./data/doodads/poi/doodad_poi_ring.rules>/RingCircle
 CameraRelativeThickness = true
 DynamicUPerCircumference = 4
 DefaultScale = 1200
+MinimapThickness = 20
+MouseHoverColorFactor = [255, 255, 255, 255*2]
+MouseHoverColorTweenTime = .5
+DiscoveredAlphaTweenTime = 1
+FadeOutSizeRange = [0.25, 0.75]
+
+*/
+
+ID = sw.defectorsPOI
+Type = RingedPOI
+DescriptionKey = "Doodads/POIEliminateDefectors"
+UndiscoveredDescriptionKey = "Doodads/POIEliminateDefectorsUnD"
+CategoryKey = "Doodads/POI"
+Icon = &HudIcon
+HudIcon
+{
+	Texture
+	{
+		File = "sw_defectorsPOI.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+	Size = [32, 32]
+}
+UndiscoveredHudIcon = &<sw_defectorsPOI.rules>/HudIcon
+RingCircle = &<./data/doodads/poi/doodad_poi_ring.rules>/RingCircle
+CameraRelativeThickness = true
+DynamicUPerCircumference = 4
+DefaultScale = 1500
 MinimapThickness = 20
 MouseHoverColorFactor = [255, 255, 255, 255*2]
 MouseHoverColorTweenTime = .5
