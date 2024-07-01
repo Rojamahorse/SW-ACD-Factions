@@ -1,6 +1,6 @@
 ID = SW.3.StarWarsFactions
 Name = "Star Wars Factions"
-Version = 0.1.0.26.2RC2 //X.vSWACD.vCosmoteer
+Version = 0.1.0.26.2 //X.vSWACD.vCosmoteer
 CompatibleGameVersions = ["0.26.2","0.26.0","0.25.0","0.24.0","0.23.0"]
 ModifiesGameplay = true
 Author = "Rojamahorse & SW:ACD DevTeam"
