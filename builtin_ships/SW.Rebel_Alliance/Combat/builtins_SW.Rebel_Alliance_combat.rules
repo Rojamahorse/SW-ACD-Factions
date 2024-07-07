@@ -7,6 +7,7 @@ Ships
 /*53,210*/		:~{ File="Rebel RZ-1 A-Wing Bomber.ship.png"; 		 							Tier=2;    Difficulty=2; Tags = [combat] }  
 /*62,790*/		:~{ File="Reb A-Wing Starfighter.ship.png"; 									Tier=3;    Difficulty=2; Tags = [combat, swfighter, rebfighter] }
 /*66,610*/		:~{ File="Rebel RZ-1 A-Wing Bomber v2.ship.png";     							Tier=3;    Difficulty=2; Tags = [combat] }  
+/*66,610*/		:~{ File="The Razor Crest Reb.ship.png";     									Tier=1;    Difficulty=2; Tags = [swboss] }  
 /*72,250*/		:~{ File="Rebel RZ-1 A-Wing Interceptor v2.ship.png"; 							Tier=2;    Difficulty=1; Tags = [combat, swfighter, rebfighter] }  
 /*73,965*/		:~{ File="Rebel Z-95 Headhunter.ship.png";     									Tier=1;    Difficulty=2; Tags = [combat, swfighter, rebfighter] }  
 /*82,050*/		:~{ File="A-Wing Railfighter Alt 2.ship.png";     								Tier=5;    Difficulty=1; Tags = [combat, swfighter, rebfighter] }
@@ -28,14 +29,18 @@ Ships
 /*184,300*/		:~{ File="ASF-01 B-Wing Hvy Starfighter 2.ship.png";     						Tier=6;    Difficulty=2; Tags = [combat] }  
 /*185,740*/		:~{ File="ASF-01 B-Wing Hvy Starfighter B.ship.png";     						Tier=7;    Difficulty=1; Tags = [combat] }  
 /*188,200*/		:~{ File="Rebel-ASF-01 B-Wing Starfighter.ship.png";    						Tier=4;    Difficulty=1; Tags = [combat] }
+/*188,200*/		:~{ File="D-Wing Strike Fighter-A.ship.png";    								Tier=4;    Difficulty=1; Tags = [combat, swfighter, rebfighter] }
 /*192,100*/		:~{ File="ASF-01 B-Wing Hvy Starfighter R.ship.png";     						Tier=6;    Difficulty=1; Tags = [combat] }  
 /*183,700*/		:~{ File="ASF-01 B-Wing Starfighter.ship.png";     								Tier=6;    Difficulty=1; Tags = [combat] }  
 /*191,700*/		:~{ File="Reb T-71 X-Wing Starfighter S.ship.png";     							Tier=6;    Difficulty=1; Tags = [combat, swfighter, rebfighter] }  
 /*230,700*/		:~{ File="Reb UT-60D U-Wing Starfighter O.ship.png";     						Tier=6;    Difficulty=1; Tags = [combat, swfighter, rebfighter] }  
 /*230,700*/		:~{ File="Reb UT-60D U-Wing Starfighter R.ship.png";     						Tier=6;    Difficulty=1; Tags = [combat, swfighter, rebfighter] }  
+/*230,700*/		:~{ File="Reb D-Wing Strike Fighter v2.ship.png";     							Tier=4;    Difficulty=1; Tags = [combat, swfighter, rebfighter] }  
+/*230,700*/		:~{ File="Reb D-Wing Strike Fighter S.ship.png";     							Tier=7;    Difficulty=1; Tags = [combat, swfighter, rebfighter] }  
 /*322,090*/		:~{ File="Rebel GR-75 Medium Transport v2.ship.png";     						Tier=7;    Difficulty=2; Tags = [combat] }
 /*324,350*/		:~{ File="Rebel GR-75 Medium Transport.ship.png"; 								Tier=7;    Difficulty=1; Tags = [combat] }
 /*325,025*/		:~{ File="Rebel Gunship G.ship.png";     										Tier=6;    Difficulty=1; Tags = [combat] }
+/*325,025*/		:~{ File="Rebellion Gunship Cannonade.ship.png";     							Tier=7;    Difficulty=1; Tags = [combat] }
 /*334,160*/		:~{ File="GR-75 Medium Transport.ship.png";   									Tier=6;    Difficulty=2; Tags = [combat] }
 /*361,520*/		:~{ File="Rebel-Millenium Falcon (Combat Loadout).ship.png";     				Tier=5;    Difficulty=1; Tags = [combat] }
 /*371,900*/		:~{ File="Rebel Sphyrna Hvy Hammerhead C.ship.png"; 							Tier=8;    Difficulty=2; Tags = [combat] }
@@ -104,6 +109,7 @@ Ships
 /*4,136,850*/	:~{ File="Reb MC Medium Cruiser.ship.png";     								Tier=14;    Difficulty=1; Tags = [combat, rebcapital] }
 /*4,136,850*/	:~{ File="Reb Starhawk-Class Battleship.ship.png";     						Tier=17;    Difficulty=2; Tags = [combat, rebcapital] }
 
+/*6,136,850*/	:~{ File="MC Light Cruiser RepP.ship.png";     								Tier=16;    Difficulty=1; Tags = [combat, rebcapital] }
 /*6,943,294*/	:~{ File="Rebel MC75 Mon Calamari Cruiser.ship.png";     					Tier=16;    Difficulty=1; Tags = [combat, rebcapital] }
 /*7,884,422*/	:~{ File="Rebel MC75 Mon Calamari Star Cru.ship.png";     					Tier=16;    Difficulty=2; Tags = [combat, rebcapital] }
 /*12,038,206*/	:~{ File="Rebel-Nebula-Class Star Destroyer.ship.png"; 						Tier=18;    Difficulty=3; Tags = [combat, rebcapital] } 
@@ -113,8 +119,10 @@ Ships
 /*10,813,774*/	:~{ File="MC80 Liberty-Type Heavy Star Cruiser.ship.png"; 					Tier=18;    Difficulty=2; Tags = [combat, rebcapital] }
 
 //SWBoss
-/*11,740,710*/	:~{ File="MC80a Home One-Type Heavy Star Cruiser.ship.png"; 				Tier=16;    Difficulty=2; Tags = [swboss] }
-/*12,740,710*/	:~{ File="Rebel One.ship.png"; 												Tier=18;    Difficulty=2; Tags = [swboss] }
+/*11,740,710*/	:~{ File="MC80a Home One-Type Heavy Star Cruiser.ship.png"; 				Tier=15;    Difficulty=2; Tags = [swboss] }
+/*12,740,710*/	:~{ File="Rebel One.ship.png"; 												Tier=16;    Difficulty=2; Tags = [swboss] }
+/*12,740,710*/	:~{ File="Rebel One v2.ship.png"; 											Tier=18;    Difficulty=2; Tags = [swboss] }
+/*10,813,774*/	:~{ File="Reb MC80 Liberty-Type Heavy Star Cruiser RepP.ship.png"; 			Tier=18;    Difficulty=2; Tags = [swboss] }
 /*12,740,710*/	:~{ File="Reb MC80 Liberty-Type Heavy Star Cruiser.ship.png"; 				Tier=17;    Difficulty=2; Tags = [swboss] }
 /*15,473,160*/	:~{ File="Reb Nebula-Class Star Destroyer.ship.png";     					Tier=15;    Difficulty=2; Tags = [swboss] } 
 ]
