@@ -1,0 +1,147 @@
+VilNameGen
+{
+    Type = Multi
+    SubGenerators
+    [
+        // Title Name Generator
+        {
+            Chance = 1.0
+            Type = NameList
+            Names
+            [
+                "Tracker"
+                "Seeker"
+                "Hunter"
+                "Shadow"
+                "Stalker"
+                "Scout"
+                "Reclaimer"
+                "Pursuer"
+                "Interceptor"
+                "Sleuth"
+                "Vindicator"
+                "Ravager"
+                "Huntsman"
+                "Predator"
+                "Nighthawk"
+                "Outrider"
+                "Strider"
+                "Trapper"
+                "Marauder"
+                "Bane"
+                "Harrier"
+                "Pathfinder"
+                "Ranger"
+                "Reaper"
+                "Vigilante"
+            ]
+        }
+        // Name Generator with 50% chance between NameList and Markov
+        {
+            Chance = 0.5
+            Type = Multi
+            SubGenerators
+            [
+                {
+                    Chance = 1.0
+                    Type = NameList
+                    Names
+                    [
+                        "Antilles"
+                        "Vader"
+                        "Kenobi"
+                        "Tarkin"
+                        "Fett"
+                        "Windu"
+                        "Thrawn"
+                        "Organa"
+                        "Solo"
+                        "Skywalker"
+                        "Krennic"
+                        "Ackbar"
+                        "Hux"
+                        "Piett"
+                        "Veers"
+                        "Rendar"
+                        "Marek"
+                        "Calrissian"
+                        "Secura"
+                        "Tiin"
+                        "Jinn"
+                        "Katarn"
+                        "Syndulla"
+                        "Djarin"
+                        "Kryze"
+                        "Saxon"
+                        "Vos"
+                        "Bane"
+                        "Malachor"
+                        "Tano"
+                        "Shan"
+                        "Snoke"
+                        "Grievous"
+                        "Durron"
+                        "Nihilus"
+                        "Revan"
+                        "Malgus"
+                        "Gunray"
+                        "Hutt"
+                        "Zann"
+                        "Tyranus"
+                        "Sidious"
+                        "Maul"
+                        "Ventress"
+                        "Opress"
+                        "Tambor"
+                        "Krayt"
+                        "Satele"
+                        "Cadera"
+                        "Tal"
+                        "Vizsla"
+                        "Fisto"
+                        "Gallia"
+                        "Plo"
+                        "Mundi"
+                        "Unduli"
+                        "Ti"
+                        "Koon"
+                        "Secura"
+                        "Amedda"
+                        "Valorum"
+                        "Bonteri"
+                        "Mothma"
+                        "Dodonna"
+                        "Madine"
+                        "Rieekan"
+                        "Ozzel"
+                        "Piett"
+                        "Jerjerrod"
+                        "Tiaan"
+                        "SkipperWraith"
+                        "ClassicJam"
+                        "Jani"
+                        "Lafiel"
+                        "Wolfram"
+                        "Neojino"
+                        "Kroom"
+                        "Roasted"
+                        "Jerico"
+                        "Altraxia"
+                        "Winterbreeze"
+                        "Caudrea"
+                        "Trefies"
+                        "Fusion"
+                    ]
+                }
+            ]
+        }
+        {
+            Chance = 0.5
+            Type = Markov
+            MarkovFile = "latin.markov"
+            MinLength = 6
+            MaxLength = 10
+            MaxConsecutiveConsonants = 3
+        }
+    ]
+}

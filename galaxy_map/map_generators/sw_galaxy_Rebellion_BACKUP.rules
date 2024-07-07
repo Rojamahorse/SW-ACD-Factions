@@ -24,14 +24,14 @@ SectorTypes
 			Type = binary
 			RandomWeight = 0.5
 		}
-		{
-			Type = high_density_nebula
-			RandomWeight = 0.5
-		}
-		{
-			Type = supernova
-			RandomWeight = 0.5
-		}
+		//{
+		//	Type = high_density_nebula
+		//	RandomWeight = 0.5
+		//}
+		//{
+		//	Type = supernova
+		//	RandomWeight = 0.5
+		//}
 	]
 }
 

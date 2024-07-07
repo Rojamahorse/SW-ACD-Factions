@@ -9,8 +9,8 @@ MapNodes
 */
 
 //Nebulas
-SectorTypes
-{
+SectorTypes : &<./Data/galaxy_map/map_generators/base_galaxy.rules>/SectorTypes
+{/*
 	Type = RandomSectorTypes
 	SectorTypes
 	[
@@ -22,20 +22,20 @@ SectorTypes
 			Type = binary
 			RandomWeight = 0.5
 		}
-		{
-			Type = high_density_nebula
-			RandomWeight = 0.5
-		}
-		{
-			Type = supernova
-			RandomWeight = 0.5
-		}
+		//{
+		//	Type = high_density_nebula
+		//	RandomWeight = 0.5
+		//}
+		//{
+		//	Type = supernova
+		//	RandomWeight = 0.5
+		//}
 	]
-}
+*/}
 
-Factions
+Factions : &<./Data/galaxy_map/map_generators/base_galaxy.rules>/Factions
 {
-	Type = Factions
+	/*Type = Factions
 	Factions
 	[
 		{
@@ -67,13 +67,13 @@ Factions
 	RemainderFactionThreshold = 1.5
 	MinRemainderFactionStrength = 5%
 	AvoidIterations = 10
-}
+*/}
 
 MaxTier = 18
 TierSpread = 2
 
-FactionTiers
-{
+FactionTiers  : &<./Data/galaxy_map/map_generators/base_galaxy.rules>/FactionsTiers
+{/*
 	Type = FactionNodeTiers
 	Factions
 	[
@@ -98,10 +98,10 @@ FactionTiers
 			TierRangeHigh = 1
 		}
 	]
-}
+*/}
 
-StartingNodePicker
-{
+StartingNodePicker  : &<./Data/galaxy_map/map_generators/base_galaxy.rules>/StartingNodePicker
+{/*
 	Type = StartingNodePicker
 	AllowedFactions = [fringe]
 	MinConnections = 2
@@ -109,10 +109,10 @@ StartingNodePicker
 	CandidatesClosestToFactions = [1, [monolith, cabal]]
 	SetTierRangeTo = [1, 1 + (&~/TierSpread)]
 	SetSectorTypeTo = basic //Nebulas
-}
+*/}
 
-ProgressionTiers
-{
+ProgressionTiers  : &<./Data/galaxy_map/map_generators/base_galaxy.rules>/ProgressionTiers
+{/*
 	Type = ProgressionNodeTiers
 	MaxLowTier = (&~/MaxTier) - (&~/TierSpread) - 1 // Leave highest tier exclusively for home systems.
 	MaxChangeableLowTier = (&MaxLowTier) // Don't adjust tier of faction home systems.
@@ -158,5 +158,5 @@ ProgressionTiers
 			HighTierSpread = &~/TierSpread
 		}
 	]
-}
+*/}
 

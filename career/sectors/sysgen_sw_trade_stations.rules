@@ -9,7 +9,7 @@ SubSpawners
 		Count = 3 // Always 3 stations in the starting system.
 		Distance = [4000, 11000]
 		MinDistanceFromTags = [[sun, 7500]]
-		MinDistanceFromNebulas = [[ion_storm, 1000]]
+		//MinDistanceFromNebulas = [[ion_storm, 1000]]
 		SpawnsPerSlice = 1
 		SpawnSlicePadding = 35%
 	}
@@ -116,6 +116,7 @@ SubSpawners
 				Distance = 150
 				SpawnsPerSlice = 1
 				SpawnSlicePadding = 45%
+				NameGenerator = &<../../name_generators/sw_name_villains.rules>/VilNameGen
 				Allegiance = Unique
 				FamePerTier = &/TIER_TABLES/StandardFamePerTier
 				MaxFamePerTier = &/TIER_TABLES/StandardMaxFamePerTier
@@ -250,11 +251,11 @@ BaseStation
 		}
 
 		// Prevent nebulas from spawning near stations.
-		{
+		/*{
 			Type = Nebula
 			NebulaType = ""
 			NebulaRadius = 2000
-		}
+		}*/
 	]
 }
 

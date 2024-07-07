@@ -2,8 +2,11 @@ ID = SW.fighter_xwing_shot
 Range = 425
 IdealRange = [200 - 380]
 Speed = 300
-ReceivableBuffs = [ElectronBuff]
+//ReceivableBuffs : ^/0/ReceivableBuffs []
 //HitEffectsScaleOverRange = [1, 1 - (&../Range) / 1000]
+SWDamageValueOp = 650
+SWDamageValueSh = 650
+SWDamageValueSt = 750
 
 
 Components
@@ -44,7 +47,7 @@ Components
 			[
 				{
 					Type = Damage
-					Damage = { BaseValue=650; BuffType=ElectronBuff; BuffMode=Multiply; }
+					Damage = 650 //{ BaseValue=650; BuffType=ElectronBuff; BuffMode=Multiply; }
 				}
 				{
 					Type = Impulse;
@@ -76,7 +79,7 @@ Components
 			[
 				{
 					Type = Damage
-					Damage = { BaseValue=750; BuffType=ElectronBuff; BuffMode=Multiply; }
+					Damage = 750 //{ BaseValue=750; BuffType=ElectronBuff; BuffMode=Multiply; }
 				}
 				{
 					Type = Impulse;

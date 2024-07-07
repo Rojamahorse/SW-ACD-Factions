@@ -18,9 +18,9 @@ Sector
         Spawners
         [
             &<./Data/modes/career/sectors/sysgen_planets.rules>                 // Configuration for generating planets
-            &<./Data/modes/career/sectors/sysgen_standard_nebulas.rules>        // Configuration for generating standard nebulas
-            &<./Data/modes/career/sectors/sysgen_high_density_nebulas.rules>    // Configuration for generating high-density nebulas
-            &<./Data/modes/career/sectors/sysgen_supernova_nebulas.rules>       // Configuration for generating supernova nebulas
+            //&<./Data/modes/career/sectors/sysgen_standard_nebulas.rules>        // Configuration for generating standard nebulas
+            //&<./Data/modes/career/sectors/sysgen_high_density_nebulas.rules>    // Configuration for generating high-density nebulas
+            //&<./Data/modes/career/sectors/sysgen_supernova_nebulas.rules>       // Configuration for generating supernova nebulas
             &<./Data/modes/career/sectors/sysgen_ftl_gates.rules>               // Configuration for generating FTL gates
             &<../sysgen_sw_suns.rules>                                          // Configuration for generating suns
             &<../sysgen_sw_trade_stations.rules>                                // DONE! Configuration for generating trade stations
@@ -38,8 +38,8 @@ Sector
         ]
     }
 
-    TradeRoutes
-    {
+    TradeRoutes : &<./Data/modes/career/sectors/sector_basic/sector_basic.rules>/Sector/TradeRoutes
+    { /*
         // Maximum number of trade ships allowed per endpoint
         MaxTradeShipsPerEndpoint = 2.25
 
@@ -62,13 +62,12 @@ Sector
         MinTradeShipSpawnDistFromEndpoints = 1000
 
         // Desired deltas for station resource trade, determining how much resources should fluctuate
-        StationResourceTradeDeltas
+        StationResourceTradeDeltas 
         [
             { ResourceType=hyperium;          DesiredDelta=[-20, 20]; }
             { ResourceType=steel;             DesiredDelta=[-200, 200]; }
             { ResourceType=SW.durasteel;      DesiredDelta=[-100, 100]; }
             { ResourceType=SW.doonium;        DesiredDelta=[-50, 50]; }
-            { ResourceType=steel;             DesiredDelta=[-200, 200]; }
             { ResourceType=coil;              DesiredDelta=[-100, 100]; }
             { ResourceType=coil2;             DesiredDelta=[-100, 100]; }
             { ResourceType=tristeel;          DesiredDelta=[-10, 10]; }
@@ -90,10 +89,10 @@ Sector
             { ResourceType=missile_part_nuke; DesiredDelta=[-10, 10]; }
             { ResourceType=mine_part;         DesiredDelta=[-30, 30]; }
         ]
-    }
+    */}
 
-    ResourceDeliveryMissions
-    {
+    ResourceDeliveryMissions : &<./Data/modes/career/sectors/sector_basic/sector_basic.rules>/Sector/ResourceDeliveryMissions
+    { /*
         // Meta type for the resource delivery missions
         Metatype = ResourceDelivery
 
@@ -230,10 +229,10 @@ Sector
                 RoundQuantityToMultiple = 4
             }
         ]
-    }
+    */}
 
-    EncounterRules
-    {
+    EncounterRules : &<./Data/modes/career/sectors/sector_basic/sector_basic.rules>/Sector/EncounterRules
+    {/*
         // Minimum time (in seconds) between encounters
         MinTimeBetweenEncounters = 500
 
@@ -276,5 +275,5 @@ Sector
              &<./Data/modes/career/encounters/encounter_ambush.rules> // Reference to the ambush encounter configuration
              &<../../encounters/encounter_sw_ambush_empire_sm.rules> // Reference to the SW ambush encounter configuration
         ]
-    }
+    */}
 }

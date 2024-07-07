@@ -85,7 +85,7 @@ AsteroidField
 	Type = None
 	Tags = [asteroid_field]
 	Radius = 1500
-	MinDistanceFromNebulas = [[ion_storm, 2000]]
+	//MinDistanceFromNebulas = [[ion_storm, 2000]]
 	SuppressLocationAssertions = true
 	SubSpawners
 	[
@@ -156,6 +156,7 @@ AsteroidFieldPirates
      		Distance = [0, (&~/AsteroidField/Radius) - (&../AI/PatrolRadius)]
      		MinDistanceFromTags = [[asteroid_pirate, 500]]
      		Allegiance = Unique
+			NameGenerator = &<../../name_generators/sw_name_villains.rules>/VilNameGen
      		SynchronizeAllegiance = true
      		FamePerTier = &/TIER_TABLES/StandardFamePerTier
      		MaxFamePerTier = &/TIER_TABLES/StandardMaxFamePerTier
@@ -316,8 +317,8 @@ MChance = 1/2
 LChance = 1/4
 XLChance = 1/8
 XXLChance = 1/16
-CommonAsteroidTypes
-[
+CommonAsteroidTypes : <./Data/modes/career/sectors/sysgen_asteroids.rules>/CommonAsteroidTypes
+[/*
 	{ Type=cosmoteer.asteroid_s;            ChanceWeight=(&~/CommonChance)*(&~/SChance); }
 	{ Type=cosmoteer.asteroid_iron_s;       ChanceWeight=(&~/CommonChance)*(&~/SChance); }
 	{ Type=SW.asteroid_doonium_s;  			ChanceWeight=(&~/CommonChance)*(&~/SChance); } //SW.asteroid_doonium_s
@@ -366,10 +367,10 @@ CommonAsteroidTypes
 	{ Type=cosmoteer.asteroid_gold_l;       ChanceWeight=(&~/RareChance)*(&~/LChance); }
 	{ Type=cosmoteer.asteroid_tritanium_l;  ChanceWeight=(&~/RareChance)*(&~/LChance); }
 	{ Type=cosmoteer.asteroid_uranium_l;    ChanceWeight=(&~/RareChance)*(&~/LChance); }
-]
+*/]
 
-RareAsteroidTypes
-[
+RareAsteroidTypes : <./Data/modes/career/sectors/sysgen_asteroids.rules>/RareAsteroidTypes
+[/*
 	{ Type=SW.asteroid_doonium_xl;  		 ChanceWeight=1; }
 	{ Type=SW.asteroid_doonium_xxl;  		 ChanceWeight=1/2; }
 	{ Type=SW.asteroid_zersium_xl;  		 ChanceWeight=1; }
@@ -382,7 +383,7 @@ RareAsteroidTypes
 	{ Type=cosmoteer.asteroid_gold_xxl;       ChanceWeight=1/2; }
 	{ Type=cosmoteer.asteroid_tritanium_xxl;  ChanceWeight=1/2; }
 	{ Type=cosmoteer.asteroid_uranium_xxl;    ChanceWeight=1/2; }
-]
+*/]
 /*
 SunAsteroidTypes
 [

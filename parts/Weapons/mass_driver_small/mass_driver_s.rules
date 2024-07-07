@@ -1,4 +1,5 @@
-Part : <./Data/ships/terran/base_part_terran.rules>/Part
+Part : &<../../base_part_terran_weapons.rules>/Part
+//Part :  <./Data/ships/terran/base_part_terran.rules>/Part 
 {
 	//IDs
 	ID = SW.fighter_mass_driver_cannon
@@ -327,8 +328,8 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 			OperationalToggle = ProjectileToggle
 			YStartOffset = { BaseValue=3; BuffType=Railgun; BuffMode=Multiply; }
 			YEndOffset = -4
-			SpeedStart = &../BulletEmitter/Bullet/Speed/BaseValue
-			SpeedEnd = &../BulletEmitter/Bullet/Speed
+			SpeedStart = 360 // &../BulletEmitter/Bullet/Speed/BaseValue
+			SpeedEnd = 1200 //&../BulletEmitter/Bullet/Speed
 			Interpolate = true // WARNING: Only use this for interpolating graphics. Using it for game logic will cause multiplayer desyncs.
 		}
 
@@ -786,9 +787,9 @@ StatsByCategory
 				Damage = [&../DamagePerShot, &../DamagePerSecond]
 				Penetration = &~/Part/Components/BulletEmitter/Bullet/Components/Hit/Penetration/BaseValue
 				ROF = 1 / (&~/Part/Components/Turret/FireInterval)
-				RangeLimited = [&~/Part/Components/BulletEmitter/Bullet/Range/BaseValue, &~/Part/Components/BulletEmitter/Bullet/Range/MaxValue]
+				Range = &~/Part/Components/BulletEmitter/Bullet/Speed //Limited = [&~/Part/Components/BulletEmitter/Bullet/Range/BaseValue, &~/Part/Components/BulletEmitter/Bullet/Range/MaxValue]
 				Arc = 0
-				ShotSpeed = &~/Part/Components/BulletEmitter/Bullet/Speed/BaseValue
+				ShotSpeed = &~/Part/Components/BulletEmitter/Bullet/Speed
 				ShotHP = &~/Part/Components/BulletEmitter/Bullet/Components/Targetable/Health
 				PowerPerShot = (&~/Part/Components/BulletEmitter/ResourcesUsed) / 1000
 				PowerPerSecond = (&PowerPerShot) * (&ROF)

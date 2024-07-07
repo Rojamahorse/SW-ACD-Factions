@@ -1,13 +1,14 @@
 ID = "SW.bullet_massdriver"
 //OtherIDs = ["bullet_railgun"]
-Range = { BaseValue=400; BuffType=RailgunShot; BuffMode=Multiply; MaxValue=720; }
-IdealRange
-[
+Range = 400 //{ BaseValue=400; BuffType=RailgunShot; BuffMode=Multiply; MaxValue=720; }
+IdealRange = [180, 360]
+/*[
 	{ BaseValue=180; BuffType=RailgunShot; BuffMode=Multiply; MaxValue=400; }
 	{ BaseValue=360; BuffType=RailgunShot; BuffMode=Multiply; MaxValue=800; }
 ]
+*/
 IdealRadius = [5, 50]
-Speed = { BaseValue=360; BuffType=RailgunShot; BuffMode=Multiply; MaxValue=1200; }
+Speed = 360 //{ BaseValue=360; BuffType=RailgunShot; BuffMode=Multiply; MaxValue=1200; }
 ReceivableBuffs = [RailgunShot]
 //HitEffectsScaleOverRange = [1, 1 - (&../Range) / 1000]
 
@@ -54,9 +55,9 @@ Components
 	Hit
 	{
 		Type = PenetratingHit
-		FriendlyShipLowCollisions = false
-		SourceShipLowCollisions = false
-		//SourcePartCollisionDelay = 1.5/30
+		//FriendlyShipCollisions = true
+		SourceShipCollisions = false
+		SourcePartCollisionDelay = 8
 		Penetration = { BaseValue=15; BuffType=RailgunShot; BuffMode=Multiply; }
 		PenetrationSpeed = &~/Speed
 
@@ -138,6 +139,23 @@ Components
 			]
 
 			MediaEffectsScale = { BaseValue=1; BuffType=RailgunShot; BuffMode=Multiply; }
+			MediaEffects
+			[
+				&<./Data/shots/bullet_railgun/particles/bullet_hit_struct_railgun.rules>
+				&<./Data/shots/bullet_railgun/particles/bullet_hit_struct_railgun_sparks.rules>
+
+				: /BASE_SOUNDS/AudioExterior
+				{
+					Sound = "MassDriver_HitA.wav"
+					Volume = { BaseValue=.5; BuffType=RailgunShot; BuffMode=Multiply; }
+					SpeedVariation = .4
+				}
+			]
+		}
+		HitFriendly
+		{
+			//SourceShipLowCollisions = true
+			Bounce = true
 			MediaEffects
 			[
 				&<./Data/shots/bullet_railgun/particles/bullet_hit_struct_railgun.rules>

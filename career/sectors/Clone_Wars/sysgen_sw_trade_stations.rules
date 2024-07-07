@@ -9,7 +9,7 @@ SubSpawners
 		Count = 3 // Always 3 stations in the starting system.
 		Distance = [4000, 11000]
 		MinDistanceFromTags = [[sun, 7500]]
-		MinDistanceFromNebulas = [[ion_storm, 1000]]
+		//MinDistanceFromNebulas = [[ion_storm, 1000]]
 		SpawnsPerSlice = 1
 		SpawnSlicePadding = 35%
 	}
@@ -250,11 +250,11 @@ BaseStation
 		}
 
 		// Prevent nebulas from spawning near stations.
-		{
+		/*{
 			Type = Nebula
 			NebulaType = ""
 			NebulaRadius = 2000
-		}
+		}*/
 	]
 }
 

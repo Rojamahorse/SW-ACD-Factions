@@ -2,8 +2,11 @@ ID = SW.fighter_tie_minigun_shot
 Range = 375
 IdealRange = 275
 Speed = 350
-ReceivableBuffs = [ElectronBuff]
+//ReceivableBuffs : ^/0/ReceivableBuffs []
 //HitEffectsScaleOverRange = [1, 1 - (&../Range) / 1000]
+SWDamageValueOp = 100
+SWDamageValueSh = 30
+SWDamageValueSt = 100
 
 Components
 {
@@ -43,7 +46,7 @@ Components
 			[
 				{
 					Type = Damage
-					Damage = { BaseValue=100; BuffType=ElectronBuff; BuffMode=Multiply; }
+					Damage = 100 //{ BaseValue=100; BuffType=ElectronBuff; BuffMode=Multiply; }
 				}
 				{
 					Type = Impulse;
@@ -76,7 +79,7 @@ Components
 			[
 				{
 					Type = Damage
-					Damage = { BaseValue=30; BuffType=ElectronBuff; BuffMode=Multiply; }
+					Damage = 30 //{ BaseValue=30; BuffType=ElectronBuff; BuffMode=Multiply; }
 				}
 				{
 					Type = Impulse;

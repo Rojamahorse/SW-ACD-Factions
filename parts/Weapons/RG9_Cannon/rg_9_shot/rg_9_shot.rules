@@ -2,8 +2,12 @@ ID = SW.r9_shot
 Range = 375
 IdealRange = [50 - 325]
 Speed = 375
-ReceivableBuffs = [ElectronBuff]
+//ReceivableBuffs : ^/0/ReceivableBuffs []
 HitEffectsScaleOverRange = [2, 1 - (&../Range) / 1000]
+SWDamageValueOp = 650
+SWDamageValueSh = 650
+SWDamageValueSt = 650
+
 
 Components
 {
@@ -43,7 +47,7 @@ Components
 			[
 				{
 					Type = Damage
-					Damage = { BaseValue=650; BuffType=ElectronBuff; BuffMode=Multiply; }
+					Damage = 650//{ BaseValue=650; BuffType=ElectronBuff; BuffMode=Multiply; }
 				}
 				{
 					Type = Impulse;
@@ -75,7 +79,7 @@ Components
 			[
 				{
 					Type = Damage
-					Damage = { BaseValue=650; BuffType=ElectronBuff; BuffMode=Multiply; }
+					Damage = 650 //{ BaseValue=650; BuffType=ElectronBuff; BuffMode=Multiply; }
 				}
 				{
 					Type = Impulse;

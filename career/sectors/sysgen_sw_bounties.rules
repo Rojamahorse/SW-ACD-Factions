@@ -4,7 +4,7 @@ Tags = [bounty]
 SuppressLocationAssertions = true
 Distance = [0, 19000]
 MinDistanceFromTags = [[sun, 6000], [station, 4000], [bounty, 6000]]
-MinDistanceFromNebulas = [[ion_storm, 1000]]
+//MinDistanceFromNebulas = [[ion_storm, 1000]]
 
 RandomSubSpawnerCount = 1
 SubSpawners
@@ -14,6 +14,7 @@ SubSpawners
 		Type = Ships
 		Tags = [bounty_ship]
      	Allegiance = Unique
+		NameGenerator = &<../../name_generators/sw_name_villains.rules>/VilNameGen
 		FamePerTier = &/TIER_TABLES/StandardFamePerTier // Mission reward ALSO gives standard fame, effectively doubling fame reward for this bounty.
 		MaxFamePerTier = &/TIER_TABLES/StandardMaxFamePerTier
 		ShipCriteria
@@ -101,6 +102,7 @@ SubSpawners
 		Type = Ships
 		Tags = [bounty_ship]
      	Allegiance = Unique
+		NameGenerator = &<../../name_generators/sw_name_villains.rules>/VilNameGen
      	SynchronizeAllegiance = true
 		FamePerTier = &/TIER_TABLES/StandardFamePerTier // Mission reward ALSO gives standard fame, effectively doubling fame reward for this bounty.
 		MaxFamePerTier = &/TIER_TABLES/StandardMaxFamePerTier
