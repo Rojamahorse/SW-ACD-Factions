@@ -156,8 +156,9 @@ AsteroidFieldPirates
      		Distance = [0, (&~/AsteroidField/Radius) - (&../AI/PatrolRadius)]
      		MinDistanceFromTags = [[asteroid_pirate, 500]]
      		Allegiance = Unique
-			NameGenerator = &<../../name_generators/sw_name_villains.rules>/VilNameGen
+			SynchronizeFactions = true
      		SynchronizeAllegiance = true
+			NameGenerator = &<../../name_generators/sw_name_villains.rules>/VilNameGen
      		FamePerTier = &/TIER_TABLES/StandardFamePerTier
      		MaxFamePerTier = &/TIER_TABLES/StandardMaxFamePerTier
      		ShipCriteria

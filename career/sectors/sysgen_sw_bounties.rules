@@ -13,7 +13,9 @@ SubSpawners
 	{
 		Type = Ships
 		Tags = [bounty_ship]
-     	Allegiance = Unique
+		Allegiance = Unique
+		SynchronizeFactions = true
+     	SynchronizeAllegiance = true
 		NameGenerator = &<../../name_generators/sw_name_villains.rules>/VilNameGen
 		FamePerTier = &/TIER_TABLES/StandardFamePerTier // Mission reward ALSO gives standard fame, effectively doubling fame reward for this bounty.
 		MaxFamePerTier = &/TIER_TABLES/StandardMaxFamePerTier
@@ -103,6 +105,7 @@ SubSpawners
 		Tags = [bounty_ship]
      	Allegiance = Unique
 		NameGenerator = &<../../name_generators/sw_name_villains.rules>/VilNameGen
+		SynchronizeFactions = true
      	SynchronizeAllegiance = true
 		FamePerTier = &/TIER_TABLES/StandardFamePerTier // Mission reward ALSO gives standard fame, effectively doubling fame reward for this bounty.
 		MaxFamePerTier = &/TIER_TABLES/StandardMaxFamePerTier
