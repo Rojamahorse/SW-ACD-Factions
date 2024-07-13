@@ -7,9 +7,9 @@ Invulnerable = true
 SubSpawners
 [
 	// Prevent nebulas from spawning near gates.
-	/*{
+	{
 		Type = Nebula
 		NebulaType = ""
 		NebulaRadius = 2000
-	}*/
+	}
 ]

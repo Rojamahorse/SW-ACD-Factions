@@ -107,7 +107,7 @@ AsteroidField
 			Count = [75, 100]
 			Distance = [0, (&../../../Radius)]
 			MinDistanceFromTags = [[station, 0], [asteroid, 0]]
-			DoodadTypes = &<sysgen_sw_asteroids.rules>/CommonAsteroidTypes
+			DoodadTypes = &<sysgen_asteroids.rules>/CommonAsteroidTypes
 		}
 		{
 			Type = Doodads
@@ -156,7 +156,7 @@ AsteroidFieldPirates
      		Distance = [0, (&~/AsteroidField/Radius) - (&../AI/PatrolRadius)]
      		MinDistanceFromTags = [[asteroid_pirate, 500]]
      		Allegiance = Unique
-			NameGenerator = &<../../../name_generators/sw_name_villains.rules>/VilNameGen
+			NameGenerator = &<../../name_generators/sw_name_villains.rules>/VilNameGen
      		SynchronizeAllegiance = true
      		FamePerTier = &/TIER_TABLES/StandardFamePerTier
      		MaxFamePerTier = &/TIER_TABLES/StandardMaxFamePerTier
@@ -166,9 +166,7 @@ AsteroidFieldPirates
      			UseTierField = true
      			AllowTierRangeExpansion = true
      			Tags = [combat]
- 				UseEvenShipTypeDistribution = false
-				FleetTierRemapTable = &/SW_FLEET_TIER_REMAP_TABLE/FleetTierRemapTable
-    		}
+     		}
      		AI
      		{
      			Type = Wanderer
@@ -310,48 +308,37 @@ AsteroidFieldPlatforms
 }
 
 CommonChance = 1
-UnCommonChance = 2/3 //SW added value
 RareChance = 1/16
 SChance = 1
 MChance = 1/2
 LChance = 1/4
 XLChance = 1/8
 XXLChance = 1/16
-CommonAsteroidTypes : &<./Data/modes/career/sectors/sysgen_asteroids.rules>/CommonAsteroidTypes
+CommonAsteroidTypes
 [
-/*	{ Type=cosmoteer.asteroid_s;            ChanceWeight=(&~/CommonChance)*(&~/SChance); }
+	{ Type=cosmoteer.asteroid_s;            ChanceWeight=(&~/CommonChance)*(&~/SChance); }
 	{ Type=cosmoteer.asteroid_iron_s;       ChanceWeight=(&~/CommonChance)*(&~/SChance); }
-	{ Type=SW.asteroid_doonium_s;  			ChanceWeight=(&~/CommonChance)*(&~/SChance); } //SW.asteroid_doonium_s
 	{ Type=cosmoteer.asteroid_copper_s;     ChanceWeight=(&~/CommonChance)*(&~/SChance); }
-	{ Type=SW.asteroid_zersium_s;  			ChanceWeight=(&~/UnCommonChance)*(&~/SChance); } //SW.asteroid_zersium_s
 	{ Type=cosmoteer.asteroid_sulfur_s;     ChanceWeight=(&~/CommonChance)*(&~/SChance); }
 	{ Type=cosmoteer.asteroid_hyperium_s;   ChanceWeight=(&~/CommonChance)*(&~/SChance); }
 	{ Type=cosmoteer.asteroid_m;            ChanceWeight=(&~/CommonChance)*(&~/MChance); }
 	{ Type=cosmoteer.asteroid_iron_m;       ChanceWeight=(&~/CommonChance)*(&~/MChance); }
-	{ Type=SW.asteroid_doonium_m;  			ChanceWeight=(&~/CommonChance)*(&~/MChance); } //SW.asteroid_doonium_m
 	{ Type=cosmoteer.asteroid_copper_m;     ChanceWeight=(&~/CommonChance)*(&~/MChance); }
-	{ Type=SW.asteroid_zersium_m;  			ChanceWeight=(&~/UnCommonChance)*(&~/MChance); } //SW.asteroid_zersium_m
 	{ Type=cosmoteer.asteroid_sulfur_m;     ChanceWeight=(&~/CommonChance)*(&~/MChance); }
 	{ Type=cosmoteer.asteroid_hyperium_m;   ChanceWeight=(&~/CommonChance)*(&~/MChance); }
 	{ Type=cosmoteer.asteroid_l;            ChanceWeight=(&~/CommonChance)*(&~/LChance); }
 	{ Type=cosmoteer.asteroid_iron_l;       ChanceWeight=(&~/CommonChance)*(&~/LChance); }
-	{ Type=SW.asteroid_doonium_l;  			ChanceWeight=(&~/CommonChance)*(&~/LChance); } //SW.asteroid_doonium_l
 	{ Type=cosmoteer.asteroid_copper_l;     ChanceWeight=(&~/CommonChance)*(&~/LChance); }
-	{ Type=SW.asteroid_zersium_l;  			ChanceWeight=(&~/UnCommonChance)*(&~/LChance); } //SW.asteroid_zersium_l
 	{ Type=cosmoteer.asteroid_sulfur_l;     ChanceWeight=(&~/CommonChance)*(&~/LChance); }
 	{ Type=cosmoteer.asteroid_hyperium_l;   ChanceWeight=(&~/CommonChance)*(&~/LChance); }
 	{ Type=cosmoteer.asteroid_xl;           ChanceWeight=(&~/CommonChance)*(&~/XLChance); }
 	{ Type=cosmoteer.asteroid_iron_xl;      ChanceWeight=(&~/CommonChance)*(&~/XLChance); }
-	{ Type=SW.asteroid_doonium_xl;			ChanceWeight=(&~/UnCommonChance)*(&~/XLChance); } //SW.asteroid_doonium_xl
 	{ Type=cosmoteer.asteroid_copper_xl;    ChanceWeight=(&~/CommonChance)*(&~/XLChance); }
-	{ Type=SW.asteroid_zersium_xl; 			ChanceWeight=(&~/UnCommonChance)*(&~/XLChance); } //SW.asteroid_zersium_xl
 	{ Type=cosmoteer.asteroid_sulfur_xl;    ChanceWeight=(&~/CommonChance)*(&~/XLChance); }
 	{ Type=cosmoteer.asteroid_hyperium_xl;  ChanceWeight=(&~/CommonChance)*(&~/XLChance); }
 	{ Type=cosmoteer.asteroid_xxl;          ChanceWeight=(&~/CommonChance)*(&~/XXLChance); }
 	{ Type=cosmoteer.asteroid_iron_xxl;     ChanceWeight=(&~/CommonChance)*(&~/XXLChance); }
-	{ Type=SW.asteroid_doonium_xxl; 		ChanceWeight=(&~/UnCommonChance)*(&~/XXLChance); } //SW.asteroid_doonium_xxl
 	{ Type=cosmoteer.asteroid_copper_xxl;  ChanceWeight=(&~/CommonChance)*(&~/XXLChance); }
-	{ Type=SW.asteroid_zersium_xxl; 		ChanceWeight=(&~/UnCommonChance)*(&~/XXLChance); } //SW.asteroid_zersium_xxl
 	{ Type=cosmoteer.asteroid_sulfur_xxl;   ChanceWeight=(&~/CommonChance)*(&~/XXLChance); }
 	{ Type=cosmoteer.asteroid_hyperium_xxl; ChanceWeight=(&~/CommonChance)*(&~/XXLChance); }
 
@@ -366,15 +353,11 @@ CommonAsteroidTypes : &<./Data/modes/career/sectors/sysgen_asteroids.rules>/Comm
 	{ Type=cosmoteer.asteroid_carbon_l;     ChanceWeight=(&~/RareChance)*(&~/LChance); }
 	{ Type=cosmoteer.asteroid_gold_l;       ChanceWeight=(&~/RareChance)*(&~/LChance); }
 	{ Type=cosmoteer.asteroid_tritanium_l;  ChanceWeight=(&~/RareChance)*(&~/LChance); }
-	{ Type=cosmoteer.asteroid_uranium_l;    ChanceWeight=(&~/RareChance)*(&~/LChance); }*/
+	{ Type=cosmoteer.asteroid_uranium_l;    ChanceWeight=(&~/RareChance)*(&~/LChance); }
 ]
 
-RareAsteroidTypes : <./Data/modes/career/sectors/sysgen_asteroids.rules>/RareAsteroidTypes
+RareAsteroidTypes
 [
-	/*{ Type=SW.asteroid_doonium_xl;  		 ChanceWeight=1; }
-	{ Type=SW.asteroid_doonium_xxl;  		 ChanceWeight=1/2; }
-	{ Type=SW.asteroid_zersium_xl;  		 ChanceWeight=1; }
-	{ Type=SW.asteroid_zersium_xxl;  		 ChanceWeight=1/2; }
 	{ Type=cosmoteer.asteroid_carbon_xl;     ChanceWeight=1; }
 	{ Type=cosmoteer.asteroid_gold_xl;       ChanceWeight=1; }
 	{ Type=cosmoteer.asteroid_tritanium_xl;  ChanceWeight=1; }
@@ -382,15 +365,11 @@ RareAsteroidTypes : <./Data/modes/career/sectors/sysgen_asteroids.rules>/RareAst
 	{ Type=cosmoteer.asteroid_carbon_xxl;     ChanceWeight=1/2; }
 	{ Type=cosmoteer.asteroid_gold_xxl;       ChanceWeight=1/2; }
 	{ Type=cosmoteer.asteroid_tritanium_xxl;  ChanceWeight=1/2; }
-	{ Type=cosmoteer.asteroid_uranium_xxl;    ChanceWeight=1/2; }*/
+	{ Type=cosmoteer.asteroid_uranium_xxl;    ChanceWeight=1/2; }
 ]
 /*
 SunAsteroidTypes
 [
-	{ Type=SW.asteroid_doonium_xl;  		ChanceWeight=1; } //SW.asteroid_doonium_xl;
-	{ Type=SW.asteroid_doonium_xxl;  		ChanceWeight=1/2; } //SW.asteroid_doonium_xxl;
-	{ Type=SW.asteroid_zersium_xl;  		ChanceWeight=1; } //SW.asteroid_zersium_xl;
-	{ Type=SW.asteroid_zersium_xxl;  		ChanceWeight=1/2; } //SW.asteroid_zersium_xxl;
 	{ Type=cosmoteer.asteroid_carbon_l;     ChanceWeight=1; }
 	{ Type=cosmoteer.asteroid_gold_l;       ChanceWeight=1; }
 	{ Type=cosmoteer.asteroid_tritanium_l;  ChanceWeight=1; }

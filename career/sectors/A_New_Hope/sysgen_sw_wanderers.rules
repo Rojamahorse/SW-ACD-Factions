@@ -9,7 +9,7 @@ SubSpawners
 		Count = [14, 16]
 		Distance = [0, 18000]
 		MinDistanceFromTags = [[sun, 6000], [station, 2000], [pirate, 4500]]
-		//MinDistanceFromNebulas = [[ion_storm, 500]]
+		MinDistanceFromNebulas = [[ion_storm, 500]]
 		SuppressLocationAssertions = true
 		Allegiance = Unique
      	SynchronizeAllegiance = true
@@ -39,7 +39,7 @@ SubSpawners
 		Count = [4, 8]
 		Distance = [0, 18000]
 		MinDistanceFromTags = [[sun, 6000], [station, 2000], [pirate, 4500]]
-		//MinDistanceFromNebulas = [[ion_storm, 500]]
+		MinDistanceFromNebulas = [[ion_storm, 500]]
 		SuppressLocationAssertions = true
 		Allegiance = Unique
      	SynchronizeAllegiance = true
@@ -69,7 +69,7 @@ SubSpawners
 		Count = [14, 16]
 		Distance = [0, 18000]
 		MinDistanceFromTags = [[sun, 6000], [station, 500]]
-		//MinDistanceFromNebulas = [[ion_storm, 500]]
+		MinDistanceFromNebulas = [[ion_storm, 500]]
 		SuppressLocationAssertions = true
 		Allegiance = FactionMilitary
 		FamePerTier = &/TIER_TABLES/StandardFamePerTier
@@ -98,7 +98,7 @@ SubSpawners
 		Count = [4, 8]
 		Distance = [0, 18000]
 		MinDistanceFromTags = [[sun, 6000], [station, 500]]
-		//MinDistanceFromNebulas = [[ion_storm, 500]]
+		MinDistanceFromNebulas = [[ion_storm, 500]]
 		SuppressLocationAssertions = true
 		Allegiance = FactionMilitary
 		FamePerTier = &/TIER_TABLES/StandardFamePerTier
@@ -132,7 +132,7 @@ SubSpawners
 		Count = [14, 16]
 		Distance = [0, 18000]
 		MinDistanceFromTags = [[sun, 6000], [station, 2000], [pirate, 4500]]
-		//MinDistanceFromNebulas = [[ion_storm, 500]]
+		MinDistanceFromNebulas = [[ion_storm, 500]]
 		SuppressLocationAssertions = true
 		Allegiance = Unique
 		NameGenerator = &<../../../name_generators/sw_name_villains.rules>/VilNameGen
@@ -160,7 +160,7 @@ SubSpawners
 		Count = [2, 4]
 		Distance = [0, 18000]
 		MinDistanceFromTags = [[sun, 6000], [station, 2000], [pirate, 4500]]
-		//MinDistanceFromNebulas = [[ion_storm, 500]]
+		MinDistanceFromNebulas = [[ion_storm, 500]]
 		SuppressLocationAssertions = true
 		Allegiance = Unique
 		FamePerTier = &/TIER_TABLES/StandardFamePerTier
@@ -189,7 +189,7 @@ SubSpawners
 		Count = [14, 16]
 		Distance = [0, 18000]
 		MinDistanceFromTags = [[sun, 6000], [station, 500]]
-		//MinDistanceFromNebulas = [[ion_storm, 500]]
+		MinDistanceFromNebulas = [[ion_storm, 500]]
 		SuppressLocationAssertions = true
 		Allegiance = FactionMilitary
 		FamePerTier = &/TIER_TABLES/StandardFamePerTier

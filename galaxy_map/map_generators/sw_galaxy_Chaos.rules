@@ -51,9 +51,9 @@ MapNodes
 	NameGenerator = &<../../name_generators/sw_name_celestial.rules>/CelNameGen
 }
 
-//Nebulas
+
 SectorTypes : &<./Data/galaxy_map/map_generators/base_galaxy.rules>/SectorTypes
-{/*
+{
 	Type = RandomSectorTypes
 	SectorTypes
 	[
@@ -65,16 +65,16 @@ SectorTypes : &<./Data/galaxy_map/map_generators/base_galaxy.rules>/SectorTypes
 			Type = binary
 			RandomWeight = 0.5
 		}
-		//{
-		//	Type = high_density_nebula
-		//	RandomWeight = 0.5
-		//}
-		//{
-		//	Type = supernova
-		//	RandomWeight = 0.5
-		//}
+		{
+			Type = high_density_nebula
+			RandomWeight = 0.5
+		}
+		{
+			Type = supernova
+			RandomWeight = 0.5
+		}
 	]
-*/}
+}
 
 // Define factions in the galaxy
 Factions  

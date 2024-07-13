@@ -273,11 +273,11 @@ BaseStation
 		}
 
 		// Prevent nebulas from spawning near stations.
-		/*{
+		{
 			Type = Nebula
 			NebulaType = ""
 			NebulaRadius = 2000
-		}*/
+		}
 	]
 }
 

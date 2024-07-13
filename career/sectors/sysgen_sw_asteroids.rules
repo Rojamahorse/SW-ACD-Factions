@@ -85,7 +85,7 @@ AsteroidField
 	Type = None
 	Tags = [asteroid_field]
 	Radius = 1500
-	//MinDistanceFromNebulas = [[ion_storm, 2000]]
+	MinDistanceFromNebulas = [[ion_storm, 2000]]
 	SuppressLocationAssertions = true
 	SubSpawners
 	[

@@ -18,17 +18,17 @@ Sector
         Spawners
         [
             &<./Data/modes/career/sectors/sysgen_planets.rules>                 // Configuration for generating planets
-            //&<./Data/modes/career/sectors/sysgen_standard_nebulas.rules>        // Configuration for generating standard nebulas
-            //&<./Data/modes/career/sectors/sysgen_high_density_nebulas.rules>    // Configuration for generating high-density nebulas
-            //&<./Data/modes/career/sectors/sysgen_supernova_nebulas.rules>       // Configuration for generating supernova nebulas
+            &<./Data/modes/career/sectors/sysgen_standard_nebulas.rules>        // Configuration for generating standard nebulas
+            &<./Data/modes/career/sectors/sysgen_high_density_nebulas.rules>    // Configuration for generating high-density nebulas
+            &<./Data/modes/career/sectors/sysgen_supernova_nebulas.rules>       // Configuration for generating supernova nebulas
             &<./Data/modes/career/sectors/sysgen_ftl_gates.rules>               // Configuration for generating FTL gates
             &<../A_New_Hope/sysgen_sw_suns.rules>                                          // Configuration for generating suns
             &<../A_New_Hope/sysgen_sw_trade_stations.rules>                                // DONE! Configuration for generating trade stations
-            &<../A_New_Hope/sysgen_sw_military_stations.rules>                             // Configuration for generating military stations
+            &<../sysgen_sw_military_stations.rules>                             // Configuration for generating military stations
             &<../A_New_Hope/sysgen_sw_wanderers.rules>                                     // DONE! Configuration for generating wanderer ships
             &<../A_New_Hope/sysgen_sw_bounties.rules>                                      // Configuration for generating bounty missions
             &<../A_New_Hope/sysgen_sw_asteroids.rules>                                     // DONE! Configuration for generating asteroid fields
-            &<../A_New_Hope/sysgen_sw_misc_discoverables.rules>                            // Configuration for generating miscellaneous discoverables
+            &<../sysgen_sw_misc_discoverables.rules>                            // Configuration for generating miscellaneous discoverables
             &<../A_New_Hope/sysgen_sw_ftl_beacons.rules>                                   // Configuration for generating FTL beacons
             &<../A_New_Hope/sysgen_sw_sim_global_missions.rules>                           // DONE! Configuration for generating global missions
 			&<../../sysgen_sw_fleethideouts.rules>/SWFleethideouts

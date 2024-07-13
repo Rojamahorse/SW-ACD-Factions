@@ -9,7 +9,7 @@ SubSpawners
 		Count = 3 // Always 3 stations in the starting system.
 		Distance = [4000, 11000]
 		MinDistanceFromTags = [[sun, 7500]]
-		//MinDistanceFromNebulas = [[ion_storm, 1000]]
+		MinDistanceFromNebulas = [[ion_storm, 1000]]
 		SpawnsPerSlice = 1
 		SpawnSlicePadding = 35%
 	}
@@ -116,6 +116,7 @@ SubSpawners
 				Distance = 150
 				SpawnsPerSlice = 1
 				SpawnSlicePadding = 45%
+				NameGenerator = &<../../../name_generators/sw_name_villains.rules>/VilNameGen
 				Allegiance = Unique
 				FamePerTier = &/TIER_TABLES/StandardFamePerTier
 				MaxFamePerTier = &/TIER_TABLES/StandardMaxFamePerTier
@@ -250,11 +251,11 @@ BaseStation
 		}
 
 		// Prevent nebulas from spawning near stations.
-		/*{
+		{
 			Type = Nebula
 			NebulaType = ""
 			NebulaRadius = 2000
-		}*/
+		}
 	]
 }
 
@@ -337,25 +338,61 @@ CapturedStation : UndiscoveredStation
 
 StationDefenses
 {
-	Type = Ships
-	Count = [4, 8]
-	Distance = 250
-	SpawnsPerSlice = 1
-	SpawnSlicePadding = 45%
-	Allegiance = FactionCivilian
-	FamePerTier = &/TIER_TABLES/StandardFamePerTier
-	MaxFamePerTier = &/TIER_TABLES/StandardMaxFamePerTier
+	Type = None
+	SubSpawners
+	[
+		// Defense platforms
+		{
+			Type = Ships
+			Count = [4, 8]
+			Distance = 350
+			SpawnsPerSlice = 1
+			SpawnSlicePadding = 45%
+			Allegiance = FactionCivilian
+			FamePerTier = &/TIER_TABLES/StandardFamePerTier
+			MaxFamePerTier = &/TIER_TABLES/StandardMaxFamePerTier
 
-	ShipCriteria
-	{
-		UseLocalFactionWeights = true
-		UseTierField = true
-		AllowTierRangeExpansion = true
-		Tags = [defense]
-	}
+			ShipCriteria
+			{
+				UseLocalFactionWeights = true
+				UseTierField = true
+				AllowTierRangeExpansion = true
+				Tags = [defense]
+			}
 
-	AI
-	{
-		Type = DefensePlatform
-	}
+			AI
+			{
+				Type = DefensePlatform
+			}
+		}
+		// Defense ships.
+		{
+			Type = Ships
+			Tags = [station_defense]
+			Count = 1
+			MinDistanceFromTags = [[asteroid, 0]]
+			Allegiance = FactionCivilian
+			FamePerTier = &/TIER_TABLES/StandardFamePerTier
+			MaxFamePerTier = &/TIER_TABLES/StandardMaxFamePerTier
+			SuppressLocationAssertions = true
+
+			ShipCriteria
+			{
+				UseLocalFactionWeights = true
+				UseTierField = true
+				Tier = 2
+				AllowTierRangeExpansion = true
+				Tags = [combat]
+			}
+
+			AI
+			{
+				Type = StationGuard
+				PatrolRadius = 500
+				MinPatrolRadius = 200
+				TargetAcquireRangeFromOrigin = 750
+				TargetUnacquireRangeFromOrigin = 1500
+			}
+		}
+	]
 }

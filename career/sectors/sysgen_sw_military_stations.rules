@@ -132,7 +132,7 @@ BaseMilitaryStation
 	SpawnsPerSlice = 1
 	SpawnSlicePadding = 35%
 	MinDistanceFromTags = [[sun, 7500], [station, 6000], [ftl_gate, 3000]]
-	//MinDistanceFromNebulas = [[electron, 1000], [ion_storm, 1000]]
+	MinDistanceFromNebulas = [[electron, 1000], [ion_storm, 1000]]
 	Tags = [station, military_station]
 	NameGenerator = &<./Data/name_generators/name_base.rules>
 	SynchronizeFactions = true
@@ -181,7 +181,7 @@ BaseMilitaryStation
 		{
 			Type = Ships
 			Tags = [station_defense]
-			Count = [2, 6]
+			Count = [3, 6]
 			Distance = [100, 150]
 			SpawnsPerSlice = 1
 			SpawnSlicePadding = 35%
@@ -209,7 +209,6 @@ BaseMilitaryStation
 			Type = Ships
 			Tags = [station_defense]
 			Count = [4, 6]
-			Distance = [400, 550]
 			MinDistanceFromTags = [[asteroid, 0]]
 			FamePerTier = &/TIER_TABLES/StandardFamePerTier
 			MaxFamePerTier = &/TIER_TABLES/StandardMaxFamePerTier
@@ -226,7 +225,8 @@ BaseMilitaryStation
 			AI
 			{
 				Type = StationGuard
-				PatrolRadius = 500
+				PatrolRadius = 600
+				MinPatrolRadius = 40
 				TargetAcquireRangeFromOrigin = 750
 				TargetUnacquireRangeFromOrigin = 1500
 			}

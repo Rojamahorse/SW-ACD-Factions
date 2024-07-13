@@ -471,6 +471,7 @@ Part : &<../../base_part_terran_weapons.rules>/Part
 						File = &/INDICATORS/PowerOff
 						Size = [1, 1]
 					}
+					HidesIndicators = [1]
 				}
 
 				// Out of power.
