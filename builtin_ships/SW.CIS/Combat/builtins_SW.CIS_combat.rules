@@ -27,10 +27,18 @@ Ships
 /*85,130*/           :~{ File="P-38 Rogue-Class Starfighter Mk2.ship.png";                           Tier=3;  Difficulty=2; Tags = [combat, swfighter, cisfighter] }
 /*87,110*/           :~{ File="CIS Droid S-One S Type-S.ship.png";                                   Tier=4;  Difficulty=1; Tags = [combat, swfighter, cisfighter] }
 /*95,160*/           :~{ File="CIS P-38 Rogue-Class (Magnaguard) Starfighter.ship.png";              Tier=4;  Difficulty=2; Tags = [combat, swfighter, cisfighter] }
+/*235,176*/          :~{ File="CIS Droid Tri-Fighter-D.ship.png";                                    Tier=4;  Difficulty=2; Tags = [combat, swfighter, cisfighter] }
+/*235,176*/          :~{ File="CIS Hyena-Class Discord Bomber S.ship.png";                           Tier=4;  Difficulty=2; Tags = [combat, swbomber, cisfighter] }
+/*235,176*/          :~{ File="Hyena-Class Discord Bomber.ship.png";                                 Tier=4;  Difficulty=2; Tags = [combat, swbomber, cisfighter] }
 
     //Tier 5-7 (180,001 to 400,000)
 /*248,452*/          :~{ File="HMP Droid Gunship.ship.png";                                          Tier=5;  Difficulty=2; Tags = [combat] }
 /*235,176*/          :~{ File="HMP Droid MineLayer.ship.png";                                        Tier=5;  Difficulty=2; Tags = [combat] }
+/*235,176*/          :~{ File="HMP DroidLayer.ship.png";                                             Tier=5;  Difficulty=2; Tags = [combat, swbomber] }
+/*235,176*/          :~{ File="HMP Hex Bomber.ship.png";                                             Tier=7;  Difficulty=2; Tags = [combat, swbomber] }
+/*235,176*/          :~{ File="HMP Intruder Bomber.ship.png";                                        Tier=6;  Difficulty=2; Tags = [combat, swbomber] }
+/*235,176*/          :~{ File="HMP Cluster Bomber.ship.png";                                         Tier=5;  Difficulty=2; Tags = [combat, swbomber] }
+/*235,176*/          :~{ File="HMP Concussion Bomber.ship.png";                                      Tier=5;  Difficulty=2; Tags = [combat, swbomber] }
 /*424,820*/          :~{ File="C-9979 Landing Craft (CIS) Atk.ship.png";                             Tier=6;  Difficulty=2; Tags = [combat] }
 /*442,800*/          :~{ File="CIS YT-2400 Light Freighter.ship.png";                                Tier=5;  Difficulty=2; Tags = [combat] /*OtherIDs=["Subjugator-Class Heavy Cruiser"];*/ }
 /*472,300*/          :~{ File="C-9979 Landing Craft (CIS) III.ship.png";                             Tier=7;  Difficulty=1; Tags = [combat] }
