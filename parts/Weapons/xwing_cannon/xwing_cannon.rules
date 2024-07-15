@@ -306,7 +306,7 @@ Part : &<../../base_part_terran_weapons.rules>/Part
 			GetTargetFrom = Turret
 			Location = [1.28, 0]
 			OperationalToggle = IsOperational
-			Bullet = &<xwing_shot/xwing_shot.rules>
+			Bullet = &<../common_shots/xwing_shot/xwing_shot.rules>
 			ResourceStorage = BatteryStorage
 			ResourcesUsed = 125
 			MinResourcesUsed = 1
@@ -485,10 +485,10 @@ Part : &<../../base_part_terran_weapons.rules>/Part
 			NameKey = "StatCategories/SWFighterWeapons"
 			Stats
 			{
-				ShieldDamagePerShot = &~/Part/Components/BulletEmitter/Bullet/Components/Hit/HitShield/HitEffects/0/Damage //BaseValue
+				ShieldDamagePerShot = &~/Part/Components/BulletEmitter/Bullet/Components/Hit/HitShield/HitEffects/0/Damage/BaseValue
 				ShieldDamagePerSecond = (&ShieldDamagePerShot) * (&ROF)
 				ShieldDamage = [&../ShieldDamagePerShot, &../ShieldDamagePerSecond]
-				DamagePerShot = &~/Part/Components/BulletEmitter/Bullet/Components/Hit/HitOperational/HitEffects/0/Damage //BaseValue
+				DamagePerShot = &~/Part/Components/BulletEmitter/Bullet/Components/Hit/HitOperational/HitEffects/0/Damage/BaseValue
 				DamagePerSecond = (&DamagePerShot) * (&ROF)
 				Damage = [&../DamagePerShot, &../DamagePerSecond]
 				ROF = 1 / (&~/Part/Components/Turret/FireInterval)

@@ -1,13 +1,12 @@
-ID = SW.fighter_xwing_shot
-Range = 425
-IdealRange = [200 - 380]
-Speed = 300
-//ReceivableBuffs : ^/0/ReceivableBuffs []
+ID = SW.fighter_tie_minigun_shot
+Range = 375
+IdealRange = 275
+Speed = 350
+ReceivableBuffs = [ElectronBuff]
 //HitEffectsScaleOverRange = [1, 1 - (&../Range) / 1000]
-SWDamageValueOp = 650
-SWDamageValueSh = 650
-SWDamageValueSt = 750
-
+SWDamageValueOp = 100
+SWDamageValueSh = 30
+SWDamageValueSt = 100
 
 Components
 {
@@ -23,19 +22,19 @@ Components
 		Type = DeathByLifetime
 	}
 
-	Targetable
-	{
-		Type = Targetable
-		Health = 210
-		TargetCategory = "laser"
-	}
+//	Targetable
+//	{
+//		Type = Targetable
+//		Health = 210
+//		TargetCategory = "laser"
+//	}
 
 	Hit
 	{
 		Type = PenetratingHit
-		FriendlyShipLowCollisions = true
+		FriendlyShipLowCollisions = false
 		SourceShipLowCollisions = false
-		FactorEffectsWith = Targetable
+//		FactorEffectsWith = Targetable
 
 		CrewCollisions = {Enemies=true; Junk=true}
 		HitCrew = &HitOperational
@@ -47,18 +46,19 @@ Components
 			[
 				{
 					Type = Damage
-					Damage = 650 //{ BaseValue=650; BuffType=ElectronBuff; BuffMode=Multiply; }
+					Damage = { BaseValue=100; BuffType=ElectronBuff; BuffMode=Multiply; }
 				}
 				{
 					Type = Impulse;
-					Impulse = 3.0;
+					Impulse = 1.5;
 				}
 			]
 			MediaEffects
 			[
-				&<./Data/shots/laser_bolt_small/particles/laser_bolt_small_hit.rules>
-				&<./Data/shots/laser_bolt_small/particles/laser_bolt_small_flash.rules>
-				&<./Data/shots/laser_bolt_small/particles/laser_bolt_small_sparks.rules>
+			
+			&/SW_PARTICLES/Shot/Laser/Hit/Med/Green	//&<./Data/shots/laser_bolt_small/particles/laser_bolt_small_hit.rules>
+			&/SW_PARTICLES/Shot/Laser/Flash/Med/Green	//&<./Data/shots/laser_bolt_small/particles/laser_bolt_small_flash.rules>
+			&/SW_PARTICLES/Shot/Laser/Sparks/Med/Green	//&<./Data/shots/laser_bolt_small/particles/laser_bolt_small_sparks.rules>
 
 				: /BASE_SOUNDS/AudioExterior
 				{
@@ -79,7 +79,7 @@ Components
 			[
 				{
 					Type = Damage
-					Damage = 750 //{ BaseValue=750; BuffType=ElectronBuff; BuffMode=Multiply; }
+					Damage = { BaseValue=30; BuffType=ElectronBuff; BuffMode=Multiply; }
 				}
 				{
 					Type = Impulse;
@@ -117,16 +117,16 @@ Components
 			{
 				Texture
 				{
-					File = "LaserBallR.png"
+					File = tie_laser_bolt_small.png
 					SampleMode = Linear
 					MipLevels = max
 				}
-				Size = [2.5, 2.5]
+				Size = [2.5, .5]
 			}
 			FrameCount = 8
 			FrameSize = [128, 128]
 			FramesPerRow = 2
-			FramesPerSecond = 16
+			FramesPerSecond = 60
 		}
 	}
 
@@ -145,7 +145,7 @@ Components
 				SampleMode = Linear
 			}
 			Size = [6, 6]
-			VertexColor = [255, 0, 0]
+			VertexColor = [0, 255, 0]
 			TargetBlendMode = Add
 			Shader = "./Data/common_effects/fancy_light.shader"
 			_litReflectiveStrength = 24

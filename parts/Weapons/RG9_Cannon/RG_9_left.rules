@@ -312,7 +312,7 @@ Part : &<../../base_part_terran_weapons.rules>/Part
 			GetTargetFrom = Turret
 			Location = [1.38, 0]
 			OperationalToggle = IsOperational
-			Bullet = &<rg_9_shot/rg_9_shot.rules>
+			Bullet = &<../common_shots/rg_9_shot/rg_9_shot.rules>
 			Spread = [-2d, 2d]
 			Burst = 3
 			BurstDelay = 0.1

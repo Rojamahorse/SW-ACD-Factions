@@ -309,7 +309,7 @@ Part : &<../../base_part_terran_weapons.rules>/Part
 			GetTargetFrom = Turret
 			Location = [1.38, 0]
 			OperationalToggle = IsOperational
-			Bullet = &<rg_9_shot/rg_9_shot.rules>
+			Bullet = &<../common_shots/rg_9_shot/rg_9_shot.rules>
 			Spread = [-1.5d, 1.5d]
 			Burst = 2
 			BurstDelay = 0.075
@@ -511,10 +511,10 @@ Part : &<../../base_part_terran_weapons.rules>/Part
 			NameKey = "StatCategories/SWBurstLaser"
 			Stats
 			{
-				ShieldDamagePerShot = &~/Part/Components/BulletEmitter/Bullet/Components/Hit/HitShield/HitEffects/0/Damage //BaseValue
+				ShieldDamagePerShot = &~/Part/Components/BulletEmitter/Bullet/Components/Hit/HitShield/HitEffects/0/Damage/BaseValue
 				ShieldDamagePerSecond = (&ShieldDamagePerShot) * (&ROF)
 				ShieldDamage = [&../ShieldDamagePerShot, &../ShieldDamagePerSecond]
-				DamagePerShot = &~/Part/Components/BulletEmitter/Bullet/Components/Hit/HitOperational/HitEffects/0/Damage //BaseValue
+				DamagePerShot = &~/Part/Components/BulletEmitter/Bullet/Components/Hit/HitOperational/HitEffects/0/Damage/BaseValue
 				DamagePerSecond = (&DamagePerShot) * (&ROF)
 				Damage = [&../DamagePerShot, &../DamagePerSecond]
 				ROF = 1 / (&~/Part/Components/Turret/FireInterval)

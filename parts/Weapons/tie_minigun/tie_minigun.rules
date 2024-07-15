@@ -21,7 +21,8 @@ Part : &<../xwing_cannon/xwing_cannon.rules>/Part
 	//PartSpecific
 	
 	//ReceivableBuffs
-	
+	ReceivableBuffs = [ElectronBuff]
+
 	//Doors&Etc
 	
 	//Editor
@@ -200,7 +201,7 @@ Part : &<../xwing_cannon/xwing_cannon.rules>/Part
 			GetTargetFrom = Turret
 			Location = [1.15, 0]
 			OperationalToggle = IsOperational
-			Bullet = &<tie_shot/tie_shot.rules>
+			Bullet = &<../common_shots/tie_shot/tie_shot.rules>
 			ResourceStorage = BatteryStorage
 			ResourcesUsed = 40
 			Spread = [-2d, 2d]
@@ -400,10 +401,10 @@ Part : &<../xwing_cannon/xwing_cannon.rules>/Part
 			NameKey = "StatCategories/MinigunShot"
 			Stats
 			{
-				ShieldDamagePerShot = &~/Part/Components/BulletEmitter/Bullet/Components/Hit/HitShield/HitEffects/0/Damage //BaseValue
+				ShieldDamagePerShot = &~/Part/Components/BulletEmitter/Bullet/Components/Hit/HitShield/HitEffects/0/Damage/BaseValue
 				ShieldDamagePerSecond = (&ShieldDamagePerShot) * (&ROF)
 				ShieldDamage = [&../ShieldDamagePerShot, &../ShieldDamagePerSecond]
-				DamagePerShot = &~/Part/Components/BulletEmitter/Bullet/Components/Hit/HitOperational/HitEffects/0/Damage //BaseValue
+				DamagePerShot = &~/Part/Components/BulletEmitter/Bullet/Components/Hit/HitOperational/HitEffects/0/Damage/BaseValue
 				DamagePerSecond = (&DamagePerShot) * (&ROF)
 				Damage = [&../DamagePerShot, &../DamagePerSecond]
 				ROF = 1 / (&~/Part/Components/Turret/FireInterval)

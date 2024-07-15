@@ -1,13 +1,12 @@
-ID = SW.r9_shot
+ID = SW.fighter_tie_minigun_medium_shot
 Range = 375
-IdealRange = [50 - 325]
-Speed = 375
-//ReceivableBuffs : ^/0/ReceivableBuffs []
-HitEffectsScaleOverRange = [2, 1 - (&../Range) / 1000]
-SWDamageValueOp = 650
-SWDamageValueSh = 650
-SWDamageValueSt = 650
-
+IdealRange = 275
+Speed = 300
+ReceivableBuffs = [ElectronBuff]
+//HitEffectsScaleOverRange = [1, 1 - (&../Range) / 1000]
+SWDamageValueOp = 125
+SWDamageValueSh = 125
+SWDamageValueSt = 30
 
 Components
 {
@@ -23,19 +22,20 @@ Components
 		Type = DeathByLifetime
 	}
 
-	Targetable
-	{
-		Type = Targetable
-		Health = 210
-		TargetCategory = "laser"
-	}
+//	Targetable
+//	{
+//		Type = Targetable
+//		Health = 210
+//		TargetCategory = "laser"
+//	}
 
 	Hit
 	{
 		Type = PenetratingHit
 		FriendlyShipLowCollisions = false
-		NonFriendlyShipLowCollisions = true
-		FactorEffectsWith = Targetable
+		SourceShipLowCollisions = false
+		SourceShipCollisions = false
+//		FactorEffectsWith = Targetable
 
 		CrewCollisions = {Enemies=true; Junk=true}
 		HitCrew = &HitOperational
@@ -47,22 +47,23 @@ Components
 			[
 				{
 					Type = Damage
-					Damage = 650//{ BaseValue=650; BuffType=ElectronBuff; BuffMode=Multiply; }
+					Damage = { BaseValue=125; BuffType=ElectronBuff; BuffMode=Multiply; }
 				}
 				{
 					Type = Impulse;
-					Impulse = 3.0;
+					Impulse = 1.8;
 				}
 			]
 			MediaEffects
 			[
-				&<./Data/shots/laser_bolt_small/particles/laser_bolt_small_hit.rules>
-				&<./Data/shots/laser_bolt_small/particles/laser_bolt_small_flash.rules>
-				&<./Data/shots/laser_bolt_small/particles/laser_bolt_small_sparks.rules>
+			
+			&/SW_PARTICLES/Shot/Laser/Hit/Med/Green	//&<./Data/shots/laser_bolt_small/particles/laser_bolt_small_hit.rules>
+			&/SW_PARTICLES/Shot/Laser/Flash/Med/Green	//&<./Data/shots/laser_bolt_small/particles/laser_bolt_small_flash.rules>
+			&/SW_PARTICLES/Shot/Laser/Sparks/Med/Green	//&<./Data/shots/laser_bolt_small/particles/laser_bolt_small_sparks.rules>
 
 				: /BASE_SOUNDS/AudioExterior
 				{
-					Sound = "../../common_effects/sounds/sw_RG-9 Sound2.wav"
+					Sound = "./Data/shots/laser_bolt_small/laser_bolt_small_hit.wav"
 					Volume = 0.4
 					SpeedVariation = 0.4
 				}
@@ -79,7 +80,7 @@ Components
 			[
 				{
 					Type = Damage
-					Damage = 650 //{ BaseValue=650; BuffType=ElectronBuff; BuffMode=Multiply; }
+					Damage = { BaseValue=30; BuffType=ElectronBuff; BuffMode=Multiply; }
 				}
 				{
 					Type = Impulse;
@@ -117,16 +118,16 @@ Components
 			{
 				Texture
 				{
-					File = "laser_bolt_small.png" // ./Data/shots/laser_bolt_small/
+					File = tie_laser_bolt_medium.png
 					SampleMode = Linear
 					MipLevels = max
 				}
-				Size = [2.5, 2.5]
+				Size = [3, 1.5]
 			}
 			FrameCount = 8
-			FrameSize = [128, 128]
+			FrameSize = [256, 128]
 			FramesPerRow = 2
-			FramesPerSecond = 32
+			FramesPerSecond = 60
 		}
 	}
 
@@ -145,7 +146,7 @@ Components
 				SampleMode = Linear
 			}
 			Size = [6, 6]
-			VertexColor = [255, 0, 0]
+			VertexColor = [0, 255, 0]
 			TargetBlendMode = Add
 			Shader = "./Data/common_effects/fancy_light.shader"
 			_litReflectiveStrength = 24

@@ -178,7 +178,7 @@ Part : &<../tie_minigun/tie_minigun.rules>/Part
 		BulletEmitter : &<../tie_minigun/tie_minigun.rules>/Part/Components/BulletEmitter
 		{
 			Location = [2.5, 0]
-			Bullet = &<../tie_minigun/tie_shot/tie_shot_medium.rules>
+			Bullet = &<../common_shots/tie_shot/tie_shot_medium.rules>
 
 		}
 
