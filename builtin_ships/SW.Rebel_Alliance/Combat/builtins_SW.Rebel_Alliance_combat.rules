@@ -102,6 +102,7 @@ Ships
 /*3,755,000*/	:~{ File="Reb MC Blue Diver-Class Hvy Carr.ship.png"; 						Tier=15; 	Difficulty=2; Tags = [combat, rebcapital] }
 /*3,755,000*/	:~{ File="Reb MC Blue Diver-Class Heavy Carrier 2.ship.png"; 				Tier=16; 	Difficulty=2; Tags = [combat, rebcapital] }
 /*4,354,426*/	:~{ File="Dreadnought-Class Hvy Cruiser-Rb.ship.png";     					Tier=12;    Difficulty=2; Tags = [combat] } 
+/*4,354,426*/	:~{ File="Reb MC-75 Torpedo Cruiser v2.ship.png";     						Tier=12;    Difficulty=2; Tags = [combat] } 
 /*4,448,226*/	:~{ File="Reb Dreadnought-Class HvyLN Crui.ship.png";     					Tier=12;    Difficulty=1; Tags = [combat] }
 /*4,443,946*/	:~{ File="Dreadnought-Class HvyLN Cruiser.ship.png";     					Tier=15;    Difficulty=2; Tags = [combat] } 
 /*4,451,114*/	:~{ File="Dreadnought-Class HvyN Cruiser-R.ship.png";     					Tier=15;    Difficulty=2; Tags = [combat] } 
@@ -120,6 +121,7 @@ Ships
 
 //SWBoss
 /*11,740,710*/	:~{ File="MC80a Home One-Type Heavy Star Cruiser.ship.png"; 				Tier=15;    Difficulty=2; Tags = [swboss] }
+/*11,740,710*/	:~{ File="MC80a Home One-Type Heavy Star Cruiserv2.ship.png"; 				Tier=16;    Difficulty=2; Tags = [swboss] }
 /*12,740,710*/	:~{ File="Rebel One.ship.png"; 												Tier=16;    Difficulty=2; Tags = [swboss] }
 /*12,740,710*/	:~{ File="Rebel One v2.ship.png"; 											Tier=18;    Difficulty=2; Tags = [swboss] }
 /*10,813,774*/	:~{ File="Reb MC80 Liberty-Type Heavy Star Cruiser RepP.ship.png"; 			Tier=18;    Difficulty=2; Tags = [swboss] }
