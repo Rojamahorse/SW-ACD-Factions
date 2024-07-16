@@ -7,6 +7,7 @@ Ships
 /*68,280*/			:~{ File="Storm IV Twin-Pod BS Combat.ship.png";          				Tier=1;  Difficulty=2; Tags = [combat, swfighter, bscfighter] } 
 /*73,520*/			:~{ File="Small-BS Fighter.ship.png";           						Tier=2;  Difficulty=2; Tags = [combat, swfighter, bscfighter] }
 /*73,520*/			:~{ File="Hutt-BS Fighter.ship.png";         							Tier=2;  Difficulty=2; Tags = [combat, swfighter, bscfighter] }
+/*73,520*/			:~{ File="BSC G-Wing Fighter.ship.png";         						Tier=2;  Difficulty=2; Tags = [combat, swfighter, bscfighter] }
 /*80,020*/			:~{ File="Undr_Z-95 Headhunter.ship.png";         						Tier=1;  Difficulty=2; Tags = [combat, swfighter, bscfighter] } //Neojino
 /*80,420*/			:~{ File="BSC Storm IVB Twin-Pod Combat Y.ship.png"; 					Tier=2;  Difficulty=2; Tags = [combat, swfighter, bscfighter] }
 /*81,180*/			:~{ File="Black Sun Fighter (Combat).ship.png";     					Tier=2;  Difficulty=1; Tags = [combat, swfighter, bscfighter] }

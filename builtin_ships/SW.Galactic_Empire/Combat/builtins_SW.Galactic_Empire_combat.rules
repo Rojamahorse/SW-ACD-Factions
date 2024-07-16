@@ -55,11 +55,12 @@ Ships
 /*249,800*/	:~{ File="Emp Lamda-Class T-4a Mk2.ship.png";							Tier=4;		Difficulty=2; 	Tags = [combat, empshuttle] } 
 /*446,245*/	:~{ File="Emp B-Class Lt Torpedo cruiser.ship.png";						Tier=6;	 	Difficulty=2; 	Tags = [combat, swbomber, empbomber] } //Based off Chryss
 /*424,820*/	:~{ File="Emp Tartan-class patrol cruiser.ship.png";					Tier=6;	 	Difficulty=2; 	Tags = [combat] }
-/*424,820*/	:~{ File="C-9979 Landing Craft (Emp) Atk.ship.png";						Tier=5;	 	Difficulty=2; 	Tags = [combat, empshuttle] }
+/*424,820*/	//:~{ File="C-9979 Landing Craft (Emp) Atk.ship.png";						Tier=5;	 	Difficulty=2; 	Tags = [combat, empshuttle] }
 /*626,760*/	:~{ File="Lancer-Class Frigate.ship.png";								Tier=6;		Difficulty=1; 	Tags = [combat] } 
 /*616,240*/	:~{ File="Emp Lancer-Class Frigate.ship.png";							Tier=6;		Difficulty=1; 	Tags = [combat] } 
 /*628,920*/	:~{ File="Raider-Class Corvette Mk2.ship.png";							Tier=6;		Difficulty=1; 	Tags = [combat] } // Credit ClassicJam
 /*573,560*/	:~{ File="Raider-Class Corvette.ship.png";								Tier=7;		Difficulty=1; 	Tags = [combat] } // Credit ClassicJam
+/*573,560*/	:~{ File="Emp Raider-Class Corvette.ship.png";							Tier=7;		Difficulty=1; 	Tags = [combat] } // Credit ClassicJam
 /*573,560*/	:~{ File="Emp Raider-Class Corvette-S.ship.png";						Tier=7;		Difficulty=2; 	Tags = [combat] } 
 /*569,092*/	:~{ File="IPV-1 System Patrol Craft.ship.png";							Tier=6;		Difficulty=2; 	Tags = [combat] } // CJ - Orig
 /*628,140*/	:~{ File="Emp Crusader-Class Cruiser.ship.png";							Tier=7;		Difficulty=1; 	Tags = [combat] }

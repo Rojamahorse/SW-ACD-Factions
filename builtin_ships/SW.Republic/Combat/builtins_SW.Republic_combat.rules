@@ -18,6 +18,9 @@ Ships
 
 //Tier 3-4 (50,001 to 200,000)
 /*73,360*/    		:~{	File="Royal House N-1 Starfighter.ship.png";                                         Tier=3;  Difficulty=1; Tags = [combat, swfighter, repfighter] }
+/*73,360*/    		:~{	File="Naboo N-1 Starfighter (Classic).ship.png";                                     Tier=3;  Difficulty=1; Tags = [combat, swfighter, repfighter] }
+/*73,360*/    		:~{	File="Naboo N-1 Starfighter (Modern).ship.png";                                      Tier=2;  Difficulty=2; Tags = [combat, swfighter, repfighter] }
+///*73,360*/    		:~{	File="G-Wing Fighter.ship.png";                                      Tier=2;  Difficulty=2; Tags = [combat, swfighter, repfighter] }
 /*52,700*/    		:~{ File="Republic Delta 7B Jedi Starfight.ship.png";                                    Tier=3;  Difficulty=2; Tags = [combat, swfighter, repfighter] }
 /*46,100*/    		:~{ File="Republic Eta-2 Actis-Class Mk2.ship.png";                                      Tier=4;  Difficulty=2; Tags = [combat, swfighter, repfighter] }
 /*58,220*/    		:~{ File="Republic Eta-2 Actis-Class Mk3.ship.png";                                      Tier=4;  Difficulty=2; Tags = [combat, swfighter, repfighter] }
