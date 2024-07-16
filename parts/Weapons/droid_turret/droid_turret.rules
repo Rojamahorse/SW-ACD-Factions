@@ -411,7 +411,8 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 			Location = &../Turret/Location
 			Radius = 1.5
 			IsHigh = true
-		}
+			InitialPenetrationResistance = 5
+	}
 
 		*/
 
@@ -640,6 +641,7 @@ Part : <./Data/ships/terran/base_part_terran.rules>/Part
 	{
 		CrewRequired = &~/Part/Components/PartCrew/Crew
 		PowerCapacity = (&~/Part/Components/BatteryStorage/MaxResources) / 1000
+		//TurretPenResist = &~/Part/Components/TurretCollider/InitialPenetrationResistance
 
 		MinPower = (&../StatsByCategory/0/Stats/PowerPerSecond) / 2
 		RecPower = &../StatsByCategory/0/Stats/PowerPerSecond
