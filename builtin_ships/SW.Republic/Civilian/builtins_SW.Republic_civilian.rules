@@ -12,6 +12,7 @@ Ships
 	:~{ File="Eta-Class Supply Barge Republic.ship.png";     	Tier=10;  Tags : ~/Tags [trade] }
 	:~{ File="Republic Firespray-31-Class Patr.ship.png";     	Tier=1;  Tags : ~/Tags [trade] }
 	:~{ File="Republic CSS-1 Corellian Star Sh.ship.png";    	Tier=5;  Tags : ~/Tags [trade] }
+	:~{ File="Rep Corellian Civilian Transpor.ship.png";    	Tier=5;  Tags : ~/Tags [trade] }
 	:~{ File="Rep Baudo-Class Yacht (Civ).ship.png";    		Tier=5;  Tags : ~/Tags [trade] }
 	:~{ File="Republic Corellian G9 Freighter.ship.png";  		Tier=3;  Tags : ~/Tags [trade] }
 	:~{ File="Republic Consular-Class CruiserB.ship.png";     	Tier=2;  Tags : ~/Tags [trade] }

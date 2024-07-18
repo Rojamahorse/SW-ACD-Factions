@@ -39,6 +39,7 @@ Ships
 /*108,650*/    		:~{ File="Rep N-Wing.ship.png";                                       		 			 Tier=4;  Difficulty=2; Tags = [combat, swfighter, repfighter] } 
 /*108,650*/    		:~{ File="Rep N-Wing v2.ship.png";                                       		 		 Tier=5;  Difficulty=2; Tags = [combat, swfighter, repfighter] } 
 /*108,650*/    		:~{ File="Rep N-Wing Mk2.ship.png";                                       		 		 Tier=5;  Difficulty=2; Tags = [combat, swfighter, repfighter] } 
+/*108,650*/    		:~{ File="Rep Corellian Armed Transport.ship.png";                                       Tier=5;  Difficulty=1; Tags = [combat, repshuttle] } 
 /*107,920*/    		:~{ File="V-19 Torrent Starfighter B.ship.png";                                          Tier=3;  Difficulty=2; Tags = [combat, swfighter, repfighter] } 
 /*135,850*/    		:~{ File="ARC-170 Mk II.ship.png";                                                       Tier=3;  Difficulty=2; Tags = [combat, swfighter, repfighter] }
 /*144,100*/    		:~{ File="Republic BTL-B Y-Wing Bomber.ship.png";                                        Tier=3;  Difficulty=2; Tags = [combat, repbomber] }
