@@ -165,7 +165,7 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 			OperationalToggle = IsOperational
 			OperationalDoodad
 			{
-				Layer = "turrets"
+				Layer = "doodads_low"
 				DamageLevels
 				[
 					{
@@ -579,9 +579,10 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 		{
 			Type = Sprite
 			ChainedTo = Turret
-			Location = [.15, 0]
+			Location = [.5, 0]
+			//Offset = [0.5, 0]
 			Rotation = 90d
-			Layer = "roof_doodads"
+			Layer = "roof_turrets"
 			ResetAnimationTrigger = Emitter1
 			AtlasSprite
 			{
@@ -594,24 +595,24 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 					"barrels5a.png"
 					"barrels6a.png"
 					"barrels7a.png"
-					"barrels8a.png"
-					"barrels9a.png"
+					//"barrels8a.png"
+					//"barrels9a.png"
 					"barrels1a.png"// Loop back to beginning and clamp there.
 				]
 				NormalsAnimationFiles
 				[
-					//"barrel1_normals.png"
-					"barrels2_normalsa.png"
-					"barrels3_normalsa.png"
-					"barrels4_normalsa.png"
-					"barrels5_normalsa.png"
-					"barrels6_normalsa.png"
-					"barrels7_normalsa.png"
-					"barrels8_normalsa.png"
-					"barrels9_normalsa.png"
-					"barrels1_normalsa.png"// Loop back to beginning and clamp there.
+					//"barrel1a_normals.png"
+					"barrels2a_normals.png"
+					"barrels3a_normals.png"
+					"barrels4a_normals.png"
+					"barrels5a_normals.png"
+					"barrels6a_normals.png"
+					"barrels7a_normals.png"
+					//"barrels8a_normals.png"
+					//"barrels9a_normals.png"
+					"barrels1a_normals.png"// Loop back to beginning and clamp there.
 				]
-				Size = [1, 1]
+				Size = [1, 2]
 				AnimationInterval = 0.04
 				AnimationStartTime = MinValue
 				ClampAnimation = true
@@ -622,9 +623,10 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 		{
 			Type = Sprite
 			ChainedTo = Turret
-			Location = [.15, 0]
+			Location = [.5, 0]
+			//Offset = [0.5, 0]
 			Rotation = 90d
-			Layer = "roof_doodads"
+			Layer = "roof_turrets"
 			ResetAnimationTrigger = Emitter2
 			AtlasSprite
 			{
@@ -637,24 +639,24 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 					"barrels5b.png"
 					"barrels6b.png"
 					"barrels7b.png"
-					"barrels8b.png"
-					"barrels9b.png"
+					//"barrels8b.png"
+					//"barrels9b.png"
 					"barrels1b.png"// Loop back to beginning and clamp there.
 				]
 				NormalsAnimationFiles
 				[
 					//"barrel1_normals.png"
-					"barrels2_normalsb.png"
-					"barrels3_normalsb.png"
-					"barrels4_normalsb.png"
-					"barrels5_normalsb.png"
-					"barrels6_normalsb.png"
-					"barrels7_normalsb.png"
-					"barrels8_normalsb.png"
-					"barrels9_normalsb.png"
-					"barrels1_normalsb.png"// Loop back to beginning and clamp there.
+					"barrels2b_normals.png"
+					"barrels3b_normals.png"
+					"barrels4b_normals.png"
+					"barrels5b_normals.png"
+					"barrels6b_normals.png"
+					"barrels7b_normals.png"
+					//"barrels8b_normals.png"
+					//"barrels9b_normals.png"
+					"barrels1b_normals.png"// Loop back to beginning and clamp there.
 				]
-				Size = [1, 1]
+				Size = [1, 2]
 				AnimationInterval = 0.04
 				AnimationStartTime = MinValue
 				ClampAnimation = true

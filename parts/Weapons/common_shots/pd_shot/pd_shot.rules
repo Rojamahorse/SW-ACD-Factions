@@ -1,5 +1,6 @@
-ID = sw.droid_pd_shot
-Range = 300
+ID = SW.pd_shot
+Range = 150
+IdealRange = 65
 Speed = 160
 
 Components
@@ -7,8 +8,8 @@ Components
 	Physics
 	{
 		Type = CirclePhysics
-		Radius = 0.4
-		Density = 0.1
+		Radius = 0.2
+		Density = 0.01
 	}
 
 	Death
@@ -20,16 +21,16 @@ Components
 	Sprite
 	{
 		Type = Sprite
-		RenderBucket = BulletUpper1
+		RenderBucket = BulletUpper3
 		Sprite
 		{
 			Texture
 			{
-				File = "./Data/shots/pd_shot/pd_shot.png"
+				File = "../../common_effects/particles/pd_shot.png" //IMAGE
 				SampleMode = Linear
 				MipLevels = max
 			}
-			Size = [4, .25]
+			Size = [8, .25]
 		}
 		Offset = [-3.5, 0]
 		LerpScaleFrom = [.25, 1]
@@ -38,19 +39,19 @@ Components
 	GlowSprite
 	{
 		Type = Sprite
-		RenderBucket = BulletUpper2
+		RenderBucket = BulletUpper4
 		Z = 0
 		IsLight = true
-		Offset = [-1.5, 0]
+		Offset = [-3.5, 0]
 		Sprite
 		{
 			Texture
 			{
-				File = ./Data/shots/pd_shot/pd_shot_glow.png
+				File = ../../common_effects/particles/pd_shot_glow.png // ./Data/shots/pd_shot/pd_shot_glow.png
 				MipLevels = max
 				SampleMode = Linear
 			}
-			Size = [4, 2]
+			Size = [8, 2]
 			VertexColor = [255, 255, 255]
 			TargetBlendMode = Add
 			Shader = "./Data/common_effects/fancy_light.shader"
@@ -71,6 +72,7 @@ Components
             Enemies = true
             Junk = true
             Friendlies = true
+			Neutrals = true
             OnlyBulletCategories = [missile, mine, bullet]
         }
 		HitBullet
@@ -81,8 +83,23 @@ Components
 			[
 				{
 					Type = Damage
-					Damage = 300
+					Damage = 1000
 				}
+				{
+					Type = ExplosiveDamage
+					TotalDamage = 2550
+					Radius = 5
+            		Slices = 1
+					Filter
+					{
+						Ships = false
+						Shields = false
+						Bullets = true
+						OnlyBulletCategories = [missile, bullet, mine]
+						Crew = true
+					}
+				}
+
 			]
 
 			MediaEffects
@@ -90,6 +107,7 @@ Components
 				&<./Data/shots/pd_shot/particles/pd_shot_spikes.rules>
 				&<./Data/shots/pd_shot/particles/pd_shot_sparks.rules>
 				&<./Data/ships/terran/point_defense/particles/point_defense_shoot_flash.rules>
+				&<../../common_shots/sw_pd_beam_shot/particles/sw_laser_smoke.rules>
 			]
 		}
 
