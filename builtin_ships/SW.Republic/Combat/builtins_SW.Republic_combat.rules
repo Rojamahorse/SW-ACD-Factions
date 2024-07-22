@@ -86,6 +86,7 @@ Ships
 /*393,960*/    		:~{ File="Consular-Class Cruiser (Charger c70 Retrofit) Grey.ship.png";                  Tier=6;  Difficulty=1; Tags = [combat] }
 /*424,820*/    		:~{ File="C-9979 Landing Craft (NRep) Atk.ship.png";                                     Tier=5;  Difficulty=2; Tags = [combat, repshuttle] }
 /*432,630*/    		:~{ File="Rep YT-2400 Light Freighter.ship.png";                                         Tier=6;  Difficulty=2; Tags = [combat] } // Original
+/*432,630*/    		:~{ File="Rep YT-1760 Armed Transport.ship.png";                                         Tier=6;  Difficulty=2; Tags = [combat] } // Original
 /*432,630*/    		:~{ File="Rep YT-2400-R Light Freighter.ship.png";                                       Tier=7;  Difficulty=2; Tags = [combat] } // Original
 /*434,020*/    		:~{ File="DP20 Frigate (Republic).ship.png";                                             Tier=7;  Difficulty=1; Tags = [combat] }
 /*458,200*/    		:~{ File="Rep CR90 Corvette (Republic).ship.png";                                        Tier=8;  Difficulty=1; Tags = [combat] }
