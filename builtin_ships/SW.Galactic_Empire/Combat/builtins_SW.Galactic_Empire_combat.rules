@@ -19,6 +19,7 @@ Ships
 /*60,930*/	:~{ File="Emp TIE Interceptor.ship.png";                        		Tier=2;  	Difficulty=2; 	Tags = [combat, swfighter, empfighter] }
 
 // Tier 3 ($60,000 - $150,000)
+/*66,440*/	:~{ File="Emp_Tie_Phantom.ship.png";    								Tier=32;  	Difficulty=2; 	Tags = [combat, swfighter, empfighter] }
 /*66,440*/	:~{ File="Emp_First_Order_Tie_Fighter.ship.png";    					Tier=3;  	Difficulty=1; 	Tags = [combat, swfighter, empfighter] }
 /*69,550*/	:~{ File="Emp TIE Heavy.ship.png";            							Tier=3;  	Difficulty=2; 	Tags = [combat, swfighter, empfighter] }
 /*72,550*/	:~{ File="Emp Imperial Transport.ship.png";            					Tier=3;  	Difficulty=1; 	Tags = [combat, empshuttle] }
