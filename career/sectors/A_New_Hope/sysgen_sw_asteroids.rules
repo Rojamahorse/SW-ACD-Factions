@@ -317,7 +317,7 @@ MChance = 1/2
 LChance = 1/4
 XLChance = 1/8
 XXLChance = 1/16
-CommonAsteroidTypes : &<./Data/modes/career/sectors/sysgen_asteroids.rules>/CommonAsteroidTypes
+CommonAsteroidTypes : <./Data/modes/career/sectors/sysgen_asteroids.rules>/CommonAsteroidTypes
 [
 /*	{ Type=cosmoteer.asteroid_s;            ChanceWeight=(&~/CommonChance)*(&~/SChance); }
 	{ Type=cosmoteer.asteroid_iron_s;       ChanceWeight=(&~/CommonChance)*(&~/SChance); }
