@@ -60,6 +60,7 @@ Ships
 /*463,220*/		:~{ File="Rebel DP20 Frigate Mk2.ship.png"; 									Tier=7;    Difficulty=2; Tags = [combat] }
 /*121,180*/		:~{ File="Reb YT-1760 Armed Transport O.ship.png"; 								Tier=5;    Difficulty=2; Tags = [combat] }  
 /*475,500*/		:~{ File="Rebel DP20 Frigate.ship.png";     									Tier=6;    Difficulty=2; Tags = [combat] }
+/*475,500*/		:~{ File="Reb YT-1760 Emp Transport O.ship.png";     							Tier=6;    Difficulty=2; Tags = [combat] }
 /*559,510*/		:~{ File="Reb MG-100 StarFortress SF-17 Heavy Bomber.ship.png"; 				Tier=7;    Difficulty=2; Tags = [combat] }
 /*559,510*/		:~{ File="Reb MG-100 StarFortress SF-17 Heavy BomberR.ship.png"; 				Tier=8;    Difficulty=1; Tags = [combat] }
 /*559,510*/		:~{ File="Reb Delta 4.ship.png"; 												Tier=7;    Difficulty=1; Tags = [combat] }

@@ -15,6 +15,7 @@ Ships
 	:~{ File="SW.Reb Arms Depot 3 Large.ship.png";      		Tier=7; SpawnTier=4;  	Tags : ~/Tags [military_station]; StasisIcon="SW.Reb Arms Depot 3.png";	OtherIDs=["Promise of the Rebel Alliance"] }
 	:~{ File="SW.Reb Arms Depot 4 XLarge.ship.png";     		Tier=9;  SpawnTier=8;  	Tags : ~/Tags [military_station]; StasisIcon="SW.Reb Arms Depot 4.png";	OtherIDs=["Inconspicuous Rebel Wreckage"] }
 	:~{ File="SW.Reb Arms Depot 5 Huge.ship.png";             	Tier=12; SpawnTier=12; 	Tags : ~/Tags [military_station]; StasisIcon="SW.Reb Arms Depot 5.png";	OtherIDs=["Ghost Rebel Hardware"] }
+	:~{ File="SW.Reb Arms_Depot 6 Huge.ship.png";   			Tier=13; SpawnTier=13; 	Tags : ~/Tags [military_station]; StasisIcon="SW.Reb Arms Depot 5.png";	/*OtherIDs=["New Republic Rebel - Station1", "Large Rebel Trade Station"]*/ }
 ]
 /*
 	// Civilian stations
