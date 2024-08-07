@@ -83,6 +83,9 @@ Actions
 	{
 		Action = AddMany
 		AddTo = "<ships/terran/terran.rules>/Terran/Roofs/RoofDecalGroups"
+
+		CreateIfNotExisting = true
+
 		ManyToAdd
 		[
 			&<roof_decals/sw_decal_group.rules>/SW_adv_shapes
