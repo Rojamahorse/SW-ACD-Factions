@@ -1,9 +1,14 @@
-Part : <./Data/ships/terran/base_part_terran.rules>/Part
+Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 {
-	ReceivableBuffs : ^/0/ReceivableBuffs [ElectronBuff]
+	ReceivableBuffs : ^/0/ReceivableBuffs [ElectronBuff, SW_Hypermatter_Energy_Grid]
 
 	Components : ^/0/Components
 	{
-
+		HypermatterEnergyGridToggle
+		{
+			Type = BuffToggle
+			BuffType = SW_Hypermatter_Energy_Grid
+		}
+		
 	}
 }

@@ -90,11 +90,11 @@ SWFactionsRepublic = "SW 派系：共和国"
 SWFactionsRepublicTip = "星球大战派系共和国舰队集合"
 
 
-DecalGroups
-{
-    // sw_decals = "星球大战派系贴花"
-    sw_adv_shapes = "高级渐变、阴影和形状"
-}
+//DecalGroups
+//{
+//    // sw_decals = "星球大战派系贴花"
+//    sw_adv_shapes = "高级渐变、阴影和形状"
+//}
 
 Factions
 {

@@ -98,11 +98,11 @@ SWFactionsRepublic = "SW ファクションズ: 共和国"
 SWFactionsRepublicTip = "スター・ウォーズ ファクションズ 共和国の船のコレクション"
 
 
-DecalGroups
-{
-    // sw_decals = "スター・ウォーズ派閥のデカール"
-    sw_adv_shapes = "高度なグラデーション、影、および形状"
-}
+//DecalGroups
+//{
+//    // sw_decals = "スター・ウォーズ派閥のデカール"
+//    sw_adv_shapes = "高度なグラデーション、影、および形状"
+//}
 
 Factions
 {

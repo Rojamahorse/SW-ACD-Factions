@@ -143,6 +143,7 @@ Labels = ["Abandoned"] // Labels assigned to the ship
 						"Winterbreeze"
 						"Caudrea"
 						"Trefies"						
+						"Kiowa"
 					]
 		        }
 		    ]
@@ -315,6 +316,7 @@ Labels = ["Abandoned"] // Labels assigned to the ship
 						"Caudrea"
 						"Trefies"
 						"Fusion"
+						"Kiowa"
 					]
 		        }
 		    ]

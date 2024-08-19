@@ -1,9 +1,13 @@
 Part : &<tie_minigun.rules>/Part
 {
 	//IDs
-
+	ID = SW.fighter_tie_minigun_left
+	OtherIDs = [SW.fighter_tie_minigun_right]
+	FlipWhenLoadingIDs = [SW.fighter_tie_minigun_right]
 	//StringKeys
-	
+	NameKey = "Parts/tieMinigunLeft"
+	IconNameKey = "Parts/tieMinigunLeftIcon"	
+	DescriptionKey = "Parts/tieLMinigunDesc"
 	//Groups&Categories
 	
 	//Resources&Size&Health
@@ -13,21 +17,25 @@ Part : &<tie_minigun.rules>/Part
 	//Selections
 	
 	//PartSpecific
+	IsFlippable = true
 	
 	//ReceivableBuffs
 	
 	//Doors&Etc
 	
 	//Editor
+	EditorIcon
+	{
+		Texture
+		{
+			File = "icon_left.png"
+			SampleMode = Linear
+		}
+		Size = [90, 60]
+	}
 	
 	//Components
-	NameKey = "Parts/tieMinigunLeft"
-	IconNameKey = "Parts/tieMinigunLeftIcon"
-	ID = SW.fighter_tie_minigun_left
-	OtherIDs = [SW.fighter_tie_minigun_right]
-	FlipWhenLoadingIDs = [SW.fighter_tie_minigun_right]
-	DescriptionKey = "Parts/tieLMinigunDesc"
-	IsFlippable = true
+
 //	ProhibitRects
 //	[
 //		[fighter, [-1, -1, 1, 1]]
@@ -41,15 +49,6 @@ Part : &<tie_minigun.rules>/Part
 //		[0, 1]
 //	]
 
-	EditorIcon
-	{
-		Texture
-		{
-			File = "icon_left.png"
-			SampleMode = Linear
-		}
-		Size = [90, 60]
-	}
 
 	Components : ^/0/Components
 	{

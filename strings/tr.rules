@@ -84,11 +84,11 @@ StatCategories
 
 
 
-DecalGroups
-{
-    // sw_decals = "Star Wars Gruplarına Ait Çıkartmalar"
-    sw_adv_shapes = "Gelişmiş Gradyanlar, Gölgeler ve Şekiller"
-}
+//DecalGroups
+//{
+//    // sw_decals = "Star Wars Gruplarına Ait Çıkartmalar"
+//    sw_adv_shapes = "Gelişmiş Gradyanlar, Gölgeler ve Şekiller"
+//}
 
 Factions
 {

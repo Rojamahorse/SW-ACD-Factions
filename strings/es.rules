@@ -105,11 +105,11 @@ SWFactionsStartersTip = "Una colección de Naves Iniciales de las Facciones de S
 SWCommunitySubmissions = "Contribuciones de la Comunidad SW"
 SWCommunitySubmissionsTip = "Una colección de Envíos de Naves de Star Wars por la comunidad"
 
-DecalGroups
-{
-    // sw_decals = "Calcomanías de la Facción de Star Wars"
-    sw_adv_shapes = "Gradientes Avanzados, Sombras y Formas"
-}
+//DecalGroups
+//{
+//    // sw_decals = "Calcomanías de la Facción de Star Wars"
+//    sw_adv_shapes = "Gradientes Avanzados, Sombras y Formas"
+//}
 
 
 Factions

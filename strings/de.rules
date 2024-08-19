@@ -94,11 +94,11 @@ SWFactionsStartersTip = "Eine Sammlung von Star Wars Fraktionen Starter-Schiffen
 SWCommunitySubmissions = "SW Community-Einsendungen"
 SWCommunitySubmissionsTip = "Eine Sammlung von Star Wars Schiff-Einsendungen aus der Community"
 
-DecalGroups
-{
-    // sw_decals = "Star Wars Fraktionsabziehbilder"
-    sw_adv_shapes = "Fortgeschrittene Verläufe, Schatten & Formen"
-}
+//DecalGroups
+//{
+//    // sw_decals = "Star Wars Fraktionsabziehbilder"
+//    sw_adv_shapes = "Fortgeschrittene Verläufe, Schatten & Formen"
+//}
 
 
 Factions

@@ -90,11 +90,11 @@ SWFactionsRepublic = "SW Фракции: Республика"
 SWFactionsRepublicTip = "Коллекция кораблей Республики Фракций Звездных Войн"
 
 
-DecalGroups
-{
-    // sw_decals = "Декали фракции Звёздных Войн"
-    sw_adv_shapes = "Продвинутые градиенты, тени и формы"
-}
+//DecalGroups
+//{
+//    // sw_decals = "Декали фракции Звёздных Войн"
+//    sw_adv_shapes = "Продвинутые градиенты, тени и формы"
+//}
 
 Factions
 {

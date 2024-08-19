@@ -80,17 +80,17 @@ Actions
 	/* *********** DECALS & SHIPS & SHIP SIZES ************* */
 
 	//Adds faction decals folder and advanced gradients, shading, and shapes folder
-	{
-		Action = AddMany
-		AddTo = "<ships/terran/terran.rules>/Terran/Roofs/RoofDecalGroups"
-
-		CreateIfNotExisting = true
-
-		ManyToAdd
-		[
-			&<roof_decals/sw_decal_group.rules>/SW_adv_shapes
-		]
-	}
+//	{
+//		Action = AddMany
+//		AddTo = "<ships/terran/terran.rules>/Terran/Roofs/RoofDecalGroups"
+//
+//		CreateIfNotExisting = true
+//
+//		ManyToAdd
+//		[
+//			&<roof_decals/sw_decal_group.rules>/SW_adv_shapes
+//		]
+//	}
 	
 	{
 		Action = Overrides

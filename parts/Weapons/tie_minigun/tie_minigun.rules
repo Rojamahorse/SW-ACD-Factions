@@ -21,7 +21,7 @@ Part : &<../xwing_cannon/xwing_cannon.rules>/Part
 	//PartSpecific
 	
 	//ReceivableBuffs
-	ReceivableBuffs = [ElectronBuff]
+	ReceivableBuffs : ^/0/ReceivableBuffs []
 
 	//Doors&Etc
 	

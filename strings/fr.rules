@@ -102,11 +102,11 @@ SWCommunitySubmissions = "Contributions de la Communauté SW"
 SWCommunitySubmissionsTip = "Une collection de Soumissions de Vaisseaux Star Wars par la communauté"
 
 
-DecalGroups
-{
-    // sw_decals = "Décalcomanies de la Faction Star Wars"
-    sw_adv_shapes = "Dégradés, Ombres et Formes Avancés"
-}
+//DecalGroups
+//{
+//    // sw_decals = "Décalcomanies de la Faction Star Wars"
+//    sw_adv_shapes = "Dégradés, Ombres et Formes Avancés"
+//}
 
 
 Factions

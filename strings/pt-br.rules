@@ -87,11 +87,11 @@ SWFactionsRepublic = "SW Facções: República"
 SWFactionsRepublicTip = "Uma coleção de naves da República das Facções de Star Wars"
 
 
-DecalGroups
-{
-    // sw_decals = "Decalques da Facção Star Wars"
-    sw_adv_shapes = "Gradientes Avançados, Sombras e Formas"
-}
+//DecalGroups
+//{
+//    // sw_decals = "Decalques da Facção Star Wars"
+//    sw_adv_shapes = "Gradientes Avançados, Sombras e Formas"
+//}
 
 
 Factions
