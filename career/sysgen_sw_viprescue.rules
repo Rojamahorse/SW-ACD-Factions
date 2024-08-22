@@ -144,6 +144,7 @@ Labels = ["Abandoned"] // Labels assigned to the ship
 						"Caudrea"
 						"Trefies"						
 						"Kiowa"
+						"Darkstar"
 					]
 		        }
 		    ]
@@ -317,6 +318,7 @@ Labels = ["Abandoned"] // Labels assigned to the ship
 						"Trefies"
 						"Fusion"
 						"Kiowa"
+						"Darkstar"
 					]
 		        }
 		    ]
