@@ -116,6 +116,7 @@ Ships
 /*6,136,850*/	:~{ File="MC Light Cruiser RepP.ship.png";     								Tier=16;    Difficulty=1; Tags = [combat, rebcapital] }
 /*6,943,294*/	:~{ File="Rebel MC75 Mon Calamari Cruiser.ship.png";     					Tier=16;    Difficulty=1; Tags = [combat, rebcapital] }
 /*7,884,422*/	:~{ File="Rebel MC75 Mon Calamari Star Cru.ship.png";     					Tier=16;    Difficulty=2; Tags = [combat, rebcapital] }
+/*7,884,422*/	:~{ File="Reb Dauntless Rebel Cruiser.ship.png";     						Tier=17;    Difficulty=2; Tags = [combat, rebcapital] }
 /*12,038,206*/	:~{ File="Rebel-Nebula-Class Star Destroyer.ship.png"; 						Tier=18;    Difficulty=3; Tags = [combat, rebcapital] } 
 /*10,496,784*/	:~{ File="Venator II-Class Star Destroyer (Rebels).ship.png";     			Tier=18;    Difficulty=2; Tags = [combat, rebcapital] }
 /*8,019,360*/	:~{ File="MC75 Mon Calamari Star Cruiser.ship.png"; 						Tier=17;    Difficulty=1; Tags = [combat, rebcapital] }

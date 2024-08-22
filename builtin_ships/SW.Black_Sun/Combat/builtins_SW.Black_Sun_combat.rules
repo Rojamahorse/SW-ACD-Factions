@@ -14,6 +14,7 @@ Ships
 /*84,230*/			:~{ File="Black Sun Fighter-BS H (Combat).ship.png";         			Tier=3;  Difficulty=2; Tags = [combat, swfighter, bscfighter] }
 /*99,440*/			:~{ File="Firespray-31-BS-Y Patrol.ship.png";       					Tier=1;  Difficulty=2; Tags = [combat, swfighter, bscfighter] }
 /*102,040*/			:~{ File="Firespray-31-BS Patrol.ship.png";        						Tier=2;  Difficulty=1; Tags = [combat, swfighter, bscfighter] }
+/*102,040*/			:~{ File="Black Sun Fighter_v1.ship.png";        						Tier=2;  Difficulty=1; Tags = [combat, swfighter, bscfighter] }
 
 
 //Tier 3-4 (100,001 to 200,000)
@@ -36,6 +37,7 @@ Ships
 /*161,380*/			:~{ File="Undr_Razercrest.ship.png";          							Tier=5;  Difficulty=1; Tags = [combat] } //Neojino
 /*164,610*/			:~{ File="Heavy Starfighter-BS Alt.ship.png"; 							Tier=5;  Difficulty=2; Tags = [combat, swfighter, bscfighter] }
 /*181,710*/			:~{ File="BSC Kom'rk-Class Fighter 2.ship.png"; 						Tier=4;  Difficulty=2; Tags = [combat, swfighter, bscfighter] }
+/*181,710*/			:~{ File="BlackSun Interceptor.ship.png"; 								Tier=4;  Difficulty=2; Tags = [combat, swfighter, bscfighter] }
 
 //Tier 5-7 (180,001 to 400,000)
 /*137,170*/			:~{ File="BSC Pursuer-Class Enforcement-BS.ship.png"; 					Tier=5;  Difficulty=1; Tags = [combat] }
@@ -57,6 +59,7 @@ Ships
 /*361,680*/			:~{ File="BSC YT-1300a Corrupt Freighter.ship.png"; 					Tier=7;  Difficulty=1; Tags = [combat] }
 /*359,980*/			:~{ File="BSC YT-1300bscg Light Freighter .ship.png"; 					Tier=7;  Difficulty=1; Tags = [combat] }
 /*362,880*/			:~{ File="BSC YT-1300g Dirty Freighter.ship.png"; 						Tier=6;  Difficulty=1; Tags = [combat] }
+/*362,880*/			:~{ File="BSC_Pyre-Class_Frigate-B.ship.png"; 							Tier=6;  Difficulty=2; Tags = [combat] }
 /*358,590*/			:~{ File="Modified_YT-1300g_BS_Freighter.ship.png"; 					Tier=6;  Difficulty=1; Tags = [combat] }
 /*361,060*/			:~{ File="BSC YT-1300a Light Freighter.ship.png"; 						Tier=7;  Difficulty=1; Tags = [combat] }
 /*368,040*/			:~{ File="YT-1300bs Light Freighter.ship.png"; 							Tier=6;  Difficulty=2; Tags = [combat] }

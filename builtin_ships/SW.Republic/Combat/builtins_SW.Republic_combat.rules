@@ -38,6 +38,7 @@ Ships
 /*108,650*/    		:~{ File="Rep C-Wing Interceptor.ship.png";                                       		 Tier=4;  Difficulty=2; Tags = [combat, swfighter, repfighter] } 
 /*108,650*/    		:~{ File="Old Republic Bomber.ship.png";                                       		 	 Tier=5;  Difficulty=2; Tags = [combat, swfighter, repfighter] } 
 /*108,650*/    		:~{ File="Old Republic Bomber v2.ship.png";                                       		 Tier=6;  Difficulty=2; Tags = [combat, swfighter, repfighter] } 
+/*108,650*/    		:~{ File="Republic C-Wing Fighter.ship.png";                                       		 Tier=6;  Difficulty=2; Tags = [combat, swfighter, repfighter] } 
 /*108,650*/    		:~{ File="Rep N-Wing.ship.png";                                       		 			 Tier=4;  Difficulty=2; Tags = [combat, swfighter, repfighter] } 
 /*108,650*/    		:~{ File="Rep N-Wing v2.ship.png";                                       		 		 Tier=5;  Difficulty=2; Tags = [combat, swfighter, repfighter] } 
 /*108,650*/    		:~{ File="Rep N-Wing Mk2.ship.png";                                       		 		 Tier=5;  Difficulty=2; Tags = [combat, swfighter, repfighter] } 
