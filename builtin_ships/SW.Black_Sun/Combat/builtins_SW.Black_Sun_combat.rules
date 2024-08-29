@@ -54,7 +54,10 @@ Ships
 /*352,480*/			:~{ File="BSC YT-1300f Light Freighter (V2.ship.png"; 					Tier=5;  Difficulty=1; Tags = [combat] }
 /*353,080*/			:~{ File="BSC YT-1300g Light Freighter.ship.png"; 						Tier=7;  Difficulty=1; Tags = [combat] }
 /*353,080*/			:~{ File="Death Gang YT-1300g Freighter.ship.png"; 						Tier=6;  Difficulty=2; Tags = [combat] }
+/*353,000*/			:~{ File="BSC-YT-1300g Light Freighter.ship.png"; 						Tier=4;  Difficulty=2; Tags = [combat] }
+/*369,000*/			:~{ File="BSC-YT-1300a Light Freighter.ship.png"; 						Tier=5;  Difficulty=2; Tags = [combat] }
 /*353,080*/			:~{ File="YT-1300g SC Freighter.ship.png"; 								Tier=6;  Difficulty=2; Tags = [combat] }
+/*358,590*/			:~{ File="BSCModified_YT-1300_Light_Freighter.ship.png"; 				Tier=5;  Difficulty=2; Tags = [combat] }
 /*358,590*/			:~{ File="Modified_YT-1300g_Light_Freighter.ship.png"; 					Tier=6;  Difficulty=1; Tags = [combat] }
 /*361,680*/			:~{ File="BSC YT-1300a Corrupt Freighter.ship.png"; 					Tier=7;  Difficulty=1; Tags = [combat] }
 /*359,980*/			:~{ File="BSC YT-1300bscg Light Freighter .ship.png"; 					Tier=7;  Difficulty=1; Tags = [combat] }
@@ -66,12 +69,15 @@ Ships
 
 //Tier 8-10 (400,001 to 2,000,000)
 /*437,780*/			:~{ File="Modified_Gozanti-class_Cruiser.ship.png"; 					Tier=8;  Difficulty=1; Tags = [combat] }
+/*437,780*/			:~{ File="BSC-Gozanti-Class Cruiser.ship.png"; 							Tier=7;  Difficulty=2; Tags = [combat] }
 /*453,540*/ 		:~{ File="BSC Gozanti-Class Cruiser.ship.png"; 							Tier=8;  Difficulty=1; Tags = [combat] }
 /*462,900*/			:~{ File="Gozanti-Class Cruiser-BS.ship.png";         					Tier=8;  Difficulty=2; Tags = [combat] }
 /*612,450*/			:~{ File="BSC Delta 4 Smuggler.ship.png"; 								Tier=9;  Difficulty=1; Tags = [combat] }
-/*662,470*/			:~{ File="BSC YKL-37R Nova Courier.ship.png"; 							Tier=9;  Difficulty=1; Tags = [combat] }
+/*773,470*/			:~{ File="BSC YKL-37R Nova Courier.ship.png"; 							Tier=9;  Difficulty=2; Tags = [combat] }
+/*773,470*/			:~{ File="BSC-YKL-37R Nova Courier.ship.png"; 							Tier=8;  Difficulty=1; Tags = [combat] }
 /*1,082,704*/		:~{ File="Black Sun OutPost.ship.png"; 									Tier=10; Difficulty=1; Tags = [combat] }
 /*1,082,704*/		:~{ File="Zan Interceptor III Class BSC.ship.png"; 						Tier=10; Difficulty=2; Tags = [combat] }
+/*1,222,860*/		:~{ File="BSC-Hardcell-Class Interstellar Transport (Combat Refit).ship.png"; 				Tier=9;  Difficulty=2; Tags=[combat] }
 /*1,222,860*/ 		:~{ File="BSC Hardcell-Class Interstellar Transport.ship.png"; 			Tier=10; Difficulty=1; Tags = [combat] }
 /*1,222,860*/ 		:~{ File="BSC Nebulon B-2B Hvy Frigate MkI.ship.png"; 					Tier=7;  Difficulty=3;  Tags = [combat] }
 /*1,465,628*/		:~{ File="Shadow Collective Destroyer.ship.png";         				Tier=10; Difficulty=2; Tags = [combat] }
@@ -84,14 +90,17 @@ Ships
 /*4,529,860*/		:~{ File="BSC Recusant-Class Light Destroyer 2.ship.png"; 				Tier=14;  Difficulty=1; Tags = [combat] }
 /*4,609,240*/		:~{ File="BSC R-Class Light Destroyer 2.ship.png"; 						Tier=14;  Difficulty=1; Tags = [combat] }
 /*4,634,240*/		:~{ File="BSC Recusant-Class Light Destroyer.ship.png"; 				Tier=15;  Difficulty=1; Tags = [combat] }
+/*4,634,240*/		:~{ File="BSC-Recusant-Class Light Destroyer Style 2.ship.png"; 		Tier=16;  Difficulty=1; Tags=  [combat] }
 
 //Tier 14-17 (5,000,001 to 10,000,000)
 /*7,425,790*/		:~{ File="BSC Harrower-class Dreadnought.ship.png"; 					Tier=16;  Difficulty=3; Tags = [combat, bsccapital, swboss] }
 /*7,445,884*/		:~{ File="BSC Providence-Class Destroyer.ship.png"; 					Tier=15;  Difficulty=2; Tags = [combat, bsccapital] }
 /*7,445,880*/		:~{ File="BSC Providence-Class Dreadnought.ship.png"; 					Tier=18;  Difficulty=1; Tags = [combat, bsccapital] }
+/*7,912,269*/		:~{ File="BSC-Providence-Class Dreadnought.ship.png"; 					Tier=15;  Difficulty=2; Tags = [combat, bsccapital, swboss] }
 /*7,690,012*/		:~{ File="BSE Invisible Hand Alt.ship.png"; 							Tier=17;  Difficulty=3; Tags = [combat, bsccapital] }
 /*7,877,900*/		:~{ File="BSC_Invisible Hand.ship.png"; 								Tier=16;  Difficulty=2; Tags = [combat, bsccapital] }
 /*7,912,269*/		:~{ File="BSC Subjugator-Class Heavy Cruiser.ship.png"; 				Tier=17;  Difficulty=1; Tags = [combat, bsccapital] }
+/*7,912,269*/		:~{ File="BSC-Subjugator-Class Heavy Cruiser.ship.png"; 				Tier=15;  Difficulty=2; Tags = [combat, bsccapital] }
 /*8,199,985*/		:~{ File="Invisible Hand-BS.ship.png"; 									Tier=16;  Difficulty=1; Tags = [combat, bsccapital] }
 /*8,348,900*/		:~{ File="BSC Invisible Hand.ship.png"; 								Tier=17;  Difficulty=2; Tags = [combat, bsccapital] }
 /*12,782,900*/		:~{ File="BSC Harrower-class-II Dreadnaugh.ship.png"; 					Tier=18;  Difficulty=2; Tags = [combat, swboss] }

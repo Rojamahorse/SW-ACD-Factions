@@ -4,6 +4,7 @@ Tags = [civilian]
 Ships
 [
 	// Trade ships
+	:~{ File="CIS Maxillipede-Class_shuttle.ship.png"; 									Tier=3;  Tags : ~/Tags [trade] }
 	:~{ File="Cargo Transporter Tiny CIS.ship.png";  									Tier=1;  Tags : ~/Tags [trade] }
 	:~{ File="Cargo Transporter Small CIS.ship.png";        							Tier=3;  Tags : ~/Tags [trade] }
 	:~{ File="Cargo Transporter Medium CIS.ship.png";    								Tier=5;  Tags : ~/Tags [trade] }
@@ -16,6 +17,7 @@ Ships
 	:~{ File="Pelta-Class Frigate (CIS).ship.png";    									Tier=7;  Tags : ~/Tags [trade] }
 	:~{ File="CIS CIV Munificent-Class Star Frigate (InterGalactic Banking Clan).ship.png";    	Tier=14;  Tags : ~/Tags [trade]; /*OtherIDs=["Munificent-Class Star Frigate (InterGalactic Banking Clan)"];*/ }
 	:~{ File="CIS CIV Munificent-Class Star Frigate.ship.png";    								Tier=10;  Tags : ~/Tags [trade]; /*OtherIDs=["Munificent-Class Star Frigate"];*/ }
+	:~{ File="CIS-Munificent-Class Star Frigat.ship.png"; 								Tier=12;  Tags : ~/Tags [trade] }
 //	:~{ File="Munificent-Class Star Frigate 2.ship.png";    							Tier=11;  Tags : ~/Tags [trade] }
 //	:~{ File="Lukrehulk-Class Droid Control Ship.ship.png";     						Tier=13;  Tags : ~/Tags [trade] }
 	:~{ File="CIS Package Distributor.ship.png"; 										Tier=3;  Tags : ~/Tags [trade] }

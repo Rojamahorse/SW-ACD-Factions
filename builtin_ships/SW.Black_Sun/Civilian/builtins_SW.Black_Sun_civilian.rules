@@ -3,6 +3,7 @@ Tags = [civilian]
 
 Ships
 [
+	:~{ File="BSC Y-8_Mining_Vessel.ship.png"; 								Tier=3;  Tags : ~/Tags [trade] }
 	:~{ File="AA-9 Coruscant-BS Civ Freight.ship.png"; 						Tier=8;  Tags : ~/Tags [trade] }
 	:~{ File="AA-9 Coruscant-BS.ship.png"; 									Tier=11; Tags : ~/Tags [trade] }
 	:~{ File="Black Sun Fighter-BS (Civilian).ship.png"; 					Tier=2;  Tags : ~/Tags [trade] }

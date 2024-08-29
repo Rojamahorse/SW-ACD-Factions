@@ -16,6 +16,7 @@ Ships
 	:~{ File="SW.Republic Arms Depot 2 Small.ship.png";    	Tier=3;  	SpawnTier=5;  	Tags : ~/Tags [military_station]; StasisIcon="SW.Republic Arms Depot 2.png"; OtherIDs=["Minor Republic Arms Depot II", "Small Republic Arms Depot"]; FlightDirection=UpRight }
 	:~{ File="SW.Republic Arms Depot 3 Medium.ship.png";    Tier=7; 	SpawnTier=7; 	Tags : ~/Tags [military_station]; StasisIcon="SW.Republic Arms Depot 3.png"; OtherIDs=["Med SW.Republic Arms Depot", "Med Republic Arms Depot"]; FlightDirection=UpRight }
 	:~{ File="SW.Republic Arms Depot 4 Large.ship.png";   	Tier=9; 	SpawnTier=8; 	Tags : ~/Tags [military_station]; StasisIcon="SW.Republic Arms Depot 4.png"; OtherIDs=["Large SW.Republic Arms Depot", "Large Republic Arms Depot"]; FlightDirection=UpRight }
+	:~{ File="SW.Republic Golan_1_Defense_Plat.ship.png"; 	Tier=10; 	SpawnTier=8;    Tags : ~/Tags [military_station]; StasisIcon="SW.Republic Arms Depot 4.png"; FlightDirection=UpRight }
 	:~{ File="SW.Republic Arms Depot 5 XLarge.ship.png";    Tier=12;  	SpawnTier=12;  	Tags : ~/Tags [military_station]; StasisIcon="SW.Republic Arms Depot 5.png"; OtherIDs=["Huge SW.Republic Arms Depot"]; FlightDirection=UpRight }
 	:~{ File="SW.Republic Arms Depot 6 Huge.ship.png";    	Tier=16;  	SpawnTier=16;  	Tags : ~/Tags [military_station]; StasisIcon="SW.Republic Arms Depot 6.png"; OtherIDs=[""]; FlightDirection=UpRight }
 ]
