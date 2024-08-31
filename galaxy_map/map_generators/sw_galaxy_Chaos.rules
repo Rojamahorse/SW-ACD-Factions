@@ -52,29 +52,7 @@ MapNodes
 }
 
 
-SectorTypes : &<./Data/galaxy_map/map_generators/base_galaxy.rules>/SectorTypes
-{
-	Type = RandomSectorTypes
-	SectorTypes
-	[
-		{
-			Type = basic //SW.basic
-			RandomWeight = 1
-		}
-		{
-			Type = binary
-			RandomWeight = 0.5
-		}
-		{
-			Type = high_density_nebula
-			RandomWeight = 0.5
-		}
-		{
-			Type = supernova
-			RandomWeight = 0.5
-		}
-	]
-}
+
 
 // Define factions in the galaxy
 Factions  
@@ -297,6 +275,30 @@ ProgressionTiers
 	]
 }
 
+
+SectorTypes : &<./Data/galaxy_map/map_generators/base_galaxy.rules>/SectorTypes
+{
+	Type = RandomSectorTypes
+	SectorTypes
+	[
+		{
+			Type = basic //SW.basic
+			RandomWeight = 1
+		}
+		{
+			Type = binary
+			RandomWeight = 0.5
+		}
+		{
+			Type = high_density_nebula
+			RandomWeight = 0.5
+		}
+		{
+			Type = supernova
+			RandomWeight = 0.5
+		}
+	]
+}
 /*
 Factions
 {

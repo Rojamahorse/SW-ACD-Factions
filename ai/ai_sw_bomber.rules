@@ -30,6 +30,7 @@ StrategyModules
 		TargetFirepowerCacheTime = 10
 		AcquireAggroWithinRadar = true
 		ReleaseAggroWithinRadar = true
+		AvoidableDoodadTags = [sun]
 	}
 ]
 

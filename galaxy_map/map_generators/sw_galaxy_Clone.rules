@@ -10,30 +10,7 @@ MapNodes
 	NameGenerator = &<../../name_generators/sw_name_celestial.rules>/CelNameGen
 }
 
-//Nebulas
-SectorTypes
-{
-	Type = RandomSectorTypes
-	SectorTypes
-	[
-		{
-			Type = SW.cw_basic//SW.basic
-			RandomWeight = 1
-		}
-		{
-			Type = binary
-			RandomWeight = 0.5
-		}
-		{
-			Type = high_density_nebula
-			RandomWeight = 0.5
-		}
-		{
-			Type = supernova
-			RandomWeight = 0.5
-		}
-	]
-}
+
 
 Factions
 {
@@ -155,3 +132,27 @@ ProgressionTiers
 	]
 }
 
+//Nebulas
+SectorTypes
+{
+	Type = RandomSectorTypes
+	SectorTypes
+	[
+		{
+			Type = SW.cw_basic//SW.basic
+			RandomWeight = 1
+		}
+		{
+			Type = binary
+			RandomWeight = 0.5
+		}
+		{
+			Type = high_density_nebula
+			RandomWeight = 0.5
+		}
+		{
+			Type = supernova
+			RandomWeight = 0.5
+		}
+	]
+}

@@ -8,31 +8,6 @@ MapNodes
 }
 */
 
-//Nebulas
-SectorTypes : &<./Data/galaxy_map/map_generators/base_galaxy.rules>/SectorTypes
-{/*
-	Type = RandomSectorTypes
-	SectorTypes
-	[
-		{
-			Type = basic
-			RandomWeight = 1
-		}
-		{
-			Type = binary
-			RandomWeight = 0.5
-		}
-		//{
-		//	Type = high_density_nebula
-		//	RandomWeight = 0.5
-		//}
-		//{
-		//	Type = supernova
-		//	RandomWeight = 0.5
-		//}
-	]
-*/}
-
 Factions : &<./Data/galaxy_map/map_generators/base_galaxy.rules>/Factions
 {
 	/*Type = Factions
@@ -160,3 +135,26 @@ ProgressionTiers  : &<./Data/galaxy_map/map_generators/base_galaxy.rules>/Progre
 	]
 */}
 
+SectorTypes : &<./Data/galaxy_map/map_generators/base_galaxy.rules>/SectorTypes
+{/*
+	Type = RandomSectorTypes
+	SectorTypes
+	[
+		{
+			Type = basic
+			RandomWeight = 1
+		}
+		{
+			Type = binary
+			RandomWeight = 0.5
+		}
+		//{
+		//	Type = high_density_nebula
+		//	RandomWeight = 0.5
+		//}
+		//{
+		//	Type = supernova
+		//	RandomWeight = 0.5
+		//}
+	]
+*/}

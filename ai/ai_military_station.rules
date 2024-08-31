@@ -23,6 +23,7 @@ StrategyModules
 		AcquireAggroWithinRadar = false
 		ReleaseAggroWithinRadar = false
 		RotateOnly = true
+		AvoidableDoodadTags = [sun]
 	}
 ]
 
