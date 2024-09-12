@@ -39,6 +39,8 @@ Ships
 /*230,700*/		:~{ File="Reb K-Wing Assault Bomber CC.ship.png";     							Tier=5;    Difficulty=1; Tags = [combat, swfighter, rebfighter] }  
 /*230,700*/		:~{ File="Reb K-Wing Assault Bomber I.ship.png";     							Tier=6;    Difficulty=2; Tags = [combat, swfighter, rebfighter] }  
 /*230,700*/		:~{ File="Reb K-Wing Assault Bomber Hex.ship.png";     							Tier=6;    Difficulty=2; Tags = [combat, swfighter, rebfighter] }  
+/*230,700*/		:~{ File="MC Clear Depths-Class Lt Cruiser.ship.png"; 							Tier=4;    Difficulty=2; Tags = [combat, swfighter, rebfighter] }
+/*230,700*/		:~{ File="MC Clear Depths-Class Lt Cru mk2.ship.png"; 							Tier=5;    Difficulty=2; Tags = [combat, swfighter, rebfighter] }
 /*230,700*/		:~{ File="Reb UT-60D U-Wing Starfighter O.ship.png";     						Tier=6;    Difficulty=1; Tags = [combat, swfighter, rebfighter] }  
 /*230,700*/		:~{ File="Reb UT-60D U-Wing Starfighter R.ship.png";     						Tier=6;    Difficulty=1; Tags = [combat, swfighter, rebfighter] }  
 /*230,700*/		:~{ File="Reb D-Wing Strike Fighter v2.ship.png";     							Tier=4;    Difficulty=1; Tags = [combat, swfighter, rebfighter] }  

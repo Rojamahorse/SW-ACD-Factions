@@ -105,6 +105,7 @@ Ships
 /*8,348,900*/		:~{ File="BSC Invisible Hand.ship.png"; 								Tier=17;  Difficulty=2; Tags = [combat, bsccapital] }
 /*12,782,900*/		:~{ File="BSC Harrower-class-II Dreadnaugh.ship.png"; 					Tier=18;  Difficulty=2; Tags = [combat, swboss] }
 /*16,019,736*/		:~{ File="BSC Mando Destroyer.ship.png"; 								Tier=17;  Difficulty=3; Tags = [swboss] }
+/*12,782,900*/		:~{ File="Zann_Aggressor-Class_Star_Destroyer.ship.png"; 				Tier=17;  Difficulty=2; Tags = [combat, bsccapital] }
 
 //Tier 18
 /*38,760,000*/		//:~{ File="BSC Proto Raider Arquitens-Class.ship.png"; 					Tier=18;  Difficulty=2; Tags = [swboss] }
