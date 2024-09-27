@@ -2,16 +2,23 @@ Faction = SW.Black_Sun
 
 Ships
 [
+
 //Tier 1-2 (Up to 100,000)
+/*47,100*/			:~{ File="UGLIES_Tye_Wing-Class_Starfighter.ship.png"; 					Tier=1;  Difficulty=2; Tags = [combat, swfighter, bscfighter, pirate] }
+/*54,100*/			:~{ File="BSC Rihkxyrk Assault Fighter Mk2.ship.png"; 					Tier=1;  Difficulty=2; Tags = [combat, swfighter, bscfighter] }
 /*54,100*/			:~{ File="Hyena-BS Droid Bomber.ship.png";          					Tier=2;  Difficulty=2; Tags = [combat] } 
 /*68,280*/			:~{ File="Storm IV Twin-Pod BS Combat.ship.png";          				Tier=1;  Difficulty=2; Tags = [combat, swfighter, bscfighter] } 
+/*70,480*/			:~{ File="BS_LRRS Mk2_Shuttle.ship.png"; 								Tier=1;  Difficulty=2; Tags = [combat] }
 /*73,520*/			:~{ File="Small-BS Fighter.ship.png";           						Tier=2;  Difficulty=2; Tags = [combat, swfighter, bscfighter] }
 /*73,520*/			:~{ File="Hutt-BS Fighter.ship.png";         							Tier=2;  Difficulty=2; Tags = [combat, swfighter, bscfighter] }
 /*73,520*/			:~{ File="BSC G-Wing Fighter.ship.png";         						Tier=2;  Difficulty=2; Tags = [combat, swfighter, bscfighter] }
 /*80,020*/			:~{ File="Undr_Z-95 Headhunter.ship.png";         						Tier=1;  Difficulty=2; Tags = [combat, swfighter, bscfighter] } //Neojino
+/*80,100*/			:~{ File="UGLIES_Z_Ceptor-Class_Starfighter.ship.png"; 					Tier=2;  Difficulty=2; Tags = [combat, swfighter, bscfighter, pirate] }
 /*80,420*/			:~{ File="BSC Storm IVB Twin-Pod Combat Y.ship.png"; 					Tier=2;  Difficulty=2; Tags = [combat, swfighter, bscfighter] }
 /*81,180*/			:~{ File="Black Sun Fighter (Combat).ship.png";     					Tier=2;  Difficulty=1; Tags = [combat, swfighter, bscfighter] }
 /*84,230*/			:~{ File="Black Sun Fighter-BS H (Combat).ship.png";         			Tier=3;  Difficulty=2; Tags = [combat, swfighter, bscfighter] }
+/*89,880*/			:~{ File="UGLIES_ChirDaki-Class_Starfighter.ship.png"; 					Tier=3;  Difficulty=2; Tags = [combat, swfighter, bscfighter, pirate] }
+/*98,100*/			:~{ File="BSC Rihkxyrk Assault Fighter.ship.png"; 						Tier=3;  Difficulty=2; Tags = [combat, swfighter, bscfighter] }
 /*99,440*/			:~{ File="Firespray-31-BS-Y Patrol.ship.png";       					Tier=1;  Difficulty=2; Tags = [combat, swfighter, bscfighter] }
 /*102,040*/			:~{ File="Firespray-31-BS Patrol.ship.png";        						Tier=2;  Difficulty=1; Tags = [combat, swfighter, bscfighter] }
 /*102,040*/			:~{ File="Black Sun Fighter_v1.ship.png";        						Tier=2;  Difficulty=1; Tags = [combat, swfighter, bscfighter] }
@@ -32,6 +39,7 @@ Ships
 /*140,020*/			:~{ File="Black Sun ARC-170-BS.ship.png";       						Tier=5;  Difficulty=1; Tags = [combat, swfighter, bscfighter] }
 /*144,020*/			:~{ File="Mandalorian ARC-170.ship.png";   								Tier=3;  Difficulty=2; Tags = [combat] }
 /*155,000*/			:~{ File="BSC Razor Crest.ship.png"; 									Tier=4;  Difficulty=2; Tags = [combat] }
+/*160,100*/			:~{ File="Zann Xanadu Blood.ship.png"; 									Tier=4;  Difficulty=2; Tags = [combat, swfighter, zannfighter] }
 /*161,120*/			:~{ File="Death Gang ARC-170-BSC-R.ship.png";       					Tier=3;  Difficulty=2; Tags = [combat, swfighter, bscfighter] }
 /*161,120*/			:~{ File="Pyke ARC-170-BS.ship.png";       								Tier=3;  Difficulty=2; Tags = [combat, swfighter, bscfighter] }
 /*161,380*/			:~{ File="Undr_Razercrest.ship.png";          							Tier=5;  Difficulty=1; Tags = [combat] } //Neojino
@@ -47,10 +55,14 @@ Ships
 /*TBD*/				:~{ File="C-9979 LC Death Gang (BSC) Atk.ship.png"; 					Tier=6;  Difficulty=1; Tags = [combat] }
 /*184,790*/			:~{ File="BSC Kom'rk-Class Fighter.ship.png"; 							Tier=6;  Difficulty=1; Tags = [combat, swfighter, bscfighter] }
 /*190,090*/			:~{ File="Mandalorian Kom'rk-Class-O Fight.ship.png";          			Tier=6;  Difficulty=1; Tags = [combat, swfighter, bscfighter] } //ClassicJam 
+/*197,830*/			:~{ File="Zann_StarViper_Attack_Platform_Zann.ship.png"; 				Tier=6;  Difficulty=2; Tags = [combat, swfighter, zannfighter] }
 /*203,910*/			:~{ File="BSC Kom'rk-Class Fighter R.ship.png"; 						Tier=7;  Difficulty=1; Tags = [combat, swfighter, bscfighter] }
+/*203,935*/			:~{ File="BSC_StarViper_Attack_Platform_Black.ship.png"; 				Tier=7;  Difficulty=2; Tags = [combat, swfighter, bscfighter] }
 /*203,940*/			:~{ File="Mandalorian Kom'rk-Class (Gauntlet)BS Fighter.ship.png";      Tier=6;  Difficulty=2; Tags = [combat, swfighter, bscfighter] } //ClassicJam
+/*238,831*/			:~{ File="Zann StarViper-Class Assault Fig.ship.png"; 					Tier=7;  Difficulty=2; Tags = [combat, swfighter, zannfighter] }
 /*268,850*/			:~{ File="BSC Smuggler's Luxury Yacht 3000.ship.png"; 					Tier=6;  Difficulty=1; Tags = [combat] }
 /*270,630*/			:~{ File="GR-75 Medium Transport (New).ship.png"; 						Tier=8;  Difficulty=1; Tags = [combat] }
+/*305,870*/			:~{ File="GAT-12_Skipray_Blastboat_Zann.ship.png"; 						Tier=7;  Difficulty=2; Tags = [combat, zann] }
 /*352,480*/			:~{ File="BSC YT-1300f Light Freighter (V2.ship.png"; 					Tier=5;  Difficulty=1; Tags = [combat] }
 /*353,080*/			:~{ File="BSC YT-1300g Light Freighter.ship.png"; 						Tier=7;  Difficulty=1; Tags = [combat] }
 /*353,080*/			:~{ File="Death Gang YT-1300g Freighter.ship.png"; 						Tier=6;  Difficulty=2; Tags = [combat] }
@@ -73,10 +85,11 @@ Ships
 /*453,540*/ 		:~{ File="BSC Gozanti-Class Cruiser.ship.png"; 							Tier=8;  Difficulty=1; Tags = [combat] }
 /*462,900*/			:~{ File="Gozanti-Class Cruiser-BS.ship.png";         					Tier=8;  Difficulty=2; Tags = [combat] }
 /*612,450*/			:~{ File="BSC Delta 4 Smuggler.ship.png"; 								Tier=9;  Difficulty=1; Tags = [combat] }
+/*646,328*/			:~{ File="Zann Skipray Blastboat.ship.png"; 							Tier=8;  Difficulty=2; Tags = [combat] }
 /*773,470*/			:~{ File="BSC YKL-37R Nova Courier.ship.png"; 							Tier=9;  Difficulty=2; Tags = [combat] }
 /*773,470*/			:~{ File="BSC-YKL-37R Nova Courier.ship.png"; 							Tier=8;  Difficulty=1; Tags = [combat] }
 /*1,082,704*/		:~{ File="Black Sun OutPost.ship.png"; 									Tier=10; Difficulty=1; Tags = [combat] }
-/*1,082,704*/		:~{ File="Zan Interceptor III Class BSC.ship.png"; 						Tier=10; Difficulty=2; Tags = [combat] }
+/*1,082,704*/		:~{ File="Zan Interceptor III Class BSC.ship.png"; 						Tier=10; Difficulty=2; Tags = [combat, zann] }
 /*1,222,860*/		:~{ File="BSC-Hardcell-Class Interstellar Transport (Combat Refit).ship.png"; 				Tier=9;  Difficulty=2; Tags=[combat] }
 /*1,222,860*/ 		:~{ File="BSC Hardcell-Class Interstellar Transport.ship.png"; 			Tier=10; Difficulty=1; Tags = [combat] }
 /*1,222,860*/ 		:~{ File="BSC Nebulon B-2B Hvy Frigate MkI.ship.png"; 					Tier=7;  Difficulty=3;  Tags = [combat] }
@@ -87,6 +100,9 @@ Ships
 /*2,098,820*/		:~{ File="AA-9 Coruscant-BS Botajef Freigh.ship.png"; 					Tier=11;  Difficulty=1; Tags = [combat] }
 /*2,183,980*/		:~{ File="AA-9 Coruscant-BS (Combat).ship.png"; 						Tier=12;  Difficulty=1; Tags = [combat] }
 /*2,264,773*/		:~{ File="BSE Vengeance Class.ship.png"; 								Tier=13;  Difficulty=1; Tags = [combat] }
+/*2,353,380*/		:~{ File="BSC_Vengeance-Class_Frigate.ship.png"; 						Tier=13;  Difficulty=2; Tags = [combat] }
+
+/*4,104,533*/		:~{ File="Mdlr Kandosii-Type Dreadnaught.ship.png"; 					Tier=13;  Difficulty=2; Tags = [combat, mdlrcapital] }
 /*4,529,860*/		:~{ File="BSC Recusant-Class Light Destroyer 2.ship.png"; 				Tier=14;  Difficulty=1; Tags = [combat] }
 /*4,609,240*/		:~{ File="BSC R-Class Light Destroyer 2.ship.png"; 						Tier=14;  Difficulty=1; Tags = [combat] }
 /*4,634,240*/		:~{ File="BSC Recusant-Class Light Destroyer.ship.png"; 				Tier=15;  Difficulty=1; Tags = [combat] }
@@ -105,6 +121,7 @@ Ships
 /*8,348,900*/		:~{ File="BSC Invisible Hand.ship.png"; 								Tier=17;  Difficulty=2; Tags = [combat, bsccapital] }
 /*12,782,900*/		:~{ File="BSC Harrower-class-II Dreadnaugh.ship.png"; 					Tier=18;  Difficulty=2; Tags = [combat, swboss] }
 /*16,019,736*/		:~{ File="BSC Mando Destroyer.ship.png"; 								Tier=17;  Difficulty=3; Tags = [swboss] }
+/*12,782,900*/		:~{ File="Zann_Aggressor_Star_Destroyer_Zann.ship.png"; 				Tier=17;  Difficulty=2; Tags = [combat, bsccapital] }
 /*12,782,900*/		:~{ File="Zann_Aggressor-Class_Star_Destroyer.ship.png"; 				Tier=17;  Difficulty=2; Tags = [combat, bsccapital] }
 
 //Tier 18

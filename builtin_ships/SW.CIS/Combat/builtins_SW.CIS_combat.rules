@@ -14,6 +14,7 @@ Ships
 /*52,440*/           :~{ File="Vulture-Class Droid-R Starfighte.ship.png";                           Tier=3;  Difficulty=2; Tags = [combat, swfighter, cisfighter] }
 /*65,440*/           :~{ File="CIS Vulture-Class Droid-B Starfighte.ship.png";                       Tier=3;  Difficulty=2; Tags = [combat, swfighter, cisfighter] }
 /*55,100*/           :~{ File="Hyena-Class Droid Bomber.ship.png";                                   Tier=3;  Difficulty=2; Tags = [combat] }
+/*67,290*/           :~{ File="CIS_Droid_Tri-Fighter.ship.png"; 				                     Tier=2;  Difficulty=2; Tags = [combat, swfighter, cisfighter] }
 /*75,100*/           :~{ File="CIS Geonosian Starfighter.ship.png";                                  Tier=3;  Difficulty=2; Tags = [combat, swfighter, cisfighter] }
 /*75,100*/           :~{ File="CIS Geonosian Starfighter Mk2.ship.png";                              Tier=4;  Difficulty=2; Tags = [combat, swfighter, cisfighter] }
 /*75,100*/           :~{ File="CIS Hyena-Class Droid Bomber B.ship.png";                             Tier=3;  Difficulty=2; Tags = [combat] }
@@ -87,6 +88,7 @@ Ships
 /*40,429,820*/       :~{ File="CIS Lukrehulk Battleship.ship.png";                                   Tier=16;  Difficulty=2; Tags = [swboss]; OtherIDs=["LukrehulkWP24"]; }
 /*50,327,340*/       :~{ File="Lucrehulk-Class Battlecruiser.ship.png";                              Tier=18;  Difficulty=2; Tags = [swboss] }
 /*63,799,740*/       :~{ File="Lukrehulk-Class Battlecruiser.ship.png";                              Tier=17;  Difficulty=2; Tags = [swboss] }
+/*66,799,740*/	     :~{ File="CIS_Subjugator_Class_HeavyCruise.ship.png"; 				             Tier=18;  Difficulty=2; Tags = [swboss] }
 
 ]
 

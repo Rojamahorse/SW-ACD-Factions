@@ -4,35 +4,36 @@ Tags = [civilian]
 Ships
 [
 	// Trade ships 
-	:~{ File="Emp_Probe Droid Civ.ship.png";  				Tier=1;  Tags : ~/Tags [trade] } //SkipperWraith
-	:~{ File="Emp Firespray-31-Class Patr.ship.png";  		Tier=3;  Tags : ~/Tags [trade] }
-	:~{ File="Emp Corellian G9 Rig Freighter.ship.png";     Tier=5;  Tags : ~/Tags [trade] }
-	:~{ File="Emp Corellian G9 Freighter Mk2.ship.png";     Tier=5;  Tags : ~/Tags [trade] }
-	:~{ File="Cargo Transporter Tiny Empire.ship.png";  	Tier=1;  Tags : ~/Tags [trade] }
-	:~{ File="Cargo Transporter Small Empire.ship.png";     Tier=3;  Tags : ~/Tags [trade] }
-	:~{ File="Cargo Transporter Medium Empire.ship.png";    Tier=5;  Tags : ~/Tags [trade] }
-	:~{ File="Civ Pelta-Class Frigate (Empire).ship.png";   Tier=7;  Tags : ~/Tags [trade] }
-	:~{ File="Emp-Pelta-Class Frigate (Empire).ship.png"; 	Tier=6;  Tags : ~/Tags [trade] }
-	:~{ File="Eta-Class Supply Barge Emp.ship.png";    		Tier=7;  Tags : ~/Tags [trade] }
-	:~{ File="Emp_Eta-Class Supply Barge.ship.png";    		Tier=7;  Tags : ~/Tags [trade] } //Neojino
-	:~{ File="Emp_Eta-Class Supply Barge2.ship.png";    	Tier=7;  Tags : ~/Tags [trade] } //Neojino
-	:~{ File="Cargo Transporter Large Empire.ship.png"; 	Tier=9;  Tags : ~/Tags [trade] }
-	:~{ File="Cargo Transporter Huge Empire.ship.png";    	Tier=10;  Tags : ~/Tags [trade] }
-	:~{ File="Lamda-Class Transport 4a.ship.png";     		Tier=3;  Tags : ~/Tags [trade] }
-	:~{ File="Emp Lamda-Class T-4a Civ.ship.png";     		Tier=3;  Tags : ~/Tags [trade] }
-	:~{ File="Emp Auklet.ship.png";     					Tier=3;  Tags : ~/Tags [trade] }
-	:~{ File="Emp Dovekie.ship.png";    					Tier=3;  Tags : ~/Tags [trade] }
-	:~{ File="Emp Cormorant.ship.png";  					Tier=5;  Tags : ~/Tags [trade] }
-	:~{ File="Emp Fulmar.ship.png";     					Tier=5;  Tags : ~/Tags [trade] }
-	:~{ File="Emp Murrelet.ship.png";   					Tier=5;  Tags : ~/Tags [trade] }
-	:~{ File="Emp_BFF-1_Bulk_Freighter_B.ship.png"; 		Tier=5;  Tags : ~/Tags [trade] }
-	:~{ File="Emp_BFF-1_Bulk_Freighter_A.ship.png"; 		Tier=7;  Tags : ~/Tags [trade] }
-	:~{ File="Emp Pelican.ship.png";    					Tier=7;  Tags : ~/Tags [trade] }
-	:~{ File="Emp Petrel.ship.png";     					Tier=7;  Tags : ~/Tags [trade] }
-	:~{ File="Emp Guillemot.ship.png";  					Tier=7;  Tags : ~/Tags [trade] }
-	:~{ File="Emp Albatross.ship.png";  					Tier=10; Tags : ~/Tags [trade] }
-	:~{ File="Emp Imperial Cargo Transport.ship.png";  		Tier=10; Tags : ~/Tags [trade] }
-	:~{ File="Emp EF76 Nebulon Hvy Cargo G.ship.png";  		Tier=10; Tags : ~/Tags [trade] }
-	:~{ File="Emp Shearwater.ship.png"; 					Tier=10; Tags : ~/Tags [trade] }
-	:~{ File="Emp Industrial Cargo Freighter.ship.png";     Tier=13;  Tags : ~/Tags [trade] }
+	:~{ File="Emp_Probe Droid Civ.ship.png";  							Tier=1;  Tags : ~/Tags [trade] } //SkipperWraith
+	:~{ File="Emp Firespray-31-Class Patr.ship.png";  					Tier=3;  Tags : ~/Tags [trade] }
+	:~{ File="Emp Corellian G9 Rig Freighter.ship.png";     			Tier=5;  Tags : ~/Tags [trade] }
+	:~{ File="Emp Corellian G9 Freighter Mk2.ship.png";     			Tier=5;  Tags : ~/Tags [trade] }
+	:~{ File="Cargo Transporter Tiny Empire.ship.png";  				Tier=1;  Tags : ~/Tags [trade] }
+	:~{ File="Cargo Transporter Small Empire.ship.png";     			Tier=3;  Tags : ~/Tags [trade] }
+	:~{ File="Cargo Transporter Medium Empire.ship.png";    			Tier=5;  Tags : ~/Tags [trade] }
+	:~{ File="Civ Pelta-Class Frigate (Empire).ship.png";   			Tier=7;  Tags : ~/Tags [trade] }
+	:~{ File="Emp-Pelta-Class Frigate (Empire).ship.png"; 				Tier=6;  Tags : ~/Tags [trade] }
+	:~{ File="Eta-Class Supply Barge Emp.ship.png";    					Tier=7;  Tags : ~/Tags [trade] }
+	:~{ File="Emp_Eta-Class Supply Barge.ship.png";    					Tier=7;  Tags : ~/Tags [trade] } //Neojino
+	:~{ File="Emp_Eta-Class Supply Barge2.ship.png";    				Tier=7;  Tags : ~/Tags [trade] } //Neojino
+	:~{ File="Cargo Transporter Large Empire.ship.png"; 				Tier=9;  Tags : ~/Tags [trade] }
+	:~{ File="Cargo Transporter Huge Empire.ship.png";    				Tier=10;  Tags : ~/Tags [trade] }
+	:~{ File="Lamda-Class Transport 4a.ship.png";     					Tier=3;  Tags : ~/Tags [trade] }
+	:~{ File="Emp Lamda-Class T-4a Civ.ship.png";     					Tier=3;  Tags : ~/Tags [trade] }
+	:~{ File="Emp Auklet.ship.png";     								Tier=3;  Tags : ~/Tags [trade] }
+	:~{ File="Emp Dovekie.ship.png";    								Tier=3;  Tags : ~/Tags [trade] }
+	:~{ File="Emp Cormorant.ship.png";  								Tier=5;  Tags : ~/Tags [trade] }
+	:~{ File="Emp Fulmar.ship.png";     								Tier=5;  Tags : ~/Tags [trade] }
+	:~{ File="Emp Murrelet.ship.png";   								Tier=5;  Tags : ~/Tags [trade] }
+	:~{ File="Emp_BFF-1_Bulk_Freighter_B.ship.png"; 					Tier=5;  Tags : ~/Tags [trade] }
+	:~{ File="Emp_BFF-1_Bulk_Freighter_A.ship.png"; 					Tier=7;  Tags : ~/Tags [trade] }
+	:~{ File="Emp Pelican.ship.png";    								Tier=7;  Tags : ~/Tags [trade] }
+	:~{ File="Emp Petrel.ship.png";     								Tier=7;  Tags : ~/Tags [trade] }
+	:~{ File="Emp Guillemot.ship.png";  								Tier=7;  Tags : ~/Tags [trade] }
+	:~{ File="Emp Albatross.ship.png";  								Tier=10; Tags : ~/Tags [trade] }
+	:~{ File="Emp Imperial Cargo Transport.ship.png";  					Tier=10; Tags : ~/Tags [trade] }
+	:~{ File="Emp EF76 Nebulon Hvy Cargo G.ship.png";  					Tier=10; Tags : ~/Tags [trade] }
+	:~{ File="Emp Shearwater.ship.png"; 								Tier=10; Tags : ~/Tags [trade] }
+	:~{ File="Emp Industrial Cargo Freighter.ship.png";     			Tier=13; Tags : ~/Tags [trade] }
+	:~{ File="Emp Civ_Peltast-Class_Star_Destroyer_p.ship.png"; 		Tier=13; Tags : ~/Tags [trade] }
 ]

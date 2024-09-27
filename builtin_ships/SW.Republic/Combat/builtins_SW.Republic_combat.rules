@@ -20,7 +20,6 @@ Ships
 /*73,360*/    		:~{	File="Royal House N-1 Starfighter.ship.png";                                         Tier=3;  Difficulty=1; Tags = [combat, swfighter, repfighter] }
 /*73,360*/    		:~{	File="Naboo N-1 Starfighter (Classic).ship.png";                                     Tier=3;  Difficulty=1; Tags = [combat, swfighter, repfighter] }
 /*73,360*/    		:~{	File="Naboo N-1 Starfighter (Modern).ship.png";                                      Tier=2;  Difficulty=2; Tags = [combat, swfighter, repfighter] }
-///*73,360*/    		:~{	File="G-Wing Fighter.ship.png";                                      Tier=2;  Difficulty=2; Tags = [combat, swfighter, repfighter] }
 /*52,700*/    		:~{ File="Republic Delta 7B Jedi Starfight.ship.png";                                    Tier=3;  Difficulty=2; Tags = [combat, swfighter, repfighter] }
 /*46,100*/    		:~{ File="Republic Eta-2 Actis-Class Mk2.ship.png";                                      Tier=4;  Difficulty=2; Tags = [combat, swfighter, repfighter] }
 /*58,220*/    		:~{ File="Republic Eta-2 Actis-Class Mk3.ship.png";                                      Tier=4;  Difficulty=2; Tags = [combat, swfighter, repfighter] }
@@ -28,6 +27,7 @@ Ships
 /*59,660*/    		:~{ File="Republic A3 Nimbus-Class V-Wingc Starfighter.ship.png";                        Tier=3;  Difficulty=1; Tags = [combat, swfighter, repfighter] } 
 /*69,660*/ 			:~{ File="Rep Nubian_Companion-Class_Starf.ship.png"; 									 Tier=3;  Difficulty=2; Tags = [combat, swfighter, repfighter] }
 /*71,960*/    		:~{ File="Republic A3 Nimbus-Class V-Wingd Starfighter.ship.png";                        Tier=3;  Difficulty=1; Tags = [combat, swfighter, repfighter] } 
+/*88,060*/    		:~{ File="Rep T-42 F-Wing.ship.png"; 													 Tier=2;  Difficulty=2; Tags = [combat, swfighter, repfighter] }
 /*88,060*/    		:~{ File="Royal House N-1 Starfighter Mk2.ship.png";                                     Tier=4;  Difficulty=2; Tags = [combat, swfighter, repfighter] }
 /*80,040*/    		:~{ File="Republic Storm IV Twin-Pod Comba.ship.png";                                    Tier=3;  Difficulty=2; Tags = [combat, swfighter, repfighter] }
 /*93,420*/    		:~{ File="Republic E-Wing Starfighter.ship.png";                                         Tier=4;  Difficulty=2; Tags = [combat, swfighter, repfighter] }

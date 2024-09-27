@@ -58,7 +58,7 @@ ShipLibraries
 Actions
 [
 
-/*	// Adding Backgrounds //Empty rn, but keep for possible future use
+	/*	// Adding Backgrounds //Empty rn, but keep for possible future use
 	{ 	//0
 		Action = AddMany
 		AddTo = "<./Data/backgrounds/backgrounds.rules>/Styles"
@@ -76,21 +76,27 @@ Actions
 		ManyToAdd = &<parts/Parts.rules>/Parts
 	}
 
+	// Adding Tech to Career Mode
+	{
+	    Action = AddMany
+	    AddTo = "<./Data/modes/career/techs.rules>/Techs"
+	    ManyToAdd = &<modes/career/techs.rules>/Techs
+	}
 	
 	/* *********** DECALS & SHIPS & SHIP SIZES ************* */
 
 	//Adds faction decals folder and advanced gradients, shading, and shapes folder
-//	{
-//		Action = AddMany
-//		AddTo = "<ships/terran/terran.rules>/Terran/Roofs/RoofDecalGroups"
-//
-//		CreateIfNotExisting = true
-//
-//		ManyToAdd
-//		[
-//			&<roof_decals/sw_decal_group.rules>/SW_adv_shapes
-//		]
-//	}
+	//	{
+	//		Action = AddMany
+	//		AddTo = "<ships/terran/terran.rules>/Terran/Roofs/RoofDecalGroups"
+	//
+	//		CreateIfNotExisting = true
+	//
+	//		ManyToAdd
+	//		[
+	//			&<roof_decals/sw_decal_group.rules>/SW_adv_shapes
+	//		]
+	//	}
 	
 	{
 		Action = Overrides
@@ -281,7 +287,7 @@ Actions
 		Action = AddBase
 		Name = Civilian
 		AddBaseTo = "<modes/career/career.rules>/TradeShips"
-		BaseToAdd = &<career\TradeShips.rules>/TradeShips
+		BaseToAdd = &<career/TradeShips.rules>/TradeShips
 	}
 
 	//StarWars Sounds

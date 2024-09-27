@@ -3,9 +3,9 @@ CommonStringModName = 	"\n<s16><gray>Mod: SW:ACD Factions</gray></s16>"
 
 Parts
 {
-	//X-Wing Cannons
-	xwingCannons = "X-Wing Cannon"
-	xwingCannonsDesc = "X-Wing Cannons are small weapons that can be placed hidden behind and under armor pieces.  They are useful in medium to long range engagements. <string id='CommonStringModName'/>"
+	//X-Wing Cannons Unlock
+	xwingCannons = "X-Wing Cannons"
+	xwingCannonsDesc = "X-Wing Cannons are small weapons that can be placed hidden behind and under armor pieces.  They are useful in medium to long range engagements.<string id='CommonStringModName'/> \n\n <s20>Unlocks:</s20>\n\n<good>●  <string id='Parts/xwingCannon'/>\n●  <string id='Parts/xwingCannonLeft'/>\n●  <string id='Parts/xwingCannonXLong'/>\n●  <string id='Parts/xwingCannonXLongLeft'/></good>"
 
 	// Standard X-Wing Cannons
 	xwingCannon = "X-Wing Short Cannon"
@@ -13,6 +13,10 @@ Parts
 	xwingCannonLeft = "X-Wing Short Cannon (Side)"
 	xwingCannonLeftIcon = "X-Wing SC (Side)"
 	xwingCannonDesc = "<cyan>Incom Corporation</cyan> presents the X-Wing SC; a compact, short-barrel cannon for stealthy armor integration, excelling in medium-range combat. <string id='CommonStringModName'/>"
+
+	//Mass-Drivers Unlocks
+	massdriverssmall = "Mass-Driver Compact Cannons"
+	massdriverssmallDesc = "<string id='Parts/massdriversmallDesc'/>\n\n <s20>Unlocks:</s20>\n\n<good>●  <string id='Parts/massdriversmall'/>\n●  <string id='Parts/massdriversmallLeft'/></good>"
 
 	//Compact Mass-Driver Cannon
 	massdriversmall = "Mass-Driver Compact Cannon"
@@ -28,6 +32,10 @@ Parts
 	xwingCannonXLongLeftIcon = "X-Wing XC (Side)"
 	xwingCannonXLongDesc = "<cyan>Incom Corporation's</cyan> X-Wing XC; an extended version of the classic cannon, combining range and stealth for strategic positioning behind armor. <string id='CommonStringModName'/>"
 
+	//TIE Repeaters Unlocks
+	tieMiniguns = "Tie Repeater Cannons"
+	tieMinigunsDesc = "<string id='Parts/tieLMinigunDesc'/>\n\n <s20>Unlocks:</s20>\n\n<good>●  <string id='Parts/tieMinigun'/>\n●  <string id='Parts/tieMinigunLeft'/></good>"
+
 	//Standard TIE Repeaters
 	tieMinigun = "TIE Repeater Cannon - Super Edition"
 	tieMinigunIcon = "TIE RC-SE"
@@ -35,11 +43,19 @@ Parts
 	tieMinigunLeftIcon = "TIE RC-SE (Side)"
 	tieLMinigunDesc = "The <cyan>Galactic Empire's</cyan> TIE Repeater Cannons - Super Edition; compact, rapid-firing, and perfect for close-range engagements, with stealthy armor placement capabilities. <string id='CommonStringModName'/>"
 
+	//Hycor Heavy Repeaters Unlocks
+	tieMinigunsLong = "HyCor Heavy Repeaters"
+	tieMinigunsLongDesc = "<string id='Parts/tieLMinigunLongDesc'/>\n\n <s20>Unlocks:</s20>\n\n<good>●  <string id='Parts/tieMinigunLong'/>\n●  <string id='Parts/tieMinigunLongLeft'/></good>"
+
 	tieMinigunLong = "HyCor Heavy Repeater Extended Cannon"
 	tieMinigunLongIcon = "HyCor HR-XC"
 	tieMinigunLongLeft = "HyCor Heavy Repeater Extended Cannon (Side)"
 	tieMinigunLongLeftIcon = "HyCor HR-XC (Side)"
 	tieLMinigunLongDesc = "Heavy Laser Repeater with Extended Cannon by <cyan>HyCor</cyan>; rapid-firing and perfect for close-range enagements, this Heavy Laser Repeater is modified for use on small-to-medium ships. Can be placed behind and under ship armor. <string id='CommonStringModName'/>"
+
+	//RG9 Cannons Unlocks
+	RG9Cannons = "RG-9 Laser Cannons"
+	RG9CannonsDesc = "<string id='Parts/RG9CannonDesc'/>\n\n <s20>Unlocks:</s20>\n\n<good>●  <string id='Parts/RG9Cannon'/>\n●  <string id='Parts/RG9CannonLeft'/></good>"
 
 	// RG-9 Cannons
 	RG9Cannon = "RG-9 Laser Cannon Enhanced Edition"
