@@ -4,39 +4,39 @@ Tags = [civilian]
 Ships
 [
 	// Trade ships
-	:~{ File="CIS Maxillipede-Class_shuttle.ship.png"; 									Tier=3;  Tags : ~/Tags [trade, empty_storage] }
-	:~{ File="Cargo Transporter Tiny CIS.ship.png";  									Tier=1;  Tags : ~/Tags [trade, empty_storage] }
-	:~{ File="Cargo Transporter Small CIS.ship.png";        							Tier=3;  Tags : ~/Tags [trade, empty_storage] }
-	:~{ File="Cargo Transporter Medium CIS.ship.png";    								Tier=5;  Tags : ~/Tags [trade, empty_storage] }
-	:~{ File="Cargo Transporter Large CIS.ship.png";   									Tier=7; Tags : ~/Tags [trade, empty_storage] }
-	:~{ File="Cargo Transporter Huge CIS.ship.png";     								Tier=10; Tags : ~/Tags [trade, empty_storage] }
-	:~{ File="Eta-Class Supply Barge CIS.ship.png";     								Tier=13; Tags : ~/Tags [trade, empty_storage] }
-	:~{ File="C-9979 Landing Craft (CIS).ship.png";   		 							Tier=7;  Tags : ~/Tags [trade, empty_storage] }
-	:~{ File="C-9979 Landing Craft Normal.ship.png"; 									Tier=9;  Tags : ~/Tags [trade, empty_storage] }
-	:~{ File="Hardcell-Class Interstellar Transport.ship.png";							Tier=11;  Tags : ~/Tags [trade, empty_storage] }
-	:~{ File="Pelta-Class Frigate (CIS).ship.png";    									Tier=7;  Tags : ~/Tags [trade, empty_storage] }
-	:~{ File="CIS CIV Munificent-Class Star Frigate (InterGalactic Banking Clan).ship.png";    	Tier=14;  Tags : ~/Tags [trade, empty_storage]; /*OtherIDs=["Munificent-Class Star Frigate (InterGalactic Banking Clan)"];*/ }
-	:~{ File="CIS CIV Munificent-Class Star Frigate.ship.png";    								Tier=10;  Tags : ~/Tags [trade, empty_storage]; /*OtherIDs=["Munificent-Class Star Frigate"];*/ }
-	:~{ File="CIS-Munificent-Class Star Frigat.ship.png"; 								Tier=12;  Tags : ~/Tags [trade, empty_storage] }
-//	:~{ File="Munificent-Class Star Frigate 2.ship.png";    							Tier=11;  Tags : ~/Tags [trade, empty_storage] }
-//	:~{ File="Lukrehulk-Class Droid Control Ship.ship.png";     						Tier=13;  Tags : ~/Tags [trade, empty_storage] }
-	:~{ File="CIS Package Distributor.ship.png"; 										Tier=3;  Tags : ~/Tags [trade, empty_storage] }
-	:~{ File="CIS Minor Shipper.ship.png";       										Tier=3;  Tags : ~/Tags [trade, empty_storage] }
-	:~{ File="CIS Dwarf Freighter.ship.png";     										Tier=3;  Tags : ~/Tags [trade, empty_storage] }
-	:~{ File="CIS Porter.ship.png";              										Tier=3;  Tags : ~/Tags [trade, empty_storage] }
-	:~{ File="CIS Minor Transport.ship.png";     										Tier=5;  Tags : ~/Tags [trade, empty_storage] }
-	:~{ File="CIS Minor Modulus.ship.png";       										Tier=5;  Tags : ~/Tags [trade, empty_storage] }
-	:~{ File="CIS CSS-Fed Corellian Star Shutt.ship.png";       						Tier=7;  Tags : ~/Tags [trade, empty_storage] }
-	:~{ File="CIS CSS-1 Corellian Star Shuttle.ship.png";       						Tier=7;  Tags : ~/Tags [trade, empty_storage] }
-	:~{ File="CIS Minor Freighter.ship.png";     										Tier=5;  Tags : ~/Tags [trade, empty_storage] }
-	:~{ File="CIS Minor Hauler.ship.png";        										Tier=5;  Tags : ~/Tags [trade, empty_storage] }
-	:~{ File="CIS Bulk Transport.ship.png";      										Tier=7;  Tags : ~/Tags [trade, empty_storage] }
-	:~{ File="CIS Bulk Shipper.ship.png";        										Tier=7;  Tags : ~/Tags [trade, empty_storage] }
-	:~{ File="CIS Workhorse.ship.png";           										Tier=7;  Tags : ~/Tags [trade, empty_storage] }
-	:~{ File="CIS Factotum.ship.png";            										Tier=7;  Tags : ~/Tags [trade, empty_storage] }
-	:~{ File="CIS Bulk Modulus.ship.png";        										Tier=10; Tags : ~/Tags [trade, empty_storage] }
-	:~{ File="CIS Bulk Extractor.ship.png";      										Tier=11; Tags : ~/Tags [trade, empty_storage] }
-	:~{ File="CIS Mass Freighter.ship.png";      										Tier=10; Tags : ~/Tags [trade, empty_storage] }
-	:~{ File="CIS Bulk Hauler.ship.png";         										Tier=10; Tags : ~/Tags [trade, empty_storage] }
-	:~{ File="CIS Atlas Freighter.ship.png";     										Tier=10; Tags : ~/Tags [trade, empty_storage] }
+	:~{ File="CIS Maxillipede-Class_shuttle.ship.png"; 									Tier=3;  Tags : ~/Tags [trade] }
+	:~{ File="Cargo Transporter Tiny CIS.ship.png";  									Tier=1;  Tags : ~/Tags [trade] }
+	:~{ File="Cargo Transporter Small CIS.ship.png";        							Tier=3;  Tags : ~/Tags [trade] }
+	:~{ File="Cargo Transporter Medium CIS.ship.png";    								Tier=5;  Tags : ~/Tags [trade] }
+	:~{ File="Cargo Transporter Large CIS.ship.png";   									Tier=7; Tags : ~/Tags [trade] }
+	:~{ File="Cargo Transporter Huge CIS.ship.png";     								Tier=10; Tags : ~/Tags [trade] }
+	:~{ File="Eta-Class Supply Barge CIS.ship.png";     								Tier=13; Tags : ~/Tags [trade] }
+	:~{ File="C-9979 Landing Craft (CIS).ship.png";   		 							Tier=7;  Tags : ~/Tags [trade] }
+	:~{ File="C-9979 Landing Craft Normal.ship.png"; 									Tier=9;  Tags : ~/Tags [trade] }
+	:~{ File="Hardcell-Class Interstellar Transport.ship.png";							Tier=11;  Tags : ~/Tags [trade] }
+	:~{ File="Pelta-Class Frigate (CIS).ship.png";    									Tier=7;  Tags : ~/Tags [trade] }
+	:~{ File="CIS CIV Munificent-Class Star Frigate (InterGalactic Banking Clan).ship.png";    	Tier=14;  Tags : ~/Tags [trade]; /*OtherIDs=["Munificent-Class Star Frigate (InterGalactic Banking Clan)"];*/ }
+	:~{ File="CIS CIV Munificent-Class Star Frigate.ship.png";    								Tier=10;  Tags : ~/Tags [trade]; /*OtherIDs=["Munificent-Class Star Frigate"];*/ }
+	:~{ File="CIS-Munificent-Class Star Frigat.ship.png"; 								Tier=12;  Tags : ~/Tags [trade] }
+//	:~{ File="Munificent-Class Star Frigate 2.ship.png";    							Tier=11;  Tags : ~/Tags [trade] }
+//	:~{ File="Lukrehulk-Class Droid Control Ship.ship.png";     						Tier=13;  Tags : ~/Tags [trade] }
+	:~{ File="CIS Package Distributor.ship.png"; 										Tier=3;  Tags : ~/Tags [trade] }
+	:~{ File="CIS Minor Shipper.ship.png";       										Tier=3;  Tags : ~/Tags [trade] }
+	:~{ File="CIS Dwarf Freighter.ship.png";     										Tier=3;  Tags : ~/Tags [trade] }
+	:~{ File="CIS Porter.ship.png";              										Tier=3;  Tags : ~/Tags [trade] }
+	:~{ File="CIS Minor Transport.ship.png";     										Tier=5;  Tags : ~/Tags [trade] }
+	:~{ File="CIS Minor Modulus.ship.png";       										Tier=5;  Tags : ~/Tags [trade] }
+	:~{ File="CIS CSS-Fed Corellian Star Shutt.ship.png";       						Tier=7;  Tags : ~/Tags [trade] }
+	:~{ File="CIS CSS-1 Corellian Star Shuttle.ship.png";       						Tier=7;  Tags : ~/Tags [trade] }
+	:~{ File="CIS Minor Freighter.ship.png";     										Tier=5;  Tags : ~/Tags [trade] }
+	:~{ File="CIS Minor Hauler.ship.png";        										Tier=5;  Tags : ~/Tags [trade] }
+	:~{ File="CIS Bulk Transport.ship.png";      										Tier=7;  Tags : ~/Tags [trade] }
+	:~{ File="CIS Bulk Shipper.ship.png";        										Tier=7;  Tags : ~/Tags [trade] }
+	:~{ File="CIS Workhorse.ship.png";           										Tier=7;  Tags : ~/Tags [trade] }
+	:~{ File="CIS Factotum.ship.png";            										Tier=7;  Tags : ~/Tags [trade] }
+	:~{ File="CIS Bulk Modulus.ship.png";        										Tier=10; Tags : ~/Tags [trade] }
+	:~{ File="CIS Bulk Extractor.ship.png";      										Tier=11; Tags : ~/Tags [trade] }
+	:~{ File="CIS Mass Freighter.ship.png";      										Tier=10; Tags : ~/Tags [trade] }
+	:~{ File="CIS Bulk Hauler.ship.png";         										Tier=10; Tags : ~/Tags [trade] }
+	:~{ File="CIS Atlas Freighter.ship.png";     										Tier=10; Tags : ~/Tags [trade] }
 ]
