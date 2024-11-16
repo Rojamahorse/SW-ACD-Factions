@@ -260,7 +260,7 @@ Part : &<../../base_part_terran_weapons.rules>/Part
 			FiringArc = 15d
 			RotateSpeed = 360d
 			FireThresholdAngle = 1d
-			AIFirepowerRating = 400
+			AIFirepowerRating = &~/Part/StatsByCategory/0/Stats/DamagePerSecond
 			AllowFireWithBlockedLOS = true
 			IgnoreSourceShipLowLOSChecks = true
 			IgnoreFriendlyShipLowLOSChecks = false

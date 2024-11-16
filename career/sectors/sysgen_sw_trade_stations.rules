@@ -96,6 +96,16 @@ SubSpawners
 		Distance = [3000, 4000]
 	}
 
+	// Make sure that one bounty spawns very close to the player.
+	: <sysgen_bounties.rules>
+	{
+		Conditions { IsInitNode=true; }
+		RootLocation = Tag
+		RootLocationTag = spawn_loc
+		Distance = 4100
+		Count = 1
+	}
+
 	// Spawn defenses or guards around captured stations with a mission to liberate them.
 	// (Can't be direct child of station spawner due to faction/allegiance synchronization.)
 	{

@@ -57,29 +57,32 @@ Sector
         // Minimum distance from endpoints to spawn trade ships
         MinTradeShipSpawnDistFromEndpoints = 1000
 
+        // 
+		_estimatedSmallStationCapacity = 500
+
         // Desired deltas for station resource trade, determining how much resources should fluctuate
         StationResourceTradeDeltas
         [
-            { ResourceType=hyperium;          DesiredDelta=[-20, 20]; }
-            { ResourceType=steel;             DesiredDelta=[-200, 200]; }
-            { ResourceType=coil;              DesiredDelta=[-100, 100]; }
-            { ResourceType=coil2;             DesiredDelta=[-100, 100]; }
-            { ResourceType=tristeel;          DesiredDelta=[-10, 10]; }
-            { ResourceType=diamond;           DesiredDelta=[-10, 10]; }
-            { ResourceType=processor;         DesiredDelta=[-10, 10]; }
-            { ResourceType=enriched_uranium;  DesiredDelta=[-10, 10]; }
-            { ResourceType=sulfur;            DesiredDelta=[-50, 50]; }
-            { ResourceType=iron;              DesiredDelta=[-100, 100]; }
-            { ResourceType=copper;            DesiredDelta=[-50, 50]; }
-            { ResourceType=tritanium;         DesiredDelta=[-10, 10]; }
-            { ResourceType=carbon;            DesiredDelta=[-10, 10]; }
-            { ResourceType=gold;              DesiredDelta=[-10, 10]; }
-            { ResourceType=uranium;           DesiredDelta=[-10, 10]; }
-            { ResourceType=bullet;            DesiredDelta=[-100, 100]; }
-            { ResourceType=missile_part_he;   DesiredDelta=[-50, 50]; }
-            { ResourceType=missile_part_emp;  DesiredDelta=[-10, 10]; }
-            { ResourceType=missile_part_nuke; DesiredDelta=[-10, 10]; }
-            { ResourceType=mine_part;         DesiredDelta=[-30, 30]; }
+			{ ResourceType=hyperium;          DesiredDelta=[-20/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity), 20/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity)]; }
+			{ ResourceType=steel;             DesiredDelta=[-200/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity), 200/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity)]; }
+			{ ResourceType=coil;              DesiredDelta=[-100/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity), 100/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity)]; }
+			{ ResourceType=coil2;             DesiredDelta=[-50/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity), 50/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity)]; }
+			{ ResourceType=tristeel;          DesiredDelta=[-20/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity), 20/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity)]; }
+			{ ResourceType=diamond;           DesiredDelta=[-5/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity), 5/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity)]; }
+			{ ResourceType=processor;         DesiredDelta=[-5/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity), 5/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity)]; }
+			{ ResourceType=enriched_uranium;  DesiredDelta=[-10/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity), 10/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity)]; }
+			{ ResourceType=sulfur;            DesiredDelta=[-50/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity), 50/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity)]; }
+			{ ResourceType=iron;              DesiredDelta=[-100/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity), 100/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity)]; }
+			{ ResourceType=copper;            DesiredDelta=[-50/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity), 50/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity)]; }
+			{ ResourceType=tritanium;         DesiredDelta=[-10/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity), 10/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity)]; }
+			{ ResourceType=carbon;            DesiredDelta=[-10/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity), 10/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity)]; }
+			{ ResourceType=gold;              DesiredDelta=[-10/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity), 10/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity)]; }
+			{ ResourceType=uranium;           DesiredDelta=[-10/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity), 10/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity)]; }
+			{ ResourceType=bullet;            DesiredDelta=[-100/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity), 100/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity)]; }
+			{ ResourceType=missile_part_he;   DesiredDelta=[-50/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity), 50/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity)]; }
+			{ ResourceType=missile_part_emp;  DesiredDelta=[-10/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity), 10/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity)]; }
+			{ ResourceType=missile_part_nuke; DesiredDelta=[-10/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity), 10/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity)]; }
+			{ ResourceType=mine_part;         DesiredDelta=[-30/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity), 30/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity)]; }
         ]
     }
 

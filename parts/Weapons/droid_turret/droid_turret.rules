@@ -251,7 +251,7 @@ Part : &<../../base_part_terran_weapons.rules>/Part
 			FiringArc = 360d
 			RotateSpeed = 225d
 			FireThresholdAngle = 1d
-			AIFirepowerRating = 150
+			AIFirepowerRating = &~/Part/StatsByCategory/0/Stats/DamagePerSecond
 			CanBeGivenExplicitTarget = false
 			IgnoreSourceShipLowLOSChecks = true
 			Emitter = BaseEmitter

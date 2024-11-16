@@ -288,7 +288,7 @@ Part : &<../../base_part_terran_weapons.rules>/Part
 			FiringArc = 360d
 			RotateSpeed = 180d
 			FireThresholdAngle = 1d
-			AIFirepowerRating = 150
+			AIFirepowerRating = &~/Part/StatsByCategory/0/Stats/DamagePerSecond
 			CanBeGivenExplicitTarget = false
 			Emitter = BaseEmitter
 			TargetSearchesPerSecond = 4 // Default is 2.

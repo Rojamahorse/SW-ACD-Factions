@@ -22,7 +22,7 @@ EconDifficultyLevels
 		StartingMoney = 65350+120000
 		StartingFame = 0
 		EnemyResourceDropRateFactor = 200%
-		SelfResourceDropRateFactor = 150%
+		SelfResourceDropRateFactor = 100%
 		MoneyRewardFactor = 200%
 		FameRewardFactor = 150%
 		ReputationRewardFactor = 150%
@@ -48,7 +48,7 @@ EconDifficultyLevels
 		StartingMoney = 65350+75000
 		StartingFame = 0
 		EnemyResourceDropRateFactor = 50%
-		SelfResourceDropRateFactor = 50%
+		SelfResourceDropRateFactor = 100%
 		MoneyRewardFactor = 50%
 		FameRewardFactor = 75%
 		ReputationRewardFactor = 75%
