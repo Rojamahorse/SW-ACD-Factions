@@ -227,8 +227,8 @@ CareerModeConfig
   MapSize = "Portée du Secteur"
   MapSizeTip = "Détermine l'étendue de l'espace connu, de la Bordure Extérieure aux Mondes du Noyau. Le nombre signifie la myriade de systèmes en attente d'être cartographiés par votre main."
 
-  MaxPlayers = &~/PvpModeConfig/MaxPlayers
-  MaxPlayersTip = &~/PvpModeConfig/MaxPlayersTip
+  //MaxPlayers = &~/PvpModeConfig/MaxPlayers
+  //MaxPlayersTip = &~/PvpModeConfig/MaxPlayersTip
 
 ShipInfoFmt = "<s24>{0}</s24>\n\n{1}\n\nCrédits Galactiques Restants : {2}"
 CustomShipInfoFmt = "<s24>{0}</s24> - Croiseur Stellaire Personnalisé\n\nCrédits Galactiques Restants : {1}"

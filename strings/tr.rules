@@ -214,8 +214,8 @@ CareerModeConfig
   MapSize = "Sector Scope"
   MapSizeTip = "Determines the breadth of known space, from the Outer Rim to the Core Worlds. The number signifies the myriad of systems waiting to be charted by your hand."
 
-  MaxPlayers = &~/PvpModeConfig/MaxPlayers
-  MaxPlayersTip = &~/PvpModeConfig/MaxPlayersTip
+  //MaxPlayers = &~/PvpModeConfig/MaxPlayers
+  //MaxPlayersTip = &~/PvpModeConfig/MaxPlayersTip
 
 ShipInfoFmt = "<s24>{0}</s24>\n\n{1}\n\nGalactic Credits Remaining: {2}"
 CustomShipInfoFmt = "<s24>{0}</s24> - Custom Starcruiser\n\nGalactic Credits Remaining: {1}"

@@ -218,8 +218,8 @@ CareerModeConfig
   MapSize = "Sektorenreichweite"
   MapSizeTip = "Bestimmt die Breite des bekannten Raums, von den Äußeren Randgebieten bis zu den Kernwelten. Die Zahl zeigt die Myriade von Systemen, die darauf warten, von deiner Hand kartiert zu werden."
 
-  MaxPlayers = &~/PvpModeConfig/MaxPlayers
-  MaxPlayersTip = &~/PvpModeConfig/MaxPlayersTip
+  //MaxPlayers = &~/PvpModeConfig/MaxPlayers
+  //MaxPlayersTip = &~/PvpModeConfig/MaxPlayersTip
 
 ShipInfoFmt = "<s24>{0}</s24>\n\n{1}\n\nVerbleibende galaktische Credits: {2}"
 CustomShipInfoFmt = "<s24>{0}</s24> - Benutzerdefiniertes Sternenschiff\n\nVerbleibende galaktische Credits: {1}"
