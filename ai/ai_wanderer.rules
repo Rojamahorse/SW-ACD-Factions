@@ -21,6 +21,9 @@ StrategyModules
 		ReleaseAggroWithinRadar = true
 		AvoidableDoodadTags = [sun]
 	}
+	{
+		Type = ExitSector
+	}
 ]
 
 TacticsModules
@@ -62,6 +65,12 @@ StasisModules
 		Type = FollowFleetLeader
 		DefaultStasisSpeed = 100
 		AvoidableDoodadTags = [sun, station]
+		AvoidableDoodadBuffer = 100
+	}
+	{
+		Type = ExitSector
+		DefaultStasisSpeed = 75
+		AvoidableDoodadTags = [sun]
 		AvoidableDoodadBuffer = 100
 	}
 ]

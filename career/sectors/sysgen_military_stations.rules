@@ -201,6 +201,7 @@ BaseMilitaryStation
 			AI
 			{
 				Type = DefensePlatform
+				ChanceToConsiderSurrenderingToPlayer = 0
 			}
 		}
 

@@ -373,6 +373,7 @@ StationDefenses
 			AI
 			{
 				Type = DefensePlatform
+				ChanceToConsiderSurrenderingToPlayer = 0
 			}
 		}
 		// Defense ships.

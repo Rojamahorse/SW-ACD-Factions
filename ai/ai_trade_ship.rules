@@ -23,6 +23,9 @@ StrategyModules
 		RecallCrew = true
 		FtlAfter = [10, 20]
 	}
+	{
+		Type = ExitSector
+	}
 ]
 
 CommsModules : &<./Data/ai/ai_common.rules>/CommsModulesDefault
@@ -40,3 +43,12 @@ CommsModules : &<./Data/ai/ai_common.rules>/CommsModulesDefault
 	}
 ]
 
+StasisModules
+[
+	{
+		Type = ExitSector
+		DefaultStasisSpeed = 75
+		AvoidableDoodadTags = [sun]
+		AvoidableDoodadBuffer = 100
+	}
+]

@@ -26,6 +26,9 @@ StrategyModules
 		ReleaseAggroWithinRadar = false
 		AvoidableDoodadTags = [sun]
 	}
+	{
+		Type = ExitSector
+	}
 ]
 
 TacticsModules

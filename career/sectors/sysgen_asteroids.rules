@@ -234,6 +234,7 @@ AsteroidFieldPlatforms
 			AI
 			{
 				Type = DefensePlatform
+				ChanceToConsiderSurrenderingToPlayer = 0
 			}
 		}
 
