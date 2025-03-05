@@ -36,7 +36,7 @@ SubSpawners
 		NebulaType = electron
 		NebulaRadius = 5000
 		NebulaSplatTriCount = [30, 60]
-		MaxDistanceFromWorldOrigin = &<../career.rules>/Exploration/UnexploredRadius
+		MaxDistanceFromWorldOrigin = &<.Data/modes/career.rules>/Exploration/UnexploredRadius
 	}
 
 	// Ion Storms
@@ -49,7 +49,7 @@ SubSpawners
 		NebulaRadius = 100000
 		NebulaSplatTriCount = [20, 40]
 		UseIrregularSplatShape = true
-		MaxDistanceFromWorldOrigin = &<../career.rules>/Exploration/UnexploredRadius
+		MaxDistanceFromWorldOrigin = &<.Data/modes/career.rules>/Exploration/UnexploredRadius
 		ContiguousPathCheckSearchIterations = 20
 	}
 ]

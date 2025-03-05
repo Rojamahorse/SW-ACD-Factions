@@ -22,6 +22,7 @@ Sector
             &<../sysgen_standard_nebulas.rules>     // Configuration for generating standard nebulas
             &<../sysgen_high_density_nebulas.rules> // Configuration for generating high-density nebulas
             &<../sysgen_supernova_nebulas.rules>    // Configuration for generating supernova nebulas
+			&<../sysgen_electron_nebulas.rules>     // Configuration for generating electron nebulas
             &<../sysgen_ftl_gates.rules>            // Configuration for generating FTL gates
             &<../sysgen_trade_stations.rules>       // Configuration for generating trade stations
             &<../sysgen_military_stations.rules>    // Configuration for generating military stations

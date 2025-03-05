@@ -20,7 +20,7 @@ SubSpawners
 		PerlinNoiseCenterOffsetExponent = 4
 		MinPerlinNebulaTris = 3
 		UsePolarPerlinCoordinates = true
-		MaxDistanceFromWorldOrigin = &<../career.rules>/Exploration/UnexploredRadius
+		MaxDistanceFromWorldOrigin = &<.Data/modes/career.rules>/Exploration/UnexploredRadius
 	}
 
 	// Electron Clouds
@@ -33,7 +33,7 @@ SubSpawners
 		NebulaType = electron
 		NebulaRadius = 100000
 		NebulaSplatTriCount = [120, 240]
-		MaxDistanceFromWorldOrigin = &<../career.rules>/Exploration/UnexploredRadius
+		MaxDistanceFromWorldOrigin = &<.Data/modes/career.rules>/Exploration/UnexploredRadius
 	}
 
 	// Ion Storms
@@ -46,7 +46,7 @@ SubSpawners
 		NebulaRadius = 100000
 		NebulaSplatTriCount = [20, 40]
 		UseIrregularSplatShape = true
-		MaxDistanceFromWorldOrigin = &<../career.rules>/Exploration/UnexploredRadius
+		MaxDistanceFromWorldOrigin = &<.Data/modes/career.rules>/Exploration/UnexploredRadius
 		ContiguousPathCheckSearchIterations = 20
 	}
 ]

@@ -160,6 +160,10 @@ SectorTypes
 			Type = supernova
 			RandomWeight = 0.5
 		}
+		{
+			Type = electron
+			RandomWeight = 0.25
+		}
 	]
 }
 
@@ -193,6 +197,10 @@ SectorTypes
 		{
 			Type = supernova
 			RandomWeight = 0.5
+		}
+		{
+			Type = electron
+			RandomWeight = 0.25
 		}
 	]
 }

@@ -3,31 +3,39 @@ Tags = [civilian]
 
 Ships
 [
-	:~{ File="BSC_LRRS-Mk2_Shuttle.ship.png"; 								Tier=1;  Tags : ~/Tags [trade] }
-	:~{ File="BSC Y-8_Mining_Vessel.ship.png"; 								Tier=3;  Tags : ~/Tags [trade] }
-	:~{ File="AA-9 Coruscant-BS Civ Freight.ship.png"; 						Tier=8;  Tags : ~/Tags [trade] }
-	:~{ File="AA-9 Coruscant-BS.ship.png"; 									Tier=11; Tags : ~/Tags [trade] }
-	:~{ File="Black Sun Fighter-BS (Civilian).ship.png"; 					Tier=2;  Tags : ~/Tags [trade] }
-	:~{ File="BSC Advocate.ship.png";    									Tier=7;  Tags : ~/Tags [trade] }
-	:~{ File="BSC Acolyte.ship.png";     									Tier=7;  Tags : ~/Tags [trade] }
-	:~{ File="BSC Celebrant.ship.png";   									Tier=10; Tags : ~/Tags [trade] }
-	:~{ File="BSC Da'i.ship.png";        									Tier=3;  Tags : ~/Tags [trade] }
-	:~{ File="BSC Deliverance.ship.png"; 									Tier=5;  Tags : ~/Tags [trade] }
-	:~{ File="BSC Missionary.ship.png";  									Tier=3;  Tags : ~/Tags [trade] }
-	:~{ File="BSC Preacher.ship.png";    									Tier=5;  Tags : ~/Tags [trade] }
-	:~{ File="BSC Witness.ship.png";     									Tier=10; Tags : ~/Tags [trade] }
-	:~{ File="BSE Corellian Supply Ship.ship.png"; 							Tier=4;  Tags : ~/Tags [trade] }
-	:~{ File="BSC Leisure Baudo-Class Yacht (C.ship.png"; 					Tier=5;  Tags : ~/Tags [trade] }
-	:~{ File="Cargo Transporter Huge Black_Sun.ship.png";     				Tier=10; Tags : ~/Tags [trade] }
-	:~{ File="Cargo Transporter Large Black_Sun.ship.png";   				Tier=10; Tags : ~/Tags [trade] }
-	:~{ File="Cargo Transporter Medium Black_Sun.ship.png";    				Tier=7;  Tags : ~/Tags [trade] }
-	:~{ File="Cargo Transporter Small Black_Sun.ship.png";    				Tier=5;  Tags : ~/Tags [trade] }
-	:~{ File="Cargo Transporter Tiny Black_Sun.ship.png";  					Tier=3;  Tags : ~/Tags [trade] }
-	:~{ File="Corellian G9-BS Rigger Freighter.ship.png"; 					Tier=4;  Tags : ~/Tags [trade] }
-	:~{ File="CSS-1 Corellian-BS Star Shuttle.ship.png";     				Tier=9;  Tags : ~/Tags [trade] }
-	:~{ File="Eta-Class Supply Barge Black Sun.ship.png";     				Tier=13; Tags : ~/Tags [trade] }
-	:~{ File="Firespray-31-BS Patrol Civ.ship.png";        					Tier=1;  Tags : ~/Tags [trade] }
-	:~{ File="Firespray-31-BSC Patrol.ship.png";        					Tier=1;  Tags : ~/Tags [trade] }
-	:~{ File="Med-BS Hauler.ship.png";        								Tier=3;  Tags : ~/Tags [trade] }
-	:~{ File="SoroSuub Lux-BS 3000 Space Yacht.ship.png";        			Tier=5;  Tags : ~/Tags [trade] }
+	:~{ File="BSC_LRRS-Mk2_Shuttle.ship.png"; 								Tier=1;  Tags : ~/Tags [trade, empty_storage] }
+	:~{ File="BSC Y-8_Mining_Vessel.ship.png"; 								Tier=3;  Tags : ~/Tags [trade, empty_storage] }
+	:~{ File="AA-9 Coruscant-BS Civ Freight.ship.png"; 						Tier=8;  Tags : ~/Tags [trade, empty_storage] }
+	:~{ File="AA-9 Coruscant-BS.ship.png"; 									Tier=11; Tags : ~/Tags [trade, empty_storage] }
+	:~{ File="Black Sun Fighter-BS (Civilian).ship.png"; 					Tier=2;  Tags : ~/Tags [trade, empty_storage] }
+	:~{ File="BSC Advocate.ship.png";    									Tier=7;  Tags : ~/Tags [trade, empty_storage] }
+	:~{ File="BSC Acolyte.ship.png";     									Tier=7;  Tags : ~/Tags [trade, empty_storage] }
+	:~{ File="BSC Celebrant.ship.png";   									Tier=10; Tags : ~/Tags [trade, empty_storage] }
+	:~{ File="BSC Da'i.ship.png";        									Tier=3;  Tags : ~/Tags [trade, empty_storage] }
+	:~{ File="BSC Deliverance.ship.png"; 									Tier=5;  Tags : ~/Tags [trade, empty_storage] }
+	:~{ File="BSC Missionary.ship.png";  									Tier=3;  Tags : ~/Tags [trade, empty_storage] }
+	:~{ File="BSC Preacher.ship.png";    									Tier=5;  Tags : ~/Tags [trade, empty_storage] }
+	:~{ File="BSC Witness.ship.png";     									Tier=10; Tags : ~/Tags [trade, empty_storage] }
+	:~{ File="BSE Corellian Supply Ship.ship.png"; 							Tier=4;  Tags : ~/Tags [trade, empty_storage] }
+	:~{ File="BSC Leisure Baudo-Class Yacht (C.ship.png"; 					Tier=5;  Tags : ~/Tags [trade, empty_storage] }
+	:~{ File="Cargo Transporter Huge Black_Sun.ship.png";     				Tier=10; Tags : ~/Tags [trade, empty_storage] }
+	:~{ File="Cargo Transporter Large Black_Sun.ship.png";   				Tier=10; Tags : ~/Tags [trade, empty_storage] }
+	:~{ File="Cargo Transporter Medium Black_Sun.ship.png";    				Tier=7;  Tags : ~/Tags [trade, empty_storage] }
+	:~{ File="Cargo Transporter Small Black_Sun.ship.png";    				Tier=5;  Tags : ~/Tags [trade, empty_storage] }
+	:~{ File="Cargo Transporter Tiny Black_Sun.ship.png";  					Tier=3;  Tags : ~/Tags [trade, empty_storage] }
+	:~{ File="Corellian G9-BS Rigger Freighter.ship.png"; 					Tier=4;  Tags : ~/Tags [trade, empty_storage] }
+	:~{ File="CSS-1 Corellian-BS Star Shuttle.ship.png";     				Tier=9;  Tags : ~/Tags [trade, empty_storage] }
+	:~{ File="Eta-Class Supply Barge Black Sun.ship.png";     				Tier=13; Tags : ~/Tags [trade, empty_storage] }
+	:~{ File="Firespray-31-BS Patrol Civ.ship.png";        					Tier=1;  Tags : ~/Tags [trade, empty_storage] }
+	:~{ File="Firespray-31-BSC Patrol.ship.png";        					Tier=1;  Tags : ~/Tags [trade, empty_storage] }
+	:~{ File="Med-BS Hauler.ship.png";        								Tier=3;  Tags : ~/Tags [trade, empty_storage] }
+	:~{ File="SoroSuub Lux-BS 3000 Space Yacht.ship.png";        			Tier=5;  Tags : ~/Tags [trade, empty_storage] }
+
+	// Crew Transports
+	//:~{ File="EXAMPLE_1.ship.png";     								Tier=5;  Tags : ~/Tags [crew_transport] }
+	//:~{ File="EXAMPLE_2.ship.png";     								Tier=5;  Tags : ~/Tags [crew_transport] }
+	//:~{ File="EXAMPLE_3.ship.png";    								Tier=8;  Tags : ~/Tags [crew_transport] }
+	//:~{ File="EXAMPLE_4.ship.png";    								Tier=8;  Tags : ~/Tags [crew_transport] }
+	//:~{ File="EXAMPLE_5.ship.png";  									Tier=11; Tags : ~/Tags [crew_transport] }
+	//:~{ File="EXAMPLE_6.ship.png";  									Tier=11; Tags : ~/Tags [crew_transport] }	
 ]

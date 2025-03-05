@@ -1,0 +1,23 @@
+Type = None
+Conditions { RequireSpawnFlags = [electron_nebulas]; ProhibitSpawnFlags = [disable_nebulas] }
+
+SubSpawners
+[
+	// full sector of electron
+	{
+		Type = Nebula
+		NebulaType = electron
+		NebulaRadius = 30000
+
+		PerlinNoise
+		{
+			GridSize = [4, 4]
+			Octaves = 2
+			OutputShift = 0.4
+		}
+		PerlinNoiseEdgeOffset = -0.5
+		PerlinNoiseEdgeOffsetExponent = 2
+		MinPerlinNebulaTris = 3
+		MaxDistanceFromWorldOrigin = &<.Data/modes/career.rules>/Exploration/UnexploredRadius
+	}
+]

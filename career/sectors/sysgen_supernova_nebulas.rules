@@ -18,7 +18,7 @@ SubSpawners
 		}
 		MinPerlinNebulaTris = 3
 		UsePolarPerlinCoordinates = true
-		MaxDistanceFromWorldOrigin = &<../career.rules>/Exploration/UnexploredRadius
+		MaxDistanceFromWorldOrigin = &<.Data/modes/career.rules>/Exploration/UnexploredRadius
 	}
 
 	// Electron Clouds
@@ -29,7 +29,7 @@ SubSpawners
 		NebulaType = electron
 		NebulaRadius = 100000
 		NebulaSplatTriCount = [40, 80]
-		MaxDistanceFromWorldOrigin = &<../career.rules>/Exploration/UnexploredRadius
+		MaxDistanceFromWorldOrigin = &<.Data/modes/career.rules>/Exploration/UnexploredRadius
 	}
 
 	// Supernova ion center.
@@ -37,7 +37,7 @@ SubSpawners
 		Type = Nebula
 		NebulaType = ion_storm
 		NebulaRadius = 3000
-		MaxDistanceFromWorldOrigin = &<../career.rules>/Exploration/UnexploredRadius
+		MaxDistanceFromWorldOrigin = &<.Data/modes/career.rules>/Exploration/UnexploredRadius
 	}
 
 	// Supernova ion storm.
@@ -56,7 +56,7 @@ SubSpawners
 		}
 		MinPerlinNebulaTris = 3
 		UsePolarPerlinCoordinates = true
-		MaxDistanceFromWorldOrigin = &<../career.rules>/Exploration/UnexploredRadius
+		MaxDistanceFromWorldOrigin = &<.Data/modes/career.rules>/Exploration/UnexploredRadius
 	}
 
 	// Rare asteroids within ion center.
@@ -66,7 +66,7 @@ SubSpawners
 		Distance = [0, 2900]
 		Tags = [rare_asteroid]
 		SuppressLocationAssertions = true
-		DoodadTypes = &<sysgen_suns.rules>/SunAsteroidTypes
+		DoodadTypes = &<.Data/modes/career/sectors/sysgen_suns.rules>/SunAsteroidTypes
 		MaxDistanceFromNebulas = [[ion_storm, 0]]
 	}
 ]

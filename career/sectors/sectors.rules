@@ -4,4 +4,5 @@ Sectors : &<./Data/modes/career/sectors/sectors.rules>/Sectors
 	//&<sector_binary/sector_binary.rules>/Sector
 	//&<sector_high_density_nebula/sector_high_density_nebula.rules>/Sector
 	//&<sector_supernova/sector_supernova.rules>/Sector
+	//&<sector_electron/sector_electron.rules>/Sector
 ]

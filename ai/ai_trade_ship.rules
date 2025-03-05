@@ -16,6 +16,8 @@ StrategyModules
 		RebuildDestroyed = true
 		AllowPartialRepair = true
 		AllowPartialRebuild = false
+		AvoidableDoodadTags = [sun]
+		AvoidableDoodadBuffer = 100
 	}
 	{
 		Type = FleeFromEnemies

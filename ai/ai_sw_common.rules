@@ -1,0 +1,13 @@
+CommsModulesDefault : <.Data/ai/ai_common.rules>/CommsModulesDefault
+[
+	{
+		Type = "Dialogue"
+		DefaultChanceToConsiderSurrenderingToPlayer = 0.9  //Chance that the ai will surrender to the player
+		ChanceToConsiderAcceptingSurrenderFromPlayer = 1 //Even if the damage value isn't that different, ai will still accept surrender
+		ChanceToConsiderOfferingSurrender = 0.5  // If the ai is willing to surrender, this is the chance that the AI will offer surrender. Sometimes they will be willing to surrender without offering
+		ChanceToConsiderDemandingSurrender = 1  //Chance that ai will ask the player to surrender
+		ValueRatioDifferenceRangeToSurrender = [10%, 40%] //The lower this is, the less likely ai will surrender.  The value is random between the range.
+		PlayerSurrenderPayoutMultiple = 7.5% //When the player pays for damage caused, calculated by chance of dropping rare (10-15) and in between price of selling (0.5-1)
+		AISurrenderPayoutMultiple = 7.5%  //when ai pays for the loot you no longer get
+	}
+]
