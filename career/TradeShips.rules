@@ -75,7 +75,7 @@ TradeShips
 			cis_12m : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="CIS CIV Munificent-Class Star Frigate"; 					Faction=SW.CIS; TierRange=[3, 12]; StasisSpeed=80; StasisTradeTime=60; }
 			cis_12n : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="CIS-Munificent-Class Star Frigat"; 						Faction=SW.CIS; TierRange=[3, 12]; StasisSpeed=80; StasisTradeTime=60; }
 			cis_12o : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Munificent-Class Star Frigate 2"; 							Faction=SW.CIS; TierRange=[3, 12]; StasisSpeed=80; StasisTradeTime=60; }
-			cis_18p : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Lukrehulk-Class Droid Control Ship"; 						Faction=SW.CIS; TierRange=[6, 18]; StasisSpeed=70; StasisTradeTime=80; }
+			// cis_18p : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Lukrehulk-Class Droid Control Ship"; 						Faction=SW.CIS; TierRange=[6, 18]; StasisSpeed=70; StasisTradeTime=80; }
 			cis_9q : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="CIS Package Distributor"; 									Faction=SW.CIS; TierRange=[1, 9]; StasisSpeed=50; StasisTradeTime=50; }
 			cis_9r : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="CIS Minor Shipper"; 										Faction=SW.CIS; TierRange=[1, 9]; StasisSpeed=50; StasisTradeTime=50; }
 			cis_9s : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="CIS Dwarf Freighter"; 										Faction=SW.CIS; TierRange=[1, 9]; StasisSpeed=50; StasisTradeTime=50; }
