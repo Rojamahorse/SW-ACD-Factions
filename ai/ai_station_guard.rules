@@ -33,7 +33,7 @@ TacticsModules
 	}
 	{
 		Type = RandomAttackAngle
-		AttackAngleChangeInterval = [5, 10]
+		AttackAngleChangeInterval = [10, 20] //v29 [5, 10]
 		AttackAngleChangeDelta = [-30d, 30d]
 		CoordinateFlanking = true
 	}
