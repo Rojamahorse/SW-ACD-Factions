@@ -8,8 +8,8 @@ Components
 	Physics
 	{
 		Type = CirclePhysics
-		Radius = 0.2
-		Density = 0.01
+		Radius = 0.01
+		Density = 0.0001
 	}
 
 	Death
