@@ -1,3 +1,12 @@
+//OVERCLOCK
+//{
+//	RECHARGE_USAGE_RATIO = 25%
+//	RECHARGE_TIME_PER_SHOT = (&~/Part/Components/Turret/FireInterval) / (&RECHARGE_USAGE_RATIO)
+//	RECHARGING_HEAT_PER_SECOND = 75
+//}
+//HEAT_TO_RESOURCE = &<./Data/statuses/heat/heat.rules>/STATUS_TO_RESOURCE_RATIO
+//HEAT_TO_STATUS = &<./Data/statuses/heat/heat.rules>/RESOURCE_TO_STATUS_RATIO
+
 Part : &<../../base_part_terran_weapons.rules>/Part
 {
 	//IDs
@@ -32,6 +41,7 @@ Part : &<../../base_part_terran_weapons.rules>/Part
 	//PartSpecific
 	AIValue = 1
 	InitialPenetrationResistance = 2
+	//SignificanceToggle = ScorchedToggle
 	
 	//ReceivableBuffs
 	//ProhibitedBy : ^/0/ProhibitedBy [tall]
@@ -72,6 +82,13 @@ Part : &<../../base_part_terran_weapons.rules>/Part
 			Default = 1
 			RequiresCommand = false
 		}
+//		ScorchedToggle
+//		{
+//			Type = StatusToggle
+//			StatusType = cosmoteer.scorched
+//			MinStatusValue = 1
+//			Invert = true
+//		}
 
 		CommandConsumer
 		{
@@ -113,7 +130,6 @@ Part : &<../../base_part_terran_weapons.rules>/Part
 			ToggleID = "fire_pref"
 			Default = 1
 		}
-
 		FirePrefAttack
 		{
 			Type = ModeToggle
@@ -143,9 +159,19 @@ Part : &<../../base_part_terran_weapons.rules>/Part
 		{
 			Type = ResourceStorage
 			ResourceType = battery
-			MaxResources = 2000			
+			MaxResources = 2000
 			ReceiveResourceMediaEffects = &/COMMON_EFFECTS/PowerDeliver
 		}
+//		Overclock_BatteryProducer
+//		{
+//			Type = ResourceConverter
+//			OperationalToggle = IsOverclocked
+//			ToStorage = BatteryStorage
+//			BATCH_COUNT = 6
+//			ToQuantity = (&~/Part/Components/BulletEmitter/ResourcesUsed) * (&BATCH_COUNT)
+//			Interval = (&~/OVERCLOCK/RECHARGE_TIME_PER_SHOT) * (&BATCH_COUNT)
+//		}
+
 		BatteryConsumer
 		{
 			Type = ResourceConsumer
@@ -155,6 +181,85 @@ Part : &<../../base_part_terran_weapons.rules>/Part
 			DefaultPriority = &/PRIORITIES/Defense_Supply
 			OperationalToggle = PowerToggle
 		}
+
+//		OverclockStateValue
+//		{
+//			Type = ToggleValueSelector
+//			Toggle = OverclockModeToggle
+//			ToggleOffValue = Zero
+//			ToggleOnValue = One
+//		}
+//		
+//		Zero { Type = StaticValue; Value = 0; }
+//		One { Type = StaticValue; Value = 1; }
+//
+//		OverheatEffects : ^/0/OverheatEffects
+//		{
+//			Location = [0.5, 1.5]
+//		}
+//
+//		Overclock_RechargeHeatProducer
+//		{
+//			Type = ResourceConverter
+//			OperationalToggle = Overclock_BatteryProducer
+//			HEAT_PER_INTERVAL = ceil((&~/OVERCLOCK/RECHARGING_HEAT_PER_SECOND) * (&Interval))
+//			ToQuantity = (&HEAT_PER_INTERVAL) * (&~/HEAT_TO_RESOURCE)
+//			ToStorage = &~/Part/^/0/HEAT_TARGET_STORAGE
+//			Interval = 0.5
+//		}
+////		Overclock_ShotHeatProducer
+////		{
+////			Type = ResourceChange
+////			ResourceStorage = &~/Part/^/0/HEAT_TARGET_STORAGE
+////			Trigger = Overclock_BulletEmitterProxy
+////			Amount = (&~/OVERCLOCK/HEAT_PER_SHOT) * (&~/HEAT_TO_RESOURCE)
+////		}
+
+
+//		Router
+//		{
+//			Type = NetworkRouter
+//			RouteGenerators
+//			[
+//				{
+//					Type = Simple
+//					HEAT_INPUT = &~/Part/^/0/HEAT_NETWORK_INPUT
+//					Routes
+//					[
+//						[&../../HEAT_INPUT, Port_Thermal_Left, 0]
+//						[&../../HEAT_INPUT, Port_Thermal_Right, 0]
+//						[&../../HEAT_INPUT, Port_Thermal_Down, 0]
+//					]
+//				}
+//			]
+//		}
+//
+//		Port_Thermal_Left : ~/Part/^/0/BASE_THERMAL_PORT
+//		{
+//			Location = [0, 1]
+//			Direction = Left
+//		}
+//		Port_Thermal_Right : Port_Thermal_Left
+//		{
+//			Direction = Right
+//		}
+//		Port_Thermal_Down : Port_Thermal_Left
+//		{
+//			Direction = Down
+//		}
+//
+//		TurretHolder
+//		{
+//			Type = Sprite
+//			Location = [.5, .5]
+//			Layer = "weapons"
+//			AtlasSprite
+//			{
+//				File = "turret_holder.png"
+//				NormalsFile = "turret_holder_normals.png"
+//				Size = [1, 1]
+//			}
+//		}
 
 		InsideTurretGraphics
 		{
@@ -693,6 +798,21 @@ Part : &<../../base_part_terran_weapons.rules>/Part
 			ToggledOffMediaEffects = &/COMMON_EFFECTS/PowerOff
 		}
 
+//		ScorchedTrigger
+//		{
+//			Type = ToggleTrigger
+//			Toggle = ScorchedToggle
+//			TriggerWhenOn = false
+//		}
+//
+//		ScorchedEffects
+//		{
+//			Type = TriggeredEffects
+//			Trigger = ScorchedTrigger
+//			Location = &../DestroyedEffects/Location
+//			MediaEffects = &/COMMON_EFFECTS/SmallPartScorched
+//		}
+
 		DestroyedEffects
 		{
 			Type = DeathEffects
@@ -707,6 +827,12 @@ Part : &<../../base_part_terran_weapons.rules>/Part
 			//Layer = "indicators" //Removal for 0.27.0_rc2_steam 
 			Indicators
 			[
+//				// Scorched
+//				{
+//					Toggle = ScorchedToggle
+//					AtlasSprite = &/INDICATORS/Scorched
+//					HidesIndicators = [1,2,3]
+//				}
 				// Turned off.
 				{
 					Toggle = PowerToggle
@@ -727,6 +853,15 @@ Part : &<../../base_part_terran_weapons.rules>/Part
 						Size = [1, 1]
 					}
 				}
+				
+//				// Resetting from overclock
+//				{
+//					Toggle = &~/Part/^/0/OVERCLOCK_OPERATIONAL
+//					AtlasSprite : /INDICATORS/OverclockReset
+//					{
+//						Size = [1, 1]
+//					}
+//				}
 			]
 		}
 
@@ -736,6 +871,19 @@ Part : &<../../base_part_terran_weapons.rules>/Part
 			File = "blueprints.png"
 			Size = [1, 1]
 		}
+
+//		HeatGenerationValue
+//		{
+//			Type = StaticValue
+//			Value = (&~/OVERCLOCK/RECHARGING_HEAT_PER_SECOND)
+//		}
+//		HeatGenerationStatProvider
+//		{
+//			Type = StatProvider
+//			Stat = HeatGeneration
+//			OperationalToggle = OverclockModeToggle
+//			ValueFrom = HeatGenerationValue
+//		}
 	}
 	
 	Stats
@@ -772,5 +920,13 @@ Part : &<../../base_part_terran_weapons.rules>/Part
 				ShotPowerUsage = [&../PowerPerShot, &../PowerPerSecond]
 			}
 		}
+//		{
+//			NameKey = "StatCategories/Overclocked"
+//			Stats
+//			{
+//				PowerGeneration = (&~/Part/Components/BulletEmitter/ResourcesUsed) / (&~/OVERCLOCK/RECHARGE_TIME_PER_SHOT) / 1000
+//				HeatGeneration = (&~/OVERCLOCK/RECHARGING_HEAT_PER_SECOND)
+//			}
+//		}
 	]
 }

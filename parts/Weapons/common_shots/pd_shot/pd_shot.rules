@@ -8,7 +8,7 @@ Components
 	Physics
 	{
 		Type = CirclePhysics
-		Radius = 0.01
+		Radius = 0.1
 		Density = 0.0001
 	}
 
@@ -40,7 +40,7 @@ Components
 	{
 		Type = Sprite
 		RenderBucket = BulletUpper4
-		Z = 0
+		Z = 0.5
 		IsLight = true
 		Offset = [-3.5, 0]
 		Sprite
@@ -55,12 +55,14 @@ Components
 			VertexColor = [255, 255, 255]
 			TargetBlendMode = Add
 			Shader = "./Data/common_effects/fancy_light.shader"
+			_z = 1
+            _nrmlStrengthLimit = 1
 			_litReflectiveStrength = 24
 			_litAdditiveStrength = 0.05
-			_unlitAdditiveStrength = 0.2
+			_unlitAdditiveStrength = 0.125
 		}
-		LerpScaleFrom = [.25, 1]
-		LerpTime = .05
+		//LerpScaleFrom = [.25, 1]
+		//LerpTime = .05
 	}
 
 	Hit
@@ -72,7 +74,7 @@ Components
             Enemies = true
             Junk = true
             Friendlies = true
-			Neutrals = true
+            Neutrals = true
             OnlyBulletCategories = [missile, mine, bullet]
         }
 		HitBullet
