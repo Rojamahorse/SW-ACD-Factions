@@ -1,139 +1,76 @@
-CommonStringModName = "\n<s16><gray>Mod: SW:ACD Factions</gray></s16>"
-
+CommonStringModName = 	"\n<s16><gray>Mod: SW:ACD Factions</gray></s16>"
 
 Parts
 {
-	//X-Wing Cannons Unlock
-	xwingCannons = "X-Flügel Kanone"
-	xwingCannonsDesc = "X-Flügel Kanonen sind kleine Waffen, die versteckt hinter und unter Panzerungsteilen platziert werden können. Sie sind nützlich in mittleren bis langen Kampfentfernungen. <string id='CommonStringModName'/>"
+    //X-Wing Cannons
+    xwingCannons = "X-Flügel Kanone"
+    xwingCannonsDesc = "X-Flügel Kanonen sind kleine Waffen, die versteckt hinter und unter Panzerungsteilen platziert werden können. Sie sind nützlich in mittleren bis langen Kampfentfernungen. <string id='CommonStringModName'/>"
 
-	// Standard X-Wing Cannons
-	xwingCannon = "X-Flügel Kurzkanone"
-	xwingCannonIcon = "X-Flügel SK"
-	xwingCannonLeft = "X-Flügel Kurzkanone (Seite)"
-	xwingCannonLeftIcon = "X-Flügel SK (Seite)"
-	xwingCannonDesc = "<cyan>Incom Corporation</cyan> präsentiert die X-Flügel SK; eine kompakte, kurzläufige Kanone für heimliche Panzerintegration, hervorragend im mittleren Kampfbereich. <string id='CommonStringModName'/>"
+    // Standard X-Wing Cannons
+    xwingCannon = "X-Flügel Kurzkanone"
+    xwingCannonIcon = "X-Flügel SK"
+    xwingCannonLeft = "X-Flügel Kurzkanone (Seite)"
+    xwingCannonLeftIcon = "X-Flügel SK (Seite)"
+    xwingCannonDesc = "<cyan>Incom Corporation</cyan> präsentiert die X-Flügel SK; eine kompakte, kurzläufige Kanone für heimliche Panzerintegration, hervorragend im mittleren Kampfbereich. <string id='CommonStringModName'/>"
 
-	//Mass-Drivers Unlocks
-	massdriverssmall = "Mass-Driver Compact Cannons"
-	massdriverssmallDesc = "<string id='Parts/massdriversmallDesc'/>\n\n <s20>Unlocks:</s20>\n\n<good>●  <string id='Parts/massdriversmall'/>\n●  <string id='Parts/massdriversmallLeft'/></good>"
+    //Compact Mass-Driver Cannon
+    massdriversmall = "Massentreiber Kompaktkanone"
+    massdriversmallIcon = "Massentreiber KK"
+    massdriversmallLeft = "Massentreiber Kompaktkanone (Seite)"
+    massdriversmallLeftIcon = "Massentreiber KK (Seite)"
+    massdriversmallDesc = "Die Massentreiber Kompaktkanone (MD-KK) von <cyan>Kuat Systems Engineering</cyan>; eine verkleinerte, aber gewaltige kinetische Waffe, entworfen für Präzision und Leistung in Hundekämpfen. Ihr schlankes Design ermöglicht eine nahtlose Integration mit verschiedenen Jägermodellen und bietet unübertroffene kinetische Wirkung bei gleichzeitiger Erhaltung der aerodynamischen Effizienz. <string id='CommonStringModName'/>"
 
-	//Compact Mass-Driver Cannon
-	massdriversmall = "Massentreiber Kompaktkanone"
-	massdriversmallIcon = "Massentreiber KK"
-	massdriversmallLeft = "Massentreiber Kompaktkanone (Seite)"
-	massdriversmallLeftIcon = "Massentreiber KK (Seite)"
-	massdriversmallDesc = "Die Massentreiber Kompaktkanone (MD-KK) von <cyan>Kuat Systems Engineering</cyan>; eine verkleinerte, aber gewaltige kinetische Waffe, entworfen für Präzision und Leistung in Hundekämpfen. Ihr schlankes Design ermöglicht eine nahtlose Integration mit verschiedenen Jägermodellen und bietet unübertroffene kinetische Wirkung bei gleichzeitiger Erhaltung der aerodynamischen Effizienz. <string id='CommonStringModName'/>"
-	
-	//Extra Long X-Wing Cannons
-	xwingCannonXLong = "X-Flügel Verlängerte Kanone"
-	xwingCannonXLongIcon = "X-Flügel XC"
-	xwingCannonXLongLeft = "X-Flügel Verlängerte Kanone (Seite)"
-	xwingCannonXLongLeftIcon = "X-Flügel XC (Seite)"
-	xwingCannonXLongDesc = "<cyan>Incom Corporation</cyan> präsentiert die X-Flügel XC; eine erweiterte Version der klassischen Kanone, die Reichweite und Tarnung für strategische Positionierung hinter der Panzerung kombiniert. <string id='CommonStringModName'/>"
+    //Extra Long X-Wing Cannons
+    xwingCannonXLong = "X-Flügel Verlängerte Kanone"
+    xwingCannonXLongIcon = "X-Flügel XC"
+    xwingCannonXLongLeft = "X-Flügel Verlängerte Kanone (Seite)"
+    xwingCannonXLongLeftIcon = "X-Flügel XC (Seite)"
+    xwingCannonXLongDesc = "<cyan>Incom Corporation</cyan> präsentiert die X-Flügel XC; eine erweiterte Version der klassischen Kanone, die Reichweite und Tarnung für strategische Positionierung hinter der Panzerung kombiniert. <string id='CommonStringModName'/>"
 
-	//TIE Repeaters Unlocks
-	tieMiniguns = "Tie Repeater Cannons"
-	tieMinigunsDesc = "<string id='Parts/tieLMinigunDesc'/>\n\n <s20>Unlocks:</s20>\n\n<good>●  <string id='Parts/tieMinigun'/>\n●  <string id='Parts/tieMinigunLeft'/></good>"
+    //Standard TIE Repeaters
+    tieMinigun = "TIE Repeaterkanone - Super Edition"
+    tieMinigunIcon = "TIE RK-SE"
+    tieMinigunLeft = "TIE Repeaterkanone - Super Edition (Seite)"
+    tieMinigunLeftIcon = "TIE RK-SE (Seite)"
+    tieLMinigunDesc = "Die TIE Repeaterkanonen - Super Edition des <cyan>Galaktischen Imperiums</cyan>; kompakt, schnellfeuernd und perfekt für Nahkampfgefechte, mit der Möglichkeit zur heimlichen Panzerplatzierung. <string id='CommonStringModName'/>"
 
-	//Standard TIE Repeaters
-	tieMinigun = "TIE Repeaterkanone - Super Edition"
-	tieMinigunIcon = "TIE RK-SE"
-	tieMinigunLeft = "TIE Repeaterkanone - Super Edition (Seite)"
-	tieMinigunLeftIcon = "TIE RK-SE (Seite)"
-	tieLMinigunDesc = "Die TIE Repeaterkanonen - Super Edition des <cyan>Galaktischen Imperiums</cyan>; kompakt, schnellfeuernd und perfekt für Nahkampfgefechte, mit der Möglichkeit zur heimlichen Panzerplatzierung. <string id='CommonStringModName'/>"
+    tieMinigunLong = "HyCor Schwerer Repeater Erweiterte Kanone"
+    tieMinigunLongIcon = "HyCor HR-XK"
+    tieMinigunLongLeft = "HyCor Schwerer Repeater Erweiterte Kanone (Seite)"
+    tieMinigunLongLeftIcon = "HyCor HR-XK (Seite)"
+    tieLMinigunLongDesc = "Schwerer Laser-Repeater mit erweiterter Kanone von <cyan>HyCor</cyan>; schnellfeuernd und perfekt für Nahkampfgefechte, dieser schwere Laser-Repeater ist für den Einsatz auf kleinen bis mittleren Schiffen modifiziert. Kann hinter und unter der Schiffspanzerung platziert werden. <string id='CommonStringModName'/>"
 
-	//Hycor Heavy Repeaters Unlocks
-	tieMinigunsLong = "HyCor Heavy Repeaters"
-	tieMinigunsLongDesc = "<string id='Parts/tieLMinigunLongDesc'/>\n\n <s20>Unlocks:</s20>\n\n<good>●  <string id='Parts/tieMinigunLong'/>\n●  <string id='Parts/tieMinigunLongLeft'/></good>"
+    // RG-9 Cannons
+    RG9Cannon = "RG-9 Laserkanone Erweiterte Edition"
+    RG9CannonIcon = "RG-9 LK-EE"
+    RG9CannonLeft = "RG-9 Laserkanone Erweiterte Edition (Seite)"
+    RG9CannonLeftIcon = "RG-9 LK-EE (Seite)"
+    RG9CannonDesc = "RG-9 Laserkanone von <cyan>Borstel</cyan>; eine Erweiterte Edition der schnellfeuernden, vielseitigen kleinen A-Flügel-Laser, hauptsächlich verwendet in mittleren bis großen Jägern. <string id='CommonStringModName'/>"
+    RG9CannonLeftDesc = "RG-9 Laserkanone von <cyan>Borstel</cyan>; eine Erweiterte Edition der schnellfeuernden, vielseitigen kleinen A-Flügel-Laser, hauptsächlich verwendet in mittleren bis großen Jägern. <string id='CommonStringModName'/>"
 
-	tieMinigunLong = "HyCor Schwerer Repeater Erweiterte Kanone"
-	tieMinigunLongIcon = "HyCor HR-XK"
-	tieMinigunLongLeft = "HyCor Schwerer Repeater Erweiterte Kanone (Seite)"
-	tieMinigunLongLeftIcon = "HyCor HR-XK (Seite)"
-	tieLMinigunLongDesc = "Schwerer Laser-Repeater mit erweiterter Kanone von <cyan>HyCor</cyan>; schnellfeuernd und perfekt für Nahkampfgefechte, dieser schwere Laser-Repeater ist für den Einsatz auf kleinen bis mittleren Schiffen modifiziert. Kann hinter und unter der Schiffspanzerung platziert werden. <string id='CommonStringModName'/>"
+    // Standard TwinBeam Defense Turret
+    DroidTurret = "StarGuard Zweistrahl-Abwehrturm"
+    DroidTurretIcon = "Starguard ZA-T"
+    DroidTurretDesc = "Hergestellt von <cyan>Corellian ArmsTech</cyan>, entfesselt der StarGuard Zweistrahl-Abwehrturm eine Doppellaser-Wut und bietet unübertroffenen Schutz. Besonders effektiv beim Abfangen und Neutralisieren von <orange>Laser- und Ionenschüssen</orange>, bietet er überlegenen Schutz gegen energiebasierte Projektilbedrohungen, ist aber ineffektiv gegen Kugeln, Minen und Raketen. <string id='CommonStringModName'/>"
 
-	//RG9 Cannons Unlocks
-	RG9Cannons = "RG-9 Laser Cannons"
-	RG9CannonsDesc = "<string id='Parts/RG9CannonDesc'/>\n\n <s20>Unlocks:</s20>\n\n<good>●  <string id='Parts/RG9Cannon'/>\n●  <string id='Parts/RG9CannonLeft'/></good>"
-
-	// RG-9 Cannons
-	RG9Cannon = "RG-9 Laserkanone Erweiterte Edition"
-	RG9CannonIcon = "RG-9 LK-EE"
-	RG9CannonLeft = "RG-9 Laserkanone Erweiterte Edition (Seite)"
-	RG9CannonLeftIcon = "RG-9 LK-EE (Seite)"
-	RG9CannonDesc = "RG-9 Laserkanone von <cyan>Borstel</cyan>; eine Erweiterte Edition der schnellfeuernden, vielseitigen kleinen A-Flügel-Laser, hauptsächlich verwendet in mittleren bis großen Jägern. <string id='CommonStringModName'/>"
-	RG9CannonLeftDesc = "RG-9 Laserkanone von <cyan>Borstel</cyan>; eine Erweiterte Edition der schnellfeuernden, vielseitigen kleinen A-Flügel-Laser, hauptsächlich verwendet in mittleren bis großen Jägern. <string id='CommonStringModName'/>"
-
-	// Standard TwinBeam Defense Turret
-	DroidTurret = "StarGuard Zweistrahl-Abwehrturm"
-	DroidTurretIcon = "Starguard ZA-T"
-	DroidTurretDesc = "Hergestellt von <cyan>Corellian ArmsTech</cyan>, entfesselt der StarGuard Zweistrahl-Abwehrturm eine Doppellaser-Wut und bietet unübertroffenen Schutz. Besonders effektiv beim Abfangen und Neutralisieren von <orange>Laser- und Ionenschüssen</orange>, bietet er überlegenen Schutz gegen energiebasierte Projektilbedrohungen, ist aber ineffektiv gegen Kugeln, Minen und Raketen. <string id='CommonStringModName'/>"
-
-	// Mini TwinLaser Defense Turret
-	PDTurretTiny = "StarGuard Kompakter Zwillingslaser-Punktverteidigungsturm"
-	PDTurretTinyIcon = "Starguard KL-K-PVT"
-	PDTurretTinyDesc = "Der StarGuard Zwillingslaser-Punktverteidigungsturm, hergestellt von <cyan>Corellian ArmsTech</cyan>, entfesselt eine Doppellaser-Wut. Diese miniaturisierte und vollautomatische Version des StarGuard Zwillingslaser-Turms ist optimiert für enge Räume. Er ist sehr effektiv bei der Zielverfolgung von <orange>Kugeln, Minen und Raketen</orange>, aber ineffektiv gegen Laser und Ionenschüsse. <string id='CommonStringModName'/>"
-
-
-//	//Long X-Wing Cannons
-//	xwingCannonLong = "RedFury Blaster Cannon"
-//	xwingCannonLongIcon = "RedFury-BC"
-//	xwingCannonLongLeft = "RedFury Blaster Cannon (Side)"
-//	xwingCannonLongLeftIcon = "RedFury-BC (Side)"
-//	xwingCannonLongDesc = "The RedFury Blaster by <cyan>Merr-Sonn Munitions</cyan>; A hard-hitting Heavy Blaster Cannon that allows for placement behind and hidden under armor pieces."
-
-
-//	//TIE Repeaters
-//	tieMiniguns = "TIE Repeater Cannon"
-//	tieMinigunsDesc = "TIE Repeaters are small, rapid-firing weapons that allows for placement hidden behind and under armor pieces. They are inaccurate, but useful for close range engagements."
-
-//	// SW Multipurpose Turrets
-//
-//	// Smaller burst damage turret
-//	SWTurretA = "Tiny Turbo Laser - Burst"
-//	SWTurretAIcon = "Tiny TL - Burst"
-//	SWTurretADesc = "A compact yet powerful turret, the Tiny Turbo Laser - Burst version specializes in burst damage, ideal for quickly neutralizing smaller threats. This is a <orange>switchable</orange>, crew-operated Laser Cannon."
-
-//	// Sturdier-looking turret
-//	SWTurretB = "Tiny Turbo Laser - Heavy"
-//	SWTurretBIcon = "Tiny TL - Heavy"
-//	SWTurretBDesc = "The Tiny Turbo Laser - Heavy is built for durability and sustained firepower, making it effective against a wide range of targets. This is a <orange>switchable</orange>, crew-operated Laser Cannon."
-
-//	// Mix of the two
-//	SWTurretC = "Tiny Turbo Laser - Rapid"
-//	SWTurretCIcon = "Tiny TL - Rapid"
-//	SWTurretCDesc = "Combining the best of both worlds, the Tiny Turbo Laser - Rapid offers a balanced approach to both burst damage and staying power. This is a <orange>switchable</orange>, crew-operated Laser Cannon."
-
-//	// Reactors
-//	SWMedReactor = "Reinforced Light Reactor"
-//	SWMedReactorIcon = "Light Reactor"
-//	SWMedReactorDesc = "An armored reactor reinforced with durasteel; A highly-efficient light reactor designed for state-of-the-art medium and large cruisers and frigates with no extra room for outdated and ugly bulky reactor equipment."
-
-
-}
-
-
-EditorGroups
-{
-}
-
-Stats
-{
-
+    // Mini TwinLaser Defense Turret
+    PDTurretTiny = "StarGuard Kompakter Zwillingslaser-Punktverteidigungsturm"
+    PDTurretTinyIcon = "Starguard KL-K-PVT"
+    PDTurretTinyDesc = "Der StarGuard Zwillingslaser-Punktverteidigungsturm, hergestellt von <cyan>Corellian ArmsTech</cyan>, entfesselt eine Doppellaser-Wut. Diese miniaturisierte und vollautomatische Version des StarGuard Zwillingslaser-Turms ist optimiert für enge Räume. Er ist sehr effektiv bei der Zielverfolgung von <orange>Kugeln, Minen und Raketen</orange>, aber ineffektiv gegen Laser und Ionenschüsse. <string id='CommonStringModName'/>"
 }
 
 
 StatCategories
 {
-	SWFighterWeapons = "Kleiner <red>roter</red> Laserkanonenschuss"
-	MinigunShot = "Kleiner <green>grüner</green> Repeater-Laserschuss"
-	SWPDTurretTiny = "Kleiner <magenta>Lila</magenta> PD-Salvenschuss"
-	SWRG9Shot = "Kleiner <red>roter</red> RG-9 Salvenkanonenschuss"
-	SWBurstLaser = "Kleiner <red>roter</red> Salvenlaserschuss"
-	SWPDBeamLaser = "Kleiner <yellow>gelber</yellow> PD-Strahllaserschuss"
-	SWSlug = "Kleiner <white>Metall</white>-Massentreiber-Geschoss-Schuss"
+    SWFighterWeapons = "Kleiner <red>roter</red> Laserkanonenschuss"
+    MinigunShot = "Kleiner <green>grüner</green> Repeater-Laserschuss"
+    SWPDTurretTiny = "Kleiner <magenta>Lila</magenta> PD-Salvenschuss"
+    SWRG9Shot = "Kleiner <red>roter</red> RG-9 Salvenkanonenschuss"
+    SWBurstLaser = "Kleiner <red>roter</red> Salvenlaserschuss"
+    SWPDBeamLaser = "Kleiner <yellow>gelber</yellow> PD-Strahllaserschuss"
+    SWSlug = "Kleiner <white>Metall</white>-Massentreiber-Geschoss-Schuss"
 }
+
 
 
 SWFactionsBlacksun = "SW Fraktionen: Schwarze Sonne"
@@ -157,30 +94,27 @@ SWFactionsStartersTip = "Eine Sammlung von Star Wars Fraktionen Starter-Schiffen
 SWCommunitySubmissions = "SW Community-Einsendungen"
 SWCommunitySubmissionsTip = "Eine Sammlung von Star Wars Schiff-Einsendungen aus der Community"
 
-/*
-DecalGroups
-{
-	swdecalssm = "Star Wars Faction Decals Small"
-	swdecalsmed = "Star Wars Faction Decals Medium"
-	swdecalslg = "Star Wars Faction Decals Large"
-	sw_decals = "Star Wars Faction Decals"
-	sw_adv_shapes = "Advanced Gradients, Shadows, & Shapes"
-}
-*/
+//DecalGroups
+//{
+//    // sw_decals = "Star Wars Fraktionsabziehbilder"
+//    sw_adv_shapes = "Fortgeschrittene Verläufe, Schatten & Formen"
+//}
+
 
 Factions
 {
-	Black_Sun = "Kollektiv der Schwarzen Sonne"
-	CIS = "Konföderation unabhängiger Systeme"
-	Galactic_Empire = "Galaktisches Imperium"
-	Rebel_Alliance = "Rebellen-Allianz"
-	Republic = "Republik"
+    Black_Sun = "Kollektiv der Schwarzen Sonne"
+    CIS = "Konföderation unabhängiger Systeme"
+    Galactic_Empire = "Galaktisches Imperium"
+    Rebel_Alliance = "Rebellen-Allianz"
+    Republic = "Republik"
 }
+
 
 StarterShips
 {
 	A_Wing = "Wie ein koffeinhaltiges Raumwiesel auf Rollschuhen, ist es schnell, wendig und unberechenbar im Hundekampf. Entworfen für Effizienz, haben sie R2 zum nächsten Shuttle geschickt. Keine Beifahrer hier, schnall dich an und bring dein A-Spiel mit!"
-	Black_Sun_Fighter = "Vereint elegante Eleganz und die Finesse einer Diskokugel in der Schwerelosigkeit. Mit einem Tarnmodus, der genauso effektiv ist wie das Schleichen auf Steppschuhen, bietet dieses Schiff eine einzigartige Mischung aus Flair und Nutzlosigkeit."
+	Black_Sun_Fighter =  "Vereint elegante Eleganz und die Finesse einer Diskokugel in der Schwerelosigkeit. Mit einem Tarnmodus, der genauso effektiv ist wie das Schleichen auf Steppschuhen, bietet dieses Schiff eine einzigartige Mischung aus Flair und Nutzlosigkeit."
 	Durasteel_Prospector = "Dieser rostige, aber zuverlässige Hauler beweist, dass Stil nicht alles ist. Schnapp dir deine Schaufel und deine Weltraum-Bauhelm, denn es ist Zeit, mit schmutzigen Händen im Namen des Profits zu arbeiten!"
 	Hyena_Class_Droid_Bomber = "Die Antwort auf die Frage, die niemand gestellt hat: 'Was wäre, wenn wir einen Droide zum Kamikaze-Konfettispender machen würden?' Mit aller Subtilität eines brennenden Festwagens bringt dieses Schiff Chaos und bunte Explosionen mit, wo immer es hingeht."
 	N_1_Starfighter = "Der 'Traum des Nerf Herders'. Dieses Schiff ist für Piloten gedacht, die glauben, dass Präzision überbewertet ist und dass Kurven der wahre Weg zum Sieg sind. Dieses Schiff ist ein wahres Kunstwerk... solange deine Definition von Kunst unbeabsichtigte Rollen beinhaltet."
@@ -191,11 +125,10 @@ StarterShips
 
 Doodads
 {
-	POIEliminateDefectors = "Standort der Abtrünnigen Flotte"
-	POIEliminateDefectorsUnD = "A Suspiciously Inconspicuous Asteroid Field"
-	POIEliminateRenegadeLeader = "Standort des Renegatenführers"
-	POIDistressSignalUndiscovered = "Standort des Notsignals"
-	POIDistressSignal = "Notlage eines Würdenträgers"
+    POIEliminateDefectors = "Standort der Abtrünnigen Flotte"
+    POIEliminateRenegadeLeader = "Standort des Renegatenführers"
+    POIDistressSignalUndiscovered = "Standort des Notsignals"
+    POIDistressSignal = "Notlage eines Würdenträgers"
 }
 
 
@@ -211,17 +144,17 @@ MapSizes
 	Vanilla = "Standard (50)"
 	VanillaDesc = "Eine Mischung aus 50 <yellow>Star Wars</yellow> und <white>Vanilla</white> kontrollierten Systemen am Rand des erforschten Raums, bekannt für ihre komplizierten Routen und zwielichtigen Geschäfte."
 
-//	SWStandard = "Frontier Systems (50)"
-//	SWStandardTip = "A network of 50 Star Wars systems on the edge of explored space, known for their intricate routes and shadowy dealings."
+//	SWStandard = "Grenzsysteme (50)"
+//	SWStandardTip = "Ein Netzwerk aus 50 Star Wars-Systemen am Rand des erforschten Raums, bekannt für ihre komplizierten Routen und zwielichtigen Geschäfte."
 
 	SWLarge = "Äußere Randgebiete (60)"
 	SWLargeDesc = "Eine gesetzlose Grenzregion, die an die Äußeren Randgebiete erinnert, mit 60 <yellow>Star Wars</yellow> Systemen."
 
-	SWVeryLarge = "Mittlere Randgebiete (80)"
+	SWVeryLarge = "Mittlere Randgebiete (80)" 
 	SWVeryLargeDesc = "Eine industrialisierte Region, die an die Mittleren Randgebiete erinnert, mit 80 <yellow>Star Wars</yellow> Systemen."
 
 	SWHuge = "Innere Randwelten (100)"
-	SWHugeDesc = "Eine Kernregion, die an die Inneren Randwelten erinnert, mit 100 <yellow>Star Wars</yellow> Systemen."
+	SWHugeDesc = "Eine Kernregion, die an die Inneren Randwelten erinnert, mit 100 <yellow>Star Wars</yellow> Systemen." 
 
 	SWGigantic = "Kernwelten (125)"
 	SWGiganticDesc = "Das Herz der galaktischen Zivilisation mit 125 <yellow>Star Wars</yellow> Systemen."
@@ -235,19 +168,20 @@ MapSizes
 	SWGalactic = "Die gesamte bekannte Galaxie (500)"
 	SWGalacticDesc = "<white>Cosmoteer</white> und <yellow>Star Wars</yellow> Fraktionen kollidieren im vollen Umfang der bekannten Galaxie mit 500 Systemen."
 
-	// The Rebellion Era Galaxy Map
+	// Die Rebellion-Ära Galaxiekarte
 	SWRebellion = "Eine neue Hoffnung (50)"
 	SWRebellionDesc = "Ein echter <yellow>Star Wars</yellow>-Klassiker, randvoll mit Action; Du bist mittendrin, während die <orange>Rebellenallianz</orange> gegen das <gray>Imperium</gray> antritt... Manche nennen das sogar einen '<yellow>KlassikJam</yellow>'."
 
-	// The Clone Wars Era Galaxy Map
+	// Die Klonkriege-Ära Galaxiekarte
 	SWClonewars = "Die Ära der Klonkriege (50)"
-	SWClonewarsDesc = "Tauche ein in das Herz der <yellow>Klonkriege</yellow>, wo die <red>Galaktische Republik</red> auf die <blue>Konföderation unabhängiger Systeme (CIS)</blue> trifft, während das <magenta>Black Sun</magenta> im Schatten lauert. Erlebe die ikonische galaktische Unruhe in einer Periode, die als '<yellow>Galaktische Spannung</yellow>' bekannt ist."
+	SWClonewarsDesc = "Tauche ein in das Herz der <yellow>Klonkriege</yellow>, wo die <red>Galaktische Republik</red> auf die <blue>Konföderation unabhängiger Systeme (CIS)</blue> trifft, während das <magenta>Black Sun</magenta> im Schatten lauert. Erlebe die ikonische galaktische Unruhe in einer Periode, die als '<yellow>Galaktische Spannung</yellow>' bekannt ist." 
 
 	/*
 	SmugglersRun = "Schmugglerlauf (50)"
 	SmugglersRunDesc = "Ein Netzwerk von 50 Sternensystemen, bekannt für ihre komplizierten Routen und zwielichtigen Geschäfte, oft frequentiert von Schmugglern und Gesetzlosen."
 	*/
 }
+
 
 CareerModeConfig
 {
@@ -312,12 +246,13 @@ CrewScarcity
 	ScarceTip = "Bietet <bad>33%</bad> weniger Crew, begrenzt auf <yellow>1000</yellow>, dieses Level ist wie das Zusammenstellen einer eng verbundenen Schmuggler-Crew. Jedes Mitglied ist so entscheidend wie ein Co-Pilot beim Kessel-Flug, wodurch jede Reise zu einem aufregenden und strategischen Abenteuer wird."
 }
 
+
 CombatDifficulty
 {
   NoDeath = "Pazifist (Unverwundbar)"
   NoDeathTip = "• Kein Schaden genommen\n<i><gray>(Schaden? Was ist das?)</gray></i>\n• Kann im Kampf bauen\n<i><gray>(Ich würde nicht mal einen Mynock verletzen.)</gray></i>"
   
-  Easy = "Nerf-Hirte"
+  Easy = "Nerf-Hirte" 
   EasyTip = "• <good>-30%</good> Schaden genommen\n<i><gray>(Ich habe die Flugschule gerade so bestanden.)</gray></i>\n• <good>+40%</good> Schaden zugefügt\n<i><gray>(Ich verfehle mehr Schüsse als ein Sturmtruppler.)</gray></i>"
 
   Normal = "Freizeit-Kopfgeldjäger"
@@ -331,12 +266,13 @@ CombatDifficulty
 }
 
 
+
 EconDifficulty
 {
   FreeBuild = "Midichlorian-Meister"
   FreeBuildTip = "• Unbegrenzte Machtkräfte ermöglichen das Bauen überall und jederzeit ohne Credits oder Ressourcen.\n<i><gray>(Ein hoher Midichlorian-Wert ist wirklich praktisch.)</gray></i>\n• Normale Ressourcen-Drop-Raten.\n<i><gray>(Ressourcen fließen so natürlich wie die Macht.)</gray></i>\n• Normale Credit-Belohnungen.\n<i><gray>(Credits werden es schon richten.)</gray></i>\n• Normale Ruf-Belohnungen.\n<i><gray>(Dein Ruf eilt dir voraus.)</gray></i>"
   
-  Fast = "Schmuggler"
+  Fast = "Schmuggler" 
   FastTip = "• Ressourcen-Drop-Raten um <good>100% erhöht</good>.\n<i><gray>(Psst, frag nicht, woher sie kommen.)</gray></i>\n• Credit-Belohnungen um <good>100% erhöht</good>.\n<i><gray>(Natürlich steuerfrei.)</gray></i>\n• Ruf-Belohnungen um <good>50% erhöht</good>.\n<i><gray>(Ruhm verbreitet sich schnell in der Unterwelt.)</gray></i>"
 
   Normal = "Freiberufler"
@@ -345,6 +281,7 @@ EconDifficulty
   Slow = "Feuchtigkeitsfarmer"
   SlowTip = "• Ressourcen-Drop-Raten um <bad>50% reduziert</bad>.\n<i><gray>(Verflucht sei dieses karge Ödland.)</gray></i>\n• Credit-Belohnungen um <bad>50% reduziert</bad>.\n<i><gray>(Wasser ist nicht umsonst.)</gray></i>\n• Ruf-Belohnungen um <bad>25% reduziert</bad>.\n<i><gray>(Wen interessieren schon Farmer?)</gray></i>"
 }
+
 
 
 
@@ -384,6 +321,7 @@ CareerMode
 	GotoNode = "<fame_color>Sie haben Raumschiffe in diesem System.</fame_color>\n<btn id='General.UIClick'/> um dieses Sternensystem anzusehen."
 }
 
+
 FameTitles
 [
 	"\"Mynock-Köder\""
@@ -407,6 +345,7 @@ FameTitles
 	"\"Großadmiral\""
 	"\"Lebende Legende\""
 ]
+
 
 ReputationTitles
 [   
@@ -469,16 +408,7 @@ Objectives
 AI
 {
 	ImperialFleetCommandAI = "K.I. SWACD - Kampf"
-	CivFleetCommandAI = "K.I. SWACD - Zivil"
-	AgileFlankerAI = "A.I. SWACD - Agile Flanker"
-	AssaultAdvancerAI = "A.I. SWACD - Assault Advancer"
-	BroadsideRotatorAI = "A.I. SWACD - Broadsider"
-	CircleClockwiseAI = "A.I. SWACD - Clockwise Circler"
-	CircleCounterClockwiseAI = "A.I. SWACD - Counter Clockwise Circler"
-	BomberAI = "A.I. SWACD - Bomber"
-	ReconAI = "A.I. SWACD - Reconnaissance Scout"
-	HitAndFadeAI = "A.I. SWACD - Hit and Fader"
-	PositionalDefenseAI = "A.I. SWACD - Positional Defender"
+	CivFleetCommandAI =  "K.I. SWACD - Zivil"
 }
 
 
@@ -504,13 +434,13 @@ Lore
 		Title = "Die Konföderation unabhängiger Systeme"
 
 		Lore1 = "Die Konföderation unabhängiger Systeme, auch bekannt als die Separatisten, war eine galaktische Fraktion, die während der turbulenten Ära der Klonkriege gegründet wurde. Sie setzte sich für die Autonomie von Sternensystemen ein und strebte danach, sich von der zentralen Autorität der Galaktischen Republik abzuspalten."
-		
+
 		Lore2 = "Ursprünglich als politische Bewegung konzipiert, um Missstände gegen die wahrgenommene Korruption und Bürokratie der Republik anzugehen, wuchs die Konföderation unter der Führung von Graf Dooku zu einer gewaltigen Fraktion heran. Graf Dooku war ein ehemaliger Jedi-Meister, der zum Sith-Lord Darth Tyranus wurde. Im Geheimen von Darth Sidious, dem Sith-Lord, der später Kaiser Palpatine wurde, manipuliert, dienten die Separatisten als Werkzeug in den Plänen der Sith, die Republik zu destabilisieren und letztendlich den Aufstieg des Galaktischen Imperiums zu ermöglichen."
-		
+
 		Lore3 = "Die Konföderation erhielt Unterstützung von verschiedenen Sternensystemen und Unternehmensverbänden, die von der vermeintlichen Ineffizienz der Republik und ihrer Bevorzugung der Kernwelten enttäuscht waren. Zu den Schlüsselfiguren der separatistischen Bewegung gehörten mächtige Unternehmen wie die Handelsföderation, die Techno-Union und der Bankenclan, die umfangreiche Ressourcen und Kampfdroiden für das separatistische Militär bereitstellten."
-		
+
 		Lore4 = "Die Basis der separatistischen Militärstreitkräfte war ihre riesige Armee von Kampfdroiden, darunter die B1-Kampfdroiden (allgemein als Kampfdroiden bekannt) und die B2-Superkampfdroiden. Diese Droiden ermöglichten es der Konföderation, große Armeen zu vergleichsweise geringen Kosten einzusetzen und die Kamino-Klonarmee der Republik an verschiedenen Fronten zu herauszufordern."
-		
+
 		Lore5 = "Obwohl die Konföderation behauptete, für die Autonomie und Unabhängigkeit einzustehen, griffen sie oft zu rücksichtslosen Taktiken und militärischer Aggression. Zahlreiche Welten waren in den Konflikt verwickelt, was zu verheerenden Schlachten und vielen Verlusten führte. Das bekannteste Symbol der militärischen Macht der Konföderation war das beeindruckende Drohnenkontrollschiff, ein riesiges Schiff, das die Aktionen ihrer umfangreichen Droidenarmeen bei Großkämpfen koordinierte."
 	}
 
@@ -532,16 +462,17 @@ Lore
 	Republic
 	{
 		Title = "Die Republik"
-		
+
 		Lore1 = "Die Republik war eine weitläufige demokratische Institution, die über tausend Generationen hinweg als Regierungsorgan der Galaxie fungierte und Zusammenarbeit, Diplomatie und Rechtsstaatlichkeit unter ihren Mitgliedswelten förderte."
-		
+
 		Lore2 = "Gegründet auf den Prinzipien von Freiheit und Repräsentation entstand die Republik aus den Nachwirkungen der Konflikte zwischen dem Rakatanischen Unendlichen Imperium und dem alten Je'daii-Orden. Im Laufe der Zeit wuchs sie zu Tausenden von Sternsystemen heran, von denen jedes im Galaktischen Senat auf der Hauptwelt Coruscant vertreten war."
-		
+
 		Lore3 = "Der Jedi-Orden spielte eine entscheidende Rolle in der Regierung der Republik und diente als Friedensstifter und Diplomaten in der gesamten Galaxie. Als Hüter von Frieden und Gerechtigkeit hielt sich der Jedi-Orden an einen strengen Verhaltenskodex und strebte danach, das Gleichgewicht und die Harmonie in der Macht aufrechtzuerhalten. Im Laufe ihrer Geschichte stand die Republik verschiedenen Bedrohungen gegenüber, von den Sith bis hin zu externen Invasionen, doch ihre Stärke lag in ihrer Fähigkeit, diverse Spezies und Kulturen unter einem gemeinsamen Banner zu vereinen."
-		
+
 		Lore4 = "Die Republik unterhielt eine stehende Armee bekannt als die Große Armee der Republik, bestehend aus Klonkriegern, die aus dem genetischen Material des Kopfgeldjägers Jango Fett erschaffen wurden. Diese Klone wurden gezüchtet und ausgebildet, um loyale Soldaten zu sein und die Republik während der Klonkriege gegen die separatistischen Kräfte erbittert zu verteidigen."
-		
+
 		Lore5 = "Trotz ihrer vielen Stärken blieb die Republik nicht ohne Fehler. Bürokratie und politisches Taktieren behinderten oft schnelles Handeln und ermöglichten Unzufriedenheit und Enttäuschung in einigen Regionen. Der Ausbruch der Klonkriege, inszeniert von den Sith, stellte die Republik auf die ultimative Probe, indem sie ihre grundlegenden Werte herausforderte und Schwachstellen aufdeckte, die letztendlich zur Transformation der Republik in das Galaktische Imperium führten."
+
 	}
 
 	Rebel_Alliance
@@ -549,126 +480,14 @@ Lore
 		Title = "Die Rebellenallianz"
 
 		Lore1 = "Die Rebellenallianz ist eine mutige und entschlossene Fraktion, die sich gegen die tyrannische Herrschaft des Galaktischen Imperiums erhoben hat und nach Freiheit und Gerechtigkeit in der Galaxie strebt."
-		
+
 		Lore2 = "Die Rebellenallianz wurde heimlich in den frühen Jahren der Vorherrschaft des Galaktischen Imperiums gegründet und war eine gemeinsame Anstrengung verschiedener rebellischer Zellen, planetarer Widerstandsgruppen und desillusionierter Individuen aus unterschiedlichen Hintergründen. Die Anfänge der Allianz lassen sich auf die Zeit der Klonkriege zurückverfolgen, als der Widerstand gegen die Umwandlung der Republik in das Imperium Form annahm. Ihr Hauptziel war es, die demokratischen Ideale der alten Republik wiederherzustellen und das oppressive Regime von Imperator Palpatine und seinen Sith-Anhängern zu stürzen."
-		
+
 		Lore3 = "Im Laufe ihrer Existenz errichtete die Rebellenallianz versteckte Stützpunkte auf abgelegenen Planeten und nutzte sie als Zentren für Rekrutierung, Training und die Planung strategischer Angriffe gegen die imperialen Streitkräfte. Ihr bekanntester Stützpunkt befand sich auf dem Eisplaneten Hoth, der als vorübergehendes Hauptquartier und Zufluchtsort für das Oberkommando der Allianz diente. Die Führung der Allianz bestand aus charismatischen Persönlichkeiten wie Mon Mothma, Bail Organa und Prinzessin Leia Organa, die Hoffnung und Einheit unter ihren Anhängern inspirierten."
-		
+
 		Lore4 = "Die militärischen Streitkräfte der Rebellenallianz, bekannt als die Allianzflotte, bestanden aus einer vielfältigen Auswahl an Sternenjägern und Großkampfschiffen. Ihr Flaggschiff, der Mon Calamari Sternenkreuzer namens 'Home One', symbolisierte die gemeinsamen Anstrengungen verschiedener Spezies im Kampf für die Freiheit. Die Allianz war bekannt für ihre talentierten Piloten, einschließlich des legendären Luke Skywalker, der eine entscheidende Rolle im Untergang des Imperiums spielte."
-		
+
 		Lore5 = "Als Graswurzelbewegung strebte die Rebellenallianz nicht nach der Kontrolle über die Galaxie; stattdessen kämpften sie dafür, das oppressive Regime abzubauen und den Bürgern der Galaxie die Freiheit zurückzugeben. Ihr Kampf war nicht ohne Opfer, und viele tapfere Individuen opferten ihr Leben für die Sache. Trotz überwältigender Widrigkeiten inspirierten die Ausdauer und Entschlossenheit der Rebellenallianz unzählige andere, sich ihnen anzuschließen. Dies bewies, dass selbst in den dunkelsten Zeiten Hoffnung die Flammen des Widerstands entzünden kann."
 	}
 	
 }
-
-
-
-	//Appendix
-
-/*
-CombatDifficulty
-{
-  NoDeath = "Pazifist (Unverwundbar)"
-  NoDeathTip = "• Kein Schaden genommen\n<i><gray>(Schaden? Was ist das?)</gray></i>\n• Kann im Kampf bauen\n<i><gray>(Ich würde nicht mal einen Mynock verletzen.)</gray></i>"
-  
-  Easy = "Nerf-Hirte"
-  EasyTip = "• <good>-30%</good> Schaden genommen\n<i><gray>(Ich habe die Flugschule gerade so bestanden.)</gray></i>\n• <good>+40%</good> Schaden zugefügt\n<i><gray>(Ich verfehle mehr Schüsse als ein Sturmtruppler.)</gray></i>"
-
-  Normal = "Freizeit-Kopfgeldjäger"
-  NormalTip = "• Normaler Schaden genommen\n<i><gray>(Ich bin ein anständiger Pilot.)</gray></i>\n• Normaler Schaden zugefügt\n<i><gray>(Ich treffe etwa die Hälfte meiner Schüsse.)</gray></i>"
-
-  Hard = "Schurkenstaffel"
-  HardTip = "• <bad>+25%</bad> Schaden genommen\n<i><gray>(Ich war Klassenbester.)</gray></i>\n• <bad>-20%</bad> Schaden zugefügt\n<i><gray>(Ich habe zu Hause in meinem T-16 Womp-Ratten getroffen.)</gray></i>"
-
-  VeryHard = "Legendärer Schmuggler"
-  VeryHardTip = "• <bad>+40%</bad> Schaden genommen\n<i><gray>(Ich bin den Kessel-Flug in unter 12 Parsecs geflogen!)</gray></i>\n• <bad>-30%</bad> Schaden zugefügt\n<i><gray>(Ich sage niemals die Chancen voraus.)</gray></i>"
-}
-
-
-EconDifficulty
-{
-  FreeBuild = "Midichlorian-Meister"
-  FreeBuildTip = "• Unbegrenzte Machtkräfte ermöglichen das Bauen überall und jederzeit ohne Credits oder Ressourcen.\n<i><gray>(Ein hoher Midichlorian-Wert ist wirklich praktisch.)</gray></i>\n• Normale Ressourcen-Drop-Raten.\n<i><gray>(Ressourcen fließen so natürlich wie die Macht.)</gray></i>\n• Normale Credit-Belohnungen.\n<i><gray>(Credits werden es schon richten.)</gray></i>\n• Normale Ruf-Belohnungen.\n<i><gray>(Dein Ruf eilt dir voraus.)</gray></i>"
-  
-  Fast = "Schmuggler"
-  FastTip = "• Ressourcen-Drop-Raten um <good>100% erhöht</good>.\n<i><gray>(Psst, frag nicht, woher sie kommen.)</gray></i>\n• Credit-Belohnungen um <good>100% erhöht</good>.\n<i><gray>(Natürlich steuerfrei.)</gray></i>\n• Ruf-Belohnungen um <good>50% erhöht</good>.\n<i><gray>(Ruhm verbreitet sich schnell in der Unterwelt.)</gray></i>"
-
-  Normal = "Freiberufler"
-  NormalTip = "• Normale Ressourcen-Drop-Raten.\n<i><gray>(Ein weiterer Tag beim Gütertransport.)</gray></i>\n• Normale Credit-Belohnungen.\n<i><gray>(Ehrlicher Lohn für einen ehrlichen Tag Arbeit.)</gray></i>\n• Normale Ruf-Belohnungen.\n<i><gray>(Einen Namen aufbauen, einen Job nach dem anderen.)</gray></i>"
-
-  Slow = "Feuchtigkeitsfarmer"
-  SlowTip = "• Ressourcen-Drop-Raten um <bad>50% reduziert</bad>.\n<i><gray>(Verflucht sei dieses karge Ödland.)</gray></i>\n• Credit-Belohnungen um <bad>50% reduziert</bad>.\n<i><gray>(Wasser ist nicht umsonst.)</gray></i>\n• Ruf-Belohnungen um <bad>25% reduziert</bad>.\n<i><gray>(Wen interessieren schon Farmer?)</gray></i>"
-}
-*/
-
-//	Turret = "Turret"
-//	Missile = "Missile"
-//	ProtonRocket = "Proton Torpedo"
-//	BuzzDroid = "Buzz Droid"
-//
-//	SingleRedLasershot = "Small <red>Red</red> Laser Shot"
-//	SingleBlueLasershot = "Small <blue>Blue</blue> Laser Shot"
-//	SingleGreenLasershot = "Small <green>Green</green> Laser Shot"
-//
-//	XWingLasershot = "<red>X-Wing</red> Laser Shot"
-//	BlueXWingLasershot = "<blue>X-Wing</blue> Laser Shot"
-//	GreenXWingLasershot = "<green>X-Wing</green> Laser Shot"
-//	FalconLaserCannonShot = "Falcon <red>Red</red> Laser Shot"
-//	PDLaserShot = "Point Defense Laser Shot"
-//
-//	DualRedLaserCannonshot = "Small-Light <red>Red</red> Laser Shot"
-//	DualBlueLaserCannonshot = "Small-Light <blue>Blue</blue> Laser Shot"
-//	DualGreenLaserCannonshot = "Small-Light <green>Green</green> Laser Shot"
-//
-//	LightRedTurbolasershot = "Light <red>Red</red> Laser Shot"
-//	LightBlueTurbolasershot = "Light <blue>Blue</blue> Laser Shot"
-//	LightGreenTurbolasershot = "Light <green>Green</green> Laser Shot"
-//
-//	TripleRedLasershot = "Light-Medium <red>Red</red> Laser Shot"
-//	TripleBlueLasershot = "Light-Medium <blue>Blue</blue> Laser Shot"
-//	TripleGreenLasershot = "Light-Medium <green>Green</green> Laser Shot"
-//
-//	MedRedLasershot = "Medium <red>Red</red> Laser Shot"
-//	MedBlueLasershot = "Medium<blue>Blue</blue> Laser Shot"
-//	MedGreenLasershot = "Medium <green>Green</green> Laser Shot"
-//
-//	HeavyRedLasershot = "Heavy <red>Red</red> Laser Shot"
-//	HeavyBlueLasershot = "Heavy <blue>Blue</blue> Laser Shot"
-//	HeavyGreenLasershot = "Heavy <green>Green</green> Laser Shot"
-//
-//	CISLasershot = "CIS <red>Red</red> Laser Shot"
-//	RepublicLasershot = "Republic <blue>Blue</blue> Laser Shot"
-//	ImperialLasershot = "Imperial <green>Green</green> Laser Shot"
-//	XX9RedLasershot = "XX9 <red>Red</red> Laser Shot"
-//	XX9GreenLasershot = "XX9 <green>Green</green> Laser Shot"
-//
-//	HeavyCyanIoncannonshot = "Medium Cyan <cyan>Ion</cyan> Cannon Shot"
-//	MediumCyanIoncannonshot = "Light Cyan <cyan>Ion</cyan> Cannon Shot"
-//
-//	//NEW MUNITION
-//	LargeRedTurbolaserLasershot = "Large <red>Red</red> Laser Shot"
-//	LargeBlueTurbolaserLasershot = "Large <blue>Blue</blue> Laser Shot"
-//	LargeGreenTurbolaserLasershot = "Large <green>Green</green> Laser Shot"
-//
-//	HugeRedTurbolaserLasershot = "Huge <red>Red</red> Laser Shot"
-//	HugeBlueTurbolaserLasershot = "Huge <blue>Blue</blue> Laser Shot"
-//	HugeGreenTurbolaserLasershot = "Huge <green>Green</green> Laser Shot"
-//
-//	SiegeRedTurbolaserLasershot = "Siege <red>Red</red> Laser Shot"
-//	SiegeBlueTurbolaserLasershot = "Siege <blue>Blue</blue> Laser Shot"
-//	SiegeGreenTurbolaserLasershot = "Siege <green>Green</green> Laser Shot"
-//
-//	MortarRedTurbolaserLaserShot = "Mortar <red>Red</red> Laser Shot"
-//	MortarBlueTurbolaserLaserShot = "Mortar <blue>Blue</blue> Laser Shot"
-//	MortarGreenTurbolaserLaserShot = "Mortar <green>Green</green> Laser Shot"
-//
-//	BlueArtilleryTurbolaserBeam = "Artillery <blue>Blue</blue> Turbolaser Beam"
-//
-//	RedSiegeParticleShot = "Siege <red>Red</red> Particle Shot"
-//	OrangeSiegeParticleShot = "Siege <orange>Orange</orange> Particle Shot"
-//
-//	RedSuperLaserBeam = "<red>Red</red> Superlaser Beam"
-//
-//	BlueSiegeTurbolaserBeam = "Siege <blue>Blue</blue> Turbolaser Beam"
-//
-//	TIE_WingThruster = "TIE wing thruster"

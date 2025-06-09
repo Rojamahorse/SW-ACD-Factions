@@ -1,4 +1,4 @@
-CommonStringModName = "\n<s16><gray>Mod: SW:ACD Factions</gray></s16>"
+CommonStringModName = 	"\n<s16><gray>Mod: SW:ACD Factions</gray></s16>"
 
 
 Parts
@@ -77,38 +77,38 @@ Parts
 
 
 //	//Long X-Wing Cannons
-//	xwingCannonLong = "RedFury Blaster Cannon"
-//	xwingCannonLongIcon = "RedFury-BC"
-//	xwingCannonLongLeft = "RedFury Blaster Cannon (Side)"
-//	xwingCannonLongLeftIcon = "RedFury-BC (Side)"
-//	xwingCannonLongDesc = "The RedFury Blaster by <cyan>Merr-Sonn Munitions</cyan>; A hard-hitting Heavy Blaster Cannon that allows for placement behind and hidden under armor pieces."
+//	xwingCannonLong = "Canon blaster RedFury"
+//	xwingCannonLongIcon = "Canon blaster RedFury"
+//	xwingCannonLongLeft = "Canon blaster RedFury (Côté)"
+//	xwingCannonLongLeftIcon = "Canon blaster RedFury (Côté)"
+//	xwingCannonLongDesc = "Le canon blaster RedFury fabriqué par <cyan>Merr-Sonn Munitions</cyan> est un canon blaster lourd à fort impact, pouvant être installé derrière ou dissimulé sous des plaques de blindage."
 
 
 //	//TIE Repeaters
-//	tieMiniguns = "TIE Repeater Cannon"
-//	tieMinigunsDesc = "TIE Repeaters are small, rapid-firing weapons that allows for placement hidden behind and under armor pieces. They are inaccurate, but useful for close range engagements."
+//	tieMiniguns = "Canon à répétition de TIE"
+//	tieMinigunsDesc = "Le canon à répétition de TIE est une petite arme à tir rapide, conçue pour être dissimulée derrière ou sous des plaques de blindage. Bien qu’elle manque de précision, elle s’avère redoutablement efficace lors des engagements à courte portée."
 
 //	// SW Multipurpose Turrets
 //
 //	// Smaller burst damage turret
-//	SWTurretA = "Tiny Turbo Laser - Burst"
-//	SWTurretAIcon = "Tiny TL - Burst"
-//	SWTurretADesc = "A compact yet powerful turret, the Tiny Turbo Laser - Burst version specializes in burst damage, ideal for quickly neutralizing smaller threats. This is a <orange>switchable</orange>, crew-operated Laser Cannon."
+//	SWTurretA = "Mini turbolaser - rafale"
+//	SWTurretAIcon = "Mini TL - rafale"
+//	SWTurretADesc = "Une tourelle compacte mais redoutablement puissante, la version à rafale du mini turbolaser est spécialement conçue pour infliger des dégâts en rafale. Idéale pour neutraliser rapidement des menaces de petite taille, elle combine cadence et encombrement minimal, la rendant parfaite pour les plateformes légères ou les chasseurs tactiques. C'est un canon laser <orange>à fonctionnement modulable</orange>, opéré par un membre d'équipage."
 
 //	// Sturdier-looking turret
-//	SWTurretB = "Tiny Turbo Laser - Heavy"
-//	SWTurretBIcon = "Tiny TL - Heavy"
-//	SWTurretBDesc = "The Tiny Turbo Laser - Heavy is built for durability and sustained firepower, making it effective against a wide range of targets. This is a <orange>switchable</orange>, crew-operated Laser Cannon."
+//	SWTurretB = "Mini turbolaser - lourd"
+//	SWTurretBIcon = "Mini TL - lourd"
+//	SWTurretBDesc = "Le mini turbolaser lourd est conçu pour avoir une grande durabilité et une puissance de feu soutenue, ce qui le rend efficace contre une large gamme de cibles. C'est un canon laser <orange>à fonctionnement modulable</orange>, opéré par un membre d'équipage."
 
 //	// Mix of the two
-//	SWTurretC = "Tiny Turbo Laser - Rapid"
-//	SWTurretCIcon = "Tiny TL - Rapid"
-//	SWTurretCDesc = "Combining the best of both worlds, the Tiny Turbo Laser - Rapid offers a balanced approach to both burst damage and staying power. This is a <orange>switchable</orange>, crew-operated Laser Cannon."
+//	SWTurretC = "Mini turbolaser - rapide"
+//	SWTurretCIcon = "Mini TL - rapide"
+//	SWTurretCDesc = "Combinant le meilleur des deux mondes, le mini turbolaser rapide offre une approche équilibrée entre les dégâts en rafale et la durabilité au combat. C'est un canon laser <orange>à fonctionnement modulable</orange>, opéré par un membre d'équipage."
 
 //	// Reactors
-//	SWMedReactor = "Reinforced Light Reactor"
-//	SWMedReactorIcon = "Light Reactor"
-//	SWMedReactorDesc = "An armored reactor reinforced with durasteel; A highly-efficient light reactor designed for state-of-the-art medium and large cruisers and frigates with no extra room for outdated and ugly bulky reactor equipment."
+//	SWMedReactor = "Réacteur léger renforcé"
+//	SWMedReactorIcon = "Réacteur léger"
+//	SWMedReactorDesc = "Un réacteur armé, renforcé avec du duracier. Un réacteur léger hautement efficace, conçu pour les croiseurs et frégates de taille moyenne à grande de dernière génération, ne laissant aucune place aux équipements de réacteur dépassés et encombrants."
 
 
 }
@@ -180,7 +180,7 @@ Factions
 StarterShips
 {
 	A_Wing = "<s12>Rapide, agile et imprévisible en combat, tel un prédateur insaisissable, cet appareil est conçu pour l’efficacité. R2 a été affecté à une autre navette, aucun copilote pour interférer ici. Attachez votre ceinture et soyez prêt à donner le meilleur de vous-même.</s12>"
-	Black_Sun_Fighter = "<s12>Allie l’élégance épurée à la finesse d’une boule à facettes en apesanteur. Doté d’un mode furtif aussi discret qu’un moteur à fusion en pleine explosion, ce vaisseau offre un mélange unique de panache et d’inutilité.</s12>"
+	Black_Sun_Fighter =  "<s12>Allie l’élégance épurée à la finesse d’une boule à facettes en apesanteur. Doté d’un mode furtif aussi discret qu’un moteur à fusion en pleine explosion, ce vaisseau offre un mélange unique de panache et d’inutilité.</s12>"
 	Durasteel_Prospector = "<s12>Ce vieux cargo rouillé mais fiable prouve que le style ne fait pas tout. Attrape ta pelle et ton casque spatial : il est temps de te salir les mains au nom du profit !</s12>"
 	Hyena_Class_Droid_Bomber = "<s12>La réponse à la question que personne n'a posée : 'Et si on transformait un droïde en un distributeur d'explosif ?' Avec toute la subtilité d'un char de parade en feu, ce vaisseau apporte chaos et explosions colorées partout où il passe.</s12>"
 	N_1_Starfighter = "<s12>Ce vaisseau est destiné aux pilotes convaincus que la précision est surcotée et que les trajectoires courbes mènent à la victoire. Une véritable œuvre d’art… à condition d’inclure les tonneaux involontaires dans ta définition de l’art.</s12>"
@@ -211,17 +211,17 @@ MapSizes
 	Vanilla = "Standard (50)"
 	VanillaDesc = "Un mélange de 50 systèmes stellaires de <yellow>Star Wars</yellow> et de <white>Cosmoteer</white>, situés à la frontière de l’espace exploré, connus pour leurs routes complexes et leurs affaires louches."
 
-//	SWStandard = "Frontier Systems (50)"
-//	SWStandardTip = "A network of 50 Star Wars systems on the edge of explored space, known for their intricate routes and shadowy dealings."
+//	SWStandard = "Systèmes Frontaliers (50)"
+//	SWStandardTip = "Un réseau de 50 systèmes de <yellow>Star Wars</yellow> situés à la frontière de l’espace exploré, connus pour leurs routes complexes et leurs affaires louches."
 
 	SWLarge = "Bordure Extérieure (60)"
 	SWLargeDesc = "Une région frontalière sans foi ni loi, avec 60 systèmes de <yellow>Star Wars</yellow>."
 
-	SWVeryLarge = "Bordure Médiane (80)"
+	SWVeryLarge = "Bordure Médiane (80)" 
 	SWVeryLargeDesc = "Une région industrialisée, avec 80 systèmes de <yellow>Star Wars</yellow>."
 
 	SWHuge = "Bordure Intérieure (100)"
-	SWHugeDesc = "Une région prospère avec 100 systèmes de <yellow>Star Wars</yellow>."
+	SWHugeDesc = "Une région prospère avec 100 systèmes de <yellow>Star Wars</yellow>." 
 
 	SWGigantic = "Mondes du Noyau (125)"
 	SWGiganticDesc = "Le cœur de la civilisation galactique avec 125 systèmes de <yellow>Star Wars</yellow>."
@@ -241,7 +241,7 @@ MapSizes
 
 	// The Clone Wars Era Galaxy Map
 	SWClonewars = "La Guerre des Clones (50)"
-	SWClonewarsDesc = "Entrez au cœur de la <yellow>Guerre des Clones</yellow>, où la <red>République Galactique</red> affronte la <blue>Confédération des Systèmes Indépendants (CIS)</blue>, tandis que le <magenta>Soleil Noir</magenta> rôde dans l'ombre. Vivez la tourmente galactique emblématique d'une période connue sous le nom de '<yellow>Tension Galactique</yellow>'."
+	SWClonewarsDesc = "Entrez au cœur de la <yellow>Guerre des Clones</yellow>, où la <red>République Galactique</red> affronte la <blue>Confédération des Systèmes Indépendants (CIS)</blue>, tandis que le <magenta>Soleil Noir</magenta> rôde dans l'ombre. Vivez la tourmente galactique emblématique d'une période connue sous le nom de '<yellow>Tension Galactique</yellow>'." 
 
 	/*
 	SmugglersRun = "La course des contrebandiers (50)"
@@ -317,7 +317,7 @@ CombatDifficulty
   NoDeath = "Pacifique (Invulnérable)"
   NoDeathTip = "• Aucun dégât subi\n<i><gray>(Des dégâts ? Qu'est-ce que c'est ?)</gray></i>\n• Possibilité de construire lors d'un combat\n<i><gray>(Je ne blesserais même pas un mynock.)</gray></i>"
   
-  Easy = "Éleveur de Nerfs"
+  Easy = "Éleveur de Nerfs" 
   EasyTip = "• <good>-30%</good> de dégâts subis\n<i><gray>(J’ai failli rater l’école de pilotage.)</gray></i>\n• <good>+40%</good> de dégâts infligés\n<i><gray>(Je suis encore moins précis qu’un stormtrooper.)</gray></i>"
 
   Normal = "Chasseur de primes amateur"
@@ -336,7 +336,7 @@ EconDifficulty
   FreeBuild = "Maître de la Force"
   FreeBuildTip = "• Des pouvoirs illimités de la Force permettent de construire n'importe où et n'importe quand, sans crédits ni ressources.\n<i><gray>(Un taux élevé de midichloriens, ça aide bien.)</gray></i>\n• Taux de récupération des ressources normal.\n<i><gray>(Les ressources coulent aussi naturellement que la Force.)</gray></i>\n• Récompenses en crédits normales.\n<i><gray>(Les crédits feront l'affaire.)</gray></i>\n• Récompenses en réputation normales.\n<i><gray>(Ta réputation te précède.)</gray></i>"
   
-  Fast = "Contrebandier"
+  Fast = "Contrebandier" 
   FastTip = "• Taux de récupération des ressources <good>augmenté de 100%</good>.\n<i><gray>(Shhh, ne demande pas d'où ça vient.)</gray></i>\n• Récompenses en crédits <good>augmentées de 100%</good>.\n<i><gray>(Sans taxes, bien sûr.)</gray></i>\n• Récompenses en réputation <good>augmentés de 50%</good>.\n<i><gray>(La renommée se propage vite dans les bas-fonds.)</gray></i>"
 
   Normal = "Travailleur indépendant"
@@ -452,7 +452,7 @@ Missions
 	Debug = "Mission de débogage"
 	DebugDesc = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales rutrum eros. Fusce non eros a lacus luctus auctor sit amet at mi. In ac fermentum est. Nam viverra lectus eu turpis cursus vestibulum."
 	ClearRogueElements = "Neutraliser la flotte hors-la-loi"
-	ClearRogueElementsDesc = "Un escadron autrefois sous le commandement de la \"{faction_name}\" s'est rebellé et s’est réfugié auprès d’une flotte locale de hors-la-loi dans un champ d’astéroïdes dense du système de {mission_location}. Composé de vaisseaux de diverses classes, cet escadron utilise la complexité du terrain pour lancer des attaques surprises, perturbant la stabilité locale et représentant une menace sérieuse. La {faction_name} recherche d’urgence un pilote chevronné capable de naviguer dans le champ d’astéroïdes, de neutraliser cet escadron et de rétablir l’ordre dans le secteur. Une prime substantielle de {money} est promise à quiconque parviendra à éliminer cette menace insaisissable.\n\n"\
+	ClearRogueElementsDesc =  "Un escadron autrefois sous le commandement de la \"{faction_name}\" s'est rebellé et s’est réfugié auprès d’une flotte locale de hors-la-loi dans un champ d’astéroïdes dense du système de {mission_location}. Composé de vaisseaux de diverses classes, cet escadron utilise la complexité du terrain pour lancer des attaques surprises, perturbant la stabilité locale et représentant une menace sérieuse. La {faction_name} recherche d’urgence un pilote chevronné capable de naviguer dans le champ d’astéroïdes, de neutraliser cet escadron et de rétablir l’ordre dans le secteur. Une prime substantielle de {money} est promise à quiconque parviendra à éliminer cette menace insaisissable.\n\n"\
 		"<bad>Avertissement : cette mission est dangereuse et ne devrait être tentée que par des pilotes expérimentés disposant des compétences nécessaires.</bad>"
 	DefeatRenegadeLeader = "Éliminer \"{target_ship}\", le redoutable chef hors-la-loi"
 	DefeatRenegadeLeaderDesc = "Un chef hors-la-loi notoire connu sous le nom de \"{target_ship}\" sème le chaos dans le système {mission_location}. Commandant un vaisseau équipé d’une technologie avancée et d’une puissance de feu considérable, cette cible de haute valeur représente une menace majeure pour la stabilité régionale. La {faction_name} a mis une prime substantielle de {money} pour tout pilote expérimenté capable d’affronter et de neutraliser cette menace. Les rapports des services de renseignement soulignent l’importance stratégique de cette mission, suggérant que l’élimination de '{target_ship}' porterait un coup significatif à leurs activités néfastes.\n\n"\
@@ -469,16 +469,16 @@ Objectives
 AI
 {
 	ImperialFleetCommandAI = "IA SWACD - Standard"
-	CivFleetCommandAI = "IA SWACD - Civil"
-	AgileFlankerAI = "IA SWACD - Flanqueur agile"
-	AssaultAdvancerAI = "IA SWACD - Assaut avancé"
-	BroadsideRotatorAI = "IA SWACD - Artilleur latéral"
-	CircleClockwiseAI = "IA. SWACD - Manoeuvre horaire"
-	CircleCounterClockwiseAI = "IA SWACD - Manoeuvre anti-horaire"
-	BomberAI = "IA SWACD - Bombardier"
-	ReconAI = "IA SWACD - Éclaireur"
-	HitAndFadeAI = "IA SWACD - Harceleur"
-	PositionalDefenseAI = "IA SWACD - Défenseur"
+	CivFleetCommandAI =  "IA SWACD - Civil"
+	AgileFlankerAI =  "IA SWACD - Flanqueur agile"
+	AssaultAdvancerAI =  "IA SWACD - Assaut avancé"
+	BroadsideRotatorAI =  "IA SWACD - Artilleur latéral"
+	CircleClockwiseAI =  "IA. SWACD - Manoeuvre horaire"
+	CircleCounterClockwiseAI =  "IA SWACD - Manoeuvre anti-horaire"
+	BomberAI =  "IA SWACD - Bombardier"
+	ReconAI =  "IA SWACD - Éclaireur"
+	HitAndFadeAI =  "IA SWACD - Harceleur"
+	PositionalDefenseAI =  "IA SWACD - Défenseur"
 }
 
 
@@ -571,7 +571,7 @@ CombatDifficulty
   NoDeath = "Pacifique (Invulnérable)"
   NoDeathTip = "• Aucun dégât subi\n<i><gray>(Des dégâts ? Qu'est-ce que c'est ?)</gray></i>\n• Possibilité de construire lors d'un combat\n<i><gray>(Je ne blesserais même pas un mynock.)</gray></i>"
   
-  Easy = "Éleveur de Nerfs"
+  Easy = "Éleveur de Nerfs" 
   EasyTip = "• <good>-30%</good> de dégâts subis\n<i><gray>(J’ai failli rater l’école de pilotage.)</gray></i>\n• <good>+40%</good> de dégâts infligés\n<i><gray>(Je suis encore moins précis qu’un stormtrooper.)</gray></i>"
 
   Normal = "Chasseur de primes amateur"
@@ -590,7 +590,7 @@ EconDifficulty
   FreeBuild = "Maître de la Force"
   FreeBuildTip = "• Des pouvoirs illimités de la Force permettent de construire n'importe où et n'importe quand, sans crédits ni ressources.\n<i><gray>(Un taux élevé de midichloriens, ça aide bien.)</gray></i>\n• Taux de récupération des ressources normal.\n<i><gray>(Les ressources coulent aussi naturellement que la Force.)</gray></i>\n• Récompenses en crédits normales.\n<i><gray>(Les crédits feront l'affaire.)</gray></i>\n• Récompenses en réputation normales.\n<i><gray>(Ta réputation te précède.)</gray></i>"
   
-  Fast = "Contrebandier"
+  Fast = "Contrebandier" 
   FastTip = "• Taux de récupération des ressources <good>augmenté de 100%</good>.\n<i><gray>(Shhh, ne demande pas d'où ça vient.)</gray></i>\n• Récompenses en crédits <good>augmentées de 100%</good>.\n<i><gray>(Sans taxes, bien sûr.)</gray></i>\n• Récompenses en réputation <good>augmentés de 50%</good>.\n<i><gray>(La renommée se propage vite dans les bas-fonds.)</gray></i>"
 
   Normal = "Travailleur indépendant"
@@ -601,74 +601,74 @@ EconDifficulty
 }
 */
 
-//	Turret = "Turret"
+//	Turret = "Tourelle"
 //	Missile = "Missile"
-//	ProtonRocket = "Proton Torpedo"
-//	BuzzDroid = "Buzz Droid"
+//	ProtonRocket = "Torpille à proton"
+//	BuzzDroid = "Vibro-droide"
 //
-//	SingleRedLasershot = "Small <red>Red</red> Laser Shot"
-//	SingleBlueLasershot = "Small <blue>Blue</blue> Laser Shot"
-//	SingleGreenLasershot = "Small <green>Green</green> Laser Shot"
+//	SingleRedLasershot = "Tir laser petit <red>rouge</red>"
+//	SingleBlueLasershot = "Tir laser petit <blue>bleu</blue>"
+//	SingleGreenLasershot = "Tir laser petit <green>vert</green>"
 //
-//	XWingLasershot = "<red>X-Wing</red> Laser Shot"
-//	BlueXWingLasershot = "<blue>X-Wing</blue> Laser Shot"
-//	GreenXWingLasershot = "<green>X-Wing</green> Laser Shot"
-//	FalconLaserCannonShot = "Falcon <red>Red</red> Laser Shot"
-//	PDLaserShot = "Point Defense Laser Shot"
+//	XWingLasershot = "Tir laser de <red>X-Wing</red>"
+//	BlueXWingLasershot = "Tir laser de <blue>X-Wing</blue>"
+//	GreenXWingLasershot = "Tir laser de <green>X-Wing</green>"
+//	FalconLaserCannonShot = "Tir laser du Faucon <red>Red</red>"
+//	PDLaserShot = "Tir laser de la tourelle de défense rapprochée"
 //
-//	DualRedLaserCannonshot = "Small-Light <red>Red</red> Laser Shot"
-//	DualBlueLaserCannonshot = "Small-Light <blue>Blue</blue> Laser Shot"
-//	DualGreenLaserCannonshot = "Small-Light <green>Green</green> Laser Shot"
+//	DualRedLaserCannonshot = "Tir laser léger petit <red>rouge</red>"
+//	DualBlueLaserCannonshot = "Tir laser léger petit <blue>bleu</blue>"
+//	DualGreenLaserCannonshot = "Tir laser léger petit <green>vert</green>"
 //
-//	LightRedTurbolasershot = "Light <red>Red</red> Laser Shot"
-//	LightBlueTurbolasershot = "Light <blue>Blue</blue> Laser Shot"
-//	LightGreenTurbolasershot = "Light <green>Green</green> Laser Shot"
+//	LightRedTurbolasershot = "Tir laser léger <red>rouge</red>"
+//	LightBlueTurbolasershot = "Tir laser léger <blue>bleu</blue>"
+//	LightGreenTurbolasershot = "Tir laser léger <green>vert</green>"
 //
-//	TripleRedLasershot = "Light-Medium <red>Red</red> Laser Shot"
-//	TripleBlueLasershot = "Light-Medium <blue>Blue</blue> Laser Shot"
-//	TripleGreenLasershot = "Light-Medium <green>Green</green> Laser Shot"
+//	TripleRedLasershot = "Tir moyen de laser léger <red>rouge</red>"
+//	TripleBlueLasershot = "Tir moyen de laser léger <blue>bleu</blue>"
+//	TripleGreenLasershot = "Tir moyen de laser léger <green>vert</green>"
 //
-//	MedRedLasershot = "Medium <red>Red</red> Laser Shot"
-//	MedBlueLasershot = "Medium<blue>Blue</blue> Laser Shot"
-//	MedGreenLasershot = "Medium <green>Green</green> Laser Shot"
+//	MedRedLasershot = "Tir laser moyen <red>rouge</red>"
+//	MedBlueLasershot = "Tir laser moyen <blue>bleu</blue>"
+//	MedGreenLasershot = "Tir laser moyen <green>vert</green>"
 //
-//	HeavyRedLasershot = "Heavy <red>Red</red> Laser Shot"
-//	HeavyBlueLasershot = "Heavy <blue>Blue</blue> Laser Shot"
-//	HeavyGreenLasershot = "Heavy <green>Green</green> Laser Shot"
+//	HeavyRedLasershot = "Tir laser lourd <red>rouge</red>"
+//	HeavyBlueLasershot = "Tir laser lourd <blue>bleu</blue>"
+//	HeavyGreenLasershot = "Tir laser lourd <green>vert</green>"
 //
-//	CISLasershot = "CIS <red>Red</red> Laser Shot"
-//	RepublicLasershot = "Republic <blue>Blue</blue> Laser Shot"
-//	ImperialLasershot = "Imperial <green>Green</green> Laser Shot"
-//	XX9RedLasershot = "XX9 <red>Red</red> Laser Shot"
-//	XX9GreenLasershot = "XX9 <green>Green</green> Laser Shot"
+//	CISLasershot = "Tir laser de la CSI <red>rouge</red>"
+//	RepublicLasershot = "Tir laser de la République Galactique <blue>bleu</blue>"
+//	ImperialLasershot = "Tir laser de l'Empire Galactique <green>vert</green>"
+//	XX9RedLasershot = "Tir laser de XX9 <red>rouge</red>"
+//	XX9GreenLasershot = "Tir laser de XX9 <green>vert</green>"
 //
-//	HeavyCyanIoncannonshot = "Medium Cyan <cyan>Ion</cyan> Cannon Shot"
-//	MediumCyanIoncannonshot = "Light Cyan <cyan>Ion</cyan> Cannon Shot"
+//	HeavyCyanIoncannonshot = "Tir de canon moyen à <cyan>ion</cyan>"
+//	MediumCyanIoncannonshot = "Tir de canon léger à <cyan>ion</cyan>"
 //
 //	//NEW MUNITION
-//	LargeRedTurbolaserLasershot = "Large <red>Red</red> Laser Shot"
-//	LargeBlueTurbolaserLasershot = "Large <blue>Blue</blue> Laser Shot"
-//	LargeGreenTurbolaserLasershot = "Large <green>Green</green> Laser Shot"
+//	LargeRedTurbolaserLasershot = "Tir laser important <red>rouge</red>"
+//	LargeBlueTurbolaserLasershot = "Tir laser important <blue>bleu</blue>"
+//	LargeGreenTurbolaserLasershot = "Tir laser important <green>vert</green>"
 //
-//	HugeRedTurbolaserLasershot = "Huge <red>Red</red> Laser Shot"
-//	HugeBlueTurbolaserLasershot = "Huge <blue>Blue</blue> Laser Shot"
-//	HugeGreenTurbolaserLasershot = "Huge <green>Green</green> Laser Shot"
+//	HugeRedTurbolaserLasershot = "Tir laser immense <red>rouge</red>"
+//	HugeBlueTurbolaserLasershot = "Tir laser immense <blue>bleu</blue>"
+//	HugeGreenTurbolaserLasershot = "Tir laser immense <green>vert</green>"
 //
-//	SiegeRedTurbolaserLasershot = "Siege <red>Red</red> Laser Shot"
-//	SiegeBlueTurbolaserLasershot = "Siege <blue>Blue</blue> Laser Shot"
-//	SiegeGreenTurbolaserLasershot = "Siege <green>Green</green> Laser Shot"
+//	SiegeRedTurbolaserLasershot = "Tir laser de siège <red>rouge</red>"
+//	SiegeBlueTurbolaserLasershot = "Tir laser de siège <blue>bleu</blue>"
+//	SiegeGreenTurbolaserLasershot = "Tir laser de siège <green>vert</green>"
 //
-//	MortarRedTurbolaserLaserShot = "Mortar <red>Red</red> Laser Shot"
-//	MortarBlueTurbolaserLaserShot = "Mortar <blue>Blue</blue> Laser Shot"
-//	MortarGreenTurbolaserLaserShot = "Mortar <green>Green</green> Laser Shot"
+//	MortarRedTurbolaserLaserShot = "Tir laser de mortier <red>rouge</red>"
+//	MortarBlueTurbolaserLaserShot = "Tir laser de mortier <blue>bleu</blue>"
+//	MortarGreenTurbolaserLaserShot = "Tir laser de mortier <green>vert</green>"
 //
-//	BlueArtilleryTurbolaserBeam = "Artillery <blue>Blue</blue> Turbolaser Beam"
+//	BlueArtilleryTurbolaserBeam = "Rayon de turbolaser d'artillerie <blue>bleu</blue>"
 //
-//	RedSiegeParticleShot = "Siege <red>Red</red> Particle Shot"
-//	OrangeSiegeParticleShot = "Siege <orange>Orange</orange> Particle Shot"
+//	RedSiegeParticleShot = "Tir à particules de siège <red>rouge</red>"
+//	OrangeSiegeParticleShot = "Tir à particules de siège <orange>orange</orange>"
 //
-//	RedSuperLaserBeam = "<red>Red</red> Superlaser Beam"
+//	RedSuperLaserBeam = "Rayon de superlaser <red>rouge</red>"
 //
-//	BlueSiegeTurbolaserBeam = "Siege <blue>Blue</blue> Turbolaser Beam"
+//	BlueSiegeTurbolaserBeam = "Rayon de turbolaser de siège <blue>bleu</blue>"
 //
-//	TIE_WingThruster = "TIE wing thruster"
+//	TIE_WingThruster = "Propulseur de TIE"

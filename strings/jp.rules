@@ -1,69 +1,121 @@
-CommonStringModName = 	"\n<s16><gray>Mod: SW:ACD Factions</gray></s16>"
+CommonStringModName = "\n<s16><gray>Mod: SW:ACD Factions</gray></s16>"
+
 
 Parts
 {
-    //X-Wing Cannons
-    xwingCannons = "Xウィングキャノン"
-    xwingCannonsDesc = "Xウィングキャノンは、装甲の背後や下に隠して設置できる小型武器です。中距離から長距離の交戦に有効です。. <string id='CommonStringModName'/>"
+	//X-Wing Cannons Unlock
+	xwingCannons = "Xウィングキャノン"
+	xwingCannonsDesc = "Xウィングキャノンは、装甲の背後や下に隠して設置できる小型武器です。中距離から長距離の交戦に有効です。. <string id='CommonStringModName'/>"
 
-    // Standard X-Wing Cannons
-    xwingCannon = "Xウィング短砲"
-    xwingCannonIcon = "XウィングSC"
-    xwingCannonLeft = "Xウィング短砲（側面）"
-    xwingCannonLeftIcon = "XウィングSC（側面）"
-    xwingCannonDesc = "<cyan>インコム社</cyan>が提供するXウィングSC；コンパクトな短砲身のキャノンで、装甲に隠して設置可能、中距離戦闘で優れた性能を発揮します。. <string id='CommonStringModName'/>"
+	// Standard X-Wing Cannons
+	xwingCannon = "Xウィング短砲"
+	xwingCannonIcon = "XウィングSC"
+	xwingCannonLeft = "Xウィング短砲（側面）"
+	xwingCannonLeftIcon = "XウィングSC（側面）"
+	xwingCannonDesc = "<cyan>インコム社</cyan>が提供するXウィングSC；コンパクトな短砲身のキャノンで、装甲に隠して設置可能、中距離戦闘で優れた性能を発揮します。. <string id='CommonStringModName'/>"
 
-    //Compact Mass-Driver Cannon
-    massdriversmall = "マスドライバーコンパクトキャノン"
-    massdriversmallIcon = "マスドライバーCC"
-    massdriversmallLeft = "マスドライバーコンパクトキャノン（側面）"
-    massdriversmallLeftIcon = "マスドライバーCC（側面）"
-    massdriversmallDesc = "<cyan>クワットシステムズエンジニアリング</cyan>のマスドライバーコンパクトキャノン（MD-CC）；サイズは小さいながらも強力な運動エネルギー武器で、空中戦での精度と威力に優れています。スリークなデザインは、さまざまなスターファイターモデルとのシームレスな統合を可能にし、空気力学的効率を保ちながら比類のない運動エネルギーの影響を提供します。. <string id='CommonStringModName'/>"
+	//Mass-Drivers Unlocks
+	massdriverssmall = "Mass-Driver Compact Cannons"
+	massdriverssmallDesc = "<string id='Parts/massdriversmallDesc'/>\n\n <s20>Unlocks:</s20>\n\n<good>●  <string id='Parts/massdriversmall'/>\n●  <string id='Parts/massdriversmallLeft'/></good>"
 
-    //Extra Long X-Wing Cannons
-    xwingCannonXLong = "Xウィング延長キャノン"
-    xwingCannonXLongIcon = "XウィングXC"
-    xwingCannonXLongLeft = "Xウィング延長キャノン（側面）"
-    xwingCannonXLongLeftIcon = "XウィングXC（側面）"
-    xwingCannonXLongDesc = "<cyan>インコム社</cyan>のXウィングXC；古典的なキャノンの延長版で、範囲と隠密性を兼ね備えて装甲の後ろに戦略的に配置します。. <string id='CommonStringModName'/>"
+	//Compact Mass-Driver Cannon
+	massdriversmall = "マスドライバーコンパクトキャノン"
+	massdriversmallIcon = "マスドライバーCC"
+	massdriversmallLeft = "マスドライバーコンパクトキャノン（側面）"
+	massdriversmallLeftIcon = "マスドライバーCC（側面）"
+	massdriversmallDesc = "<cyan>クワットシステムズエンジニアリング</cyan>のマスドライバーコンパクトキャノン（MD-CC）；サイズは小さいながらも強力な運動エネルギー武器で、空中戦での精度と威力に優れています。スリークなデザインは、さまざまなスターファイターモデルとのシームレスな統合を可能にし、空気力学的効率を保ちながら比類のない運動エネルギーの影響を提供します。. <string id='CommonStringModName'/>"
+	
+	//Extra Long X-Wing Cannons
+	xwingCannonXLong = "Xウィング延長キャノン"
+	xwingCannonXLongIcon = "XウィングXC"
+	xwingCannonXLongLeft = "Xウィング延長キャノン（側面）"
+	xwingCannonXLongLeftIcon = "XウィングXC（側面）"
+	xwingCannonXLongDesc = "<cyan>インコム社</cyan>のXウィングXC；古典的なキャノンの延長版で、範囲と隠密性を兼ね備えて装甲の後ろに戦略的に配置します。. <string id='CommonStringModName'/>"
 
-    //Standard TIE Repeaters
-    tieMinigun = "TIEリピーターキャノン - スーパーエディション"
-    tieMinigunIcon = "TIE RC-SE"
-    tieMinigunLeft = "TIEリピーターキャノン - スーパーエディション（側面）"
-    tieMinigunLeftIcon = "TIE RC-SE（側面）"
-    tieLMinigunDesc = "<cyan>銀河帝国</cyan>のTIEリピーターキャノン - スーパーエディション；コンパクトで高速射撃が可能、近距離戦闘に最適で、装甲に隠して設置可能です。. <string id='CommonStringModName'/>"
+	//TIE Repeaters Unlocks
+	tieMiniguns = "Tie Repeater Cannons"
+	tieMinigunsDesc = "<string id='Parts/tieLMinigunDesc'/>\n\n <s20>Unlocks:</s20>\n\n<good>●  <string id='Parts/tieMinigun'/>\n●  <string id='Parts/tieMinigunLeft'/></good>"
 
-    tieMinigunLong = "ハイコア重リピーター拡張キャノン"
-    tieMinigunLongIcon = "ハイコアHR-XC"
-    tieMinigunLongLeft = "ハイコア重リピーター拡張キャノン（側面）"
-    tieMinigunLongLeftIcon = "ハイコアHR-XC（側面）"
-    tieLMinigunLongDesc = "<cyan>ハイコア</cyan>の拡張キャノン付き重レーザーリピーター；高速射撃で近距離戦闘に最適、この重レーザーリピーターは小型から中型の船での使用に改造されています。船の装甲の下や背後に設置可能です。. <string id='CommonStringModName'/>"
+	//Standard TIE Repeaters
+	tieMinigun = "TIEリピーターキャノン - スーパーエディション"
+	tieMinigunIcon = "TIE RC-SE"
+	tieMinigunLeft = "TIEリピーターキャノン - スーパーエディション（側面）"
+	tieMinigunLeftIcon = "TIE RC-SE（側面）"
+	tieLMinigunDesc = "<cyan>銀河帝国</cyan>のTIEリピーターキャノン - スーパーエディション；コンパクトで高速射撃が可能、近距離戦闘に最適で、装甲に隠して設置可能です。. <string id='CommonStringModName'/>"
 
-    // RG-9 Cannons
-    RG9Cannon = "RG-9レーザーキャノン強化版"
-    RG9CannonIcon = "RG-9 LC-EE"
-    RG9CannonLeft = "RG-9レーザーキャノン強化版（側面）"
-    RG9CannonLeftIcon = "RG-9 LC-EE（側面）"
-    RG9CannonDesc = "<cyan>ボルステル</cyan>のRG-9レーザーキャノン；高速発射可能で多用途の小型Aウィングレーザーの強化版、主に中から大型の戦闘機で使用されます。. <string id='CommonStringModName'/>"
-    RG9CannonLeftDesc = "<cyan>ボルステル</cyan>のRG-9レーザーキャノン；高速発射可能で多用途の小型Aウィングレーザーの強化版、主に中から大型の戦闘機で使用されます。. <string id='CommonStringModName'/>"
+	//Hycor Heavy Repeaters Unlocks
+	tieMinigunsLong = "HyCor Heavy Repeaters"
+	tieMinigunsLongDesc = "<string id='Parts/tieLMinigunLongDesc'/>\n\n <s20>Unlocks:</s20>\n\n<good>●  <string id='Parts/tieMinigunLong'/>\n●  <string id='Parts/tieMinigunLongLeft'/></good>"
 
-    // Standard TwinBeam Defense Turret
-    DroidTurret = "スターガードツインビーム防御ターレット"
-    DroidTurretIcon = "スターガードTB-DT"
-    DroidTurretDesc = "<cyan>コレリアンアームズテック</cyan>製、スターガードツインビーム防御ターレットは二重ビームの怒りを解き放ち、比類のない保護を提供します。特に<orange>レーザーとイオンショット</orange>を迎撃し中和するのに効果的で、エネルギーに基づく弾丸の脅威に対して優れた防御を提供しますが、弾丸、地雷、ミサイルには無効です。. <string id='CommonStringModName'/>"
+	tieMinigunLong = "ハイコア重リピーター拡張キャノン"
+	tieMinigunLongIcon = "ハイコアHR-XC"
+	tieMinigunLongLeft = "ハイコア重リピーター拡張キャノン（側面）"
+	tieMinigunLongLeftIcon = "ハイコアHR-XC（側面）"
+	tieLMinigunLongDesc = "<cyan>ハイコア</cyan>の拡張キャノン付き重レーザーリピーター；高速射撃で近距離戦闘に最適、この重レーザーリピーターは小型から中型の船での使用に改造されています。船の装甲の下や背後に設置可能です。. <string id='CommonStringModName'/>"
 
-    // Mini TwinLaser Defense Turret
-    PDTurretTiny = "スターガードツインレーザーコンパクトポイント防御ターレット"
-    PDTurretTinyIcon = "スターガードTL-C-PDT"
-    PDTurretTinyDesc = "<cyan>コレリアンアームズテック</cyan>製、スターガードツインレーザーポイント防御ターレットは二重レーザーの怒りを解き放ちます。このスターガードツインレーザーターレットの小型化された完全自動バージョンは、狭いスペースに最適化されています。<orange>弾丸、地雷、ミサイル</orange>を標的にするのに非常に効果的ですが、レーザーやイオンショットには効果がありません。. <string id='CommonStringModName'/>"
+	//RG9 Cannons Unlocks
+	RG9Cannons = "RG-9 Laser Cannons"
+	RG9CannonsDesc = "<string id='Parts/RG9CannonDesc'/>\n\n <s20>Unlocks:</s20>\n\n<good>●  <string id='Parts/RG9Cannon'/>\n●  <string id='Parts/RG9CannonLeft'/></good>"
+
+	// RG-9 Cannons
+	RG9Cannon = "RG-9レーザーキャノン強化版"
+	RG9CannonIcon = "RG-9 LC-EE"
+	RG9CannonLeft = "RG-9レーザーキャノン強化版（側面）"
+	RG9CannonLeftIcon = "RG-9 LC-EE（側面）"
+	RG9CannonDesc = "<cyan>ボルステル</cyan>のRG-9レーザーキャノン；高速発射可能で多用途の小型Aウィングレーザーの強化版、主に中から大型の戦闘機で使用されます。. <string id='CommonStringModName'/>"
+	RG9CannonLeftDesc = "<cyan>ボルステル</cyan>のRG-9レーザーキャノン；高速発射可能で多用途の小型Aウィングレーザーの強化版、主に中から大型の戦闘機で使用されます。. <string id='CommonStringModName'/>"
+
+	// Standard TwinBeam Defense Turret
+	DroidTurret = "スターガードツインビーム防御ターレット"
+	DroidTurretIcon = "スターガードTB-DT"
+	DroidTurretDesc = "<cyan>コレリアンアームズテック</cyan>製、スターガードツインビーム防御ターレットは二重ビームの怒りを解き放ち、比類のない保護を提供します。特に<orange>レーザーとイオンショット</orange>を迎撃し中和するのに効果的で、エネルギーに基づく弾丸の脅威に対して優れた防御を提供しますが、弾丸、地雷、ミサイルには無効です。. <string id='CommonStringModName'/>"
+
+	// Mini TwinLaser Defense Turret
+	PDTurretTiny = "スターガードツインレーザーコンパクトポイント防御ターレット"
+	PDTurretTinyIcon = "スターガードTL-C-PDT"
+	PDTurretTinyDesc = "<cyan>コレリアンアームズテック</cyan>製、スターガードツインレーザーポイント防御ターレットは二重レーザーの怒りを解き放ちます。このスターガードツインレーザーターレットの小型化された完全自動バージョンは、狭いスペースに最適化されています。<orange>弾丸、地雷、ミサイル</orange>を標的にするのに非常に効果的ですが、レーザーやイオンショットには効果がありません。. <string id='CommonStringModName'/>"
+
+
+//	//Long X-Wing Cannons
+//	xwingCannonLong = "RedFury Blaster Cannon"
+//	xwingCannonLongIcon = "RedFury-BC"
+//	xwingCannonLongLeft = "RedFury Blaster Cannon (Side)"
+//	xwingCannonLongLeftIcon = "RedFury-BC (Side)"
+//	xwingCannonLongDesc = "The RedFury Blaster by <cyan>Merr-Sonn Munitions</cyan>; A hard-hitting Heavy Blaster Cannon that allows for placement behind and hidden under armor pieces."
+
+
+//	//TIE Repeaters
+//	tieMiniguns = "TIE Repeater Cannon"
+//	tieMinigunsDesc = "TIE Repeaters are small, rapid-firing weapons that allows for placement hidden behind and under armor pieces. They are inaccurate, but useful for close range engagements."
+
+//	// SW Multipurpose Turrets
+//
+//	// Smaller burst damage turret
+//	SWTurretA = "Tiny Turbo Laser - Burst"
+//	SWTurretAIcon = "Tiny TL - Burst"
+//	SWTurretADesc = "A compact yet powerful turret, the Tiny Turbo Laser - Burst version specializes in burst damage, ideal for quickly neutralizing smaller threats. This is a <orange>switchable</orange>, crew-operated Laser Cannon."
+
+//	// Sturdier-looking turret
+//	SWTurretB = "Tiny Turbo Laser - Heavy"
+//	SWTurretBIcon = "Tiny TL - Heavy"
+//	SWTurretBDesc = "The Tiny Turbo Laser - Heavy is built for durability and sustained firepower, making it effective against a wide range of targets. This is a <orange>switchable</orange>, crew-operated Laser Cannon."
+
+//	// Mix of the two
+//	SWTurretC = "Tiny Turbo Laser - Rapid"
+//	SWTurretCIcon = "Tiny TL - Rapid"
+//	SWTurretCDesc = "Combining the best of both worlds, the Tiny Turbo Laser - Rapid offers a balanced approach to both burst damage and staying power. This is a <orange>switchable</orange>, crew-operated Laser Cannon."
+
+//	// Reactors
+//	SWMedReactor = "Reinforced Light Reactor"
+//	SWMedReactorIcon = "Light Reactor"
+//	SWMedReactorDesc = "An armored reactor reinforced with durasteel; A highly-efficient light reactor designed for state-of-the-art medium and large cruisers and frigates with no extra room for outdated and ugly bulky reactor equipment."
+
+
 }
-
 
 
 EditorGroups
 {
-
 }
 
 Stats
@@ -74,13 +126,15 @@ Stats
 
 StatCategories
 {
-    SWFighterWeapons = "小型<red>赤</red>レーザーキャノンショット"
-    MinigunShot = "小型<green>緑</green>リピーターレーザーショット"
-    SWPDTurretTiny = "小型<magenta>紫</magenta>PDバーストショット"
-    SWRG9Shot = "小型<red>赤</red>RG-9バーストキャノンショット"
-    SWBurstLaser = "小型<red>赤</red>バーストレーザーショット"
-    SWPDBeamLaser = "小型<yellow>黄</yellow>PDビームレーザーショット"
+	SWFighterWeapons = "小型<red>赤</red>レーザーキャノンショット"
+	MinigunShot = "小型<green>緑</green>リピーターレーザーショット"
+	SWPDTurretTiny = "小型<magenta>紫</magenta>PDバーストショット"
+	SWRG9Shot = "小型<red>赤</red>RG-9バーストキャノンショット"
+	SWBurstLaser = "小型<red>赤</red>バーストレーザーショット"
+	SWPDBeamLaser = "小型<yellow>黄</yellow>PDビームレーザーショット"
+	SWSlug = "Small <white>Metal</white> Massdriver Slug Shot"
 }
+
 
 SWFactionsBlacksun = "SW ファクションズ: ブラックサン"
 SWFactionsBlacksunTip = "スター・ウォーズ ファクションズ ブラックサンの船のコレクション"
@@ -97,26 +151,36 @@ SWFactionsRebelAllianceTip = "スター・ウォーズ ファクションズ 反
 SWFactionsRepublic = "SW ファクションズ: 共和国"
 SWFactionsRepublicTip = "スター・ウォーズ ファクションズ 共和国の船のコレクション"
 
+SWFactionsStarters = "SW Factions: Starter Ships"
+SWFactionsStartersTip = "A collection of Star Wars Factions Starter Ships"
 
-//DecalGroups
-//{
-//    // sw_decals = "スター・ウォーズ派閥のデカール"
-//    sw_adv_shapes = "高度なグラデーション、影、および形状"
-//}
+SWCommunitySubmissions = "SW Community Submissions"
+SWCommunitySubmissionsTip = "A collection of Star Wars Ship Submissions from the community"
+
+/*
+DecalGroups
+{
+	swdecalssm = "Star Wars Faction Decals Small"
+	swdecalsmed = "Star Wars Faction Decals Medium"
+	swdecalslg = "Star Wars Faction Decals Large"
+	sw_decals = "Star Wars Faction Decals"
+	sw_adv_shapes = "Advanced Gradients, Shadows, & Shapes"
+}
+*/
 
 Factions
 {
-    Black_Sun = "ブラックサン集団"
-    CIS = "独立星系連合"
-    Galactic_Empire = "銀河帝国"
-    Rebel_Alliance = "反乱同盟"
-    Republic = "共和国"
+	Black_Sun = "ブラックサン集団"
+	CIS = "独立星系連合"
+	Galactic_Empire = "銀河帝国"
+	Rebel_Alliance = "反乱同盟"
+	Republic = "共和国"
 }
 
 StarterShips
 {
 	A_Wing = "Like a caffeinated space weasel on roller skates, it's quick, agile, and unpredictable in a dogfight. Designed for efficiency, they made R2 take the next shuttle. No backseat drivers here, strap in and bring your A-game!"
-	Black_Sun_Fighter =  "Combines sleek elegance and the finesse of a disco ball in zero gravity. With a stealth mode that's just as effective as sneaking in tap shoes, this ship offers a unique blend of flair and futility."
+	Black_Sun_Fighter = "Combines sleek elegance and the finesse of a disco ball in zero gravity. With a stealth mode that's just as effective as sneaking in tap shoes, this ship offers a unique blend of flair and futility."
 	Durasteel_Prospector = "This rusty-but-trusty hauler proves that style isn't everything. Grab your shovel and your space hard hat, because it's time to get your hands dirty in the name of profit!"
 	Hyena_Class_Droid_Bomber = "The answer to the question no one asked: 'What if we turned a droid into a kamikaze confetti dispenser?' With all the subtlety of a parade float on fire, this ship brings chaos and colorful explosions wherever it goes."
 	N_1_Starfighter = "The 'Nerf Herder's Dream', This ship is for pilots who believe that precision is overrated and that curves are the true path to victory. This ship is a true work of art... as long as your definition of art includes unintentional barrel rolls."
@@ -127,7 +191,13 @@ StarterShips
 
 Doodads
 {
+	POIEliminateDefectors = "Rogue Fleet Location"
+	POIEliminateDefectorsUnD = "A Suspiciously Inconspicuous Asteroid Field"
+	POIEliminateRenegadeLeader = "Renegade Leader Location"
+	POIDistressSignalUndiscovered = "Distress Signal Location"
+	POIDistressSignal = "Dignitary in Distress"
 }
+
 
 Resource
 {
@@ -135,21 +205,23 @@ Resource
 
 MapSizes  
 {
-	
 	Standard = "Cosmoteer Standard (50)"
 	StandardTip = "A standard-sized boring old vanilla <white>Cosmoteer</white> star system... \n<i>These aren't the star systems you're looking for... move along, move along.</i>"
 	
 	Vanilla = "Standard (50)"
 	VanillaDesc = "A mix of 50 <yellow>Star Wars</yellow> and <white>Vanilla</white> controlled systems on the edge of explored space, known for their intricate routes and shadowy dealings."
 
+//	SWStandard = "Frontier Systems (50)"
+//	SWStandardTip = "A network of 50 Star Wars systems on the edge of explored space, known for their intricate routes and shadowy dealings."
+
 	SWLarge = "Outer Rim Territories (60)"
 	SWLargeDesc = "A lawless frontier region reminiscent of the Outer Rim with 60 <yellow>Star Wars</yellow> systems."
 
-	SWVeryLarge = "Mid Rim Systems (80)" 
+	SWVeryLarge = "Mid Rim Systems (80)"
 	SWVeryLargeDesc = "An industrialized region reminiscent of the Mid Rim with 80 <yellow>Star Wars</yellow> systems."
 
 	SWHuge = "Inner Rim Worlds (100)"
-	SWHugeDesc = "A core region reminiscent of the Inner Rim with 100 <yellow>Star Wars</yellow> systems." 
+	SWHugeDesc = "A core region reminiscent of the Inner Rim with 100 <yellow>Star Wars</yellow> systems."
 
 	SWGigantic = "Core Worlds (125)"
 	SWGiganticDesc = "The heart of galactic civilization with 125 <yellow>Star Wars</yellow> systems."
@@ -169,7 +241,7 @@ MapSizes
 
 	// The Clone Wars Era Galaxy Map
 	SWClonewars = "The Clone Wars Era (50)"
-	SWClonewarsDesc = "Step into the heart of the <yellow>Clone Wars</yellow>, where the <red>Galactic Republic</red> clashes with the <blue>Confederacy of Independent Systems (CIS)</blue>, while the <magenta>Black Sun</magenta> lurks in the shadows. Experience the iconic galactic turmoil in a period known as the '<yellow>Galactic Tension</yellow>'." 
+	SWClonewarsDesc = "Step into the heart of the <yellow>Clone Wars</yellow>, where the <red>Galactic Republic</red> clashes with the <blue>Confederacy of Independent Systems (CIS)</blue>, while the <magenta>Black Sun</magenta> lurks in the shadows. Experience the iconic galactic turmoil in a period known as the '<yellow>Galactic Tension</yellow>'."
 
 	/*
 	SmugglersRun = "Smuggler's Run (50)"
@@ -240,39 +312,38 @@ CrewScarcity
 	ScarceTip = "最大<yellow>1000</yellow>までの<bad>33%</bad>減少したクルーを提供し、このレベルは緊密な密輸業者のクルーを組織するようなものです。ケッセルランでの共同パイロットのように、各メンバーはそれぞれ重要で、すべての旅をスリリングで戦略的な冒険にします。"
 }
 
-
 CombatDifficulty
 {
   NoDeath = "Pacifist (Invulnerable)"
-  NoDeathTip = "• No Damage Taken\n<i><gray>(Damage? What's that?)</gray></i>\n• Can Build in Combat\n<i><gray>(I wouldn't hurt a mynock.)</gray></i>"
+  NoDeathTip = "● Damage? What's that?\n<i><gray>(No Damage Taken)</gray></i> \n● I wouldn't hurt a mynock.\n<i><gray>(Can Build in Combat)</gray></i>"
   
-  Easy = "Nerf Herder" 
-  EasyTip = "• <good>-30%</good> Damage Taken\n<i><gray>(I barely passed flight school.)</gray></i>\n• <good>+40%</good> Damage Dealt\n<i><gray>(I miss more shots than a stormtrooper.)</gray></i>"
+  Easy = "Nerf Herder"
+  EasyTip = "● I barely passed flight school.\n<i><gray>(-30% Damage Taken)</gray></i> \n● I miss more shots than a stormtrooper.\n<i><gray>(+40% Damage Delt)</gray></i>"
 
   Normal = "Recreational Bounty Hunter"
-  NormalTip = "• Normal Damage Taken\n<i><gray>(I'm a decent pilot.)</gray></i>\n• Normal Damage Dealt\n<i><gray>(I hit about half my shots.)</gray></i>"
+  NormalTip = "● I'm a decent pilot.\n<i><gray>(Normal Damage Taken)</gray></i>  \n● I hit about half my shots.\n<i><gray>(Normal Damage Delt)</gray></i>"
 
   Hard = "Rogue Squadron"
-  HardTip = "• <bad>+25%</bad> Damage Taken\n<i><gray>(I graduated top of my class.)</gray></i>\n• <bad>-20%</bad> Damage Dealt\n<i><gray>(I used to bullseye womp rats in my T-16 back home.)</gray></i>"
+  HardTip = "● I graduated top of my class.\n<i><gray>(+25% Damage Taken)</gray></i>  \n●  I used to bullseye womp rats\n in my T-16 back home.\n<i><gray>(-20% Damage Delt)</gray></i>"
 
   VeryHard = "Legendary Smuggler"
-  VeryHardTip = "• <bad>+40%</bad> Damage Taken\n<i><gray>(I flew the Kessel Run in under 12 parsecs!)</gray></i>\n• <bad>-30%</bad> Damage Dealt\n<i><gray>(I never tell the odds.)</gray></i>"
+  VeryHardTip = "● I flew the Kessel Run\n in under 12 parsecs!\n<i><gray>(+40% Damage Taken)</gray></i>  \n● I never tell the odds.\n<i><gray>(-30% Damage Delt)</gray></i>"
 }
 
 
 EconDifficulty
 {
   FreeBuild = "Midichlorian Master"
-  FreeBuildTip = "• Unlimited force powers allow building anywhere and anytime without credits or resources.\n<i><gray>(Having a high midichlorian count sure is handy.)</gray></i>\n• Normal resource drop rates.\n<i><gray>(Resources flow as naturally as the Force.)</gray></i>\n• Normal credits rewards.\n<i><gray>(Credits will do fine.)</gray></i>\n• Normal reputation rewards.\n<i><gray>(Your reputation precedes you.)</gray></i>"
+  FreeBuildTip = "● Unlimited force powers allow building anywhere and anytime without credits or resources. \n● Normal resource drop rates. \n● Normal credits rewards. \n● Normal reputation rewards."
   
-  Fast = "Smuggler" 
-  FastTip = "• Resource drop rates <good>increased 100%</good>.\n<i><gray>(Shhh, don't ask where they came from.)</gray></i>\n• Credit rewards <good>increased 100%</good>.\n<i><gray>(Tax-free, of course.)</gray></i>\n• Reputation rewards <good>increased 50%</good>.\n<i><gray>(Fame spreads fast in the underworld.)</gray></i>"
+  Fast = "Smuggler"
+  FastTip = "● Resource drop rates increased 100% (shhh don't ask where they came from). \n● Credit rewards increased 100% (tax-free of course). \n● Reputation rewards increased 50% (fame spreads fast in the underworld)."
 
   Normal = "Freelancer"
-  NormalTip = "• Normal resource drop rates.\n<i><gray>(Just another day hauling goods.)</gray></i>\n• Normal credit rewards.\n<i><gray>(Honest pay for an honest day's work.)</gray></i>\n• Normal reputation rewards.\n<i><gray>(Building a name for yourself, one job at a time.)</gray></i>"
+  NormalTip = "● Normal resource drop rates. \n● Normal credit rewards. \n● Normal reputation rewards."
 
   Slow = "Moisture Farmer"
-  SlowTip = "• Resource drop rates <bad>reduced 50%</bad>.\n<i><gray>(Curse this barren wasteland.)</gray></i>\n• Credit rewards <bad>reduced 50%</bad>.\n<i><gray>(Water ain't free.)</gray></i>\n• Reputation rewards <bad>reduced 25%</bad>.\n<i><gray>(Who cares about farmers anyway?)</gray></i>"
+  SlowTip = "● Resource drop rates reduced 50% (curse this barren wasteland). \n● Credit rewards reduced 50% (water ain't free). \n● Reputation rewards reduced 25% (who cares about farmers anyway)."
 }
 
 
@@ -339,8 +410,8 @@ FameTitles
 
 ReputationTitles
 [
-	"Sarlacc Snack"
 	"Death Star Target"
+	"Sarlacc Snack"
 	"Bantha Poodoo"
 	"Mild Irritant"
 	"HoloNet Acquaintance"
@@ -349,6 +420,7 @@ ReputationTitles
 	"Co-Pilot Material"
 	"Wookiee Lifedebt"
 ]
+
 
 Missions
 {
@@ -379,7 +451,36 @@ Missions
 	VisitSystemDesc = "A renowned astrophysicist is requesting data on stellar activity in the {mission_location} System."
 	Debug = "Debug Mission"
 	DebugDesc = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales rutrum eros. Fusce non eros a lacus luctus auctor sit amet at mi. In ac fermentum est. Nam viverra lectus eu turpis cursus vestibulum."
+	ClearRogueElements = "Neutralize Rogue Fleet"
+	ClearRogueElementsDesc = "A squadron formerly under the command of the \"{faction_name}\" has gone rogue and is currently taking refuge with a local fleet of Outlaws in a dense asteroid field in the {mission_location} System. Composed of various class vessels, this rogue squadron is exploiting the field's complex terrain to launch surprise attacks, disrupting local stability and posing a significant threat. The {faction_name} is urgently seeking a skilled pilot to navigate the asteroid field, neutralize this squadron, and restore order in the sector. A substantial bounty of {money} is promised to anyone who can successfully eliminate this elusive threat.\n\n"\
+		"<bad>Warning: This is a dangerous mission, and should only be attempted by skilled pilots with the necessary experience and skill.</bad>"
+	DefeatRenegadeLeader = "Eliminate \"{target_ship}\", the Deadly Renegade Leader"
+	DefeatRenegadeLeaderDesc = "A notorious renegade leader known as \"{target_ship}\" is wreaking havoc in the {mission_location} System. Commanding a vessel equipped with advanced technology and substantial firepower, this high value target is a major threat to regional stability. The {faction_name} has authorized a substantial bounty of {money} for any skilled pilot capable of confronting and neutralizing this threat. Intelligence reports highlight the strategic importance of this mission, suggesting that eliminating '{target_ship}' could deliver a significant blow to their nefarious activities.\n\n"\
+		"<bad>Warning: This is a very dangerous mission, and should only be attempted by skilled pilots with the necessary experience and skill.</bad>"
+	RescueVIP = "Rescue the Dignitary"
+	RescueVIPDesc = "An urgent distress call has been issued from a disabled civilian vessel under siege by bounty hunters. Aboard the ship is a dignitary of great importance to the {faction_name}. Immediate assistance is required to fend off the attackers, allowing the vessel to conduct repairs to their hyperdrives and make an escape. The {faction_name} is offering a substantial reward of {money} for the successful defense and safe extraction of the dignitary. Swift and decisive action is crucial to prevent the situation from worsening."
 }
+Objectives
+{
+	EliminateDefectors = "Neutralize the Rogue Fleet"
+	EliminateRenegadeLeader = "Eliminate {0}, the Renegade Leader"
+	SavetheVIP = "Eliminate Bounty Hunters"
+}
+AI
+{
+	ImperialFleetCommandAI = "A.I. SWACD - Standard"
+	CivFleetCommandAI = "A.I. SWACD - Civilian"
+	AgileFlankerAI = "A.I. SWACD - Agile Flanker"
+	AssaultAdvancerAI = "A.I. SWACD - Assault Advancer"
+	BroadsideRotatorAI = "A.I. SWACD - Broadsider"
+	CircleClockwiseAI = "A.I. SWACD - Clockwise Circler"
+	CircleCounterClockwiseAI = "A.I. SWACD - Counter Clockwise Circler"
+	BomberAI = "A.I. SWACD - Bomber"
+	ReconAI = "A.I. SWACD - Reconnaissance Scout"
+	HitAndFadeAI = "A.I. SWACD - Hit and Fader"
+	PositionalDefenseAI = "A.I. SWACD - Positional Defender"
+}
+
 
 Lore
 {
@@ -460,43 +561,46 @@ Lore
 	
 }
 
-/*UNUSED*/
+
+
+	//Appendix
+
 /*
-	//Long X-Wing Cannons
-	massdriversmall = "RedFury Blaster Cannon"
-	massdriversmallIcon = "RedFury-BC"
-	massdriversmallLeft = "RedFury Blaster Cannon (Side)"
-	massdriversmallLeftIcon = "RedFury-BC (Side)"
-	massdriversmallDesc = "The RedFury Blaster by <cyan>Merr-Sonn Munitions</cyan>; A hard-hitting Heavy Blaster Cannon that allows for placement behind and hidden under armor pieces."
+CombatDifficulty
+{
+  NoDeath = "Pacifist (Invulnerable)"
+  NoDeathTip = "● Damage? What's that?\n<i><gray>(No Damage Taken)</gray></i> \n● I wouldn't hurt a mynock.\n<i><gray>(Can Build in Combat)</gray></i>"
+  
+  Easy = "Nerf Herder"
+  EasyTip = "● I barely passed flight school.\n<i><gray>(-30% Damage Taken)</gray></i> \n● I miss more shots than a stormtrooper.\n<i><gray>(+40% Damage Delt)</gray></i>"
+
+  Normal = "Recreational Bounty Hunter"
+  NormalTip = "● I'm a decent pilot.\n<i><gray>(Normal Damage Taken)</gray></i>  \n● I hit about half my shots.\n<i><gray>(Normal Damage Delt)</gray></i>"
+
+  Hard = "Rogue Squadron"
+  HardTip = "● I graduated top of my class.\n<i><gray>(+25% Damage Taken)</gray></i>  \n●  I used to bullseye womp rats\n in my T-16 back home.\n<i><gray>(-20% Damage Delt)</gray></i>"
+
+  VeryHard = "Legendary Smuggler"
+  VeryHardTip = "● I flew the Kessel Run\n in under 12 parsecs!\n<i><gray>(+40% Damage Taken)</gray></i>  \n● I never tell the odds.\n<i><gray>(-30% Damage Delt)</gray></i>"
+}
+
+
+EconDifficulty
+{
+  FreeBuild = "Midichlorian Master"
+  FreeBuildTip = "● Unlimited force powers allow building anywhere and anytime without credits or resources. \n● Normal resource drop rates. \n● Normal credits rewards. \n● Normal reputation rewards."
+  
+  Fast = "Smuggler"
+  FastTip = "● Resource drop rates increased 100% (shhh don't ask where they came from). \n● Credit rewards increased 100% (tax-free of course). \n● Reputation rewards increased 50% (fame spreads fast in the underworld)."
+
+  Normal = "Freelancer"
+  NormalTip = "● Normal resource drop rates. \n● Normal credit rewards. \n● Normal reputation rewards."
+
+  Slow = "Moisture Farmer"
+  SlowTip = "● Resource drop rates reduced 50% (curse this barren wasteland). \n● Credit rewards reduced 50% (water ain't free). \n● Reputation rewards reduced 25% (who cares about farmers anyway)."
+}
 */
-/*
-	//TIE Repeaters
-	tieMiniguns = "TIE Repeater Cannon"
-	tieMinigunsDesc = "TIE Repeaters are small, rapid-firing weapons that allows for placement hidden behind and under armor pieces. They are inaccurate, but useful for close range engagements."
-*/
-/*
-	// SW Multipurpose Turrets
 
-	// Smaller burst damage turret
-	SWTurretA = "Tiny Turbo Laser - Burst"
-	SWTurretAIcon = "Tiny TL - Burst"
-	SWTurretADesc = "A compact yet powerful turret, the Tiny Turbo Laser - Burst version specializes in burst damage, ideal for quickly neutralizing smaller threats. This is a <orange>switchable</orange>, crew-operated Laser Cannon."
-
-	// Sturdier-looking turret
-	SWTurretB = "Tiny Turbo Laser - Heavy"
-	SWTurretBIcon = "Tiny TL - Heavy"
-	SWTurretBDesc = "The Tiny Turbo Laser - Heavy is built for durability and sustained firepower, making it effective against a wide range of targets. This is a <orange>switchable</orange>, crew-operated Laser Cannon."
-
-	// Mix of the two
-	SWTurretC = "Tiny Turbo Laser - Rapid"
-	SWTurretCIcon = "Tiny TL - Rapid"
-	SWTurretCDesc = "Combining the best of both worlds, the Tiny Turbo Laser - Rapid offers a balanced approach to both burst damage and staying power. This is a <orange>switchable</orange>, crew-operated Laser Cannon."
-
-	// Reactors
-	SWMedReactor = "Reinforced Light Reactor"
-	SWMedReactorIcon = "Light Reactor"
-	SWMedReactorDesc = "An armored reactor reinforced with durasteel; A highly-efficient light reactor designed for state-of-the-art medium and large cruisers and frigates with no extra room for outdated and ugly bulky reactor equipment."
-*/
 //	Turret = "Turret"
 //	Missile = "Missile"
 //	ProtonRocket = "Proton Torpedo"
@@ -568,42 +672,3 @@ Lore
 //	BlueSiegeTurbolaserBeam = "Siege <blue>Blue</blue> Turbolaser Beam"
 //
 //	TIE_WingThruster = "TIE wing thruster"
-
-//	SWStandard = "Frontier Systems (50)"
-//	SWStandardTip = "A network of 50 Star Wars systems on the edge of explored space, known for their intricate routes and shadowy dealings."
-
-/*
-CombatDifficulty
-{
-  NoDeath = "Pacifist (Invulnerable)"
-  NoDeathTip = "● Damage? What's that?\n<i><gray>(No Damage Taken)</gray></i> \n● I wouldn't hurt a mynock.\n<i><gray>(Can Build in Combat)</gray></i>"
-  
-  Easy = "Nerf Herder" 
-  EasyTip = "● I barely passed flight school.\n<i><gray>(-30% Damage Taken)</gray></i> \n● I miss more shots than a stormtrooper.\n<i><gray>(+40% Damage Delt)</gray></i>"
-
-  Normal = "Recreational Bounty Hunter"
-  NormalTip = "● I'm a decent pilot.\n<i><gray>(Normal Damage Taken)</gray></i>  \n● I hit about half my shots.\n<i><gray>(Normal Damage Delt)</gray></i>"
-
-  Hard = "Rogue Squadron"
-  HardTip = "● I graduated top of my class.\n<i><gray>(+25% Damage Taken)</gray></i>  \n●  I used to bullseye womp rats\n in my T-16 back home.\n<i><gray>(-20% Damage Delt)</gray></i>"
-
-  VeryHard = "Legendary Smuggler"
-  VeryHardTip = "● I flew the Kessel Run\n in under 12 parsecs!\n<i><gray>(+40% Damage Taken)</gray></i>  \n● I never tell the odds.\n<i><gray>(-30% Damage Delt)</gray></i>"
-}
-
-
-EconDifficulty
-{
-  FreeBuild = "Midichlorian Master"
-  FreeBuildTip = "● Unlimited force powers allow building anywhere and anytime without credits or resources. \n● Normal resource drop rates. \n● Normal credits rewards. \n● Normal reputation rewards."
-  
-  Fast = "Smuggler" 
-  FastTip = "● Resource drop rates increased 100% (shhh don't ask where they came from). \n● Credit rewards increased 100% (tax-free of course). \n● Reputation rewards increased 50% (fame spreads fast in the underworld)."
-
-  Normal = "Freelancer"
-  NormalTip = "● Normal resource drop rates. \n● Normal credit rewards. \n● Normal reputation rewards."
-
-  Slow = "Moisture Farmer"
-  SlowTip = "● Resource drop rates reduced 50% (curse this barren wasteland). \n● Credit rewards reduced 50% (water ain't free). \n● Reputation rewards reduced 25% (who cares about farmers anyway)."
-}
-*/
