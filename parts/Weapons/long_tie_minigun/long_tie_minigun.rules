@@ -10,7 +10,7 @@ Part : &<../tie_minigun/tie_minigun.rules>/Part
 	DescriptionKey = "Parts/tieLMinigunLongDesc"
 	
 	//Groups&Categories 
-	EditorGroup = "WeaponsEnergy"
+	EditorGroups = ["WeaponsEnergy", "SWTechI"]
 	
 	//Resources&Size&Health
 	Resources

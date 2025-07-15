@@ -12,6 +12,7 @@ Part : &<../../base_part_terran_weapons.rules>/Part
 	//Groups&Categories
 	EditorGroups = ["WeaponsEnergy","SWTechI"]
 	TypeCategories = [weapon, uses_power]
+	SignificanceToggle = ScorchedToggle
 	
 	//Resources&Size&Health
 	Resources
@@ -68,7 +69,14 @@ Part : &<../../base_part_terran_weapons.rules>/Part
 		IsOperational
 		{
 			Type = MultiToggle
-			Toggles = [PowerToggle, BatteryStorage]
+			Toggles = [PowerToggle, BatteryStorage, ScorchedToggle]
+			Mode = All
+		}
+
+		CommandConsumptionToggle
+		{
+			Type = MultiToggle
+			Toggles = [PowerToggle, ScorchedToggle]
 			Mode = All
 		}
 
@@ -79,11 +87,19 @@ Part : &<../../base_part_terran_weapons.rules>/Part
 			Default = 1
 			RequiresCommand = false
 		}
+	
+		ScorchedToggle
+		{
+			Type = StatusToggle
+			StatusType = cosmoteer.scorched
+			MinStatusValue = 1
+			Invert = true
+		}
 
 		CommandConsumer
 		{
 			Type = CommandConsumer
-			OperationalToggle = PowerToggle
+			OperationalToggle = CommandConsumptionToggle //PowerToggle
 			CommandPoints = 2
 		}
 
@@ -423,6 +439,21 @@ Part : &<../../base_part_terran_weapons.rules>/Part
 			ToggledOffMediaEffects = &/COMMON_EFFECTS/PowerOff
 		}
 
+		ScorchedTrigger
+		{
+			Type = ToggleTrigger
+			Toggle = ScorchedToggle
+			TriggerWhenOn = false
+		}
+
+		ScorchedEffects
+		{
+			Type = TriggeredEffects
+			Trigger = ScorchedTrigger
+			Location = &../DestroyedEffects/Location
+			MediaEffects = &/COMMON_EFFECTS/MedPartScorched
+		}
+
 		DestroyedEffects
 		{
 			Type = DeathEffects
@@ -437,7 +468,13 @@ Part : &<../../base_part_terran_weapons.rules>/Part
 			//Layer = "indicators" //Removal for 0.27.0_rc2_steam 
 			Indicators
 			[
-				// Turned off.
+				// 0: Scorched  
+				{
+					Toggle = ScorchedToggle
+					AtlasSprite = &/INDICATORS/Scorched
+					HidesIndicators = [1,2]     // hide Power and Out-of-power
+				}
+				// 1: Powered off  
 				{
 					Toggle = PowerToggle
 					AtlasSprite
@@ -445,10 +482,9 @@ Part : &<../../base_part_terran_weapons.rules>/Part
 						File = &/INDICATORS/PowerOff
 						Size = [1, 1]
 					}
-					HidesIndicators = [1]
+					HidesIndicators = [2]       // only hide Out-of-power
 				}
-
-				// Out of power.
+				// 2: Out of power  
 				{
 					Toggle = BatteryStorage
 					AtlasSprite
@@ -456,6 +492,7 @@ Part : &<../../base_part_terran_weapons.rules>/Part
 						File = &/INDICATORS/NoPower
 						Size = [1, 1]
 					}
+					// no HidesIndicators → doesn’t explicitly hide anything
 				}
 			]
 		}

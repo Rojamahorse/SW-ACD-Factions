@@ -1,3 +1,12 @@
+//OVERCLOCK
+//{
+//	BULLET = &<./Data/shots/bullet_railgun/overclock/bullet_railgun_overclock.rules>
+//	SHOT_HEAT_PER_MODULE = 1750
+//	BASE_CHARGE_TIME = 0.5
+//	MODULE_CHARGE_TIME = 0.125
+//	RECOIL_FACTOR = 250%
+//}
+
 Part : &<mass_driver_s.rules>/Part
 {
 	//IDs

@@ -54,7 +54,7 @@ Techs
     NameKey = "Parts/tieMinigunsLong" // &<../../parts/Weapons/long_tie_minigun/long_tie_minigun.rules>/Part/NameKey
     DescriptionKey = "Parts/tieMinigunsLongDesc" // &<../../parts/Weapons/long_tie_minigun/long_tie_minigun.rules>/Part/DescriptionKey
     Icon = &<../../parts/Weapons/long_tie_minigun/long_tie_minigun.rules>/Part/EditorIcon
-    EditorGroup = &<../../parts/Weapons/long_tie_minigun/long_tie_minigun.rules>/Part/EditorGroup
+    EditorGroups = &<../../parts/Weapons/long_tie_minigun/long_tie_minigun.rules>/Part/EditorGroups
     PartsUnlocked = [SW.fighter_long_tie_minigun, SW.fighter_long_tie_minigun_left]
     Cost = 4000
 }
@@ -63,7 +63,7 @@ Techs
     NameKey = "Parts/massdriverssmall" // &<../../parts/Weapons/mass_driver_small/mass_driver_s.rules>/Part/NameKey
     DescriptionKey = "Parts/massdriverssmallDesc" // &<../../parts/Weapons/mass_driver_small/mass_driver_s.rules>/Part/DescriptionKey
     Icon = &<../../parts/Weapons/mass_driver_small/mass_driver_s.rules>/Part/EditorIcon
-    EditorGroup = &<../../parts/Weapons/mass_driver_small/mass_driver_s.rules>/Part/EditorGroup
+    EditorGroups = &<../../parts/Weapons/mass_driver_small/mass_driver_s.rules>/Part/EditorGroups
     PartsUnlocked = [SW.fighter_mass_driver_cannon, SW.fighter_mass_driver_cannon_left]
     Cost = 8000
 }
