@@ -12,10 +12,10 @@ Sector
     // their own flags to disable those specific spawns.
     // This ensures flexibility in creating various sector sub-types from this base type.
 
-    SystemGenerator
+    SystemGenerator : &<./Data/modes/career/sectors/sector_basic/sector_basic.rules>/Sector/SystemGenerator
     {
         // List of spawner configurations for generating various system elements within the sector
-        Spawners
+        Spawners : ^/0/Spawners
         [
             &<../sysgen_sw_suns.rules>                                          // Configuration for generating suns
             &<./Data/modes/career/sectors/sysgen_planets.rules>                 // Configuration for generating planets
