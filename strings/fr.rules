@@ -205,47 +205,47 @@ Resource
 
 MapSizes  
 {
-	Standard = "Cosmoteer Standard (50)"
+	Standard = "Cosmoteer Standard (75)"
 	StandardTip = "Un système stellaire basique de <white>Cosmoteer</white>, de taille standard, ennuyeux et sans intérêt... \n<i>Ce ne sont pas les systèmes stellaires que vous cherchez... circulez, circulez.</i>"
 	
-	Vanilla = "Standard (50)"
-	VanillaDesc = "Un mélange de 50 systèmes stellaires de <yellow>Star Wars</yellow> et de <white>Cosmoteer</white>, situés à la frontière de l’espace exploré, connus pour leurs routes complexes et leurs affaires louches."
+	Vanilla = "Standard (75)"
+	VanillaDesc = "Un mélange de (75) systèmes stellaires de <yellow>Star Wars</yellow> et de <white>Cosmoteer</white>, situés à la frontière de l’espace exploré, connus pour leurs routes complexes et leurs affaires louches."
 
-//	SWStandard = "Frontier Systems (50)"
-//	SWStandardTip = "A network of 50 Star Wars systems on the edge of explored space, known for their intricate routes and shadowy dealings."
+//	SWStandard = "Frontier Systems (75)"
+//	SWStandardTip = "A network of (75) Star Wars systems on the edge of explored space, known for their intricate routes and shadowy dealings."
 
-	SWLarge = "Bordure Extérieure (60)"
-	SWLargeDesc = "Une région frontalière sans foi ni loi, avec 60 systèmes de <yellow>Star Wars</yellow>."
+	SWLarge = "Bordure Extérieure (90)"
+	SWLargeDesc = "Une région frontalière sans foi ni loi, avec (90) systèmes de <yellow>Star Wars</yellow>."
 
-	SWVeryLarge = "Bordure Médiane (80)"
-	SWVeryLargeDesc = "Une région industrialisée, avec 80 systèmes de <yellow>Star Wars</yellow>."
+	SWVeryLarge = "Bordure Médiane (120)"
+	SWVeryLargeDesc = "Une région industrialisée, avec (120) systèmes de <yellow>Star Wars</yellow>."
 
-	SWHuge = "Bordure Intérieure (100)"
-	SWHugeDesc = "Une région prospère avec 100 systèmes de <yellow>Star Wars</yellow>."
+	SWHuge = "Bordure Intérieure (160)"
+	SWHugeDesc = "Une région prospère avec (160) systèmes de <yellow>Star Wars</yellow>."
 
-	SWGigantic = "Mondes du Noyau (125)"
-	SWGiganticDesc = "Le cœur de la civilisation galactique avec 125 systèmes de <yellow>Star Wars</yellow>."
+	SWGigantic = "Mondes du Noyau (200)"
+	SWGiganticDesc = "Le cœur de la civilisation galactique avec (200) systèmes de <yellow>Star Wars</yellow>."
 
-	SWColossal = "Noyau Profond (150)"
-	SWColossalDesc = "Une région dangereuse aux confins du Noyau Profond avec 150 systèmes de <yellow>Star Wars</yellow>."
+	SWColossal = "Noyau Profond (250)"
+	SWColossalDesc = "Une région dangereuse aux confins du Noyau Profond avec (250) systèmes de <yellow>Star Wars</yellow>."
 
-	SWTitanic = "Régions Inconnues (200)"
-	SWTitanicDesc = "Un vaste territoire inexploré, enveloppé de mystère, avec 200 systèmes contrôlés par des factions de <yellow>Star Wars</yellow> et de <white>Cosmoteer</white>."
+	SWTitanic = "Régions Inconnues (300)"
+	SWTitanicDesc = "Un vaste territoire inexploré, enveloppé de mystère, avec (300) systèmes contrôlés par des factions de <yellow>Star Wars</yellow> et de <white>Cosmoteer</white>."
 
 	SWGalactic = "La Totalité de la Galaxie Connue (500)"
 	SWGalacticDesc = "Les factions de <white>Cosmoteer</white> et de <yellow>Star Wars</yellow> s'affrontent dans toute la galaxie connue, avec 500 systèmes."
 
 	// The Rebellion Era Galaxy Map
-	SWRebellion = "Un Nouvel Espoir (50)"
+	SWRebellion = "Un Nouvel Espoir (75)"
 	SWRebellionDesc = "Un véritable classique de <yellow>Star Wars</yellow> bourré d'action : vous êtes pris en plein milieu du conflit alors que l'<orange>Alliance Rebelle</orange> affronte l'<gray>Empire</gray>..."
 
 	// The Clone Wars Era Galaxy Map
-	SWClonewars = "La Guerre des Clones (50)"
+	SWClonewars = "La Guerre des Clones (75)"
 	SWClonewarsDesc = "Entrez au cœur de la <yellow>Guerre des Clones</yellow>, où la <red>République Galactique</red> affronte la <blue>Confédération des Systèmes Indépendants (CIS)</blue>, tandis que le <magenta>Soleil Noir</magenta> rôde dans l'ombre. Vivez la tourmente galactique emblématique d'une période connue sous le nom de '<yellow>Tension Galactique</yellow>'."
 
 	/*
-	SmugglersRun = "La course des contrebandiers (50)"
-	SmugglersRunDesc = "Un réseau de 50 systèmes stellaires connus pour leurs routes complexes et leurs affaires louches, souvent fréquenté par des contrebandiers et des hors-la-loi."
+	SmugglersRun = "La course des contrebandiers (75)"
+	SmugglersRunDesc = "Un réseau de (75) systèmes stellaires connus pour leurs routes complexes et leurs affaires louches, souvent fréquenté par des contrebandiers et des hors-la-loi."
 	*/
 }
 

@@ -205,47 +205,47 @@ Resource
 
 MapSizes  
 {
-	Standard = "Cosmoteer Standard (50)"
+	Standard = "Cosmoteer Standard (75)"
 	StandardTip = "Ein standardgroßes, langweiliges altes Vanilla-<white>Cosmoteer</white>-Sternensystem... \n<i>Dies sind nicht die Sternensysteme, nach denen ihr sucht... weitergehen, weitergehen.</i>"
 	
-	Vanilla = "Standard (50)"
-	VanillaDesc = "Eine Mischung aus 50 <yellow>Star Wars</yellow> und <white>Vanilla</white> kontrollierten Systemen am Rand des erforschten Raums, bekannt für ihre komplizierten Routen und zwielichtigen Geschäfte."
+	Vanilla = "Standard (75)"
+	VanillaDesc = "Eine Mischung aus (75) <yellow>Star Wars</yellow> und <white>Vanilla</white> kontrollierten Systemen am Rand des erforschten Raums, bekannt für ihre komplizierten Routen und zwielichtigen Geschäfte."
 
-//	SWStandard = "Frontier Systems (50)"
-//	SWStandardTip = "A network of 50 Star Wars systems on the edge of explored space, known for their intricate routes and shadowy dealings."
+//	SWStandard = "Frontier Systems (75)"
+//	SWStandardTip = "A network of (75) Star Wars systems on the edge of explored space, known for their intricate routes and shadowy dealings."
 
-	SWLarge = "Äußere Randgebiete (60)"
-	SWLargeDesc = "Eine gesetzlose Grenzregion, die an die Äußeren Randgebiete erinnert, mit 60 <yellow>Star Wars</yellow> Systemen."
+	SWLarge = "Äußere Randgebiete (90)"
+	SWLargeDesc = "Eine gesetzlose Grenzregion, die an die Äußeren Randgebiete erinnert, mit (90) <yellow>Star Wars</yellow> Systemen."
 
-	SWVeryLarge = "Mittlere Randgebiete (80)"
-	SWVeryLargeDesc = "Eine industrialisierte Region, die an die Mittleren Randgebiete erinnert, mit 80 <yellow>Star Wars</yellow> Systemen."
+	SWVeryLarge = "Mittlere Randgebiete (120)"
+	SWVeryLargeDesc = "Eine industrialisierte Region, die an die Mittleren Randgebiete erinnert, mit (120) <yellow>Star Wars</yellow> Systemen."
 
-	SWHuge = "Innere Randwelten (100)"
-	SWHugeDesc = "Eine Kernregion, die an die Inneren Randwelten erinnert, mit 100 <yellow>Star Wars</yellow> Systemen."
+	SWHuge = "Innere Randwelten (160)"
+	SWHugeDesc = "Eine Kernregion, die an die Inneren Randwelten erinnert, mit (160) <yellow>Star Wars</yellow> Systemen."
 
-	SWGigantic = "Kernwelten (125)"
-	SWGiganticDesc = "Das Herz der galaktischen Zivilisation mit 125 <yellow>Star Wars</yellow> Systemen."
+	SWGigantic = "Kernwelten (200)"
+	SWGiganticDesc = "Das Herz der galaktischen Zivilisation mit (200) <yellow>Star Wars</yellow> Systemen."
 
-	SWColossal = "Tiefkernsysteme (150)"
-	SWColossalDesc = "Eine gefährliche Region am Rande des Tiefkerns mit 150 <yellow>Star Wars</yellow> Systemen."
+	SWColossal = "Tiefkernsysteme (250)"
+	SWColossalDesc = "Eine gefährliche Region am Rande des Tiefkerns mit (250) <yellow>Star Wars</yellow> Systemen."
 
-	SWTitanic = "Unbekannte Regionen (200)"
-	SWTitanicDesc = "Ein riesiges unerforschtes Gebiet, umhüllt von Geheimnissen, mit 200 <yellow>Star Wars</yellow> und <white>Cosmoteer</white> Fraktionskontrollierten Systemen."
+	SWTitanic = "Unbekannte Regionen (300)"
+	SWTitanicDesc = "Ein riesiges unerforschtes Gebiet, umhüllt von Geheimnissen, mit (300) <yellow>Star Wars</yellow> und <white>Cosmoteer</white> Fraktionskontrollierten Systemen."
 
 	SWGalactic = "Die gesamte bekannte Galaxie (500)"
 	SWGalacticDesc = "<white>Cosmoteer</white> und <yellow>Star Wars</yellow> Fraktionen kollidieren im vollen Umfang der bekannten Galaxie mit 500 Systemen."
 
 	// The Rebellion Era Galaxy Map
-	SWRebellion = "Eine neue Hoffnung (50)"
+	SWRebellion = "Eine neue Hoffnung (75)"
 	SWRebellionDesc = "Ein echter <yellow>Star Wars</yellow>-Klassiker, randvoll mit Action; Du bist mittendrin, während die <orange>Rebellenallianz</orange> gegen das <gray>Imperium</gray> antritt... Manche nennen das sogar einen '<yellow>KlassikJam</yellow>'."
 
 	// The Clone Wars Era Galaxy Map
-	SWClonewars = "Die Ära der Klonkriege (50)"
+	SWClonewars = "Die Ära der Klonkriege (75)"
 	SWClonewarsDesc = "Tauche ein in das Herz der <yellow>Klonkriege</yellow>, wo die <red>Galaktische Republik</red> auf die <blue>Konföderation unabhängiger Systeme (CIS)</blue> trifft, während das <magenta>Black Sun</magenta> im Schatten lauert. Erlebe die ikonische galaktische Unruhe in einer Periode, die als '<yellow>Galaktische Spannung</yellow>' bekannt ist."
 
 	/*
-	SmugglersRun = "Schmugglerlauf (50)"
-	SmugglersRunDesc = "Ein Netzwerk von 50 Sternensystemen, bekannt für ihre komplizierten Routen und zwielichtigen Geschäfte, oft frequentiert von Schmugglern und Gesetzlosen."
+	SmugglersRun = "Schmugglerlauf (75)"
+	SmugglersRunDesc = "Ein Netzwerk von (75) Sternensystemen, bekannt für ihre komplizierten Routen und zwielichtigen Geschäfte, oft frequentiert von Schmugglern und Gesetzlosen."
 	*/
 }
 

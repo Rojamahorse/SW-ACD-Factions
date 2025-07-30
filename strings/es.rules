@@ -205,47 +205,47 @@ Resource
 
 MapSizes  
 {
-	Standard = "Cosmoteer Estándar (50)"
+	Standard = "Cosmoteer Estándar (75)"
 	StandardTip = "Un sistema estelar estándar y aburrido del viejo <white>Cosmoteer</white>... \n<i>Estos no son los sistemas estelares que buscas... sigue adelante, sigue adelante.</i>"
 	
-	Vanilla = "Estándar (50)"
-	VanillaDesc = "Una mezcla de 50 sistemas controlados por <yellow>Star Wars</yellow> y <white>Vanilla</white> en el borde del espacio explorado, conocidos por sus rutas intrincadas y tratos sombríos."
+	Vanilla = "Estándar (75)"
+	VanillaDesc = "Una mezcla de (75) sistemas controlados por <yellow>Star Wars</yellow> y <white>Vanilla</white> en el borde del espacio explorado, conocidos por sus rutas intrincadas y tratos sombríos."
 
-//	SWStandard = "Frontier Systems (50)"
-//	SWStandardTip = "A network of 50 Star Wars systems on the edge of explored space, known for their intricate routes and shadowy dealings."
+//	SWStandard = "Frontier Systems (75)"
+//	SWStandardTip = "A network of (75) Star Wars systems on the edge of explored space, known for their intricate routes and shadowy dealings."
 
-	SWLarge = "Territorios del Borde Exterior (60)"
-	SWLargeDesc = "Una región fronteriza sin ley que recuerda al Borde Exterior con 60 sistemas de <yellow>Star Wars</yellow>."
+	SWLarge = "Territorios del Borde Exterior (90)"
+	SWLargeDesc = "Una región fronteriza sin ley que recuerda al Borde Exterior con (90) sistemas de <yellow>Star Wars</yellow>."
 
-	SWVeryLarge = "Sistemas del Borde Medio (80)"
-	SWVeryLargeDesc = "Una región industrializada que recuerda al Borde Medio con 80 sistemas de <yellow>Star Wars</yellow>."
+	SWVeryLarge = "Sistemas del Borde Medio (120)"
+	SWVeryLargeDesc = "Una región industrializada que recuerda al Borde Medio con (120) sistemas de <yellow>Star Wars</yellow>."
 
-	SWHuge = "Mundos del Borde Interior (100)"
-	SWHugeDesc = "Una región central que recuerda al Borde Interior con 100 sistemas de <yellow>Star Wars</yellow>."
+	SWHuge = "Mundos del Borde Interior (160)"
+	SWHugeDesc = "Una región central que recuerda al Borde Interior con (160) sistemas de <yellow>Star Wars</yellow>."
 
-	SWGigantic = "Mundos del Núcleo (125)"
-	SWGiganticDesc = "El corazón de la civilización galáctica con 125 sistemas de <yellow>Star Wars</yellow>."
+	SWGigantic = "Mundos del Núcleo (200)"
+	SWGiganticDesc = "El corazón de la civilización galáctica con (200) sistemas de <yellow>Star Wars</yellow>."
 
-	SWColossal = "Sistemas del Núcleo Profundo (150)"
-	SWColossalDesc = "Una región peligrosa en las fronteras del Núcleo Profundo con 150 sistemas de <yellow>Star Wars</yellow>."
+	SWColossal = "Sistemas del Núcleo Profundo (250)"
+	SWColossalDesc = "Una región peligrosa en las fronteras del Núcleo Profundo con (250) sistemas de <yellow>Star Wars</yellow>."
 
-	SWTitanic = "Regiones Desconocidas (200)"
-	SWTitanicDesc = "Un vasto territorio inexplorado envuelto en misterio con 200 sistemas controlados por las facciones de <yellow>Star Wars</yellow> y <white>Cosmoteer</white>."
+	SWTitanic = "Regiones Desconocidas (300)"
+	SWTitanicDesc = "Un vasto territorio inexplorado envuelto en misterio con (300) sistemas controlados por las facciones de <yellow>Star Wars</yellow> y <white>Cosmoteer</white>."
 
 	SWGalactic = "La Galaxia Conocida Completa (500)"
 	SWGalacticDesc = "Las facciones de <white>Cosmoteer</white> y <yellow>Star Wars</yellow> colisionan en toda la extensión de la galaxia conocida con 500 sistemas."
 
 	// The Rebellion Era Galaxy Map
-	SWRebellion = "Una Nueva Esperanza (50)"
+	SWRebellion = "Una Nueva Esperanza (75)"
 	SWRebellionDesc = "Un clásico verdadero de <yellow>Star Wars</yellow> lleno de acción; Te encuentras en medio mientras la <orange>Alianza Rebelde</orange> se enfrenta cara a cara contra el <gray>Imperio</gray>... Algunos incluso podrían llamarlo un '<yellow>ClásicoJam</yellow>'."
 
 	// The Clone Wars Era Galaxy Map
-	SWClonewars = "La Era de las Guerras Clon (50)"
+	SWClonewars = "La Era de las Guerras Clon (75)"
 	SWClonewarsDesc = "Adéntrate en el corazón de las <yellow>Guerras Clon</yellow>, donde la <red>República Galáctica</red> choca con la <blue>Confederación de Sistemas Independientes (CIS)</blue>, mientras el <magenta>Sol Negro</magenta> acecha en las sombras. Experimenta el icónico tumulto galáctico en un período conocido como la '<yellow>Tensión Galáctica</yellow>'."
 
 	/*
-	SmugglersRun = "La Carrera del Contrabandista (50)"
-	SmugglersRunDesc = "Una red de 50 sistemas estelares conocidos por sus rutas intrincadas y tratos sombríos, frecuentemente visitados por contrabandistas y forajidos."
+	SmugglersRun = "La Carrera del Contrabandista (75)"
+	SmugglersRunDesc = "Una red de (75) sistemas estelares conocidos por sus rutas intrincadas y tratos sombríos, frecuentemente visitados por contrabandistas y forajidos."
 	*/
 }
 

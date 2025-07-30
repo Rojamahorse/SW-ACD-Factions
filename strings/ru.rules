@@ -205,47 +205,47 @@ Resource
 
 MapSizes  
 {
-	Standard = "Cosmoteer Standard (50)"
+	Standard = "Cosmoteer Standard (75)"
 	StandardTip = "A standard-sized boring old vanilla <white>Cosmoteer</white> star system... \n<i>These aren't the star systems you're looking for... move along, move along.</i>"
 	
-	Vanilla = "Standard (50)"
-	VanillaDesc = "A mix of 50 <yellow>Star Wars</yellow> and <white>Vanilla</white> controlled systems on the edge of explored space, known for their intricate routes and shadowy dealings."
+	Vanilla = "Standard (75)"
+	VanillaDesc = "A mix of (75) <yellow>Star Wars</yellow> and <white>Vanilla</white> controlled systems on the edge of explored space, known for their intricate routes and shadowy dealings."
 
-//	SWStandard = "Frontier Systems (50)"
-//	SWStandardTip = "A network of 50 Star Wars systems on the edge of explored space, known for their intricate routes and shadowy dealings."
+//	SWStandard = "Frontier Systems (75)"
+//	SWStandardTip = "A network of (75) Star Wars systems on the edge of explored space, known for their intricate routes and shadowy dealings."
 
-	SWLarge = "Outer Rim Territories (60)"
-	SWLargeDesc = "A lawless frontier region reminiscent of the Outer Rim with 60 <yellow>Star Wars</yellow> systems."
+	SWLarge = "Outer Rim Territories (90)"
+	SWLargeDesc = "A lawless frontier region reminiscent of the Outer Rim with (90) <yellow>Star Wars</yellow> systems."
 
-	SWVeryLarge = "Mid Rim Systems (80)"
-	SWVeryLargeDesc = "An industrialized region reminiscent of the Mid Rim with 80 <yellow>Star Wars</yellow> systems."
+	SWVeryLarge = "Mid Rim Systems (120)"
+	SWVeryLargeDesc = "An industrialized region reminiscent of the Mid Rim with (120) <yellow>Star Wars</yellow> systems."
 
-	SWHuge = "Inner Rim Worlds (100)"
-	SWHugeDesc = "A core region reminiscent of the Inner Rim with 100 <yellow>Star Wars</yellow> systems."
+	SWHuge = "Inner Rim Worlds (160)"
+	SWHugeDesc = "A core region reminiscent of the Inner Rim with (160) <yellow>Star Wars</yellow> systems."
 
-	SWGigantic = "Core Worlds (125)"
-	SWGiganticDesc = "The heart of galactic civilization with 125 <yellow>Star Wars</yellow> systems."
+	SWGigantic = "Core Worlds (200)"
+	SWGiganticDesc = "The heart of galactic civilization with (200) <yellow>Star Wars</yellow> systems."
 
-	SWColossal = "Deep Core Systems (150)"
-	SWColossalDesc = "A dangerous region on the fringes of the Deep Core with 150 <yellow>Star Wars</yellow> systems."
+	SWColossal = "Deep Core Systems (250)"
+	SWColossalDesc = "A dangerous region on the fringes of the Deep Core with (250) <yellow>Star Wars</yellow> systems."
 
-	SWTitanic = "Unknown Regions (200)"
-	SWTitanicDesc = "A vast uncharted territory shrouded in mystery with 200 <yellow>Star Wars</yellow> and <white>Cosmoteer</white> faction-controlled systems."
+	SWTitanic = "Unknown Regions (300)"
+	SWTitanicDesc = "A vast uncharted territory shrouded in mystery with (300) <yellow>Star Wars</yellow> and <white>Cosmoteer</white> faction-controlled systems."
 
 	SWGalactic = "The Entire Known Galaxy (500)"
 	SWGalacticDesc = "<white>Cosmoteer</white> and <yellow>Star Wars</yellow> factions collide in the full extent of the known galaxy with 500 systems."
 
 	// The Rebellion Era Galaxy Map
-	SWRebellion = "A New Hope (50)"
+	SWRebellion = "A New Hope (75)"
 	SWRebellionDesc = "A true <yellow>Star Wars</yellow> classic that's jam-packed with action; You are caught in the middle as the <orange>Rebel Alliance</orange> goes head to head vs the <gray>Empire</gray>... Some might even call that a '<yellow>ClassicJam</yellow>'."
 
 	// The Clone Wars Era Galaxy Map
-	SWClonewars = "The Clone Wars Era (50)"
+	SWClonewars = "The Clone Wars Era (75)"
 	SWClonewarsDesc = "Step into the heart of the <yellow>Clone Wars</yellow>, where the <red>Galactic Republic</red> clashes with the <blue>Confederacy of Independent Systems (CIS)</blue>, while the <magenta>Black Sun</magenta> lurks in the shadows. Experience the iconic galactic turmoil in a period known as the '<yellow>Galactic Tension</yellow>'."
 
 	/*
-	SmugglersRun = "Smuggler's Run (50)"
-	SmugglersRunDesc = "A network of 50 star systems known for their intricate routes and shadowy dealings, often frequented by smugglers and outlaws."
+	SmugglersRun = "Smuggler's Run (75)"
+	SmugglersRunDesc = "A network of (75) star systems known for their intricate routes and shadowy dealings, often frequented by smugglers and outlaws."
 	*/
 }
 

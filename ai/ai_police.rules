@@ -3,9 +3,8 @@ UpdateInterval = [.25, .75] // A random range.
 StrategyModules
 [
 	{
-		Type = ExitSector
-		AvoidableDoodadTags = [sun]
-		AvoidableDoodadBuffer = 100
+		Type = ExitSector //The police specifically will exit when they have nothing to do
+		IsActivated = true
 	}
 	{
 		Type = WantedSearch
@@ -21,9 +20,6 @@ StrategyModules
 		AcquireAggroWithinRadar = true
 		ReleaseAggroWithinRadar = true
 		AvoidableDoodadTags = [sun]
-	}
-	{
-		Type = ExitSector
 	}
 ]
 
@@ -60,6 +56,7 @@ StasisModules
 		DefaultStasisSpeed = 75
 		AvoidableDoodadTags = [sun]
 		AvoidableDoodadBuffer = 100
+		IsActivated = true
 	}
 	{
 		Type = WantedSearch
@@ -69,4 +66,16 @@ StasisModules
 	}
 ]
 
-CommsModules = &<./Data/ai/ai_common.rules>/CommsModulesDefault
+CommsModules
+[
+	{
+		Type = "Dialogue"
+		DefaultChanceToConsiderSurrenderingToPlayer = 0  //Chance that the ai will surrender to the player
+		ChanceToConsiderAcceptingSurrenderFromPlayer = 1 //Even if the damage value isn't that different, ai will still accept surrender
+		ChanceToConsiderOfferingSurrender = 0.5  // If the ai is willing to surrender, this is the chance that the AI will offer surrender. Sometimes they will be willing to surrender without offering
+		ChanceToConsiderDemandingSurrender = 1  //Chance that ai will ask the player to surrender
+		ValueRatioDifferenceRangeToSurrender = [10%, 40%] //The lower this is, the less likely ai will surrender.  The value is random between the range.
+		PlayerSurrenderPayoutMultiple = 7.5% //When the player pays for damage caused, calculated by chance of dropping rare (10-15) and in between price of selling (0.5-1)
+		AISurrenderPayoutMultiple = 7.5%  //when ai pays for the loot you no longer get
+	}
+]

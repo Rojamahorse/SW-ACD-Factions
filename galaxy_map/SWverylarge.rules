@@ -2,7 +2,7 @@ Spawners
 [
 	: &<map_generators/sw_galaxy_Rebellion.rules>/MapNodes //<./Data/galaxy_map/map_generators/base_galaxy.rules>/MapNodes
 	{
-		Count = 80
+		Count = 120
 	}
 	
 	&<map_generators/sw_galaxy.rules>/Factions

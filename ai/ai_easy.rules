@@ -46,7 +46,7 @@ StasisModules
 	{
 		Type = ExitSector
 		DefaultStasisSpeed = 75
-		AvoidableDoodadTags = [sun]
+		AvoidableDoodadTags = [sun, station]
 		AvoidableDoodadBuffer = 100
 	}
 ]

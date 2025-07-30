@@ -3,7 +3,7 @@ Spawners
 	: &<map_generators/sw_galaxy_Chaos.rules>/MapNodes
 //	: <./Data/galaxy_map/map_generators/base_galaxy.rules>/MapNodes //base_galaxy without all the extra
 	{
-		Count = 50
+		Count = 75
 	}
 
 	&<map_generators/sw_galaxy_Chaos.rules>/Factions
