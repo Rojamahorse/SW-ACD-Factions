@@ -1,13 +1,13 @@
 Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 {
-	ReceivableBuffs : ^/0/ReceivableBuffs [ElectronBuff, SW_RojaMagic_Energy_Grid]
+	ReceivableBuffs : ^/0/ReceivableBuffs [ElectronBuff, SW_Hypermatter_Energy_Grid/*SW_RojaMagic_Energy_Grid*/] //Switch Hypermatter to Rojamagic for 0.30.0 to match Skipper's updates
 
 	Components : ^/0/Components
 	{
 		HypermatterEnergyGridToggle
 		{
 			Type = BuffToggle
-			BuffType = SW_RojaMagic_Energy_Grid
+			BuffType = SW_Hypermatter_Energy_Grid //SW_RojaMagic_Energy_Grid //Switch Hypermatter to Rojamagic for 0.30.0 to match Skipper's updates
 		}
 		
 	}
