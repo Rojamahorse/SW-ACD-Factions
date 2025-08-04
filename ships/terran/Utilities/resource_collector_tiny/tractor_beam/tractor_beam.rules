@@ -1,0 +1,149 @@
+Range = 300
+StretchRange = 600
+IdealRange = 300
+Duration = 0.25
+HitInterval = 1 / (&/Simulation/PhysicsUpdatesPerSecond)
+TractorImpulse = 30000 * (&HitInterval) / 1 //(&<./Data/ships/terran/tractor_beam_emitter/tractor_beam_emitter.rules>/BeamCount) // Actual impulse per-ship is half; this is net total of both ships.
+RampUpTime = .5
+//FriendlyShipLowCollisions = false
+//FriendlyShipHighCollisions = false
+//NonFriendlyShipLowCollisions = false
+//NonFriendlyShipHighCollisions = false
+ClipRangeToTarget = true
+MediaEffectsScaleOverRange = [0.6, -10]
+RequireHitForRampUp = true
+PenetratesStructure = false
+ShieldCollisions = { Shields=false; }
+InitHitLengthResetDelay = 1
+BeamMediaEffectsIntensity = { BaseValue=1; EffectScaleExponent=1; }
+
+BeamMediaEffects
+[
+	&<./Data/shots/manipulator_beam/manipulator_beam_glints.rules>
+	{
+		Type = Beam
+		IsFancy = true
+		Sprite
+		{
+			Shader = "./Data/shots/tractor_beam/tractor_beam.shader"
+			Size = [100%, 0.75]
+			VertexColor = [255, 255, 255, 255]
+
+			_extraBeginLength = .5
+			_extraEndLength = 1
+			_extraEndArc = 3d
+			_minAlpha = .25
+
+			Texture
+			{
+				File = ./Data/common_effects/particles/noise_voronoi2.png
+				SampleMode = Linear
+				MipLevels = max
+				UMode = Wrap
+				VMode = Wrap
+			}
+			_displacementStrength = 0.25
+			_displacementSpeed = .2
+			_additiveStrength = 0.4
+
+			_noiseScaleX = 0.02
+			_noiseScaleY = 2
+			_noiseScrollSpeed = -2
+			_noisePanSpeed = 0
+			_endFadeLength = 1
+
+			_color1 = [60, 130, 224, 255]
+			_color2 = [88, 181, 224, 255]
+
+			TargetBlendMode
+			{
+				SourceRgbFactor = SourceAlpha
+				DestRgbFactor = InverseSourceAlpha
+				RgbOperator = Add
+				SourceAlphaFactor = One
+				DestAlphaFactor = One
+				AlphaOperator = Add
+			}
+
+			_noiseTex
+			{
+				File = ./Data/common_effects/particles/noise_gradient.png
+				SampleMode = Linear
+				MipLevels = max
+				UVMode = Wrap
+			}
+		}
+		FadeInTime = .25
+		FadeOutTime = .25
+		SpeedOverIntensity = [0, 5]
+		Bucket = TractorBeam
+		CaptureBackBuffer = true
+		LengthSmoothSpeed = 6
+		MinIntensity = -Infinity
+	}
+
+	: 1
+	{
+		IsFancy = false
+		IsSimple = true
+		Sprite : ^/0/Sprite
+		{
+			Shader = "./Data/shots/tractor_beam/tractor_beam_simple.shader"
+			TargetBlendMode
+			{
+				SourceRgbFactor = One
+				DestRgbFactor = One
+				RgbOperator = Add
+				SourceAlphaFactor = One
+				DestAlphaFactor = One
+				AlphaOperator = Add
+			}
+			_color1 = [60, 130, 224, 255]
+			_color2 = [88, 181, 224, 255]
+		}
+		CaptureBackBuffer = false
+	}
+
+	: /BASE_SOUNDS/AudioExterior
+	{
+		Sound = "./Data/shots/tractor_beam/tractor_beam_emit.wav"
+		Volume = 50%
+		Speed = 100%
+		RampUpTime = .25
+		RampDownTime = .25
+
+		DynamicVolume : ^/0/DynamicVolume
+		{
+			UseCustomShapeForDistance = true
+		}
+		DynamicFilter : ^/0/DynamicFilter
+		{
+			UseCustomShapeForDistance = true
+		}
+	}
+]
+
+HitOperational
+{
+	HitEffectsScale = { BaseValue=1; EffectScaleExponent=1; }
+	MediaEffectsScale = { BaseValue=1; EffectScaleExponent=1; }
+	HitEffects
+	[
+		{
+			Type = Impulse
+			Impulse = { BaseValue = -(&~/TractorImpulse) / 2; EffectScaleExponent = 1 }
+		}
+		{
+			Type = Feedback
+			HitEffects
+			[
+				{
+					Type = Impulse
+					Impulse = { BaseValue = (&~/TractorImpulse) / 2; EffectScaleExponent = 1 }
+				}
+			]
+		}
+	]
+}
+
+HitStructural = &HitOperational

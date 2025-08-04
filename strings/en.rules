@@ -75,6 +75,10 @@ Parts
 	PDTurretTinyIcon = "Starguard TL-C-PDT"
 	PDTurretTinyDesc = "The StarGuard TwinLaser Point Defense Turret, manufactured by <cyan>Corellian ArmsTech</cyan>, unleashes dual laser fury. This miniaturized and fully automated version of the StarGuard TwinLaser Turret is optimized for tight spaces. It's highly effective at targeting <orange>bullets, mines, and missiles</orange>, but is ineffective against lasers and ion shots. <string id='CommonStringModName'/>"
 
+	// Tractor Collector Compact
+	SWResourceCollectorCompact = "Corellian MiniTractor XC"
+	SWResourceCollectorCompactIcon = "Corellian MT-XC"
+	SWResourceCollectorCompactDesc = "Manufactured by <cyan>Corellian Engineering Corporation</cyan>, this extra-compact resource collector emits an automated precision tractor beams capable of swiftly extracting resources without need of manual labor. Also proficient in ship salvage operations and, when necessary, can serve as a light-weight tractor beam.<string id='CommonStringModIDSWACD'/>"
 
 //	//Long X-Wing Cannons
 //	xwingCannonLong = "RedFury Blaster Cannon"
@@ -113,6 +117,11 @@ Parts
 
 }
 
+PartToggles
+{
+	SW_ResourceBeam = "Collection Mode"
+	SW_TractorBeam = "Tractor Mode"
+}
 
 EditorGroups
 {

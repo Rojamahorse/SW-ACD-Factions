@@ -82,7 +82,13 @@ Actions
 	    AddTo = "<./Data/modes/career/techs.rules>/Techs"
 	    ManyToAdd = &<modes/career/techs.rules>/Techs
 	}
-	
+	/* *********** TOGGLES ************* */
+
+	{	//17
+		Action = AddMany
+		AddTo = "<gui/game/parts/part_toggles.rules>/PartToggles"
+		ManyToAdd = &<gui/game/parts/SW_part_toggles.rules>/PartToggles
+	}
 	/* *********** DECALS & SHIPS & SHIP SIZES ************* */
 
 	//Adds faction decals folder and advanced gradients, shading, and shapes folder

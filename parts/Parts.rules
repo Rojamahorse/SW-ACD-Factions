@@ -33,5 +33,8 @@ Parts
 
 			//&<Reactor/med.rules>/Part
 
+			// Utilities
+			&<../ships/terran/Utilities/resource_collector_tiny/resource_collector.rules>/Part
+			//&<../ships/terran/Utilities/resource_collector_tiny/resource_collector_plus_tractor.rules>/Part
 
 ]

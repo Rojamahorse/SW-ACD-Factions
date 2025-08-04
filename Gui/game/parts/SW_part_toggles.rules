@@ -1,0 +1,43 @@
+PartToggles
+[
+	// Common Tractor Type
+	{
+		ToggleID = "SW.tractor_type"
+		Style = Popout
+		SortOrder = 10;
+		//ShowInEditor = true
+		Choices
+		[
+			//0 = Collector Beam
+			{
+				ChoiceID = "SW_ResourceBeam"
+				ButtonToolTipKey = "PartToggles/SW_TractorBeam"
+				DefaultHotkey = []
+				ButtonSprite
+				{
+					Texture
+					{
+						File = "toggles_utility/tractor_collector_beam.png"
+						MipLevels = 2
+						SampleMode = Linear
+					}
+				}
+			}
+			//1 = Tractor Beam
+			{
+				ChoiceID = "SW_TractorBeam"
+				ButtonToolTipKey = "PartToggles/SW_ResourceBeam"
+				DefaultHotkey = []
+				ButtonSprite
+				{
+					Texture
+					{
+						File = "toggles_utility/tractor_beam.png"
+						MipLevels = 2
+						SampleMode = Linear
+					}
+				}
+			}
+		]
+	}
+]
