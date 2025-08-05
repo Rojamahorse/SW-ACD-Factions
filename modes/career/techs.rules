@@ -101,6 +101,14 @@ Techs
 //Storage Category
 
 //Utilities Category
-
+{
+    ID = sw.resource_collector_compact
+    NameKey = &<../../ships/terran/Utilities/resource_collector_tiny/resource_collector.rules>/Part/NameKey
+    DescriptionKey = &<../../ships/terran/Utilities/resource_collector_tiny/resource_collector.rules>/Part/DescriptionKey
+    Icon = &<../../ships/terran/Utilities/resource_collector_tiny/resource_collector.rules>/Part/EditorIcon
+    EditorGroups = &<../../ships/terran/Utilities/resource_collector_tiny/resource_collector.rules>/Part/EditorGroups
+    PartsUnlocked = [sw.resource_collector_compact]
+    Cost = 500
+}
 //Structure Category
 ]
