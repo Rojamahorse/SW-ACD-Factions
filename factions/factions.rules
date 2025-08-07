@@ -30,8 +30,8 @@ Factions
 					}
 				}
 				BorderColor = [204, 0, 255]
-				MilitaryPlayerIndex = 500
-				CivilianPlayerIndex = 501
+				MilitaryPlayerIndex = 650
+				CivilianPlayerIndex = 651
 			}
 			// Confederacy of Independent Systems
 			{
