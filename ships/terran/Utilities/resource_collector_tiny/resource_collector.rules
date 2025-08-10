@@ -2,19 +2,19 @@ BeamCount = 1
 
 Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 {
-    //IDs
+	//IDs
 	ID = sw.resource_collector_compact // Part IDs must always be in the form of "author_name.part_name". If making your own mod, do *not* use "cosmoteer" as your author name, because it may conflict with future vanilla parts.
 
-    //StringKeys
+	//StringKeys
 	NameKey = "Parts/SWResourceCollectorCompact"
 	IconNameKey = "Parts/SWResourceCollectorCompactIcon"
 	DescriptionKey = "Parts/SWResourceCollectorCompactDesc"
 
-    //Groups&Categories
+	//Groups&Categories
 	TypeCategories = [uses_power, tractor_beam]
 	EditorGroups = ["Storage", "Utilities", "SWTechI"]
 
-    //Resources&Size&Health
+	//Resources&Size&Health
 	Resources
 	[
 		[SW.durasteel, 15]
@@ -24,21 +24,21 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 	Size = [1, 1]
 	MaxHealth = 1200
 
-    //Rects
+	//Rects
 
-    //Selections
+	//Selections
 
-    //PartSpecific
+	//PartSpecific
 	//IsRotateable = false
 	//IgnoreRotationForMirroredSelection = true
 	//ForceManhattanPathInPart = true
 
-    //ReceivableBuffs&ProhibitedBy
+	//ReceivableBuffs&ProhibitedBy
 	ReceivableBuffs : ^/0/ReceivableBuffs []
 
-    //Doors&Etc
+	//Doors&Etc
 
-    //Editor
+	//Editor
 	EditorIcon
 	{
 		Texture
@@ -49,7 +49,7 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 		Size = [32, 32]
 	}
 
-    //Components
+	//Components
 	Components : ^/0/Components
 	{
 
@@ -90,18 +90,18 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 			Invert = true
 		}
 
-		CollectorAndPowerToggle
+		CollectorAndIsOperationalToggle
 		{
-			Type    = MultiToggle
-			Toggles = [IsOperational, CollectorModeToggle]
-			Mode    = All
+			Type	= MultiToggle
+			Toggles = [IsOperational, CollectorBeamModeToggle]
+			Mode	= All
 		}
 
-		TractorAndPowerToggle
+		TractorAndIsOperationalToggle
 		{
-			Type    = MultiToggle
-			Toggles = [IsOperational, TractorModeToggle]
-			Mode    = All
+			Type	= MultiToggle
+			Toggles = [IsOperational, TractorBeamModeToggle]
+			Mode	= All
 		}
 
 		FireModeToggle
@@ -321,167 +321,146 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 		// --- MODE TOGGLES ---
 		TractorType
 		{
-			Type             = UIToggle
-			ToggleID         = "SW.tractor_type"
-			Default          = 0
+			Type			 = UIToggle
+			ToggleID		 = "SW.tractor_type"
+			Default		  = 0
 			AvailableChoices = [0, 1]
 			ToggledOnChoices = [1]
 			AlwaysAllowInBuildMode = true
 			RequiresCommand  = false
 		}
-		CollectorModeToggle
+		CollectorBeamModeToggle
 		{
 			Type   = ModeToggle
 			Mode   = TractorType
 			OnMode = 0
 		}
-		TractorModeToggle
+		TractorBeamModeToggle
 		{
 			Type   = ModeToggle
 			Mode   = TractorType
 			OnMode = 1
 		}
 
-		// --- COLLECTOR TURRET ---
-		CollectorTurret : Turret1
+		TurretLocationProxy
 		{
-		    OperationalToggle = CollectorAndPowerToggle
-		    //ChainedTo       = Turret1
-		    CanBeGivenExplicitTarget = false
-		    ShowTargetButtons       = false
-		    AllowDirectControl      = false
-			AllowRotationToggle = CollectorAndPowerToggle
-		    AutoTargets =
-		    [
-		        { TargetType = CollectNuggets }
-		        { TargetType = MoveCrew }
-		    ]
-		    Emitter = BeamEmitter1
+			Type = ChainableProxy
+			ComponentID = Turret
 		}
 
-		// --- TRACTOR TURRET ---
-		TractorTurret : Turret1
+		InterpolatedTurret // Do not hook any gameplay logic to this! It will cause desyncs! (Graphics is fine :D)
 		{
-		    OperationalToggle = TractorAndPowerToggle
-		    //ChainedTo       = Turret1
-		    CanBeGivenExplicitTarget = true
-		    ShowTargetButtons       = true
-		    AllowDirectControl      = true
-		    AutoTargets             = []
-			AllowRotationToggle = TractorAndPowerToggle
-		    Emitter = TractorBeamEmitter
+			Type = TransformMatch
+			Location = &~/TurretBase/Location
+			MatchTransformOf = TurretLocationProxy
+			MatchRotationSpeed = 180d
+			InterpolateRotation = true
 		}
 
-		// --- EMITTERS ---
-		BeamEmitter1 : &<collector_beam/collector_beam.rules>
+		DummyTurret
 		{
-		    Type            = BeamEmitter
-		    ChainedTo       = CollectorTurret
-			//AttachBeamMediaEffectsTo = InterpolatedTurret
-		    FireTrigger     = CollectorTurret
-		    GetTargetFrom   = CollectorTurret
-		    ResourceStorage = BatteryStorage
-		    ResourcesUsed   = 3
-		    MinResourcesUsed= 1
-		    OperationalToggle = CollectorAndPowerToggle
-		    FriendlyShipLowCollisions = false
-		    ValueOverRampUp           = [0.1, 1]
-		    ResourceUsageScaleOverRampUp = [0.1, 1]
-		    EffectsScaleFactor        = BeamRegulatorProxy
-		    ResourceScaleFactor       = AbsBeamRegulator
-		    ValueScaleFactor          = BeamRegulatorProxy
-		    RevealsShip               = false
+			Type = ToggledComponents
+			Toggle = IsOperational
+			Invert = true
+			Components
+			{
+				Turret
+				{
+					Type = Graphics
+					Location = &~/TurretBase/Location
+					Rotation = -90d
+				}
+			}
 		}
 
-		TractorBeamEmitter : &<tractor_beam/tractor_beam.rules>
+		CollectorTurret
 		{
-		    Type            = BeamEmitter
-		    ChainedTo       = TractorTurret
-			//AttachBeamMediaEffectsTo = InterpolatedTurret
-		    FireTrigger     = TractorTurret
-		    GetTargetFrom   = TractorTurret
-		    ResourceStorage = BatteryStorage
-		    ResourcesUsed   = 3
-		    MinResourcesUsed= 1
-		    OperationalToggle = TractorAndPowerToggle
-		    FriendlyShipLowCollisions = false
-		    ValueOverRampUp           = [0.1, 1]
-		    ResourceUsageScaleOverRampUp = [0.1, 1]
-		    EffectsScaleFactor        = BeamRegulatorProxy
-		    ResourceScaleFactor       = AbsBeamRegulator
-		    ValueScaleFactor          = BeamRegulatorProxy
-		    RevealsShip               = false
+			Type = ToggledComponents
+			Toggle = CollectorAndIsOperationalToggle
+			Components
+			{
+				Turret : &~/TurretBase
+				{
+					OperationalToggle			= CollectorAndIsOperationalToggle
+					CanBeGivenExplicitTarget	= false
+					ShowTargetButtons			= false
+					AllowDirectControl			= false
+					AllowRotationToggle 		= CollectorAndIsOperationalToggle
+					AutoTargets					= [{
+							TargetType			= CollectNuggets }]
+					Emitter = CollectorBeamEmitter
+				}
+
+				// --- EMITTERS ---
+				CollectorBeamEmitter : &<collector_beam/collector_beam.rules>
+				{
+					Type							= BeamEmitter
+					ChainedTo						= Turret
+					FireTrigger						= Turret
+					GetTargetFrom   				= Turret
+					ResourceStorage 				= BatteryStorage
+					ResourcesUsed   				= 3
+					MinResourcesUsed				= 1
+					OperationalToggle				= CollectorAndIsOperationalToggle
+					RevealsShip						= false
+				}
+			}
 		}
-    	EmitterProxy
-    	{
-    	    Type        = BeamEmitterProxy
-    	    ComponentID = TractorBeamEmitter
-    	}
-		// (Optional) Manual target reticle for tractor
-		TractorTargeter
+
+		TractorTurret
 		{
-		    Type       = UITargeter
-		    TargeterID = tractor_beam
-		    Weapon     = TractorTurret
+			Type = ToggledComponents
+			Toggle = TractorAndIsOperationalToggle
+			Components
+			{
+				Turret : &~/TurretBase
+				{
+					OperationalToggle			= TractorAndIsOperationalToggle
+					CanBeGivenExplicitTarget	= true
+					ShowTargetButtons			= true
+					AllowDirectControl			= true
+					AutoTargets					= []
+					AllowRotationToggle			= TractorAndIsOperationalToggle
+					Emitter						= TractorBeamEmitter
+				}
+
+				TractorBeamEmitter : &<tractor_beam/tractor_beam.rules>
+				{
+					Type							= BeamEmitter
+					ChainedTo						= Turret
+					FireTrigger						= Turret
+					GetTargetFrom   				= Turret
+					ResourceStorage 				= BatteryStorage
+					ResourcesUsed   				= 3
+					MinResourcesUsed				= 1
+					OperationalToggle 				= TractorAndIsOperationalToggle
+					FriendlyShipLowCollisions 		= false
+					ValueOverRampUp					= [0.1, 1]
+					ResourceUsageScaleOverRampUp	= [0.1, 1]
+					EffectsScaleFactor				= BeamRegulatorProxy
+					ResourceScaleFactor				= AbsBeamRegulator
+					ValueScaleFactor				= BeamRegulatorProxy
+					RevealsShip						= false
+				}
+				// (Optional) Manual target reticle for tractor
+				TractorTargeter
+				{
+					Type	   = UITargeter
+					TargeterID = tractor_beam
+					Weapon	 = Turret
+				}
+			}
 		}
-
-
-		Turret1
+		EmitterProxy
 		{
-			Type = TurretWeapon
-			OperationalToggle = IsOperational
-			Location = [0.5, 0.5] //Relative to upper-left corner of unrotated part.
-			Rotation = -90d // Relative to unrotated part.
-			FireInterval = &../BeamEmitter1/Duration
-			FiringArc = 360d
-			RotateSpeed = 180d
-			FireThresholdAngle = 0.25d
-			AIFirepowerRating = 0
-			IncludeInFirepowerEstimation = false
-			CanBeGivenExplicitTarget = false
-			AllowDirectControl = false
-			ShowTargetButtons = false
-			IgnoreFriendlyShipLowLOSChecks = true
-			IgnoreFriendlyShipHighLOSChecks = true
-			IgnoreJunkLOSChecks = true
-			PreventOverlappingTargets = true
-			TargetChecksPerSearch = 10
-			ReturnToCenter = false
-			ToggleOnMode = HasTarget
-			//Emitter = EmitterProxy
-			//FirePermissionToggle = FirePermission
-			AutoTargets             = []
-
-			//AutoTargets
-			//[
-			//	{
-			//		TargetType = CollectNuggets
-			//		//Toggle = AutoTargetToggle //Tractor Beam
-			//	}
-			//	{
-			//		TargetType = MoveCrew
-			//	}
-			//]
-		
-		//TractorBeam Recticle Sprite Start
-			//OverrideReticleSprite
-			//{
-			//	Texture
-			//	{
-			//		File = "./Data/gui/game/parts/tractor_beam_reticle.png"
-			//		SampleMode = Linear
-			//		MipLevels = max
-			//	}
-			//	Size = [2, 2]
-			//	VertexColor = [102, 102, 255, 255]
-			//}
-		//TractorBeam Recticle Sprite End
+			Type		= BeamEmitterProxy
+			ComponentID = TractorBeamEmitter
 		}
 
 		TurretCollider
 		{
 			Type = CircleCollider
-			Location = &../Turret1/Location
+			ChainedTo = TurretLocationProxy
 			Radius = 1.5
 			//IsHigh = true
 		}
@@ -511,7 +490,7 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 				{
 					Type = BeamRegulator
 					Emitter = EmitterProxy
-					BeamLengthRange = [-(&~/Part/Components/TractorBeamEmitter/Range), &~/Part/Components/TractorBeamEmitter/Range]
+					BeamLengthRange = [-(&~/Part/Components/TractorTurret/Components/TractorBeamEmitter/Range), &~/Part/Components/TractorTurret/Components/TractorBeamEmitter/Range]
 					RelativeToInitHitLength = true
 					OutputValueRange = [-1, 1]
 				}
@@ -556,7 +535,7 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 				{
 					Type = BeamRegulator
 					Emitter = EmitterProxy
-					BeamLengthRange = [0, &~/Part/Components/TractorBeamEmitter/Range]
+					BeamLengthRange = [0, &~/Part/Components/TractorTurret/Components/TractorBeamEmitter/Range]
 					OutputValueRange = [-1, -.1]
 				}
 			}
@@ -576,20 +555,13 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 		}
 		//TractorBeam Mode Toggles End
 
-		TurretGraphics1 : TurretGraphics0
-		{
-			ChainedTo = TractorTurret //InterpolatedTurret
-			OperationalToggle = TractorAndPowerToggle
-			DoodadToggle = TractorAndPowerToggle
-		}
-
-		TurretGraphics0
+		TurretGraphics
 		{
 			Type = Graphics
-			ChainedTo = CollectorTurret //InterpolatedTurret
+			ChainedTo = InterpolatedTurret
 			Rotation = 90d
-			OperationalToggle = CollectorModeToggle
-			DoodadToggle = CollectorAndPowerToggle
+			OperationalToggle = IsOperational
+			DoodadToggle = &OperationalToggle
 			ShowToggledDoodadsWhenNotOperational = false
 
 			ToggleOnDoodad
@@ -744,9 +716,15 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 		{
 			Type = IndicatorSprites
 			Location = [0.5, 0.5]
-			//Layer = "indicators" //Removal for 0.27.0_rc2_steam 
 			Indicators
 			[
+				// Scorched
+				{
+					Toggle = ScorchedToggle
+					AtlasSprite = &/INDICATORS/Scorched
+					HidesIndicators = [1,2]
+				}
+
 				// Turned off.
 				{
 					Toggle = PowerToggle
@@ -755,13 +733,13 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 						File = &/INDICATORS/PowerOff
 						Size = [1, 1]
 					}
-					HidesIndicators = [1]
+					HidesIndicators = [2]
 				}
 
 				// Out of power.
 				{
 					Toggle = BatteryStorage
-					Delay = &~/Part/Components/Turret1/FireInterval
+					Delay = (1 / (&/Simulation/PhysicsUpdatesPerSecond))
 					AtlasSprite
 					{
 						File = &/INDICATORS/NoPower
@@ -779,7 +757,7 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 		}
 	}
 
-    //Stats
+	//Stats
 	Stats
 	{
 		PowerCapacity = (&~/Part/Components/BatteryStorage/MaxResources) / 1000
@@ -792,14 +770,55 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 			Stats
 			{
 				//CrewRequired = (&~/Part/Components/PartCrew1/Crew)
-				Range = &~/Part/Components/BeamEmitter1/Range
-				Arc = deg(&~/Part/Components/Turret1/FiringArc)
-				TurretSpeed = deg(&~/Part/Components/Turret1/RotateSpeed)
-				PowerPerShot = (&~/Part/Components/BeamEmitter1/ResourcesUsed) / 1000
-				PowerUsageContinuous = (&PowerPerShot) / (&~/Part/Components/Turret1/FireInterval)
+				Range = &~/Part/Components/CollectorTurret/Components/CollectorBeamEmitter/Range
+				Arc = deg(360d)
+				TurretSpeed = deg(180d)
+				PowerPerShot = (&~/Part/Components/CollectorTurret/Components/CollectorBeamEmitter/ResourcesUsed) / 1000
+				PowerUsageContinuous = (&PowerPerShot) / (1 / (&/Simulation/PhysicsUpdatesPerSecond))
 			}
 		}
 	]
-
 }
 
+		TurretBase
+		{
+			Type = TurretWeapon
+			OperationalToggle = IsOperational
+			Location = [0.5, 0.5] //Relative to upper-left corner of unrotated part.
+			Rotation = -90d // Relative to unrotated part.
+			FireInterval = (1 / (&/Simulation/PhysicsUpdatesPerSecond))
+			FiringArc = 360d
+			RotateSpeed = 180d
+			FireThresholdAngle = 0.25d
+			AIFirepowerRating = 0
+			IncludeInFirepowerEstimation = false
+			CanBeGivenExplicitTarget = false
+			AllowDirectControl = false
+			ShowTargetButtons = false
+			IgnoreFriendlyShipLowLOSChecks = true
+			IgnoreFriendlyShipHighLOSChecks = true
+			IgnoreJunkLOSChecks = true
+			PreventOverlappingTargets = true
+			TargetChecksPerSearch = 10
+			ReturnToCenter = false
+			ToggleOnMode = HasTarget
+			//Emitter = EmitterProxy
+			//FirePermissionToggle = FirePermission
+			AutoTargets			 = []
+
+			BlueprintArcSprite
+			{
+				Texture = &/INDICATORS/WeaponArc
+				Size = [0, 1.5]
+				Color = [255, 0, 0, 63]
+			}
+			BlueprintArcRadius = 10
+			BlueprintArcSpriteSegments = 64
+
+			CoverageSectorArc
+			{
+				Texture = &/INDICATORS/VerticalGradient
+				VertexColor = [255, 255, 255, 51]
+				QuadCount = 64
+			}
+		}
