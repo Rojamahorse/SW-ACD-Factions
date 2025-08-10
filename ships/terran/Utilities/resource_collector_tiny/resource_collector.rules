@@ -1,6 +1,5 @@
 BeamCount = 1
 
-
 Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 {
     //IDs
@@ -57,8 +56,14 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 		IsOperational
 		{
 			Type = MultiToggle
-			//Toggles = [IsBeam1Operational, IsBeam2Operational, IsBeam3Operational, IsBeam4Operational]
-			Toggles = [PowerToggle, BatteryStorage]
+			Toggles = [PowerToggle, BatteryStorage, ScorchedToggle]
+			Mode = All
+		}
+
+		CommandConsumptionToggle
+		{
+			Type = MultiToggle
+			Toggles = [PowerToggle, ScorchedToggle]
 			Mode = All
 		}
 
@@ -77,22 +82,27 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 			CommandPoints = 1
 		}
 
+		ScorchedToggle
+		{
+			Type = StatusToggle
+			StatusType = cosmoteer.scorched
+			MinStatusValue = 1
+			Invert = true
+		}
+
 		CollectorAndPowerToggle
 		{
-		    Type    = MultiToggle
-		    Toggles = [IsOperational, CollectorOperationalToggle]
-		    Mode    = All
+			Type    = MultiToggle
+			Toggles = [IsOperational, CollectorModeToggle]
+			Mode    = All
 		}
 
 		TractorAndPowerToggle
 		{
-		    Type    = MultiToggle
-		    Toggles = [IsOperational, TractorOperationalToggle]
-		    Mode    = All
+			Type    = MultiToggle
+			Toggles = [IsOperational, TractorModeToggle]
+			Mode    = All
 		}
-
-
-//Tractor Beam Fire Modes Starts Here
 
 		FireModeToggle
 		{
@@ -114,9 +124,6 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 			OnMode = 2
 		}
 
-
-//Tractor Beam Ends Here
-
 		BatteryStorage
 		{
 			Type = ResourceStorage
@@ -129,10 +136,9 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 			Type = ResourceConsumer
 			ResourceType = battery
 			Storage = BatteryStorage
-			DefaultPriority = &/PRIORITIES/Factory_Supply
-			//DefaultPriority = &/PRIORITIES/ResourceCollector_Supply
+			DefaultPriority = &/PRIORITIES/PriorityUtility_Supply
 			ResupplyThreshold = 500
-			OperationalToggle = PowerToggle
+			OperationalToggle = CommandConsumptionToggle
 		}
 
 		Graphics
@@ -272,17 +278,14 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 		}
 		Console2_Graphics : Console1_Graphics
 		{
-			//OperationalToggle = IsBeam2Operational
 			Rotation = 90d
 		}
 		Console3_Graphics : Console1_Graphics
 		{
-			//OperationalToggle = IsBeam3Operational
 			Rotation = 270d
 		}
 		Console4_Graphics : Console1_Graphics
 		{
-			//OperationalToggle = IsBeam4Operational
 			Rotation = 180d
 		}
 		BatterySprites
@@ -318,25 +321,25 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 		// --- MODE TOGGLES ---
 		TractorType
 		{
-		    Type             = UIToggle
-		    ToggleID         = "SW.tractor_type"
-		    Default          = 0
-		    AvailableChoices = [0, 1]
-		    ToggledOnChoices = [1]
-		    AlwaysAllowInBuildMode = true
-		    RequiresCommand  = false
+			Type             = UIToggle
+			ToggleID         = "SW.tractor_type"
+			Default          = 0
+			AvailableChoices = [0, 1]
+			ToggledOnChoices = [1]
+			AlwaysAllowInBuildMode = true
+			RequiresCommand  = false
 		}
-		CollectorOperationalToggle
+		CollectorModeToggle
 		{
-		    Type   = ModeToggle
-		    Mode   = TractorType
-		    OnMode = 0
+			Type   = ModeToggle
+			Mode   = TractorType
+			OnMode = 0
 		}
-		TractorOperationalToggle
+		TractorModeToggle
 		{
-		    Type   = ModeToggle
-		    Mode   = TractorType
-		    OnMode = 1
+			Type   = ModeToggle
+			Mode   = TractorType
+			OnMode = 1
 		}
 
 		// --- COLLECTOR TURRET ---
@@ -447,7 +450,7 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 			ToggleOnMode = HasTarget
 			//Emitter = EmitterProxy
 			//FirePermissionToggle = FirePermission
-		    AutoTargets             = []
+			AutoTargets             = []
 
 			//AutoTargets
 			//[
@@ -473,25 +476,7 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 			//	VertexColor = [102, 102, 255, 255]
 			//}
 		//TractorBeam Recticle Sprite End
-	
-		
 		}
-
-//		FirePermission
-//		{
-//			Type = MultiToggle
-//			Toggles = [FireModeToggle, { Toggle=Overclock_OverloadToggle; Invert=true; }]
-//			Mode = All
-//		}
-
-//		InterpolatedTurret
-//		{
-//		    Type                = TransformMatch
-//		    Location            = &../Turret1/Location
-//		    MatchTransformOf    = Turret1
-//		    MatchRotationSpeed  = &../Turret1/RotateSpeed
-//		    InterpolateRotation = true
-//		}
 
 		TurretCollider
 		{
@@ -597,19 +582,13 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 			OperationalToggle = TractorAndPowerToggle
 			DoodadToggle = TractorAndPowerToggle
 		}
-		//TurretGraphics2 : TurretGraphics0
-		//{
-		//	ChainedTo = TractorTurret //InterpolatedTurret
-		//	OperationalToggle = TractorAndPowerToggle
-		//	DoodadToggle = TractorAndPowerToggle
-		//}
 
 		TurretGraphics0
 		{
 			Type = Graphics
 			ChainedTo = CollectorTurret //InterpolatedTurret
 			Rotation = 90d
-			OperationalToggle = CollectorOperationalToggle
+			OperationalToggle = CollectorModeToggle
 			DoodadToggle = CollectorAndPowerToggle
 			ShowToggledDoodadsWhenNotOperational = false
 
