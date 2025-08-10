@@ -124,6 +124,15 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 			OnMode = 2
 		}
 
+		ColorPicker
+		{
+			Type = UIColor
+			ColorID = "SW_Part_Color"
+			Default = [83, 122, 255, 255]//.85 saturation
+			AlwaysAllowInBuildMode = false
+			RequiresCommand = true
+		}
+
 		BatteryStorage
 		{
 			Type = ResourceStorage
@@ -217,25 +226,25 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 					}
 				]
 			}
-			OperationalRoofDoodad
-			{
-				Layer = "roof_doodads"
-				DamageLevels
-				[
-					{
-						File = "roof_glows.png"
-						Size = [1, 1]
-					}
-					{
-						File = "roof_glows_33.png"
-						Size = [1, 1]
-					}
-					{
-						File = "roof_glows_66.png"
-						Size = [1, 1]
-					}
-				]
-			}
+//			OperationalRoofDoodad
+//			{
+//				Layer = "roof_doodads"
+//				DamageLevels
+//				[
+//					{
+//						File = "roof_glows.png"
+//						Size = [1, 1]
+//					}
+//					{
+//						File = "roof_glows_33.png"
+//						Size = [1, 1]
+//					}
+//					{
+//						File = "roof_glows_66.png"
+//						Size = [1, 1]
+//					}
+//				]
+//			}
 			OperationalRoofLighting
 			{
 				Layer = "roof_lights_fancy"
@@ -561,10 +570,9 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 			ChainedTo = InterpolatedTurret
 			Rotation = 90d
 			OperationalToggle = IsOperational
-			DoodadToggle = &OperationalToggle
-			ShowToggledDoodadsWhenNotOperational = false
+			//GetColorFrom = ColorPicker
 
-			ToggleOnDoodad
+			OperationalDoodad
 			{
 				Layer = "roof_doodads"
 				DamageLevels
@@ -636,31 +644,6 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 						]
 						Size = [1, 1]
 						AnimationInterval = 0.0725
-						//Offset = [0, -6/64]
-					}
-				]
-			}
-			ToggleOffDoodad
-			{
-				Layer = "roof_doodads"
-				DamageLevels
-				[
-					{
-						File = "turret_on.png"
-						NormalsFile = "turret_normals_on.png"
-						Size = [1, 1]
-						//Offset = [0, -6/64]
-					}
-					{
-						File = "turret_on_33.png"
-						NormalsFile = "turret_normals_on_33.png"
-						Size = [1, 1]
-						//Offset = [0, -6/64]
-					}
-					{
-						File = "turret_on_66.png"
-						NormalsFile = "turret_normals_on_66.png"
-						Size = [1, 1]
 						//Offset = [0, -6/64]
 					}
 				]
