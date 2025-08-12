@@ -1,3 +1,5 @@
+// Skipper Version - Better but crashes due to duplicate IDs
+
 BeamCount = 1
 
 Part : &<./Data/ships/terran/base_part_terran.rules>/Part
@@ -351,39 +353,20 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 			OnMode = 1
 		}
 
-	CollectorTurretLocationProxy
-	{
-		Type        = ChainableProxy
-		ComponentID = CollectorTurretWeapon
-		Toggle      = CollectorAndIsOperationalToggle
-	}
+		TurretLocationProxy
+		{
+			Type = ChainableProxy
+			ComponentID = Turret
+		}
 
-	TractorTurretLocationProxy
-	{
-		Type        = ChainableProxy
-		ComponentID = TractorTurretWeapon
-		Toggle      = TractorAndIsOperationalToggle
-	}
-
-	InterpolatedCollectorTurret
-	{
-		Type                = TransformMatch
-		Location            = &~/TurretBase/Location
-		MatchTransformOf    = CollectorTurretLocationProxy
-		MatchRotationSpeed  = 180d
-		InterpolateRotation = true
-		Toggle              = CollectorAndIsOperationalToggle
-	}
-
-	InterpolatedTractorTurret
-	{
-		Type                = TransformMatch
-		Location            = &~/TurretBase/Location
-		MatchTransformOf    = TractorTurretLocationProxy
-		MatchRotationSpeed  = 180d
-		InterpolateRotation = true
-		Toggle              = TractorAndIsOperationalToggle
-	}
+		InterpolatedTurret // Do not hook any gameplay logic to this! It will cause desyncs! (Graphics is fine :D)
+		{
+			Type = TransformMatch
+			Location = &~/TurretBase/Location
+			MatchTransformOf = TurretLocationProxy
+			MatchRotationSpeed = 180d
+			InterpolateRotation = true
+		}
 
 		DummyTurret
 		{
@@ -392,7 +375,7 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 			Invert = true
 			Components
 			{
-				DummyTurretGraphics
+				Turret
 				{
 					Type = Graphics
 					Location = &~/TurretBase/Location
@@ -407,7 +390,7 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 			Toggle = CollectorAndIsOperationalToggle
 			Components
 			{
-				CollectorTurretWeapon : &~/TurretBase
+				Turret : &~/TurretBase
 				{
 					OperationalToggle			= CollectorAndIsOperationalToggle
 					CanBeGivenExplicitTarget	= false
@@ -423,9 +406,9 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 				CollectorBeamEmitter : &<collector_beam/collector_beam.rules>
 				{
 					Type							= BeamEmitter
-					ChainedTo						= CollectorTurretWeapon
-					FireTrigger						= CollectorTurretWeapon
-					GetTargetFrom   				= CollectorTurretWeapon
+					ChainedTo						= Turret
+					FireTrigger						= Turret
+					GetTargetFrom   				= Turret
 					ResourceStorage 				= BatteryStorage
 					ResourcesUsed   				= 3
 					MinResourcesUsed				= 1
@@ -441,7 +424,7 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 			Toggle = TractorAndIsOperationalToggle
 			Components
 			{
-				TractorTurretWeapon : &~/TurretBase
+				Turret : &~/TurretBase
 				{
 					OperationalToggle			= TractorAndIsOperationalToggle
 					CanBeGivenExplicitTarget	= true
@@ -455,9 +438,9 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 				TractorBeamEmitter : &<tractor_beam/tractor_beam.rules>
 				{
 					Type							= BeamEmitter
-					ChainedTo						= TractorTurretWeapon
-					FireTrigger						= TractorTurretWeapon
-					GetTargetFrom   				= TractorTurretWeapon
+					ChainedTo						= Turret
+					FireTrigger						= Turret
+					GetTargetFrom   				= Turret
 					ResourceStorage 				= BatteryStorage
 					ResourcesUsed   				= 3
 					MinResourcesUsed				= 1
@@ -473,9 +456,9 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 				// (Optional) Manual target reticle for tractor
 				TractorTargeter
 				{
-					Type	   	= UITargeter
-					TargeterID 	= tractor_beam
-					Weapon	 	= TractorTurretWeapon
+					Type	   = UITargeter
+					TargeterID = tractor_beam
+					Weapon	 = Turret
 				}
 			}
 		}
@@ -484,13 +467,14 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 			Type		= BeamEmitterProxy
 			ComponentID = TractorBeamEmitter
 		}
-		//TurretCollider
-		//{
-		//	Type = CircleCollider
-		//	ChainedTo = TurretLocationProxy
-		//	Radius = 1.5
-		//	//IsHigh = true
-		//}
+
+		TurretCollider
+		{
+			Type = CircleCollider
+			ChainedTo = TurretLocationProxy
+			Radius = 1.5
+			//IsHigh = true
+		}
 
 		//TractorBeam Mode Toggles Start
 		TractorModeToggle
@@ -581,23 +565,14 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 			Abs = true
 		}
 		//TractorBeam Mode Toggles End
-		TractorTurretGraphics : CollectorTurretGraphics
-		{
-			ChainedTo 			= InterpolatedTractorTurret
-			DoodadToggle        = TractorAndIsOperationalToggle
-			//DoodadToggle		= TractorBeamEmitter
-			ShowToggledDoodadsWhenNotOperational = false		
-		}
 
-		CollectorTurretGraphics
+		TurretGraphics
 		{
 			Type = Graphics
-			ChainedTo 			= InterpolatedCollectorTurret
-			Rotation 			= 90d
-			OperationalToggle 	= IsOperational
-			DoodadToggle 		= CollectorAndIsOperationalToggle
-			ShowToggledDoodadsWhenNotOperational = false		
-			//GetColorFrom 		= ColorPicker
+			ChainedTo = InterpolatedTurret
+			Rotation = 90d
+			OperationalToggle = IsOperational
+			//GetColorFrom = ColorPicker
 
 			OperationalDoodad
 			{
