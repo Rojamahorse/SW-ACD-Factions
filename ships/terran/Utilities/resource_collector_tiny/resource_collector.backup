@@ -372,6 +372,8 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 		{
 			Type = ToggledComponents
 			Toggle = IsOperational
+			IncludeInBlueprints = true
+			IncludeWhenUnderConstruction = true
 			Invert = true
 			Components
 			{
@@ -388,9 +390,11 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 		{
 			Type = ToggledComponents
 			Toggle = CollectorAndIsOperationalToggle
+			IncludeInBlueprints = false
+			IncludeWhenUnderConstruction = false
 			Components
 			{
-				Turret : &~/TurretBase
+				CollectorTurretWeapon : &~/TurretBase
 				{
 					OperationalToggle			= CollectorAndIsOperationalToggle
 					CanBeGivenExplicitTarget	= false
@@ -406,14 +410,27 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 				CollectorBeamEmitter : &<collector_beam/collector_beam.rules>
 				{
 					Type							= BeamEmitter
-					ChainedTo						= Turret
-					FireTrigger						= Turret
-					GetTargetFrom   				= Turret
-					ResourceStorage 				= BatteryStorage
+					ChainedTo						= CollectorTurretWeapon
+					FireTrigger						= CollectorTurretWeapon
+					GetTargetFrom   				= CollectorTurretWeapon
+					ResourceStorage 				= CollectorBeamBatteryStorage
 					ResourcesUsed   				= 3
 					MinResourcesUsed				= 1
 					OperationalToggle				= CollectorAndIsOperationalToggle
 					RevealsShip						= false
+				}
+
+				CollectorBeamBatteryStorage
+				{
+					Type = ResourceStorageProxy
+					ResourceType = battery
+					ComponentID = BatteryStorage
+				}
+
+				Turret
+				{
+					Type = Graphics
+					ChainedTo = CollectorTurretWeapon
 				}
 			}
 		}
@@ -422,9 +439,11 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 		{
 			Type = ToggledComponents
 			Toggle = TractorAndIsOperationalToggle
+			IncludeInBlueprints = false
+			IncludeWhenUnderConstruction = false
 			Components
 			{
-				Turret : &~/TurretBase
+				TractorTurretWeapon : &~/TurretBase
 				{
 					OperationalToggle			= TractorAndIsOperationalToggle
 					CanBeGivenExplicitTarget	= true
@@ -438,10 +457,10 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 				TractorBeamEmitter : &<tractor_beam/tractor_beam.rules>
 				{
 					Type							= BeamEmitter
-					ChainedTo						= Turret
-					FireTrigger						= Turret
-					GetTargetFrom   				= Turret
-					ResourceStorage 				= BatteryStorage
+					ChainedTo						= TractorTurretWeapon
+					FireTrigger						= TractorTurretWeapon
+					GetTargetFrom   				= TractorTurretWeapon
+					ResourceStorage 				= TractorBeamBatteryStorage
 					ResourcesUsed   				= 3
 					MinResourcesUsed				= 1
 					OperationalToggle 				= TractorAndIsOperationalToggle
@@ -453,118 +472,123 @@ Part : &<./Data/ships/terran/base_part_terran.rules>/Part
 					ValueScaleFactor				= BeamRegulatorProxy
 					RevealsShip						= false
 				}
+
+				TractorBeamBatteryStorage
+				{
+					Type = ResourceStorageProxy
+					ResourceType = battery
+					ComponentID = BatteryStorage
+				}
+
+				Turret
+				{
+					Type = Graphics
+					ChainedTo = TractorTurretWeapon
+				}
 				// (Optional) Manual target reticle for tractor
 				TractorTargeter
 				{
 					Type	   = UITargeter
 					TargeterID = tractor_beam
-					Weapon	 = Turret
+					Weapon	 = TractorTurretWeapon
 				}
-			}
-		}
-		EmitterProxy
-		{
-			Type		= BeamEmitterProxy
-			ComponentID = TractorBeamEmitter
-		}
-
-		TurretCollider
-		{
-			Type = CircleCollider
-			ChainedTo = TurretLocationProxy
-			Radius = 1.5
-			//IsHigh = true
-		}
-
-		//TractorBeam Mode Toggles Start
-		TractorModeToggle
-		{
-			Type = UIToggle
-			ToggleID = "tractor_mode"
-			Default = 0
-			ToggledOnChoices = [0, 1]
-		}
-
-		TractorModeTetherToggle
-		{
-			Type = ModeToggle
-			Mode = TractorModeToggle
-			OnMode = 0
-		}
-		TractorModeTetherComponents
-		{
-			Type = ToggledComponents
-			Toggle = TractorModeTetherToggle
-			Components
-			{
-				BeamRegulator
+				EmitterProxy
 				{
-					Type = BeamRegulator
-					Emitter = EmitterProxy
-					BeamLengthRange = [-(&~/Part/Components/TractorTurret/Components/TractorBeamEmitter/Range), &~/Part/Components/TractorTurret/Components/TractorBeamEmitter/Range]
-					RelativeToInitHitLength = true
-					OutputValueRange = [-1, 1]
+					Type		= BeamEmitterProxy
+					ComponentID = TractorBeamEmitter
 				}
-			}
-		}
 
-		TractorModePullToggle
-		{
-			Type = ModeToggle
-			Mode = TractorModeToggle
-			OnMode = 1
-		}
-		TractorModePullComponents
-		{
-			Type = ToggledComponents
-			Toggle = TractorModePullToggle
-			Components
-			{
-				BeamRegulator
+				//TractorBeam Mode Toggles Start
+				TractorModeToggle
 				{
-					Type = BeamRegulator
-					Emitter = EmitterProxy
-					BeamLengthRange = [0, 600]
-					OutputValueRange = [.1, 1]
+					Type = UIToggle
+					ToggleID = "tractor_mode"
+					Default = 0
+					ToggledOnChoices = [0, 1]
 				}
-			}
-		}
 
-		TractorModePushToggle
-		{
-			Type = ModeToggle
-			Mode = TractorModeToggle
-			OnMode = 2
-		}
-		TractorModePushComponents
-		{
-			Type = ToggledComponents
-			Toggle = TractorModePushToggle
-			Components
-			{
-				BeamRegulator
+				TractorModeTetherToggle
 				{
-					Type = BeamRegulator
-					Emitter = EmitterProxy
-					BeamLengthRange = [0, &~/Part/Components/TractorTurret/Components/TractorBeamEmitter/Range]
-					OutputValueRange = [-1, -.1]
+					Type = ModeToggle
+					Mode = TractorModeToggle
+					OnMode = 0
 				}
+				TractorModeTetherComponents
+				{
+					Type = ToggledComponents
+					Toggle = TractorModeTetherToggle
+					Components
+					{
+						BeamRegulator
+						{
+							Type = BeamRegulator
+							Emitter = EmitterProxy
+							BeamLengthRange = [-(&~/Part/Components/TractorTurret/Components/TractorBeamEmitter/Range), &~/Part/Components/TractorTurret/Components/TractorBeamEmitter/Range]
+							RelativeToInitHitLength = true
+							OutputValueRange = [-1, 1]
+						}
+					}
+				}
+
+				TractorModePullToggle
+				{
+					Type = ModeToggle
+					Mode = TractorModeToggle
+					OnMode = 1
+				}
+				TractorModePullComponents
+				{
+					Type = ToggledComponents
+					Toggle = TractorModePullToggle
+					Components
+					{
+						BeamRegulator
+						{
+							Type = BeamRegulator
+							Emitter = EmitterProxy
+							BeamLengthRange = [0, 600]
+							OutputValueRange = [.1, 1]
+						}
+					}
+				}
+
+				TractorModePushToggle
+				{
+					Type = ModeToggle
+					Mode = TractorModeToggle
+					OnMode = 2
+				}
+				TractorModePushComponents
+				{
+					Type = ToggledComponents
+					Toggle = TractorModePushToggle
+					Components
+					{
+						BeamRegulator
+						{
+							Type = BeamRegulator
+							Emitter = EmitterProxy
+							BeamLengthRange = [0, &~/Part/Components/TractorTurret/Components/TractorBeamEmitter/Range]
+							OutputValueRange = [-1, -.1]
+						}
+					}
+				}
+
+				BeamRegulatorProxy
+				{
+					Type = ValueProxy
+					ComponentID = BeamRegulator
+				}
+				AbsBeamRegulator
+				{
+					Type = MultiValue
+					Values = [BeamRegulatorProxy]
+					Mode = Add
+					Abs = true
+				}
+				//TractorBeam Mode Toggles End
 			}
 		}
-
-		BeamRegulatorProxy
-		{
-			Type = ValueProxy
-			ComponentID = BeamRegulator
-		}
-		AbsBeamRegulator
-		{
-			Type = MultiValue
-			Values = [BeamRegulatorProxy]
-			Mode = Add
-			Abs = true
-		}
-		//TractorBeam Mode Toggles End
 
 		TurretGraphics
 		{
