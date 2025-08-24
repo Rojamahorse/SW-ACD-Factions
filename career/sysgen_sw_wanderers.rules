@@ -37,6 +37,7 @@ SubSpawners : &<.Data/modes/career/sysgen_wanderers.rules>/SubSpawners
 		Count = [14, 16]
 		Distance = [6000, 18000]
 		MinDistanceFromTags = [[station, 500]]
+		MinDistanceFromNebulas = [[ion_storm, 500]]
 		SuppressLocationAssertions = true
 		Allegiance = FactionMilitary
 		FamePerTier = &/TIER_TABLES/StandardFamePerTier
@@ -52,7 +53,7 @@ SubSpawners : &<.Data/modes/career/sysgen_wanderers.rules>/SubSpawners
 		{
 			Type = Wanderer
 			PatrolRadius = &../Distance/1
-			PatrolAroundWorldOrigin = true
+			PatrolOrigin = [0, 0]
 			StasisSpeed = 100
 		}
 	}

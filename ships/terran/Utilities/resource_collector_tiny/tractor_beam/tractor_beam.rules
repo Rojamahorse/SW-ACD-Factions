@@ -106,7 +106,7 @@ BeamMediaEffects
 
 	: /BASE_SOUNDS/AudioExterior
 	{
-		Sound = "./Data/shots/tractor_beam/tractor_beam_emit.wav"
+		Sound = "tractor_beam_emit.wav"
 		Volume = 50%
 		Speed = 100%
 		RampUpTime = .25

@@ -56,16 +56,17 @@ Components
 			MediaEffects
 			[
 			
-			&/SW_PARTICLES/Shot/Laser/Hit/Med/Green	//&<./Data/shots/laser_bolt_small/particles/laser_bolt_small_hit.rules>
-			&/SW_PARTICLES/Shot/Laser/Flash/Med/Green	//&<./Data/shots/laser_bolt_small/particles/laser_bolt_small_flash.rules>
-			&/SW_PARTICLES/Shot/Laser/Sparks/Med/Green	//&<./Data/shots/laser_bolt_small/particles/laser_bolt_small_sparks.rules>
+				&/SW_PARTICLES/Shot/Laser/Hit/Med/Green	//&<./Data/shots/laser_bolt_small/particles/laser_bolt_small_hit.rules>
+				&/SW_PARTICLES/Shot/Laser/Flash/Med/Green	//&<./Data/shots/laser_bolt_small/particles/laser_bolt_small_flash.rules>
+				&/SW_PARTICLES/Shot/Laser/Sparks/Med/Green	//&<./Data/shots/laser_bolt_small/particles/laser_bolt_small_sparks.rules>
 
-				: /BASE_SOUNDS/AudioExterior
-				{
-					Sound = "./Data/shots/laser_bolt_small/laser_bolt_small_hit.wav"
-					Volume = 0.4
-					SpeedVariation = 0.4
-				}
+				&/SW_SOUNDS/SmallLaserHit
+				//: /BASE_SOUNDS/AudioExterior
+				//{
+				//	Sound = "./Data/shots/laser_bolt_small/laser_bolt_small_hit.wav"
+				//	Volume = 0.4
+				//	SpeedVariation = 0.4
+				//}
 				: /BASE_SHAKE
 				{
 					ShakeAmount = .01

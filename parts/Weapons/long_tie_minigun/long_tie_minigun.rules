@@ -195,13 +195,15 @@ Part : &<../tie_minigun/tie_minigun.rules>/Part
 				&<../tie_minigun/particles/minigun_shoot.rules>
 				&<../tie_minigun/particles/minigun_flash.rules>
 
-				: /BASE_SOUNDS/AudioExterior
-				{
-					Sound =  "./Data/ships/terran/laser_blaster_small/shoot.wav"
-					Volume = .6
-					SpeedVariation = .25
-					MaxConcurrent = 10
-				}
+				&/SW_SOUNDS/SmallLaserFire
+
+				//: /BASE_SOUNDS/AudioExterior
+				//{
+				//	Sound =  "./Data/ships/terran/laser_blaster_small/shoot.wav"
+				//	Volume = .6
+				//	SpeedVariation = .25
+				//	MaxConcurrent = 10
+				//}
 			]
 		}
 

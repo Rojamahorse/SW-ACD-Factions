@@ -160,7 +160,7 @@ Part : &<../../base_part_terran_weapons.rules>/Part
 			Type = ResourceStorage
 			ResourceType = battery
 			MaxResources = 2000
-			ReceiveResourceMediaEffects = &/COMMON_EFFECTS/PowerDeliver
+			ReceiveResourceMediaEffects = &/SW_SOUNDS/PowerDeliver
 		}
 //		Overclock_BatteryProducer
 //		{

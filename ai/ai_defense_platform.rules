@@ -8,7 +8,7 @@ StrategyModules
 	}
 	{
 		Type = AggroEnemies
-		TargetSwitchThresholdFactor = 1.7
+		TargetSwitchThresholdFactor = 3
 		TargetDistanceFactorExponent = 1.5
 		AlreadyTargetedByAllyFactor = 0.7
 		TargetFirepowerCacheTime = 10

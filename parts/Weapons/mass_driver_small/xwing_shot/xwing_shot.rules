@@ -55,13 +55,13 @@ Components
 				&<./Data/shots/laser_bolt_small/particles/laser_bolt_small_hit.rules>
 				&<./Data/shots/laser_bolt_small/particles/laser_bolt_small_flash.rules>
 				&<./Data/shots/laser_bolt_small/particles/laser_bolt_small_sparks.rules>
-
-				: /BASE_SOUNDS/AudioExterior
-				{
-					Sound = "./Data/shots/laser_bolt_small/laser_bolt_small_hit.wav"
-					Volume = 0.4
-					SpeedVariation = 0.4
-				}
+				&/SW_SOUNDS/SmallLaserFire
+				//: /BASE_SOUNDS/AudioExterior
+				//{
+				//	Sound = "./Data/ships/terran/laser_blaster_small/shoot.wav"
+				//	Volume = .4
+				//	SpeedVariation = .25
+				//}
 				: /BASE_SHAKE
 				{
 					ShakeAmount = .01

@@ -54,7 +54,7 @@ Part : &<../xwing_cannon/xwing_cannon.rules>/Part
 			DefaultPriority = &/PRIORITIES/Weapon_Supply
 			ResupplyThreshold = 1000
 			OperatinalToggle = PowerToggle
-			ReceiveResourceMediaEffects = &/COMMON_EFFECTS/PowerDeliver
+			ReceiveResourceMediaEffects = &/SW_SOUNDS/PowerDeliver
 		}
 
 		Graphics

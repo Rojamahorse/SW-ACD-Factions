@@ -87,7 +87,7 @@ SubSpawners
 		{
 			Type = Wanderer
 			PatrolRadius = &../Distance/1
-			PatrolAroundWorldOrigin = true
+			PatrolOrigin = [0, 0]
 			StasisSpeed = 100
 		}
 	}
@@ -116,7 +116,7 @@ SubSpawners
 		{
 			Type = Wanderer
 			PatrolRadius = &../Distance/1
-			PatrolAroundWorldOrigin = true
+			PatrolOrigin = [0, 0]
 			StasisSpeed = 100
 		}
 	}

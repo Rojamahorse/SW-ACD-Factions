@@ -61,12 +61,13 @@ Components
 				&<./Data/shots/laser_bolt_small/particles/laser_bolt_small_sparks.rules>
 				&<./Data/shots/laser_bolt_small/particles/laser_bolt_small_spikes.rules>
 
-				: /BASE_SOUNDS/AudioExterior
-				{
-					Sound = "./Data/shots/laser_bolt_small/laser_bolt_small_hit.wav"
-					Volume = .4
-					SpeedVariation = .4
-				}
+				&/SW_SOUNDS/SmallLaserHit
+				//: /BASE_SOUNDS/AudioExterior
+				//{
+				//	Sound = "./Data/shots/laser_bolt_small/laser_bolt_small_hit.wav"
+				//	Volume = .4
+				//	SpeedVariation = .4
+				//}
 
 				: /BASE_SHAKE
 				{
@@ -96,11 +97,12 @@ Components
 				&<./Data/shots/laser_bolt_small/particles/laser_bolt_small_sparks_struct.rules>
 
 				: /BASE_SOUNDS/AudioExterior
-				{
-					Sound = "./Data/shots/laser_bolt_small/laser_bolt_small_hit.wav"
-					Volume = .3
-					SpeedVariation = .4
-				}
+				&/SW_SOUNDS/SmallLaserHit
+				//{
+				//	Sound = "./Data/shots/laser_bolt_small/laser_bolt_small_hit.wav"
+				//	Volume = .3
+				//	SpeedVariation = .4
+				//}
 			]
 		}
 		PenetratingOperational

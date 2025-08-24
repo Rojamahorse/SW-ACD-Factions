@@ -91,6 +91,7 @@ SubSpawners
 								Type = DefeatShips
 								TargetsTag = { Tag=military_station; Max=1; }
 								TargetAreaTag = { Mode=Nearest; Tag=poi_unknown; }
+								TierOffset = 1
 								AutoDiscoverTargetArea = true
 								AllowSurrender = false
 							}

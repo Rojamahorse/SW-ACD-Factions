@@ -135,7 +135,7 @@ Part : &<../../base_part_terran_weapons.rules>/Part
 			Type = ResourceStorage
 			ResourceType = battery
 			MaxResources = 2000
-			ReceiveResourceMediaEffects = &/COMMON_EFFECTS/PowerDeliver
+			ReceiveResourceMediaEffects = &/SW_SOUNDS/PowerDeliver
 		}
 		BatteryConsumer
 		{
@@ -463,13 +463,13 @@ Part : &<../../base_part_terran_weapons.rules>/Part
 			[
 				&<particles/yellow_blaster_small_shoot_flash.rules>
 				&<particles/yellow_blaster_small_shoot.rules>
-
-				: /BASE_SOUNDS/AudioExterior
-				{
-					Sound = "./Data/ships/terran/laser_blaster_small/shoot.wav"
-					Volume = .4
-					SpeedVariation = .25
-				}
+				&/SW_SOUNDS/SmallLaserFire
+				//: /BASE_SOUNDS/AudioExterior
+				//{
+				//	Sound = "./Data/ships/terran/laser_blaster_small/shoot.wav"
+				//	Volume = .4
+				//	SpeedVariation = .25
+				//}
 			]
 		}
 		FireEffect2 : FireEffect1
@@ -485,12 +485,13 @@ Part : &<../../base_part_terran_weapons.rules>/Part
 				&<particles/yellow_blaster_small_shoot_flash.rules>
 				&<particles/yellow_blaster_small_shoot.rules>
 
-				: /BASE_SOUNDS/AudioExterior
-				{
-					Sound = "./Data/ships/terran/laser_blaster_small/shoot.wav"
-					Volume = .4
-					SpeedVariation = .25
-				}
+				&/SW_SOUNDS/SmallLaserFire
+				//: /BASE_SOUNDS/AudioExterior
+				//{
+				//	Sound = "./Data/ships/terran/laser_blaster_small/shoot.wav"
+				//	Volume = .4
+				//	SpeedVariation = .25
+				//}
 			]
 		}
 

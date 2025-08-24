@@ -46,7 +46,7 @@ SubSpawners
 						Type = Money
 						MoneyPerHighTier = &/TIER_TABLES/StandardMoneyPerTier
 						RoundToMultiple = 1000
-						MoneyPerTierMultiplier = 3
+						MoneyPerTierMultiplier = 2
 					}
 					{
 						Type = Fame
@@ -91,6 +91,7 @@ SubSpawners
 								Type = DefeatShips
 								TargetsTag = { Tag=military_station; Max=1; }
 								TargetAreaTag = { Mode=Nearest; Tag=poi_unknown; }
+								TierOffset = 1
 								AutoDiscoverTargetArea = true
 								AllowSurrender = false
 							}
