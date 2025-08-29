@@ -124,80 +124,46 @@ FactionTiers
 {
   Type = FactionNodeTiers
   Factions
-  [
-    // Black Sun tier range
-    {
-      FactionID = SW.Black_Sun
-      TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
-      TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
-    }
-    
-    // CIS tier range
-    {
-      FactionID = SW.CIS
-      TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
-      TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
-    }
-    
-    // Galactic Empire tier range
-    {
-      FactionID = SW.Galactic_Empire
-      TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
-      TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
-    }
-    
-    // Galactic Republic tier range
-    {
-      FactionID = SW.Republic  
-      TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
-      TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
-    }
-    
-    // Rebel Alliance tier range
-    {
-      FactionID = SW.Rebel_Alliance
-      TierRangeLow = 1 //[1, (&~/MaxTier) - (&~/TierSpread)]
-      TierRangeHigh = 1 //[1 + (&~/TierSpread), (&~/MaxTier)]
-    }
-	/*
-    // Vanilla Factions Rebranded
-    {
-			FactionID = monolith
+  [	
+		{
+			FactionID = SW.Black_Sun // Black Sun tier range
 			TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
 			TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
 		}
 		{
-			FactionID = cabal
+			FactionID = SW.CIS // CIS tier range
+			TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
+			TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
+		}		
+		{
+			FactionID = SW.Galactic_Empire // Galactic Empire tier range
+			TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
+			TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
+		}		
+		{
+			FactionID = SW.Republic // Galactic Republic tier range
 			TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
 			TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
 		}
+		
+		// Rebel Alliance tier range
 		{
-			FactionID = imperium
-			TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
-			TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
+			FactionID = SW.Rebel_Alliance
+			TierRangeLow = 1 //[1, (&~/MaxTier) - (&~/TierSpread)]
+			TierRangeHigh = 1 //[1 + (&~/TierSpread), (&~/MaxTier)]
 		}
-		*/
-    /*
-		{
-			FactionID = fringe
-			TierRangeLow = 1
-			TierRangeHigh = 1
-		}
-		*/
-  ]
+	]
 }
 
-// Define starting node picker settings
-StartingNodePicker
+StartingNodePicker // Define starting node picker settings
 {
-  Type = StartingNodePicker
-  
+	Type = StartingNodePicker
   	//AllowedFactions = [SW.Rebel_Alliance, SW.Galactic_Empire, SW.CIS, SW.Republic] // Which factions the starting node can be in.
   	MinConnections = 2 // Minimum connections for starting node candidates
-  	//CandidatesFarthestFromFactions = [5, [SW.Black_Sun]] // [Max Distance, [FactionIDs]] - Tries to pick a start node near the listed factions.
-  	//CandidatesClosestToFactions = [1, [SW.CIS, SW.Republic]] // [MinDistance, [FactionIDs]] - Tries to pick a start node near the listed factions.
+  	CandidatesFarthestFromFactions = [5, [SW.Galactic_Empire]] // [Max Distance, [FactionIDs]] - Tries to pick a start node near the listed factions.
+  	CandidatesClosestToFactions = [1, [SW.CIS, SW.Republic]] // [MinDistance, [FactionIDs]] - Tries to pick a start node near the listed factions.
   	SetTierRangeTo = [1, 1 + (&~/TierSpread)]  // Sets the start node's tier range
-	SetSectorTypeTo = basic //Nebulas
+	SetSectorTypeTo = SW.basic //Nebulas
 }
 
 ProgressionTiers
@@ -266,10 +232,12 @@ SectorTypes
 		{
 			Type = high_density_nebula
 			RandomWeight = 0.5
+			MinTier = 5
 		}
 		{
 			Type = supernova
-			RandomWeight = 0.5
+			RandomWeight = 0.25
+			MinTier = 5
 		}
 		{
 			Type = electron
