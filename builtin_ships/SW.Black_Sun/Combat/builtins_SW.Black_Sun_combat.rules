@@ -5,7 +5,7 @@ Ships
 
 //Tier 1-2 (Up to 100,000)
 /*47,100*/			:~{ File="UGLIES_Tye_Wing-Class_Starfighter.ship.png"; 					Tier=1;  Difficulty=2; Tags = [combat, swfighter, bscfighter, pirate] }
-/*54,100*/			:~{ File="BSC Rihkxyrk Assault Fighter Mk2.ship.png"; 					Tier=1;  Difficulty=2; Tags = [combat, swfighter, bscfighter] }
+/*54,100*/			:~{ File="BSC Rihkxyrk Assault Fighter Mk2.ship.png"; 					Tier=5;  Difficulty=2; Tags = [combat, swfighter, bscfighter] }
 /*54,100*/			:~{ File="Hyena-BS Droid Bomber.ship.png";          					Tier=2;  Difficulty=2; Tags = [combat] } 
 /*68,280*/			:~{ File="Storm IV Twin-Pod BS Combat.ship.png";          				Tier=1;  Difficulty=2; Tags = [combat, swfighter, bscfighter] } 
 /*70,480*/			:~{ File="BS_LRRS Mk2_Shuttle.ship.png"; 								Tier=1;  Difficulty=2; Tags = [combat] }
@@ -18,7 +18,7 @@ Ships
 /*81,180*/			:~{ File="Black Sun Fighter (Combat).ship.png";     					Tier=2;  Difficulty=1; Tags = [combat, swfighter, bscfighter] }
 /*84,230*/			:~{ File="Black Sun Fighter-BS H (Combat).ship.png";         			Tier=3;  Difficulty=2; Tags = [combat, swfighter, bscfighter] }
 /*89,880*/			:~{ File="UGLIES_ChirDaki-Class_Starfighter.ship.png"; 					Tier=3;  Difficulty=2; Tags = [combat, swfighter, bscfighter, pirate] }
-/*98,100*/			:~{ File="BSC Rihkxyrk Assault Fighter.ship.png"; 						Tier=3;  Difficulty=2; Tags = [combat, swfighter, bscfighter] }
+/*98,100*/			:~{ File="BSC Rihkxyrk Assault Fighter.ship.png"; 						Tier=4;  Difficulty=2; Tags = [combat, swfighter, bscfighter] }
 /*99,440*/			:~{ File="Firespray-31-BS-Y Patrol.ship.png";       					Tier=1;  Difficulty=2; Tags = [combat, swfighter, bscfighter] }
 /*102,040*/			:~{ File="Firespray-31-BS Patrol.ship.png";        						Tier=2;  Difficulty=1; Tags = [combat, swfighter, bscfighter] }
 /*102,040*/			:~{ File="Black Sun Fighter_v1.ship.png";        						Tier=2;  Difficulty=1; Tags = [combat, swfighter, bscfighter] }
