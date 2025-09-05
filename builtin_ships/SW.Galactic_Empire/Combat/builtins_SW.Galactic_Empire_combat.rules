@@ -150,11 +150,11 @@ Ships
 /*22,419,985*/	:~{ File="Emp_Chimera_Star_Destroyer.ship.png";						Tier=16;	Difficulty=3; Tags = [swboss] }
 /*53,182,020*/  :~{ File="Emp_Artifex-class_Star_Cruiser.ship.png"; 				Tier=18; 	Difficulty=2; Tags = [swboss] } // Credit Caudrea
 /*53,482,020*/  :~{ File="Emp_Urbanus-class_Star_Cruiser.ship.png"; 				Tier=18; 	Difficulty=2; Tags = [swboss] } // Credit Caudrea
-/*38,832,020*/  :~{ File="Emp Bewitcher_Class_Super_Cruiser.ship.png"; 				Tier=18; 	Difficulty=2; Tags = [swboss] } // Credit Hello360Jelly Jr
+/*38,832,020*/  // :~{ File="Emp Bewitcher_Class_Super_Cruiser.ship.png"; 				Tier=18; 	Difficulty=2; Tags = [swboss] } // Credit Hello360Jelly Jr
 /*55,471,950*/  :~{ File="Praetor Mark-II Class Battlecruiser.ship.png"; 			Tier=17; 	Difficulty=2; Tags = [swboss] }
-/*61,272,660*/  :~{ File="Emp Redeemer_Class_Battleship.ship.png"; 					Tier=18; 	Difficulty=2; Tags = [swboss] } // Credit Hello360Jelly Jr
-/*71,928,384*/	:~{ File="Executor-Class Star Dreadnought.ship.png";				Tier=18;	Difficulty=3; Tags = [swboss] }
-/*99,928,384*/	:~{ File="Emp_ISD_Banisher.ship.png";								Tier=18;	Difficulty=2; Tags = [swboss] } // Credit Choppyranger
+/*61,272,660*/  // :~{ File="Emp Redeemer_Class_Battleship.ship.png"; 					Tier=18; 	Difficulty=2; Tags = [swboss] } // Credit Hello360Jelly Jr
+/*71,928,384*/	:~{ File="Executor-Class Star Dreadnought.ship.png";				Tier=18;	Difficulty=3; Tags = [swboss]; OtherIDs = ["Emp Redeemer_Class_Battleship"]}
+/*99,928,384*/	:~{ File="Emp_ISD_Banisher.ship.png";								Tier=18;	Difficulty=2; Tags = [swboss]; OtherIDs = ["Emp Bewitcher_Class_Super_Cruiser"]} // Credit Choppyranger
 /*61,928,384*/	:~{ File="Emp_Progenitor_X-01.ship.png";							Tier=17;	Difficulty=2; Tags = [swboss] } // Credit Fusion
 /*61,928,384*/	:~{ File="Emp_Resurgent_Class_Battlecruiser.ship.png";				Tier=18;	Difficulty=2; Tags = [swboss] } // Credit Fusion
 
