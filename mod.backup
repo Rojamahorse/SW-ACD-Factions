@@ -89,6 +89,20 @@ Actions
 		AddTo = "<gui/game/parts/part_toggles.rules>/PartToggles"
 		ManyToAdd = &<gui/game/parts/SW_part_toggles.rules>/PartToggles
 	}
+	/* *********** DECALS & SHIPS & SHIP SIZES ************* */
+
+	//Adds faction decals folder and advanced gradients, shading, and shapes folder
+	//	{
+	//		Action = AddMany
+	//		AddTo = "<ships/terran/terran.rules>/Terran/Roofs/RoofDecalGroups"
+	//
+	//		CreateIfNotExisting = true
+	//
+	//		ManyToAdd
+	//		[
+	//			&<roof_decals/sw_decal_group.rules>/SW_adv_shapes
+	//		]
+	//	}
 	
 	{
 		Action = Overrides
@@ -192,31 +206,31 @@ Actions
 		{
 		Action = AddMany
 		AddTo = "<modes/career/career.rules>/StarterShips"
-
-		CreateIfNotExisting = true
+ 
+ 		CreateIfNotExisting = true
 
 		ManyToAdd
 		[
-			{
-				Ship = "builtin_ships/SW.Starter/Starter Y-Wing Bomber.ship.png"
-				DescriptionKey = "StarterShips/Y_Wing"
-			}
-			{
-				Ship = "builtin_ships/SW.Starter/Starter Z-95 Headhunter.ship.png"
-				DescriptionKey = "StarterShips/X_Wing_Z95"
-			}
-			{
-				Ship = "builtin_ships/SW.Starter/Starter N-1 Starfighter.ship.png"
-				DescriptionKey = "StarterShips/N_1_Starfighter"
-			}
-			{
-				Ship = "builtin_ships/SW.Starter/Starter Black Sun Fighter.ship.png"
-				DescriptionKey = "StarterShips/Black_Sun_Fighter"
-			}
-			{
-				Ship = "builtin_ships/SW.Starter/Starter Hyena-Class Droid Bomber.ship.png"
-				DescriptionKey = "StarterShips/Hyena_Class_Droid_Bomber"
-			}
+    		{
+    		    Ship = "builtin_ships/SW.Starter/Starter Y-Wing Bomber.ship.png"
+    		    DescriptionKey = "StarterShips/Y_Wing"
+    		}
+    		{
+    		    Ship = "builtin_ships/SW.Starter/Starter Z-95 Headhunter.ship.png"
+    		    DescriptionKey = "StarterShips/X_Wing_Z95"
+    		}
+    		{
+    		    Ship = "builtin_ships/SW.Starter/Starter N-1 Starfighter.ship.png"
+    		    DescriptionKey = "StarterShips/N_1_Starfighter"
+    		}
+    		{
+    		    Ship = "builtin_ships/SW.Starter/Starter Black Sun Fighter.ship.png"
+    		    DescriptionKey = "StarterShips/Black_Sun_Fighter"
+    		}
+    		{
+    		    Ship = "builtin_ships/SW.Starter/Starter Hyena-Class Droid Bomber.ship.png"
+    		    DescriptionKey = "StarterShips/Hyena_Class_Droid_Bomber"
+    		}
 		]		
 
 		}
@@ -304,10 +318,6 @@ Actions
 			&<career/sectors/sector_basic/sector_sw_basic.rules>/Sector
 			&<career/sectors/sector_basic/sector_sw_cw_basic.rules>/Sector
 			&<career/sectors/sector_basic/sector_sw_nh_basic.rules>/Sector
-			&<career/sectors/sector_sw_binary/sector_sw_binary.rules>/Sector
-			&<career/sectors/sector_sw_electron/sector_sw_electron.rules>/Sector
-			&<career/sectors/sector_sw_high_density_nebula/sector_sw_high_density_nebula.rules>/Sector
-			&<career/sectors/sector_sw_supernova/sector_sw_supernova.rules>/Sector
 		]
 	}
 
@@ -360,6 +370,35 @@ Actions
 
 ]
 
+/*
+	//Adds SW POI Misson Markers
+	{	
+		Action = AddMany
+		AddTo = "<doodads/doodads.rules>/Doodads"
+		ManyToAdd
+		[
+			&<career/sw_defectorsPOI.rules>
+			&<career/sw_renegadeleaderPOI.rules>
+			&<career/sw_distressPOI.rules>
+		]
+	}
+*/
+
+/* Pre-Career 2.0
+
+	/* Disabled for Nebula 2.0 Changes
+	{
+		Action = AddMany
+		AddTo = "<./Data/modes/career/sectors/sector_basic/sector_basic.rules>/Sector/SystemGenerator/Spawners"
+		ManyToAdd
+		[
+			&<career/sysgen_fleethideouts.rules>/Fleethideouts
+			&<career/sysgen_sw_defectors.rules>
+			&<career/sysgen_sw_renegadeleaders.rules>
+			&<career/sysgen_sw_viprescue.rules>
+		]
+	}
+	*/
 		//Encounters
 	/* Disabled for Nebula 2.0 Changes
 	{

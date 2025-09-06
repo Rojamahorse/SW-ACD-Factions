@@ -15,7 +15,7 @@ Sector
     SystemGenerator : &<./Data/modes/career/sectors/sector_basic/sector_basic.rules>/Sector/SystemGenerator
     {
         // List of spawner configurations for generating various system elements within the sector
-        Spawners : ^/0/Spawners
+        Spawners //: ^/0/Spawners
         [
             &<../sysgen_sw_suns.rules>                                          // Configuration for generating suns
             &<./Data/modes/career/sectors/sysgen_planets.rules>                 // Configuration for generating planets

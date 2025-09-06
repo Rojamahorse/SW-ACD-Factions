@@ -1,0 +1,6 @@
+Sector : <../sector_basic/sector_sw_basic.rules>/Sector
+{
+	ID = sw.binary
+	NameKey = "SectorTypes/Binary"
+	SpawnFlags = [binary_sun]
+}
