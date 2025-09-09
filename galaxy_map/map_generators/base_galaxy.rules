@@ -38,61 +38,60 @@ MapNodes
 // Define factions in the galaxy
 Factions  
 {
-  // List of factions
-  Factions
-  [
-
-    // Black Sun faction definition
-    {
-      FactionID = SW.Black_Sun
-      TerritoryRatio = 100%
-      AvoidOtherFactionsStrength = .3
-      AvoidEdgeStrength = .2
-      FactionStrengthExponent = 2
-      MinFactionStrength = 10%
-    }
+  	// List of factions
+	Factions
+	[
+		// Black Sun faction definition
+		{
+			FactionID = SW.Black_Sun
+			TerritoryRatio = 100%
+			AvoidOtherFactionsStrength = .3
+			AvoidEdgeStrength = .2
+			FactionStrengthExponent = 2
+			MinFactionStrength = 10%
+		}
     
-    // Confederacy of Independent Systems (CIS) faction definition
-    {
-      FactionID = SW.CIS
-      TerritoryRatio = 100%  
-      AvoidOtherFactionsStrength = .3
-      AvoidEdgeStrength = .2
-      FactionStrengthExponent = 3
-      MinFactionStrength = 10%
-    }
+		// Confederacy of Independent Systems (CIS) faction definition
+		{
+			FactionID = SW.CIS
+			TerritoryRatio = 100%  
+			AvoidOtherFactionsStrength = .3
+			AvoidEdgeStrength = .2
+			FactionStrengthExponent = 3
+			MinFactionStrength = 10%
+		}
 
-    // Galactic Empire faction definition
-    {
-      FactionID = SW.Galactic_Empire
-      TerritoryRatio = 100%
-      AvoidOtherFactionsStrength = .3
-      AvoidEdgeStrength = .2 
-      FactionStrengthExponent = 5
-      MinFactionStrength = 20%
-    }
+		// Galactic Empire faction definition
+		{
+			FactionID = SW.Galactic_Empire
+			TerritoryRatio = 100%
+			AvoidOtherFactionsStrength = .3
+			AvoidEdgeStrength = .2 
+			FactionStrengthExponent = 5
+			MinFactionStrength = 20%
+		}
 
-    // Rebel Alliance faction definition
-    {
-      FactionID = SW.Rebel_Alliance
-      TerritoryRatio = 100%
-      AvoidOtherFactionsStrength = .3
-      AvoidEdgeStrength = .2
-      FactionStrengthExponent = 2 
-      MinFactionStrength = 10%
-    }
+		// Rebel Alliance faction definition
+		{
+			FactionID = SW.Rebel_Alliance
+			TerritoryRatio = 100%
+			AvoidOtherFactionsStrength = .3
+			AvoidEdgeStrength = .2
+			FactionStrengthExponent = 2 
+			MinFactionStrength = 10%
+		}
 
-    // Galactic Republic faction definition
-    {
-      FactionID = SW.Republic
-      TerritoryRatio = 100%
-      AvoidOtherFactionsStrength = .3
-      AvoidEdgeStrength = .2
-      FactionStrengthExponent = 4
-      MinFactionStrength = 20%
-    }
+		// Galactic Republic faction definition
+		{
+			FactionID = SW.Republic
+			TerritoryRatio = 100%
+			AvoidOtherFactionsStrength = .3
+			AvoidEdgeStrength = .2
+			FactionStrengthExponent = 4
+			MinFactionStrength = 20%
+		}
     // Vanilla Factions Rebranded
-    {
+		{
 			FactionID = monolith
 			TerritoryRatio = 100%
 			AvoidOtherFactionsStrength = .3
@@ -109,6 +108,14 @@ Factions
 			MinFactionStrength = 10%
 		}
 		{
+			FactionID = io
+			TerritoryRatio = 100%
+			AvoidOtherFactionsStrength = .3
+			AvoidEdgeStrength = .3
+			FactionStrengthExponent = 3
+			MinFactionStrength = 5%
+		}
+		{
 			FactionID = imperium
 			TerritoryRatio = 100%
 			AvoidOtherFactionsStrength = .3
@@ -116,9 +123,9 @@ Factions
 			FactionStrengthExponent = 3
 			MinFactionStrength = 10%
 		}
-  ]
+	]
 
-  	RemainderFaction = fringe
+	RemainderFaction = fringe
 	RemainderFactionThreshold = .5
 	MinRemainderFactionStrength = 5%
 	AvoidIterations = 10
@@ -132,78 +139,80 @@ TierSpread = 2
 
 FactionTiers
 {
-  Factions
-  [
-    // Black Sun tier range
-    {
-      FactionID = SW.Black_Sun
-      TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
-      TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
-    }
+	Factions
+	[
+		// Black Sun tier range
+		{
+			FactionID = SW.Black_Sun
+			TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
+			TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
+		}
     
-    // CIS tier range
-    {
-      FactionID = SW.CIS
-      TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
-      TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
-    }
+		// CIS tier range
+		{
+			FactionID = SW.CIS
+			TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
+			TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
+		}
     
-    // Galactic Empire tier range
-    {
-      FactionID = SW.Galactic_Empire
-      TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
-      TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
-    }
+		// Galactic Empire tier range
+		{
+			FactionID = SW.Galactic_Empire
+			TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
+			TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
+		}
     
-    // Galactic Republic tier range
-    {
-      FactionID = SW.Republic  
-      TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
-      TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
-    }
+		// Galactic Republic tier range
+		{
+			FactionID = SW.Republic  
+			TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
+			TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
+		}
     
-    // Rebel Alliance tier range
-    {
-      FactionID = SW.Rebel_Alliance
-      TierRangeLow = 1 //[1, (&~/MaxTier) - (&~/TierSpread)]
-      TierRangeHigh = 1 //[1 + (&~/TierSpread), (&~/MaxTier)]
-    }
-    // Vanilla Factions Rebranded
-    {
+		// Rebel Alliance tier range
+		{
+			FactionID = SW.Rebel_Alliance
+			TierRangeLow = 1 //[1, (&~/MaxTier) - (&~/TierSpread)]
+			TierRangeHigh = 1 //[1 + (&~/TierSpread), (&~/MaxTier)]
+		}
+
+		// Vanilla Factions Rebranded
+		{
 			FactionID = monolith
 			TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
 			TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
 		}
+
 		{
 			FactionID = cabal
 			TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
 			TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
 		}
+
 		{
 			FactionID = imperium
 			TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
 			TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
 		}
+
 		{
 			FactionID = fringe
 			TierRangeLow = 1
 			TierRangeHigh = 1
 		}
-		
-  ]
+	]
 }
 
 // Define starting node picker settings
 StartingNodePicker
 {
-  Type = StartingNodePicker
-  
-  AllowedFactions = [SW.Rebel_Alliance] // Which factions the starting node can be in.
-  MinConnections = 2 // Minimum connections for starting node candidates
-  CandidatesFarthestFromFactions = [5, [SW.Black_Sun]] // [Max Distance, [FactionIDs]] - Tries to pick a start node near the listed factions.
-  CandidatesClosestToFactions = [1, [SW.CIS, SW.Republic]] // [MinDistance, [FactionIDs]] - Tries to pick a start node near the listed factions.
-  SetTierRangeTo = [1, 1 + (&~/TierSpread)]  // Sets the start node's tier range
-  SetSectorTypeTo = basic
+	Type = StartingNodePicker
+	AllowedFactions = [SW.Rebel_Alliance] // Which factions the starting node can be in.
+	MinConnections = 2 // Minimum connections for starting node candidates
+	CandidatesFarthestFromFactions = [5, [SW.Black_Sun]] // [Max Distance, [FactionIDs]] - Tries to pick a start node near the listed factions.
+	CandidatesClosestToFactions = [1, [SW.CIS, SW.Republic]] // [MinDistance, [FactionIDs]] - Tries to pick a start node near the listed factions.
+	SetTierRangeTo = [1, 1 + (&~/TierSpread)]  // Sets the start node's tier range
+	SetSectorTypeTo = basic
 }
 
 SectorTypes 

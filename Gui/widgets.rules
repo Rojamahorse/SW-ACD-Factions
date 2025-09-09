@@ -1,0 +1,3067 @@
+//MainSprite : &<./Data/gui/widgets.rules>/MainSprite
+//{
+//	Texture
+//	{
+//		File = "widgets.png"
+//		MipLevels = 2
+//		SampleMode = Linear
+//		FixTransparentColors = true
+//	}
+//
+//	Shader = "gui.shader"
+//	_highlightTime = -1000
+//	_unhighlightTime = -1000
+//	_clickTime = -1000
+//}
+//HighlightSprite : MainSprite
+//{
+//	Shader = "gui_highlight.shader"
+//}
+//SelectedSprite : MainSprite
+//{
+//	Shader = "gui_selected.shader"
+//}
+
+//PulsingTextShader = "pulsing.shader"
+
+//ArrowSprite : <./Data/gui/widgets.rules>/ArrowSprite
+//{
+//	//Texture { File="widgets_arrows.png"; MipLevels=2; SampleMode=Linear; }
+//}
+
+DefaultFont
+{
+	Files
+	[
+		//"play_msyh.ttf"
+		//"play_msyh_bold.ttf"
+		"SigmaFiveSans.otf"
+		"SigmaFiveSans_Bold.otf"
+	]
+
+	ForceSameWidths // Force all digits to be the same width.
+	[
+		"23456789"
+		"00000000"
+	]
+}
+
+ShadowFont : DefaultFont
+{
+	Passes
+	[
+		// Black shadow.
+		{
+			Effects
+			[
+				{ Type=Blur; BlurAmount=0.25; }
+				{ Type=Color; Color=[0, 0, 0, 255*2]; }
+			]
+		}
+
+		// Regular foreground.
+		{
+			// Nothing weird.
+		}
+	]
+}
+
+GlowFont : DefaultFont
+{
+	Passes
+	[
+		// Glow.
+		{
+			Effects
+			[
+				{ Type=Blur; BlurAmount=0.5; }
+			]
+		}
+
+		// Regular foreground.
+		{
+			// Nothing weird.
+		}
+	]
+}
+
+ShadowGlowFont : DefaultFont
+{
+	Passes
+	[
+		// Black shadow.
+		{
+			Effects
+			[
+				{ Type=Blur; BlurAmount=0.25; }
+				{ Type=Color; Color=[0, 0, 0, 255*1]; }
+			]
+		}
+
+		// Glow.
+		{
+			Effects
+			[
+				{ Type=Blur; BlurAmount=0.5; }
+			]
+		}
+
+		// Regular foreground.
+		{
+			// Nothing weird.
+		}
+	]
+}
+
+MainText
+{
+	Font = &~/DefaultFont
+	FontSize = 16
+}
+
+//GoodTextColor = [10, 212, 98]
+//BadTextColor = [246, 49, 43]
+//MoneyTextColor = [10, 212, 212]
+//InsufficientMoneyTextColor = &BadTextColor
+//MoneyRefundTextColor = &GoodTextColor
+//FuelTextColor = [0, 188, 255]
+//InsufficientFuelTextColor = [246, 49, 43]
+//FameTextColor = [0, 183, 255]
+//InsufficientFameTextColor = &BadTextColor
+//LimitedTextColor = Orange
+//
+//DefaultCursor          { File="cursor_arrow.png"; HotSpot=[8,8]; Scale=.5; }
+//RightClickCursor       { File="cursor_right_click.png"; HotSpot=[8,8]; Scale=.5; }
+//InvalidCursor          { File="cursor_invalid.png"; HotSpot=[8,8]; Scale=.5; }
+//TextFieldCursor        { File="cursor_text.png"; HotSpot=[40,40]; Scale=.5; }
+//HorizontalArrowsCursor { File="cursor_horizontal_arrows.png"; HotSpot=[40,40]; Scale=.5; }
+//VerticalArrowsCursor   { File="cursor_vertical_arrows.png"; HotSpot=[40,40]; Scale=.5; }
+//TLBRArrowsCursor       { File="cursor_tlbr_arrows.png"; HotSpot=[40,40]; Scale=.5; }
+//TRBLArrowsCursor       { File="cursor_trbl_arrows.png"; HotSpot=[40,40]; Scale=.5; }
+//MoveCursor             { File="cursor_mover.png"; HotSpot=[40,40]; Scale=.5; }
+
+//ResizerTLBRIcon : <./Data/gui/widgets.rules>/ResizerTLBRIcon
+//{
+//	//Texture
+//	//{
+//	//	File = "widgets_resizer_tlbr.png"
+//	//	MipLevels = 2
+//	//	SampleMode = Linear
+//	//}
+//}
+//
+//ResizerTRBLIcon : <./Data/gui/widgets.rules>/ResizerTRBLIcon
+//{
+//	//Texture
+//	//{
+//	//	File = "widgets_resizer_trbl.png"
+//	//	MipLevels = 2
+//	//	SampleMode = Linear
+//	//}
+//}
+
+//MoverIcon : <./Data/gui/widgets.rules>/MoverIcon
+//{
+//	//Texture
+//	//{
+//	//	File = "widgets_mover.png"
+//	//	MipLevels = 2
+//	//	SampleMode = Linear
+//	//}
+//}
+
+//DialogOpenSoundEffect  { Sound="sounds/dialog_open.wav";  Volume=.25; }
+//DialogCloseSoundEffect { Sound="sounds/dialog_close.wav"; Volume=.25; }
+//DragAndDropCompleteSoundEffect { Sound="game/designer/sounds/blueprint_add.wav"; }
+//
+//DisabledIconShader = "disabled.shader"
+//PulsingIconShader = "pulsing.shader"
+//GrayscaleIconShader = "grayscale.shader"
+//
+//BlurShader = "blur.shader"
+//BlurPasses = 4 // Actual number of draw calls is twice this because we need to blur both horizontally and vertically.
+//BlurFallbackMaterial
+//{
+//	Shader = "blur_fallback.shader"
+//	Color = [2, 21, 38, 255*.6]
+//}
+
+//Widget {}
+//
+//StaticWidget : Widget
+//{
+//	NineSlice
+//	{
+//		Bleed = 8
+//		Borders = 16
+//		ProvidedRectPadding = -7
+//
+//		_X = 0
+//		_Y = 0
+//		TopLeftSprite     : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+//		TopSprite         : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+//		TopRightSprite    : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+//		LeftSprite        : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 64]; }
+//		CenterSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 64]; }
+//		RightSprite       : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 64]; }
+//		BottomLeftSprite  : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+96, 32, 32]; }
+//		BottomSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+96, 64, 32]; }
+//		BottomRightSprite : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+96, 32, 32]; }
+//	}
+//}
+/*
+HollowWidget : StaticWidget
+{
+	NineSlice
+	{
+		Bleed = 8
+		Borders = 16
+		ProvidedRectPadding = -7
+
+		_X = 512
+		_Y = 0
+		TopLeftSprite     : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 64]; }
+		CenterSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 64]; }
+		RightSprite       : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 64]; }
+		BottomLeftSprite  : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+96, 32, 32]; }
+		BottomSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+96, 64, 32]; }
+		BottomRightSprite : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+96, 32, 32]; }
+	}
+}
+
+IdealStatBar : Widget
+{
+	Left = -7
+	Right = 7
+	Top = -8
+	Bottom = 8
+
+	NineSlice
+	{
+		Flags = Center
+		CenterSprite
+		{
+			Texture
+			{
+				File = "stat_bar.png"
+				MipLevels = 2
+				SampleMode = Linear
+			}
+			VertexColor = [10, 212, 98]
+		}
+	}
+}
+
+DynamicWidget : Widget
+{
+	StateNormalNineSlice
+	{
+		Bleed = 8
+		Borders = 16
+		ProvidedRectPadding = -7
+
+		_X = 0
+		_Y = 128
+		TopLeftSprite     : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 64]; }
+		CenterSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 64]; }
+		RightSprite       : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 64]; }
+		BottomLeftSprite  : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+96, 32, 32]; }
+		BottomSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+96, 64, 32]; }
+		BottomRightSprite : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+96, 32, 32]; }
+	}
+	StateHighlightedNineSlice
+	{
+		Bleed = 8
+		Borders = 16
+		ProvidedRectPadding = -7
+
+		_X = 128
+		_Y = 128
+		TopLeftSprite     : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 64]; }
+		CenterSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 64]; }
+		RightSprite       : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 64]; }
+		BottomLeftSprite  : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+96, 32, 32]; }
+		BottomSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+96, 64, 32]; }
+		BottomRightSprite : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+96, 32, 32]; }
+	}
+	StatePressedNineSlice
+	{
+		Bleed = 8
+		Borders = 16
+		ProvidedRectPadding = -7
+
+		_X = 256
+		_Y = 128
+		TopLeftSprite     : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 64]; }
+		CenterSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 64]; }
+		RightSprite       : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 64]; }
+		BottomLeftSprite  : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+96, 32, 32]; }
+		BottomSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+96, 64, 32]; }
+		BottomRightSprite : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+96, 32, 32]; }
+	}
+	StateDisabledNineSlice
+	{
+		Bleed = 8
+		Borders = 16
+		ProvidedRectPadding = -7
+
+		_X = 384
+		_Y = 128
+		TopLeftSprite     : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 64]; }
+		CenterSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 64]; }
+		RightSprite       : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 64]; }
+		BottomLeftSprite  : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+96, 32, 32]; }
+		BottomSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+96, 64, 32]; }
+		BottomRightSprite : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+96, 32, 32]; }
+	}
+
+	InputStateAudio
+	{
+		HighlightedSound { Sound="sounds/widget_hover.wav"; Volume=.05; }
+		PressedSound     { Sound="sounds/widget_press.wav"; }
+	}
+}
+
+SimpleBox : StaticWidget
+{
+	Children { ClipChildren = false; }
+}
+
+LayoutBox : StaticWidget
+{
+	Children { ClipChildren = false; }
+	DockedChildren { ClipChildren = false; }
+}
+
+MaskedBox
+{
+	ChildMask
+	{
+		Active = true
+		MaskType = Alpha
+		Bleed = 0
+		Borders = 5
+
+		_X = 384
+		_Y = 0
+		TopLeftSprite     : ~/MainSprite { Source=[(&../../_X)+16,  (&../../_Y)+16,  10, 10]; }
+		TopSprite         : ~/MainSprite { Source=[(&../../_X)+26,  (&../../_Y)+16,  76, 10]; }
+		TopRightSprite    : ~/MainSprite { Source=[(&../../_X)+102, (&../../_Y)+16,  10, 10]; }
+		LeftSprite        : ~/MainSprite { Source=[(&../../_X)+16,  (&../../_Y)+26,  10, 76]; }
+		CenterSprite      : ~/MainSprite { Source=[(&../../_X)+26,  (&../../_Y)+26,  76, 76]; }
+		RightSprite       : ~/MainSprite { Source=[(&../../_X)+102, (&../../_Y)+26,  10, 76]; }
+		BottomLeftSprite  : ~/MainSprite { Source=[(&../../_X)+16,  (&../../_Y)+102, 10, 10]; }
+		BottomSprite      : ~/MainSprite { Source=[(&../../_X)+26,  (&../../_Y)+102, 76, 10]; }
+		BottomRightSprite : ~/MainSprite { Source=[(&../../_X)+102, (&../../_Y)+102, 10, 10]; }
+	}
+}
+
+MaskedSimpleBox : SimpleBox, MaskedBox {}
+MaskedLayoutBox : LayoutBox, MaskedBox {}
+
+ScrollBox : LayoutBox
+{
+	Children : ^/0/Children { ClipChildren = true; }
+
+	HorizontalScrollBar : ~/HorizontalScrollBar { Active = false; }
+	VerticalScrollBar   : ~/VerticalScrollBar   { Active = false; }
+}
+
+MaskedScrollBox : ScrollBox, MaskedBox {}
+
+ListBox : ScrollBox
+{
+
+}
+
+MaskedListBox : ListBox, MaskedBox {}
+
+WindowBox : ScrollBox
+{
+	NineSlice
+	{
+		Bleed = 8
+		Borders = 40
+		ProvidedRectPadding = -26
+
+		_X = 768
+		_Y = 0
+		TopLeftSprite     : ~/MainSprite { Source=[(&../../_X)+0,   (&../../_Y)+0,   80, 80]; }
+		TopSprite         : ~/MainSprite { Source=[(&../../_X)+80,  (&../../_Y)+0,   96, 80]; }
+		TopRightSprite    : ~/MainSprite { Source=[(&../../_X)+176, (&../../_Y)+0,   80, 80]; }
+		LeftSprite        : ~/MainSprite { Source=[(&../../_X)+0,   (&../../_Y)+80,  80, 96]; }
+		CenterSprite      : ~/MainSprite { Source=[(&../../_X)+80,  (&../../_Y)+80,  96, 96]; }
+		RightSprite       : ~/MainSprite { Source=[(&../../_X)+176, (&../../_Y)+80,  80, 96]; }
+		BottomLeftSprite  : ~/MainSprite { Source=[(&../../_X)+0,   (&../../_Y)+176, 80, 80]; }
+		BottomSprite      : ~/MainSprite { Source=[(&../../_X)+80,  (&../../_Y)+176, 96, 80]; }
+		BottomRightSprite : ~/MainSprite { Source=[(&../../_X)+176, (&../../_Y)+176, 80, 80]; }
+	}
+
+	TitleLabel : ~/Label
+	{
+		TextRenderer : ^/0/TextRenderer { Font=&~/GlowFont; }
+	}
+
+	CloseButton : &~/MenuCategory
+	{
+		Text = ""
+		ImageSprite
+		{
+			Texture
+			{
+				File = "icon_close.png"
+				MipLevels = max
+				SampleMode = Linear
+			}
+			ScaleMode = FillMaintainAspect
+		}
+		ImageRectController
+		{
+			InnerRectMode = Fill
+		}
+
+		StateHighlightedNineSlice
+		{
+			Flags = All
+			Bleed = 8
+			Borders = 16
+			ProvidedRectPadding = -7
+
+			_X = 768
+			_Y = 512
+			TopLeftSprite     : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+			TopSprite         : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+			TopRightSprite    : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+			LeftSprite        : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 64]; }
+			CenterSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 64]; }
+			RightSprite       : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 64]; }
+			BottomLeftSprite  : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+96, 32, 32]; }
+			BottomSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+96, 64, 32]; }
+			BottomRightSprite : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+96, 32, 32]; }
+		}
+		StatePressedNineSlice
+		{
+			Flags = All
+			Bleed = 8
+			Borders = 16
+			ProvidedRectPadding = -7
+
+			_X = 896
+			_Y = 512
+			TopLeftSprite     : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+			TopSprite         : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+			TopRightSprite    : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+			LeftSprite        : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 64]; }
+			CenterSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 64]; }
+			RightSprite       : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 64]; }
+			BottomLeftSprite  : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+96, 32, 32]; }
+			BottomSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+96, 64, 32]; }
+			BottomRightSprite : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+96, 32, 32]; }
+		}
+	}
+
+	TitleBox : ~/LayoutBox
+	{
+		NineSlice
+		{
+			Flags = [Center, Bottom]
+			Bleed = [0, 0, 0, 8]
+			Borders = [0, 0, 0, 16]
+			ProvidedRectPadding = [0, 0, 0, -8]
+
+			_X = 640
+			_Y = 0
+			TopLeftSprite     : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+			TopSprite         : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+			TopRightSprite    : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+			LeftSprite        : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 64]; }
+			CenterSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 64]; }
+			RightSprite       : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 64]; }
+			BottomLeftSprite  : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+96, 32, 32]; }
+			BottomSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+96, 64, 32]; }
+			BottomRightSprite : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+96, 32, 32]; }
+		}
+	}
+
+	ResizeController
+	{
+		ResizeLeftCursor =        &~/HorizontalArrowsCursor
+		ResizeRightCursor =       &~/HorizontalArrowsCursor
+		ResizeTopCursor=          &~/VerticalArrowsCursor
+		ResizeBottomCursor =      &~/VerticalArrowsCursor
+		ResizeTopLeftCursor =     &~/TLBRArrowsCursor
+		ResizeBottomRightCursor = &~/TLBRArrowsCursor
+		ResizeTopRightCursor =    &~/TRBLArrowsCursor
+		ResizeBottomLeftCursor =  &~/TRBLArrowsCursor
+	}
+
+	DragController
+	{
+		DragCursor = &~/MoveCursor
+	}
+
+	ChildMask
+	{
+		Active = true
+		MaskType = Alpha
+		Bleed = 0
+		Borders = 8
+
+		_X = 640
+		_Y = 128
+		TopLeftSprite     : ~/MainSprite { Source=[(&../../_X)+16, (&../../_Y)+16, 16, 16]; }
+		TopSprite         : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+16, 64, 16]; }
+		TopRightSprite    : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+16, 16, 16]; }
+		LeftSprite        : ~/MainSprite { Source=[(&../../_X)+16, (&../../_Y)+32, 16, 64]; }
+		CenterSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 64]; }
+		RightSprite       : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 16, 64]; }
+		BottomLeftSprite  : ~/MainSprite { Source=[(&../../_X)+16, (&../../_Y)+96, 16, 16]; }
+		BottomSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+96, 64, 16]; }
+		BottomRightSprite : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+96, 16, 16]; }
+	}
+}
+
+FixedWindowBox : ScrollBox, WindowBox
+{
+
+}
+
+TabBox : LayoutBox
+{
+	TabsListBox : ~/LayoutBox
+	{
+		Children : ^/0/Children { WidgetPadding=[5,5]; BorderPadding=[0,0,0,10]; }
+	}
+
+	Children : ^/0/Children { BorderPadding=0; ClipChildren=true; }
+}
+
+MaskedTabBox : TabBox, MaskedBox {}
+
+BoxInnerShadow : StaticWidget
+{
+	PercentileRect = [0, 0, 100, 100]
+	InputBlockMode = Never
+
+	NineSlice
+	{
+		Bleed = 8
+		Borders = 16
+		ProvidedRectPadding = -7
+
+		_X = 128
+		_Y = 0
+		TopLeftSprite     : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 64]; }
+		CenterSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 64]; }
+		RightSprite       : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 64]; }
+		BottomLeftSprite  : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+96, 32, 32]; }
+		BottomSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+96, 64, 32]; }
+		BottomRightSprite : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+96, 32, 32]; }
+	}
+}
+
+TabButton : SelectableButton
+{
+	StateNormalNineSlice
+	{
+		Flags = All
+		Bleed = 8
+		Borders = 16
+		ProvidedRectPadding = -7
+
+		_X = 0
+		_Y = 768
+		TopLeftSprite     : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 64]; }
+		CenterSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 64]; }
+		RightSprite       : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 64]; }
+		BottomLeftSprite  : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+96, 32, 32]; }
+		BottomSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+96, 64, 32]; }
+		BottomRightSprite : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+96, 32, 32]; }
+	}
+	StateHighlightedNineSlice
+	{
+		Flags = All
+		Bleed = 8
+		Borders = 16
+		ProvidedRectPadding = -7
+
+		_X = 128
+		_Y = 768
+		TopLeftSprite     : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 64]; }
+		CenterSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 64]; }
+		RightSprite       : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 64]; }
+		BottomLeftSprite  : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+96, 32, 32]; }
+		BottomSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+96, 64, 32]; }
+		BottomRightSprite : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+96, 32, 32]; }
+	}
+	StatePressedNineSlice
+	{
+		Flags = All
+		Bleed = 8
+		Borders = 16
+		ProvidedRectPadding = -7
+
+		_X = 256
+		_Y = 768
+		TopLeftSprite     : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 64]; }
+		CenterSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 64]; }
+		RightSprite       : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 64]; }
+		BottomLeftSprite  : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+96, 32, 32]; }
+		BottomSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+96, 64, 32]; }
+		BottomRightSprite : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+96, 32, 32]; }
+	}
+	StateDisabledNineSlice
+	{
+		Flags = All
+		Bleed = 8
+		Borders = 16
+		ProvidedRectPadding = -7
+
+		_X = 384
+		_Y = 768
+		TopLeftSprite     : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 64]; }
+		CenterSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 64]; }
+		RightSprite       : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 64]; }
+		BottomLeftSprite  : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+96, 32, 32]; }
+		BottomSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+96, 64, 32]; }
+		BottomRightSprite : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+96, 32, 32]; }
+	}
+	SelectedNineSlice
+	{
+		Flags = All
+		Bleed = 8
+		Borders = 16
+		ProvidedRectPadding = -7
+
+		_X = 0
+		_Y = 384
+		TopLeftSprite     : ~/SelectedSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         : ~/SelectedSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    : ~/SelectedSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        : ~/SelectedSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 64]; }
+		CenterSprite      : ~/SelectedSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 64]; }
+		RightSprite       : ~/SelectedSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 64]; }
+		BottomLeftSprite  : ~/SelectedSprite { Source=[(&../../_X)+0,  (&../../_Y)+96, 32, 32]; }
+		BottomSprite      : ~/SelectedSprite { Source=[(&../../_X)+32, (&../../_Y)+96, 64, 32]; }
+		BottomRightSprite : ~/SelectedSprite { Source=[(&../../_X)+96, (&../../_Y)+96, 32, 32]; }
+	}
+
+	SelectedTextRenderer : StateNormalTextRenderer { Font=&~/GlowFont; HAlignment=Center; }
+
+	SelectionStateAudio
+	{
+		SelectedSound   { Sound="sounds/panel_open.wav";  Volume=.2; }
+	}
+}
+
+LeftTabButton : TabButton
+{
+	StateNormalNineSlice      : ~/DynamicWidget/StateNormalNineSlice { Flags=All; }
+	StateHighlightedNineSlice : ~/DynamicWidget/StateHighlightedNineSlice { Flags=All; }
+	StatePressedNineSlice     : ~/DynamicWidget/StatePressedNineSlice { Flags=All; }
+	StateDisabledNineSlice    : ~/DynamicWidget/StateDisabledNineSlice { Flags=All; }
+}
+
+TabPageBox : ScrollBox
+{
+
+}
+
+VerticalTabPageBox : TabPageBox
+{
+
+}
+
+Label : StaticWidget
+{
+	TextRenderer : ~/MainText { Color=[168, 202, 229]; }
+}
+
+Image : StaticWidget
+{
+
+}
+
+Button : DynamicWidget
+{
+	StateNormalTextRenderer      : ~/MainText { Color=[187, 224, 255]; }
+	StateHighlightedTextRenderer : ~/MainText { Color=[187, 224, 255]; }
+	StatePressedTextRenderer     : ~/MainText { Color=[187, 224, 255]; }
+	StateDisabledTextRenderer    : ~/MainText { Color=[94, 112, 128]; }
+}
+
+SquareButton : Button
+{
+	StateNormalNineSlice
+	{
+		Bleed = 8
+		Borders = 16
+		ProvidedRectPadding = -7
+
+		_X = 0
+		_Y = 768
+		TopLeftSprite     : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 64]; }
+		CenterSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 64]; }
+		RightSprite       : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 64]; }
+		BottomLeftSprite  : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+96, 32, 32]; }
+		BottomSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+96, 64, 32]; }
+		BottomRightSprite : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+96, 32, 32]; }
+	}
+	StateHighlightedNineSlice
+	{
+		Bleed = 8
+		Borders = 16
+		ProvidedRectPadding = -7
+
+		_X = 128
+		_Y = 768
+		TopLeftSprite     : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 64]; }
+		CenterSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 64]; }
+		RightSprite       : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 64]; }
+		BottomLeftSprite  : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+96, 32, 32]; }
+		BottomSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+96, 64, 32]; }
+		BottomRightSprite : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+96, 32, 32]; }
+	}
+	StatePressedNineSlice
+	{
+		Bleed = 8
+		Borders = 16
+		ProvidedRectPadding = -7
+
+		_X = 256
+		_Y = 768
+		TopLeftSprite     : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 64]; }
+		CenterSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 64]; }
+		RightSprite       : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 64]; }
+		BottomLeftSprite  : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+96, 32, 32]; }
+		BottomSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+96, 64, 32]; }
+		BottomRightSprite : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+96, 32, 32]; }
+	}
+	StateDisabledNineSlice
+	{
+		Bleed = 8
+		Borders = 16
+		ProvidedRectPadding = -7
+
+		_X = 384
+		_Y = 768
+		TopLeftSprite     : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 64]; }
+		CenterSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 64]; }
+		RightSprite       : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 64]; }
+		BottomLeftSprite  : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+96, 32, 32]; }
+		BottomSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+96, 64, 32]; }
+		BottomRightSprite : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+96, 32, 32]; }
+	}
+}
+
+FlatButton : Button
+{
+	StateNormalNineSlice
+	{
+		Flags = All
+		Bleed = 8
+		Borders = 16
+		ProvidedRectPadding = -7
+
+		_X = 0
+		_Y = 256
+		TopLeftSprite     : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 64]; }
+		CenterSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 64]; }
+		RightSprite       : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 64]; }
+		BottomLeftSprite  : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+96, 32, 32]; }
+		BottomSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+96, 64, 32]; }
+		BottomRightSprite : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+96, 32, 32]; }
+	}
+	StateHighlightedNineSlice
+	{
+		Flags = All
+		Bleed = 8
+		Borders = 16
+		ProvidedRectPadding = -7
+
+		_X = 128
+		_Y = 256
+		TopLeftSprite     : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 64]; }
+		CenterSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 64]; }
+		RightSprite       : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 64]; }
+		BottomLeftSprite  : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+96, 32, 32]; }
+		BottomSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+96, 64, 32]; }
+		BottomRightSprite : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+96, 32, 32]; }
+	}
+	StatePressedNineSlice
+	{
+		Flags = All
+		Bleed = 8
+		Borders = 16
+		ProvidedRectPadding = -7
+
+		_X = 256
+		_Y = 256
+		TopLeftSprite     : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 64]; }
+		CenterSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 64]; }
+		RightSprite       : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 64]; }
+		BottomLeftSprite  : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+96, 32, 32]; }
+		BottomSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+96, 64, 32]; }
+		BottomRightSprite : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+96, 32, 32]; }
+	}
+	StateDisabledNineSlice
+	{
+		Flags = All
+		Bleed = 8
+		Borders = 16
+		ProvidedRectPadding = -7
+
+		_X = 384
+		_Y = 256
+		TopLeftSprite     : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 64]; }
+		CenterSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 64]; }
+		RightSprite       : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 64]; }
+		BottomLeftSprite  : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+96, 32, 32]; }
+		BottomSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+96, 64, 32]; }
+		BottomRightSprite : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+96, 32, 32]; }
+	}
+}
+
+OkayButton : Button
+{
+	StateNormalTextRenderer      : ^/0/StateNormalTextRenderer      { Color=[10, 212, 98]; }
+	StateHighlightedTextRenderer : ^/0/StateHighlightedTextRenderer { Color=[10, 212, 98]; }
+	StatePressedTextRenderer     : ^/0/StatePressedTextRenderer     { Color=[10, 212, 98]; }
+}
+
+GoodButton : Button
+{
+	StateNormalNineSlice
+	{
+		Bleed = 8
+		Borders = 16
+		ProvidedRectPadding = -7
+
+		_X = 512
+		_Y = 256
+		TopLeftSprite     : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 64]; }
+		CenterSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 64]; }
+		RightSprite       : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 64]; }
+		BottomLeftSprite  : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+96, 32, 32]; }
+		BottomSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+96, 64, 32]; }
+		BottomRightSprite : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+96, 32, 32]; }
+	}
+	StateHighlightedNineSlice
+	{
+		Bleed = 8
+		Borders = 16
+		ProvidedRectPadding = -7
+
+		_X = 640
+		_Y = 256
+		TopLeftSprite     : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 64]; }
+		CenterSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 64]; }
+		RightSprite       : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 64]; }
+		BottomLeftSprite  : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+96, 32, 32]; }
+		BottomSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+96, 64, 32]; }
+		BottomRightSprite : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+96, 32, 32]; }
+	}
+	StatePressedNineSlice
+	{
+		Bleed = 8
+		Borders = 16
+		ProvidedRectPadding = -7
+
+		_X = 768
+		_Y = 256
+		TopLeftSprite     : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 64]; }
+		CenterSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 64]; }
+		RightSprite       : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 64]; }
+		BottomLeftSprite  : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+96, 32, 32]; }
+		BottomSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+96, 64, 32]; }
+		BottomRightSprite : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+96, 32, 32]; }
+	}
+	StateDisabledNineSlice
+	{
+		Bleed = 8
+		Borders = 16
+		ProvidedRectPadding = -7
+
+		_X = 896
+		_Y = 256
+		TopLeftSprite     : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 64]; }
+		CenterSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 64]; }
+		RightSprite       : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 64]; }
+		BottomLeftSprite  : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+96, 32, 32]; }
+		BottomSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+96, 64, 32]; }
+		BottomRightSprite : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+96, 32, 32]; }
+	}
+
+	StateNormalTextRenderer      : ^/0/StateNormalTextRenderer      { Color=[12, 255, 117]; }
+	StateHighlightedTextRenderer : ^/0/StateHighlightedTextRenderer { Color=[12, 255, 117]; }
+	StatePressedTextRenderer     : ^/0/StatePressedTextRenderer     { Color=[12, 255, 117]; }
+	StateDisabledTextRenderer    : ^/0/StateDisabledTextRenderer    { Color=[94, 128, 108]; }
+}
+
+BadButton : Button
+{
+	StateNormalNineSlice
+	{
+		Bleed = 8
+		Borders = 16
+		ProvidedRectPadding = -7
+
+		_X = 512
+		_Y = 384
+		TopLeftSprite     : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 64]; }
+		CenterSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 64]; }
+		RightSprite       : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 64]; }
+		BottomLeftSprite  : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+96, 32, 32]; }
+		BottomSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+96, 64, 32]; }
+		BottomRightSprite : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+96, 32, 32]; }
+	}
+	StateHighlightedNineSlice
+	{
+		Bleed = 8
+		Borders = 16
+		ProvidedRectPadding = -7
+
+		_X = 640
+		_Y = 384
+		TopLeftSprite     : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 64]; }
+		CenterSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 64]; }
+		RightSprite       : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 64]; }
+		BottomLeftSprite  : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+96, 32, 32]; }
+		BottomSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+96, 64, 32]; }
+		BottomRightSprite : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+96, 32, 32]; }
+	}
+	StatePressedNineSlice
+	{
+		Bleed = 8
+		Borders = 16
+		ProvidedRectPadding = -7
+
+		_X = 768
+		_Y = 384
+		TopLeftSprite     : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 64]; }
+		CenterSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 64]; }
+		RightSprite       : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 64]; }
+		BottomLeftSprite  : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+96, 32, 32]; }
+		BottomSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+96, 64, 32]; }
+		BottomRightSprite : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+96, 32, 32]; }
+	}
+	StateDisabledNineSlice
+	{
+		Bleed = 8
+		Borders = 16
+		ProvidedRectPadding = -7
+
+		_X = 896
+		_Y = 384
+		TopLeftSprite     : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 64]; }
+		CenterSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 64]; }
+		RightSprite       : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 64]; }
+		BottomLeftSprite  : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+96, 32, 32]; }
+		BottomSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+96, 64, 32]; }
+		BottomRightSprite : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+96, 32, 32]; }
+	}
+
+	StateNormalTextRenderer      : ^/0/StateNormalTextRenderer      { Color=[246, 4, 0]; }
+	StateHighlightedTextRenderer : ^/0/StateHighlightedTextRenderer { Color=[246, 4, 0]; }
+	StatePressedTextRenderer     : ^/0/StatePressedTextRenderer     { Color=[246, 4, 0]; }
+	StateDisabledTextRenderer    : ^/0/StateDisabledTextRenderer    { Color=[128, 94, 94]; }
+}
+
+TitleBarButton : FlatButton
+{
+	StateNormalNineSlice : ^/0/StateNormalNineSlice { Flags=None; }
+	StateHighlightedNineSlice : ^/0/StateHighlightedNineSlice { Flags=All; }
+	StatePressedNineSlice : ^/0/StatePressedNineSlice { Flags=All; }
+	StateDisabledNineSlice : ^/0/StateDisabledNineSlice { Flags=None; }
+
+	StateNormalTextRenderer      : ^/0/StateNormalTextRenderer   { Padding=1; }
+	StateDisabledTextRenderer    : ^/0/StateDisabledTextRenderer { padding=1; }
+}
+*/
+MainMenuButton : <./Data/gui/widgets.rules>/FlatButton
+{
+	AutoSize { WidthPadding = 15; }
+
+	StateNormalNineSlice      : ^/0/StateNormalNineSlice      { Flags=None; }
+	StateHighlightedNineSlice : ^/0/StateHighlightedNineSlice { Flags=All; Bleed=(&^/0/Bleed)-3; }
+	StatePressedNineSlice     : ^/0/StatePressedNineSlice     { Flags=All; Bleed=(&^/0/Bleed)-3; }
+	StateDisabledNineSlice    : ^/0/StateDisabledNineSlice    { Flags=None; }
+
+	StateNormalTextRenderer      : ^/0/StateNormalTextRenderer      { Font=&~/GlowFont; FontSize = 18; }
+	StateHighlightedTextRenderer : ^/0/StateHighlightedTextRenderer { Font=&~/GlowFont; FontSize = 18; }
+	StatePressedTextRenderer     : ^/0/StatePressedTextRenderer     { Font=&~/GlowFont; FontSize = 18; }
+	StateDisabledTextRenderer    : ^/0/StateDisabledTextRenderer    { Font=&~/GlowFont; FontSize = 18; }
+}
+/*
+MainMenuIconButton : MainMenuButton
+{
+	StateNormalTextRenderer      : ^/0/StateNormalTextRenderer      { HAlignment=Left; }
+	StateHighlightedTextRenderer : ^/0/StateHighlightedTextRenderer { HAlignment=Left; }
+	StatePressedTextRenderer     : ^/0/StatePressedTextRenderer     { HAlignment=Left; }
+	StateDisabledTextRenderer    : ^/0/StateDisabledTextRenderer    { HAlignment=Left; }
+
+	ImageRectController
+	{
+		InnerRectSize = [48, 48]
+		InnerRectMode = Left
+		BorderPadding = 0
+		RemainderPadding = 0
+	}
+
+	ImageSprite
+	{
+		ScaleMode = FitMaintainAspect
+	}
+}
+
+SelectedMainMenuButton : MainMenuIconButton
+{
+	StateNormalNineSlice : &~/ToolButton/SelectedNineSlice { ProvidedRectPadding=-11; Bleed=(&^/0/Bleed)-3; }
+	StateHighlightedNineSlice = &StateNormalNineSlice
+	StatePressedNineSlice = &StateNormalNineSlice
+}
+
+MainMenuCategory : MainMenuIconButton, MenuCategory
+{
+	StateNormalTextRenderer : ^/0/StateNormalTextRenderer { Padding=0; }
+	StateHighlightedTextRenderer : ^/0/StateHighlightedTextRenderer { Padding=0; }
+	StatePressedTextRenderer : ^/0/StatePressedTextRenderer { Padding=0; }
+	StateDisabledTextRenderer : ^/0/StateDisabledTextRenderer { Padding=0; }
+
+	IconRectController = &ImageRectController
+	IconSprite : ImageSprite { Active=true; }
+}
+*/
+MainMenuItem : <./Data/gui/widgets.rules>/MenuItem
+{
+	Height = 36
+
+	IconRectController { InnerRectSize=[36, 36]; }
+	IconSprite { Active=true; }
+
+	StateNormalTextRenderer      : ^/0/StateNormalTextRenderer      { FontSize = 18; }
+	StateHighlightedTextRenderer : ^/0/StateHighlightedTextRenderer { FontSize = 18; }
+	StatePressedTextRenderer     : ^/0/StatePressedTextRenderer     { FontSize = 18; }
+	StateDisabledTextRenderer    : ^/0/StateDisabledTextRenderer    { FontSize = 18; }
+}
+/*
+SelectableButton : Button
+{
+
+}
+
+CodexItem : ListItem
+{
+	SelectionStateAudio
+	{
+		SelectedSound   { Sound="sounds/panel_open.wav";  Volume=.2; }
+		DeselectedSound { Sound="sounds/panel_close.wav"; Volume=.2; }
+	}
+}
+
+ImageButton : Button
+{
+
+}
+
+ToggledImageButton : SquareButton, SelectableButton
+{
+	StateNormalSelectedNineSlice
+	{
+		Bleed = 8
+		Borders = 16
+		ProvidedRectPadding = -7
+
+		_X = 0
+		_Y = 384
+		TopLeftSprite     : ~/SelectedSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         : ~/SelectedSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    : ~/SelectedSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        : ~/SelectedSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 64]; }
+		CenterSprite      : ~/SelectedSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 64]; }
+		RightSprite       : ~/SelectedSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 64]; }
+		BottomLeftSprite  : ~/SelectedSprite { Source=[(&../../_X)+0,  (&../../_Y)+96, 32, 32]; }
+		BottomSprite      : ~/SelectedSprite { Source=[(&../../_X)+32, (&../../_Y)+96, 64, 32]; }
+		BottomRightSprite : ~/SelectedSprite { Source=[(&../../_X)+96, (&../../_Y)+96, 32, 32]; }
+	}
+	StateHighlightedSelectedNineSlice
+	{
+		Bleed = 8
+		Borders = 16
+		ProvidedRectPadding = -7
+
+		_X = 128
+		_Y = 384
+		TopLeftSprite     : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 64]; }
+		CenterSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 64]; }
+		RightSprite       : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 64]; }
+		BottomLeftSprite  : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+96, 32, 32]; }
+		BottomSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+96, 64, 32]; }
+		BottomRightSprite : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+96, 32, 32]; }
+	}
+	StatePressedSelectedNineSlice = &StatePressedNineSlice
+	StateDisabledSelectedNineSlice = &StateDisabledNineSlice
+}
+
+ListItem : FlatButton
+{
+	StateNormalNineSlice      : ^/0/StateNormalNineSlice      { Flags=Center; }
+	StateHighlightedNineSlice : ^/0/StateHighlightedNineSlice { Flags=Center; }
+	StatePressedNineSlice     : ^/0/StatePressedNineSlice     { Flags=Center; }
+	StateDisabledNineSlice    : ^/0/StateDisabledNineSlice    { Flags=Center; }
+
+	SelectedNineSlice
+	{
+		Flags = Center
+
+		_X = 256
+		_Y = 384
+		CenterSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 64]; }
+	}
+
+	SelectedTextRenderer     : ~/MainText { Color=[187, 224, 255]; Font=&~/GlowFont; }
+
+	ClickAudio
+	{
+		Sound { Sound="sounds/toggle.wav";  Volume=.15; }
+	}
+}
+
+ImageListItem : ListItem
+{
+
+}
+
+ToolButton : FlatButton, ImageListItem
+{
+	SelectedNineSlice
+	{
+		Flags = All
+		Bleed = 8
+		Borders = 16
+		ProvidedRectPadding = -7
+
+		_X = 384
+		_Y = 384
+		TopLeftSprite     : ~/SelectedSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         : ~/SelectedSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    : ~/SelectedSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        : ~/SelectedSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 64]; }
+		CenterSprite      : ~/SelectedSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 64]; }
+		RightSprite       : ~/SelectedSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 64]; }
+		BottomLeftSprite  : ~/SelectedSprite { Source=[(&../../_X)+0,  (&../../_Y)+96, 32, 32]; }
+		BottomSprite      : ~/SelectedSprite { Source=[(&../../_X)+32, (&../../_Y)+96, 64, 32]; }
+		BottomRightSprite : ~/SelectedSprite { Source=[(&../../_X)+96, (&../../_Y)+96, 32, 32]; }
+	}
+
+	SelectedTextRenderer = &~/Button/StatePressedTextRenderer
+}
+
+IconItem : ToolButton
+{
+	StateNormalNineSlice
+	{
+		Flags = All
+		Bleed = 8
+		Borders = 16
+		ProvidedRectPadding = -7
+
+		_X = 0
+		_Y = 1152
+		TopLeftSprite     : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 64]; }
+		CenterSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 64]; }
+		RightSprite       : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 64]; }
+		BottomLeftSprite  : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+96, 32, 32]; }
+		BottomSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+96, 64, 32]; }
+		BottomRightSprite : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+96, 32, 32]; }
+	}
+	StateHighlightedNineSlice
+	{
+		Flags = All
+		Bleed = 8
+		Borders = 16
+		ProvidedRectPadding = -7
+
+		_X = 128
+		_Y = 1152
+		TopLeftSprite     : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 64]; }
+		CenterSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 64]; }
+		RightSprite       : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 64]; }
+		BottomLeftSprite  : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+96, 32, 32]; }
+		BottomSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+96, 64, 32]; }
+		BottomRightSprite : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+96, 32, 32]; }
+	}
+	StatePressedNineSlice
+	{
+		Flags = All
+		Bleed = 8
+		Borders = 16
+		ProvidedRectPadding = -7
+
+		_X = 256
+		_Y = 1152
+		TopLeftSprite     : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 64]; }
+		CenterSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 64]; }
+		RightSprite       : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 64]; }
+		BottomLeftSprite  : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+96, 32, 32]; }
+		BottomSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+96, 64, 32]; }
+		BottomRightSprite : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+96, 32, 32]; }
+	}
+	StateDisabledNineSlice
+	{
+		Flags = All
+		Bleed = 8
+		Borders = 16
+		ProvidedRectPadding = -7
+
+		_X = 384
+		_Y = 1152
+		TopLeftSprite     : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 64]; }
+		CenterSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 64]; }
+		RightSprite       : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 64]; }
+		BottomLeftSprite  : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+96, 32, 32]; }
+		BottomSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+96, 64, 32]; }
+		BottomRightSprite : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+96, 32, 32]; }
+	}
+	SelectedNineSlice
+	{
+		Flags = All
+		Bleed = 8
+		Borders = 16
+		ProvidedRectPadding = -7
+
+		_X = 512
+		_Y = 1152
+		TopLeftSprite     : ~/SelectedSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         : ~/SelectedSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    : ~/SelectedSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        : ~/SelectedSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 64]; }
+		CenterSprite      : ~/SelectedSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 64]; }
+		RightSprite       : ~/SelectedSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 64]; }
+		BottomLeftSprite  : ~/SelectedSprite { Source=[(&../../_X)+0,  (&../../_Y)+96, 32, 32]; }
+		BottomSprite      : ~/SelectedSprite { Source=[(&../../_X)+32, (&../../_Y)+96, 64, 32]; }
+		BottomRightSprite : ~/SelectedSprite { Source=[(&../../_X)+96, (&../../_Y)+96, 32, 32]; }
+	}
+
+	ImageSprite
+	{
+		Padding = 2
+	}
+}
+
+PopoutButton : Button, ImageListItem
+{
+	StateNormalNineSlice
+	{
+		Bleed = 8
+		Borders = [16, 24, 16, 16]
+		ProvidedRectPadding = -7
+
+		_X = 512
+		_Y = 1024
+		TopLeftSprite     : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 48]; }
+		TopSprite         : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 48]; }
+		TopRightSprite    : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 48]; }
+		LeftSprite        : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+48, 32, 48]; }
+		CenterSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+48, 64, 48]; }
+		RightSprite       : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+48, 32, 48]; }
+		BottomLeftSprite  : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+96, 32, 32]; }
+		BottomSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+96, 64, 32]; }
+		BottomRightSprite : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+96, 32, 32]; }
+	}
+	StateHighlightedNineSlice
+	{
+		Bleed = 8
+		Borders = [16, 24, 16, 16]
+		ProvidedRectPadding = -7
+
+		_X = 640
+		_Y = 1024
+		TopLeftSprite     : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 48]; }
+		TopSprite         : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 48]; }
+		TopRightSprite    : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 48]; }
+		LeftSprite        : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+48, 32, 48]; }
+		CenterSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+48, 64, 48]; }
+		RightSprite       : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+48, 32, 48]; }
+		BottomLeftSprite  : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+96, 32, 32]; }
+		BottomSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+96, 64, 32]; }
+		BottomRightSprite : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+96, 32, 32]; }
+	}
+	StatePressedNineSlice
+	{
+		Bleed = 8
+		Borders = [16, 24, 16, 16]
+		ProvidedRectPadding = -7
+
+		_X = 768
+		_Y = 1024
+		TopLeftSprite     : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 48]; }
+		TopSprite         : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 48]; }
+		TopRightSprite    : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 48]; }
+		LeftSprite        : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+48, 32, 48]; }
+		CenterSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+48, 64, 48]; }
+		RightSprite       : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+48, 32, 48]; }
+		BottomLeftSprite  : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+96, 32, 32]; }
+		BottomSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+96, 64, 32]; }
+		BottomRightSprite : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+96, 32, 32]; }
+	}
+	StateDisabledNineSlice
+	{
+		Bleed = 8
+		Borders = [16, 24, 16, 16]
+		ProvidedRectPadding = -7
+
+		_X = 896
+		_Y = 1024
+		TopLeftSprite     : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 48]; }
+		TopSprite         : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 48]; }
+		TopRightSprite    : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 48]; }
+		LeftSprite        : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+48, 32, 48]; }
+		CenterSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+48, 64, 48]; }
+		RightSprite       : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+48, 32, 48]; }
+		BottomLeftSprite  : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+96, 32, 32]; }
+		BottomSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+96, 64, 32]; }
+		BottomRightSprite : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+96, 32, 32]; }
+	}
+
+	ImageSprite
+	{
+		ScaleMode = FillMaintainAspect
+	}
+
+	ClickAudio {}
+}
+
+FlatPopoutButton : FlatButton, ImageListItem
+{
+	StateNormalNineSlice
+	{
+		Bleed = 8
+		Borders = [16, 24, 16, 16]
+		ProvidedRectPadding = -7
+
+		_X = 0
+		_Y = 1024
+		TopLeftSprite     : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 48]; }
+		TopSprite         : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 48]; }
+		TopRightSprite    : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 48]; }
+		LeftSprite        : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+48, 32, 48]; }
+		CenterSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+48, 64, 48]; }
+		RightSprite       : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+48, 32, 48]; }
+		BottomLeftSprite  : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+96, 32, 32]; }
+		BottomSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+96, 64, 32]; }
+		BottomRightSprite : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+96, 32, 32]; }
+	}
+	StateHighlightedNineSlice
+	{
+		Bleed = 8
+		Borders = [16, 24, 16, 16]
+		ProvidedRectPadding = -7
+
+		_X = 128
+		_Y = 1024
+		TopLeftSprite     : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 48]; }
+		TopSprite         : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 48]; }
+		TopRightSprite    : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 48]; }
+		LeftSprite        : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+48, 32, 48]; }
+		CenterSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+48, 64, 48]; }
+		RightSprite       : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+48, 32, 48]; }
+		BottomLeftSprite  : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+96, 32, 32]; }
+		BottomSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+96, 64, 32]; }
+		BottomRightSprite : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+96, 32, 32]; }
+	}
+	StatePressedNineSlice
+	{
+		Bleed = 8
+		Borders = [16, 24, 16, 16]
+		ProvidedRectPadding = -7
+
+		_X = 256
+		_Y = 1024
+		TopLeftSprite     : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 48]; }
+		TopSprite         : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 48]; }
+		TopRightSprite    : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 48]; }
+		LeftSprite        : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+48, 32, 48]; }
+		CenterSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+48, 64, 48]; }
+		RightSprite       : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+48, 32, 48]; }
+		BottomLeftSprite  : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+96, 32, 32]; }
+		BottomSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+96, 64, 32]; }
+		BottomRightSprite : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+96, 32, 32]; }
+	}
+	StateDisabledNineSlice
+	{
+		Bleed = 8
+		Borders = [16, 24, 16, 16]
+		ProvidedRectPadding = -7
+
+		_X = 384
+		_Y = 1024
+		TopLeftSprite     : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 48]; }
+		TopSprite         : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 48]; }
+		TopRightSprite    : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 48]; }
+		LeftSprite        : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+48, 32, 48]; }
+		CenterSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+48, 64, 48]; }
+		RightSprite       : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+48, 32, 48]; }
+		BottomLeftSprite  : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+96, 32, 32]; }
+		BottomSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+96, 64, 32]; }
+		BottomRightSprite : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+96, 32, 32]; }
+	}
+
+	ImageSprite
+	{
+		ScaleMode = FillMaintainAspect
+	}
+
+	ClickAudio {}
+}
+
+SwitchButton : ToggledImageButton, ToolButton
+{
+	StateNormalNineSlice
+	{
+		Bleed = 8
+		Borders = [16, 16, 16, 26]
+		ProvidedRectPadding = -7
+
+		_X = 0
+		_Y = 1408
+		TopLeftSprite     : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 44]; }
+		CenterSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 44]; }
+		RightSprite       : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 44]; }
+		BottomLeftSprite  : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+76, 32, 52]; }
+		BottomSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+76, 64, 52]; }
+		BottomRightSprite : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+76, 32, 52]; }
+	}
+	StateHighlightedNineSlice
+	{
+		Bleed = 8
+		Borders = [16, 16, 16, 26]
+		ProvidedRectPadding = -7
+
+		_X = 128
+		_Y = 1408
+		TopLeftSprite     : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 44]; }
+		CenterSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 44]; }
+		RightSprite       : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 44]; }
+		BottomLeftSprite  : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+76, 32, 52]; }
+		BottomSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+76, 64, 52]; }
+		BottomRightSprite : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+76, 32, 52]; }
+	}
+	StatePressedNineSlice
+	{
+		Bleed = 8
+		Borders = [16, 16, 16, 26]
+		ProvidedRectPadding = -7
+
+		_X = 256
+		_Y = 1408
+		TopLeftSprite     : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 44]; }
+		CenterSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 44]; }
+		RightSprite       : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 44]; }
+		BottomLeftSprite  : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+76, 32, 52]; }
+		BottomSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+76, 64, 52]; }
+		BottomRightSprite : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+76, 32, 52]; }
+	}
+	StateDisabledNineSlice
+	{
+		Bleed = 8
+		Borders = [16, 16, 16, 26]
+		ProvidedRectPadding = -7
+
+		_X = 384
+		_Y = 1408
+		TopLeftSprite     : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 44]; }
+		CenterSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 44]; }
+		RightSprite       : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 44]; }
+		BottomLeftSprite  : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+76, 32, 52]; }
+		BottomSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+76, 64, 52]; }
+		BottomRightSprite : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+76, 32, 52]; }
+	}
+	StateNormalSelectedNineSlice
+	{
+		Bleed = 8
+		Borders = [16, 16, 16, 26]
+		ProvidedRectPadding = -7
+
+		_X = 512
+		_Y = 1408
+		TopLeftSprite     : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 44]; }
+		CenterSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 44]; }
+		RightSprite       : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 44]; }
+		BottomLeftSprite  : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+76, 32, 52]; }
+		BottomSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+76, 64, 52]; }
+		BottomRightSprite : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+76, 32, 52]; }
+	}
+	StateHighlightedSelectedNineSlice
+	{
+		Bleed = 8
+		Borders = [16, 16, 16, 26]
+		ProvidedRectPadding = -7
+
+		_X = 640
+		_Y = 1408
+		TopLeftSprite     : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 44]; }
+		CenterSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 44]; }
+		RightSprite       : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 44]; }
+		BottomLeftSprite  : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+76, 32, 52]; }
+		BottomSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+76, 64, 52]; }
+		BottomRightSprite : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+76, 32, 52]; }
+	}
+	StatePressedSelectedNineSlice
+	{
+		Bleed = 8
+		Borders = [16, 16, 16, 26]
+		ProvidedRectPadding = -7
+
+		_X = 768
+		_Y = 1408
+		TopLeftSprite     : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 44]; }
+		CenterSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 44]; }
+		RightSprite       : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 44]; }
+		BottomLeftSprite  : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+76, 32, 52]; }
+		BottomSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+76, 64, 52]; }
+		BottomRightSprite : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+76, 32, 52]; }
+	}
+	StateDisabledSelectedNineSlice
+	{
+		Bleed = 8
+		Borders = [16, 16, 16, 26]
+		ProvidedRectPadding = -7
+
+		_X = 896
+		_Y = 1408
+		TopLeftSprite     : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 44]; }
+		CenterSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 44]; }
+		RightSprite       : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 44]; }
+		BottomLeftSprite  : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+76, 32, 52]; }
+		BottomSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+76, 64, 52]; }
+		BottomRightSprite : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+76, 32, 52]; }
+	}
+
+	ImageSprite
+	{
+		ScaleMode = FillMaintainAspect
+	}
+}
+
+OffAlertSwitchButton : SwitchButton
+{
+	StateNormalNineSlice
+	{
+		Bleed = 8
+		Borders = [16, 16, 16, 26]
+		ProvidedRectPadding = -7
+
+		_X = 640
+		_Y = 1280
+		TopLeftSprite     : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 44]; }
+		CenterSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 44]; }
+		RightSprite       : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 44]; }
+		BottomLeftSprite  : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+76, 32, 52]; }
+		BottomSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+76, 64, 52]; }
+		BottomRightSprite : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+76, 32, 52]; }
+	}
+	StateHighlightedNineSlice
+	{
+		Bleed = 8
+		Borders = [16, 16, 16, 26]
+		ProvidedRectPadding = -7
+
+		_X = 768
+		_Y = 1280
+		TopLeftSprite     : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 44]; }
+		CenterSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 44]; }
+		RightSprite       : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 44]; }
+		BottomLeftSprite  : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+76, 32, 52]; }
+		BottomSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+76, 64, 52]; }
+		BottomRightSprite : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+76, 32, 52]; }
+	}
+	StatePressedNineSlice
+	{
+		Bleed = 8
+		Borders = [16, 16, 16, 26]
+		ProvidedRectPadding = -7
+
+		_X = 896
+		_Y = 1280
+		TopLeftSprite     : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 44]; }
+		CenterSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 44]; }
+		RightSprite       : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 44]; }
+		BottomLeftSprite  : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+76, 32, 52]; }
+		BottomSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+76, 64, 52]; }
+		BottomRightSprite : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+76, 32, 52]; }
+	}
+}
+
+OnAlertSwitchButton : SwitchButton
+{
+	StateNormalSelectedNineSlice
+	{
+		Bleed = 8
+		Borders = [16, 16, 16, 26]
+		ProvidedRectPadding = -7
+
+		_X = 768
+		_Y = 1280
+		TopLeftSprite     : ~/MainSprite { Source=[(&../../_X)-0,  (&../../_Y)+0,  -32, 32]; }
+		TopSprite         : ~/MainSprite { Source=[(&../../_X)-32, (&../../_Y)+0,  -64, 32]; }
+		TopRightSprite    : ~/MainSprite { Source=[(&../../_X)-96, (&../../_Y)+0,  -32, 32]; }
+		LeftSprite        : ~/MainSprite { Source=[(&../../_X)-0,  (&../../_Y)+32, -32, 44]; }
+		CenterSprite      : ~/MainSprite { Source=[(&../../_X)-32, (&../../_Y)+32, -64, 44]; }
+		RightSprite       : ~/MainSprite { Source=[(&../../_X)-96, (&../../_Y)+32, -32, 44]; }
+		BottomLeftSprite  : ~/MainSprite { Source=[(&../../_X)-0,  (&../../_Y)+76, -32, 52]; }
+		BottomSprite      : ~/MainSprite { Source=[(&../../_X)-32, (&../../_Y)+76, -64, 52]; }
+		BottomRightSprite : ~/MainSprite { Source=[(&../../_X)-96, (&../../_Y)+76, -32, 52]; }
+	}
+
+	StateHighlightedSelectedNineSlice
+	{
+		Bleed = 8
+		Borders = [16, 16, 16, 26]
+		ProvidedRectPadding = -7
+
+		_X = 896
+		_Y = 1280
+		TopLeftSprite     : ~/HighlightSprite { Source=[(&../../_X)-0,  (&../../_Y)+0,  -32, 32]; }
+		TopSprite         : ~/HighlightSprite { Source=[(&../../_X)-32, (&../../_Y)+0,  -64, 32]; }
+		TopRightSprite    : ~/HighlightSprite { Source=[(&../../_X)-96, (&../../_Y)+0,  -32, 32]; }
+		LeftSprite        : ~/HighlightSprite { Source=[(&../../_X)-0,  (&../../_Y)+32, -32, 44]; }
+		CenterSprite      : ~/HighlightSprite { Source=[(&../../_X)-32, (&../../_Y)+32, -64, 44]; }
+		RightSprite       : ~/HighlightSprite { Source=[(&../../_X)-96, (&../../_Y)+32, -32, 44]; }
+		BottomLeftSprite  : ~/HighlightSprite { Source=[(&../../_X)-0,  (&../../_Y)+76, -32, 52]; }
+		BottomSprite      : ~/HighlightSprite { Source=[(&../../_X)-32, (&../../_Y)+76, -64, 52]; }
+		BottomRightSprite : ~/HighlightSprite { Source=[(&../../_X)-96, (&../../_Y)+76, -32, 52]; }
+	}
+
+	StatePressedSelectedNineSlice
+	{
+		Bleed = 8
+		Borders = [16, 16, 16, 26]
+		ProvidedRectPadding = -7
+
+		_X = 1024
+		_Y = 1280
+		TopLeftSprite     : ~/HighlightSprite { Source=[(&../../_X)-0,  (&../../_Y)+0,  -32, 32]; }
+		TopSprite         : ~/HighlightSprite { Source=[(&../../_X)-32, (&../../_Y)+0,  -64, 32]; }
+		TopRightSprite    : ~/HighlightSprite { Source=[(&../../_X)-96, (&../../_Y)+0,  -32, 32]; }
+		LeftSprite        : ~/HighlightSprite { Source=[(&../../_X)-0,  (&../../_Y)+32, -32, 44]; }
+		CenterSprite      : ~/HighlightSprite { Source=[(&../../_X)-32, (&../../_Y)+32, -64, 44]; }
+		RightSprite       : ~/HighlightSprite { Source=[(&../../_X)-96, (&../../_Y)+32, -32, 44]; }
+		BottomLeftSprite  : ~/HighlightSprite { Source=[(&../../_X)-0,  (&../../_Y)+76, -32, 52]; }
+		BottomSprite      : ~/HighlightSprite { Source=[(&../../_X)-32, (&../../_Y)+76, -64, 52]; }
+		BottomRightSprite : ~/HighlightSprite { Source=[(&../../_X)-96, (&../../_Y)+76, -32, 52]; }
+	}
+}
+
+FlatSwitchButton : ToggledImageButton, ToolButton
+{
+	StateNormalNineSlice
+	{
+		Bleed = 8
+		Borders = [16, 16, 16, 26]
+		ProvidedRectPadding = -7
+
+		_X = 0
+		_Y = 512
+		TopLeftSprite     : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 44]; }
+		CenterSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 44]; }
+		RightSprite       : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 44]; }
+		BottomLeftSprite  : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+76, 32, 52]; }
+		BottomSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+76, 64, 52]; }
+		BottomRightSprite : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+76, 32, 52]; }
+	}
+	StateHighlightedNineSlice
+	{
+		Bleed = 8
+		Borders = [16, 16, 16, 26]
+		ProvidedRectPadding = -7
+
+		_X = 128
+		_Y = 512
+		TopLeftSprite     : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 44]; }
+		CenterSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 44]; }
+		RightSprite       : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 44]; }
+		BottomLeftSprite  : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+76, 32, 52]; }
+		BottomSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+76, 64, 52]; }
+		BottomRightSprite : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+76, 32, 52]; }
+	}
+	StatePressedNineSlice
+	{
+		Bleed = 8
+		Borders = [16, 16, 16, 26]
+		ProvidedRectPadding = -7
+
+		_X = 256
+		_Y = 512
+		TopLeftSprite     : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 44]; }
+		CenterSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 44]; }
+		RightSprite       : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 44]; }
+		BottomLeftSprite  : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+76, 32, 52]; }
+		BottomSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+76, 64, 52]; }
+		BottomRightSprite : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+76, 32, 52]; }
+	}
+	StateDisabledNineSlice
+	{
+		Bleed = 8
+		Borders = [16, 16, 16, 26]
+		ProvidedRectPadding = -7
+
+		_X = 384
+		_Y = 512
+		TopLeftSprite     : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 44]; }
+		CenterSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 44]; }
+		RightSprite       : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 44]; }
+		BottomLeftSprite  : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+76, 32, 52]; }
+		BottomSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+76, 64, 52]; }
+		BottomRightSprite : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+76, 32, 52]; }
+	}
+	StateNormalSelectedNineSlice
+	{
+		Bleed = 8
+		Borders = [16, 16, 16, 26]
+		ProvidedRectPadding = -7
+
+		_X = 0
+		_Y = 640
+		TopLeftSprite     : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 44]; }
+		CenterSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 44]; }
+		RightSprite       : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 44]; }
+		BottomLeftSprite  : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+76, 32, 52]; }
+		BottomSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+76, 64, 52]; }
+		BottomRightSprite : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+76, 32, 52]; }
+	}
+	StateHighlightedSelectedNineSlice
+	{
+		Bleed = 8
+		Borders = [16, 16, 16, 26]
+		ProvidedRectPadding = -7
+
+		_X = 128
+		_Y = 640
+		TopLeftSprite     : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 44]; }
+		CenterSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 44]; }
+		RightSprite       : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 44]; }
+		BottomLeftSprite  : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+76, 32, 52]; }
+		BottomSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+76, 64, 52]; }
+		BottomRightSprite : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+76, 32, 52]; }
+	}
+	StatePressedSelectedNineSlice
+	{
+		Bleed = 8
+		Borders = [16, 16, 16, 26]
+		ProvidedRectPadding = -7
+
+		_X = 256
+		_Y = 640
+		TopLeftSprite     : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 44]; }
+		CenterSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 44]; }
+		RightSprite       : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 44]; }
+		BottomLeftSprite  : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+76, 32, 52]; }
+		BottomSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+76, 64, 52]; }
+		BottomRightSprite : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+76, 32, 52]; }
+	}
+	StateDisabledSelectedNineSlice
+	{
+		Bleed = 8
+		Borders = [16, 16, 16, 26]
+		ProvidedRectPadding = -7
+
+		_X = 384
+		_Y = 640
+		TopLeftSprite     : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 44]; }
+		CenterSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 44]; }
+		RightSprite       : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 44]; }
+		BottomLeftSprite  : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+76, 32, 52]; }
+		BottomSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+76, 64, 52]; }
+		BottomRightSprite : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+76, 32, 52]; }
+	}
+
+	ImageSprite
+	{
+		ScaleMode = FillMaintainAspect
+	}
+}
+
+FlatOffAlertSwitchButton : FlatSwitchButton
+{
+	StateNormalNineSlice
+	{
+		Bleed = 8
+		Borders = [16, 16, 16, 26]
+		ProvidedRectPadding = -7
+
+		_X = 640
+		_Y = 1152
+		TopLeftSprite     : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 44]; }
+		CenterSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 44]; }
+		RightSprite       : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 44]; }
+		BottomLeftSprite  : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+76, 32, 52]; }
+		BottomSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+76, 64, 52]; }
+		BottomRightSprite : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+76, 32, 52]; }
+	}
+	StateHighlightedNineSlice
+	{
+		Bleed = 8
+		Borders = [16, 16, 16, 26]
+		ProvidedRectPadding = -7
+
+		_X = 768
+		_Y = 1152
+		TopLeftSprite     : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 44]; }
+		CenterSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 44]; }
+		RightSprite       : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 44]; }
+		BottomLeftSprite  : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+76, 32, 52]; }
+		BottomSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+76, 64, 52]; }
+		BottomRightSprite : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+76, 32, 52]; }
+	}
+	StatePressedNineSlice
+	{
+		Bleed = 8
+		Borders = [16, 16, 16, 26]
+		ProvidedRectPadding = -7
+
+		_X = 896
+		_Y = 1152
+		TopLeftSprite     : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 44]; }
+		CenterSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 44]; }
+		RightSprite       : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 44]; }
+		BottomLeftSprite  : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+76, 32, 52]; }
+		BottomSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+76, 64, 52]; }
+		BottomRightSprite : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+76, 32, 52]; }
+	}
+}
+
+FlatOnAlertSwitchButton : FlatSwitchButton
+{
+	StateNormalSelectedNineSlice
+	{
+		Bleed = 8
+		Borders = [16, 16, 16, 26]
+		ProvidedRectPadding = -7
+
+		_X = 768
+		_Y = 1152
+		TopLeftSprite     : ~/MainSprite { Source=[(&../../_X)-0,  (&../../_Y)+0,  -32, 32]; }
+		TopSprite         : ~/MainSprite { Source=[(&../../_X)-32, (&../../_Y)+0,  -64, 32]; }
+		TopRightSprite    : ~/MainSprite { Source=[(&../../_X)-96, (&../../_Y)+0,  -32, 32]; }
+		LeftSprite        : ~/MainSprite { Source=[(&../../_X)-0,  (&../../_Y)+32, -32, 44]; }
+		CenterSprite      : ~/MainSprite { Source=[(&../../_X)-32, (&../../_Y)+32, -64, 44]; }
+		RightSprite       : ~/MainSprite { Source=[(&../../_X)-96, (&../../_Y)+32, -32, 44]; }
+		BottomLeftSprite  : ~/MainSprite { Source=[(&../../_X)-0,  (&../../_Y)+76, -32, 52]; }
+		BottomSprite      : ~/MainSprite { Source=[(&../../_X)-32, (&../../_Y)+76, -64, 52]; }
+		BottomRightSprite : ~/MainSprite { Source=[(&../../_X)-96, (&../../_Y)+76, -32, 52]; }
+	}
+
+	StateHighlightedSelectedNineSlice
+	{
+		Bleed = 8
+		Borders = [16, 16, 16, 26]
+		ProvidedRectPadding = -7
+
+		_X = 896
+		_Y = 1152
+		TopLeftSprite     : ~/HighlightSprite { Source=[(&../../_X)-0,  (&../../_Y)+0,  -32, 32]; }
+		TopSprite         : ~/HighlightSprite { Source=[(&../../_X)-32, (&../../_Y)+0,  -64, 32]; }
+		TopRightSprite    : ~/HighlightSprite { Source=[(&../../_X)-96, (&../../_Y)+0,  -32, 32]; }
+		LeftSprite        : ~/HighlightSprite { Source=[(&../../_X)-0,  (&../../_Y)+32, -32, 44]; }
+		CenterSprite      : ~/HighlightSprite { Source=[(&../../_X)-32, (&../../_Y)+32, -64, 44]; }
+		RightSprite       : ~/HighlightSprite { Source=[(&../../_X)-96, (&../../_Y)+32, -32, 44]; }
+		BottomLeftSprite  : ~/HighlightSprite { Source=[(&../../_X)-0,  (&../../_Y)+76, -32, 52]; }
+		BottomSprite      : ~/HighlightSprite { Source=[(&../../_X)-32, (&../../_Y)+76, -64, 52]; }
+		BottomRightSprite : ~/HighlightSprite { Source=[(&../../_X)-96, (&../../_Y)+76, -32, 52]; }
+	}
+
+	StatePressedSelectedNineSlice
+	{
+		Bleed = 8
+		Borders = [16, 16, 16, 26]
+		ProvidedRectPadding = -7
+
+		_X = 1024
+		_Y = 1152
+		TopLeftSprite     : ~/HighlightSprite { Source=[(&../../_X)-0,  (&../../_Y)+0,  -32, 32]; }
+		TopSprite         : ~/HighlightSprite { Source=[(&../../_X)-32, (&../../_Y)+0,  -64, 32]; }
+		TopRightSprite    : ~/HighlightSprite { Source=[(&../../_X)-96, (&../../_Y)+0,  -32, 32]; }
+		LeftSprite        : ~/HighlightSprite { Source=[(&../../_X)-0,  (&../../_Y)+32, -32, 44]; }
+		CenterSprite      : ~/HighlightSprite { Source=[(&../../_X)-32, (&../../_Y)+32, -64, 44]; }
+		RightSprite       : ~/HighlightSprite { Source=[(&../../_X)-96, (&../../_Y)+32, -32, 44]; }
+		BottomLeftSprite  : ~/HighlightSprite { Source=[(&../../_X)-0,  (&../../_Y)+76, -32, 52]; }
+		BottomSprite      : ~/HighlightSprite { Source=[(&../../_X)-32, (&../../_Y)+76, -64, 52]; }
+		BottomRightSprite : ~/HighlightSprite { Source=[(&../../_X)-96, (&../../_Y)+76, -32, 52]; }
+	}
+}
+
+ArrowUpLeft : ListItem
+{
+	StateNormalNineSlice      { Flags=Center; CenterSprite : ~/ArrowSprite { Bleed=8; Source=[0, 0, 128, 128]; } }
+	StateHighlightedNineSlice { Flags=Center; CenterSprite : ~/ArrowSprite { Bleed=8; Source=[384, 0, 128, 128]; } }
+	StatePressedNineSlice     { Flags=Center; CenterSprite : ~/ArrowSprite { Bleed=8; Source=[0, 384, 128, 128]; } }
+	SelectedNineSlice         { Flags=Center; CenterSprite : ~/ArrowSprite { Bleed=8; Source=[384, 384, 128, 128]; } }
+}
+ArrowUp : ListItem
+{
+	StateNormalNineSlice      { Flags=Center; CenterSprite : ~/ArrowSprite { Bleed=8; Source=[128, 0, 128, 128]; } }
+	StateHighlightedNineSlice { Flags=Center; CenterSprite : ~/ArrowSprite { Bleed=8; Source=[512, 0, 128, 128]; } }
+	StatePressedNineSlice     { Flags=Center; CenterSprite : ~/ArrowSprite { Bleed=8; Source=[128, 384, 128, 128]; } }
+	SelectedNineSlice         { Flags=Center; CenterSprite : ~/ArrowSprite { Bleed=8; Source=[512, 384, 128, 128]; } }
+}
+ArrowUpRight : ListItem
+{
+	StateNormalNineSlice      { Flags=Center; CenterSprite : ~/ArrowSprite { Bleed=8; Source=[256, 0, 128, 128]; } }
+	StateHighlightedNineSlice { Flags=Center; CenterSprite : ~/ArrowSprite { Bleed=8; Source=[640, 0, 128, 128]; } }
+	StatePressedNineSlice     { Flags=Center; CenterSprite : ~/ArrowSprite { Bleed=8; Source=[256, 384, 128, 128]; } }
+	SelectedNineSlice         { Flags=Center; CenterSprite : ~/ArrowSprite { Bleed=8; Source=[640, 384, 128, 128]; } }
+}
+ArrowRight : ListItem
+{
+	StateNormalNineSlice      { Flags=Center; CenterSprite : ~/ArrowSprite { Bleed=8; Source=[256, 128, 128, 128]; } }
+	StateHighlightedNineSlice { Flags=Center; CenterSprite : ~/ArrowSprite { Bleed=8; Source=[640, 128, 128, 128]; } }
+	StatePressedNineSlice     { Flags=Center; CenterSprite : ~/ArrowSprite { Bleed=8; Source=[256, 512, 128, 128]; } }
+	SelectedNineSlice         { Flags=Center; CenterSprite : ~/ArrowSprite { Bleed=8; Source=[640, 512, 128, 128]; } }
+}
+ArrowDownRight : ListItem
+{
+	StateNormalNineSlice      { Flags=Center; CenterSprite : ~/ArrowSprite { Bleed=8; Source=[256, 256, 128, 128]; } }
+	StateHighlightedNineSlice { Flags=Center; CenterSprite : ~/ArrowSprite { Bleed=8; Source=[640, 256, 128, 128]; } }
+	StatePressedNineSlice     { Flags=Center; CenterSprite : ~/ArrowSprite { Bleed=8; Source=[256, 640, 128, 128]; } }
+	SelectedNineSlice         { Flags=Center; CenterSprite : ~/ArrowSprite { Bleed=8; Source=[640, 640, 128, 128]; } }
+}
+ArrowDown : ListItem
+{
+	StateNormalNineSlice      { Flags=Center; CenterSprite : ~/ArrowSprite { Bleed=8; Source=[128, 256, 128, 128]; } }
+	StateHighlightedNineSlice { Flags=Center; CenterSprite : ~/ArrowSprite { Bleed=8; Source=[512, 256, 128, 128]; } }
+	StatePressedNineSlice     { Flags=Center; CenterSprite : ~/ArrowSprite { Bleed=8; Source=[128, 640, 128, 128]; } }
+	SelectedNineSlice         { Flags=Center; CenterSprite : ~/ArrowSprite { Bleed=8; Source=[512, 640, 128, 128]; } }
+}
+ArrowDownLeft : ListItem
+{
+	StateNormalNineSlice      { Flags=Center; CenterSprite : ~/ArrowSprite { Bleed=8; Source=[0, 256, 128, 128]; } }
+	StateHighlightedNineSlice { Flags=Center; CenterSprite : ~/ArrowSprite { Bleed=8; Source=[384, 256, 128, 128]; } }
+	StatePressedNineSlice     { Flags=Center; CenterSprite : ~/ArrowSprite { Bleed=8; Source=[0, 640, 128, 128]; } }
+	SelectedNineSlice         { Flags=Center; CenterSprite : ~/ArrowSprite { Bleed=8; Source=[384, 640, 128, 128]; } }
+}
+ArrowLeft : ListItem
+{
+	StateNormalNineSlice      { Flags=Center; CenterSprite : ~/ArrowSprite { Bleed=8; Source=[0, 128, 128, 128]; } }
+	StateHighlightedNineSlice { Flags=Center; CenterSprite : ~/ArrowSprite { Bleed=8; Source=[384, 128, 128, 128]; } }
+	StatePressedNineSlice     { Flags=Center; CenterSprite : ~/ArrowSprite { Bleed=8; Source=[0, 512, 128, 128]; } }
+	SelectedNineSlice         { Flags=Center; CenterSprite : ~/ArrowSprite { Bleed=8; Source=[384, 512, 128, 128]; } }
+}
+
+TreeItem : LayoutBox
+{
+	ItemBox = &~/LayoutBox
+
+	ShowToggle : ~/ToggleCheckButton
+	{
+		SelectedNineSlice   { CenterSprite : ~/MainSprite { Source=[384+64, 896, 64, 64]; } }
+		DeselectedNineSlice { CenterSprite : ~/MainSprite { Source=[256, 896, 64, 64]; } }
+
+		SelectedDisabledNineSlice   { Flags=None; }
+		DeselectedDisabledNineSlice { Flags=None; }
+
+		ToggleRectController
+		{
+			BorderPadding = 0
+			InnerRectSize = [28, 28]
+		}
+
+		ClickAudio {}
+		SelectionStateAudio
+		{
+			SelectedSound   { Sound="sounds/panel_open.wav";  Volume=.2; }
+			DeselectedSound { Sound="sounds/panel_close.wav"; Volume=.2; }
+		}
+	}
+
+	Item : ~/ListItem
+	{
+		StateNormalNineSlice      : ^/0/StateNormalNineSlice      { Flags=None; }
+		StateDisabledNineSlice    : ^/0/StateDisabledNineSlice    { Flags=None; }
+
+		StateHighlightedNineSlice
+		{
+			Flags = Center
+			Bleed = 16
+			Borders = 20
+			ProvidedRectPadding = -3
+
+			TopLeftSprite     : ~/HighlightSprite { Source=[0, 128, 40, 40]; }
+			TopSprite         : ~/HighlightSprite { Source=[40, 128, 48, 40]; }
+			TopRightSprite    : ~/HighlightSprite { Source=[88, 128, 40, 40]; }
+			LeftSprite        : ~/HighlightSprite { Source=[0, 168, 40, 48]; }
+			CenterSprite      : ~/HighlightSprite { Source=[40, 168, 48, 48]; }
+			RightSprite       : ~/HighlightSprite { Source=[88, 168, 40, 48]; }
+			BottomLeftSprite  : ~/HighlightSprite { Source=[0, 216, 40, 40]; }
+			BottomSprite      : ~/HighlightSprite { Source=[40, 216, 48, 40]; }
+			BottomRightSprite : ~/HighlightSprite { Source=[88, 216, 40, 40]; }
+		}
+		StatePressedNineSlice
+		{
+			Flags = Center
+			Bleed = 16
+			Borders = 20
+			ProvidedRectPadding = -3
+
+			TopLeftSprite     : ~/HighlightSprite { Source=[128, 128, 40, 40]; }
+			TopSprite         : ~/HighlightSprite { Source=[168, 128, 48, 40]; }
+			TopRightSprite    : ~/HighlightSprite { Source=[216, 128, 40, 40]; }
+			LeftSprite        : ~/HighlightSprite { Source=[128, 168, 40, 48]; }
+			CenterSprite      : ~/HighlightSprite { Source=[168, 168, 48, 48]; }
+			RightSprite       : ~/HighlightSprite { Source=[216, 168, 40, 48]; }
+			BottomLeftSprite  : ~/HighlightSprite { Source=[128, 216, 40, 40]; }
+			BottomSprite      : ~/HighlightSprite { Source=[168, 216, 48, 40]; }
+			BottomRightSprite : ~/HighlightSprite { Source=[216, 216, 40, 40]; }
+		}
+	}
+}
+
+ToggleButton : FlatButton
+{
+	ToggleRectController { BorderPadding=0; InnerRectSize=[32,32]; ClipInnerRect=false; }
+
+	StateNormalNineSlice      : ^/0/StateNormalNineSlice      { Flags=None; }
+	StateHighlightedNineSlice : ^/0/StateHighlightedNineSlice { Flags=Center; }
+	StatePressedNineSlice    : ^/0/StatePressedNineSlice      { Flags=Center; }
+	StateDisabledNineSlice    : ^/0/StateDisabledNineSlice    { Flags=None; }
+
+	StateNormalTextRenderer      : ^/0/StateNormalTextRenderer      { HAlignment=Left; Padding=[5,0,0,0]; }
+	StateHighlightedTextRenderer : ^/0/StateHighlightedTextRenderer { HAlignment=Left; Padding=[5,0,0,0]; }
+	StatePressedTextRenderer     : ^/0/StatePressedTextRenderer     { HAlignment=Left; Padding=[5,0,0,0]; }
+	StateDisabledTextRenderer    : ^/0/StateDisabledTextRenderer    { HAlignment=Left; Padding=[5,0,0,0]; }
+
+	ClickAudio
+	{
+		Sound { Sound="sounds/toggle.wav";  Volume=.15; }
+	}
+}
+
+ToggleCheckButton : ToggleButton
+{
+	DeselectedNineSlice         { CenterSprite : ~/MainSprite { Source=[512+16, 768+16, 96, 96]; Bleed=8; } }
+	SelectedNineSlice           { CenterSprite : ~/MainSprite { Source=[640+16, 768+16, 96, 96]; Bleed=8; } }
+	DeselectedDisabledNineSlice { CenterSprite : ~/MainSprite { Source=[512+16, 896+16, 96, 96]; Bleed=8; } }
+	SelectedDisabledNineSlice   { CenterSprite : ~/MainSprite { Source=[640+16, 896+16, 96, 96]; Bleed=8;  } }
+}
+
+ToggleRadioButton : ToggleButton
+{
+	DeselectedNineSlice         { CenterSprite : ~/MainSprite { Source=[768+16, 768+16, 96, 96]; Bleed=8; } }
+	SelectedNineSlice           { CenterSprite : ~/MainSprite { Source=[896+16, 768+16, 96, 96]; Bleed=8; } }
+	DeselectedDisabledNineSlice { CenterSprite : ~/MainSprite { Source=[768+16, 896+16, 96, 96]; Bleed=8; } }
+	SelectedDisabledNineSlice   { CenterSprite : ~/MainSprite { Source=[896+16, 896+16, 96, 96]; Bleed=8;  } }
+}
+
+ToggleExpanderButton : FlatButton
+{
+	Height = 32
+
+	StateNormalNineSlice      { Flags=None; }
+	StateHighlightedNineSlice : ^/0/StateHighlightedNineSlice { Flags=Center; }
+	StatePressedNineSlice     : ^/0/StatePressedNineSlice     { Flags=Center; }
+	StateDisabledNineSlice    { Flags=None; }
+
+	StateNormalTextRenderer      : ^/0/StateNormalTextRenderer      { HAlignment=Left; FontStyle=Bold; Color=[0, 183, 255]; }
+	StateHighlightedTextRenderer : ^/0/StateHighlightedTextRenderer { HAlignment=Left; FontStyle=Bold; Color=[0, 183, 255]; }
+	StatePressedTextRenderer     : ^/0/StatePressedTextRenderer     { HAlignment=Left; FontStyle=Bold; Color=[0, 183, 255]; }
+	StateDisabledTextRenderer    : ^/0/StateDisabledTextRenderer    { HAlignment=Left; FontStyle=Bold; Color=[0, 183, 255]; }
+
+	ToggleRectController { BorderPadding=0; InnerRectSize=[32,32]; ClipInnerRect=false; }
+
+	SelectedNineSlice     { CenterSprite : ~/MainSprite { Source=[384+64, 896, 64, 64]; } }
+	DeselectedNineSlice   { CenterSprite : ~/MainSprite { Source=[256, 896, 64, 64]; } }
+
+	SelectionStateAudio
+	{
+		SelectedSound   { Sound="sounds/panel_open.wav";  Volume=.2; }
+		DeselectedSound { Sound="sounds/panel_close.wav"; Volume=.2; }
+	}
+}
+
+HorizontalExpanderButton : ToggleExpanderButton
+{
+	SelectedNineSlice { CenterSprite : ~/MainSprite { Source=[256+64, 896, 64, 64]; } }
+}
+
+VerticalExpanderButton : ToggleExpanderButton
+{
+	SelectedNineSlice   { CenterSprite : ~/MainSprite { Source=[384+64, 896, 64, 64]; } }
+	DeselectedNineSlice { CenterSprite : ~/MainSprite { Source=[384, 896, 64, 64]; } }
+
+	ToggleRectController { InnerRectMode=Center; }
+}
+
+CategoryBox : LayoutBox
+{
+
+}
+
+DropButton : SelectableButton
+{
+	ArrowRectController
+	{
+		BorderPadding = [0, 0, 3, 0]
+		InnerRectSize = [24, 24]
+		ClipInnerRect = false
+	}
+
+	_X = 384
+	_Y = 896
+	TargetShownNineSlice          { CenterSprite : ~/MainSprite { Source=[(&../../../_X)+0,  (&../../../_Y)+0,  64, 64]; Bleed=4; } }
+	TargetHiddenNineSlice         { CenterSprite : ~/MainSprite { Source=[(&../../../_X)+64, (&../../../_Y)+0,  64, 64]; Bleed=4; } }
+	TargetHiddenDisabledNineSlice { CenterSprite : ~/MainSprite { Source=[(&../../../_X)+64, (&../../../_Y)+64, 64, 64]; Bleed=4; } }
+
+	FocusStateAudio
+	{
+		FocusedSound   { Sound="sounds/panel_open.wav";  Volume=.2; }
+		DefocusedSound { Sound="sounds/panel_close.wav"; Volume=.2; }
+	}
+}
+
+DropList : DropButton
+{
+	ListBox : &~/MaskedListBox
+	{
+		NineSlice
+		{
+			Bleed = 8
+			Borders = 16
+			ProvidedRectPadding = -7
+
+			_X = 256
+			_Y = 0
+			TopLeftSprite     : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+			TopSprite         : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+			TopRightSprite    : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+			LeftSprite        : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 64]; }
+			CenterSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 64]; }
+			RightSprite       : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 64]; }
+			BottomLeftSprite  : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+96, 32, 32]; }
+			BottomSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+96, 64, 32]; }
+			BottomRightSprite : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+96, 32, 32]; }
+		}
+	}
+}
+
+ScrollBar : StaticWidget
+{
+	NineSlice : ^/0/NineSlice { Flags=Center; }
+
+	Paddle = &~/FlatButton
+
+	IncreasePager : ~/Button
+	{
+		StateNormalNineSlice { Flags=None; }
+		StateHighlightedNineSlice { Flags=None; }
+		StatePressedNineSlice { Flags=None; }
+		StateDisabledNineSlice { Flags=None; }
+	}
+	DecreasePager = &IncreasePager
+}
+
+HorizontalScrollBar : ScrollBar
+{
+	IncrementButton : ~/FlatButton
+	{
+		Text = ""
+		ImageSprite : ~/MainSprite { Source=[256, 896, 64, 64]; }
+	}
+	DecrementButton : ~/FlatButton
+	{
+		Text = ""
+		ImageSprite : ~/MainSprite { Source=[256+64, 896, 64, 64]; }
+	}
+}
+
+VerticalScrollBar : ScrollBar
+{
+	IncrementButton : ~/FlatButton
+	{
+		Text = ""
+		ImageSprite : ~/MainSprite { Source=[384+64, 896, 64, 64]; }
+	}
+	DecrementButton : ~/FlatButton
+	{
+		Text = ""
+		ImageSprite : ~/MainSprite { Source=[384, 896, 64, 64]; }
+	}
+}
+
+HorizontalSlider : ScrollBar
+{
+	Height = 32
+
+	NineSlice
+	{
+		Flags = [Left, Center, Right]
+		Borders = [16, 0, 16, 0]
+		Bleed = [0, 0, 0, 0]
+		ProvidedRectPadding = [-16, 0, -16, 0]
+
+		_X = 512
+		_Y = 512
+		LeftSprite        : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 64]; }
+		CenterSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 64]; }
+		RightSprite       : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 64]; }
+	}
+
+	Paddle : ^/0/Paddle
+	{
+		RectController { PaddlePixelSize=32; }
+
+		StateNormalNineSlice
+		{
+			Flags = Center
+			CenterSprite      : ~/MainSprite { Source=[512+16, 640+16, 96, 96]; Bleed=8; }
+		}
+		StateHighlightedNineSlice
+		{
+			Flags = Center
+			CenterSprite      : ~/HighlightSprite { Source=[640+16, 640+16, 96, 96]; Bleed=8; }
+		}
+		StatePressedNineSlice
+		{
+			Flags = Center
+			CenterSprite      : ~/HighlightSprite { Source=[768+16, 640+16, 96, 96]; Bleed=8; }
+		}
+		StateDisabledNineSlice
+		{
+			Flags = Center
+			CenterSprite      : ~/MainSprite { Source=[896+16, 640+16, 96, 96]; Bleed=8; }
+		}
+	}
+}
+
+ProgressBar : StaticWidget
+{
+	NineSlice
+	{
+		Flags = All
+		Bleed = 8
+		Borders = 16
+		ProvidedRectPadding = -6
+
+		_X = 128
+		_Y = 256
+		TopLeftSprite     : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 64]; }
+		CenterSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 64]; }
+		RightSprite       : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 64]; }
+		BottomLeftSprite  : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+96, 32, 32]; }
+		BottomSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+96, 64, 32]; }
+		BottomRightSprite : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+96, 32, 32]; }
+	}
+
+	ProgressNineSlice
+	{
+		Flags = All
+		Bleed = 8
+		Borders = 11
+		ProvidedRectPadding = -7
+
+		_X = 512
+		_Y = 128
+		TopLeftSprite     : ~/HighlightSprite { Source=[(&../../_X)+0,   (&../../_Y)+0,   22, 22]; }
+		TopSprite         : ~/HighlightSprite { Source=[(&../../_X)+22,  (&../../_Y)+0,   84, 22]; }
+		TopRightSprite    : ~/HighlightSprite { Source=[(&../../_X)+106, (&../../_Y)+0,   22, 22]; }
+		LeftSprite        : ~/HighlightSprite { Source=[(&../../_X)+0,   (&../../_Y)+22,  22, 84]; }
+		CenterSprite      : ~/HighlightSprite { Source=[(&../../_X)+22,  (&../../_Y)+22,  84, 84]; }
+		RightSprite       : ~/HighlightSprite { Source=[(&../../_X)+106, (&../../_Y)+22,  22, 84]; }
+		BottomLeftSprite  : ~/HighlightSprite { Source=[(&../../_X)+0,   (&../../_Y)+106, 22, 22]; }
+		BottomSprite      : ~/HighlightSprite { Source=[(&../../_X)+22,  (&../../_Y)+106, 84, 22]; }
+		BottomRightSprite : ~/HighlightSprite { Source=[(&../../_X)+106, (&../../_Y)+106, 22, 22]; }
+	}
+
+	Fill
+	{
+		MinSize = [6, 0]
+	}
+}
+
+ProgressBarWhite : ProgressBar
+{
+	ProgressNineSlice
+	{
+		Flags = All
+		Bleed = 8
+		Borders = 11
+		ProvidedRectPadding = -7
+
+		_X = 512
+		_Y = 1280
+		TopLeftSprite     : ~/HighlightSprite { Source=[(&../../_X)+0,   (&../../_Y)+0,   22, 22]; }
+		TopSprite         : ~/HighlightSprite { Source=[(&../../_X)+22,  (&../../_Y)+0,   84, 22]; }
+		TopRightSprite    : ~/HighlightSprite { Source=[(&../../_X)+106, (&../../_Y)+0,   22, 22]; }
+		LeftSprite        : ~/HighlightSprite { Source=[(&../../_X)+0,   (&../../_Y)+22,  22, 84]; }
+		CenterSprite      : ~/HighlightSprite { Source=[(&../../_X)+22,  (&../../_Y)+22,  84, 84]; }
+		RightSprite       : ~/HighlightSprite { Source=[(&../../_X)+106, (&../../_Y)+22,  22, 84]; }
+		BottomLeftSprite  : ~/HighlightSprite { Source=[(&../../_X)+0,   (&../../_Y)+106, 22, 22]; }
+		BottomSprite      : ~/HighlightSprite { Source=[(&../../_X)+22,  (&../../_Y)+106, 84, 22]; }
+		BottomRightSprite : ~/HighlightSprite { Source=[(&../../_X)+106, (&../../_Y)+106, 22, 22]; }
+	}
+}
+
+ThinProgressBarGood : StaticWidget
+{
+	Height = 32
+
+	NineSlice
+	{
+		Flags = [Left, Center, Right]
+		Borders = [16, 0, 16, 0]
+		Bleed = [0, 0, 0, 0]
+
+		_X = 0
+		_Y = 1280
+		LeftSprite        : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+0, 32, 64]; }
+		CenterSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+0, 64, 64]; }
+		RightSprite       : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+0, 32, 64]; }
+	}
+
+	ProgressNineSlice
+	{
+		Flags = [Left, Center, Right]
+		Borders = [16, 0, 16, 0]
+		Bleed = [16, 0, 16, 0]
+
+		_X = 0
+		_Y = 1280+64
+		LeftSprite        : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+0, 32, 64]; }
+		CenterSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+0, 64, 64]; }
+		RightSprite       : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+0, 32, 64]; }
+	}
+
+	Fill
+	{
+		MinSize = [0, 0]
+	}
+}
+ThinProgressBarBad : ThinProgressBarGood
+{
+	ProgressNineSlice
+	{
+		Flags = [Left, Center, Right]
+		Borders = [16, 0, 16, 0]
+		Bleed = [16, 0, 16, 0]
+
+		_X = 128
+		_Y = 1280+64
+		LeftSprite        : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+0, 32, 64]; }
+		CenterSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+0, 64, 64]; }
+		RightSprite       : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+0, 32, 64]; }
+	}
+}
+ThinProgressBarFame : ThinProgressBarGood
+{
+	ProgressNineSlice
+	{
+		Flags = [Left, Center, Right]
+		Borders = [16, 0, 16, 0]
+		Bleed = [16, 0, 16, 0]
+
+		_X = 128
+		_Y = 1280
+		LeftSprite        : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+0, 32, 64]; }
+		CenterSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+0, 64, 64]; }
+		RightSprite       : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+0, 32, 64]; }
+	}
+}
+
+ProgressDotEmpty : Image
+{
+	Size = [32, 32]
+
+	_X = 256
+	_Y = 1280
+	Sprite : ~/MainSprite
+	{
+		Source = [(&../../_X),  (&../../_Y), 64, 64]
+		Clipped = false
+	}
+}
+ProgressDotGood : Image
+{
+	Size = [32, 32]
+
+	_X = 256
+	_Y = 1280+64
+	Sprite : ~/MainSprite
+	{
+		Source = [(&../../_X),  (&../../_Y), 64, 64]
+		Clipped = false
+	}
+}
+ProgressDotBad : ProgressDotGood
+{
+	_X = 256+64
+	_Y = 1280+64
+	Sprite : ~/MainSprite
+	{
+		Source = [(&../../_X),  (&../../_Y), 64, 64]
+		Clipped = false
+	}
+}
+ProgressDotFame : ProgressDotGood
+{
+	_X = 256+64
+	_Y = 1280
+	Sprite : ~/MainSprite
+	{
+		Source = [(&../../_X),  (&../../_Y), 64, 64]
+		Clipped = false
+	}
+}
+
+StatBar : StaticWidget
+{
+
+}
+
+TextEditField : ScrollBox
+{
+	NineSlice
+	{
+		Bleed = 8
+		Borders = 16
+		ProvidedRectPadding = -6
+
+		_X = 640
+		_Y = 512
+		TopLeftSprite     : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 64]; }
+		CenterSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 64]; }
+		RightSprite       : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 64]; }
+		BottomLeftSprite  : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+96, 32, 32]; }
+		BottomSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+96, 64, 32]; }
+		BottomRightSprite : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+96, 32, 32]; }
+	}
+
+	InternalTextField
+	{
+		StateNormalNineSlice      { Flags=None; }
+		StateHighlightedNineSlice { Flags=None; }
+		StatePressedNineSlice     { Flags=None; }
+		StateDisabledNineSlice    { Flags=None; }
+
+		StateEnabledTextRenderer  : ~/MainText { Padding=[3,1,3,2]; Color=[0, 0, 0]; }
+		StateDisabledTextRenderer : ~/MainText { Padding=[3,1,3,2]; Color=[127, 127, 127]; }
+
+		Cursors { HighlightedCursor=&~/TextFieldCursor; PressedCursor=&~/TextFieldCursor; }
+	}
+}
+
+SingleLineTextEditField = &TextEditField
+SingleLinePasswordTextEditField = &TextEditField
+
+MultiLineTextEditField : TextEditField
+{
+	ScrollBarController { ShowVertical=WhenNeeded; ShowHorizontal=WhenNeeded; }
+}
+
+MultiLineWrappedTextEditField : TextEditField
+{
+	ScrollBarController { ShowVertical=WhenNeeded; ShowHorizontal=WhenNeeded; }
+}
+
+MenuBar : StaticWidget
+{
+
+}
+
+MenuItem : FlatButton
+{
+	StateNormalNineSlice      : ^/0/StateNormalNineSlice      { Flags = Center; }
+	StateHighlightedNineSlice : ^/0/StateHighlightedNineSlice { Flags = Center; }
+	StatePressedNineSlice     : ^/0/StatePressedNineSlice     { Flags = Center; }
+	StateDisabledNineSlice    : ^/0/StateDisabledNineSlice    { Flags = Center; }
+
+	IconBackingSprite { VertexColor=[0, 0, 0, 63]; }
+}
+
+MenuToggleCheckItem : MenuItem, ToggleCheckButton
+{
+	ToggleRectController { BorderPadding=0; InnerRectSize=[24,24]; ClipInnerRect=false; }
+
+	_X = 0
+	_Y = 896
+	DeselectedNineSlice         { CenterSprite : ~/MainSprite { Source=[(&../../../_X)+0,  (&../../../_Y)+0,  64, 64]; Bleed=4; } }
+	SelectedNineSlice           { CenterSprite : ~/MainSprite { Source=[(&../../../_X)+64, (&../../../_Y)+0,  64, 64]; Bleed=4; } }
+	DeselectedDisabledNineSlice { CenterSprite : ~/MainSprite { Source=[(&../../../_X)+0,  (&../../../_Y)+64, 64, 64]; Bleed=4; } }
+	SelectedDisabledNineSlice   { CenterSprite : ~/MainSprite { Source=[(&../../../_X)+64, (&../../../_Y)+64, 64, 64]; Bleed=4; } }
+}
+
+MenuToggleRadioItem : MenuItem, ToggleRadioButton
+{
+	ToggleRectController { BorderPadding=0; InnerRectSize=[24,24]; ClipInnerRect=false; }
+
+	_X = 128
+	_Y = 896
+	DeselectedNineSlice         { CenterSprite : ~/MainSprite { Source=[(&../../../_X)+0,  (&../../../_Y)+0,  64, 64]; Bleed=4; } }
+	SelectedNineSlice           { CenterSprite : ~/MainSprite { Source=[(&../../../_X)+64, (&../../../_Y)+0,  64, 64]; Bleed=4; } }
+	DeselectedDisabledNineSlice { CenterSprite : ~/MainSprite { Source=[(&../../../_X)+0,  (&../../../_Y)+64, 64, 64]; Bleed=4; } }
+	SelectedDisabledNineSlice   { CenterSprite : ~/MainSprite { Source=[(&../../../_X)+64, (&../../../_Y)+64, 64, 64]; Bleed=4; } }
+}
+
+MenuCategory : FlatButton, SelectableButton
+{
+	MenuBox = &~/MaskedScrollBox
+
+	StateNormalNineSlice : ^/0/StateNormalNineSlice { Flags=None; }
+	StateHighlightedNineSlice : ^/0/StateHighlightedNineSlice { Flags=All; }
+	StatePressedNineSlice : ^/0/StatePressedNineSlice { Flags=All; }
+	StateDisabledNineSlice : ^/0/StateDisabledNineSlice { Flags=None; }
+
+	FocusStateAudio
+	{
+		FocusedSound   { Sound="sounds/panel_open.wav";  Volume=.2; }
+		DefocusedSound { Sound="sounds/panel_close.wav"; Volume=.2; }
+	}
+}
+
+HamburgerMenuDown : MenuCategory
+{
+	Size = [32, 32]
+	AutoSize { AutoWidthMode=Disable; }
+
+	IconRectController
+	{
+		InnerRectSize = [24, 24]
+		InnerRectMode = Center
+	}
+
+	IconSprite
+	{
+		Active = true
+		Texture = "widgets_menu_down.png"
+		SampleMode = Linear
+	}
+}
+
+HamburgerMenuUp : HamburgerMenuDown
+{
+	IconSprite
+	{
+		Active = true
+		Texture = "widgets_menu_up.png"
+		SampleMode = Linear
+	}
+
+	MenuBoxRectController
+	{
+		SourceCorner = TopLeft
+		TargetCorner = BottomLeft
+	}
+}
+
+HamburgerButtonDown : Button, HamburgerMenuDown
+{
+	Size = [24, 24]
+
+	StateNormalNineSlice      : ^/0/StateNormalNineSlice      { Flags=All; }
+	StateHighlightedNineSlice : ^/0/StateHighlightedNineSlice { Flags=All; }
+	StatePressedNineSlice     : ^/0/StatePressedNineSlice     { Flags=All; }
+	StateDisabledNineSlice    : ^/0/StateDisabledNineSlice    { Flags=All; }
+}
+
+HamburgerButtonUp : Button, HamburgerMenuUp
+{
+	Size = [24, 24]
+
+	StateNormalNineSlice      : ^/0/StateNormalNineSlice      { Flags=All; }
+	StateHighlightedNineSlice : ^/0/StateHighlightedNineSlice { Flags=All; }
+	StatePressedNineSlice     : ^/0/StatePressedNineSlice     { Flags=All; }
+	StateDisabledNineSlice    : ^/0/StateDisabledNineSlice    { Flags=All; }
+}
+
+HamburgerFlatButtonDown : HamburgerMenuDown
+{
+	Size = [24, 24]
+
+	StateNormalNineSlice      : ^/0/StateNormalNineSlice      { Flags=All; }
+	StateHighlightedNineSlice : ^/0/StateHighlightedNineSlice { Flags=All; }
+	StatePressedNineSlice     : ^/0/StatePressedNineSlice     { Flags=All; }
+	StateDisabledNineSlice    : ^/0/StateDisabledNineSlice    { Flags=All; }
+}
+
+HamburgerFlatButtonUp : HamburgerMenuUp
+{
+	Size = [24, 24]
+
+	StateNormalNineSlice      : ^/0/StateNormalNineSlice      { Flags=All; }
+	StateHighlightedNineSlice : ^/0/StateHighlightedNineSlice { Flags=All; }
+	StatePressedNineSlice     : ^/0/StatePressedNineSlice     { Flags=All; }
+	StateDisabledNineSlice    : ^/0/StateDisabledNineSlice    { Flags=All; }
+}
+
+UndoButton : TitleBarButton
+{
+	Size = [32, 32]
+	AutoSize { AutoWidthMode=Disable; }
+
+	ImageRectController
+	{
+		InnerRectSize = [24, 24]
+		InnerRectMode = Center
+	}
+
+	ImageSprite
+	{
+		Active = true
+		Texture = "widgets_undo.png"
+		SampleMode = Linear
+	}
+}
+
+RedoButton : TitleBarButton
+{
+	Size = [32, 32]
+	AutoSize { AutoWidthMode=Disable; }
+
+	ImageRectController
+	{
+		InnerRectSize = [24, 24]
+		InnerRectMode = Center
+	}
+
+	ImageSprite
+	{
+		Active = true
+		Texture = "widgets_redo.png"
+		SampleMode = Linear
+	}
+}
+
+MenuSubCategory : MenuItem, MenuCategory
+{
+	ArrowRectController { BorderPadding=[10,0,0,0]; InnerRectSize=[24,24]; ClipInnerRect=false; }
+
+	_X = 256
+	_Y = 896
+	ArrowNineSlice         { CenterSprite : ~/MainSprite { Source=[(&../../../_X)+0,  (&../../../_Y)+0,  64, 64]; Bleed=4; } }
+	ArrowDisabledNineSlice { CenterSprite : ~/MainSprite { Source=[(&../../../_X)+0,  (&../../../_Y)+64, 64, 64]; Bleed=4; } }
+
+	// No sounds for sub-categories.
+	FocusStateAudio {}
+}
+
+MenuSeparator
+{
+	Height = 1
+	NineSlice { CenterSprite : ~/MainSprite { Source=[28, 16, 72, 2]; } }
+}
+
+VerticalSeparator
+{
+	Width = 1
+	NineSlice { CenterSprite : ~/MainSprite { Source=[16, 28, 2, 72]; } }
+}
+
+ContextMenu : Scrollbox
+{
+	ActiveStateAudio
+	{
+		ActivatedSound   { Sound="sounds/panel_open.wav";  Volume=.2; }
+		DeactivatedSound { Sound="sounds/panel_close.wav"; Volume=.2; }
+	}
+}
+
+ToolTipLabel : Label
+{
+	NineSlice { Flags = None }
+
+	TextRenderer : ^/0/TextRenderer { XmlFormatting=true; }
+
+	AutoSize { MaxWidth=350; }
+	ToolTipDisplayController { PreferredHorizontalSpace=&../AutoSize/MaxWidth; }
+}
+
+ToolTipBox : MaskedScrollbox
+{
+	ChildMask : ^/0/ChildMask
+	{
+		Borders = 7
+	}
+
+	ToolTipLabel = &~/ToolTipLabel
+	ScrollBindingLabel : ~/Label
+	{
+		NineSlice : ~/StaticWidget/NineSlice
+		{
+			Flags = Center
+		}
+		TextRenderer : ^/0/TextRenderer
+		{
+			Padding = [0, 5, 0, 5]
+			XmlFormatting=true;
+		}
+	}
+
+	VerticalScrollBar : ^/0/VerticalScrollBar
+	{
+		SelfInputActive = false
+		Width = 12
+		IncrementButton : ^/0/IncrementButton { Active = false }
+		DecrementButton : ^/0/DecrementButton { Active = false }
+		Paddle : ^/0/Paddle
+		{
+			SelfInputActive = false
+
+			StateDisabledNineSlice
+			{
+				Flags = Center
+				Bleed = 8
+				Borders = 16
+				ProvidedRectPadding = -7
+
+				_X = 384
+				_Y = 128
+				TopLeftSprite     : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+				TopSprite         : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+				TopRightSprite    : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+				LeftSprite        : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 64]; }
+				CenterSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 64]; }
+				RightSprite       : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 64]; }
+				BottomLeftSprite  : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+96, 32, 32]; }
+				BottomSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+96, 64, 32]; }
+				BottomRightSprite : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+96, 32, 32]; }
+			}
+		}
+	}
+
+	ScrollWheelController { DisableInputHandling = true }
+}
+
+ZeroButtonDialog
+{
+	OuterBox = &~/LayoutBox
+
+	MessageLabel : ~/Label
+	{
+		TextRenderer : ^/0/TextRenderer { XmlFormatting=true; }
+	}
+}
+
+OneButtonDialog
+{
+	OuterBox = &~/LayoutBox
+	ButtonBox = &~/LayoutBox
+
+	MessageLabel : ~/Label
+	{
+		TextRenderer : ^/0/TextRenderer { XmlFormatting=true; }
+	}
+
+	Button : ~/OkayButton
+	{
+		StateNormalTextRenderer      : ^/0/StateNormalTextRenderer      { XmlFormatting=true; }
+		StateHighlightedTextRenderer : ^/0/StateHighlightedTextRenderer { XmlFormatting=true; }
+		StatePressedTextRenderer     : ^/0/StatePressedTextRenderer     { XmlFormatting=true; }
+		StateDisabledTextRenderer    : ^/0/StateDisabledTextRenderer    { XmlFormatting=true; }
+	}
+}
+
+TwoButtonDialog
+{
+	OuterBox = &~/LayoutBox
+	OptionButtonsBox = &~/LayoutBox
+
+	MessageLabel : ~/Label
+	{
+		TextRenderer : ^/0/TextRenderer { XmlFormatting=true; }
+	}
+
+	Option1Button : ~/OkayButton
+	{
+		StateNormalTextRenderer      : ^/0/StateNormalTextRenderer      { XmlFormatting=true; }
+		StateHighlightedTextRenderer : ^/0/StateHighlightedTextRenderer { XmlFormatting=true; }
+		StatePressedTextRenderer     : ^/0/StatePressedTextRenderer     { XmlFormatting=true; }
+		StateDisabledTextRenderer    : ^/0/StateDisabledTextRenderer    { XmlFormatting=true; }
+	}
+	Option2Button : ~/Button
+	{
+		StateNormalTextRenderer      : ^/0/StateNormalTextRenderer      { XmlFormatting=true; }
+		StateHighlightedTextRenderer : ^/0/StateHighlightedTextRenderer { XmlFormatting=true; }
+		StatePressedTextRenderer     : ^/0/StatePressedTextRenderer     { XmlFormatting=true; }
+		StateDisabledTextRenderer    : ^/0/StateDisabledTextRenderer    { XmlFormatting=true; }
+	}
+}
+
+ThreeButtonDialog
+{
+	OuterBox = &~/LayoutBox
+	OptionButtonsBox = &~/LayoutBox
+
+	MessageLabel : ~/Label
+	{
+		TextRenderer : ^/0/TextRenderer { XmlFormatting=true; }
+	}
+
+	Option1Button : ~/OkayButton
+	{
+		StateNormalTextRenderer      : ^/0/StateNormalTextRenderer      { XmlFormatting=true; }
+		StateHighlightedTextRenderer : ^/0/StateHighlightedTextRenderer { XmlFormatting=true; }
+		StatePressedTextRenderer     : ^/0/StatePressedTextRenderer     { XmlFormatting=true; }
+		StateDisabledTextRenderer    : ^/0/StateDisabledTextRenderer    { XmlFormatting=true; }
+	}
+	Option2Button : ~/OkayButton
+	{
+		StateNormalTextRenderer      : ^/0/StateNormalTextRenderer      { XmlFormatting=true; }
+		StateHighlightedTextRenderer : ^/0/StateHighlightedTextRenderer { XmlFormatting=true; }
+		StatePressedTextRenderer     : ^/0/StatePressedTextRenderer     { XmlFormatting=true; }
+		StateDisabledTextRenderer    : ^/0/StateDisabledTextRenderer    { XmlFormatting=true; }
+	}
+	Option3Button : ~/Button
+	{
+		StateNormalTextRenderer      : ^/0/StateNormalTextRenderer      { XmlFormatting=true; }
+		StateHighlightedTextRenderer : ^/0/StateHighlightedTextRenderer { XmlFormatting=true; }
+		StatePressedTextRenderer     : ^/0/StatePressedTextRenderer     { XmlFormatting=true; }
+		StateDisabledTextRenderer    : ^/0/StateDisabledTextRenderer    { XmlFormatting=true; }
+	}
+}
+
+OneButtonTextEntryDialog
+{
+	OuterBox = &~/LayoutBox
+	ButtonBox = &~/LayoutBox
+	Button = &~/OkayButton
+	TextEditField = &~/SingleLineTextEditField
+
+	MessageLabel : ~/Label
+	{
+		TextRenderer : ^/0/TextRenderer { XmlFormatting=true; }
+	}
+}
+
+TwoButtonTextEntryDialog
+{
+	OuterBox = &~/LayoutBox
+	OptionButtonsBox = &~/LayoutBox
+	Option1Button = &~/OkayButton
+	Option2Button = &~/Button
+	TextEditField = &~/SingleLineTextEditField
+
+	MessageLabel : ~/Label
+	{
+		TextRenderer : ^/0/TextRenderer { XmlFormatting=true; }
+	}
+}
+
+TwoButtonPasswordEntryDialog = &TwoButtonTextEntryDialog
+
+DragCandidateNineSlice
+{
+	Bleed = 8
+	Borders = 16
+	ProvidedRectPadding = -7
+
+	_X = 512
+	_Y = 256
+	TopLeftSprite     : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+	TopSprite         : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+	TopRightSprite    : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+	LeftSprite        : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 64]; }
+	CenterSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 64]; }
+	RightSprite       : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 64]; }
+	BottomLeftSprite  : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+96, 32, 32]; }
+	BottomSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+96, 64, 32]; }
+	BottomRightSprite : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+96, 32, 32]; }
+}
+
+DragHoverNineSlice
+{
+	Bleed = 8
+	Borders = 16
+	ProvidedRectPadding = -7
+
+	_X = 768
+	_Y = 256
+	TopLeftSprite     : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+	TopSprite         : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+	TopRightSprite    : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+	LeftSprite        : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 64]; }
+	CenterSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 64]; }
+	RightSprite       : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 64]; }
+	BottomLeftSprite  : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+96, 32, 32]; }
+	BottomSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+96, 64, 32]; }
+	BottomRightSprite : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+96, 32, 32]; }
+}
+
+PopoutConnector : Image
+{
+	AnchorRect = [0, 1, 0, 0]
+	Rect = [0, 0, 50, 18]
+
+	Sprite
+	{
+		Texture
+		{
+			File = "widgets_popout_connector.png"
+			MipLevels = 2
+			SampleMode = Linear
+		}
+	}
+}
+*/

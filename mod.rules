@@ -135,18 +135,19 @@ Actions
 		]
 	}
 
-	/* *********** MAIN MENU ************* */
+	/* *********** MAIN MENU & GUI ************* */
 
-	{
-		Action = Replace
-		Replace = "<./Data/gui/text_sprites.rules>/wr_logo/Texture"
-		With = 
-		{
-			File = "acd_logo_credits.png"
-		}
+	{ //gui/Widgets
+		Action = Overrides
+		OverrideIn = "<gui/widgets.rules>"
+		Overrides = &<gui/widgets.rules>
 	}
 
-
+	{ //gui/Text Sprites
+		Action = Overrides
+		OverrideIn = "<gui/text_sprites.rules>"
+		Overrides = &<gui/text_sprites.rules>
+	}	
 
 	/* *********** STARTER SHIPS ************* */
 
@@ -187,7 +188,13 @@ Actions
 			IgnoreIfNotExisting = false
 			With = "StarterShips/Durasteel_Prospector"
 		}
-		
+		//{
+		//	Action = Replace
+		//	Replace = "<modes/career/career.rules>/StarterShips/3/DescriptionKey"
+		//	IgnoreIfNotExisting = false
+		//	With = "StarterShips/Durasteel_Prospector"
+		//}
+
 		//Additional StarterShips
 		{
 		Action = AddMany

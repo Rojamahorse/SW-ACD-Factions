@@ -80,7 +80,7 @@ StartingNodePicker
 	CandidatesFarthestFromFactions = [3, [SW.Black_Sun]]
 	//CandidatesClosestToFactions = [1, [SW.Republic, SW.CIS]]
 	SetTierRangeTo = [1, 1 + (&~/TierSpread)]
-	SetSectorTypeTo = basic //Nebulas
+	SetSectorTypeTo = SW.cw_basic //Nebulas
 }
 
 ProgressionTiers
@@ -143,19 +143,21 @@ SectorTypes
 			RandomWeight = 1
 		}
 		{
-			Type = binary
+			Type = SW.binary
 			RandomWeight = 0.5
 		}
 		{
-			Type = high_density_nebula
+			Type = SW.high_density_nebula
 			RandomWeight = 0.5
+			MinTier = 5
 		}
 		{
-			Type = supernova
-			RandomWeight = 0.5
+			Type = SW.supernova
+			RandomWeight = 0.25
+			MinTier = 5
 		}
 		{
-			Type = electron
+			Type = SW.electron
 			RandomWeight = 0.25
 		}
 	]

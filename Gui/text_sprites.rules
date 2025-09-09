@@ -1,0 +1,148 @@
+money 
+{
+	Texture
+	{
+		File = "icon_credits.png"
+		MipLevels = max
+		SampleMode = Linear
+	}
+	Size = [1, 1]
+	ProportionalSize = true
+}
+
+//fame 
+//{
+	//Texture
+	//{
+	//	File = "icon_fame.png"
+	//	MipLevels = max
+	//	SampleMode = Linear
+	//}
+	//Size = [1, 1]
+	//ProportionalSize = true
+//}
+
+//command_points 
+//{
+	//Texture
+	//{
+	//	File = "game/icon_command_points.png"
+	//	MipLevels = max
+	//	SampleMode = Linear
+	//}
+	//Size = [1, 1]
+	//ProportionalSize = true
+//}
+
+//sort
+//{
+	//Texture
+	//{
+	//	File = "icon_sort.png"
+	//	MipLevels = max
+	//	SampleMode = Linear
+	//}
+	//Size = [34/46, 1]
+	//ProportionalSize = true
+//}
+
+//categorize
+//{
+	//Texture
+	//{
+	//	File = "icon_categorize.png"
+	//	MipLevels = max
+	//	SampleMode = Linear
+	//}
+	//Size = [38/46, 1]
+	//ProportionalSize = true
+//}
+
+//hamburger_up
+//{
+	//Texture
+	//{
+	//	File = "widgets_menu_up.png"
+	//	MipLevels = 2
+	//	SampleMode = Linear
+	//}
+	//Size = [20, 20]
+//}
+
+//hamburger_down
+//{
+	//Texture
+	//{
+	//	File = "widgets_menu_down.png"
+	//	MipLevels = 2
+	//	SampleMode = Linear
+	//}
+	//Size = [20, 20]
+//}
+
+//objective_normal
+//{
+	//Texture
+	//{
+	//	File = "objective_normal.png"
+	//	MipLevels = 2
+	//	SampleMode = Linear
+	//}
+	//Size = [24, 24]
+//}
+
+//objective_completed
+//{
+	//Texture
+	//{
+	//	File = "objective_completed.png"
+	//	MipLevels = 2
+	//	SampleMode = Linear
+	//}
+	//Size = [24, 24]
+//}
+
+//objective_failed
+//{
+	//Texture
+	//{
+	//	File = "objective_failed.png"
+	//	MipLevels = 2
+	//	SampleMode = Linear
+	//}
+	//Size = [24, 24]
+//}
+
+//star_system
+//{
+	//Texture
+	//{
+	//	File = "game/hud_galaxy_map.png"
+	//	MipLevels = max
+	//	SampleMode = Linear
+	//}
+	//Size = [1, 1]
+	//ProportionalSize = true
+//}
+
+//target
+//{
+	//Texture
+	//{
+	//	File = "game/cmd_attack.png"
+	//	MipLevels = max
+	//	SampleMode = Linear
+	//}
+	//Size = [1, 1]
+	//ProportionalSize = true
+//}
+
+wr_logo //Credits Logo
+{
+	Texture
+	{
+		File = "acd_logo_credits.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+}

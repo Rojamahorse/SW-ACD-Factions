@@ -51,9 +51,6 @@ MapNodes
 	NameGenerator = &<../../name_generators/sw_name_celestial.rules>/CelNameGen
 }
 
-
-
-
 // Define factions in the galaxy
 Factions : &<./Data/galaxy_map/map_generators/base_galaxy.rules>/Factions 
 {
@@ -143,8 +140,6 @@ Factions : &<./Data/galaxy_map/map_generators/base_galaxy.rules>/Factions
 //	AvoidIterations = 10
 }
 
-
-
 MaxTier = 18 
 TierSpread = 2 
 
@@ -217,7 +212,6 @@ FactionTiers : &<./Data/galaxy_map/map_generators/base_galaxy.rules>/FactionTier
 StartingNodePicker : &<./Data/galaxy_map/map_generators/base_galaxy.rules>/StartingNodePicker
 {
   Type = StartingNodePicker
-  
   AllowedFactions : ^/0/AllowedFactions [SW.Rebel_Alliance, SW.Galactic_Empire, SW.CIS, SW.Republic, fringe] // Which factions the starting node can be in.
   MinConnections = 2 // Minimum connections for starting node candidates
   CandidatesFarthestFromFactions = [5, [SW.Black_Sun, imperium, io]] // [Max Distance, [FactionIDs]] - Tries to pick a start node near the listed factions.

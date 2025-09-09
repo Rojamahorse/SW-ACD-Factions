@@ -71,11 +71,6 @@ FactionTiers
 			TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
 			TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
 		}
-/*		{
-			FactionID = SW.Black_Sun
-			TierRangeLow = [1, (&~/MaxTier) - (&~/TierSpread)]
-			TierRangeHigh = [1 + (&~/TierSpread), (&~/MaxTier)]
-		}*/
 	]
 }
 
@@ -84,9 +79,9 @@ StartingNodePicker
 	Type = StartingNodePicker
 	AllowedFactions = [SW.Rebel_Alliance, SW.Galactic_Empire]
 	MinConnections = 1
-//	CandidatesFarthestFromFactions = [2, [SW.Republic]]
+	//CandidatesFarthestFromFactions = [2, [SW.Republic]]
 	SetTierRangeTo = [1, 1 + (&~/TierSpread)]
-	SetSectorTypeTo = basic
+	SetSectorTypeTo = SW.nh_basic
 }
 
 ProgressionTiers
@@ -149,19 +144,21 @@ SectorTypes
 			RandomWeight = 1
 		}
 		{
-			Type = binary
+			Type = SW.binary
 			RandomWeight = 0.5
 		}
 		{
-			Type = high_density_nebula
+			Type = SW.high_density_nebula
 			RandomWeight = 0.5
+			MinTier = 5
 		}
 		{
-			Type = supernova
-			RandomWeight = 0.5
+			Type = SW.supernova
+			RandomWeight = 0.25
+			MinTier = 5
 		}
 		{
-			Type = electron
+			Type = SW.electron
 			RandomWeight = 0.25
 		}
 	]
