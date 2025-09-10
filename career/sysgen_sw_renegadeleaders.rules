@@ -69,7 +69,7 @@ SubSpawners
 		        {
 		            Chance = 1
 		            Type = NameList
-		            Names
+					Names
 					[
 					    "Antilles"
 					    "Vader"

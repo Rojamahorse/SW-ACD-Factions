@@ -2,7 +2,7 @@ money
 {
 	Texture
 	{
-		File = "icon_credits.png"
+		File = "icon_money.png"
 		MipLevels = max
 		SampleMode = Linear
 	}
@@ -10,16 +10,16 @@ money
 	ProportionalSize = true
 }
 
-//fame 
+//fame
 //{
-	//Texture
-	//{
-	//	File = "icon_fame.png"
-	//	MipLevels = max
-	//	SampleMode = Linear
-	//}
-	//Size = [1, 1]
-	//ProportionalSize = true
+//	Texture
+//	{
+//		File = "icon_fame.png"
+//		MipLevels = max
+//		SampleMode = Linear
+//	}
+//	Size = [1, 1]
+//	ProportionalSize = true
 //}
 
 //command_points 
@@ -34,51 +34,51 @@ money
 	//ProportionalSize = true
 //}
 
-//sort
-//{
-	//Texture
-	//{
-	//	File = "icon_sort.png"
-	//	MipLevels = max
-	//	SampleMode = Linear
-	//}
-	//Size = [34/46, 1]
-	//ProportionalSize = true
-//}
+sort
+{
+	Texture
+	{
+		File = "icon_sort.png"
+		MipLevels = max
+		SampleMode = Linear
+	}
+	Size = [34/46, 1]
+	ProportionalSize = true
+}
 
-//categorize
-//{
-	//Texture
-	//{
-	//	File = "icon_categorize.png"
-	//	MipLevels = max
-	//	SampleMode = Linear
-	//}
-	//Size = [38/46, 1]
-	//ProportionalSize = true
-//}
+categorize
+{
+	Texture
+	{
+		File = "icon_categorize.png"
+		MipLevels = max
+		SampleMode = Linear
+	}
+	Size = [38/46, 1]
+	ProportionalSize = true
+}
 
-//hamburger_up
-//{
-	//Texture
-	//{
-	//	File = "widgets_menu_up.png"
-	//	MipLevels = 2
-	//	SampleMode = Linear
-	//}
-	//Size = [20, 20]
-//}
+hamburger_up
+{
+	Texture
+	{
+		File = "widgets_menu_up.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+	Size = [20, 20]
+}
 
-//hamburger_down
-//{
-	//Texture
-	//{
-	//	File = "widgets_menu_down.png"
-	//	MipLevels = 2
-	//	SampleMode = Linear
-	//}
-	//Size = [20, 20]
-//}
+hamburger_down
+{
+	Texture
+	{
+		File = "widgets_menu_down.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+	Size = [20, 20]
+}
 
 //objective_normal
 //{

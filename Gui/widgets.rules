@@ -1,18 +1,18 @@
-//MainSprite : &<./Data/gui/widgets.rules>/MainSprite
-//{
-//	Texture
-//	{
-//		File = "widgets.png"
-//		MipLevels = 2
-//		SampleMode = Linear
-//		FixTransparentColors = true
-//	}
-//
-//	Shader = "gui.shader"
-//	_highlightTime = -1000
-//	_unhighlightTime = -1000
-//	_clickTime = -1000
-//}
+MainSprite
+{
+	Texture
+	{
+		File = "widgets.png"
+		MipLevels = 2
+		SampleMode = Linear
+		FixTransparentColors = true
+	}
+
+	Shader = "./Data/gui/gui.shader"
+	_highlightTime = -1000
+	_unhighlightTime = -1000
+	_clickTime = -1000
+}
 //HighlightSprite : MainSprite
 //{
 //	Shader = "gui_highlight.shader"
@@ -24,10 +24,10 @@
 
 //PulsingTextShader = "pulsing.shader"
 
-//ArrowSprite : <./Data/gui/widgets.rules>/ArrowSprite
-//{
-//	//Texture { File="widgets_arrows.png"; MipLevels=2; SampleMode=Linear; }
-//}
+ArrowSprite
+{
+	Texture { File="widgets_arrows.png"; MipLevels=2; SampleMode=Linear; }
+}
 
 DefaultFont
 {
@@ -129,46 +129,46 @@ MainText
 //FameTextColor = [0, 183, 255]
 //InsufficientFameTextColor = &BadTextColor
 //LimitedTextColor = Orange
-//
-//DefaultCursor          { File="cursor_arrow.png"; HotSpot=[8,8]; Scale=.5; }
-//RightClickCursor       { File="cursor_right_click.png"; HotSpot=[8,8]; Scale=.5; }
+
+DefaultCursor          { File="cursor_arrow.png"; HotSpot=[8,8]; Scale=.5; }
+RightClickCursor       { File="cursor_right_click.png"; HotSpot=[8,8]; Scale=.5; }
 //InvalidCursor          { File="cursor_invalid.png"; HotSpot=[8,8]; Scale=.5; }
-//TextFieldCursor        { File="cursor_text.png"; HotSpot=[40,40]; Scale=.5; }
-//HorizontalArrowsCursor { File="cursor_horizontal_arrows.png"; HotSpot=[40,40]; Scale=.5; }
-//VerticalArrowsCursor   { File="cursor_vertical_arrows.png"; HotSpot=[40,40]; Scale=.5; }
-//TLBRArrowsCursor       { File="cursor_tlbr_arrows.png"; HotSpot=[40,40]; Scale=.5; }
-//TRBLArrowsCursor       { File="cursor_trbl_arrows.png"; HotSpot=[40,40]; Scale=.5; }
-//MoveCursor             { File="cursor_mover.png"; HotSpot=[40,40]; Scale=.5; }
+TextFieldCursor        { File="cursor_text.png"; HotSpot=[40,40]; Scale=.5; }
+HorizontalArrowsCursor { File="cursor_horizontal_arrows.png"; HotSpot=[40,40]; Scale=.5; }
+VerticalArrowsCursor   { File="cursor_vertical_arrows.png"; HotSpot=[40,40]; Scale=.5; }
+TLBRArrowsCursor       { File="cursor_tlbr_arrows.png"; HotSpot=[40,40]; Scale=.5; }
+TRBLArrowsCursor       { File="cursor_trbl_arrows.png"; HotSpot=[40,40]; Scale=.5; }
+MoveCursor             { File="cursor_mover.png"; HotSpot=[40,40]; Scale=.5; }
 
-//ResizerTLBRIcon : <./Data/gui/widgets.rules>/ResizerTLBRIcon
-//{
-//	//Texture
-//	//{
-//	//	File = "widgets_resizer_tlbr.png"
-//	//	MipLevels = 2
-//	//	SampleMode = Linear
-//	//}
-//}
-//
-//ResizerTRBLIcon : <./Data/gui/widgets.rules>/ResizerTRBLIcon
-//{
-//	//Texture
-//	//{
-//	//	File = "widgets_resizer_trbl.png"
-//	//	MipLevels = 2
-//	//	SampleMode = Linear
-//	//}
-//}
+ResizerTLBRIcon
+{
+	Texture
+	{
+		File = "widgets_resizer_tlbr.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+}
 
-//MoverIcon : <./Data/gui/widgets.rules>/MoverIcon
-//{
-//	//Texture
-//	//{
-//	//	File = "widgets_mover.png"
-//	//	MipLevels = 2
-//	//	SampleMode = Linear
-//	//}
-//}
+ResizerTRBLIcon
+{
+	Texture
+	{
+		File = "widgets_resizer_trbl.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+}
+
+MoverIcon
+{
+	Texture
+	{
+		File = "widgets_mover.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+}
 
 //DialogOpenSoundEffect  { Sound="sounds/dialog_open.wav";  Volume=.25; }
 //DialogCloseSoundEffect { Sound="sounds/dialog_close.wav"; Volume=.25; }
@@ -2680,8 +2680,8 @@ MenuCategory : FlatButton, SelectableButton
 		DefocusedSound { Sound="sounds/panel_close.wav"; Volume=.2; }
 	}
 }
-
-HamburgerMenuDown : MenuCategory
+*/
+HamburgerMenuDown : <./Data/gui/widgets.rules>/MenuCategory
 {
 	Size = [32, 32]
 	AutoSize { AutoWidthMode=Disable; }
@@ -2715,7 +2715,7 @@ HamburgerMenuUp : HamburgerMenuDown
 		TargetCorner = BottomLeft
 	}
 }
-
+/*
 HamburgerButtonDown : Button, HamburgerMenuDown
 {
 	Size = [24, 24]
@@ -2755,8 +2755,8 @@ HamburgerFlatButtonUp : HamburgerMenuUp
 	StatePressedNineSlice     : ^/0/StatePressedNineSlice     { Flags=All; }
 	StateDisabledNineSlice    : ^/0/StateDisabledNineSlice    { Flags=All; }
 }
-
-UndoButton : TitleBarButton
+*/
+UndoButton : <./Data/gui/widgets.rules>/TitleBarButton
 {
 	Size = [32, 32]
 	AutoSize { AutoWidthMode=Disable; }
@@ -2775,7 +2775,7 @@ UndoButton : TitleBarButton
 	}
 }
 
-RedoButton : TitleBarButton
+RedoButton : <./Data/gui/widgets.rules>/TitleBarButton
 {
 	Size = [32, 32]
 	AutoSize { AutoWidthMode=Disable; }
@@ -2793,7 +2793,7 @@ RedoButton : TitleBarButton
 		SampleMode = Linear
 	}
 }
-
+/*
 MenuSubCategory : MenuItem, MenuCategory
 {
 	ArrowRectController { BorderPadding=[10,0,0,0]; InnerRectSize=[24,24]; ClipInnerRect=false; }
@@ -3048,8 +3048,8 @@ DragHoverNineSlice
 	BottomSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+96, 64, 32]; }
 	BottomRightSprite : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+96, 32, 32]; }
 }
-
-PopoutConnector : Image
+*/
+PopoutConnector : <./Data/gui/widgets.rules>/Image
 {
 	AnchorRect = [0, 1, 0, 0]
 	Rect = [0, 0, 50, 18]
@@ -3064,4 +3064,3 @@ PopoutConnector : Image
 		}
 	}
 }
-*/

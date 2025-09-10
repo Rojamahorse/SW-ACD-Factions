@@ -1,0 +1,928 @@
+/*
+Build = &<designer/build_gui.rules>
+Paint = &<designer/paint_gui.rules>
+Brushes = &<designer/brushes.rules>/Brushes
+Crew = &<crew/crew_gui.rules>
+Resources = &<resources/resources_gui.rules>
+Minimap = &<minimap/minimap.rules>
+PartNetworks = &<parts/networks/part_networks.rules>
+PartTriggers = &<parts/part_triggers.rules>/PartTriggers
+PartToggles = &<parts/part_toggles.rules>/PartToggles
+PartColors = &<parts/part_colors.rules>/PartColors
+PartHighlights = &<parts/part_highlights.rules>/PartHighlights
+PartTargeters = &<parts/part_targeters.rules>/PartTargeters
+PartStats = &<parts/part_stats.rules>/PartStats
+PartFeatures = &<parts/part_features.rules>/PartFeatures
+DeveloperToolbar = &<developer_tools/developer_tools.rules>
+*/
+
+Colors
+{
+	DefaultPlayerColor = [10, 212, 98]
+	DefaultEnemyColor = [246, 49, 42]
+	DefaultAllyColor = [110, 130, 145]
+	DefaultNeutralColor = [153, 153, 153]
+
+	ColorblindPresets
+	[
+		{
+			NameKey = "Colorblind/Normal"
+			PlayerColor = &~/Colors/DefaultPlayerColor
+			EnemyColor = &~/Colors/DefaultEnemyColor
+			AllyColor = &~/Colors/DefaultAllyColor
+			NeutralColor = &~/Colors/DefaultNeutralColor
+		}
+		{
+			NameKey = "Colorblind/Deuteranopia"
+			PlayerColor
+			{
+				Rf = 0
+				Gf = 0.395943642
+				Bf = 1
+				Af = 1
+			}
+			EnemyColor
+			{
+				Rf = 0.9567656
+				Gf = 0.9647059
+				Bf = 0.164705873
+				Af = 1
+			}
+			NeutralColor
+			{
+				Rf = 0.384615779
+				Gf = 0.384615779
+				Bf = 0.384615779
+				Af = 1
+			}
+			AllyColor = &~/Colors/DefaultAllyColor
+		}
+		{
+			NameKey = "Colorblind/Protanopia"
+			PlayerColor
+			{
+				Rf = 0
+				Gf = 0.320531368
+				Bf = 1
+				Af = 1
+			}
+			EnemyColor
+			{
+				Rf = 0.9647059
+				Gf = 0.958275139
+				Bf = 0.164705873
+				Af = 1
+			}
+			NeutralColor
+			{
+				Rf = 0.384615779
+				Gf = 0.384615779
+				Bf = 0.384615779
+				Af = 1
+			}
+			AllyColor = &~/Colors/DefaultAllyColor
+		}
+		{
+			NameKey = "Colorblind/Tritanopia"
+			PlayerColor
+			{
+				Rf = 0
+				Gf = 0.8733034
+				Bf = 0.8601923
+				Af = 1
+			}
+			EnemyColor = &~/Colors/DefaultEnemyColor
+			NeutralColor = &~/Colors/DefaultNeutralColor
+			AllyColor = [221, 255, 222]
+		}
+		{
+			NameKey = "Colorblind/Achromatopsia"
+			PlayerColor
+			{
+				Rf = 0.75
+				Gf = 0.75
+				Bf = 0.75
+				Af = 1
+			}
+			EnemyColor
+			{
+				Rf = 1
+				Gf = 1
+				Bf = 1
+				Af = 1
+			}
+			AllyColor
+			{
+				Rf = 0.5
+				Gf = 0.5
+				Bf = 0.5
+				Af = 1
+			}
+			NeutralColor
+			{
+				Rf = 0.201357946
+				Gf = 0.201357946
+				Bf = 0.201357946
+				Af = 1
+			}
+		}
+	]
+}
+
+
+
+FriendlyShipIndicatorPng
+{
+	File = "./Data/gui/game/hud_blip_friendly.png"
+	SampleMode = Linear
+	MipLevels = 2
+}
+
+NeutralShipIndicatorPng
+{
+	File = "./Data/gui/game/hud_blip_neutral.png"
+	SampleMode = Linear
+	MipLevels = 2
+}
+
+EnemyShipIndicatorPng
+{
+	File = "./Data/gui/game/hud_blip_enemy.png"
+	SampleMode = Linear
+	MipLevels = 2
+}
+
+FtlPointIndicatorPng
+{
+	File = "./Data/gui/game/hud_blip_ftl_point.png"
+	SampleMode = Linear
+	MipLevels = 2
+}
+
+FtlGateIndicatorPng
+{
+	File = "./Data/gui/game/hud_blip_ftl_gate.png"
+	SampleMode = Linear
+	MipLevels = 2
+}
+
+
+ObjectIndicators
+{
+	OffScreenDistFromEdge = 35
+	TextOffset = 50
+
+	ArrowDistFromEdge = 16
+	ArrowSprite
+	{
+		Texture
+		{
+			File = "./Data/gui/game/hud_ship_arrow.png"
+			SampleMode = Linear
+			MipLevels = 2
+		}
+		VertexColor = [255, 255, 255, 204]
+		Size = [32, 32]
+	}
+
+	PulseSprite
+	{
+		Texture
+		{
+			File = "./Data/gui/game/hud_pulse.png"
+			SampleMode = Linear
+			MipLevels = max
+		}
+		Size = [150, 150]
+	}
+	PulseInterval = 1
+	PulseScaleRange = [.1, 1]
+	CustomIconPulseScaleRange = [.4, 1]
+	PulseAlphaRange = [1, 0]
+
+	PingSprite = &PulseSprite
+	PingDuration = 1
+	PingScaleRange = [0, 2]
+	PingAlphaRange = [1, 0]
+
+	PingSound
+	{
+		Sound = "./Data/gui/game/sounds/radar_ping.wav"
+		Volume = 0.5
+	}
+	EnemyPingSound
+	{
+		Sound = "./Data/gui/game/sounds/radar_ping_enemy.wav"
+		Volume = 0.5
+	}
+
+	ShipIconGlowShader = "./Data/gui/game/ship_icon_glow.shader"
+	ShipIconGlowShipScale = .75
+	ShipIconGlowIterations = 5/128
+	ShipIconGlowDisplacement = 1
+
+	FriendlyShipDotNormalSprite
+	{
+		Texture = &~/FriendlyShipIndicatorPng
+		VertexColor = [255, 255, 255, 204]
+	}
+	FriendlyShipDotHighlightedSprite
+	{
+		Texture = &~/FriendlyShipIndicatorPng
+		VertexColor = [255, 255, 255, 230]
+	}
+	FriendlyShipDotPressedSprite
+	{
+		Texture = &~/FriendlyShipIndicatorPng
+		VertexColor = [255, 255, 255, 255]
+	}
+	NeutralShipDotNormalSprite
+	{
+		Texture =  &~/NeutralShipIndicatorPng
+		VertexColor = [255, 255, 255, 204]
+	}
+	NeutralShipDotHighlightedSprite
+	{
+		Texture = &~/NeutralShipIndicatorPng
+		VertexColor = [255, 255, 255, 230]
+	}
+	NeutralShipDotPressedSprite
+	{
+		Texture = &~/NeutralShipIndicatorPng
+		VertexColor = [255, 255, 255, 255]
+	}
+	EnemyShipDotNormalSprite
+	{
+		Texture = &~/EnemyShipIndicatorPng
+		VertexColor = [255, 255, 255, 204]
+	}
+	EnemyShipDotHighlightedSprite
+	{
+		Texture = &~/EnemyShipIndicatorPng
+		VertexColor = [255, 255, 255, 230]
+	}
+	EnemyShipDotPressedSprite
+	{
+		Texture = &~/EnemyShipIndicatorPng
+		VertexColor = [255, 255, 255, 255]
+	}
+	FtlPointNormalSprite
+	{
+		Texture = &~/FtlPointIndicatorPng
+		VertexColor = [255, 255, 255, 204]
+	}
+	FtlPointHighlightedSprite
+	{
+		Texture = &~/FtlPointIndicatorPng
+		VertexColor = [255, 255, 255, 230]
+	}
+	FtlPointPressedSprite
+	{
+		Texture = &~/FtlPointIndicatorPng
+		VertexColor = [255, 255, 255, 255]
+	}
+	FtlGateNormalSprite
+	{
+		Texture = &~/FtlGateIndicatorPng
+		VertexColor = [255, 255, 255, 204]
+	}
+	FtlGateHighlightedSprite
+	{
+		Texture = &~/FtlGateIndicatorPng
+		VertexColor = [255, 255, 255, 230]
+	}
+	FtlGatePressedSprite
+	{
+		Texture = &~/FtlGateIndicatorPng
+		VertexColor = [255, 255, 255, 255]
+	}
+
+	ShipSizeThresholdRange = [.075, .3]
+
+	ShipGhostNormalColorFactor = [255, 255, 255, 204]
+	ShipGhostHighlightedColorFactor = [255, 255, 255, 230]
+	ShipGhostPressedColorFactor = [255, 255, 255, 255]
+
+	FtlGateColor = [110, 130, 145]
+	DestinationGateNineSlice
+	{
+		TopLeftSprite
+		{
+			Texture
+			{
+				File = "./Data/gui/game/overlay_destination_gate.png"
+				SampleMode = Linear
+				MipLevels = max
+			}
+			Source = [0, 0, 64, 64]
+			VertexColor = [110, 130, 145]
+		}
+		TopRightSprite : TopLeftSprite { Source=[64, 0, 64, 64]; }
+		BottomLeftSprite : TopLeftSprite { Source=[0, 64, 64, 64]; }
+		BottomRightSprite : TopLeftSprite { Source=[64, 64, 64, 64]; }
+		Borders = .5
+		Bleed = .75 * .5
+	}
+	DestinationGateNineSlicePulseInterval = 1
+	DestinationGateNineSlicePulseScaleBegin = 1.25
+	DestinationGateNineSlicePulseScaleEnd = 1
+
+	SpaceStationColor = [255, 255, 255]
+}
+
+/*
+MoneyTickUpSound
+{
+	Sound = "sounds/money_tick_up.wav"
+	Volume = 1
+}
+MoneyTickDownSound
+{
+	Sound = "sounds/money_tick_down.wav"
+	Volume = 1
+}
+
+FameTickUpSound
+{
+	Sound = "sounds/fame_tick.wav"
+	Volume = 1
+}
+FameTickDownSound = &FameTickUpSound
+
+CloseHudButtonIcon
+{
+	Texture
+	{
+		File = "../icon_close.png"
+		MipLevels = max
+		SampleMode = Linear
+	}
+}
+
+RoofToggleOnIcon
+{
+	Texture
+	{
+		File = "toggle_interior_off.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+}
+RoofToggleOffIcon
+{
+	Texture
+	{
+		File = "toggle_interior_on.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+}
+
+FormationIcon
+{
+	Texture
+	{
+		File = "./Data/formations/formation_wedge.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+}
+CancelFormationIcon
+{
+	Texture
+	{
+		File = "../cancel.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+}
+
+DirectControlOnIcon
+{
+	Texture
+	{
+		File = "toggle_direct_control_on.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+}
+
+DirectControlOffIcon
+{
+	Texture
+	{
+		File = "toggle_direct_control_off.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+}
+
+MoveIcon
+{
+	Texture
+	{
+		File = "cmd_move.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+}
+
+RotateIcon
+{
+	Texture
+	{
+		File = "cmd_rotate.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+}
+
+StrafeIcon
+{
+	Texture
+	{
+		File = "cmd_strafe.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+}
+
+FollowIcon // Not an actual command, but used for the distance icon.
+{
+	Texture
+	{
+		File = "cmd_follow.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+}
+
+AttackIcon
+{
+	Texture
+	{
+		File = "cmd_attack.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+}
+
+SalvageIcon
+{
+	Texture
+	{
+		File = "cmd_salvage.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+}
+
+HaltIcon
+{
+	Texture
+	{
+		File = "cmd_halt.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+}
+
+SummonCrewIcon
+{
+	Texture
+	{
+		File = "cmd_summon_crew.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+}
+
+SpeedometerBacking
+{
+	Texture
+	{
+		File = "speedometer.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+}
+SpeedometerNeedle
+{
+	Texture
+	{
+		File = "speedometer_needle.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+}
+SpeedometerNeedleSpeedRange = [0, 160]
+SpeedometerNeedleAngleRange = [-225d, 45d]
+
+CrewEvaIcon
+{
+	Texture
+	{
+		File = "icon_crew_eva.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+	//Shader = "../pulsing.shader"
+}
+UnderConstructionIcon
+{
+	Texture
+	{
+		File = "icon_under_construction.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+	//Shader = "../pulsing.shader"
+}
+ConstructionBlockedIcon
+{
+	Texture
+	{
+		File = "icon_construction_blocked.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+	VertexColor = [255, 255, 255, 255*0.8]
+	Shader = "../pulsing.shader"
+}
+
+NoControlIcon
+{
+	Texture
+	{
+		File = "icon_no_control.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+	Shader = "../pulsing.shader"
+}
+
+NewShipIcon
+{
+	Texture
+	{
+		File = "./Data/gui/game/hud_new_ship.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+}
+
+FtlJumpIcon
+{
+	Texture
+	{
+		File = "hud_ftl_jump.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+}
+
+MoveCursor
+{
+	File = "cursor_move.png"
+	HotSpot = [8, 8]
+	Scale = .5
+}
+
+StrafeCursor = &MoveCursor
+RotateCursor = &MoveCursor
+
+AttackCursor
+{
+	File = "cursor_attack.png"
+	HotSpot = [8, 8]
+	Scale = .5
+}
+
+TargetCursor
+{
+	File = "cursor_target.png"
+	HotSpot = [8, 8]
+	Scale = .5
+}
+
+DirectControlAimCursor
+{
+	File = "cursor_direct_control_aim.png"
+	HotSpot = [40, 40]
+	Scale = .5
+}
+DirectControlAimDisabledCursor
+{
+	File = "cursor_direct_control_aim_disabled.png"
+	HotSpot = [40, 40]
+	Scale = .5
+}
+
+DirectControlMaxTargetDistance = 5
+DirectControlSoftTargetCircle : <./Data/commands/command_attack.rules>/AttackCommand/Circle
+{
+	VertexColor = [255, 255, 255, 127]
+}
+DirectControlHardTargetCircle : <./Data/commands/command_attack.rules>/AttackCommand/Circle
+{
+	VertexColor = [255, 255, 255, 255]
+}
+DirectControlHardTargetSound = &<./Data/commands/weapon_target.rules>/IssueSound
+
+CancelPartSelectionIcon
+{
+	Texture
+	{
+		File = "../icon_back.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+}
+
+TargetIcon = &AttackIcon
+CancelTargetIcon = &HaltIcon
+
+AutoThrustOffIcon
+{
+	Texture
+	{
+		File = "toggle_auto_thrust_off.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+}
+AutoThrustOnIcon
+{
+	Texture
+	{
+		File = "toggle_auto_thrust_on.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+}
+
+PauseSprite
+{
+	Texture
+	{
+		File = "speed_pause.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+}
+UnpauseSprite
+{
+	Texture
+	{
+		File = "speed_unpause.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+}
+IncreaseSpeedSprite
+{
+	Texture
+	{
+		File = "speed_increase.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+}
+DecreaseSpeedSprite
+{
+	Texture
+	{
+		File = "speed_decrease.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+}
+
+MenuIcon
+{
+	Texture
+	{
+		File = "hud_menu.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+}
+GalaxyMapIcon
+{
+	Texture
+	{
+		File = "hud_galaxy_map.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+}
+
+ErrorSound
+{
+	Sound = "../sounds/error.wav"
+	Volume = .5
+}
+ErrorFlashCount = 2
+ErrorFlashInterval = .1
+ErrorFlashSprite
+{
+	Texture
+	{
+		File = "../icon_back_red.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+	Size = [36, 36]
+}
+
+PlotCourseLocalSound
+{
+	Sound = "sounds/UI_hyperdrive_course.wav"
+}
+PlotCourseGalaxySound
+{
+	Sound = "sounds/UI_hyperdrive_course_galaxy.wav"
+}
+
+SummonCrewSound
+{
+	Sound = "sounds/recall_crew.wav"
+	Volume = 70%
+}
+
+ShipLogoColorFactor = [255, 255, 255, 204]
+ShipLogoRedprintsColor = [246, 49, 43, 204]
+ShipLogoUnselectedColorFactor = [255, 255, 255, 127]
+*/
+FtlPointColor = [110, 130, 145, 255]
+/*
+FtlJumpLine = &<./Data/galaxy_map/galaxy_map.rules>/CourseLine
+FtlJumpLinePulseSpeed = &<./Data/galaxy_map/galaxy_map.rules>/CourseLinePulseSpeed
+FtlJumpCursor
+{
+	File = "cursor_ftl.png"
+	HotSpot = [8, 8]
+	Scale = .5
+}
+
+MPPlayerColors
+[
+	{
+		Rf = 0.4747792
+		Gf = 0.6481564
+		Bf = 0.200556517
+	}
+	{
+		Rf = 0
+		Gf = 0.7547258
+		Bf = 0.7735661
+	}
+	{
+		Rf = 0.352360427
+		Gf = 0.3620341
+		Bf = 0.98258245
+	}
+	{
+		Rf = 0.386886
+		Gf = 0.00554955
+		Bf = 0.0748506561
+	}
+	{
+		Rf = 0.843237758
+		Gf = 0.7552948
+		Bf = 0.1676107
+	}
+	{
+		Rf = 0.55704236
+		Gf = 0.194397569
+		Bf = 0.784016967
+	}
+	{
+		Rf = 0.815368652
+		Gf = 0.314690441
+		Bf = 0
+	}
+	{
+		Rf = 1
+		Gf = 0.493852377
+		Bf = 0.9091723
+	}
+]
+ShipHiddenSound
+{
+	Sound = "sounds/ship_hidden.wav"
+	Volume = 50%
+}
+ShipRevealedSound
+{
+	Sound = "sounds/ship_revealed.wav"
+	Volume = 50%
+}
+LaunchGameSound
+{
+	Sound = "sounds/UI_launch_game.wav"
+}
+TimePauseSound
+{
+	Sound = "sounds/UI_time_pause.wav"
+	Volume = 1
+}
+TimeContinueSound
+{
+	Sound = "sounds/UI_time_continue.wav"
+	Volume = 1
+}
+OpenBuildRepairMenuSound
+{
+	Sound = "sounds/UI_build_repair_mode_on.wav"
+}
+OpenPaintMenuSound
+{
+	Sound = "sounds/UI_paint_mode_on.wav"
+}
+OpenCrewMenuSound
+{
+	Sound = "sounds/UI_crew_menu_on.wav"
+}
+OpenResourcesMenuSound
+{
+	Sound = "sounds/UI_resources_menu_on.wav"
+}
+OpenCommsMenuSound
+{
+	Sound = "sounds/UI_comms_menu_open.wav"
+}
+CloseCommsMenuSound
+{
+	Sound = "sounds/UI_comms_menu_close.wav"
+}
+CloseNonCommsMenuSound
+{
+	Sound = "sounds/UI_menu_off.wav"
+}
+StartSalvageSelectSound
+{
+	Sound = "sounds/UI_gather_salvage_mine_open.wav"
+}
+StopSalvageSelectSound
+{
+	Sound = "sounds/UI_gather_salvage_mine_close.wav"
+}
+CopySound
+{
+	Sound = "designer/sounds/UI_copy.wav"
+}
+CutSound
+{
+	Sound = "designer/sounds/UI_cut.wav"
+}
+PasteSound
+{
+	Sound = "designer/sounds/UI_paste.wav"
+}
+DeletePartInBinSound
+{
+	Sound = "designer/sounds/UI_delete_bin.wav"
+}
+ShowShipInteriorSound
+{
+	Sound = "sounds/UI_toggle_interior_on_01.wav"
+}
+HideShipInteriorSound
+{
+	Sound = "sounds/UI_toggle_interior_off_01.wav"
+}
+StartTradeSound
+{
+	Sound = "sounds/UI_trade_start.wav"
+}
+ShowGalaxyMapSound
+{
+	Sound = "sounds/UI_show_galaxy_map_01.wav"
+}
+HideGalaxyMapSound
+{
+	Sound = "sounds/UI_hide_galaxy_map_01.wav"
+}
+AllCrewInsideSound
+{
+	Sound = "sounds/UI_everyone_inside.wav"
+}
+BlueprintUnlockedSound
+{
+	Sound = "sounds/UI_blueprint_unlock.wav"
+}
+GenericPutdownSound
+{
+	Sound = "designer/sounds/UI_generic_putdown.wav"
+}
+AmbientTradeLoopSound
+{
+	Sound = "sounds/AL_trade.wav"
+}
+
+
+
+
+SeenShipPingDuration = 60
+*/

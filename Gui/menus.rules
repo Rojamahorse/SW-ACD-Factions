@@ -1,0 +1,506 @@
+/*
+LogoShip = "logo.ship.png"
+
+MasterVolumeAdjustSound = &EffectsVolumeAdjustSound
+EffectsVolumeAdjustSound = "sounds/sample_sfx.wav"
+InterfaceVolumeAdjustSound = "sounds/widget_press.wav"
+CountdownBeepSound
+{
+	Sound = "sounds/countdown_beep.wav"
+}
+ChatMessageSound
+{
+	Sound = "sounds/chat_notif.wav"
+}
+LogoShipFlyInSound
+{
+	Sound = "sounds/UI_start_game.wav"
+}
+LogoShipFlyOutSound
+{
+	Sound = "sounds/UI_quit_game.wav"
+}
+MultiplayerJoinedSound
+{
+	Sound = "sounds/UI_multiplayer_join.wav"
+}
+MultiplayerLeftSound
+{
+	Sound = "sounds/UI_multiplayer_leave.wav"
+}
+
+LogoShipFlyOutDelay = 0.3
+
+MainMenuBackgrounds
+[
+	{
+		BackgroundStyle = bg_blue
+		LightSource = [-1, -1, -1]
+		Planet
+		{
+			DoodadID = "cosmoteer.planet_gas_ringed"
+			Seed = 1662918314
+			Rotation = 5d
+			Scale = 35
+		}
+	}
+	{
+		BackgroundStyle = bg_tan_teal_blue
+		LightSource = [-1, -.5, -1.5]
+		Planet
+		{
+			DoodadID = "cosmoteer.planet_terra"
+			Seed = 0
+			Rotation = 195d
+			Scale = 35
+		}
+	}
+	{
+		BackgroundStyle = bg_tan_pink_silver
+		LightSource = [-1, 0, -1.5]
+		Planet
+		{
+			DoodadID = "cosmoteer.planet_gas_ringed"
+			Seed = 1544665855
+			Rotation = -10d
+			Scale = 35
+		}
+	}
+	{
+		BackgroundStyle = bg_red_blue
+		LightSource = [1, 0, -.75]
+		Planet
+		{
+			DoodadID = "cosmoteer.planet_alien"
+			Seed = 29
+			Rotation = 180d
+			Scale = 35
+		}
+	}
+	{
+		BackgroundStyle = bg_yellow_orange
+		LightSource = [1, 1, -1]
+		Planet
+		{
+			DoodadID = "cosmoteer.planet_lava"
+			Seed = 0
+			Rotation = 225d
+			Scale = 35
+		}
+	}
+]
+
+CreditsBackground
+{
+	BackgroundStyle = bg_galaxy
+}
+
+ShipColorSprite
+{
+	Texture
+	{
+		File = "icon_ship_color.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+}
+*/
+PlayerInGameSprite
+{
+	Texture
+	{
+		File = "icon_ship.png"
+		MipLevels = 3
+		SampleMode = Linear
+	}
+}
+
+ContinueGameIcon
+{
+	Texture
+	{
+		File = "icon_continue.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+	Size = [48, 48]
+}
+
+NewGameIcon
+{
+	Texture
+	{
+		File = "icon_new_game.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+	Size = [48, 48]
+}
+
+LoadGameIcon
+{
+	Texture
+	{
+		File = "icon_load_game.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+	Size = [48, 48]
+}
+
+MultiplayerIcon
+{
+	Texture
+	{
+		File = "icon_multiplayer.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+	Size = [48, 48]
+}
+
+ExitIcon
+{
+	Texture
+	{
+		File = "icon_exit.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+	Size = [48, 48]
+}
+
+NewsIcon
+{
+	Texture
+	{
+		File = "icon_news.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+	Size = [48, 48]
+}
+
+SettingsIcon
+{
+	Texture
+	{
+		File = "icon_settings.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+	Size = [48, 48]
+}
+
+ModsIcon
+{
+	Texture
+	{
+		File = "icon_mods.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+	Size = [48, 48]
+}
+
+ShipLibraryIcon
+{
+	Texture
+	{
+		File = "icon_ship_library.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+	Size = [48, 48]
+}
+
+CodexIcon
+{
+	Texture
+	{
+		File = "icon_codex.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+	Size = [48, 48]
+}
+
+RoadmapIcon
+{
+	Texture
+	{
+		File = "icon_roadmap.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+	Size = [48, 48]
+}
+
+CommunityIcon
+{
+	Texture
+	{
+		File = "icon_community.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+	Size = [48, 48]
+}
+
+FeedbackIcon
+{
+	Texture
+	{
+		File = "icon_feedback.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+	Size = [48, 48]
+}
+
+CreditsIcon
+{
+	Texture
+	{
+		File = "icon_Credits.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+	Size = [48, 48]
+}
+
+DiscordIcon
+{
+	Texture
+	{
+		File = "icon_discord.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+	Size = [36, 36]
+}
+
+SteamIcon
+{
+	Texture
+	{
+		File = "icon_steam.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+	Size = [36, 36]
+}
+
+RedditIcon
+{
+	Texture
+	{
+		File = "icon_reddit.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+	Size = [36, 36]
+}
+
+BackIcon
+{
+	Texture
+	{
+		File = "icon_back.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+	Size = [36, 36]
+}
+
+OnlineIcon
+{
+	Texture
+	{
+		File = "icon_online.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+	Size = [36, 36]
+}
+
+LanIcon
+{
+	Texture
+	{
+		File = "icon_lan.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+	Size = [36, 36]
+}
+
+DirectConnectIcon
+{
+	Texture
+	{
+		File = "icon_direct_connect.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+	Size = [36, 36]
+}
+/*
+SearchIcon
+{
+	Texture
+	{
+		File = "icon_search.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+	Size = [26, 26]
+}
+*/
+LockIcon
+{
+	Texture
+	{
+		File = "icon_lock.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+	Size = [64, 64]
+}
+
+HostIcon
+{
+	Texture
+	{
+		File = "icon_host.png"
+		MipLevels = 3
+		SampleMode = Linear
+	}
+	Size = [64, 64]
+}
+
+AiIcon
+{
+	Texture
+	{
+		File = "icon_ai.png"
+		MipLevels = 3
+		SampleMode = Linear
+	}
+	Size = [64, 64]
+}
+
+ObserverIcon
+{
+	Texture
+	{
+		File = "icon_observer.png"
+		MipLevels = 3
+		SampleMode = Linear
+	}
+	Size = [64, 64]
+}
+/*
+DisconnectedIcon
+{
+	Texture
+	{
+		File = "icon_disconnected.png"
+		MipLevels = 3
+		SampleMode = Linear
+	}
+	Size = [64, 64]
+}
+
+WaitingIcon
+{
+	Texture
+	{
+		File = "icon_waiting.png"
+	    MipLevels = 2
+	    SampleMode = Linear
+	}
+	Size = [64, 64]
+}
+
+InCommsIcon
+{
+	Texture
+	{
+		File = "icon_in_comms.png"
+		MipLevels = 3
+		SampleMode = Linear
+	}
+	Size = [64, 64]
+}
+*/
+RefreshIcon
+{
+	Texture
+	{
+		File = "icon_refresh.png"
+		MipLevels = 3
+		SampleMode = Linear
+	}
+	Size = [48, 48]
+}
+
+Spinner
+{
+	Texture
+	{
+		File = "loading_spinner.png"
+		SampleMode = Linear
+		MipLevels = max
+	}
+	Size = [48, 48]
+}
+/*
+SpinnerSpeed = 360d
+
+LatencyLevels
+[
+	{
+		MaxLatency = .15
+		Sprite
+		{
+			Texture
+			{
+				File = "latency_good.png"
+				MipLevels = 3
+				SampleMode = Linear
+			}
+		}
+	}
+	{
+		MaxLatency = .3
+		Sprite
+		{
+			Texture
+			{
+				File = "latency_fair.png"
+				MipLevels = 3
+				SampleMode = Linear
+			}
+		}
+	}
+	{
+		Sprite
+		{
+			Texture
+			{
+				File = "latency_bad.png"
+				MipLevels = 3
+				SampleMode = Linear
+			}
+		}
+	}
+]
+
+LobbyNameGenerator
+{
+	Type = CharacterSequence
+	AvailableCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+	Length = 3
+}
+*/

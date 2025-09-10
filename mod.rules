@@ -143,11 +143,24 @@ Actions
 		Overrides = &<gui/widgets.rules>
 	}
 
-	{ //gui/Text Sprites
+	{ //gui/Text 
 		Action = Overrides
 		OverrideIn = "<gui/text_sprites.rules>"
 		Overrides = &<gui/text_sprites.rules>
 	}	
+
+	{ //gui/menu 
+		Action = Overrides
+		OverrideIn = "<gui/menus.rules>"
+		Overrides = &<gui/menus.rules>
+	}	
+
+	{ //gui/game/game_gui 
+		Action = Overrides
+		OverrideIn = "<gui/game/game_gui.rules>"
+		Overrides = &<gui/game/game_gui.rules>
+	}	
+
 
 	/* *********** STARTER SHIPS ************* */
 
