@@ -32,6 +32,7 @@ Ships
     :~{ File="Reb Sm Railgun Platform.ship.png";            Tier=4; Difficulty=1; }
     :~{ File="Reb Sm Sq Cannon Platform.ship.png";          Tier=2; Difficulty=1; }
     :~{ File="Reb Small HE Missile Platform.ship.png";      Tier=2; Difficulty=1; }
+    :~{ File="Reb_Coruscanti_Con_Missile_Platf.ship.png";   Tier=8; Difficulty=2; }
     :~{ File="Reb XL EMP Def Platform.ship.png";            Tier=8; Difficulty=1; }
     :~{ File="Reb XL Nuke Platform.ship.png";               Tier=8; Difficulty=1; }
     :~{ File="Sm Reb Laser Platform.ship.png";              Tier=2; Difficulty=1; }

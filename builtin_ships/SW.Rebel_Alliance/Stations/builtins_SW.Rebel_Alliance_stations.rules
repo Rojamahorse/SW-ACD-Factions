@@ -5,8 +5,10 @@ Ships
 [
 	// Civilian stations
 	:~{ File="SW.Reb Trade Station 1 Small.ship.png"; 				Tier=4;  Tags : ~/Tags [trade_station, empty_storage];    	StasisIcon="SW.Reb Trade Station 1.png";	OtherIDs=["Small Rebel Trade Station"] }
-	:~{ File="SW.Reb Haven-Class_Medical_Stati.ship.png"; 			Tier=6;  Tags : ~/Tags [trade_station, empty_storage];		StasisIcon="SW.Reb Trade Station 2.png"; }
+	:~{ File="Reb_Outer_Rim_Supply_Outpost_Sm.ship.png"; 			Tier=4;  Tags : ~/Tags [trade_station, empty_storage];    	StasisIcon="Reb_Outer_Rim_Supply_Outpost_Sm.png"; }
+	:~{ File="SW.Reb Haven-Class_Medical_Stati.ship.png"; 			Tier=6;  Tags : ~/Tags [trade_station, empty_storage];		StasisIcon="SW.Reb Haven-Class_Medical_Stati.png"; }
 	:~{ File="SW.Reb Trade Station 2 Medium.ship.png";   			Tier=10; Tags : ~/Tags [trade_station, empty_storage];    	StasisIcon="SW.Reb Trade Station 2.png";	OtherIDs=["Med Rebel Trade Station"] }
+	:~{ File="Reb_Orbital_Refinery_Med.ship.png";   				Tier=8; Tags : ~/Tags [trade_station, empty_storage];    	StasisIcon="Reb_Orbital_Refinery_Med.png"; }
 	:~{ File="SW.Reb Trade Station 3 Large.ship.png";   			Tier=16; Tags : ~/Tags [trade_station, empty_storage];    	StasisIcon="SW.Reb Trade Station 3.png";	OtherIDs=["New Republic Rebel - Station1", "Large Rebel Trade Station"] }
 //	:~{ File="Large Rebel Trade Station.ship.png"; 					Tier=16; Tags : ~/Tags [trade_station, empty_storage];    	StasisIcon="Large Rebel Trade Station.png";	OtherIDs=[""] }
 

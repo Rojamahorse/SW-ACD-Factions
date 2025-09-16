@@ -6,6 +6,7 @@ Ships
 	// Trade ships
 	:~{ File="Rep J-Type_327_Nubian_Starship.ship.png"; 		Tier=2;  Tags : ~/Tags [trade, empty_storage] }
 	:~{ File="Cargo Transporter Tiny Republic.ship.png";     	Tier=1;  Tags : ~/Tags [trade, empty_storage] }
+	:~{ File="Rep_Companion-Class_Starfighter.ship.png";     	Tier=1;  Tags : ~/Tags [trade, empty_storage] }
 	:~{ File="Cargo Transporter Small Republic.ship.png";    	Tier=3;  Tags : ~/Tags [trade, empty_storage] }
 	:~{ File="Rep Barloz-class Medium Freighte.ship.png"; 		Tier=3;  Tags : ~/Tags [trade, empty_storage] }
 	:~{ File="Cargo Transporter Medium Republic.ship.png";  	Tier=5;  Tags : ~/Tags [trade, empty_storage] }

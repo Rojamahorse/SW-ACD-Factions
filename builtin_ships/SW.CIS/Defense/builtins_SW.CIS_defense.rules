@@ -5,12 +5,14 @@ Tags = [defense]
 Ships
 [
 	// Platforms
-	:~{ File="Small Laser Platform4.ship.png";     Tier=2; Difficulty=2; }
-	:~{ File="Small Disruptor Platform4.ship.png"; Tier=2; Difficulty=2; }
-	:~{ File="Small EMP Platform4.ship.png";       Tier=2; Difficulty=2; }
-	:~{ File="Small Ion Platform4.ship.png";       Tier=2; Difficulty=2; }
-	:~{ File="CIS_mineemp_platform.ship.png";      Tier=4; Difficulty=2; }
-	:~{ File="Lg CIS Ion Platform.ship.png";       Tier=6; Difficulty=2; }
+	:~{ File="Small Laser Platform4.ship.png";                  Tier=2; Difficulty=2; }
+	:~{ File="CIS_Sm_Micro_Turbolaser_Platform.ship.png";       Tier=2; Difficulty=2; }
+	:~{ File="CIS_SMMed_Fighterkiller_Platform.ship.png";       Tier=4; Difficulty=2; }
+	:~{ File="Small Disruptor Platform4.ship.png";              Tier=2; Difficulty=2; }
+	:~{ File="Small EMP Platform4.ship.png";                    Tier=2; Difficulty=2; }
+	:~{ File="Small Ion Platform4.ship.png";                    Tier=2; Difficulty=2; }
+	:~{ File="CIS_mineemp_platform.ship.png";                   Tier=4; Difficulty=2; }
+	:~{ File="Lg CIS Ion Platform.ship.png";                    Tier=6; Difficulty=2; }
     :~{ File="CIS Blackout EMP Platform.ship.png";          Tier=6; Difficulty=1; }
     :~{ File="CIS Lg Cannon Platform.ship.png";             Tier=6; Difficulty=1; }
     :~{ File="CIS Lg HE Missile Platform.ship.png";         Tier=6; Difficulty=1; }
@@ -34,6 +36,7 @@ Ships
     :~{ File="CIS Sm Sq Cannon Platform.ship.png";          Tier=2; Difficulty=1; }
     :~{ File="CIS Small HE Missile Platform.ship.png";      Tier=2; Difficulty=1; }
     :~{ File="CIS XL EMP Def Platform.ship.png";            Tier=8; Difficulty=1; }
+    :~{ File="CIS_Coruscanti_Hex_Missile_Platf.ship.png";   Tier=8; Difficulty=1; }
     :~{ File="CIS XL Nuke Platform.ship.png";               Tier=8; Difficulty=1; }
 //    :~{ File="Sm CIS Laser Platform.ship.png";              Tier=2; Difficulty=1; }
     :~{ File="CIS XL Railgun Platform.ship.png";            Tier=8; Difficulty=1; }

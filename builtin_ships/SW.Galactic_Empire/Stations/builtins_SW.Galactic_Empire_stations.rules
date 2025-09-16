@@ -5,17 +5,23 @@ Ships
 [
 	// Civilian stations
 	:~{ File="SW.Emp Trade Station 1 Minor.ship.png"; Tier=1;  Tags : ~/Tags [trade_station, empty_storage]; StasisIcon="Small SW.Galactic_Empire Trade Station.png"; OtherIDs=["Small SW.Galactic_Empire Trade Station", "Small Emp Trade Station"] }
+	:~{ File="Emp_Outer_Rim_Supply_Outpost_Sm.ship.png"; Tier=1;  Tags : ~/Tags [trade_station, empty_storage]; StasisIcon="Emp_Outer_Rim_Supply_Outpost_Sm.png"; }
+	:~{ File="Emp_Golan_Space_Colony_Sm.ship.png"; Tier=3;  Tags : ~/Tags [trade_station, empty_storage]; StasisIcon="Emp_Golan_Space_Colony_Sm.png"; }
 	:~{ File="SW.Emp Trade Station 2 Small.ship.png";   Tier=4; Tags : ~/Tags [trade_station, empty_storage]; StasisIcon="Med SW.Galactic_Empire Trade Station.png"; OtherIDs=["Med SW.Galactic_Empire Trade Station", "Small Emp Trade Station II"] }
 	:~{ File="SW.Emp Trade Station 3 Medium.ship.png"; Tier=10; Tags : ~/Tags [trade_station, empty_storage]; StasisIcon="Large SW.Galactic_Empire Trade Station.png"; OtherIDs=["Large SW.Galactic_Empire Trade Station", "Med Emp Trade Station","Med Emp Trade Station II"] }
 	:~{ File="SW.Emp Trade Station 4 Large.ship.png"; Tier=16; Tags : ~/Tags [trade_station, empty_storage]; StasisIcon="Huge SW.Galactic_Empire Trade Station.png"; OtherIDs=["Huge SW.Galactic_Empire Trade Station", "Large Emp Trade Station"] }
+	:~{ File="Emp_Imperial_Space_Colony_1_Huge.ship.png"; Tier=16; Tags : ~/Tags [trade_station, empty_storage]; StasisIcon="Emp_Imperial_Space_Colony_1_Huge.png"; }
+	:~{ File="Imperial_Space_Colony_Level_2XXH.ship.png"; Tier=17; Tags : ~/Tags [trade_station, empty_storage]; StasisIcon="Imperial_Space_Colony_Level_2XXH.png"; }
 
 	// Military stations
 	:~{ File="SW.Emp Arms Depot 1 Tiny.ship.png";    			Tier=3;  SpawnTier=3;  Tags : ~/Tags [military_station, empty_storage]; StasisIcon="Small SW.Galactic_Empire Arms Depot.png"; OtherIDs=["Small SW.Galactic_Empire Arms Depot", "Tiny Emp Arms Depot"]; FlightDirection=UpRight }
 	:~{ File="SW.Emp Arms Depot 2 Small.ship.png";    			Tier=6;  SpawnTier=3;  Tags : ~/Tags [military_station, empty_storage]; StasisIcon="Med SW.Galactic_Empire Arms Depot.png"; OtherIDs=["Med SW.Galactic_Empire Arms Depot", "Small Emp Arms Depot"]; FlightDirection=UpRight }
 	:~{ File="SW.Emp Arms Depot 3 Medium.ship.png";    			Tier=9;  SpawnTier=7; Tags : ~/Tags [military_station, empty_storage]; StasisIcon="Large SW.Galactic_Empire Arms Depot.png";  OtherIDs=["Large SW.Galactic_Empire Arms Depot", "Med Emp Arms Depot"]; FlightDirection=UpRight }
+	:~{ File="Imperial_Torpedo_Sphere_Lg.ship.png";    			Tier=12;  SpawnTier=9; Tags : ~/Tags [military_station, empty_storage]; StasisIcon="Large SW.Galactic_Empire Arms Depot.png"; FlightDirection=UpRight }
 	:~{ File="SW.Emp Arms Depot 4 Large.ship.png";    			Tier=12; SpawnTier=11; Tags : ~/Tags [military_station, empty_storage]; StasisIcon="Huge SW.Galactic_Empire Arms Depot.png";  OtherIDs=["Large Emp Arms Depot"]; FlightDirection=UpRight }
 	:~{ File="SW.Emp Arms Depot 5 XLarge.ship.png";     		Tier=12;  SpawnTier=12;  Tags : ~/Tags [military_station, empty_storage]; StasisIcon="Tiny Emp Arms Depot.png"; OtherIDs=["Huge SW.Galactic_Empire Arms Depot"]; FlightDirection=UpLeft }
 	:~{ File="SW.Emp Arms Depot 6 Huge.ship.png";    			Tier=16;  SpawnTier=15;  Tags : ~/Tags [military_station, empty_storage]; StasisIcon="Small Emp Arms Depot.png"; OtherIDs=["Star Forge ACD"]; FlightDirection=UpRight }
+	:~{ File="Imperial_Space_Colony_ArmsDepotH.ship.png";    	Tier=18;  SpawnTier=17;  Tags : ~/Tags [military_station, empty_storage]; StasisIcon="Imperial_Space_Colony_ArmsDepotH.png"; FlightDirection=UpRight }
 ]
 
 /*

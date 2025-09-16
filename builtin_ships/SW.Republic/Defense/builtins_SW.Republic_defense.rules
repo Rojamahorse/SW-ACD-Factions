@@ -37,6 +37,7 @@ Ships
     :~{ File="Rep Sm Sq Cannon Platform.ship.png";     		Tier=2; Difficulty=2; }
     :~{ File="Rep Small HE Missile Platform.ship.png"; 		Tier=2; Difficulty=2; }
     :~{ File="Rep XL Asteroid Def Platform.ship.png";  		Tier=8; Difficulty=2; }
+    :~{ File="Rep_Coruscanti_CL_Missile_Platf.ship.png";    Tier=8; Difficulty=2; }
     :~{ File="Rep XL Nuke Platform.ship.png";          		Tier=8; Difficulty=2; }
     :~{ File="Rep XL Railgun Platform.ship.png";       		Tier=8; Difficulty=2; }
     :~{ File="Sm Rep Laser Platform.ship.png";         		Tier=2; Difficulty=2; }

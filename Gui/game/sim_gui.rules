@@ -1,0 +1,512 @@
+/*
+ShipTextColorFactor = [255, 255, 255, 205]
+
+SelectionOutlineSprite
+{
+	VertexColor = [255, 255, 255, 255]
+}
+SelectionFillSprite
+{
+	VertexColor = [255, 255, 255, 16]
+}
+FocusOutlineSprite
+{
+	VertexColor = [191, 228, 255, 255]
+}
+FocusFillSprite
+{
+	VertexColor = [191, 228, 255, 16]
+}
+TentativeShipCircle : SelectedShipCircle
+{
+	VertexColor = [255, 255, 255, 153]
+}
+HiddenTentativeShipCircle : HiddenSelectedShipCircle
+{
+	VertexColor = [255, 255, 255, 153]
+}
+TentativeShipCrewCircle : SelectedShipCrewCircle
+{
+	VertexColor = [255, 255, 255, 127]
+}
+TentativeShipCrewLine
+{
+	LineSprite
+	{
+		Texture
+		{
+			File = "../line_dotted.png"
+			SampleMode = Linear
+			MipLevels = max
+			UMode = Wrap
+		}
+		VertexColor = [153, 153, 153, 63]
+	}
+	LineThickness = .25
+	LineUPerLength = 4
+}
+ShipVelocityLine
+{
+	LineSprite
+	{
+		Texture
+		{
+			File = "overlay_selection.png"
+			SampleMode = Linear
+			MipLevels = max
+			UMode = Wrap
+		}
+		VertexColor = [255, 255, 255, 255]
+	}
+	LineThickness = 0.5
+	LineUPerLength = 1
+	EndCapSprite
+	{
+		Texture
+		{
+			File = "../line_arrow.png"
+			SampleMode = Linear
+			MipLevels = max
+		}
+	}
+	EndCapSize = [.25,.25]
+	EndCapOverlap = 0.05
+}
+ShipVelocityLineScale = 0.2
+ShipAngularVelocityCircle
+{
+	Texture
+	{
+		File = "overlay_selection.png"
+		SampleMode = Linear
+		MipLevels = 2
+	}
+	VertexColor = [255, 255, 255, 255]
+	Thickness = 0.5
+	QuadCount = 256
+}
+ShipAngularVelocityArrow
+{
+	Texture
+	{
+		File = "../line_arrow.png"
+		SampleMode = Linear
+		MipLevels = max
+	}
+}
+ShipAngularVelocityScale = 0.2
+TentativeScheduledNuggetCollectSprite
+{
+	Texture
+	{
+		File = "overlay_nugget.png"
+		SampleMode = Linear
+		MipLevels = max
+	}
+	Size = [1.5, 1.5]
+	VertexColor = [255, 200, 0, 153]
+	Shader = "./Data/pivot.shader"
+}
+TentativeNuggetCollectSprite = &TentativeScheduledNuggetCollectSprite
+TentativeNuggetCantCollectSprite
+{
+	Texture
+	{
+		File = "overlay_nugget.png"
+		SampleMode = Linear
+		MipLevels = max
+	}
+	Size = [1.5, 1.5]
+	VertexColor = [246, 49, 43, 153]
+	Shader = "./Data/pivot.shader"
+}
+NuggetCancelCollectSprite : TentativeNuggetCantCollectSprite
+{
+	VertexColor = [246, 49, 43, 255]
+}
+SelectedShipCircle
+{
+	Texture
+	{
+		File = "overlay_selection_dashed.png"
+		SampleMode = Linear
+		MipLevels = 2
+	}
+	Arc = [-22.5d, 360d]
+	VertexColor = [255, 255, 255, 255]
+	Thickness = 0.5
+	QuadCount = 256
+	Dashes
+	[
+		{
+			DashURange = [32/128, 96/128]
+		}
+		{
+			DashURange = [0, 0]
+			BeginCapLengthPerThickness = 0.5
+			BeginCapURange = [96/128, 1]
+			EndCapLengthPerThickness = 0.5
+			EndCapURange = [0, 32/128]
+		}
+	]
+	DashRepeat = 3
+}
+HiddenSelectedShipCircle : SelectedShipCircle
+{
+	Arc = [-11.25d, 360d]
+	DashRepeat = 7
+}
+SelectedShipCircleTweenTime = .15
+SelectedShipCircleTweenFromColor = [255, 255, 255, 255*3]
+SelectedShipCrewCircle
+{
+	Texture
+	{
+		File = "overlay_selection_thin.png"
+		SampleMode = Linear
+		MipLevels = 2
+	}
+	VertexColor = [255, 255, 255, 200]
+	Thickness = .25
+	QuadCount = 64
+}
+SelectedShipCrewLine
+{
+	LineSprite
+	{
+		Texture
+		{
+			File = "../line_dotted.png"
+			SampleMode = Linear
+			MipLevels = max
+			UMode = Wrap
+		}
+		VertexColor = [153, 153, 153, 127]
+	}
+	LineThickness = .25
+	LineUPerLength = 4
+}
+SelectedScheduledNuggetCollectSprite
+{
+	Texture
+	{
+		File = "overlay_nugget.png"
+		SampleMode = Linear
+		MipLevels = max
+	}
+	Size = [1.5, 1.5]
+	VertexColor = [255, 200, 0, 255]
+	Shader = "./Data/pivot.shader"
+}
+ScheduledNuggetCollectTweenDuration = .2
+ScheduledNuggetCollectTweenFromScale = 2
+ShipCrewWarningCircle : SelectedShipCrewCircle
+{
+	VertexColor = [255, 49, 43, 255]
+	Shader = "./Data/crew/crew_warning_circle.shader"
+}
+ShipCrewWarningLine
+{
+	LineSprite
+	{
+		Texture
+		{
+			File = "../line_dotted.png"
+			SampleMode = Linear
+			MipLevels = max
+			UMode = Wrap
+		}
+		VertexColor = [255, 49, 43, 255]
+		Shader = "./Data/crew/crew_warning.shader"
+	}
+	LineThickness = .25
+	LineUPerLength = 4
+}
+FocusShipCircle : SelectedShipCircle
+{
+	VertexColor = [191, 228, 255, 255]
+}
+TentativeAttackCommandCircle : <./Data/commands/command_attack.rules>/AttackCommand/Circle
+{
+	VertexColor = [255, 255, 255, 204]
+}
+
+TentativeFollowCommandCircle : <./Data/commands/command_follow.rules>/FollowCommand/Circle
+{
+	VertexColor = [255, 255, 255, 96]
+}
+
+TentativeFtlCommandCircle : <./Data/commands/command_ftl_gate_jump.rules>/FtlGateJumpCommand/Circle
+{
+	VertexColor = [0, 188, 255, 204]
+}
+
+TentativeSalvageCommandCircle : <./Data/commands/command_salvage.rules>/SalvageCommand/Circle
+{
+	VertexColor = [255, 200, 0, 204]
+}
+
+CancelSalvageCommandCircle : <./Data/commands/command_salvage.rules>/SalvageCommand/Circle
+{
+	VertexColor = [246, 49, 43, 204]
+}
+
+FocusModeCursor
+{
+	File = "cursor_focus.png"
+	HotSpot = [8, 8]
+	Scale = .5
+}
+
+PartModeCursor
+{
+	File = "cursor_select.png"
+	HotSpot = [8, 8]
+	Scale = .5
+}
+
+NuggetCollectCursor
+{
+	File = "cursor_collect_resource.png"
+	HotSpot = [8, 8]
+	Scale = .5
+}
+NuggetCantCollectCursor
+{
+	File = "cursor_cant_collect_resource.png"
+	HotSpot = [8, 8]
+	Scale = .5
+}
+CancelSalvageCollectCursor = &<resources/resources_gui.rules>/ClearResourceTypeCursor
+SalvageCollectionSelectionOutlineSprite
+{
+	VertexColor = [255, 200, 0, 255]
+}
+SalvageCollectionSelectionFillSprite
+{
+	VertexColor = [255, 200, 0, 16]
+}
+CancelSalvageCollectionSelectionOutlineSprite
+{
+	VertexColor = [246, 49, 43, 255]
+}
+CancelSalvageCollectionSelectionFillSprite
+{
+	VertexColor = [246, 49, 43, 16]
+}
+NuggetLocationOverlaySprite
+{
+	Texture
+	{
+		File = "overlay_nugget.png"
+		SampleMode = Linear
+		MipLevels = max
+	}
+	Size = [1.5, 1.5]
+	VertexColor = [255, 255, 255, 255*3/8]
+	Shader = "./Data/pivot.shader"
+}
+
+BlueprintTransitionDuration = 0.15
+BackgroundTransitionDuration = 0.15
+BackgroundDimOpacity = .35
+GridTransitionDuration = 0.15
+
+ShipGridLiveModeColor = [255, 255, 255, 25]
+ShipGridBlueprintModeColor = [102, 102, 255, 51]
+ShipDarkenColor = [38, 38, 38, 255]
+
+SelectedPartNineSlice
+{
+	TopLeftSprite
+	{
+		Texture
+		{
+			File = "overlay_part_selection.png"
+			SampleMode = Linear
+			MipLevels = max
+		}
+		Source = [0, 0, 128, 128]
+	}
+	TopSprite         : TopLeftSprite { Source=[128, 0, 0, 128]; }
+	TopRightSprite    : TopLeftSprite { Source=[128, 0, 128, 128]; }
+	LeftSprite        : TopLeftSprite { Source=[0, 128, 128, 0]; }
+	CenterSprite      : TopLeftSprite { Source=[128, 128, 0, 0]; }
+	RightSprite       : TopLeftSprite { Source=[128, 128, 128, 0]; }
+	BottomLeftSprite  : TopLeftSprite { Source=[0, 128, 128, 128]; }
+	BottomSprite      : TopLeftSprite { Source=[128, 128, 0, 128]; }
+	BottomRightSprite : TopLeftSprite { Source=[128, 128, 128, 128]; }
+	Borders = 1
+	Bleed = .5
+}
+TentativePartNineSlice
+{
+	TopLeftSprite
+	{
+		Texture
+		{
+			File = "overlay_part_selection_tentative.png"
+			SampleMode = Linear
+			MipLevels = max
+		}
+		Source = [0, 0, 128, 128]
+	}
+	TopSprite         : TopLeftSprite { Source=[128, 0, 0, 128]; }
+	TopRightSprite    : TopLeftSprite { Source=[128, 0, 128, 128]; }
+	LeftSprite        : TopLeftSprite { Source=[0, 128, 128, 0]; }
+	CenterSprite      : TopLeftSprite { Source=[128, 128, 0, 0]; }
+	RightSprite       : TopLeftSprite { Source=[128, 128, 128, 0]; }
+	BottomLeftSprite  : TopLeftSprite { Source=[0, 128, 128, 128]; }
+	BottomSprite      : TopLeftSprite { Source=[128, 128, 0, 128]; }
+	BottomRightSprite : TopLeftSprite { Source=[128, 128, 128, 128]; }
+	Borders = 1
+	Bleed = .5
+}
+FocusPartNineSlice : TentativePartNineSlice
+{
+	VertexColor = [191, 228, 255, 255]
+	TopLeftSprite     : ^/0/TopLeftSprite     { VertexColor=&../VertexColor; }
+	TopSprite         : ^/0/TopSprite         { VertexColor=&../VertexColor; }
+	TopRightSprite    : ^/0/TopRightSprite    { VertexColor=&../VertexColor; }
+	LeftSprite        : ^/0/LeftSprite        { VertexColor=&../VertexColor; }
+	CenterSprite      : ^/0/CenterSprite      { VertexColor=&../VertexColor; }
+	RightSprite       : ^/0/RightSprite       { VertexColor=&../VertexColor; }
+	BottomLeftSprite  : ^/0/BottomLeftSprite  { VertexColor=&../VertexColor; }
+	BottomSprite      : ^/0/BottomSprite      { VertexColor=&../VertexColor; }
+	BottomRightSprite : ^/0/BottomRightSprite { VertexColor=&../VertexColor; }
+}
+
+HealthBarBlockSprite
+{
+	Texture
+	{
+		File = "../stat_block.png"
+		UVMode = Wrap
+		SampleMode = Linear
+		MipLevels = max
+	}
+}
+HealthBarHPPerBlock = 1000
+
+ScheduledSalvageNineSlice : TentativePartNineSlice
+{
+	VertexColor = [255, 200, 0, 255]
+	TopLeftSprite     : ^/0/TopLeftSprite     { VertexColor=&../VertexColor; }
+	TopSprite         : ^/0/TopSprite         { VertexColor=&../VertexColor; }
+	TopRightSprite    : ^/0/TopRightSprite    { VertexColor=&../VertexColor; }
+	LeftSprite        : ^/0/LeftSprite        { VertexColor=&../VertexColor; }
+	CenterSprite      : ^/0/CenterSprite      { VertexColor=&../VertexColor; }
+	RightSprite       : ^/0/RightSprite       { VertexColor=&../VertexColor; }
+	BottomLeftSprite  : ^/0/BottomLeftSprite  { VertexColor=&../VertexColor; }
+	BottomSprite      : ^/0/BottomSprite      { VertexColor=&../VertexColor; }
+	BottomRightSprite : ^/0/BottomRightSprite { VertexColor=&../VertexColor; }
+}
+TentativeScheduledSalvageNineSlice : TentativePartNineSlice
+{
+	VertexColor = [255, 200, 0, 153]
+	TopLeftSprite     : ^/0/TopLeftSprite     { VertexColor=&../VertexColor; }
+	TopSprite         : ^/0/TopSprite         { VertexColor=&../VertexColor; }
+	TopRightSprite    : ^/0/TopRightSprite    { VertexColor=&../VertexColor; }
+	LeftSprite        : ^/0/LeftSprite        { VertexColor=&../VertexColor; }
+	CenterSprite      : ^/0/CenterSprite      { VertexColor=&../VertexColor; }
+	RightSprite       : ^/0/RightSprite       { VertexColor=&../VertexColor; }
+	BottomLeftSprite  : ^/0/BottomLeftSprite  { VertexColor=&../VertexColor; }
+	BottomSprite      : ^/0/BottomSprite      { VertexColor=&../VertexColor; }
+	BottomRightSprite : ^/0/BottomRightSprite { VertexColor=&../VertexColor; }
+}
+TentativeSalvageNineSlice = &TentativeScheduledSalvageNineSlice
+CancelSalvageNineSlice : TentativePartNineSlice
+{
+	VertexColor = [246, 49, 43, 255]
+	TopLeftSprite     : ^/0/TopLeftSprite     { VertexColor=&../VertexColor; }
+	TopSprite         : ^/0/TopSprite         { VertexColor=&../VertexColor; }
+	TopRightSprite    : ^/0/TopRightSprite    { VertexColor=&../VertexColor; }
+	LeftSprite        : ^/0/LeftSprite        { VertexColor=&../VertexColor; }
+	CenterSprite      : ^/0/CenterSprite      { VertexColor=&../VertexColor; }
+	RightSprite       : ^/0/RightSprite       { VertexColor=&../VertexColor; }
+	BottomLeftSprite  : ^/0/BottomLeftSprite  { VertexColor=&../VertexColor; }
+	BottomSprite      : ^/0/BottomSprite      { VertexColor=&../VertexColor; }
+	BottomRightSprite : ^/0/BottomRightSprite { VertexColor=&../VertexColor; }
+}
+ScheduledSalvageNineSliceShrinkDuration = .15
+ScheduledSalvageNineSliceShrinkFromInflate = .5
+ScheduledSalvageReticleSprite
+{
+	Texture
+	{
+		File = "overlay_salvage.png"
+		SampleMode = Linear
+		MipLevels = max
+	}
+	VertexColor = [255, 170, 0, 400]
+	Size = [1, 1]
+	Shader = "./Data/pivot.shader"
+}
+TentativeScheduledSalvageReticleSprite
+{
+	Texture
+	{
+		File = "overlay_salvage.png"
+		SampleMode = Linear
+		MipLevels = max
+	}
+	VertexColor = [255, 170, 0, 153]
+	Size = [1, 1]
+	Shader = "./Data/pivot.shader"
+}
+ScheduledSalvageProgressFadeRange = [0, .5]
+SalvageCursor
+{
+	File = "cursor_salvage.png"
+	HotSpot = [8, 8]
+	Scale = .5
+}
+
+ShipSelectSound
+{
+	Sound = "sounds/select.wav"
+	Volume = .25
+}
+ShipFocusSound
+{
+	Sound = "sounds/select.wav" // NEIL: Maybe swap out.
+	Volume = .15
+}
+
+PartSelectSound
+{
+	Sound = "sounds/select.wav"
+	Volume = .25
+	Speed = 1.075
+}
+
+PartDeselectSound
+{
+	Sound = "sounds/deselect.wav"
+	Volume = .25
+}
+
+FtlReadySound
+{
+	Sound = "sounds/UI_hyperdrive_ready.wav"
+}
+SalvageMineSound
+{
+	Sound = "sounds/UI_gather_mine_resources.wav"
+	MaxConcurrent = 1
+}
+
+NuggetCollectSound
+{
+	Sound = "sounds/UI_pickup_resources.wav"
+	Db = 2
+}
+NuggetCollectCancelSound = &NuggetCollectSound
+
+GatherFloatingResourcesSound
+{
+	Sound = "sounds/UI_pickup_resources.wav"
+	Db = 2
+}
+SalvageCancelSound = &NuggetCollectSound
+*/

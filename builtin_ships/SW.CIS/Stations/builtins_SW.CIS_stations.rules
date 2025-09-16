@@ -5,6 +5,7 @@ Ships
 [
 	// Civilian stations
 	:~{ File="SW.CIS Trade Station 1 Minor.ship.png"; Tier=1;  Tags : ~/Tags [trade_station, empty_storage]; StasisIcon="SW.CIS Trade Station 1.png"; OtherIDs=["Small CIS Trade Station"]; }
+	:~{ File="CIS_Orbital_Refinery_Small.ship.png"; Tier=1;  Tags : ~/Tags [trade_station, empty_storage]; StasisIcon="CIS_Orbital_Refinery_Small.png"; }
 	:~{ File="SW.CIS Trade Station 2 Small.ship.png"; Tier=3;  Tags : ~/Tags [trade_station, empty_storage]; StasisIcon="SW.CIS Trade Station 2.png"; OtherIDs=["Small SW.CIS Trade Station"]; }
 	:~{ File="SW.CIS Trade Station 3 Medium.ship.png";   Tier=7; Tags : ~/Tags [trade_station, empty_storage]; StasisIcon="SW.CIS Trade Station 3.png"; OtherIDs=["Med SW.CIS Trade Station", "Med CIS Trade Station"]; }
 	:~{ File="SW.CIS Trade Station 4 Large.ship.png"; Tier=11; Tags : ~/Tags [trade_station, empty_storage]; StasisIcon="SW.CIS Trade Station 4.png"; OtherIDs=["Large SW.CIS Trade Station", "Large CIS Trade Station", "Lukrehulk-Class Droid Control Ship", "Huge SW.CIS Trade Station"]; }

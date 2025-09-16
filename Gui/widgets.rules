@@ -13,14 +13,14 @@ MainSprite
 	_unhighlightTime = -1000
 	_clickTime = -1000
 }
-//HighlightSprite : MainSprite
-//{
-//	Shader = "gui_highlight.shader"
-//}
-//SelectedSprite : MainSprite
-//{
-//	Shader = "gui_selected.shader"
-//}
+HighlightSprite : MainSprite
+{
+	Shader = "./Data/gui/gui_highlight.shader"
+}
+SelectedSprite : MainSprite
+{
+	Shader = "./Data/gui/gui_selected.shader"
+}
 
 //PulsingTextShader = "pulsing.shader"
 
@@ -116,7 +116,7 @@ ShadowGlowFont : DefaultFont
 MainText
 {
 	Font = &~/DefaultFont
-	FontSize = 16
+	FontSize = 18 //16 //Original 18
 }
 
 //GoodTextColor = [10, 212, 98]
@@ -180,11 +180,11 @@ MoverIcon
 //
 //BlurShader = "blur.shader"
 //BlurPasses = 4 // Actual number of draw calls is twice this because we need to blur both horizontally and vertically.
-//BlurFallbackMaterial
-//{
-//	Shader = "blur_fallback.shader"
-//	Color = [2, 21, 38, 255*.6]
-//}
+BlurFallbackMaterial
+{
+	Shader = "./Data/gui/blur_fallback.shader"
+	Color = [110, 130, 145, 255*.6] // Color = [2, 21, 38, 255*.6]
+}
 
 //Widget {}
 //
@@ -701,10 +701,16 @@ VerticalTabPageBox : TabPageBox
 {
 
 }
-
-Label : StaticWidget
+*/
+Label : <./Data/gui/widgets.rules>/StaticWidget
 {
-	TextRenderer : ~/MainText { Color=[168, 202, 229]; }
+	TextRenderer : ~/MainText { Color=[230, 237, 243]; }
+}
+
+/*
+Label : <./Data/gui/widgets.rules>/StaticWidget
+{
+	// TextRenderer : ~/MainText { Color=[168, 202, 229]; }
 }
 
 Image : StaticWidget
@@ -719,7 +725,15 @@ Button : DynamicWidget
 	StatePressedTextRenderer     : ~/MainText { Color=[187, 224, 255]; }
 	StateDisabledTextRenderer    : ~/MainText { Color=[94, 112, 128]; }
 }
-
+*/
+Button : <./Data/gui/widgets.rules>/DynamicWidget
+{
+	StateNormalTextRenderer      : ~/MainText { Color=[230, 237, 243]; }
+	StateHighlightedTextRenderer : ~/MainText { Color=[255, 220, 120]; }
+	StatePressedTextRenderer     : ~/MainText { Color=[255, 220, 120]; }
+	StateDisabledTextRenderer    : ~/MainText { Color=[140, 150, 160]; }
+}
+/*
 SquareButton : Button
 {
 	StateNormalNineSlice
@@ -795,7 +809,87 @@ SquareButton : Button
 		BottomRightSprite : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+96, 32, 32]; }
 	}
 }
+*/
+FlatButton : Button
+{
+	StateNormalNineSlice
+	{
+		Flags = All
+		Bleed = 8
+		Borders = 16
+		ProvidedRectPadding = -7
 
+		_X = 0
+		_Y = 256
+		TopLeftSprite     : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 64]; }
+		CenterSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 64]; }
+		RightSprite       : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 64]; }
+		BottomLeftSprite  : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+96, 32, 32]; }
+		BottomSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+96, 64, 32]; }
+		BottomRightSprite : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+96, 32, 32]; }
+	}
+	StateHighlightedNineSlice
+	{
+		Flags = All
+		Bleed = 8
+		Borders = 16
+		ProvidedRectPadding = -7
+
+		_X = 128
+		_Y = 256
+		TopLeftSprite     : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 64]; }
+		CenterSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 64]; }
+		RightSprite       : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 64]; }
+		BottomLeftSprite  : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+96, 32, 32]; }
+		BottomSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+96, 64, 32]; }
+		BottomRightSprite : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+96, 32, 32]; }
+	}
+	StatePressedNineSlice
+	{
+		Flags = All
+		Bleed = 8
+		Borders = 16
+		ProvidedRectPadding = -7
+
+		_X = 256
+		_Y = 256
+		TopLeftSprite     : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 64]; }
+		CenterSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 64]; }
+		RightSprite       : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 64]; }
+		BottomLeftSprite  : ~/HighlightSprite { Source=[(&../../_X)+0,  (&../../_Y)+96, 32, 32]; }
+		BottomSprite      : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+96, 64, 32]; }
+		BottomRightSprite : ~/HighlightSprite { Source=[(&../../_X)+96, (&../../_Y)+96, 32, 32]; }
+	}
+	StateDisabledNineSlice
+	{
+		Flags = All
+		Bleed = 8
+		Borders = 16
+		ProvidedRectPadding = -7
+
+		_X = 384
+		_Y = 256
+		TopLeftSprite     : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 64]; }
+		CenterSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 64]; }
+		RightSprite       : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+32, 32, 64]; }
+		BottomLeftSprite  : ~/MainSprite { Source=[(&../../_X)+0,  (&../../_Y)+96, 32, 32]; }
+		BottomSprite      : ~/MainSprite { Source=[(&../../_X)+32, (&../../_Y)+96, 64, 32]; }
+		BottomRightSprite : ~/MainSprite { Source=[(&../../_X)+96, (&../../_Y)+96, 32, 32]; }
+	}
+}
+/*
 FlatButton : Button
 {
 	StateNormalNineSlice
@@ -1065,10 +1159,10 @@ MainMenuButton : <./Data/gui/widgets.rules>/FlatButton
 	StatePressedNineSlice     : ^/0/StatePressedNineSlice     { Flags=All; Bleed=(&^/0/Bleed)-3; }
 	StateDisabledNineSlice    : ^/0/StateDisabledNineSlice    { Flags=None; }
 
-	StateNormalTextRenderer      : ^/0/StateNormalTextRenderer      { Font=&~/GlowFont; FontSize = 18; }
-	StateHighlightedTextRenderer : ^/0/StateHighlightedTextRenderer { Font=&~/GlowFont; FontSize = 18; }
-	StatePressedTextRenderer     : ^/0/StatePressedTextRenderer     { Font=&~/GlowFont; FontSize = 18; }
-	StateDisabledTextRenderer    : ^/0/StateDisabledTextRenderer    { Font=&~/GlowFont; FontSize = 18; }
+	StateNormalTextRenderer      : ^/0/StateNormalTextRenderer      { Font=&~/GlowFont; FontSize = 16; } //FontSize = 18 //Original = 20
+	StateHighlightedTextRenderer : ^/0/StateHighlightedTextRenderer { Font=&~/GlowFont; FontSize = 16; }
+	StatePressedTextRenderer     : ^/0/StatePressedTextRenderer     { Font=&~/GlowFont; FontSize = 16; }
+	StateDisabledTextRenderer    : ^/0/StateDisabledTextRenderer    { Font=&~/GlowFont; FontSize = 16; }
 }
 /*
 MainMenuIconButton : MainMenuButton
@@ -1117,10 +1211,10 @@ MainMenuItem : <./Data/gui/widgets.rules>/MenuItem
 	IconRectController { InnerRectSize=[36, 36]; }
 	IconSprite { Active=true; }
 
-	StateNormalTextRenderer      : ^/0/StateNormalTextRenderer      { FontSize = 18; }
-	StateHighlightedTextRenderer : ^/0/StateHighlightedTextRenderer { FontSize = 18; }
-	StatePressedTextRenderer     : ^/0/StatePressedTextRenderer     { FontSize = 18; }
-	StateDisabledTextRenderer    : ^/0/StateDisabledTextRenderer    { FontSize = 18; }
+	StateNormalTextRenderer      : ^/0/StateNormalTextRenderer      { FontSize = 16; }
+	StateHighlightedTextRenderer : ^/0/StateHighlightedTextRenderer { FontSize = 16; }
+	StatePressedTextRenderer     : ^/0/StatePressedTextRenderer     { FontSize = 16; }
+	StateDisabledTextRenderer    : ^/0/StateDisabledTextRenderer    { FontSize = 16; }
 }
 /*
 SelectableButton : Button
@@ -1183,7 +1277,31 @@ ToggledImageButton : SquareButton, SelectableButton
 	StatePressedSelectedNineSlice = &StatePressedNineSlice
 	StateDisabledSelectedNineSlice = &StateDisabledNineSlice
 }
+*/
+ListItem : FlatButton
+{
+	StateNormalNineSlice      : ^/0/StateNormalNineSlice      { Flags=Center; }
+	StateHighlightedNineSlice : ^/0/StateHighlightedNineSlice { Flags=Center; }
+	StatePressedNineSlice     : ^/0/StatePressedNineSlice     { Flags=Center; }
+	StateDisabledNineSlice    : ^/0/StateDisabledNineSlice    { Flags=Center; }
 
+	SelectedNineSlice
+	{
+		Flags = Center
+		_X = 256
+		_Y = 384
+		CenterSprite : ~/HighlightSprite { Source=[(&../../_X)+32, (&../../_Y)+32, 64, 64]; }
+	}
+
+	SelectedTextRenderer : ~/MainText { Color=[255, 220, 120]; Font=&~/GlowFont; }
+
+	ClickAudio
+	{
+		Sound { Sound="./Data/gui/sounds/toggle.wav"; Volume=.15; }
+	}
+}
+
+/*
 ListItem : FlatButton
 {
 	StateNormalNineSlice      : ^/0/StateNormalNineSlice      { Flags=Center; }
@@ -2210,7 +2328,33 @@ ToggleRadioButton : ToggleButton
 	DeselectedDisabledNineSlice { CenterSprite : ~/MainSprite { Source=[768+16, 896+16, 96, 96]; Bleed=8; } }
 	SelectedDisabledNineSlice   { CenterSprite : ~/MainSprite { Source=[896+16, 896+16, 96, 96]; Bleed=8;  } }
 }
+*/
+ToggleExpanderButton : FlatButton
+{
+	Height = 32
 
+	StateNormalNineSlice      { Flags=None; }
+	StateHighlightedNineSlice : ^/0/StateHighlightedNineSlice { Flags=Center; }
+	StatePressedNineSlice     : ^/0/StatePressedNineSlice     { Flags=Center; }
+	StateDisabledNineSlice    { Flags=None; }
+
+	StateNormalTextRenderer      : ~/MainText { HAlignment=Left; FontStyle=Bold; Color=[230, 237, 243]; }
+	StateHighlightedTextRenderer : ~/MainText { HAlignment=Left; FontStyle=Bold; Color=[255, 220, 120]; }
+	StatePressedTextRenderer     : ~/MainText { HAlignment=Left; FontStyle=Bold; Color=[255, 220, 120]; }
+	StateDisabledTextRenderer    : ~/MainText { HAlignment=Left; FontStyle=Bold; Color=[140, 150, 160]; }
+
+	ToggleRectController { BorderPadding=0; InnerRectSize=[32,32]; ClipInnerRect=false; }
+
+	SelectedNineSlice   { CenterSprite : ~/MainSprite { Source=[384+64, 896, 64, 64]; } }
+	DeselectedNineSlice { CenterSprite : ~/MainSprite { Source=[256, 896, 64, 64]; } }
+
+	SelectionStateAudio
+	{
+		SelectedSound   { Sound="./Data/gui/sounds/panel_open.wav";  Volume=.2; }
+		DeselectedSound { Sound="./Data/gui/sounds/panel_close.wav"; Volume=.2; }
+	}
+}
+/*
 ToggleExpanderButton : FlatButton
 {
 	Height = 32

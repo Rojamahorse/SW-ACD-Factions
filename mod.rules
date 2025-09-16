@@ -136,7 +136,7 @@ Actions
 	}
 
 	/* *********** MAIN MENU & GUI ************* */
-
+/*
 	{ //gui/Widgets
 		Action = Overrides
 		OverrideIn = "<gui/widgets.rules>"
@@ -155,12 +155,18 @@ Actions
 		Overrides = &<gui/menus.rules>
 	}	
 
+	{ //gui/loadingbar 
+		Action = Overrides
+		OverrideIn = "<gui/loading_screen.rules>"
+		Overrides = &<gui/loading_screen.rules>
+	}	
+
 	{ //gui/game/game_gui 
 		Action = Overrides
 		OverrideIn = "<gui/game/game_gui.rules>"
 		Overrides = &<gui/game/game_gui.rules>
 	}	
-
+*/
 
 	/* *********** STARTER SHIPS ************* */
 

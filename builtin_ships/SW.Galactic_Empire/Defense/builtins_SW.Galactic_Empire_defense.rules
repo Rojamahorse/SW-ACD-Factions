@@ -27,6 +27,7 @@ Ships
     :~{ File="Emp Lg HE Missile Platform.ship.png";             Tier=4; Difficulty=1; }
     :~{ File="Emp Lg Laser Platform.ship.png";                  Tier=6; Difficulty=1; }
     :~{ File="Emp Lg Nuke Platform.ship.png";                   Tier=4; Difficulty=1; }
+    :~{ File="Emp_Coruscanti_Int_Missile_Platf.ship.png";       Tier=6; Difficulty=2; }
     :~{ File="Emp M Ion Platform.ship.png";                     Tier=4; Difficulty=1; }
     :~{ File="Emp Med 2xIon Platform.ship.png";                 Tier=4; Difficulty=1; }
     :~{ File="Emp Med 2xRailgun Platform.ship.png";             Tier=4; Difficulty=1; }

@@ -13,11 +13,13 @@ Ships
 /*73,520*/			:~{ File="Hutt-BS Fighter.ship.png";         							Tier=2;  Difficulty=2; Tags = [combat, swfighter, bscfighter] }
 /*73,520*/			:~{ File="BSC G-Wing Fighter.ship.png";         						Tier=2;  Difficulty=2; Tags = [combat, swfighter, bscfighter] }
 /*80,020*/			:~{ File="Undr_Z-95 Headhunter.ship.png";         						Tier=1;  Difficulty=2; Tags = [combat, swfighter, bscfighter] } //Neojino
-/*80,100*/			:~{ File="UGLIES_Z_Ceptor-Class_Starfighter.ship.png"; 					Tier=2;  Difficulty=2; Tags = [combat, swfighter, bscfighter, pirate] }
+/*80,100*/			:~{ File="UGLIES_Z_Ceptor-Class_Starfighter.ship.png"; 					Tier=2;  Difficulty=2; Tags = [combat, swfighter, bscfighter, pirate, uglies] }
 /*80,420*/			:~{ File="BSC Storm IVB Twin-Pod Combat Y.ship.png"; 					Tier=2;  Difficulty=2; Tags = [combat, swfighter, bscfighter] }
 /*81,180*/			:~{ File="Black Sun Fighter (Combat).ship.png";     					Tier=2;  Difficulty=1; Tags = [combat, swfighter, bscfighter] }
 /*84,230*/			:~{ File="Black Sun Fighter-BS H (Combat).ship.png";         			Tier=3;  Difficulty=2; Tags = [combat, swfighter, bscfighter] }
-/*89,880*/			:~{ File="UGLIES_ChirDaki-Class_Starfighter.ship.png"; 					Tier=3;  Difficulty=2; Tags = [combat, swfighter, bscfighter, pirate] }
+/*89,880*/			:~{ File="UGLIES_ChirDaki-Class_Starfighter.ship.png"; 					Tier=3;  Difficulty=2; Tags = [combat, swfighter, bscfighter, pirate, uglies] }
+/*89,880*/			:~{ File="Uglies_AT-Wing.ship.png"; 									Tier=3;  Difficulty=2; Tags = [combat, swfighter, bscfighter, pirate, uglies] }
+/*89,880*/			:~{ File="BSC_ChirDaki-Class_Starfighter.ship.png"; 					Tier=4;  Difficulty=2; Tags = [combat, swfighter, bscfighter, pirate, uglies] }
 /*98,100*/			:~{ File="BSC Rihkxyrk Assault Fighter.ship.png"; 						Tier=4;  Difficulty=2; Tags = [combat, swfighter, bscfighter] }
 /*99,440*/			:~{ File="Firespray-31-BS-Y Patrol.ship.png";       					Tier=1;  Difficulty=2; Tags = [combat, swfighter, bscfighter] }
 /*102,040*/			:~{ File="Firespray-31-BS Patrol.ship.png";        						Tier=2;  Difficulty=1; Tags = [combat, swfighter, bscfighter] }

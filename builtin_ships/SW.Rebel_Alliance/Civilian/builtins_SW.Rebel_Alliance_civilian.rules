@@ -5,6 +5,7 @@ Ships
 [
 	// Trade ships
 	:~{ File="Reb Civ_LRRS-2_Shuttle.ship.png"; 						Tier=1; Tags : ~/Tags [trade, empty_storage] }
+	:~{ File="Reb_Companion-Class_Starfighter.ship.png"; 				Tier=1; Tags : ~/Tags [trade, empty_storage] }
 	:~{ File="Rebel Firespray-31-Class Patr.ship.png";     				Tier=1; Tags : ~/Tags [trade, empty_storage] }
 	:~{ File="Millenium Falcon Rebel.ship.png";     					Tier=1; Tags : ~/Tags [trade, empty_storage] }
 	:~{ File="Rebel Millenium Falcon Supply.ship.png";     				Tier=2; Tags : ~/Tags [trade, empty_storage] }

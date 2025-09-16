@@ -1,0 +1,114 @@
+/*
+Background
+{
+	PercentileRect = [0, 0, 100, 100]
+
+	Sprite
+	{
+		Texture
+		{
+			File = "loading_bg.jpg"
+			MipLevels = 2
+			SampleMode = Linear
+			Compression = None
+		}
+		Shader = "loading_bg.shader"
+		ScaleMode = FillMaintainAspect
+	}
+}
+Background2x
+{
+	PercentileRect = [0, 0, 100, 100]
+
+	Sprite
+	{
+		Texture
+		{
+			File = "loading_bg_2x.jpg"
+			MipLevels = 2
+			SampleMode = Linear
+			Compression = None
+		}
+		Shader = "loading_bg.shader"
+		ScaleMode = FillMaintainAspect
+	}
+}
+
+LoadingBar
+{
+	AnchorRect = BottomCenter
+	Rect
+	{
+		Left = -150
+		Right = 150
+		Top = -48
+		Bottom = -24
+	}
+*/
+	Texture
+	{
+		File = "loading_bar.png"
+		MipLevels = 2
+		SampleMode = Linear
+	}
+/*
+	NineSlice
+	{
+		Flags = All
+		Bleed = 8
+		Borders = 16
+		ProvidedRectPadding = -6
+
+		_X = 0
+		_Y = 0
+		TopLeftSprite     = { Texture=&~/LoadingBar/Texture; Source=[(&../../_X)+0,  (&../../_Y)+0,  32, 32]; }
+		TopSprite         = { Texture=&~/LoadingBar/Texture; Source=[(&../../_X)+32, (&../../_Y)+0,  64, 32]; }
+		TopRightSprite    = { Texture=&~/LoadingBar/Texture; Source=[(&../../_X)+96, (&../../_Y)+0,  32, 32]; }
+		LeftSprite        = { Texture=&~/LoadingBar/Texture; Source=[(&../../_X)+0,  (&../../_Y)+32, 32, 64]; }
+		CenterSprite      = { Texture=&~/LoadingBar/Texture; Source=[(&../../_X)+32, (&../../_Y)+32, 64, 64]; }
+		RightSprite       = { Texture=&~/LoadingBar/Texture; Source=[(&../../_X)+96, (&../../_Y)+32, 32, 64]; }
+		BottomLeftSprite  = { Texture=&~/LoadingBar/Texture; Source=[(&../../_X)+0,  (&../../_Y)+96, 32, 32]; }
+		BottomSprite      = { Texture=&~/LoadingBar/Texture; Source=[(&../../_X)+32, (&../../_Y)+96, 64, 32]; }
+		BottomRightSprite = { Texture=&~/LoadingBar/Texture; Source=[(&../../_X)+96, (&../../_Y)+96, 32, 32]; }
+	}
+
+	ProgressNineSlice
+	{
+		Flags = All
+		Bleed = 8
+		Borders = 11
+		ProvidedRectPadding = -7
+
+		_X = 128
+		_Y = 0
+		TopLeftSprite     = { Texture=&~/LoadingBar/Texture; Source=[(&../../_X)+0,   (&../../_Y)+0,   22, 22]; }
+		TopSprite         = { Texture=&~/LoadingBar/Texture; Source=[(&../../_X)+22,  (&../../_Y)+0,   84, 22]; }
+		TopRightSprite    = { Texture=&~/LoadingBar/Texture; Source=[(&../../_X)+106, (&../../_Y)+0,   22, 22]; }
+		LeftSprite        = { Texture=&~/LoadingBar/Texture; Source=[(&../../_X)+0,   (&../../_Y)+22,  22, 84]; }
+		CenterSprite      = { Texture=&~/LoadingBar/Texture; Source=[(&../../_X)+22,  (&../../_Y)+22,  84, 84]; }
+		RightSprite       = { Texture=&~/LoadingBar/Texture; Source=[(&../../_X)+106, (&../../_Y)+22,  22, 84]; }
+		BottomLeftSprite  = { Texture=&~/LoadingBar/Texture; Source=[(&../../_X)+0,   (&../../_Y)+106, 22, 22]; }
+		BottomSprite      = { Texture=&~/LoadingBar/Texture; Source=[(&../../_X)+22,  (&../../_Y)+106, 84, 22]; }
+		BottomRightSprite = { Texture=&~/LoadingBar/Texture; Source=[(&../../_X)+106, (&../../_Y)+106, 22, 22]; }
+	}
+
+	Fill
+	{
+		MinSize = [6, 0]
+	}
+}
+
+LoadingUncachedLabel
+{
+	AnchorRect = BottomCenter
+	Location = [0, -64]
+
+	TextRenderer
+	{
+		HAlignment = Center
+		VAlignment = Bottom
+		OversizeMode = None
+		Color = [168, 202, 229]
+	}
+}
+*/

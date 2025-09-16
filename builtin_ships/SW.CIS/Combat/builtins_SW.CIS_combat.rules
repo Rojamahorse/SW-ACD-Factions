@@ -89,6 +89,7 @@ Ships
 /*50,327,340*/       :~{ File="Lucrehulk-Class Battlecruiser.ship.png";                              Tier=18;  Difficulty=2; Tags = [swboss] }
 /*63,799,740*/       :~{ File="Lukrehulk-Class Battlecruiser.ship.png";                              Tier=17;  Difficulty=2; Tags = [swboss] }
 /*66,799,740*/	     :~{ File="CIS_Subjugator_Class_HeavyCruise.ship.png"; 				             Tier=18;  Difficulty=2; Tags = [swboss] }
+/*66,799,740*/	     :~{ File="Boss_Lucrehulk-Class_Battleship.ship.png"; 				             Tier=18;  Difficulty=2; Tags = [swboss] }
 
 ]
 

@@ -132,6 +132,24 @@ Stats
 
 }
 
+Hud //SWACD THEME
+{
+	SpeedPaused = "--"
+	SpeedEighth = ".125"//"⅛"
+	SpeedEighthLong = "Very Very Slow (0.125)"//"Very Very Slow (⅛)"
+	SpeedQuarter = ".25" //"¼"
+	SpeedQuarterLong = "Very Slow (0.25)" //"Very Slow (¼)"
+	SpeedHalf = "0.5" // "½"
+	SpeedHalfLong = "Slow (0.5 - M.P. Standard)" // "Slow (½ - M.P. Standard)"
+	Speed1 = "1x"
+	Speed1Long = "Normal (1x)"
+	Speed2 = "2x"
+	Speed2Long = "Fast (2x)"
+	Speed4 = "4x"
+	Speed4Long = "Very Fast (4x)"
+	Speed8 = "8x"
+	Speed8Long = "Very Very Fast (8x)"
+}
 
 StatCategories
 {

@@ -6,6 +6,7 @@ Ships
 	// Trade ships
 	:~{ File="CIS Maxillipede-Class_shuttle.ship.png"; 									Tier=3;  Tags : ~/Tags [trade, empty_storage] }
 	:~{ File="Cargo Transporter Tiny CIS.ship.png";  									Tier=1;  Tags : ~/Tags [trade, empty_storage] }
+	:~{ File="CIS_Companion-Class_Starfighter.ship.png";  								Tier=1;  Tags : ~/Tags [trade, empty_storage] }
 	:~{ File="Cargo Transporter Small CIS.ship.png";        							Tier=3;  Tags : ~/Tags [trade, empty_storage] }
 	:~{ File="Cargo Transporter Medium CIS.ship.png";    								Tier=5;  Tags : ~/Tags [trade, empty_storage] }
 	:~{ File="Cargo Transporter Large CIS.ship.png";   									Tier=7; Tags : ~/Tags [trade, empty_storage] }
