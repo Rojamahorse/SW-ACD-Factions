@@ -45,6 +45,7 @@ TradeShips
 			cis_3b  : <./Data/modes/career/career.rules>/BaseTradeShip 		{ ShipID="CIS Package Distributor";        						Faction=SW.CIS; TierRange=[1, 9];   StasisSpeed=68; StasisTradeTime=40; }
 			cis_3c  : <./Data/modes/career/career.rules>/BaseTradeShip 		{ ShipID="CIS Minor Shipper";      								Faction=SW.CIS; TierRange=[1, 9];   StasisSpeed=68; StasisTradeTime=40; }
 			cis_3d  : <./Data/modes/career/career.rules>/BaseTradeShip 		{ ShipID="CIS Porter";               							Faction=SW.CIS; TierRange=[1, 9];   StasisSpeed=68; StasisTradeTime=40; }
+			cis_3e  : <./Data/modes/career/career.rules>/BaseTradeShip 		{ ShipID="CIS_Companion-Class_Starfighter"; 					Faction=SW.CIS; TierRange=[1, 9]; 	StasisSpeed=85; StasisTradeTime=40; }
 			cis_5a  : <./Data/modes/career/career.rules>/BaseTradeShip 		{ ShipID="Cargo Transporter Small CIS";      					Faction=SW.CIS; TierRange=[3, 12];  StasisSpeed=85; StasisTradeTime=60; }
 			cis_5b  : <./Data/modes/career/career.rules>/BaseTradeShip 		{ ShipID="CIS Minor Modulus";        							Faction=SW.CIS; TierRange=[3, 12];  StasisSpeed=75; StasisTradeTime=60; }
 			cis_5c  : <./Data/modes/career/career.rules>/BaseTradeShip 		{ ShipID="CIS Minor Freighter";      							Faction=SW.CIS; TierRange=[3, 12];  StasisSpeed=75; StasisTradeTime=60; }
@@ -63,31 +64,31 @@ TradeShips
 			cis_9c : <./Data/modes/career/career.rules>/BaseTradeShip 		{ ShipID="Cargo Transporter Small CIS"; 						Faction=SW.CIS; TierRange=[1, 9]; StasisSpeed=50; StasisTradeTime=50; }
 			cis_9d : <./Data/modes/career/career.rules>/BaseTradeShip 		{ ShipID="Cargo Transporter Medium CIS"; 						Faction=SW.CIS; TierRange=[1, 9]; StasisSpeed=50; StasisTradeTime=50; }
 			cis_12f : <./Data/modes/career/career.rules>/BaseTradeShip 		{ ShipID="Cargo Transporter Huge CIS"; 							Faction=SW.CIS; TierRange=[3, 12]; StasisSpeed=80; StasisTradeTime=60; }
-			cis_9h : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="C-9979 Landing Craft (CIS)"; 								Faction=SW.CIS; TierRange=[1, 9]; StasisSpeed=50; StasisTradeTime=50; }
-			cis_9i : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="C-9979 Landing Craft Normal"; 								Faction=SW.CIS; TierRange=[1, 9]; StasisSpeed=50; StasisTradeTime=50; }
-			cis_12j : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Hardcell-Class Interstellar Transport"; 					Faction=SW.CIS; TierRange=[3, 12]; StasisSpeed=80; StasisTradeTime=60; }
-			cis_9k : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Pelta-Class Frigate (CIS)"; 								Faction=SW.CIS; TierRange=[1, 9]; StasisSpeed=50; StasisTradeTime=50; }
-			cis_18l : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="CIS CIV Munificent-Class Star Frigate (InterGalactic Banking Clan)"; Faction=SW.CIS; TierRange=[6, 18]; StasisSpeed=70; StasisTradeTime=80; }
-			cis_12m : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="CIS CIV Munificent-Class Star Frigate"; 					Faction=SW.CIS; TierRange=[3, 12]; StasisSpeed=80; StasisTradeTime=60; }
-			cis_12n : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="CIS-Munificent-Class Star Frigat"; 						Faction=SW.CIS; TierRange=[3, 12]; StasisSpeed=80; StasisTradeTime=60; }
-			cis_12o : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Munificent-Class Star Frigate 2"; 							Faction=SW.CIS; TierRange=[3, 12]; StasisSpeed=80; StasisTradeTime=60; }
-			cis_9q : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="CIS Package Distributor"; 									Faction=SW.CIS; TierRange=[1, 9]; StasisSpeed=50; StasisTradeTime=50; }
-			cis_9r : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="CIS Minor Shipper"; 										Faction=SW.CIS; TierRange=[1, 9]; StasisSpeed=50; StasisTradeTime=50; }
-			cis_9s : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="CIS Dwarf Freighter"; 										Faction=SW.CIS; TierRange=[1, 9]; StasisSpeed=50; StasisTradeTime=50; }
-			cis_9t : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="CIS Porter"; 												Faction=SW.CIS; TierRange=[1, 9]; StasisSpeed=50; StasisTradeTime=50; }
-			cis_9u : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="CIS Minor Transport"; 										Faction=SW.CIS; TierRange=[1, 9]; StasisSpeed=50; StasisTradeTime=50; }
-			cis_9v : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="CIS Minor Modulus"; 										Faction=SW.CIS; TierRange=[1, 9]; StasisSpeed=50; StasisTradeTime=50; }
-			cis_9w : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="CIS CSS-Fed Corellian Star Shutt"; 							Faction=SW.CIS; TierRange=[1, 9]; StasisSpeed=50; StasisTradeTime=50; }
-			cis_9x : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="CIS CSS-1 Corellian Star Shuttle"; 							Faction=SW.CIS; TierRange=[1, 9]; StasisSpeed=50; StasisTradeTime=50; }
-			cis_9y : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="CIS Minor Freighter"; 										Faction=SW.CIS; TierRange=[1, 9]; StasisSpeed=50; StasisTradeTime=50; }
-			cis_9z : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="CIS Minor Hauler"; 											Faction=SW.CIS; TierRange=[1, 9]; StasisSpeed=50; StasisTradeTime=50; }
-			cis_9ab : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="CIS Bulk Transport"; 										Faction=SW.CIS; TierRange=[1, 9]; StasisSpeed=50; StasisTradeTime=50; }
-			cis_9bb : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="CIS Bulk Shipper"; 										Faction=SW.CIS; TierRange=[1, 9]; StasisSpeed=50; StasisTradeTime=50; }
-			cis_9cb : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="CIS Workhorse"; 											Faction=SW.CIS; TierRange=[1, 9]; StasisSpeed=50; StasisTradeTime=50; }
-			cis_9db : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="CIS Factotum"; 											Faction=SW.CIS; TierRange=[1, 9]; StasisSpeed=50; StasisTradeTime=50; }
-			cis_12eb : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="CIS Bulk Modulus"; 										Faction=SW.CIS; TierRange=[3, 12]; StasisSpeed=80; StasisTradeTime=60; }
-			cis_12gb : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="CIS Mass Freighter"; 										Faction=SW.CIS; TierRange=[3, 12]; StasisSpeed=80; StasisTradeTime=60; }
-			cis_12ib : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="CIS Atlas Freighter"; 									Faction=SW.CIS; TierRange=[3, 12]; StasisSpeed=80; StasisTradeTime=60; }
+			cis_9h : <./Data/modes/career/career.rules>/BaseTradeShip 		{ ShipID="C-9979 Landing Craft (CIS)"; 								Faction=SW.CIS; TierRange=[1, 9]; StasisSpeed=50; StasisTradeTime=50; }
+			cis_9i : <./Data/modes/career/career.rules>/BaseTradeShip 		{ ShipID="C-9979 Landing Craft Normal"; 								Faction=SW.CIS; TierRange=[1, 9]; StasisSpeed=50; StasisTradeTime=50; }
+			cis_12j : <./Data/modes/career/career.rules>/BaseTradeShip		{ ShipID="Hardcell-Class Interstellar Transport"; 					Faction=SW.CIS; TierRange=[3, 12]; StasisSpeed=80; StasisTradeTime=60; }
+			cis_9k : <./Data/modes/career/career.rules>/BaseTradeShip 		{ ShipID="Pelta-Class Frigate (CIS)"; 								Faction=SW.CIS; TierRange=[1, 9]; StasisSpeed=50; StasisTradeTime=50; }
+			cis_18l : <./Data/modes/career/career.rules>/BaseTradeShip 		{ ShipID="CIS CIV Munificent-Class Star Frigate (InterGalactic Banking Clan)"; Faction=SW.CIS; TierRange=[6, 18]; StasisSpeed=70; StasisTradeTime=80; }
+			cis_12m : <./Data/modes/career/career.rules>/BaseTradeShip 		{ ShipID="CIS CIV Munificent-Class Star Frigate"; 					Faction=SW.CIS; TierRange=[3, 12]; StasisSpeed=80; StasisTradeTime=60; }
+			cis_12n : <./Data/modes/career/career.rules>/BaseTradeShip 		{ ShipID="CIS-Munificent-Class Star Frigat"; 						Faction=SW.CIS; TierRange=[3, 12]; StasisSpeed=80; StasisTradeTime=60; }
+			cis_12o : <./Data/modes/career/career.rules>/BaseTradeShip 		{ ShipID="Munificent-Class Star Frigate 2"; 							Faction=SW.CIS; TierRange=[3, 12]; StasisSpeed=80; StasisTradeTime=60; }
+			cis_9q : <./Data/modes/career/career.rules>/BaseTradeShip 		{ ShipID="CIS Package Distributor"; 									Faction=SW.CIS; TierRange=[1, 9]; StasisSpeed=50; StasisTradeTime=50; }
+			cis_9r : <./Data/modes/career/career.rules>/BaseTradeShip 		{ ShipID="CIS Minor Shipper"; 										Faction=SW.CIS; TierRange=[1, 9]; StasisSpeed=50; StasisTradeTime=50; }
+			cis_9s : <./Data/modes/career/career.rules>/BaseTradeShip 		{ ShipID="CIS Dwarf Freighter"; 										Faction=SW.CIS; TierRange=[1, 9]; StasisSpeed=50; StasisTradeTime=50; }
+			cis_9t : <./Data/modes/career/career.rules>/BaseTradeShip 		{ ShipID="CIS Porter"; 												Faction=SW.CIS; TierRange=[1, 9]; StasisSpeed=50; StasisTradeTime=50; }
+			cis_9u : <./Data/modes/career/career.rules>/BaseTradeShip 		{ ShipID="CIS Minor Transport"; 										Faction=SW.CIS; TierRange=[1, 9]; StasisSpeed=50; StasisTradeTime=50; }
+			cis_9v : <./Data/modes/career/career.rules>/BaseTradeShip 		{ ShipID="CIS Minor Modulus"; 										Faction=SW.CIS; TierRange=[1, 9]; StasisSpeed=50; StasisTradeTime=50; }
+			cis_9w : <./Data/modes/career/career.rules>/BaseTradeShip 		{ ShipID="CIS CSS-Fed Corellian Star Shutt"; 							Faction=SW.CIS; TierRange=[1, 9]; StasisSpeed=50; StasisTradeTime=50; }
+			cis_9x : <./Data/modes/career/career.rules>/BaseTradeShip 		{ ShipID="CIS CSS-1 Corellian Star Shuttle"; 							Faction=SW.CIS; TierRange=[1, 9]; StasisSpeed=50; StasisTradeTime=50; }
+			cis_9y : <./Data/modes/career/career.rules>/BaseTradeShip 		{ ShipID="CIS Minor Freighter"; 										Faction=SW.CIS; TierRange=[1, 9]; StasisSpeed=50; StasisTradeTime=50; }
+			cis_9z : <./Data/modes/career/career.rules>/BaseTradeShip 		{ ShipID="CIS Minor Hauler"; 											Faction=SW.CIS; TierRange=[1, 9]; StasisSpeed=50; StasisTradeTime=50; }
+			cis_9ab : <./Data/modes/career/career.rules>/BaseTradeShip 		{ ShipID="CIS Bulk Transport"; 										Faction=SW.CIS; TierRange=[1, 9]; StasisSpeed=50; StasisTradeTime=50; }
+			cis_9bb : <./Data/modes/career/career.rules>/BaseTradeShip 		{ ShipID="CIS Bulk Shipper"; 										Faction=SW.CIS; TierRange=[1, 9]; StasisSpeed=50; StasisTradeTime=50; }
+			cis_9cb : <./Data/modes/career/career.rules>/BaseTradeShip 		{ ShipID="CIS Workhorse"; 											Faction=SW.CIS; TierRange=[1, 9]; StasisSpeed=50; StasisTradeTime=50; }
+			cis_9db : <./Data/modes/career/career.rules>/BaseTradeShip 		{ ShipID="CIS Factotum"; 											Faction=SW.CIS; TierRange=[1, 9]; StasisSpeed=50; StasisTradeTime=50; }
+			cis_12eb : <./Data/modes/career/career.rules>/BaseTradeShip 	{ ShipID="CIS Bulk Modulus"; 										Faction=SW.CIS; TierRange=[3, 12]; StasisSpeed=80; StasisTradeTime=60; }
+			cis_12gb : <./Data/modes/career/career.rules>/BaseTradeShip 	{ ShipID="CIS Mass Freighter"; 										Faction=SW.CIS; TierRange=[3, 12]; StasisSpeed=80; StasisTradeTime=60; }
+			cis_12ib : <./Data/modes/career/career.rules>/BaseTradeShip 	{ ShipID="CIS Atlas Freighter"; 									Faction=SW.CIS; TierRange=[3, 12]; StasisSpeed=80; StasisTradeTime=60; }
 
 	// SW.Galactic_Empire
 			emp_3a  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Cargo Transporter Tiny Empire";               		Faction=SW.Galactic_Empire; 	TierRange=[1, 9];   StasisSpeed=40; StasisTradeTime=40; }
@@ -135,6 +136,7 @@ TradeShips
 			reb_3a  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Cargo Transporter Tiny Rebel";              	Faction=SW.Rebel_Alliance;    TierRange=[1, 9];   StasisSpeed=77; StasisTradeTime=40; }
 			reb_3b  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Millenium Falcon Rebel";                    	Faction=SW.Rebel_Alliance;    TierRange=[1, 9];   StasisSpeed=73; StasisTradeTime=40; }
 			reb_3c  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Rebel QuadJumper";                    			Faction=SW.Rebel_Alliance;    TierRange=[1, 9];   StasisSpeed=73; StasisTradeTime=40; }
+			reb_3d 	: <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Reb_Companion-Class_Starfighter"; 				Faction=SW.Rebel_Alliance; 	  TierRange=[1, 9];   StasisSpeed=85; StasisTradeTime=40; }
 			reb_5a  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Cargo Transporter Small Rebel";                Faction=SW.Rebel_Alliance;    TierRange=[3, 12];  StasisSpeed=55; StasisTradeTime=60; }
 			reb_5b  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Cargo Transporter Medium Rebel";             	Faction=SW.Rebel_Alliance;    TierRange=[3, 12];  StasisSpeed=86; StasisTradeTime=60; }
 			reb_5c  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Reb Corellian Transport (Civ)";             	Faction=SW.Rebel_Alliance;    TierRange=[3, 12];  StasisSpeed=86; StasisTradeTime=50; }
@@ -172,11 +174,13 @@ TradeShips
 			reb_12v : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Rebel EF76 Nebulon Hvy Cargo G"; 				Faction=SW.Rebel_Alliance; TierRange=[3, 12]; StasisSpeed=80; StasisTradeTime=60; }
 			reb_18y : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Eta-Class Supply Barge Reb"; 					Faction=SW.Rebel_Alliance; TierRange=[12, 18]; StasisSpeed=70; StasisTradeTime=80; }
 
+
 	// SW.Republic
 			rep_3a  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Cargo Transporter Tiny Republic";  				Faction=SW.Republic; TierRange=[1, 9];   StasisSpeed=85; StasisTradeTime=40; }
 			rep_3b  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Republic Firespray-31-Class Patr";        			Faction=SW.Republic; TierRange=[1, 9];   StasisSpeed=68; StasisTradeTime=40; }
 			rep_3c  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Republic CSS-1 Corellian Star Sh";      			Faction=SW.Republic; TierRange=[1, 9];   StasisSpeed=68; StasisTradeTime=40; }
 			rep_3d  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Republic Corellian G9 Freighter";               	Faction=SW.Republic; TierRange=[1, 9];   StasisSpeed=68; StasisTradeTime=40; }
+			rep_3e  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Rep_Companion-Class_Starfighter";  				Faction=SW.Republic; TierRange=[1, 9];   StasisSpeed=85; StasisTradeTime=40; }
 			rep_5a  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Cargo Transporter Small Republic";      			Faction=SW.Republic; TierRange=[3, 12];  StasisSpeed=85; StasisTradeTime=60; }
 			rep_5b  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Republic Consular-Class CruiserB";        			Faction=SW.Republic; TierRange=[3, 12];  StasisSpeed=75; StasisTradeTime=60; }
 			rep_5c  : <./Data/modes/career/career.rules>/BaseTradeShip { ShipID="Republic CR70 Corvette (Civ)";      				Faction=SW.Republic; TierRange=[3, 12];  StasisSpeed=75; StasisTradeTime=60; }
