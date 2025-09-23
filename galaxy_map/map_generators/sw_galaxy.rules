@@ -90,7 +90,7 @@ Factions // Define factions in the galaxy
 		}
 	]
 	RemainderFaction = SW.Rebel_Alliance
-	RemainderFactionThreshold = .5
+	RemainderFactionThreshold = 1.2
 	MinRemainderFactionStrength = 5%
 	AvoidIterations = 10
 }
@@ -134,7 +134,7 @@ FactionTiers
 StartingNodePicker // Define starting node picker settings
 {
 	Type = StartingNodePicker
-  	AllowedFactions = [SW.Rebel_Alliance] // Which factions the starting node can be in.
+  	AllowedFactions = [SW.Rebel_Alliance, SW.Republic] // Which factions the starting node can be in.
   	MinConnections = 2 // Minimum connections for starting node candidates
   	CandidatesFarthestFromFactions = [5, [SW.CIS, SW.Galactic_Empire]] // [Max Distance, [FactionIDs]] - Tries to pick a start node near the listed factions.
   	CandidatesClosestToFactions = [1, [SW.Republic, SW.Black_Sun]] // [MinDistance, [FactionIDs]] - Tries to pick a start node near the listed factions.
