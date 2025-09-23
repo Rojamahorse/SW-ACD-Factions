@@ -26,7 +26,7 @@ Ships
 	:~{ File="Cargo Transporter Medium Rebel.ship.png";    				Tier=7;  Tags : ~/Tags [trade, empty_storage] }
 	:~{ File="Reb YT-1760 Small Transport Civ.ship.png";    			Tier=7;  Tags : ~/Tags [trade, empty_storage] }
 	:~{ File="Reb Pelta-Class Medical Frigate.ship.png";    			Tier=6;  Tags : ~/Tags [trade, empty_storage] }
-	:~{ File="Cargo Transporter Large Rebel.ship.png";   				Tier=10; Tags : ~/Tags [trade, empty_storage] }
+	:~{ File="Cargo Transporter Large Rebel.ship.png";   				Tier=13; Tags : ~/Tags [trade, empty_storage] }
 	:~{ File="Reb Vakbeor-class Cargo Frigate (Civ).ship.png";   		Tier=9; Tags : ~/Tags  [trade] }
 	:~{ File="Rebel EF76 Nebulon Hvy Cargo G.ship.png";   				Tier=10; Tags : ~/Tags [trade, empty_storage] }
 	:~{ File="Cargo Transporter Huge Rebel.ship.png";     				Tier=13; Tags : ~/Tags [trade, empty_storage] }

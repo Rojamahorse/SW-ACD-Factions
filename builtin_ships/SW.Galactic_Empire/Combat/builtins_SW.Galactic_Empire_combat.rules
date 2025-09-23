@@ -124,6 +124,7 @@ Ships
 /*5,473,825*/	:~{ File="Emp_Gladiator-class_Star_Destroy.ship.png";				Tier=13;	Difficulty=1; Tags = [combat, empcapital] } 
 /*5,688,236*/	:~{ File="Emp Imperial Star Destroyer.ship.png";					Tier=16;	Difficulty=2; Tags = [combat, empcapital] } 
 /*6,419,271*/	:~{ File="Immobilizer 420 Cruiser.ship.png";						Tier=16;	Difficulty=2; Tags = [combat, empcapital] }  
+/*6,509,224*/	:~{ File="Emp CL Acclamator II-Class Cru.ship.png";					Tier=15;	Difficulty=2; Tags = [combat, empcapital] }
 /*6,509,224*/	:~{ File="Acclamator II-Class Cruiser.ship.png";					Tier=16;	Difficulty=1; Tags = [combat, empcapital] }
 /*6,317,139*/	:~{ File="Emp Acclamator II-Class Cruiser.ship.png";				Tier=16;	Difficulty=1; Tags = [combat, empcapital] }
 /*7,425,790*/	:~{ File="Emp Harrower-class Dreadnought.ship.png";					Tier=16;	Difficulty=1; Tags = [combat, empcapital] }
