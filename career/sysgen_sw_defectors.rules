@@ -12,6 +12,7 @@ SubSpawners
 		Distance = [20000, 25000]
 		Tags = [rare_asteroid, asteroid, megaroid]
 		MinDistanceFromTags = [[station, 2000], [bounty, 2000], [asteroid_field, 800], [ftl_gate, 1200]]
+		MinDistanceFromNebulas = [[ion_storm, 500]]
 		//MinDistanceFromTags = [[station, 1000], [asteroid, 1000], [bounty, 1000], [ftl_gate, 1000]]
 		DoodadTypes
 		[
@@ -49,6 +50,7 @@ DefectorsSubSpawnersHandler
 		Count = [2, 3]
 		Distance = [500, 800]
 		MinDistanceFromTags = [[SWDefectors, 60][asteroid, 60]]
+		MinDistanceFromNebulas = [[ion_storm, 500]]
 		Allegiance = Unique
 		SynchronizeFactions = true
 		SynchronizeAllegiance = true

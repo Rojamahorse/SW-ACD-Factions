@@ -12,6 +12,7 @@ SubSpawners
 		Distance = [0, 25000]
 		Tags = [rare_asteroid, asteroid, megaroid]
 		MinDistanceFromTags = [[sun, 7000], [station, 2000], [bounty, 2000], [asteroid_field, 800], [ftl_gate, 1200]]
+		MinDistanceFromNebulas = [[ion_storm, 500]]
 		DoodadTypes
 		[
 			{ Type=SW.asteroid_doonium_l;  ChanceWeight=1; }
@@ -31,6 +32,7 @@ SWGhostShipSubSpawnersHandler
 		Count = [10, 15]
 		Distance = [500, 800]
 		MinDistanceFromTags = [[swfighter, 60],[Combat, 60],[asteroid, 60]]
+		MinDistanceFromNebulas = [[ion_storm, 500]]
 		Allegiance = Unique
 		SynchronizeAllegiance = true
 		SpawnsPerSlice = 1
@@ -76,6 +78,7 @@ SWGhostShipSubSpawnersHandler
 				SpawnsPerSlice = 1
 				SpawnSlicePadding = 35%
 				MinDistanceFromTags = [[asteroid, 120][Combat, 100]]
+				MinDistanceFromNebulas = [[ion_storm, 500]]
 				NameGenerator
 				{
 					Type = Multi
@@ -164,6 +167,7 @@ SWGhostShipSubSpawnersHandler
 					[asteroid, 20]
 					[combat, 100]
 				]
+				MinDistanceFromNebulas = [[ion_storm, 500]]
 				DoodadTypes = &<./data/modes/career/sectors/sysgen_asteroids.rules>/CommonAsteroidTypes
 			}
 			// Valuable asteroid.

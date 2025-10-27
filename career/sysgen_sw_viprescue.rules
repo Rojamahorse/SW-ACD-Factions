@@ -5,6 +5,7 @@ RandomWeight = 1 // Weighting for the randomness of this spawn
 Count = [0, 1] // Range for the number of ships to spawn
 Distance = [0, 14000] // Distance range within which the ships can spawn
 MinDistanceFromTags = [[sun, 7500],[asteroid, 120],[vip_ship, 5000],[station, 2000],[bounty, 2000]] // Minimum distances from various tags to ensure proper placement of ships
+MinDistanceFromNebulas = [[ion_storm, 500]]
 //SynchronizeFactions = true
 Allegiance = FactionCivilian // Allegiance of the spawned ships
 InitToMax = false // Whether to initialize ship health to maximum

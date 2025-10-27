@@ -16,6 +16,7 @@ SubSpawners
 		Count = [1, 1]
 		Distance = [28000, 35000]
 		MinDistanceFromTags = [[SWBoss, 8000],[station, 8000],[target_leviathan, 8000],[JaniBoss, 8000]]
+		MinDistanceFromNebulas = [[ion_storm, 500]]
 		Allegiance = Unique
 		SynchronizeAllegiance = true
 		FamePerTier = &/TIER_TABLES/StandardFamePerTier
