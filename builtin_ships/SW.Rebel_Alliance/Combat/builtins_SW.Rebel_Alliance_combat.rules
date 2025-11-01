@@ -124,7 +124,8 @@ Ships
 /*4,451,114*/	:~{ File="Dreadnought-Class HvyN Cruiser-R.ship.png";     					Tier=15;    Difficulty=2; Tags = [combat] } 
 /*4,136,850*/	:~{ File="MC Light Cruiser.ship.png";     									Tier=13;    Difficulty=1; Tags = [combat] }
 /*4,136,850*/	:~{ File="Reb MC Medium Cruiser.ship.png";     								Tier=14;    Difficulty=1; Tags = [combat, rebcapital] }
-/*4,136,850*/	:~{ File="Reb Starhawk-Class Battleship.ship.png";     						Tier=17;    Difficulty=2; Tags = [combat, rebcapital] }
+/*4,136,850*/	:~{ File="Reb Starhawk-Class Battleship.ship.png";     						Tier=15;    Difficulty=3; Tags = [combat, rebcapital] }
+/*4,136,850*/	:~{ File="Reb Starhawk-Class BattleshipOC.ship.png";     					Tier=17;    Difficulty=3; Tags = [combat, rebcapital] }
 /*4,336,850*/	:~{ File="Reb-Assault Frigate Mk1.ship.png"; 								Tier=13;  	Difficulty=2; Tags = [combat, rebcapital]; OtherIDs = [Assault Frigate Mk1.ship.png] }
 /*4,536,850*/	:~{ File="Reb-Assault Frigate Mk II.ship.png"; 								Tier=16;  	Difficulty=2; Tags = [combat, rebcapital] }
 
