@@ -68,7 +68,9 @@ Ships
 /*238,831*/			:~{ File="Zann StarViper-Class Assault Fig.ship.png"; 					Tier=7;  Difficulty=2; Tags = [combat, swfighter, zannfighter] }
 /*268,850*/			:~{ File="BSC Smuggler's Luxury Yacht 3000.ship.png"; 					Tier=6;  Difficulty=1; Tags = [combat] }
 /*270,630*/			:~{ File="GR-75 Medium Transport (New).ship.png"; 						Tier=8;  Difficulty=1; Tags = [combat] }
-/*305,870*/			:~{ File="GAT-12_Skipray_Blastboat_Zann.ship.png"; 						Tier=7;  Difficulty=2; Tags = [combat, zann] }
+/*305,870*/			:~{ File="GAT-12_Skipray_Blastboat_Zann.ship.png"; 						Tier=6;  Difficulty=2; Tags = [combat, zann] }
+/*305,870*/			:~{ File="Zann Skipray Blastboatv2.ship.png"; 							Tier=7;  Difficulty=2; Tags = [combat, zann] }
+/*305,870*/			:~{ File="GAT-12_Skipray_Blastboat_Zannv2.ship.png"; 					Tier=8;  Difficulty=2; Tags = [combat, zann] }
 /*352,480*/			:~{ File="BSC YT-1300f Light Freighter (V2.ship.png"; 					Tier=5;  Difficulty=1; Tags = [combat] }
 /*353,080*/			:~{ File="BSC YT-1300g Light Freighter.ship.png"; 						Tier=7;  Difficulty=1; Tags = [combat] }
 /*353,080*/			:~{ File="Death Gang YT-1300g Freighter.ship.png"; 						Tier=6;  Difficulty=2; Tags = [combat] }
@@ -109,6 +111,7 @@ Ships
 /*2,353,380*/		:~{ File="BSC_Vengeance-Class_Frigate.ship.png"; 						Tier=13;  Difficulty=2; Tags = [combat] }
 
 /*4,104,533*/		:~{ File="Mdlr Kandosii-Type Dreadnaught.ship.png"; 					Tier=13;  Difficulty=2; Tags = [combat, mdlrcapital] }
+/*4,104,533*/		:~{ File="Mdlr Kandosii-Type DreadnaughtOC.ship.png"; 					Tier=14;  Difficulty=3; Tags = [combat, mdlrcapital] }
 /*4,529,860*/		:~{ File="BSC Recusant-Class Light Destroyer 2.ship.png"; 				Tier=14;  Difficulty=1; Tags = [combat] }
 /*4,609,240*/		:~{ File="BSC R-Class Light Destroyer 2.ship.png"; 						Tier=14;  Difficulty=1; Tags = [combat] }
 /*4,634,240*/		:~{ File="BSC Recusant-Class Light Destroyer.ship.png"; 				Tier=15;  Difficulty=1; Tags = [combat] }
@@ -126,11 +129,12 @@ Ships
 /*8,199,985*/		:~{ File="Invisible Hand-BS.ship.png"; 									Tier=16;  Difficulty=1; Tags = [combat, bsccapital] }
 /*8,348,900*/		:~{ File="BSC Invisible Hand.ship.png"; 								Tier=17;  Difficulty=2; Tags = [combat, bsccapital] }
 /*12,782,900*/		:~{ File="BSC Harrower-class-II Dreadnaugh.ship.png"; 					Tier=18;  Difficulty=2; Tags = [combat, swboss] }
-/*16,019,736*/		:~{ File="BSC Mando Destroyer.ship.png"; 								Tier=17;  Difficulty=3; Tags = [swboss] }
+/*16,019,736*/		:~{ File="BSC Mando Destroyer.ship.png"; 								Tier=16;  Difficulty=3; Tags = [combat, swboss] }
 /*12,782,900*/		:~{ File="Zann_Aggressor_Star_Destroyer_Zann.ship.png"; 				Tier=17;  Difficulty=2; Tags = [combat, bsccapital] }
 /*12,782,900*/		:~{ File="Zann_Aggressor-Class_Star_Destroyer.ship.png"; 				Tier=18;  Difficulty=2; Tags = [combat, bsccapital] }
 
 //Tier 18
+/*16,019,736*/		:~{ File="BSC Mando Destroyer OC.ship.png"; 								Tier=17;  Difficulty=3; Tags = [swboss] }
 /*15,760,000*/		:~{ File="Zann_Aggressor_Star_Destroyer_BO.ship.png"; 					Tier=18;  Difficulty=2; Tags = [swboss]; OtherIDs = ["BSC Redeemer_Class_Battleship"] }
 /*61,272,660*/		//:~{ File="BSC Redeemer_Class_Battleship.ship.png"; 						Tier=18;  Difficulty=2; Tags = [swboss]; OtherIDs = ["BSC Redeemer_Class_Battleship"] }
 	
