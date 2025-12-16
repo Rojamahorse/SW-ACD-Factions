@@ -7,8 +7,9 @@ SubSpawners
 		Type = None
 		Tags = [station_loc]
 		Count = 3 // Always 3 stations in the starting system.
-		Distance = [0, 11000]
+		Distance = [4000, 11000]
 		MinDistanceFromTags = [[sun, 7500]]
+		MinDistanceFromNebulas = [[ion_storm, 1000]]
 		SpawnsPerSlice = 1
 		SpawnSlicePadding = 35%
 	}
@@ -17,7 +18,7 @@ SubSpawners
 		Type = None
 		Tags = [station_loc]
 		Count = [2, 4]
-		Distance = [0, 11000]
+		Distance = [4000, 11000]
 		MinDistanceFromTags = [[sun, 7500]]
 		SpawnsPerSlice = 1
 		SpawnSlicePadding = 35%
@@ -144,30 +145,7 @@ SubSpawners
 					PatrolRadius = 250
 					TargetAcquireRangeFromOrigin = 500
 					TargetUnacquireRangeFromOrigin = 1500
-				}
-			}
-			{
-				Type = Ships
-				Tags = [station_captor_defense]
-				Count = [0, 2]
-				Distance = 150
-				SpawnsPerSlice = 1
-				SpawnSlicePadding = 45%
-				Allegiance = Unique
-				FamePerTier = &/TIER_TABLES/StandardFamePerTier
-				MaxFamePerTier = &/TIER_TABLES/StandardMaxFamePerTier
-
-				ShipCriteria
-				{
-					UseLocalFactionWeights = true
-					UseTierField = true
-					AllowTierRangeExpansion = true
-					Tags = [defense]
-				}
-
-				AI
-				{
-					Type = DefensePlatform
+					PatrolOriginTag = captured_station
 				}
 			}
 
@@ -370,25 +348,64 @@ CapturedStation : UndiscoveredStation
 
 StationDefenses
 {
-	Type = Ships
-	Count = [3, 4]
-	Distance = 150
-	SpawnsPerSlice = 1
-	SpawnSlicePadding = 45%
-	Allegiance = FactionCivilian
-	FamePerTier = &/TIER_TABLES/StandardFamePerTier
-	MaxFamePerTier = &/TIER_TABLES/StandardMaxFamePerTier
+	Type = None
+	SubSpawners
+	[
+		// Defense platforms
+		{
+			Type = Ships
+			Count = [3, 4]
+			Distance = 150
+			SpawnsPerSlice = 1
+			SpawnSlicePadding = 45%
+			Allegiance = FactionCivilian
+			FamePerTier = &/TIER_TABLES/StandardFamePerTier
+			MaxFamePerTier = &/TIER_TABLES/StandardMaxFamePerTier
 
-	ShipCriteria
-	{
-		UseLocalFactionWeights = true
-		UseTierField = true
-		AllowTierRangeExpansion = true
-		Tags = [defense]
-	}
+			ShipCriteria
+			{
+				UseLocalFactionWeights = true
+				UseTierField = true
+				AllowTierRangeExpansion = true
+				Tags = [defense]
+			}
 
-	AI
-	{
-		Type = DefensePlatform
-	}
+			AI
+			{
+				Type = DefensePlatform
+				ChanceToConsiderSurrenderingToPlayer = 0
+			}
+		}
+		// Defense ships.
+		{
+			Type = Ships
+			Tags = [station_defense]
+			Count = 1
+			Distance = 250
+			MinDistanceFromTags = [[asteroid, 0]]
+			Allegiance = FactionCivilian
+			FamePerTier = &/TIER_TABLES/StandardFamePerTier
+			MaxFamePerTier = &/TIER_TABLES/StandardMaxFamePerTier
+			SuppressLocationAssertions = true
+
+			ShipCriteria
+			{
+				UseLocalFactionWeights = true
+				UseTierField = true
+				Tier = 2
+				AllowTierRangeExpansion = true
+				Tags = [combat]
+			}
+
+			AI
+			{
+				Type = StationGuard
+				PatrolRadius = 500
+				MinPatrolRadius = 200
+				TargetAcquireRangeFromOrigin = 750
+				TargetUnacquireRangeFromOrigin = 1500
+				PatrolOriginTag = station
+			}
+		}
+	]
 }

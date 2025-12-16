@@ -1,0 +1,674 @@
+Type = None
+SubSpawners
+[
+	// Pirate hunter mission.
+	{
+		Type = Mission
+		Metatype = PirateHunt
+		SpawnAt = SimGlobal
+		Faction = SystemController
+		Objectives
+		[
+			{
+				Type = Sequential
+				SubObjectives
+				[
+					{
+						Type = DefeatShips
+						TargetsTag = { Tag=pirate; }
+						TargetCountFraction = 50%
+						MissionInvalidIfZeroTargets = true
+						AllowNpcKills = false
+						OverrideDisplayFormatKey = "Objectives/DefeatRovingPirates"
+					}
+					{
+						Type = ReceiveRewards
+					}
+				]
+			}
+		]
+		Rewards
+		[
+			{
+				Type = Money
+				MoneyPerHighTier = &/TIER_TABLES/StandardMoneyPerTier
+				MoneyPerTierMultiplier = 2
+				RoundToMultiple = 500
+			}
+			{
+				Type = Fame
+				FamePerHighTier = &/TIER_TABLES/StandardFamePerTier
+				FamePerTierMultiplier = 2
+				MaxFamePerHighTier = &/TIER_TABLES/StandardMaxFamePerTier
+			}
+            {
+                Type = Reputation
+                ReputationPerHighTier = &/TIER_TABLES/StandardReputationPerTier
+                ReputationPerTierMultiplier = 2
+            }
+		]
+	}
+	// Faction hunter missions.
+	{
+		Type = Mission
+		Metatype = FactionHunt
+		SpawnAt = Tag
+		SpawnAtTag = { Mode=Random; Tag=trade_station; OnlyOpposingFactions=true; }
+		OkayIfSpawnAtTagNotFound = true
+		Faction = OwnerOfTag
+		FactionTag = &SpawnAtTag
+		OkayIfFactionTagNotFound = true
+		Objectives
+		[
+			{
+				Type = Sequential
+				SubObjectives
+				[
+					{
+						Type = DefeatShips
+						TargetsTag = { Tag=faction_wanderer; OnlyFactions=[fringe]; }
+						TargetCountFraction = 50%
+						MissionInvalidIfZeroTargets = true
+						AllowNpcKills = false
+						OverrideDisplayFormatKey = "Objectives/DefeatFactionShips"
+					}
+					{
+						Type = ReceiveRewards
+					}
+				]
+			}
+		]
+		Rewards
+		[
+			{
+				Type = Money
+				MoneyPerHighTier = &/TIER_TABLES/StandardMoneyPerTier
+				MoneyPerTierMultiplier = 2
+				RoundToMultiple = 500
+			}
+			{
+				Type = Fame
+				FamePerHighTier = &/TIER_TABLES/StandardFamePerTier
+				FamePerTierMultiplier = 2
+				MaxFamePerHighTier = &/TIER_TABLES/StandardMaxFamePerTier
+			}
+            {
+                Type = Reputation
+                ReputationPerHighTier = &/TIER_TABLES/StandardReputationPerTier
+                ReputationPerTierMultiplier = 2
+            }
+		]
+	}
+	{
+		Type = Mission
+		Metatype = FactionHunt
+		SpawnAt = Tag
+		SpawnAtTag = { Mode=Random; Tag=trade_station; OnlyOpposingFactions=true; }
+		OkayIfSpawnAtTagNotFound = true
+		Faction = OwnerOfTag
+		FactionTag = &SpawnAtTag
+		OkayIfFactionTagNotFound = true
+		Objectives
+		[
+			{
+				Type = Sequential
+				SubObjectives
+				[
+					{
+						Type = DefeatShips
+						TargetsTag = { Tag=faction_wanderer; OnlyFactions=[monolith]; }
+						TargetCountFraction = 50%
+						MissionInvalidIfZeroTargets = true
+						AllowNpcKills = false
+						OverrideDisplayFormatKey = "Objectives/DefeatFactionShips"
+					}
+					{
+						Type = ReceiveRewards
+					}
+				]
+			}
+		]
+		Rewards
+		[
+			{
+				Type = Money
+				MoneyPerHighTier = &/TIER_TABLES/StandardMoneyPerTier
+				MoneyPerTierMultiplier = 2
+				RoundToMultiple = 500
+			}
+			{
+				Type = Fame
+				FamePerHighTier = &/TIER_TABLES/StandardFamePerTier
+				FamePerTierMultiplier = 2
+				MaxFamePerHighTier = &/TIER_TABLES/StandardMaxFamePerTier
+			}
+            {
+                Type = Reputation
+                ReputationPerHighTier = &/TIER_TABLES/StandardReputationPerTier
+                ReputationPerTierMultiplier = 2
+            }
+		]
+	}
+	{
+		Type = Mission
+		Metatype = FactionHunt
+		SpawnAt = Tag
+		SpawnAtTag = { Mode=Random; Tag=trade_station; OnlyOpposingFactions=true; }
+		OkayIfSpawnAtTagNotFound = true
+		Faction = OwnerOfTag
+		FactionTag = &SpawnAtTag
+		OkayIfFactionTagNotFound = true
+		Objectives
+		[
+			{
+				Type = Sequential
+				SubObjectives
+				[
+					{
+						Type = DefeatShips
+						TargetsTag = { Tag=faction_wanderer; OnlyFactions=[cabal]; }
+						TargetCountFraction = 50%
+						MissionInvalidIfZeroTargets = true
+						AllowNpcKills = false
+						OverrideDisplayFormatKey = "Objectives/DefeatFactionShips"
+					}
+					{
+						Type = ReceiveRewards
+					}
+				]
+			}
+		]
+		Rewards
+		[
+			{
+				Type = Money
+				MoneyPerHighTier = &/TIER_TABLES/StandardMoneyPerTier
+				MoneyPerTierMultiplier = 2
+				RoundToMultiple = 500
+			}
+			{
+				Type = Fame
+				FamePerHighTier = &/TIER_TABLES/StandardFamePerTier
+				FamePerTierMultiplier = 2
+				MaxFamePerHighTier = &/TIER_TABLES/StandardMaxFamePerTier
+			}
+            {
+                Type = Reputation
+                ReputationPerHighTier = &/TIER_TABLES/StandardReputationPerTier
+                ReputationPerTierMultiplier = 2
+            }
+		]
+	}
+	{
+		Type = Mission
+		Metatype = FactionHunt
+		SpawnAt = Tag
+		SpawnAtTag = { Mode=Random; Tag=trade_station; OnlyOpposingFactions=true; }
+		OkayIfSpawnAtTagNotFound = true
+		Faction = OwnerOfTag
+		FactionTag = &SpawnAtTag
+		OkayIfFactionTagNotFound = true
+		Objectives
+		[
+			{
+				Type = Sequential
+				SubObjectives
+				[
+					{
+						Type = DefeatShips
+						TargetsTag = { Tag=faction_wanderer; OnlyFactions=[imperium]; }
+						TargetCountFraction = 50%
+						MissionInvalidIfZeroTargets = true
+						AllowNpcKills = false
+						OverrideDisplayFormatKey = "Objectives/DefeatFactionShips"
+					}
+					{
+						Type = ReceiveRewards
+					}
+				]
+			}
+		]
+		Rewards
+		[
+			{
+				Type = Money
+				MoneyPerHighTier = &/TIER_TABLES/StandardMoneyPerTier
+				MoneyPerTierMultiplier = 2
+				RoundToMultiple = 500
+			}
+			{
+				Type = Fame
+				FamePerHighTier = &/TIER_TABLES/StandardFamePerTier
+				FamePerTierMultiplier = 2
+				MaxFamePerHighTier = &/TIER_TABLES/StandardMaxFamePerTier
+			}
+            {
+                Type = Reputation
+                ReputationPerHighTier = &/TIER_TABLES/StandardReputationPerTier
+                ReputationPerTierMultiplier = 2
+            }
+		]
+	}
+	// Faction specific missions for SW.Black_Sun
+	{
+		Type = Mission
+		Metatype = FactionHunt // Mission type is FactionHunt
+		SpawnAt = Tag 
+		SpawnAtTag = { Mode=Random; Tag=trade_station; OnlyOpposingFactions=true; } // Spawn at a random trade station owned by an opposing faction
+		OkayIfSpawnAtTagNotFound = true
+		Faction = OwnerOfTag
+		FactionTag = &SpawnAtTag
+		OkayIfFactionTagNotFound = true
+		Objectives
+		[
+			{
+				Type = Sequential
+				SubObjectives
+				[
+					{
+						Type = DefeatShips
+						TargetsTag = { Tag=faction_wanderer; OnlyFactions=[SW.Black_Sun]; }
+						TargetCountFraction = 50% // Target 50% of SW.Black_Sun faction wanderer ships
+						MissionInvalidIfZeroTargets = true
+						AllowNpcKills = false
+						OverrideDisplayFormatKey = "Objectives/DefeatFactionShips"
+					}
+					{
+						Type = ReceiveRewards
+					}
+				]
+			}
+		]
+		Rewards // Give money, fame, and reputation rewards based on tier tables
+		[
+			{
+				Type = Money
+				MoneyPerHighTier = &/TIER_TABLES/StandardMoneyPerTier
+				MoneyPerTierMultiplier = 2
+				RoundToMultiple = 500
+			}
+			{
+				Type = Fame
+				FamePerHighTier = &/TIER_TABLES/StandardFamePerTier
+				FamePerTierMultiplier = 2
+				MaxFamePerHighTier = &/TIER_TABLES/StandardMaxFamePerTier
+			}
+            {
+                Type = Reputation
+                ReputationPerHighTier = &/TIER_TABLES/StandardReputationPerTier
+                ReputationPerTierMultiplier = 2
+            }
+		]
+	}
+	// Faction specific missions for SW.CIS 
+	{
+		Type = Mission // Mission type is FactionHunt
+		Metatype = FactionHunt
+		SpawnAt = Tag
+		SpawnAtTag = { Mode=Random; Tag=trade_station; OnlyOpposingFactions=true; } // Spawn at a random trade station owned by an opposing faction
+		OkayIfSpawnAtTagNotFound = true
+		Faction = OwnerOfTag
+		FactionTag = &SpawnAtTag
+		OkayIfFactionTagNotFound = true
+		Objectives
+		[
+			{
+				Type = Sequential
+				SubObjectives
+				[
+					{
+						Type = DefeatShips
+						TargetsTag = { Tag=faction_wanderer; OnlyFactions=[SW.CIS]; }
+						TargetCountFraction = 50% // Target 50% of SW.CIS faction wanderer ships
+						MissionInvalidIfZeroTargets = true
+						AllowNpcKills = false
+						OverrideDisplayFormatKey = "Objectives/DefeatFactionShips"
+					}
+					{
+						Type = ReceiveRewards
+					}
+				]
+			}
+		]
+		Rewards // Give money, fame, and reputation rewards based on tier tables
+		[
+			{
+				Type = Money
+				MoneyPerHighTier = &/TIER_TABLES/StandardMoneyPerTier
+				MoneyPerTierMultiplier = 2
+				RoundToMultiple = 500
+			}
+			{
+				Type = Fame
+				FamePerHighTier = &/TIER_TABLES/StandardFamePerTier
+				FamePerTierMultiplier = 2
+				MaxFamePerHighTier = &/TIER_TABLES/StandardMaxFamePerTier
+			}
+            {
+                Type = Reputation
+                ReputationPerHighTier = &/TIER_TABLES/StandardReputationPerTier
+                ReputationPerTierMultiplier = 2
+            }
+		]
+	}
+	
+	// Faction specific missions for SW.Galactic_Empire
+	{
+		Type = Mission
+		Metatype = FactionHunt // Mission type is FactionHunt  
+		SpawnAt = Tag 
+		SpawnAtTag = { Mode=Random; Tag=trade_station; OnlyOpposingFactions=true; } // Spawn at a random trade station owned by an opposing faction
+		OkayIfSpawnAtTagNotFound = true
+		Faction = OwnerOfTag
+		FactionTag = &SpawnAtTag
+		OkayIfFactionTagNotFound = true
+		Objectives
+		[
+			{
+				Type = Sequential
+				SubObjectives
+				[
+					{
+						Type = DefeatShips
+						TargetsTag = { Tag=faction_wanderer; OnlyFactions=[SW.Galacitc_Empire]; }
+						TargetCountFraction = 50% // Target 50% of SW.Galactic_Empire faction wanderer ships
+						MissionInvalidIfZeroTargets = true
+						AllowNpcKills = false
+						OverrideDisplayFormatKey = "Objectives/DefeatFactionShips"
+					}
+					{
+						Type = ReceiveRewards
+					}
+				]
+			}
+		]
+		Rewards // Give money, fame, and reputation rewards based on tier tables
+		[
+			{
+				Type = Money
+				MoneyPerHighTier = &/TIER_TABLES/StandardMoneyPerTier
+				MoneyPerTierMultiplier = 2
+				RoundToMultiple = 500
+			}
+			{
+				Type = Fame
+				FamePerHighTier = &/TIER_TABLES/StandardFamePerTier
+				FamePerTierMultiplier = 2
+				MaxFamePerHighTier = &/TIER_TABLES/StandardMaxFamePerTier
+			}
+            {
+                Type = Reputation
+                ReputationPerHighTier = &/TIER_TABLES/StandardReputationPerTier
+                ReputationPerTierMultiplier = 2
+            }
+		]
+	}
+
+	// Faction specific missions for SW.Republic
+	{
+		Type = Mission
+		Metatype = FactionHunt // Mission type is FactionHunt
+		SpawnAt = Tag
+		SpawnAtTag = { Mode=Random; Tag=trade_station; OnlyOpposingFactions=true; } // Spawn at a random trade station owned by an opposing faction
+		OkayIfSpawnAtTagNotFound = true
+		Faction = OwnerOfTag
+		FactionTag = &SpawnAtTag
+		OkayIfFactionTagNotFound = true
+		Objectives
+		[
+			{
+				Type = Sequential
+				SubObjectives
+				[
+					{
+						Type = DefeatShips
+						TargetsTag = { Tag=faction_wanderer; OnlyFactions=[SW.Republic]; }
+						TargetCountFraction = 50% // Target 50% of SW.Republic faction wanderer ships
+						MissionInvalidIfZeroTargets = true
+						AllowNpcKills = false
+						OverrideDisplayFormatKey = "Objectives/DefeatFactionShips"
+					}
+					{
+						Type = ReceiveRewards
+					}
+				]
+			}
+		]
+		Rewards // Give money, fame, and reputation rewards based on tier tables
+		[
+			{
+				Type = Money
+				MoneyPerHighTier = &/TIER_TABLES/StandardMoneyPerTier
+				MoneyPerTierMultiplier = 2
+				RoundToMultiple = 500
+			}
+			{
+				Type = Fame
+				FamePerHighTier = &/TIER_TABLES/StandardFamePerTier
+				FamePerTierMultiplier = 2
+				MaxFamePerHighTier = &/TIER_TABLES/StandardMaxFamePerTier
+			}
+            {
+                Type = Reputation
+                ReputationPerHighTier = &/TIER_TABLES/StandardReputationPerTier
+                ReputationPerTierMultiplier = 2
+            }
+		]
+	}
+
+	// Faction specific missions for SW.Rebel_Alliance
+	{
+		Type = Mission
+		Metatype = FactionHunt // Mission type is FactionHunt
+		SpawnAt = Tag
+		SpawnAtTag = { Mode=Random; Tag=trade_station; OnlyOpposingFactions=true; } // Spawn at a random trade station owned by an opposing faction
+		OkayIfSpawnAtTagNotFound = true
+		Faction = OwnerOfTag
+		FactionTag = &SpawnAtTag
+		OkayIfFactionTagNotFound = true
+		Objectives
+		[
+			{
+				Type = Sequential
+				SubObjectives
+				[
+					{
+						Type = DefeatShips
+						TargetsTag = { Tag=faction_wanderer; OnlyFactions=[SW.Rebel_Alliance]; } // Target 50% of SW.Rebel_Alliance faction wanderer ships
+						TargetCountFraction = 50%
+						MissionInvalidIfZeroTargets = true
+						AllowNpcKills = false
+						OverrideDisplayFormatKey = "Objectives/DefeatFactionShips"
+					}
+					{
+						Type = ReceiveRewards
+					}
+				]
+			}
+		]
+		Rewards // Give money, fame, and reputation rewards based on tier tables
+		[
+			{
+				Type = Money
+				MoneyPerHighTier = &/TIER_TABLES/StandardMoneyPerTier
+				MoneyPerTierMultiplier = 2
+				RoundToMultiple = 500
+			}
+			{
+				Type = Fame
+				FamePerHighTier = &/TIER_TABLES/StandardFamePerTier
+				FamePerTierMultiplier = 2
+				MaxFamePerHighTier = &/TIER_TABLES/StandardMaxFamePerTier
+			}
+            {
+                Type = Reputation
+                ReputationPerHighTier = &/TIER_TABLES/StandardReputationPerTier
+                ReputationPerTierMultiplier = 2
+            }
+		]
+	} 
+	// Exploration missions.
+	{
+		Type = Mission
+		Metatype = Explore
+		SpawnAt = SimGlobal
+		Faction = SystemController
+		Objectives
+		[
+			{
+				Type = Sequential
+				SubObjectives
+				[
+					{
+						Type = DiscoverPOIs
+						POITags = [poi_unknown]
+						DiscoverCountFraction = 25%
+					}
+					{
+						Type = ReceiveRewards
+					}
+				]
+			}
+		]
+		Rewards
+		[
+			{
+				Type = Money
+				MoneyPerHighTier = &/TIER_TABLES/StandardMoneyPerTier
+				RoundToMultiple = 500
+			}
+			{
+				Type = Fame
+				FamePerHighTier = &/TIER_TABLES/StandardFamePerTier
+				MaxFamePerHighTier = &/TIER_TABLES/StandardMaxFamePerTier
+			}
+            {
+                Type = Reputation
+                ReputationPerHighTier = &/TIER_TABLES/StandardReputationPerTier
+            }
+		]
+	}
+	{
+		Type = Mission
+		Metatype = Explore
+		SpawnAt = SimGlobal
+		Faction = SystemController
+		RequirePreviousMission = true
+		Objectives
+		[
+			{
+				Type = Sequential
+				SubObjectives
+				[
+					{
+						Type = DiscoverPOIs
+						POITags = [poi_unknown]
+						DiscoverCountFraction = 50%
+					}
+					{
+						Type = ReceiveRewards
+					}
+				]
+			}
+		]
+		Rewards
+		[
+			{
+				Type = Money
+				MoneyPerHighTier = &/TIER_TABLES/StandardMoneyPerTier
+				RoundToMultiple = 500
+			}
+			{
+				Type = Fame
+				FamePerHighTier = &/TIER_TABLES/StandardFamePerTier
+				MaxFamePerHighTier = &/TIER_TABLES/StandardMaxFamePerTier
+			}
+            {
+                Type = Reputation
+                ReputationPerHighTier = &/TIER_TABLES/StandardReputationPerTier
+            }
+		]
+	}
+	{
+		Type = Mission
+		Metatype = Explore
+		SpawnAt = SimGlobal
+		Faction = SystemController
+		RequirePreviousMission = true
+		Objectives
+		[
+			{
+				Type = Sequential
+				SubObjectives
+				[
+					{
+						Type = DiscoverPOIs
+						POITags = [poi_unknown]
+						DiscoverCountFraction = 75%
+					}
+					{
+						Type = ReceiveRewards
+					}
+				]
+			}
+		]
+		Rewards
+		[
+			{
+				Type = Money
+				MoneyPerHighTier = &/TIER_TABLES/StandardMoneyPerTier
+				RoundToMultiple = 500
+			}
+			{
+				Type = Fame
+				FamePerHighTier = &/TIER_TABLES/StandardFamePerTier
+				MaxFamePerHighTier = &/TIER_TABLES/StandardMaxFamePerTier
+			}
+            {
+                Type = Reputation
+                ReputationPerHighTier = &/TIER_TABLES/StandardReputationPerTier
+            }
+		]
+	}
+	{
+		Type = Mission
+		Metatype = Explore
+		SpawnAt = SimGlobal
+		Faction = SystemController
+		RequirePreviousMission = true
+		Objectives
+		[
+			{
+				Type = Sequential
+				SubObjectives
+				[
+					{
+						Type = DiscoverPOIs
+						POITags = [poi_unknown]
+						DiscoverCountFraction = 100%
+					}
+					{
+						Type = ReceiveRewards
+					}
+				]
+			}
+		]
+		Rewards
+		[
+			{
+				Type = Money
+				MoneyPerHighTier = &/TIER_TABLES/StandardMoneyPerTier
+				RoundToMultiple = 500
+			}
+			{
+				Type = Fame
+				FamePerHighTier = &/TIER_TABLES/StandardFamePerTier
+				MaxFamePerHighTier = &/TIER_TABLES/StandardMaxFamePerTier
+			}
+            {
+                Type = Reputation
+                ReputationPerHighTier = &/TIER_TABLES/StandardReputationPerTier
+            }
+		]
+	}
+]

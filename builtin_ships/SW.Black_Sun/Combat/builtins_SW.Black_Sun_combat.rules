@@ -5,6 +5,7 @@ Ships
 
 //Tier 1-2 (Up to 100,000)
 /*47,100*/			:~{ File="UGLIES_Tye_Wing-Class_Starfighter.ship.png"; 					Tier=1;  Difficulty=2; Tags = [combat, swfighter, bscfighter, pirate] }
+/*47,100*/			:~{ File="UGLIES_Tye_Wing-Class_Starfighterv2.ship.png"; 				Tier=2;  Difficulty=3; Tags = [combat, swfighter, bscfighter, pirate] }
 /*54,100*/			:~{ File="BSC Rihkxyrk Assault Fighter Mk2.ship.png"; 					Tier=5;  Difficulty=2; Tags = [combat, swfighter, bscfighter] }
 /*54,100*/			:~{ File="Hyena-BS Droid Bomber.ship.png";          					Tier=2;  Difficulty=2; Tags = [combat] } 
 /*68,280*/			:~{ File="Storm IV Twin-Pod BS Combat.ship.png";          				Tier=1;  Difficulty=2; Tags = [combat, swfighter, bscfighter] } 

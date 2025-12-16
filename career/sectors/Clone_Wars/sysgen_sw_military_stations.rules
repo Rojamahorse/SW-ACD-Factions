@@ -231,6 +231,7 @@ BaseMilitaryStation
 				MinPatrolRadius = 400
 				TargetAcquireRangeFromOrigin = 750
 				TargetUnacquireRangeFromOrigin = 1500
+				PatrolOriginTag = station
 			}
 		}
 	]

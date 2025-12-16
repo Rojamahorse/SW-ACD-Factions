@@ -1,12 +1,13 @@
 ID = SW.3.StarWarsFactions
 Name = "Star Wars Factions"
-Version = 202.302
-CompatibleGameVersions = ["0.30.2","0.30.1","0.30.0","0.29.0","0.28.2","0.28.0","0.27.2","0.27.1e","0.27.1","0.27.0","0.26.2"]
+Version = 203.303
 ModifiesGameplay = true
 Author = "Rojamahorse & SW:ACD DevTeam"
 Logo = "logo.png"
 Description = "Step up your game with the ultimate companion mod to <yellow>Star Wars: A Cosmos Divided</yellow>! \n\nChoose your side—from the <gray>Galactic Empire</gray> and <orange>Rebel Alliance</orange> to the <red>Republic</red> and <blue>CIS</blue> — or navigate the criminal underworld with <magenta>Black Sun</magenta>. \n\nKick off your journey with iconic ships, venture into expansive new maps, and craft your own interstellar adventure. This is the Cosmoteer mod you've been searching for! \n\n<b>Ship Contributions by:</b> ClassicJam, Neojino, Wolfram, Fusion, Altraxia, Roasted, Caudrea and the Steam Community! \n\n<bad><b>Important:</b> This mod is an extension of <yellow>Star Wars: A Cosmos Divided</yellow> and requires it for full functionality. Please ensure you have the base mod installed.</bad>"
 StringsFolder = "strings"
+UseThisFileIfNoVersionMatch = true
+
 /* TO DO:
 Base Galaxy Rules back to Vanilla + All
 Create a New Republic Era & Old Republic Era

@@ -146,6 +146,7 @@ SubSpawners
 					PatrolRadius = 250
 					TargetAcquireRangeFromOrigin = 500
 					TargetUnacquireRangeFromOrigin = 1500
+					PatrolOriginTag = captured_station
 				}
 			}
 
@@ -404,6 +405,7 @@ StationDefenses
 				MinPatrolRadius = 200
 				TargetAcquireRangeFromOrigin = 750
 				TargetUnacquireRangeFromOrigin = 1500
+				PatrolOriginTag = station
 			}
 		}
 	]
