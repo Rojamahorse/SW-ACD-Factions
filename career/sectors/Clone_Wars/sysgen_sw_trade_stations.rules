@@ -146,7 +146,7 @@ SubSpawners
 					PatrolRadius = 250
 					TargetAcquireRangeFromOrigin = 500
 					TargetUnacquireRangeFromOrigin = 1500
-					PatrolOriginTag = captured_station
+					PatrolOriginTag = { Mode=Nearest; Tag=captured_station; }
 				}
 			}
 

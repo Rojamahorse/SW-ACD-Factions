@@ -58,32 +58,29 @@ Sector
         // Minimum distance from endpoints to spawn trade ships
         MinTradeShipSpawnDistFromEndpoints = 1000
 
-        // 
-		_estimatedSmallStationCapacity = 500
-
-        // Desired deltas for station resource trade, determining how much resources should fluctuate
+        // Vanilla now drives trade deltas from typed versus untyped station tiles.
         StationResourceTradeDeltas
         [
-			{ ResourceType=hyperium;          DesiredDelta=[-20/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity), 20/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity)]; }
-			{ ResourceType=steel;             DesiredDelta=[-200/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity), 200/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity)]; }
-			{ ResourceType=coil;              DesiredDelta=[-100/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity), 100/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity)]; }
-			{ ResourceType=coil2;             DesiredDelta=[-50/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity), 50/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity)]; }
-			{ ResourceType=tristeel;          DesiredDelta=[-20/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity), 20/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity)]; }
-			{ ResourceType=diamond;           DesiredDelta=[-5/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity), 5/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity)]; }
-			{ ResourceType=processor;         DesiredDelta=[-5/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity), 5/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity)]; }
-			{ ResourceType=enriched_uranium;  DesiredDelta=[-10/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity), 10/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity)]; }
-			{ ResourceType=sulfur;            DesiredDelta=[-50/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity), 50/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity)]; }
-			{ ResourceType=iron;              DesiredDelta=[-100/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity), 100/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity)]; }
-			{ ResourceType=copper;            DesiredDelta=[-50/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity), 50/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity)]; }
-			{ ResourceType=tritanium;         DesiredDelta=[-10/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity), 10/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity)]; }
-			{ ResourceType=carbon;            DesiredDelta=[-10/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity), 10/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity)]; }
-			{ ResourceType=gold;              DesiredDelta=[-10/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity), 10/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity)]; }
-			{ ResourceType=uranium;           DesiredDelta=[-10/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity), 10/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity)]; }
-			{ ResourceType=bullet;            DesiredDelta=[-100/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity), 100/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity)]; }
-			{ ResourceType=missile_part_he;   DesiredDelta=[-50/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity), 50/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity)]; }
-			{ ResourceType=missile_part_emp;  DesiredDelta=[-10/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity), 10/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity)]; }
-			{ ResourceType=missile_part_nuke; DesiredDelta=[-10/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity), 10/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity)]; }
-			{ ResourceType=mine_part;         DesiredDelta=[-30/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity), 30/(&~/Sector/TradeRoutes/_estimatedSmallStationCapacity)]; }
+			{ ResourceType=hyperium;          PercentOfTypedTiles=[80%, 90%];   PercentOfUntypedTiles=[0%, 10%]; }
+			{ ResourceType=steel;             PercentOfTypedTiles=[80%, 90%];   PercentOfUntypedTiles=[0%, 10%]; }
+			{ ResourceType=coil;              PercentOfTypedTiles=[80%, 90%];   PercentOfUntypedTiles=[0%, 10%]; }
+			{ ResourceType=coil2;             PercentOfTypedTiles=[80%, 90%];   PercentOfUntypedTiles=[0%, 10%]; }
+			{ ResourceType=tristeel;          PercentOfTypedTiles=[80%, 90%];   PercentOfUntypedTiles=[0%, 5%]; }
+			{ ResourceType=diamond;           PercentOfTypedTiles=[80%, 90%];   PercentOfUntypedTiles=[-0.5%, 0.5%]; }
+			{ ResourceType=processor;         PercentOfTypedTiles=[80%, 90%];   PercentOfUntypedTiles=[-0.5%, 0.5%]; }
+			{ ResourceType=enriched_uranium;  PercentOfTypedTiles=[80%, 90%];   PercentOfUntypedTiles=[0%, 1%]; }
+			{ ResourceType=sulfur;            PercentOfTypedTiles=[80%, 90%];   PercentOfUntypedTiles=[-10%, 10%]; }
+			{ ResourceType=iron;              PercentOfTypedTiles=[80%, 90%];   PercentOfUntypedTiles=[-10%, 10%]; }
+			{ ResourceType=copper;            PercentOfTypedTiles=[80%, 90%];   PercentOfUntypedTiles=[-10%, 10%]; }
+			{ ResourceType=tritanium;         PercentOfTypedTiles=[80%, 90%];   PercentOfUntypedTiles=[-2%, 2%]; }
+			{ ResourceType=carbon;            PercentOfTypedTiles=[80%, 90%];   PercentOfUntypedTiles=[-0.5%, 0.5%]; }
+			{ ResourceType=gold;              PercentOfTypedTiles=[80%, 90%];   PercentOfUntypedTiles=[-0.5%, 0.5%]; }
+			{ ResourceType=uranium;           PercentOfTypedTiles=[80%, 90%];   PercentOfUntypedTiles=[-0.5%, 0.5%]; }
+			{ ResourceType=bullet;            PercentOfTypedTiles=[80%, 90%];   PercentOfUntypedTiles=[0%, 10%]; }
+			{ ResourceType=missile_part_he;   PercentOfTypedTiles=[80%, 90%];   PercentOfUntypedTiles=[-10%, 10%]; }
+			{ ResourceType=missile_part_emp;  PercentOfTypedTiles=[80%, 90%];   PercentOfUntypedTiles=[-2%, 2%]; }
+			{ ResourceType=missile_part_nuke; PercentOfTypedTiles=[80%, 90%];   PercentOfUntypedTiles=[-2%, 2%]; }
+			{ ResourceType=mine_part;         PercentOfTypedTiles=[80%, 90%];   PercentOfUntypedTiles=[-2%, 2%]; }
         ]
     }
 
