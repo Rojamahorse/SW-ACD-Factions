@@ -166,7 +166,11 @@ Ships
 /*99,928,384*/	:~{ File="Emp_ISD_Banisher.ship.png";								Tier=18;	Difficulty=2; Tags = [swboss]; OtherIDs = ["Emp Bewitcher_Class_Super_Cruiser"]} // Credit Choppyranger
 /*61,928,384*/	:~{ File="Emp_Progenitor_X-01.ship.png";							Tier=17;	Difficulty=2; Tags = [swboss] } // Credit Fusion
 /*61,928,384*/	:~{ File="Emp_Resurgent_Class_Battlecruiser.ship.png";				Tier=18;	Difficulty=2; Tags = [swboss] } // Credit Fusion
-
+	// Kiowa additions (proposed ratings from decoded parts/weapons and nearest current roster comparators; see worker evidence)
+	:~{ File="Gozanti-class_Cruiser_Scanner_Var.ship.png"; Tier=7; Difficulty=1; Tags=[combat] } // 278 parts; similar to existing 295-part Gozanti (Tier 6/7); scanner/sensor variant
+	:~{ File="ISB_TAC_shuttle.ship.png"; Tier=5; Difficulty=2; Tags=[combat, empshuttle] } // 146 parts; 4 miniguns, 4 point-defense, 6 shields
+	:~{ File="Cantwell-class_Arrestor_Cruiser.ship.png"; Tier=14; Difficulty=2; Tags=[combat] } // 5,560 parts; 5.6x the 996-part active Cantwell, much larger weapons/shield fit
+	:~{ File="TIEad_Avenger.ship.png"; Tier=8; Difficulty=3; Tags=[combat, swfighter, empfighter] } // 86 parts; 2 missiles, mass driver, 4 shields; above Empire/Rebel fighter bands per Kiowa
 ]
 
 

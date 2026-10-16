@@ -44,4 +44,8 @@ Ships
 	//:~{ File="EXAMPLE_4.ship.png";    								Tier=8;  Tags : ~/Tags [crew_transport] }
 	//:~{ File="EXAMPLE_5.ship.png";  									Tier=11; Tags : ~/Tags [crew_transport] }
 	//:~{ File="EXAMPLE_6.ship.png";  									Tier=11; Tags : ~/Tags [crew_transport] }	
+	// Kiowa additions (proposed tier from decoded part/loadout scale; see worker evidence)
+	:~{ File="BTY-180_Carrier.ship.png"; Tier=13; Tags : ~/Tags [trade, empty_storage] } // 1,522 parts; large storage carrier, heavily armed but owner-classified civilian
+	:~{ File="Imperial_Ambunaut.ship.png"; Tier=2; } // 19 parts; compact civilian craft
+	:~{ File="RK-392_Mobile_Tac-Pod.ship.png"; Tier=3; } // 33 parts; armed pod, retain owner civilian class; civilian root tag only
 ]

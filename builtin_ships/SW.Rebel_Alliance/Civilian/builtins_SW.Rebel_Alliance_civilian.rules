@@ -40,4 +40,7 @@ Ships
 	//:~{ File="EXAMPLE_4.ship.png";    								Tier=8;  Tags : ~/Tags [crew_transport] }
 	//:~{ File="EXAMPLE_5.ship.png";  									Tier=11; Tags : ~/Tags [crew_transport] }
 	//:~{ File="EXAMPLE_6.ship.png";  									Tier=11; Tags : ~/Tags [crew_transport] }	
+	// Kiowa additions (proposed tier from decoded part/loadout scale; see worker evidence)
+	:~{ File="V-21.1_Chevlex_Light_Haulcraft.ship.png"; Tier=8; Tags : ~/Tags [trade, empty_storage] } // 338 parts; haulcraft, hidden storage, collectors and defensive armament; owner-classified civilian
+	:~{ File="Breon_HOY-39_Dayvan.ship.png"; Tier=4; } // 94 parts; small civilian craft; owner-classified civilian
 ]
