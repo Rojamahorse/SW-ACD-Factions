@@ -224,7 +224,7 @@ SubSpawners
 			UseTierField = true
 			Tier = -4
 			AllowTierRangeExpansion = true
-			Tags = [combat]
+			Tags = [combat, civilian]
 		}
 
 		SubSpawners
