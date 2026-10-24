@@ -1,7 +1,7 @@
 ID = SW.3.StarWarsFactions
 Name = "Star Wars Factions"
-Version = 204.304
-CompatibleGameVersions = ["0.30.4"]
+Version = 205.305
+CompatibleGameVersions = ["0.30.5","0.30.4"]
 ModifiesGameplay = true
 Author = "Rojamahorse & SW:ACD DevTeam"
 Logo = "logo.png"

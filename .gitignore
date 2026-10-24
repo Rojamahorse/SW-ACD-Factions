@@ -1,2 +1,9 @@
 .vscode/SWACD - Snippets.code-snippets
 .vscode/extensions.json
+AGENTS.md
+otto.json
+.otto/workflows/templates/roja-project-delivery-policy-v2.json
+docs/agents/dependencies.md
+docs/agents/documentation.md
+docs/agents/README.md
+docs/agents/releases.md
